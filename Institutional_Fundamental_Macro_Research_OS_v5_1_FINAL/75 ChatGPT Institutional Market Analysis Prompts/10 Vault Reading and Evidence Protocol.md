@@ -2,7 +2,7 @@
 title: "Vault Reading and Evidence Protocol"
 type: protocol
 status: evergreen
-version: 5.1.0
+version: 5.2.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
@@ -10,48 +10,135 @@ tags:
   - prompts
   - vault-reading
   - evidence
+  - source-lineage
 ---
 # Vault Reading and Evidence Protocol
 
-## Required behavior after the ZIP is uploaded
+## A. Archive inspection
 
-1. Inspect the archive and identify the Vault root rather than assuming a filename or directory layout.
-2. Read `00 HOME.md`, `01 COVERAGE MATRIX.md`, the relevant MOCs, core standards and the market-specific driver books before forming a conclusion.
-3. Search the Vault semantically and by keywords for the requested market, its causal drivers, horizon, country, event and execution context.
-4. Do **not** summarize the entire Vault. Build a focused research route and state which notes materially shaped the analysis.
-5. Treat the Vault as methodology, ontology, model library and control framework. Treat live or historical external evidence as the factual input.
-6. Resolve contradictions by using [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]] and [[73 Economic Schools Competing Models and Adversarial Synthesis/00 Economic Schools Competing Models and Adversarial Synthesis MOC]].
-7. Preserve the boundary between fundamental permission and technical execution.
+1. Inspect the uploaded archive and find the actual Obsidian Vault root.
+2. Confirm the presence of `00 HOME.md`, `01 COVERAGE MATRIX.md`, numbered modules and module 75.
+3. Do not assume that a file shown in a prior conversation remains available. Use the archive in the current conversation.
+4. If the archive is corrupt or incomplete, identify the missing component precisely and continue with accessible material only when the analysis remains meaningful.
 
-## CURRENT evidence protocol
+## B. Mandatory reading order
 
-- Browse the web because the answer depends on current information.
-- Establish an exact timestamp and timezone.
-- Prefer primary and official sources: central banks, statistical agencies, treasuries, exchanges, regulators, issuer filings and official industry agencies.
-- Use reputable market sources for consensus, positioning or contemporaneous interpretation when primary sources do not provide them.
-- Distinguish observation time, reference period, release time, retrieval time and revision vintage.
-- Verify current officeholders, policy settings, schedules, contract specifications and market status rather than relying on memory.
-- Cite factual statements inline.
-- If live price, consensus or positioning data is unavailable, label it `UNKNOWN` or `ESTIMATE`; never invent it.
+1. `00 HOME.md`
+2. `01 COVERAGE MATRIX.md`
+3. module-75 MOC and selected prompt
+4. core standards for research object, evidence, point-in-time data, multihorizon conflict, pricing gap, causality, permission proof and execution handoff
+5. relevant asset, country and economic-engine MOCs
+6. specific driver books and model monographs
+7. event/non-event playbooks
+8. source contracts and operational templates
+9. schemas required for the output object
 
-## HISTORICAL evidence protocol
+## C. Search protocol
 
-- Freeze the information set at the user’s exact cutoff.
-- Search for documents, releases and market information published **at or before** that cutoff.
-- Use first-release/vintage data where possible; later revisions are excluded from the reconstructed decision state.
-- Record publication timestamps and timezone when event sequencing matters.
-- Do not use later outcomes to choose the narrative, variables or weights.
-- If a later source is the only surviving archive of an earlier document, it may be used only to recover contemporaneous content; mark the archival status and prevent later interpretation from leaking into the analysis.
-- Separate `RECONSTRUCTED POINT-IN-TIME VIEW` from any optional `EX-POST AUDIT`.
-- If consensus history, intraday pricing or first-release values cannot be recovered, state the gap and lower confidence.
+Search semantically and by exact keywords for:
 
-## Source priority
+- symbol and full market name;
+- underlying exposure and trade vehicle;
+- country, currency, sector or company;
+- growth, inflation, labor, policy, rates, fiscal, liquidity, credit and external drivers;
+- relevant commodity physical variables;
+- event name and date;
+- requested horizon and session;
+- positioning, options, flows, microstructure and execution;
+- historical regime and potential analogues;
+- rival models and failure modes.
 
-1. Official release or filing.
-2. Official methodology or historical archive.
-3. Exchange, regulator or recognized market infrastructure.
-4. Reputable institutional research or data provider.
-5. High-quality contemporaneous financial reporting.
-6. Secondary commentary, only when clearly labeled.
+Do not summarize every search result. Select a focused route and explain why each chosen note is material.
 
-A lower-priority source may not override a higher-priority source without explaining the conflict.
+## D. Vault authority boundary
+
+The Vault is authoritative for:
+
+- method;
+- definitions;
+- causal discipline;
+- horizon separation;
+- model choices and limitations;
+- source priority;
+- scenario construction;
+- permission and risk handoff;
+- historical anti-lookahead controls;
+- output schemas.
+
+The Vault is not authoritative for:
+
+- current prices;
+- current policy settings;
+- current officeholders;
+- current schedules;
+- latest releases;
+- current index constituents;
+- current positioning or flows;
+- historical values not explicitly stored as point-in-time evidence.
+
+External evidence must supply those facts.
+
+## E. Current evidence protocol
+
+- Browse because the answer is time-sensitive.
+- State exact retrieval timestamp and timezone.
+- Prefer primary official sources.
+- Verify current facts instead of relying on memory.
+- Cite material factual statements inline.
+- Use reputable institutional/market sources for consensus or positioning when necessary.
+- Distinguish observed fact from model estimate.
+- Resolve source conflicts explicitly.
+- Treat proprietary data that cannot be accessed as `UNKNOWN`.
+
+## F. Historical evidence protocol
+
+- Freeze at the exact cutoff.
+- Use first-release/vintage values when possible.
+- Record publication timestamps and timezone.
+- Exclude later revisions and outcomes.
+- Do not use later final prices for an earlier cutoff.
+- A later archive may recover contemporaneous content only if the content's original publication time is established.
+- Separate reconstructed view and ex-post audit.
+- Lower confidence when consensus, intraday pricing, positioning or contract state cannot be recovered.
+
+## G. Source priority
+
+1. Official release, filing or statement.
+2. Official methodology, vintage database or archive.
+3. Exchange, regulator, treasury, central bank or recognized market infrastructure.
+4. Issuer or official industry agency.
+5. Reputable institutional research/data provider.
+6. High-quality contemporaneous financial reporting.
+7. Secondary commentary, clearly labeled.
+
+A lower-priority source may not override a higher-priority source without a documented reason.
+
+## H. Claim-level evidence standard
+
+Each material claim must have:
+
+- evidence label;
+- source;
+- timestamp or vintage;
+- direct support or contradiction status;
+- uncertainty;
+- relevance to probability, path, timing, payoff, risk or permission.
+
+A list of URLs at the end is not a claim-evidence ledger.
+
+## I. Contradiction protocol
+
+When evidence conflicts:
+
+1. confirm units, reference periods, seasonal adjustment and revisions;
+2. separate level from rate of change;
+3. separate survey from hard data;
+4. separate cash from futures or different contract months;
+5. check timestamp and session sequence;
+6. check whether one variable is a leader and another a lagging confirmation;
+7. preserve rival scenarios until evidence discriminates;
+8. reduce confidence rather than forcing narrative coherence.
+
+## J. Completion standard
+
+The result must name the notes materially used, cite external current/historical facts, disclose unknowns and preserve the boundary between fundamental permission and technical execution.

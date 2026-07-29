@@ -2,7 +2,7 @@
 title: "Prompt Suite Changelog"
 type: changelog
 status: current
-version: 5.1.0
+version: 5.2.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
@@ -10,21 +10,30 @@ tags:
   - changelog
   - prompts
 ---
-# Prompt Suite Changelog — v5.1
+# Prompt Suite Changelog — v5.2
+
+## Rebuilt
+
+- Replaced the prior mixed Persian/English analysis prompts with fully English production-grade instructions.
+- Made Vault archive inspection, root discovery, governing-note reading and market-specific semantic search mandatory before analysis.
+- Expanded the live/current prompt into a complete institutional state interrogation covering structural through microstructure horizons.
+- Expanded the historical prompt into a strict point-in-time reconstruction with clock, vintage, consensus, contract and anti-lookahead firewalls.
+- Added explicit claim-level evidence, source timestamp, data-quality, unknown and confidence-penalty rules.
+- Added mandatory priced-baseline, vulnerable-assumption, causal-leader, rival-model and cross-asset confirmation outputs.
+- Added scenario probability ranges, half-life, invalidation, expiry, size ceiling and technical handoff controls.
 
 ## Added
 
-- Universal dual-mode CURRENT/HISTORICAL institutional market-analysis prompt.
-- Dedicated current-now, historical point-in-time, day-trading, swing and replay prompts.
-- Minimal launcher messages for repeated use after ZIP upload.
-- Explicit Vault-reading, web-research, citation and source-priority protocol.
-- Strict historical no-lookahead, vintage and event-clock controls.
-- Multihorizon output contract from structural to microstructure.
-- Asset-specific add-on blocks for equity indices, gold, oil, FX, rates, single stocks, credit and crypto.
-- Machine-readable context object and claim–evidence requirements.
+- Current event and catalyst analysis prompt.
+- Cross-market relative-value analysis prompt.
+- Portfolio fundamental exposure and hidden-beta audit prompt.
+- Prompt selection and operating checklist.
+- Expanded market-specific add-on blocks and worked examples.
+- English fast launchers for every major workflow.
 
-## Navigation updates
+## Preserved controls
 
-- Added module 75 to `00 HOME.md`.
-- Added prompt-suite links to Workflows and Templates MOCs.
-- Added prompt-suite usage to `README.md`.
+- The Vault is methodology, not a live data feed.
+- Current mode requires current web research and inline citations.
+- Historical mode forbids later data, revisions, prices and outcomes in the reconstructed section.
+- Fundamental permission cannot override technical stops or justify averaging into loss.

@@ -1,8 +1,8 @@
 ---
 title: "Output Contract and Quality Gates"
-type: standard
+type: contract
 status: evergreen
-version: 5.1.0
+version: 5.2.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
@@ -13,55 +13,212 @@ tags:
 ---
 # Output Contract and Quality Gates
 
-Every full analysis must produce the following sections unless genuinely inapplicable.
+Every full-spectrum prompt must deliver the following structure. A section may contain `UNKNOWN`, but it may not be silently omitted when material.
 
-## Required output
+## 1. Executive institutional verdict
 
-1. **Analysis identity** — market, instrument, mode, exact cutoff, timezone, session status, assumed holding period and data limitations.
-2. **Executive verdict** — the dominant causal regime, what is priced, the most vulnerable assumption, and the practical trading implication.
-3. **Vault route used** — the most relevant MOCs and notes selected from the uploaded ZIP.
-4. **Multihorizon state table** — structural through microstructure, including direction, confidence, expected half-life and conflicts.
-5. **Economic state** — growth, inflation, labor, policy, fiscal, liquidity, credit, external balance and relevant physical/industry state.
-6. **Expectations and pricing** — consensus distribution, policy curve, yields, valuation, implied volatility, positioning and what the market already discounts.
-7. **Asset-specific driver tree** — direct, indirect, conditional and rival drivers.
-8. **Transmission map** — the complete causal path from evidence to the chosen market.
-9. **Cross-asset confirmation** — rates, FX, equities, credit, commodities, volatility and funding, as relevant.
-10. **Positioning, flows and market plumbing** — crowding, dealer/systematic flows, issuance, rebalancing, collateral, funding and liquidity.
-11. **Scenario distribution** — base, upside, downside and tail scenarios with probabilities, triggers, expected path and falsifiers.
-12. **Current or historical catalyst clock** — exact event times and which variables matter within each release.
-13. **Fundamental permission** — `LONG_ONLY`, `SHORT_ONLY`, `TWO_WAY_REDUCED` or `NO_TRADE`, with confidence ceiling and explicit reasons.
-14. **Day-trading handoff** — what must happen before entry, causal leader, confirmations, vetoes, expiry and no-trade conditions.
-15. **Swing handoff** — two-to-ten-day thesis, carry, path dependency, overnight risks, next catalysts and thesis half-life.
-16. **Invalidation architecture** — fundamental invalidation, market-implied invalidation, technical handoff and time expiry.
-17. **Unknowns and evidence gaps** — unavailable, stale, paywalled, estimated or conflicting information.
-18. **Claim–evidence ledger** — Fact, Estimate, Inference, Scenario or Unknown, with sources.
-19. **Machine-readable context object** — YAML matching [[00 Core Standards/17 Context Object and Permission Schema Standard]].
-20. **Bottom-line decision memo** — what matters now, what does not matter, what would change the view and what must not be traded.
+- one paragraph;
+- dominant driver;
+- what is priced;
+- vulnerable assumption;
+- overall permission;
+- confidence range;
+- invalidation and expiry.
 
-## Quality gates
+## 2. Status board
 
-The answer fails institutional quality if any of the following occurs:
+| Field | Required value |
+|---|---|
+| Analysis mode | Current or historical |
+| Timestamp/cutoff | Exact time and timezone |
+| Market and vehicle | Exact identity |
+| Session/venue state | Open, closed, pre/post or historical state |
+| Dominant regime | Named and defined |
+| Causal leader | Market or variable expected to lead |
+| Priced assumption | Main embedded belief |
+| Vulnerable assumption | Main repricing risk |
+| Next catalyst | Time and timezone |
+| Permission | One of four allowed labels |
+| Confidence | Range plus data-quality grade |
+| Invalidation/expiry | Concise rule |
 
-- It treats good/bad economic news as mechanically bullish/bearish without pricing and regime analysis.
-- It confuses economic state with expectations, or expectations with asset payoff.
-- It uses current revised data in a historical reconstruction.
-- It hides missing information behind confident prose.
-- It assigns probabilities without explaining their basis and uncertainty.
-- It lists facts that do not affect probability, path, timing, payoff or permission.
-- It ignores a material rival causal model.
-- It uses one horizon to override another without an inheritance/conflict rule.
-- It turns a fundamental thesis into permission to move a technical stop or average into loss.
-- It cites a source that does not support the attached claim.
-- It produces a directional verdict without stating what is already priced.
-- It omits transaction costs, liquidity or event-gap risk when they are material.
+## 3. Vault research route
 
-## Evidence labels
+List the Vault notes actually used and one sentence on how each affected the analysis. Do not list notes merely to create the appearance of coverage.
 
-Use these labels explicitly:
+## 4. Evidence and data-quality statement
 
-- **FACT** — directly observed and source-supported.
-- **ESTIMATE** — model, survey or market-implied estimate.
-- **INFERENCE** — reasoned interpretation from evidence.
-- **SCENARIO** — conditional future path.
-- **UNKNOWN** — unavailable or not reliably reconstructable.
-- **EX-POST** — known only after a historical cutoff; prohibited from the reconstructed state.
+- source hierarchy used;
+- retrieval times or historical publication times;
+- first-release/vintage status;
+- proprietary/live-data gaps;
+- known contradictions;
+- confidence penalty caused by missing evidence.
+
+## 5. Multihorizon state matrix
+
+| Horizon | State | Direction/rate of change | Priced gap | Dominant driver | Confidence | Half-life | Trigger | Invalidation | Conflict rule |
+|---|---|---|---|---|---|---|---|---|---|
+| Structural | | | | | | | | | |
+| Secular | | | | | | | | | |
+| Cyclical | | | | | | | | | |
+| Tactical | | | | | | | | | |
+| Swing | | | | | | | | | |
+| Daily/session | | | | | | | | | |
+| Event | | | | | | | | | |
+| Microstructure | | | | | | | | | |
+
+## 6. Economic and financial state
+
+Cover the material components of growth, inflation, labor, policy, rates, fiscal, liquidity, credit, external balance and financial conditions.
+
+## 7. Asset-specific state
+
+Use the relevant market add-on and driver book. State what is not applicable.
+
+## 8. Expectations and pricing gap
+
+Separate:
+
+- economic state;
+- consensus;
+- market-implied distribution;
+- positioning;
+- surprise;
+- expected policy reaction;
+- asset payoff.
+
+## 9. Causal driver tree and rival models
+
+For each driver label it direct, conditional, transmission, confirmation, flow, misleading correlation or rival explanation.
+
+## 10. Cross-asset transmission map
+
+State the expected sequence, leader, first confirmation, second confirmation, divergence warning and falsification response.
+
+## 11. Positioning, volatility, liquidity and flow ecology
+
+Distinguish observed facts from estimates. Include options, systematic and balance-sheet channels only when supported.
+
+## 12. Catalyst map
+
+Include scheduled events and non-event flows with date, time, timezone, expected information content and vulnerable assumption.
+
+## 13. Scenario distribution
+
+| Scenario | Probability range | Trigger | Causal path | Leader/confirmations | Horizon/half-life | Invalidation | Best expression | Main risk |
+|---|---|---|---|---|---|---|---|---|
+
+At least Base, Bullish, Bearish and Tail are required.
+
+## 14. Permission and risk controls
+
+Allowed values:
+
+- `LONG_ONLY`
+- `SHORT_ONLY`
+- `TWO_WAY_REDUCED`
+- `NO_TRADE`
+
+Include confidence, size ceiling, mandatory confirmations, vetoes, invalidation, expiry, next catalyst, gap risk and portfolio concentration.
+
+## 15. Technical handoff
+
+State:
+
+- permitted direction;
+- prohibited direction;
+- required technical condition;
+- stand-down condition;
+- stop sovereignty;
+- no averaging into loss;
+- time stop and thesis expiry.
+
+## 16. Claim-evidence ledger
+
+| ID | Label | Claim | Source | Timestamp/vintage | Supports/contradicts | Confidence |
+|---|---|---|---|---|---|---|
+
+Material claims must be traceable. Source lists without claim mapping are insufficient.
+
+## 17. Unknowns and required data
+
+State what cannot be known, why, and how it changes the conclusion.
+
+## 18. Machine-readable context object
+
+```yaml
+research_object:
+mode:
+as_of:
+timezone:
+market_identity:
+trade_vehicle:
+vault_notes_used: []
+data_quality:
+  grade:
+  missing_material_evidence: []
+horizons:
+  structural: {}
+  secular: {}
+  cyclical: {}
+  tactical: {}
+  swing: {}
+  daily: {}
+  event: {}
+  microstructure: {}
+priced_baseline:
+vulnerable_assumption:
+dominant_driver:
+rival_models: []
+causal_leader:
+confirmations: []
+divergence_warnings: []
+positioning_liquidity_flow: {}
+scenarios:
+  base: {}
+  bullish: {}
+  bearish: {}
+  tail: {}
+permission:
+confidence_range:
+size_ceiling:
+vetoes: []
+fundamental_invalidation: []
+time_expiry:
+next_catalyst:
+preferred_expression:
+rejected_expressions: []
+technical_handoff: {}
+unknowns: []
+```
+
+## 19. Final quality-gate checklist
+
+The model must visibly confirm:
+
+- Vault opened and used;
+- exact market/time resolved;
+- current facts verified or historical cutoff preserved;
+- claims cited and evidence labels used;
+- pricing separated from state;
+- rival model considered;
+- horizon conflicts resolved;
+- scenario probabilities coherent;
+- permission, invalidation and expiry consistent;
+- unknowns visible;
+- YAML consistent with prose.
+
+## Hard rejection conditions
+
+Reject the result and redo the analysis if:
+
+- the Vault was not used;
+- the answer is generic or event-headline-only;
+- historical lookahead is detected;
+- a current claim lacks verification;
+- the main priced assumption is absent;
+- probabilities have no evidence basis;
+- a material contradiction is ignored;
+- directional permission lacks invalidation or expiry;
+- technical risk control is subordinated to narrative conviction.

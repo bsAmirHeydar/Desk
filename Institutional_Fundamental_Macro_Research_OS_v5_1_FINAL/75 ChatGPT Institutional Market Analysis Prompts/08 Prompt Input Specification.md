@@ -1,69 +1,93 @@
 ---
 title: "Prompt Input Specification"
-type: standard
+type: specification
 status: evergreen
-version: 5.1.0
+version: 5.2.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
 tags:
   - prompts
   - input-contract
-  - analysis
+  - specification
 ---
 # Prompt Input Specification
 
-Use the following fields. Only `MARKET` and `MODE` are strictly required; the model must infer reasonable defaults for omitted fields and disclose them instead of delaying the analysis.
+## Required fields
 
-```yaml
-MARKET: "Instrument, symbol, asset, spread, curve, sector, country or theme"
-MODE: "CURRENT | HISTORICAL"
-AS_OF: "NOW or YYYY-MM-DD HH:MM timezone"
-TRADE_VEHICLE: "Optional cash, futures, CFD, ETF, option, spread or pair"
-PRIMARY_HORIZON: "ALL | INTRADAY | 2-10D | WEEKS | MONTHS"
-SESSION: "Optional Asia | London | New York | full global day"
-ANALYSIS_DEPTH: "FULL | STANDARD | EXECUTIVE"
-OUTPUT_LANGUAGE: "Persian by default"
-TECHNICAL_CONTEXT: "Optional trend, levels, setup or chart observation"
-PORTFOLIO_CONTEXT: "Optional existing exposures and risk constraints"
-SPECIAL_QUESTION: "Optional decision question"
-EX_POST_AUDIT: "Historical mode only: NO by default | YES"
+| Field | Requirement | Meaning |
+|---|---|---|
+| `MARKET` | required | The economic exposure, symbol, instrument, spread, curve, company, country, sector or portfolio to analyze. |
+| `MODE` | universal prompt only | `CURRENT` or `HISTORICAL`. |
+| `AS_OF` | required | `NOW` for live analysis or an exact timestamp plus timezone for historical work. |
+| `OUTPUT_LANGUAGE` | recommended | Language of the final report; prompt instructions remain English. |
+
+## Instrument fields
+
+| Field | Default | Notes |
+|---|---|---|
+| `TRADE_VEHICLE` | infer conservatively | Cash, futures, CFD, ETF, option, swap, spread or other expression. Exact contract month matters for futures. |
+| `SESSION` | infer from market | Asia, London, New York or Global. |
+| `PRIMARY_HORIZON` | `ALL` | `INTRADAY`, `2-10D`, `WEEKS`, `MONTHS`, `STRUCTURAL`, or `ALL`. |
+| `HOLDING_HORIZON` | prompt-specific | Actual intended holding window. |
+
+## Context fields
+
+| Field | Use |
+|---|---|
+| `TECHNICAL_CONTEXT` | User-supplied chart state, trigger, stop or market structure. The model must not invent missing technical data. |
+| `PORTFOLIO_CONTEXT` | Existing positions, weights, risk limits, hedges, funding or correlation constraints. |
+| `SPECIAL_QUESTION` | The exact ambiguity to resolve: driver, regime, event, expression or risk. |
+| `DECISION_QUESTION` | Historical decision to reconstruct. |
+| `EX_POST_AUDIT` | `NO` by default. `YES` permits a separate hindsight-labeled audit after the blind reconstruction is locked. |
+
+## Historical timestamp standard
+
+Preferred form:
+
+```text
+YYYY-MM-DD HH:MM:SS IANA_TIMEZONE
 ```
 
-## Mode definitions
+Examples:
 
-### CURRENT
+```text
+2024-04-10 08:29:00 America/New_York
+2022-09-22 16:00:00 Asia/Tokyo
+2020-04-20 13:30:00 UTC
+```
 
-`AS_OF` means the exact present moment. The analysis must establish the current timestamp and market-session status, use the latest available evidence, and distinguish data/reference time from publication time.
+A date without time is insufficient for intraday or event reconstruction. If the user supplies only a date, the model may use the relevant official close only after clearly stating the assumption.
 
-### HISTORICAL
+## Market identity examples
 
-`AS_OF` is the **information cutoff**. The model must reason as an informed analyst standing at that exact date and time. Later revisions, later releases, later policy decisions and later price outcomes are prohibited from the reconstructed decision state.
+```yaml
+MARKET: NQ / Nasdaq-100 futures
+TRADE_VEHICLE: CME E-mini Nasdaq-100 front contract
+```
 
-If `EX_POST_AUDIT=YES`, subsequent outcomes may appear only in a clearly separated section after the point-in-time analysis is locked.
+```yaml
+MARKET: XAUUSD / Gold
+TRADE_VEHICLE: spot proxy, with COMEX futures used for positioning and curve evidence
+```
 
-## Recommended market identifiers
+```yaml
+MARKET: US 2s10s curve
+TRADE_VEHICLE: DV01-neutral Treasury futures spread
+```
 
-- Equity index: `NQ`, `Nasdaq 100`, `ES`, `S&P 500`, `DAX`, `Nikkei 225`
-- Rates: `US 2Y`, `US 10Y`, `2s10s`, `SOFR strip`, `Bund`, `JGB`
-- FX: `EURUSD`, `USDJPY`, `DXY`, `USDCAD`, `EURGBP`
-- Commodities: `Gold`, `XAUUSD`, `WTI`, `Brent`, `Copper`, `Natural Gas`
-- Credit: `CDX IG`, `CDX HY`, `HY spreads`, `bank CDS`
-- Crypto: `BTC`, `ETH`, `BTC/Nasdaq relative value`
-- Equity/security: ticker plus exchange, for example `NVDA / Nasdaq`
-- Relative value: define both legs and ratio/spread convention.
+```yaml
+MARKET: NVDA common equity
+TRADE_VEHICLE: common shares versus defined-risk options comparison
+```
 
-## Default horizon ladder
+## Missing inputs
 
-Unless the user overrides it, the full analysis uses:
+The model should make a conservative explicit assumption for minor omissions and continue. It should ask a clarifying question only when:
 
-| Layer | Default horizon |
-|---|---|
-| Structural | 3–10+ years |
-| Secular/strategic | 1–5 years |
-| Cyclical | 3–24 months |
-| Tactical | 2–12 weeks |
-| Swing | 2–10 trading days |
-| Daily/session | current trading day |
-| Event | minutes to several sessions |
-| Microstructure | seconds to hours |
+- the symbol maps to materially different markets;
+- the historical cutoff cannot be resolved;
+- the requested decision depends on a missing trade vehicle with materially different payoff;
+- the portfolio cannot be audited because positions or direction are absent.
+
+Missing proprietary data must become `UNKNOWN`, not a user question unless it prevents any meaningful result.

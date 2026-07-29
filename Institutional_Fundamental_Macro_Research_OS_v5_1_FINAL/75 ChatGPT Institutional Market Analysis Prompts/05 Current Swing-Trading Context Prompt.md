@@ -2,54 +2,85 @@
 title: "Current Swing-Trading Context Prompt"
 type: prompt
 status: evergreen
-version: 5.1.0
+version: 5.2.0
 created: 2026-07-29
 updated: 2026-07-29
-language: fa
+language: en
 tags:
   - prompt
   - current
-  - swing-trading
+  - swing
+  - two-to-ten-day
 ---
 # Current Swing-Trading Context Prompt
 
 ## Copy-ready prompt
 
 ~~~text
-ZIP کامل Institutional Fundamental Macro Research OS را باز کن و برای بازار زیر یک CURRENT institutional swing campaign analysis با افق دو تا ده روز معاملاتی بساز:
+Act as an institutional two-to-ten-day fundamental swing-research desk. The complete Institutional Fundamental Macro Research OS Vault ZIP is uploaded. Open it, identify the Vault root, read the governing standards, and use the relevant macro, market, country, asset, event, positioning, portfolio and execution notes. A generic web summary is invalid.
 
-MARKET: [MARKET]
-TRADE_VEHICLE: [اختیاری]
-HOLDING_WINDOW: [2-10D یا مقدار دیگر]
-TECHNICAL_CONTEXT: [اختیاری]
-PORTFOLIO_CONTEXT: [اختیاری]
-OUTPUT_LANGUAGE: Persian
+INPUT
+MARKET: [market/symbol]
+TRADE_VEHICLE: [optional]
+AS_OF: NOW
+HOLDING_HORIZON: [2-10 trading days unless changed]
+OUTPUT_LANGUAGE: [English/Persian]
+TECHNICAL_CONTEXT: [optional]
+PORTFOLIO_CONTEXT: [optional]
+SPECIAL_QUESTION: [optional]
 
-حتماً وضعیت جاری را از وب و منابع معتبر به‌روز کن. تحلیل فقط رویدادمحور نباشد؛ continuation of repricing، earnings revisions، Treasury/funding calendar، physical balances، index/option expiry، positioning unwind، systematic flow، carry، seasonality و non-event information decay را هم بررسی کن.
+Use current web research and available data tools. Cite current facts and state exact retrieval time. Verify the current catalyst calendar, policy path, contract/roll, earnings dates, auction/refunding dates, inventory schedule and event risks that fall inside the holding window.
 
-از Vault برای تفکیک Structural، Cyclical، Tactical، Swing و Daily استفاده کن. تعیین کن کدام لایه برای افق 2–10D غالب است و کدام لایه فقط prior یا veto می‌سازد.
+MANDATORY VAULT ROUTE
+Read and list the relevant notes from core standards, multihorizon timeframes, swing workflows, asset driver books, macro engines, country books, pricing/positioning, portfolio risk, historical analogues and operational templates.
 
-خروجی:
-1. Exact as-of and evidence cutoff
-2. Swing executive thesis
-3. Multihorizon inheritance/conflict table
-4. State versus priced expectations
-5. Main repricing gap
-6. Driver tree and causal transmission
-7. Cross-asset confirmation and best expression comparison
-8. Positioning/crowding/carry/roll/financing
-9. Catalyst path for every day in holding window
-10. Base/Bull/Bear/Tail scenarios with probability ranges
-11. Expected thesis half-life and decay curve
-12. Overnight/weekend/gap risks
-13. Fundamental permission and size ceiling
-14. Entry compatibility conditions, without overriding technical execution
-15. Add/hold/reduce/exit conditions
-16. Fundamental, market-implied and time invalidation
-17. Conditions that convert the setup into no-trade
-18. Alternative relative-value or hedged expression
-19. Claim-evidence ledger
-20. YAML swing context object
+SWING OBJECTIVE
+Determine whether the current fundamental impulse has a defensible two-to-ten-day half-life, whether the move is already priced, what catalyst path can extend or terminate it, and which expression has the cleanest payoff after carry, roll, basis, liquidity and event risk.
 
-بین «جهت درست» و «trade expression درست» فرق بگذار. هزینه، carry، volatility، liquidity، convexity و hidden factor concentration را وارد تصمیم کن.
+REQUIRED ANALYSIS
+- Structural and cyclical priors that matter to the holding period.
+- Tactical regime and current rate of change.
+- Current swing impulse and estimated half-life.
+- Latest data/news shock decomposed into headline, composition, revisions and policy implications.
+- Market-implied baseline and vulnerable assumption.
+- Cross-asset leader and confirmation chain.
+- Positioning, crowding, options, systematic-flow and liquidity asymmetry.
+- Full catalyst path for every day in the holding window.
+- Carry, roll, financing, borrow, dividend, decay and basis effects by vehicle.
+- Overnight, weekend, gap, headline and policy risk.
+- Conditions for continuation, consolidation, reversal and thesis expiration.
+- Alternative expressions and hidden factor concentration in the portfolio.
+
+SCENARIOS
+Build Base, Bullish, Bearish and Tail scenarios. For each provide probability range, path over the holding window, trigger, leader, confirmations, expected half-life, invalidation, best expression, carry/roll, gap risk and exit catalyst.
+
+PERMISSION
+Issue one swing permission:
+- LONG_ONLY
+- SHORT_ONLY
+- TWO_WAY_REDUCED
+- NO_TRADE
+
+State confidence, maximum risk ceiling, scaling rule, required confirmation, vetoes, fundamental invalidation, time expiry, next catalyst, overnight/weekend rule and preferred/rejected expression.
+
+TECHNICAL HANDOFF
+Fundamentals may define direction, size ceiling, patience and thesis expiry. Technical structure must define entry, stop and trade management. No fundamental argument may widen a technical stop or justify averaging into loss.
+
+OUTPUT
+1. Swing executive verdict
+2. Exact timestamp and instrument identity
+3. Vault research route
+4. Structural/cyclical/tactical prior
+5. Current swing impulse and half-life
+6. Priced baseline and vulnerable assumption
+7. Cross-asset/positioning/liquidity state
+8. Day-by-day catalyst path
+9. Scenario table
+10. Permission, risk ceiling, invalidation and expiry
+11. Expression comparison including carry, roll and basis
+12. Technical handoff
+13. Claim-evidence ledger and unknowns
+14. YAML swing campaign object
+
+Perform the full analysis now.
 ~~~

@@ -1,4 +1,4 @@
-# Institutional Fundamental Macro Research OS v5.1
+# Institutional Fundamental Macro Research OS v5.2 Prompt Patch
 
 This package is an **Obsidian-only Vault**. Open the extracted root folder as a Vault and begin with `00 HOME.md`.
 
@@ -35,15 +35,20 @@ Do not read linearly from start to finish. Use the Home MOCs and build a role-sp
 No historical result is admissible unless the information set, vintages, instrument conventions, transaction costs and decision timestamps can be reconstructed.
 
 
-## ChatGPT market-analysis prompt suite
+## ChatGPT institutional market-analysis prompt suite
 
-Open [[75 ChatGPT Institutional Market Analysis Prompts/00 ChatGPT Institutional Market Analysis Prompts MOC]] after uploading the Vault ZIP to ChatGPT. The suite provides:
+Open [[75 ChatGPT Institutional Market Analysis Prompts/00 ChatGPT Institutional Market Analysis Prompts MOC]] after uploading the complete Vault ZIP to ChatGPT. Version 5.2 replaces the prior mixed-language prompts with production-grade English instructions and requires the model to open, search and use the Vault before analysis.
 
-- a universal CURRENT/HISTORICAL master prompt;
-- strict current-now and historical point-in-time prompts;
-- day-trading and two-to-ten-day swing prompts;
-- historical replay/counterfactual analysis;
-- minimal launcher messages;
-- evidence, output and no-lookahead quality gates.
+The suite provides:
+
+- a universal dual-mode CURRENT/HISTORICAL master prompt;
+- deep live/current full-spectrum market-state analysis;
+- strict historical point-in-time reconstruction with anti-lookahead controls;
+- current intraday and two-to-ten-day swing prompts;
+- historical decision replay, counterfactual and attribution;
+- event/catalyst analysis;
+- cross-market relative-value analysis;
+- portfolio hidden-beta and catalyst-concentration audit;
+- English fast launchers, input contracts, market add-ons, output schemas and quality gates.
 
 The shortest workflow is to upload the ZIP and paste one message from [[75 ChatGPT Institutional Market Analysis Prompts/07 Fast Launcher Messages]].

@@ -2,60 +2,97 @@
 title: "Historical Replay Counterfactual and Attribution Prompt"
 type: prompt
 status: evergreen
-version: 5.1.0
+version: 5.2.0
 created: 2026-07-29
 updated: 2026-07-29
-language: fa
+language: en
 tags:
   - prompt
   - historical
   - replay
   - counterfactual
+  - attribution
 ---
 # Historical Replay, Counterfactual and Attribution Prompt
 
 ## Copy-ready prompt
 
 ~~~text
-ZIP کامل Institutional Fundamental Macro Research OS را بخوان و این معامله/روز تاریخی را با پروتکل strict point-in-time بازسازی و سپس ممیزی کن:
+Act as a blind institutional decision-replay and causal-attribution engine. The complete Institutional Fundamental Macro Research OS Vault ZIP is uploaded. Open and use it, especially the point-in-time, historical reconstruction, event-study, rejected-trade counterfactual, permission-proof, transaction-cost and attribution notes.
 
-MARKET: [MARKET]
-DECISION_CUTOFF: [YYYY-MM-DD HH:MM TIMEZONE]
-TRADE_OR_DECISION: [شرح ورود، عدم ورود، جهت، زمان، یا تصمیم مورد بررسی]
-TECHNICAL_INFORMATION_AVAILABLE_THEN: [اختیاری]
-HOLDING_HORIZON: [intraday / 2-10D / other]
-OUTPUT_LANGUAGE: Persian
+INPUT
+MARKET: [market/symbol]
+DECISION_CUTOFF: [YYYY-MM-DD HH:MM:SS TIMEZONE]
+TRADE_OR_DECISION: [describe the proposed or actual decision]
+TRADE_VEHICLE: [optional]
+HOLDING_HORIZON: [intraday/2-10D/weeks]
+TECHNICAL_INFORMATION_AVAILABLE_AT_CUTOFF: [optional]
+PORTFOLIO_INFORMATION_AVAILABLE_AT_CUTOFF: [optional]
+OUTCOME_WINDOW_END: [optional]
+OUTPUT_LANGUAGE: [English/Persian]
 
-مرحله ۱ — BLIND RECONSTRUCTION:
-فقط اطلاعات موجود تا cutoff را بازیابی کن و بدون نگاه به نتیجه، state، pricing، scenarios، permission، confidence، invalidation و بهترین تصمیم قابل دفاع را بساز. later revisions و outcome ممنوع‌اند.
+PHASE A — BLIND RECONSTRUCTION
+- Freeze all information at DECISION_CUTOFF.
+- Open the Vault, build a research route and reconstruct only contemporaneous evidence, first-release vintages, expectations, market pricing, contract state, catalyst map and cross-asset conditions.
+- Build multihorizon states, causal/rival models and scenario probabilities without seeing or using the result.
+- Issue and lock a permission and decision-quality assessment.
+- Assign a locked decision ID.
 
-مرحله ۲ — LOCKED DECISION:
-قبل از دیدن نتیجه، تصمیم پیشنهادی، rejected alternatives، size ceiling، veto و expiry را به‌طور شفاف قفل کن.
+PHASE B — OUTCOME RECOVERY
+Only after Phase A is locked:
+- Recover the subsequent price path, realized catalysts and relevant revisions through OUTCOME_WINDOW_END.
+- Label all later information EX-POST.
+- Do not edit Phase A.
 
-مرحله ۳ — EX-POST AUDIT:
-فقط بعد از قفل مرحله ۲، داده‌ها و مسیر بعدی قیمت را بررسی کن. decision quality را از outcome quality جدا کن.
+PHASE C — CAUSAL ATTRIBUTION
+Separate:
+- thesis correctness;
+- causal-mechanism correctness;
+- timing;
+- expression/basis;
+- execution;
+- sizing and risk control;
+- transaction cost and liquidity;
+- luck, path dependency and exogenous shocks.
 
-مرحله ۴ — ATTRIBUTION:
-حرکت را به economic news، policy repricing، term premium، earnings/cash-flow، risk premium، credit، positioning، forced flow، volatility، liquidity و noise نسبت بده. سهم‌ها را range و با uncertainty بیان کن، نه دقت ساختگی.
+PHASE D — COUNTERFACTUALS
+Compare the locked decision with:
+- no trade;
+- technical-only baseline;
+- simple macro rule;
+- random permission;
+- opposite direction;
+- alternative instrument/expression;
+- delayed entry;
+- smaller size;
+- rejected opportunity.
 
-مرحله ۵ — COUNTERFACTUAL:
-بررسی کن اگر permission متفاوت، no-trade، timing متفاوت، expression جایگزین یا size کمتر استفاده می‌شد، چه چیز تغییر می‌کرد. فقط counterfactualهای قابل دفاع را نگه دار.
+Do not claim a counterfactual was executable unless the information, liquidity, instrument and timestamp made it feasible.
 
-خروجی:
-1. Point-in-time evidence ledger
-2. Blind multihorizon reconstruction
-3. Locked permission and decision
-4. Ex-post outcome path
-5. Decision quality versus luck
-6. Causal attribution
-7. Missed evidence and unavailable evidence
-8. False positives and false negatives
-9. Counterfactual alternatives
-10. Lesson that can be encoded without overfitting
-11. Proposed update to rule/model/template
-12. Whether the case should change confidence, remain anecdotal, or enter a validation sample
-13. Claim-evidence ledger and sources
-14. Historical decision-record YAML
+PHASE E — LEARNING WITHOUT HINDSIGHT
+Record:
+- what could have been known;
+- what could not have been known;
+- which process rule was followed or violated;
+- whether the fundamental permission added incremental value;
+- whether a new rule is justified by enough repeated evidence rather than one outcome;
+- model, data or workflow changes to test in shadow mode.
 
-از hindsight narrative، cherry-picking و outcome-based condemnation جلوگیری کن.
+OUTPUT
+1. Decision and cutoff identity
+2. Vault research route
+3. Point-in-time source/vintage audit
+4. Blind multihorizon reconstruction
+5. Blind scenario distribution
+6. LOCKED decision and permission
+7. EX-POST outcome path
+8. Causal attribution
+9. Counterfactual comparison table
+10. Avoided losses, rejected winners and opportunity cost
+11. Transaction cost, capacity and execution audit
+12. Process lessons and proposed tests
+13. YAML replay record
+14. Anti-hindsight checklist
+
+Perform all phases in order and visibly preserve the separation.
 ~~~

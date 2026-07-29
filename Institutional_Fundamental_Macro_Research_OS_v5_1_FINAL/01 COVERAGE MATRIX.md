@@ -73,6 +73,9 @@ tags:
 | Current day trading | [[75 ChatGPT Institutional Market Analysis Prompts/04 Current Day-Trading Context Prompt]] | produce session permission, causal leaders, confirmations, vetoes and expiry |
 | Current swing trading | [[75 ChatGPT Institutional Market Analysis Prompts/05 Current Swing-Trading Context Prompt]] | build a two-to-ten-day campaign with carry, catalysts, path and invalidation |
 | Historical replay | [[75 ChatGPT Institutional Market Analysis Prompts/06 Historical Replay Counterfactual and Attribution Prompt]] | separate blind reconstruction, locked decision, outcome and counterfactual audit |
+| Current event/catalyst | [[75 ChatGPT Institutional Market Analysis Prompts/13 Current Event and Catalyst Analysis Prompt]] | decompose priced baseline, surprise vector, reaction sequence and persistence |
+| Cross-market relative value | [[75 ChatGPT Institutional Market Analysis Prompts/14 Cross-Market Relative-Value Analysis Prompt]] | compare legs, normalize risk and isolate the residual convergence mechanism |
+| Portfolio hidden-beta audit | [[75 ChatGPT Institutional Market Analysis Prompts/15 Portfolio Fundamental Exposure and Hidden-Beta Audit Prompt]] | detect duplicated drivers, false diversification and catalyst concentration |
 
 The prompt suite is governed by [[75 ChatGPT Institutional Market Analysis Prompts/09 Output Contract and Quality Gates]] and [[75 ChatGPT Institutional Market Analysis Prompts/10 Vault Reading and Evidence Protocol]].
 
