@@ -20,7 +20,7 @@ tags:
 
 Growth analysis decomposes real final demand, inventories, trade, government, income, production, and sector breadth across release vintages. Crypto fundamentals combine network security and usage, monetary supply, stablecoin and ETF flows, collateral leverage, venue fragmentation, and global liquidity.
 
-For **39 Ethereum Network Activity and Crypto Beta Driver Book**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, technical handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
+For **39 Ethereum Network Activity and Crypto Beta Driver Book**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, implementation handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
 
 ## Research questions
 
@@ -97,7 +97,7 @@ Validate the **39 Ethereum Network Activity and Crypto Beta Driver Book** stack 
 | Structural/Cyclical | In the **39 Ethereum Network Activity and Crypto Beta Driver Book** research object, higher-horizon states create priors but do not time entries. |
 | Tactical/Swing | In the **39 Ethereum Network Activity and Crypto Beta Driver Book** research object, repricing path, catalysts, and half-life determine campaign permission. |
 | Daily | In the **39 Ethereum Network Activity and Crypto Beta Driver Book** research object, overnight change and current pricing produce one of four permission states. |
-| Event/Intraday | In the **39 Ethereum Network Activity and Crypto Beta Driver Book** research object, leader, confirmation, liquidity, and technical structure govern execution. |
+| Event/Intraday | In the **39 Ethereum Network Activity and Crypto Beta Driver Book** research object, leader, confirmation, liquidity, and observable market-state confirmation govern execution. |
 
 Conflicts involving **39 Ethereum Network Activity and Crypto Beta Driver Book** must retain separate state objects and be resolved through [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]], never by an undocumented average score.
 
@@ -106,30 +106,17 @@ Conflicts involving **39 Ethereum Network Activity and Crypto Beta Driver Book**
 1. **39 Ethereum Network Activity and Crypto Beta Driver Book channel 1:** test `information gap → leader repricing`.
 2. **39 Ethereum Network Activity and Crypto Beta Driver Book channel 2:** test `leader → target asset`.
 3. **39 Ethereum Network Activity and Crypto Beta Driver Book channel 3:** test `positioning/liquidity → path shape`.
-4. **39 Ethereum Network Activity and Crypto Beta Driver Book channel 4:** test `technical structure → executable risk definition`.
+4. **39 Ethereum Network Activity and Crypto Beta Driver Book channel 4:** test `observable market-state confirmation → executable risk definition`.
 
-**39 Ethereum Network Activity and Crypto Beta Driver Book asset translation:** Trading: fundamentals grant permission; the technical structure controls entry, stop, and target. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **39 Ethereum Network Activity and Crypto Beta Driver Book** posterior or activate a rival explanation.
+**39 Ethereum Network Activity and Crypto Beta Driver Book asset translation:** Trading: fundamentals grant permission; the observable market-state confirmation controls instrument selection, risk budget, and exit conditions. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **39 Ethereum Network Activity and Crypto Beta Driver Book** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **39 Ethereum Network Activity and Crypto Beta Driver Book** information since the prior close and its source timestamp.
-- Reconstruct the priced **39 Ethereum Network Activity and Crypto Beta Driver Book** baseline before reading the target move.
-- Name the liquid leader closest to the **39 Ethereum Network Activity and Crypto Beta Driver Book** mechanism and one independent confirmation.
-- Compare observed transmission with the **39 Ethereum Network Activity and Crypto Beta Driver Book** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **39 Ethereum Network Activity and Crypto Beta Driver Book** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **39 Ethereum Network Activity and Crypto Beta Driver Book**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **39 Ethereum Network Activity and Crypto Beta Driver Book** pricing gap rather than the general narrative.
-- Estimate the **39 Ethereum Network Activity and Crypto Beta Driver Book** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **39 Ethereum Network Activity and Crypto Beta Driver Book** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **39 Ethereum Network Activity and Crypto Beta Driver Book**.
-
-A valid **39 Ethereum Network Activity and Crypto Beta Driver Book** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -146,9 +133,9 @@ A valid **39 Ethereum Network Activity and Crypto Beta Driver Book** thesis with
 
 Score **39 Ethereum Network Activity and Crypto Beta Driver Book** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **39 Ethereum Network Activity and Crypto Beta Driver Book** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 39 Ethereum Network Activity and Crypto Beta Driver Book
 
@@ -168,4 +155,4 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

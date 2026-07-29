@@ -88,26 +88,13 @@ Conflicts involving **Avoiding Lookahead and Revision Bias** must retain separat
 
 **Avoiding Lookahead and Revision Bias asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Avoiding Lookahead and Revision Bias** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Avoiding Lookahead and Revision Bias** information since the prior close and its source timestamp.
-- Reconstruct the priced **Avoiding Lookahead and Revision Bias** baseline before reading the target move.
-- Name the liquid leader closest to the **Avoiding Lookahead and Revision Bias** mechanism and one independent confirmation.
-- Compare observed transmission with the **Avoiding Lookahead and Revision Bias** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Avoiding Lookahead and Revision Bias** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Avoiding Lookahead and Revision Bias**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Avoiding Lookahead and Revision Bias** pricing gap rather than the general narrative.
-- Estimate the **Avoiding Lookahead and Revision Bias** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Avoiding Lookahead and Revision Bias** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Avoiding Lookahead and Revision Bias**.
-
-A valid **Avoiding Lookahead and Revision Bias** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **Avoiding Lookahead and Revision Bias** thesis with no residual pricing
 
 Score **Avoiding Lookahead and Revision Bias** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Avoiding Lookahead and Revision Bias** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -211,4 +198,4 @@ Any result without a timestamp/vintage audit is exploratory only and cannot auth
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

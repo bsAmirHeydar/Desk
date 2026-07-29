@@ -1,54 +1,30 @@
-# Institutional Fundamental Macro Research OS v5.2 Prompt Patch
+# Institutional Fundamental Macro Research OS v6.0
 
-This package is an **Obsidian-only Vault**. Open the extracted root folder as a Vault and begin with `00 HOME.md`.
+This repository is an English-language, fundamental-only Obsidian knowledge and transformation system.
 
-## What changed from the prior Vault
+## What changed in v6.0
 
-- repeated institutional wrappers were removed from hundreds of notes;
-- shared controls were consolidated into 18 canonical standards;
-- each field guide now contains topic-specific equations, measurements, models, horizons, transmission, failures and sources;
-- advanced econometrics and market models became dedicated monographs;
-- official sources received individual lineage contracts;
-- company financial statements and valuation were added;
-- historical cases were converted into point-in-time reconstruction packets;
-- non-event and flow-led trading sessions received dedicated playbooks;
-- economic schools and competing models were added for adversarial synthesis;
-- machine-readable schemas, operational templates, country books and asset driver books were expanded;
-- the permission system is required to prove incremental value versus a technical baseline.
+- removed price-pattern and chart-trigger analysis from the architecture;
+- renamed operational modules around fundamental intelligence and decision governance;
+- centralized repeated doctrine and added an explicit anti-boilerplate standard;
+- strengthened evidence, point-in-time, causal, model, data and portfolio standards;
+- added a forty-phase institutional transformation program;
+- added production data-platform blueprints;
+- added asset-engine production specifications;
+- added governance, accreditation and external-validation standards;
+- updated prompts to use fundamental-only inputs and outputs.
 
-## Recommended use
+## What the Vault is
 
-Do not read linearly from start to finish. Use the Home MOCs and build a role-specific path:
+A research reference, operating architecture, implementation plan, source registry, schema library, model curriculum, historical-research framework and governance system.
 
-- macro economist: modules 14–17, 26–37, 53 and 68;
-- rates strategist: modules 16, 28–30, 52 and 68;
-- FX strategist: modules 17, 34–35 and country books;
-- equity/corporate analyst: modules 18, 38, 59, 66 and 70;
-- commodity analyst: modules 20, 40–41 and 70;
-- day/swing trader: modules 23, 57–59, 67, 70, 72 and 74;
-- research engineer: modules 24, 53–55, 63, 65, 68 and 72;
-- CIO/risk: modules 13, 22, 49–52 and 56.
-- ChatGPT prompt operator: module 75, then the market-specific modules selected by the prompt.
+## What the Vault is not yet
 
-## Research rule
+It is not by itself a licensed live-data platform, a code repository, a deployed model stack, a broker or execution system, a proven portfolio, or evidence of institutional alpha. Those capabilities are represented as explicit phases and acceptance gates in Module 76.
 
-No historical result is admissible unless the information set, vintages, instrument conventions, transaction costs and decision timestamps can be reconstructed.
+## Entry points
 
-
-## ChatGPT institutional market-analysis prompt suite
-
-Open [[75 ChatGPT Institutional Market Analysis Prompts/00 ChatGPT Institutional Market Analysis Prompts MOC]] after uploading the complete Vault ZIP to ChatGPT. Version 5.2 replaces the prior mixed-language prompts with production-grade English instructions and requires the model to open, search and use the Vault before analysis.
-
-The suite provides:
-
-- a universal dual-mode CURRENT/HISTORICAL master prompt;
-- deep live/current full-spectrum market-state analysis;
-- strict historical point-in-time reconstruction with anti-lookahead controls;
-- current intraday and two-to-ten-day swing prompts;
-- historical decision replay, counterfactual and attribution;
-- event/catalyst analysis;
-- cross-market relative-value analysis;
-- portfolio hidden-beta and catalyst-concentration audit;
-- English fast launchers, input contracts, market add-ons, output schemas and quality gates.
-
-The shortest workflow is to upload the ZIP and paste one message from [[75 ChatGPT Institutional Market Analysis Prompts/07 Fast Launcher Messages]].
+- `00 HOME.md`
+- `01 COVERAGE MATRIX.md`
+- `00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard.md`
+- `76 Sovereign Institutional Fundamental Transformation Program/00 Transformation Program MOC.md`

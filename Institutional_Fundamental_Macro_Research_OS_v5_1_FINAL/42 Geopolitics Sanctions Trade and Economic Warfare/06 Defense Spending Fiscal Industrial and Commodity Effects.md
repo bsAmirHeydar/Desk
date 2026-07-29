@@ -88,26 +88,13 @@ Conflicts involving **Defense Spending Fiscal Industrial and Commodity Effects**
 
 **Defense Spending Fiscal Industrial and Commodity Effects asset translation:** Geopolitics: trade verified implementation and measurable constraints, not narrative intensity. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Defense Spending Fiscal Industrial and Commodity Effects** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Defense Spending Fiscal Industrial and Commodity Effects** information since the prior close and its source timestamp.
-- Reconstruct the priced **Defense Spending Fiscal Industrial and Commodity Effects** baseline before reading the target move.
-- Name the liquid leader closest to the **Defense Spending Fiscal Industrial and Commodity Effects** mechanism and one independent confirmation.
-- Compare observed transmission with the **Defense Spending Fiscal Industrial and Commodity Effects** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Defense Spending Fiscal Industrial and Commodity Effects** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Defense Spending Fiscal Industrial and Commodity Effects**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Defense Spending Fiscal Industrial and Commodity Effects** pricing gap rather than the general narrative.
-- Estimate the **Defense Spending Fiscal Industrial and Commodity Effects** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Defense Spending Fiscal Industrial and Commodity Effects** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Defense Spending Fiscal Industrial and Commodity Effects**.
-
-A valid **Defense Spending Fiscal Industrial and Commodity Effects** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **Defense Spending Fiscal Industrial and Commodity Effects** thesis with
 
 Score **Defense Spending Fiscal Industrial and Commodity Effects** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Defense Spending Fiscal Industrial and Commodity Effects** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for Defense Spending Fiscal Industrial and Commodity Effects
 
@@ -137,4 +124,4 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

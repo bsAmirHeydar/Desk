@@ -25,7 +25,6 @@ MARKET: [market or symbol]
 TRADE_VEHICLE: [optional]
 PRIMARY_HORIZON: [ALL | INTRADAY | 2-10D | WEEKS | MONTHS]
 SESSION: [optional]
-TECHNICAL_CONTEXT: [optional]
 PORTFOLIO_CONTEXT: [optional]
 SPECIAL_QUESTION: [optional]
 OUTPUT_LANGUAGE: [Persian]
@@ -60,7 +59,6 @@ AS_OF: [NOW | YYYY-MM-DD HH:MM:SS TIMEZONE]
 TRADE_VEHICLE: [optional]
 PRIMARY_HORIZON: [ALL | INTRADAY | 2-10D | WEEKS | MONTHS]
 SESSION: [optional]
-TECHNICAL_CONTEXT: [optional]
 PORTFOLIO_CONTEXT: [optional]
 SPECIAL_QUESTION: [optional]
 EX_POST_AUDIT: [NO | YES for historical]
@@ -75,7 +73,6 @@ Open the uploaded Vault and execute `75 ChatGPT Institutional Market Analysis Pr
 MARKET: [market or symbol]
 TRADE_VEHICLE: [optional]
 SESSION: [Asia | London | New York | Global]
-TECHNICAL_CONTEXT: [optional]
 SPECIAL_QUESTION: [optional]
 OUTPUT_LANGUAGE: [Persian]
 ~~~
@@ -88,7 +85,6 @@ Open the uploaded Vault and execute `75 ChatGPT Institutional Market Analysis Pr
 MARKET: [market or symbol]
 TRADE_VEHICLE: [optional]
 HOLDING_HORIZON: [2-10 trading days]
-TECHNICAL_CONTEXT: [optional]
 PORTFOLIO_CONTEXT: [optional]
 SPECIAL_QUESTION: [optional]
 OUTPUT_LANGUAGE: [Persian]
@@ -131,3 +127,6 @@ PORTFOLIO: [positions, direction, size or weights]
 HORIZON: [INTRADAY | 2-10D | WEEKS | MONTHS]
 OUTPUT_LANGUAGE: [Persian]
 ~~~
+
+> [!important] Fundamental-only boundary
+> Price-pattern analysis, indicator rules and chart-trigger instructions are prohibited. Use the Vault's fundamental, macro, valuation, flow, liquidity, market-structure and portfolio methods.

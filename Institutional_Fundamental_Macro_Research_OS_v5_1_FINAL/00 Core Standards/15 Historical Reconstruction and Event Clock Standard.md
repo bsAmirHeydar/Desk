@@ -32,4 +32,4 @@ Store:
 
 ## Counterfactuals
 
-Compare chosen action with no trade, opposite trade, delayed trade, cleaner expression, and baseline technical strategy. Avoid judging the process only by realized outcome.
+Compare chosen action with no trade, opposite trade, delayed trade, cleaner expression, and baseline implementation strategy. Avoid judging the process only by realized outcome.

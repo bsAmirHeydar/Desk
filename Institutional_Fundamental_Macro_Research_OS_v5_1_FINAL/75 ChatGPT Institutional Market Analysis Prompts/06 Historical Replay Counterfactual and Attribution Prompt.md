@@ -26,7 +26,6 @@ DECISION_CUTOFF: [YYYY-MM-DD HH:MM:SS TIMEZONE]
 TRADE_OR_DECISION: [describe the proposed or actual decision]
 TRADE_VEHICLE: [optional]
 HOLDING_HORIZON: [intraday/2-10D/weeks]
-TECHNICAL_INFORMATION_AVAILABLE_AT_CUTOFF: [optional]
 PORTFOLIO_INFORMATION_AVAILABLE_AT_CUTOFF: [optional]
 OUTCOME_WINDOW_END: [optional]
 OUTPUT_LANGUAGE: [English/Persian]
@@ -58,7 +57,7 @@ Separate:
 PHASE D — COUNTERFACTUALS
 Compare the locked decision with:
 - no trade;
-- technical-only baseline;
+- implementation-only baseline;
 - simple macro rule;
 - random permission;
 - opposite direction;
@@ -96,3 +95,6 @@ OUTPUT
 
 Perform all phases in order and visibly preserve the separation.
 ~~~
+
+> [!important] Fundamental-only boundary
+> Price-pattern analysis, indicator rules and chart-trigger instructions are prohibited. Use the Vault's fundamental, macro, valuation, flow, liquidity, market-structure and portfolio methods.

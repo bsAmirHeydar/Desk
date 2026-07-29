@@ -26,7 +26,7 @@ tags:
 - [[72 Historical Research Permission and Alpha Validation Laboratory/07 Multi-Horizon Event Response and Half-Life Estimation]]
 - [[72 Historical Research Permission and Alpha Validation Laboratory/08 Cross-Asset Leader Confirmation and Transmission Database]]
 - [[72 Historical Research Permission and Alpha Validation Laboratory/09 Permission Label Construction without Outcome Leakage]]
-- [[72 Historical Research Permission and Alpha Validation Laboratory/10 Technical Baseline and Matched Opportunity Dataset]]
+- [[72 Historical Research Permission and Alpha Validation Laboratory/10 Implementation Baseline and Matched Opportunity Dataset]]
 - [[72 Historical Research Permission and Alpha Validation Laboratory/11 Rejected-Trade Counterfactual and No-Trade Value]]
 - [[72 Historical Research Permission and Alpha Validation Laboratory/12 Transaction Cost Slippage Financing and Borrow Model]]
 - [[72 Historical Research Permission and Alpha Validation Laboratory/13 Capacity Participation and Stressed Liquidation Model]]

@@ -25,7 +25,6 @@ tags:
 - [[07 Decision OS/06 No-Trade Conditions]]
 - [[07 Decision OS/07 Cross-Asset Bias Matrix]]
 - [[07 Decision OS/08 Worked Examples]]
-- [[07 Decision OS/09 Integration with the Trend-Pullback-CISD Strategy]]
 
 ## Review standard
 

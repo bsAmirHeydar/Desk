@@ -114,3 +114,9 @@ tags:
 ## Completion discipline
 
 Topic notes are accepted only when they specify the object, data, point-in-time treatment, models, uncertainty, horizon, market transmission, falsifiers, and official source routes. Use [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]] for review.
+
+## Governing source standard
+
+- [[77 Institutional Evidence and Monograph Production Standard/08 Source Contract Production Standard]]
+- [[77 Institutional Evidence and Monograph Production Standard/10 Citation Locator and Archival Standard]]
+- [[00 Core Standards/03 Point-in-Time and Bitemporal Data Standard]]

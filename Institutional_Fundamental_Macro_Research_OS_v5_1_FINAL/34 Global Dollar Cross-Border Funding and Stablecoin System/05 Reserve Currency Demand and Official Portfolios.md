@@ -84,26 +84,13 @@ Conflicts involving **Reserve Currency Demand and Official Portfolios** must ret
 
 **Reserve Currency Demand and Official Portfolios asset translation:** FX: use relative rather than absolute state; include hedge cost, basis, intervention, and broad-dollar context. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Reserve Currency Demand and Official Portfolios** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Reserve Currency Demand and Official Portfolios** information since the prior close and its source timestamp.
-- Reconstruct the priced **Reserve Currency Demand and Official Portfolios** baseline before reading the target move.
-- Name the liquid leader closest to the **Reserve Currency Demand and Official Portfolios** mechanism and one independent confirmation.
-- Compare observed transmission with the **Reserve Currency Demand and Official Portfolios** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Reserve Currency Demand and Official Portfolios** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Reserve Currency Demand and Official Portfolios**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Reserve Currency Demand and Official Portfolios** pricing gap rather than the general narrative.
-- Estimate the **Reserve Currency Demand and Official Portfolios** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Reserve Currency Demand and Official Portfolios** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Reserve Currency Demand and Official Portfolios**.
-
-A valid **Reserve Currency Demand and Official Portfolios** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **Reserve Currency Demand and Official Portfolios** thesis with no resid
 
 Score **Reserve Currency Demand and Official Portfolios** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Reserve Currency Demand and Official Portfolios** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for Reserve Currency Demand and Official Portfolios
 
@@ -135,4 +122,4 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

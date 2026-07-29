@@ -25,7 +25,6 @@ TRADE_VEHICLE: [futures/CFD/ETF/cash/options]
 AS_OF: NOW
 SESSION: [Asia/London/New York/Global]
 OUTPUT_LANGUAGE: [English/Persian]
-TECHNICAL_CONTEXT: [optional]
 PORTFOLIO_CONTEXT: [optional]
 SPECIAL_QUESTION: [optional]
 
@@ -34,7 +33,7 @@ Use current web research and available data tools. State the exact time, timezon
 MANDATORY VAULT ROUTE
 - Read `00 HOME.md`, `01 COVERAGE MATRIX.md`, module 75, core standards, timeframes, workflows, event playbooks, non-event playbooks, asset driver books, market microstructure, options/flows, portfolio risk and operational templates.
 - List the specific Vault notes that materially governed the analysis.
-- Preserve the Vault rule: fundamentals grant permission; technical structure controls entry, stop and exit.
+- Preserve the Vault rule: fundamentals grant permission; observable market-state confirmation controls entry, stop and exit.
 
 INTRADAY OBJECTIVE
 Determine what is driving the market now, what is already priced, which market is leading, what must confirm, how long the impulse should persist, and whether the session permits long-only, short-only, reduced two-way trading or no trade.
@@ -63,13 +62,13 @@ Issue exactly one overall session permission and, when different, one pre-event 
 
 State confidence, size ceiling, required confirmation, veto, invalidation, expiry, next catalyst and event-gap rule.
 
-TECHNICAL HANDOFF
+implementation handoff
 Translate the fundamental state into:
 - allowed direction;
 - prohibited direction;
 - condition to engage;
 - condition to stand down;
-- whether to require trend continuation, pullback and structural trigger;
+- whether to require fundamental-state persistence, temporary counter-move and structural trigger;
 - stop sovereignty and no-averaging rule;
 - time stop and catalyst expiry.
 
@@ -83,9 +82,12 @@ OUTPUT
 7. Confirmations, divergences and microstructure
 8. Session scenario table
 9. Permission, confidence, size ceiling, veto, invalidation and expiry
-10. Technical handoff
+10. implementation handoff
 11. Claim-evidence ledger and unknowns
 12. YAML intraday context object
 
 Do the complete research now. Do not provide a generic market summary.
 ~~~
+
+> [!important] Fundamental-only boundary
+> Price-pattern analysis, indicator rules and chart-trigger instructions are prohibited. Use the Vault's fundamental, macro, valuation, flow, liquidity, market-structure and portfolio methods.

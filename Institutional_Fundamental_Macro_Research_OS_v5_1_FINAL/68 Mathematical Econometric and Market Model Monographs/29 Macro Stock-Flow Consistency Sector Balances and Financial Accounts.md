@@ -88,26 +88,13 @@ Conflicts involving **29 Macro Stock-Flow Consistency Sector Balances and Financ
 
 **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** information since the prior close and its source timestamp.
-- Reconstruct the priced **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** baseline before reading the target move.
-- Name the liquid leader closest to the **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** mechanism and one independent confirmation.
-- Compare observed transmission with the **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** pricing gap rather than the general narrative.
-- Estimate the **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts**.
-
-A valid **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts
 
 Score **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts
 
@@ -138,8 +125,48 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts
 
 Provide a formal variable table, derivation or pseudocode, synthetic tests, point-in-time reconstruction, benchmarks and ablation, parameter uncertainty, regime stability, computational profile, cost/capacity translation, and a monitored model card. A second researcher must reproduce **29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts** from hash-addressed artifacts.
+
+## Production-grade expansion v6
+
+### Accounting core
+
+For an open economy:
+
+$$
+(S-I)+(T-G)=NX
+$$
+
+Equivalently, private-sector net saving plus the government balance equals the current-account balance under consistent sign conventions. The identity does not determine causality; it constrains narratives.
+
+### Institutional sectors
+
+At minimum distinguish households, nonfinancial corporations, financial corporations, general government, central bank and rest of world. For each sector, reconcile current account, capital account, financial transactions, revaluations and closing balance sheet.
+
+### Stock-flow equation
+
+$$
+Stock_t=Stock_{t-1}+Transactions_t+Valuation_t+OtherChanges_t
+$$
+
+Residuals reveal coverage differences, timing, classification or measurement error. Do not interpret transaction flows from changes in market-valued stocks without separating valuation.
+
+### Financial matrices
+
+Build who-to-whom matrices for deposits, loans, securities, equity, pensions, derivatives and external claims where data permit. Network structure helps identify funding dependence and contagion paths.
+
+### Scenario consistency
+
+A scenario for fiscal expansion must specify financing, sector income, imports, saving, interest payments, bank balance sheets and monetary response. A corporate deleveraging scenario must appear in counterpart sectors.
+
+### Cross-country comparability
+
+Map local accounts to international standards while retaining country-specific definitions and breaks. Currency conversion distinguishes transactions from exchange-rate valuation.
+
+### Decision use
+
+Sector balances are slow-moving priors and vulnerability measures. They do not provide short-horizon direction by themselves. Combine them with financing conditions, investor base, currency structure and marginal flows.

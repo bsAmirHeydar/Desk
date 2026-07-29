@@ -18,9 +18,9 @@ tags:
 
 ## Definition and economic object
 
-**Swing Context for Two-to-Ten-Day Holds** is a research object inside conversion of macro information into horizon-specific permissions, scenario paths, technical handoffs, and auditable trade management. The analyst must isolate the measurable state, the expectation already embedded in prices, the mechanism connecting them, and the horizon on which that inference can survive.
+**Swing Context for Two-to-Ten-Day Holds** is a research object inside conversion of macro information into horizon-specific permissions, scenario paths, implementation handoffs, and auditable trade management. The analyst must isolate the measurable state, the expectation already embedded in prices, the mechanism connecting them, and the horizon on which that inference can survive.
 
-For **Swing Context for Two-to-Ten-Day Holds**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, technical handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
+For **Swing Context for Two-to-Ten-Day Holds**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, implementation handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
 
 ## Research questions
 
@@ -50,7 +50,7 @@ For **Swing Context for Two-to-Ten-Day Holds**, document every variable, unit, c
 - **Measurement 2 for Swing Context for Two-to-Ten-Day Holds:** new information and priced baseline.
 - **Measurement 3 for Swing Context for Two-to-Ten-Day Holds:** causal leader and independent confirmation.
 - **Measurement 4 for Swing Context for Two-to-Ten-Day Holds:** liquidity/event clock and expected half-life.
-- **Measurement 5 for Swing Context for Two-to-Ten-Day Holds:** technical trigger, structural stop, and expiry.
+- **Measurement 5 for Swing Context for Two-to-Ten-Day Holds:** predeclared observable confirmation, predeclared risk limit, and expiry.
 
 The **Swing Context for Two-to-Ten-Day Holds** dataset must satisfy [[00 Core Standards/16 Data Dictionary and Release Calendar Standard]] and preserve first releases, revisions, and admissible timestamps under [[00 Core Standards/03 Point-in-Time and Bitemporal Data Standard]].
 
@@ -71,7 +71,7 @@ Validate the **Swing Context for Two-to-Ten-Day Holds** stack against simple poi
 | Structural/Cyclical | In the **Swing Context for Two-to-Ten-Day Holds** research object, higher-horizon states create priors but do not time entries. |
 | Tactical/Swing | In the **Swing Context for Two-to-Ten-Day Holds** research object, repricing path, catalysts, and half-life determine campaign permission. |
 | Daily | In the **Swing Context for Two-to-Ten-Day Holds** research object, overnight change and current pricing produce one of four permission states. |
-| Event/Intraday | In the **Swing Context for Two-to-Ten-Day Holds** research object, leader, confirmation, liquidity, and technical structure govern execution. |
+| Event/Intraday | In the **Swing Context for Two-to-Ten-Day Holds** research object, leader, confirmation, liquidity, and observable market-state confirmation govern execution. |
 
 Conflicts involving **Swing Context for Two-to-Ten-Day Holds** must retain separate state objects and be resolved through [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]], never by an undocumented average score.
 
@@ -80,30 +80,17 @@ Conflicts involving **Swing Context for Two-to-Ten-Day Holds** must retain separ
 1. **Swing Context for Two-to-Ten-Day Holds channel 1:** test `information gap → leader repricing`.
 2. **Swing Context for Two-to-Ten-Day Holds channel 2:** test `leader → target asset`.
 3. **Swing Context for Two-to-Ten-Day Holds channel 3:** test `positioning/liquidity → path shape`.
-4. **Swing Context for Two-to-Ten-Day Holds channel 4:** test `technical structure → executable risk definition`.
+4. **Swing Context for Two-to-Ten-Day Holds channel 4:** test `observable market-state confirmation → executable risk definition`.
 
-**Swing Context for Two-to-Ten-Day Holds asset translation:** Trading: fundamentals grant permission; the technical structure controls entry, stop, and target. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Swing Context for Two-to-Ten-Day Holds** posterior or activate a rival explanation.
+**Swing Context for Two-to-Ten-Day Holds asset translation:** Trading: fundamentals grant permission; the observable market-state confirmation controls instrument selection, risk budget, and exit conditions. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Swing Context for Two-to-Ten-Day Holds** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Swing Context for Two-to-Ten-Day Holds** information since the prior close and its source timestamp.
-- Reconstruct the priced **Swing Context for Two-to-Ten-Day Holds** baseline before reading the target move.
-- Name the liquid leader closest to the **Swing Context for Two-to-Ten-Day Holds** mechanism and one independent confirmation.
-- Compare observed transmission with the **Swing Context for Two-to-Ten-Day Holds** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Swing Context for Two-to-Ten-Day Holds** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Swing Context for Two-to-Ten-Day Holds**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Swing Context for Two-to-Ten-Day Holds** pricing gap rather than the general narrative.
-- Estimate the **Swing Context for Two-to-Ten-Day Holds** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Swing Context for Two-to-Ten-Day Holds** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Swing Context for Two-to-Ten-Day Holds**.
-
-A valid **Swing Context for Two-to-Ten-Day Holds** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -111,13 +98,13 @@ A valid **Swing Context for Two-to-Ten-Day Holds** thesis with no residual prici
 - **Failure test 2 for Swing Context for Two-to-Ten-Day Holds:** changing bias after every candle.
 - **Failure test 3 for Swing Context for Two-to-Ten-Day Holds:** confusing a correct thesis with good execution.
 - **Failure test 4 for Swing Context for Two-to-Ten-Day Holds:** holding beyond evidence half-life.
-- **Failure test 5 for Swing Context for Two-to-Ten-Day Holds:** overriding structural stops with narratives.
+- **Failure test 5 for Swing Context for Two-to-Ten-Day Holds:** overriding predeclared risk limits with narratives.
 
 Score **Swing Context for Two-to-Ten-Day Holds** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Swing Context for Two-to-Ten-Day Holds** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -145,7 +132,7 @@ Typical drivers:
 4. **Expression:** Select the asset with the cleanest transmission.
 5. **Carry/roll:** Understand the cost of holding.
 6. **Overnight risk:** Define gap tolerance.
-7. **Invalidation:** Fundamental and technical.
+7. **Invalidation:** Fundamental and implementation.
 8. **Event map:** Know all releases and earnings during the hold.
 9. **Exit logic:** Target, time stop, and thesis completion.
 
@@ -157,7 +144,7 @@ A day trade may convert only when all were defined before entry:
 - swing size was appropriate;
 - overnight stop/invalidation was known;
 - event risk was accepted;
-- technical structure supported the longer horizon.
+- observable market-state confirmation supported the longer horizon.
 
 Never convert because the day trade failed.
 
@@ -179,7 +166,7 @@ Crowding, potential squeeze, liquidation risk.
 
 Data, meetings, auctions, earnings, policy deadlines.
 
-### Technical expression
+### implementation expression
 
 Daily/4H structure and the current execution framework.
 
@@ -192,7 +179,7 @@ Daily/4H structure and the current execution framework.
 - central-bank demand supports dips.
 - upcoming data can confirm.
 - positioning is not extremely crowded.
-- invalidation: real yields and dollar reverse above defined levels plus technical structural break.
+- invalidation: real yields and dollar reverse above defined levels plus implementation structural break.
 
 ## Example: Nasdaq Short Swing
 
@@ -202,7 +189,7 @@ Daily/4H structure and the current execution framework.
 - earnings revisions flatten.
 - concentration is crowded.
 - multiple data/auction catalysts can extend repricing.
-- invalidation: policy path re-eases, real yields reverse, credit/breadth strengthen, technical structure breaks upward.
+- invalidation: policy path re-eases, real yields reverse, credit/breadth strengthen, observable market-state confirmation breaks upward.
 
 ## Time Stop
 
@@ -234,4 +221,4 @@ Geopolitics, policy announcements, earnings, and liquidity gaps can create disco
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

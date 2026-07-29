@@ -15,7 +15,7 @@ tags:
 
 > [!playbook] Non-event or flow-led session
 > **Session hypothesis:** credit spreads, bank funding, issuance, or idiosyncratic default information can lead equities and FX.  
-> The absence of a top-tier release does not imply the absence of fundamental information. **06 Credit-Led Risk Repricing Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and technical inventory.
+> The absence of a top-tier release does not imply the absence of fundamental information. **06 Credit-Led Risk Repricing Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state
 
@@ -41,7 +41,7 @@ Classify each overnight or intraday development:
 | Expectation change | Curves, consensus, valuation or options reprice | Recalculate the residual gap |
 | Institutional flow | Benchmark, hedge, issuance, expiry, margin or rebalance | Estimate path and duration; do not label macro truth |
 | Liquidity change | Spread, depth, market hours or dealer capacity changes | Adjust execution and confidence |
-| Technical inventory | Stop, short-cover, breakout or mean-reversion pressure | Technical layer only unless confirmed |
+| short-horizon flow inventory | Stop, short-cover, breakout or mean-reversion pressure | flow-and-liquidity layer only unless confirmed |
 | Unverified narrative | Headline without legal/operational evidence | Monitor; do not grant directional permission |
 
 ## 3. Causal hierarchy
@@ -54,7 +54,7 @@ Rank the evidence before the session:
 2. liquid market that prices the mechanism;
 3. independent confirmation from another balance sheet or asset;
 4. target instrument;
-5. secondary flow and technical response.
+5. secondary flow and observable market response.
 
 The target moving first can be price discovery, but it can also be idiosyncratic flow. Promote the move to a fundamental impulse only when the leader or independent evidence follows within the predeclared event/session window.
 
@@ -62,7 +62,7 @@ The target moving first can be price discovery, but it can also be idiosyncratic
 
 | Scenario | Required evidence | Expected path | Permission implication |
 |---|---|---|---|
-| Fundamental continuation | inherited leader persists; confirmation broadens; residual pricing gap remains | pullbacks are absorbed and the close retains the causal move | directional permission may remain |
+| Fundamental continuation | inherited leader persists; confirmation broadens; residual pricing gap remains | temporary counter-moves are absorbed and the close retains the causal move | directional permission may remain |
 | Flow-assisted continuation | macro state is unchanged; verified flow reinforces it | stronger but potentially time-windowed trend | directional with expiry/size cap |
 | Flow against fundamentals | target moves but leader does not confirm | squeeze, rebalance or liquidity move; reversal risk after flow window | reduced/two-way or wait |
 | Genuine reversal | leader reverses, rival mechanism gains evidence, and confirmations change | prior thesis probability falls across sessions | cancel prior permission; rebuild |
@@ -98,11 +98,11 @@ Require all of:
 - a residual expectation/pricing gap;
 - acceptable spread, depth and event gap;
 - no imminent catalyst that dominates the holding horizon;
-- a technical setup consistent with the allowed direction.
+- a qualified implementation condition consistent with the allowed direction.
 
 ### `TWO_WAY_REDUCED`
 
-Use when the state has weak directional information, flow windows are temporary, or a range is plausible. It is not permission for random entries; technical quality and reduced risk must be higher.
+Use when the state has weak directional information, flow windows are temporary, or a range is plausible. It is not permission for random entries; implementation quality and reduced risk must be higher.
 
 ### `NO_TRADE`
 
@@ -119,7 +119,7 @@ A **06 Credit-Led Risk Repricing Day** move may become a two-to-ten-day campaign
 - overnight gap, carry and financing are acceptable;
 - the expression remains factor-pure;
 - fundamental and time invalidations remain observable;
-- the technical structure supplies an independent stop.
+- the observable market-state confirmation supplies an independent stop.
 
 Closing strength alone is not sufficient.
 
@@ -136,7 +136,7 @@ Reject or cap the **06 Credit-Led Risk Repricing Day** interpretation when:
 - the session move disappears at the relevant liquid close;
 - the narrative survives every contradictory observation.
 
-## 9. Technical handoff and attribution
+## 9. implementation handoff and attribution
 
 Pass to execution only:
 
@@ -154,11 +154,11 @@ time_expiry:
 next_catalyst:
 ```
 
-Entry, structural stop, measured target and order management remain technical. After the session attribute the result to information, repricing, flow, liquidity, technical timing, cost or noise. Store rejected opportunities so the value of `NO_TRADE` can be tested.
+Entry, predeclared risk limit, scenario-defined realization target and order management remain implementation. After the session attribute the result to information, repricing, flow, liquidity, implementation timing, cost or noise. Store rejected opportunities so the value of `NO_TRADE` can be tested.
 
 ## Connected standards
 
 - [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 - [[00 Core Standards/05 Expectations Pricing and Distribution Gap]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

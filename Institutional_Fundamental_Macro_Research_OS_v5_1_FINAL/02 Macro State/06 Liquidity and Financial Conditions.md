@@ -88,26 +88,13 @@ Conflicts involving **Liquidity and Financial Conditions** must retain separate 
 
 **Liquidity and Financial Conditions asset translation:** Cross-asset: rates normally reveal policy/inflation repricing; FX, credit, equities, and commodities test transmission. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Liquidity and Financial Conditions** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Liquidity and Financial Conditions** information since the prior close and its source timestamp.
-- Reconstruct the priced **Liquidity and Financial Conditions** baseline before reading the target move.
-- Name the liquid leader closest to the **Liquidity and Financial Conditions** mechanism and one independent confirmation.
-- Compare observed transmission with the **Liquidity and Financial Conditions** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Liquidity and Financial Conditions** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Liquidity and Financial Conditions**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Liquidity and Financial Conditions** pricing gap rather than the general narrative.
-- Estimate the **Liquidity and Financial Conditions** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Liquidity and Financial Conditions** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Liquidity and Financial Conditions**.
-
-A valid **Liquidity and Financial Conditions** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **Liquidity and Financial Conditions** thesis with no residual pricing g
 
 Score **Liquidity and Financial Conditions** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Liquidity and Financial Conditions** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -202,7 +189,7 @@ For every update, separate:
 
 ## Day-Trading Translation
 
-For day trading, liquidity context determines how much trust to place in ordinary correlations. In stress, gold or Treasuries can be sold initially to raise cash; the dollar can rise broadly; spreads widen; and technical levels break with poor liquidity. Monitor credit, volatility, dollar funding proxies, rates volatility, and market depth—not central-bank balance-sheet headlines alone.
+For day trading, liquidity context determines how much trust to place in ordinary correlations. In stress, gold or Treasuries can be sold initially to raise cash; the dollar can rise broadly; spreads widen; and implementation levels break with poor liquidity. Monitor credit, volatility, dollar funding proxies, rates volatility, and market depth—not central-bank balance-sheet headlines alone.
 
 The daily objective is not to forecast the next data print from scratch. It is to know which outcome would force the largest repricing and which cross-asset market should confirm first.
 
@@ -248,4 +235,4 @@ A swing thesis should survive normal intraday noise. It needs a multi-session pr
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

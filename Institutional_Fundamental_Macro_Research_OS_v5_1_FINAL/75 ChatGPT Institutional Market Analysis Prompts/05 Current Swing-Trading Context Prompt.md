@@ -25,7 +25,6 @@ TRADE_VEHICLE: [optional]
 AS_OF: NOW
 HOLDING_HORIZON: [2-10 trading days unless changed]
 OUTPUT_LANGUAGE: [English/Persian]
-TECHNICAL_CONTEXT: [optional]
 PORTFOLIO_CONTEXT: [optional]
 SPECIAL_QUESTION: [optional]
 
@@ -63,8 +62,8 @@ Issue one swing permission:
 
 State confidence, maximum risk ceiling, scaling rule, required confirmation, vetoes, fundamental invalidation, time expiry, next catalyst, overnight/weekend rule and preferred/rejected expression.
 
-TECHNICAL HANDOFF
-Fundamentals may define direction, size ceiling, patience and thesis expiry. Technical structure must define entry, stop and trade management. No fundamental argument may widen a technical stop or justify averaging into loss.
+implementation handoff
+Fundamentals may define direction, size ceiling, patience and thesis expiry. observable market-state confirmation must define entry, stop and trade management. No fundamental argument may widen a implementation stop or justify averaging into loss.
 
 OUTPUT
 1. Swing executive verdict
@@ -78,9 +77,12 @@ OUTPUT
 9. Scenario table
 10. Permission, risk ceiling, invalidation and expiry
 11. Expression comparison including carry, roll and basis
-12. Technical handoff
+12. implementation handoff
 13. Claim-evidence ledger and unknowns
 14. YAML swing campaign object
 
 Perform the full analysis now.
 ~~~
+
+> [!important] Fundamental-only boundary
+> Price-pattern analysis, indicator rules and chart-trigger instructions are prohibited. Use the Vault's fundamental, macro, valuation, flow, liquidity, market-structure and portfolio methods.

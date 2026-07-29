@@ -92,26 +92,13 @@ Conflicts involving **01 State-Space Models Kalman Filter Smoother and EM** must
 
 **01 State-Space Models Kalman Filter Smoother and EM asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **01 State-Space Models Kalman Filter Smoother and EM** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **01 State-Space Models Kalman Filter Smoother and EM** information since the prior close and its source timestamp.
-- Reconstruct the priced **01 State-Space Models Kalman Filter Smoother and EM** baseline before reading the target move.
-- Name the liquid leader closest to the **01 State-Space Models Kalman Filter Smoother and EM** mechanism and one independent confirmation.
-- Compare observed transmission with the **01 State-Space Models Kalman Filter Smoother and EM** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **01 State-Space Models Kalman Filter Smoother and EM** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **01 State-Space Models Kalman Filter Smoother and EM**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **01 State-Space Models Kalman Filter Smoother and EM** pricing gap rather than the general narrative.
-- Estimate the **01 State-Space Models Kalman Filter Smoother and EM** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **01 State-Space Models Kalman Filter Smoother and EM** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **01 State-Space Models Kalman Filter Smoother and EM**.
-
-A valid **01 State-Space Models Kalman Filter Smoother and EM** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -123,9 +110,9 @@ A valid **01 State-Space Models Kalman Filter Smoother and EM** thesis with no r
 
 Score **01 State-Space Models Kalman Filter Smoother and EM** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **01 State-Space Models Kalman Filter Smoother and EM** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 01 State-Space Models Kalman Filter Smoother and EM
 
@@ -140,8 +127,99 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 01 State-Space Models Kalman Filter Smoother and EM
 
 Provide a formal variable table, derivation or pseudocode, synthetic tests, point-in-time reconstruction, benchmarks and ablation, parameter uncertainty, regime stability, computational profile, cost/capacity translation, and a monitored model card. A second researcher must reproduce **01 State-Space Models Kalman Filter Smoother and EM** from hash-addressed artifacts.
+
+## Production-grade expansion v6
+
+### General linear Gaussian system
+
+Let the latent state be \(\alpha_t\in\mathbb{R}^m\) and the observed vector be \(y_t\in\mathbb{R}^{n_t}\), where \(n_t\) may change because releases are asynchronous.
+
+$$
+\alpha_t = T_t\alpha_{t-1}+c_t+R_t\eta_t,\qquad \eta_t\sim N(0,Q_t)
+$$
+
+$$
+y_t = Z_t\alpha_t+d_t+\varepsilon_t,\qquad \varepsilon_t\sim N(0,H_t)
+$$
+
+The implementation must support missing rows by selecting the available elements of \(y_t\), \(Z_t\), \(d_t\) and \(H_t\) at each timestamp rather than imputing future information.
+
+### Filter recursion
+
+Prediction:
+
+$$
+a_t=T_t a_{t-1|t-1}+c_t,
+\qquad P_t=T_tP_{t-1|t-1}T_t^\top+R_tQ_tR_t^\top
+$$
+
+Innovation and covariance:
+
+$$
+v_t=y_t-Z_ta_t-d_t,
+\qquad F_t=Z_tP_tZ_t^\top+H_t
+$$
+
+Update:
+
+$$
+K_t=P_tZ_t^\top F_t^{-1},
+\quad a_{t|t}=a_t+K_tv_t,
+\quad P_{t|t}=P_t-K_tF_tK_t^\top
+$$
+
+Use square-root or UD factorizations when covariance conditioning is poor. Do not form matrix inverses directly; solve linear systems with Cholesky or QR methods.
+
+### Smoothing
+
+For a fixed-interval Rauch–Tung–Striebel smoother:
+
+$$
+J_t=P_{t|t}T_{t+1}^\top P_{t+1}^{-1}
+$$
+
+$$
+a_{t|T}=a_{t|t}+J_t(a_{t+1|T}-a_{t+1}),
+\quad P_{t|T}=P_{t|t}+J_t(P_{t+1|T}-P_{t+1})J_t^\top
+$$
+
+Filtered states are admissible for real-time decisions. Smoothed states use future observations and are permitted only for ex-post diagnosis, parameter estimation or training labels.
+
+### EM estimation
+
+The E-step runs the smoother and computes expected sufficient statistics \(E[\alpha_t]\), \(E[\alpha_t\alpha_t^\top]\) and \(E[\alpha_t\alpha_{t-1}^\top]\). The M-step updates transition, loading and covariance parameters subject to identification and economic constraints. Convergence requires monitoring the log likelihood, parameter movement and covariance eigenvalues.
+
+### Identification
+
+Latent factors are invariant to rotation and sign without restrictions. Production choices may include triangular loading restrictions, sign normalization, anchor-series loadings or economically interpretable state definitions. Identification decisions belong in the model card and may not change silently between versions.
+
+### Mixed frequency
+
+Quarterly flows must be linked to monthly or weekly states through aggregation matrices consistent with the variable's stock/flow definition. Mariano–Murasawa-style approximations are appropriate only when assumptions are documented. End-of-period stocks use selection, not summation.
+
+### Implementation package
+
+```text
+state_space/
+  schema.py
+  system_matrices.py
+  filter.py
+  smoother.py
+  em.py
+  missing_data.py
+  mixed_frequency.py
+  simulation.py
+  diagnostics.py
+  tests/
+```
+
+Tests include scalar closed-form cases, simulated-state recovery, missing-observation equivalence, positive-semidefinite covariance, filtered-versus-smoothed information boundaries, EM likelihood monotonicity and reproducibility.
+
+### Validation
+
+Compare against random walk, autoregression and simple bridge equations. Report real-time RMSE, log predictive density, interval coverage, revision sensitivity, state stability, news decomposition and computational latency. A factor that predicts well but changes meaning across vintages is not a stable institutional state.

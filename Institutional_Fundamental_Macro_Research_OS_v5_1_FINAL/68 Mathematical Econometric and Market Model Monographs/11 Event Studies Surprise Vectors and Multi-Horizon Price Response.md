@@ -88,26 +88,13 @@ Conflicts involving **11 Event Studies Surprise Vectors and Multi-Horizon Price 
 
 **11 Event Studies Surprise Vectors and Multi-Horizon Price Response asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** information since the prior close and its source timestamp.
-- Reconstruct the priced **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** baseline before reading the target move.
-- Name the liquid leader closest to the **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** mechanism and one independent confirmation.
-- Compare observed transmission with the **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **11 Event Studies Surprise Vectors and Multi-Horizon Price Response**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** pricing gap rather than the general narrative.
-- Estimate the **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **11 Event Studies Surprise Vectors and Multi-Horizon Price Response**.
-
-A valid **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** t
 
 Score **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 11 Event Studies Surprise Vectors and Multi-Horizon Price Response
 
@@ -136,8 +123,50 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 11 Event Studies Surprise Vectors and Multi-Horizon Price Response
 
 Provide a formal variable table, derivation or pseudocode, synthetic tests, point-in-time reconstruction, benchmarks and ablation, parameter uncertainty, regime stability, computational profile, cost/capacity translation, and a monitored model card. A second researcher must reproduce **11 Event Studies Surprise Vectors and Multi-Horizon Price Response** from hash-addressed artifacts.
+
+## Production-grade expansion v6
+
+### Event identity
+
+An event record includes scheduled and actual timestamps, timezone, source, embargo, reference period, release components, revisions, consensus distribution, market state, liquidity and overlapping events.
+
+### Surprise vector
+
+For components \(x\):
+
+$$
+s_t = D_t^{-1}(x_t-E_{t^-}[x_t])
+$$
+
+where \(D_t\) may contain historical forecast-error scales. Do not standardize using future samples. When components are correlated, model the joint surprise rather than summing standardized values.
+
+### Response windows
+
+Predefine windows such as seconds, 1 minute, 5 minutes, 30 minutes, session close, next close and multi-day horizons. High-frequency windows reduce contamination but may capture microstructure noise; longer windows capture transmission and overlapping information.
+
+### Expected response
+
+Estimate:
+
+$$
+r_{t,h}=\alpha_h+\beta_h^\top s_t+\delta_h^\top state_t+\theta_h^\top(s_t\otimes state_t)+\varepsilon_{t,h}
+$$
+
+State variables may include policy regime, inflation regime, positioning, liquidity and pre-event pricing. Interactions require sufficient sample and correction for multiple testing.
+
+### Revisions and composition
+
+Headline surprise, prior revisions and internal composition can point in different directions. Store them separately. For labor releases, payroll, unemployment, participation, hours and wages form a vector; for inflation, core services, shelter, goods and revisions matter.
+
+### Causal interpretation
+
+Scheduled releases provide timing but not automatic exogeneity. Leakage, data dependence, concurrent speeches and endogenous expectations remain concerns. A response regression is descriptive unless identification supports a causal claim.
+
+### Decision validation
+
+Test whether an event engine improves scenario probabilities and decisions versus a simple headline-surprise model. Include cost, latency, reversal probability, half-life and no-deployment value.

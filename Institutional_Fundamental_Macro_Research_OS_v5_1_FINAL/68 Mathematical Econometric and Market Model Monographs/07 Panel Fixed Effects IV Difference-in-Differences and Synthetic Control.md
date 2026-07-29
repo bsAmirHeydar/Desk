@@ -88,26 +88,13 @@ Conflicts involving **07 Panel Fixed Effects IV Difference-in-Differences and Sy
 
 **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** information since the prior close and its source timestamp.
-- Reconstruct the priced **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** baseline before reading the target move.
-- Name the liquid leader closest to the **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** mechanism and one independent confirmation.
-- Compare observed transmission with the **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** pricing gap rather than the general narrative.
-- Estimate the **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control**.
-
-A valid **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Cont
 
 Score **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control
 
@@ -135,8 +122,42 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control
 
 Provide a formal variable table, derivation or pseudocode, synthetic tests, point-in-time reconstruction, benchmarks and ablation, parameter uncertainty, regime stability, computational profile, cost/capacity translation, and a monitored model card. A second researcher must reproduce **07 Panel Fixed Effects IV Difference-in-Differences and Synthetic Control** from hash-addressed artifacts.
+
+## Production-grade expansion v6
+
+### Panel model
+
+$$
+y_{it}=\alpha_i+\tau_t+\beta x_{it}+\gamma^\top w_{it}+\varepsilon_{it}
+$$
+
+Entity effects control time-invariant heterogeneity; time effects control common shocks. They do not solve time-varying confounding, measurement error or reverse causality.
+
+### Uncertainty
+
+Cluster at the level of treatment assignment or serial correlation. With few clusters, use small-sample corrections or randomization inference. Two-way clustering is appropriate only when dependence genuinely spans both dimensions.
+
+### Instrumental variables
+
+An instrument must be relevant, satisfy exclusion and affect the outcome only through the endogenous regressor under the defined model. Report first-stage strength, weak-instrument-robust intervals, reduced form and sensitivity to direct effects.
+
+### Difference-in-differences
+
+Modern staggered adoption requires cohort- and time-specific effects rather than naive two-way fixed effects when treatment effects are heterogeneous. Show event-study pre-trends, anticipation windows, treatment reversals and composition changes. Parallel trends are an identifying assumption, not a visual slogan.
+
+### Synthetic control
+
+Define donor pool, pre-treatment predictors, fit quality and placebo distribution. Exclude donors affected by spillovers or common policy. Report sensitivity to donor removal and regularization.
+
+### Financial applications
+
+Panel designs may study bank lending, tariff exposure, policy changes, sanctions, corporate financing or regional shocks. Market outcomes require attention to anticipation, simultaneous information and cross-sectional dependence.
+
+### Production record
+
+Preserve treatment definitions, code, sample construction, entity mappings, missingness, exclusions, clustering, pre-analysis plan, placebo results and all tested specifications.

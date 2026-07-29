@@ -84,26 +84,13 @@ Conflicts involving **Options Expiry Futures Roll and Settlement** must retain s
 
 **Options Expiry Futures Roll and Settlement asset translation:** Execution: validate estimated flow against spread, depth, volume, and realized response. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Options Expiry Futures Roll and Settlement** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Options Expiry Futures Roll and Settlement** information since the prior close and its source timestamp.
-- Reconstruct the priced **Options Expiry Futures Roll and Settlement** baseline before reading the target move.
-- Name the liquid leader closest to the **Options Expiry Futures Roll and Settlement** mechanism and one independent confirmation.
-- Compare observed transmission with the **Options Expiry Futures Roll and Settlement** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Options Expiry Futures Roll and Settlement** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Options Expiry Futures Roll and Settlement**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Options Expiry Futures Roll and Settlement** pricing gap rather than the general narrative.
-- Estimate the **Options Expiry Futures Roll and Settlement** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Options Expiry Futures Roll and Settlement** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Options Expiry Futures Roll and Settlement**.
-
-A valid **Options Expiry Futures Roll and Settlement** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **Options Expiry Futures Roll and Settlement** thesis with no residual p
 
 Score **Options Expiry Futures Roll and Settlement** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Options Expiry Futures Roll and Settlement** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for Options Expiry Futures Roll and Settlement
 
@@ -134,4 +121,4 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

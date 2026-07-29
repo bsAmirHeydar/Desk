@@ -105,3 +105,6 @@ HORIZON: 2-10D
 SPECIAL_QUESTION: Quantify the shared real-yield, USD and liquidity exposures and identify false diversification.
 OUTPUT_LANGUAGE: Persian
 ```
+
+> [!important] Fundamental-only boundary
+> Price-pattern analysis, indicator rules and chart-trigger instructions are prohibited. Use the Vault's fundamental, macro, valuation, flow, liquidity, market-structure and portfolio methods.

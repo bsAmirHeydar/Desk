@@ -114,26 +114,13 @@ Conflicts involving **17 Treasury Futures CTD Implied Repo Net Basis and Deliver
 
 **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** information since the prior close and its source timestamp.
-- Reconstruct the priced **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** baseline before reading the target move.
-- Name the liquid leader closest to the **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** mechanism and one independent confirmation.
-- Compare observed transmission with the **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** pricing gap rather than the general narrative.
-- Estimate the **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options**.
-
-A valid **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -150,9 +137,9 @@ A valid **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** 
 
 Score **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options
 
@@ -169,8 +156,50 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options
 
 Provide a formal variable table, derivation or pseudocode, synthetic tests, point-in-time reconstruction, benchmarks and ablation, parameter uncertainty, regime stability, computational profile, cost/capacity translation, and a monitored model card. A second researcher must reproduce **17 Treasury Futures CTD Implied Repo Net Basis and Delivery Options** from hash-addressed artifacts.
+
+## Production-grade expansion v6
+
+### Contract economics
+
+Treasury futures allow delivery of an eligible basket. The short selects the security and timing subject to exchange rules. Each bond has a conversion factor \(CF_i\).
+
+Invoice price, excluding accrued-interest details, is approximately:
+
+$$
+Invoice_i = FuturesPrice\times CF_i + AccruedInterest_i
+$$
+
+### Gross and net basis
+
+$$
+GrossBasis_i = CashDirtyPrice_i - FuturesPrice\times CF_i
+$$
+
+Net basis adjusts for financing carry, coupon cash flows and delivery timing. Sign conventions must be documented because dealer systems differ.
+
+### Implied repo rate
+
+The implied repo rate equates buying the bond, financing it, receiving interim coupons and delivering into futures. The production engine must use actual settlement dates, accrued interest, coupon reinvestment assumptions, day-count conventions and delivery dates.
+
+The cheapest-to-deliver security maximizes implied repo or minimizes net basis under the declared convention.
+
+### Delivery options
+
+Value arises from quality, timing, end-of-month and wildcard options. A static CTD calculation may fail when yield levels or curve slopes shift. Compute switch boundaries and scenario CTD across rate shocks.
+
+### Hedge ratios
+
+Use DV01 or key-rate duration rather than face value. Conversion-factor hedges are approximate. Residual curve, convexity and funding risks remain.
+
+### Balance-sheet and funding
+
+Observed basis reflects repo rates, haircuts, specialness, capital and leverage constraints, dealer balance sheets, futures margin and asset-manager demand. A wide basis is not a free arbitrage when financing and balance-sheet costs are binding.
+
+### Production controls
+
+Store historical contract specifications, baskets, conversion factors, first notice and delivery dates. Reconcile cash prices, accrued interest and futures settlement. Unit-test the engine against exchange examples and independent dealer calculations.

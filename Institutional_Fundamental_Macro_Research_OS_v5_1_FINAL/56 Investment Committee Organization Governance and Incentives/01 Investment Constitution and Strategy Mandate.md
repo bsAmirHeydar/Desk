@@ -84,26 +84,13 @@ Conflicts involving **Investment Constitution and Strategy Mandate** must retain
 
 **Investment Constitution and Strategy Mandate asset translation:** Process: decision rights, cutoff, veto, and auditability are part of the edge. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Investment Constitution and Strategy Mandate** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Investment Constitution and Strategy Mandate** information since the prior close and its source timestamp.
-- Reconstruct the priced **Investment Constitution and Strategy Mandate** baseline before reading the target move.
-- Name the liquid leader closest to the **Investment Constitution and Strategy Mandate** mechanism and one independent confirmation.
-- Compare observed transmission with the **Investment Constitution and Strategy Mandate** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Investment Constitution and Strategy Mandate** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Investment Constitution and Strategy Mandate**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Investment Constitution and Strategy Mandate** pricing gap rather than the general narrative.
-- Estimate the **Investment Constitution and Strategy Mandate** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Investment Constitution and Strategy Mandate** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Investment Constitution and Strategy Mandate**.
-
-A valid **Investment Constitution and Strategy Mandate** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **Investment Constitution and Strategy Mandate** thesis with no residual
 
 Score **Investment Constitution and Strategy Mandate** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Investment Constitution and Strategy Mandate** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for Investment Constitution and Strategy Mandate
 
@@ -132,4 +119,4 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

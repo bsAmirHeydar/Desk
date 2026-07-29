@@ -92,26 +92,13 @@ Conflicts involving **02 Dynamic Factor Models Ragged Edge and News Decompositio
 
 **02 Dynamic Factor Models Ragged Edge and News Decomposition asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **02 Dynamic Factor Models Ragged Edge and News Decomposition** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **02 Dynamic Factor Models Ragged Edge and News Decomposition** information since the prior close and its source timestamp.
-- Reconstruct the priced **02 Dynamic Factor Models Ragged Edge and News Decomposition** baseline before reading the target move.
-- Name the liquid leader closest to the **02 Dynamic Factor Models Ragged Edge and News Decomposition** mechanism and one independent confirmation.
-- Compare observed transmission with the **02 Dynamic Factor Models Ragged Edge and News Decomposition** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **02 Dynamic Factor Models Ragged Edge and News Decomposition** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **02 Dynamic Factor Models Ragged Edge and News Decomposition**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **02 Dynamic Factor Models Ragged Edge and News Decomposition** pricing gap rather than the general narrative.
-- Estimate the **02 Dynamic Factor Models Ragged Edge and News Decomposition** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **02 Dynamic Factor Models Ragged Edge and News Decomposition** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **02 Dynamic Factor Models Ragged Edge and News Decomposition**.
-
-A valid **02 Dynamic Factor Models Ragged Edge and News Decomposition** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -123,9 +110,9 @@ A valid **02 Dynamic Factor Models Ragged Edge and News Decomposition** thesis w
 
 Score **02 Dynamic Factor Models Ragged Edge and News Decomposition** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **02 Dynamic Factor Models Ragged Edge and News Decomposition** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 02 Dynamic Factor Models Ragged Edge and News Decomposition
 
@@ -140,8 +127,73 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 02 Dynamic Factor Models Ragged Edge and News Decomposition
 
 Provide a formal variable table, derivation or pseudocode, synthetic tests, point-in-time reconstruction, benchmarks and ablation, parameter uncertainty, regime stability, computational profile, cost/capacity translation, and a monitored model card. A second researcher must reproduce **02 Dynamic Factor Models Ragged Edge and News Decomposition** from hash-addressed artifacts.
+
+## Production-grade expansion v6
+
+### Model
+
+A dynamic factor model writes a large standardized indicator panel as:
+
+$$
+x_t=\Lambda f_t+e_t,
+\qquad f_t=A_1f_{t-1}+\cdots+A_pf_{t-p}+u_t
+$$
+
+Idiosyncratic components may be serially correlated but must remain weakly cross-correlated after conditioning on the common factors. The target variable can be included in the state system or related through a separate bridge equation.
+
+### Data preparation
+
+For every indicator define transformation to stationarity, release timestamp, reference period, first-release history, seasonal adjustment, outlier policy and sign convention. Standardization parameters must be estimated inside the historical training window. Full-sample means or variances create subtle leakage.
+
+### Ragged edge
+
+At a decision cutoff, the panel contains different latest reference periods. The correct approach is a missing-data state-space representation. Filling missing releases with latest revised values or full-sample interpolation is inadmissible.
+
+### Estimation alternatives
+
+1. Principal components followed by VAR factor dynamics.
+2. Two-step quasi-maximum likelihood.
+3. Full maximum likelihood with EM and Kalman recursions.
+4. Bayesian factor models with shrinkage.
+5. Sparse or targeted factors when prediction, rather than broad state measurement, is the objective.
+
+The production platform must retain multiple specifications because factor count, loading stability and transformation choices materially affect the state.
+
+### Factor count and stability
+
+Use information criteria, eigenvalue diagnostics, forecast performance and economic interpretability. Evaluate loading drift, rolling subspaces and factor correlation across vintages. A high in-sample variance share does not guarantee useful real-time forecasting.
+
+### News decomposition
+
+For release \(i\), define news as the difference between the published value and its pre-release conditional expectation:
+
+$$
+news_{i,t}=x_{i,t}^{release}-E_{t^-}[x_{i,t}]
+$$
+
+The contribution to the target nowcast is:
+
+$$
+\Delta \hat y_t = \sum_i w_{i,t}\,news_{i,t}+revision\ effects+parameter\ effects
+$$
+
+Weights are conditional and can change with the covariance structure and missing pattern. Store contributions by release, not only the net nowcast revision.
+
+### Pseudo-real-time test
+
+At each historical release timestamp, rebuild the ragged panel, transformations and model using only admissible vintages. Compare forecasts to first-release and latest outcomes separately. Report whether apparent gains depend on revised targets.
+
+### Failure diagnostics
+
+- factors dominated by one volatile block;
+- unstable loading signs;
+- outlier-driven covariance;
+- factor proliferation with little forecast value;
+- broken seasonal adjustment;
+- target leakage through contemporaneously unavailable indicators;
+- news contributions that are not reproducible from the archived pre-release forecast.

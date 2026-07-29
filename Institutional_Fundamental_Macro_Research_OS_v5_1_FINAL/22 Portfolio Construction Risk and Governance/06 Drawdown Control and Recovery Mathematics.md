@@ -18,7 +18,7 @@ tags:
 
 ## Definition and economic object
 
-Credit pricing combines expected default loss, recovery uncertainty, downgrade/migration, liquidity, risk premium, technical supply, and embedded options.
+Credit pricing combines expected default loss, recovery uncertainty, downgrade/migration, liquidity, risk premium, implementation supply, and embedded options.
 
 For **Drawdown Control and Recovery Mathematics**, the relevant institutional domain is **portfolio**: capital allocation across uncertain scenarios, correlated drivers, liquidity constraints, convex payoffs, and institutional survival limits. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
 
@@ -88,26 +88,13 @@ Conflicts involving **Drawdown Control and Recovery Mathematics** must retain se
 
 **Drawdown Control and Recovery Mathematics asset translation:** Portfolio: map the view to shared drivers and scenario losses before adding notional. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Drawdown Control and Recovery Mathematics** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Drawdown Control and Recovery Mathematics** information since the prior close and its source timestamp.
-- Reconstruct the priced **Drawdown Control and Recovery Mathematics** baseline before reading the target move.
-- Name the liquid leader closest to the **Drawdown Control and Recovery Mathematics** mechanism and one independent confirmation.
-- Compare observed transmission with the **Drawdown Control and Recovery Mathematics** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Drawdown Control and Recovery Mathematics** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Drawdown Control and Recovery Mathematics**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Drawdown Control and Recovery Mathematics** pricing gap rather than the general narrative.
-- Estimate the **Drawdown Control and Recovery Mathematics** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Drawdown Control and Recovery Mathematics** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Drawdown Control and Recovery Mathematics**.
-
-A valid **Drawdown Control and Recovery Mathematics** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **Drawdown Control and Recovery Mathematics** thesis with no residual pr
 
 Score **Drawdown Control and Recovery Mathematics** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Drawdown Control and Recovery Mathematics** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for Drawdown Control and Recovery Mathematics
 
@@ -136,4 +123,4 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

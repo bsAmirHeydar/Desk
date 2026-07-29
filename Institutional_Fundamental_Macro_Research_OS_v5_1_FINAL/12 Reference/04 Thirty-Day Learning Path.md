@@ -84,26 +84,13 @@ Conflicts involving **Thirty-Day Learning Path** must retain separate state obje
 
 **Thirty-Day Learning Path asset translation:** Data: no field enters a decision without units, vintage, lineage, and quality status. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Thirty-Day Learning Path** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Thirty-Day Learning Path** information since the prior close and its source timestamp.
-- Reconstruct the priced **Thirty-Day Learning Path** baseline before reading the target move.
-- Name the liquid leader closest to the **Thirty-Day Learning Path** mechanism and one independent confirmation.
-- Compare observed transmission with the **Thirty-Day Learning Path** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Thirty-Day Learning Path** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Thirty-Day Learning Path**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Thirty-Day Learning Path** pricing gap rather than the general narrative.
-- Estimate the **Thirty-Day Learning Path** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Thirty-Day Learning Path** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Thirty-Day Learning Path**.
-
-A valid **Thirty-Day Learning Path** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **Thirty-Day Learning Path** thesis with no residual pricing gap, advers
 
 Score **Thirty-Day Learning Path** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Thirty-Day Learning Path** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -222,9 +209,8 @@ Apply 04 Live Session Decision Process and do not change the thesis without new 
 Complete 05 End-of-Day Attribution.
 
 ### Day 30
-Integrate with 09 Integration with the Trend-Pullback-CISD Strategy and write:
 - what fundamentals control;
-- what technicals control;
+- what implementation governance controls;
 - hard vetoes;
 - validation plan.
 
@@ -257,4 +243,4 @@ Without looking at the vault, explain:
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

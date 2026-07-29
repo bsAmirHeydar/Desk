@@ -84,26 +84,13 @@ Conflicts involving **Reflexivity, Feedback, and Nonlinearity** must retain sepa
 
 **Reflexivity, Feedback, and Nonlinearity asset translation:** Causal trade: name the leader and rival explanation before observing the target return. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Reflexivity, Feedback, and Nonlinearity** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Reflexivity, Feedback, and Nonlinearity** information since the prior close and its source timestamp.
-- Reconstruct the priced **Reflexivity, Feedback, and Nonlinearity** baseline before reading the target move.
-- Name the liquid leader closest to the **Reflexivity, Feedback, and Nonlinearity** mechanism and one independent confirmation.
-- Compare observed transmission with the **Reflexivity, Feedback, and Nonlinearity** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Reflexivity, Feedback, and Nonlinearity** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Reflexivity, Feedback, and Nonlinearity**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Reflexivity, Feedback, and Nonlinearity** pricing gap rather than the general narrative.
-- Estimate the **Reflexivity, Feedback, and Nonlinearity** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Reflexivity, Feedback, and Nonlinearity** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Reflexivity, Feedback, and Nonlinearity**.
-
-A valid **Reflexivity, Feedback, and Nonlinearity** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **Reflexivity, Feedback, and Nonlinearity** thesis with no residual pric
 
 Score **Reflexivity, Feedback, and Nonlinearity** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Reflexivity, Feedback, and Nonlinearity** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -179,7 +166,7 @@ Thresholds include:
 - volatility-control triggers;
 - reserve scarcity;
 - commodity storage capacity;
-- technical levels where execution flow concentrates.
+- implementation levels where execution flow concentrates.
 
 ## State-Dependent Policy Transmission
 
@@ -197,7 +184,7 @@ The same policy surprise can have different effects when:
 Reflexive moves often show:
 
 - accelerating cross-asset coherence;
-- poor pullback depth;
+- poor temporary counter-move depth;
 - repeated failure of countertrend attempts;
 - expanding volatility;
 - widening breadth;
@@ -232,4 +219,4 @@ This question links fundamentals to intraday path without pretending price patte
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

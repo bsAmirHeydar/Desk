@@ -141,4 +141,7 @@ When evidence conflicts:
 
 ## J. Completion standard
 
-The result must name the notes materially used, cite external current/historical facts, disclose unknowns and preserve the boundary between fundamental permission and technical execution.
+The result must name the notes materially used, cite external current/historical facts, disclose unknowns and preserve the boundary between fundamental permission and fundamental implementation.
+
+> [!important] Fundamental-only boundary
+> Price-pattern analysis, indicator rules and chart-trigger instructions are prohibited. Use the Vault's fundamental, macro, valuation, flow, liquidity, market-structure and portfolio methods.

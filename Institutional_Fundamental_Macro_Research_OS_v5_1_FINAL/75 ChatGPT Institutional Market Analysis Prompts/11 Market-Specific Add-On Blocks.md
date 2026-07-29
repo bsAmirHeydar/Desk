@@ -112,3 +112,6 @@ Analyze growth/inflation/policy, fiscal path, debt currency and maturity, extern
 ADD-ON — RELATIVE VALUE
 Model each leg independently, then the common factor and residual spread. Normalize duration, beta, currency, carry, roll, liquidity and transaction cost. Identify convergence mechanism, catalyst, structural break risk, financing/basis risk and conditions under which both legs can move against the spread thesis.
 ~~~
+
+> [!important] Fundamental-only boundary
+> Price-pattern analysis, indicator rules and chart-trigger instructions are prohibited. Use the Vault's fundamental, macro, valuation, flow, liquidity, market-structure and portfolio methods.

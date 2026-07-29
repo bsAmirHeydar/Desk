@@ -1,50 +1,60 @@
 ---
 title: "12 Anti-Boilerplate and Knowledge Density Standard"
-type: standard
+type: core-standard
 status: evergreen
-version: 5.0.0
+version: 6.0.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
-tags:
-  - institutional-standard
-  - fundamental-research
-  - governance
+tags: [anti-boilerplate, editorial, knowledge-density]
 ---
 # 12 Anti-Boilerplate and Knowledge Density Standard
 
-> [!abstract] Purpose
-> Keep the Vault dense, topic-specific, navigable, and falsifiable.
+## Problem definition
 
-## Rule
+Repeated institutional-sounding language creates the appearance of depth while lowering retrieval quality, auditability and learning value. Shared doctrine belongs in central standards; subject notes must contain subject-specific knowledge.
 
-Shared doctrine belongs in one canonical note and is linked or embedded. Topic notes must contain knowledge unique to the topic: definitions, identities, datasets, conventions, model choices, failure modes, horizon behavior, and trading translation.
+## Prohibited duplication
 
-## Prohibited patterns
+A domain note must not repeat generic paragraphs on evidence, horizons, governance, implementation or model cards when a canonical standard exists. It should link to the standard and document only what is unique to the domain.
 
-- repeating the same institutional paragraph under a new title;
-- source bundles unrelated to the topic;
-- equations used as decoration without variables or estimation method;
-- generic checklists presented as scientific depth;
-- titles that promise a model but omit implementation;
-- duplicate MOCs and ambiguous path links;
-- word count used as a quality metric.
+## Required subject density
 
-## Topic-note acceptance
+A substantive note must contain a material share of the following:
 
-A substantive note must answer at least six of:
+- definitions unique to the topic;
+- variable and unit tables;
+- accounting identities or model equations;
+- source-specific data fields;
+- transformations and estimation details;
+- institutional mechanics;
+- historical examples;
+- rival models and discriminating evidence;
+- failure modes unique to the topic;
+- implementation artifacts and acceptance tests.
 
-1. What exact object is measured?
-2. What identity or equation constrains it?
-3. What data and vintages are needed?
-4. How is the model estimated?
-5. What uncertainty is produced?
-6. What alternative model could explain the evidence?
-7. Which assets and horizons transmit it?
-8. What invalidates it?
-9. How is it tested in pseudo-real time?
-10. Which official sources support each material claim?
+## Duplication metrics
 
-## Duplication metric
+The validation pipeline must report:
 
-Normalize headings, metadata, URLs, and title substitutions, then measure paragraph reuse. High reuse triggers consolidation. Templates are exempt only when clearly marked as templates.
+- exact duplicate paragraphs;
+- normalized duplicate paragraphs;
+- paragraphs appearing in more than 20 notes;
+- paragraphs appearing in more than 100 notes;
+- near-duplicate documents by similarity;
+- repeated equations without topic-specific interpretation.
+
+## Editorial gates
+
+A note fails editorial review when:
+
+- replacing the title with another topic leaves most of the note valid;
+- domain-specific variables are absent;
+- source routes are generic or contaminated;
+- the note contains instructions to build a model but no specification of inputs, outputs and tests;
+- examples are hypothetical when historical evidence is available;
+- the note adds no information beyond its parent MOC.
+
+## Compression rule
+
+When multiple notes share doctrine, move the doctrine to a core standard and preserve concise links. Deleting repeated prose is an improvement when it raises information density and retrieval precision.

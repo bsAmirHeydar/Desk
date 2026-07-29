@@ -1,113 +1,95 @@
 ---
 title: "02 Evidence Source Lineage and Claim Types"
-type: standard
+type: core-standard
 status: evergreen
-version: 5.0.0
+version: 6.0.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
-tags:
-  - institutional-standard
-  - fundamental-research
-  - governance
+tags: [evidence, sources, citations, lineage]
 ---
 # 02 Evidence Source Lineage and Claim Types
 
-> [!abstract] Purpose
-> Make every material claim traceable to an observation, transformation, model, assumption, and time of availability.
-
-## Claim ontology
-
-Every sentence used in a decision packet must be typed:
-
-- **Observed fact** — directly reported by a named source.
-- **Derived measurement** — deterministic transformation of observations.
-- **Model estimate** — output that depends on parameters and assumptions.
-- **Market-implied estimate** — inferred from prices under conventions.
-- **Forecast** — future distribution conditional on an information set.
-- **Causal claim** — assertion about a mechanism, requiring identification.
-- **Scenario assumption** — deliberately hypothetical input.
-- **Desk judgment** — expert synthesis not reducible to one model.
-- **Decision rule** — mapping from evidence to action.
-- **Outcome attribution** — ex-post decomposition, never evidence available ex ante.
-
 ## Evidence hierarchy
 
-Authority alone does not determine relevance. For a specific claim, rank evidence by:
+Evidence must be ranked by its relationship to the phenomenon, not by how persuasive the prose appears.
 
-1. direct observation of the object;
-2. official or legally required disclosure;
-3. reproducible transformation;
-4. market price with understood conventions;
-5. validated model estimate;
-6. survey or expert forecast;
-7. alternative-data proxy;
-8. anecdote or unverified report.
+1. **Primary legal or statistical record:** law, regulation, filing, official statistical release, exchange specification, auction result, central-bank decision.
+2. **Primary operational record:** transaction record, inventory record, settlement data, company transcript, physical-flow measurement, official balance sheet.
+3. **Derived official estimate:** seasonally adjusted series, national accounts estimate, central-bank model estimate.
+4. **Auditable market-derived estimate:** curve-implied policy path, breakeven, option-implied distribution, basis or spread calculated from documented inputs.
+5. **Peer-reviewed or institutionally documented model:** published methodology with reproducible assumptions.
+6. **Reputable secondary analysis:** useful for synthesis, not a substitute for primary evidence.
+7. **Expert judgment:** admissible only when labeled, bounded and reviewable.
+8. **Unverified commentary:** never sufficient for a material claim.
 
-A lower-ranked source can be timelier, but its measurement error must be explicit.
+## Claim taxonomy
 
-## Claim–evidence matrix
+| Claim type | Example | Minimum support |
+|---|---|---|
+| Observation | CPI was published at a stated value | Primary release and timestamp |
+| Accounting identity | Sector balances sum consistently | Definitions, units and reconciliation |
+| Measurement claim | Shelter inflation momentum changed | Transformation and sensitivity analysis |
+| Forecast claim | Growth distribution shifted lower | Model version, benchmark and interval |
+| Causal claim | Funding stress caused basis widening | Identification strategy and rival models |
+| Market-pricing claim | More easing is embedded in the curve | Instrument specification and curve construction |
+| Scenario claim | A tariff shock would raise near-term goods inflation | Conditional assumptions and transmission map |
+| Decision claim | Deployment is unfavorable after costs | Scenario payoff, risk, cost and portfolio context |
 
-| Claim ID | Claim type | As-of time | Source/series | Transformation | Model | Uncertainty | Rival | Decision use |
-|---|---|---|---|---|---|---|---|---|
+## Claim-level citation record
 
-The matrix must preserve negative evidence and contradictions. Evidence that weakens the thesis is not deleted; it changes the posterior or confidence ceiling.
+Every material claim must carry or resolve to:
 
-## Source requirements
-
-For every series or document record:
-
-- publisher and legal status;
-- canonical URL or dataset identifier;
-- units and universe;
-- frequency and reference period;
-- release calendar and embargo time;
-- revision and benchmark policy;
-- seasonal adjustment;
-- known breaks;
-- access timestamp;
-- checksum or archived snapshot where permitted;
-- downstream features and decisions.
-
-## Citation discipline
-
-A source bundle at the bottom of a note is not sufficient. Claims used in production should cite a source key and, for documents, section/table/page. In Obsidian:
-
-```text
-Claim: Dealer inventories rose during the settlement window.
-Evidence: [NYFED_DEALERS; table=<id>; release=<timestamp>; retrieved=<timestamp>]
+```yaml
+claim_id:
+claim_text:
+claim_type:
+source_id:
+source_title:
+source_locator:
+publication_timestamp:
+observation_period:
+retrieval_timestamp:
+vintage:
+transformation_id:
+model_id:
+analyst_judgment:
+confidence:
+known_limitations:
 ```
 
-## Correlated evidence
+`source_locator` must be as precise as the source permits: table, series, page, paragraph, filing item, transcript line, auction field or API endpoint.
 
-Multiple indicators can be transformations of the same underlying release. Do not count payroll employment, payroll diffusion, and payroll contribution as three independent confirmations. Record dependency families and cap the combined likelihood ratio.
+## Lineage graph
 
-## Alternative data
+The desk must be able to traverse:
 
-Alternative data must document:
+```text
+Source artifact
+→ Observation
+→ Transformation
+→ Feature
+→ Model estimate
+→ Claim
+→ Scenario
+→ Decision state
+→ Portfolio action
+→ Outcome attribution
+```
 
-- legal right to use;
-- sampling frame and coverage;
-- survivorship and panel churn;
-- revisions and vendor restatements;
-- mapping from proxy to target;
-- failure under behavioral or platform changes;
-- latency and operational continuity.
+A broken edge invalidates downstream auditability.
 
-## Evidence red flags
+## Source-quality controls
 
-- final-vintage data in a historical signal;
-- consensus obtained after the release;
-- unarchived webpage overwritten through time;
-- chart without series identifiers;
-- model output presented as observed fact;
-- vendor methodology change without backfill;
-- source contamination across unrelated assets;
-- publication-date mismatch;
-- claim that cannot be reconstructed.
+- preserve the downloaded or hash-addressed source artifact when licensing permits;
+- store source timezone and publication timestamp;
+- distinguish preliminary, revised and benchmark vintages;
+- record units, seasonal adjustment, population and coverage;
+- disclose source methodology changes and breaks;
+- prohibit silent substitution of a similar series;
+- use archived snapshots for web sources that may change;
+- maintain a source retirement and replacement log.
 
-## Related standards
+## Evidence confidence
 
-- [[00 Core Standards/03 Point-in-Time and Bitemporal Data Standard]]
-- [[00 Core Standards/13 Claim Evidence Matrix Standard]]
-- [[65 Source Registry and Claim Lineage/00 Source Registry MOC]]
+Confidence is capped by the weakest material component. High-quality data cannot rescue a non-identified causal claim; a strong model cannot rescue a contaminated vintage; a precise estimate cannot rescue a structurally unstable relation.

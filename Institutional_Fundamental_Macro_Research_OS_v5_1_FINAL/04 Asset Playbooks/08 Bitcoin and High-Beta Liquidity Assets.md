@@ -20,7 +20,7 @@ tags:
 
 Crypto fundamentals combine network security and usage, monetary supply, stablecoin and ETF flows, collateral leverage, venue fragmentation, and global liquidity.
 
-For **Bitcoin and High-Beta Liquidity Assets**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, technical handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
+For **Bitcoin and High-Beta Liquidity Assets**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, implementation handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
 
 ## Research questions
 
@@ -75,7 +75,7 @@ Validate the **Bitcoin and High-Beta Liquidity Assets** stack against simple poi
 | Structural/Cyclical | In the **Bitcoin and High-Beta Liquidity Assets** research object, higher-horizon states create priors but do not time entries. |
 | Tactical/Swing | In the **Bitcoin and High-Beta Liquidity Assets** research object, repricing path, catalysts, and half-life determine campaign permission. |
 | Daily | In the **Bitcoin and High-Beta Liquidity Assets** research object, overnight change and current pricing produce one of four permission states. |
-| Event/Intraday | In the **Bitcoin and High-Beta Liquidity Assets** research object, leader, confirmation, liquidity, and technical structure govern execution. |
+| Event/Intraday | In the **Bitcoin and High-Beta Liquidity Assets** research object, leader, confirmation, liquidity, and observable market-state confirmation govern execution. |
 
 Conflicts involving **Bitcoin and High-Beta Liquidity Assets** must retain separate state objects and be resolved through [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]], never by an undocumented average score.
 
@@ -84,30 +84,17 @@ Conflicts involving **Bitcoin and High-Beta Liquidity Assets** must retain separ
 1. **Bitcoin and High-Beta Liquidity Assets channel 1:** test `information gap → leader repricing`.
 2. **Bitcoin and High-Beta Liquidity Assets channel 2:** test `leader → target asset`.
 3. **Bitcoin and High-Beta Liquidity Assets channel 3:** test `positioning/liquidity → path shape`.
-4. **Bitcoin and High-Beta Liquidity Assets channel 4:** test `technical structure → executable risk definition`.
+4. **Bitcoin and High-Beta Liquidity Assets channel 4:** test `observable market-state confirmation → executable risk definition`.
 
-**Bitcoin and High-Beta Liquidity Assets asset translation:** Trading: fundamentals grant permission; the technical structure controls entry, stop, and target. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Bitcoin and High-Beta Liquidity Assets** posterior or activate a rival explanation.
+**Bitcoin and High-Beta Liquidity Assets asset translation:** Trading: fundamentals grant permission; the observable market-state confirmation controls instrument selection, risk budget, and exit conditions. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Bitcoin and High-Beta Liquidity Assets** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Bitcoin and High-Beta Liquidity Assets** information since the prior close and its source timestamp.
-- Reconstruct the priced **Bitcoin and High-Beta Liquidity Assets** baseline before reading the target move.
-- Name the liquid leader closest to the **Bitcoin and High-Beta Liquidity Assets** mechanism and one independent confirmation.
-- Compare observed transmission with the **Bitcoin and High-Beta Liquidity Assets** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Bitcoin and High-Beta Liquidity Assets** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Bitcoin and High-Beta Liquidity Assets**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Bitcoin and High-Beta Liquidity Assets** pricing gap rather than the general narrative.
-- Estimate the **Bitcoin and High-Beta Liquidity Assets** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Bitcoin and High-Beta Liquidity Assets** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Bitcoin and High-Beta Liquidity Assets**.
-
-A valid **Bitcoin and High-Beta Liquidity Assets** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **Bitcoin and High-Beta Liquidity Assets** thesis with no residual prici
 
 Score **Bitcoin and High-Beta Liquidity Assets** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Bitcoin and High-Beta Liquidity Assets** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -192,7 +179,7 @@ For short swings, separate:
 - macro liquidity thesis;
 - flow thesis;
 - regulatory thesis;
-- technical positioning thesis.
+- implementation positioning thesis.
 
 Each needs independent invalidation.
 
@@ -221,4 +208,4 @@ Each needs independent invalidation.
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

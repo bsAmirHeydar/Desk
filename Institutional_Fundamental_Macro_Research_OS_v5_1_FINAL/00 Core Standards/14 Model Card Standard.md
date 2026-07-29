@@ -1,51 +1,60 @@
 ---
 title: "14 Model Card Standard"
-type: standard
+type: core-standard
 status: evergreen
-version: 5.0.0
+version: 6.0.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
-tags:
-  - institutional-standard
-  - fundamental-research
-  - governance
+tags: [model-card, validation, governance]
 ---
 # 14 Model Card Standard
 
-## Model card
+## Model identity
 
-```yaml
-model_id:
-version:
-owner:
-purpose:
-target:
-decision_use:
-universe:
-horizons:
-training_window:
-validation_window:
-information_cutoff_logic:
-features:
-target_construction:
-transformations:
-estimation:
-hyperparameters:
-benchmarks:
-metrics:
-calibration:
-cost_model:
-capacity_assumptions:
-known_failure_modes:
-forbidden_uses:
-monitoring:
-retraining_policy:
-retirement_triggers:
-approvals:
-artifact_hashes:
-```
+A model card must contain model ID, owner, purpose, target, horizon, code commit, environment lock, data snapshot, feature set, estimation window, hyperparameters, dependencies and approval status.
 
-## Mandatory narrative
+## Scientific specification
 
-Explain economic mechanism, identification limits, expected behavior by regime, sensitivity, missing-data behavior, and consequences of error. No production model is valid merely because predictive metrics are positive.
+Document:
+
+- mathematical formulation;
+- identification or predictive objective;
+- variable definitions and transformations;
+- missing-data handling;
+- regularization and priors;
+- estimation algorithm;
+- uncertainty calculation;
+- benchmark models;
+- sensitivity and ablation tests;
+- computational complexity and latency.
+
+## Validation
+
+Report:
+
+- pseudo-real-time design;
+- out-of-sample results;
+- calibration;
+- regime and subgroup stability;
+- revision and vintage sensitivity;
+- leakage checks;
+- cost and capacity stress;
+- failure examples;
+- challenger-model comparison.
+
+## Operational controls
+
+- deployment environment;
+- data-quality dependencies;
+- monitoring metrics;
+- drift thresholds;
+- fallback behavior;
+- kill switch;
+- access and change controls;
+- review frequency;
+- retirement conditions.
+
+## Prohibited claims
+
+A model card may not describe a model as robust, causal, calibrated, production-ready or institution-grade unless the corresponding test results are attached.

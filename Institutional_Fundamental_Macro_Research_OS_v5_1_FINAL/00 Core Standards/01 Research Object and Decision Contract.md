@@ -1,105 +1,81 @@
 ---
 title: "01 Research Object and Decision Contract"
-type: standard
+type: core-standard
 status: evergreen
-version: 5.0.0
+version: 6.0.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
-tags:
-  - institutional-standard
-  - fundamental-research
-  - governance
+tags: [research-object, decision-contract, institutional-governance]
 ---
 # 01 Research Object and Decision Contract
 
-> [!abstract] Purpose
-> Convert a vague market question into a time-stamped, falsifiable research object with an explicit decision owner, horizon, action set, risk ceiling, and expiration.
+## Institutional purpose
 
-## The decision object
+A research object is the smallest auditable unit that can support a fundamental decision. It is not a topic heading, a narrative or a collection of links. It is a versioned package that connects a defined target to admissible data, transformations, models, assumptions, evidence, uncertainty, decision consequences and retirement rules.
 
-Institutional fundamental work is not a collection of facts. It is a contract between research and capital allocation. Every research object must specify:
+## Required identity
 
-1. **Target variable** — the economic state, market price, spread, curve, cash flow, or probability being estimated.
-2. **Decision horizon** — structural, cyclical, tactical, swing, daily, event, or microstructure.
-3. **Information cutoff** — the exact timestamp beyond which evidence is prohibited.
-4. **Priced baseline** — the distribution already embedded in curves, options, consensus, positioning, or valuation.
-5. **Alternative scenarios** — paths, probabilities, signposts, and feedback.
-6. **Expression** — instrument, direction, relative-value leg, optionality, and intended holding period.
-7. **Permission** — `LONG_ONLY`, `SHORT_ONLY`, `TWO_WAY_REDUCED`, or `NO_TRADE`.
-8. **Risk contract** — size ceiling, expected gap, liquidity assumptions, invalidation, and expiry.
-9. **Owner and veto** — who can approve, challenge, reduce, or terminate the position.
-10. **Learning record** — forecast, execution, P&L, counterfactual, and attribution.
+Every research object must declare:
 
-A research note that cannot fill these fields is educational material, not a deployable decision object.
+| Field | Requirement |
+|---|---|
+| Object ID | Stable, unique and immutable identifier |
+| Target | Exact variable, market, institution, company, country or mechanism |
+| Decision horizon | Structural, cyclical, tactical, multi-day, intraday or event |
+| Cutoff | Timestamp and timezone of the admissible information set |
+| Observation time | When the underlying phenomenon occurred |
+| Publication time | When the observation became public or licensed to the desk |
+| Ingestion time | When the platform received the observation |
+| Version | Research, data and model versions |
+| Owner | Accountable analyst or research team |
+| Independent reviewer | Reviewer with veto authority |
+| Expiry | Time or information condition after which the object is stale |
 
-## Research types
+## Mandatory separation of layers
 
-Separate four objects that are often mixed:
+The object must distinguish:
 
-| Object | Question | Valid output |
-|---|---|---|
-| Measurement | What was observed and how reliable is it? | Point-in-time fact with uncertainty |
-| State estimation | What latent condition best explains the evidence? | Probability distribution |
-| Forecast | What is likely to happen over a defined horizon? | Density, not slogan |
-| Trade decision | Is the expected payoff superior after pricing, cost, and risk? | Permission and risk budget |
+1. **Observation:** source-reported value or document.
+2. **Transformation:** seasonal adjustment, normalization, aggregation, curve construction or accounting reconciliation.
+3. **Estimate:** latent state, forecast, valuation, market-implied quantity or uncertainty interval.
+4. **Claim:** descriptive, predictive, causal or normative statement.
+5. **Scenario:** internally coherent conditional world.
+6. **Decision state:** research conclusion after expected payoff, risk and portfolio constraints.
+7. **Implementation constraints:** instrument, liquidity, cost, financing, capacity and expiry.
+8. **Outcome attribution:** what happened and why, without rewriting the ex-ante record.
 
-A correct state estimate does not imply a profitable trade. The state can be known, fully priced, expressed in the wrong instrument, overwhelmed by a different exposure, or realized on the wrong horizon.
+## Minimum decision contract
 
-## Decision contract
+A deployable decision contract contains:
 
-```yaml
-research_object:
-  as_of:
-  information_cutoff:
-  target:
-  asset:
-  horizon:
-  state_distribution:
-  expectation_distribution:
-  priced_distribution:
-  vulnerable_assumption:
-  scenarios:
-  causal_leader:
-  independent_confirmations:
-  expression:
-  permission:
-  confidence:
-  size_ceiling:
-  fundamental_invalidation:
-  technical_handoff:
-  expiry:
-  next_catalyst:
-  owner:
-  veto_owner:
-  evidence_packet:
-  model_version:
-```
+- a state distribution rather than a single adjective;
+- a market-implied or consensus distribution;
+- the residual pricing gap;
+- at least one causal model and one serious rival model;
+- the variable or market that should lead if the mechanism is active;
+- independent confirmations and contradiction signals;
+- scenario probabilities, payoffs and losses;
+- risk budget, liquidity and cost limits;
+- information invalidation and time expiry;
+- claim-level evidence IDs;
+- an explicit statement of what is unknown.
 
-## Minimum acceptance tests
+## Decision-state vocabulary
 
-A research object cannot enter production unless:
+Use [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]. The output is a fundamental deployment state, not an order or a price-pattern instruction.
 
-- all observations existed at the cutoff;
-- source, units, seasonal treatment, and revision policy are known;
-- the priced baseline is measured rather than guessed;
-- at least one credible rival explanation is retained;
-- the expected leader is named before the target moves;
-- action thresholds are defined before observing the outcome;
-- liquidity and cost are included;
-- the technical entry and structural stop remain independent;
-- probability statements can later be scored;
-- the decision can be reconstructed without the analyst.
+## Non-negotiable controls
 
-## Separation of duties
+- No information after the cutoff may enter a historical object.
+- No revised observation may overwrite its first-release vintage.
+- No market move is evidence of its own cause.
+- No model may be promoted without a simple benchmark.
+- No scenario probability may be presented as calibrated unless calibration has been measured.
+- No winning outcome validates a process by itself.
+- No losing outcome invalidates a probabilistic process by itself.
+- No narrative may override a predeclared risk or expiry condition.
 
-Research estimates states and distributions. The portfolio manager chooses exposure. Independent risk constrains concentration and survival. Execution chooses order type, timing, and venue. Attribution determines whether the result came from state, pricing, expression, timing, execution, or noise.
+## Definition of done
 
-No role may retroactively rewrite another role's record.
-
-## Related standards
-
-- [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
-- [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
-- [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+The object is complete only when a second researcher can reconstruct the admissible information set, reproduce the derived variables, understand the assumptions, rerun the model, trace every material claim to evidence, reproduce the decision table and audit subsequent changes.

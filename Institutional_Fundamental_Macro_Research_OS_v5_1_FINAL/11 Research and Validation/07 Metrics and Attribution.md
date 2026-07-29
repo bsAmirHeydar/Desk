@@ -88,26 +88,13 @@ Conflicts involving **Metrics and Attribution** must retain separate state objec
 
 **Metrics and Attribution asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Metrics and Attribution** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Metrics and Attribution** information since the prior close and its source timestamp.
-- Reconstruct the priced **Metrics and Attribution** baseline before reading the target move.
-- Name the liquid leader closest to the **Metrics and Attribution** mechanism and one independent confirmation.
-- Compare observed transmission with the **Metrics and Attribution** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Metrics and Attribution** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Metrics and Attribution**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Metrics and Attribution** pricing gap rather than the general narrative.
-- Estimate the **Metrics and Attribution** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Metrics and Attribution** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Metrics and Attribution**.
-
-A valid **Metrics and Attribution** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **Metrics and Attribution** thesis with no residual pricing gap, adverse
 
 Score **Metrics and Attribution** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Metrics and Attribution** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -132,7 +119,7 @@ This material survived consolidation because it contains subject-specific instru
 - coverage: percentage of sessions with each permission;
 - directional accuracy;
 - conditional forward return;
-- expectancy of technical setups by permission;
+- expectancy of qualified implementation conditions by permission;
 - veto precision;
 - false-veto rate;
 - time to permission change;
@@ -141,7 +128,7 @@ This material survived consolidation because it contains subject-specific instru
 
 ## Strategy Increment Metrics
 
-Let \(E_0\) be technical-only expectancy and \(E_1\) be expectancy with context.
+Let \(E_0\) be implementation-only expectancy and \(E_1\) be expectancy with context.
 
 \[
 \Delta E = E_1 - E_0
@@ -239,4 +226,4 @@ Every report should include:
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

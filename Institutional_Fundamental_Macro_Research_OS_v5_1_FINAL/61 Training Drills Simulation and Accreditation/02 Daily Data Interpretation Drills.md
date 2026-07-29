@@ -84,26 +84,13 @@ Conflicts involving **Daily Data Interpretation Drills** must retain separate st
 
 **Daily Data Interpretation Drills asset translation:** Process: decision rights, cutoff, veto, and auditability are part of the edge. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Daily Data Interpretation Drills** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Daily Data Interpretation Drills** information since the prior close and its source timestamp.
-- Reconstruct the priced **Daily Data Interpretation Drills** baseline before reading the target move.
-- Name the liquid leader closest to the **Daily Data Interpretation Drills** mechanism and one independent confirmation.
-- Compare observed transmission with the **Daily Data Interpretation Drills** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Daily Data Interpretation Drills** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Daily Data Interpretation Drills**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Daily Data Interpretation Drills** pricing gap rather than the general narrative.
-- Estimate the **Daily Data Interpretation Drills** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Daily Data Interpretation Drills** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Daily Data Interpretation Drills**.
-
-A valid **Daily Data Interpretation Drills** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **Daily Data Interpretation Drills** thesis with no residual pricing gap
 
 Score **Daily Data Interpretation Drills** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Daily Data Interpretation Drills** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for Daily Data Interpretation Drills
 
@@ -132,4 +119,4 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

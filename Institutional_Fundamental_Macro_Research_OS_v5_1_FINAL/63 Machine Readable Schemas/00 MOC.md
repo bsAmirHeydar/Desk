@@ -21,7 +21,7 @@ tags:
 - [[63 Machine Readable Schemas/02 Observation and Vintage Schema]]
 - [[63 Machine Readable Schemas/03 Claim Evidence Schema]]
 - [[63 Machine Readable Schemas/04 Model Card Schema]]
-- [[63 Machine Readable Schemas/05 Trade Permission and Attribution Schema]]
+- [[63 Machine Readable Schemas/05 Fundamental Decision Permission and Attribution Schema]]
 - [[63 Machine Readable Schemas/06 Research Experiment and Trial Ledger Schema]]
 
 ## Review standard

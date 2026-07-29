@@ -20,7 +20,7 @@ tags:
 - Expanded the historical prompt into a strict point-in-time reconstruction with clock, vintage, consensus, contract and anti-lookahead firewalls.
 - Added explicit claim-level evidence, source timestamp, data-quality, unknown and confidence-penalty rules.
 - Added mandatory priced-baseline, vulnerable-assumption, causal-leader, rival-model and cross-asset confirmation outputs.
-- Added scenario probability ranges, half-life, invalidation, expiry, size ceiling and technical handoff controls.
+- Added scenario probability ranges, half-life, invalidation, expiry, size ceiling and implementation handoff controls.
 
 ## Added
 
@@ -36,4 +36,4 @@ tags:
 - The Vault is methodology, not a live data feed.
 - Current mode requires current web research and inline citations.
 - Historical mode forbids later data, revisions, prices and outcomes in the reconstructed section.
-- Fundamental permission cannot override technical stops or justify averaging into loss.
+- Fundamental permission cannot override implementation stops or justify averaging into loss.

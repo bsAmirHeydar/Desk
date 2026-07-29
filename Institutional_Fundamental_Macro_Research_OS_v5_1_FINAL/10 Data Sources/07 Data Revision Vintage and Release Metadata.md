@@ -88,26 +88,13 @@ Conflicts involving **Data Revision, Vintage, and Release Metadata** must retain
 
 **Data Revision, Vintage, and Release Metadata asset translation:** Data: no field enters a decision without units, vintage, lineage, and quality status. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Data Revision, Vintage, and Release Metadata** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Data Revision, Vintage, and Release Metadata** information since the prior close and its source timestamp.
-- Reconstruct the priced **Data Revision, Vintage, and Release Metadata** baseline before reading the target move.
-- Name the liquid leader closest to the **Data Revision, Vintage, and Release Metadata** mechanism and one independent confirmation.
-- Compare observed transmission with the **Data Revision, Vintage, and Release Metadata** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Data Revision, Vintage, and Release Metadata** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Data Revision, Vintage, and Release Metadata**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Data Revision, Vintage, and Release Metadata** pricing gap rather than the general narrative.
-- Estimate the **Data Revision, Vintage, and Release Metadata** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Data Revision, Vintage, and Release Metadata** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Data Revision, Vintage, and Release Metadata**.
-
-A valid **Data Revision, Vintage, and Release Metadata** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **Data Revision, Vintage, and Release Metadata** thesis with no residual
 
 Score **Data Revision, Vintage, and Release Metadata** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Data Revision, Vintage, and Release Metadata** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -235,4 +222,4 @@ Use real-time/vintage data whenever the hypothesis depends on the sign, threshol
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

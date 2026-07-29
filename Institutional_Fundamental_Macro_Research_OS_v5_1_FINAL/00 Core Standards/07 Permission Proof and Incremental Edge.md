@@ -1,78 +1,65 @@
 ---
 title: "07 Permission Proof and Incremental Edge"
-type: standard
+type: core-standard
 status: evergreen
-version: 5.0.0
+version: 6.0.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
-tags:
-  - institutional-standard
-  - fundamental-research
-  - governance
+tags: [incremental-edge, decision-state, validation]
 ---
 # 07 Permission Proof and Incremental Edge
 
-> [!abstract] Purpose
-> Prove that fundamental context improves a defined technical baseline rather than merely explaining trades after the fact.
+## Objective
+
+A fundamental decision layer is valuable only if it improves a predeclared baseline after realistic costs, latency, capacity and opportunity cost. Complexity is not evidence of edge.
 
 ## Baselines
 
 At minimum compare:
 
-- technical strategy alone;
-- technical plus calendar exclusion;
-- technical plus random permission with equal trade count;
-- technical plus simple public macro rule;
-- full fundamental permission;
-- fundamental permission with costs and delayed data.
+1. unconditional exposure;
+2. simple calendar exclusions;
+3. simple valuation or macro rule;
+4. market-implied-only model;
+5. full fundamental decision engine;
+6. full engine after cost, financing, latency and portfolio constraints.
 
-## Permission outputs
+## Evaluation unit
 
-- `LONG_ONLY`
-- `SHORT_ONLY`
-- `TWO_WAY_REDUCED`
-- `NO_TRADE`
+The unit may be a forecast, a decision opportunity, a campaign, an event window or a portfolio rebalance. It must be defined before outcome analysis. Rejected opportunities must be stored; otherwise the value of `NO_DEPLOYMENT` cannot be measured.
 
-Each output requires deterministic or probabilistic thresholds stored before evaluation. Confidence is not a synonym for conviction.
+## Metrics
 
-## Incremental tests
+- out-of-sample expected value;
+- probability calibration and Brier score;
+- log score for density forecasts;
+- hit rate and payoff distribution;
+- drawdown and tail loss;
+- expected shortfall and scenario loss;
+- turnover, cost and implementation shortfall;
+- missed favorable outcomes;
+- avoided adverse outcomes;
+- stability by regime, horizon and asset;
+- capacity and liquidity sensitivity;
+- incremental information ratio or utility versus baseline.
 
-Measure:
+## Research design
 
-- net expectancy;
-- hit rate and payoff ratio;
-- drawdown;
-- tail loss and gap exposure;
-- turnover and implementation shortfall;
-- percentage of profitable baseline trades vetoed;
-- percentage of losing trades vetoed;
-- opportunity cost of `NO_TRADE`;
-- calibration of confidence bins;
-- stability by asset, regime, event type, and horizon.
-
-\[
-IncrementalEdge=Metric(Technical+Fundamental)-Metric(Technical)
-\]
-
-Use paired trades or matched opportunities so trade selection does not create a misleading comparison.
+Use rolling or expanding pseudo-real-time evaluation, embargoes where labels overlap, realistic release timestamps, model-version freezes and nested validation. Hyperparameter selection must occur inside the training window.
 
 ## Decision thresholds
 
-Optimize against utility and survival constraints, not maximum in-sample Sharpe. A permission model must beat a no-information base rate and remain useful after latency, revisions, fees, slippage, financing, and rejected-trade opportunity cost.
+Thresholds are selected by expected utility under constraints, not by maximizing in-sample accuracy. The desk must disclose how threshold changes affect false deployment, missed opportunity, tail loss and concentration.
 
-## Falsification
+## Promotion standard
 
-Retire or reduce a rule when:
+A decision engine is promoted only when:
 
-- edge is concentrated in one episode;
-- sign reverses across plausible specifications;
-- confidence is uncalibrated;
-- the model selects fewer trades without improving utility;
-- the target asset moves before the supposed leader;
-- the edge disappears with first-release data;
-- the result depends on one vendor field unavailable historically.
-
-## Governance
-
-No analyst may change event windows, thresholds, regime labels, or exclusions after viewing test outcomes without creating a new model version and returning to research status.
+- it beats simple baselines out of sample;
+- calibration is acceptable or explicitly corrected;
+- performance survives reasonable cost and latency stress;
+- the effect is not concentrated in one episode;
+- the mechanism is economically coherent;
+- capacity and data licensing are operationally feasible;
+- independent risk approves the failure and retirement plan.

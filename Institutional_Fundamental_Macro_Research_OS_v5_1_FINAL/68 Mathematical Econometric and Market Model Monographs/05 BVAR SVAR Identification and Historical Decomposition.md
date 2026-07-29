@@ -88,26 +88,13 @@ Conflicts involving **05 BVAR SVAR Identification and Historical Decomposition**
 
 **05 BVAR SVAR Identification and Historical Decomposition asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **05 BVAR SVAR Identification and Historical Decomposition** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **05 BVAR SVAR Identification and Historical Decomposition** information since the prior close and its source timestamp.
-- Reconstruct the priced **05 BVAR SVAR Identification and Historical Decomposition** baseline before reading the target move.
-- Name the liquid leader closest to the **05 BVAR SVAR Identification and Historical Decomposition** mechanism and one independent confirmation.
-- Compare observed transmission with the **05 BVAR SVAR Identification and Historical Decomposition** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **05 BVAR SVAR Identification and Historical Decomposition** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **05 BVAR SVAR Identification and Historical Decomposition**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **05 BVAR SVAR Identification and Historical Decomposition** pricing gap rather than the general narrative.
-- Estimate the **05 BVAR SVAR Identification and Historical Decomposition** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **05 BVAR SVAR Identification and Historical Decomposition** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **05 BVAR SVAR Identification and Historical Decomposition**.
-
-A valid **05 BVAR SVAR Identification and Historical Decomposition** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **05 BVAR SVAR Identification and Historical Decomposition** thesis with
 
 Score **05 BVAR SVAR Identification and Historical Decomposition** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **05 BVAR SVAR Identification and Historical Decomposition** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 05 BVAR SVAR Identification and Historical Decomposition
 
@@ -135,8 +122,66 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 05 BVAR SVAR Identification and Historical Decomposition
 
 Provide a formal variable table, derivation or pseudocode, synthetic tests, point-in-time reconstruction, benchmarks and ablation, parameter uncertainty, regime stability, computational profile, cost/capacity translation, and a monitored model card. A second researcher must reproduce **05 BVAR SVAR Identification and Historical Decomposition** from hash-addressed artifacts.
+
+## Production-grade expansion v6
+
+### Reduced-form VAR
+
+$$
+y_t=c+A_1y_{t-1}+\cdots+A_py_{t-p}+u_t,
+\qquad u_t\sim N(0,\Sigma_u)
+$$
+
+High-dimensional systems require shrinkage. Minnesota priors shrink own lags toward persistent univariate processes and cross-lags toward zero. Hyperparameters must be selected inside the historical evaluation loop or estimated hierarchically.
+
+### Structural mapping
+
+A structural VAR assumes:
+
+$$
+B_0u_t=\varepsilon_t,
+\qquad E[\varepsilon_t\varepsilon_t^\top]=I
+$$
+
+Because \(\Sigma_u\) does not uniquely identify \(B_0\), the research claim depends on restrictions. Acceptable strategies include recursive ordering, sign restrictions, zero restrictions, long-run restrictions, external instruments, narrative restrictions and heteroskedasticity-based identification.
+
+### Identification record
+
+For each shock document:
+
+- economic definition;
+- contemporaneous restrictions;
+- horizon of sign or zero restrictions;
+- instrument relevance and exclusion assumptions;
+- anticipation and information effects;
+- admissible sample;
+- sensitivity to ordering and variable set;
+- share of accepted draws for set-identified models.
+
+### Impulse responses
+
+Report posterior distributions, not a single line. State whether uncertainty covers parameters, shock identification and model specification. Cumulate growth rates only when units require it. Validate impulse signs against accounting constraints and institutional timing.
+
+### Historical decomposition
+
+The decomposition attributes the model-implied path to identified shocks and initial conditions. It is not a factual statement that a named shock “caused” the observed path. Compare alternative identification schemes and retain residual or unexplained components.
+
+### Central-bank information shocks
+
+High-frequency policy surprises often mix a policy action with information revealed by the central bank. Use joint movements in rates and equities, text or external instruments to distinguish the channels. Otherwise, a monetary-shock label may reverse economic interpretation.
+
+### Production tests
+
+- simulated recovery under the chosen identification;
+- weak-instrument diagnostics;
+- prior sensitivity;
+- lag and variable-set sensitivity;
+- structural stability and rolling estimates;
+- posterior predictive checks;
+- comparison with local projections;
+- pseudo-real-time forecast and decomposition stability.

@@ -110,26 +110,13 @@ Conflicts involving **20 Options Surface Static Arbitrage Greeks Risk-Neutral De
 
 **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** information since the prior close and its source timestamp.
-- Reconstruct the priced **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** baseline before reading the target move.
-- Name the liquid leader closest to the **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** mechanism and one independent confirmation.
-- Compare observed transmission with the **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** pricing gap rather than the general narrative.
-- Estimate the **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance**.
-
-A valid **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -146,9 +133,9 @@ A valid **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Va
 
 Score **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance
 
@@ -165,8 +152,50 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance
 
 Provide a formal variable table, derivation or pseudocode, synthetic tests, point-in-time reconstruction, benchmarks and ablation, parameter uncertainty, regime stability, computational profile, cost/capacity translation, and a monitored model card. A second researcher must reproduce **20 Options Surface Static Arbitrage Greeks Risk-Neutral Density and Variance** from hash-addressed artifacts.
+
+## Production-grade expansion v6
+
+### Data cleaning
+
+Build surfaces from valid bid/ask quotes with contract, corporate-action, settlement, rate, dividend and forward inputs. Exclude crossed, stale, zero-bid and obvious error quotes using documented rules. Mid prices are not always executable; retain spreads.
+
+### Coordinates
+
+Use forward moneyness and total implied variance:
+
+$$
+k=\log(K/F_T),\qquad w(k,T)=\sigma_{imp}^2(k,T)T
+$$
+
+This improves comparability across maturities and spot moves.
+
+### Static arbitrage
+
+A production surface must avoid negative calendar variance, butterfly arbitrage and violations of call-price monotonicity and convexity. SVI or spline parameterizations require constrained fitting and post-fit tests.
+
+### Risk-neutral density
+
+Under regularity:
+
+$$
+q_T(K)=e^{rT}\frac{\partial^2 C(K,T)}{\partial K^2}
+$$
+
+Numerical differentiation amplifies noise; use a smooth arbitrage-controlled call-price function. The density is risk-neutral, not a physical forecast. Compare it with historical and model-based physical distributions.
+
+### Variance and event decomposition
+
+Variance swaps and model-free implied variance aggregate option prices across strikes. Event variance can be inferred from adjacent maturities only after accounting for term structure, calendar and non-event variance assumptions.
+
+### Greeks
+
+Compute Greeks consistently with the forward, discounting, dividend and volatility convention. For portfolio risk, include cross-Greeks, smile dynamics and scenario repricing rather than relying on local delta-gamma alone.
+
+### Validation
+
+Report fit error relative to bid/ask, arbitrage tests, stability under quote perturbation, hedge performance, realized-versus-implied comparison and sensitivity to rate/dividend inputs.

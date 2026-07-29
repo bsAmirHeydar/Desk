@@ -84,26 +84,13 @@ Conflicts involving **AI Capital Expenditure Stack Chips Data Centers Power and 
 
 **AI Capital Expenditure Stack Chips Data Centers Power and Networks asset translation:** Geopolitics: trade verified implementation and measurable constraints, not narrative intensity. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **AI Capital Expenditure Stack Chips Data Centers Power and Networks** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **AI Capital Expenditure Stack Chips Data Centers Power and Networks** information since the prior close and its source timestamp.
-- Reconstruct the priced **AI Capital Expenditure Stack Chips Data Centers Power and Networks** baseline before reading the target move.
-- Name the liquid leader closest to the **AI Capital Expenditure Stack Chips Data Centers Power and Networks** mechanism and one independent confirmation.
-- Compare observed transmission with the **AI Capital Expenditure Stack Chips Data Centers Power and Networks** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **AI Capital Expenditure Stack Chips Data Centers Power and Networks** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **AI Capital Expenditure Stack Chips Data Centers Power and Networks**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **AI Capital Expenditure Stack Chips Data Centers Power and Networks** pricing gap rather than the general narrative.
-- Estimate the **AI Capital Expenditure Stack Chips Data Centers Power and Networks** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **AI Capital Expenditure Stack Chips Data Centers Power and Networks** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **AI Capital Expenditure Stack Chips Data Centers Power and Networks**.
-
-A valid **AI Capital Expenditure Stack Chips Data Centers Power and Networks** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **AI Capital Expenditure Stack Chips Data Centers Power and Networks** t
 
 Score **AI Capital Expenditure Stack Chips Data Centers Power and Networks** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **AI Capital Expenditure Stack Chips Data Centers Power and Networks** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for AI Capital Expenditure Stack Chips Data Centers Power and Networks
 
@@ -133,4 +120,4 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

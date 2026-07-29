@@ -88,26 +88,13 @@ Conflicts involving **06 Local Projections State Dependence and Nonlinear Respon
 
 **06 Local Projections State Dependence and Nonlinear Responses asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **06 Local Projections State Dependence and Nonlinear Responses** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **06 Local Projections State Dependence and Nonlinear Responses** information since the prior close and its source timestamp.
-- Reconstruct the priced **06 Local Projections State Dependence and Nonlinear Responses** baseline before reading the target move.
-- Name the liquid leader closest to the **06 Local Projections State Dependence and Nonlinear Responses** mechanism and one independent confirmation.
-- Compare observed transmission with the **06 Local Projections State Dependence and Nonlinear Responses** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **06 Local Projections State Dependence and Nonlinear Responses** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **06 Local Projections State Dependence and Nonlinear Responses**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **06 Local Projections State Dependence and Nonlinear Responses** pricing gap rather than the general narrative.
-- Estimate the **06 Local Projections State Dependence and Nonlinear Responses** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **06 Local Projections State Dependence and Nonlinear Responses** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **06 Local Projections State Dependence and Nonlinear Responses**.
-
-A valid **06 Local Projections State Dependence and Nonlinear Responses** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **06 Local Projections State Dependence and Nonlinear Responses** thesis
 
 Score **06 Local Projections State Dependence and Nonlinear Responses** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **06 Local Projections State Dependence and Nonlinear Responses** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 06 Local Projections State Dependence and Nonlinear Responses
 
@@ -135,8 +122,48 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 06 Local Projections State Dependence and Nonlinear Responses
 
 Provide a formal variable table, derivation or pseudocode, synthetic tests, point-in-time reconstruction, benchmarks and ablation, parameter uncertainty, regime stability, computational profile, cost/capacity translation, and a monitored model card. A second researcher must reproduce **06 Local Projections State Dependence and Nonlinear Responses** from hash-addressed artifacts.
+
+## Production-grade expansion v6
+
+### Baseline
+
+For horizon \(h\):
+
+$$
+y_{t+h}-y_{t-1}=\alpha_h+\beta_h shock_t+\Gamma_h controls_t+\varepsilon_{t+h}
+$$
+
+Each horizon is estimated separately. Serial correlation and overlapping outcomes require appropriate uncertainty, commonly HAC or clustered methods depending on the design.
+
+### State dependence
+
+$$
+y_{t+h}=\alpha_h+\beta_h^L shock_t\,g(z_{t-1})+\beta_h^H shock_t[1-g(z_{t-1})]+\cdots
+$$
+
+The state variable must be predetermined relative to the shock. Hard regime splits can create instability near thresholds; smooth-transition functions reduce discontinuity but introduce specification choices.
+
+### Shock identification
+
+Local projections do not solve identification. The shock may come from high-frequency surprises, instruments, narrative series, policy discontinuities or externally identified residuals. The same exclusion assumptions required elsewhere still apply.
+
+### Controls and bad controls
+
+Controls should block confounding paths without conditioning on post-shock mediators. Pre-trends, lags and fixed effects must be chosen from the causal graph, not from automated significance. Document how results change under plausible control sets.
+
+### Inference
+
+Use horizon-specific effective sample sizes. Wild cluster bootstrap may be needed with few clusters. Simultaneous confidence bands address the probability of at least one false discovery across horizons.
+
+### Comparison with VARs
+
+Local projections are robust to dynamic misspecification but can be noisy. VARs impose more structure and may be more efficient. Production research should compare both and explain disagreement rather than select the preferred curve after seeing results.
+
+### Historical and decision use
+
+Estimate responses by regime, surprise sign, anticipation, liquidity and positioning only when sample sizes support the interaction. Store the response distribution and decay profile for half-life estimation. Do not translate a statistically wide response into precise decision confidence.

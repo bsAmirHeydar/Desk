@@ -110,26 +110,13 @@ Conflicts involving **Flows, Rebalancing, Expiry, and Dealer Effects** must reta
 
 **Flows, Rebalancing, Expiry, and Dealer Effects asset translation:** Execution: validate estimated flow against spread, depth, volume, and realized response. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Flows, Rebalancing, Expiry, and Dealer Effects** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Flows, Rebalancing, Expiry, and Dealer Effects** information since the prior close and its source timestamp.
-- Reconstruct the priced **Flows, Rebalancing, Expiry, and Dealer Effects** baseline before reading the target move.
-- Name the liquid leader closest to the **Flows, Rebalancing, Expiry, and Dealer Effects** mechanism and one independent confirmation.
-- Compare observed transmission with the **Flows, Rebalancing, Expiry, and Dealer Effects** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Flows, Rebalancing, Expiry, and Dealer Effects** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Flows, Rebalancing, Expiry, and Dealer Effects**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Flows, Rebalancing, Expiry, and Dealer Effects** pricing gap rather than the general narrative.
-- Estimate the **Flows, Rebalancing, Expiry, and Dealer Effects** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Flows, Rebalancing, Expiry, and Dealer Effects** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Flows, Rebalancing, Expiry, and Dealer Effects**.
-
-A valid **Flows, Rebalancing, Expiry, and Dealer Effects** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -146,9 +133,9 @@ A valid **Flows, Rebalancing, Expiry, and Dealer Effects** thesis with no residu
 
 Score **Flows, Rebalancing, Expiry, and Dealer Effects** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Flows, Rebalancing, Expiry, and Dealer Effects** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -251,7 +238,7 @@ When flow opposes fundamentals:
 
 - reduce chase;
 - wait for the flow window to pass;
-- demand stronger technical confirmation;
+- demand stronger implementation confirmation;
 - separate intraday from swing thesis;
 - identify whether the flow changes positioning enough to alter the next session.
 
@@ -273,4 +260,4 @@ When flow opposes fundamentals:
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

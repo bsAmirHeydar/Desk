@@ -84,7 +84,7 @@ The suite contains independent, copy-ready operating prompts for:
 
 ### Multihorizon and decision gates
 
-The prompt contract covers Structural, Secular, Cyclical, Tactical, Swing, Daily/Session, Event and Microstructure layers. It requires state, pricing, half-life, transition, conflict, scenario, permission, invalidation, expiry and technical handoff.
+The prompt contract covers Structural, Secular, Cyclical, Tactical, Swing, Daily/Session, Event and Microstructure layers. It requires state, pricing, half-life, transition, conflict, scenario, permission, invalidation, expiry and implementation handoff.
 
 The only permitted fundamental-decision outputs are:
 
@@ -95,7 +95,7 @@ TWO_WAY_REDUCED
 NO_TRADE
 ```
 
-These restrict the allowed trade set but do not override technical entry, structural stop or target authority.
+These restrict the allowed trade set but do not override implementation entry, predeclared risk limit or target authority.
 
 ## Navigation updates
 

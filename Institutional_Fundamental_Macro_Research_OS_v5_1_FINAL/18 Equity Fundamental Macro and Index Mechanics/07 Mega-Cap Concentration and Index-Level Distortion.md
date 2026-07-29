@@ -84,26 +84,13 @@ Conflicts involving **Mega-Cap Concentration and Index-Level Distortion** must r
 
 **Mega-Cap Concentration and Index-Level Distortion asset translation:** Equities: decompose cash-flow news, discount-rate news, risk premium, breadth, and index concentration. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Mega-Cap Concentration and Index-Level Distortion** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Mega-Cap Concentration and Index-Level Distortion** information since the prior close and its source timestamp.
-- Reconstruct the priced **Mega-Cap Concentration and Index-Level Distortion** baseline before reading the target move.
-- Name the liquid leader closest to the **Mega-Cap Concentration and Index-Level Distortion** mechanism and one independent confirmation.
-- Compare observed transmission with the **Mega-Cap Concentration and Index-Level Distortion** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Mega-Cap Concentration and Index-Level Distortion** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Mega-Cap Concentration and Index-Level Distortion**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Mega-Cap Concentration and Index-Level Distortion** pricing gap rather than the general narrative.
-- Estimate the **Mega-Cap Concentration and Index-Level Distortion** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Mega-Cap Concentration and Index-Level Distortion** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Mega-Cap Concentration and Index-Level Distortion**.
-
-A valid **Mega-Cap Concentration and Index-Level Distortion** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **Mega-Cap Concentration and Index-Level Distortion** thesis with no res
 
 Score **Mega-Cap Concentration and Index-Level Distortion** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Mega-Cap Concentration and Index-Level Distortion** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for Mega-Cap Concentration and Index-Level Distortion
 
@@ -134,4 +121,4 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

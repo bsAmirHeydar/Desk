@@ -88,26 +88,13 @@ Conflicts involving **30 Permission Models Calibration Incremental Edge and No-T
 
 **30 Permission Models Calibration Incremental Edge and No-Trade Value asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **30 Permission Models Calibration Incremental Edge and No-Trade Value** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **30 Permission Models Calibration Incremental Edge and No-Trade Value** information since the prior close and its source timestamp.
-- Reconstruct the priced **30 Permission Models Calibration Incremental Edge and No-Trade Value** baseline before reading the target move.
-- Name the liquid leader closest to the **30 Permission Models Calibration Incremental Edge and No-Trade Value** mechanism and one independent confirmation.
-- Compare observed transmission with the **30 Permission Models Calibration Incremental Edge and No-Trade Value** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **30 Permission Models Calibration Incremental Edge and No-Trade Value** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **30 Permission Models Calibration Incremental Edge and No-Trade Value**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **30 Permission Models Calibration Incremental Edge and No-Trade Value** pricing gap rather than the general narrative.
-- Estimate the **30 Permission Models Calibration Incremental Edge and No-Trade Value** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **30 Permission Models Calibration Incremental Edge and No-Trade Value** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **30 Permission Models Calibration Incremental Edge and No-Trade Value**.
-
-A valid **30 Permission Models Calibration Incremental Edge and No-Trade Value** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **30 Permission Models Calibration Incremental Edge and No-Trade Value**
 
 Score **30 Permission Models Calibration Incremental Edge and No-Trade Value** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **30 Permission Models Calibration Incremental Edge and No-Trade Value** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 30 Permission Models Calibration Incremental Edge and No-Trade Value
 
@@ -135,8 +122,44 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 30 Permission Models Calibration Incremental Edge and No-Trade Value
 
 Provide a formal variable table, derivation or pseudocode, synthetic tests, point-in-time reconstruction, benchmarks and ablation, parameter uncertainty, regime stability, computational profile, cost/capacity translation, and a monitored model card. A second researcher must reproduce **30 Permission Models Calibration Incremental Edge and No-Trade Value** from hash-addressed artifacts.
+
+## Production-grade expansion v6
+
+### Decision formulation
+
+Let actions \(a\) include favorable-long exposure, favorable-short exposure, relative value, no deployment and request-more-evidence. Select:
+
+$$
+a^*=\arg\max_a E[U(P\&L_a, risk_a, liquidity_a, cost_a, portfolio_a)\mid I_t]
+$$
+
+The information set \(I_t\) is point in time. The action is a fundamental decision state, not an order.
+
+### Probability model
+
+The engine may estimate outcome classes, return distributions or scenario probabilities. Calibration is assessed on the same horizon and opportunity definition used in decisions. Ranking skill does not imply calibrated probability.
+
+### No-deployment value
+
+Store every eligible opportunity, including rejected ones. Define counterfactual rules before outcomes. Measure avoided adverse outcomes, missed favorable outcomes, capital released, tail-loss reduction and opportunity cost.
+
+### Baseline ladder
+
+Compare unconditional exposure, calendar filters, simple market-implied rules, simple macro rules and the full engine. Use paired opportunities when possible. Report whether improvement comes from direction, selection, sizing, horizon or risk avoidance.
+
+### Thresholds
+
+Thresholds optimize expected utility under cost, capacity, concentration and false-deployment penalties. They may vary by asset and regime only if variation is trained and validated without leakage.
+
+### Calibration and confidence caps
+
+Use reliability diagrams, Brier decomposition, log score and expected calibration error. Apply caps for missing data, proxy positioning, unstable regime relations, model disagreement, illiquidity and untested structural changes.
+
+### Monitoring and retirement
+
+Monitor feature drift, probability calibration, action frequency, rejected-opportunity outcomes, cost, concentration and regime performance. A model is reduced, shadowed or retired when its incremental value disappears or its data and mechanism no longer remain valid.

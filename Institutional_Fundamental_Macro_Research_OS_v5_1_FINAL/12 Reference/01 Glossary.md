@@ -84,26 +84,13 @@ Conflicts involving **Glossary** must retain separate state objects and be resol
 
 **Glossary asset translation:** Data: no field enters a decision without units, vintage, lineage, and quality status. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Glossary** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Glossary** information since the prior close and its source timestamp.
-- Reconstruct the priced **Glossary** baseline before reading the target move.
-- Name the liquid leader closest to the **Glossary** mechanism and one independent confirmation.
-- Compare observed transmission with the **Glossary** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Glossary** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Glossary**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Glossary** pricing gap rather than the general narrative.
-- Estimate the **Glossary** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Glossary** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Glossary**.
-
-A valid **Glossary** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **Glossary** thesis with no residual pricing gap, adverse carry beyond e
 
 Score **Glossary** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Glossary** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -165,7 +152,7 @@ This material survived consolidation because it contains subject-specific instru
 
 **Central-bank reaction function** — Conditional relationship between economic/financial conditions and likely policy response.
 
-**CISD-style trigger** — The execution trigger in Amir's system after trend continuation and structural pullback; it remains separate from macro permission.
+**observable state-confirmation event-style trigger** — The execution trigger in Amir's system after fundamental-state persistence and structural temporary counter-move; it remains separate from macro permission.
 
 **Commitments of Traders (COT)** — CFTC reports classifying futures/options positions by trader categories; useful for weekly positioning context.
 
@@ -265,7 +252,7 @@ This material survived consolidation because it contains subject-specific instru
 
 **Market hurdle** — Outcome required to surprise the marginal price setter; can differ from published consensus.
 
-**Measured move** — Technical objective based on structural symmetry in Amir's execution model.
+**scenario-defined realization path** — implementation objective based on structural symmetry in Amir's execution model.
 
 **Monetary transmission** — Path from policy actions/expectations through markets, credit, demand, inflation, and activity.
 
@@ -331,9 +318,9 @@ This material survived consolidation because it contains subject-specific instru
 
 **Stop-through/tail** — Treasury auction stop yield better/worse than when-issued yield.
 
-**Structural invalidation** — Technical price level where the execution thesis fails.
+**Structural invalidation** — implementation price level where the execution thesis fails.
 
-**Structural pullback** — Required retracement/location stage in Amir's continuation model.
+**Structural temporary counter-move** — Required retracement/location stage in Amir's continuation model.
 
 **Surprise** — Difference between new information and expectation, not simply high or low absolute data.
 
@@ -384,4 +371,4 @@ This material survived consolidation because it contains subject-specific instru
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

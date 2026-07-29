@@ -33,7 +33,7 @@ tags:
 - Use an exact market/symbol and vehicle when possible.
 - Give a timezone for historical analysis.
 - State the intended holding horizon.
-- Add technical context only if actually observed.
+- Add implementation context only if actually observed.
 - Add portfolio context when position interaction matters.
 - Choose `EX_POST_AUDIT=NO` for a clean blind reconstruction.
 
@@ -48,7 +48,7 @@ Reject or ask for correction if:
 - scenario probabilities lack evidence;
 - a rival model or cross-asset contradiction is missing;
 - permission lacks invalidation or expiry;
-- technical stops are subordinated to the fundamental narrative;
+- implementation stops are subordinated to the fundamental narrative;
 - unknowns are hidden.
 
 ## Minimum reusable launcher
@@ -56,3 +56,6 @@ Reject or ask for correction if:
 ```text
 Open the uploaded Vault ZIP, execute the selected prompt note exactly, use the Vault as the mandatory methodology, obtain the required current or historical evidence, and deliver the complete output contract now.
 ```
+
+> [!important] Fundamental-only boundary
+> Price-pattern analysis, indicator rules and chart-trigger instructions are prohibited. Use the Vault's fundamental, macro, valuation, flow, liquidity, market-structure and portfolio methods.

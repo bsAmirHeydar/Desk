@@ -18,9 +18,9 @@ tags:
 
 ## Definition and economic object
 
-**37 Emerging-Market Local Debt Driver Book** is a research object inside conversion of macro information into horizon-specific permissions, scenario paths, technical handoffs, and auditable trade management. The analyst must isolate the measurable state, the expectation already embedded in prices, the mechanism connecting them, and the horizon on which that inference can survive.
+**37 Emerging-Market Local Debt Driver Book** is a research object inside conversion of macro information into horizon-specific permissions, scenario paths, implementation handoffs, and auditable trade management. The analyst must isolate the measurable state, the expectation already embedded in prices, the mechanism connecting them, and the horizon on which that inference can survive.
 
-For **37 Emerging-Market Local Debt Driver Book**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, technical handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
+For **37 Emerging-Market Local Debt Driver Book**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, implementation handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
 
 ## Research questions
 
@@ -50,7 +50,7 @@ For **37 Emerging-Market Local Debt Driver Book**, document every variable, unit
 - **Measurement 2 for 37 Emerging-Market Local Debt Driver Book:** new information and priced baseline.
 - **Measurement 3 for 37 Emerging-Market Local Debt Driver Book:** causal leader and independent confirmation.
 - **Measurement 4 for 37 Emerging-Market Local Debt Driver Book:** liquidity/event clock and expected half-life.
-- **Measurement 5 for 37 Emerging-Market Local Debt Driver Book:** technical trigger, structural stop, and expiry.
+- **Measurement 5 for 37 Emerging-Market Local Debt Driver Book:** predeclared observable confirmation, predeclared risk limit, and expiry.
 
 The **37 Emerging-Market Local Debt Driver Book** dataset must satisfy [[00 Core Standards/16 Data Dictionary and Release Calendar Standard]] and preserve first releases, revisions, and admissible timestamps under [[00 Core Standards/03 Point-in-Time and Bitemporal Data Standard]].
 
@@ -71,7 +71,7 @@ Validate the **37 Emerging-Market Local Debt Driver Book** stack against simple 
 | Structural/Cyclical | In the **37 Emerging-Market Local Debt Driver Book** research object, higher-horizon states create priors but do not time entries. |
 | Tactical/Swing | In the **37 Emerging-Market Local Debt Driver Book** research object, repricing path, catalysts, and half-life determine campaign permission. |
 | Daily | In the **37 Emerging-Market Local Debt Driver Book** research object, overnight change and current pricing produce one of four permission states. |
-| Event/Intraday | In the **37 Emerging-Market Local Debt Driver Book** research object, leader, confirmation, liquidity, and technical structure govern execution. |
+| Event/Intraday | In the **37 Emerging-Market Local Debt Driver Book** research object, leader, confirmation, liquidity, and observable market-state confirmation govern execution. |
 
 Conflicts involving **37 Emerging-Market Local Debt Driver Book** must retain separate state objects and be resolved through [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]], never by an undocumented average score.
 
@@ -80,30 +80,17 @@ Conflicts involving **37 Emerging-Market Local Debt Driver Book** must retain se
 1. **37 Emerging-Market Local Debt Driver Book channel 1:** test `information gap → leader repricing`.
 2. **37 Emerging-Market Local Debt Driver Book channel 2:** test `leader → target asset`.
 3. **37 Emerging-Market Local Debt Driver Book channel 3:** test `positioning/liquidity → path shape`.
-4. **37 Emerging-Market Local Debt Driver Book channel 4:** test `technical structure → executable risk definition`.
+4. **37 Emerging-Market Local Debt Driver Book channel 4:** test `observable market-state confirmation → executable risk definition`.
 
-**37 Emerging-Market Local Debt Driver Book asset translation:** Trading: fundamentals grant permission; the technical structure controls entry, stop, and target. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **37 Emerging-Market Local Debt Driver Book** posterior or activate a rival explanation.
+**37 Emerging-Market Local Debt Driver Book asset translation:** Trading: fundamentals grant permission; the observable market-state confirmation controls instrument selection, risk budget, and exit conditions. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **37 Emerging-Market Local Debt Driver Book** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **37 Emerging-Market Local Debt Driver Book** information since the prior close and its source timestamp.
-- Reconstruct the priced **37 Emerging-Market Local Debt Driver Book** baseline before reading the target move.
-- Name the liquid leader closest to the **37 Emerging-Market Local Debt Driver Book** mechanism and one independent confirmation.
-- Compare observed transmission with the **37 Emerging-Market Local Debt Driver Book** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **37 Emerging-Market Local Debt Driver Book** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **37 Emerging-Market Local Debt Driver Book**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **37 Emerging-Market Local Debt Driver Book** pricing gap rather than the general narrative.
-- Estimate the **37 Emerging-Market Local Debt Driver Book** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **37 Emerging-Market Local Debt Driver Book** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **37 Emerging-Market Local Debt Driver Book**.
-
-A valid **37 Emerging-Market Local Debt Driver Book** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -111,13 +98,13 @@ A valid **37 Emerging-Market Local Debt Driver Book** thesis with no residual pr
 - **Failure test 2 for 37 Emerging-Market Local Debt Driver Book:** changing bias after every candle.
 - **Failure test 3 for 37 Emerging-Market Local Debt Driver Book:** confusing a correct thesis with good execution.
 - **Failure test 4 for 37 Emerging-Market Local Debt Driver Book:** holding beyond evidence half-life.
-- **Failure test 5 for 37 Emerging-Market Local Debt Driver Book:** overriding structural stops with narratives.
+- **Failure test 5 for 37 Emerging-Market Local Debt Driver Book:** overriding predeclared risk limits with narratives.
 
 Score **37 Emerging-Market Local Debt Driver Book** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **37 Emerging-Market Local Debt Driver Book** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 37 Emerging-Market Local Debt Driver Book
 
@@ -133,4 +120,4 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

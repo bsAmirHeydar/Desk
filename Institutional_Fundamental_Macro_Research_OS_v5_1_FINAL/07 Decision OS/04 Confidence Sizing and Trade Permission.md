@@ -88,26 +88,13 @@ Conflicts involving **Confidence, Sizing, and Trade Permission** must retain sep
 
 **Confidence, Sizing, and Trade Permission asset translation:** Process: decision rights, cutoff, veto, and auditability are part of the edge. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Confidence, Sizing, and Trade Permission** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Confidence, Sizing, and Trade Permission** information since the prior close and its source timestamp.
-- Reconstruct the priced **Confidence, Sizing, and Trade Permission** baseline before reading the target move.
-- Name the liquid leader closest to the **Confidence, Sizing, and Trade Permission** mechanism and one independent confirmation.
-- Compare observed transmission with the **Confidence, Sizing, and Trade Permission** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Confidence, Sizing, and Trade Permission** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Confidence, Sizing, and Trade Permission**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Confidence, Sizing, and Trade Permission** pricing gap rather than the general narrative.
-- Estimate the **Confidence, Sizing, and Trade Permission** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Confidence, Sizing, and Trade Permission** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Confidence, Sizing, and Trade Permission**.
-
-A valid **Confidence, Sizing, and Trade Permission** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **Confidence, Sizing, and Trade Permission** thesis with no residual pri
 
 Score **Confidence, Sizing, and Trade Permission** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Confidence, Sizing, and Trade Permission** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -138,13 +125,13 @@ How likely is the dominant repricing direction?
 How reliable is the causal interpretation?
 
 ### Trade quality
-How strong is the actual technical setup and reward-to-risk?
+How strong is the actual qualified implementation condition and reward-to-risk?
 
 These must not be collapsed into one feeling.
 
 ## Permission Matrix
 
-| Macro clarity | Cross-asset confirmation | Technical quality | Permission |
+| Macro clarity | Cross-asset confirmation | implementation quality | Permission |
 |---|---|---|---|
 | High | High | High | Full allowed risk within system |
 | High | Mixed | High | Reduced risk or delayed entry |
@@ -172,7 +159,7 @@ Example:
 | Low | 0.00–0.40 |
 | Major catalyst imminent | 0.00–0.50 |
 | Poor liquidity | 0.00 |
-| Exceptional technical setup but mixed macro | Still capped by macro permission |
+| Exceptional qualified implementation condition but mixed macro | Still capped by macro permission |
 
 ## Confidence Calibration
 
@@ -201,7 +188,7 @@ But “large possible move” is not a substitute for evidence.
 
 ## Hard Rules
 
-- Never widen a technical stop because macro confidence is high.
+- Never widen a implementation stop because macro confidence is high.
 - Never add after invalidation without a new setup.
 - Never use leverage to compensate for low expected frequency.
 - Never equate a dramatic narrative with high probability.
@@ -240,4 +227,4 @@ Fundamental diversification requires distinct causal drivers, not different tick
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

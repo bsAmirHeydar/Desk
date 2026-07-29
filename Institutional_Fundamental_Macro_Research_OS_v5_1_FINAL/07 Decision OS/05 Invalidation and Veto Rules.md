@@ -88,26 +88,13 @@ Conflicts involving **Invalidation and Veto Rules** must retain separate state o
 
 **Invalidation and Veto Rules asset translation:** Process: decision rights, cutoff, veto, and auditability are part of the edge. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Invalidation and Veto Rules** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Invalidation and Veto Rules** information since the prior close and its source timestamp.
-- Reconstruct the priced **Invalidation and Veto Rules** baseline before reading the target move.
-- Name the liquid leader closest to the **Invalidation and Veto Rules** mechanism and one independent confirmation.
-- Compare observed transmission with the **Invalidation and Veto Rules** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Invalidation and Veto Rules** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Invalidation and Veto Rules**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Invalidation and Veto Rules** pricing gap rather than the general narrative.
-- Estimate the **Invalidation and Veto Rules** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Invalidation and Veto Rules** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Invalidation and Veto Rules**.
-
-A valid **Invalidation and Veto Rules** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **Invalidation and Veto Rules** thesis with no residual pricing gap, adv
 
 Score **Invalidation and Veto Rules** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Invalidation and Veto Rules** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -158,8 +145,8 @@ Example: a six-month fiscal story cannot justify a five-minute entry without a c
 - abnormal spread/liquidity;
 - conflicting core markets;
 - extreme gap reducing reward-to-risk;
-- technical setup absent;
-- structural stop too wide;
+- qualified implementation condition absent;
+- predeclared risk limit too wide;
 - volatility outside validated operating range;
 - correlated portfolio exposure already high;
 - thesis expired;
@@ -172,7 +159,7 @@ Define before trading:
 1. **Warning:** evidence weakens.
 2. **Downgrade:** permission reduces.
 3. **Fundamental invalidation:** thesis retired.
-4. **Technical invalidation:** position exits.
+4. **implementation invalidation:** position exits.
 5. **Emergency veto:** no new trades.
 
 ## Cross-Asset Invalidation Examples
@@ -205,7 +192,7 @@ Safety / market integrity
 > hard portfolio risk
 > fundamental invalidation
 > catalyst/liquidity veto
-> technical invalidation
+> implementation invalidation
 > directional preference
 ```
 
@@ -235,4 +222,4 @@ The stop can be price-based. The thesis invalidation must be causal.
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

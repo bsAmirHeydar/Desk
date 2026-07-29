@@ -18,7 +18,7 @@ tags:
 
 ## Definition and economic object
 
-Credit pricing combines expected default loss, recovery uncertainty, downgrade/migration, liquidity, risk premium, technical supply, and embedded options.
+Credit pricing combines expected default loss, recovery uncertainty, downgrade/migration, liquidity, risk premium, implementation supply, and embedded options.
 
 For **24 Survival Analysis Defaults Recoveries and Credit Migration**, the relevant institutional domain is **nowcast**: point-in-time measurement, forecasting, causal inference, model validation, data lineage, and research deployment. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
 
@@ -88,26 +88,13 @@ Conflicts involving **24 Survival Analysis Defaults Recoveries and Credit Migrat
 
 **24 Survival Analysis Defaults Recoveries and Credit Migration asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **24 Survival Analysis Defaults Recoveries and Credit Migration** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **24 Survival Analysis Defaults Recoveries and Credit Migration** information since the prior close and its source timestamp.
-- Reconstruct the priced **24 Survival Analysis Defaults Recoveries and Credit Migration** baseline before reading the target move.
-- Name the liquid leader closest to the **24 Survival Analysis Defaults Recoveries and Credit Migration** mechanism and one independent confirmation.
-- Compare observed transmission with the **24 Survival Analysis Defaults Recoveries and Credit Migration** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **24 Survival Analysis Defaults Recoveries and Credit Migration** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **24 Survival Analysis Defaults Recoveries and Credit Migration**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **24 Survival Analysis Defaults Recoveries and Credit Migration** pricing gap rather than the general narrative.
-- Estimate the **24 Survival Analysis Defaults Recoveries and Credit Migration** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **24 Survival Analysis Defaults Recoveries and Credit Migration** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **24 Survival Analysis Defaults Recoveries and Credit Migration**.
-
-A valid **24 Survival Analysis Defaults Recoveries and Credit Migration** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **24 Survival Analysis Defaults Recoveries and Credit Migration** thesis
 
 Score **24 Survival Analysis Defaults Recoveries and Credit Migration** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **24 Survival Analysis Defaults Recoveries and Credit Migration** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 24 Survival Analysis Defaults Recoveries and Credit Migration
 
@@ -136,7 +123,7 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 24 Survival Analysis Defaults Recoveries and Credit Migration
 

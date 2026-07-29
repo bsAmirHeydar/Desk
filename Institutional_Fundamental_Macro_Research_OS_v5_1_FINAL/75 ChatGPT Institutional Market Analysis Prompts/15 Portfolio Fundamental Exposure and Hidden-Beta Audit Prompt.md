@@ -71,3 +71,6 @@ OUTPUT
 
 The audit must distinguish notional diversification from true driver diversification.
 ~~~
+
+> [!important] Fundamental-only boundary
+> Price-pattern analysis, indicator rules and chart-trigger instructions are prohibited. Use the Vault's fundamental, macro, valuation, flow, liquidity, market-structure and portfolio methods.

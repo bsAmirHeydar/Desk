@@ -84,26 +84,13 @@ Conflicts involving **Inventory Measurement Visible and Invisible Stocks** must 
 
 **Inventory Measurement Visible and Invisible Stocks asset translation:** Commodities: require a physical balance, curve/location evidence, inventory normalization, and financial overlay. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Inventory Measurement Visible and Invisible Stocks** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Inventory Measurement Visible and Invisible Stocks** information since the prior close and its source timestamp.
-- Reconstruct the priced **Inventory Measurement Visible and Invisible Stocks** baseline before reading the target move.
-- Name the liquid leader closest to the **Inventory Measurement Visible and Invisible Stocks** mechanism and one independent confirmation.
-- Compare observed transmission with the **Inventory Measurement Visible and Invisible Stocks** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Inventory Measurement Visible and Invisible Stocks** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Inventory Measurement Visible and Invisible Stocks**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Inventory Measurement Visible and Invisible Stocks** pricing gap rather than the general narrative.
-- Estimate the **Inventory Measurement Visible and Invisible Stocks** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Inventory Measurement Visible and Invisible Stocks** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Inventory Measurement Visible and Invisible Stocks**.
-
-A valid **Inventory Measurement Visible and Invisible Stocks** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **Inventory Measurement Visible and Invisible Stocks** thesis with no re
 
 Score **Inventory Measurement Visible and Invisible Stocks** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Inventory Measurement Visible and Invisible Stocks** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for Inventory Measurement Visible and Invisible Stocks
 
@@ -135,4 +122,4 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

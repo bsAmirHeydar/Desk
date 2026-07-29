@@ -88,26 +88,13 @@ Conflicts involving **23 Portfolio Optimization Robust Risk Budgets and Scenario
 
 **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** information since the prior close and its source timestamp.
-- Reconstruct the priced **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** baseline before reading the target move.
-- Name the liquid leader closest to the **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** mechanism and one independent confirmation.
-- Compare observed transmission with the **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** pricing gap rather than the general narrative.
-- Estimate the **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L**.
-
-A valid **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** thesi
 
 Score **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 23 Portfolio Optimization Robust Risk Budgets and Scenario P&L
 
@@ -138,8 +125,44 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 23 Portfolio Optimization Robust Risk Budgets and Scenario P&L
 
 Provide a formal variable table, derivation or pseudocode, synthetic tests, point-in-time reconstruction, benchmarks and ablation, parameter uncertainty, regime stability, computational profile, cost/capacity translation, and a monitored model card. A second researcher must reproduce **23 Portfolio Optimization Robust Risk Budgets and Scenario P&L** from hash-addressed artifacts.
+
+## Production-grade expansion v6
+
+### Objective
+
+A general constrained problem is:
+
+$$
+\max_w\; E[R_p]-\frac{\lambda}{2}w^\top\Sigma w-C(w)-L(w)
+$$
+
+subject to leverage, liquidity, concentration, legal, funding and scenario-loss constraints. \(C(w)\) represents transaction and financing costs; \(L(w)\) can penalize illiquidity or model uncertainty.
+
+### Estimation risk
+
+Expected returns and covariance matrices are unstable. Use shrinkage, factor structures, Bayesian estimates, robust optimization or resampled sensitivity. Report how allocations change under plausible input perturbations.
+
+### Risk budgeting
+
+Volatility contributions are not sufficient when payoffs are nonlinear or correlations change. Combine factor, scenario, expected-shortfall, liquidity and convexity budgets. Hidden exposures are aggregated by causal driver, not ticker count.
+
+### Scenario P&L
+
+Scenarios reprice curves, spreads, FX, commodities, options, funding and correlations consistently. Include first-order and nonlinear effects, margin, haircut, basis and exit-cost changes.
+
+### Liquidity-adjusted capacity
+
+Estimate participation, impact, liquidation horizon and stressed depth by instrument. Concentration limits use the worse of normal and stressed capacity. Hedge liquidity is evaluated jointly with the asset.
+
+### Governance
+
+Separate research expected return, portfolio construction and independent risk approval. Overrides require a reason, owner, expiry and later attribution. Optimizer outputs are proposals, not authority.
+
+### Validation
+
+Compare with equal risk, simple factor-balanced and policy portfolios. Evaluate turnover, cost, drawdown, tail loss, stability, capacity and performance under input error.

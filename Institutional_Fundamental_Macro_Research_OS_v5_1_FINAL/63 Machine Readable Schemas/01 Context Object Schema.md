@@ -40,7 +40,7 @@ permission: {enum: [LONG_ONLY, SHORT_ONLY, TWO_WAY_REDUCED, NO_TRADE]}
 confidence: {type: number, minimum: 0, maximum: 1}
 size_ceiling: number
 fundamental_invalidation: [string]
-technical_handoff: object
+implementation_handoff: object
 expiry: datetime
 source_claim_ids: [string]
 model_versions: [string]

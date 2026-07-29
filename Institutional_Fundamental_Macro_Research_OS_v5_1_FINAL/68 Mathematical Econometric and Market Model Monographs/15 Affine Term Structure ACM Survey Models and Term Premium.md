@@ -88,26 +88,13 @@ Conflicts involving **15 Affine Term Structure ACM Survey Models and Term Premiu
 
 **15 Affine Term Structure ACM Survey Models and Term Premium asset translation:** Research: compare every model with simple real-time benchmarks and store the full forecast vintage. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **15 Affine Term Structure ACM Survey Models and Term Premium** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **15 Affine Term Structure ACM Survey Models and Term Premium** information since the prior close and its source timestamp.
-- Reconstruct the priced **15 Affine Term Structure ACM Survey Models and Term Premium** baseline before reading the target move.
-- Name the liquid leader closest to the **15 Affine Term Structure ACM Survey Models and Term Premium** mechanism and one independent confirmation.
-- Compare observed transmission with the **15 Affine Term Structure ACM Survey Models and Term Premium** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **15 Affine Term Structure ACM Survey Models and Term Premium** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **15 Affine Term Structure ACM Survey Models and Term Premium**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **15 Affine Term Structure ACM Survey Models and Term Premium** pricing gap rather than the general narrative.
-- Estimate the **15 Affine Term Structure ACM Survey Models and Term Premium** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **15 Affine Term Structure ACM Survey Models and Term Premium** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **15 Affine Term Structure ACM Survey Models and Term Premium**.
-
-A valid **15 Affine Term Structure ACM Survey Models and Term Premium** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **15 Affine Term Structure ACM Survey Models and Term Premium** thesis w
 
 Score **15 Affine Term Structure ACM Survey Models and Term Premium** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **15 Affine Term Structure ACM Survey Models and Term Premium** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 15 Affine Term Structure ACM Survey Models and Term Premium
 
@@ -136,8 +123,48 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
 
 ## Monograph implementation requirements for 15 Affine Term Structure ACM Survey Models and Term Premium
 
 Provide a formal variable table, derivation or pseudocode, synthetic tests, point-in-time reconstruction, benchmarks and ablation, parameter uncertainty, regime stability, computational profile, cost/capacity translation, and a monitored model card. A second researcher must reproduce **15 Affine Term Structure ACM Survey Models and Term Premium** from hash-addressed artifacts.
+
+## Production-grade expansion v6
+
+### Yield decomposition
+
+An \(n\)-period zero-coupon yield can be written as expected future short rates plus term premium:
+
+$$
+y_t^{(n)}=\frac{1}{n}\sum_{j=0}^{n-1}E_t[r_{t+j}]+TP_t^{(n)}
+$$
+
+Neither component is directly observed. Every estimate is model-dependent.
+
+### Affine state dynamics
+
+$$
+X_{t+1}=\mu+\Phi X_t+v_{t+1},\qquad v_{t+1}\sim N(0,\Sigma)
+$$
+
+Bond prices are exponentially affine in states under assumptions on the stochastic discount factor. The risk-neutral dynamics differ from physical dynamics through market prices of risk.
+
+### ACM-style estimation
+
+A typical procedure extracts yield-curve factors, estimates factor VAR dynamics, regresses excess bond returns on factor innovations and maps risk prices into term premiums. Small-sample bias, persistent factors and generated regressors matter.
+
+### Survey augmentation
+
+Survey expectations can anchor long-horizon expected rates and reduce model drift, but surveys have sparse frequency, changing panels, rounding and disagreement. Treat them as noisy observations rather than truth.
+
+### Alternative measures
+
+Compare affine models, survey-implied premiums, macro-finance models and simple forward-minus-survey measures. Disagreement is a model-risk signal and should cap confidence.
+
+### Supply and balance-sheet interpretation
+
+A change in estimated term premium may reflect duration supply, volatility, inflation uncertainty, intermediary capacity, hedging demand, foreign demand or model error. Attribution requires independent evidence from auctions, dealer positions, repo, volatility and investor flows.
+
+### Validation
+
+Assess out-of-sample excess-return forecasts, stability of expected-rate paths, sensitivity to sample and factor count, behavior near the effective lower bound and historical plausibility. Never describe one model's residual as an observed term premium.

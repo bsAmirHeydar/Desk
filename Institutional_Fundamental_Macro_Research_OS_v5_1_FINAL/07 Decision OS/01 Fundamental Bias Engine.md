@@ -84,26 +84,13 @@ Conflicts involving **Fundamental Bias Engine** must retain separate state objec
 
 **Fundamental Bias Engine asset translation:** Process: decision rights, cutoff, veto, and auditability are part of the edge. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Fundamental Bias Engine** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Fundamental Bias Engine** information since the prior close and its source timestamp.
-- Reconstruct the priced **Fundamental Bias Engine** baseline before reading the target move.
-- Name the liquid leader closest to the **Fundamental Bias Engine** mechanism and one independent confirmation.
-- Compare observed transmission with the **Fundamental Bias Engine** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Fundamental Bias Engine** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Fundamental Bias Engine**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Fundamental Bias Engine** pricing gap rather than the general narrative.
-- Estimate the **Fundamental Bias Engine** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Fundamental Bias Engine** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Fundamental Bias Engine**.
-
-A valid **Fundamental Bias Engine** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **Fundamental Bias Engine** thesis with no residual pricing gap, adverse
 
 Score **Fundamental Bias Engine** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Fundamental Bias Engine** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -199,7 +186,7 @@ A score cannot override:
 - broken liquidity;
 - thesis invalidation;
 - horizon mismatch;
-- technical setup requirements.
+- qualified implementation condition requirements.
 
 ## Confidence Is Not Direction
 
@@ -220,7 +207,7 @@ A bullish direction with low confidence is not `LONG_ONLY`. A modest directional
 3. **Transmission**
 4. **Cross-asset validation**
 5. **Positioning/flow modifier**
-6. **Technical execution**
+6. **fundamental implementation**
 
 Positioning can amplify or delay a move, but it should not replace a causal thesis.
 
@@ -258,7 +245,7 @@ expected_repricing:
 transmission:
 confirmations:
 vetoes:
-technical_handoff:
+implementation_handoff:
 expiry:
 ```
 
@@ -277,4 +264,4 @@ expiry:
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

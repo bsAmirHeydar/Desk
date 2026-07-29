@@ -20,7 +20,7 @@ tags:
 
 Nasdaq and U.S. technology exposure combine long-duration cash flows, mega-cap earnings, semiconductor/AI capital cycles, real yields, dollar sensitivity, concentration, index flow, and options.
 
-For **Nasdaq 100 and US Tech**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, technical handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
+For **Nasdaq 100 and US Tech**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, implementation handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
 
 ## Research questions
 
@@ -75,7 +75,7 @@ Validate the **Nasdaq 100 and US Tech** stack against simple point-in-time bench
 | Structural/Cyclical | In the **Nasdaq 100 and US Tech** research object, higher-horizon states create priors but do not time entries. |
 | Tactical/Swing | In the **Nasdaq 100 and US Tech** research object, repricing path, catalysts, and half-life determine campaign permission. |
 | Daily | In the **Nasdaq 100 and US Tech** research object, overnight change and current pricing produce one of four permission states. |
-| Event/Intraday | In the **Nasdaq 100 and US Tech** research object, leader, confirmation, liquidity, and technical structure govern execution. |
+| Event/Intraday | In the **Nasdaq 100 and US Tech** research object, leader, confirmation, liquidity, and observable market-state confirmation govern execution. |
 
 Conflicts involving **Nasdaq 100 and US Tech** must retain separate state objects and be resolved through [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]], never by an undocumented average score.
 
@@ -84,30 +84,17 @@ Conflicts involving **Nasdaq 100 and US Tech** must retain separate state object
 1. **Nasdaq 100 and US Tech channel 1:** test `information gap → leader repricing`.
 2. **Nasdaq 100 and US Tech channel 2:** test `leader → target asset`.
 3. **Nasdaq 100 and US Tech channel 3:** test `positioning/liquidity → path shape`.
-4. **Nasdaq 100 and US Tech channel 4:** test `technical structure → executable risk definition`.
+4. **Nasdaq 100 and US Tech channel 4:** test `observable market-state confirmation → executable risk definition`.
 
-**Nasdaq 100 and US Tech asset translation:** Trading: fundamentals grant permission; the technical structure controls entry, stop, and target. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Nasdaq 100 and US Tech** posterior or activate a rival explanation.
+**Nasdaq 100 and US Tech asset translation:** Trading: fundamentals grant permission; the observable market-state confirmation controls instrument selection, risk budget, and exit conditions. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Nasdaq 100 and US Tech** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Nasdaq 100 and US Tech** information since the prior close and its source timestamp.
-- Reconstruct the priced **Nasdaq 100 and US Tech** baseline before reading the target move.
-- Name the liquid leader closest to the **Nasdaq 100 and US Tech** mechanism and one independent confirmation.
-- Compare observed transmission with the **Nasdaq 100 and US Tech** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Nasdaq 100 and US Tech** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Nasdaq 100 and US Tech**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Nasdaq 100 and US Tech** pricing gap rather than the general narrative.
-- Estimate the **Nasdaq 100 and US Tech** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Nasdaq 100 and US Tech** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Nasdaq 100 and US Tech**.
-
-A valid **Nasdaq 100 and US Tech** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **Nasdaq 100 and US Tech** thesis with no residual pricing gap, adverse 
 
 Score **Nasdaq 100 and US Tech** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Nasdaq 100 and US Tech** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -234,17 +221,17 @@ A **hawkish short** is stronger when:
 
 ## Personalized Execution Bridge
 
-For `Trend Continuation + Structural Pullback + CISD Trigger + Structural Invalidation + Measured-Move Target`:
+For `fundamental-state persistence + Structural temporary counter-move + observable state-confirmation event Trigger + Structural Invalidation + scenario-defined realization target`:
 
 ### LONG_ONLY permission
 
 Use only when the fundamental impulse and cross-asset state support upside continuation. Wait for:
 
 - existing upward structural context;
-- pullback that does not invalidate the macro driver;
-- valid CISD-style bullish trigger;
+- temporary counter-move that does not invalidate the macro driver;
+- valid observable state-confirmation event-style bullish trigger;
 - stop at structural invalidation;
-- measured-move target.
+- scenario-defined realization target.
 
 ### SHORT_ONLY permission
 
@@ -252,7 +239,7 @@ Use the symmetric process under a negative rate/earnings/liquidity impulse.
 
 ### TWO_WAY_REDUCED
 
-Use when rates and earnings conflict, or index concentration masks weak breadth. Reduce size and demand stronger technical quality.
+Use when rates and earnings conflict, or index concentration masks weak breadth. Reduce size and demand stronger implementation quality.
 
 ### NO_TRADE
 
@@ -284,7 +271,7 @@ For two-to-ten-day holds, require:
 - Long rate-relief thesis invalidated by real yields reclaiming the pre-catalyst range.
 - Earnings-led long invalidated by negative revision breadth or guidance.
 - Short discount-rate thesis weakened if yields rise on growth while credit tightens and breadth improves.
-- Macro view invalidated for the trade if technical structural invalidation is hit.
+- Macro view invalidated for the trade if implementation structural invalidation is hit.
 
 ---
 
@@ -302,4 +289,4 @@ For two-to-ten-day holds, require:
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

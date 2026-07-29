@@ -84,26 +84,13 @@ Conflicts involving **Daily Pre-Market Process** must retain separate state obje
 
 **Daily Pre-Market Process asset translation:** Process: decision rights, cutoff, veto, and auditability are part of the edge. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Daily Pre-Market Process** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Daily Pre-Market Process** information since the prior close and its source timestamp.
-- Reconstruct the priced **Daily Pre-Market Process** baseline before reading the target move.
-- Name the liquid leader closest to the **Daily Pre-Market Process** mechanism and one independent confirmation.
-- Compare observed transmission with the **Daily Pre-Market Process** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Daily Pre-Market Process** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Daily Pre-Market Process**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Daily Pre-Market Process** pricing gap rather than the general narrative.
-- Estimate the **Daily Pre-Market Process** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Daily Pre-Market Process** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Daily Pre-Market Process**.
-
-A valid **Daily Pre-Market Process** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **Daily Pre-Market Process** thesis with no residual pricing gap, advers
 
 Score **Daily Pre-Market Process** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Daily Pre-Market Process** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -146,7 +133,7 @@ Classify each move:
 
 - new fundamental information;
 - continuation of prior repricing;
-- technical/flow-related move;
+- implementation/flow-related move;
 - unexplained and requiring caution.
 
 ## Stage 2 — Re-anchor to the Weekly Map
@@ -209,7 +196,7 @@ Create no more than four:
 3. **Compression:** market waits for catalyst.
 4. **Shock:** unscheduled information breaks the map.
 
-For each, specify cross-asset confirmation and the technical behavior required.
+For each, specify cross-asset confirmation and the implementation behavior required.
 
 ## Stage 7 — Set Trade Permission
 
@@ -227,7 +214,7 @@ veto:
 
 - `LONG_ONLY`: macro context and cross-asset behavior make shorts structurally inferior.
 - `SHORT_ONLY`: macro context and cross-asset behavior make longs structurally inferior.
-- `TWO_WAY_REDUCED`: context is mixed; both directions allowed at smaller risk and higher technical threshold.
+- `TWO_WAY_REDUCED`: context is mixed; both directions allowed at smaller risk and higher implementation threshold.
 - `NO_TRADE`: driver ambiguity, imminent catalyst, broken liquidity, or transmission conflict.
 
 ## Stage 8 — Define Vetoes
@@ -240,20 +227,19 @@ A veto overrides directional preference. Examples:
 - volatility/liquidity disorder;
 - thesis dependent on an unverified headline;
 - cross-asset relationships become unstable;
-- technical invalidation distance becomes economically unacceptable.
+- implementation invalidation distance becomes economically unacceptable.
 
-## Stage 9 — Technical Handoff
+## Stage 9 — implementation handoff
 
 Fundamental work ends here. Then require:
 
 1. trend/continuation structure;
-2. structural pullback;
-3. valid CISD-style trigger;
-4. structural stop;
+2. structural temporary counter-move;
+3. valid observable state-confirmation event-style trigger;
+4. predeclared risk limit;
 5. measured-move objective;
 6. acceptable session timing and liquidity.
 
-See 09 Integration with the Trend-Pullback-CISD Strategy.
 
 ## Daily Decision Card
 
@@ -291,4 +277,4 @@ Research beyond the point where it no longer changes the scenario tree is usuall
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

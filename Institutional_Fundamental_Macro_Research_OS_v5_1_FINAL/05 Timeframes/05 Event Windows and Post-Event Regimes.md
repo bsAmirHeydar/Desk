@@ -20,7 +20,7 @@ tags:
 
 Regime models represent persistent but uncertain state differences in means, variances, correlations, elasticities, and policy responses.
 
-For **Event Windows and Post-Event Regimes**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, technical handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
+For **Event Windows and Post-Event Regimes**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, implementation handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
 
 ## Research questions
 
@@ -75,7 +75,7 @@ Validate the **Event Windows and Post-Event Regimes** stack against simple point
 | Structural/Cyclical | In the **Event Windows and Post-Event Regimes** research object, higher-horizon states create priors but do not time entries. |
 | Tactical/Swing | In the **Event Windows and Post-Event Regimes** research object, repricing path, catalysts, and half-life determine campaign permission. |
 | Daily | In the **Event Windows and Post-Event Regimes** research object, overnight change and current pricing produce one of four permission states. |
-| Event/Intraday | In the **Event Windows and Post-Event Regimes** research object, leader, confirmation, liquidity, and technical structure govern execution. |
+| Event/Intraday | In the **Event Windows and Post-Event Regimes** research object, leader, confirmation, liquidity, and observable market-state confirmation govern execution. |
 
 Conflicts involving **Event Windows and Post-Event Regimes** must retain separate state objects and be resolved through [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]], never by an undocumented average score.
 
@@ -84,30 +84,17 @@ Conflicts involving **Event Windows and Post-Event Regimes** must retain separat
 1. **Event Windows and Post-Event Regimes channel 1:** test `information gap → leader repricing`.
 2. **Event Windows and Post-Event Regimes channel 2:** test `leader → target asset`.
 3. **Event Windows and Post-Event Regimes channel 3:** test `positioning/liquidity → path shape`.
-4. **Event Windows and Post-Event Regimes channel 4:** test `technical structure → executable risk definition`.
+4. **Event Windows and Post-Event Regimes channel 4:** test `observable market-state confirmation → executable risk definition`.
 
-**Event Windows and Post-Event Regimes asset translation:** Trading: fundamentals grant permission; the technical structure controls entry, stop, and target. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Event Windows and Post-Event Regimes** posterior or activate a rival explanation.
+**Event Windows and Post-Event Regimes asset translation:** Trading: fundamentals grant permission; the observable market-state confirmation controls instrument selection, risk budget, and exit conditions. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Event Windows and Post-Event Regimes** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Event Windows and Post-Event Regimes** information since the prior close and its source timestamp.
-- Reconstruct the priced **Event Windows and Post-Event Regimes** baseline before reading the target move.
-- Name the liquid leader closest to the **Event Windows and Post-Event Regimes** mechanism and one independent confirmation.
-- Compare observed transmission with the **Event Windows and Post-Event Regimes** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Event Windows and Post-Event Regimes** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Event Windows and Post-Event Regimes**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Event Windows and Post-Event Regimes** pricing gap rather than the general narrative.
-- Estimate the **Event Windows and Post-Event Regimes** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Event Windows and Post-Event Regimes** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Event Windows and Post-Event Regimes**.
-
-A valid **Event Windows and Post-Event Regimes** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **Event Windows and Post-Event Regimes** thesis with no residual pricing
 
 Score **Event Windows and Post-Event Regimes** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Event Windows and Post-Event Regimes** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -156,7 +143,7 @@ This material survived consolidation because it contains subject-specific instru
 - event extreme holds or fails;
 - cash participants enter;
 - rates and credit confirm;
-- technical continuation or reversal appears.
+- implementation continuation or reversal appears.
 
 ### Post-event regime
 
@@ -179,7 +166,7 @@ A move is more likely accepted when:
 
 - causal market holds the repricing;
 - cross-asset cluster remains coherent;
-- first pullback is contained;
+- first temporary counter-move is contained;
 - cash-session participation confirms;
 - volume/liquidity normalize without reversal;
 - narrative remains stable after details.
@@ -227,4 +214,4 @@ Half-life should be inferred from repricing and follow-through, not assigned fro
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

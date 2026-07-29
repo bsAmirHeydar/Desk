@@ -65,7 +65,7 @@ permission:
 confidence:
 size_ceiling:
 fundamental_invalidation:
-technical_handoff:
+implementation_handoff:
 expiry:
 next_catalyst:
 source_claim_ids: []

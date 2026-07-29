@@ -73,4 +73,4 @@ Test global dollar shock, commodity shock, domestic inflation shock, growth stop
 
 - [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 - [[00 Core Standards/05 Expectations Pricing and Distribution Gap]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

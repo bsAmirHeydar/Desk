@@ -20,7 +20,7 @@ tags:
 
 Secured funding prices cash, collateral scarcity, counterparty balance sheet, settlement demand, and regulatory capacity. Fiscal analysis links primary balances, interest expense, maturity structure, Treasury cash management, issuance composition, and private-sector absorption.
 
-For **Treasury Auctions and Refunding**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, technical handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
+For **Treasury Auctions and Refunding**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, implementation handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
 
 ## Research questions
 
@@ -97,7 +97,7 @@ Validate the **Treasury Auctions and Refunding** stack against simple point-in-t
 | Structural/Cyclical | In the **Treasury Auctions and Refunding** research object, higher-horizon states create priors but do not time entries. |
 | Tactical/Swing | In the **Treasury Auctions and Refunding** research object, repricing path, catalysts, and half-life determine campaign permission. |
 | Daily | In the **Treasury Auctions and Refunding** research object, overnight change and current pricing produce one of four permission states. |
-| Event/Intraday | In the **Treasury Auctions and Refunding** research object, leader, confirmation, liquidity, and technical structure govern execution. |
+| Event/Intraday | In the **Treasury Auctions and Refunding** research object, leader, confirmation, liquidity, and observable market-state confirmation govern execution. |
 
 Conflicts involving **Treasury Auctions and Refunding** must retain separate state objects and be resolved through [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]], never by an undocumented average score.
 
@@ -106,30 +106,17 @@ Conflicts involving **Treasury Auctions and Refunding** must retain separate sta
 1. **Treasury Auctions and Refunding channel 1:** test `information gap → leader repricing`.
 2. **Treasury Auctions and Refunding channel 2:** test `leader → target asset`.
 3. **Treasury Auctions and Refunding channel 3:** test `positioning/liquidity → path shape`.
-4. **Treasury Auctions and Refunding channel 4:** test `technical structure → executable risk definition`.
+4. **Treasury Auctions and Refunding channel 4:** test `observable market-state confirmation → executable risk definition`.
 
-**Treasury Auctions and Refunding asset translation:** Trading: fundamentals grant permission; the technical structure controls entry, stop, and target. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Treasury Auctions and Refunding** posterior or activate a rival explanation.
+**Treasury Auctions and Refunding asset translation:** Trading: fundamentals grant permission; the observable market-state confirmation controls instrument selection, risk budget, and exit conditions. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Treasury Auctions and Refunding** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Treasury Auctions and Refunding** information since the prior close and its source timestamp.
-- Reconstruct the priced **Treasury Auctions and Refunding** baseline before reading the target move.
-- Name the liquid leader closest to the **Treasury Auctions and Refunding** mechanism and one independent confirmation.
-- Compare observed transmission with the **Treasury Auctions and Refunding** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Treasury Auctions and Refunding** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Treasury Auctions and Refunding**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Treasury Auctions and Refunding** pricing gap rather than the general narrative.
-- Estimate the **Treasury Auctions and Refunding** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Treasury Auctions and Refunding** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Treasury Auctions and Refunding**.
-
-A valid **Treasury Auctions and Refunding** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -146,9 +133,9 @@ A valid **Treasury Auctions and Refunding** thesis with no residual pricing gap,
 
 Score **Treasury Auctions and Refunding** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Treasury Auctions and Refunding** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -237,4 +224,4 @@ Quarterly refunding can affect the expected maturity composition of supply and t
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

@@ -76,3 +76,6 @@ OUTPUT
 
 Do not reduce the event to the headline number and do not invent consensus or positioning data.
 ~~~
+
+> [!important] Fundamental-only boundary
+> Price-pattern analysis, indicator rules and chart-trigger instructions are prohibited. Use the Vault's fundamental, macro, valuation, flow, liquidity, market-structure and portfolio methods.

@@ -28,9 +28,9 @@ tags:
 - [[67 Operational Templates and Decision Records/09 Country Crisis and External Funding Watch]]
 - [[67 Operational Templates and Decision Records/10 Geopolitical Shock Verification and Transmission]]
 - [[67 Operational Templates and Decision Records/11 Position Expression Risk and Liquidity Review]]
-- [[67 Operational Templates and Decision Records/12 Permission Decision and Technical Handoff]]
+- [[67 Operational Templates and Decision Records/12 Permission Decision and Implementation Handoff]]
 - [[67 Operational Templates and Decision Records/13 No-Trade and Rejected Opportunity Record]]
-- [[67 Operational Templates and Decision Records/14 Post-Trade Causal Attribution and Counterfactual]]
+- [[67 Operational Templates and Decision Records/14 Decision Outcome Causal Attribution and Counterfactual]]
 - [[67 Operational Templates and Decision Records/15 Model Change Drift Incident and Retirement]]
 - [[67 Operational Templates and Decision Records/16 Investment Committee Decision Minute]]
 

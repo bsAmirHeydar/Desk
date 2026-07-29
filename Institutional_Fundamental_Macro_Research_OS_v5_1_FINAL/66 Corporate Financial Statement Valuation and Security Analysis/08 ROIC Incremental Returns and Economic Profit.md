@@ -88,26 +88,13 @@ Conflicts involving **08 ROIC Incremental Returns and Economic Profit** must ret
 
 **08 ROIC Incremental Returns and Economic Profit asset translation:** Equities: decompose cash-flow news, discount-rate news, risk premium, breadth, and index concentration. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **08 ROIC Incremental Returns and Economic Profit** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **08 ROIC Incremental Returns and Economic Profit** information since the prior close and its source timestamp.
-- Reconstruct the priced **08 ROIC Incremental Returns and Economic Profit** baseline before reading the target move.
-- Name the liquid leader closest to the **08 ROIC Incremental Returns and Economic Profit** mechanism and one independent confirmation.
-- Compare observed transmission with the **08 ROIC Incremental Returns and Economic Profit** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **08 ROIC Incremental Returns and Economic Profit** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **08 ROIC Incremental Returns and Economic Profit**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **08 ROIC Incremental Returns and Economic Profit** pricing gap rather than the general narrative.
-- Estimate the **08 ROIC Incremental Returns and Economic Profit** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **08 ROIC Incremental Returns and Economic Profit** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **08 ROIC Incremental Returns and Economic Profit**.
-
-A valid **08 ROIC Incremental Returns and Economic Profit** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -119,9 +106,9 @@ A valid **08 ROIC Incremental Returns and Economic Profit** thesis with no resid
 
 Score **08 ROIC Incremental Returns and Economic Profit** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **08 ROIC Incremental Returns and Economic Profit** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Primary source routes for 08 ROIC Incremental Returns and Economic Profit
 
@@ -134,4 +121,4 @@ Create a context object under [[00 Core Standards/17 Context Object and Permissi
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

@@ -18,9 +18,9 @@ tags:
 
 ## Definition and economic object
 
-**Session Translation: Asia, London, and New York** is a research object inside conversion of macro information into horizon-specific permissions, scenario paths, technical handoffs, and auditable trade management. The analyst must isolate the measurable state, the expectation already embedded in prices, the mechanism connecting them, and the horizon on which that inference can survive.
+**Session Translation: Asia, London, and New York** is a research object inside conversion of macro information into horizon-specific permissions, scenario paths, implementation handoffs, and auditable trade management. The analyst must isolate the measurable state, the expectation already embedded in prices, the mechanism connecting them, and the horizon on which that inference can survive.
 
-For **Session Translation: Asia, London, and New York**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, technical handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
+For **Session Translation: Asia, London, and New York**, the relevant institutional domain is **trading**: conversion of macro information into horizon-specific permissions, scenario paths, implementation handoffs, and auditable trade management. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
 
 ## Research questions
 
@@ -50,7 +50,7 @@ For **Session Translation: Asia, London, and New York**, document every variable
 - **Measurement 2 for Session Translation: Asia, London, and New York:** new information and priced baseline.
 - **Measurement 3 for Session Translation: Asia, London, and New York:** causal leader and independent confirmation.
 - **Measurement 4 for Session Translation: Asia, London, and New York:** liquidity/event clock and expected half-life.
-- **Measurement 5 for Session Translation: Asia, London, and New York:** technical trigger, structural stop, and expiry.
+- **Measurement 5 for Session Translation: Asia, London, and New York:** predeclared observable confirmation, predeclared risk limit, and expiry.
 
 The **Session Translation: Asia, London, and New York** dataset must satisfy [[00 Core Standards/16 Data Dictionary and Release Calendar Standard]] and preserve first releases, revisions, and admissible timestamps under [[00 Core Standards/03 Point-in-Time and Bitemporal Data Standard]].
 
@@ -71,7 +71,7 @@ Validate the **Session Translation: Asia, London, and New York** stack against s
 | Structural/Cyclical | In the **Session Translation: Asia, London, and New York** research object, higher-horizon states create priors but do not time entries. |
 | Tactical/Swing | In the **Session Translation: Asia, London, and New York** research object, repricing path, catalysts, and half-life determine campaign permission. |
 | Daily | In the **Session Translation: Asia, London, and New York** research object, overnight change and current pricing produce one of four permission states. |
-| Event/Intraday | In the **Session Translation: Asia, London, and New York** research object, leader, confirmation, liquidity, and technical structure govern execution. |
+| Event/Intraday | In the **Session Translation: Asia, London, and New York** research object, leader, confirmation, liquidity, and observable market-state confirmation govern execution. |
 
 Conflicts involving **Session Translation: Asia, London, and New York** must retain separate state objects and be resolved through [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]], never by an undocumented average score.
 
@@ -80,30 +80,17 @@ Conflicts involving **Session Translation: Asia, London, and New York** must ret
 1. **Session Translation: Asia, London, and New York channel 1:** test `information gap → leader repricing`.
 2. **Session Translation: Asia, London, and New York channel 2:** test `leader → target asset`.
 3. **Session Translation: Asia, London, and New York channel 3:** test `positioning/liquidity → path shape`.
-4. **Session Translation: Asia, London, and New York channel 4:** test `technical structure → executable risk definition`.
+4. **Session Translation: Asia, London, and New York channel 4:** test `observable market-state confirmation → executable risk definition`.
 
-**Session Translation: Asia, London, and New York asset translation:** Trading: fundamentals grant permission; the technical structure controls entry, stop, and target. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Session Translation: Asia, London, and New York** posterior or activate a rival explanation.
+**Session Translation: Asia, London, and New York asset translation:** Trading: fundamentals grant permission; the observable market-state confirmation controls instrument selection, risk budget, and exit conditions. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Session Translation: Asia, London, and New York** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Session Translation: Asia, London, and New York** information since the prior close and its source timestamp.
-- Reconstruct the priced **Session Translation: Asia, London, and New York** baseline before reading the target move.
-- Name the liquid leader closest to the **Session Translation: Asia, London, and New York** mechanism and one independent confirmation.
-- Compare observed transmission with the **Session Translation: Asia, London, and New York** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Session Translation: Asia, London, and New York** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Session Translation: Asia, London, and New York**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Session Translation: Asia, London, and New York** pricing gap rather than the general narrative.
-- Estimate the **Session Translation: Asia, London, and New York** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Session Translation: Asia, London, and New York** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Session Translation: Asia, London, and New York**.
-
-A valid **Session Translation: Asia, London, and New York** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -111,13 +98,13 @@ A valid **Session Translation: Asia, London, and New York** thesis with no resid
 - **Failure test 2 for Session Translation: Asia, London, and New York:** changing bias after every candle.
 - **Failure test 3 for Session Translation: Asia, London, and New York:** confusing a correct thesis with good execution.
 - **Failure test 4 for Session Translation: Asia, London, and New York:** holding beyond evidence half-life.
-- **Failure test 5 for Session Translation: Asia, London, and New York:** overriding structural stops with narratives.
+- **Failure test 5 for Session Translation: Asia, London, and New York:** overriding predeclared risk limits with narratives.
 
 Score **Session Translation: Asia, London, and New York** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Session Translation: Asia, London, and New York** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -241,4 +228,4 @@ Session errors are operational errors, not macro errors.
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]

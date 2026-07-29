@@ -69,3 +69,6 @@ OUTPUT
 
 Issue one permission: LONG_SPREAD, SHORT_SPREAD, TWO_WAY_REDUCED, or NO_TRADE, while also describing the equivalent directional exposures.
 ~~~
+
+> [!important] Fundamental-only boundary
+> Price-pattern analysis, indicator rules and chart-trigger instructions are prohibited. Use the Vault's fundamental, macro, valuation, flow, liquidity, market-structure and portfolio methods.

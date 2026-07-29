@@ -84,26 +84,13 @@ Conflicts involving **Scope and Non-Scope** must retain separate state objects a
 
 **Scope and Non-Scope asset translation:** Process: decision rights, cutoff, veto, and auditability are part of the edge. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Scope and Non-Scope** posterior or activate a rival explanation.
 
-## Day-trading decision translation
+## Fundamental decision application
 
-- Identify the new **Scope and Non-Scope** information since the prior close and its source timestamp.
-- Reconstruct the priced **Scope and Non-Scope** baseline before reading the target move.
-- Name the liquid leader closest to the **Scope and Non-Scope** mechanism and one independent confirmation.
-- Compare observed transmission with the **Scope and Non-Scope** event/quiet-day historical distribution.
-- Assign a permission and a confidence cap; record the **Scope and Non-Scope** cancellation condition.
-- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+- Intraday governance: [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
 
-For **Scope and Non-Scope**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+## Multi-day decision application
 
-## Two-to-ten-day swing translation
-
-- Define the still-open **Scope and Non-Scope** pricing gap rather than the general narrative.
-- Estimate the **Scope and Non-Scope** impulse half-life and its uncertainty by regime.
-- Map catalysts capable of confirming, reversing, or exhausting the **Scope and Non-Scope** campaign.
-- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
-- Specify terminal realization, time expiry, and evidence-based invalidation for **Scope and Non-Scope**.
-
-A valid **Scope and Non-Scope** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+- Multi-day governance: [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]]
 
 ## Falsification and known failure modes
 
@@ -115,9 +102,9 @@ A valid **Scope and Non-Scope** thesis with no residual pricing gap, adverse car
 
 Score **Scope and Non-Scope** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
 
-## Required implementation record
+## Required research record
 
-Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Scope and Non-Scope** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+- Schema: [[00 Core Standards/17 Context Object and Permission Schema Standard]]
 
 ## Preserved subject-specific foundation
 
@@ -135,7 +122,7 @@ This OS covers:
 - directional permission;
 - scenario construction;
 - research and validation;
-- integration with technical execution.
+- integration with fundamental implementation.
 
 ## Out of Scope
 
@@ -143,7 +130,7 @@ This is not:
 
 - a recommendation service;
 - a current market brief;
-- a replacement for technical execution;
+- a replacement for fundamental implementation;
 - an accounting course for single-stock valuation;
 - a pure long-term investment framework;
 - a claim that fundamentals explain every intraday move;
@@ -173,7 +160,7 @@ How orders meet liquidity: spreads, depth, queueing, dealer inventory, market im
 
 For day trading, the hierarchy is often:
 
-> Macro defines the pressure field → catalyst activates repricing → flow carries it → microstructure shapes the path → technical execution defines the trade.
+> Macro defines the pressure field → catalyst activates repricing → flow carries it → microstructure shapes the path → fundamental implementation defines the trade.
 
 ## Why Non-Event Context Matters
 
@@ -207,4 +194,4 @@ The context system must therefore be alive between releases.
 - [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
 - [[00 Core Standards/06 Causal Identification and Rival Models]]
 - [[00 Core Standards/07 Permission Proof and Incremental Edge]]
-- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]
+- [[00 Core Standards/09 Portfolio Liquidity and Implementation Governance]]
