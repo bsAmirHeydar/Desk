@@ -1,0 +1,138 @@
+---
+title: "Critical Minerals Processing and Geopolitical Concentration"
+type: field-guide
+status: evergreen
+version: 5.0.0
+created: 2026-07-29
+updated: 2026-07-29
+language: en
+tags:
+  - 41-energy-transition-climate-and-resource-security
+  - critical-minerals-processing-and-geopolitical-concentration
+  - institutional-fundamental
+---
+# Critical Minerals Processing and Geopolitical Concentration
+
+> [!abstract] Research mandate
+> Construct a point-in-time, source-controlled, model-aware and falsifiable understanding of **Critical Minerals Processing and Geopolitical Concentration**. Canonical doctrine is linked; this note contains the topic-specific research object.
+
+## Definition and economic object
+
+**Critical Minerals Processing and Geopolitical Concentration** is a research object inside physical supply, demand, inventories, transformation capacity, logistics, seasonality, substitution, and financial overlay. The analyst must isolate the measurable state, the expectation already embedded in prices, the mechanism connecting them, and the horizon on which that inference can survive.
+
+For **Critical Minerals Processing and Geopolitical Concentration**, the relevant institutional domain is **commodities**: physical supply, demand, inventories, transformation capacity, logistics, seasonality, substitution, and financial overlay. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
+
+## Research questions
+
+1. What exact state or mechanism does **Critical Minerals Processing and Geopolitical Concentration** represent, in what unit, population, instrument, and convention?
+2. Which **Critical Minerals Processing and Geopolitical Concentration** observations existed at the decision cutoff, which are estimates, and which are revised?
+3. What distribution about **Critical Minerals Processing and Geopolitical Concentration** is embedded in consensus, curves, options, valuation, positioning, or physical basis?
+4. Which market or variable must lead if the proposed **Critical Minerals Processing and Geopolitical Concentration** mechanism is active?
+5. What rival model can create the same target move while **Critical Minerals Processing and Geopolitical Concentration** is unchanged?
+6. How do regime, horizon, positioning, liquidity, carry, and implementation alter the payoff?
+7. Which predeclared evidence rejects, caps, or expires the **Critical Minerals Processing and Geopolitical Concentration** decision?
+
+## Identities and model skeleton
+
+$$
+EndingStocks=BeginningStocks+Supply+Imports-Demand-Exports
+$$
+
+$$
+ConvenienceYield\approx Funding+Storage-\frac{F-S}{T}
+$$
+
+For **Critical Minerals Processing and Geopolitical Concentration**, document every variable, unit, convention, sample, parameter, regularizer, and uncertainty estimate. An identity constrains possible stories; it does not estimate an elasticity or prove a causal channel.
+
+## Measurement architecture
+
+- **Measurement 1 for Critical Minerals Processing and Geopolitical Concentration:** production, consumption, exports, and imports.
+- **Measurement 2 for Critical Minerals Processing and Geopolitical Concentration:** commercial and strategic stocks.
+- **Measurement 3 for Critical Minerals Processing and Geopolitical Concentration:** refinery, smelter, storage, transport, and spare capacity.
+- **Measurement 4 for Critical Minerals Processing and Geopolitical Concentration:** calendar spreads, location/quality differentials, and freight.
+- **Measurement 5 for Critical Minerals Processing and Geopolitical Concentration:** producer/consumer hedging and speculative positioning.
+
+The **Critical Minerals Processing and Geopolitical Concentration** dataset must satisfy [[00 Core Standards/16 Data Dictionary and Release Calendar Standard]] and preserve first releases, revisions, and admissible timestamps under [[00 Core Standards/03 Point-in-Time and Bitemporal Data Standard]].
+
+## Estimation and validation stack
+
+- **Model layer 1 for Critical Minerals Processing and Geopolitical Concentration:** commodity balance sheets.
+- **Model layer 2 for Critical Minerals Processing and Geopolitical Concentration:** inventory-normalization and days-of-cover.
+- **Model layer 3 for Critical Minerals Processing and Geopolitical Concentration:** curve and convenience-yield analysis.
+- **Model layer 4 for Critical Minerals Processing and Geopolitical Concentration:** capacity/outage scenario models.
+- **Model layer 5 for Critical Minerals Processing and Geopolitical Concentration:** weather, crop, and logistics nowcasts.
+
+Validate the **Critical Minerals Processing and Geopolitical Concentration** stack against simple point-in-time benchmarks. Report forecast/density error, probability calibration, regime stability, vintage sensitivity, feature ablation, latency, cost, and economic value. Register implementation under [[00 Core Standards/14 Model Card Standard]].
+
+## Multihorizon behavior
+
+| Horizon | Topic-specific role |
+|---|---|
+| Structural | In the **Critical Minerals Processing and Geopolitical Concentration** research object, resource base, project economics, policy, and infrastructure constrain supply. |
+| Cyclical | In the **Critical Minerals Processing and Geopolitical Concentration** research object, demand, capacity utilization, inventory, and substitution evolve. |
+| Tactical/Swing | In the **Critical Minerals Processing and Geopolitical Concentration** research object, outages, weather, freight, hedging, and curve structure dominate. |
+| Daily/Event | In the **Critical Minerals Processing and Geopolitical Concentration** research object, physical releases are decomposed against expectations and location/quality constraints. |
+
+Conflicts involving **Critical Minerals Processing and Geopolitical Concentration** must retain separate state objects and be resolved through [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]], never by an undocumented average score.
+
+## Causal transmission
+
+1. **Critical Minerals Processing and Geopolitical Concentration channel 1:** test `physical deficit/surplus → curve and basis`.
+2. **Critical Minerals Processing and Geopolitical Concentration channel 2:** test `curve → storage and production incentives`.
+3. **Critical Minerals Processing and Geopolitical Concentration channel 3:** test `commodity price → inflation, terms of trade, and margins`.
+4. **Critical Minerals Processing and Geopolitical Concentration channel 4:** test `funding/FX/positioning → overlay and liquidation`.
+
+**Critical Minerals Processing and Geopolitical Concentration asset translation:** Commodities: require a physical balance, curve/location evidence, inventory normalization, and financial overlay. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **Critical Minerals Processing and Geopolitical Concentration** posterior or activate a rival explanation.
+
+## Day-trading decision translation
+
+- Identify the new **Critical Minerals Processing and Geopolitical Concentration** information since the prior close and its source timestamp.
+- Reconstruct the priced **Critical Minerals Processing and Geopolitical Concentration** baseline before reading the target move.
+- Name the liquid leader closest to the **Critical Minerals Processing and Geopolitical Concentration** mechanism and one independent confirmation.
+- Compare observed transmission with the **Critical Minerals Processing and Geopolitical Concentration** event/quiet-day historical distribution.
+- Assign a permission and a confidence cap; record the **Critical Minerals Processing and Geopolitical Concentration** cancellation condition.
+- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+
+For **Critical Minerals Processing and Geopolitical Concentration**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+
+## Two-to-ten-day swing translation
+
+- Define the still-open **Critical Minerals Processing and Geopolitical Concentration** pricing gap rather than the general narrative.
+- Estimate the **Critical Minerals Processing and Geopolitical Concentration** impulse half-life and its uncertainty by regime.
+- Map catalysts capable of confirming, reversing, or exhausting the **Critical Minerals Processing and Geopolitical Concentration** campaign.
+- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
+- Specify terminal realization, time expiry, and evidence-based invalidation for **Critical Minerals Processing and Geopolitical Concentration**.
+
+A valid **Critical Minerals Processing and Geopolitical Concentration** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+
+## Falsification and known failure modes
+
+- **Failure test 1 for Critical Minerals Processing and Geopolitical Concentration:** trading one inventory print without balance context.
+- **Failure test 2 for Critical Minerals Processing and Geopolitical Concentration:** mixing crude and products.
+- **Failure test 3 for Critical Minerals Processing and Geopolitical Concentration:** ignoring location and quality.
+- **Failure test 4 for Critical Minerals Processing and Geopolitical Concentration:** assuming spot and futures share the same scarcity.
+- **Failure test 5 for Critical Minerals Processing and Geopolitical Concentration:** using financial flows as physical proof.
+
+Score **Critical Minerals Processing and Geopolitical Concentration** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
+
+## Required implementation record
+
+Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **Critical Minerals Processing and Geopolitical Concentration** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+
+## Primary source routes for Critical Minerals Processing and Geopolitical Concentration
+
+- [[65 Source Registry and Claim Lineage/EIA_WPSR — EIA Weekly Petroleum Status Report]]
+- [[65 Source Registry and Claim Lineage/EIA_STEO — EIA Short-Term Energy Outlook]]
+- [[65 Source Registry and Claim Lineage/IEA_OMR — IEA Oil Market Report]]
+- [[65 Source Registry and Claim Lineage/OPEC_MOMR — OPEC Monthly Oil Market Report]]
+- [[65 Source Registry and Claim Lineage/USDA_DATA — USDA Economics, Statistics, and Market Information]]
+- [[65 Source Registry and Claim Lineage/LME — London Metal Exchange Market Data]]
+- [[65 Source Registry and Claim Lineage/CFTC_COT — CFTC Commitments of Traders]]
+
+## Canonical controls
+
+- [[00 Core Standards/01 Research Object and Decision Contract]]
+- [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
+- [[00 Core Standards/06 Causal Identification and Rival Models]]
+- [[00 Core Standards/07 Permission Proof and Incremental Edge]]
+- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]

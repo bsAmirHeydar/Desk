@@ -1,0 +1,171 @@
+---
+title: "AI Macro Regime Scenarios and NQ Trading Translation"
+type: field-guide
+status: evergreen
+version: 5.0.0
+created: 2026-07-29
+updated: 2026-07-29
+language: en
+tags:
+  - 43-technology-ai-productivity-and-capital-cycle
+  - ai-macro-regime-scenarios-and-nq-trading-translation
+  - institutional-fundamental
+---
+# AI Macro Regime Scenarios and NQ Trading Translation
+
+> [!abstract] Research mandate
+> Construct a point-in-time, source-controlled, model-aware and falsifiable understanding of **AI Macro Regime Scenarios and NQ Trading Translation**. Canonical doctrine is linked; this note contains the topic-specific research object.
+
+## Definition and economic object
+
+Regime models represent persistent but uncertain state differences in means, variances, correlations, elasticities, and policy responses. Nasdaq and U.S. technology exposure combine long-duration cash flows, mega-cap earnings, semiconductor/AI capital cycles, real yields, dollar sensitivity, concentration, index flow, and options.
+
+For **AI Macro Regime Scenarios and NQ Trading Translation**, the relevant institutional domain is **geopolitics**: policy, security, trade, technology, climate, and strategic-resource shocks translated into economic cash flows and market constraints. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
+
+## Research questions
+
+1. What exact state or mechanism does **AI Macro Regime Scenarios and NQ Trading Translation** represent, in what unit, population, instrument, and convention?
+2. Which **AI Macro Regime Scenarios and NQ Trading Translation** observations existed at the decision cutoff, which are estimates, and which are revised?
+3. What distribution about **AI Macro Regime Scenarios and NQ Trading Translation** is embedded in consensus, curves, options, valuation, positioning, or physical basis?
+4. Which market or variable must lead if the proposed **AI Macro Regime Scenarios and NQ Trading Translation** mechanism is active?
+5. What rival model can create the same target move while **AI Macro Regime Scenarios and NQ Trading Translation** is unchanged?
+6. How do regime, horizon, positioning, liquidity, carry, and implementation alter the payoff?
+7. Which predeclared evidence rejects, caps, or expires the **AI Macro Regime Scenarios and NQ Trading Translation** decision?
+
+## Identities and model skeleton
+
+$$
+P(S_t=j|S_{t-1}=i)=p_{ij}
+$$
+
+$$
+y_t|\{S_t=s\}\sim f(\theta_s)
+$$
+
+$$
+P(S_t|I_t)\propto P(y_t|S_t)\sum_i p_{is}P(S_{t-1}=i|I_{t-1})
+$$
+
+$$
+IndexReturn\approx \sum_i w_i Return_i
+$$
+
+$$
+EquityDuration\approx-\frac{\partial \ln Price}{\partial r}
+$$
+
+$$
+EPSBridge=RevenueGrowth+MarginChange+ShareCountEffect
+$$
+
+For **AI Macro Regime Scenarios and NQ Trading Translation**, document every variable, unit, convention, sample, parameter, regularizer, and uncertainty estimate. An identity constrains possible stories; it does not estimate an elasticity or prove a causal channel.
+
+## Measurement architecture
+
+- **Measurement 1 for AI Macro Regime Scenarios and NQ Trading Translation:** state probabilities.
+- **Measurement 2 for AI Macro Regime Scenarios and NQ Trading Translation:** transition matrix and expected duration.
+- **Measurement 3 for AI Macro Regime Scenarios and NQ Trading Translation:** regime-conditioned betas.
+- **Measurement 4 for AI Macro Regime Scenarios and NQ Trading Translation:** change-point scores.
+- **Measurement 5 for AI Macro Regime Scenarios and NQ Trading Translation:** out-of-sample classification stability.
+- **Measurement 6 for AI Macro Regime Scenarios and NQ Trading Translation:** real yields and front-end path.
+- **Measurement 7 for AI Macro Regime Scenarios and NQ Trading Translation:** mega-cap and semiconductor earnings revisions.
+- **Measurement 8 for AI Macro Regime Scenarios and NQ Trading Translation:** AI/datacenter capex and supplier constraints.
+- **Measurement 9 for AI Macro Regime Scenarios and NQ Trading Translation:** breadth, concentration, and equal-weight relative return.
+- **Measurement 10 for AI Macro Regime Scenarios and NQ Trading Translation:** index/ETF/options positioning and credit.
+
+The **AI Macro Regime Scenarios and NQ Trading Translation** dataset must satisfy [[00 Core Standards/16 Data Dictionary and Release Calendar Standard]] and preserve first releases, revisions, and admissible timestamps under [[00 Core Standards/03 Point-in-Time and Bitemporal Data Standard]].
+
+## Estimation and validation stack
+
+- **Model layer 1 for AI Macro Regime Scenarios and NQ Trading Translation:** Markov switching.
+- **Model layer 2 for AI Macro Regime Scenarios and NQ Trading Translation:** hidden Markov models.
+- **Model layer 3 for AI Macro Regime Scenarios and NQ Trading Translation:** Bayesian change-point detection.
+- **Model layer 4 for AI Macro Regime Scenarios and NQ Trading Translation:** threshold models.
+- **Model layer 5 for AI Macro Regime Scenarios and NQ Trading Translation:** ensemble state classifier.
+- **Model layer 6 for AI Macro Regime Scenarios and NQ Trading Translation:** index contribution model.
+- **Model layer 7 for AI Macro Regime Scenarios and NQ Trading Translation:** earnings-revision diffusion.
+- **Model layer 8 for AI Macro Regime Scenarios and NQ Trading Translation:** duration and discount-rate beta by regime.
+- **Model layer 9 for AI Macro Regime Scenarios and NQ Trading Translation:** semiconductor cycle dashboard.
+- **Model layer 10 for AI Macro Regime Scenarios and NQ Trading Translation:** event and flow decomposition.
+
+Validate the **AI Macro Regime Scenarios and NQ Trading Translation** stack against simple point-in-time benchmarks. Report forecast/density error, probability calibration, regime stability, vintage sensitivity, feature ablation, latency, cost, and economic value. Register implementation under [[00 Core Standards/14 Model Card Standard]].
+
+## Multihorizon behavior
+
+| Horizon | Topic-specific role |
+|---|---|
+| Structural | In the **AI Macro Regime Scenarios and NQ Trading Translation** research object, alliances, technology, geography, and strategic capacity alter the feasible set. |
+| Cyclical | In the **AI Macro Regime Scenarios and NQ Trading Translation** research object, fiscal, industrial, trade, and security policies reshape flows. |
+| Tactical/Swing | In the **AI Macro Regime Scenarios and NQ Trading Translation** research object, implementation, sanctions evasion, outages, and diplomatic signposts matter. |
+| Daily/Event | In the **AI Macro Regime Scenarios and NQ Trading Translation** research object, verified legal action and operational disruption outrank headlines. |
+
+Conflicts involving **AI Macro Regime Scenarios and NQ Trading Translation** must retain separate state objects and be resolved through [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]], never by an undocumented average score.
+
+## Causal transmission
+
+1. **AI Macro Regime Scenarios and NQ Trading Translation channel 1:** test `policy action → legal/operational constraint`.
+2. **AI Macro Regime Scenarios and NQ Trading Translation channel 2:** test `constraint → quantity, cost, and financing`.
+3. **AI Macro Regime Scenarios and NQ Trading Translation channel 3:** test `economic effect → policy response`.
+4. **AI Macro Regime Scenarios and NQ Trading Translation channel 4:** test `response → asset repricing and second-order feedback`.
+
+**AI Macro Regime Scenarios and NQ Trading Translation asset translation:** Geopolitics: trade verified implementation and measurable constraints, not narrative intensity. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **AI Macro Regime Scenarios and NQ Trading Translation** posterior or activate a rival explanation.
+
+## Day-trading decision translation
+
+- Identify the new **AI Macro Regime Scenarios and NQ Trading Translation** information since the prior close and its source timestamp.
+- Reconstruct the priced **AI Macro Regime Scenarios and NQ Trading Translation** baseline before reading the target move.
+- Name the liquid leader closest to the **AI Macro Regime Scenarios and NQ Trading Translation** mechanism and one independent confirmation.
+- Compare observed transmission with the **AI Macro Regime Scenarios and NQ Trading Translation** event/quiet-day historical distribution.
+- Assign a permission and a confidence cap; record the **AI Macro Regime Scenarios and NQ Trading Translation** cancellation condition.
+- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+
+For **AI Macro Regime Scenarios and NQ Trading Translation**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+
+## Two-to-ten-day swing translation
+
+- Define the still-open **AI Macro Regime Scenarios and NQ Trading Translation** pricing gap rather than the general narrative.
+- Estimate the **AI Macro Regime Scenarios and NQ Trading Translation** impulse half-life and its uncertainty by regime.
+- Map catalysts capable of confirming, reversing, or exhausting the **AI Macro Regime Scenarios and NQ Trading Translation** campaign.
+- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
+- Specify terminal realization, time expiry, and evidence-based invalidation for **AI Macro Regime Scenarios and NQ Trading Translation**.
+
+A valid **AI Macro Regime Scenarios and NQ Trading Translation** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+
+## Falsification and known failure modes
+
+- **Failure test 1 for AI Macro Regime Scenarios and NQ Trading Translation:** hard labels without uncertainty.
+- **Failure test 2 for AI Macro Regime Scenarios and NQ Trading Translation:** too many regimes.
+- **Failure test 3 for AI Macro Regime Scenarios and NQ Trading Translation:** lookahead state labeling.
+- **Failure test 4 for AI Macro Regime Scenarios and NQ Trading Translation:** unstable economic interpretation.
+- **Failure test 5 for AI Macro Regime Scenarios and NQ Trading Translation:** using regime model as causal proof.
+- **Failure test 6 for AI Macro Regime Scenarios and NQ Trading Translation:** calling every rally lower-yield driven.
+- **Failure test 7 for AI Macro Regime Scenarios and NQ Trading Translation:** ignoring concentration.
+- **Failure test 8 for AI Macro Regime Scenarios and NQ Trading Translation:** using headline EPS without capex/margin path.
+- **Failure test 9 for AI Macro Regime Scenarios and NQ Trading Translation:** treating dealer gamma as fact.
+- **Failure test 10 for AI Macro Regime Scenarios and NQ Trading Translation:** missing dollar and credit confirmation.
+
+Score **AI Macro Regime Scenarios and NQ Trading Translation** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
+
+## Required implementation record
+
+Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **AI Macro Regime Scenarios and NQ Trading Translation** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+
+## Primary source routes for AI Macro Regime Scenarios and NQ Trading Translation
+
+- [[65 Source Registry and Claim Lineage/ALFRED — Federal Reserve Bank of St. Louis ALFRED]]
+- [[65 Source Registry and Claim Lineage/OFR_FSI — Office of Financial Research Financial Stress Index]]
+- [[65 Source Registry and Claim Lineage/CHI_NFCI — Chicago Fed — NFCI]]
+- [[65 Source Registry and Claim Lineage/IMF_GFSR — IMF Global Financial Stability Report]]
+- [[65 Source Registry and Claim Lineage/SEC_EDGAR — SEC EDGAR]]
+- [[65 Source Registry and Claim Lineage/NASDAQ_INDEX — Nasdaq Index Methodology]]
+- [[65 Source Registry and Claim Lineage/CBOE_VIX — Cboe VIX Methodology]]
+- [[65 Source Registry and Claim Lineage/CFTC_COT — CFTC Commitments of Traders]]
+- [[65 Source Registry and Claim Lineage/FED_MONETARY — Federal Reserve — Monetary Policy]]
+
+## Canonical controls
+
+- [[00 Core Standards/01 Research Object and Decision Contract]]
+- [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
+- [[00 Core Standards/06 Causal Identification and Rival Models]]
+- [[00 Core Standards/07 Permission Proof and Incremental Edge]]
+- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]

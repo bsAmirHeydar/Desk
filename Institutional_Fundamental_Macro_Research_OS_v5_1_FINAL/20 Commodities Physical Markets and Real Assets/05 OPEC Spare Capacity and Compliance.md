@@ -1,0 +1,141 @@
+---
+title: "OPEC Spare Capacity and Compliance"
+type: field-guide
+status: evergreen
+version: 5.0.0
+created: 2026-07-29
+updated: 2026-07-29
+language: en
+tags:
+  - 20-commodities-physical-markets-and-real-assets
+  - opec-spare-capacity-and-compliance
+  - institutional-fundamental
+---
+# OPEC Spare Capacity and Compliance
+
+> [!abstract] Research mandate
+> Construct a point-in-time, source-controlled, model-aware and falsifiable understanding of **OPEC Spare Capacity and Compliance**. Canonical doctrine is linked; this note contains the topic-specific research object.
+
+## Definition and economic object
+
+Oil analysis reconciles global crude supply/demand, refinery transformation, products, inventories, trade, quality/location, spare capacity, and financial positioning.
+
+For **OPEC Spare Capacity and Compliance**, the relevant institutional domain is **commodities**: physical supply, demand, inventories, transformation capacity, logistics, seasonality, substitution, and financial overlay. Classify every input as observation, derived measurement, model estimate, market-implied estimate, forecast, causal claim, scenario assumption, judgment, or decision rule.
+
+## Research questions
+
+1. What exact state or mechanism does **OPEC Spare Capacity and Compliance** represent, in what unit, population, instrument, and convention?
+2. Which **OPEC Spare Capacity and Compliance** observations existed at the decision cutoff, which are estimates, and which are revised?
+3. What distribution about **OPEC Spare Capacity and Compliance** is embedded in consensus, curves, options, valuation, positioning, or physical basis?
+4. Which market or variable must lead if the proposed **OPEC Spare Capacity and Compliance** mechanism is active?
+5. What rival model can create the same target move while **OPEC Spare Capacity and Compliance** is unchanged?
+6. How do regime, horizon, positioning, liquidity, carry, and implementation alter the payoff?
+7. Which predeclared evidence rejects, caps, or expires the **OPEC Spare Capacity and Compliance** decision?
+
+## Identities and model skeleton
+
+$$
+InventoryChange=Supply+Imports-RefineryRuns-Exports-OtherDemand
+$$
+
+$$
+ImpliedDemand=Supply+Imports-Exports-InventoryChange
+$$
+
+$$
+Crack\approx ProductValue-CrudeInputCost
+$$
+
+For **OPEC Spare Capacity and Compliance**, document every variable, unit, convention, sample, parameter, regularizer, and uncertainty estimate. An identity constrains possible stories; it does not estimate an elasticity or prove a causal channel.
+
+## Measurement architecture
+
+- **Measurement 1 for OPEC Spare Capacity and Compliance:** OPEC/non-OPEC production and exports.
+- **Measurement 2 for OPEC Spare Capacity and Compliance:** refinery runs, outages, yields, and margins.
+- **Measurement 3 for OPEC Spare Capacity and Compliance:** crude and product inventories.
+- **Measurement 4 for OPEC Spare Capacity and Compliance:** freight, floating storage, and quality differentials.
+- **Measurement 5 for OPEC Spare Capacity and Compliance:** curve, spreads, options, and COT.
+
+The **OPEC Spare Capacity and Compliance** dataset must satisfy [[00 Core Standards/16 Data Dictionary and Release Calendar Standard]] and preserve first releases, revisions, and admissible timestamps under [[00 Core Standards/03 Point-in-Time and Bitemporal Data Standard]].
+
+## Estimation and validation stack
+
+- **Model layer 1 for OPEC Spare Capacity and Compliance:** global barrel balance.
+- **Model layer 2 for OPEC Spare Capacity and Compliance:** regional crude/product balance.
+- **Model layer 3 for OPEC Spare Capacity and Compliance:** refinery margin model.
+- **Model layer 4 for OPEC Spare Capacity and Compliance:** spare-capacity/outage scenarios.
+- **Model layer 5 for OPEC Spare Capacity and Compliance:** curve and inventory-normalization model.
+
+Validate the **OPEC Spare Capacity and Compliance** stack against simple point-in-time benchmarks. Report forecast/density error, probability calibration, regime stability, vintage sensitivity, feature ablation, latency, cost, and economic value. Register implementation under [[00 Core Standards/14 Model Card Standard]].
+
+## Multihorizon behavior
+
+| Horizon | Topic-specific role |
+|---|---|
+| Structural | In the **OPEC Spare Capacity and Compliance** research object, resource base, project economics, policy, and infrastructure constrain supply. |
+| Cyclical | In the **OPEC Spare Capacity and Compliance** research object, demand, capacity utilization, inventory, and substitution evolve. |
+| Tactical/Swing | In the **OPEC Spare Capacity and Compliance** research object, outages, weather, freight, hedging, and curve structure dominate. |
+| Daily/Event | In the **OPEC Spare Capacity and Compliance** research object, physical releases are decomposed against expectations and location/quality constraints. |
+
+Conflicts involving **OPEC Spare Capacity and Compliance** must retain separate state objects and be resolved through [[00 Core Standards/04 Multihorizon Inheritance and Conflict Resolution]], never by an undocumented average score.
+
+## Causal transmission
+
+1. **OPEC Spare Capacity and Compliance channel 1:** test `physical deficit/surplus → curve and basis`.
+2. **OPEC Spare Capacity and Compliance channel 2:** test `curve → storage and production incentives`.
+3. **OPEC Spare Capacity and Compliance channel 3:** test `commodity price → inflation, terms of trade, and margins`.
+4. **OPEC Spare Capacity and Compliance channel 4:** test `funding/FX/positioning → overlay and liquidation`.
+
+**OPEC Spare Capacity and Compliance asset translation:** Commodities: require a physical balance, curve/location evidence, inventory normalization, and financial overlay. Predeclare the leader. If the target moves without the leader or with contradictory independent evidence, reduce the **OPEC Spare Capacity and Compliance** posterior or activate a rival explanation.
+
+## Day-trading decision translation
+
+- Identify the new **OPEC Spare Capacity and Compliance** information since the prior close and its source timestamp.
+- Reconstruct the priced **OPEC Spare Capacity and Compliance** baseline before reading the target move.
+- Name the liquid leader closest to the **OPEC Spare Capacity and Compliance** mechanism and one independent confirmation.
+- Compare observed transmission with the **OPEC Spare Capacity and Compliance** event/quiet-day historical distribution.
+- Assign a permission and a confidence cap; record the **OPEC Spare Capacity and Compliance** cancellation condition.
+- Pass only the permission, leader, invalidation, expiry, and size ceiling to technical execution.
+
+For **OPEC Spare Capacity and Compliance**, fundamentals restrict the allowed trade set; they do not supply the candle trigger or authorize widening a structural stop.
+
+## Two-to-ten-day swing translation
+
+- Define the still-open **OPEC Spare Capacity and Compliance** pricing gap rather than the general narrative.
+- Estimate the **OPEC Spare Capacity and Compliance** impulse half-life and its uncertainty by regime.
+- Map catalysts capable of confirming, reversing, or exhausting the **OPEC Spare Capacity and Compliance** campaign.
+- Compare outright and relative expressions for carry, convexity, gap, liquidity, and factor purity.
+- Specify terminal realization, time expiry, and evidence-based invalidation for **OPEC Spare Capacity and Compliance**.
+
+A valid **OPEC Spare Capacity and Compliance** thesis with no residual pricing gap, adverse carry beyond expected payoff, or an imminent dominating catalyst is not a deployable swing.
+
+## Falsification and known failure modes
+
+- **Failure test 1 for OPEC Spare Capacity and Compliance:** using U.S. crude stocks as global balance.
+- **Failure test 2 for OPEC Spare Capacity and Compliance:** ignoring products and refinery outages.
+- **Failure test 3 for OPEC Spare Capacity and Compliance:** counting sanctioned barrels incorrectly.
+- **Failure test 4 for OPEC Spare Capacity and Compliance:** mixing announced cuts with realized exports.
+- **Failure test 5 for OPEC Spare Capacity and Compliance:** treating curve as pure inventory signal.
+
+Score **OPEC Spare Capacity and Compliance** separately for state estimation, expectation measurement, causal transmission, expression, timing, sizing, execution, and residual noise. Neither a winning outcome nor a losing outcome alone establishes research quality.
+
+## Required implementation record
+
+Create a context object under [[00 Core Standards/17 Context Object and Permission Schema Standard]] containing the **OPEC Spare Capacity and Compliance** target, cutoff, data vintages, model version, state/market distributions, rival models, leader, confirmations, horizon, half-life, permission, confidence cap, size ceiling, invalidation, technical handoff, expiry, and claim IDs.
+
+## Primary source routes for OPEC Spare Capacity and Compliance
+
+- [[65 Source Registry and Claim Lineage/EIA_WPSR — EIA Weekly Petroleum Status Report]]
+- [[65 Source Registry and Claim Lineage/EIA_STEO — EIA Short-Term Energy Outlook]]
+- [[65 Source Registry and Claim Lineage/IEA_OMR — IEA Oil Market Report]]
+- [[65 Source Registry and Claim Lineage/OPEC_MOMR — OPEC Monthly Oil Market Report]]
+- [[65 Source Registry and Claim Lineage/CME_ENERGY — CME Energy Products]]
+- [[65 Source Registry and Claim Lineage/CFTC_COT — CFTC Commitments of Traders]]
+
+## Canonical controls
+
+- [[00 Core Standards/01 Research Object and Decision Contract]]
+- [[00 Core Standards/02 Evidence Source Lineage and Claim Types]]
+- [[00 Core Standards/06 Causal Identification and Rival Models]]
+- [[00 Core Standards/07 Permission Proof and Incremental Edge]]
+- [[00 Core Standards/09 Portfolio Liquidity and Execution Handoff]]

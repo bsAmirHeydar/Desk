@@ -1,0 +1,267 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "file",
+      "file": "00 HOME.md",
+      "x": 0,
+      "y": 0,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n2",
+      "type": "file",
+      "file": "00 Core Standards/00 Core Standards MOC.md",
+      "x": 520,
+      "y": 0,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n3",
+      "type": "file",
+      "file": "02 Macro State/00 Macro State MOC.md",
+      "x": 1040,
+      "y": -350,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n4",
+      "type": "file",
+      "file": "15 Nowcasting Forecasting and Data Interpretation/00 MOC.md",
+      "x": 1040,
+      "y": -80,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n5",
+      "type": "file",
+      "file": "16 Rates Fixed Income and Policy Pricing/00 MOC.md",
+      "x": 1040,
+      "y": 190,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n6",
+      "type": "file",
+      "file": "17 Global FX External Balance and Dollar System/00 MOC.md",
+      "x": 1040,
+      "y": 460,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n7",
+      "type": "file",
+      "file": "18 Equity Fundamental Macro and Index Mechanics/00 MOC.md",
+      "x": 1560,
+      "y": -350,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n8",
+      "type": "file",
+      "file": "20 Commodities Physical Markets and Real Assets/00 MOC.md",
+      "x": 1560,
+      "y": -80,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n9",
+      "type": "file",
+      "file": "22 Portfolio Construction Risk and Governance/00 MOC.md",
+      "x": 1560,
+      "y": 190,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n10",
+      "type": "file",
+      "file": "23 Institutional Day and Swing Trading OS/00 MOC.md",
+      "x": 1560,
+      "y": 460,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n11",
+      "type": "file",
+      "file": "68 Mathematical Econometric and Market Model Monographs/00 Mathematical Econometric and Market Model Monographs MOC.md",
+      "x": 2080,
+      "y": -350,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n12",
+      "type": "file",
+      "file": "69 Historical Point-in-Time Case Laboratory/00 Historical Point-in-Time Case Laboratory MOC.md",
+      "x": 2080,
+      "y": -80,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n13",
+      "type": "file",
+      "file": "70 Expanded Asset and Market Driver Books/00 Expanded Asset and Market Driver Books MOC.md",
+      "x": 2080,
+      "y": 190,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n14",
+      "type": "file",
+      "file": "72 Historical Research Permission and Alpha Validation Laboratory/00 Historical Research Permission and Alpha Validation Laboratory MOC.md",
+      "x": 2080,
+      "y": 460,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "n15",
+      "type": "file",
+      "file": "67 Operational Templates and Decision Records/00 Operational Templates and Decision Records MOC.md",
+      "x": 2600,
+      "y": 190,
+      "width": 420,
+      "height": 220
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "n1",
+      "fromSide": "right",
+      "toNode": "n2",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n2",
+      "fromSide": "right",
+      "toNode": "n3",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n2",
+      "fromSide": "right",
+      "toNode": "n4",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "fromNode": "n2",
+      "fromSide": "right",
+      "toNode": "n5",
+      "toSide": "left"
+    },
+    {
+      "id": "e5",
+      "fromNode": "n2",
+      "fromSide": "right",
+      "toNode": "n6",
+      "toSide": "left"
+    },
+    {
+      "id": "e6",
+      "fromNode": "n3",
+      "fromSide": "right",
+      "toNode": "n7",
+      "toSide": "left"
+    },
+    {
+      "id": "e7",
+      "fromNode": "n3",
+      "fromSide": "right",
+      "toNode": "n8",
+      "toSide": "left"
+    },
+    {
+      "id": "e8",
+      "fromNode": "n4",
+      "fromSide": "right",
+      "toNode": "n11",
+      "toSide": "left"
+    },
+    {
+      "id": "e9",
+      "fromNode": "n5",
+      "fromSide": "right",
+      "toNode": "n9",
+      "toSide": "left"
+    },
+    {
+      "id": "e10",
+      "fromNode": "n6",
+      "fromSide": "right",
+      "toNode": "n10",
+      "toSide": "left"
+    },
+    {
+      "id": "e11",
+      "fromNode": "n7",
+      "fromSide": "right",
+      "toNode": "n13",
+      "toSide": "left"
+    },
+    {
+      "id": "e12",
+      "fromNode": "n8",
+      "fromSide": "right",
+      "toNode": "n13",
+      "toSide": "left"
+    },
+    {
+      "id": "e13",
+      "fromNode": "n9",
+      "fromSide": "right",
+      "toNode": "n14",
+      "toSide": "left"
+    },
+    {
+      "id": "e14",
+      "fromNode": "n10",
+      "fromSide": "right",
+      "toNode": "n14",
+      "toSide": "left"
+    },
+    {
+      "id": "e15",
+      "fromNode": "n11",
+      "fromSide": "right",
+      "toNode": "n12",
+      "toSide": "left"
+    },
+    {
+      "id": "e16",
+      "fromNode": "n12",
+      "fromSide": "right",
+      "toNode": "n14",
+      "toSide": "left"
+    },
+    {
+      "id": "e17",
+      "fromNode": "n13",
+      "fromSide": "right",
+      "toNode": "n14",
+      "toSide": "left"
+    },
+    {
+      "id": "e18",
+      "fromNode": "n14",
+      "fromSide": "right",
+      "toNode": "n15",
+      "toSide": "left"
+    }
+  ]
+}
