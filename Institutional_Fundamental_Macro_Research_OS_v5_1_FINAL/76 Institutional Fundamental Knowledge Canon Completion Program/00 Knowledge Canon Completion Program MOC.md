@@ -1,53 +1,55 @@
 ---
 title: "Institutional Fundamental Knowledge Canon Completion Program"
 type: moc
-status: active
-version: 6.2.0
+status: canonical
+version: 6.3.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
-tags: [fundamental-knowledge, institutional-canon, knowledge-completion]
+tags: [institutional-analysis, fundamental-only, analysis-canon]
 ---
+
 # Institutional Fundamental Knowledge Canon Completion Program
 
 > [!abstract] Purpose
-> This program is exclusively about extracting, organizing, expanding and auditing the complete body of fundamental and macro-financial knowledge. It is not a software, database, coding, live-system or execution-engine roadmap.
+> Complete the fundamental and macro-financial knowledge base required to produce exhaustive, multihorizon, source-grounded institutional analysis across markets, countries, companies, commodities, events and portfolios.
 
 ## Correct interpretation
 
-The objective is to transform the Vault into a self-contained institutional reference that teaches and preserves the science of macroeconomics, accounting, financial systems, asset fundamentals, countries, history, research methods, cross-asset transmission and multihorizon interpretation from beginner to specialist level.
+The Vault is not primarily a curriculum. It is a research-intelligence canon. Every domain must be written so that an analyst or an AI research process can retrieve the relevant objects, models, evidence, historical analogues, transmission mechanisms, contradictions and horizon-specific conclusions without relying on generic filler.
 
-## What 10/10 means here
+Plain-language explanation is permitted when it prevents ambiguity. Exercises, glossaries and capability tests are optional controls. They are not the product and do not earn a domain a ten-of-ten score.
 
-A domain reaches 10/10 knowledge completeness only when it contains:
+## What 10/10 means
 
-1. a plain-language foundation for a new learner;
-2. precise institutional definitions and notation;
-3. formal models, identities and equations;
-4. competing theories and schools of thought;
-5. measurement methods, data construction and interpretation pitfalls;
-6. causal mechanisms and transmission chains;
-7. historical evolution and point-in-time case studies;
-8. regime dependence and boundary conditions;
-9. cross-asset, cross-country and cross-horizon implications;
-10. failure modes, controversies and falsification questions;
-11. annotated primary and scholarly sources;
-12. worked examples, exercises, glossaries and retrieval links.
+A domain reaches ten-of-ten only when it supports a complete institutional analysis object containing:
 
-> [!important] Boundary
-> Completion is judged as a knowledge canon, not as a coded model, database, API, backtest, dashboard or execution system. Those may exist in other projects, but they are not acceptance conditions for this program.
+1. scope, units, timing and information set;
+2. accounting and institutional foundations;
+3. state variables and measurement architecture;
+4. causal and competing-model structure;
+5. expectations, pricing and valuation;
+6. transmission to relevant assets and balance sheets;
+7. cross-country and cross-asset interactions;
+8. structural, cyclical, tactical, day-horizon and event distinctions where relevant;
+9. scenario distributions, nonlinearities and tail states;
+10. historical point-in-time cases;
+11. contradiction, uncertainty and unknown registers;
+12. claim-level sources and source limitations;
+13. confidence, invalidation, expiry and residual gaps;
+14. a retrieval map that enables synthesis into an institutional output.
 
 ## Program waves
 
-- **Wave I — Canon foundations:** Stages 01–07
-- **Wave II — Macro accounting and economic systems:** Stages 08–17
-- **Wave III — Financial system and monetary architecture:** Stages 18–26
-- **Wave IV — Companies and asset classes:** Stages 27–37
-- **Wave V — Cross-asset, geopolitics and structural systems:** Stages 38–43
-- **Wave VI — Research methods and multihorizon synthesis:** Stages 44–51
-- **Wave VII — Pedagogy, sources, editorial integration and final audit:** Stages 52–57
+- **Wave I — Inference and analytical foundations:** Stages 01–07 — completed by Phase 01 and corrected by v6.3.
+- **Wave II — Macro state and accounting systems:** Stages 08–17.
+- **Wave III — Financial system and monetary architecture:** Stages 18–26.
+- **Wave IV — Companies, securities and asset classes:** Stages 27–37.
+- **Wave V — Cross-asset, countries, geopolitics and structural systems:** Stages 38–43.
+- **Wave VI — Measurement, reconstruction and institutional synthesis:** Stages 44–51.
+- **Wave VII — Retrieval, sources, integration, adversarial audit and frontier maintenance:** Stages 52–57.
 
-## Stages
+## Stage index
 
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/01 Mission Scope and the Ten-of-Ten Knowledge Standard]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/02 Fundamental-Only Boundary and Removal of Non-Fundamental Methods]]
@@ -100,17 +102,29 @@ A domain reaches 10/10 knowledge completeness only when it contains:
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/49 Multi-Day Fundamental Campaigns and Thesis Half-Life]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/50 Scenario Analysis Wargaming and Tail-Risk Intelligence]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/51 Portfolio-Level Fundamental Exposures Hidden Drivers and Correlations]]
-- [[76 Institutional Fundamental Knowledge Canon Completion Program/52 Pedagogy Zero-to-Institutional Mastery Curriculum]]
+- [[76 Institutional Fundamental Knowledge Canon Completion Program/52 Institutional Analysis Retrieval Synthesis and Output Architecture]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/53 Glossary Formula Atlas Data Handbook and Concept Index]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/54 Source Canon Citation Bibliography and Research Packets]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/55 Editorial Integration Cross-Linking and Canon Consistency]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/56 Adversarial Audit and Final Ten-of-Ten Knowledge Scorecard]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/57 Continuous Frontier and Canon Maintenance]]
 
+## Governing analysis architecture
+
+All completed domains must connect to [[79 Institutional Fundamental Analysis Output Architecture/00 Institutional Fundamental Analysis Output Architecture MOC]]. A domain that cannot be retrieved and integrated into an analysis object is not complete, regardless of note count.
+
 ## Completion progress
 
 | Wave | Status | Evidence |
 |---|---|---|
-| Stages 01–07 — Foundations | **Completed** | [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Completion and Ten-of-Ten Audit]] |
-| Stages 08–57 | Planned | To be completed through subsequent knowledge-only patches. |
+| Stages 01–07 | Completed, analysis-oriented | [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Completion and Ten-of-Ten Audit]] |
+| Stages 08–17 | Planned | Macro state and accounting canon |
+| Stages 18–26 | Planned | Monetary and financial architecture canon |
+| Stages 27–37 | Planned | Company, security and asset-class canon |
+| Stages 38–43 | Planned | Cross-asset, country and structural canon |
+| Stages 44–51 | Planned | Research and synthesis canon |
+| Stages 52–57 | Stage 52 architecture established; remaining stages planned | [[79 Institutional Fundamental Analysis Output Architecture/00 Institutional Fundamental Analysis Output Architecture MOC]] |
 
+## Boundary
+
+The program does not require coding or a live data platform. It does require enough knowledge, source architecture, historical context and analytical structure to support a complete institutional conclusion without hidden conceptual gaps.

@@ -2,79 +2,61 @@
 title: "Phase 01 Completion and Ten-of-Ten Audit"
 type: completion-audit
 status: canonical
-version: 6.2.0
+version: 6.3.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
-tags: [fundamental-foundations, phase-01, audit]
+tags: [institutional-analysis, fundamental-only, analysis-canon]
 ---
+
 # Phase 01 Completion and Ten-of-Ten Audit
 
 > [!success] Release conclusion
-> Phase 01 is complete as the Foundations Canon. It establishes the knowledge, reasoning, evidence, formal-language, pluralism, multihorizon and research-practice standards required by every later phase.
+> Phase 01 is complete as the foundational inference and research-control layer required by later institutional analysis domains.
 
-## Quantitative inventory
+## What completion means
 
-| Metric | Result |
-|---|---:|
-| Markdown notes including MOCs and audit | 84 |
-| Approximate words | 63,275 |
-| Subphases | 7 |
-| Reference artifacts | glossary, formula atlas, case laboratory, comprehensive examination |
+Completion does **not** mean that the Vault is complete as a whole. It means that later domains now have a canonical method for defining objects, controlling evidence, comparing models, representing uncertainty and synthesizing conclusions across horizons.
 
-| Subphase | Files | Approximate words |
-|---|---:|---:|
-| 01 Fundamental Science and Ontology | 9 | 7,719 |
-| 02 Epistemology Measurement and Evidence | 9 | 6,947 |
-| 03 Causality Identification and Information | 9 | 6,674 |
-| 04 Probability Bayesian Forecasting and Decision | 14 | 10,113 |
-| 05 Competing Models Reflexivity and Pluralism | 16 | 11,594 |
-| 06 Multihorizon Synthesis and Institutional Conclusions | 11 | 8,606 |
-| 07 Research Practice Accreditation and Capstone Laboratory | 13 | 9,687 |
-
-## Ten-of-ten foundation scorecard
+## Analysis-oriented scorecard
 
 | Dimension | Score | Evidence |
 |---|---:|---|
-| Beginner accessibility | 10/10 | Every monograph contains beginner intuition and a controlled progression. |
-| Definition and ontology | 10/10 | Research objects, stocks/flows, states, regimes, expectations, payoff and valuation are explicitly distinguished. |
-| Epistemology and measurement | 10/10 | Fact hierarchy, measurement theory, vintage, missingness, selection, provenance, uncertainty and falsification are canonical. |
-| Formal foundations | 10/10 | Units, transformations, compounding, linear systems, dynamics, optimization, probability and decision theory are included with interpretation. |
-| Causal reasoning | 10/10 | Counterfactuals, DAGs, endogeneity, mediation, quasi-experiments, transportability and reflexivity are covered. |
-| Competing models | 10/10 | Major schools are steelmanned, limited and integrated through disciplined pluralism. |
-| Multihorizon synthesis | 10/10 | Inheritance, conflict, double counting, half-life, regime, scenario, mandate, confidence, invalidation and expiry are explicit. |
-| Institutional research practice | 10/10 | Claim ledgers, model cards, historical replay, red teams, committees, memos, cases and accreditation are included. |
-| Pedagogy and retrieval | 10/10 | MOCs, reading paths, glossary, formula atlas, exercises, cases and exam support zero-to-institutional learning. |
-| Fundamental-only boundary | 10/10 | The module contains only fundamental research concepts, evidence standards and institutional reasoning methods. |
+| Object and ontology control | 10/10 | Stocks, flows, states, regimes, expectations, valuation, payoff and institutions are separated. |
+| Evidence and information-set control | 10/10 | Facts, estimates, models, vintage, provenance, missingness, bias and unknowns are explicit. |
+| Causal and rival-model control | 10/10 | Counterfactuals, transmission, reaction functions, confounding, feedback and competing explanations are represented. |
+| Probability and decision language | 10/10 | Distributions, Bayesian updating, base rates, dependence, loss, robustness and calibration are available. |
+| Multihorizon synthesis | 10/10 | Structural, cyclical, tactical, day-horizon and event conclusions can be separated and reconciled. |
+| Institutional conclusion architecture | 10/10 | State, expectations, pricing, valuation, scenario, contradiction, confidence, invalidation, expiry and unknowns are mandatory. |
+| Fundamental-only boundary | 10/10 | Price-derived evidence is limited to expectations, valuation, liquidity, constraints, risk premia and outcomes. |
+| Retrieval and output readiness | 9/10 | Foundation objects are retrieval-ready; full score depends on domain completion and Module 79 integration. |
 
-## Adversarial audit questions passed
+## Removed as primary score dimensions
 
-1. Can a beginner enter without hidden definitions? **Yes.**
-2. Can a specialist locate formal assumptions and rival views? **Yes.**
-3. Can claims be audited to evidence and information set? **Yes.**
-4. Are causal, predictive, accounting and valuation statements kept separate? **Yes.**
-5. Are models conditional on regime, institution and horizon? **Yes.**
-6. Can historical work be reconstructed without hindsight? **Yes.**
-7. Is “insufficient evidence” an accepted conclusion? **Yes.**
-8. Are disagreements and unknowns preserved rather than averaged away? **Yes.**
-9. Can mastery be demonstrated through unfamiliar cases? **Yes.**
-10. Does completion avoid claiming that all later knowledge domains are finished? **Yes.**
+The following may remain as supporting controls but no longer determine completion:
 
-## Residual frontier
+- beginner accessibility;
+- reading paths;
+- exercise count;
+- curriculum design;
+- examination volume;
+- pedagogical progression.
 
-The foundation canon remains open to new philosophy of science, forecasting, causal-inference and institutional-decision research. Frontier openness is not a coverage defect: every unresolved issue must be named, sourced and integrated through revision governance.
+## Residual requirement
+
+Every later domain must prove that it can populate the institutional analysis-output architecture. Phase 01 cannot grant a ten-of-ten score to a domain that lacks domain-specific knowledge, sources, history or transmission maps.
 
 ## Promotion record
 
 ```yaml
 phase: 01
-name: Institutional Fundamental Foundations Canon
+name: Institutional Fundamental Inference Foundations
 status: completed
-knowledge_score: 10
+analysis_foundation_score: 10
+retrieval_output_score: 9
 technical_methods_present: false
-subphases_completed: 7
-accreditation_required: true
-next_phase: Macro Accounting and Economic System
+education_is_primary_objective: false
+next_release: Macro Accounting Growth and System State
 ```
 
 ---

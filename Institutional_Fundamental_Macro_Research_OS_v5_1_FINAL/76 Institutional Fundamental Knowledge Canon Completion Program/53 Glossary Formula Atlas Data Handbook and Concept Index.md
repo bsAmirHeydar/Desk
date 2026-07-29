@@ -105,4 +105,4 @@ residual_gaps: []
 
 ## Navigation
 
-[[76 Institutional Fundamental Knowledge Canon Completion Program/52 Pedagogy Zero-to-Institutional Mastery Curriculum|Previous stage]] · [[76 Institutional Fundamental Knowledge Canon Completion Program/54 Source Canon Citation Bibliography and Research Packets|Next stage]]
+[[76 Institutional Fundamental Knowledge Canon Completion Program/52 Institutional Analysis Retrieval Synthesis and Output Architecture|Previous stage]] · [[76 Institutional Fundamental Knowledge Canon Completion Program/54 Source Canon Citation Bibliography and Research Packets|Next stage]]

@@ -2,7 +2,7 @@
 title: "Institutional Fundamental Coverage and Production Maturity Matrix"
 type: coverage-matrix
 status: active
-version: 6.0.0
+version: 6.3.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
@@ -43,3 +43,17 @@ Coverage and production maturity are different. A domain may have broad written 
 ## Ten-of-ten criteria
 
 Use [[76 Institutional Fundamental Knowledge Canon Completion Program/58 Ten-of-Ten Institutional Fundamental Knowledge Scorecard]]. No current domain is self-certified as 10/10. A score of 10 requires attached production evidence, independent replication and continuous monitoring.
+
+
+## Institutional analysis-output coverage
+
+| Analysis object | Required canon capability | Governing standard |
+|---|---|---|
+| Current market | State, expectations, pricing, transmission, positioning, scenarios, horizons and unknowns | [[79 Institutional Fundamental Analysis Output Architecture/06 Current Live Full-Spectrum Analysis Standard]] |
+| Historical market | Cutoff, vintage, information set, expectations, contemporaneous pricing and ex-post separation | [[79 Institutional Fundamental Analysis Output Architecture/07 Historical Point-in-Time Analysis Standard]] |
+| Asset or market | Asset payoff, valuation, drivers, constraints, cross-asset evidence and regime dependence | [[79 Institutional Fundamental Analysis Output Architecture/08 Asset and Market Analysis Standard]] |
+| Country or sovereign | Institutions, macro accounts, policy, balance sheets, external vulnerability and market transmission | [[79 Institutional Fundamental Analysis Output Architecture/09 Country Sovereign and Regional Analysis Standard]] |
+| Company or equity | Statements, business economics, industry, valuation, financing, expectations and scenario payoff | [[79 Institutional Fundamental Analysis Output Architecture/10 Corporate and Equity Fundamental Analysis Standard]] |
+| Commodity | Physical balance, logistics, inventories, curves, substitution, policy, finance and geopolitical constraints | [[79 Institutional Fundamental Analysis Output Architecture/11 Commodity and Physical Market Analysis Standard]] |
+| Event or policy catalyst | Baseline, distribution, surprise vector, reaction function, transmission and persistence | [[79 Institutional Fundamental Analysis Output Architecture/12 Event Catalyst and Policy Analysis Standard]] |
+| Portfolio | Hidden drivers, duplicated exposure, conditional dependence, scenario loss and hedge failure | [[79 Institutional Fundamental Analysis Output Architecture/13 Portfolio Fundamental Exposure and Scenario Analysis Standard]] |

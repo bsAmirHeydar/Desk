@@ -111,4 +111,4 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ---
 
-Previous: [[78 Phase 01 Institutional Fundamental Foundations Canon/07 Research Practice Accreditation and Capstone Laboratory/Investment-Committee Reasoning, Dissent and Decision Records]] · Next: [[78 Phase 01 Institutional Fundamental Foundations Canon/07 Research Practice Accreditation and Capstone Laboratory/Zero-to-Institutional Pedagogy, Mastery Levels and Deliberate Practice]] · Module: [[78 Phase 01 Institutional Fundamental Foundations Canon/00 Phase 01 Institutional Fundamental Foundations Canon MOC]]
+Previous: [[78 Phase 01 Institutional Fundamental Foundations Canon/07 Research Practice Accreditation and Capstone Laboratory/Investment-Committee Reasoning, Dissent and Decision Records]] · Next: [[78 Phase 01 Institutional Fundamental Foundations Canon/07 Research Practice Accreditation and Capstone Laboratory/Institutional Analytical Retrieval and Synthesis Standard]] · Module: [[78 Phase 01 Institutional Fundamental Foundations Canon/00 Phase 01 Institutional Fundamental Foundations Canon MOC]]

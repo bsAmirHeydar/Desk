@@ -107,4 +107,4 @@ residual_gaps: []
 
 ## Navigation
 
-[[76 Institutional Fundamental Knowledge Canon Completion Program/50 Scenario Analysis Wargaming and Tail-Risk Intelligence|Previous stage]] · [[76 Institutional Fundamental Knowledge Canon Completion Program/52 Pedagogy Zero-to-Institutional Mastery Curriculum|Next stage]]
+[[76 Institutional Fundamental Knowledge Canon Completion Program/50 Scenario Analysis Wargaming and Tail-Risk Intelligence|Previous stage]] · [[76 Institutional Fundamental Knowledge Canon Completion Program/52 Institutional Analysis Retrieval Synthesis and Output Architecture|Next stage]]

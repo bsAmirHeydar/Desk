@@ -1,43 +1,61 @@
 ---
 title: "Ten-of-Ten Institutional Fundamental Knowledge Scorecard"
 type: scorecard
-status: active
-version: 6.2.0
+status: canonical
+version: 6.3.0
+created: 2026-07-29
+updated: 2026-07-29
 language: en
-tags: [knowledge-scorecard, institutional-canon]
+tags: [institutional-analysis, fundamental-only, analysis-canon]
 ---
+
 # Ten-of-Ten Institutional Fundamental Knowledge Scorecard
 
-This scorecard evaluates the Vault as a body of knowledge. It deliberately excludes software, data-platform, coding, live-monitoring and execution requirements.
+> [!warning] Scoring rule
+> No dimension may receive 10/10 because the topic is present, long, readable or accompanied by exercises. A score of 10 requires evidence that the canon can support a complete, object-specific institutional analysis.
 
-## Scoring dimensions
+## Core dimensions
 
 | Dimension | 10/10 requirement |
 |---|---|
-| Breadth | Every material branch of macroeconomics, finance, accounting, financial institutions, asset fundamentals, countries, history and research method is present. |
-| Conceptual depth | Each domain progresses from intuition to specialist institutional treatment. |
-| Formal depth | Relevant identities, equations, models, notation and derivations are explained correctly. |
-| Theoretical pluralism | Competing schools and rival causal explanations are presented fairly and compared. |
-| Measurement literacy | Data construction, transformations, revisions, conventions and limitations are documented. |
-| Historical depth | Major regimes, crises and structural breaks are reconstructed without hindsight contamination. |
-| Cross-system integration | Every subject is connected to sectors, balance sheets, countries and asset classes. |
-| Multihorizon understanding | Structural through event and microstructure implications are distinguished and reconciled. |
-| Failure awareness | Boundary conditions, controversies, model reversals and common analytical errors are explicit. |
-| Sources | Claims have primary or scholarly support with annotated bibliographies and precise locators where available. |
-| Pedagogy | A learner can move from zero to specialist through prerequisites, examples, exercises and review questions. |
-| Retrieval quality | MOCs, glossary, formula atlas, indexes and cross-links make the canon usable at institutional scale. |
+| Domain coverage | All material subdomains, instruments, institutions, mechanisms and boundary cases are mapped. |
+| Analytical depth | Definitions, identities, theories, mechanisms, measurement, history, regimes and limitations are integrated. |
+| Retrieval precision | A query can deterministically locate the relevant notes, sources, variables, models and cases without irrelevant filler. |
+| Causal architecture | Drivers, mediators, feedback, reaction functions, confounders and rival explanations are explicit. |
+| Expectations and pricing | Consensus, distributions, implied expectations, valuation, carry and risk premium are separated. |
+| Multihorizon synthesis | Structural, cyclical, tactical, day-horizon and event conclusions are distinguished and reconciled. |
+| Cross-domain integration | Macro, rates, FX, credit, equity, commodity, policy and balance-sheet channels are connected without double counting. |
+| Historical integrity | Point-in-time information sets, revisions, institutional context and ex-post separation are explicit. |
+| Scenario and tail intelligence | Base, alternative and tail states include mechanisms, probabilities, nonlinearities and signposts. |
+| Contradiction control | Conflicting evidence, dissent, model disagreement and unresolved questions are preserved. |
+| Source authority | Material claims have claim-level sources, locators, vintages and limitations. |
+| Output readiness | The domain can populate the institutional output contract for current and historical analysis. |
+| Fundamental-only integrity | Price-derived information is used only for expectations, valuation, constraints, liquidity, risk premia or outcomes. |
+| Maintenance readiness | New evidence can be integrated without destroying provenance or creating duplicate canon. |
 
-## Scoring rule
+## Hard failures
 
-A domain may receive 10/10 only when every dimension above is complete. A score of 9 means the domain is exceptionally strong but has a documented residual gap. Scores below 9 identify the exact missing layer rather than hiding it behind total word count.
+A domain cannot score above 7 if any of the following is true:
 
-## Global completion rule
+- substantial sections are template duplication;
+- key terms lack operational definitions;
+- major rival models are absent;
+- historical examples are retrospective narratives without point-in-time separation;
+- source lists are generic and not linked to claims;
+- the domain cannot explain its transmission to the relevant analysis object;
+- horizon conflicts are ignored;
+- unknowns are converted into false precision;
+- output conclusions cannot be reproduced from the canon structure.
 
-The Vault reaches 10/10 knowledge status only when:
+## Scoring classes
 
-- every stage in [[76 Institutional Fundamental Knowledge Canon Completion Program/00 Knowledge Canon Completion Program MOC]] has passed its exit audit;
-- no major asset class, institution, country system, historical regime or research method is materially absent;
-- no monograph is predominantly generic boilerplate;
-- all contradictions are either resolved or explicitly registered as rival interpretations;
-- beginner and institutional layers coexist;
-- an independent adversarial review cannot identify a material unacknowledged knowledge gap.
+- **0–3:** named but not analytically usable.
+- **4–5:** broad survey with material gaps.
+- **6–7:** professional reference with incomplete integration.
+- **8:** institutional-quality domain book with minor gaps.
+- **9:** near-complete canon with strong analytical outputs and explicit residual frontier.
+- **10:** externally adversarial-audited, internally coherent, retrieval-ready and complete for the defined scope.
+
+## Governing matrix
+
+Use [[79 Institutional Fundamental Analysis Output Architecture/16 Ten-of-Ten Analysis Capability Matrix]] for object-level scoring.
