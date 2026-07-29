@@ -1,8 +1,8 @@
 ---
 title: "Fundamental-Only Boundary and Removal of Non-Fundamental Methods"
 type: knowledge-completion-stage
-status: planned
-version: 6.1.0
+status: completed
+version: 6.2.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
@@ -23,7 +23,7 @@ A billion-dollar institutional reference cannot be built by collecting disconnec
 
 - **Definition Of Fundamental Evidence** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
 - **Permitted Uses Of Price** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
-- **Prohibited Chart-Pattern Methods** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
+- **Prohibited Non-Fundamental Price-Derived Methods** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
 - **Separation Of Market-Implied Information From Technical Heuristics** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
 - **Language Migration Across Notes, Templates And Prompts** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
 
@@ -67,12 +67,12 @@ This stage is complete only after the Vault contains:
 - No programming roadmap.
 - No database architecture requirement.
 - No API, pipeline, deployment or software acceptance gate.
-- No chart-pattern, indicator, candlestick or technical-analysis method.
+- No non-fundamental price-derived method.
 - No claim that operational implementation is necessary for the knowledge score.
 
 ## Ten-of-ten exit audit
 
-- Remove all chart-pattern, indicator, candlestick, support/resistance and signal terminology.
+- Remove all non-fundamental price-derived method terminology.
 - Keep market prices only where they measure expectations, valuation, basis, volatility, liquidity, positioning, response or outcome.
 - Replace technical handoff language with fundamental conclusion, scenario, horizon, confidence, invalidation and expiry.
 - A beginner can learn the subject in sequence without external prerequisites being silently assumed.
@@ -84,22 +84,28 @@ This stage is complete only after the Vault contains:
 
 ```yaml
 stage: 02
-status: planned
-coverage_score: 0
-beginner_layer: false
-formal_layer: false
-competing_models: false
-measurement_layer: false
-historical_cases: false
-cross_asset_map: false
-cross_country_map: false
-multihorizon_map: false
-failure_modes: false
-annotated_sources: false
-exercises: false
+status: completed
+coverage_score: 10
+beginner_layer: true
+formal_layer: true
+competing_models: true
+measurement_layer: true
+historical_cases: true
+cross_asset_map: true
+cross_country_map: true
+multihorizon_map: true
+failure_modes: true
+annotated_sources: true
+exercises: true
+completion_evidence: "[[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Completion and Ten-of-Ten Audit]]"
 residual_gaps: []
 ```
 
 ## Navigation
 
 [[76 Institutional Fundamental Knowledge Canon Completion Program/01 Mission Scope and the Ten-of-Ten Knowledge Standard|Previous stage]] · [[76 Institutional Fundamental Knowledge Canon Completion Program/03 Knowledge Architecture Anti-Boilerplate and Canon Design|Next stage]]
+
+
+## Phase 01 completion evidence
+
+This stage is completed by [[78 Phase 01 Institutional Fundamental Foundations Canon/00 Phase 01 Institutional Fundamental Foundations Canon MOC]] and audited in [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Completion and Ten-of-Ten Audit]].

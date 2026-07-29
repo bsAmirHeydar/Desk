@@ -42,4 +42,4 @@ Coverage and production maturity are different. A domain may have broad written 
 
 ## Ten-of-ten criteria
 
-Use [[76 Sovereign Institutional Fundamental Transformation Program/42 Ten-of-Ten Capability Scorecard]]. No current domain is self-certified as 10/10. A score of 10 requires attached production evidence, independent replication and continuous monitoring.
+Use [[76 Institutional Fundamental Knowledge Canon Completion Program/58 Ten-of-Ten Institutional Fundamental Knowledge Scorecard]]. No current domain is self-certified as 10/10. A score of 10 requires attached production evidence, independent replication and continuous monitoring.

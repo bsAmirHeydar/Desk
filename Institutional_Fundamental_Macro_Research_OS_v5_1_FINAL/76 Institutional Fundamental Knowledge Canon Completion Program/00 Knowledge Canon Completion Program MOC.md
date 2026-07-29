@@ -2,7 +2,7 @@
 title: "Institutional Fundamental Knowledge Canon Completion Program"
 type: moc
 status: active
-version: 6.1.0
+version: 6.2.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
@@ -96,7 +96,7 @@ A domain reaches 10/10 knowledge completeness only when it contains:
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/45 Econometrics Causal Inference and Empirical Research Design]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/46 Current Live Full-Spectrum Fundamental Analysis Method]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/47 Historical Point-in-Time Reconstruction Method]]
-- [[76 Institutional Fundamental Knowledge Canon Completion Program/48 Day-Horizon Fundamental Context Without Technical Analysis]]
+- [[76 Institutional Fundamental Knowledge Canon Completion Program/48 Day-Horizon Fundamental Context]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/49 Multi-Day Fundamental Campaigns and Thesis Half-Life]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/50 Scenario Analysis Wargaming and Tail-Risk Intelligence]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/51 Portfolio-Level Fundamental Exposures Hidden Drivers and Correlations]]
@@ -106,3 +106,11 @@ A domain reaches 10/10 knowledge completeness only when it contains:
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/55 Editorial Integration Cross-Linking and Canon Consistency]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/56 Adversarial Audit and Final Ten-of-Ten Knowledge Scorecard]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/57 Continuous Frontier and Canon Maintenance]]
+
+## Completion progress
+
+| Wave | Status | Evidence |
+|---|---|---|
+| Stages 01–07 — Foundations | **Completed** | [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Completion and Ten-of-Ten Audit]] |
+| Stages 08–57 | Planned | To be completed through subsequent knowledge-only patches. |
+

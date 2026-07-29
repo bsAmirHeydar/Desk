@@ -2,7 +2,7 @@
 title: "Historical Point-in-Time Reconstruction Method"
 type: knowledge-completion-stage
 status: planned
-version: 6.1.0
+version: 6.2.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
@@ -70,7 +70,7 @@ This stage is complete only after the Vault contains:
 - No programming roadmap.
 - No database architecture requirement.
 - No API, pipeline, deployment or software acceptance gate.
-- No chart-pattern, indicator, candlestick or technical-analysis method.
+- No non-fundamental price-derived method.
 - No claim that operational implementation is necessary for the knowledge score.
 
 ## Ten-of-ten exit audit
@@ -105,4 +105,4 @@ residual_gaps: []
 
 ## Navigation
 
-[[76 Institutional Fundamental Knowledge Canon Completion Program/46 Current Live Full-Spectrum Fundamental Analysis Method|Previous stage]] · [[76 Institutional Fundamental Knowledge Canon Completion Program/48 Day-Horizon Fundamental Context Without Technical Analysis|Next stage]]
+[[76 Institutional Fundamental Knowledge Canon Completion Program/46 Current Live Full-Spectrum Fundamental Analysis Method|Previous stage]] · [[76 Institutional Fundamental Knowledge Canon Completion Program/48 Day-Horizon Fundamental Context|Next stage]]

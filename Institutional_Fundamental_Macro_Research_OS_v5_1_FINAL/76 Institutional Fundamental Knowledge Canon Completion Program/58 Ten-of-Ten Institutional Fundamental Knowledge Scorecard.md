@@ -2,7 +2,7 @@
 title: "Ten-of-Ten Institutional Fundamental Knowledge Scorecard"
 type: scorecard
 status: active
-version: 6.1.0
+version: 6.2.0
 language: en
 tags: [knowledge-scorecard, institutional-canon]
 ---

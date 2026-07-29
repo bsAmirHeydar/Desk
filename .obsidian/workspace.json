@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "ecdfda09ac8cc51a",
+    "type": "split",
+    "children": [
+      {
+        "id": "eee75f2a7bbcca3a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2e47c58facd77387",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9e9ced9929fdb547",
+    "type": "split",
+    "children": [
+      {
+        "id": "123020bdc73532d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a3f68315098ba31",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2baad9e808bb1be7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "968aef1ecb8732fb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "403048aa886838df",
+    "type": "split",
+    "children": [
+      {
+        "id": "feb497f6ab8e73d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c0995943539ca07",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "03740c929409f194",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "bdf7dfa70cc9629f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "80c812c689c9284f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "f0b60a27d073f49c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "2e47c58facd77387",
+  "lastOpenFiles": [
+    "_prompt_patch_v5_2/PATCH_VALIDATION_REPORT.md",
+    "_prompt_patch_v5_2/PATCH_SHA256.txt",
+    "_prompt_patch_v5_2/PATCH_MANIFEST.md",
+    "_prompt_patch_v5_2/PATCH_FILE_INDEX.txt",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/75 ChatGPT Institutional Market Analysis Prompts/09 Output Contract and Quality Gates.md",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/75 ChatGPT Institutional Market Analysis Prompts/08 Prompt Input Specification.md",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/75 ChatGPT Institutional Market Analysis Prompts/07 Fast Launcher Messages.md",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/75 ChatGPT Institutional Market Analysis Prompts/06 Historical Replay Counterfactual and Attribution Prompt.md",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/75 ChatGPT Institutional Market Analysis Prompts/05 Current Swing-Trading Context Prompt.md",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/75 ChatGPT Institutional Market Analysis Prompts/04 Current Day-Trading Context Prompt.md",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/75 ChatGPT Institutional Market Analysis Prompts/03 Historical Point-in-Time Fundamental Reconstruction Prompt.md",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/75 ChatGPT Institutional Market Analysis Prompts/02 Current Now Full-Spectrum Fundamental Analysis Prompt.md",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/75 ChatGPT Institutional Market Analysis Prompts/01 Universal Dual-Mode Institutional Market Analysis Prompt.md",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/75 ChatGPT Institutional Market Analysis Prompts/00 ChatGPT Institutional Market Analysis Prompts MOC.md",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/75 ChatGPT Institutional Market Analysis Prompts",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/01 COVERAGE MATRIX.md",
+    "_prompt_patch_v5_2/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL",
+    "_prompt_patch_v5_2/COMMIT_MESSAGE.txt",
+    "_prompt_patch_v5_2",
+    "Institutional_Fundamental_Macro_Research_OS_v5_2_ENGLISH_PROMPTS_PATCH.zip"
+  ]
+}

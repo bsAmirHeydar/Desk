@@ -2,7 +2,7 @@
 title: "Knowledge Completion Waves Dependencies and Release Plan"
 type: roadmap
 status: active
-version: 6.1.0
+version: 6.2.0
 language: en
 tags: [knowledge-roadmap, dependencies]
 ---

@@ -2,7 +2,7 @@
 title: "Corporate Accounting Financial Statements and Earnings Quality"
 type: knowledge-completion-stage
 status: planned
-version: 6.1.0
+version: 6.2.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
@@ -33,7 +33,7 @@ A billion-dollar institutional reference cannot be built by collecting disconnec
 - **Leases** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
 - **Stock Compensation** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
 - **Accruals** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
-- **Fraud Indicators** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
+- **Fraud non-fundamental price-derived methods** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
 
 ## Required depth layers
 
@@ -75,7 +75,7 @@ This stage is complete only after the Vault contains:
 - No programming roadmap.
 - No database architecture requirement.
 - No API, pipeline, deployment or software acceptance gate.
-- No chart-pattern, indicator, candlestick or technical-analysis method.
+- No non-fundamental price-derived method.
 - No claim that operational implementation is necessary for the knowledge score.
 
 ## Ten-of-ten exit audit

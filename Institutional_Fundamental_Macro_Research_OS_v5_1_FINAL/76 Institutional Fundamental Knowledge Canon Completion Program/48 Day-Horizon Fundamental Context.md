@@ -1,15 +1,15 @@
 ---
-title: "Day-Horizon Fundamental Context Without Technical Analysis"
+title: "Day-Horizon Fundamental Context"
 type: knowledge-completion-stage
 status: planned
-version: 6.1.0
+version: 6.2.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
 stage: 48
 tags: [fundamental-knowledge, institutional-canon, knowledge-stage]
 ---
-# Stage 48 — Day-Horizon Fundamental Context Without Technical Analysis
+# Stage 48 — Day-Horizon Fundamental Context
 
 ## Mission
 
@@ -71,13 +71,13 @@ This stage is complete only after the Vault contains:
 - No programming roadmap.
 - No database architecture requirement.
 - No API, pipeline, deployment or software acceptance gate.
-- No chart-pattern, indicator, candlestick or technical-analysis method.
+- No non-fundamental price-derived method.
 - No claim that operational implementation is necessary for the knowledge score.
 
 ## Ten-of-ten exit audit
 
 - Conclude with a fundamental directional or neutral state, confidence, evidence, invalidation and expected duration.
-- Do not include entries, stops, patterns or indicators.
+- Do not include entries, stops, patterns or non-fundamental price-derived methods.
 - A beginner can learn the subject in sequence without external prerequisites being silently assumed.
 - A specialist can locate formal definitions, models, controversies, historical cases and primary sources without encountering generic filler.
 - The subject is connected to all relevant assets, countries and time horizons.

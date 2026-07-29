@@ -2,7 +2,7 @@
 title: "Credit Cycle Corporate Credit Default and Recovery"
 type: knowledge-completion-stage
 status: planned
-version: 6.1.0
+version: 6.2.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
@@ -13,7 +13,7 @@ tags: [fundamental-knowledge, institutional-canon, knowledge-stage]
 
 ## Mission
 
-Complete the science of credit as both financing system and macro leading indicator.
+Complete the science of credit as both financing system and macro leading non-fundamental price-derived method.
 
 ## Why this stage is necessary
 
@@ -72,7 +72,7 @@ This stage is complete only after the Vault contains:
 - No programming roadmap.
 - No database architecture requirement.
 - No API, pipeline, deployment or software acceptance gate.
-- No chart-pattern, indicator, candlestick or technical-analysis method.
+- No non-fundamental price-derived method.
 - No claim that operational implementation is necessary for the knowledge score.
 
 ## Ten-of-ten exit audit

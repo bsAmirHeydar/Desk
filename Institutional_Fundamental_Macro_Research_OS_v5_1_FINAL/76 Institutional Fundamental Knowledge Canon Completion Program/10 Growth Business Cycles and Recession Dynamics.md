@@ -2,7 +2,7 @@
 title: "Growth Business Cycles and Recession Dynamics"
 type: knowledge-completion-stage
 status: planned
-version: 6.1.0
+version: 6.2.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
@@ -24,7 +24,7 @@ A billion-dollar institutional reference cannot be built by collecting disconnec
 - **Potential Output** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
 - **Output Gaps** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
 - **Trend And Cycle** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
-- **Leading Coincident And Lagging Indicators** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
+- **Leading Coincident And Lagging non-fundamental price-derived methods** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
 - **Inventory Cycle** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
 - **Capital Expenditure Cycle** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
 - **Housing Cycle** — define the concept, explain its mechanisms, document measurement, competing views, historical evidence, market implications and limitations.
@@ -72,7 +72,7 @@ This stage is complete only after the Vault contains:
 - No programming roadmap.
 - No database architecture requirement.
 - No API, pipeline, deployment or software acceptance gate.
-- No chart-pattern, indicator, candlestick or technical-analysis method.
+- No non-fundamental price-derived method.
 - No claim that operational implementation is necessary for the knowledge score.
 
 ## Ten-of-ten exit audit
