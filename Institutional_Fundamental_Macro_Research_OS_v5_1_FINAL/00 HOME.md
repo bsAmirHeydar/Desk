@@ -1,17 +1,17 @@
 ---
-title: "Institutional Fundamental Macro Research OS v6.0"
+title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 6.0.0
+version: 6.1.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
 tags: [home, fundamental-only, institutional-macro, research-platform]
 ---
-# Institutional Fundamental Macro Research OS v6.0
+# Institutional Fundamental Macro Research OS v6.1 — Knowledge Canon
 
 > [!abstract] Fundamental-only institutional research architecture
-> A source-controlled, point-in-time, multihorizon and portfolio-aware knowledge and transformation system for macroeconomics, rates, FX, equities, corporate securities, credit, banks, commodities, real assets, digital assets, countries, geopolitics, market structure, flows, data engineering, models and governance.
+> A fundamental-only institutional knowledge canon for macroeconomics, accounting, financial systems, rates, FX, equities, corporate securities, credit, banks, commodities, real assets, digital assets, countries, geopolitics, research methods and multihorizon interpretation.
 
 ## Fundamental-only boundary
 
@@ -20,29 +20,24 @@ This Vault excludes non-fundamental price-pattern methods. Price data are used o
 ## Core doctrine
 
 ```text
-Source-controlled observations
-→ point-in-time measurement
-→ state and forecast distributions
-→ expectations and market-implied distributions
-→ pricing gap
-→ causal and rival models
-→ scenarios and expected payoff
-→ liquidity, cost and portfolio constraints
-→ fundamental decision state
-→ implementation governance
-→ attribution, calibration, monitoring and retirement
+Definitions and accounting identities
+→ competing theories and causal mechanisms
+→ measurement and historical evidence
+→ states, expectations and market-implied information
+→ cross-asset and cross-country transmission
+→ structural-to-event horizon synthesis
+→ scenarios, uncertainty and fundamental conclusions
+→ critique, revision and continuous scholarly improvement
 ```
 
 ## Start here
 
 1. [[00 Core Standards/00 Core Standards MOC]]
 2. [[01 COVERAGE MATRIX]]
-3. [[76 Sovereign Institutional Fundamental Transformation Program/00 Transformation Program MOC]]
-4. [[77 Institutional Evidence and Monograph Production Standard/00 Institutional Evidence and Monograph Production Standard MOC]]
-5. [[78 Production Data and Research Platform Blueprint/00 Production Data and Research Platform Blueprint MOC]]
-6. [[79 Fundamental Asset Engine Production Specifications/00 Fundamental Asset Engine Production Specifications MOC]]
-7. [[80 Institutional Validation Governance and Accreditation/00 Institutional Validation Governance and Accreditation MOC]]
-8. [[75 ChatGPT Institutional Market Analysis Prompts/00 ChatGPT Institutional Market Analysis Prompts MOC]]
+3. [[76 Institutional Fundamental Knowledge Canon Completion Program/00 Knowledge Canon Completion Program MOC]]
+4. [[76 Institutional Fundamental Knowledge Canon Completion Program/58 Ten-of-Ten Institutional Fundamental Knowledge Scorecard]]
+5. [[77 Institutional Evidence and Monograph Production Standard/00 Institutional Evidence and Monograph Production Standard MOC]]
+6. [[75 ChatGPT Institutional Market Analysis Prompts/00 ChatGPT Institutional Market Analysis Prompts MOC]]
 
 ## Existing knowledge domains
 
@@ -109,6 +104,6 @@ Source-controlled observations
 - [[72 Historical Research Permission and Alpha Validation Laboratory/00 Historical Research Permission and Alpha Validation Laboratory MOC]]
 - [[73 Economic Schools Competing Models and Adversarial Synthesis/00 Economic Schools Competing Models and Adversarial Synthesis MOC]]
 
-## Honest operating boundary
+## Knowledge-canon boundary
 
-Version 6.0 upgrades the architecture, standards, fundamental-only boundary and implementation program. The Vault becomes a production institutional capability only as the transformation phases attach real point-in-time data, code, tests, model artifacts, live services, governance evidence and independently validated decision value. File count and word count never substitute for those artifacts.
+Version 6.1 evaluates the Vault as an institutional body of fundamental knowledge. It does not require programming, databases, APIs, deployment, dashboards, live services or a trading-execution stack. Completeness is earned through breadth, conceptual and formal depth, competing models, measurement literacy, historical evidence, cross-asset and cross-country integration, multihorizon understanding, failure analysis, source quality and pedagogy. File count and word count never substitute for those qualities.
