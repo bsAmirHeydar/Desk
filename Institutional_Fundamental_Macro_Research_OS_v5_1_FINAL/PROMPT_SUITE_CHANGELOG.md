@@ -2,15 +2,15 @@
 title: "Prompt Suite Changelog"
 type: changelog
 status: current
-version: 5.2.0
+version: 10.1.0
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-30
 language: en
 tags:
   - changelog
   - prompts
 ---
-# Prompt Suite Changelog — v5.2
+# Prompt Suite Changelog — v10.1
 
 ## Rebuilt
 
@@ -37,3 +37,13 @@ tags:
 - Current mode requires current web research and inline citations.
 - Historical mode forbids later data, revisions, prices and outcomes in the reconstructed section.
 - Fundamental permission cannot override implementation stops or justify averaging into loss.
+
+
+## V10.1 Alpha Lab Persian PDF suite
+
+- Added four standalone asset-specific prompts for Nasdaq 100, S&P 500, Gold/XAUUSD and EURUSD.
+- Added dual LIVE/HISTORICAL operation in every asset prompt.
+- Made actual Persian RTL PDF creation mandatory.
+- Added the Alpha Lab institutional PDF design system, page-validation contract, fast launchers, examples and archive convention.
+- Added asset-specific canonical retrieval maps and causal requirements.
+- Preserved the fundamental-only boundary and internal-QA versus external-certification distinction.

@@ -2,7 +2,7 @@
 title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 10.0.0
+version: 10.1.0
 created: 2026-07-29
 updated: 2026-07-30
 language: en
@@ -39,6 +39,7 @@ Definitions and accounting identities
 5. [[77 Institutional Evidence and Monograph Production Standard/00 Institutional Evidence and Monograph Production Standard MOC]]
 6. [[78 Phase 01 Institutional Fundamental Foundations Canon/00 Phase 01 Institutional Fundamental Foundations Canon MOC]]
 7. [[75 ChatGPT Institutional Market Analysis Prompts/00 ChatGPT Institutional Market Analysis Prompts MOC]]
+8. [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/00 Alpha Lab Asset-Specific Persian PDF Analysis Prompts MOC]]
 
 ## Existing knowledge domains
 
@@ -136,3 +137,9 @@ Version 6.1 evaluates the Vault as an institutional body of fundamental knowledg
 - [[85 Specialist Canonical Research Appendices/00 Specialist Canonical Research Appendices MOC]] — specialist legal, industry, instrument and physical-system canon.
 - [[83 Golden Benchmark and Historical Dossier Library/00 Golden Benchmark and Historical Dossier Library MOC]] — 30 executed internal reference answers.
 - [[86 Internal Benchmark Execution and Adjudication/00 Internal Benchmark Execution and Adjudication MOC]] — deterministic checks and explicit external-review boundary.
+
+
+## Alpha Lab asset-specific Persian PDF reports
+
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/00 Alpha Lab Asset-Specific Persian PDF Analysis Prompts MOC]]
+- Dedicated Nasdaq 100, S&P 500, Gold and EURUSD prompts use the complete canonical Vault and create actual Persian RTL Alpha Lab PDF reports.

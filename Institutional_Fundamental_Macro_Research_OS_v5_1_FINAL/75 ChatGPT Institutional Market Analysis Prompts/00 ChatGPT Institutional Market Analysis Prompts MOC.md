@@ -2,7 +2,7 @@
 title: "ChatGPT Institutional Fundamental Market Analysis Prompts"
 type: moc
 status: evergreen
-version: 10.0.0
+version: 10.1.0
 created: 2026-07-29
 updated: 2026-07-30
 language: en
@@ -31,3 +31,8 @@ These prompts require the attached Vault ZIP and use only fundamental, macro, va
 ## V10 specialist and evidence gate
 
 After selecting the direct primary canonical monograph, check the specialist registry for a narrower legal, industry, instrument or physical-market dependency. Do not retrieve a broad legacy field guide when a specialist canonical note exists. Probabilities must be labelled as empirically calibrated, model-implied or judgmental scenario weights. Internal QA may be reported; external scientific certification may not be claimed.
+
+
+## Alpha Lab asset-specific PDF prompts
+
+For dedicated Persian PDF production, use [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/00 Alpha Lab Asset-Specific Persian PDF Analysis Prompts MOC]].

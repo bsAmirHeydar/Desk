@@ -2,7 +2,7 @@
 title: "README"
 type: documentation
 status: canonical
-version: 10.0.0
+version: 10.1.0
 created: 2026-07-30
 updated: 2026-07-30
 language: en
@@ -58,3 +58,11 @@ See [[README_v7_MEGA_CANON]] and [[80 Deprecated Mega Canon v7 Redirects/00 Depr
 - [[85 Specialist Canonical Research Appendices/00 Specialist Canonical Research Appendices MOC]] — specialist legal, industry, instrument and physical-system canon.
 - [[83 Golden Benchmark and Historical Dossier Library/00 Golden Benchmark and Historical Dossier Library MOC]] — 30 executed internal reference answers.
 - [[86 Internal Benchmark Execution and Adjudication/00 Internal Benchmark Execution and Adjudication MOC]] — deterministic checks and explicit external-review boundary.
+
+
+## V10.1 Alpha Lab asset-specific PDF prompt suite
+
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/00 Alpha Lab Asset-Specific Persian PDF Analysis Prompts MOC]] — dedicated Nasdaq 100, S&P 500, Gold and EURUSD institutional prompts.
+- Each prompt supports LIVE and HISTORICAL modes.
+- Each execution must create an actual Persian right-to-left PDF under the Alpha Lab report design standard.
+- The main report is executive and simple; institutional detail, citations and the Vault Reading Ledger remain in appendices.
