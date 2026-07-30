@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, mathematics]
 > [!abstract] Canonical thesis
 > Vectors and matrices provide the language for multi-variable states, exposures, accounting systems, factor decompositions and networks. Their usefulness depends on economic interpretation, rank, identification and stable units.
 
-## Beginner intuition
+## Analytical intuition
 
 A country, bank or portfolio has many linked quantities at once. A vector lists them; a matrix describes how they relate, transform or transmit shocks.
 
@@ -108,7 +108,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Interpret factors through loadings and external evidence.
 6. Stress network propagation and feedback.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write a sectoral-balance vector and accounting matrix.
 2. Interpret a two-factor loading matrix.

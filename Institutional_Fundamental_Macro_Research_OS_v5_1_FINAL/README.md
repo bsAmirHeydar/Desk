@@ -28,3 +28,8 @@ It is not by itself a licensed live-data platform, a code repository, a deployed
 - `01 COVERAGE MATRIX.md`
 - `00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard.md`
 - `76 Sovereign Institutional Fundamental Transformation Program/00 Transformation Program MOC.md`
+
+
+## Mega Canon v7.0
+
+See [[README_v7_MEGA_CANON]] and [[80 Institutional Fundamental Mega Canon/00 Institutional Fundamental Mega Canon MOC]].

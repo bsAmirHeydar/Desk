@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, causality]
 > [!abstract] Canonical thesis
 > An effect identified in one population, institution and regime does not automatically transport elsewhere. Institutional research must state the mechanisms and moderators required for generalization.
 
-## Beginner intuition
+## Analytical intuition
 
 A rate increase can affect a country with floating-rate mortgages very differently from a country with long fixed-rate loans. The same estimated effect cannot be copied without examining the transmission structure.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Account for equilibrium spillovers and policy response.
 6. Validate against target-setting historical evidence.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Transport a fiscal multiplier estimate between two institutional settings.
 2. List moderators for an oil-price shock across importers and exporters.

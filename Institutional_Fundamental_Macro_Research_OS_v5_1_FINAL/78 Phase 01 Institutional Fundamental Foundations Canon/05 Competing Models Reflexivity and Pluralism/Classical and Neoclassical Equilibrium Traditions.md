@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, competing-models]
 > [!abstract] Canonical thesis
 > Prices and quantities coordinate decentralized choices through scarcity, substitution and intertemporal allocation.
 
-## Beginner intuition
+## Analytical intuition
 
 Focus on optimization, market clearing, capital accumulation, comparative statics and long-run constraints.
 
@@ -83,7 +83,7 @@ Technology and preference shocks generate cycles through intertemporal substitut
 
 Apply both [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonical Research Protocol]] and [[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/Economic School Evaluation Protocol]] to **Classical and Neoclassical Equilibrium Traditions**. Preserve the school’s internal coherence before evaluating evidence or synthesis.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write the strongest version of this framework without caricature.
 2. Name three observations that would weaken its application to a current episode.

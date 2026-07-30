@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, causality]
 > [!abstract] Canonical thesis
 > Causal analysis asks what would differ under a specified intervention or alternative history, not merely which variables move together. Identification is the bridge from an unobserved counterfactual question to evidence under explicit assumptions.
 
-## Beginner intuition
+## Analytical intuition
 
 If rates rise when inflation rises, that does not tell you whether inflation caused rates, policy caused both, or a third factor changed them together. A causal question specifies the change of interest and the comparison world.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Test observable implications and sensitivity to violated assumptions.
 6. Separate identified effects from extrapolation to other regimes or populations.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write three different causal estimands for the effect of policy tightening.
 2. Draw confounders in the relationship between credit growth and GDP.

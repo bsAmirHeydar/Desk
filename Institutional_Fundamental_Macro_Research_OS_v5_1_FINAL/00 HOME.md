@@ -2,9 +2,9 @@
 title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 6.3.0
+version: 7.0.0
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-30
 language: en
 tags: [home, fundamental-only, institutional-macro, research-platform]
 ---
@@ -116,3 +116,7 @@ Version 6.1 evaluates the Vault as an institutional body of fundamental knowledg
 - **Next:** Phase 02 — Macro Accounting and Economic System.
 
 - [[79 Institutional Fundamental Analysis Output Architecture/00 Institutional Fundamental Analysis Output Architecture MOC|79 Institutional Fundamental Analysis Output Architecture]]
+
+## VII — Complete institutional analysis canon
+
+- [[80 Institutional Fundamental Mega Canon/00 Institutional Fundamental Mega Canon MOC|80 Institutional Fundamental Mega Canon]]

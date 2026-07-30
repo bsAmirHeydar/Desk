@@ -31,7 +31,7 @@ The product is not a course, textbook, curriculum or collection of definitions. 
 
 ## Fundamental-only boundary
 
-The Vault may study prices, yields, curves, spreads, implied volatility, basis, market depth, flows and positioning when they reveal expectations, valuation, constraints, risk premia, liquidity or transmission. It does not contain chart-pattern systems, indicator rules, candlestick methods or entry-trigger frameworks.
+The Vault may study prices, yields, curves, spreads, implied volatility, basis, market depth, flows and positioning when they reveal expectations, valuation, constraints, risk premia, liquidity or transmission. It does not contain chart-pattern systems, indicator rules, price-bar methods or entry-trigger frameworks.
 
 ## Definition of institutional completeness
 

@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, probability]
 > [!abstract] Canonical thesis
 > A forecast should begin with an appropriate reference class and then adjust for case-specific evidence. Historical analogues are useful only when selected by mechanisms and institutional conditions rather than outcome resemblance.
 
-## Beginner intuition
+## Analytical intuition
 
 Before asking what makes this case special, ask what usually happens in comparable cases. But “comparable” must mean similar mechanisms—debt currency, banking structure, policy regime—not simply a similar chart or headline.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Use multiple analogues and document mismatches.
 6. Avoid selecting analogues after the outcome path emerges.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Build a reference class for bank runs.
 2. Select three inflation analogues by mechanism and list mismatches.

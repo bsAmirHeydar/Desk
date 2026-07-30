@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, competing-models]
 > [!abstract] Canonical thesis
 > Macro outcomes can emerge from heterogeneous interactions, nonlinear networks, adaptation and local rules without a representative equilibrium.
 
-## Beginner intuition
+## Analytical intuition
 
 Focus on emergence, tipping points, contagion, network topology, bounded rationality and simulation.
 
@@ -83,7 +83,7 @@ Local production shocks propagate according to input dependence and substitution
 
 Apply both [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonical Research Protocol]] and [[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/Economic School Evaluation Protocol]] to **Complexity, Network and Agent-Based Traditions**. Preserve the school’s internal coherence before evaluating evidence or synthesis.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write the strongest version of this framework without caricature.
 2. Name three observations that would weaken its application to a current episode.

@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, competing-models]
 > [!abstract] Canonical thesis
 > Money, nominal spending and expectations about monetary regimes are central to inflation and macro stability.
 
-## Beginner intuition
+## Analytical intuition
 
 Focus on money demand, nominal anchors, policy rules and long-run price-level determination.
 
@@ -83,7 +83,7 @@ Large reserve creation did not map mechanically into consumer-price inflation be
 
 Apply both [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonical Research Protocol]] and [[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/Economic School Evaluation Protocol]] to **Monetarist and Quantity-Theory Traditions**. Preserve the school’s internal coherence before evaluating evidence or synthesis.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write the strongest version of this framework without caricature.
 2. Name three observations that would weaken its application to a current episode.

@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, competing-models]
 > [!abstract] Canonical thesis
 > Every financial asset has a liability counterpart, flows reconcile with stocks, and sector balance sheets constrain feasible paths.
 
-## Beginner intuition
+## Analytical intuition
 
 Focus on accounting closure, sectoral balances, portfolio allocation and dynamic consistency.
 
@@ -83,7 +83,7 @@ Gross balance-sheet composition and currency maturity can matter even when net p
 
 Apply both [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonical Research Protocol]] and [[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/Economic School Evaluation Protocol]] to **Stock-Flow-Consistent and Balance-Sheet Traditions**. Preserve the school’s internal coherence before evaluating evidence or synthesis.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write the strongest version of this framework without caricature.
 2. Name three observations that would weaken its application to a current episode.

@@ -1,0 +1,127 @@
+---
+title: "National Accounts and GDP Architecture"
+type: institutional-fundamental-monograph
+status: canonical
+version: 7.0.0
+release: "Release 02"
+created: 2026-07-30
+updated: 2026-07-30
+language: en
+tags: [fundamental-only, institutional-analysis, release-02]
+---
+
+# National Accounts and GDP Architecture
+
+> [!abstract] Analytical purpose
+> The national accounts are a double-entry description of production, income and expenditure. Institutional analysis must reconcile the three approaches, isolate price-volume effects and distinguish durable state from quarterly noise.
+
+## Analytical object and boundary
+
+This note treats **National Accounts and GDP Architecture** as an institutional analysis object within **Macro Accounting, Growth and System State**. The objective is not to memorize terminology; it is to make the domain retrievable and usable in current, historical, cross-asset and scenario analysis. The analysis must distinguish observed quantities, estimates, assumptions, market-implied information and unresolved unknowns.
+
+## System components
+
+- **production, expenditure and income approaches:** define the unit of observation, ownership or institutional boundary, timing convention and relevant gross-versus-net distinction.
+- **chain-weighted real measures:** define the unit of observation, ownership or institutional boundary, timing convention and relevant gross-versus-net distinction.
+- **gross versus net concepts:** define the unit of observation, ownership or institutional boundary, timing convention and relevant gross-versus-net distinction.
+- **domestic versus national income:** define the unit of observation, ownership or institutional boundary, timing convention and relevant gross-versus-net distinction.
+- **statistical discrepancy and revisions:** define the unit of observation, ownership or institutional boundary, timing convention and relevant gross-versus-net distinction.
+
+## Core measurement set
+
+- **real final sales:** store the level, change, frequency, release lag, revision policy, seasonal treatment, expected range and known breakpoints.
+- **gross domestic income:** store the level, change, frequency, release lag, revision policy, seasonal treatment, expected range and known breakpoints.
+- **nominal GDP:** store the level, change, frequency, release lag, revision policy, seasonal treatment, expected range and known breakpoints.
+- **implicit deflator:** store the level, change, frequency, release lag, revision policy, seasonal treatment, expected range and known breakpoints.
+- **contribution tables:** store the level, change, frequency, release lag, revision policy, seasonal treatment, expected range and known breakpoints.
+
+## Causal transmission architecture
+
+- **production, expenditure and income approaches → real activity level and momentum:** determine whether the relationship operates through cash flow, balance-sheet capacity, expectations, relative prices, institutional constraints or risk premium. Record the sign, lag, nonlinearity and conditions under which the channel reverses.
+- **chain-weighted real measures → nominal income and expenditure:** determine whether the relationship operates through cash flow, balance-sheet capacity, expectations, relative prices, institutional constraints or risk premium. Record the sign, lag, nonlinearity and conditions under which the channel reverses.
+- **gross versus net concepts → sectoral saving and borrowing:** determine whether the relationship operates through cash flow, balance-sheet capacity, expectations, relative prices, institutional constraints or risk premium. Record the sign, lag, nonlinearity and conditions under which the channel reverses.
+- **domestic versus national income → credit-supported versus income-supported demand:** determine whether the relationship operates through cash flow, balance-sheet capacity, expectations, relative prices, institutional constraints or risk premium. Record the sign, lag, nonlinearity and conditions under which the channel reverses.
+- **statistical discrepancy and revisions → productivity and potential output:** determine whether the relationship operates through cash flow, balance-sheet capacity, expectations, relative prices, institutional constraints or risk premium. Record the sign, lag, nonlinearity and conditions under which the channel reverses.
+
+For **National Accounts and GDP Architecture**, the transmission map must include at least one mediator, one feedback loop and one condition under which the sign or magnitude changes. A correlation is not accepted as a mechanism unless a defensible channel and rival explanation specific to national accounts and gdp architecture are recorded.
+
+## Competing models
+
+- A demand-led interpretation in which production, expenditure and income approaches is the dominant state variable.
+- A supply, balance-sheet or institutional interpretation in which chain-weighted real measures constrains adjustment.
+- A market-pricing interpretation in which the observed move primarily reflects prior expectations, positioning, liquidity or risk premium rather than a change in underlying state.
+- A structural-break interpretation in which historical elasticities no longer transport because policy, technology, regulation or market structure has changed.
+
+A final synthesis may assign different weights to the models, but it must not silently merge mutually inconsistent assumptions.
+
+## Regime dependence
+
+- **National Accounts and GDP Architecture in expansion with benign funding and anchored expectations:** emphasize persistence, capacity and valuation rather than crisis channels.
+- **National Accounts and GDP Architecture in a late-cycle or inflation-constrained regime:** emphasize policy reaction, financing cost, margin pressure and nonlinear sensitivity.
+- **National Accounts and GDP Architecture in contraction or deleveraging:** emphasize liquidity, balance sheets, default, forced adjustment and policy backstops.
+- **National Accounts and GDP Architecture under a supply or geopolitical shock:** separate physical loss and substitution from nominal repricing and policy response.
+- **National Accounts and GDP Architecture during financial stress:** prioritize funding, collateral, market depth and institutional capacity over average historical relationships.
+
+## Multihorizon interpretation
+
+- **Structural:** assess whether national accounts and gdp architecture changes productive capacity, institutional architecture, demographics, resource security or long-run risk premia.
+- **Cyclical:** determine its relation to growth, inflation, credit and policy over quarters.
+- **Tactical:** identify the expectations or valuation gap that could close over weeks.
+- **Multi-day:** require a persistent information change, a catalyst sequence and a defined expiry.
+- **Day horizon:** isolate newly available information, the leading transmission market and the expected half-life without importing unrelated short-horizon noise.
+
+## Cross-domain and cross-asset translation
+
+Interpret the domain jointly with the release driver axes: real activity level and momentum, nominal income and expenditure, sectoral saving and borrowing, credit-supported versus income-supported demand, productivity and potential output, inventory and trade contributions, housing and construction, revision and measurement uncertainty. Translate effects only after identifying whether the shock changes expected cash flows, discount rates, financing capacity, physical scarcity, currency value, collateral demand, volatility or risk premium. A valid translation states the expected leader, independent confirmation, lag and possible reversal mechanism.
+
+## Current-state analysis questions
+
+1. What is the current state of national accounts and gdp architecture, and which elements are observed versus estimated?
+2. What does the market or policy baseline already assume?
+3. Which component is changing at the margin, and what is the likely transmission sequence?
+4. Which cross-domain evidence independently confirms or contradicts the interpretation?
+5. What would materially change the conclusion, confidence or horizon?
+
+## Historical point-in-time controls
+
+1. For **National Accounts and GDP Architecture**, freeze publication timestamps, data vintages, instrument definitions and entity membership at the chosen cutoff.
+2. Archive the contemporaneous consensus or acknowledge when it is unavailable.
+3. Separate the reconstructed ex-ante view from any ex-post outcome and attribution.
+4. Document revisions, methodological breaks and unavailable evidence as reconstruction uncertainty.
+5. Compare rival models using only signals that existed at the cutoff.
+
+## Scenario architecture
+
+- **Base state for National Accounts and GDP Architecture:** the modal continuation under current policy, balance-sheet and market assumptions.
+- **Alternative state for National Accounts and GDP Architecture:** a plausible change in one or more key drivers with explicit signposts.
+- **Adverse tail for National Accounts and GDP Architecture:** a nonlinear funding, policy, supply or confidence event that changes historical relationships.
+- **Benign tail for National Accounts and GDP Architecture:** an upside combination of capacity, productivity, credibility, funding or supply normalization.
+- **Residual model risk for National Accounts and GDP Architecture:** the risk that the model class is wrong even if all measured inputs are accurate.
+
+## Failure modes and red-team checks
+
+- For **National Accounts and GDP Architecture**, confusing a level with its rate of change or an annualized short-run rate with a year-over-year rate.
+- Treating an estimate, proxy or model output as a directly observed fact.
+- Using revised data or later-known outcomes in a historical information set.
+- Assuming a stable coefficient across regimes, countries, instruments or horizons.
+- Double-counting the same underlying shock through correlated indicators.
+- Ignoring financing, liquidity, policy response or institutional constraints when translating state to payoff.
+- Replacing a missing measurement with narrative certainty instead of recording an unknown.
+
+## Required evidence packet
+
+Every material conclusion about **National Accounts and GDP Architecture** must include: claim type; exact source and locator; publication time; data vintage; transformation; model or judgment used; opposing evidence; confidence ceiling; invalidation; and next update trigger.
+
+## Primary source routes
+
+- BEA NIPA and international accounts
+- Federal Reserve Financial Accounts Z.1
+- BLS price, labor and productivity programs
+- IMF WEO and Fiscal Monitor
+- OECD Economic Outlook and leading indicators
+
+For **National Accounts and GDP Architecture**, see [[65 Source Registry and Claim Lineage/00 Source Registry and Claim Lineage MOC]], [[79 Institutional Fundamental Analysis Output Architecture/15 Institutional Report Output Contract and Acceptance Gate]], and the corresponding Release MOC under [[80 Institutional Fundamental Mega Canon/00 Institutional Fundamental Mega Canon MOC]].
+
+## Ten-of-ten acceptance gate
+
+**National Accounts and GDP Architecture** is complete only when the Vault can produce a current analysis, a point-in-time historical reconstruction, a cross-domain transmission map, a rival-model comparison, scenario states, explicit unknowns and claim-level evidence without generic filler.

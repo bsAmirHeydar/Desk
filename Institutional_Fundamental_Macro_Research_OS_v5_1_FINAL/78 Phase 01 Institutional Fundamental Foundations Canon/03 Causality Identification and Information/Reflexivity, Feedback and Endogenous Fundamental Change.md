@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, causality]
 > [!abstract] Canonical thesis
 > Financial prices can alter the fundamentals they appear to reflect by changing collateral, financing, confidence, investment, policy and distribution. Reflexivity is therefore a causal feedback mechanism, not a license for circular storytelling.
 
-## Beginner intuition
+## Analytical intuition
 
 Rising house prices can improve collateral, expand credit and support construction, which can push prices higher. Falling prices can reverse the loop. The price is both an outcome and an input.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Model policy and institutional stabilizers.
 6. Define observations that would break the loop.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Map a complete sovereign-bank reflexive loop.
 2. Identify stabilizers in a commodity investment cycle.

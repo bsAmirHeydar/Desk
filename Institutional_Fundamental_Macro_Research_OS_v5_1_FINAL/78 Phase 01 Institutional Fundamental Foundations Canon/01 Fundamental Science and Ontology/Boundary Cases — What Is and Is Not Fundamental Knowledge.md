@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, ontology]
 > [!abstract] Canonical thesis
 > A fundamental-only canon must define its boundary by purpose and mechanism. Price, positioning and liquidity may be legitimate evidence about expectations, constraints and valuation, but they cannot enter as pattern-based signals or unexplained directional rules.
 
-## Beginner intuition
+## Analytical intuition
 
 The same dataset can be used in two different ways. An option surface can reveal the market’s priced distribution and demand for protection; that is fundamental market-implied information. Using a visual shape as a standalone entry rule belongs outside this canon.
 
@@ -99,7 +99,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Exclude pattern-based rules and unexplained thresholds.
 6. Document when price-derived evidence is contaminated by illiquidity or market design.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Classify ten common datasets as fundamental, conditional or excluded and defend each classification.
 2. Explain when volume data are institutionally relevant and when they are merely descriptive.

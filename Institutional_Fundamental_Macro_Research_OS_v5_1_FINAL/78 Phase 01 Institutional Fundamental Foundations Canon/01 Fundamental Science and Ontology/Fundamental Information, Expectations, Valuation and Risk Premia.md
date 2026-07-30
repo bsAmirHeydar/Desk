@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, ontology]
 > [!abstract] Canonical thesis
 > Observed prices jointly reflect expected fundamentals, discounting, risk premia, liquidity services, institutional constraints and positioning. Price-implied information must therefore be decomposed rather than treated as a direct forecast.
 
-## Beginner intuition
+## Analytical intuition
 
 A bond yield is not only the market’s forecast of future policy rates. It can also include term premium, inflation compensation, liquidity and balance-sheet effects. An equity multiple is not only a growth forecast. It also reflects discount rates, uncertainty, profitability and market structure.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Compare survey, model and market-implied distributions.
 6. Attribute residual differences to risk premia, constraints or model error with humility.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Decompose a ten-year yield into expected short rates and premia conceptually.
 2. List at least five reasons an equity multiple can change with unchanged earnings forecasts.

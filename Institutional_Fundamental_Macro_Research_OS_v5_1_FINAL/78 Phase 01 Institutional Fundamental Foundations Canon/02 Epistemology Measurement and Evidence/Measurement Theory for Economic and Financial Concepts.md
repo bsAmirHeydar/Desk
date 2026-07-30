@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, epistemology]
 > [!abstract] Canonical thesis
 > Measurement begins with a concept, not a dataset. Construct validity, unit, population, sampling frame, aggregation, seasonal treatment, revisions and comparability must be established before a statistic is interpreted.
 
-## Beginner intuition
+## Analytical intuition
 
 “Inflation,” “liquidity,” “financial conditions,” and “productivity” are concepts. A particular CPI series, balance-sheet aggregate or index is one operationalization. Different measures can be valid for different questions.
 
@@ -101,7 +101,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Assess revisions, breaks and missingness.
 6. Compare alternative measures and identify the question each answers.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write a full measurement contract for labor-market tightness.
 2. Compare three inflation measures and state which question each best answers.

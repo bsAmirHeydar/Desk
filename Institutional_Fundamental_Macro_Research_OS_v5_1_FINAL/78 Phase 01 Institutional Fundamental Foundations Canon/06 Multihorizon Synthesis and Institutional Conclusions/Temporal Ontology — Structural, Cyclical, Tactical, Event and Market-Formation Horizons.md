@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, multihorizon]
 > [!abstract] Canonical thesis
 > A fundamental claim is incomplete until its horizon, update frequency, expected persistence and invalidation clock are defined. Time horizon is part of the research object, not a formatting choice.
 
-## Beginner intuition
+## Analytical intuition
 
 The same economy can be structurally productive, cyclically slowing, tactically supported by policy and temporarily shocked by a data release. These statements do not contradict one another because they answer different time questions.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Specify which higher-horizon priors constrain lower-horizon interpretation.
 6. Record an explicit expiry clock for every conclusion.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Classify twenty claims by natural horizon and explain borderline cases.
 2. Construct simultaneous structural, cyclical, tactical and event states for one historical episode.

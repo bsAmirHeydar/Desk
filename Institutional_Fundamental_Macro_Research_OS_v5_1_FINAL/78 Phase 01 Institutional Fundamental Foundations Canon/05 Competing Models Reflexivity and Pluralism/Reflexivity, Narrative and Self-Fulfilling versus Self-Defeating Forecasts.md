@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, competing-models]
 > [!abstract] Canonical thesis
 > Public beliefs and forecasts can change behavior, policy and financing, causing outcomes that validate or defeat the original forecast. Institutional analysis must model the communication and feedback channel explicitly.
 
-## Beginner intuition
+## Analytical intuition
 
 A warning about a bank can accelerate withdrawals and make the warning true. A credible inflation forecast can change policy or wage behavior and make the forecast false. Forecasts are sometimes interventions.
 
@@ -91,7 +91,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Identify stabilizers and thresholds.
 6. Evaluate outcomes against the forecast conditional on response, not naively.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Map a self-fulfilling currency attack.
 2. Design an evaluation for a policy forecast that caused a response.

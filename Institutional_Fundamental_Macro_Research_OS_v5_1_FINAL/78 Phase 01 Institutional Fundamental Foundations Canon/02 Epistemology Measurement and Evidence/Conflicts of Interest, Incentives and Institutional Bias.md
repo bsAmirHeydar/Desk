@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, epistemology]
 > [!abstract] Canonical thesis
 > Evidence is produced and interpreted by institutions with mandates, incentives and constraints. Credibility analysis therefore includes governance, funding, legal exposure, career risk, political pressure and publication incentives.
 
-## Beginner intuition
+## Analytical intuition
 
 A company, government, rating agency, bank strategist and independent researcher may describe the same situation differently. The answer is not to reject all of them, but to understand what each knows, how each is measured and what incentives shape communication.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Record uncertainty arising from strategic communication.
 6. Protect research from conclusion-driven sponsorship or committee pressure.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Map incentives for five sources covering a sovereign crisis.
 2. Design a source-weighting method that separates data access from conflict risk.

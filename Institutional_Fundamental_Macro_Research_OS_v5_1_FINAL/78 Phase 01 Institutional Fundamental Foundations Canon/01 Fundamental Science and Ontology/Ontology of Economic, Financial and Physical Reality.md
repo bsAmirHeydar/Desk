@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, ontology]
 > [!abstract] Canonical thesis
 > A serious canon needs an explicit ontology: entities, stocks, flows, contracts, prices, expectations, institutions, constraints, events and states must be represented as different kinds of objects with different persistence and measurement properties.
 
-## Beginner intuition
+## Analytical intuition
 
 An ontology is a disciplined inventory of what exists in the system and how the pieces relate. A household deposit is an asset to the household and a liability to a bank. A wage is a flow. Government debt is a stock and a contract. Inflation is a rate of change in a constructed price index. Mixing these categories creates false explanations.
 
@@ -101,7 +101,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Distinguish measured variables from latent states and institutional judgments.
 6. Track which constraints bind in normal conditions and under stress.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Build a five-sector balance-sheet map for a small open economy.
 2. Show how a bank loan creates matched assets and liabilities, and then trace repayment and default.

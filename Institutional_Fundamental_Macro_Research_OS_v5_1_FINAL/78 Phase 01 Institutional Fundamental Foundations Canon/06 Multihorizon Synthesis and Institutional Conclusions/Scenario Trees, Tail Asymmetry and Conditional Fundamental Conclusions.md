@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, decision]
 > [!abstract] Canonical thesis
 > Institutional fundamental analysis produces conditional distributions and scenario-contingent conclusions, not a single unqualified narrative. Tail mechanisms deserve explicit probability, severity, detectability and response analysis.
 
-## Beginner intuition
+## Analytical intuition
 
 Instead of saying “growth will be fine,” write a base case, upside case and downside case, then explain what would make each one more likely and how severe it would be.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Estimate severity, reversibility and cross-asset transmission.
 6. Update probabilities and conclusions when discriminating evidence arrives.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Build a three-level scenario tree for inflation and policy.
 2. Write early-warning indicators for a sovereign funding tail.

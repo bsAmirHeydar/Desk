@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, ontology]
 > [!abstract] Canonical thesis
 > Fundamental analysis is the disciplined study of real economic, financial, institutional and physical systems, the expectations formed about those systems, and the mechanisms through which changes in state or belief alter asset payoffs and relative valuations. It is not a synonym for news commentary, narrative confidence, or price-pattern interpretation.
 
-## Beginner intuition
+## Analytical intuition
 
 Imagine the economy and financial system as a network of households, firms, banks, governments, central banks and physical supply chains. Fundamental analysis asks what each part owns, owes, produces, consumes, earns, expects and can sustain. Market prices matter because they reveal expectations and valuation, but price alone does not define the fundamental object.
 
@@ -101,7 +101,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Compare the estimated payoff distribution with the price or relative valuation already offered.
 6. Conclude with explicit uncertainty, horizon, invalidation conditions and unresolved questions.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Define the fundamental research object for a sovereign bond, a bank equity, gold and crude oil; show what changes across instruments.
 2. Take a popular market narrative and list which claims are fundamental, which are expectation claims, and which are unsupported.

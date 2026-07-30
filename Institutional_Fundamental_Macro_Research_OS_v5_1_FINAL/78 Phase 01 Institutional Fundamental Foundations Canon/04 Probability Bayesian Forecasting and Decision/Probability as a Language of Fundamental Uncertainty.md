@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, probability]
 > [!abstract] Canonical thesis
 > Probability in institutional research represents disciplined uncertainty conditional on a defined model and information set. It is not a decorative confidence number and cannot substitute for missing definitions or unknown mechanisms.
 
-## Beginner intuition
+## Analytical intuition
 
 Saying “70 percent” is meaningful only if the event, time horizon, information set and method are clear. It should also be possible to examine many similar forecasts and ask whether events assigned 70 percent happened about seven times in ten.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Score forecasts with proper scoring rules.
 6. Recalibrate or narrow claims when frequencies diverge.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Define and score a twelve-month recession event.
 2. Convert a scenario tree into an unconditional outcome distribution.

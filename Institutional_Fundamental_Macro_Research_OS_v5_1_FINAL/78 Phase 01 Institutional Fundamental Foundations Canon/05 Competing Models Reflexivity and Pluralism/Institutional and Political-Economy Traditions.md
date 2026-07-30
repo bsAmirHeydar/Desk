@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, competing-models]
 > [!abstract] Canonical thesis
 > Rules, property rights, power, distribution, state capacity and political coalitions shape economic outcomes and the credibility of policy.
 
-## Beginner intuition
+## Analytical intuition
 
 Focus on institutional persistence, enforcement, rent allocation, legitimacy, path dependence and collective action.
 
@@ -83,7 +83,7 @@ Similar factor endowments can produce different outcomes under different institu
 
 Apply both [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonical Research Protocol]] and [[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/Economic School Evaluation Protocol]] to **Institutional and Political-Economy Traditions**. Preserve the school’s internal coherence before evaluating evidence or synthesis.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write the strongest version of this framework without caricature.
 2. Name three observations that would weaken its application to a current episode.

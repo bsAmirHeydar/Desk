@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, mathematics]
 > [!abstract] Canonical thesis
 > Compounding, logarithms and index-number conventions are foundational to interpreting growth, inflation, returns and cumulative change. Approximation error and base effects must be explicit.
 
-## Beginner intuition
+## Analytical intuition
 
 Ten percent up and ten percent down do not return you to the starting point. Monthly changes cannot simply be added unless you use a suitable log approximation or exact compounding.
 
@@ -108,7 +108,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Identify base effects and carry-over.
 6. Distinguish annual rate from year-over-year change.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Compound a sequence of monthly changes.
 2. Calculate carry-over into annual average growth.

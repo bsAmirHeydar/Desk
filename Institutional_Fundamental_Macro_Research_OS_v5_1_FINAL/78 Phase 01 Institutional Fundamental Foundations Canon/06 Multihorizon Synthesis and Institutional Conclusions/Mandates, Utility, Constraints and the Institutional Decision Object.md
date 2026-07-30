@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, decision]
 > [!abstract] Canonical thesis
 > A fundamental conclusion becomes decision-relevant only after the mandate, liabilities, horizon, liquidity, legal constraints, tolerance for uncertainty and opportunity set are specified. There is no mandate-free “best” conclusion.
 
-## Beginner intuition
+## Analytical intuition
 
 The same economic outlook can be favorable for a long-horizon pension fund, unsuitable for a leveraged fund and irrelevant to a reserve manager. The facts may match while the decision differs.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Compare alternatives and no-deployment.
 6. Document how the conclusion changes under a different mandate.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write the same fundamental state for a reserve manager, pension fund and macro fund.
 2. Define decision objects for valuation, hedge and monitoring.

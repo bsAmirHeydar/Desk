@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, probability]
 > [!abstract] Canonical thesis
 > Forecast quality must be evaluated out of sample with definitions fixed in advance. Accuracy, calibration, sharpness, discrimination, economic relevance and stability answer different questions.
 
-## Beginner intuition
+## Analytical intuition
 
 A forecaster can be well calibrated but vague, or sharp but overconfident. A model can have low average error while missing every turning point. Evaluation needs several metrics and honest samples.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Analyze regimes, tails and turning points.
 6. Test whether gains survive revisions, costs and model selection.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Evaluate two binary forecasts using Brier and log scores.
 2. Design a pseudo-real-time comparison for inflation forecasts.

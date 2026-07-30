@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, competing-models]
 > [!abstract] Canonical thesis
 > Pluralism is disciplined comparison of models with explicit domains, assumptions and discriminating evidence. It is not a license to select whichever framework supports a desired conclusion.
 
-## Beginner intuition
+## Analytical intuition
 
 Different models can illuminate different mechanisms. But they cannot all be right in every sense. Good pluralism asks when each model applies, what it predicts and where the models genuinely conflict.
 
@@ -91,7 +91,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Weight or select models by evidence and regime.
 6. Preserve unresolved contradictions and unknowns.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Build a model-comparison matrix for inflation persistence.
 2. Create a contradiction registry for three monetary theories.

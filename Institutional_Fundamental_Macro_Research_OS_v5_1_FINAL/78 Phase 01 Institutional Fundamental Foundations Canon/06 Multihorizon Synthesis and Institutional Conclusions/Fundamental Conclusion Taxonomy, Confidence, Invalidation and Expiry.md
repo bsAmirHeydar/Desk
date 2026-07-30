@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, decision]
 > [!abstract] Canonical thesis
 > Institutional research must end in a standardized conclusion that distinguishes state, valuation, scenario asymmetry, evidence quality and actionability. Confidence is calibrated support for a defined claim, not rhetorical force.
 
-## Beginner intuition
+## Analytical intuition
 
 “Bullish” hides too much. A better conclusion says the state is improving, expectations are low, the horizon is six months, evidence is moderate, the main risk is policy tightening and the view expires after the next two releases.
 
@@ -101,7 +101,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Assign calendar and event expiry.
 6. Use “insufficient evidence” when the proposition is underidentified.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Rewrite ten vague market statements into standardized conclusions.
 2. Create an invalidation and expiry table for a fiscal thesis.

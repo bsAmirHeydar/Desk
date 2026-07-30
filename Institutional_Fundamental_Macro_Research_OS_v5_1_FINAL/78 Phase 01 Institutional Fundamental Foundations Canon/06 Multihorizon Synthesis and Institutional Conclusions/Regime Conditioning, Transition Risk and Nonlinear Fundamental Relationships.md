@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, synthesis]
 > [!abstract] Canonical thesis
 > Fundamental relationships are conditional on regime, constraints and policy response. Nonlinearity, thresholds and transition uncertainty must be treated as first-class research objects rather than post-hoc excuses.
 
-## Beginner intuition
+## Analytical intuition
 
 A wage increase during weak demand may support consumption; the same increase during an inflation credibility crisis may tighten policy. Context changes the effect.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Model policy and balance-sheet feedback near thresholds.
 6. Preserve multiple-regime scenarios when classification is uncertain.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Define a mechanism-based inflation regime taxonomy.
 2. Write a transition-risk scenario for a soft landing versus renewed inflation.

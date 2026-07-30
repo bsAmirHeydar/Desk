@@ -17,7 +17,7 @@ Create a rigorous institutional research-methods canon.
 
 ## Why this stage is necessary
 
-A billion-dollar institutional reference cannot be built by collecting disconnected definitions or repeating a generic research template. This stage exists to ensure that the subject becomes a coherent body of knowledge: understandable to a beginner, precise enough for a specialist, and integrated with the rest of the macro-financial system. The objective is not operational software. The objective is intellectual completeness, conceptual accuracy, historical depth and institutional usability.
+For **Stage 45 — Econometrics Causal Inference and Empirical Research Design**, a billion-dollar institutional reference requires an analysis-ready canon rather than disconnected definitions or repeated templates. This stage must make the subject retrievable, causally explicit, historically grounded, cross-domain integrated and capable of populating current and historical institutional reports without generic filler.
 
 ## Knowledge domains to extract and expand
 
@@ -53,27 +53,21 @@ Every subject created or rewritten in this stage must contain all of the followi
 
 This stage is complete only after the Vault contains:
 
-- a master monograph for the subject;
-- beginner, intermediate and institutional reading layers;
-- a concept and causal map;
-- a formula or identity sheet where applicable;
-- a competing-model comparison;
-- a measurement and data-interpretation handbook;
-- a historical case-study set;
-- a cross-asset and cross-country transmission matrix;
-- a multihorizon interpretation note;
-- a failure-mode and controversy register;
-- an annotated source canon;
-- exercises and synthesis questions;
-- links to every dependent and downstream domain.
+- an analysis-ready master canon for **Stage 45 — Econometrics Causal Inference and Empirical Research Design**;
+- an explicit state vector and driver hierarchy;
+- a causal map with competing models and observable discriminators;
+- formal identities, equations and measurement conventions where applicable;
+- a point-in-time measurement and revision standard;
+- a regime and historical evidence atlas;
+- cross-asset, cross-country and institutional transmission matrices;
+- current and historical report contracts;
+- scenario, contradiction, unknown and failure registers;
+- claim-level source routes and exact evidence requirements;
+- links to all upstream dependencies and downstream analysis objects.
 
 ## Explicit exclusions
 
-- No programming roadmap.
-- No database architecture requirement.
-- No API, pipeline, deployment or software acceptance gate.
-- No non-fundamental price-derived method.
-- No claim that operational implementation is necessary for the knowledge score.
+The boundary for **Stage 45 — Econometrics Causal Inference and Empirical Research Design** is governed by [[76 Institutional Fundamental Knowledge Canon Completion Program/02 Fundamental-Only Boundary and Removal of Non-Fundamental Methods]]. Software deployment, pedagogy and non-fundamental methods are outside the core knowledge-completion score.
 
 ## Ten-of-ten exit audit
 

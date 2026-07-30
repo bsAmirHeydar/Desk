@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, causality]
 > [!abstract] Canonical thesis
 > Most macro-financial variables are jointly determined. Policy, prices, credit and expectations respond to the same state and to one another, so observed coefficients usually combine structural response, anticipation and feedback.
 
-## Beginner intuition
+## Analytical intuition
 
 Central banks raise rates because inflation is high. If inflation later falls, simply correlating rate increases with inflation can mislead. You must account for why the rate changed and what was already expected.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Model feedback and delayed transmission.
 6. Test whether the identified shock is orthogonal to pre-existing information.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Decompose a policy announcement into action, guidance and information components.
 2. Propose an instrument for bank lending and defend exclusion.

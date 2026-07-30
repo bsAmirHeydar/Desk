@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, probability]
 > [!abstract] Canonical thesis
 > When probabilities or models are weakly identified, institutional discipline requires ranges, robustness, precaution and explicit insufficient-evidence conclusions rather than fabricated precision.
 
-## Beginner intuition
+## Analytical intuition
 
 Sometimes there is not enough evidence to say 60 versus 40. You may only know that several models are plausible and the downside is large. The honest answer can be a range, a robust conclusion or no conclusion.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Use ranges or partial identification when point probabilities are unjustified.
 6. State conditions for resolving insufficient evidence.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Construct an ambiguity set for a policy regime change.
 2. Compare expected utility and minimax regret in a three-state example.

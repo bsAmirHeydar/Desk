@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, mathematics]
 > [!abstract] Canonical thesis
 > Optimization formalizes choices under scarcity and constraints. Lagrange multipliers measure marginal value of relaxing constraints, but institutional objectives, nonconvexities and uncertainty determine whether the solution is meaningful.
 
-## Beginner intuition
+## Analytical intuition
 
 A household, firm, bank or government cannot choose everything independently. A budget, capital rule, production capacity or political constraint limits choices. Optimization asks what best satisfies an objective inside those limits.
 
@@ -108,7 +108,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Check second-order and boundary solutions.
 6. Interpret shadow values institutionally and test alternative objectives.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Solve a constrained two-good problem.
 2. Interpret a bank-capital multiplier.

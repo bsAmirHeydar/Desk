@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, causality]
 > [!abstract] Canonical thesis
 > An information event is causal only relative to a prior information set. The relevant innovation is not the headline value but the vector of news across components, revisions, guidance and institutional interpretation compared with the priced distribution.
 
-## Beginner intuition
+## Analytical intuition
 
 A data release can be above consensus but still have little effect if the details are weak or the surprise was already anticipated. A central-bank decision can leave the rate unchanged but change expectations through guidance.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Observe cross-market response in instruments tied to the mechanism.
 6. Estimate whether belief revision persists or reverses as details are processed.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Build a surprise vector for a labor release.
 2. Compare survey and market-implied expectations before a central-bank meeting.

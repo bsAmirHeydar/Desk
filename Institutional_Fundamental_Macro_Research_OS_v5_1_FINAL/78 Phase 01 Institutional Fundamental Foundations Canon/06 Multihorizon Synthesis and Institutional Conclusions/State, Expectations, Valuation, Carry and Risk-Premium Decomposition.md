@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, synthesis]
 > [!abstract] Canonical thesis
 > A complete fundamental conclusion separates the underlying state from beliefs about that state, the valuation paid, contractual carry and compensation for bearing uncertainty. A favorable state can be an unfavorable proposition when expectations and valuation are excessive.
 
-## Beginner intuition
+## Analytical intuition
 
 A strong company can be a poor investment at an extreme price; a weak economy can coincide with rising assets if expectations were worse. Fundamental analysis therefore studies both reality and what is already believed and paid for.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Assess asymmetry and alternative explanations.
 6. State what observable evidence would close or widen the gap.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Decompose the fundamental proposition for equity, bond, FX, gold and oil.
 2. Explain how the same growth shock can change cash flows and discount rates in opposite directions.

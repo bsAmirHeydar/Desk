@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, competing-models]
 > [!abstract] Canonical thesis
 > Prices are formed through trading institutions, inventories, funding, information asymmetry and intermediary risk capacity.
 
-## Beginner intuition
+## Analytical intuition
 
 Focus on liquidity, dealer balance sheets, collateral, segmentation, limits to arbitrage and market design.
 
@@ -83,7 +83,7 @@ Cross-currency basis and swap markets reveal intermediary constraints and hedgin
 
 Apply both [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonical Research Protocol]] and [[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/Economic School Evaluation Protocol]] to **Market Microstructure and Intermediary-Constraint Traditions**. Preserve the school’s internal coherence before evaluating evidence or synthesis.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write the strongest version of this framework without caricature.
 2. Name three observations that would weaken its application to a current episode.

@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, competing-models]
 > [!abstract] Canonical thesis
 > Relationships estimated under one policy and incentive regime can change when authorities or agents respond to them. A statistic used as a target, rule or public signal can lose the behavior that made it useful.
 
-## Beginner intuition
+## Analytical intuition
 
 If a government rewards a measure, people optimize the measure. If a central bank changes its rule, households and firms change expectations. Historical coefficients are not constants of nature.
 
@@ -91,7 +91,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Use institutional evidence about gaming and substitution.
 6. Maintain model-break conditions and re-estimation rules.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Apply the Lucas critique to a fiscal stimulus estimate.
 2. Identify possible gaming of a bank-regulation metric.

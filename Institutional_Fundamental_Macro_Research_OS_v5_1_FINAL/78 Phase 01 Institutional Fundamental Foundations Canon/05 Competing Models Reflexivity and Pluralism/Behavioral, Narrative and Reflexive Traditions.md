@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, competing-models]
 > [!abstract] Canonical thesis
 > Beliefs are shaped by heuristics, social transmission and stories; those beliefs can alter actions and sometimes fundamentals.
 
-## Beginner intuition
+## Analytical intuition
 
 Focus on expectation formation, overreaction, underreaction, coordination, salience and feedback.
 
@@ -83,7 +83,7 @@ Prices alter collateral and behavior, creating validating or destabilizing loops
 
 Apply both [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonical Research Protocol]] and [[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/Economic School Evaluation Protocol]] to **Behavioral, Narrative and Reflexive Traditions**. Preserve the school’s internal coherence before evaluating evidence or synthesis.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write the strongest version of this framework without caricature.
 2. Name three observations that would weaken its application to a current episode.

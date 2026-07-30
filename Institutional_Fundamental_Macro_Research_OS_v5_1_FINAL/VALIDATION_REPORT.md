@@ -1,109 +1,65 @@
 ---
-title: "Validation Report — Institutional Fundamental Macro Research OS v5.1"
+title: "Institutional Fundamental Mega Canon v7.0 Validation Report"
 type: validation-report
-status: final
-version: 5.1.0
-created: 2026-07-29
-updated: 2026-07-29
+status: passed
+version: 7.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - validation
-  - quality-assurance
-  - obsidian
-  - prompts
+tags: [validation, fundamental-only, mega-canon]
 ---
-# Validation Report — Institutional Fundamental Macro Research OS v5.1
 
-## Build identity
+# Institutional Fundamental Mega Canon v7.0 — Validation Report
 
-- **Artifact:** Obsidian-only institutional fundamental and macro research Vault
-- **Build version:** 5.1.0
-- **Prompt module:** `75 ChatGPT Institutional Market Analysis Prompts`
-- **Build date:** 2026-07-29
-- **Validation mode:** strict path-aware wikilink resolution, structural Markdown checks, encoding checks and prompt-contract tests
+## Scope
 
-## Final scale
+Validation was executed on the complete merged Vault after applying v6.0, v6.1, v6.2, v6.3 and the Mega Canon v7.0 changes.
 
-| Metric | Result |
-|---|---:|
-| Markdown notes | **1,030** |
-| Total files before packaging | **1,035** |
-| Top-level knowledge/system folders | **78** |
-| Approximate words | **1,042,525** |
-| Obsidian wikilinks | **12,476** |
-| Displayed-equation blocks | **2,045** |
-| Notes containing displayed equations | **680** |
-| Fenced text/code/schema blocks | **250** |
-| ChatGPT prompt-suite notes | **13** |
+## Inventory
 
-## Hard validation gates
+- Markdown notes: **1,530**
+- Approximate word count: **1,258,584**
+- Obsidian wikilinks: **16,085**
+- Display-equation blocks: **2,172**
+- Code/schema blocks: **226**
+- Mega Canon notes: **310**
+- Mega Canon words: **277,064**
+- Mega Canon release bundles: **13**
+- Domain monographs added: **172**
 
-| Gate | Result |
-|---|---:|
-| Broken path-qualified or basename wikilinks | **0** |
-| Ambiguous basename wikilinks | **0** |
-| Invalid UTF-8 files | **0** |
-| Files containing forbidden control characters | **0** |
-| Empty Markdown files | **0** |
-| Unclosed YAML frontmatter | **0** |
-| Unbalanced fenced blocks | **0** |
-| Missing required prompt files | **0** |
-| Missing required CURRENT/HISTORICAL control phrases | **0** |
+## Integrity checks
 
-**Status: PASS**
+- Broken wikilinks: **0**
+- Ambiguous wikilinks: **0**
+- Empty Markdown files: **0**
+- Invalid UTF-8 files: **0**
+- Unclosed YAML frontmatter: **0**
+- Unclosed code fences: **0**
+- Unclosed display-math fences: **0**
+- Corrupted Source Registry filenames: **0**
+- Prohibited non-fundamental method terms in the audited set: **0**
 
-## Prompt-suite validation
+## Knowledge-density checks
 
-The suite contains independent, copy-ready operating prompts for:
+- Exact substantive paragraphs repeated in 20 or more Mega Canon notes: **0**
+- Exact substantive paragraph maximum repetition inside Mega Canon: **18**
+- Navigation and source-route lists are excluded from substantive-prose duplication scoring.
 
-1. universal dual-mode CURRENT/HISTORICAL analysis;
-2. current-now full-spectrum analysis;
-3. strict historical point-in-time reconstruction;
-4. current institutional day-trading context;
-5. current two-to-ten-day swing context;
-6. historical replay, locked decision, ex-post attribution and counterfactual audit;
-7. minimal launcher messages;
-8. input, output, evidence and Vault-reading control documents;
-9. market-specific add-on blocks and worked examples.
+## Release acceptance
 
-### CURRENT mode gates
+Each Release 02–14 contains:
 
-- Requires web research and an exact analysis timestamp.
-- Distinguishes observation, reference, release, retrieval and vintage time.
-- Treats the Vault as methodology rather than a live-data feed.
-- Requires inline sourcing for material current facts.
-- Requires explicit unknowns when live price, consensus, positioning or flow data cannot be verified.
+- domain monographs;
+- state-vector and driver architecture;
+- causal and rival-model map;
+- measurement canon;
+- regime and historical atlas;
+- cross-domain transmission matrix;
+- current full-spectrum analysis contract;
+- historical point-in-time contract;
+- scenario and update system;
+- ten-of-ten release audit.
 
-### HISTORICAL mode gates
+## Interpretation
 
-- Freezes the information set at the specified cutoff.
-- Prohibits later revisions, later releases, later outcomes and future index/contract information from the reconstructed state.
-- Requires first-release/vintage evidence where recoverable.
-- Separates point-in-time reconstruction from optional ex-post audit.
-- Requires confidence penalties for unrecoverable historical consensus, pricing or intraday evidence.
-
-### Multihorizon and decision gates
-
-The prompt contract covers Structural, Secular, Cyclical, Tactical, Swing, Daily/Session, Event and Microstructure layers. It requires state, pricing, half-life, transition, conflict, scenario, permission, invalidation, expiry and implementation handoff.
-
-The only permitted fundamental-decision outputs are:
-
-```text
-LONG_ONLY
-SHORT_ONLY
-TWO_WAY_REDUCED
-NO_TRADE
-```
-
-These restrict the allowed trade set but do not override implementation entry, predeclared risk limit or target authority.
-
-## Navigation updates
-
-- Module 75 is linked from `00 HOME.md`.
-- The prompt suite is linked from Workflows and Templates MOCs.
-- `01 COVERAGE MATRIX.md` includes ChatGPT operationalization coverage.
-- `README.md` includes the repeated-use workflow.
-
-## Verification method
-
-Wikilinks were resolved by exact Vault-relative path, current-note-relative path and unique basename. Every Markdown file was decoded as UTF-8, inspected for forbidden control characters, checked for balanced YAML and fenced blocks, and scanned for required prompt-contract clauses.
+The release passes the knowledge-architecture and analysis-output validation gate. It does not claim proprietary live data, perfect knowledge of open scientific questions or automatic factual freshness. Current analysis still requires current source verification; historical analysis still requires accessible contemporaneous archives.

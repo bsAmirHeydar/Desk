@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, epistemology]
 > [!abstract] Canonical thesis
 > Uncertainty is not one number. Sampling error, measurement error, parameter uncertainty, state uncertainty, model uncertainty, ambiguity, structural breaks and unknown unknowns require different responses.
 
-## Beginner intuition
+## Analytical intuition
 
 A narrow statistical confidence interval can coexist with huge model uncertainty. You might know precisely what a survey sampled while being unsure whether the survey still measures the relevant economy after a structural change.
 
@@ -101,7 +101,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Maintain explicit unknown and missing-evidence registers.
 6. Update the uncertainty taxonomy after surprises.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Create an uncertainty register for a country debt-sustainability assessment.
 2. Compare sensitivity analysis, scenario analysis and probability distributions.

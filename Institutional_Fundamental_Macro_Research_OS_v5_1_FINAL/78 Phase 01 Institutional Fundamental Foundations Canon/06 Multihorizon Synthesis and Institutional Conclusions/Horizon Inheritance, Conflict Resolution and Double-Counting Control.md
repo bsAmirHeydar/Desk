@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, multihorizon]
 > [!abstract] Canonical thesis
 > Multihorizon synthesis requires explicit inheritance rules, conflict types and dependence control. A conclusion is not strengthened merely because correlated indicators repeat the same information at several horizons.
 
-## Beginner intuition
+## Analytical intuition
 
 If long-run productivity is strong but current growth is slowing, the answer is not to choose whichever story feels better. You state both, identify which decision horizon matters, and show how the shorter process interacts with the longer constraint.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Select dominance rules conditional on mandate and horizon.
 6. Lower confidence when conflict cannot be resolved rather than averaging mechanically.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Draw a dependency graph for growth indicators.
 2. Resolve a structural-bullish/cyclical-bearish case for four mandates.

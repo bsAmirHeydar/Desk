@@ -24,7 +24,7 @@ tags: [institutional-analysis, fundamental-only, analysis-canon]
 | [[78 Phase 01 Institutional Fundamental Foundations Canon/04 Probability Bayesian Forecasting and Decision/00 MOC|04 Probability]] | Represents uncertainty, priors, likelihoods, distributions, dependence, loss and robust conclusions. |
 | [[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/00 MOC|05 Competing models]] | Preserves coherent rival models, institutional traditions, reflexivity and model endogeneity. |
 | [[78 Phase 01 Institutional Fundamental Foundations Canon/06 Multihorizon Synthesis and Institutional Conclusions/00 MOC|06 Multihorizon synthesis]] | Integrates horizons, half-lives, pricing, valuation, carry, regimes, scenarios, confidence, invalidation and expiry. |
-| [[78 Phase 01 Institutional Fundamental Foundations Canon/07 Research Practice Accreditation and Capstone Laboratory/00 MOC|07 Research control and output testing]] | Defines claim-evidence, model, contradiction, historical-reconstruction, committee and analysis-output controls. |
+| [[78 Phase 01 Institutional Fundamental Foundations Canon/07 Research Practice and Adversarial Validation Laboratory/00 MOC|07 Research control and output testing]] | Defines claim-evidence, model, contradiction, historical-reconstruction, committee and analysis-output controls. |
 
 ## Canonical institutional inference chain
 
@@ -59,8 +59,8 @@ Every later domain must use Phase 01 to define:
 The glossary, formula atlas, cases and adversarial test remain because they expose missing definitions and incoherent synthesis. They are not the objective of the module and do not replace domain depth.
 
 - [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonical Research Protocol]]
-- [[78 Phase 01 Institutional Fundamental Foundations Canon/07 Research Practice Accreditation and Capstone Laboratory/Institutional Analytical Retrieval and Synthesis Standard]]
-- [[78 Phase 01 Institutional Fundamental Foundations Canon/07 Research Practice Accreditation and Capstone Laboratory/Adversarial Institutional Analysis Capability Test]]
+- [[78 Phase 01 Institutional Fundamental Foundations Canon/07 Research Practice and Adversarial Validation Laboratory/Institutional Analytical Retrieval and Synthesis Standard]]
+- [[78 Phase 01 Institutional Fundamental Foundations Canon/07 Research Practice and Adversarial Validation Laboratory/Adversarial Institutional Analysis Capability Test]]
 - [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Completion and Ten-of-Ten Audit]]
 
 ## Completion boundary

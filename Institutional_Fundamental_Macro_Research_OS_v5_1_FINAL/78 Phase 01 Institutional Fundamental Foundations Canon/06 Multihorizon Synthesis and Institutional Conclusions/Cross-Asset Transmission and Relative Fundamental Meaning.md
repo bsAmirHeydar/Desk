@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, synthesis]
 > [!abstract] Canonical thesis
 > Fundamental information has no universal sign. Its implication depends on the asset payoff, financing structure, currency denomination, ownership base, policy response and the state already priced.
 
-## Beginner intuition
+## Analytical intuition
 
 Higher inflation can hurt a long-duration bond, help some commodity producers, strengthen or weaken a currency depending on policy credibility, and affect equities through both revenues and discount rates. The same fact means different things to different claims.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Condition on policy reaction and ownership structure.
 6. Search for discriminating cross-asset evidence and contradictions.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Build a transmission matrix for a positive growth shock.
 2. Explain three distinct mechanisms behind dollar strength.

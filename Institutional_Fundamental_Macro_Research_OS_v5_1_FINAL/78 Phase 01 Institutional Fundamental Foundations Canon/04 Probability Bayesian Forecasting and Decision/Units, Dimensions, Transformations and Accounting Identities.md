@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, mathematics]
 > [!abstract] Canonical thesis
 > Mathematical discipline begins before estimation: variables must have explicit units, timing, denomination, aggregation and accounting relationships. Many apparent discoveries are unit errors, mixed stocks and flows, or identities mistaken for behavioral laws.
 
-## Beginner intuition
+## Analytical intuition
 
 A 5 percent rate, a five-percentage-point change and a 5 percent increase in the rate are different. Debt in dollars, debt as a share of GDP and debt service as a share of revenue answer different questions.
 
@@ -108,7 +108,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Use transformations consistent with the question.
 6. Audit aggregation and chain-weighting effects.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Audit units in a macro dashboard.
 2. Derive exact and approximate nominal growth decomposition.

@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, probability]
 > [!abstract] Canonical thesis
 > Dependence is multidimensional and state-dependent. Linear correlation cannot represent nonlinear, asymmetric or tail co-movement, and correlations estimated in normal periods are unreliable guides to stressed systems.
 
-## Beginner intuition
+## Analytical intuition
 
 Two assets can look weakly related most days but fall together in a crisis because they share funding, leverage or forced sellers. A single correlation number misses this.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Stress correlations beyond historical estimates.
 6. Distinguish diversification of labels from diversification of drivers.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Build a driver-based dependence map for a portfolio.
 2. Compare ordinary and tail dependence conceptually.

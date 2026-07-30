@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, epistemology]
 > [!abstract] Canonical thesis
 > Institutional research must label the epistemic type of every statement. Observations, constructed measurements, estimates, model outputs, judgments and decisions have different error structures and cannot be presented as one undifferentiated “fact.”
 
-## Beginner intuition
+## Analytical intuition
 
 A statistical agency reports a price index. That index is constructed from samples and methods. An economist estimates trend inflation from it. A committee judges whether inflation is persistent. A portfolio manager decides how much risk to hold. Each step adds assumptions.
 
@@ -101,7 +101,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Identify where judgment enters the chain.
 6. Do not promote a decision conclusion back into the evidence layer as a fact.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Label each sentence in a central-bank report by epistemic type.
 2. Rewrite a market memo so facts, estimates and judgments are visually separated.

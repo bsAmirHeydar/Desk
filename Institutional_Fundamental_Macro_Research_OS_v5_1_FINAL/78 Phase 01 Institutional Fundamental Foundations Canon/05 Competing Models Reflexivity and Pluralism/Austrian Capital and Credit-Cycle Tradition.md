@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, competing-models]
 > [!abstract] Canonical thesis
 > Interest rates coordinate intertemporal production, and credit expansion can distort capital structure and generate malinvestment.
 
-## Beginner intuition
+## Analytical intuition
 
 Focus on heterogeneous capital, entrepreneurial discovery, monetary distortion and liquidation.
 
@@ -83,7 +83,7 @@ Rapid liquidation may restore relative prices but can amplify debt deflation and
 
 Apply both [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonical Research Protocol]] and [[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/Economic School Evaluation Protocol]] to **Austrian Capital and Credit-Cycle Tradition**. Preserve the school’s internal coherence before evaluating evidence or synthesis.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write the strongest version of this framework without caricature.
 2. Name three observations that would weaken its application to a current episode.

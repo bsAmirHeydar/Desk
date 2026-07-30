@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, ontology]
 > [!abstract] Canonical thesis
 > State, regime, structure and shock are not interchangeable. Structure describes persistent constraints; state describes current latent conditions; regime describes a configuration of relationships and policy behavior; shock describes new information or disturbance; transition describes movement between states or regimes.
 
-## Beginner intuition
+## Analytical intuition
 
 A house has a structure, a current temperature, a heating regime and occasional shocks such as an open window. The economy is similar. Demographics and institutions are structural. Growth and inflation are states. A policy framework can define a regime. A war or data surprise can be a shock.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Estimate whether new evidence changes the state within the current regime or changes the regime itself.
 6. Document transition uncertainty and alternative labels.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Design state and regime definitions for an inflation process.
 2. Write evidence that would distinguish a temporary shock from a regime transition.

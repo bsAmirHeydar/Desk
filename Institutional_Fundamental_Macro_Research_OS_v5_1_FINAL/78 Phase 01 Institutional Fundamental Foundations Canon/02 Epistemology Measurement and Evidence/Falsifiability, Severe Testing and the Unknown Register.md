@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, epistemology]
 > [!abstract] Canonical thesis
 > A research claim is institutional only when the evidence that would weaken or reject it is stated in advance. An unknown register preserves unresolved questions and prevents uncertainty from being silently converted into narrative certainty.
 
-## Beginner intuition
+## Analytical intuition
 
 A theory that explains every possible outcome explains nothing. Before an event, write what you expect to observe if the theory is right, what would count against it, and what remains unknown. Afterward, do not move the goalposts.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Record failed predictions and explanation changes.
 6. Update, narrow or retire claims rather than immunizing them.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write pre-specified falsifiers for three competing inflation-persistence models.
 2. Identify auxiliary assumptions in a yield-curve recession signal.

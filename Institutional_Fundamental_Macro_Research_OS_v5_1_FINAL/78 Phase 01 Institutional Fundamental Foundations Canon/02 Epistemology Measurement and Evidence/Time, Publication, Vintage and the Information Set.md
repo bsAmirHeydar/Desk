@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, epistemology]
 > [!abstract] Canonical thesis
 > Economic truth, reference period, publication time, revision vintage and analyst retrieval time are different clocks. Point-in-time reasoning requires all of them to prevent hindsight contamination and false real-time confidence.
 
-## Beginner intuition
+## Analytical intuition
 
 A report about June may be published in July, revised in August and benchmarked next year. An analyst studying a July decision cannot use the later values, even if they are more accurate today.
 
@@ -101,7 +101,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Reconstruct decision information without future summaries.
 6. Audit accidental use of revised or post-cutoff evidence.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Build a five-clock timeline for a CPI release.
 2. Explain how vintage choice changes a recession-forecast evaluation.

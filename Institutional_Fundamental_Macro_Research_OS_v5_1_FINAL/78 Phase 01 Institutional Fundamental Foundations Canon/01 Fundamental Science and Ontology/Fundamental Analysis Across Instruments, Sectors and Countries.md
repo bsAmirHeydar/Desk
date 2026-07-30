@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, ontology]
 > [!abstract] Canonical thesis
 > The same macro state maps differently into sovereign bonds, currencies, equities, credit and commodities because their payoff functions, legal claims, supply structures and investor bases differ. A universal directional rule is therefore inferior to instrument-specific transmission analysis.
 
-## Beginner intuition
+## Analytical intuition
 
 Lower growth can support government bonds through lower expected policy rates, hurt cyclical equities through weaker profits, strengthen or weaken a currency depending on relative policy and funding, and affect oil through demand expectations. One fact can create different outcomes.
 
@@ -99,7 +99,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Condition the mapping on country institutions and regime.
 6. Compare absolute and relative expressions without assuming equivalence.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Map a growth shock into sovereign bonds, bank equity, corporate credit, the currency and oil for an importer.
 2. Compare the same shock in a reserve-currency issuer and a foreign-currency borrower.

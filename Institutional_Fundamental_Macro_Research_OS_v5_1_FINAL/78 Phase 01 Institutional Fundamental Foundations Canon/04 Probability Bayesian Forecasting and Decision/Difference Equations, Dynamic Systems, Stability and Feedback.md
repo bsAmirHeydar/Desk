@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, mathematics]
 > [!abstract] Canonical thesis
 > Fundamental systems evolve through stocks, flows, lags and feedback. Difference equations clarify persistence, equilibrium, explosive paths and policy response, but stability depends on nonlinear constraints and regime changes.
 
-## Beginner intuition
+## Analytical intuition
 
 Debt today depends on debt yesterday plus new borrowing and valuation changes. Inflation today can depend on past inflation, expectations and shocks. Dynamic equations make these paths explicit.
 
@@ -108,7 +108,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Add policy and behavioral response.
 6. Test nonlinear thresholds and structural breaks.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Solve a first-order difference equation.
 2. Assess stability of a two-variable feedback matrix.

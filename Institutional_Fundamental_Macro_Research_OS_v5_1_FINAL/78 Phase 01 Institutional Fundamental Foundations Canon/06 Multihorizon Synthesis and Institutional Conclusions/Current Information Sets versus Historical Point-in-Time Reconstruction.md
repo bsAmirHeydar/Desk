@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, multihorizon]
 > [!abstract] Canonical thesis
 > Current analysis and historical reconstruction are different epistemic tasks. Historical research must reproduce what was knowable at the cutoff, while current research must distinguish latest releases, estimates, revisions and information latency.
 
-## Beginner intuition
+## Analytical intuition
 
 Looking back with today’s revised data makes the past seem easier than it was. A fair historical analysis uses only the information, definitions and market expectations available at that time.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Separate ex-ante conclusion from ex-post audit.
 6. Document missing archives and uncertainty rather than backfilling silently.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Reconstruct a release-day information set with exact timestamps.
 2. List data that are valid for state estimation but invalid for decision evaluation.

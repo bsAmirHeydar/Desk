@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, probability]
 > [!abstract] Canonical thesis
 > Institutional forecasting should represent a distribution of outcomes, not a single path. Scenarios organize mechanisms and tails; density forecasts quantify uncertainty where probabilities are defensible.
 
-## Beginner intuition
+## Analytical intuition
 
 A single GDP or inflation number hides asymmetry and tails. A useful forecast asks what outcomes are plausible, how likely they are, what causes them, and how the distribution changes with new evidence.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Update weights and distributions as evidence arrives.
 6. Score both calibration and sharpness.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Build a three-scenario inflation density.
 2. Convert conditional scenarios into an unconditional mixture.

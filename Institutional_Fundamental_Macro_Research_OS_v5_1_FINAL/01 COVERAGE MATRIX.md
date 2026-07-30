@@ -4,7 +4,7 @@ type: coverage-matrix
 status: active
 version: 6.3.0
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-30
 language: en
 ---
 # Institutional Fundamental Coverage and Production Maturity Matrix
@@ -57,3 +57,8 @@ Use [[76 Institutional Fundamental Knowledge Canon Completion Program/58 Ten-of-
 | Commodity | Physical balance, logistics, inventories, curves, substitution, policy, finance and geopolitical constraints | [[79 Institutional Fundamental Analysis Output Architecture/11 Commodity and Physical Market Analysis Standard]] |
 | Event or policy catalyst | Baseline, distribution, surprise vector, reaction function, transmission and persistence | [[79 Institutional Fundamental Analysis Output Architecture/12 Event Catalyst and Policy Analysis Standard]] |
 | Portfolio | Hidden drivers, duplicated exposure, conditional dependence, scenario loss and hedge failure | [[79 Institutional Fundamental Analysis Output Architecture/13 Portfolio Fundamental Exposure and Scenario Analysis Standard]] |
+
+
+## Mega Canon v7.0 completion
+
+Releases 02–14 are implemented in [[80 Institutional Fundamental Mega Canon/00 Institutional Fundamental Mega Canon MOC]]. Each release includes domain monographs, state and driver architecture, measurement canon, causal and rival-model map, regime atlas, cross-domain translation, current and historical contracts, scenario system and an explicit ten-of-ten audit.

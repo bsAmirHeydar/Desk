@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, competing-models]
 > [!abstract] Canonical thesis
 > Fiscal commitments, monetary-fiscal coordination and nominal resource constraints can determine the price level and policy space.
 
-## Beginner intuition
+## Analytical intuition
 
 Focus on consolidated public balance sheets, currency sovereignty, taxation, debt valuation and inflation constraints.
 
@@ -83,7 +83,7 @@ Currency issuers face real-resource and inflation constraints rather than mechan
 
 Apply both [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonical Research Protocol]] and [[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/Economic School Evaluation Protocol]] to **Fiscal Theory, Functional Finance and MMT Traditions**. Preserve the school’s internal coherence before evaluating evidence or synthesis.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write the strongest version of this framework without caricature.
 2. Name three observations that would weaken its application to a current episode.

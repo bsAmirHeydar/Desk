@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, ontology]
 > [!abstract] Canonical thesis
 > Institutional quality comes from a lifecycle, not a single opinion: mandate definition, question formulation, evidence collection, model comparison, synthesis, review, archival and later re-evaluation must form an auditable loop.
 
-## Beginner intuition
+## Analytical intuition
 
 Good research is not “read news and form a view.” It begins by asking a precise question, deciding what evidence would answer it, checking alternatives, documenting uncertainty, and later reviewing what changed and what was learned.
 
@@ -101,7 +101,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Compare rival models and scenario distributions.
 6. Publish a bounded conclusion with confidence and expiry.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Write a research mandate for current gold fundamentals without using directional shorthand.
 2. Build a claim-evidence ledger for a central-bank reaction-function claim.

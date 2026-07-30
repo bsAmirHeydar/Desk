@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, probability]
 > [!abstract] Canonical thesis
 > Beliefs do not uniquely determine decisions. Institutional conclusions depend on utility, loss asymmetry, constraints, liquidity, horizon and mandate. Research must separate probability assessment from the decision rule.
 
-## Beginner intuition
+## Analytical intuition
 
 Two investors can agree on probabilities but act differently because one cannot tolerate a large loss, another has liabilities, and a third values liquidity. A forecast is not a decision until objectives and constraints are defined.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Measure value of additional information and delay.
 6. Document why the conclusion follows from both beliefs and mandate.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Use the same distribution to derive decisions for a bank, pension fund and unlevered allocator.
 2. Calculate a simple value-of-information example.

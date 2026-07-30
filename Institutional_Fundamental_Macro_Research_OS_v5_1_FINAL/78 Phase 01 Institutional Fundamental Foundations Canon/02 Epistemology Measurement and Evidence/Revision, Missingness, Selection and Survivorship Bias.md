@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, epistemology]
 > [!abstract] Canonical thesis
 > The observed dataset is a selected and revised record, not a neutral mirror. Missingness mechanisms, sample entry and exit, delistings, reporting incentives and historical revisions can change the apparent relationship.
 
-## Beginner intuition
+## Analytical intuition
 
 If failed companies disappear from a database, past investment results look better. If only countries with good data are studied, conclusions may not generalize. If missing observations occur during crises, filling them with normal values hides stress.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Use bounds or sensitivity when missingness is non-random.
 6. Report how sample construction changes conclusions.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Audit a historical equity sample for survivorship and backfill bias.
 2. Design sensitivity bounds for missing sovereign reserve data.

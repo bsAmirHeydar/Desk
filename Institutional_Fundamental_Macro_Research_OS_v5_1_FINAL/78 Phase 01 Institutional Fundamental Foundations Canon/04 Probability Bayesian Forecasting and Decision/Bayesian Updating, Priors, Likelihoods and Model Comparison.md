@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, probability]
 > [!abstract] Canonical thesis
 > Bayesian reasoning updates prior beliefs through the relative likelihood of evidence under competing hypotheses. Institutional use requires transparent priors, explicit likelihoods, model uncertainty and protection against repeated narrative redefinition.
 
-## Beginner intuition
+## Analytical intuition
 
 If two explanations predict the same data equally well, the new data do not distinguish them. If one explanation made the observation much more likely, belief should shift toward it. The amount of shift depends on prior plausibility and evidence strength.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Test sensitivity to priors and alternative likelihoods.
 6. Evaluate posterior predictions and revise the model set.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Perform an odds-form update for two inflation models.
 2. Design priors for a rare sovereign default and test sensitivity.

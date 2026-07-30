@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, ontology]
 > [!abstract] Canonical thesis
 > Many analytical errors are dimensional errors. A level, a rate, a rate of change, an acceleration, a stock and a flow answer different questions and cannot be substituted without an explicit transformation.
 
-## Beginner intuition
+## Analytical intuition
 
 Debt is a stock. New borrowing is a flow. The debt-to-income ratio compares a stock with an annualized flow. Inflation is a rate of change in a price index. Disinflation means inflation is falling, not that prices are falling. These distinctions sound simple but prevent major mistakes.
 
@@ -101,7 +101,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Test whether markets respond to level, surprise, trend, breadth or acceleration.
 6. Preserve units through all comparisons and charts.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Transform a price index into monthly, annualized monthly and year-over-year inflation.
 2. Decompose a debt-ratio change into interest-growth dynamics, primary balance and valuation effects.

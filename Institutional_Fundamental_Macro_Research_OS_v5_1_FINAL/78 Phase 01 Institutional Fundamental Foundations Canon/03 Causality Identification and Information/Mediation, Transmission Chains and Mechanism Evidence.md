@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, causality]
 > [!abstract] Canonical thesis
 > A causal conclusion is more useful when the transmission chain is identified: which intermediate balance sheets, prices, behaviors and constraints carry the effect, with what lag and under which regime.
 
-## Beginner intuition
+## Analytical intuition
 
 Knowing that a policy affected output is not enough for institutional interpretation. Did it work through mortgage rates, bank lending, exchange rates, confidence, wealth or fiscal interaction? Different channels imply different persistence and cross-asset effects.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Use cross-sectional heterogeneity tied to channel exposure.
 6. Test whether channel strength changes across regimes and balance-sheet states.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Construct a transmission map for quantitative tightening.
 2. List channel-specific evidence for a tariff shock.

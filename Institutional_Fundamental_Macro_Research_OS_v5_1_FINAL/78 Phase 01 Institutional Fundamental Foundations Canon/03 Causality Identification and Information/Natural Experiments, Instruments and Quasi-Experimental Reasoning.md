@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, causality]
 > [!abstract] Canonical thesis
 > Quasi-experimental methods can strengthen causal inference when institutional rules generate plausibly exogenous variation, but every design depends on narrow assumptions, local populations and careful timing.
 
-## Beginner intuition
+## Analytical intuition
 
 Sometimes a rule, threshold, lottery, court decision or administrative boundary changes exposure for some units but not comparable others. This can create a useful comparison—if the rule did not affect outcomes through other channels.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Estimate local effects with appropriate uncertainty.
 6. Limit external extrapolation and discuss equilibrium spillovers.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Evaluate a proposed instrument for mortgage credit supply.
 2. Design a DiD study for an energy subsidy and list threats.

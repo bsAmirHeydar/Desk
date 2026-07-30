@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, multihorizon]
 > [!abstract] Canonical thesis
 > Every information shock and research conclusion has an empirical or judgmental persistence profile. Expiry is determined by mechanism, subsequent evidence and state transition, not by attachment to a narrative.
 
-## Beginner intuition
+## Analytical intuition
 
 Some news matters for minutes, some changes forecasts for quarters, and some permanently alters a balance sheet. A disciplined analyst asks how fast the effect should decay and what new information would replace it.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Update after each material release or institutional action.
 6. Expire the thesis when mechanism conditions fail or the information advantage disappears.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Classify shocks by expected decay mechanism.
 2. Estimate half-life from a simple impulse-response sequence and list identification limits.

@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, epistemology]
 > [!abstract] Canonical thesis
 > A source list is not evidence architecture. Institutional provenance requires claim-level linkage to the original publication, exact table or passage, release and vintage time, transformation, retrieval method and analyst inference.
 
-## Beginner intuition
+## Analytical intuition
 
 Linking to a central bank homepage does not prove a sentence. A reader should be able to trace the statement to a particular release, series, table, definition and date, and then see what the analyst added.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Record conflicts among sources and resolution rules.
 6. Make every material claim independently auditable.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Create a claim-evidence matrix for five statements in a macro report.
 2. Trace a data series from final chart back to source and list every transformation.

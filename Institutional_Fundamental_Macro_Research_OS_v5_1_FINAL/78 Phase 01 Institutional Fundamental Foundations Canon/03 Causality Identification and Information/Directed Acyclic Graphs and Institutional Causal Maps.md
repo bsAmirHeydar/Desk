@@ -14,7 +14,7 @@ tags: [fundamental-foundations, phase-01, causality]
 > [!abstract] Canonical thesis
 > A causal graph is a disciplined statement of assumed direction, confounding, mediation and selection. In macro-finance it must include institutions, anticipation, policy reaction and balance-sheet feedback rather than a simplistic chain of indicators.
 
-## Beginner intuition
+## Analytical intuition
 
 A graph helps you ask whether you should control for a variable. Controlling for the wrong variable can remove part of the mechanism or create a false relationship. The graph makes these choices visible.
 
@@ -100,7 +100,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 5. Represent mediation separately from total effects.
 6. Use the map to derive data requirements and falsification tests.
 
-## Exercises and accreditation questions
+## Adversarial analytical checks and accreditation questions
 
 1. Draw a time-indexed DAG for a central-bank tightening cycle.
 2. Identify colliders in a study of corporate default using only surviving issuers.
