@@ -1,76 +1,29 @@
 ---
-title: "20 Model Pluralism Ensemble and Adversarial Synthesis"
-type: model-perspective
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+title: "Model Pluralism, Ensemble and Adversarial Synthesis"
+type: moc
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - economic-school
-  - model-pluralism
-  - adversarial-research
+tags: [fundamental-only, navigation, v8-repair]
 ---
-# 20 Model Pluralism Ensemble and Adversarial Synthesis
+# Model Pluralism, Ensemble and Adversarial Synthesis
 
-> [!perspective] Competing explanatory model
-> This note does not declare a school universally true. It converts the school into testable mechanisms, observables, forecasts, and failure conditions.
+## Principle
 
-## Core proposition
+Economic schools emphasize different state variables, adjustment mechanisms and institutional constraints. Pluralism means maintaining competing models with explicit assumptions, not averaging incompatible claims into a vague consensus.
 
-The framework proposes that **no single school spans every institution, horizon, regime, and market; competing models become explicit scenario generators**.
+## Adversarial synthesis
 
-## What it treats as primary
+1. state the question and horizon;
+2. express each model's causal graph and predicted observations;
+3. identify common observations that do not discriminate;
+4. select evidence that differs across models;
+5. update model weights;
+6. preserve unresolved conflict;
+7. form scenarios conditional on model dominance.
 
-Measure **model probabilities, forecast performance, mechanism signposts, disagreement, and regime dependence**. Specify which variables are primitive, which are endogenous, which adjust through prices, which adjust through quantities, and which institutions close the model.
+## Ensemble discipline
 
-## Formalization
-
-A usable version must provide:
-
-- accounting identities that always hold;
-- behavioral equations or decision rules;
-- expectation formation;
-- monetary/fiscal/financial closure;
-- external-sector closure;
-- shock process;
-- transition dynamics;
-- welfare or decision criterion;
-- empirical mapping and identification.
-
-## Testable predictions
-
-Write predictions by horizon and state. Do not accept a theory because it can explain every outcome. Define sign predictions, timing, cross-sectional heterogeneity, leading variables, and observations that would reduce its probability.
-
-## Market translation
-
-Translate the framework separately into:
-
-- front-end policy pricing;
-- yield curve and term premium;
-- FX and external funding;
-- credit and bank balance sheets;
-- equity cash flows and risk premia;
-- commodity quantity constraints;
-- positioning, liquidity, and execution.
-
-The model may be useful for a structural prior while having little intraday timing power.
-
-## Strongest contribution and strongest critique
-
-**Contribution:** the framework forces the desk to examine variables ignored by rival models.  
-**Critique:** reduces doctrinal blindness; can become incoherent unless models have distinct falsifiers and decision roles.
-
-## Adversarial comparison
-
-For every live thesis, ask what this framework predicts differently from New Keynesian policy pricing, stock-flow balance analysis, global-dollar funding, behavioral/reflexive models, and microstructure. Convert disagreements into observable signposts.
-
-## Evidence and governance
-
-Record the model as one scenario generator with a probability and domain of validity. Evaluate forecasts point in time. Never use a school label as a substitute for data, estimation, or falsification.
-
-## Related
-
-- [[00 Core Standards/06 Causal Identification and Rival Models]]
-- [[00 Core Standards/08 Confidence Calibration and Bayesian Updating]]
-- [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]]
+Weight models according to domain fit, regime, evidence and historical calibration. Do not give equal weight by default. Model diversity is valuable only when it produces genuinely different errors or mechanisms.

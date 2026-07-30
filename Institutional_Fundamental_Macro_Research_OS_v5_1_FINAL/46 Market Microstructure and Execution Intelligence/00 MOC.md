@@ -1,21 +1,19 @@
 ---
 title: "46 Market Microstructure and Execution Intelligence"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 46-market-microstructure-and-execution-intelligence
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 46 Market Microstructure and Execution Intelligence
 
-> [!map] Module map
-> Canonical notes for **46 Market Microstructure and Execution Intelligence**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 46 Market Microstructure and Execution Intelligence domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[46 Market Microstructure and Execution Intelligence/01 Price Discovery Information and Liquidity Trading]]
 - [[46 Market Microstructure and Execution Intelligence/02 Order Book Depth Spread and Resiliency]]
@@ -27,7 +25,3 @@ tags:
 - [[46 Market Microstructure and Execution Intelligence/08 Execution Algorithms Participation and Urgency]]
 - [[46 Market Microstructure and Execution Intelligence/09 Slippage Modeling for Day and Swing Trading]]
 - [[46 Market Microstructure and Execution Intelligence/10 Microstructure Invalidations and No-Trade Conditions]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

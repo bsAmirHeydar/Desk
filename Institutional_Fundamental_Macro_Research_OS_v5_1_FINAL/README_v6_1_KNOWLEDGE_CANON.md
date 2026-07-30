@@ -1,3 +1,13 @@
+---
+title: "README v6 1 KNOWLEDGE CANON"
+type: documentation
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
+language: en
+tags: [fundamental-only, navigation, v8-repair]
+---
 # Institutional Fundamental Macro Research OS v6.1 — Knowledge Canon Correction
 
 This patch corrects the interpretation of the transformation program.

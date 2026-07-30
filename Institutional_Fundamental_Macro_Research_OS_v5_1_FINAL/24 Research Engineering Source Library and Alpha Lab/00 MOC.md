@@ -1,21 +1,19 @@
 ---
 title: "24 Research Engineering Source Library and Alpha Lab"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 24-research-engineering-source-library-and-alpha-lab
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 24 Research Engineering Source Library and Alpha Lab
 
-> [!map] Module map
-> Canonical notes for **24 Research Engineering Source Library and Alpha Lab**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 24 Research Engineering Source Library and Alpha Lab domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[24 Research Engineering Source Library and Alpha Lab/01 Institutional Source Registry]]
 - [[24 Research Engineering Source Library and Alpha Lab/02 Point-in-Time Macro Database]]
@@ -32,7 +30,3 @@ tags:
 - [[24 Research Engineering Source Library and Alpha Lab/13 Machine-Readable Context Contract]]
 - [[24 Research Engineering Source Library and Alpha Lab/14 Alpha Lab Fundamental Context Ontology]]
 - [[24 Research Engineering Source Library and Alpha Lab/15 Human Researcher AI Agent Operating Model]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

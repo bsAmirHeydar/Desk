@@ -1,37 +1,28 @@
 ---
 title: "03 Claim Evidence Schema"
 type: schema
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - schema
-  - machine-readable
-  - research-governance
+tags: [fundamental-only, navigation, v8-repair]
 ---
-# 03 Claim Evidence Schema
+# Claim Evidence Schema
 
 ```yaml
-schema_version: 5.0.0
-claim_id: string
-context_id: string
-claim_text: string
-claim_type: [observed, derived, model_estimate, market_implied, forecast, causal, assumption, judgment, rule, attribution]
-as_of: datetime
+claim_id:
+claim_text:
+claim_type:
+analysis_object:
+horizon:
 evidence:
-  - source_key: string
-    series_or_document: string
-    table_page_section: string
-    publication_time: datetime
-    vintage: string
-    transformation_id: string|null
-strength: [A, B, C, D, E]
-relevance: number
-reliability: number
-uncertainty: string
-dependencies: [claim_id]
-rival_evidence: [claim_id]
-decision_fields: [string]
+  source:
+  document_or_series:
+  publication_timestamp:
+  exact_locator:
+  transformation:
+limitations: []
+contradictory_evidence: []
+confidence:
 ```

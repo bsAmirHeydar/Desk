@@ -1,21 +1,19 @@
 ---
 title: "51 Portfolio Construction Factor Risk and Capital Allocation"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 51-portfolio-construction-factor-risk-and-capital-allocation
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 51 Portfolio Construction Factor Risk and Capital Allocation
 
-> [!map] Module map
-> Canonical notes for **51 Portfolio Construction Factor Risk and Capital Allocation**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 51 Portfolio Construction Factor Risk and Capital Allocation domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[51 Portfolio Construction Factor Risk and Capital Allocation/01 From Thesis Quality to Risk Budget]]
 - [[51 Portfolio Construction Factor Risk and Capital Allocation/02 Driver-Based Portfolio Decomposition]]
@@ -27,7 +25,3 @@ tags:
 - [[51 Portfolio Construction Factor Risk and Capital Allocation/08 Convexity Carry and Drawdown Trade-Off]]
 - [[51 Portfolio Construction Factor Risk and Capital Allocation/09 Portfolio Hedges and Basis Risk]]
 - [[51 Portfolio Construction Factor Risk and Capital Allocation/10 Capital Reallocation Kill and Scale Rules]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

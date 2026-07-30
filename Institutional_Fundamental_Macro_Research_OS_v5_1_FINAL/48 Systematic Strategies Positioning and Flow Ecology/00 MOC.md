@@ -1,21 +1,19 @@
 ---
 title: "48 Systematic Strategies Positioning and Flow Ecology"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 48-systematic-strategies-positioning-and-flow-ecology
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 48 Systematic Strategies Positioning and Flow Ecology
 
-> [!map] Module map
-> Canonical notes for **48 Systematic Strategies Positioning and Flow Ecology**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 48 Systematic Strategies Positioning and Flow Ecology domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[48 Systematic Strategies Positioning and Flow Ecology/01 CTA Trend-Following Architecture and Trigger Zones]]
 - [[48 Systematic Strategies Positioning and Flow Ecology/02 Volatility-Control Deleveraging and Re-Risking]]
@@ -25,7 +23,3 @@ tags:
 - [[48 Systematic Strategies Positioning and Flow Ecology/06 Commodity Producer and Consumer Hedging]]
 - [[48 Systematic Strategies Positioning and Flow Ecology/07 Dealer Options Hedging as Conditional Flow]]
 - [[48 Systematic Strategies Positioning and Flow Ecology/08 Positioning Crowding Squeeze and Liquidation Matrix]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

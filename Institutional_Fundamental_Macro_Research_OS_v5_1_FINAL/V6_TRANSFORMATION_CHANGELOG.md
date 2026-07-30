@@ -1,3 +1,13 @@
+---
+title: "V6 TRANSFORMATION CHANGELOG"
+type: documentation
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
+language: en
+tags: [fundamental-only, navigation, v8-repair]
+---
 # v6.0 Fundamental-Only Institutional Transformation Changelog
 
 - Added Core Standard 19 and removed price-pattern analysis from the Vault language.

@@ -1,21 +1,19 @@
 ---
 title: "Event Playbooks"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 08-event-playbooks
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # Event Playbooks
 
-> [!map] Module map
-> Canonical notes for **08 Event Playbooks**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the Event Playbooks domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[08 Event Playbooks/01 Inflation Releases]]
 - [[08 Event Playbooks/02 Labor Releases]]
@@ -27,7 +25,3 @@ tags:
 - [[08 Event Playbooks/08 Earnings and Mega-Cap Events]]
 - [[08 Event Playbooks/09 Geopolitical Shock Protocol]]
 - [[08 Event Playbooks/10 Revisions Base Effects and Seasonal Adjustment]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

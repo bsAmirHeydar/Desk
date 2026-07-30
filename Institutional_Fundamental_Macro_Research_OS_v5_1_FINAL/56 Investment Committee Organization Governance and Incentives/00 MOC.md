@@ -1,21 +1,19 @@
 ---
 title: "56 Investment Committee Organization Governance and Incentives"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 56-investment-committee-organization-governance-and-incentives
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 56 Investment Committee Organization Governance and Incentives
 
-> [!map] Module map
-> Canonical notes for **56 Investment Committee Organization Governance and Incentives**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 56 Investment Committee Organization Governance and Incentives domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[56 Investment Committee Organization Governance and Incentives/01 Investment Constitution and Strategy Mandate]]
 - [[56 Investment Committee Organization Governance and Incentives/02 Research PM Trader and Risk Decision Rights]]
@@ -25,7 +23,3 @@ tags:
 - [[56 Investment Committee Organization Governance and Incentives/06 Model Risk Governance and Approval Lifecycle]]
 - [[56 Investment Committee Organization Governance and Incentives/07 Incident Management Near Misses and Operational Learning]]
 - [[56 Investment Committee Organization Governance and Incentives/08 Capacity Attention and Research Portfolio Management]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

@@ -1,21 +1,19 @@
 ---
-title: "Corporate Financial Statement Valuation and Security Analysis MOC"
+title: "Corporate Financial Statement Valuation and Security Analysis"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 66-corporate-financial-statement-valuation-and-security-analysis
+tags: [fundamental-only, navigation, v8-repair]
 ---
-# Corporate Financial Statement Valuation and Security Analysis MOC
+# Corporate Financial Statement Valuation and Security Analysis
 
-> [!map] Module map
-> Canonical notes for **66 Corporate Financial Statement Valuation and Security Analysis**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the Corporate Financial Statement Valuation and Security Analysis domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[66 Corporate Financial Statement Valuation and Security Analysis/01 Three-Statement Model Architecture]]
 - [[66 Corporate Financial Statement Valuation and Security Analysis/02 Revenue Recognition Price Volume Mix and Segment Economics]]
@@ -42,7 +40,3 @@ tags:
 - [[66 Corporate Financial Statement Valuation and Security Analysis/23 Corporate Fundamentals for Two-to-Ten-Day Swing Campaigns]]
 - [[66 Corporate Financial Statement Valuation and Security Analysis/24 Corporate Data Point-in-Time Filings and Estimate History]]
 - [[66 Corporate Financial Statement Valuation and Security Analysis/25 Corporate Model Validation and Investment Attribution]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

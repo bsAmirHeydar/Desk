@@ -1,21 +1,19 @@
 ---
 title: "59 Asset-Specific Institutional Driver Books"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 59-asset-specific-institutional-driver-books
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 59 Asset-Specific Institutional Driver Books
 
-> [!map] Module map
-> Canonical notes for **59 Asset-Specific Institutional Driver Books**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 59 Asset-Specific Institutional Driver Books domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[59 Asset-Specific Institutional Driver Books/01 Nasdaq 100 NQ Institutional Driver Book]]
 - [[59 Asset-Specific Institutional Driver Books/02 S&P 500 ES Institutional Driver Book]]
@@ -29,7 +27,3 @@ tags:
 - [[59 Asset-Specific Institutional Driver Books/10 USDJPY Institutional Driver Book]]
 - [[59 Asset-Specific Institutional Driver Books/11 US Treasury Futures Institutional Driver Book]]
 - [[59 Asset-Specific Institutional Driver Books/12 Bitcoin and Crypto Liquidity Driver Book]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

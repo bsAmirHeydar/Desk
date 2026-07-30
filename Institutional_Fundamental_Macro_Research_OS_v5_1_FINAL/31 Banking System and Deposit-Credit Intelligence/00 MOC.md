@@ -1,21 +1,19 @@
 ---
 title: "31 Banking System and Deposit-Credit Intelligence"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 31-banking-system-and-deposit-credit-intelligence
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 31 Banking System and Deposit-Credit Intelligence
 
-> [!map] Module map
-> Canonical notes for **31 Banking System and Deposit-Credit Intelligence**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 31 Banking System and Deposit-Credit Intelligence domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[31 Banking System and Deposit-Credit Intelligence/01 Bank Balance-Sheet Anatomy for Macro Trading]]
 - [[31 Banking System and Deposit-Credit Intelligence/02 Deposit Betas Funding Migration and Money Funds]]
@@ -25,7 +23,3 @@ tags:
 - [[31 Banking System and Deposit-Credit Intelligence/06 Commercial Real Estate and Concentration Risk]]
 - [[31 Banking System and Deposit-Credit Intelligence/07 Bank Earnings as Macro Information]]
 - [[31 Banking System and Deposit-Credit Intelligence/08 Bank Stress Contagion and Policy Backstops]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

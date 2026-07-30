@@ -1,21 +1,19 @@
 ---
 title: "27 Macro Regime Ontology and State Machines"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 27-macro-regime-ontology-and-state-machines
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 27 Macro Regime Ontology and State Machines
 
-> [!map] Module map
-> Canonical notes for **27 Macro Regime Ontology and State Machines**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 27 Macro Regime Ontology and State Machines domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[27 Macro Regime Ontology and State Machines/01 Multidimensional Regime Ontology]]
 - [[27 Macro Regime Ontology and State Machines/02 Hidden-State Models and Transition Probabilities]]
@@ -24,7 +22,3 @@ tags:
 - [[27 Macro Regime Ontology and State Machines/05 Regime Duration Hazard and Transition Risk]]
 - [[27 Macro Regime Ontology and State Machines/06 Driver Substitution within a Regime]]
 - [[27 Macro Regime Ontology and State Machines/07 Regime Confidence Conflict and Unknown States]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

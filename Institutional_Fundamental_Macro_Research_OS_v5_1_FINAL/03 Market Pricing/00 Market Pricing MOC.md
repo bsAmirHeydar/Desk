@@ -1,21 +1,19 @@
 ---
-title: "Market Pricing MOC"
+title: "Market Pricing"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 03-market-pricing
+tags: [fundamental-only, navigation, v8-repair]
 ---
-# Market Pricing MOC
+# Market Pricing
 
-> [!map] Module map
-> Canonical notes for **03 Market Pricing**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the Market Pricing domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[03 Market Pricing/01 Reading Rate Expectations]]
 - [[03 Market Pricing/02 Inflation Compensation and Real Yields]]
@@ -26,7 +24,3 @@ tags:
 - [[03 Market Pricing/07 Flows Rebalancing Expiry and Dealer Effects]]
 - [[03 Market Pricing/08 Market Plumbing Funding and Collateral]]
 - [[03 Market Pricing/09 Cross-Asset Confirmation and Divergence]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

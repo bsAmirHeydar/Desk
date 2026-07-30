@@ -120,3 +120,4 @@ Version 6.1 evaluates the Vault as an institutional body of fundamental knowledg
 ## VII — Complete institutional analysis canon
 
 - [[80 Institutional Fundamental Mega Canon/00 Institutional Fundamental Mega Canon MOC|80 Institutional Fundamental Mega Canon]]
+- [[81 Final Scientific Red-Team and Analysis Certification/00 Final Scientific Red-Team and Analysis Certification MOC|81 Final Scientific Red-Team and Analysis Certification]]

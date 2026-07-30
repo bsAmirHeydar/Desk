@@ -120,3 +120,15 @@ Topic notes are accepted only when they specify the object, data, point-in-time 
 - [[77 Institutional Evidence and Monograph Production Standard/08 Source Contract Production Standard]]
 - [[77 Institutional Evidence and Monograph Production Standard/10 Citation Locator and Archival Standard]]
 - [[00 Core Standards/03 Point-in-Time and Bitemporal Data Standard]]
+## v8 certification sources
+
+- [[65 Source Registry and Claim Lineage/FED_MRM_2026 — Federal Reserve Revised Model Risk Management Guidance]]
+- [[65 Source Registry and Claim Lineage/IMF_BPM7 — IMF Balance of Payments and International Investment Position Manual Seventh Edition]]
+- [[65 Source Registry and Claim Lineage/SEC_XBRL_DATA — SEC EDGAR Inline XBRL and Financial Statement Data Sets]]
+- [[65 Source Registry and Claim Lineage/NAIC_SOLVENCY — NAIC Solvency Financial Analysis and ORSA]]
+- [[65 Source Registry and Claim Lineage/MSRB_EMMA — MSRB EMMA Municipal Disclosures and Trade Data]]
+- [[65 Source Registry and Claim Lineage/FERC_ENERGY_PRIMER — FERC Energy Markets Primer]]
+- [[65 Source Registry and Claim Lineage/IAEA_NUCLEAR_FUEL — IAEA Nuclear Fuel Cycle and Uranium Sources]]
+- [[65 Source Registry and Claim Lineage/USDA_WASDE — USDA World Agricultural Supply and Demand Estimates]]
+- [[65 Source Registry and Claim Lineage/UNCTAD_SHIPPING — UNCTAD Review of Maritime Transport]]
+- [[65 Source Registry and Claim Lineage/EU_ETS — European Commission EU Emissions Trading System]]

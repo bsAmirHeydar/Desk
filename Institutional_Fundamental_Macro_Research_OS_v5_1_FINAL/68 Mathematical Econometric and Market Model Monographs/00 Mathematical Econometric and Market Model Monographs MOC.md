@@ -1,21 +1,19 @@
 ---
-title: "Mathematical Econometric and Market Model Monographs MOC"
+title: "Mathematical Econometric and Market Model Monographs"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 68-mathematical-econometric-and-market-model-monographs
+tags: [fundamental-only, navigation, v8-repair]
 ---
-# Mathematical Econometric and Market Model Monographs MOC
+# Mathematical Econometric and Market Model Monographs
 
-> [!map] Module map
-> Canonical notes for **68 Mathematical Econometric and Market Model Monographs**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the Mathematical Econometric and Market Model Monographs domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[68 Mathematical Econometric and Market Model Monographs/01 State-Space Models Kalman Filter Smoother and EM]]
 - [[68 Mathematical Econometric and Market Model Monographs/02 Dynamic Factor Models Ragged Edge and News Decomposition]]
@@ -47,7 +45,3 @@ tags:
 - [[68 Mathematical Econometric and Market Model Monographs/28 Equity Cash-Flow Discount-Rate and Risk-Premium Decomposition]]
 - [[68 Mathematical Econometric and Market Model Monographs/29 Macro Stock-Flow Consistency Sector Balances and Financial Accounts]]
 - [[68 Mathematical Econometric and Market Model Monographs/30 Permission Models Calibration Incremental Edge and No-Trade Value]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

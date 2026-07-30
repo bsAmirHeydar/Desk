@@ -1,28 +1,22 @@
 ---
-title: "Timeframes MOC"
+title: "Timeframes"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 05-timeframes
+tags: [fundamental-only, navigation, v8-repair]
 ---
-# Timeframes MOC
+# Timeframes
 
-> [!map] Module map
-> Canonical notes for **05 Timeframes**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the Timeframes domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[05 Timeframes/01 Structural Cyclical Tactical and Intraday Context]]
 - [[05 Timeframes/02 Daily Context for Day Trading]]
 - [[05 Timeframes/03 Swing Context for Two-to-Ten Day Holds]]
 - [[05 Timeframes/04 Session Translation Asia London New York]]
 - [[05 Timeframes/05 Event Windows and Post-Event Regimes]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

@@ -1,21 +1,19 @@
 ---
 title: "25 Institutional Templates"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 25-institutional-templates
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 25 Institutional Templates
 
-> [!map] Module map
-> Canonical notes for **25 Institutional Templates**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 25 Institutional Templates domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[25 Institutional Templates/01 CIO Weekly Risk Memo Template]]
 - [[25 Institutional Templates/02 PM Trade Thesis Template]]
@@ -31,7 +29,3 @@ tags:
 - [[25 Institutional Templates/12 Post-Mortem and Attribution Template]]
 - [[25 Institutional Templates/13 Research Hypothesis and Validation Template]]
 - [[25 Institutional Templates/14 Source Intake and Data-Quality Template]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

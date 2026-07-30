@@ -1,21 +1,19 @@
 ---
 title: "52 Liquidity Funding Collateral Margin and Operational Survival"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 52-liquidity-funding-collateral-margin-and-operational-survival
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 52 Liquidity Funding Collateral Margin and Operational Survival
 
-> [!map] Module map
-> Canonical notes for **52 Liquidity Funding Collateral Margin and Operational Survival**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 52 Liquidity Funding Collateral Margin and Operational Survival domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[52 Liquidity Funding Collateral Margin and Operational Survival/01 Funding Liquidity versus Market Liquidity]]
 - [[52 Liquidity Funding Collateral Margin and Operational Survival/02 Collateral Eligibility Haircuts and Wrong-Way Risk]]
@@ -25,7 +23,3 @@ tags:
 - [[52 Liquidity Funding Collateral Margin and Operational Survival/06 Settlement Clearing and Operational Liquidity]]
 - [[52 Liquidity Funding Collateral Margin and Operational Survival/07 Liquidity Ladder and Time-to-Cash]]
 - [[52 Liquidity Funding Collateral Margin and Operational Survival/08 Crisis Survival Runbook and Kill Switches]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

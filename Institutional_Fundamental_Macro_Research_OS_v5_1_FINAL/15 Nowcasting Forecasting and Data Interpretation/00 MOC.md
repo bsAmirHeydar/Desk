@@ -1,21 +1,19 @@
 ---
 title: "15 Nowcasting Forecasting and Data Interpretation"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 15-nowcasting-forecasting-and-data-interpretation
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 15 Nowcasting Forecasting and Data Interpretation
 
-> [!map] Module map
-> Canonical notes for **15 Nowcasting Forecasting and Data Interpretation**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 15 Nowcasting Forecasting and Data Interpretation domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[15 Nowcasting Forecasting and Data Interpretation/01 Institutional Economic Data Calendar Architecture]]
 - [[15 Nowcasting Forecasting and Data Interpretation/02 Nowcasting Philosophy and Real-Time State Estimation]]
@@ -29,7 +27,3 @@ tags:
 - [[15 Nowcasting Forecasting and Data Interpretation/10 Inflation Nowcasting Stack]]
 - [[15 Nowcasting Forecasting and Data Interpretation/11 Labor-Market Nowcasting Stack]]
 - [[15 Nowcasting Forecasting and Data Interpretation/12 Forecast Distributions Fan Charts and Scenario Densities]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

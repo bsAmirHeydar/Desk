@@ -76,6 +76,9 @@ M. State confidence cap, risk budget implications, information invalidation, tim
 17. Machine-readable context object
 
 Do not compress material contradictions. Do not convert uncertainty into false precision. Do not issue an order or a price-pattern instruction.
+
+# V8 SCIENTIFIC CERTIFICATION GATE
+Before finalizing, open and apply `81 Final Scientific Red-Team and Analysis Certification/00 Final Scientific Red-Team and Analysis Certification MOC`. Run the relevant domain scorecard and benchmark suite. The answer must begin and end with a certification verdict: CERTIFIED — FULL, CERTIFIED — CONDITIONAL, or NOT CERTIFIED. Do not label the answer FULL if any load-bearing claim lacks an exact source locator, current data are stale, historical evidence crosses the cutoff, a material domain was not retrieved, a serious rival model was ignored, or unavailable proprietary information was invented. Include the 60-point certification scorecard and failed gates.
 ```
 
 > [!important] Fundamental-only boundary

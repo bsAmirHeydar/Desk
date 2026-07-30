@@ -1,3 +1,13 @@
+---
+title: "README"
+type: documentation
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
+language: en
+tags: [fundamental-only, navigation, v8-repair]
+---
 # Institutional Fundamental Macro Research OS v6.0
 
 This repository is an English-language, fundamental-only Obsidian knowledge and transformation system.

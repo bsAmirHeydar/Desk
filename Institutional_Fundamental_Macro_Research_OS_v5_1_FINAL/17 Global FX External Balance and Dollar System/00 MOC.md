@@ -1,21 +1,19 @@
 ---
 title: "17 Global FX External Balance and Dollar System"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 17-global-fx-external-balance-and-dollar-system
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 17 Global FX External Balance and Dollar System
 
-> [!map] Module map
-> Canonical notes for **17 Global FX External Balance and Dollar System**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 17 Global FX External Balance and Dollar System domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[17 Global FX External Balance and Dollar System/01 Currencies as Relative Macro Prices]]
 - [[17 Global FX External Balance and Dollar System/02 Balance of Payments for FX Trading]]
@@ -29,7 +27,3 @@ tags:
 - [[17 Global FX External Balance and Dollar System/10 Emerging-Market FX and Local Rates]]
 - [[17 Global FX External Balance and Dollar System/11 FX Options Risk Reversals and Volatility]]
 - [[17 Global FX External Balance and Dollar System/12 Dominant-Currency Pricing and Trade Transmission]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

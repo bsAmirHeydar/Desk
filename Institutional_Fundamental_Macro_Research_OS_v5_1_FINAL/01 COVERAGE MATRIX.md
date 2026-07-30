@@ -62,3 +62,5 @@ Use [[76 Institutional Fundamental Knowledge Canon Completion Program/58 Ten-of-
 ## Mega Canon v7.0 completion
 
 Releases 02–14 are implemented in [[80 Institutional Fundamental Mega Canon/00 Institutional Fundamental Mega Canon MOC]]. Each release includes domain monographs, state and driver architecture, measurement canon, causal and rival-model map, regime atlas, cross-domain translation, current and historical contracts, scenario system and an explicit ten-of-ten audit.
+
+| Scientific certification and output reliability | [[81 Final Scientific Red-Team and Analysis Certification/00 Final Scientific Red-Team and Analysis Certification MOC]] | certification gates, benchmark suites, domain scorecards and completed gap monographs |

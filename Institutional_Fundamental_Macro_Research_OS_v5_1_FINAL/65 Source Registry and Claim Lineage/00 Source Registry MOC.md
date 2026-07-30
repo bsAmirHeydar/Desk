@@ -1,22 +1,21 @@
 ---
-title: "Source Registry and Claim Lineage"
+title: "Source Registry"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 65-source-registry-and-claim-lineage
+tags: [fundamental-only, navigation, v8-repair]
 ---
-# Source Registry and Claim Lineage
+# Source Registry
 
-> [!map] Module map
-> Canonical notes for **65 Source Registry and Claim Lineage**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the Source Registry domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
+- [[65 Source Registry and Claim Lineage/00 Source Registry and Claim Lineage MOC]]
 - [[65 Source Registry and Claim Lineage/ALFRED — Federal Reserve Bank of St. Louis ALFRED]]
 - [[65 Source Registry and Claim Lineage/ATL_GDPNOW — Atlanta Fed — GDPNow]]
 - [[65 Source Registry and Claim Lineage/ATL_WAGE — Atlanta Fed — Wage Growth Tracker]]
@@ -58,6 +57,7 @@ tags:
 - [[65 Source Registry and Claim Lineage/EIA_STEO — EIA Short-Term Energy Outlook]]
 - [[65 Source Registry and Claim Lineage/EIA_WPSR — EIA Weekly Petroleum Status Report]]
 - [[65 Source Registry and Claim Lineage/ESMA — European Securities and Markets Authority]]
+- [[65 Source Registry and Claim Lineage/EU_ETS — European Commission EU Emissions Trading System]]
 - [[65 Source Registry and Claim Lineage/FCA — UK Financial Conduct Authority]]
 - [[65 Source Registry and Claim Lineage/FDIC — FDIC Bank Data and Research]]
 - [[65 Source Registry and Claim Lineage/FED_FOMC — Federal Reserve — FOMC]]
@@ -65,13 +65,17 @@ tags:
 - [[65 Source Registry and Claim Lineage/FED_H41 — Federal Reserve — H.4.1]]
 - [[65 Source Registry and Claim Lineage/FED_H8 — Federal Reserve — H.8]]
 - [[65 Source Registry and Claim Lineage/FED_MONETARY — Federal Reserve — Monetary Policy]]
+- [[65 Source Registry and Claim Lineage/FED_MRM_2026 — Federal Reserve Revised Model Risk Management Guidance]]
 - [[65 Source Registry and Claim Lineage/FED_SLOOS — Federal Reserve — SLOOS]]
 - [[65 Source Registry and Claim Lineage/FED_Z1 — Federal Reserve — Financial Accounts Z.1]]
+- [[65 Source Registry and Claim Lineage/FERC_ENERGY_PRIMER — FERC Energy Markets Primer]]
 - [[65 Source Registry and Claim Lineage/FRED — Federal Reserve Bank of St. Louis FRED]]
 - [[65 Source Registry and Claim Lineage/FRED_FINCON — FRED Financial Conditions and Stress Series]]
 - [[65 Source Registry and Claim Lineage/FSB_NBFI — Financial Stability Board NBFI Monitoring]]
 - [[65 Source Registry and Claim Lineage/GLASSNODE — Glassnode Research and Metrics]]
+- [[65 Source Registry and Claim Lineage/IAEA_NUCLEAR_FUEL — IAEA Nuclear Fuel Cycle and Uranium Sources]]
 - [[65 Source Registry and Claim Lineage/IEA_OMR — IEA Oil Market Report]]
+- [[65 Source Registry and Claim Lineage/IMF_BPM7 — IMF Balance of Payments and International Investment Position Manual Seventh Edition]]
 - [[65 Source Registry and Claim Lineage/IMF_ESR — IMF External Sector Report]]
 - [[65 Source Registry and Claim Lineage/IMF_FM — IMF Fiscal Monitor]]
 - [[65 Source Registry and Claim Lineage/IMF_GFSR — IMF Global Financial Stability Report]]
@@ -80,6 +84,8 @@ tags:
 - [[65 Source Registry and Claim Lineage/IOSCO_MRG — IOSCO Margin and Leverage Work]]
 - [[65 Source Registry and Claim Lineage/LME — London Metal Exchange Market Data]]
 - [[65 Source Registry and Claim Lineage/MSCI — MSCI Index Methodology]]
+- [[65 Source Registry and Claim Lineage/MSRB_EMMA — MSRB EMMA Municipal Disclosures and Trade Data]]
+- [[65 Source Registry and Claim Lineage/NAIC_SOLVENCY — NAIC Solvency Financial Analysis and ORSA]]
 - [[65 Source Registry and Claim Lineage/NASDAQ_INDEX — Nasdaq Index Methodology]]
 - [[65 Source Registry and Claim Lineage/NYFED_DEALERS — New York Fed — Primary Dealer Statistics]]
 - [[65 Source Registry and Claim Lineage/NYFED_GSCPI — New York Fed — GSCPI]]
@@ -95,11 +101,14 @@ tags:
 - [[65 Source Registry and Claim Lineage/RBA — Reserve Bank of Australia]]
 - [[65 Source Registry and Claim Lineage/SEC_EDGAR — SEC EDGAR]]
 - [[65 Source Registry and Claim Lineage/SEC_MARKETS — SEC Division of Trading and Markets]]
+- [[65 Source Registry and Claim Lineage/SEC_XBRL_DATA — SEC EDGAR Inline XBRL and Financial Statement Data Sets]]
 - [[65 Source Registry and Claim Lineage/SNB — Swiss National Bank]]
 - [[65 Source Registry and Claim Lineage/SPDJI — S&P Dow Jones Indices Methodology]]
 - [[65 Source Registry and Claim Lineage/TREASURY_DIRECT — TreasuryDirect Marketable Securities]]
 - [[65 Source Registry and Claim Lineage/UNCTAD — UNCTADstat]]
+- [[65 Source Registry and Claim Lineage/UNCTAD_SHIPPING — UNCTAD Review of Maritime Transport]]
 - [[65 Source Registry and Claim Lineage/USDA_DATA — USDA Economics, Statistics, and Market Information]]
+- [[65 Source Registry and Claim Lineage/USDA_WASDE — USDA World Agricultural Supply and Demand Estimates]]
 - [[65 Source Registry and Claim Lineage/UST_AUCTIONS — U.S. Treasury Auction Data]]
 - [[65 Source Registry and Claim Lineage/UST_DTS — U.S. Treasury Daily Treasury Statement]]
 - [[65 Source Registry and Claim Lineage/UST_FISCAL — U.S. Treasury Fiscal Data]]
@@ -109,7 +118,3 @@ tags:
 - [[65 Source Registry and Claim Lineage/WGC_GDT — World Gold Council Gold Demand Trends]]
 - [[65 Source Registry and Claim Lineage/WORLD_BANK — World Bank Data]]
 - [[65 Source Registry and Claim Lineage/WTO_STATS — WTO Statistics]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

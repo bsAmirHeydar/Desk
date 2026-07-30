@@ -1,21 +1,19 @@
 ---
 title: "34 Global Dollar Cross-Border Funding and Stablecoin System"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 34-global-dollar-cross-border-funding-and-stablecoin-system
+tags: [fundamental-only, navigation, v8-repair]
 ---
 # 34 Global Dollar Cross-Border Funding and Stablecoin System
 
-> [!map] Module map
-> Canonical notes for **34 Global Dollar Cross-Border Funding and Stablecoin System**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 34 Global Dollar Cross-Border Funding and Stablecoin System domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[34 Global Dollar Cross-Border Funding and Stablecoin System/01 Global Dollar Balance Sheet and Offshore Credit]]
 - [[34 Global Dollar Cross-Border Funding and Stablecoin System/02 FX Swaps Forwards and Hidden Dollar Obligations]]
@@ -25,7 +23,3 @@ tags:
 - [[34 Global Dollar Cross-Border Funding and Stablecoin System/06 Dominant-Currency Pricing and Trade Transmission]]
 - [[34 Global Dollar Cross-Border Funding and Stablecoin System/07 Stablecoins Treasury Demand and Monetary Transmission]]
 - [[34 Global Dollar Cross-Border Funding and Stablecoin System/08 Dollar Liquidity Regimes and Cross-Asset Permission]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

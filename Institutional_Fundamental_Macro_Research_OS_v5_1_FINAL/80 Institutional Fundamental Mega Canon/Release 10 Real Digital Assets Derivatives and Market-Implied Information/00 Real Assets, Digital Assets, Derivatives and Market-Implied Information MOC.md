@@ -64,3 +64,8 @@ tags: [fundamental-only, moc, release-10]
 ## Release completion rule
 
 The release is complete only when every monograph and standard passes [[80 Institutional Fundamental Mega Canon/Release 10 Real Digital Assets Derivatives and Market-Implied Information/09 Ten-of-Ten Release Audit]] and the output can be generated in both current and historical point-in-time modes without unsupported filler.
+## v8 completed gap monographs
+
+- [[80 Institutional Fundamental Mega Canon/Release 10 Real Digital Assets Derivatives and Market-Implied Information/Market-Making Dealer Economics Inventory and Capital Constraints]]
+- [[80 Institutional Fundamental Mega Canon/Release 10 Real Digital Assets Derivatives and Market-Implied Information/Securities Lending Short Interest and Borrow Markets]]
+- [[80 Institutional Fundamental Mega Canon/Release 10 Real Digital Assets Derivatives and Market-Implied Information/Volatility Supply Ecosystem Insurance and Structured Products]]

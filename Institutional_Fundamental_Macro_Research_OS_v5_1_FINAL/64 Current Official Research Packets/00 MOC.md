@@ -1,21 +1,19 @@
 ---
-title: "Current Official Research Packets"
+title: "64 Current Official Research Packets"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 64-current-official-research-packets
+tags: [fundamental-only, navigation, v8-repair]
 ---
-# Current Official Research Packets
+# 64 Current Official Research Packets
 
-> [!map] Module map
-> Canonical notes for **64 Current Official Research Packets**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the 64 Current Official Research Packets domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[64 Current Official Research Packets/01 BIS Annual Economic Report 2026 Reading Map]]
 - [[64 Current Official Research Packets/02 IMF Global Financial Stability Report April 2026 Reading Map]]
@@ -23,7 +21,3 @@ tags:
 - [[64 Current Official Research Packets/04 FSB NBFI Leverage Framework Reading Map]]
 - [[64 Current Official Research Packets/05 OFR Hedge Fund and Treasury Plumbing Reading Map]]
 - [[64 Current Official Research Packets/06 ECB Changing Monetary Transmission Reading Map]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

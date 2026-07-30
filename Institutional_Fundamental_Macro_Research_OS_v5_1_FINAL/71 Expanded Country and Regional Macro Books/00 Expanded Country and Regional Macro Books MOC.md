@@ -1,21 +1,19 @@
 ---
-title: "Expanded Country and Regional Macro Books MOC"
+title: "Expanded Country and Regional Macro Books"
 type: moc
-status: evergreen
-version: 5.0.0
-created: 2026-07-29
-updated: 2026-07-29
+status: canonical
+version: 8.0.0
+created: 2026-07-30
+updated: 2026-07-30
 language: en
-tags:
-  - moc
-  - 71-expanded-country-and-regional-macro-books
+tags: [fundamental-only, navigation, v8-repair]
 ---
-# Expanded Country and Regional Macro Books MOC
+# Expanded Country and Regional Macro Books
 
-> [!map] Module map
-> Canonical notes for **71 Expanded Country and Regional Macro Books**. Shared standards are linked from [[00 Core Standards/00 Core Standards MOC]] rather than repeated.
+> [!abstract] Scope
+> Canonical navigation for the Expanded Country and Regional Macro Books domain. Use this MOC to retrieve the relevant monographs before producing an analysis.
 
-## Notes
+## Domain notes
 
 - [[71 Expanded Country and Regional Macro Books/01 United States Institutional Macro Book]]
 - [[71 Expanded Country and Regional Macro Books/02 Euro Area Institutional Macro Book]]
@@ -42,7 +40,3 @@ tags:
 - [[71 Expanded Country and Regional Macro Books/23 Emerging-Market Sovereign Vulnerability Book]]
 - [[71 Expanded Country and Regional Macro Books/24 Frontier Markets Liquidity and Funding Book]]
 - [[71 Expanded Country and Regional Macro Books/25 Cross-Country Relative Macro Ranking Book]]
-
-## Review standard
-
-Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].

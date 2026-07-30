@@ -60,3 +60,9 @@ tags: [fundamental-only, moc, release-05]
 ## Release completion rule
 
 The release is complete only when every monograph and standard passes [[80 Institutional Fundamental Mega Canon/Release 05 Rates Treasury Repo and Inflation Markets/09 Ten-of-Ten Release Audit]] and the output can be generated in both current and historical point-in-time modes without unsupported filler.
+## v8 completed gap monographs
+
+- [[80 Institutional Fundamental Mega Canon/Release 05 Rates Treasury Repo and Inflation Markets/Municipal and Sub-Sovereign Finance]]
+- [[80 Institutional Fundamental Mega Canon/Release 05 Rates Treasury Repo and Inflation Markets/Agency MBS Pass-Throughs and Mortgage Basis]]
+- [[80 Institutional Fundamental Mega Canon/Release 05 Rates Treasury Repo and Inflation Markets/Asset-Backed Securities and Consumer Credit Securitization]]
+- [[80 Institutional Fundamental Mega Canon/Release 05 Rates Treasury Repo and Inflation Markets/Structured Credit CLO CDO and Tranche Economics]]

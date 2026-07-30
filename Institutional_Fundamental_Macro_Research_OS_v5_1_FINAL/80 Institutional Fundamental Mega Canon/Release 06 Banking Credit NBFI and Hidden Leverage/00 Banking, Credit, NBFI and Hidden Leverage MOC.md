@@ -60,3 +60,9 @@ tags: [fundamental-only, moc, release-06]
 ## Release completion rule
 
 The release is complete only when every monograph and standard passes [[80 Institutional Fundamental Mega Canon/Release 06 Banking Credit NBFI and Hidden Leverage/09 Ten-of-Ten Release Audit]] and the output can be generated in both current and historical point-in-time modes without unsupported filler.
+## v8 completed gap monographs
+
+- [[80 Institutional Fundamental Mega Canon/Release 06 Banking Credit NBFI and Hidden Leverage/Insurance Companies Solvency Reinsurance and Asset-Liability Management]]
+- [[80 Institutional Fundamental Mega Canon/Release 06 Banking Credit NBFI and Hidden Leverage/Pension Funds LDI and Long-Duration Balance Sheets]]
+- [[80 Institutional Fundamental Mega Canon/Release 06 Banking Credit NBFI and Hidden Leverage/Finance Companies Specialty Lenders and Nonbank Credit Origination]]
+- [[80 Institutional Fundamental Mega Canon/Release 06 Banking Credit NBFI and Hidden Leverage/Prime Brokerage Counterparty and Collateral Networks]]

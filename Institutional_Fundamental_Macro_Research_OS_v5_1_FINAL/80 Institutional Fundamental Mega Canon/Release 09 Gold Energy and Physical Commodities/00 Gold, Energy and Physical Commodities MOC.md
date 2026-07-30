@@ -62,3 +62,10 @@ tags: [fundamental-only, moc, release-09]
 ## Release completion rule
 
 The release is complete only when every monograph and standard passes [[80 Institutional Fundamental Mega Canon/Release 09 Gold Energy and Physical Commodities/09 Ten-of-Ten Release Audit]] and the output can be generated in both current and historical point-in-time modes without unsupported filler.
+## v8 completed gap monographs
+
+- [[80 Institutional Fundamental Mega Canon/Release 09 Gold Energy and Physical Commodities/Electricity Market Design LMP Capacity and Ancillary Services]]
+- [[80 Institutional Fundamental Mega Canon/Release 09 Gold Energy and Physical Commodities/Nuclear Fuel Cycle Uranium Conversion Enrichment and Utility Procurement]]
+- [[80 Institutional Fundamental Mega Canon/Release 09 Gold Energy and Physical Commodities/Carbon Allowance Markets Offsets and Policy Design]]
+- [[80 Institutional Fundamental Mega Canon/Release 09 Gold Energy and Physical Commodities/Agricultural Balance Sheets Basis Storage and Weather Risk]]
+- [[80 Institutional Fundamental Mega Canon/Release 09 Gold Energy and Physical Commodities/Shipping Freight Charter Rates and Chokepoint Economics]]

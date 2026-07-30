@@ -36,3 +36,7 @@ tags: [institutional-analysis, fundamental-only, analysis-canon]
 ## Governing principle
 
 The Vault is complete only when its knowledge can populate these analysis objects without generic filler, hidden assumptions, horizon leakage or unsupported certainty.
+
+## Final certification layer
+
+- [[81 Final Scientific Red-Team and Analysis Certification/00 Final Scientific Red-Team and Analysis Certification MOC]]
