@@ -16,8 +16,8 @@ canonical_url: "https://www.bls.gov/news.release/empsit.htm"
 # BLS_EMP — US BLS — Employment Situation
 
 > [!source] Canonical institutional source
-> **Source key:** `BLS_EMP`  
-> **Publisher/resource:** US BLS — Employment Situation  
+> **Source key:** `BLS_EMP`
+> **Publisher/resource:** US BLS — Employment Situation
 > **Canonical URL:** `https://www.bls.gov/news.release/empsit.htm`
 
 ## Permitted use

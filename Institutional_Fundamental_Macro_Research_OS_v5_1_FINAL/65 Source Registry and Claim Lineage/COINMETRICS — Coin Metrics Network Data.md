@@ -16,8 +16,8 @@ canonical_url: "https://coinmetrics.io/community-network-data/"
 # COINMETRICS — Coin Metrics Network Data
 
 > [!source] Canonical institutional source
-> **Source key:** `COINMETRICS`  
-> **Publisher/resource:** Coin Metrics Network Data  
+> **Source key:** `COINMETRICS`
+> **Publisher/resource:** Coin Metrics Network Data
 > **Canonical URL:** `https://coinmetrics.io/community-network-data/`
 
 ## Permitted use

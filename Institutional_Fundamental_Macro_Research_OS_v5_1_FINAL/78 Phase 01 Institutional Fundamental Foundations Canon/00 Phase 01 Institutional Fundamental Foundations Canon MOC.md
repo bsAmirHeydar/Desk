@@ -18,13 +18,13 @@ tags: [institutional-analysis, fundamental-only, analysis-canon]
 
 | Subphase | Capability |
 |---|---|
-| [[78 Phase 01 Institutional Fundamental Foundations Canon/01 Fundamental Science and Ontology/00 MOC|01 Ontology]] | Defines research objects, boundaries, units, stocks, flows, states, regimes, expectations, valuation and payoff. |
-| [[78 Phase 01 Institutional Fundamental Foundations Canon/02 Epistemology Measurement and Evidence/00 MOC|02 Evidence]] | Separates facts, measurements, estimates, models, judgments and unknowns; controls vintage, provenance, bias and falsification. |
-| [[78 Phase 01 Institutional Fundamental Foundations Canon/03 Causality Identification and Information/00 MOC|03 Causality]] | Builds causal questions, counterfactuals, reaction functions, transmission chains, feedback and rival explanations. |
-| [[78 Phase 01 Institutional Fundamental Foundations Canon/04 Probability Bayesian Forecasting and Decision/00 MOC|04 Probability]] | Represents uncertainty, priors, likelihoods, distributions, dependence, loss and robust conclusions. |
-| [[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/00 MOC|05 Competing models]] | Preserves coherent rival models, institutional traditions, reflexivity and model endogeneity. |
-| [[78 Phase 01 Institutional Fundamental Foundations Canon/06 Multihorizon Synthesis and Institutional Conclusions/00 MOC|06 Multihorizon synthesis]] | Integrates horizons, half-lives, pricing, valuation, carry, regimes, scenarios, confidence, invalidation and expiry. |
-| [[78 Phase 01 Institutional Fundamental Foundations Canon/07 Research Practice and Adversarial Validation Laboratory/00 MOC|07 Research control and output testing]] | Defines claim-evidence, model, contradiction, historical-reconstruction, committee and analysis-output controls. |
+| [[78 Phase 01 Institutional Fundamental Foundations Canon/01 Fundamental Science and Ontology/00 01 Fundamental Science and Ontology MOC|01 Ontology]] | Defines research objects, boundaries, units, stocks, flows, states, regimes, expectations, valuation and payoff. |
+| [[78 Phase 01 Institutional Fundamental Foundations Canon/02 Epistemology Measurement and Evidence/00 02 Epistemology Measurement and Evidence MOC|02 Evidence]] | Separates facts, measurements, estimates, models, judgments and unknowns; controls vintage, provenance, bias and falsification. |
+| [[78 Phase 01 Institutional Fundamental Foundations Canon/03 Causality Identification and Information/00 03 Causality Identification and Information MOC|03 Causality]] | Builds causal questions, counterfactuals, reaction functions, transmission chains, feedback and rival explanations. |
+| [[78 Phase 01 Institutional Fundamental Foundations Canon/04 Probability Bayesian Forecasting and Decision/00 04 Probability Bayesian Forecasting and Decision MOC|04 Probability]] | Represents uncertainty, priors, likelihoods, distributions, dependence, loss and robust conclusions. |
+| [[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/00 05 Competing Models Reflexivity and Pluralism MOC|05 Competing models]] | Preserves coherent rival models, institutional traditions, reflexivity and model endogeneity. |
+| [[78 Phase 01 Institutional Fundamental Foundations Canon/06 Multihorizon Synthesis and Institutional Conclusions/00 06 Multihorizon Synthesis and Institutional Conclusions MOC|06 Multihorizon synthesis]] | Integrates horizons, half-lives, pricing, valuation, carry, regimes, scenarios, confidence, invalidation and expiry. |
+| [[78 Phase 01 Institutional Fundamental Foundations Canon/07 Research Practice and Adversarial Validation Laboratory/00 07 Research Practice and Adversarial Validation Laboratory MOC|07 Research control and output testing]] | Defines claim-evidence, model, contradiction, historical-reconstruction, committee and analysis-output controls. |
 
 ## Canonical institutional inference chain
 

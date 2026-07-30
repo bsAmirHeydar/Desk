@@ -16,8 +16,8 @@ canonical_url: "https://www.fca.org.uk/"
 # FCA — UK Financial Conduct Authority
 
 > [!source] Canonical institutional source
-> **Source key:** `FCA`  
-> **Publisher/resource:** UK Financial Conduct Authority  
+> **Source key:** `FCA`
+> **Publisher/resource:** UK Financial Conduct Authority
 > **Canonical URL:** `https://www.fca.org.uk/`
 
 ## Permitted use

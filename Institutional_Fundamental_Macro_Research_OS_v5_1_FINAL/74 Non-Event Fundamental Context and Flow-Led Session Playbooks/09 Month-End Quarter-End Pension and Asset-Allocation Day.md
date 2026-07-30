@@ -14,7 +14,7 @@ tags:
 # 09 Month-End Quarter-End Pension and Asset-Allocation Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** benchmark drift, pension hedging, reserve management, and fund rebalancing can create predictable but uncertain demand.  
+> **Session hypothesis:** benchmark drift, pension hedging, reserve management, and fund rebalancing can create predictable but uncertain demand.
 > The absence of a top-tier release does not imply the absence of fundamental information. **09 Month-End Quarter-End Pension and Asset-Allocation Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

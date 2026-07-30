@@ -16,8 +16,8 @@ canonical_url: "https://www.cmegroup.com/markets/interest-rates.html"
 # CME_RATES — CME Interest Rate Products
 
 > [!source] Canonical institutional source
-> **Source key:** `CME_RATES`  
-> **Publisher/resource:** CME Interest Rate Products  
+> **Source key:** `CME_RATES`
+> **Publisher/resource:** CME Interest Rate Products
 > **Canonical URL:** `https://www.cmegroup.com/markets/interest-rates.html`
 
 ## Permitted use

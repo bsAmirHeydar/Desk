@@ -116,8 +116,8 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[14 Macro Accounting and Stock-Flow Systems/00 MOC]]
-- [[33 Household Corporate and Sector Balance Sheets/00 MOC]]
+- [[14 Macro Accounting and Stock-Flow Systems/00 14 Macro Accounting and Stock-Flow Systems MOC]]
+- [[33 Household Corporate and Sector Balance Sheets/00 33 Household Corporate and Sector Balance Sheets MOC]]
 
 ---
 

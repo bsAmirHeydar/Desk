@@ -2,7 +2,7 @@
 title: "Institutional Fundamental Coverage and Production Maturity Matrix"
 type: coverage-matrix
 status: active
-version: 6.3.0
+version: 10.0.0
 created: 2026-07-29
 updated: 2026-07-30
 language: en
@@ -61,6 +61,21 @@ Use [[76 Institutional Fundamental Knowledge Canon Completion Program/58 Ten-of-
 
 ## Mega Canon v7.0 completion
 
-Releases 02–14 are implemented in [[80 Institutional Fundamental Mega Canon/00 Institutional Fundamental Mega Canon MOC]]. Each release includes domain monographs, state and driver architecture, measurement canon, causal and rival-model map, regime atlas, cross-domain translation, current and historical contracts, scenario system and an explicit ten-of-ten audit.
+Releases 02–14 are implemented in [[80 Deprecated Mega Canon v7 Redirects/00 Deprecated Mega Canon v7 Redirects MOC]]. Each release includes domain monographs, state and driver architecture, measurement canon, causal and rival-model map, regime atlas, cross-domain translation, current and historical contracts, scenario system and an explicit ten-of-ten audit.
 
-| Scientific certification and output reliability | [[81 Final Scientific Red-Team and Analysis Certification/00 Final Scientific Red-Team and Analysis Certification MOC]] | certification gates, benchmark suites, domain scorecards and completed gap monographs |
+| Scientific certification and output reliability | [[81 Scientific QA and Certification Framework/00 Scientific QA and Certification Framework MOC]] | certification gates, benchmark suites, domain scorecards and completed gap monographs |
+
+
+## V9 canonical analysis system
+
+- [[82 Canonical Institutional Fundamental Research Library/00 Canonical Institutional Fundamental Research Library MOC]] — default high-density analytical library.
+- [[83 Golden Benchmark and Historical Dossier Library/00 Golden Benchmark and Historical Dossier Library MOC]] — 30 internal golden reference packets.
+- [[84 Canonical Retrieval Evidence and Version Control/00 Canonical Retrieval Evidence and Version Control MOC]] — staged retrieval, evidence and version governance.
+- [[81 Scientific QA and Certification Framework/00 Scientific QA and Certification Framework MOC]] — internal QA framework; external certification is not claimed.
+
+## V10 deep canonical remediation
+
+- [[82 Canonical Institutional Fundamental Research Library/00 Canonical Institutional Fundamental Research Library MOC]] — consolidated primary canon.
+- [[85 Specialist Canonical Research Appendices/00 Specialist Canonical Research Appendices MOC]] — specialist legal, industry, instrument and physical-system canon.
+- [[83 Golden Benchmark and Historical Dossier Library/00 Golden Benchmark and Historical Dossier Library MOC]] — 30 executed internal reference answers.
+- [[86 Internal Benchmark Execution and Adjudication/00 Internal Benchmark Execution and Adjudication MOC]] — deterministic checks and explicit external-review boundary.

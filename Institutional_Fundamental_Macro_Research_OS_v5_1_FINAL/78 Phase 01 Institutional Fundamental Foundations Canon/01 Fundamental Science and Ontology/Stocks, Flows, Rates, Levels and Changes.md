@@ -116,7 +116,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 ## Related canon
 
 - [[12 Reference/02 Formula and Identity Sheet]]
-- [[15 Nowcasting Forecasting and Data Interpretation/00 MOC]]
+- [[15 Nowcasting Forecasting and Data Interpretation/00 15 Nowcasting Forecasting and Data Interpretation MOC]]
 
 ---
 

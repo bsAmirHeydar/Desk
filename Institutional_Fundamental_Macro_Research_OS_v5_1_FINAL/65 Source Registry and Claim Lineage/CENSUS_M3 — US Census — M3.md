@@ -16,8 +16,8 @@ canonical_url: "https://www.census.gov/manufacturing/m3/"
 # CENSUS_M3 — US Census — M3
 
 > [!source] Canonical institutional source
-> **Source key:** `CENSUS_M3`  
-> **Publisher/resource:** US Census — M3  
+> **Source key:** `CENSUS_M3`
+> **Publisher/resource:** US Census — M3
 > **Canonical URL:** `https://www.census.gov/manufacturing/m3/`
 
 ## Permitted use

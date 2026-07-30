@@ -1,11 +1,14 @@
 ---
 title: "Revision Analysis and Vintage Control"
 type: field-guide
-status: evergreen
+status: supporting-legacy
 version: 5.0.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
+retrieval_priority: 10
+default_retrieval: false
+canonical_registry: "[[82 Canonical Institutional Fundamental Research Library/00 Canonical Institutional Fundamental Research Library MOC]]"
 tags:
   - 15-nowcasting-forecasting-and-data-interpretation
   - revision-analysis-and-vintage-control

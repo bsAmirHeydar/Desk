@@ -16,8 +16,8 @@ canonical_url: "https://www.bea.gov/data/personal-consumption-expenditures-price
 # BEA_PCE — US BEA — PCE Price Index
 
 > [!source] Canonical institutional source
-> **Source key:** `BEA_PCE`  
-> **Publisher/resource:** US BEA — PCE Price Index  
+> **Source key:** `BEA_PCE`
+> **Publisher/resource:** US BEA — PCE Price Index
 > **Canonical URL:** `https://www.bea.gov/data/personal-consumption-expenditures-price-index`
 
 ## Permitted use

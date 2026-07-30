@@ -14,7 +14,7 @@ tags:
 # 06 Credit-Led Risk Repricing Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** credit spreads, bank funding, issuance, or idiosyncratic default information can lead equities and FX.  
+> **Session hypothesis:** credit spreads, bank funding, issuance, or idiosyncratic default information can lead equities and FX.
 > The absence of a top-tier release does not imply the absence of fundamental information. **06 Credit-Led Risk Repricing Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

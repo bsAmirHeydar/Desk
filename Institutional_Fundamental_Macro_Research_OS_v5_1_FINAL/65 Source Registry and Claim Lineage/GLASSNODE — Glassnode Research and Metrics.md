@@ -16,8 +16,8 @@ canonical_url: "https://glassnode.com/"
 # GLASSNODE — Glassnode Research and Metrics
 
 > [!source] Canonical institutional source
-> **Source key:** `GLASSNODE`  
-> **Publisher/resource:** Glassnode Research and Metrics  
+> **Source key:** `GLASSNODE`
+> **Publisher/resource:** Glassnode Research and Metrics
 > **Canonical URL:** `https://glassnode.com/`
 
 ## Permitted use

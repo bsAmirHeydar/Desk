@@ -16,8 +16,8 @@ canonical_url: "https://www.newyorkfed.org/research/data_indicators/term-premia-
 # NYFED_TERM_PREMIA — New York Fed — Term Premia
 
 > [!source] Canonical institutional source
-> **Source key:** `NYFED_TERM_PREMIA`  
-> **Publisher/resource:** New York Fed — Term Premia  
+> **Source key:** `NYFED_TERM_PREMIA`
+> **Publisher/resource:** New York Fed — Term Premia
 > **Canonical URL:** `https://www.newyorkfed.org/research/data_indicators/term-premia-tabs`
 
 ## Permitted use

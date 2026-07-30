@@ -1,11 +1,14 @@
 ---
 title: "Time-Series Cross-Section and Panel Design"
 type: field-guide
-status: evergreen
+status: supporting-legacy
 version: 5.0.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
+retrieval_priority: 10
+default_retrieval: false
+canonical_registry: "[[82 Canonical Institutional Fundamental Research Library/00 Canonical Institutional Fundamental Research Library MOC]]"
 tags:
   - 53-research-statistics-forecasting-and-causal-inference
   - time-series-cross-section-and-panel-design

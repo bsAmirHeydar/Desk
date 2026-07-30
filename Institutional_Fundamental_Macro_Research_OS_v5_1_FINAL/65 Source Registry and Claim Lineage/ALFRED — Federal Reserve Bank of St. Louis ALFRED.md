@@ -16,8 +16,8 @@ canonical_url: "https://alfred.stlouisfed.org/"
 # ALFRED — Federal Reserve Bank of St. Louis ALFRED
 
 > [!source] Canonical institutional source
-> **Source key:** `ALFRED`  
-> **Publisher/resource:** Federal Reserve Bank of St. Louis ALFRED  
+> **Source key:** `ALFRED`
+> **Publisher/resource:** Federal Reserve Bank of St. Louis ALFRED
 > **Canonical URL:** `https://alfred.stlouisfed.org/`
 
 ## Permitted use

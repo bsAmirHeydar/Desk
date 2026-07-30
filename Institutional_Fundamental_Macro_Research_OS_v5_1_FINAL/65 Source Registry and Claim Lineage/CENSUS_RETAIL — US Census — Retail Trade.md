@@ -16,8 +16,8 @@ canonical_url: "https://www.census.gov/retail/index.html"
 # CENSUS_RETAIL — US Census — Retail Trade
 
 > [!source] Canonical institutional source
-> **Source key:** `CENSUS_RETAIL`  
-> **Publisher/resource:** US Census — Retail Trade  
+> **Source key:** `CENSUS_RETAIL`
+> **Publisher/resource:** US Census — Retail Trade
 > **Canonical URL:** `https://www.census.gov/retail/index.html`
 
 ## Permitted use

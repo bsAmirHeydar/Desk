@@ -16,8 +16,8 @@ canonical_url: "https://www.treasurydirect.gov/auctions/announcements-data-resul
 # UST_AUCTIONS — U.S. Treasury Auction Data
 
 > [!source] Canonical institutional source
-> **Source key:** `UST_AUCTIONS`  
-> **Publisher/resource:** U.S. Treasury Auction Data  
+> **Source key:** `UST_AUCTIONS`
+> **Publisher/resource:** U.S. Treasury Auction Data
 > **Canonical URL:** `https://www.treasurydirect.gov/auctions/announcements-data-results/`
 
 ## Permitted use

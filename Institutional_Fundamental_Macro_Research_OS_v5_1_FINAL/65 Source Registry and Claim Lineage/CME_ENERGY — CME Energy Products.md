@@ -16,8 +16,8 @@ canonical_url: "https://www.cmegroup.com/markets/energy.html"
 # CME_ENERGY — CME Energy Products
 
 > [!source] Canonical institutional source
-> **Source key:** `CME_ENERGY`  
-> **Publisher/resource:** CME Energy Products  
+> **Source key:** `CME_ENERGY`
+> **Publisher/resource:** CME Energy Products
 > **Canonical URL:** `https://www.cmegroup.com/markets/energy.html`
 
 ## Permitted use

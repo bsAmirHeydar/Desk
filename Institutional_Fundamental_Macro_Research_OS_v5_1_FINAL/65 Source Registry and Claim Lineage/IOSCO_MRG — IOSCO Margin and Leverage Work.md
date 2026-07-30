@@ -16,8 +16,8 @@ canonical_url: "https://www.iosco.org/library/index.cfm?section=pubdocs"
 # IOSCO_MRG — IOSCO Margin and Leverage Work
 
 > [!source] Canonical institutional source
-> **Source key:** `IOSCO_MRG`  
-> **Publisher/resource:** IOSCO Margin and Leverage Work  
+> **Source key:** `IOSCO_MRG`
+> **Publisher/resource:** IOSCO Margin and Leverage Work
 > **Canonical URL:** `https://www.iosco.org/library/index.cfm?section=pubdocs`
 
 ## Permitted use

@@ -16,8 +16,8 @@ canonical_url: "https://www.bankofengland.co.uk/statistics/yield-curves"
 # BOE_YIELD_CURVES — Bank of England Yield Curves
 
 > [!source] Canonical institutional source
-> **Source key:** `BOE_YIELD_CURVES`  
-> **Publisher/resource:** Bank of England Yield Curves  
+> **Source key:** `BOE_YIELD_CURVES`
+> **Publisher/resource:** Bank of England Yield Curves
 > **Canonical URL:** `https://www.bankofengland.co.uk/statistics/yield-curves`
 
 ## Permitted use

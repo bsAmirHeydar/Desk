@@ -1,11 +1,14 @@
 ---
 title: "2015 2016 China Devaluation and Commodity Stress"
 type: field-guide
-status: evergreen
+status: supporting-legacy
 version: 5.0.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
+retrieval_priority: 10
+default_retrieval: false
+canonical_registry: "[[82 Canonical Institutional Fundamental Research Library/00 Canonical Institutional Fundamental Research Library MOC]]"
 tags:
   - 60-historical-case-studies-failure-modes-and-analogues
   - 2015-2016-china-devaluation-and-commodity-stress

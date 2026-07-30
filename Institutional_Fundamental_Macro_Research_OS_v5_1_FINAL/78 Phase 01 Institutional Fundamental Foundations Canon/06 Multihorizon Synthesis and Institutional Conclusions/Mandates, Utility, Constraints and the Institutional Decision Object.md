@@ -114,8 +114,8 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[22 Portfolio Construction Risk and Governance/00 MOC]]
-- [[51 Portfolio Construction Factor Risk and Capital Allocation/00 MOC]]
+- [[22 Portfolio Construction Risk and Governance/00 22 Portfolio Construction Risk and Governance MOC]]
+- [[51 Portfolio Construction Factor Risk and Capital Allocation/00 51 Portfolio Construction Factor Risk and Capital Allocation MOC]]
 - [[00 Core Standards/01 Research Object and Decision Contract]]
 
 ---

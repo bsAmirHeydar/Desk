@@ -16,8 +16,8 @@ canonical_url: "https://www.census.gov/foreign-trade/"
 # CENSUS_TRADE — US Census — Foreign Trade
 
 > [!source] Canonical institutional source
-> **Source key:** `CENSUS_TRADE`  
-> **Publisher/resource:** US Census — Foreign Trade  
+> **Source key:** `CENSUS_TRADE`
+> **Publisher/resource:** US Census — Foreign Trade
 > **Canonical URL:** `https://www.census.gov/foreign-trade/`
 
 ## Permitted use

@@ -1,11 +1,14 @@
 ---
 title: "People Bank of China Credit FX and Administrative Transmission"
 type: field-guide
-status: evergreen
+status: supporting-legacy
 version: 5.0.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
+retrieval_priority: 10
+default_retrieval: false
+canonical_registry: "[[82 Canonical Institutional Fundamental Research Library/00 Canonical Institutional Fundamental Research Library MOC]]"
 tags:
   - 30-comparative-central-bank-reaction-functions
   - people-bank-of-china-credit-fx-and-administrative-transmission

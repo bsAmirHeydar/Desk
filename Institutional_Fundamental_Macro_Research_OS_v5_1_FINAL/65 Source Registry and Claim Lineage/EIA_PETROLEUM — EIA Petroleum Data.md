@@ -16,8 +16,8 @@ canonical_url: "https://www.eia.gov/petroleum/data.php"
 # EIA_PETROLEUM — EIA Petroleum Data
 
 > [!source] Canonical institutional source
-> **Source key:** `EIA_PETROLEUM`  
-> **Publisher/resource:** EIA Petroleum Data  
+> **Source key:** `EIA_PETROLEUM`
+> **Publisher/resource:** EIA Petroleum Data
 > **Canonical URL:** `https://www.eia.gov/petroleum/data.php`
 
 ## Permitted use

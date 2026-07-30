@@ -106,7 +106,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[56 Investment Committee Organization Governance and Incentives/00 MOC]]
+- [[56 Investment Committee Organization Governance and Incentives/00 56 Investment Committee Organization Governance and Incentives MOC]]
 - [[25 Institutional Templates/01 CIO Weekly Risk Memo Template]]
 
 ---

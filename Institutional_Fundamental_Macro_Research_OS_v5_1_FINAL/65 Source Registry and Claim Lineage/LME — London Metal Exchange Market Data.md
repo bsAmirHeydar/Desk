@@ -16,8 +16,8 @@ canonical_url: "https://www.lme.com/en/Market-data"
 # LME — London Metal Exchange Market Data
 
 > [!source] Canonical institutional source
-> **Source key:** `LME`  
-> **Publisher/resource:** London Metal Exchange Market Data  
+> **Source key:** `LME`
+> **Publisher/resource:** London Metal Exchange Market Data
 > **Canonical URL:** `https://www.lme.com/en/Market-data`
 
 ## Permitted use

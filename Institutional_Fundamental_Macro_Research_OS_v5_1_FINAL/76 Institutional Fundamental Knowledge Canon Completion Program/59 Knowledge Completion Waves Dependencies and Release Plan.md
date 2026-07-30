@@ -87,4 +87,4 @@ A release is complete only when:
 
 ## Mega Canon release
 
-All Releases 02–14 are implemented in [[80 Institutional Fundamental Mega Canon/00 Institutional Fundamental Mega Canon MOC]]. Completion denotes the knowledge and analysis canon; independent live use-case validation remains an ongoing governance activity.
+All Releases 02–14 are implemented in [[80 Deprecated Mega Canon v7 Redirects/00 Deprecated Mega Canon v7 Redirects MOC]]. Completion denotes the knowledge and analysis canon; independent live use-case validation remains an ongoing governance activity.

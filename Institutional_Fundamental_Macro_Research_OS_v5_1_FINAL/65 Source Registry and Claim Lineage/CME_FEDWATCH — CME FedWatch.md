@@ -16,8 +16,8 @@ canonical_url: "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-too
 # CME_FEDWATCH — CME FedWatch
 
 > [!source] Canonical institutional source
-> **Source key:** `CME_FEDWATCH`  
-> **Publisher/resource:** CME FedWatch  
+> **Source key:** `CME_FEDWATCH`
+> **Publisher/resource:** CME FedWatch
 > **Canonical URL:** `https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html`
 
 ## Permitted use

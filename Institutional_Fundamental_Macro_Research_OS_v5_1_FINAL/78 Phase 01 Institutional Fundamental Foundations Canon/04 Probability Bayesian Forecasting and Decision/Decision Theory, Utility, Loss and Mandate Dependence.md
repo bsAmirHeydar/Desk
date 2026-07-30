@@ -114,8 +114,8 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[22 Portfolio Construction Risk and Governance/00 MOC]]
-- [[50 Scenario Intelligence Wargaming and Tail Systems/00 MOC]]
+- [[22 Portfolio Construction Risk and Governance/00 22 Portfolio Construction Risk and Governance MOC]]
+- [[50 Scenario Intelligence Wargaming and Tail Systems/00 50 Scenario Intelligence Wargaming and Tail Systems MOC]]
 
 ---
 

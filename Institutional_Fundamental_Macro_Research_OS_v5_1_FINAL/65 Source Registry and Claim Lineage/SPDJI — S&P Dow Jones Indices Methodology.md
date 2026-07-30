@@ -16,8 +16,8 @@ canonical_url: "https://www.spglobal.com/spdji/en/documents/methodologies/"
 # SPDJI — S&P Dow Jones Indices Methodology
 
 > [!source] Canonical institutional source
-> **Source key:** `SPDJI`  
-> **Publisher/resource:** S&P Dow Jones Indices Methodology  
+> **Source key:** `SPDJI`
+> **Publisher/resource:** S&P Dow Jones Indices Methodology
 > **Canonical URL:** `https://www.spglobal.com/spdji/en/documents/methodologies/`
 
 ## Permitted use

@@ -16,8 +16,8 @@ canonical_url: "https://www.ecb.europa.eu/"
 # ECB — European Central Bank
 
 > [!source] Canonical institutional source
-> **Source key:** `ECB`  
-> **Publisher/resource:** European Central Bank  
+> **Source key:** `ECB`
+> **Publisher/resource:** European Central Bank
 > **Canonical URL:** `https://www.ecb.europa.eu/`
 
 ## Permitted use

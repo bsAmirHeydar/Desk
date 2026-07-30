@@ -16,8 +16,8 @@ canonical_url: "https://www.federalreserve.gov/data/sloos.htm"
 # FED_SLOOS — Federal Reserve — SLOOS
 
 > [!source] Canonical institutional source
-> **Source key:** `FED_SLOOS`  
-> **Publisher/resource:** Federal Reserve — SLOOS  
+> **Source key:** `FED_SLOOS`
+> **Publisher/resource:** Federal Reserve — SLOOS
 > **Canonical URL:** `https://www.federalreserve.gov/data/sloos.htm`
 
 ## Permitted use

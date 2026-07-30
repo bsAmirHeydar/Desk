@@ -115,7 +115,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 ## Related canon
 
 - [[01 Causal Engine/00 Causal Engine MOC]]
-- [[17 Global FX External Balance and Dollar System/00 MOC]]
+- [[17 Global FX External Balance and Dollar System/00 17 Global FX External Balance and Dollar System MOC]]
 
 ---
 

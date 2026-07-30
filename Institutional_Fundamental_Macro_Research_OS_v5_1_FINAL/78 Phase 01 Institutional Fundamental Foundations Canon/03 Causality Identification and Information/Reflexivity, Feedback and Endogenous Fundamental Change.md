@@ -115,7 +115,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 ## Related canon
 
 - [[01 Causal Engine/08 Reflexivity Feedback and Nonlinearity]]
-- [[31 Banking System and Deposit-Credit Intelligence/00 MOC]]
+- [[31 Banking System and Deposit-Credit Intelligence/00 31 Banking System and Deposit-Credit Intelligence MOC]]
 
 ---
 

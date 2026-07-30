@@ -16,8 +16,8 @@ canonical_url: "https://www.bls.gov/cpi/"
 # BLS_CPI — US BLS — CPI
 
 > [!source] Canonical institutional source
-> **Source key:** `BLS_CPI`  
-> **Publisher/resource:** US BLS — CPI  
+> **Source key:** `BLS_CPI`
+> **Publisher/resource:** US BLS — CPI
 > **Canonical URL:** `https://www.bls.gov/cpi/`
 
 ## Permitted use

@@ -14,7 +14,7 @@ tags:
 # 10 Index Rebalance Passive Flow and Closing Auction Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** index additions, deletions, float changes, and benchmark replication concentrate flow near defined windows.  
+> **Session hypothesis:** index additions, deletions, float changes, and benchmark replication concentrate flow near defined windows.
 > The absence of a top-tier release does not imply the absence of fundamental information. **10 Index Rebalance Passive Flow and Closing Auction Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

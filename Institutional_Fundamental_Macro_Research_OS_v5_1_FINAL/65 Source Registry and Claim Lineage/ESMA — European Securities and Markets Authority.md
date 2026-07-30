@@ -16,8 +16,8 @@ canonical_url: "https://www.esma.europa.eu/"
 # ESMA — European Securities and Markets Authority
 
 > [!source] Canonical institutional source
-> **Source key:** `ESMA`  
-> **Publisher/resource:** European Securities and Markets Authority  
+> **Source key:** `ESMA`
+> **Publisher/resource:** European Securities and Markets Authority
 > **Canonical URL:** `https://www.esma.europa.eu/`
 
 ## Permitted use

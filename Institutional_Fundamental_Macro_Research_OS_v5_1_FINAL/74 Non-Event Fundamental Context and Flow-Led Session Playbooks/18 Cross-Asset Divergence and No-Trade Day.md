@@ -14,7 +14,7 @@ tags:
 # 18 Cross-Asset Divergence and No-Trade Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** contradictory leaders can indicate multiple shocks, stale prices, or flow domination rather than a clean edge.  
+> **Session hypothesis:** contradictory leaders can indicate multiple shocks, stale prices, or flow domination rather than a clean edge.
 > The absence of a top-tier release does not imply the absence of fundamental information. **18 Cross-Asset Divergence and No-Trade Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

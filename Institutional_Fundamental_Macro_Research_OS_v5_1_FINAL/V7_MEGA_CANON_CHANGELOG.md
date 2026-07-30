@@ -11,7 +11,7 @@ tags: [changelog, fundamental-only]
 
 # v7.0 Mega Canon Changelog
 
-- Added the complete [[80 Institutional Fundamental Mega Canon/00 Institutional Fundamental Mega Canon MOC]].
+- Added the complete [[80 Deprecated Mega Canon v7 Redirects/00 Deprecated Mega Canon v7 Redirects MOC]].
 - Completed Releases 02–14 as modular analysis canons.
 - Added 172 domain monographs and 117 release standards.
 - Added global query routing, evidence, multihorizon synthesis and final scorecard notes.

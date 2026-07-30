@@ -16,8 +16,8 @@ canonical_url: "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.ht
 # CFTC_COT — CFTC Commitments of Traders
 
 > [!source] Canonical institutional source
-> **Source key:** `CFTC_COT`  
-> **Publisher/resource:** CFTC Commitments of Traders  
+> **Source key:** `CFTC_COT`
+> **Publisher/resource:** CFTC Commitments of Traders
 > **Canonical URL:** `https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm`
 
 ## Permitted use

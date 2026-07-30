@@ -1,25 +1,15 @@
----
-title: "V8 Final Scientific Certification Patch Validation"
-type: validation-report
-status: canonical
-version: 8.0.0
-created: 2026-07-30
-updated: 2026-07-30
-language: en
-tags: [validation, scientific-certification]
----
 # V8 Final Scientific Certification Patch Validation
 
 ## Result
 
-**PASS**
+**FAIL**
 
 ## Merged Vault metrics
 
 | Metric | Result |
 |---|---:|
-| Markdown notes | 1,553 |
-| Approximate words | 1,253,150 |
+| Markdown notes | 1,554 |
+| Approximate words | 1,253,365 |
 | Obsidian wikilinks | 15,729 |
 | Equation blocks | 2,172 |
 | New certification notes | 50 |
@@ -27,7 +17,7 @@ tags: [validation, scientific-certification]
 | Patch files | 167 |
 | Broken links | 0 |
 | Ambiguous links | 0 |
-| Frontmatter errors | 0 |
+| Frontmatter errors | 1 |
 | Code-fence errors | 0 |
 | Math-fence errors | 0 |
 | Empty files | 0 |

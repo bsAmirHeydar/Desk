@@ -16,8 +16,8 @@ canonical_url: "https://www.gold.org/goldhub/research/gold-demand-trends"
 # WGC_GDT — World Gold Council Gold Demand Trends
 
 > [!source] Canonical institutional source
-> **Source key:** `WGC_GDT`  
-> **Publisher/resource:** World Gold Council Gold Demand Trends  
+> **Source key:** `WGC_GDT`
+> **Publisher/resource:** World Gold Council Gold Demand Trends
 > **Canonical URL:** `https://www.gold.org/goldhub/research/gold-demand-trends`
 
 ## Permitted use

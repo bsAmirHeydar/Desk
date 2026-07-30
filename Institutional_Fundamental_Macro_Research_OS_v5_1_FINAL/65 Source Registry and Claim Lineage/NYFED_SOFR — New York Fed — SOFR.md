@@ -16,8 +16,8 @@ canonical_url: "https://www.newyorkfed.org/markets/reference-rates/sofr"
 # NYFED_SOFR — New York Fed — SOFR
 
 > [!source] Canonical institutional source
-> **Source key:** `NYFED_SOFR`  
-> **Publisher/resource:** New York Fed — SOFR  
+> **Source key:** `NYFED_SOFR`
+> **Publisher/resource:** New York Fed — SOFR
 > **Canonical URL:** `https://www.newyorkfed.org/markets/reference-rates/sofr`
 
 ## Permitted use

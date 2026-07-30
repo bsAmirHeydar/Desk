@@ -16,8 +16,8 @@ canonical_url: "https://www.bea.gov/resources/methodologies/nipa-handbook"
 # BEA_NIPA — US BEA — NIPA Handbook
 
 > [!source] Canonical institutional source
-> **Source key:** `BEA_NIPA`  
-> **Publisher/resource:** US BEA — NIPA Handbook  
+> **Source key:** `BEA_NIPA`
+> **Publisher/resource:** US BEA — NIPA Handbook
 > **Canonical URL:** `https://www.bea.gov/resources/methodologies/nipa-handbook`
 
 ## Permitted use

@@ -16,8 +16,8 @@ canonical_url: "https://www.iosco.org/"
 # IOSCO — International Organization of Securities Commissions
 
 > [!source] Canonical institutional source
-> **Source key:** `IOSCO`  
-> **Publisher/resource:** International Organization of Securities Commissions  
+> **Source key:** `IOSCO`
+> **Publisher/resource:** International Organization of Securities Commissions
 > **Canonical URL:** `https://www.iosco.org/`
 
 ## Permitted use

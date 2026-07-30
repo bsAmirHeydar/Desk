@@ -16,8 +16,8 @@ canonical_url: "https://home.treasury.gov/policy-issues/financing-the-government
 # UST_REFUNDING — U.S. Treasury Quarterly Refunding
 
 > [!source] Canonical institutional source
-> **Source key:** `UST_REFUNDING`  
-> **Publisher/resource:** U.S. Treasury Quarterly Refunding  
+> **Source key:** `UST_REFUNDING`
+> **Publisher/resource:** U.S. Treasury Quarterly Refunding
 > **Canonical URL:** `https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding`
 
 ## Permitted use

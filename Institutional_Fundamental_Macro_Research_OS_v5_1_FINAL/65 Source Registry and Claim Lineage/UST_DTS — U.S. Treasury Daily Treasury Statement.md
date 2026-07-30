@@ -16,8 +16,8 @@ canonical_url: "https://fiscaldata.treasury.gov/datasets/daily-treasury-statemen
 # UST_DTS — U.S. Treasury Daily Treasury Statement
 
 > [!source] Canonical institutional source
-> **Source key:** `UST_DTS`  
-> **Publisher/resource:** U.S. Treasury Daily Treasury Statement  
+> **Source key:** `UST_DTS`
+> **Publisher/resource:** U.S. Treasury Daily Treasury Statement
 > **Canonical URL:** `https://fiscaldata.treasury.gov/datasets/daily-treasury-statement/`
 
 ## Permitted use

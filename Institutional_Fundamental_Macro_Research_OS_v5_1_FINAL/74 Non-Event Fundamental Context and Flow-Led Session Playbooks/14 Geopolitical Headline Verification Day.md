@@ -14,7 +14,7 @@ tags:
 # 14 Geopolitical Headline Verification Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** unverified headlines create jumps; durable repricing requires legal, operational, quantity, or policy transmission.  
+> **Session hypothesis:** unverified headlines create jumps; durable repricing requires legal, operational, quantity, or policy transmission.
 > The absence of a top-tier release does not imply the absence of fundamental information. **14 Geopolitical Headline Verification Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

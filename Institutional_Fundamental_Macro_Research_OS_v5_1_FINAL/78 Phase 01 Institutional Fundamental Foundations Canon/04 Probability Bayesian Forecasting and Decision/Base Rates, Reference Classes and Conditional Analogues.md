@@ -114,7 +114,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[60 Historical Case Studies Failure Modes and Analogues/00 MOC]]
+- [[60 Historical Case Studies Failure Modes and Analogues/00 60 Historical Case Studies Failure Modes and Analogues MOC]]
 - [[69 Historical Point-in-Time Case Laboratory/00 Historical Point-in-Time Case Laboratory MOC]]
 
 ---

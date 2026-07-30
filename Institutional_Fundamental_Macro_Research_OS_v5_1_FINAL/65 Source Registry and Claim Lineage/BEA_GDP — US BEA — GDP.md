@@ -16,8 +16,8 @@ canonical_url: "https://www.bea.gov/data/gdp/gross-domestic-product"
 # BEA_GDP — US BEA — GDP
 
 > [!source] Canonical institutional source
-> **Source key:** `BEA_GDP`  
-> **Publisher/resource:** US BEA — GDP  
+> **Source key:** `BEA_GDP`
+> **Publisher/resource:** US BEA — GDP
 > **Canonical URL:** `https://www.bea.gov/data/gdp/gross-domestic-product`
 
 ## Permitted use

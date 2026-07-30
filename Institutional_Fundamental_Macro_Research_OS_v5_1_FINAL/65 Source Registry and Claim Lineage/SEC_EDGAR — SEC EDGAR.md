@@ -16,8 +16,8 @@ canonical_url: "https://www.sec.gov/edgar/search-and-access"
 # SEC_EDGAR — SEC EDGAR
 
 > [!source] Canonical institutional source
-> **Source key:** `SEC_EDGAR`  
-> **Publisher/resource:** SEC EDGAR  
+> **Source key:** `SEC_EDGAR`
+> **Publisher/resource:** SEC EDGAR
 > **Canonical URL:** `https://www.sec.gov/edgar/search-and-access`
 
 ## Permitted use

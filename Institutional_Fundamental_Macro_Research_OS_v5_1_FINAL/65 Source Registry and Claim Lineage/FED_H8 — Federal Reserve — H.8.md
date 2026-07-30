@@ -16,8 +16,8 @@ canonical_url: "https://www.federalreserve.gov/releases/h8/"
 # FED_H8 — Federal Reserve — H.8
 
 > [!source] Canonical institutional source
-> **Source key:** `FED_H8`  
-> **Publisher/resource:** Federal Reserve — H.8  
+> **Source key:** `FED_H8`
+> **Publisher/resource:** Federal Reserve — H.8
 > **Canonical URL:** `https://www.federalreserve.gov/releases/h8/`
 
 ## Permitted use

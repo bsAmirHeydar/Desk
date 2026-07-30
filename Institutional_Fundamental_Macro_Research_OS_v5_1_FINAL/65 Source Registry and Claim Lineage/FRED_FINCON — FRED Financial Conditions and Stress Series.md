@@ -16,8 +16,8 @@ canonical_url: "https://fred.stlouisfed.org/"
 # FRED_FINCON — FRED Financial Conditions and Stress Series
 
 > [!source] Canonical institutional source
-> **Source key:** `FRED_FINCON`  
-> **Publisher/resource:** FRED Financial Conditions and Stress Series  
+> **Source key:** `FRED_FINCON`
+> **Publisher/resource:** FRED Financial Conditions and Stress Series
 > **Canonical URL:** `https://fred.stlouisfed.org/`
 
 ## Permitted use

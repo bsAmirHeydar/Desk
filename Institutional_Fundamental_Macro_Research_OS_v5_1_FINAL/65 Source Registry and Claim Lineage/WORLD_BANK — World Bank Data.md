@@ -16,8 +16,8 @@ canonical_url: "https://data.worldbank.org/"
 # WORLD_BANK — World Bank Data
 
 > [!source] Canonical institutional source
-> **Source key:** `WORLD_BANK`  
-> **Publisher/resource:** World Bank Data  
+> **Source key:** `WORLD_BANK`
+> **Publisher/resource:** World Bank Data
 > **Canonical URL:** `https://data.worldbank.org/`
 
 ## Permitted use

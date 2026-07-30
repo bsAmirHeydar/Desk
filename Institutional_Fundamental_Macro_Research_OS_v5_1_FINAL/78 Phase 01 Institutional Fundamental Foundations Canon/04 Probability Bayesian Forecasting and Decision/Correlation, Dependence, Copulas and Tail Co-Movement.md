@@ -114,8 +114,8 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[51 Portfolio Construction Factor Risk and Capital Allocation/00 MOC]]
-- [[39 Credit Markets Default and Recovery Cycle/00 MOC]]
+- [[51 Portfolio Construction Factor Risk and Capital Allocation/00 51 Portfolio Construction Factor Risk and Capital Allocation MOC]]
+- [[39 Credit Markets Default and Recovery Cycle/00 39 Credit Markets Default and Recovery Cycle MOC]]
 
 ---
 

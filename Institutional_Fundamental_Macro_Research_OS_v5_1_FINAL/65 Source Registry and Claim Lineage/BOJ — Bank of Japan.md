@@ -16,8 +16,8 @@ canonical_url: "https://www.boj.or.jp/en/"
 # BOJ — Bank of Japan
 
 > [!source] Canonical institutional source
-> **Source key:** `BOJ`  
-> **Publisher/resource:** Bank of Japan  
+> **Source key:** `BOJ`
+> **Publisher/resource:** Bank of Japan
 > **Canonical URL:** `https://www.boj.or.jp/en/`
 
 ## Permitted use

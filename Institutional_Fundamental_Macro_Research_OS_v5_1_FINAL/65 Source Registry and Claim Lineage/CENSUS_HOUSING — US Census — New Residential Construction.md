@@ -16,8 +16,8 @@ canonical_url: "https://www.census.gov/construction/nrc/"
 # CENSUS_HOUSING — US Census — New Residential Construction
 
 > [!source] Canonical institutional source
-> **Source key:** `CENSUS_HOUSING`  
-> **Publisher/resource:** US Census — New Residential Construction  
+> **Source key:** `CENSUS_HOUSING`
+> **Publisher/resource:** US Census — New Residential Construction
 > **Canonical URL:** `https://www.census.gov/construction/nrc/`
 
 ## Permitted use

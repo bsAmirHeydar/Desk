@@ -16,8 +16,8 @@ canonical_url: "https://www.bea.gov/data/intl-trade-investment"
 # BEA_INTL — US BEA — International Accounts
 
 > [!source] Canonical institutional source
-> **Source key:** `BEA_INTL`  
-> **Publisher/resource:** US BEA — International Accounts  
+> **Source key:** `BEA_INTL`
+> **Publisher/resource:** US BEA — International Accounts
 > **Canonical URL:** `https://www.bea.gov/data/intl-trade-investment`
 
 ## Permitted use

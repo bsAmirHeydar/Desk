@@ -61,6 +61,6 @@ tags: [fundamental-foundations, phase-01, formula-atlas]
 
 ## Related canon
 
-- [[78 Phase 01 Institutional Fundamental Foundations Canon/04 Probability Bayesian Forecasting and Decision/00 MOC]]
-- [[78 Phase 01 Institutional Fundamental Foundations Canon/03 Causality Identification and Information/00 MOC]]
-- [[78 Phase 01 Institutional Fundamental Foundations Canon/06 Multihorizon Synthesis and Institutional Conclusions/00 MOC]]
+- [[78 Phase 01 Institutional Fundamental Foundations Canon/04 Probability Bayesian Forecasting and Decision/00 04 Probability Bayesian Forecasting and Decision MOC]]
+- [[78 Phase 01 Institutional Fundamental Foundations Canon/03 Causality Identification and Information/00 03 Causality Identification and Information MOC]]
+- [[78 Phase 01 Institutional Fundamental Foundations Canon/06 Multihorizon Synthesis and Institutional Conclusions/00 06 Multihorizon Synthesis and Institutional Conclusions MOC]]

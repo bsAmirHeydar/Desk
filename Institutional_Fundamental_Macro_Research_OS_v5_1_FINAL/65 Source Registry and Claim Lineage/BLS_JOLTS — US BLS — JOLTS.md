@@ -16,8 +16,8 @@ canonical_url: "https://www.bls.gov/jlt/"
 # BLS_JOLTS — US BLS — JOLTS
 
 > [!source] Canonical institutional source
-> **Source key:** `BLS_JOLTS`  
-> **Publisher/resource:** US BLS — JOLTS  
+> **Source key:** `BLS_JOLTS`
+> **Publisher/resource:** US BLS — JOLTS
 > **Canonical URL:** `https://www.bls.gov/jlt/`
 
 ## Permitted use

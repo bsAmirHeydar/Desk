@@ -14,7 +14,7 @@ tags:
 # 11 Treasury Settlement TGA and Funding Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** taxes, settlements, bill/coupon issuance, and reserve distribution can change secured funding and dealer capacity.  
+> **Session hypothesis:** taxes, settlements, bill/coupon issuance, and reserve distribution can change secured funding and dealer capacity.
 > The absence of a top-tier release does not imply the absence of fundamental information. **11 Treasury Settlement TGA and Funding Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

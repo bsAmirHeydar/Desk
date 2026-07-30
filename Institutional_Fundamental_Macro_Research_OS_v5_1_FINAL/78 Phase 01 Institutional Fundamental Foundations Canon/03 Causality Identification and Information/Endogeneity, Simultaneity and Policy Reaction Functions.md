@@ -114,7 +114,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[30 Comparative Central Bank Reaction Functions/00 MOC]]
+- [[30 Comparative Central Bank Reaction Functions/00 30 Comparative Central Bank Reaction Functions MOC]]
 - [[68 Mathematical Econometric and Market Model Monographs/05 BVAR SVAR Identification and Historical Decomposition]]
 
 ---

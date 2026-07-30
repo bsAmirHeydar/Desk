@@ -114,9 +114,9 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[49 Cross-Asset Relative Value and Trade Expression/00 MOC]]
-- [[17 Global FX External Balance and Dollar System/00 MOC]]
-- [[59 Asset-Specific Institutional Driver Books/00 MOC]]
+- [[49 Cross-Asset Relative Value and Trade Expression/00 49 Cross-Asset Relative Value and Trade Expression MOC]]
+- [[17 Global FX External Balance and Dollar System/00 17 Global FX External Balance and Dollar System MOC]]
+- [[59 Asset-Specific Institutional Driver Books/00 59 Asset-Specific Institutional Driver Books MOC]]
 
 ---
 

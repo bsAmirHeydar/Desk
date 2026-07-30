@@ -16,8 +16,8 @@ canonical_url: "https://indexes.nasdaqomx.com/"
 # NASDAQ_INDEX — Nasdaq Index Methodology
 
 > [!source] Canonical institutional source
-> **Source key:** `NASDAQ_INDEX`  
-> **Publisher/resource:** Nasdaq Index Methodology  
+> **Source key:** `NASDAQ_INDEX`
+> **Publisher/resource:** Nasdaq Index Methodology
 > **Canonical URL:** `https://indexes.nasdaqomx.com/`
 
 ## Permitted use

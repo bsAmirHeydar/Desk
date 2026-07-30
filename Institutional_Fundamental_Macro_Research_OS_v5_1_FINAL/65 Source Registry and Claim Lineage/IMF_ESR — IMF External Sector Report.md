@@ -16,8 +16,8 @@ canonical_url: "https://www.imf.org/en/Publications/ESR"
 # IMF_ESR — IMF External Sector Report
 
 > [!source] Canonical institutional source
-> **Source key:** `IMF_ESR`  
-> **Publisher/resource:** IMF External Sector Report  
+> **Source key:** `IMF_ESR`
+> **Publisher/resource:** IMF External Sector Report
 > **Canonical URL:** `https://www.imf.org/en/Publications/ESR`
 
 ## Permitted use

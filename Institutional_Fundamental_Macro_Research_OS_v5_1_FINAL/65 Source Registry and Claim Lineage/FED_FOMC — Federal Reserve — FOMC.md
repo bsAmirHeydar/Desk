@@ -16,8 +16,8 @@ canonical_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
 # FED_FOMC — Federal Reserve — FOMC
 
 > [!source] Canonical institutional source
-> **Source key:** `FED_FOMC`  
-> **Publisher/resource:** Federal Reserve — FOMC  
+> **Source key:** `FED_FOMC`
+> **Publisher/resource:** Federal Reserve — FOMC
 > **Canonical URL:** `https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm`
 
 ## Permitted use

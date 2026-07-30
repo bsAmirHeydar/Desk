@@ -16,8 +16,8 @@ canonical_url: "https://www.bls.gov/productivity/"
 # BLS_PRODUCTIVITY — US BLS — Productivity
 
 > [!source] Canonical institutional source
-> **Source key:** `BLS_PRODUCTIVITY`  
-> **Publisher/resource:** US BLS — Productivity  
+> **Source key:** `BLS_PRODUCTIVITY`
+> **Publisher/resource:** US BLS — Productivity
 > **Canonical URL:** `https://www.bls.gov/productivity/`
 
 ## Permitted use

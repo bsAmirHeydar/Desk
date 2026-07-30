@@ -16,8 +16,8 @@ canonical_url: "https://www.bankofcanada.ca/"
 # BOC — Bank of Canada
 
 > [!source] Canonical institutional source
-> **Source key:** `BOC`  
-> **Publisher/resource:** Bank of Canada  
+> **Source key:** `BOC`
+> **Publisher/resource:** Bank of Canada
 > **Canonical URL:** `https://www.bankofcanada.ca/`
 
 ## Permitted use

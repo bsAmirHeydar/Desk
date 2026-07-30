@@ -16,8 +16,8 @@ canonical_url: "https://www.philadelphiafed.org/surveys-and-data/real-time-data-
 # PHIL_RTDS — Philadelphia Fed — Real-Time Data Set
 
 > [!source] Canonical institutional source
-> **Source key:** `PHIL_RTDS`  
-> **Publisher/resource:** Philadelphia Fed — Real-Time Data Set  
+> **Source key:** `PHIL_RTDS`
+> **Publisher/resource:** Philadelphia Fed — Real-Time Data Set
 > **Canonical URL:** `https://www.philadelphiafed.org/surveys-and-data/real-time-data-research`
 
 ## Permitted use

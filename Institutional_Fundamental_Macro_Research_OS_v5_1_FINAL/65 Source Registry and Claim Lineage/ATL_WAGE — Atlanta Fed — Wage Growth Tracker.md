@@ -16,8 +16,8 @@ canonical_url: "https://www.atlantafed.org/chcs/wage-growth-tracker"
 # ATL_WAGE — Atlanta Fed — Wage Growth Tracker
 
 > [!source] Canonical institutional source
-> **Source key:** `ATL_WAGE`  
-> **Publisher/resource:** Atlanta Fed — Wage Growth Tracker  
+> **Source key:** `ATL_WAGE`
+> **Publisher/resource:** Atlanta Fed — Wage Growth Tracker
 > **Canonical URL:** `https://www.atlantafed.org/chcs/wage-growth-tracker`
 
 ## Permitted use

@@ -16,8 +16,8 @@ canonical_url: "https://www.bls.gov/ppi/"
 # BLS_PPI — US BLS — PPI
 
 > [!source] Canonical institutional source
-> **Source key:** `BLS_PPI`  
-> **Publisher/resource:** US BLS — PPI  
+> **Source key:** `BLS_PPI`
+> **Publisher/resource:** US BLS — PPI
 > **Canonical URL:** `https://www.bls.gov/ppi/`
 
 ## Permitted use

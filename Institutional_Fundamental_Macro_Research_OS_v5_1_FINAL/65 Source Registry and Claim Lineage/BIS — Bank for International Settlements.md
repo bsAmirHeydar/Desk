@@ -16,8 +16,8 @@ canonical_url: "https://www.bis.org/"
 # BIS — Bank for International Settlements
 
 > [!source] Canonical institutional source
-> **Source key:** `BIS`  
-> **Publisher/resource:** Bank for International Settlements  
+> **Source key:** `BIS`
+> **Publisher/resource:** Bank for International Settlements
 > **Canonical URL:** `https://www.bis.org/`
 
 ## Permitted use

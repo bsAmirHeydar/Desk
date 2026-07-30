@@ -107,7 +107,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 ## Related canon
 
 - [[77 Institutional Evidence and Monograph Production Standard/15 Editorial Anti-Boilerplate and Retrieval Standard]]
-- [[25 Institutional Templates/00 MOC]]
+- [[25 Institutional Templates/00 25 Institutional Templates MOC]]
 
 ---
 

@@ -16,8 +16,8 @@ canonical_url: "https://www.imf.org/en/Publications/GFSR"
 # IMF_GFSR — IMF Global Financial Stability Report
 
 > [!source] Canonical institutional source
-> **Source key:** `IMF_GFSR`  
-> **Publisher/resource:** IMF Global Financial Stability Report  
+> **Source key:** `IMF_GFSR`
+> **Publisher/resource:** IMF Global Financial Stability Report
 > **Canonical URL:** `https://www.imf.org/en/Publications/GFSR`
 
 ## Permitted use

@@ -115,7 +115,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 ## Related canon
 
 - [[03 Market Pricing/00 Market Pricing MOC]]
-- [[49 Cross-Asset Relative Value and Trade Expression/00 MOC]]
+- [[49 Cross-Asset Relative Value and Trade Expression/00 49 Cross-Asset Relative Value and Trade Expression MOC]]
 - [[66 Corporate Financial Statement Valuation and Security Analysis/00 Corporate Financial Statement Valuation and Security Analysis MOC]]
 
 ---

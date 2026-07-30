@@ -115,7 +115,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 ## Related canon
 
 - [[08 Event Playbooks/00 Event Playbooks MOC]]
-- [[64 Current Official Research Packets/00 MOC]]
+- [[64 Current Official Research Packets/00 64 Current Official Research Packets MOC]]
 
 ---
 

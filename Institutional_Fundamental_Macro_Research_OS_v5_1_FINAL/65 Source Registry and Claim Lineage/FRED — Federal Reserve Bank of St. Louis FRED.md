@@ -16,8 +16,8 @@ canonical_url: "https://fred.stlouisfed.org/"
 # FRED — Federal Reserve Bank of St. Louis FRED
 
 > [!source] Canonical institutional source
-> **Source key:** `FRED`  
-> **Publisher/resource:** Federal Reserve Bank of St. Louis FRED  
+> **Source key:** `FRED`
+> **Publisher/resource:** Federal Reserve Bank of St. Louis FRED
 > **Canonical URL:** `https://fred.stlouisfed.org/`
 
 ## Permitted use

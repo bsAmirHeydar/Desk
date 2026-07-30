@@ -114,7 +114,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 ## Related canon
 
 - [[00 Core Standards/19 Fundamental-Only Research Boundary and Implementation Standard]]
-- [[46 Market Microstructure and Execution Intelligence/00 MOC]]
+- [[46 Market Microstructure and Execution Intelligence/00 46 Market Microstructure and Execution Intelligence MOC]]
 
 ---
 

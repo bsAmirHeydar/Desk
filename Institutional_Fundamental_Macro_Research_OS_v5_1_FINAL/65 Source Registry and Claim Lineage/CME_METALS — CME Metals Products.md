@@ -16,8 +16,8 @@ canonical_url: "https://www.cmegroup.com/markets/metals.html"
 # CME_METALS — CME Metals Products
 
 > [!source] Canonical institutional source
-> **Source key:** `CME_METALS`  
-> **Publisher/resource:** CME Metals Products  
+> **Source key:** `CME_METALS`
+> **Publisher/resource:** CME Metals Products
 > **Canonical URL:** `https://www.cmegroup.com/markets/metals.html`
 
 ## Permitted use

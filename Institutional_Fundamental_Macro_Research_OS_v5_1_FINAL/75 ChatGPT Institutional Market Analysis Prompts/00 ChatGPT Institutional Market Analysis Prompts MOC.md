@@ -2,9 +2,9 @@
 title: "ChatGPT Institutional Fundamental Market Analysis Prompts"
 type: moc
 status: evergreen
-version: 6.0.0
+version: 10.0.0
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-30
 language: en
 ---
 # ChatGPT Institutional Fundamental Market Analysis Prompts
@@ -27,3 +27,7 @@ These prompts require the attached Vault ZIP and use only fundamental, macro, va
 - [[75 ChatGPT Institutional Market Analysis Prompts/14 Cross-Market Relative-Value Analysis Prompt]]
 - [[75 ChatGPT Institutional Market Analysis Prompts/15 Portfolio Fundamental Exposure and Hidden-Beta Audit Prompt]]
 - [[75 ChatGPT Institutional Market Analysis Prompts/16 Prompt Selection and Operating Checklist]]
+
+## V10 specialist and evidence gate
+
+After selecting the direct primary canonical monograph, check the specialist registry for a narrower legal, industry, instrument or physical-market dependency. Do not retrieve a broad legacy field guide when a specialist canonical note exists. Probabilities must be labelled as empirically calibrated, model-implied or judgmental scenario weights. Internal QA may be reported; external scientific certification may not be claimed.

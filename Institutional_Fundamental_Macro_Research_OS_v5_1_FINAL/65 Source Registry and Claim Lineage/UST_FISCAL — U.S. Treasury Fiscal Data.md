@@ -16,8 +16,8 @@ canonical_url: "https://fiscaldata.treasury.gov/"
 # UST_FISCAL — U.S. Treasury Fiscal Data
 
 > [!source] Canonical institutional source
-> **Source key:** `UST_FISCAL`  
-> **Publisher/resource:** U.S. Treasury Fiscal Data  
+> **Source key:** `UST_FISCAL`
+> **Publisher/resource:** U.S. Treasury Fiscal Data
 > **Canonical URL:** `https://fiscaldata.treasury.gov/`
 
 ## Permitted use

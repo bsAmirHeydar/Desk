@@ -16,8 +16,8 @@ canonical_url: "https://www.chicagofed.org/research/data/nfci/current-data"
 # CHI_NFCI — Chicago Fed — NFCI
 
 > [!source] Canonical institutional source
-> **Source key:** `CHI_NFCI`  
-> **Publisher/resource:** Chicago Fed — NFCI  
+> **Source key:** `CHI_NFCI`
+> **Publisher/resource:** Chicago Fed — NFCI
 > **Canonical URL:** `https://www.chicagofed.org/research/data/nfci/current-data`
 
 ## Permitted use

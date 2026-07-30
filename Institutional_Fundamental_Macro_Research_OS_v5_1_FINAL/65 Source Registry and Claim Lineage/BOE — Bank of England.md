@@ -16,8 +16,8 @@ canonical_url: "https://www.bankofengland.co.uk/"
 # BOE — Bank of England
 
 > [!source] Canonical institutional source
-> **Source key:** `BOE`  
-> **Publisher/resource:** Bank of England  
+> **Source key:** `BOE`
+> **Publisher/resource:** Bank of England
 > **Canonical URL:** `https://www.bankofengland.co.uk/`
 
 ## Permitted use

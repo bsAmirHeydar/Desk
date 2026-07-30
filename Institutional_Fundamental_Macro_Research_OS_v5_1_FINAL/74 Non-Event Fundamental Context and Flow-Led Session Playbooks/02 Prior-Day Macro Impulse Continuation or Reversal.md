@@ -14,7 +14,7 @@ tags:
 # 02 Prior-Day Macro Impulse Continuation or Reversal
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** a material prior shock may persist, consolidate, or reverse as global sessions and cash markets absorb it.  
+> **Session hypothesis:** a material prior shock may persist, consolidate, or reverse as global sessions and cash markets absorb it.
 > The absence of a top-tier release does not imply the absence of fundamental information. **02 Prior-Day Macro Impulse Continuation or Reversal** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

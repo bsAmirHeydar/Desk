@@ -122,7 +122,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[36 Inflation Microstructure and Price Formation/00 MOC]]
+- [[36 Inflation Microstructure and Price Formation/00 36 Inflation Microstructure and Price Formation MOC]]
 - [[02 Macro State/02 Inflation]]
 
 ---

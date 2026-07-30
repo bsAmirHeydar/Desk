@@ -16,8 +16,8 @@ canonical_url: "http://www.pbc.gov.cn/en/3688006/index.html"
 # PBOC — People's Bank of China
 
 > [!source] Canonical institutional source
-> **Source key:** `PBOC`  
-> **Publisher/resource:** People's Bank of China  
+> **Source key:** `PBOC`
+> **Publisher/resource:** People's Bank of China
 > **Canonical URL:** `http://www.pbc.gov.cn/en/3688006/index.html`
 
 ## Permitted use

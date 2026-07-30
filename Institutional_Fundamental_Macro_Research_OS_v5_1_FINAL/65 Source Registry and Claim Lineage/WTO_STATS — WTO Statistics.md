@@ -16,8 +16,8 @@ canonical_url: "https://stats.wto.org/"
 # WTO_STATS — WTO Statistics
 
 > [!source] Canonical institutional source
-> **Source key:** `WTO_STATS`  
-> **Publisher/resource:** WTO Statistics  
+> **Source key:** `WTO_STATS`
+> **Publisher/resource:** WTO Statistics
 > **Canonical URL:** `https://stats.wto.org/`
 
 ## Permitted use

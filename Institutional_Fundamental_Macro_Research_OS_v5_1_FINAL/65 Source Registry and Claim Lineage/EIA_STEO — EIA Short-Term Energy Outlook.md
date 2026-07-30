@@ -16,8 +16,8 @@ canonical_url: "https://www.eia.gov/outlooks/steo/"
 # EIA_STEO — EIA Short-Term Energy Outlook
 
 > [!source] Canonical institutional source
-> **Source key:** `EIA_STEO`  
-> **Publisher/resource:** EIA Short-Term Energy Outlook  
+> **Source key:** `EIA_STEO`
+> **Publisher/resource:** EIA Short-Term Energy Outlook
 > **Canonical URL:** `https://www.eia.gov/outlooks/steo/`
 
 ## Permitted use

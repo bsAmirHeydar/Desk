@@ -16,8 +16,8 @@ canonical_url: "https://www.cboe.com/tradable_products/vix/vix_white_paper/"
 # CBOE_VIX — Cboe VIX Methodology
 
 > [!source] Canonical institutional source
-> **Source key:** `CBOE_VIX`  
-> **Publisher/resource:** Cboe VIX Methodology  
+> **Source key:** `CBOE_VIX`
+> **Publisher/resource:** Cboe VIX Methodology
 > **Canonical URL:** `https://www.cboe.com/tradable_products/vix/vix_white_paper/`
 
 ## Permitted use

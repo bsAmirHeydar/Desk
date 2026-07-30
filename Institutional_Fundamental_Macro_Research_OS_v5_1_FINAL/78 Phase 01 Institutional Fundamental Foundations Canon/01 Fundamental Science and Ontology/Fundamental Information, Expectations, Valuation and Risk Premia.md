@@ -115,7 +115,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 ## Related canon
 
 - [[03 Market Pricing/00 Market Pricing MOC]]
-- [[16 Rates Fixed Income and Policy Pricing/00 MOC]]
+- [[16 Rates Fixed Income and Policy Pricing/00 16 Rates Fixed Income and Policy Pricing MOC]]
 
 ---
 

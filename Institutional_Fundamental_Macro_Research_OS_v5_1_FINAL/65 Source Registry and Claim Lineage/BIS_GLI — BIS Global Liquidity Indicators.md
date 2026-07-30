@@ -16,8 +16,8 @@ canonical_url: "https://www.bis.org/statistics/gli.htm"
 # BIS_GLI — BIS Global Liquidity Indicators
 
 > [!source] Canonical institutional source
-> **Source key:** `BIS_GLI`  
-> **Publisher/resource:** BIS Global Liquidity Indicators  
+> **Source key:** `BIS_GLI`
+> **Publisher/resource:** BIS Global Liquidity Indicators
 > **Canonical URL:** `https://www.bis.org/statistics/gli.htm`
 
 ## Permitted use

@@ -16,8 +16,8 @@ canonical_url: "https://www.atlantafed.org/research-and-data/data/gdpnow"
 # ATL_GDPNOW — Atlanta Fed — GDPNow
 
 > [!source] Canonical institutional source
-> **Source key:** `ATL_GDPNOW`  
-> **Publisher/resource:** Atlanta Fed — GDPNow  
+> **Source key:** `ATL_GDPNOW`
+> **Publisher/resource:** Atlanta Fed — GDPNow
 > **Canonical URL:** `https://www.atlantafed.org/research-and-data/data/gdpnow`
 
 ## Permitted use

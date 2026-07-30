@@ -16,8 +16,8 @@ canonical_url: "https://www.opec.org/opec_web/en/publications/338.htm"
 # OPEC_MOMR — OPEC Monthly Oil Market Report
 
 > [!source] Canonical institutional source
-> **Source key:** `OPEC_MOMR`  
-> **Publisher/resource:** OPEC Monthly Oil Market Report  
+> **Source key:** `OPEC_MOMR`
+> **Publisher/resource:** OPEC Monthly Oil Market Report
 > **Canonical URL:** `https://www.opec.org/opec_web/en/publications/338.htm`
 
 ## Permitted use

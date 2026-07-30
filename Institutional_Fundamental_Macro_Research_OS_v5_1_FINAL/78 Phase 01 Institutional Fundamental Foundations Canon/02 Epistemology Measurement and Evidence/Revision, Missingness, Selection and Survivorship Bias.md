@@ -114,8 +114,8 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[53 Research Statistics Forecasting and Causal Inference/00 MOC]]
-- [[55 Data Platform Ontology Lineage and Governance/00 MOC]]
+- [[53 Research Statistics Forecasting and Causal Inference/00 53 Research Statistics Forecasting and Causal Inference MOC]]
+- [[55 Data Platform Ontology Lineage and Governance/00 55 Data Platform Ontology Lineage and Governance MOC]]
 
 ---
 

@@ -114,7 +114,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[50 Scenario Intelligence Wargaming and Tail Systems/00 MOC]]
+- [[50 Scenario Intelligence Wargaming and Tail Systems/00 50 Scenario Intelligence Wargaming and Tail Systems MOC]]
 - [[22 Portfolio Construction Risk and Governance/05 Stress Testing Historical and Hypothetical]]
 - [[78 Phase 01 Institutional Fundamental Foundations Canon/04 Probability Bayesian Forecasting and Decision/Forecast Distributions, Scenarios and Density Thinking]]
 

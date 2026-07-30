@@ -2,9 +2,9 @@
 title: "08 Prompt Input Specification"
 type: prompt-contract
 status: evergreen
-version: 6.0.0
+version: 10.0.0
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-30
 language: en
 ---
 # 08 Prompt Input Specification
@@ -24,3 +24,7 @@ language: en
 | OUTPUT_LANGUAGE | Yes | Persian or English |
 
 No chart or indicator context is accepted. Relevant current or historical market data are independently researched as part of the fundamental information set.
+
+## V10 specialist and evidence gate
+
+After selecting the direct primary canonical monograph, check the specialist registry for a narrower legal, industry, instrument or physical-market dependency. Do not retrieve a broad legacy field guide when a specialist canonical note exists. Probabilities must be labelled as empirically calibrated, model-implied or judgmental scenario weights. Internal QA may be reported; external scientific certification may not be claimed.

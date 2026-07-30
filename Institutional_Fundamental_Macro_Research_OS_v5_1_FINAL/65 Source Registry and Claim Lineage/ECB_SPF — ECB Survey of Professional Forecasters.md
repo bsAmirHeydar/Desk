@@ -16,8 +16,8 @@ canonical_url: "https://www.ecb.europa.eu/stats/ecb_surveys/survey_of_profession
 # ECB_SPF — ECB Survey of Professional Forecasters
 
 > [!source] Canonical institutional source
-> **Source key:** `ECB_SPF`  
-> **Publisher/resource:** ECB Survey of Professional Forecasters  
+> **Source key:** `ECB_SPF`
+> **Publisher/resource:** ECB Survey of Professional Forecasters
 > **Canonical URL:** `https://www.ecb.europa.eu/stats/ecb_surveys/survey_of_professional_forecasters/html/index.en.html`
 
 ## Permitted use

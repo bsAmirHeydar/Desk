@@ -14,7 +14,7 @@ tags:
 # 15 Holiday Thin-Liquidity and False-Break Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** reduced participation increases impact, gaps, and unreliable cross-asset confirmation.  
+> **Session hypothesis:** reduced participation increases impact, gaps, and unreliable cross-asset confirmation.
 > The absence of a top-tier release does not imply the absence of fundamental information. **15 Holiday Thin-Liquidity and False-Break Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

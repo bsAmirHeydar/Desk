@@ -14,7 +14,7 @@ tags:
 # 07 Commodity Physical-Headline and Curve Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** outage, logistics, weather, sanctions implementation, or physical spreads can move commodities without a calendar release.  
+> **Session hypothesis:** outage, logistics, weather, sanctions implementation, or physical spreads can move commodities without a calendar release.
 > The absence of a top-tier release does not imply the absence of fundamental information. **07 Commodity Physical-Headline and Curve Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

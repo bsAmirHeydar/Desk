@@ -16,8 +16,8 @@ canonical_url: "https://www.snb.ch/en"
 # SNB — Swiss National Bank
 
 > [!source] Canonical institutional source
-> **Source key:** `SNB`  
-> **Publisher/resource:** Swiss National Bank  
+> **Source key:** `SNB`
+> **Publisher/resource:** Swiss National Bank
 > **Canonical URL:** `https://www.snb.ch/en`
 
 ## Permitted use

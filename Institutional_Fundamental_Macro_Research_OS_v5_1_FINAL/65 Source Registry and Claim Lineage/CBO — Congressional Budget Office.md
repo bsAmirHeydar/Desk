@@ -16,8 +16,8 @@ canonical_url: "https://www.cbo.gov/"
 # CBO — Congressional Budget Office
 
 > [!source] Canonical institutional source
-> **Source key:** `CBO`  
-> **Publisher/resource:** Congressional Budget Office  
+> **Source key:** `CBO`
+> **Publisher/resource:** Congressional Budget Office
 > **Canonical URL:** `https://www.cbo.gov/`
 
 ## Permitted use

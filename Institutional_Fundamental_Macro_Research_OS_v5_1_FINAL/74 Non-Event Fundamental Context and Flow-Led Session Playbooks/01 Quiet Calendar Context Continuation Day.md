@@ -14,7 +14,7 @@ tags:
 # 01 Quiet Calendar Context Continuation Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** no major scheduled release; prior repricing, carry, positioning, and implementation acceptance can dominate.  
+> **Session hypothesis:** no major scheduled release; prior repricing, carry, positioning, and implementation acceptance can dominate.
 > The absence of a top-tier release does not imply the absence of fundamental information. **01 Quiet Calendar Context Continuation Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

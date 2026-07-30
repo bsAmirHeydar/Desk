@@ -16,8 +16,8 @@ canonical_url: "https://www.newyorkfed.org/markets/counterparties/primary-dealer
 # NYFED_DEALERS — New York Fed — Primary Dealer Statistics
 
 > [!source] Canonical institutional source
-> **Source key:** `NYFED_DEALERS`  
-> **Publisher/resource:** New York Fed — Primary Dealer Statistics  
+> **Source key:** `NYFED_DEALERS`
+> **Publisher/resource:** New York Fed — Primary Dealer Statistics
 > **Canonical URL:** `https://www.newyorkfed.org/markets/counterparties/primary-dealers-statistics`
 
 ## Permitted use

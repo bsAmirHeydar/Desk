@@ -42,4 +42,4 @@ For every school, produce:
 - a contradiction register for any attempted synthesis.
 
 ---
-[[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/00 MOC]]
+[[78 Phase 01 Institutional Fundamental Foundations Canon/05 Competing Models Reflexivity and Pluralism/00 05 Competing Models Reflexivity and Pluralism MOC]]

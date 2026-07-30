@@ -16,8 +16,8 @@ canonical_url: "https://www.clevelandfed.org/indicators-and-data/inflation-nowca
 # CLE_INFLATION_NOWCAST — Cleveland Fed — Inflation Nowcasting
 
 > [!source] Canonical institutional source
-> **Source key:** `CLE_INFLATION_NOWCAST`  
-> **Publisher/resource:** Cleveland Fed — Inflation Nowcasting  
+> **Source key:** `CLE_INFLATION_NOWCAST`
+> **Publisher/resource:** Cleveland Fed — Inflation Nowcasting
 > **Canonical URL:** `https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting`
 
 ## Permitted use

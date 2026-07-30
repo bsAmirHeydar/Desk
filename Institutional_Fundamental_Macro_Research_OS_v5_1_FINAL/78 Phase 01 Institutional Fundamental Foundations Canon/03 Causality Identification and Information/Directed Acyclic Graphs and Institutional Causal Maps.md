@@ -115,7 +115,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 ## Related canon
 
 - [[53 Research Statistics Forecasting and Causal Inference/04 Causal Identification Endogeneity and Information Shocks]]
-- [[39 Credit Markets Default and Recovery Cycle/00 MOC]]
+- [[39 Credit Markets Default and Recovery Cycle/00 39 Credit Markets Default and Recovery Cycle MOC]]
 
 ---
 

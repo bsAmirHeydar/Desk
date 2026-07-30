@@ -16,8 +16,8 @@ canonical_url: "https://www.oecd.org/economic-outlook/"
 # OECD_OUTLOOK — OECD Economic Outlook
 
 > [!source] Canonical institutional source
-> **Source key:** `OECD_OUTLOOK`  
-> **Publisher/resource:** OECD Economic Outlook  
+> **Source key:** `OECD_OUTLOOK`
+> **Publisher/resource:** OECD Economic Outlook
 > **Canonical URL:** `https://www.oecd.org/economic-outlook/`
 
 ## Permitted use

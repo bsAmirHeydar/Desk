@@ -14,7 +14,7 @@ tags:
 # 08 Options Expiry Strike and Dealer-Hedge Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** expiry and concentrated options exposure can alter path, pinning, acceleration, and close dynamics without changing macro truth.  
+> **Session hypothesis:** expiry and concentrated options exposure can alter path, pinning, acceleration, and close dynamics without changing macro truth.
 > The absence of a top-tier release does not imply the absence of fundamental information. **08 Options Expiry Strike and Dealer-Hedge Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

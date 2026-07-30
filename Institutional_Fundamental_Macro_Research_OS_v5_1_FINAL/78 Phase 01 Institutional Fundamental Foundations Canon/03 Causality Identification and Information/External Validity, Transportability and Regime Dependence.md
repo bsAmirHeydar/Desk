@@ -114,8 +114,8 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[21 Regional and Country Macro Frameworks/00 MOC]]
-- [[60 Historical Case Studies Failure Modes and Analogues/00 MOC]]
+- [[21 Regional and Country Macro Frameworks/00 21 Regional and Country Macro Frameworks MOC]]
+- [[60 Historical Case Studies Failure Modes and Analogues/00 60 Historical Case Studies Failure Modes and Analogues MOC]]
 
 ---
 

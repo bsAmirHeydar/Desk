@@ -15,7 +15,7 @@ This release completes the knowledge and analysis canon for Releases 02–14 in 
 
 ## Entry points
 
-- [[80 Institutional Fundamental Mega Canon/00 Institutional Fundamental Mega Canon MOC]]
+- [[80 Deprecated Mega Canon v7 Redirects/00 Deprecated Mega Canon v7 Redirects MOC]]
 - [[79 Institutional Fundamental Analysis Output Architecture/00 Institutional Fundamental Analysis Output Architecture MOC]]
 - [[78 Phase 01 Institutional Fundamental Foundations Canon/00 Phase 01 Institutional Fundamental Foundations Canon MOC]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/59 Knowledge Completion Waves Dependencies and Release Plan]]

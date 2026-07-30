@@ -16,8 +16,8 @@ canonical_url: "https://www.usda.gov/topics/data"
 # USDA_DATA — USDA Economics, Statistics, and Market Information
 
 > [!source] Canonical institutional source
-> **Source key:** `USDA_DATA`  
-> **Publisher/resource:** USDA Economics, Statistics, and Market Information  
+> **Source key:** `USDA_DATA`
+> **Publisher/resource:** USDA Economics, Statistics, and Market Information
 > **Canonical URL:** `https://www.usda.gov/topics/data`
 
 ## Permitted use

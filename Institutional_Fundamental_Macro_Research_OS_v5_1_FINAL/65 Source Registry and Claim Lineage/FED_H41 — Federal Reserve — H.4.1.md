@@ -16,8 +16,8 @@ canonical_url: "https://www.federalreserve.gov/releases/h41/"
 # FED_H41 — Federal Reserve — H.4.1
 
 > [!source] Canonical institutional source
-> **Source key:** `FED_H41`  
-> **Publisher/resource:** Federal Reserve — H.4.1  
+> **Source key:** `FED_H41`
+> **Publisher/resource:** Federal Reserve — H.4.1
 > **Canonical URL:** `https://www.federalreserve.gov/releases/h41/`
 
 ## Permitted use

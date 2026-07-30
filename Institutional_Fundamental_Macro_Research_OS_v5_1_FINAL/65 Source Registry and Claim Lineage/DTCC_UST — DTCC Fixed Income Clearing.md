@@ -16,8 +16,8 @@ canonical_url: "https://www.dtcc.com/clearing-services/ficc-gov"
 # DTCC_UST — DTCC Fixed Income Clearing
 
 > [!source] Canonical institutional source
-> **Source key:** `DTCC_UST`  
-> **Publisher/resource:** DTCC Fixed Income Clearing  
+> **Source key:** `DTCC_UST`
+> **Publisher/resource:** DTCC Fixed Income Clearing
 > **Canonical URL:** `https://www.dtcc.com/clearing-services/ficc-gov`
 
 ## Permitted use

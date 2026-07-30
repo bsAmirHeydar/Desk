@@ -16,8 +16,8 @@ canonical_url: "https://www.treasurydirect.gov/marketable-securities/"
 # TREASURY_DIRECT — TreasuryDirect Marketable Securities
 
 > [!source] Canonical institutional source
-> **Source key:** `TREASURY_DIRECT`  
-> **Publisher/resource:** TreasuryDirect Marketable Securities  
+> **Source key:** `TREASURY_DIRECT`
+> **Publisher/resource:** TreasuryDirect Marketable Securities
 > **Canonical URL:** `https://www.treasurydirect.gov/marketable-securities/`
 
 ## Permitted use

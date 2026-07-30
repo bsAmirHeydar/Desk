@@ -16,8 +16,8 @@ canonical_url: "https://www.federalreserve.gov/monetarypolicy.htm"
 # FED_MONETARY — Federal Reserve — Monetary Policy
 
 > [!source] Canonical institutional source
-> **Source key:** `FED_MONETARY`  
-> **Publisher/resource:** Federal Reserve — Monetary Policy  
+> **Source key:** `FED_MONETARY`
+> **Publisher/resource:** Federal Reserve — Monetary Policy
 > **Canonical URL:** `https://www.federalreserve.gov/monetarypolicy.htm`
 
 ## Permitted use

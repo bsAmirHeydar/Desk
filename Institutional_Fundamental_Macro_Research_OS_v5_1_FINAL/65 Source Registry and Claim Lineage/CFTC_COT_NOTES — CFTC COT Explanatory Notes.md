@@ -16,8 +16,8 @@ canonical_url: "https://www.cftc.gov/MarketReports/CommitmentsofTraders/Explanat
 # CFTC_COT_NOTES — CFTC COT Explanatory Notes
 
 > [!source] Canonical institutional source
-> **Source key:** `CFTC_COT_NOTES`  
-> **Publisher/resource:** CFTC COT Explanatory Notes  
+> **Source key:** `CFTC_COT_NOTES`
+> **Publisher/resource:** CFTC COT Explanatory Notes
 > **Canonical URL:** `https://www.cftc.gov/MarketReports/CommitmentsofTraders/ExplanatoryNotes/index.htm`
 
 ## Permitted use

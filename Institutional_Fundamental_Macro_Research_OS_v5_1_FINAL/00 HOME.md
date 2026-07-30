@@ -2,7 +2,7 @@
 title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 7.0.0
+version: 10.0.0
 created: 2026-07-29
 updated: 2026-07-30
 language: en
@@ -49,56 +49,56 @@ Definitions and accounting identities
 - [[02 Macro State/00 Macro State MOC]]
 - [[03 Market Pricing/00 Market Pricing MOC]]
 - [[05 Timeframes/00 Timeframes MOC]]
-- [[14 Macro Accounting and Stock-Flow Systems/00 MOC]]
-- [[15 Nowcasting Forecasting and Data Interpretation/00 MOC]]
-- [[27 Macro Regime Ontology and State Machines/00 MOC]]
-- [[36 Inflation Microstructure and Price Formation/00 MOC]]
-- [[37 Labor Income and Demand Intelligence/00 MOC]]
+- [[14 Macro Accounting and Stock-Flow Systems/00 14 Macro Accounting and Stock-Flow Systems MOC]]
+- [[15 Nowcasting Forecasting and Data Interpretation/00 15 Nowcasting Forecasting and Data Interpretation MOC]]
+- [[27 Macro Regime Ontology and State Machines/00 27 Macro Regime Ontology and State Machines MOC]]
+- [[36 Inflation Microstructure and Price Formation/00 36 Inflation Microstructure and Price Formation MOC]]
+- [[37 Labor Income and Demand Intelligence/00 37 Labor Income and Demand Intelligence MOC]]
 
 ### Rates, sovereigns, dollar and financial institutions
 
-- [[16 Rates Fixed Income and Policy Pricing/00 MOC]]
-- [[28 Fiscal Monetary Sovereign Nexus/00 MOC]]
-- [[29 Public Debt and Government Bond Market Intelligence/00 MOC]]
-- [[30 Comparative Central Bank Reaction Functions/00 MOC]]
-- [[31 Banking System and Deposit-Credit Intelligence/00 MOC]]
-- [[32 Private Credit NBFI and Hidden Leverage/00 MOC]]
-- [[34 Global Dollar Cross-Border Funding and Stablecoin System/00 MOC]]
-- [[35 External Accounts Capital Flows and Currency Vulnerability/00 MOC]]
+- [[16 Rates Fixed Income and Policy Pricing/00 16 Rates Fixed Income and Policy Pricing MOC]]
+- [[28 Fiscal Monetary Sovereign Nexus/00 28 Fiscal Monetary Sovereign Nexus MOC]]
+- [[29 Public Debt and Government Bond Market Intelligence/00 29 Public Debt and Government Bond Market Intelligence MOC]]
+- [[30 Comparative Central Bank Reaction Functions/00 30 Comparative Central Bank Reaction Functions MOC]]
+- [[31 Banking System and Deposit-Credit Intelligence/00 31 Banking System and Deposit-Credit Intelligence MOC]]
+- [[32 Private Credit NBFI and Hidden Leverage/00 32 Private Credit NBFI and Hidden Leverage MOC]]
+- [[34 Global Dollar Cross-Border Funding and Stablecoin System/00 34 Global Dollar Cross-Border Funding and Stablecoin System MOC]]
+- [[35 External Accounts Capital Flows and Currency Vulnerability/00 35 External Accounts Capital Flows and Currency Vulnerability MOC]]
 
 ### Assets and corporate fundamentals
 
-- [[17 Global FX External Balance and Dollar System/00 MOC]]
-- [[18 Equity Fundamental Macro and Index Mechanics/00 MOC]]
-- [[20 Commodities Physical Markets and Real Assets/00 MOC]]
-- [[38 Corporate Earnings Industry and Competitive Intelligence/00 MOC]]
-- [[39 Credit Markets Default and Recovery Cycle/00 MOC]]
-- [[40 Commodity Supply Chains Shipping and Physical Intelligence/00 MOC]]
-- [[47 Derivatives Volatility Convexity and Tail Risk/00 MOC]]
-- [[59 Asset-Specific Institutional Driver Books/00 MOC]]
+- [[17 Global FX External Balance and Dollar System/00 17 Global FX External Balance and Dollar System MOC]]
+- [[18 Equity Fundamental Macro and Index Mechanics/00 18 Equity Fundamental Macro and Index Mechanics MOC]]
+- [[20 Commodities Physical Markets and Real Assets/00 20 Commodities Physical Markets and Real Assets MOC]]
+- [[38 Corporate Earnings Industry and Competitive Intelligence/00 38 Corporate Earnings Industry and Competitive Intelligence MOC]]
+- [[39 Credit Markets Default and Recovery Cycle/00 39 Credit Markets Default and Recovery Cycle MOC]]
+- [[40 Commodity Supply Chains Shipping and Physical Intelligence/00 40 Commodity Supply Chains Shipping and Physical Intelligence MOC]]
+- [[47 Derivatives Volatility Convexity and Tail Risk/00 47 Derivatives Volatility Convexity and Tail Risk MOC]]
+- [[59 Asset-Specific Institutional Driver Books/00 59 Asset-Specific Institutional Driver Books MOC]]
 - [[66 Corporate Financial Statement Valuation and Security Analysis/00 Corporate Financial Statement Valuation and Security Analysis MOC]]
 - [[70 Expanded Asset and Market Driver Books/00 Expanded Asset and Market Driver Books MOC]]
 
 ### Intelligence, market structure and portfolio
 
-- [[19 Liquidity Market Plumbing and Systematic Flows/00 MOC]]
-- [[42 Geopolitics Sanctions Trade and Economic Warfare/00 MOC]]
-- [[45 Alternative Data OSINT and Intelligence Fusion/00 MOC]]
-- [[46 Market Microstructure and Execution Intelligence/00 MOC]]
-- [[48 Systematic Strategies Positioning and Flow Ecology/00 MOC]]
-- [[49 Cross-Asset Relative Value and Trade Expression/00 MOC]]
-- [[50 Scenario Intelligence Wargaming and Tail Systems/00 MOC]]
-- [[51 Portfolio Construction Factor Risk and Capital Allocation/00 MOC]]
-- [[52 Liquidity Funding Collateral Margin and Operational Survival/00 MOC]]
+- [[19 Liquidity Market Plumbing and Systematic Flows/00 19 Liquidity Market Plumbing and Systematic Flows MOC]]
+- [[42 Geopolitics Sanctions Trade and Economic Warfare/00 42 Geopolitics Sanctions Trade and Economic Warfare MOC]]
+- [[45 Alternative Data OSINT and Intelligence Fusion/00 45 Alternative Data OSINT and Intelligence Fusion MOC]]
+- [[46 Market Microstructure and Execution Intelligence/00 46 Market Microstructure and Execution Intelligence MOC]]
+- [[48 Systematic Strategies Positioning and Flow Ecology/00 48 Systematic Strategies Positioning and Flow Ecology MOC]]
+- [[49 Cross-Asset Relative Value and Trade Expression/00 49 Cross-Asset Relative Value and Trade Expression MOC]]
+- [[50 Scenario Intelligence Wargaming and Tail Systems/00 50 Scenario Intelligence Wargaming and Tail Systems MOC]]
+- [[51 Portfolio Construction Factor Risk and Capital Allocation/00 51 Portfolio Construction Factor Risk and Capital Allocation MOC]]
+- [[52 Liquidity Funding Collateral Margin and Operational Survival/00 52 Liquidity Funding Collateral Margin and Operational Survival MOC]]
 
 ### Research, models, history and governance
 
-- [[24 Research Engineering Source Library and Alpha Lab/00 MOC]]
-- [[53 Research Statistics Forecasting and Causal Inference/00 MOC]]
-- [[54 Machine Learning NLP and AI Research Agents/00 MOC]]
-- [[55 Data Platform Ontology Lineage and Governance/00 MOC]]
-- [[56 Investment Committee Organization Governance and Incentives/00 MOC]]
-- [[60 Historical Case Studies Failure Modes and Analogues/00 MOC]]
+- [[24 Research Engineering Source Library and Alpha Lab/00 24 Research Engineering Source Library and Alpha Lab MOC]]
+- [[53 Research Statistics Forecasting and Causal Inference/00 53 Research Statistics Forecasting and Causal Inference MOC]]
+- [[54 Machine Learning NLP and AI Research Agents/00 54 Machine Learning NLP and AI Research Agents MOC]]
+- [[55 Data Platform Ontology Lineage and Governance/00 55 Data Platform Ontology Lineage and Governance MOC]]
+- [[56 Investment Committee Organization Governance and Incentives/00 56 Investment Committee Organization Governance and Incentives MOC]]
+- [[60 Historical Case Studies Failure Modes and Analogues/00 60 Historical Case Studies Failure Modes and Analogues MOC]]
 - [[65 Source Registry and Claim Lineage/00 Source Registry MOC]]
 - [[68 Mathematical Econometric and Market Model Monographs/00 Mathematical Econometric and Market Model Monographs MOC]]
 - [[69 Historical Point-in-Time Case Laboratory/00 Historical Point-in-Time Case Laboratory MOC]]
@@ -119,5 +119,20 @@ Version 6.1 evaluates the Vault as an institutional body of fundamental knowledg
 
 ## VII — Complete institutional analysis canon
 
-- [[80 Institutional Fundamental Mega Canon/00 Institutional Fundamental Mega Canon MOC|80 Institutional Fundamental Mega Canon]]
-- [[81 Final Scientific Red-Team and Analysis Certification/00 Final Scientific Red-Team and Analysis Certification MOC|81 Final Scientific Red-Team and Analysis Certification]]
+- [[80 Deprecated Mega Canon v7 Redirects/00 Deprecated Mega Canon v7 Redirects MOC|80 Deprecated Mega Canon v7 Redirects]]
+- [[81 Scientific QA and Certification Framework/00 Scientific QA and Certification Framework MOC|81 Scientific QA and Certification Framework]]
+
+
+## V9 canonical analysis system
+
+- [[82 Canonical Institutional Fundamental Research Library/00 Canonical Institutional Fundamental Research Library MOC]] — default high-density analytical library.
+- [[83 Golden Benchmark and Historical Dossier Library/00 Golden Benchmark and Historical Dossier Library MOC]] — 30 internal golden reference packets.
+- [[84 Canonical Retrieval Evidence and Version Control/00 Canonical Retrieval Evidence and Version Control MOC]] — staged retrieval, evidence and version governance.
+- [[81 Scientific QA and Certification Framework/00 Scientific QA and Certification Framework MOC]] — internal QA framework; external certification is not claimed.
+
+## V10 deep canonical remediation
+
+- [[82 Canonical Institutional Fundamental Research Library/00 Canonical Institutional Fundamental Research Library MOC]] — consolidated primary canon.
+- [[85 Specialist Canonical Research Appendices/00 Specialist Canonical Research Appendices MOC]] — specialist legal, industry, instrument and physical-system canon.
+- [[83 Golden Benchmark and Historical Dossier Library/00 Golden Benchmark and Historical Dossier Library MOC]] — 30 executed internal reference answers.
+- [[86 Internal Benchmark Execution and Adjudication/00 Internal Benchmark Execution and Adjudication MOC]] — deterministic checks and explicit external-review boundary.

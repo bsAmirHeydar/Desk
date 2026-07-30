@@ -16,8 +16,8 @@ canonical_url: "https://www.iea.org/reports/oil-market-report"
 # IEA_OMR — IEA Oil Market Report
 
 > [!source] Canonical institutional source
-> **Source key:** `IEA_OMR`  
-> **Publisher/resource:** IEA Oil Market Report  
+> **Source key:** `IEA_OMR`
+> **Publisher/resource:** IEA Oil Market Report
 > **Canonical URL:** `https://www.iea.org/reports/oil-market-report`
 
 ## Permitted use

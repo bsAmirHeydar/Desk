@@ -16,8 +16,8 @@ canonical_url: "https://www.oecd.org/en/data/indicators/composite-leading-indica
 # OECD_CLI — OECD Composite Leading Indicators
 
 > [!source] Canonical institutional source
-> **Source key:** `OECD_CLI`  
-> **Publisher/resource:** OECD Composite Leading Indicators  
+> **Source key:** `OECD_CLI`
+> **Publisher/resource:** OECD Composite Leading Indicators
 > **Canonical URL:** `https://www.oecd.org/en/data/indicators/composite-leading-indicator-cli.html`
 
 ## Permitted use

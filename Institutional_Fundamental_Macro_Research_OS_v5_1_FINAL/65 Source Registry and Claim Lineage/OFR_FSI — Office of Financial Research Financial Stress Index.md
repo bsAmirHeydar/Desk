@@ -16,8 +16,8 @@ canonical_url: "https://www.financialresearch.gov/financial-stress-index/"
 # OFR_FSI — Office of Financial Research Financial Stress Index
 
 > [!source] Canonical institutional source
-> **Source key:** `OFR_FSI`  
-> **Publisher/resource:** Office of Financial Research Financial Stress Index  
+> **Source key:** `OFR_FSI`
+> **Publisher/resource:** Office of Financial Research Financial Stress Index
 > **Canonical URL:** `https://www.financialresearch.gov/financial-stress-index/`
 
 ## Permitted use

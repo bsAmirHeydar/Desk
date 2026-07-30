@@ -116,6 +116,6 @@ tags: [fundamental-foundations, phase-01, glossary]
 
 ## Related canon
 
-- [[78 Phase 01 Institutional Fundamental Foundations Canon/01 Fundamental Science and Ontology/00 MOC]]
-- [[78 Phase 01 Institutional Fundamental Foundations Canon/02 Epistemology Measurement and Evidence/00 MOC]]
-- [[78 Phase 01 Institutional Fundamental Foundations Canon/06 Multihorizon Synthesis and Institutional Conclusions/00 MOC]]
+- [[78 Phase 01 Institutional Fundamental Foundations Canon/01 Fundamental Science and Ontology/00 01 Fundamental Science and Ontology MOC]]
+- [[78 Phase 01 Institutional Fundamental Foundations Canon/02 Epistemology Measurement and Evidence/00 02 Epistemology Measurement and Evidence MOC]]
+- [[78 Phase 01 Institutional Fundamental Foundations Canon/06 Multihorizon Synthesis and Institutional Conclusions/00 06 Multihorizon Synthesis and Institutional Conclusions MOC]]

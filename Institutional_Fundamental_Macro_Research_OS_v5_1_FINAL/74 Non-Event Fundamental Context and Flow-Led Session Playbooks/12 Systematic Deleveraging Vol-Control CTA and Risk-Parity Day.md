@@ -14,7 +14,7 @@ tags:
 # 12 Systematic Deleveraging Vol-Control CTA and Risk-Parity Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** price and volatility changes can trigger rule-based exposure reductions across assets.  
+> **Session hypothesis:** price and volatility changes can trigger rule-based exposure reductions across assets.
 > The absence of a top-tier release does not imply the absence of fundamental information. **12 Systematic Deleveraging Vol-Control CTA and Risk-Parity Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

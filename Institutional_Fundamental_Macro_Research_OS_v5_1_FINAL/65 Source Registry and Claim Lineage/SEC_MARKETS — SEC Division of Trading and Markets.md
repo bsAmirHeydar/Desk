@@ -16,8 +16,8 @@ canonical_url: "https://www.sec.gov/about/divisions-offices/division-trading-mar
 # SEC_MARKETS — SEC Division of Trading and Markets
 
 > [!source] Canonical institutional source
-> **Source key:** `SEC_MARKETS`  
-> **Publisher/resource:** SEC Division of Trading and Markets  
+> **Source key:** `SEC_MARKETS`
+> **Publisher/resource:** SEC Division of Trading and Markets
 > **Canonical URL:** `https://www.sec.gov/about/divisions-offices/division-trading-markets`
 
 ## Permitted use

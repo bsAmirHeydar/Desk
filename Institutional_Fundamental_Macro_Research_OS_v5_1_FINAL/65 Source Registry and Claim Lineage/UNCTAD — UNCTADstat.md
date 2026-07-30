@@ -16,8 +16,8 @@ canonical_url: "https://unctadstat.unctad.org/"
 # UNCTAD — UNCTADstat
 
 > [!source] Canonical institutional source
-> **Source key:** `UNCTAD`  
-> **Publisher/resource:** UNCTADstat  
+> **Source key:** `UNCTAD`
+> **Publisher/resource:** UNCTADstat
 > **Canonical URL:** `https://unctadstat.unctad.org/`
 
 ## Permitted use

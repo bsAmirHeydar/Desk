@@ -16,8 +16,8 @@ canonical_url: "https://www.financialresearch.gov/hedge-fund-monitor/"
 # OFR_HFM — Office of Financial Research Hedge Fund Monitor
 
 > [!source] Canonical institutional source
-> **Source key:** `OFR_HFM`  
-> **Publisher/resource:** Office of Financial Research Hedge Fund Monitor  
+> **Source key:** `OFR_HFM`
+> **Publisher/resource:** Office of Financial Research Hedge Fund Monitor
 > **Canonical URL:** `https://www.financialresearch.gov/hedge-fund-monitor/`
 
 ## Permitted use

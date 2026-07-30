@@ -16,8 +16,8 @@ canonical_url: "https://www.imf.org/en/Publications/FM"
 # IMF_FM — IMF Fiscal Monitor
 
 > [!source] Canonical institutional source
-> **Source key:** `IMF_FM`  
-> **Publisher/resource:** IMF Fiscal Monitor  
+> **Source key:** `IMF_FM`
+> **Publisher/resource:** IMF Fiscal Monitor
 > **Canonical URL:** `https://www.imf.org/en/Publications/FM`
 
 ## Permitted use

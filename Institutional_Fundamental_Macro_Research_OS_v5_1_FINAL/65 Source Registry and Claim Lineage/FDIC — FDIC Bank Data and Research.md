@@ -16,8 +16,8 @@ canonical_url: "https://www.fdic.gov/analysis"
 # FDIC — FDIC Bank Data and Research
 
 > [!source] Canonical institutional source
-> **Source key:** `FDIC`  
-> **Publisher/resource:** FDIC Bank Data and Research  
+> **Source key:** `FDIC`
+> **Publisher/resource:** FDIC Bank Data and Research
 > **Canonical URL:** `https://www.fdic.gov/analysis`
 
 ## Permitted use

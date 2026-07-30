@@ -14,7 +14,7 @@ tags:
 # 05 Earnings-Revision and Mega-Cap Leadership Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** company guidance and estimate changes can dominate index-level macro, especially under concentration.  
+> **Session hypothesis:** company guidance and estimate changes can dominate index-level macro, especially under concentration.
 > The absence of a top-tier release does not imply the absence of fundamental information. **05 Earnings-Revision and Mega-Cap Leadership Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

@@ -16,8 +16,8 @@ canonical_url: "https://www.federalreserve.gov/publications/financial-stability-
 # FED_FSR — Federal Reserve — Financial Stability Report
 
 > [!source] Canonical institutional source
-> **Source key:** `FED_FSR`  
-> **Publisher/resource:** Federal Reserve — Financial Stability Report  
+> **Source key:** `FED_FSR`
+> **Publisher/resource:** Federal Reserve — Financial Stability Report
 > **Canonical URL:** `https://www.federalreserve.gov/publications/financial-stability-report.htm`
 
 ## Permitted use

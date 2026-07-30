@@ -14,7 +14,7 @@ tags:
 # 03 Overnight Global Session Handoff
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** Asia and Europe may price local information, hedging, and inventory before North American cash liquidity arrives.  
+> **Session hypothesis:** Asia and Europe may price local information, hedging, and inventory before North American cash liquidity arrives.
 > The absence of a top-tier release does not imply the absence of fundamental information. **03 Overnight Global Session Handoff** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

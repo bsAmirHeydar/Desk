@@ -2,9 +2,9 @@
 title: "Market-Specific Add-On Blocks"
 type: prompt-library
 status: evergreen
-version: 5.2.0
+version: 10.0.0
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-30
 language: en
 tags:
   - prompt
@@ -115,3 +115,7 @@ Model each leg independently, then the common factor and residual spread. Normal
 
 > [!important] Fundamental-only boundary
 > Price-pattern analysis, indicator rules and chart-trigger instructions are prohibited. Use the Vault's fundamental, macro, valuation, flow, liquidity, market-structure and portfolio methods.
+
+## V10 specialist and evidence gate
+
+After selecting the direct primary canonical monograph, check the specialist registry for a narrower legal, industry, instrument or physical-market dependency. Do not retrieve a broad legacy field guide when a specialist canonical note exists. Probabilities must be labelled as empirically calibrated, model-implied or judgmental scenario weights. Internal QA may be reported; external scientific certification may not be claimed.

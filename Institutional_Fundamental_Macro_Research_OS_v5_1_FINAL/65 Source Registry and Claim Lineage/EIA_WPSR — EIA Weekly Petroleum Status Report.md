@@ -16,8 +16,8 @@ canonical_url: "https://www.eia.gov/petroleum/supply/weekly/"
 # EIA_WPSR — EIA Weekly Petroleum Status Report
 
 > [!source] Canonical institutional source
-> **Source key:** `EIA_WPSR`  
-> **Publisher/resource:** EIA Weekly Petroleum Status Report  
+> **Source key:** `EIA_WPSR`
+> **Publisher/resource:** EIA Weekly Petroleum Status Report
 > **Canonical URL:** `https://www.eia.gov/petroleum/supply/weekly/`
 
 ## Permitted use

@@ -16,8 +16,8 @@ canonical_url: "https://www.rba.gov.au/"
 # RBA — Reserve Bank of Australia
 
 > [!source] Canonical institutional source
-> **Source key:** `RBA`  
-> **Publisher/resource:** Reserve Bank of Australia  
+> **Source key:** `RBA`
+> **Publisher/resource:** Reserve Bank of Australia
 > **Canonical URL:** `https://www.rba.gov.au/`
 
 ## Permitted use

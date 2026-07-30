@@ -16,8 +16,8 @@ canonical_url: "https://www.gold.org/goldhub/data/global-gold-backed-etf-holding
 # WGC_ETF — World Gold Council Gold ETF Data
 
 > [!source] Canonical institutional source
-> **Source key:** `WGC_ETF`  
-> **Publisher/resource:** World Gold Council Gold ETF Data  
+> **Source key:** `WGC_ETF`
+> **Publisher/resource:** World Gold Council Gold ETF Data
 > **Canonical URL:** `https://www.gold.org/goldhub/data/global-gold-backed-etf-holdings-and-flows`
 
 ## Permitted use

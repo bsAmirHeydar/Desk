@@ -105,8 +105,8 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[30 Comparative Central Bank Reaction Functions/00 MOC]]
-- [[55 Data Platform Ontology Lineage and Governance/00 MOC]]
+- [[30 Comparative Central Bank Reaction Functions/00 30 Comparative Central Bank Reaction Functions MOC]]
+- [[55 Data Platform Ontology Lineage and Governance/00 55 Data Platform Ontology Lineage and Governance MOC]]
 
 ---
 

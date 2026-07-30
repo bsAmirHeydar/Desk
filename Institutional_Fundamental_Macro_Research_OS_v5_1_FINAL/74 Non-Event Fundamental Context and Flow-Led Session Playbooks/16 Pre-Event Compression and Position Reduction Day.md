@@ -14,7 +14,7 @@ tags:
 # 16 Pre-Event Compression and Position Reduction Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** the market may de-risk, hedge, or compress before a binary event without revealing the post-event direction.  
+> **Session hypothesis:** the market may de-risk, hedge, or compress before a binary event without revealing the post-event direction.
 > The absence of a top-tier release does not imply the absence of fundamental information. **16 Pre-Event Compression and Position Reduction Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

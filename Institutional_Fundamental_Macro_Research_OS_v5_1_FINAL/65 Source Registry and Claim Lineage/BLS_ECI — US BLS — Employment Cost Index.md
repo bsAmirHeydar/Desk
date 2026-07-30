@@ -16,8 +16,8 @@ canonical_url: "https://www.bls.gov/eci/"
 # BLS_ECI — US BLS — Employment Cost Index
 
 > [!source] Canonical institutional source
-> **Source key:** `BLS_ECI`  
-> **Publisher/resource:** US BLS — Employment Cost Index  
+> **Source key:** `BLS_ECI`
+> **Publisher/resource:** US BLS — Employment Cost Index
 > **Canonical URL:** `https://www.bls.gov/eci/`
 
 ## Permitted use

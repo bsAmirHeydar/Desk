@@ -14,7 +14,7 @@ tags:
 # 13 Short-Covering and Crowded-Position Unwind Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** price can move against the prevailing macro view when crowded positions face stop, margin, or option feedback.  
+> **Session hypothesis:** price can move against the prevailing macro view when crowded positions face stop, margin, or option feedback.
 > The absence of a top-tier release does not imply the absence of fundamental information. **13 Short-Covering and Crowded-Position Unwind Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

@@ -16,8 +16,8 @@ canonical_url: "https://www.msci.com/index-methodology"
 # MSCI — MSCI Index Methodology
 
 > [!source] Canonical institutional source
-> **Source key:** `MSCI`  
-> **Publisher/resource:** MSCI Index Methodology  
+> **Source key:** `MSCI`
+> **Publisher/resource:** MSCI Index Methodology
 > **Canonical URL:** `https://www.msci.com/index-methodology`
 
 ## Permitted use

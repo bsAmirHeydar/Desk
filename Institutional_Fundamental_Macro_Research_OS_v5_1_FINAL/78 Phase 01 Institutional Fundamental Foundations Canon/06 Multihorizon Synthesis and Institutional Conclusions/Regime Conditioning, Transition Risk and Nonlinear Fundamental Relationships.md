@@ -114,8 +114,8 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 ## Related canon
 
-- [[27 Macro Regime Ontology and State Machines/00 MOC]]
-- [[50 Scenario Intelligence Wargaming and Tail Systems/00 MOC]]
+- [[27 Macro Regime Ontology and State Machines/00 27 Macro Regime Ontology and State Machines MOC]]
+- [[50 Scenario Intelligence Wargaming and Tail Systems/00 50 Scenario Intelligence Wargaming and Tail Systems MOC]]
 - [[53 Research Statistics Forecasting and Causal Inference/07 Regime-Conditional Validation and Stability]]
 
 ---

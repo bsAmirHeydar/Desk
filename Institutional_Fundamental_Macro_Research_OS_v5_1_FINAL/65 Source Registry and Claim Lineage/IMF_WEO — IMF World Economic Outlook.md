@@ -16,8 +16,8 @@ canonical_url: "https://www.imf.org/en/Publications/WEO"
 # IMF_WEO — IMF World Economic Outlook
 
 > [!source] Canonical institutional source
-> **Source key:** `IMF_WEO`  
-> **Publisher/resource:** IMF World Economic Outlook  
+> **Source key:** `IMF_WEO`
+> **Publisher/resource:** IMF World Economic Outlook
 > **Canonical URL:** `https://www.imf.org/en/Publications/WEO`
 
 ## Permitted use

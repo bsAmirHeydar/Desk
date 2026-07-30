@@ -16,8 +16,8 @@ canonical_url: "https://www.newyorkfed.org/research/policy/gscpi"
 # NYFED_GSCPI — New York Fed — GSCPI
 
 > [!source] Canonical institutional source
-> **Source key:** `NYFED_GSCPI`  
-> **Publisher/resource:** New York Fed — GSCPI  
+> **Source key:** `NYFED_GSCPI`
+> **Publisher/resource:** New York Fed — GSCPI
 > **Canonical URL:** `https://www.newyorkfed.org/research/policy/gscpi`
 
 ## Permitted use

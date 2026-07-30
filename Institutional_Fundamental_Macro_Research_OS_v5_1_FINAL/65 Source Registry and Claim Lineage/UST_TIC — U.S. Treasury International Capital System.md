@@ -16,8 +16,8 @@ canonical_url: "https://home.treasury.gov/data/treasury-international-capital-sy
 # UST_TIC — U.S. Treasury International Capital System
 
 > [!source] Canonical institutional source
-> **Source key:** `UST_TIC`  
-> **Publisher/resource:** U.S. Treasury International Capital System  
+> **Source key:** `UST_TIC`
+> **Publisher/resource:** U.S. Treasury International Capital System
 > **Canonical URL:** `https://home.treasury.gov/data/treasury-international-capital-system-tic`
 
 ## Permitted use

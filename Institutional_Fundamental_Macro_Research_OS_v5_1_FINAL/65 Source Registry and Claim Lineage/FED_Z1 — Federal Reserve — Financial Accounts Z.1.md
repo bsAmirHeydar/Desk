@@ -16,8 +16,8 @@ canonical_url: "https://www.federalreserve.gov/releases/z1/"
 # FED_Z1 — Federal Reserve — Financial Accounts Z.1
 
 > [!source] Canonical institutional source
-> **Source key:** `FED_Z1`  
-> **Publisher/resource:** Federal Reserve — Financial Accounts Z.1  
+> **Source key:** `FED_Z1`
+> **Publisher/resource:** Federal Reserve — Financial Accounts Z.1
 > **Canonical URL:** `https://www.federalreserve.gov/releases/z1/`
 
 ## Permitted use

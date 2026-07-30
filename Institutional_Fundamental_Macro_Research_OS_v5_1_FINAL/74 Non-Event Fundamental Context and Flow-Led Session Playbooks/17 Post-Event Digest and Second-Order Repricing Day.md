@@ -14,7 +14,7 @@ tags:
 # 17 Post-Event Digest and Second-Order Repricing Day
 
 > [!playbook] Non-event or flow-led session
-> **Session hypothesis:** the initial headline move may give way to component, revision, policy, earnings, or balance-sheet interpretation.  
+> **Session hypothesis:** the initial headline move may give way to component, revision, policy, earnings, or balance-sheet interpretation.
 > The absence of a top-tier release does not imply the absence of fundamental information. **17 Post-Event Digest and Second-Order Repricing Day** separates inherited macro repricing, new decentralized information, institutional flow, liquidity, and short-horizon flow inventory.
 
 ## 1. Pre-session inherited state

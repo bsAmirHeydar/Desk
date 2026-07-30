@@ -116,7 +116,7 @@ Apply [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Canonic
 
 - [[11 Research and Validation/03 Event Studies]]
 - [[68 Mathematical Econometric and Market Model Monographs/06 Local Projections State Dependence and Nonlinear Responses]]
-- [[50 Scenario Intelligence Wargaming and Tail Systems/00 MOC]]
+- [[50 Scenario Intelligence Wargaming and Tail Systems/00 50 Scenario Intelligence Wargaming and Tail Systems MOC]]
 
 ---
 

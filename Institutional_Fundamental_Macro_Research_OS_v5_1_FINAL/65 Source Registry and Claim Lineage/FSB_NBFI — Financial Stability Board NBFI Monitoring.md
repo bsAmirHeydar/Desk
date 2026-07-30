@@ -16,8 +16,8 @@ canonical_url: "https://www.fsb.org/work-of-the-fsb/financial-innovation-and-str
 # FSB_NBFI — Financial Stability Board NBFI Monitoring
 
 > [!source] Canonical institutional source
-> **Source key:** `FSB_NBFI`  
-> **Publisher/resource:** Financial Stability Board NBFI Monitoring  
+> **Source key:** `FSB_NBFI`
+> **Publisher/resource:** Financial Stability Board NBFI Monitoring
 > **Canonical URL:** `https://www.fsb.org/work-of-the-fsb/financial-innovation-and-structural-change/non-bank-financial-intermediation/`
 
 ## Permitted use

@@ -1,11 +1,14 @@
 ---
 title: "Federal Reserve Monetary Policy Report July 2026 Reading Map"
 type: field-guide
-status: evergreen
+status: supporting-legacy
 version: 5.0.0
 created: 2026-07-29
 updated: 2026-07-29
 language: en
+retrieval_priority: 10
+default_retrieval: false
+canonical_registry: "[[82 Canonical Institutional Fundamental Research Library/00 Canonical Institutional Fundamental Research Library MOC]]"
 tags:
   - 64-current-official-research-packets
   - federal-reserve-monetary-policy-report-july-2026-reading-map
