@@ -51,3 +51,10 @@ tags:
 ## v10.2.0 — Daily Fundamental Context
 
 Added daily pre-market, live-session, post-event and end-of-day profiles for Nasdaq 100, S&P 500, Gold and EURUSD, including daily PDF output contracts and fast launchers.
+
+
+## V10.3 hourly fundamental state
+
+- [[V10_3_HOURLY_FUNDAMENTAL_STATE_RELEASE_NOTES]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/14 Hourly Fundamental State Engine]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/17 Hourly Fast Launcher Messages]]

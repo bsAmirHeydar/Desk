@@ -2,9 +2,9 @@
 title: "Alpha Lab Daily Persian PDF Report Contract"
 type: daily-pdf-standard
 status: canonical
-version: 10.2.0
+version: 10.3.0
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-01
 language: en
 tags: [alpha-lab, daily-report, pdf, persian, rtl]
 ---
@@ -117,3 +117,8 @@ Examples:
 
 - `Alpha_Lab_NASDAQ_100_DAILY_PREMARKET_NEW_YORK_Daily_Fundamental_Report_2026-07-31.pdf`
 - `Alpha_Lab_GOLD_POST_EVENT_UPDATE_NEW_YORK_Daily_Fundamental_Report_2026-07-31.pdf`
+
+
+## Hourly extension
+
+For hourly profiles, the dedicated hourly PDF contract overrides the daily page-two cards and timeline structure. See [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/16 Hourly Persian PDF Report Contract]].

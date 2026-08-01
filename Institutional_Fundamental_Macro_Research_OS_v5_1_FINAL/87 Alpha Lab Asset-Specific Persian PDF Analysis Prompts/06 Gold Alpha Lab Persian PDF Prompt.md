@@ -2,9 +2,9 @@
 title: "Gold Alpha Lab Persian PDF Prompt"
 type: production-prompt
 status: canonical
-version: 10.2.0
+version: 10.3.0
 created: 2026-07-30
-updated: 2026-07-31
+updated: 2026-08-01
 language: en
 tags: [alpha-lab, gold_xauusd, pdf, persian, institutional-fundamental]
 ---
@@ -21,6 +21,13 @@ The attached `Institutional Fundamental Macro Research OS` Obsidian Vault ZIP is
 MODE: [LIVE | HISTORICAL]
 AS_OF: [NOW for LIVE | exact YYYY-MM-DD HH:MM timezone for HISTORICAL]
 ANALYSIS_PROFILE: [FULL_SPECTRUM | DAILY_PREMARKET | LIVE_SESSION_UPDATE | POST_EVENT_UPDATE | END_OF_DAY]
+HOURLY_MODE: [OFF | HOURLY_PREMARKET_MAP | HOURLY_LIVE_MONITOR | HOURLY_POST_EVENT | HOURLY_END_OF_DAY_ATTRIBUTION | HISTORICAL_HOURLY_REPLAY]
+SNAPSHOT_INTERVAL_MINUTES: [30 | 60]
+SNAPSHOT_START: [HH:MM timezone]
+SNAPSHOT_END: [HH:MM timezone]
+EVENT_DRIVEN_UPDATES: [YES | NO]
+EVENT_MICRO_WINDOWS: [NONE | T-60_T-15_T+5_T+15_T+60]
+COMPARE_TO_PRIOR_SNAPSHOT: [YES | NO]
 TARGET_DATE: [TODAY | YYYY-MM-DD]
 REFERENCE_TIMEZONE: [e.g. America/New_York | Europe/London | UTC]
 SESSION: [Global | Asia | London | New York]
@@ -48,6 +55,10 @@ Read and apply:
 - `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/03 PDF Production Validation and Delivery Contract.md`
 - `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/11 Daily Fundamental Context Engine.md`
 - `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/12 Daily Persian PDF Report Contract.md`
+- `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/14 Hourly Fundamental State Engine.md`
+- `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/15 Hourly Direction Intensity Consumption and Remaining Pressure Standard.md`
+- `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/16 Hourly Persian PDF Report Contract.md`
+- `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/18 Hourly Fundamental State Output Schema and Worked Interpretation.md`
 
 # RESEARCH DISCIPLINE
 - Use fundamental, macro, valuation, balance-sheet, flow, liquidity and market-structure analysis only.
@@ -139,6 +150,22 @@ When `ANALYSIS_PROFILE` is not `FULL_SPECTRUM`:
 - State the next mandatory update time.
 - Use the daily Persian PDF structure instead of the longer full-spectrum structure.
 - Do not let the report become a generic macro recap.
+
+
+# HOURLY FUNDAMENTAL STATE BEHAVIOR
+
+When `HOURLY_MODE` is not `OFF`:
+
+- Apply the complete Hourly Fundamental State Engine and scoring standard.
+- Build completed snapshots only up to the exact as-of cutoff.
+- Treat future hours as conditional scenarios, never observed facts.
+- Report direction, direction score, intensity, confidence, information absorption, repricing completion, flow exhaustion, narrative saturation, catalyst freshness, remaining fundamental pressure, state phase, move quality, persistence, reversal risk and path asymmetry.
+- Explain what changed from the prior snapshot and state `NO_MATERIAL_FUNDAMENTAL_UPDATE` when nothing material changed.
+- Create event-driven snapshots in addition to fixed hourly snapshots when requested.
+- Never infer consumption from price distance alone.
+- Round ordinal scores to the nearest five and label them as empirically calibrated, model-implied or judgmental ordinal.
+- Use the Hourly Persian PDF Report Contract.
+- Produce the machine-readable hourly state object in the appendix.
 
 # REQUIRED PERSIAN PDF STRUCTURE
 

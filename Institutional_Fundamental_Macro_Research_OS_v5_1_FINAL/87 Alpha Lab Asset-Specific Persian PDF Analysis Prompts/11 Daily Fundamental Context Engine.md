@@ -2,9 +2,9 @@
 title: "Alpha Lab Daily Fundamental Context Engine"
 type: daily-analysis-standard
 status: canonical
-version: 10.2.0
+version: 10.3.0
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-01
 language: en
 tags: [alpha-lab, daily-fundamental, intraday, session, event, flow]
 ---
@@ -280,3 +280,8 @@ A `DAILY_FUNDAMENTAL_LONG_BIAS` or `DAILY_FUNDAMENTAL_SHORT_BIAS` requires:
 7. a timestamped evidence ledger.
 
 If those conditions are absent, use a conditional, no-edge or insufficient-evidence state.
+
+
+## Hourly extension
+
+When hourly granularity is requested, apply [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/14 Hourly Fundamental State Engine]], [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/15 Hourly Direction Intensity Consumption and Remaining Pressure Standard]] and [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/16 Hourly Persian PDF Report Contract]].

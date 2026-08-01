@@ -89,3 +89,10 @@ Releases 02–14 are implemented in [[80 Deprecated Mega Canon v7 Redirects/00 D
 | S&P 500 | [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/05 S&P 500 Alpha Lab Persian PDF Prompt]] | Persian RTL Alpha Lab PDF |
 | Gold / XAUUSD | [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/06 Gold Alpha Lab Persian PDF Prompt]] | Persian RTL Alpha Lab PDF |
 | EURUSD | [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/07 EURUSD Alpha Lab Persian PDF Prompt]] | Persian RTL Alpha Lab PDF |
+
+
+## V10.3 hourly fundamental state
+
+- [[V10_3_HOURLY_FUNDAMENTAL_STATE_RELEASE_NOTES]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/14 Hourly Fundamental State Engine]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/17 Hourly Fast Launcher Messages]]

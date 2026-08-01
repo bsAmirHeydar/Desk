@@ -149,3 +149,10 @@ Version 6.1 evaluates the Vault as an institutional body of fundamental knowledg
 - [[V10_2_DAILY_FUNDAMENTAL_CONTEXT_RELEASE_NOTES]]
 - [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/11 Daily Fundamental Context Engine]]
 - [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/13 Daily Fast Launcher Messages]]
+
+
+## V10.3 hourly fundamental state
+
+- [[V10_3_HOURLY_FUNDAMENTAL_STATE_RELEASE_NOTES]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/14 Hourly Fundamental State Engine]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/17 Hourly Fast Launcher Messages]]

@@ -2,9 +2,9 @@
 title: "Alpha Lab Daily Fundamental Fast Launcher Messages"
 type: launcher-library
 status: canonical
-version: 10.2.0
+version: 10.3.0
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-01
 language: en
 tags: [alpha-lab, daily, launcher, pdf]
 ---
@@ -133,3 +133,8 @@ ANALYSIS_PROFILE: END_OF_DAY
 SESSION_STAGE: POST_CLOSE
 SPECIAL_QUESTION: Attribute the day, compare the outcome with the pre-market state and identify what carries into the next session.
 ```
+
+
+## Hourly monitoring
+
+For direction, intensity, consumption and remaining-pressure monitoring, use [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/17 Hourly Fast Launcher Messages]].

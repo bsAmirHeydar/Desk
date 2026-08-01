@@ -66,3 +66,10 @@ See [[README_v7_MEGA_CANON]] and [[80 Deprecated Mega Canon v7 Redirects/00 Depr
 - Each prompt supports LIVE and HISTORICAL modes.
 - Each execution must create an actual Persian right-to-left PDF under the Alpha Lab report design standard.
 - The main report is executive and simple; institutional detail, citations and the Vault Reading Ledger remain in appendices.
+
+
+## V10.3 hourly fundamental state
+
+- [[V10_3_HOURLY_FUNDAMENTAL_STATE_RELEASE_NOTES]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/14 Hourly Fundamental State Engine]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/17 Hourly Fast Launcher Messages]]
