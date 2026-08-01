@@ -2,7 +2,7 @@
 title: "Alpha Lab Daily Fundamental Context Engine"
 type: daily-analysis-standard
 status: canonical
-version: 10.3.0
+version: 10.4.0
 created: 2026-07-31
 updated: 2026-08-01
 language: en
@@ -285,3 +285,6 @@ If those conditions are absent, use a conditional, no-edge or insufficient-evide
 ## Hourly extension
 
 When hourly granularity is requested, apply [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/14 Hourly Fundamental State Engine]], [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/15 Hourly Direction Intensity Consumption and Remaining Pressure Standard]] and [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/16 Hourly Persian PDF Report Contract]].
+## V10.4 hybrid mandatory coverage
+
+For live and historical daily work, apply the governing module [[88 Hybrid Daily Session Event Fundamental State Engine/00 Hybrid Daily Session Event Fundamental State Engine MOC]]. Every open day requires a daily baseline, session reassessments, state-decay checks and end-of-day state. A no-change reassessment is a valid record. The daily engine may not leave a trading day blank because the calendar was quiet.

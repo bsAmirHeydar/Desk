@@ -2,7 +2,7 @@
 title: "Gold Alpha Lab Persian PDF Prompt"
 type: production-prompt
 status: canonical
-version: 10.3.0
+version: 10.4.0
 created: 2026-07-30
 updated: 2026-08-01
 language: en
@@ -21,6 +21,7 @@ The attached `Institutional Fundamental Macro Research OS` Obsidian Vault ZIP is
 MODE: [LIVE | HISTORICAL]
 AS_OF: [NOW for LIVE | exact YYYY-MM-DD HH:MM timezone for HISTORICAL]
 ANALYSIS_PROFILE: [FULL_SPECTRUM | DAILY_PREMARKET | LIVE_SESSION_UPDATE | POST_EVENT_UPDATE | END_OF_DAY]
+HYBRID_REPLAY_MODE: [OFF | HYBRID_SESSION_REPLAY]
 HOURLY_MODE: [OFF | HOURLY_PREMARKET_MAP | HOURLY_LIVE_MONITOR | HOURLY_POST_EVENT | HOURLY_END_OF_DAY_ATTRIBUTION | HISTORICAL_HOURLY_REPLAY]
 SNAPSHOT_INTERVAL_MINUTES: [30 | 60]
 SNAPSHOT_START: [HH:MM timezone]
@@ -56,6 +57,7 @@ Read and apply:
 - `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/11 Daily Fundamental Context Engine.md`
 - `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/12 Daily Persian PDF Report Contract.md`
 - `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/14 Hourly Fundamental State Engine.md`
+- `88 Hybrid Daily Session Event Fundamental State Engine/00 Hybrid Daily Session Event Fundamental State Engine MOC.md`
 - `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/15 Hourly Direction Intensity Consumption and Remaining Pressure Standard.md`
 - `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/16 Hourly Persian PDF Report Contract.md`
 - `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/18 Hourly Fundamental State Output Schema and Worked Interpretation.md`
@@ -166,6 +168,21 @@ When `HOURLY_MODE` is not `OFF`:
 - Round ordinal scores to the nearest five and label them as empirically calibrated, model-implied or judgmental ordinal.
 - Use the Hourly Persian PDF Report Contract.
 - Produce the machine-readable hourly state object in the appendix.
+
+
+# HYBRID SESSION REPLAY BEHAVIOR
+
+When `ANALYSIS_PROFILE: HYBRID_SESSION_REPLAY` or `HOURLY_MODE: HISTORICAL_HOURLY_REPLAY`:
+
+- create a mandatory daily baseline and end-of-day state for every open day;
+- create overnight and session-handoff records;
+- create post-open, midday and afternoon reassessments even when direction is unchanged;
+- create complete event micro-windows for material events;
+- track state decay, causal-leader changes, confirmation breaks and fundamental/flow transitions;
+- apply adaptive 5/10-point materiality thresholds for additional records;
+- distinguish direction from edge availability;
+- run density, maximum-gap, micro-window and no-lookahead validation;
+- output machine-readable state records, not only a PDF narrative.
 
 # REQUIRED PERSIAN PDF STRUCTURE
 

@@ -27,3 +27,4 @@ tags:
 ## Review standard
 
 Every substantive note must specify its object, identities, data/vintage treatment, estimation, uncertainty, horizon, transmission, falsifiers, decision use, and official source routes. Review against [[00 Core Standards/12 Anti-Boilerplate and Knowledge Density Standard]].
+- [[63 Machine Readable Schemas/07 Hybrid Daily Session Event Fundamental State Schema]]

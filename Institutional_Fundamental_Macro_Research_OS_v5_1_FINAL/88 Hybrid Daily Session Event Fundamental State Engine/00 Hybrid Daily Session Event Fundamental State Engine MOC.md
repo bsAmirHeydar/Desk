@@ -1,0 +1,48 @@
+---
+title: "Hybrid Daily Session Event Fundamental State Engine"
+type: moc
+status: canonical
+version: 10.4.0
+created: 2026-08-01
+updated: 2026-08-01
+language: en
+tags: [point-in-time, intraday-fundamental, historical-reconstruction, session, state-decay]
+---
+# Hybrid Daily Session Event Fundamental State Engine
+
+This module is the governing architecture for dense live and historical fundamental-state reconstruction. It replaces sparse event-only recording with a hybrid system:
+
+`DAILY BASELINE → SESSION REASSESSMENT → EVENT UPDATE → MICRO-WINDOWS → STATE DECAY → CROSS-ASSET CONFIRMATION → END-OF-DAY ATTRIBUTION`
+
+## Canonical standards
+
+- [[88 Hybrid Daily Session Event Fundamental State Engine/01 Architecture and Horizon Separation]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/02 Record Types and Mandatory Coverage]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/03 Session Clocks and Handoff Protocol]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/04 Scheduled and Unscheduled Event Micro-Windows]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/05 State Decay and No-Change Reassessment]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/06 Adaptive Materiality and Change Thresholds]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/07 Direction Usability and Edge Availability]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/08 Cross-Asset Confirmation and Causal-Leader Changes]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/09 Quiet-Day Flow and Liquidity Reassessment]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/10 Nasdaq 100 Fast Medium and Slow Driver Stack]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/11 S&P 500 Fast Medium and Slow Driver Stack]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/12 Gold Fast Medium and Slow Driver Stack]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/13 EURUSD Fast Medium and Slow Driver Stack]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/14 Hybrid Fundamental State Schema]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/15 Historical 100-Day Reconstruction Output Contract]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/16 Density Coverage and Gap Validation Standard]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/17 No-Lookahead and Immutable-State Audit]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/18 End-of-Day Attribution and Carry-Forward]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/19 Benchmark Scenarios and Acceptance Tests]]
+- [[88 Hybrid Daily Session Event Fundamental State Engine/20 Implementation and Migration Map]]
+
+## Production prompt
+
+- [[75 ChatGPT Institutional Market Analysis Prompts/17 Four-Market 100-Day Hybrid Point-in-Time Reconstruction Prompt]]
+- [[75 ChatGPT Institutional Market Analysis Prompts/18 Hybrid Reconstruction Output and Density Contract]]
+- [[75 ChatGPT Institutional Market Analysis Prompts/19 Hybrid Reconstruction Fast Launcher]]
+
+## Doctrine
+
+A valid state exists for every open trading day. Direction may remain unchanged while intensity, freshness, absorption, repricing completion, flow exhaustion, confirmation, persistence, remaining pressure, reversal risk and edge availability change. Mandatory reassessment is not a claim that fundamentals changed; it is evidence that the desk checked whether they changed.

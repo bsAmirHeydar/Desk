@@ -2,7 +2,7 @@
 title: "ChatGPT Institutional Fundamental Market Analysis Prompts"
 type: moc
 status: evergreen
-version: 10.1.0
+version: 10.4.0
 created: 2026-07-29
 updated: 2026-07-30
 language: en
@@ -27,6 +27,9 @@ These prompts require the attached Vault ZIP and use only fundamental, macro, va
 - [[75 ChatGPT Institutional Market Analysis Prompts/14 Cross-Market Relative-Value Analysis Prompt]]
 - [[75 ChatGPT Institutional Market Analysis Prompts/15 Portfolio Fundamental Exposure and Hidden-Beta Audit Prompt]]
 - [[75 ChatGPT Institutional Market Analysis Prompts/16 Prompt Selection and Operating Checklist]]
+- [[75 ChatGPT Institutional Market Analysis Prompts/17 Four-Market 100-Day Hybrid Point-in-Time Reconstruction Prompt]]
+- [[75 ChatGPT Institutional Market Analysis Prompts/18 Hybrid Reconstruction Output and Density Contract]]
+- [[75 ChatGPT Institutional Market Analysis Prompts/19 Hybrid Reconstruction Fast Launcher]]
 
 ## V10 specialist and evidence gate
 

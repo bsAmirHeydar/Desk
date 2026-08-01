@@ -2,7 +2,7 @@
 title: "Alpha Lab Asset-Specific Persian PDF Analysis Prompts"
 type: moc
 status: canonical
-version: 10.3.0
+version: 10.4.0
 created: 2026-07-30
 updated: 2026-08-01
 language: en
@@ -52,3 +52,6 @@ The four asset prompts support daily pre-market, live-session, post-event and en
 ## Hourly operating mode
 
 The four asset prompts support fixed hourly snapshots plus event-driven updates. Hourly outputs separate direction, intensity, confidence, consumption, remaining pressure, persistence, reversal risk and no-material-update states.
+## Hybrid historical and intraday state engine
+
+The canonical dense reconstruction architecture is [[88 Hybrid Daily Session Event Fundamental State Engine/00 Hybrid Daily Session Event Fundamental State Engine MOC]]. It governs mandatory daily baselines, session handoffs, event micro-windows, state decay, no-change reassessments and density validation.

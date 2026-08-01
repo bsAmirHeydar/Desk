@@ -2,7 +2,7 @@
 title: "Alpha Lab Hourly Fundamental State Engine"
 type: hourly-analysis-standard
 status: canonical
-version: 10.3.0
+version: 10.4.0
 created: 2026-08-01
 updated: 2026-08-01
 language: en
@@ -337,3 +337,6 @@ A positive or negative hourly state requires:
 8. a timestamped source ledger.
 
 If any core condition is missing, cap the state at weak edge, no edge or insufficient evidence.
+## V10.4 hybrid session and historical replay precedence
+
+Fixed hourly snapshots are supporting checkpoints inside the hybrid engine, not substitutes for session and event logic. Historical replay must use mandatory daily baselines, session handoffs, micro-windows, decay updates and density validation under [[88 Hybrid Daily Session Event Fundamental State Engine/00 Hybrid Daily Session Event Fundamental State Engine MOC]]. Future hours remain conditional and earlier records remain immutable.

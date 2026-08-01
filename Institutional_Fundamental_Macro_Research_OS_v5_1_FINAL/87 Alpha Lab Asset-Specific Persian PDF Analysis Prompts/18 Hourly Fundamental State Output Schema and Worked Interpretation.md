@@ -2,7 +2,7 @@
 title: "Alpha Lab Hourly Fundamental State Output Schema and Worked Interpretation"
 type: output-schema
 status: canonical
-version: 10.3.0
+version: 10.4.0
 created: 2026-08-01
 updated: 2026-08-01
 language: en
@@ -14,6 +14,11 @@ tags: [alpha-lab, hourly, schema, interpretation]
 
 ```yaml
 hourly_fundamental_state:
+  record_id:
+  parent_record_id:
+  record_type:
+  mandatory_checkpoint:
+  checkpoint_completed:
   timestamp:
   timezone:
   market:
@@ -103,3 +108,6 @@ hourly_fundamental_state:
 Plain-Persian interpretation:
 
 > جهت بنیادی در این ساعت منفی و شدت فشار نسبتاً زیاد است. محرک هنوز تازه است و فقط بخشی از بازقیمت‌گذاری انجام شده؛ بنابراین فشار نزولی باقی‌مانده همچنان قابل‌توجه است. با این حال، ثبات بازار اعتبار یک نیروی مخالف است و اعتماد تحلیل را محدود می‌کند. اگر بازده واقعی برگردد یا credit بهبود معنادار نشان دهد، حالت باید دوباره ارزیابی شود.
+## V10.4 hybrid extension
+
+For historical datasets, use the complete schema in [[88 Hybrid Daily Session Event Fundamental State Engine/14 Hybrid Fundamental State Schema]]. Hourly state objects must include record type, parent record, mandatory checkpoint, session stage, state-decay basis, before/after cross-asset confirmation and edge availability.

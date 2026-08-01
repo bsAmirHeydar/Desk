@@ -96,3 +96,12 @@ Releases 02–14 are implemented in [[80 Deprecated Mega Canon v7 Redirects/00 D
 - [[V10_3_HOURLY_FUNDAMENTAL_STATE_RELEASE_NOTES]]
 - [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/14 Hourly Fundamental State Engine]]
 - [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/17 Hourly Fast Launcher Messages]]
+## V10.4 hybrid reconstruction coverage
+
+| Capability | Canonical module | Status |
+|---|---|---|
+| Hybrid daily/session/event reconstruction | [[88 Hybrid Daily Session Event Fundamental State Engine/00 Hybrid Daily Session Event Fundamental State Engine MOC]] | Complete |
+| Mandatory daily and session coverage | [[88 Hybrid Daily Session Event Fundamental State Engine/02 Record Types and Mandatory Coverage]] | Complete |
+| Event micro-windows | [[88 Hybrid Daily Session Event Fundamental State Engine/04 Scheduled and Unscheduled Event Micro-Windows]] | Complete |
+| State decay and no-change records | [[88 Hybrid Daily Session Event Fundamental State Engine/05 State Decay and No-Change Reassessment]] | Complete |
+| Density and gap validation | [[88 Hybrid Daily Session Event Fundamental State Engine/16 Density Coverage and Gap Validation Standard]] | Complete |

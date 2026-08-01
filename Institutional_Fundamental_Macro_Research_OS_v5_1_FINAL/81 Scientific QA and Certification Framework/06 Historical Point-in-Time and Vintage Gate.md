@@ -2,60 +2,37 @@
 title: "06 Historical Point-in-Time and Vintage Gate"
 type: canonical-standard
 status: canonical
-version: 9.0.0
+version: 10.4.0
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-01
 language: en
-tags: [fundamental-only, scientific-qa]
+tags: [fundamental-only, scientific-qa, density, session]
 ---
-
 # Historical Point-in-Time and Vintage Gate
 
-## Historical reconstruction object
+## Historical object
 
-Historical work asks what a disciplined analyst could have known at a specified cutoff, not what later data show. The information set includes only documents, releases, filings and market observations available by that timestamp.
+Historical work asks what could have been known at each cutoff. It must now also demonstrate complete daily/session observability under [[88 Hybrid Daily Session Event Fundamental State Engine/16 Density Coverage and Gap Validation Standard]].
 
 ## Required clocks
 
-- economic reference period;
-- scheduled release time;
-- actual publication time;
-- market observation time;
-- revision or benchmark-revision date;
-- corporate filing acceptance time;
-- policy announcement and press-conference time;
-- timezone and daylight-saving convention.
+Reference period, release time, publication time, market observation time, revision date, filing acceptance, policy statement/press-conference time, timezone and DST.
 
 ## Vintage rules
 
-- preserve first release and every material revision;
-- never overwrite earlier values;
-- use historical index constituents and contract specifications;
-- use the policy expectations and yield curve observable at the cutoff;
-- separate ex-ante reconstruction from ex-post audit;
-- record unavailable evidence rather than filling it with later knowledge.
+Preserve first releases and revisions; use historical constituents and specifications; reconstruct policy pricing at the cutoff; record unavailable evidence.
 
-## Historical report structure
+## Density gates
 
-### Part A — Reconstructed information set
+Fail or condition the run when:
 
-State, expectations, valuation, positioning, uncertainty and scenarios using only admissible evidence.
-
-### Part B — Ex-ante conclusion
-
-The conclusion that would have been defensible at the cutoff, including confidence cap and missing information.
-
-### Part C — Ex-post audit
-
-Later outcomes, revisions and newly revealed mechanisms. Part C must never leak into Parts A or B.
+- an open day lacks a baseline or end-of-day state;
+- mandatory session checkpoints are missing without reason;
+- maximum gaps exceed market defaults;
+- event micro-windows are incomplete without explanation;
+- a state is carried without decay reassessment;
+- direction remains unchanged but practical sub-state is never reassessed.
 
 ## Contamination tests
 
-- Does the report mention a later policy decision?
-- Does it use current index membership?
-- Does it use revised GDP, payroll, CPI or inventory data?
-- Does it rely on an article published after the cutoff?
-- Does it use end-of-day prices for a pre-release decision?
-- Does it know the event outcome before assigning scenario weights?
-
-Any positive answer without an explicit ex-post label fails certification.
+Any later release, future outcome, full-day data in a morning record, later article, later constituent or future event knowledge fails strict certification unless isolated in ex-post audit.

@@ -2,7 +2,7 @@
 title: "03 Historical Point-in-Time Fundamental Reconstruction Prompt"
 type: production-prompt
 status: evergreen
-version: 10.0.0
+version: 10.4.0
 created: 2026-07-29
 updated: 2026-07-30
 language: en
@@ -71,3 +71,6 @@ Before finalizing, open and apply `81 Scientific QA and Certification Framework/
 ## V10 specialist and evidence gate
 
 After selecting the direct primary canonical monograph, check the specialist registry for a narrower legal, industry, instrument or physical-market dependency. Do not retrieve a broad legacy field guide when a specialist canonical note exists. Probabilities must be labelled as empirically calibrated, model-implied or judgmental scenario weights. Internal QA may be reported; external scientific certification may not be claimed.
+# V10.4 hybrid density gate
+
+For multi-day historical windows, event-only output is invalid. Apply `88 Hybrid Daily Session Event Fundamental State Engine/00 Hybrid Daily Session Event Fundamental State Engine MOC.md`. Produce daily baselines, mandatory session reassessments, event micro-windows, state-decay/no-change records, end-of-day attribution and density validation. Preserve the original cutoff discipline at every record.

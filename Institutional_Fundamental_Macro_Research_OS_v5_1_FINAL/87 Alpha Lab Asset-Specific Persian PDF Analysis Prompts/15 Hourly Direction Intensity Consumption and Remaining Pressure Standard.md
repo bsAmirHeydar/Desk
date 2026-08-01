@@ -2,7 +2,7 @@
 title: "Alpha Lab Hourly Direction Intensity Consumption and Remaining Pressure Standard"
 type: hourly-scoring-standard
 status: canonical
-version: 10.3.0
+version: 10.4.0
 created: 2026-08-01
 updated: 2026-08-01
 language: en
@@ -143,3 +143,6 @@ Avoid these errors:
 - calling a flow-driven squeeze a fundamental underreaction;
 - treating consensus narrative saturation as economic-state completion;
 - assigning precise percentages when key flow data are unavailable.
+## V10.4 adaptive thresholds
+
+Mandatory checkpoints are recorded regardless of score change. Additional material records use 5-point thresholds for direction, intensity and confidence and 10-point thresholds for absorption, repricing completion, flow exhaustion, freshness, saturation, remaining pressure, confirmation and reversal risk. Any categorical change in direction, leader, model, persistence, move quality, edge, confirmation or thesis status is always material.
