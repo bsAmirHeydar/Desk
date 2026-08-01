@@ -2,9 +2,9 @@
 title: "Shared Vault Retrieval Evidence and Analysis Contract"
 type: analysis-contract
 status: canonical
-version: 10.1.0
+version: 10.2.0
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 language: en
 tags: [vault-retrieval, evidence, analysis, current, historical]
 ---
@@ -90,3 +90,16 @@ The report may state:
 - `INTERNAL QA — FAILED`
 
 It may not claim independent external scientific certification unless an actual independent review exists.
+
+
+## Daily profile retrieval
+
+For `DAILY_PREMARKET`, `LIVE_SESSION_UPDATE`, `POST_EVENT_UPDATE` or `END_OF_DAY`:
+
+1. Read [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/11 Daily Fundamental Context Engine]].
+2. Read the direct asset canon and no more than six material dependencies.
+3. Prioritize timestamped changes from the previous official close, the prior 24 hours, today's catalyst calendar and the next 24–48 hours.
+4. Retrieve structural or cyclical material only when it constrains interpretation of the day.
+5. Build a change ledger and a causal-leader scoreboard before writing the conclusion.
+6. Distinguish information-driven repricing from flow, liquidity, fixing, expiry, rebalance or positioning effects.
+7. State the next mandatory update time.

@@ -2,9 +2,9 @@
 title: "Alpha Lab Report Naming Archiving and Reuse Standard"
 type: archive-standard
 status: canonical
-version: 10.1.0
+version: 10.2.0
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 language: en
 tags: [alpha-lab, archive, reports]
 ---
@@ -52,3 +52,14 @@ Every report should retain:
 ## Reuse rule
 
 Do not silently overwrite a prior report. Preserve each dated report so changes in thesis, evidence and confidence can be audited over time.
+
+
+## Daily reports
+
+Use:
+
+```text
+Alpha_Lab_[MARKET]_[PROFILE]_[SESSION]_Daily_Fundamental_Report_[YYYY-MM-DD].pdf
+```
+
+Store daily reports by date and profile. Do not overwrite the pre-market report with a later session update; the sequence is part of the research audit trail.

@@ -2,9 +2,9 @@
 title: "Alpha Lab Persian PDF Design System"
 type: report-design-standard
 status: canonical
-version: 10.1.0
+version: 10.2.0
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 language: en
 tags: [alpha-lab, pdf, rtl, persian, design-system]
 ---
@@ -120,3 +120,8 @@ Alpha_Lab_[MARKET]_[LIVE_or_HISTORICAL]_Fundamental_Report_[YYYY-MM-DD].pdf
 - Decorative market charts with no source.
 - English left-to-right page layout with Persian text forced into isolated boxes.
 - Excessive gradients, shadows, glass effects or dashboard-style clutter.
+
+
+## Daily report variant
+
+When `ANALYSIS_PROFILE` is a daily profile, use [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/12 Daily Persian PDF Report Contract]]. The daily report should be visibly lighter and faster to read than the full-spectrum report. Preserve the Alpha Lab identity but prioritize one-page summaries, change tables, catalyst timelines and scenario matrices over long macro exposition.

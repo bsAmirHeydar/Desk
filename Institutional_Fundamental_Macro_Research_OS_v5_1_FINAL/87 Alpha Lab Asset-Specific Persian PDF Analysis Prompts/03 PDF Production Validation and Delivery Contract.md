@@ -2,9 +2,9 @@
 title: "PDF Production Validation and Delivery Contract"
 type: pdf-production-standard
 status: canonical
-version: 10.1.0
+version: 10.2.0
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 language: en
 tags: [pdf, validation, delivery, alpha-lab]
 ---
@@ -45,3 +45,8 @@ After successful creation, respond briefly in Persian with:
 - the internal QA state.
 
 Do not paste the full report into the chat unless explicitly requested.
+
+
+## Daily report production
+
+For daily profiles, apply [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/12 Daily Persian PDF Report Contract]]. Confirm that the report includes the previous-close change ledger, today's catalyst timeline, daily state, persistence class, invalidation evidence and next update time. Reject a daily PDF that is dominated by structural macro background or fails to explain what changed today.

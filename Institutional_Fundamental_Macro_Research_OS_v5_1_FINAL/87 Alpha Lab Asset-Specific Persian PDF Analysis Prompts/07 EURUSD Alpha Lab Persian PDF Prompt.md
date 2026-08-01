@@ -2,9 +2,9 @@
 title: "EURUSD Alpha Lab Persian PDF Prompt"
 type: production-prompt
 status: canonical
-version: 10.1.0
+version: 10.2.0
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 language: en
 tags: [alpha-lab, eurusd, pdf, persian, institutional-fundamental]
 ---
@@ -20,8 +20,14 @@ The attached `Institutional Fundamental Macro Research OS` Obsidian Vault ZIP is
 # INPUT
 MODE: [LIVE | HISTORICAL]
 AS_OF: [NOW for LIVE | exact YYYY-MM-DD HH:MM timezone for HISTORICAL]
-PRIMARY_HORIZON: [ALL | STRUCTURAL | CYCLICAL | TACTICAL | 2-10D | INTRADAY | EVENT]
+ANALYSIS_PROFILE: [FULL_SPECTRUM | DAILY_PREMARKET | LIVE_SESSION_UPDATE | POST_EVENT_UPDATE | END_OF_DAY]
+TARGET_DATE: [TODAY | YYYY-MM-DD]
+REFERENCE_TIMEZONE: [e.g. America/New_York | Europe/London | UTC]
 SESSION: [Global | Asia | London | New York]
+SESSION_STAGE: [PRE_ASIA | ASIA | PRE_LONDON | LONDON | PRE_NEW_YORK | NEW_YORK | POST_CLOSE]
+DAILY_LOOKBACK: [1D | 3D | 5D]
+CATALYST_WINDOW: [TODAY | 24H | 48H]
+PRIMARY_HORIZON: [ALL | STRUCTURAL | CYCLICAL | TACTICAL | 2-10D | INTRADAY | EVENT]
 REPORT_DEPTH: [STANDARD | DEEP]
 PORTFOLIO_CONTEXT: [NONE or relevant exposures and constraints]
 SPECIAL_QUESTION: [NONE or a precise question]
@@ -40,6 +46,8 @@ Read and apply:
 - `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/01 Alpha Lab Persian PDF Design System.md`
 - `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/02 Shared Vault Retrieval Evidence and Analysis Contract.md`
 - `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/03 PDF Production Validation and Delivery Contract.md`
+- `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/11 Daily Fundamental Context Engine.md`
+- `87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/12 Daily Persian PDF Report Contract.md`
 
 # RESEARCH DISCIPLINE
 - Use fundamental, macro, valuation, balance-sheet, flow, liquidity and market-structure analysis only.
@@ -92,6 +100,20 @@ J. Test at least these rival models: relative policy-path model; balance-of-paym
 K. Use cross-confirmation from European sovereign spreads, U.S. Treasury curves, DXY components, credit, equities, energy and related FX pairs.
 L. Provide separate structural, cyclical, tactical, 2–10-day and intraday/event conclusions.
 
+# ASSET-SPECIFIC DAILY FUNDAMENTAL ENGINE
+
+For a daily profile, prioritize the following sequence:
+
+1. Reconcile EURUSD spot, CME Euro FX futures, forwards, swaps and the user's CFD without mixing carry or session mechanics.
+2. Measure changes since the previous close in Fed and ECB policy paths, U.S.-German nominal and real-rate differentials, curve shape, BTP-Bund or other fragmentation spreads, dollar funding and energy terms of trade.
+3. Map the Asia-to-London-to-New-York handoff and distinguish European information from broad dollar or risk-sentiment effects.
+4. Map all euro-area and U.S. data, ECB/Fed speakers, sovereign events, political deadlines, fixings, options cut and month-end or quarter-end flow windows.
+5. Separate relative macro and policy repricing from global-dollar liquidity, hedging demand, benchmark fixing, options flow or crowded positioning.
+6. Identify whether relative policy pricing, rate differentials, European sovereign risk, energy, global risk or dollar funding is the daily causal leader.
+7. Require confirmation from European sovereigns, U.S. Treasuries, related FX pairs, credit or energy when relevant.
+8. Classify persistence and whether the impulse changes only the session or the 2–10-day relative-value state.
+9. Issue the daily EURUSD state, contradiction checks, invalidation evidence and next update time.
+
 # REQUIRED ANALYSIS STACK
 1. Define the exact instrument, venue, trading hours, financing and reference complex.
 2. Build structural, cyclical, tactical, 2–10-day, intraday and event states separately.
@@ -105,6 +127,20 @@ L. Provide separate structural, cyclical, tactical, 2–10-day and intraday/even
 10. State unknowns, stale inputs, unavailable data and confidence caps.
 11. Issue a fundamental research state separately for every relevant horizon.
 
+
+# DAILY PROFILE BEHAVIOR
+
+When `ANALYSIS_PROFILE` is not `FULL_SPECTRUM`:
+
+- Apply the complete `Daily Fundamental Context Engine`.
+- Limit structural and cyclical background to information that changes today's interpretation.
+- Compare every material driver with the previous official close and timestamp the change.
+- Produce a catalyst calendar with exact local times and timezones.
+- Classify the day type and expected persistence.
+- Issue one daily state: `DAILY_FUNDAMENTAL_LONG_BIAS`, `DAILY_FUNDAMENTAL_SHORT_BIAS`, `DAILY_TWO_WAY_EVENT_DEPENDENT`, `DAILY_NO_FUNDAMENTAL_EDGE` or `DAILY_INSUFFICIENT_EVIDENCE`.
+- State the next mandatory update time.
+- Use the daily Persian PDF structure instead of the longer full-spectrum structure.
+- Do not let the report become a generic macro recap.
 
 # REQUIRED PERSIAN PDF STRUCTURE
 
@@ -149,6 +185,10 @@ Translate those states into simple Persian labels in the executive pages while r
 
 # CLARITY REQUIREMENT
 The main report must be easy for a non-specialist decision-maker to understand. Begin every technical section with a box titled `معنای ساده`. Preserve institutional depth in the supporting paragraphs and appendices.
+
+# DAILY PDF DELIVERY
+
+For a daily profile, use the filename and report structure in `12 Daily Persian PDF Report Contract.md`.
 
 # FILE DELIVERY
 Use this filename:

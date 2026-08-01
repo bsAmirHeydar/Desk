@@ -2,9 +2,9 @@
 title: "Alpha Lab Asset-Specific Persian PDF Analysis Prompts"
 type: moc
 status: canonical
-version: 10.1.0
+version: 10.2.0
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 language: en
 tags: [alpha-lab, prompts, pdf, persian, institutional-analysis]
 ---
@@ -27,6 +27,9 @@ This module contains four standalone English production prompts. Each prompt req
 - [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/08 Fast Launcher Messages]]
 - [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/09 Input Reference and Worked Examples]]
 - [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/10 Report Naming Archiving and Reuse Standard]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/11 Daily Fundamental Context Engine]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/12 Daily Persian PDF Report Contract]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/13 Daily Fast Launcher Messages]]
 
 ## Operating principle
 
@@ -35,3 +38,7 @@ The prompt text is English to maximize instruction precision. The final report i
 ## Mandatory boundary
 
 These prompts are fundamental-only. They may use price and market data to measure valuation, market-implied expectations, volatility, liquidity, basis, positioning proxies and realized response. They may not use chart patterns, indicators or non-fundamental entry systems.
+
+## Daily operating mode
+
+The four asset prompts support daily pre-market, live-session, post-event and end-of-day profiles. Daily reports prioritize the current trading day and use the structural canon only as an inherited constraint.

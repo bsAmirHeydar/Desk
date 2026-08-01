@@ -47,3 +47,7 @@ tags:
 - Added the Alpha Lab institutional PDF design system, page-validation contract, fast launchers, examples and archive convention.
 - Added asset-specific canonical retrieval maps and causal requirements.
 - Preserved the fundamental-only boundary and internal-QA versus external-certification distinction.
+
+## v10.2.0 — Daily Fundamental Context
+
+Added daily pre-market, live-session, post-event and end-of-day profiles for Nasdaq 100, S&P 500, Gold and EURUSD, including daily PDF output contracts and fast launchers.

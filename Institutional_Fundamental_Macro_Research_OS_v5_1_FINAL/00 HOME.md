@@ -143,3 +143,9 @@ Version 6.1 evaluates the Vault as an institutional body of fundamental knowledg
 
 - [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/00 Alpha Lab Asset-Specific Persian PDF Analysis Prompts MOC]]
 - Dedicated Nasdaq 100, S&P 500, Gold and EURUSD prompts use the complete canonical Vault and create actual Persian RTL Alpha Lab PDF reports.
+
+## V10.2 daily fundamental context
+
+- [[V10_2_DAILY_FUNDAMENTAL_CONTEXT_RELEASE_NOTES]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/11 Daily Fundamental Context Engine]]
+- [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/13 Daily Fast Launcher Messages]]

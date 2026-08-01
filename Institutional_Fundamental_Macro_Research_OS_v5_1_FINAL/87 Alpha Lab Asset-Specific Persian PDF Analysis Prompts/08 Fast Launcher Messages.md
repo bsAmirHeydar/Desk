@@ -2,9 +2,9 @@
 title: "Alpha Lab Fast Launcher Messages"
 type: launcher-library
 status: canonical
-version: 10.1.0
+version: 10.2.0
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 language: en
 tags: [alpha-lab, launcher, pdf]
 ---
@@ -91,3 +91,7 @@ EX_POST_AUDIT: YES
 ```
 
 The reconstructed report must not use later data, later revisions, later prices or future outcomes in the main analysis.
+
+## Daily launchers
+
+For the daily pre-market, live-session, post-event and end-of-day launchers, use [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/13 Daily Fast Launcher Messages]].
