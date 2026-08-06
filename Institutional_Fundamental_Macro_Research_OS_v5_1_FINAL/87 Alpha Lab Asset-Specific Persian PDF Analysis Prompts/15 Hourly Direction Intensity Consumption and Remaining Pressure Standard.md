@@ -146,3 +146,17 @@ Avoid these errors:
 ## V10.4 adaptive thresholds
 
 Mandatory checkpoints are recorded regardless of score change. Additional material records use 5-point thresholds for direction, intensity and confidence and 10-point thresholds for absorption, repricing completion, flow exhaustion, freshness, saturation, remaining pressure, confirmation and reversal risk. Any categorical change in direction, leader, model, persistence, move quality, edge, confirmation or thesis status is always material.
+
+---
+
+## V11 governing extension
+
+For methodology version `11.0.0`, the definitions above remain valid and are extended—not replaced—by Module 89:
+
+- force components and applicability: [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/03 Fundamental Force and Intensity Decomposition]];
+- consumption lifecycle: [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/07 Consumption Vector and Lifecycle]];
+- counterfactual repricing: [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/09 Repricing Completion and Counterfactual Baselines]];
+- remaining pressure: [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/13 Remaining Fundamental Pressure Decomposition]];
+- provenance and false precision: [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/21 Score Provenance Intervals and False-Precision Control]].
+
+V10.4 numeric values remain ordinal. They become calibrated estimands only under explicitly declared `EMPIRICALLY_CALIBRATED_MODE` with out-of-sample evidence.

@@ -55,3 +55,17 @@ The four asset prompts support fixed hourly snapshots plus event-driven updates.
 ## Hybrid historical and intraday state engine
 
 The canonical dense reconstruction architecture is [[88 Hybrid Daily Session Event Fundamental State Engine/00 Hybrid Daily Session Event Fundamental State Engine MOC]]. It governs mandatory daily baselines, session handoffs, event micro-windows, state decay, no-change reassessments and density validation.
+
+---
+
+## V11 analysis engine
+
+The asset-specific Persian reporting layer may continue to use its existing output contracts. Its analytical input should now be produced by:
+
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/38 Alpha Lab V11 Full-Spectrum Fundamental State Analysis Prompt]]
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/25 Nasdaq 100 Force Consumption and Persistence Book]]
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/26 S&P 500 Force Consumption and Persistence Book]]
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/27 Gold Force Consumption and Persistence Book]]
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/28 EURUSD Force Consumption and Persistence Book]]
+
+The Persian PDF format is preserved; the state methodology is upgraded.

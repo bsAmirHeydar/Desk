@@ -73,3 +73,19 @@ default_retrieval: true
 ## Specialist canonical dependencies
 
 Use [[85 Specialist Canonical Research Appendices/00 Specialist Canonical Research Appendices MOC]] when a query touches regulated capital, structured mortgage products, insurance-linked risk, sovereign restructuring, fund structures, a specialist industry, soft commodity, political process or China local finance.
+
+---
+
+## V11 concept authority
+
+The consolidated library remains the primary broad research canon. For the following operational state concepts, methodology version `11.0.0` is governed by Module 89:
+
+- fundamental force and intensity;
+- consumption and counterfactual repricing;
+- remaining pressure;
+- persistence and half-life;
+- reversal hazard;
+- fundamental path asymmetry;
+- provenance, confidence caps and calibration status.
+
+See [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/00 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine MOC]] and `V11_CANONICAL_AUTHORITY_MAP.yaml`.

@@ -1,0 +1,13 @@
+v10_4_field,v11_field,transformation_class,rule
+direction,horizon_states[].direction,LOSSLESS_EXPANSION,Must select horizon.
+intensity,force.aggregate_value,CONTEXT_REQUIRED,V10.4 intensity is not automatically the V11 force aggregate.
+confidence,horizon_states[].confidence,CONTEXT_REQUIRED,Apply field-level caps.
+consumption,consumption_v2.summary_state / components,LOSSY_SUMMARY,Do not infer components from old aggregate.
+information_absorption,consumption_v2.expectation_incorporation,CONTEXT_REQUIRED,Check old field definition.
+repricing_completion,consumption_v2.instrument_repricing_completion,LOSSLESS_EXPANSION,Preserve provenance.
+flow_exhaustion,consumption_v2.mechanical_flow_exhaustion,LOSSLESS_EXPANSION,Apply data-tier cap.
+narrative_saturation,consumption_v2.narrative_saturation,LOSSLESS_EXPANSION,Preserve horizon.
+remaining_pressure,remaining_pressure_v2.aggregate_range/class,CONTEXT_REQUIRED,Not arithmetic complement.
+persistence,persistence_v2,CONTEXT_REQUIRED,Old summary cannot populate component stack.
+reversal_risk,remaining_pressure_v2.reversal_hazard / horizon_states[].reversal_risk,CONTEXT_REQUIRED,Keep horizon.
+edge_availability,horizon_states[].edge_availability / asymmetry_v2.edge_availability,LOSSLESS_EXPANSION,Keep execution handoff separate.

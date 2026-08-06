@@ -1,0 +1,23 @@
+{
+  "validator": "V11_REGRESSION_VALIDATION",
+  "status": "PASS",
+  "base_release": "10.4.0",
+  "target_release": "11.0.0",
+  "required_paths": "PASS",
+  "v10_schema_markers": "PASS",
+  "hybrid_record_density": "PRESERVED_BY_BRIDGE_AND_EXISTING_MODULE",
+  "event_micro_windows": "PRESERVED",
+  "no_change_records": "PRESERVED",
+  "direction_edge_separation": "PRESERVED",
+  "consumption_vector": "PRESERVED_AND_EXTENDED",
+  "no_lookahead": "PRESERVED",
+  "asset_prompts": "PRESERVED_AND_EXTENDED",
+  "persian_pdf_contracts": "PRESERVED",
+  "new_link_delta": 0,
+  "new_ambiguous_link_delta": 0,
+  "new_malformed_frontmatter_delta": 0,
+  "new_unbalanced_fence_delta": 0,
+  "limitations": [
+    "Semantic regression is internally benchmarked; empirical output superiority requires frozen historical packets."
+  ]
+}

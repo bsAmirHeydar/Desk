@@ -2,9 +2,9 @@
 title: "Institutional Fundamental Coverage and Production Maturity Matrix"
 type: coverage-matrix
 status: active
-version: 10.1.0
+version: 11.0.0
 created: 2026-07-29
-updated: 2026-07-30
+updated: 2026-08-06
 language: en
 ---
 # Institutional Fundamental Coverage and Production Maturity Matrix
@@ -105,3 +105,20 @@ Releases 02–14 are implemented in [[80 Deprecated Mega Canon v7 Redirects/00 D
 | Event micro-windows | [[88 Hybrid Daily Session Event Fundamental State Engine/04 Scheduled and Unscheduled Event Micro-Windows]] | Complete |
 | State decay and no-change records | [[88 Hybrid Daily Session Event Fundamental State Engine/05 State Decay and No-Change Reassessment]] | Complete |
 | Density and gap validation | [[88 Hybrid Daily Session Event Fundamental State Engine/16 Density Coverage and Gap Validation Standard]] | Complete |
+
+---
+
+## V11 methodology coverage
+
+| Domain | V11 primary canon | Operational status | Empirical status |
+|---|---|---|---|
+| Fundamental force and intensity | [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/03 Fundamental Force and Intensity Decomposition]] | canonical | ordinal/calibration-ready |
+| Consumption and repricing | [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/07 Consumption Vector and Lifecycle]] | canonical | ordinal/calibration-ready |
+| Counterfactual repricing | [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/09 Repricing Completion and Counterfactual Baselines]] | canonical | method-specific; not universally calibrated |
+| Remaining pressure | [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/13 Remaining Fundamental Pressure Decomposition]] | canonical | residual analytical state |
+| Persistence and half-life | [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/14 Persistence Half-Life and State Survival]] | canonical | survival-ready; not universally estimated |
+| Reversal and exhaustion | [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/15 Exhaustion Reversal Hazard and Thesis Failure]] | canonical | conditional |
+| Fundamental asymmetry | [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/16 Fundamental Path Asymmetry and Edge Availability]] | canonical | execution handoff only |
+| Provenance and confidence caps | [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/20 Observability Data Tiers and Confidence Caps]] | canonical | validator-enforced |
+| Historical calibration | [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/23 Historical Point-in-Time Calibration Laboratory]] | architecture complete | dataset-dependent |
+| V10.4 hybrid records | [[88 Hybrid Daily Session Event Fundamental State Engine/00 Hybrid Daily Session Event Fundamental State Engine MOC]] | preserved | regression-tested |

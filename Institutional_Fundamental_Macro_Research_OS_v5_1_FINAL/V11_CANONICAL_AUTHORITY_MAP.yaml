@@ -1,0 +1,24 @@
+version: "11.0.0"
+base_operational_release: "10.4.0"
+conflict_rule: "Module 89 governs listed concepts for methodology 11.0.0; prior canon remains valid where non-conflicting."
+concepts:
+  force:
+    primary: "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/03 Fundamental Force and Intensity Decomposition.md"
+  consumption:
+    primary: "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/07 Consumption Vector and Lifecycle.md"
+  remaining_pressure:
+    primary: "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/13 Remaining Fundamental Pressure Decomposition.md"
+  persistence:
+    primary: "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/14 Persistence Half-Life and State Survival.md"
+  reversal_risk:
+    primary: "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/15 Exhaustion Reversal Hazard and Thesis Failure.md"
+  fundamental_asymmetry:
+    primary: "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/16 Fundamental Path Asymmetry and Edge Availability.md"
+  confidence_caps:
+    primary: "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/20 Observability Data Tiers and Confidence Caps.md"
+  calibration:
+    primary: "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/23 Historical Point-in-Time Calibration Laboratory.md"
+  hybrid_record_density:
+    primary: "88 Hybrid Daily Session Event Fundamental State Engine/02 Record Types and Mandatory Coverage.md"
+  no_lookahead:
+    primary: "88 Hybrid Daily Session Event Fundamental State Engine/17 No-Lookahead and Immutable-State Audit.md"

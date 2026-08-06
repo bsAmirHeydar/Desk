@@ -1,0 +1,33 @@
+{
+  "benchmark_id": "B23",
+  "methodology_version": "11.0.0",
+  "scenario": "Low price move before next event",
+  "frozen_cutoff_utc": "2025-01-01T12:00:00Z",
+  "information_set": {
+    "status": "SYNTHETIC_FROZEN_PACKET",
+    "description": "Low price move before next event"
+  },
+  "allowed_evidence": [
+    "facts explicitly included in the packet",
+    "pre-cutoff market-implied state",
+    "declared public proxies"
+  ],
+  "prohibited_evidence": [
+    "post-cutoff outcome",
+    "later revision",
+    "later official clarification unless included",
+    "proprietary data not in packet"
+  ],
+  "required_checks": [
+    "point_in_time",
+    "causal_leader_or_undetermined",
+    "rival_model",
+    "consumption_vector",
+    "remaining_pressure_residual",
+    "confidence_caps",
+    "horizon_separation"
+  ],
+  "core_acceptance_condition": "Do not infer low force; event waiting model considered.",
+  "expected_output": "schema-valid V11 record plus reasoning ledger",
+  "certification_scope": "logic fixture; not empirical market validation"
+}

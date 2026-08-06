@@ -1,0 +1,375 @@
+{
+  "v11_fundamental_state": {
+    "record_id": "EXAMPLE-NASDAQ_100-SESSION_1_6H",
+    "asset": "NASDAQ_100",
+    "cutoff_utc": "2026-01-15T14:30:00Z",
+    "methodology": {
+      "vault_release": "11.0.0",
+      "state_schema_version": "11.0.0",
+      "scoring_mode": "EMPIRICALLY_CALIBRATED_MODE",
+      "model_version": "example-1",
+      "analyst_or_agent_id": "AlphaLabFixture",
+      "estimand": null,
+      "calibration_evidence_locator": null
+    },
+    "legacy_v10_4": {
+      "direction": "BULLISH",
+      "intensity": 60,
+      "confidence": 60,
+      "consumption": 40,
+      "remaining_pressure": 55
+    },
+    "force": {
+      "component_ledger": [
+        {
+          "name": "expectation_surprise_magnitude",
+          "applicability": "APPLICABLE",
+          "value": 65,
+          "range": {
+            "low": 55,
+            "high": 75,
+            "unit": "ordinal_score"
+          },
+          "provenance": "STRUCTURED_JUDGMENT",
+          "confidence": 65,
+          "rationale": "Illustrative fixture.",
+          "source_locator": "fixture://frozen_packet",
+          "timestamp_utc": "2026-01-15T14:30:00Z",
+          "missing_input_penalty": 10
+        }
+      ],
+      "aggregate_value": 62,
+      "aggregate_range": {
+        "low": 52,
+        "high": 72,
+        "unit": "ordinal_score"
+      },
+      "aggregate_provenance": "STRUCTURED_JUDGMENT",
+      "applicability_map": [
+        {
+          "component": "expectation_surprise_magnitude",
+          "status": "APPLICABLE",
+          "reason": "Fixture driver."
+        }
+      ]
+    },
+    "expectations": {
+      "pre_catalyst_expectation": "Frozen illustrative expectation.",
+      "surprise_vector": [
+        {
+          "driver": "dealer_flow",
+          "direction": "POSITIVE"
+        }
+      ],
+      "expectation_revision_vector": [
+        {
+          "object": "dealer_flow",
+          "revision": "MODERATE"
+        }
+      ],
+      "counterfactual_repricing_method": "EXPERT_RANGE_WITH_DISCLOSED_ASSUMPTIONS",
+      "expected_repricing_range": {
+        "low": 0.5,
+        "high": 1.5,
+        "unit": "normalized_move"
+      }
+    },
+    "consumption_v2": {
+      "information_awareness": {
+        "value": 40,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "expectation_incorporation": {
+        "value": 40,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "instrument_repricing_completion": {
+        "value": 40,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "cross_asset_transmission_completion": {
+        "value": 40,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "positioning_adjustment_completion": {
+        "value": 40,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "mechanical_flow_exhaustion": {
+        "value": 40,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 95,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "narrative_saturation": {
+        "value": 40,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "valuation_payoff_compression": {
+        "value": 40,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "time_decay": {
+        "value": 40,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "catalyst_expiry": {
+        "value": 40,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "reinforcement_or_reopening": {
+        "value": 20,
+        "band": "LOW",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 55,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "unresolved_information_overhang": {
+        "value": 60,
+        "band": "HIGH",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "summary_state": "PARTIALLY_ABSORBED"
+    },
+    "remaining_pressure_v2": {
+      "residual_active_catalyst_force": {
+        "value": 50,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "unresolved_expectations_gap": {
+        "value": 50,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "unfinished_transmission": {
+        "value": 50,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "structural_cyclical_carry": {
+        "value": 50,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "institutional_constraint_tail": {
+        "value": 50,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "persistent_economic_process": {
+        "value": 50,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "mechanical_flow_continuation": {
+        "value": 50,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "reinforcement_state": {
+        "value": 50,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "opposing_force_load": {
+        "value": 50,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "valuation_compression": {
+        "value": 50,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "next_catalyst_hazard": {
+        "value": 50,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "reversal_hazard": {
+        "value": 50,
+        "band": "MODERATE",
+        "provenance": "STRUCTURED_JUDGMENT",
+        "confidence": 60,
+        "rationale": "Illustrative example; not a live market assessment."
+      },
+      "aggregate_range": {
+        "low": 45,
+        "high": 65,
+        "unit": "ordinal_score"
+      },
+      "aggregate_class": "MODERATE"
+    },
+    "persistence_v2": {
+      "persistence_components": [
+        {
+          "name": "catalyst_persistence",
+          "applicability": "APPLICABLE",
+          "value": 55,
+          "range": {
+            "low": 40,
+            "high": 70,
+            "unit": "ordinal_score"
+          },
+          "provenance": "STRUCTURED_JUDGMENT",
+          "confidence": 60,
+          "rationale": "Illustrative fixture.",
+          "source_locator": "fixture://frozen_packet",
+          "timestamp_utc": "2026-01-15T14:30:00Z",
+          "missing_input_penalty": 10
+        }
+      ],
+      "survival_window": "SESSION_TO_MULTI_DAY",
+      "half_life_type": "EVIDENCE_DRIVEN_RANGE",
+      "half_life_range": {
+        "low": 1,
+        "high": 3,
+        "unit": "sessions"
+      },
+      "decay_basis": "Evidence-driven reassessment.",
+      "reopening_conditions": [
+        "Independent confirming release."
+      ],
+      "expiry_conditions": [
+        "Expectation gap closes."
+      ],
+      "invalidating_evidence": [
+        "Causal leader reverses."
+      ],
+      "state_survival_confidence": 60
+    },
+    "asymmetry_v2": {
+      "fundamental_downside_boundary": "Causal thesis invalidation.",
+      "invalidation_trigger": "Dominant driver reverses or rival model wins.",
+      "expected_repricing_range": {
+        "low": 0.5,
+        "high": 1.5,
+        "unit": "normalized_move"
+      },
+      "adverse_path_range": {
+        "low": -0.6,
+        "high": 0,
+        "unit": "normalized_move"
+      },
+      "event_gap_risk": "MODERATE",
+      "liquidity_path_risk": "MODERATE",
+      "path_asymmetry_class": "FAVORABLE",
+      "edge_availability": "MODERATE",
+      "execution_handoff_status": "CONDITIONAL"
+    },
+    "horizon_states": [
+      {
+        "horizon": "SESSION_1_6H",
+        "direction": "BULLISH",
+        "force_range": {
+          "low": 52,
+          "high": 72,
+          "unit": "ordinal_score"
+        },
+        "confidence": 60,
+        "consumption_state": "PARTIALLY_ABSORBED",
+        "remaining_pressure_range": {
+          "low": 45,
+          "high": 65,
+          "unit": "ordinal_score"
+        },
+        "persistence_class": "MULTI_DAY",
+        "reversal_risk": "MODERATE",
+        "path_asymmetry_class": "FAVORABLE",
+        "edge_availability": "MODERATE",
+        "causal_leader": "dealer_flow",
+        "next_update_trigger": "Next independent driver observation."
+      }
+    ],
+    "provenance": {
+      "field_level_ledger": [
+        {
+          "field": "force.aggregate_value",
+          "provenance": "STRUCTURED_JUDGMENT",
+          "source_locator": "fixture://frozen_packet",
+          "timestamp_utc": "2026-01-15T14:30:00Z",
+          "methodology_version": "11.0.0",
+          "confidence": 60,
+          "missing_input_penalty": 10,
+          "analyst_or_model_identifier": "AlphaLabFixture",
+          "rationale": "Illustrative ordinal fixture.",
+          "next_update_condition": "Replace with live point-in-time evidence."
+        }
+      ],
+      "unavailable_inputs": [
+        {
+          "input": "proprietary_flow_data",
+          "reason": "Not included in public fixture.",
+          "impact": "Flow confidence capped at 65."
+        }
+      ],
+      "confidence_caps": [
+        {
+          "field": "consumption_v2.mechanical_flow_exhaustion",
+          "cap": 65,
+          "reason": "No direct proprietary flow data."
+        }
+      ]
+    },
+    "validation": {
+      "point_in_time_status": "PASS",
+      "no_lookahead_status": "PASS",
+      "calibration_status": "NOT_CALIBRATED",
+      "benchmark_status": "NOT_RUN",
+      "regression_status": "NOT_RUN"
+    }
+  }
+}

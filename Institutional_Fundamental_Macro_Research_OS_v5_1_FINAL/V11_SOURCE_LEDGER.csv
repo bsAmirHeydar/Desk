@@ -1,0 +1,6 @@
+source_id,source_type,locator,version_or_date,access_date,relevance,license
+SRC-V10-01,Internal Vault,87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/15 Hourly Direction Intensity Consumption and Remaining Pressure Standard.md,10.4.0,2026-08-06,Baseline definitions and score cautions,INTERNAL_CANON
+SRC-V10-02,Internal Vault,88 Hybrid Daily Session Event Fundamental State Engine/00 Hybrid Daily Session Event Fundamental State Engine MOC.md,10.4.0,2026-08-06,Hybrid state architecture and record lifecycle,INTERNAL_CANON
+SRC-V10-03,Internal Vault,88 Hybrid Daily Session Event Fundamental State Engine/14 Hybrid Fundamental State Schema.md,10.4.0,2026-08-06,Backward-compatible schema baseline,INTERNAL_CANON
+SRC-V10-04,Internal Vault,84 Canonical Retrieval Evidence and Version Control/00 Canonical Retrieval Evidence and Version Control MOC.md,current,2026-08-06,Retrieval and version precedence,INTERNAL_CANON
+SRC-V10-05,Internal Vault,81 Scientific QA and Certification Framework/00 Scientific QA and Certification Framework MOC.md,current,2026-08-06,Internal QA boundary,INTERNAL_CANON

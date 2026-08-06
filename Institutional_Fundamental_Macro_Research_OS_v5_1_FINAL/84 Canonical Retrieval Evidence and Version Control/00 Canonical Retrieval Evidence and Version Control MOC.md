@@ -18,3 +18,17 @@ default_retrieval: true
 - [[04 Canonical Deprecation and Redirect Ledger]]
 - [[05 Prompt and Analysis Version Ledger]]
 - [[06 Retrieval Regression and Duplicate-Title Audit]]
+
+---
+
+## V11 retrieval precedence
+
+When a V11 analysis asks about force, consumption, remaining pressure, persistence, reversal risk or fundamental asymmetry:
+
+1. load the relevant Module 89 note;
+2. load at most the direct causal dependencies required by the asset and event;
+3. use Module 88 for record density, micro-windows and immutable reconstruction;
+4. consult legacy notes only for unresolved specialist detail;
+5. preserve field-level evidence lineage and methodology version.
+
+Concept-specific precedence is machine-readable in `V11_CANONICAL_AUTHORITY_MAP.yaml`.

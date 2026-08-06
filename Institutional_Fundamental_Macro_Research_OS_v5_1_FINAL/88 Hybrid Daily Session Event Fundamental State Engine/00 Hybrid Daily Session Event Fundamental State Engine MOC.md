@@ -46,3 +46,22 @@ This module is the governing architecture for dense live and historical fundamen
 ## Doctrine
 
 A valid state exists for every open trading day. Direction may remain unchanged while intensity, freshness, absorption, repricing completion, flow exhaustion, confirmation, persistence, remaining pressure, reversal risk and edge availability change. Mandatory reassessment is not a claim that fundamentals changed; it is evidence that the desk checked whether they changed.
+
+---
+
+## V11 compatibility bridge
+
+Module 88 remains the governing architecture for:
+
+- daily/session/event/no-change record density;
+- scheduled and unscheduled micro-windows;
+- state-decay reassessment;
+- causal-leader changes;
+- immutable point-in-time reconstruction;
+- end-of-day attribution.
+
+Module 89 extends the content of each state record with force, consumption, counterfactual repricing, remaining pressure, persistence, reversal hazard, path asymmetry, provenance and calibration fields:
+
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/00 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine MOC]]
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/32 Machine-Readable V11 State Schema]]
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/36 Migration Precedence and Backward Compatibility]]

@@ -32,3 +32,20 @@ Historical prompts must use `HYBRID_DAILY_SESSION_EVENT_STATE` recording mode. A
 ## Versioning
 
 All new records include methodology version `10.4.0`. Historical runs must preserve the methodology version to prevent silent comparison across incompatible scoring definitions.
+
+---
+
+## V11 patch migration
+
+V11 is applied additively through a manifest-controlled patch.
+
+- Base precondition: Module 88 `10.4.0`.
+- Target methodology: `11.0.0`.
+- Added canon: Module 89.
+- Modified entry points: only files listed in `PATCH_MANIFEST.json`.
+- Every modified file has a required pre-patch SHA-256.
+- Apply scripts create timestamped backups.
+- Rollback restores overwritten files and removes only patch-added files.
+- Historical records are not rewritten.
+
+See [[V11_MIGRATION_AND_PRECEDENCE_MAP]] and [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/36 Migration Precedence and Backward Compatibility]].

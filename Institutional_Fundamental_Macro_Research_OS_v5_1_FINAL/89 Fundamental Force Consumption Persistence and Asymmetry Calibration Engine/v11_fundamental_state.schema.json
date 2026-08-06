@@ -1,0 +1,951 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "alphalab://schemas/v11_fundamental_state.schema.json",
+  "title": "Alpha Lab V11 Fundamental State",
+  "type": "object",
+  "required": [
+    "v11_fundamental_state"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "v11_fundamental_state": {
+      "type": "object",
+      "required": [
+        "record_id",
+        "asset",
+        "cutoff_utc",
+        "methodology",
+        "force",
+        "consumption_v2",
+        "remaining_pressure_v2",
+        "persistence_v2",
+        "asymmetry_v2",
+        "horizon_states",
+        "provenance",
+        "validation"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "asset": {
+          "enum": [
+            "NASDAQ_100",
+            "SP500",
+            "GOLD",
+            "EURUSD"
+          ]
+        },
+        "cutoff_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "methodology": {
+          "type": "object",
+          "required": [
+            "vault_release",
+            "state_schema_version",
+            "scoring_mode",
+            "model_version",
+            "analyst_or_agent_id"
+          ],
+          "properties": {
+            "vault_release": {
+              "const": "11.0.0"
+            },
+            "state_schema_version": {
+              "const": "11.0.0"
+            },
+            "scoring_mode": {
+              "enum": [
+                "ANALYTICAL_ORDINAL_MODE",
+                "EMPIRICALLY_CALIBRATED_MODE",
+                "HYBRID_PROVENANCE_MODE"
+              ]
+            },
+            "model_version": {
+              "type": "string",
+              "minLength": 1
+            },
+            "analyst_or_agent_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "estimand": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "calibration_evidence_locator": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "legacy_v10_4": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "force": {
+          "type": "object",
+          "required": [
+            "component_ledger",
+            "aggregate_value",
+            "aggregate_range",
+            "aggregate_provenance",
+            "applicability_map"
+          ],
+          "properties": {
+            "component_ledger": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/component"
+              }
+            },
+            "aggregate_value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 100
+            },
+            "aggregate_range": {
+              "$ref": "#/$defs/rangeOrNull"
+            },
+            "aggregate_provenance": {
+              "$ref": "#/$defs/provenanceType"
+            },
+            "applicability_map": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "component",
+                  "status"
+                ],
+                "properties": {
+                  "component": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "enum": [
+                      "APPLICABLE",
+                      "NOT_APPLICABLE",
+                      "UNAVAILABLE"
+                    ]
+                  },
+                  "reason": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "additionalProperties": true
+        },
+        "expectations": {
+          "type": "object",
+          "properties": {
+            "pre_catalyst_expectation": {
+              "type": [
+                "string",
+                "object",
+                "null"
+              ]
+            },
+            "surprise_vector": {
+              "type": "array"
+            },
+            "expectation_revision_vector": {
+              "type": "array"
+            },
+            "counterfactual_repricing_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "expected_repricing_range": {
+              "$ref": "#/$defs/rangeOrNull"
+            }
+          },
+          "additionalProperties": true
+        },
+        "consumption_v2": {
+          "$ref": "#/$defs/consumption"
+        },
+        "remaining_pressure_v2": {
+          "$ref": "#/$defs/remaining"
+        },
+        "persistence_v2": {
+          "$ref": "#/$defs/persistence"
+        },
+        "asymmetry_v2": {
+          "$ref": "#/$defs/asymmetry"
+        },
+        "horizon_states": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "horizon",
+              "direction",
+              "force_range",
+              "confidence",
+              "consumption_state",
+              "remaining_pressure_range",
+              "persistence_class",
+              "reversal_risk",
+              "path_asymmetry_class",
+              "edge_availability",
+              "causal_leader",
+              "next_update_trigger"
+            ],
+            "properties": {
+              "horizon": {
+                "enum": [
+                  "MICRO_0_15M",
+                  "SHORT_15_60M",
+                  "SESSION_1_6H",
+                  "DAILY_OPEN_TO_CLOSE",
+                  "MULTI_DAY_2_10D",
+                  "CYCLICAL",
+                  "STRUCTURAL"
+                ]
+              },
+              "direction": {
+                "enum": [
+                  "STRONGLY_BEARISH",
+                  "BEARISH",
+                  "NEUTRAL",
+                  "BULLISH",
+                  "STRONGLY_BULLISH",
+                  "MIXED",
+                  "UNDETERMINED"
+                ]
+              },
+              "force_range": {
+                "$ref": "#/$defs/rangeOrNull"
+              },
+              "confidence": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 100
+              },
+              "consumption_state": {
+                "$ref": "#/$defs/consumptionState"
+              },
+              "remaining_pressure_range": {
+                "$ref": "#/$defs/rangeOrNull"
+              },
+              "persistence_class": {
+                "enum": [
+                  "EPHEMERAL",
+                  "SHORT",
+                  "SESSION",
+                  "MULTI_DAY",
+                  "CYCLICAL",
+                  "STRUCTURAL",
+                  "MIXED",
+                  "UNDETERMINED"
+                ]
+              },
+              "reversal_risk": {
+                "enum": [
+                  "VERY_LOW",
+                  "LOW",
+                  "MODERATE",
+                  "HIGH",
+                  "VERY_HIGH",
+                  "UNDETERMINED"
+                ]
+              },
+              "path_asymmetry_class": {
+                "enum": [
+                  "ADVERSE",
+                  "UNFAVORABLE",
+                  "BALANCED",
+                  "FAVORABLE",
+                  "HIGHLY_FAVORABLE",
+                  "UNDETERMINED"
+                ]
+              },
+              "edge_availability": {
+                "enum": [
+                  "NONE",
+                  "LOW",
+                  "MODERATE",
+                  "HIGH",
+                  "VERY_HIGH",
+                  "UNDETERMINED"
+                ]
+              },
+              "causal_leader": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "next_update_trigger": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "field_level_ledger",
+            "unavailable_inputs",
+            "confidence_caps"
+          ],
+          "properties": {
+            "field_level_ledger": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/fieldProvenance"
+              }
+            },
+            "unavailable_inputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "input",
+                  "reason"
+                ],
+                "properties": {
+                  "input": {
+                    "type": "string"
+                  },
+                  "reason": {
+                    "type": "string"
+                  },
+                  "impact": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                }
+              }
+            },
+            "confidence_caps": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "field",
+                  "cap",
+                  "reason"
+                ],
+                "properties": {
+                  "field": {
+                    "type": "string"
+                  },
+                  "cap": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 100
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "additionalProperties": true
+        },
+        "validation": {
+          "type": "object",
+          "required": [
+            "point_in_time_status",
+            "no_lookahead_status",
+            "calibration_status",
+            "benchmark_status",
+            "regression_status"
+          ],
+          "properties": {
+            "point_in_time_status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_TESTED"
+              ]
+            },
+            "no_lookahead_status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_TESTED"
+              ]
+            },
+            "calibration_status": {
+              "enum": [
+                "NOT_CALIBRATED",
+                "IN_SAMPLE_ONLY",
+                "OUT_OF_SAMPLE_PARTIAL",
+                "OUT_OF_SAMPLE_VALIDATED",
+                "NOT_APPLICABLE"
+              ]
+            },
+            "benchmark_status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN"
+              ]
+            },
+            "regression_status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "provenanceType": {
+      "enum": [
+        "OBSERVED",
+        "OFFICIAL_FIRST_RELEASE",
+        "OFFICIAL_REVISION",
+        "DERIVED_DETERMINISTIC",
+        "MARKET_IMPLIED",
+        "EMPIRICALLY_CALIBRATED",
+        "MODEL_IMPLIED",
+        "PUBLIC_PROXY",
+        "LICENSED_DATA",
+        "PROPRIETARY_DATA",
+        "STRUCTURED_JUDGMENT",
+        "UNAVAILABLE"
+      ]
+    },
+    "range": {
+      "type": "object",
+      "required": [
+        "low",
+        "high",
+        "unit"
+      ],
+      "properties": {
+        "low": {
+          "type": "number"
+        },
+        "high": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "rangeOrNull": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/range"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "component": {
+      "type": "object",
+      "required": [
+        "name",
+        "applicability",
+        "value",
+        "range",
+        "provenance",
+        "confidence",
+        "rationale"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "applicability": {
+          "enum": [
+            "APPLICABLE",
+            "NOT_APPLICABLE",
+            "UNAVAILABLE"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "range": {
+          "$ref": "#/$defs/rangeOrNull"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceType"
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "source_locator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "timestamp_utc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "missing_input_penalty": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "score": {
+      "type": "object",
+      "required": [
+        "value",
+        "band",
+        "provenance",
+        "confidence",
+        "rationale"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "band": {
+          "enum": [
+            "VERY_LOW",
+            "LOW",
+            "MODERATE",
+            "HIGH",
+            "VERY_HIGH",
+            "UNDETERMINED",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceType"
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "rationale": {
+          "type": "string"
+        }
+      }
+    },
+    "consumptionState": {
+      "enum": [
+        "UNOBSERVED_OR_UNKNOWN",
+        "AWARENESS_FORMING",
+        "PARTIALLY_ABSORBED",
+        "EXPECTATIONS_REPRICING",
+        "CROSS_ASSET_TRANSMISSION",
+        "FLOW_PROPAGATION",
+        "MATURE_REPRICING",
+        "MOSTLY_CONSUMED",
+        "EXHAUSTED",
+        "OVER_CONSUMED",
+        "REINFORCED_AND_REOPENED",
+        "REVERSED_OR_INVALIDATED"
+      ]
+    },
+    "consumption": {
+      "type": "object",
+      "required": [
+        "information_awareness",
+        "expectation_incorporation",
+        "instrument_repricing_completion",
+        "cross_asset_transmission_completion",
+        "positioning_adjustment_completion",
+        "mechanical_flow_exhaustion",
+        "narrative_saturation",
+        "valuation_payoff_compression",
+        "time_decay",
+        "catalyst_expiry",
+        "reinforcement_or_reopening",
+        "unresolved_information_overhang",
+        "summary_state"
+      ],
+      "properties": {
+        "information_awareness": {
+          "$ref": "#/$defs/score"
+        },
+        "expectation_incorporation": {
+          "$ref": "#/$defs/score"
+        },
+        "instrument_repricing_completion": {
+          "$ref": "#/$defs/score"
+        },
+        "cross_asset_transmission_completion": {
+          "$ref": "#/$defs/score"
+        },
+        "positioning_adjustment_completion": {
+          "$ref": "#/$defs/score"
+        },
+        "mechanical_flow_exhaustion": {
+          "$ref": "#/$defs/score"
+        },
+        "narrative_saturation": {
+          "$ref": "#/$defs/score"
+        },
+        "valuation_payoff_compression": {
+          "$ref": "#/$defs/score"
+        },
+        "time_decay": {
+          "$ref": "#/$defs/score"
+        },
+        "catalyst_expiry": {
+          "$ref": "#/$defs/score"
+        },
+        "reinforcement_or_reopening": {
+          "$ref": "#/$defs/score"
+        },
+        "unresolved_information_overhang": {
+          "$ref": "#/$defs/score"
+        },
+        "summary_state": {
+          "$ref": "#/$defs/consumptionState"
+        }
+      },
+      "additionalProperties": true
+    },
+    "remaining": {
+      "type": "object",
+      "required": [
+        "residual_active_catalyst_force",
+        "unresolved_expectations_gap",
+        "unfinished_transmission",
+        "structural_cyclical_carry",
+        "institutional_constraint_tail",
+        "persistent_economic_process",
+        "mechanical_flow_continuation",
+        "reinforcement_state",
+        "opposing_force_load",
+        "valuation_compression",
+        "next_catalyst_hazard",
+        "reversal_hazard",
+        "aggregate_range",
+        "aggregate_class"
+      ],
+      "properties": {
+        "residual_active_catalyst_force": {
+          "$ref": "#/$defs/score"
+        },
+        "unresolved_expectations_gap": {
+          "$ref": "#/$defs/score"
+        },
+        "unfinished_transmission": {
+          "$ref": "#/$defs/score"
+        },
+        "structural_cyclical_carry": {
+          "$ref": "#/$defs/score"
+        },
+        "institutional_constraint_tail": {
+          "$ref": "#/$defs/score"
+        },
+        "persistent_economic_process": {
+          "$ref": "#/$defs/score"
+        },
+        "mechanical_flow_continuation": {
+          "$ref": "#/$defs/score"
+        },
+        "reinforcement_state": {
+          "$ref": "#/$defs/score"
+        },
+        "opposing_force_load": {
+          "$ref": "#/$defs/score"
+        },
+        "valuation_compression": {
+          "$ref": "#/$defs/score"
+        },
+        "next_catalyst_hazard": {
+          "$ref": "#/$defs/score"
+        },
+        "reversal_hazard": {
+          "$ref": "#/$defs/score"
+        },
+        "aggregate_range": {
+          "$ref": "#/$defs/rangeOrNull"
+        },
+        "aggregate_class": {
+          "enum": [
+            "VERY_LOW",
+            "LOW",
+            "MODERATE",
+            "HIGH",
+            "VERY_HIGH",
+            "UNDETERMINED"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "persistence": {
+      "type": "object",
+      "required": [
+        "persistence_components",
+        "survival_window",
+        "half_life_range",
+        "decay_basis",
+        "reopening_conditions",
+        "expiry_conditions",
+        "state_survival_confidence"
+      ],
+      "properties": {
+        "persistence_components": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/component"
+          }
+        },
+        "survival_window": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "half_life_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "half_life_range": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "decay_basis": {
+          "type": "string"
+        },
+        "reopening_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "expiry_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "invalidating_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "state_survival_confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        }
+      },
+      "additionalProperties": true
+    },
+    "asymmetry": {
+      "type": "object",
+      "required": [
+        "fundamental_downside_boundary",
+        "invalidation_trigger",
+        "expected_repricing_range",
+        "adverse_path_range",
+        "event_gap_risk",
+        "liquidity_path_risk",
+        "path_asymmetry_class",
+        "execution_handoff_status"
+      ],
+      "properties": {
+        "fundamental_downside_boundary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "invalidation_trigger": {
+          "type": "string"
+        },
+        "expected_repricing_range": {
+          "$ref": "#/$defs/rangeOrNull"
+        },
+        "adverse_path_range": {
+          "$ref": "#/$defs/rangeOrNull"
+        },
+        "event_gap_risk": {
+          "enum": [
+            "VERY_LOW",
+            "LOW",
+            "MODERATE",
+            "HIGH",
+            "VERY_HIGH",
+            "UNDETERMINED"
+          ]
+        },
+        "liquidity_path_risk": {
+          "enum": [
+            "VERY_LOW",
+            "LOW",
+            "MODERATE",
+            "HIGH",
+            "VERY_HIGH",
+            "UNDETERMINED"
+          ]
+        },
+        "path_asymmetry_class": {
+          "enum": [
+            "ADVERSE",
+            "UNFAVORABLE",
+            "BALANCED",
+            "FAVORABLE",
+            "HIGHLY_FAVORABLE",
+            "UNDETERMINED"
+          ]
+        },
+        "edge_availability": {
+          "enum": [
+            "NONE",
+            "LOW",
+            "MODERATE",
+            "HIGH",
+            "VERY_HIGH",
+            "UNDETERMINED"
+          ]
+        },
+        "execution_handoff_status": {
+          "enum": [
+            "READY",
+            "CONDITIONAL",
+            "NOT_READY",
+            "NOT_APPLICABLE"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "fieldProvenance": {
+      "type": "object",
+      "required": [
+        "field",
+        "provenance",
+        "source_locator",
+        "timestamp_utc",
+        "methodology_version",
+        "confidence",
+        "rationale",
+        "next_update_condition"
+      ],
+      "properties": {
+        "field": {
+          "type": "string"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceType"
+        },
+        "source_locator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "timestamp_utc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "methodology_version": {
+          "const": "11.0.0"
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "missing_input_penalty": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "analyst_or_model_identifier": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "next_update_condition": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

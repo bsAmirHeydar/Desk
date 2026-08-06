@@ -1,0 +1,6 @@
+claim_id,claim,evidence_locator,evidence_class
+CLM-01,"Direction, intensity, confidence, consumption and remaining pressure must remain separate.",SRC-V10-01,DIRECT_INTERNAL
+CLM-02,V10.4 supports daily/session/event/no-change hybrid records.,SRC-V10-02,DIRECT_INTERNAL
+CLM-03,V11 ordinal scores are not probabilities unless calibrated mode passes OOS gates.,V11 Module 89/21 and 24,METHODOLOGY_DESIGN
+CLM-04,"Remaining pressure is a residual, not an arithmetic complement.",SRC-V10-01; V11 Module 89/13,DIRECT_INTERNAL_PLUS_EXTENSION
+CLM-05,No empirical market-performance claim is made by this patch.,V11_RESIDUAL_FRONTIERS.md,RELEASE_BOUNDARY

@@ -1,0 +1,33 @@
+{
+  "benchmark_id": "B19",
+  "methodology_version": "11.0.0",
+  "scenario": "Regime shift breaks old mapping",
+  "frozen_cutoff_utc": "2025-01-01T12:00:00Z",
+  "information_set": {
+    "status": "SYNTHETIC_FROZEN_PACKET",
+    "description": "Regime shift breaks old mapping"
+  },
+  "allowed_evidence": [
+    "facts explicitly included in the packet",
+    "pre-cutoff market-implied state",
+    "declared public proxies"
+  ],
+  "prohibited_evidence": [
+    "post-cutoff outcome",
+    "later revision",
+    "later official clarification unless included",
+    "proprietary data not in packet"
+  ],
+  "required_checks": [
+    "point_in_time",
+    "causal_leader_or_undetermined",
+    "rival_model",
+    "consumption_vector",
+    "remaining_pressure_residual",
+    "confidence_caps",
+    "horizon_separation"
+  ],
+  "core_acceptance_condition": "Calibration status downgraded; model retirement considered.",
+  "expected_output": "schema-valid V11 record plus reasoning ledger",
+  "certification_scope": "logic fixture; not empirical market validation"
+}

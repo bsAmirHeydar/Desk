@@ -86,3 +86,19 @@ A report is not certified because it is long, confident or comprehensive-looking
 ## Relationship to the existing canon
 
 This module does not replace [[80 Deprecated Mega Canon v7 Redirects/00 Deprecated Mega Canon v7 Redirects MOC]], [[79 Institutional Fundamental Analysis Output Architecture/00 Institutional Fundamental Analysis Output Architecture MOC]] or the domain monographs. It is the final control layer that decides whether an analysis produced from them deserves certification.
+
+---
+
+## V11 scientific QA extension
+
+V11 adds semantic gates that complement existing structural QA:
+
+- false-probability control;
+- score-provenance completeness;
+- confidence-cap enforcement;
+- horizon separation;
+- canonical precedence;
+- V10.4 regression preservation;
+- safe patch-manifest validation.
+
+See [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/35 Regression Preservation Suite]] and [[VALIDATION_REPORT_V11]]. V11 certification is internal and conditional; external certification and empirical alpha are not claimed.

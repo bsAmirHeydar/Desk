@@ -1,0 +1,33 @@
+{
+  "benchmark_id": "B03",
+  "methodology_version": "11.0.0",
+  "scenario": "Quiet day with no headline",
+  "frozen_cutoff_utc": "2025-01-01T12:00:00Z",
+  "information_set": {
+    "status": "SYNTHETIC_FROZEN_PACKET",
+    "description": "Quiet day with no headline"
+  },
+  "allowed_evidence": [
+    "facts explicitly included in the packet",
+    "pre-cutoff market-implied state",
+    "declared public proxies"
+  ],
+  "prohibited_evidence": [
+    "post-cutoff outcome",
+    "later revision",
+    "later official clarification unless included",
+    "proprietary data not in packet"
+  ],
+  "required_checks": [
+    "point_in_time",
+    "causal_leader_or_undetermined",
+    "rival_model",
+    "consumption_vector",
+    "remaining_pressure_residual",
+    "confidence_caps",
+    "horizon_separation"
+  ],
+  "core_acceptance_condition": "Consumption/remaining pressure may change with immutable no-change/delta record.",
+  "expected_output": "schema-valid V11 record plus reasoning ledger",
+  "certification_scope": "logic fixture; not empirical market validation"
+}

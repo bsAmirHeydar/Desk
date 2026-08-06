@@ -2,9 +2,9 @@
 title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 10.1.0
+version: 11.0.0
 created: 2026-07-29
-updated: 2026-07-30
+updated: 2026-08-06
 language: en
 tags: [home, fundamental-only, institutional-macro, research-platform]
 ---
@@ -159,3 +159,17 @@ Version 6.1 evaluates the Vault as an institutional body of fundamental knowledg
 ## V10.4 hybrid daily/session/event reconstruction
 
 - [[88 Hybrid Daily Session Event Fundamental State Engine/00 Hybrid Daily Session Event Fundamental State Engine MOC|88 Hybrid Daily Session Event Fundamental State Engine]]
+
+---
+
+## V11 Force, Consumption, Persistence and Asymmetry extension
+
+> [!important] V11 methodology
+> For methodology version `11.0.0`, use [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/00 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine MOC]] as the primary canon for fundamental force, consumption, counterfactual repricing, remaining pressure, persistence, reversal hazard, path asymmetry, field-level provenance, confidence caps and calibration status. Module 88 remains primary for hybrid record density and immutable point-in-time reconstruction.
+
+Start V11 analysis with:
+
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/38 Alpha Lab V11 Full-Spectrum Fundamental State Analysis Prompt]]
+- [[V11_MIGRATION_AND_PRECEDENCE_MAP]]
+- [[V11_BASELINE_AND_GAP_AUDIT]]
+- [[V11_RESIDUAL_FRONTIERS]]

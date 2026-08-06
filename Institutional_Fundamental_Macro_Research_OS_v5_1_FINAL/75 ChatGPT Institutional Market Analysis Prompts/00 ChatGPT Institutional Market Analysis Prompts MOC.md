@@ -39,3 +39,14 @@ After selecting the direct primary canonical monograph, check the specialist reg
 ## Alpha Lab asset-specific PDF prompts
 
 For dedicated Persian PDF production, use [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/00 Alpha Lab Asset-Specific Persian PDF Analysis Prompts MOC]].
+
+---
+
+## V11 production launcher
+
+For the current full-spectrum state method, use:
+
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/38 Alpha Lab V11 Full-Spectrum Fundamental State Analysis Prompt]]
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/39 V11 Fast Launcher]]
+
+The V11 prompt preserves the fundamental-only boundary and requires point-in-time evidence, horizon separation, field-level provenance and confidence caps.

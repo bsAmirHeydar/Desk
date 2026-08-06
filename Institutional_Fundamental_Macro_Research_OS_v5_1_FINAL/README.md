@@ -2,9 +2,9 @@
 title: "README"
 type: documentation
 status: canonical
-version: 10.1.0
+version: 11.0.0
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-06
 language: en
 tags: [fundamental-only, navigation, v8-repair]
 ---
@@ -73,3 +73,17 @@ See [[README_v7_MEGA_CANON]] and [[80 Deprecated Mega Canon v7 Redirects/00 Depr
 - [[V10_3_HOURLY_FUNDAMENTAL_STATE_RELEASE_NOTES]]
 - [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/14 Hourly Fundamental State Engine]]
 - [[87 Alpha Lab Asset-Specific Persian PDF Analysis Prompts/17 Hourly Fast Launcher Messages]]
+
+---
+
+## V11 force and consumption methodology
+
+V11 adds a backward-compatible canonical engine for fundamental force, consumption, repricing completion, remaining pressure, persistence, reversal hazard and fundamental path asymmetry.
+
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/00 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine MOC]]
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/38 Alpha Lab V11 Full-Spectrum Fundamental State Analysis Prompt]]
+- [[V11_FORCE_CONSUMPTION_CALIBRATION_RELEASE_NOTES]]
+- [[VALIDATION_REPORT_V11]]
+- [[V11_MIGRATION_AND_PRECEDENCE_MAP]]
+
+V11 does not claim universal empirical calibration or proprietary data access. Its internal certification is conditional on the limitations in [[V11_RESIDUAL_FRONTIERS]].

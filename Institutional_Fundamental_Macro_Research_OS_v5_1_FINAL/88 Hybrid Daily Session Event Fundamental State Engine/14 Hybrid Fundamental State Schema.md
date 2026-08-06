@@ -135,3 +135,21 @@ record_type:
 ## CSV minimum columns
 
 Use flattened equivalents of every load-bearing field. Store before/after values; do not overwrite prior state. Include a stable `record_id` and `parent_record_id` for event micro-windows and session chains.
+
+---
+
+## V11 backward-compatible extension
+
+The V10.4 record remains readable and may be stored under `legacy_v10_4`. New analyses should additionally populate the V11 record defined in:
+
+- [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/32 Machine-Readable V11 State Schema]]
+- `89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/v11_fundamental_state.schema.json`
+- `89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/V10_4_TO_V11_FIELD_MAP.csv`
+
+Migration constraints:
+
+- do not infer V11 component fields from an old aggregate without contemporaneous evidence;
+- do not convert ordinal values into probabilities;
+- do not overwrite historical V10.4 states;
+- retain all existing 25 record types and micro-window rules;
+- use null/`UNAVAILABLE`/`UNDETERMINED` for non-inferable fields.
