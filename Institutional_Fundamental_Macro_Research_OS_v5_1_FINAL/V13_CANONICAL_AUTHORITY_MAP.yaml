@@ -1,0 +1,6 @@
+version: 13.0.0
+authorities:
+  force_consumption_persistence: module_89
+  attention_narratives: module_90
+  instrument_resolution_and_adapters: module_91
+  universal_reporting: module_91

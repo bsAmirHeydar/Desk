@@ -1,0 +1,4 @@
+claim_id,claim,evidence_class,status
+V13-001,Universal adapter architecture implemented,repository artifacts,verified
+V13-002,Complete live data for every instrument,not supported,prohibited
+V13-003,V11 and V12 preserved,regression validator,verified

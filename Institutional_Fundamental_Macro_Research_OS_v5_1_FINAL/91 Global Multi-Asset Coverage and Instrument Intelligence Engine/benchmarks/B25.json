@@ -1,0 +1,26 @@
+{
+  "benchmark_id": "B25",
+  "title": "mine outage",
+  "family": "COMMODITY",
+  "frozen_cutoff_utc": "2025-01-15T12:00:00Z",
+  "allowed_evidence": [
+    "available at cutoff",
+    "point-in-time metadata"
+  ],
+  "prohibited_future_information": [
+    "later prices",
+    "later revisions",
+    "current constituents if historical"
+  ],
+  "expected_adapter": "FAMILY_SPECIFIC_COMMODITY",
+  "expected_coverage_behavior": "resolve or explicitly limit",
+  "confidence_caps": [
+    "apply when load-bearing data absent"
+  ],
+  "pass_criteria": [
+    "correct adapter",
+    "no fabricated data",
+    "point-in-time preserved",
+    "coverage disclosed"
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "FX_CURRENCY_BLOCK": {
+    "family": "FX",
+    "required": [
+      "currency",
+      "central_bank",
+      "policy_framework",
+      "external_balance"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "missing_external_balance": 55,
+      "missing_reserves_for_peg": 40
+    }
+  },
+  "FX_BILATERAL": {
+    "family": "FX",
+    "required": [
+      "base_currency_block",
+      "quote_currency_block",
+      "quote_convention"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "one_leg_missing": 35
+    }
+  },
+  "COMMODITY_ENERGY": {
+    "family": "COMMODITY",
+    "required": [
+      "contract_identity",
+      "physical_balance",
+      "inventories",
+      "curve"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "missing_physical_balance": 40
+    }
+  },
+  "COMMODITY_REFINED": {
+    "family": "COMMODITY",
+    "required": [
+      "product_spec",
+      "refinery_state",
+      "product_balance"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "missing_refinery_state": 45
+    }
+  },
+  "COMMODITY_GAS_POWER": {
+    "family": "COMMODITY",
+    "required": [
+      "hub_region",
+      "storage",
+      "flows",
+      "weather"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "wrong_hub": 0
+    }
+  },
+  "COMMODITY_PRECIOUS": {
+    "family": "COMMODITY",
+    "required": [
+      "instrument_identity",
+      "monetary_state",
+      "physical_or_official_state"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "missing_official_flow": 70
+    }
+  },
+  "COMMODITY_METALS": {
+    "family": "COMMODITY",
+    "required": [
+      "grade_location",
+      "supply_chain_stage",
+      "inventories"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "missing_grade_location": 35
+    }
+  },
+  "COMMODITY_AGRI": {
+    "family": "COMMODITY",
+    "required": [
+      "crop_marketing_year",
+      "balance_sheet",
+      "weather_vintage"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "missing_vintage": 30
+    }
+  },
+  "COMMODITY_SOFTS": {
+    "family": "COMMODITY",
+    "required": [
+      "origin_map",
+      "crop_stage",
+      "stock_visibility"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "opaque_stocks": 60
+    }
+  },
+  "COMMODITY_OTHER": {
+    "family": "COMMODITY",
+    "required": [
+      "subfamily",
+      "production_cycle",
+      "contract_identity"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "thin_liquidity": 50
+    }
+  },
+  "INDEX_EQUITY": {
+    "family": "INDEX",
+    "required": [
+      "provider",
+      "methodology",
+      "return_type",
+      "constituent_vintage",
+      "weights"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "missing_constituent_history": 45
+    }
+  },
+  "INDEX_VOLATILITY": {
+    "family": "INDEX",
+    "required": [
+      "methodology",
+      "horizon",
+      "option_input"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "cash_future_confusion": 0
+    }
+  },
+  "INDEX_RATES": {
+    "family": "INDEX",
+    "required": [
+      "methodology",
+      "duration",
+      "currency"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "missing_duration": 30
+    }
+  },
+  "INDEX_CREDIT": {
+    "family": "INDEX",
+    "required": [
+      "index_type",
+      "series",
+      "spread_duration"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "wrong_series": 0
+    }
+  },
+  "INDEX_FX": {
+    "family": "INDEX",
+    "required": [
+      "basket_components",
+      "weights",
+      "quote_signs"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "missing_weights": 35
+    }
+  },
+  "INDEX_COMMODITY": {
+    "family": "INDEX",
+    "required": [
+      "component_contracts",
+      "weights",
+      "roll_schedule"
+    ],
+    "optional": [],
+    "confidence_caps": {
+      "missing_roll_method": 30
+    }
+  }
+}

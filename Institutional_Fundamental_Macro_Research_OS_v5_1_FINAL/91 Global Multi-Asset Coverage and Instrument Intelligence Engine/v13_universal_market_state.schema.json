@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Alpha Lab V13 Universal Market State",
+  "type": "object",
+  "required": [
+    "methodology",
+    "instrument",
+    "coverage",
+    "shared_state",
+    "provenance",
+    "validation"
+  ],
+  "properties": {
+    "methodology": {
+      "type": "object"
+    },
+    "instrument": {
+      "type": "object",
+      "required": [
+        "canonical_id",
+        "asset_family",
+        "resolution_status",
+        "supported_adapter"
+      ]
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "status",
+        "confidence_cap",
+        "missing_inputs"
+      ]
+    },
+    "shared_state": {
+      "type": "object",
+      "required": [
+        "direction",
+        "force",
+        "fact_persistence",
+        "consumption",
+        "remaining_pressure",
+        "attention",
+        "narratives",
+        "asymmetry"
+      ]
+    },
+    "fx_state": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "commodity_state": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "index_state": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "validation": {
+      "type": "object"
+    }
+  }
+}

@@ -2,7 +2,7 @@
 title: "Market Attention Narrative Selection Reflexivity and Daily Intelligence Engine"
 type: moc
 status: canonical
-version: 12.0.0
+version: 13.0.0
 created: 2026-08-06
 updated: 2026-08-06
 language: en
@@ -108,3 +108,8 @@ Non-negotiable separations:
 ## Certification boundary
 
 V12 can be internally certified for ontology, provenance, point-in-time process, prompt completeness, patch integrity and benchmark behavior. It cannot be externally certified for causal truth or empirically calibrated attention shares without a suitable point-in-time text, expectation, flow and market-response dataset.
+
+
+## V13 universal multi-asset coverage
+
+Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.

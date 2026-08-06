@@ -2,9 +2,9 @@
 title: "Scientific QA and Certification Framework"
 type: moc
 status: canonical
-version: 9.0.0
+version: 13.0.0
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-06
 language: en
 tags: [fundamental-only, scientific-qa]
 ---
@@ -107,3 +107,8 @@ See [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Eng
 
 V12 adds deterministic checks for fact/attention/narrative separation, validity/dominance separation, fact/narrative persistence separation, no-hindsight candidate selection, attention provenance, confidence caps, daily-output completeness and V11 regression. See [[90 Market Narrative Intelligence Engine/47 Benchmark Scenarios and Acceptance Tests]].
 
+
+
+## V13 universal multi-asset coverage
+
+Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.

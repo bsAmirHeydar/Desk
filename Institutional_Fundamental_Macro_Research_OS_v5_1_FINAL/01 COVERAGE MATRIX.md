@@ -2,7 +2,7 @@
 title: "Institutional Fundamental Coverage and Production Maturity Matrix"
 type: coverage-matrix
 status: active
-version: 11.0.0
+version: 13.0.0
 created: 2026-07-29
 updated: 2026-08-06
 language: en
@@ -135,3 +135,8 @@ Releases 02–14 are implemented in [[80 Deprecated Mega Canon v7 Redirects/00 D
 | Reflexivity and transitions | [[90 Market Narrative Intelligence Engine/16 Reflexivity Feedback and Self-Reinforcement]]; [[90 Market Narrative Intelligence Engine/18 Narrative Replacement Rotation and Regime Transition]] | Canonical |
 | Daily production | [[90 Market Narrative Intelligence Engine/41 Alpha Lab V12 Daily Fundamental and Narrative Analysis Prompt]] | Canonical |
 
+
+
+## V13 universal multi-asset coverage
+
+Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.

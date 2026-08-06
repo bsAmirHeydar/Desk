@@ -2,9 +2,9 @@
 title: "Canonical Institutional Fundamental Research Library"
 type: moc
 status: canonical
-version: 10.0.0
+version: 13.0.0
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-06
 language: en
 tags: [fundamental-only, canonical-library, v9]
 retrieval_priority: 1000
@@ -94,3 +94,8 @@ See [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Eng
 
 Market attention, narrative objects, validity, dominance, persistence, ignored facts, reflexivity and transitions are governed by [[90 Market Narrative Intelligence Engine/00 Market Narrative Intelligence Engine MOC]].
 
+
+
+## V13 universal multi-asset coverage
+
+Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.

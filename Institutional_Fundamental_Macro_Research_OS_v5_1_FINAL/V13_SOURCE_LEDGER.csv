@@ -1,0 +1,7 @@
+domain,preferred_sources,use,availability
+FX,central banks and national statistics,policy macro external balance,public primary
+External,IMF BIS World Bank and central banks,BOP reserves debt,public or licensed
+Energy,EIA IEA OPEC exchanges and operators,balance inventories flows,public or licensed
+Agriculture,USDA FAO ministries and exchanges,crops stocks trade,public
+Metals,LME CME USGS agencies and industry,stocks production trade,public or licensed
+Indices,index providers exchanges and filings,methodology constituents earnings,public or licensed

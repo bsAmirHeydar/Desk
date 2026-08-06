@@ -1,0 +1,13 @@
+field,type,required
+instrument.canonical_id,string_or_object,conditional
+instrument.asset_family,string_or_object,conditional
+coverage.status,string_or_object,conditional
+coverage.confidence_cap,string_or_object,conditional
+shared_state.direction,string_or_object,conditional
+shared_state.force,string_or_object,conditional
+shared_state.fact_persistence,string_or_object,conditional
+shared_state.consumption,string_or_object,conditional
+shared_state.remaining_pressure,string_or_object,conditional
+shared_state.attention,string_or_object,conditional
+shared_state.narratives,string_or_object,conditional
+shared_state.asymmetry,string_or_object,conditional

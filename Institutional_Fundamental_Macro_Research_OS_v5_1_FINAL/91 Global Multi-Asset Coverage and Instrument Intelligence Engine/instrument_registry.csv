@@ -1,0 +1,165 @@
+canonical_id,primary_alias,aliases,asset_family,subfamily,implementation_type,base,quote,country_or_region,venue_or_provider,benchmark,timezone,adapter_id,coverage_status,data_requirement,metadata_valid_from,metadata_valid_to,active
+FX.CCY.USD,USD,USD,FX,currency_block,currency,USD,,United States,FED,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.EUR,EUR,EUR,FX,currency_block,currency,EUR,,Euro Area,ECB,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.JPY,JPY,JPY,FX,currency_block,currency,JPY,,Japan,BOJ,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.GBP,GBP,GBP,FX,currency_block,currency,GBP,,United Kingdom,BOE,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.CHF,CHF,CHF,FX,currency_block,currency,CHF,,Switzerland,SNB,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.CAD,CAD,CAD,FX,currency_block,currency,CAD,,Canada,BOC,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.AUD,AUD,AUD,FX,currency_block,currency,AUD,,Australia,RBA,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.NZD,NZD,NZD,FX,currency_block,currency,NZD,,New Zealand,RBNZ,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.NOK,NOK,NOK,FX,currency_block,currency,NOK,,Norway,Norges Bank,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.SEK,SEK,SEK,FX,currency_block,currency,SEK,,Sweden,Riksbank,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.CNH,CNH,CNH,FX,currency_block,currency,CNH,,China offshore,PBOC,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.CNY,CNY,CNY,FX,currency_block,currency,CNY,,China onshore,PBOC,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.HKD,HKD,HKD,FX,currency_block,currency,HKD,,Hong Kong,HKMA,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.SGD,SGD,SGD,FX,currency_block,currency,SGD,,Singapore,MAS,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.KRW,KRW,KRW,FX,currency_block,currency,KRW,,South Korea,BOK,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.INR,INR,INR,FX,currency_block,currency,INR,,India,RBI,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.IDR,IDR,IDR,FX,currency_block,currency,IDR,,Indonesia,BI,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.MYR,MYR,MYR,FX,currency_block,currency,MYR,,Malaysia,BNM,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.THB,THB,THB,FX,currency_block,currency,THB,,Thailand,BOT,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.PHP,PHP,PHP,FX,currency_block,currency,PHP,,Philippines,BSP,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.MXN,MXN,MXN,FX,currency_block,currency,MXN,,Mexico,Banxico,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.BRL,BRL,BRL,FX,currency_block,currency,BRL,,Brazil,BCB,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.CLP,CLP,CLP,FX,currency_block,currency,CLP,,Chile,BCCh,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.COP,COP,COP,FX,currency_block,currency,COP,,Colombia,BanRep,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.PEN,PEN,PEN,FX,currency_block,currency,PEN,,Peru,BCRP,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.ARS,ARS,ARS,FX,currency_block,currency,ARS,,Argentina,BCRA,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.ZAR,ZAR,ZAR,FX,currency_block,currency,ZAR,,South Africa,SARB,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.TRY,TRY,TRY,FX,currency_block,currency,TRY,,Turkiye,CBRT,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.PLN,PLN,PLN,FX,currency_block,currency,PLN,,Poland,NBP,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.CZK,CZK,CZK,FX,currency_block,currency,CZK,,Czechia,CNB,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.HUF,HUF,HUF,FX,currency_block,currency,HUF,,Hungary,MNB,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.ILS,ILS,ILS,FX,currency_block,currency,ILS,,Israel,BOI,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.SAR,SAR,SAR,FX,currency_block,currency,SAR,,Saudi Arabia,SAMA,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.CCY.AED,AED,AED,FX,currency_block,currency,AED,,UAE,CBUAE,,UTC,FX_CURRENCY_BLOCK,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURUSD,EURUSD,EURUSD|EUR/USD,FX,bilateral_spot,spot_fx,EUR,USD,bilateral,OTC,EURUSD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDJPY,USDJPY,USDJPY|USD/JPY,FX,bilateral_spot,spot_fx,USD,JPY,bilateral,OTC,USDJPY,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.GBPUSD,GBPUSD,GBPUSD|GBP/USD,FX,bilateral_spot,spot_fx,GBP,USD,bilateral,OTC,GBPUSD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDCHF,USDCHF,USDCHF|USD/CHF,FX,bilateral_spot,spot_fx,USD,CHF,bilateral,OTC,USDCHF,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDCAD,USDCAD,USDCAD|USD/CAD,FX,bilateral_spot,spot_fx,USD,CAD,bilateral,OTC,USDCAD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.AUDUSD,AUDUSD,AUDUSD|AUD/USD,FX,bilateral_spot,spot_fx,AUD,USD,bilateral,OTC,AUDUSD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.NZDUSD,NZDUSD,NZDUSD|NZD/USD,FX,bilateral_spot,spot_fx,NZD,USD,bilateral,OTC,NZDUSD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURJPY,EURJPY,EURJPY|EUR/JPY,FX,bilateral_spot,spot_fx,EUR,JPY,bilateral,OTC,EURJPY,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURGBP,EURGBP,EURGBP|EUR/GBP,FX,bilateral_spot,spot_fx,EUR,GBP,bilateral,OTC,EURGBP,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURCHF,EURCHF,EURCHF|EUR/CHF,FX,bilateral_spot,spot_fx,EUR,CHF,bilateral,OTC,EURCHF,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURCAD,EURCAD,EURCAD|EUR/CAD,FX,bilateral_spot,spot_fx,EUR,CAD,bilateral,OTC,EURCAD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURAUD,EURAUD,EURAUD|EUR/AUD,FX,bilateral_spot,spot_fx,EUR,AUD,bilateral,OTC,EURAUD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURNZD,EURNZD,EURNZD|EUR/NZD,FX,bilateral_spot,spot_fx,EUR,NZD,bilateral,OTC,EURNZD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.GBPJPY,GBPJPY,GBPJPY|GBP/JPY,FX,bilateral_spot,spot_fx,GBP,JPY,bilateral,OTC,GBPJPY,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.GBPCHF,GBPCHF,GBPCHF|GBP/CHF,FX,bilateral_spot,spot_fx,GBP,CHF,bilateral,OTC,GBPCHF,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.GBPCAD,GBPCAD,GBPCAD|GBP/CAD,FX,bilateral_spot,spot_fx,GBP,CAD,bilateral,OTC,GBPCAD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.GBPAUD,GBPAUD,GBPAUD|GBP/AUD,FX,bilateral_spot,spot_fx,GBP,AUD,bilateral,OTC,GBPAUD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.GBPNZD,GBPNZD,GBPNZD|GBP/NZD,FX,bilateral_spot,spot_fx,GBP,NZD,bilateral,OTC,GBPNZD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.AUDJPY,AUDJPY,AUDJPY|AUD/JPY,FX,bilateral_spot,spot_fx,AUD,JPY,bilateral,OTC,AUDJPY,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.AUDCAD,AUDCAD,AUDCAD|AUD/CAD,FX,bilateral_spot,spot_fx,AUD,CAD,bilateral,OTC,AUDCAD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.AUDNZD,AUDNZD,AUDNZD|AUD/NZD,FX,bilateral_spot,spot_fx,AUD,NZD,bilateral,OTC,AUDNZD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.AUDCHF,AUDCHF,AUDCHF|AUD/CHF,FX,bilateral_spot,spot_fx,AUD,CHF,bilateral,OTC,AUDCHF,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.CADJPY,CADJPY,CADJPY|CAD/JPY,FX,bilateral_spot,spot_fx,CAD,JPY,bilateral,OTC,CADJPY,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.CADCHF,CADCHF,CADCHF|CAD/CHF,FX,bilateral_spot,spot_fx,CAD,CHF,bilateral,OTC,CADCHF,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.NZDJPY,NZDJPY,NZDJPY|NZD/JPY,FX,bilateral_spot,spot_fx,NZD,JPY,bilateral,OTC,NZDJPY,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.NZDCAD,NZDCAD,NZDCAD|NZD/CAD,FX,bilateral_spot,spot_fx,NZD,CAD,bilateral,OTC,NZDCAD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.NZDCHF,NZDCHF,NZDCHF|NZD/CHF,FX,bilateral_spot,spot_fx,NZD,CHF,bilateral,OTC,NZDCHF,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.CHFJPY,CHFJPY,CHFJPY|CHF/JPY,FX,bilateral_spot,spot_fx,CHF,JPY,bilateral,OTC,CHFJPY,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.NOKSEK,NOKSEK,NOKSEK|NOK/SEK,FX,bilateral_spot,spot_fx,NOK,SEK,bilateral,OTC,NOKSEK,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURNOK,EURNOK,EURNOK|EUR/NOK,FX,bilateral_spot,spot_fx,EUR,NOK,bilateral,OTC,EURNOK,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURSEK,EURSEK,EURSEK|EUR/SEK,FX,bilateral_spot,spot_fx,EUR,SEK,bilateral,OTC,EURSEK,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDNOK,USDNOK,USDNOK|USD/NOK,FX,bilateral_spot,spot_fx,USD,NOK,bilateral,OTC,USDNOK,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDSEK,USDSEK,USDSEK|USD/SEK,FX,bilateral_spot,spot_fx,USD,SEK,bilateral,OTC,USDSEK,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDMXN,USDMXN,USDMXN|USD/MXN,FX,bilateral_spot,spot_fx,USD,MXN,bilateral,OTC,USDMXN,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDZAR,USDZAR,USDZAR|USD/ZAR,FX,bilateral_spot,spot_fx,USD,ZAR,bilateral,OTC,USDZAR,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDTRY,USDTRY,USDTRY|USD/TRY,FX,bilateral_spot,spot_fx,USD,TRY,bilateral,OTC,USDTRY,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDBRL,USDBRL,USDBRL|USD/BRL,FX,bilateral_spot,spot_fx,USD,BRL,bilateral,OTC,USDBRL,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDCLP,USDCLP,USDCLP|USD/CLP,FX,bilateral_spot,spot_fx,USD,CLP,bilateral,OTC,USDCLP,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDCOP,USDCOP,USDCOP|USD/COP,FX,bilateral_spot,spot_fx,USD,COP,bilateral,OTC,USDCOP,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDCNH,USDCNH,USDCNH|USD/CNH,FX,bilateral_spot,spot_fx,USD,CNH,bilateral,OTC,USDCNH,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDCNY,USDCNY,USDCNY|USD/CNY,FX,bilateral_spot,spot_fx,USD,CNY,bilateral,OTC,USDCNY,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDHKD,USDHKD,USDHKD|USD/HKD,FX,bilateral_spot,spot_fx,USD,HKD,bilateral,OTC,USDHKD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDSGD,USDSGD,USDSGD|USD/SGD,FX,bilateral_spot,spot_fx,USD,SGD,bilateral,OTC,USDSGD,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDKRW,USDKRW,USDKRW|USD/KRW,FX,bilateral_spot,spot_fx,USD,KRW,bilateral,OTC,USDKRW,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDINR,USDINR,USDINR|USD/INR,FX,bilateral_spot,spot_fx,USD,INR,bilateral,OTC,USDINR,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDIDR,USDIDR,USDIDR|USD/IDR,FX,bilateral_spot,spot_fx,USD,IDR,bilateral,OTC,USDIDR,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDMYR,USDMYR,USDMYR|USD/MYR,FX,bilateral_spot,spot_fx,USD,MYR,bilateral,OTC,USDMYR,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDTHB,USDTHB,USDTHB|USD/THB,FX,bilateral_spot,spot_fx,USD,THB,bilateral,OTC,USDTHB,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDPHP,USDPHP,USDPHP|USD/PHP,FX,bilateral_spot,spot_fx,USD,PHP,bilateral,OTC,USDPHP,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDPLN,USDPLN,USDPLN|USD/PLN,FX,bilateral_spot,spot_fx,USD,PLN,bilateral,OTC,USDPLN,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDCZK,USDCZK,USDCZK|USD/CZK,FX,bilateral_spot,spot_fx,USD,CZK,bilateral,OTC,USDCZK,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDHUF,USDHUF,USDHUF|USD/HUF,FX,bilateral_spot,spot_fx,USD,HUF,bilateral,OTC,USDHUF,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDILS,USDILS,USDILS|USD/ILS,FX,bilateral_spot,spot_fx,USD,ILS,bilateral,OTC,USDILS,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDSAR,USDSAR,USDSAR|USD/SAR,FX,bilateral_spot,spot_fx,USD,SAR,bilateral,OTC,USDSAR,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.USDAED,USDAED,USDAED|USD/AED,FX,bilateral_spot,spot_fx,USD,AED,bilateral,OTC,USDAED,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURPLN,EURPLN,EURPLN|EUR/PLN,FX,bilateral_spot,spot_fx,EUR,PLN,bilateral,OTC,EURPLN,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURHUF,EURHUF,EURHUF|EUR/HUF,FX,bilateral_spot,spot_fx,EUR,HUF,bilateral,OTC,EURHUF,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURCZK,EURCZK,EURCZK|EUR/CZK,FX,bilateral_spot,spot_fx,EUR,CZK,bilateral,OTC,EURCZK,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURTRY,EURTRY,EURTRY|EUR/TRY,FX,bilateral_spot,spot_fx,EUR,TRY,bilateral,OTC,EURTRY,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.EURZAR,EURZAR,EURZAR|EUR/ZAR,FX,bilateral_spot,spot_fx,EUR,ZAR,bilateral,OTC,EURZAR,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.AUDCNH,AUDCNH,AUDCNH|AUD/CNH,FX,bilateral_spot,spot_fx,AUD,CNH,bilateral,OTC,AUDCNH,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.CNHJPY,CNHJPY,CNHJPY|CNH/JPY,FX,bilateral_spot,spot_fx,CNH,JPY,bilateral,OTC,CNHJPY,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+FX.SPOT.SGDJPY,SGDJPY,SGDJPY|SGD/JPY,FX,bilateral_spot,spot_fx,SGD,JPY,bilateral,OTC,SGDJPY,UTC,FX_BILATERAL,TEMPLATE_SUPPORTED,public+market data,2026-08-06,,true
+CMD.CRUDE.WTI,WTI,WTI|CL,COMMODITY,crude_oil,future,,,global/regional,CME/NYMEX,CL,America/New_York,COMMODITY_ENERGY,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.CRUDE.BRENT,Brent,Brent|B,COMMODITY,crude_oil,future,,,global/regional,ICE,B,Europe/London,COMMODITY_ENERGY,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.OIL.DUBAI,Dubai Crude,Dubai,COMMODITY,crude_oil,benchmark,,,global/regional,Platts,Dubai,Asia/Dubai,COMMODITY_ENERGY,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.PROD.RBOB,RBOB Gasoline,RBOB|RB,COMMODITY,refined_products,future,,,global/regional,CME/NYMEX,RB,America/New_York,COMMODITY_REFINED,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.PROD.GASOIL,ICE Gasoil,Gasoil,COMMODITY,refined_products,future,,,global/regional,ICE,G,Europe/London,COMMODITY_REFINED,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.GAS.HH,Henry Hub Gas,Henry Hub|NG,COMMODITY,natural_gas,future,,,global/regional,CME/NYMEX,NG,America/New_York,COMMODITY_GAS_POWER,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.GAS.TTF,Dutch TTF,TTF,COMMODITY,natural_gas,future,,,global/regional,ICE Endex,TFM,Europe/Amsterdam,COMMODITY_GAS_POWER,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.GAS.JKM,JKM LNG,JKM,COMMODITY,lng,benchmark,,,global/regional,Platts,JKM,Asia/Singapore,COMMODITY_GAS_POWER,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.POWER.GERMANY,German Power,German Power,COMMODITY,power,future,,,global/regional,EEX,DEBY,Europe/Berlin,COMMODITY_GAS_POWER,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.EMISSIONS.EUA,EU Allowance,EUA,COMMODITY,emissions,future,,,global/regional,ICE,EUA,Europe/London,COMMODITY_GAS_POWER,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.METAL.GOLD,Gold,Gold|GC|XAUUSD,COMMODITY,precious_metals,future,,,global/regional,CME/COMEX,GC,America/New_York,COMMODITY_PRECIOUS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.METAL.SILVER,Silver,Silver|SI|XAGUSD,COMMODITY,precious_metals,future,,,global/regional,CME/COMEX,SI,America/New_York,COMMODITY_PRECIOUS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.METAL.PLATINUM,Platinum,Platinum|PL,COMMODITY,precious_metals,future,,,global/regional,CME/NYMEX,PL,America/New_York,COMMODITY_PRECIOUS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.METAL.PALLADIUM,Palladium,Palladium|PA,COMMODITY,precious_metals,future,,,global/regional,CME/NYMEX,PA,America/New_York,COMMODITY_PRECIOUS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.METAL.COPPER,COMEX Copper,Copper|HG,COMMODITY,base_metals,future,,,global/regional,CME/COMEX,HG,America/New_York,COMMODITY_METALS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.METAL.LME_CU,LME Copper,LME Copper|CA,COMMODITY,base_metals,future,,,global/regional,LME,CA,Europe/London,COMMODITY_METALS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.METAL.ALUMINUM,LME Aluminum,Aluminum|AH,COMMODITY,base_metals,future,,,global/regional,LME,AH,Europe/London,COMMODITY_METALS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.METAL.NICKEL,LME Nickel,Nickel|NI,COMMODITY,base_metals,future,,,global/regional,LME,NI,Europe/London,COMMODITY_METALS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.METAL.ZINC,LME Zinc,Zinc,COMMODITY,base_metals,future,,,global/regional,LME,Zinc,Europe/London,COMMODITY_METALS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.FERROUS.IRONORE,Iron Ore 62%,Iron Ore|IO62,COMMODITY,ferrous,benchmark,,,global/regional,Platts,IO62,Asia/Singapore,COMMODITY_METALS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.BATTERY.LITHIUM,Lithium Carbonate,Lithium,COMMODITY,battery_materials,benchmark,,,global/regional,Fastmarkets,LITH,Asia/Shanghai,COMMODITY_METALS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.GRAIN.CORN,Corn,Corn|ZC,COMMODITY,grains,future,,,global/regional,CBOT,ZC,America/Chicago,COMMODITY_AGRI,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.GRAIN.WHEAT,Chicago Wheat,Wheat|ZW,COMMODITY,grains,future,,,global/regional,CBOT,ZW,America/Chicago,COMMODITY_AGRI,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.GRAIN.KCWHEAT,KC HRW Wheat,KC Wheat|KE,COMMODITY,grains,future,,,global/regional,CBOT,KE,America/Chicago,COMMODITY_AGRI,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.OILSEED.SOY,Soybeans,Soybeans|ZS,COMMODITY,oilseeds,future,,,global/regional,CBOT,ZS,America/Chicago,COMMODITY_AGRI,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.OILSEED.SOYOIL,Soybean Oil,Soy Oil|ZL,COMMODITY,oilseeds,future,,,global/regional,CBOT,ZL,America/Chicago,COMMODITY_AGRI,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.OILSEED.SOYMEAL,Soybean Meal,Soy Meal|ZM,COMMODITY,oilseeds,future,,,global/regional,CBOT,ZM,America/Chicago,COMMODITY_AGRI,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.OILSEED.PALM,Palm Oil,Palm Oil|FCPO,COMMODITY,oilseeds,future,,,global/regional,Bursa Malaysia,FCPO,Asia/Kuala_Lumpur,COMMODITY_AGRI,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.SOFT.COCOA_NY,NY Cocoa,Cocoa|CC,COMMODITY,softs,future,,,global/regional,ICE US,CC,America/New_York,COMMODITY_SOFTS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.SOFT.COCOA_LDN,London Cocoa,London Cocoa,COMMODITY,softs,future,,,global/regional,ICE Europe,C,Europe/London,COMMODITY_SOFTS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.SOFT.COFFEE,Arabica Coffee,Coffee|KC,COMMODITY,softs,future,,,global/regional,ICE US,KC,America/New_York,COMMODITY_SOFTS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.SOFT.SUGAR,Raw Sugar,Sugar|SB,COMMODITY,softs,future,,,global/regional,ICE US,SB,America/New_York,COMMODITY_SOFTS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.SOFT.COTTON,Cotton,Cotton|CT,COMMODITY,softs,future,,,global/regional,ICE US,CT,America/New_York,COMMODITY_SOFTS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.SOFT.OJ,Orange Juice,Orange Juice|OJ,COMMODITY,softs,future,,,global/regional,ICE US,OJ,America/New_York,COMMODITY_SOFTS,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.LIVESTOCK.CATTLE,Live Cattle,Live Cattle|LE,COMMODITY,livestock,future,,,global/regional,CME,LE,America/Chicago,COMMODITY_OTHER,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.LIVESTOCK.HOGS,Lean Hogs,Lean Hogs|HE,COMMODITY,livestock,future,,,global/regional,CME,HE,America/Chicago,COMMODITY_OTHER,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.FORESTRY.LUMBER,Lumber,Lumber|LBR,COMMODITY,forestry,future,,,global/regional,CME,LBR,America/Chicago,COMMODITY_OTHER,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+CMD.RUBBER.TOCOM,TOCOM Rubber,Rubber|RSS3,COMMODITY,rubber,future,,,global/regional,JPX,RSS3,Asia/Tokyo,COMMODITY_OTHER,TEMPLATE_SUPPORTED,physical+curve+market data,2026-08-06,,true
+IDX.EQ.US.SPX,S&P 500,SPX|US500,INDEX,broad_equity,cash_index,,,global/country,S&P DJI,SPX,America/New_York,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.US.NDX,Nasdaq-100,NDX|US100,INDEX,large_cap_growth,cash_index,,,global/country,Nasdaq,NDX,America/New_York,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.US.DJI,Dow Jones Industrial Average,DJI|US30,INDEX,price_weighted,cash_index,,,global/country,S&P DJI,DJI,America/New_York,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.US.RUT,Russell 2000,RUT,INDEX,small_cap,cash_index,,,global/country,FTSE Russell,RUT,America/New_York,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.EU.STOXX50,EURO STOXX 50,SX5E,INDEX,regional_equity,cash_index,,,global/country,STOXX,SX5E,Europe/Berlin,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.DE.DAX,DAX,DAX|GER40,INDEX,country_equity,cash_index,,,global/country,STOXX,DAX,Europe/Berlin,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.FR.CAC40,CAC 40,CAC40|PX1,INDEX,country_equity,cash_index,,,global/country,Euronext,PX1,Europe/Paris,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.UK.FTSE100,FTSE 100,FTSE100|UKX,INDEX,country_equity,cash_index,,,global/country,FTSE Russell,UKX,Europe/London,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.CH.SMI,SMI,SMI,INDEX,country_equity,cash_index,,,global/country,SIX,SMI,Europe/Zurich,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.JP.NIKKEI,Nikkei 225,Nikkei|NKY,INDEX,price_weighted,cash_index,,,global/country,Nikkei,NKY,Asia/Tokyo,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.JP.TOPIX,TOPIX,TOPIX|TPX,INDEX,country_equity,cash_index,,,global/country,JPX,TPX,Asia/Tokyo,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.HK.HSI,Hang Seng Index,HSI,INDEX,country_equity,cash_index,,,global/country,Hang Seng Indexes,HSI,Asia/Hong_Kong,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.HK.HSCEI,Hang Seng China Enterprises,HSCEI,INDEX,country_equity,cash_index,,,global/country,Hang Seng Indexes,HSCEI,Asia/Hong_Kong,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.CN.CSI300,CSI 300,CSI300,INDEX,country_equity,cash_index,,,global/country,CSI,CSI300,Asia/Shanghai,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.KR.KOSPI,KOSPI,KOSPI,INDEX,country_equity,cash_index,,,global/country,KRX,KOSPI,Asia/Seoul,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.IN.NIFTY50,NIFTY 50,NIFTY,INDEX,country_equity,cash_index,,,global/country,NSE Indices,NIFTY,Asia/Kolkata,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.AU.ASX200,S&P/ASX 200,ASX200|AS51,INDEX,country_equity,cash_index,,,global/country,S&P/ASX,AS51,Australia/Sydney,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.CA.TSX,S&P/TSX Composite,TSX|SPTSX,INDEX,country_equity,cash_index,,,global/country,S&P/TSX,SPTSX,America/Toronto,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.BR.IBOV,Ibovespa,IBOV,INDEX,country_equity,cash_index,,,global/country,B3,IBOV,America/Sao_Paulo,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.GLOBAL.MSCIWORLD,MSCI World,MSCI World,INDEX,global_equity,cash_index,,,global/country,MSCI,WORLD,UTC,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.EQ.EM.MSCIEM,MSCI Emerging Markets,MSCI EM,INDEX,regional_equity,cash_index,,,global/country,MSCI,MXEF,UTC,INDEX_EQUITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.VOL.US.VIX,Cboe Volatility Index,VIX,INDEX,volatility,cash_index,,,global/country,Cboe,VIX,America/Chicago,INDEX_VOLATILITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.VOL.EU.VSTOXX,EURO STOXX Volatility,VSTOXX|V2X,INDEX,volatility,cash_index,,,global/country,STOXX,V2X,Europe/Berlin,INDEX_VOLATILITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.RATES.US.AGG,US Aggregate Bond Index,US Agg,INDEX,bond_index,cash_index,,,global/country,Bloomberg,LBUSTRUU,America/New_York,INDEX_RATES,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.RATES.GLOBAL.AGG,Global Aggregate Bond Index,Global Agg,INDEX,bond_index,cash_index,,,global/country,Bloomberg,LEGATRUU,UTC,INDEX_RATES,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.CREDIT.US.HY,US High Yield Index,US HY,INDEX,credit_index,cash_index,,,global/country,ICE BofA,H0A0,America/New_York,INDEX_CREDIT,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.FX.DXY,US Dollar Index,DXY,INDEX,fx_basket,cash_index,,,global/country,ICE,DXY,America/New_York,INDEX_FX,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.CMD.BCOM,Bloomberg Commodity Index,BCOM,INDEX,commodity_index,cash_index,,,global/country,Bloomberg,BCOM,America/New_York,INDEX_COMMODITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true
+IDX.CMD.GSCI,S&P GSCI,GSCI,INDEX,commodity_index,cash_index,,,global/country,S&P DJI,GSCI,America/New_York,INDEX_COMMODITY,TEMPLATE_SUPPORTED,methodology+constituents+market data,2026-08-06,,true

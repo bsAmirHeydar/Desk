@@ -2,9 +2,9 @@
 title: "Alpha Lab Asset-Specific Persian PDF Analysis Prompts"
 type: moc
 status: canonical
-version: 10.4.0
+version: 13.0.0
 created: 2026-07-30
-updated: 2026-08-01
+updated: 2026-08-06
 language: en
 tags: [alpha-lab, prompts, pdf, persian, institutional-analysis]
 ---
@@ -74,3 +74,8 @@ The Persian PDF format is preserved; the state methodology is upgraded.
 
 Asset-specific Persian reports should use [[90 Market Narrative Intelligence Engine/41 Alpha Lab V12 Daily Fundamental and Narrative Analysis Prompt]] and the relevant Module 90 asset book before rendering the executive PDF.
 
+
+
+## V13 universal multi-asset coverage
+
+Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.

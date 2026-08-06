@@ -2,9 +2,9 @@
 title: "Canonical Retrieval Evidence and Version Control"
 type: moc
 status: canonical
-version: 9.0.0
+version: 13.0.0
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-06
 language: en
 tags: [fundamental-only, retrieval, version-control]
 default_retrieval: true
@@ -37,3 +37,8 @@ Concept-specific precedence is machine-readable in `V11_CANONICAL_AUTHORITY_MAP.
 
 For daily narrative analysis retrieve Module 89 fact-state controls before Module 90 attention/narrative controls, then asset book, daily workflow, schema and prior immutable state. Record every retrieved path. Module 90 overrides older narrative field guides only where concepts conflict.
 
+
+
+## V13 universal multi-asset coverage
+
+Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.

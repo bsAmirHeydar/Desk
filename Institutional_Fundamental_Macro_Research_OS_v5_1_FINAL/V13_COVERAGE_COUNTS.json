@@ -1,0 +1,10 @@
+{
+  "seed_registry": {
+    "FX": 97,
+    "COMMODITY": 38,
+    "INDEX": 29
+  },
+  "currency_blocks": 34,
+  "fx_pair_seed": 63,
+  "architecture": "extensible beyond seed registry"
+}

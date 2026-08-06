@@ -2,7 +2,7 @@
 title: "README"
 type: documentation
 status: canonical
-version: 11.0.0
+version: 13.0.0
 created: 2026-07-30
 updated: 2026-08-06
 language: en
@@ -92,3 +92,8 @@ V11 does not claim universal empirical calibration or proprietary data access. I
 
 Start at [[90 Market Narrative Intelligence Engine/00 Market Narrative Intelligence Engine MOC]]. V12 extends the V11 fact-state engine with market-attention selection, competing narratives, dominance/validity separation, narrative persistence, reflexivity, ignored facts and daily production prompts.
 
+
+
+## V13 universal multi-asset coverage
+
+Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.

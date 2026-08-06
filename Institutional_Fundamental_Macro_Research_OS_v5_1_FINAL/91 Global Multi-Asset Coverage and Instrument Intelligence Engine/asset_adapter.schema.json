@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "required": [
+    "family",
+    "required",
+    "confidence_caps"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "report_mode": "CROSS_SECTIONAL_RANKING",
+  "metric": "remaining_pressure",
+  "horizon": "MULTI_DAY_2_10D",
+  "scoring_mode": "ANALYTICAL_ORDINAL",
+  "normalization_group": "within_family",
+  "results": [],
+  "status": "NO_RANK_WITHOUT_OBSERVATIONS"
+}

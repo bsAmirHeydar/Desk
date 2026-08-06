@@ -1,0 +1,75 @@
+{
+  "methodology": {
+    "vault_release": "13.0.0",
+    "schema_version": "13.0.0",
+    "timestamp_utc": "2026-08-06T12:00:00Z",
+    "cutoff_policy": "point-in-time",
+    "scoring_mode": "ANALYTICAL_ORDINAL"
+  },
+  "instrument": {
+    "canonical_id": "FX.SPOT.USDHKD",
+    "requested_symbol": "USDHKD",
+    "resolved_name": "USDHKD",
+    "asset_family": "FX",
+    "subfamily": "bilateral_spot",
+    "venue": null,
+    "benchmark": "USDHKD",
+    "metadata_version": "2026-08-06",
+    "resolution_status": "RESOLVED",
+    "supported_adapter": "FX_BILATERAL"
+  },
+  "coverage": {
+    "status": "TEMPLATE_SUPPORTED",
+    "confidence_cap": 75,
+    "missing_inputs": [],
+    "licensed_data_required": []
+  },
+  "shared_state": {
+    "direction": "UNDETERMINED",
+    "force": {
+      "band": "MEDIUM"
+    },
+    "fact_persistence": {
+      "class": "MEDIUM"
+    },
+    "consumption": {
+      "summary": "PARTIAL"
+    },
+    "remaining_pressure": {
+      "class": "MEDIUM"
+    },
+    "attention": {
+      "leader": "UNDETERMINED"
+    },
+    "narratives": {
+      "dominant": "UNDETERMINED",
+      "validity": "UNDETERMINED"
+    },
+    "asymmetry": {
+      "class": "UNDETERMINED"
+    }
+  },
+  "provenance": {
+    "field_level_ledger": [],
+    "unavailable_inputs": [],
+    "confidence_caps": []
+  },
+  "validation": {
+    "instrument_resolution": "PASS",
+    "point_in_time": "LIMITED",
+    "adapter_validation": "PASS",
+    "v11_regression": "PASS",
+    "v12_regression": "PASS"
+  },
+  "fx_state": {
+    "base_currency_block": {
+      "currency": "USD"
+    },
+    "quote_currency_block": {
+      "currency": "HKD",
+      "regime": "PEG"
+    },
+    "regime": "PEG",
+    "intervention": "REQUIRED_COMPONENT"
+  }
+}

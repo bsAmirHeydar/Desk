@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "required": [
+    "canonical_id",
+    "asset_family",
+    "adapter_id"
+  ]
+}

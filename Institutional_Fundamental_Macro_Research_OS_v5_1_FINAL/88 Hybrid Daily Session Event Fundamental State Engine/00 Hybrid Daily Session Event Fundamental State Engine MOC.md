@@ -2,9 +2,9 @@
 title: "Hybrid Daily Session Event Fundamental State Engine"
 type: moc
 status: canonical
-version: 10.4.0
+version: 13.0.0
 created: 2026-08-01
-updated: 2026-08-01
+updated: 2026-08-06
 language: en
 tags: [point-in-time, intraday-fundamental, historical-reconstruction, session, state-decay]
 ---
@@ -70,3 +70,8 @@ Module 89 extends the content of each state record with force, consumption, coun
 
 Module 88 continues to govern mandatory checkpoints and immutable record density. A V12 narrative record may attach to each daily/session/event state using [[90 Market Narrative Intelligence Engine/45 Machine-Readable V12 Narrative State Schema]].
 
+
+
+## V13 universal multi-asset coverage
+
+Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.
