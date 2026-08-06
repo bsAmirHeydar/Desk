@@ -1,0 +1,306 @@
+{
+  "v12_market_intelligence_state": {
+    "methodology": {
+      "vault_release": "12.0.0",
+      "schema_version": "12.0.0",
+      "analysis_timestamp_utc": "2026-08-06T12:00:00Z",
+      "new_york_timestamp": "2026-08-06T08:00:00-04:00",
+      "cutoff_policy": "FIRST_RELEASE_POINT_IN_TIME",
+      "analyst_or_agent": "V12_VALIDATION_FIXTURE",
+      "scoring_mode": "ANALYTICAL_ORDINAL_MODE"
+    },
+    "inherited_v11_state": {
+      "direction": "POSITIVE",
+      "force": {
+        "class": "HIGH",
+        "provenance": "MODEL_IMPLIED"
+      },
+      "fact_persistence": {
+        "class": "MULTI_DAY",
+        "provenance": "STRUCTURED_JUDGMENT"
+      },
+      "consumption": {
+        "class": "PARTIAL",
+        "provenance": "MODEL_IMPLIED"
+      },
+      "remaining_pressure": {
+        "class": "MEDIUM_HIGH",
+        "provenance": "STRUCTURED_JUDGMENT"
+      },
+      "reversal_risk": "MEDIUM",
+      "asymmetry": "FAVORABLE_WITH_EVENT_RISK"
+    },
+    "fact_universe": {
+      "facts": [
+        {
+          "fact_id": "f-ai",
+          "title": "Mega-cap AI guidance revises cash-flow expectations",
+          "timestamp_utc": "2026-08-06T11:00:00Z",
+          "provenance": "OFFICIAL_OBSERVED",
+          "fact_persistence": "MULTI_DAY"
+        }
+      ],
+      "fact_clusters": [
+        {
+          "cluster_id": "f-ai-cluster",
+          "fact_ids": [
+            "f-ai"
+          ]
+        }
+      ],
+      "ignored_facts": [
+        {
+          "fact_id": "ignored-1",
+          "state": "UNDER_ATTENDED",
+          "reason": "displaced by active catalyst"
+        }
+      ]
+    },
+    "attention": {
+      "asset_horizon_maps": [
+        {
+          "market": "nasdaq_100",
+          "horizon": "SESSION_1_6H",
+          "attention_object": "AI monetization",
+          "attention_band": "HIGH",
+          "attention_acceleration": "RISING",
+          "evidence_ids": [
+            "ev-1"
+          ]
+        }
+      ],
+      "concentration": "CONCENTRATED",
+      "acceleration": "RISING",
+      "attention_leader": "AI monetization",
+      "evidence_ledger": [
+        {
+          "evidence_id": "ev-1",
+          "timestamp_utc": "2026-08-06T11:05:00Z",
+          "provenance": "PUBLIC_MARKET_OBSERVED",
+          "source_locator": "fixture://market-response",
+          "supports": "ATTENTION_SENSITIVITY"
+        }
+      ]
+    },
+    "narratives": {
+      "candidates": [
+        {
+          "narrative_id": "n-ai",
+          "title": "AI monetization remains the active cash-flow controller",
+          "plain_language_thesis": "AI monetization remains the active cash-flow controller",
+          "selected_facts": [
+            "f-ai"
+          ],
+          "ignored_facts": [
+            "ignored-1"
+          ],
+          "interpretive_claim": "The fact revises the expected path and controls the stated horizon.",
+          "causal_chain": [
+            "f-ai",
+            "mega-cap earnings revisions",
+            "nasdaq_100"
+          ],
+          "target_assets": [
+            "nasdaq_100"
+          ],
+          "active_horizons": [
+            "SESSION_1_6H"
+          ],
+          "attention_state": "DOMINANT",
+          "attention_rank": "FIRST",
+          "narrative_validity": "SUPPORTED_WITH_GAPS",
+          "narrative_dominance": "HIGH",
+          "price_control": "HIGH",
+          "flow_control": "UNDETERMINED",
+          "institutional_adoption": "MEDIUM",
+          "media_amplification": "MEDIUM",
+          "cross_asset_acceptance": "MEDIUM",
+          "consensus_penetration": "MEDIUM",
+          "positioning_alignment": "UNDETERMINED",
+          "narrative_freshness": "HIGH",
+          "narrative_persistence": "MULTI_DAY",
+          "narrative_saturation": "MEDIUM",
+          "narrative_consumption": "PARTIAL",
+          "remaining_narrative_power": "MEDIUM_HIGH",
+          "contradiction_load": "LOW_MEDIUM",
+          "fragility": "MEDIUM",
+          "replacement_risk": "MEDIUM",
+          "reopening_conditions": [
+            "independent confirmation"
+          ],
+          "invalidation_conditions": [
+            "causal leader reverses"
+          ],
+          "rival_narratives": [
+            "n-rates"
+          ],
+          "observability_tier": "TIER_1_PUBLIC_MARKET",
+          "confidence": 65,
+          "field_level_provenance": [
+            {
+              "field": "narrative_validity",
+              "provenance": "STRUCTURED_JUDGMENT"
+            }
+          ],
+          "next_update_trigger": "next material event"
+        },
+        {
+          "narrative_id": "n-rates",
+          "title": "Real-yield repricing is the strongest challenger",
+          "plain_language_thesis": "Real-yield repricing is the strongest challenger",
+          "selected_facts": [
+            "f-ai"
+          ],
+          "ignored_facts": [],
+          "interpretive_claim": "A rival mechanism explains part of the response.",
+          "causal_chain": [
+            "f-ai",
+            "flow",
+            "nasdaq_100"
+          ],
+          "target_assets": [
+            "nasdaq_100"
+          ],
+          "active_horizons": [
+            "SESSION_1_6H"
+          ],
+          "attention_state": "COMPETING",
+          "attention_rank": "SECOND",
+          "narrative_validity": "PLAUSIBLE",
+          "narrative_dominance": "MEDIUM",
+          "price_control": "MEDIUM",
+          "flow_control": "MEDIUM",
+          "institutional_adoption": "UNDETERMINED",
+          "media_amplification": "LOW",
+          "cross_asset_acceptance": "LOW",
+          "consensus_penetration": "LOW",
+          "positioning_alignment": "UNDETERMINED",
+          "narrative_freshness": "MEDIUM",
+          "narrative_persistence": "SESSION",
+          "fact_persistence": "MULTI_DAY",
+          "narrative_saturation": "LOW",
+          "narrative_consumption": "LOW",
+          "remaining_narrative_power": "MEDIUM",
+          "contradiction_load": "MEDIUM",
+          "fragility": "HIGH",
+          "replacement_risk": "HIGH",
+          "reopening_conditions": [
+            "flow continuation"
+          ],
+          "invalidation_conditions": [
+            "flow normalizes"
+          ],
+          "rival_narratives": [
+            "n-ai"
+          ],
+          "observability_tier": "TIER_1_PUBLIC_MARKET",
+          "confidence": 50,
+          "field_level_provenance": [
+            {
+              "field": "flow_control",
+              "provenance": "PUBLIC_PROXY"
+            }
+          ],
+          "next_update_trigger": "flow normalization"
+        }
+      ],
+      "dominant_by_asset_horizon": [
+        {
+          "market": "nasdaq_100",
+          "horizon": "SESSION_1_6H",
+          "narrative_id": "n-ai",
+          "validity": "SUPPORTED_WITH_GAPS",
+          "dominance": "HIGH"
+        }
+      ],
+      "strongest_challengers": [
+        "n-rates"
+      ],
+      "dormant_narratives": [],
+      "transition_watch": [
+        {
+          "outgoing": "n-ai",
+          "incoming": "n-rates",
+          "trigger": "causal leader failure",
+          "status": "WATCH"
+        }
+      ]
+    },
+    "leaders": {
+      "causal_leader": "mega-cap earnings revisions",
+      "attention_leader": "AI monetization",
+      "price_controller": "AI monetization",
+      "flow_controller": "UNDETERMINED",
+      "media_leader": "AI monetization"
+    },
+    "reflexivity": {
+      "active_feedback_loops": [
+        {
+          "loop_id": "loop-1",
+          "mechanism": "attention to positioning to price to broader attention",
+          "changes_reality": false,
+          "provenance": "MODEL_IMPLIED"
+        }
+      ],
+      "break_conditions": [
+        "causal leader reversal"
+      ]
+    },
+    "daily_state": {
+      "executive_market_map": [
+        {
+          "market": "nasdaq_100",
+          "fundamental_direction": "POSITIVE",
+          "force": "HIGH",
+          "dominant_fact_cluster": "f-ai-cluster",
+          "fact_persistence": "MULTI_DAY",
+          "fact_consumption": "PARTIAL",
+          "remaining_pressure": "MEDIUM_HIGH",
+          "dominant_narrative": "n-ai",
+          "narrative_validity": "SUPPORTED_WITH_GAPS",
+          "narrative_dominance": "HIGH",
+          "narrative_persistence": "MULTI_DAY",
+          "narrative_saturation": "MEDIUM",
+          "strongest_challenger": "n-rates",
+          "attention_shift_risk": "MEDIUM",
+          "edge_availability": "CONDITIONAL",
+          "confidence": 65
+        }
+      ],
+      "watchlist": [
+        {
+          "market": "nasdaq_100",
+          "trigger": "next material event"
+        }
+      ],
+      "next_update_triggers": [
+        "next material event"
+      ]
+    },
+    "provenance": {
+      "field_level_ledger": [
+        {
+          "field": "attention.attention_leader",
+          "provenance": "PUBLIC_MARKET_OBSERVED",
+          "timestamp_utc": "2026-08-06T11:05:00Z"
+        }
+      ],
+      "unavailable_inputs": [
+        "PROPRIETARY_POSITIONING"
+      ],
+      "confidence_caps": [
+        {
+          "field": "flow_controller",
+          "cap": 60,
+          "reason": "public proxy only"
+        }
+      ]
+    },
+    "validation": {
+      "point_in_time_status": "PASS",
+      "no_lookahead_status": "PASS",
+      "v11_regression_status": "PASS",
+      "narrative_validation_status": "PASS"
+    }
+  }
+}

@@ -65,3 +65,8 @@ Module 89 extends the content of each state record with force, consumption, coun
 - [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/00 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine MOC]]
 - [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/32 Machine-Readable V11 State Schema]]
 - [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/36 Migration Precedence and Backward Compatibility]]
+
+## V12 narrative child state
+
+Module 88 continues to govern mandatory checkpoints and immutable record density. A V12 narrative record may attach to each daily/session/event state using [[90 Market Narrative Intelligence Engine/45 Machine-Readable V12 Narrative State Schema]].
+

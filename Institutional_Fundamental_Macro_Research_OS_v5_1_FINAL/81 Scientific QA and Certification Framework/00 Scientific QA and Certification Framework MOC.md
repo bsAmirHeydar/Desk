@@ -102,3 +102,8 @@ V11 adds semantic gates that complement existing structural QA:
 - safe patch-manifest validation.
 
 See [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/35 Regression Preservation Suite]] and [[VALIDATION_REPORT_V11]]. V11 certification is internal and conditional; external certification and empirical alpha are not claimed.
+
+## V12 narrative QA extension
+
+V12 adds deterministic checks for fact/attention/narrative separation, validity/dominance separation, fact/narrative persistence separation, no-hindsight candidate selection, attention provenance, confidence caps, daily-output completeness and V11 regression. See [[90 Market Narrative Intelligence Engine/47 Benchmark Scenarios and Acceptance Tests]].
+

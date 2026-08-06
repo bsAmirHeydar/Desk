@@ -1,0 +1,10 @@
+﻿v11_field,v12_target,migration_rule
+direction,inherited_v11_state.direction,copy with provenance
+force,inherited_v11_state.force,copy vector; do not collapse
+persistence_v2,inherited_v11_state.fact_persistence,copy fact persistence only
+consumption_v2,inherited_v11_state.consumption,copy fact consumption only
+remaining_pressure_v2,inherited_v11_state.remaining_pressure,copy residual state
+asymmetry_v2,inherited_v11_state.asymmetry,copy fundamental asymmetry
+causal_leader,leaders.causal_leader,copy only at same cutoff
+narrative_saturation,narratives.candidates[].narrative_saturation,do not infer narrative object without evidence
+dominant_driver,narratives.dominant_by_asset_horizon,do not auto-convert; create UNDETERMINED if no frozen narrative evidence

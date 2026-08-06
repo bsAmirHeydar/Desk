@@ -1,0 +1,30 @@
+﻿column,required,meaning
+record_id,YES,record id
+analysis_timestamp_utc,YES,analysis timestamp utc
+new_york_timestamp,CONDITIONAL,new york timestamp
+market,YES,market
+horizon,YES,horizon
+direction,CONDITIONAL,direction
+force_class,CONDITIONAL,force class
+fact_persistence,CONDITIONAL,fact persistence
+fact_consumption,CONDITIONAL,fact consumption
+remaining_pressure,CONDITIONAL,remaining pressure
+attention_leader,CONDITIONAL,attention leader
+attention_band,CONDITIONAL,attention band
+attention_acceleration,CONDITIONAL,attention acceleration
+dominant_narrative_id,YES,dominant narrative id
+dominant_narrative_title,CONDITIONAL,dominant narrative title
+narrative_validity,YES,narrative validity
+narrative_dominance,YES,narrative dominance
+price_controller,CONDITIONAL,price controller
+flow_controller,CONDITIONAL,flow controller
+narrative_persistence,CONDITIONAL,narrative persistence
+narrative_saturation,CONDITIONAL,narrative saturation
+remaining_narrative_power,CONDITIONAL,remaining narrative power
+strongest_challenger,CONDITIONAL,strongest challenger
+ignored_fact_state,CONDITIONAL,ignored fact state
+transition_risk,CONDITIONAL,transition risk
+edge_availability,CONDITIONAL,edge availability
+confidence,YES,confidence
+provenance,CONDITIONAL,provenance
+next_update_trigger,CONDITIONAL,next update trigger

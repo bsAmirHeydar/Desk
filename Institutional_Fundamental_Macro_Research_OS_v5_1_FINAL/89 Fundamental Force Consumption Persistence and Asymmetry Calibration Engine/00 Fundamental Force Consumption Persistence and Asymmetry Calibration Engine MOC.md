@@ -85,3 +85,8 @@ Module 89 is the canonical V11 control layer for measuring and communicating fun
 ## Precedence
 
 For methodology version 11.0.0, this module governs the semantics of force, intensity, the V11 consumption vector, remaining pressure, persistence, reversal hazard, path asymmetry and edge availability. Module 88 continues to govern mandatory daily/session/event record density and immutable point-in-time reconstruction. Module 87 continues to govern Persian PDF delivery. Module 81 continues to govern internal scientific QA. Conflicts are resolved through `V11_CANONICAL_AUTHORITY_MAP.yaml`.
+
+## V12 narrative handoff
+
+After V11 produces the fact-state vector, hand it to [[90 Market Narrative Intelligence Engine/00 Market Narrative Intelligence Engine MOC]]. V12 must not overwrite V11 fact force, consumption, remaining pressure, fact persistence or asymmetry.
+

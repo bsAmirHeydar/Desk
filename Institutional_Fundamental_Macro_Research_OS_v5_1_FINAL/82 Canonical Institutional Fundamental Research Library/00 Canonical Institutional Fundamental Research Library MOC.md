@@ -89,3 +89,8 @@ The consolidated library remains the primary broad research canon. For the follo
 - provenance, confidence caps and calibration status.
 
 See [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/00 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine MOC]] and `V11_CANONICAL_AUTHORITY_MAP.yaml`.
+
+## V12 specialist canonical authority
+
+Market attention, narrative objects, validity, dominance, persistence, ignored facts, reflexivity and transitions are governed by [[90 Market Narrative Intelligence Engine/00 Market Narrative Intelligence Engine MOC]].
+

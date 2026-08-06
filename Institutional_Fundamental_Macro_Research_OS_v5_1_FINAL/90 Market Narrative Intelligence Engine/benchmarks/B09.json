@@ -1,0 +1,30 @@
+{
+  "benchmark_id": "V12-B09",
+  "title": "Inflation versus growth competition",
+  "frozen_cutoff_utc": "2026-01-15T15:00:00Z",
+  "allowed_evidence": [
+    "facts timestamped at or before cutoff",
+    "prior immutable state",
+    "contemporaneous public market and text evidence"
+  ],
+  "prohibited_future_information": [
+    "later price outcome",
+    "revised data published after cutoff",
+    "later analyst explanation"
+  ],
+  "expected_state": "COMPETING",
+  "expected_reasoning": "Two causal models remain viable by horizon.",
+  "required_rival_models": [
+    "fact-led explanation",
+    "flow-only explanation"
+  ],
+  "confidence_caps": [
+    "no proprietary adoption claim without direct data"
+  ],
+  "pass_criteria": [
+    "fact-attention-narrative separation",
+    "validity-dominance separation",
+    "horizon specificity",
+    "no hindsight"
+  ]
+}

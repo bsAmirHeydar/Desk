@@ -1,0 +1,23 @@
+version: 12.0.0
+concepts:
+  fundamental_force:
+    primary: "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/03 Fundamental Force and Intensity Decomposition.md"
+  fact_consumption:
+    primary: "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/07 Consumption Vector and Lifecycle.md"
+  fact_persistence:
+    primary: "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/14 Persistence Half-Life and State Survival.md"
+  market_attention:
+    primary: "90 Market Narrative Intelligence Engine/03 Market Attention as a Scarce Selection Process.md"
+  narrative_object:
+    primary: "90 Market Narrative Intelligence Engine/04 Narrative Object Ontology.md"
+  narrative_validity:
+    primary: "90 Market Narrative Intelligence Engine/09 Narrative Validity and Fact Support.md"
+  narrative_dominance:
+    primary: "90 Market Narrative Intelligence Engine/10 Narrative Dominance and Price Control.md"
+  narrative_persistence:
+    primary: "90 Market Narrative Intelligence Engine/14 Narrative Persistence and Market Memory.md"
+  reflexivity:
+    primary: "90 Market Narrative Intelligence Engine/16 Reflexivity Feedback and Self-Reinforcement.md"
+  daily_intelligence:
+    primary: "90 Market Narrative Intelligence Engine/41 Alpha Lab V12 Daily Fundamental and Narrative Analysis Prompt.md"
+precedence_rule: "Module 89 governs fact-state semantics; Module 90 governs attention and narrative semantics; Module 88 governs immutable record density; Module 87 governs Persian PDF delivery."

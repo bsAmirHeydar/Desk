@@ -122,3 +122,16 @@ Releases 02–14 are implemented in [[80 Deprecated Mega Canon v7 Redirects/00 D
 | Provenance and confidence caps | [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/20 Observability Data Tiers and Confidence Caps]] | canonical | validator-enforced |
 | Historical calibration | [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/23 Historical Point-in-Time Calibration Laboratory]] | architecture complete | dataset-dependent |
 | V10.4 hybrid records | [[88 Hybrid Daily Session Event Fundamental State Engine/00 Hybrid Daily Session Event Fundamental State Engine MOC]] | preserved | regression-tested |
+
+## V12 coverage — market attention and narrative intelligence
+
+| Domain | Canonical coverage | Status |
+|---|---|---|
+| Fact–attention–narrative separation | [[90 Market Narrative Intelligence Engine/02 Fact Universe Fundamental State Attention and Narrative Separation]] | Canonical |
+| Attention evidence and selection | [[90 Market Narrative Intelligence Engine/03 Market Attention as a Scarce Selection Process]]; [[90 Market Narrative Intelligence Engine/07 Attention Evidence and Observability Tiers]] | Canonical |
+| Narrative candidate and tournament | [[90 Market Narrative Intelligence Engine/05 Narrative Candidate Generation from Facts]]; [[90 Market Narrative Intelligence Engine/12 Competing Narrative Matrix and Model Tournament]] | Canonical |
+| Validity versus dominance | [[90 Market Narrative Intelligence Engine/09 Narrative Validity and Fact Support]]; [[90 Market Narrative Intelligence Engine/10 Narrative Dominance and Price Control]] | Canonical |
+| Fact versus narrative persistence | [[90 Market Narrative Intelligence Engine/15 Fact Persistence versus Narrative Persistence]] | Canonical |
+| Reflexivity and transitions | [[90 Market Narrative Intelligence Engine/16 Reflexivity Feedback and Self-Reinforcement]]; [[90 Market Narrative Intelligence Engine/18 Narrative Replacement Rotation and Regime Transition]] | Canonical |
+| Daily production | [[90 Market Narrative Intelligence Engine/41 Alpha Lab V12 Daily Fundamental and Narrative Analysis Prompt]] | Canonical |
+

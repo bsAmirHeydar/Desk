@@ -1,0 +1,6 @@
+﻿claim_id,claim,source_ids,status
+C01,Fact strength must remain distinct from narrative dominance,S01,canonical extension
+C02,Fact persistence and narrative persistence require separate clocks,S02,new V12 ontology
+C03,Price response cannot prove narrative validity,S04;S05,causal and reflexivity control
+C04,Narrative saturation is not fact consumption,S03,boundary clarification
+C05,Daily immutable state must be preserved,S07;S08,production compatibility

@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "generated_at_utc": "2026-08-06T11:11:38.891998+00:00",
+  "valid_examples": [
+    {
+      "file": "example_eurusd.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "example_gold.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "example_multi_market_daily.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "example_nasdaq_100.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "example_sp500.json",
+      "status": "PASS",
+      "errors": []
+    }
+  ],
+  "invalid_fixtures_rejected": [
+    {
+      "file": "invalid_false_attention_share.json",
+      "status": "PASS",
+      "errors_detected": [
+        "precise attention_share requires EMPIRICALLY_CALIBRATED_MODE"
+      ]
+    },
+    {
+      "file": "invalid_hindsight_evidence.json",
+      "status": "PASS",
+      "errors_detected": [
+        "attention evidence ev-1 is after analysis cutoff"
+      ]
+    },
+    {
+      "file": "invalid_missing_validity.json",
+      "status": "PASS",
+      "errors_detected": [
+        "n-ai missing narrative_validity",
+        "n-ai must separate validity and dominance"
+      ]
+    },
+    {
+      "file": "invalid_persistence_conflation.json",
+      "status": "PASS",
+      "errors_detected": [
+        "n-ai missing fact_persistence",
+        "n-ai must separate fact and narrative persistence"
+      ]
+    }
+  ],
+  "v11_regression": {
+    "status": "PASS",
+    "errors": []
+  },
+  "python_compile_errors": [],
+  "certification": "CERTIFIED — CONDITIONAL",
+  "limitations": [
+    "No empirical attention-share calibration",
+    "No direct proprietary institutional-adoption data",
+    "No external scientific certification"
+  ]
+}

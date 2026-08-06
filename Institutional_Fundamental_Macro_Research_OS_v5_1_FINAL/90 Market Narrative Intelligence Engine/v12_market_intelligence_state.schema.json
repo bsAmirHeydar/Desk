@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alphalab.local/schemas/v12-market-intelligence-state.schema.json",
+  "title": "Alpha Lab V12 Market Intelligence State",
+  "type": "object",
+  "required": [
+    "v12_market_intelligence_state"
+  ],
+  "properties": {
+    "v12_market_intelligence_state": {
+      "type": "object",
+      "required": [
+        "methodology",
+        "inherited_v11_state",
+        "fact_universe",
+        "attention",
+        "narratives",
+        "leaders",
+        "reflexivity",
+        "daily_state",
+        "provenance",
+        "validation"
+      ],
+      "properties": {
+        "methodology": {
+          "type": "object",
+          "required": [
+            "vault_release",
+            "schema_version",
+            "analysis_timestamp_utc",
+            "new_york_timestamp",
+            "cutoff_policy",
+            "analyst_or_agent",
+            "scoring_mode"
+          ],
+          "properties": {
+            "vault_release": {
+              "const": "12.0.0"
+            },
+            "schema_version": {
+              "const": "12.0.0"
+            },
+            "analysis_timestamp_utc": {
+              "type": "string"
+            },
+            "new_york_timestamp": {
+              "type": "string"
+            },
+            "cutoff_policy": {
+              "type": "string"
+            },
+            "analyst_or_agent": {
+              "type": "string"
+            },
+            "scoring_mode": {
+              "enum": [
+                "ANALYTICAL_ORDINAL_MODE",
+                "EMPIRICALLY_CALIBRATED_MODE",
+                "HYBRID_PROVENANCE_MODE"
+              ]
+            }
+          }
+        },
+        "inherited_v11_state": {
+          "type": "object",
+          "required": [
+            "direction",
+            "force",
+            "fact_persistence",
+            "consumption",
+            "remaining_pressure",
+            "reversal_risk",
+            "asymmetry"
+          ]
+        },
+        "fact_universe": {
+          "type": "object",
+          "required": [
+            "facts",
+            "fact_clusters",
+            "ignored_facts"
+          ],
+          "properties": {
+            "facts": {
+              "type": "array"
+            },
+            "fact_clusters": {
+              "type": "array"
+            },
+            "ignored_facts": {
+              "type": "array"
+            }
+          }
+        },
+        "attention": {
+          "type": "object",
+          "required": [
+            "asset_horizon_maps",
+            "concentration",
+            "acceleration",
+            "attention_leader",
+            "evidence_ledger"
+          ],
+          "properties": {
+            "asset_horizon_maps": {
+              "type": "array"
+            },
+            "concentration": {
+              "type": "string"
+            },
+            "acceleration": {
+              "type": "string"
+            },
+            "attention_leader": {
+              "type": "string"
+            },
+            "evidence_ledger": {
+              "type": "array"
+            }
+          }
+        },
+        "narratives": {
+          "type": "object",
+          "required": [
+            "candidates",
+            "dominant_by_asset_horizon",
+            "strongest_challengers",
+            "dormant_narratives",
+            "transition_watch"
+          ],
+          "properties": {
+            "candidates": {
+              "type": "array"
+            },
+            "dominant_by_asset_horizon": {
+              "type": "array"
+            },
+            "strongest_challengers": {
+              "type": "array"
+            },
+            "dormant_narratives": {
+              "type": "array"
+            },
+            "transition_watch": {
+              "type": "array"
+            }
+          }
+        },
+        "leaders": {
+          "type": "object",
+          "required": [
+            "causal_leader",
+            "attention_leader",
+            "price_controller",
+            "flow_controller",
+            "media_leader"
+          ]
+        },
+        "reflexivity": {
+          "type": "object",
+          "required": [
+            "active_feedback_loops",
+            "break_conditions"
+          ],
+          "properties": {
+            "active_feedback_loops": {
+              "type": "array"
+            },
+            "break_conditions": {
+              "type": "array"
+            }
+          }
+        },
+        "daily_state": {
+          "type": "object",
+          "required": [
+            "executive_market_map",
+            "watchlist",
+            "next_update_triggers"
+          ],
+          "properties": {
+            "executive_market_map": {
+              "type": "array"
+            },
+            "watchlist": {
+              "type": "array"
+            },
+            "next_update_triggers": {
+              "type": "array"
+            }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "field_level_ledger",
+            "unavailable_inputs",
+            "confidence_caps"
+          ],
+          "properties": {
+            "field_level_ledger": {
+              "type": "array"
+            },
+            "unavailable_inputs": {
+              "type": "array"
+            },
+            "confidence_caps": {
+              "type": "array"
+            }
+          }
+        },
+        "validation": {
+          "type": "object",
+          "required": [
+            "point_in_time_status",
+            "no_lookahead_status",
+            "v11_regression_status",
+            "narrative_validation_status"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -50,3 +50,8 @@ For the current full-spectrum state method, use:
 - [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/39 V11 Fast Launcher]]
 
 The V11 prompt preserves the fundamental-only boundary and requires point-in-time evidence, horizon separation, field-level provenance and confidence caps.
+
+## V12 daily narrative prompt
+
+Use [[90 Market Narrative Intelligence Engine/41 Alpha Lab V12 Daily Fundamental and Narrative Analysis Prompt]] for the complete daily fact, attention, narrative and transition workflow.
+

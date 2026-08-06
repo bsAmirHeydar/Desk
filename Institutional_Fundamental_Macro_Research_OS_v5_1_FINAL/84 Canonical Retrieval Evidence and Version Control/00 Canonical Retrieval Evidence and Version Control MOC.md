@@ -32,3 +32,8 @@ When a V11 analysis asks about force, consumption, remaining pressure, persisten
 5. preserve field-level evidence lineage and methodology version.
 
 Concept-specific precedence is machine-readable in `V11_CANONICAL_AUTHORITY_MAP.yaml`.
+
+## V12 retrieval precedence
+
+For daily narrative analysis retrieve Module 89 fact-state controls before Module 90 attention/narrative controls, then asset book, daily workflow, schema and prior immutable state. Record every retrieved path. Module 90 overrides older narrative field guides only where concepts conflict.
+

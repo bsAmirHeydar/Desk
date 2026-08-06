@@ -87,3 +87,8 @@ V11 adds a backward-compatible canonical engine for fundamental force, consumpti
 - [[V11_MIGRATION_AND_PRECEDENCE_MAP]]
 
 V11 does not claim universal empirical calibration or proprietary data access. Its internal certification is conditional on the limitations in [[V11_RESIDUAL_FRONTIERS]].
+
+## V12.0 — Market Narrative Intelligence
+
+Start at [[90 Market Narrative Intelligence Engine/00 Market Narrative Intelligence Engine MOC]]. V12 extends the V11 fact-state engine with market-attention selection, competing narratives, dominance/validity separation, narrative persistence, reflexivity, ignored facts and daily production prompts.
+

@@ -69,3 +69,8 @@ The asset-specific Persian reporting layer may continue to use its existing outp
 - [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/28 EURUSD Force Consumption and Persistence Book]]
 
 The Persian PDF format is preserved; the state methodology is upgraded.
+
+## V12 narrative-intelligence integration
+
+Asset-specific Persian reports should use [[90 Market Narrative Intelligence Engine/41 Alpha Lab V12 Daily Fundamental and Narrative Analysis Prompt]] and the relevant Module 90 asset book before rendering the executive PDF.
+

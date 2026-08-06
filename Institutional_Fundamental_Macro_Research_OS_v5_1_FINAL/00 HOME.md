@@ -2,7 +2,7 @@
 title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 11.0.0
+version: 12.0.0
 created: 2026-07-29
 updated: 2026-08-06
 language: en
@@ -173,3 +173,13 @@ Start V11 analysis with:
 - [[V11_MIGRATION_AND_PRECEDENCE_MAP]]
 - [[V11_BASELINE_AND_GAP_AUDIT]]
 - [[V11_RESIDUAL_FRONTIERS]]
+
+## V12 market narrative intelligence brain
+
+- [[90 Market Narrative Intelligence Engine/00 Market Narrative Intelligence Engine MOC]] — canonical attention, narrative, reflexivity and transition science.
+- [[90 Market Narrative Intelligence Engine/41 Alpha Lab V12 Daily Fundamental and Narrative Analysis Prompt]] — full daily production prompt.
+- [[V12_MARKET_NARRATIVE_INTELLIGENCE_RELEASE_NOTES]]
+- [[VALIDATION_REPORT_V12]]
+
+Module 89 remains canonical for fact force, consumption, remaining pressure, fact persistence and asymmetry. Module 90 is canonical for attention, narrative validity/dominance, narrative persistence, ignored facts and transitions.
+

@@ -1,0 +1,9 @@
+﻿source_id,source_type,source_locator,use,provenance
+S01,Internal Vault,89/03 Force Decomposition,fact force and provenance,INTERNAL_CANONICAL
+S02,Internal Vault,89/14 Persistence Half-Life,fact persistence,INTERNAL_CANONICAL
+S03,Internal Vault,89/11 Narrative Saturation,consensus/crowding boundary,INTERNAL_CANONICAL
+S04,Internal Vault,01 Causal Engine/08 Reflexivity,feedback mechanisms,INTERNAL_SUPPORTING
+S05,Internal Vault,26/08 Narrative Risk Reflexivity,belief contagion and anti-retrofitting,INTERNAL_SUPPORTING_LEGACY
+S06,Internal Vault,78/05 Behavioral Narrative Traditions,salience and narrative foundations,INTERNAL_CANONICAL
+S07,Internal Vault,88/14 Hybrid State Schema,immutable record compatibility,INTERNAL_CANONICAL
+S08,Internal Vault,87/11 Daily Context Engine,daily production integration,INTERNAL_CANONICAL

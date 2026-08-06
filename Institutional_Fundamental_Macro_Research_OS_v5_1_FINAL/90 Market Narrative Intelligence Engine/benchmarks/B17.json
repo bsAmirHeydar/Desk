@@ -1,0 +1,30 @@
+{
+  "benchmark_id": "V12-B17",
+  "title": "Price dominant low media coverage",
+  "frozen_cutoff_utc": "2026-01-15T15:00:00Z",
+  "allowed_evidence": [
+    "facts timestamped at or before cutoff",
+    "prior immutable state",
+    "contemporaneous public market and text evidence"
+  ],
+  "prohibited_future_information": [
+    "later price outcome",
+    "revised data published after cutoff",
+    "later analyst explanation"
+  ],
+  "expected_state": "PRICE_CONTROL_WITH_LOW_MEDIA",
+  "expected_reasoning": "Conditional sensitivity reveals attention.",
+  "required_rival_models": [
+    "fact-led explanation",
+    "flow-only explanation"
+  ],
+  "confidence_caps": [
+    "no proprietary adoption claim without direct data"
+  ],
+  "pass_criteria": [
+    "fact-attention-narrative separation",
+    "validity-dominance separation",
+    "horizon specificity",
+    "no hindsight"
+  ]
+}
