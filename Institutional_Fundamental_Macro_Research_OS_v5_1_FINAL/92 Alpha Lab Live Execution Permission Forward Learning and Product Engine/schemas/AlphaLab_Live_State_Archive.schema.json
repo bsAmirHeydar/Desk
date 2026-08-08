@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Immutable Live State Archive Record",
+  "type": "object",
+  "required": [
+    "generated_at_utc"
+  ],
+  "properties": {
+    "generated_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "markets": {
+      "type": "object"
+    },
+    "learning_governance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

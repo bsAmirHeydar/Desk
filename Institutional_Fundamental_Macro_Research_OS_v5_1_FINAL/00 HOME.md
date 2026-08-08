@@ -2,9 +2,9 @@
 title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 13.0.0
+version: 14.1.0
 created: 2026-07-29
-updated: 2026-08-06
+updated: 2026-08-08
 language: en
 tags: [home, fundamental-only, institutional-macro, research-platform]
 ---
@@ -188,3 +188,19 @@ Module 89 remains canonical for fact force, consumption, remaining pressure, fac
 ## V13 universal multi-asset coverage
 
 Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.
+
+## V14.1 live execution, permission, forward learning and product layer
+
+> [!important] Operational authority without regression
+> Module 92 is the canonical operational layer for live Full-Vault adjudication, Edge classification, BUY/SELL/NO_TRADE permission, execution handoff, immutable forward learning, prior-call review, HTML product output and the six-market Alpha Lab production profile. It **does not replace** V11 force/consumption/persistence/asymmetry, V12 attention/narrative science, or V13 instrument/family adaptation.
+
+Start here:
+
+- [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/00 Alpha Lab Live Execution Permission Forward Learning and Product Engine MOC]]
+- [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/22 Full-Vault Forward-Learning Production Prompt]]
+- [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/23 Manual Ran Test Launcher]]
+- [[V14_1_RELEASE_NOTES]]
+- [[V14_1_CANONICAL_AUTHORITY_MAP]]
+
+Current production deployment profile: XAUUSD, NASDAQ100, SP500, DJIA, EURUSD and USDJPY. WTI is excluded **only from this deployment profile**, not from V13 universal commodity support.
+

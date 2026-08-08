@@ -1,0 +1,23 @@
+version: 14.1.0
+status: canonical-operational-map
+precedence:
+  evidence_and_no_lookahead: existing_vault_core
+  force_consumption_persistence_asymmetry: module_89_v11
+  attention_narrative_reflexivity_transition: module_90_v12
+  instrument_resolution_and_asset_family_adaptation: module_91_v13
+  live_multi_horizon_state_estimation: v14_baseline_plus_module_92
+  edge_permission_execution_handoff: module_92_v14_1
+  forward_learning_and_hindsight_firewall: module_92_v14_1
+  product_html_and_email_contracts: module_92_v14_1
+provisional_not_canonical:
+  - scheduled_event_proximity_veto_vs_expiry_candidate
+execution_profile:
+  name: DIRECT_PERMISSION_DONCHIAN20_M1
+  permission: EDGE_ACTIVE_only
+  entry: M1_Donchian_20
+  initial_stop: 4_ATR
+  exit: candle_by_candle_trail
+  permission_affects_open_positions: false
+current_six_market_deployment:
+  included: [XAUUSD, NASDAQ100, SP500, DJIA, EURUSD, USDJPY]
+  excluded_from_profile_only: [WTI, USOIL, CRUDE]

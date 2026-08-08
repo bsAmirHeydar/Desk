@@ -2,9 +2,9 @@
 title: "README"
 type: documentation
 status: canonical
-version: 13.0.0
+version: 14.1.0
 created: 2026-07-30
-updated: 2026-08-06
+updated: 2026-08-08
 language: en
 tags: [fundamental-only, navigation, v8-repair]
 ---
@@ -97,3 +97,12 @@ Start at [[90 Market Narrative Intelligence Engine/00 Market Narrative Intellige
 ## V13 universal multi-asset coverage
 
 Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.
+
+## V14.1 — Live Execution Permission, Forward Learning and Product Integration
+
+Module 92 operationalizes the V11–V13 scientific stack for live use. It adds a strict Full-Vault live-run contract, explicit Edge classes, a fail-closed BUY/SELL/NO_TRADE permission handoff, direct M1 Donchian-20 execution profile, immutable forward-learning archive, hindsight firewall, conditional-edge transparency, scheduled-event veto-versus-expiry logic, a premium Persian RTL HTML Intelligence Explorer contract and a simple no-attachment email contract.
+
+Start at [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/00 Alpha Lab Live Execution Permission Forward Learning and Product Engine MOC]].
+
+V14.1 preserves the authority split: Module 89 for force/consumption/persistence/asymmetry; Module 90 for attention/narrative/reflexivity; Module 91 for instrument resolution and asset-family adaptation; Module 92 for live operational adjudication, Edge/permission, forward learning and product handoff.
+

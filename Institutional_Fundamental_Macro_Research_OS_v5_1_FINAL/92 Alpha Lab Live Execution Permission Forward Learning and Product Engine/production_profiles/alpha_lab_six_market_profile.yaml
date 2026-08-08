@@ -1,0 +1,24 @@
+profile: alpha_lab_six_market_live
+version: 14.1.0
+timezone: Asia/Tehran
+symbols: [XAUUSD, NASDAQ100, SP500, DJIA, EURUSD, USDJPY]
+excluded_from_profile_only: [WTI, USOIL, CRUDE]
+schedule:
+  mode: single_hourly_workflow
+  cadence: hourly
+email:
+  attachments: false
+  recipients:
+    - bs.amir.heydar@gmail.com
+    - mohammadaranizadeh2002@gmail.com
+  columns: [Symbol, Edge Level, Permission]
+chat:
+  deep_artifact: AlphaLab_Intelligence_Explorer.html
+  execution_artifact: AlphaLab_Execution_Permissions.json
+execution:
+  profile: DIRECT_PERMISSION_DONCHIAN20_M1
+  donchian_period: 20
+  timeframe: M1
+  initial_stop_atr: 4
+  exit: candle_by_candle_trail
+  permission_controls_open_position_exit: false

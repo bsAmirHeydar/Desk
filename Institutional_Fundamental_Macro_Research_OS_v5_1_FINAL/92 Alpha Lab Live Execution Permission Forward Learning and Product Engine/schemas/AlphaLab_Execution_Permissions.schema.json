@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Execution Permissions",
+  "type": "object",
+  "required": [
+    "generated_at_utc",
+    "markets"
+  ],
+  "properties": {
+    "generated_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "markets": {
+      "type": "object",
+      "required": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "XAUUSD": {
+          "type": "object",
+          "required": [
+            "permission",
+            "valid_until_utc"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        },
+        "NASDAQ100": {
+          "type": "object",
+          "required": [
+            "permission",
+            "valid_until_utc"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        },
+        "SP500": {
+          "type": "object",
+          "required": [
+            "permission",
+            "valid_until_utc"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        },
+        "DJIA": {
+          "type": "object",
+          "required": [
+            "permission",
+            "valid_until_utc"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        },
+        "EURUSD": {
+          "type": "object",
+          "required": [
+            "permission",
+            "valid_until_utc"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        },
+        "USDJPY": {
+          "type": "object",
+          "required": [
+            "permission",
+            "valid_until_utc"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

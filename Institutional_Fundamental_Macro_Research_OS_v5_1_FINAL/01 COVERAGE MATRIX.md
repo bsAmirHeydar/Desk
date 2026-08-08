@@ -2,9 +2,9 @@
 title: "Institutional Fundamental Coverage and Production Maturity Matrix"
 type: coverage-matrix
 status: active
-version: 13.0.0
+version: 14.1.0
 created: 2026-07-29
-updated: 2026-08-06
+updated: 2026-08-08
 language: en
 ---
 # Institutional Fundamental Coverage and Production Maturity Matrix
@@ -140,3 +140,22 @@ Releases 02–14 are implemented in [[80 Deprecated Mega Canon v7 Redirects/00 D
 ## V13 universal multi-asset coverage
 
 Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.
+
+## V14.1 coverage — live Edge, permission, learning and product operations
+
+| Domain | V14.1 primary canon | Status |
+|---|---|---|
+| Full-Vault zero-shortcut live adjudication | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/02 Full-Vault Zero-Shortcut Live Run Standard]] | canonical operational contract |
+| Direction / Confidence / Edge / Permission separation | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/04 Direction Confidence Edge and Permission Separation]] | canonical operational contract |
+| Edge taxonomy and Active qualification | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/05 Edge Taxonomy and Qualification]]; [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/06 EDGE_ACTIVE Definition and Validity Window]] | canonical operational contract; empirically uncalibrated |
+| Conditional-edge transparency | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/07 EDGE_CONDITIONAL Why Not Active Contract]] | required output contract |
+| Event proximity veto vs expiry | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/08 Scheduled Event Veto versus Expiry Constraint]] | CANDIDATE; forward-validation required |
+| Execution permission + M1 Donchian-20 handoff | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/09 Execution Handoff and Direct Donchian20 M1 Profile]] | deployment profile |
+| Minimal fail-closed execution JSON | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/10 Minimal Execution Permission JSON Contract]] | production interface |
+| Immutable forward learning / hindsight firewall | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/12 Immutable Forward State Archive]]; [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/13 Prior-Call Outcome Review and Hindsight Firewall]] | canonical research governance |
+| Learning promotion and daily commits | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/15 Learning Promotion Governance]]; [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/16 Daily Learning Commit and Vault Mutation Gate]] | canonical governance |
+| Forward-first validation vs reconstructed backtest | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/17 Validation Architecture Forward First and Mechanical Backtest]] | canonical validation policy |
+| Persian RTL HTML product | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/18 HTML Intelligence Explorer Product Contract]]; [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/19 UI Visual Design Typography and Responsive Contract]] | production output |
+| Simple email output | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/21 Simple Email Output Contract]] | production output |
+| Full production prompt / manual launcher / hourly launcher | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/22 Full-Vault Forward-Learning Production Prompt]]; [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/23 Manual Ran Test Launcher]]; [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/24 Single Hourly Scheduled Workflow Launcher]] | production |
+
