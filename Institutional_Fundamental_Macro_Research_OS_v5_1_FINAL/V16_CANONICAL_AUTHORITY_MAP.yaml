@@ -1,3 +1,5 @@
+# SUPERSEDED FOR LIVE PRODUCTION BY V16_1_CANONICAL_AUTHORITY_MAP.yaml
+status: superseded
 version: 16.0.0
 current_stack: V16.0.0
 production_entrypoint: "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/17 V16 Full-Vault Production Prompt.md"

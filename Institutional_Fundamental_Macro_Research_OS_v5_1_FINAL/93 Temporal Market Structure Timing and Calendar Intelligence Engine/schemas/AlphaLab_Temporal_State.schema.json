@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Alpha Lab V15.1 Temporal State",
+  "title": "Alpha Lab V16.1 Materiality-Aware Temporal State",
   "type": "object",
   "required": [
     "generated_at_utc",
@@ -10,7 +10,7 @@
     "safe_execution_window",
     "valid_until_utc",
     "next_review_utc",
-    "confidence"
+    "confidence_band"
   ],
   "properties": {
     "generated_at_utc": {
@@ -34,24 +34,168 @@
       "type": "string"
     },
     "dominant_clock": {
-      "type": "object"
+      "type": "object",
+      "required": [
+        "clock_id",
+        "decision_materiality"
+      ],
+      "properties": {
+        "clock_id": {
+          "type": "string"
+        },
+        "decision_materiality": {
+          "enum": [
+            "DECISION_CRITICAL",
+            "MATERIAL_SECONDARY",
+            "CONTEXTUAL"
+          ]
+        },
+        "mechanism": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "next_transition_utc": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": true
     },
     "competing_clocks": {
       "type": "array",
       "items": {
-        "type": "object"
+        "type": "object",
+        "required": [
+          "clock_id",
+          "decision_materiality"
+        ],
+        "properties": {
+          "clock_id": {
+            "type": "string"
+          },
+          "decision_materiality": {
+            "enum": [
+              "DECISION_CRITICAL",
+              "MATERIAL_SECONDARY",
+              "CONTEXTUAL"
+            ]
+          },
+          "mechanism": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "next_transition_utc": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": true
       }
     },
     "hard_blockers": {
       "type": "array",
       "items": {
-        "type": "object"
+        "type": "object",
+        "required": [
+          "clock_id",
+          "decision_materiality"
+        ],
+        "properties": {
+          "clock_id": {
+            "type": "string"
+          },
+          "decision_materiality": {
+            "enum": [
+              "DECISION_CRITICAL",
+              "MATERIAL_SECONDARY",
+              "CONTEXTUAL"
+            ]
+          },
+          "mechanism": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "next_transition_utc": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": true
       }
     },
     "soft_constraints": {
       "type": "array",
       "items": {
-        "type": "object"
+        "type": "object",
+        "required": [
+          "clock_id",
+          "decision_materiality"
+        ],
+        "properties": {
+          "clock_id": {
+            "type": "string"
+          },
+          "decision_materiality": {
+            "enum": [
+              "DECISION_CRITICAL",
+              "MATERIAL_SECONDARY",
+              "CONTEXTUAL"
+            ]
+          },
+          "mechanism": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "next_transition_utc": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": true
       }
     },
     "clock_dependencies": {
@@ -145,7 +289,8 @@
     "confidence": {
       "type": "integer",
       "minimum": 0,
-      "maximum": 100
+      "maximum": 100,
+      "description": "Deprecated ordinal 0-100 display field; not a probability and not required in V16.1."
     },
     "missing_data": {
       "type": "array",
@@ -158,6 +303,59 @@
       "items": {
         "type": "object"
       }
+    },
+    "contextual_clocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "clock_id",
+          "decision_materiality"
+        ],
+        "properties": {
+          "clock_id": {
+            "type": "string"
+          },
+          "decision_materiality": {
+            "enum": [
+              "DECISION_CRITICAL",
+              "MATERIAL_SECONDARY",
+              "CONTEXTUAL"
+            ]
+          },
+          "mechanism": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "next_transition_utc": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "confidence_band": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNDETERMINED"
+      ]
+    },
+    "materiality_rule": {
+      "const": "ONLY_DECISION_CRITICAL_MAY_HARD_BLOCK"
     }
   },
   "additionalProperties": true

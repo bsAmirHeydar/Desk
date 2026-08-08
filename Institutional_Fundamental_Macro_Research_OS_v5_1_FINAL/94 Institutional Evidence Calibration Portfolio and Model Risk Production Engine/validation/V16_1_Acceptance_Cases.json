@@ -1,0 +1,145 @@
+{
+  "version": "16.1.0",
+  "cases": [
+    {
+      "id": "D01",
+      "case": "active fundamental + aligned dominant + clear timing",
+      "expect": "EDGE_ACTIVE"
+    },
+    {
+      "id": "D02",
+      "case": "active fundamental + aligned emerging + clear timing",
+      "expect": "EDGE_ACTIVE with NARRATIVE_EMERGING cap"
+    },
+    {
+      "id": "D03",
+      "case": "weak fundamental + aligned dominant",
+      "expect": "not EDGE_ACTIVE"
+    },
+    {
+      "id": "D04",
+      "case": "bullish fundamental + opposing narrative",
+      "expect": "no opposite SELL; BIAS/Conditional only"
+    },
+    {
+      "id": "D05",
+      "case": "neutral narrative",
+      "expect": "EDGE_CONDITIONAL not hard failure"
+    },
+    {
+      "id": "E01",
+      "case": "decision-critical unknown dependency",
+      "expect": "HOLD"
+    },
+    {
+      "id": "E02",
+      "case": "material-secondary unknown dependency",
+      "expect": "CLEAR_WITH_CONFIDENCE_CAP"
+    },
+    {
+      "id": "E03",
+      "case": "contextual unknown dependency",
+      "expect": "CLEAR"
+    },
+    {
+      "id": "T01",
+      "case": "secondary clock unresolved",
+      "expect": "constraint/review, not VETO"
+    },
+    {
+      "id": "T02",
+      "case": "contextual clock unresolved",
+      "expect": "no clearance change"
+    },
+    {
+      "id": "O01",
+      "case": "BUY missing clock drift",
+      "expect": "BLOCK_NEW_ENTRY"
+    },
+    {
+      "id": "O02",
+      "case": "NO_TRADE missing execution fields",
+      "expect": "CLEAR / no entry requested"
+    },
+    {
+      "id": "O03",
+      "case": "stale quote at ENTRY_TRIGGER",
+      "expect": "BLOCK_NEW_ENTRY"
+    },
+    {
+      "id": "O04",
+      "case": "non-positive ATR at ENTRY_TRIGGER",
+      "expect": "BLOCK_NEW_ENTRY"
+    },
+    {
+      "id": "O05",
+      "case": "market closed for BUY/SELL",
+      "expect": "BLOCK_NEW_ENTRY"
+    },
+    {
+      "id": "R01",
+      "case": "supporting-legacy load-bearing retrieval",
+      "expect": "DENY"
+    },
+    {
+      "id": "R02",
+      "case": "canonical smallest-sufficient plan",
+      "expect": "PASS"
+    },
+    {
+      "id": "M01",
+      "case": "manifest YAML mirror changed without JSON",
+      "expect": "FAIL"
+    },
+    {
+      "id": "C01",
+      "case": "same state different edge_class",
+      "expect": "separate L1 calibration cohorts"
+    },
+    {
+      "id": "C02",
+      "case": "holdout records",
+      "expect": "reported separately from development"
+    },
+    {
+      "id": "C03",
+      "case": "broader calibration cohort",
+      "expect": "explicit L2/L3 backoff; no silent pooling"
+    },
+    {
+      "id": "P01",
+      "case": "offsetting signed USD factor exposures",
+      "expect": "net exposure offsets in SHADOW"
+    },
+    {
+      "id": "P02",
+      "case": "portfolio gate mode default",
+      "expect": "SHADOW"
+    },
+    {
+      "id": "F01",
+      "case": "pre-event pack release update",
+      "expect": "frozen pack unchanged; separate release envelope"
+    },
+    {
+      "id": "S01",
+      "case": "EDGE_ACTIVE with opposing narrative in state bundle",
+      "expect": "state validation FAIL"
+    },
+    {
+      "id": "S02",
+      "case": "EDGE_ACTIVE without active fundamental force",
+      "expect": "state validation FAIL"
+    },
+    {
+      "id": "A01",
+      "case": "old V16 full prompt selected live",
+      "expect": "forbidden by manifest/deployment preflight"
+    },
+    {
+      "id": "A02",
+      "case": "runtime preflight",
+      "expect": "does not scan unrelated historical notes"
+    }
+  ]
+}

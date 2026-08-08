@@ -2,7 +2,7 @@
 title: "Alpha Lab Live Execution Permission Forward Learning and Product Engine"
 type: moc
 status: canonical-operational
-version: 15.0.0
+version: 16.1.0
 created: 2026-08-08
 ---
 # Alpha Lab Live Execution Permission Forward Learning and Product Engine
@@ -68,3 +68,6 @@ Module 92 does **not** redefine V11 force science, V12 narrative science or V13 
 
 ## V15 temporal dependency
 Before final Edge adjudication, retrieve [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/00 Temporal Market Structure Timing and Calendar Intelligence Engine MOC]]. Module 93 is authoritative for sessions, event clocks, benchmarks/fixings, expiry/roll/settlement, rebalance/reconstitution, month/quarter/year-end, holiday/DST, funding clocks and timing-based validity/veto.
+
+## V16.1 production routing
+Live authority is [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt]]. Module 92 remains Edge/permission/learning authority but does not bypass the V16.1 ownership, evidence-materiality, retrieval, operational or shadow-validation controls. `FULL_VAULT` means all material dimensions are available through a smallest-sufficient canonical retrieval plan, not literal ingestion of every legacy note.

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Event FastPath Release Artifact V16.1",
+  "type": "object",
+  "required": [
+    "event_id",
+    "pre_event_pack_sha256",
+    "pre_event_pack_path",
+    "release_update",
+    "release_artifact_sha256"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pre_event_pack_sha256": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "pre_event_pack_path": {
+      "type": "string"
+    },
+    "release_update": {
+      "type": "object",
+      "required": [
+        "revision_state"
+      ],
+      "properties": {
+        "revision_state": {
+          "enum": [
+            "FIRST_RELEASE",
+            "OFFICIAL_FIRST_RELEASE"
+          ]
+        },
+        "released_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "surprise": {
+          "type": "object"
+        },
+        "immediate_transmission": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": true
+    },
+    "release_artifact_sha256": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    }
+  },
+  "additionalProperties": false
+}

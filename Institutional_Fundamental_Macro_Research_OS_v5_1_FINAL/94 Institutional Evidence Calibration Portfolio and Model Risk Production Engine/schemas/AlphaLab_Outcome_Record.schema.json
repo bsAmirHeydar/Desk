@@ -1,28 +1,120 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Outcome Record V16.1",
   "type": "object",
   "required": [
     "run_id",
     "symbol",
     "horizon",
+    "recorded_at_utc",
     "matured",
-    "recorded_at_utc"
+    "root_event_id",
+    "regime_label",
+    "is_holdout",
+    "core_direction",
+    "edge_class",
+    "timing_gate",
+    "driver_family",
+    "narrative_family",
+    "evidence_quality_band",
+    "execution_profile_version",
+    "narrative_clearance",
+    "asset_family"
   ],
   "properties": {
     "run_id": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "symbol": {
-      "type": "string"
+      "enum": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ]
     },
     "horizon": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
+    },
+    "recorded_at_utc": {
+      "type": "string",
+      "format": "date-time"
     },
     "matured": {
       "type": "boolean"
     },
-    "recorded_at_utc": {
-      "type": "string"
+    "root_event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "regime_label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "is_holdout": {
+      "type": "boolean"
+    },
+    "core_direction": {
+      "enum": [
+        "STRONG_BULLISH",
+        "BULLISH",
+        "MILD_BULLISH",
+        "NEUTRAL_WITH_UPSIDE_RISK",
+        "NEUTRAL",
+        "NEUTRAL_WITH_DOWNSIDE_RISK",
+        "MILD_BEARISH",
+        "BEARISH",
+        "STRONG_BEARISH",
+        "FRAGMENTED",
+        "EVENT_BINARY",
+        "UNDETERMINED"
+      ]
+    },
+    "edge_class": {
+      "enum": [
+        "EDGE_ACTIVE",
+        "EDGE_CONDITIONAL",
+        "EDGE_RELATIVE",
+        "BIAS_ONLY",
+        "NO_EDGE",
+        "EVENT_OR_FRAGMENTED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "timing_gate": {
+      "enum": [
+        "CLEAR",
+        "CLEAR_WITH_CONSTRAINTS",
+        "HOLD",
+        "VETO",
+        "UNDETERMINED_MATERIAL",
+        "CLOSED"
+      ]
+    },
+    "driver_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "narrative_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_quality_band": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "MIXED",
+        "UNKNOWN"
+      ]
+    },
+    "execution_profile_version": {
+      "type": "string",
+      "minLength": 1
     },
     "realized_r": {
       "type": [
@@ -46,15 +138,23 @@
       "type": [
         "number",
         "null"
-      ]
+      ],
+      "minimum": 0
     },
     "time_to_mfe_seconds": {
       "type": [
         "number",
         "null"
-      ]
+      ],
+      "minimum": 0
     },
     "expired_without_trigger": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "state_survived": {
       "type": [
         "boolean",
         "null"
@@ -71,7 +171,27 @@
       "items": {
         "type": "string"
       }
+    },
+    "extensions": {
+      "type": "object"
+    },
+    "narrative_clearance": {
+      "enum": [
+        "ALIGNED_DOMINANT",
+        "ALIGNED_EMERGING",
+        "NEUTRAL",
+        "CONFLICTED",
+        "OPPOSING",
+        "UNDETERMINED"
+      ]
+    },
+    "asset_family": {
+      "enum": [
+        "METAL",
+        "US_EQUITY_INDEX",
+        "FX"
+      ]
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }

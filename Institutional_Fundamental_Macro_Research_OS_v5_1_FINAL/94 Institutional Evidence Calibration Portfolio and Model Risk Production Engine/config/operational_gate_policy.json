@@ -1,9 +1,25 @@
 {
-  "version": "16.0.0",
+  "version": "16.1.0",
   "permission_max_clock_drift_seconds": 5,
   "default_fail_closed": true,
-  "expired_permission_blocks_new_entry": true,
-  "unknown_permission_blocks_new_entry": true,
-  "symbol_mapping_required": true,
-  "market_open_state_required": true
+  "required_ingest_fields": [
+    "symbol_mapping_valid",
+    "market_state_known",
+    "market_open",
+    "permission",
+    "permission_valid_until_utc",
+    "clock_drift_seconds",
+    "state_checksum_valid"
+  ],
+  "required_entry_fields": [
+    "feed_connected",
+    "quote_timestamp_utc",
+    "price",
+    "atr",
+    "spread_hard_limit_breached",
+    "duplicate_order_detected",
+    "position_sync_valid"
+  ],
+  "entry_quote_max_age_seconds": 10,
+  "note": "Operational thresholds are deployment/broker safety settings, not market alpha parameters. Permission validity is the primary research-state expiry."
 }

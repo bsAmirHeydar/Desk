@@ -1,0 +1,33 @@
+{
+  "version": "16.1.0",
+  "mode": "ENFORCED",
+  "principle": "SMALLEST_SUFFICIENT_CANONICAL_SET",
+  "allowed_load_bearing_statuses": [
+    "canonical",
+    "canonical-operational",
+    "production-authority",
+    "execution-ready",
+    "router-only"
+  ],
+  "forbidden_load_bearing_statuses": [
+    "supporting-legacy",
+    "archived",
+    "archived-superseded",
+    "deprecated",
+    "redirect",
+    "retired"
+  ],
+  "history_mode_may_read_forbidden": true,
+  "mandatory_dimensions": [
+    "fundamental_core",
+    "narrative_transmission",
+    "instrument_identity",
+    "asset_specific",
+    "timing",
+    "evidence_governance",
+    "edge_permission",
+    "operational_safety"
+  ],
+  "secondary_missing_policy": "CONFIDENCE_CAP_NOT_BLOCK",
+  "contextual_missing_policy": "DISCLOSE_ONLY"
+}

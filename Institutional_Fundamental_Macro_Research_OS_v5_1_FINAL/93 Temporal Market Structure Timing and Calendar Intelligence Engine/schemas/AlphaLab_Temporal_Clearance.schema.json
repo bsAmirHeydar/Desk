@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Alpha Lab V15.1 Temporal Clearance",
+  "title": "Alpha Lab V16.1 Materiality-Aware Temporal Clearance",
   "type": "object",
   "required": [
     "core_edge_candidate",
@@ -13,11 +13,12 @@
       "enum": [
         "ACTIVE_CANDIDATE_BULL",
         "ACTIVE_CANDIDATE_BEAR",
-        "CONDITIONAL_CANDIDATE",
-        "RELATIVE_CANDIDATE",
+        "CONDITIONAL_CANDIDATE_BULL",
+        "CONDITIONAL_CANDIDATE_BEAR",
+        "EDGE_RELATIVE",
         "BIAS_ONLY",
         "NO_EDGE",
-        "FRAGMENTED",
+        "EVENT_OR_FRAGMENTED",
         "INSUFFICIENT_EVIDENCE"
       ]
     },
@@ -43,6 +44,27 @@
         "object",
         "null"
       ]
+    },
+    "decision_critical_unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "secondary_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contextual_unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "materiality_rule": {
+      "const": "ONLY_DECISION_CRITICAL_MAY_HARD_BLOCK"
     }
   },
   "allOf": [

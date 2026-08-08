@@ -1,0 +1,962 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab V16.1 StateBundle",
+  "type": "object",
+  "required": [
+    "generated_at_utc",
+    "run_id",
+    "markets"
+  ],
+  "properties": {
+    "generated_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "markets": {
+      "type": "object",
+      "required": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "XAUUSD": {
+          "type": "object",
+          "required": [
+            "fundamental_direction",
+            "fundamental_force_state",
+            "narrative_clearance",
+            "evidence_clearance",
+            "core_edge_candidate",
+            "timing_clearance",
+            "research_edge",
+            "calibration_status",
+            "portfolio_gate",
+            "operational_gate",
+            "permission",
+            "valid_until_utc",
+            "next_review_utc"
+          ],
+          "properties": {
+            "fundamental_direction": {
+              "enum": [
+                "STRONG_BULLISH",
+                "BULLISH",
+                "MILD_BULLISH",
+                "NEUTRAL_WITH_UPSIDE_RISK",
+                "NEUTRAL",
+                "NEUTRAL_WITH_DOWNSIDE_RISK",
+                "MILD_BEARISH",
+                "BEARISH",
+                "STRONG_BEARISH",
+                "FRAGMENTED",
+                "EVENT_BINARY",
+                "UNDETERMINED"
+              ]
+            },
+            "fundamental_force_state": {
+              "enum": [
+                "ACTIVE",
+                "PARTIAL",
+                "WEAK",
+                "FRAGMENTED",
+                "UNDETERMINED"
+              ]
+            },
+            "narrative_clearance": {
+              "enum": [
+                "ALIGNED_DOMINANT",
+                "ALIGNED_EMERGING",
+                "NEUTRAL",
+                "CONFLICTED",
+                "OPPOSING",
+                "UNDETERMINED"
+              ]
+            },
+            "evidence_clearance": {
+              "enum": [
+                "CLEAR",
+                "CLEAR_WITH_CONFIDENCE_CAP",
+                "HOLD",
+                "BLOCK"
+              ]
+            },
+            "core_edge_candidate": {
+              "enum": [
+                "ACTIVE_CANDIDATE_BULL",
+                "ACTIVE_CANDIDATE_BEAR",
+                "CONDITIONAL_CANDIDATE_BULL",
+                "CONDITIONAL_CANDIDATE_BEAR",
+                "BIAS_ONLY",
+                "EDGE_RELATIVE",
+                "NO_EDGE",
+                "EVENT_OR_FRAGMENTED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "timing_clearance": {
+              "enum": [
+                "CLEAR",
+                "CLEAR_WITH_CONSTRAINTS",
+                "HOLD",
+                "VETO",
+                "UNDETERMINED_MATERIAL",
+                "CLOSED"
+              ]
+            },
+            "research_edge": {
+              "enum": [
+                "EDGE_ACTIVE",
+                "EDGE_CONDITIONAL",
+                "EDGE_RELATIVE",
+                "BIAS_ONLY",
+                "NO_EDGE",
+                "EVENT_OR_FRAGMENTED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "calibration_status": {
+              "enum": [
+                "COLD_START",
+                "DEVELOPING",
+                "ELIGIBLE_FOR_CALIBRATION",
+                "CALIBRATED_SHADOW",
+                "CALIBRATED_ENFORCED"
+              ]
+            },
+            "portfolio_gate": {
+              "enum": [
+                "ALLOW",
+                "SHADOW_ALLOW",
+                "SHADOW_WARNING",
+                "BLOCK"
+              ]
+            },
+            "operational_gate": {
+              "enum": [
+                "CLEAR",
+                "BLOCK_NEW_ENTRY",
+                "FREEZE_AUTOMATION",
+                "SAFE_CLOSE_IF_EXECUTION_POLICY_REQUIRES",
+                "MANUAL_ESCALATION"
+              ]
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "next_review_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "confidence_caps": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "decision_critical_unknowns": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false
+        },
+        "NASDAQ100": {
+          "type": "object",
+          "required": [
+            "fundamental_direction",
+            "fundamental_force_state",
+            "narrative_clearance",
+            "evidence_clearance",
+            "core_edge_candidate",
+            "timing_clearance",
+            "research_edge",
+            "calibration_status",
+            "portfolio_gate",
+            "operational_gate",
+            "permission",
+            "valid_until_utc",
+            "next_review_utc"
+          ],
+          "properties": {
+            "fundamental_direction": {
+              "enum": [
+                "STRONG_BULLISH",
+                "BULLISH",
+                "MILD_BULLISH",
+                "NEUTRAL_WITH_UPSIDE_RISK",
+                "NEUTRAL",
+                "NEUTRAL_WITH_DOWNSIDE_RISK",
+                "MILD_BEARISH",
+                "BEARISH",
+                "STRONG_BEARISH",
+                "FRAGMENTED",
+                "EVENT_BINARY",
+                "UNDETERMINED"
+              ]
+            },
+            "fundamental_force_state": {
+              "enum": [
+                "ACTIVE",
+                "PARTIAL",
+                "WEAK",
+                "FRAGMENTED",
+                "UNDETERMINED"
+              ]
+            },
+            "narrative_clearance": {
+              "enum": [
+                "ALIGNED_DOMINANT",
+                "ALIGNED_EMERGING",
+                "NEUTRAL",
+                "CONFLICTED",
+                "OPPOSING",
+                "UNDETERMINED"
+              ]
+            },
+            "evidence_clearance": {
+              "enum": [
+                "CLEAR",
+                "CLEAR_WITH_CONFIDENCE_CAP",
+                "HOLD",
+                "BLOCK"
+              ]
+            },
+            "core_edge_candidate": {
+              "enum": [
+                "ACTIVE_CANDIDATE_BULL",
+                "ACTIVE_CANDIDATE_BEAR",
+                "CONDITIONAL_CANDIDATE_BULL",
+                "CONDITIONAL_CANDIDATE_BEAR",
+                "BIAS_ONLY",
+                "EDGE_RELATIVE",
+                "NO_EDGE",
+                "EVENT_OR_FRAGMENTED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "timing_clearance": {
+              "enum": [
+                "CLEAR",
+                "CLEAR_WITH_CONSTRAINTS",
+                "HOLD",
+                "VETO",
+                "UNDETERMINED_MATERIAL",
+                "CLOSED"
+              ]
+            },
+            "research_edge": {
+              "enum": [
+                "EDGE_ACTIVE",
+                "EDGE_CONDITIONAL",
+                "EDGE_RELATIVE",
+                "BIAS_ONLY",
+                "NO_EDGE",
+                "EVENT_OR_FRAGMENTED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "calibration_status": {
+              "enum": [
+                "COLD_START",
+                "DEVELOPING",
+                "ELIGIBLE_FOR_CALIBRATION",
+                "CALIBRATED_SHADOW",
+                "CALIBRATED_ENFORCED"
+              ]
+            },
+            "portfolio_gate": {
+              "enum": [
+                "ALLOW",
+                "SHADOW_ALLOW",
+                "SHADOW_WARNING",
+                "BLOCK"
+              ]
+            },
+            "operational_gate": {
+              "enum": [
+                "CLEAR",
+                "BLOCK_NEW_ENTRY",
+                "FREEZE_AUTOMATION",
+                "SAFE_CLOSE_IF_EXECUTION_POLICY_REQUIRES",
+                "MANUAL_ESCALATION"
+              ]
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "next_review_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "confidence_caps": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "decision_critical_unknowns": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false
+        },
+        "SP500": {
+          "type": "object",
+          "required": [
+            "fundamental_direction",
+            "fundamental_force_state",
+            "narrative_clearance",
+            "evidence_clearance",
+            "core_edge_candidate",
+            "timing_clearance",
+            "research_edge",
+            "calibration_status",
+            "portfolio_gate",
+            "operational_gate",
+            "permission",
+            "valid_until_utc",
+            "next_review_utc"
+          ],
+          "properties": {
+            "fundamental_direction": {
+              "enum": [
+                "STRONG_BULLISH",
+                "BULLISH",
+                "MILD_BULLISH",
+                "NEUTRAL_WITH_UPSIDE_RISK",
+                "NEUTRAL",
+                "NEUTRAL_WITH_DOWNSIDE_RISK",
+                "MILD_BEARISH",
+                "BEARISH",
+                "STRONG_BEARISH",
+                "FRAGMENTED",
+                "EVENT_BINARY",
+                "UNDETERMINED"
+              ]
+            },
+            "fundamental_force_state": {
+              "enum": [
+                "ACTIVE",
+                "PARTIAL",
+                "WEAK",
+                "FRAGMENTED",
+                "UNDETERMINED"
+              ]
+            },
+            "narrative_clearance": {
+              "enum": [
+                "ALIGNED_DOMINANT",
+                "ALIGNED_EMERGING",
+                "NEUTRAL",
+                "CONFLICTED",
+                "OPPOSING",
+                "UNDETERMINED"
+              ]
+            },
+            "evidence_clearance": {
+              "enum": [
+                "CLEAR",
+                "CLEAR_WITH_CONFIDENCE_CAP",
+                "HOLD",
+                "BLOCK"
+              ]
+            },
+            "core_edge_candidate": {
+              "enum": [
+                "ACTIVE_CANDIDATE_BULL",
+                "ACTIVE_CANDIDATE_BEAR",
+                "CONDITIONAL_CANDIDATE_BULL",
+                "CONDITIONAL_CANDIDATE_BEAR",
+                "BIAS_ONLY",
+                "EDGE_RELATIVE",
+                "NO_EDGE",
+                "EVENT_OR_FRAGMENTED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "timing_clearance": {
+              "enum": [
+                "CLEAR",
+                "CLEAR_WITH_CONSTRAINTS",
+                "HOLD",
+                "VETO",
+                "UNDETERMINED_MATERIAL",
+                "CLOSED"
+              ]
+            },
+            "research_edge": {
+              "enum": [
+                "EDGE_ACTIVE",
+                "EDGE_CONDITIONAL",
+                "EDGE_RELATIVE",
+                "BIAS_ONLY",
+                "NO_EDGE",
+                "EVENT_OR_FRAGMENTED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "calibration_status": {
+              "enum": [
+                "COLD_START",
+                "DEVELOPING",
+                "ELIGIBLE_FOR_CALIBRATION",
+                "CALIBRATED_SHADOW",
+                "CALIBRATED_ENFORCED"
+              ]
+            },
+            "portfolio_gate": {
+              "enum": [
+                "ALLOW",
+                "SHADOW_ALLOW",
+                "SHADOW_WARNING",
+                "BLOCK"
+              ]
+            },
+            "operational_gate": {
+              "enum": [
+                "CLEAR",
+                "BLOCK_NEW_ENTRY",
+                "FREEZE_AUTOMATION",
+                "SAFE_CLOSE_IF_EXECUTION_POLICY_REQUIRES",
+                "MANUAL_ESCALATION"
+              ]
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "next_review_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "confidence_caps": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "decision_critical_unknowns": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false
+        },
+        "DJIA": {
+          "type": "object",
+          "required": [
+            "fundamental_direction",
+            "fundamental_force_state",
+            "narrative_clearance",
+            "evidence_clearance",
+            "core_edge_candidate",
+            "timing_clearance",
+            "research_edge",
+            "calibration_status",
+            "portfolio_gate",
+            "operational_gate",
+            "permission",
+            "valid_until_utc",
+            "next_review_utc"
+          ],
+          "properties": {
+            "fundamental_direction": {
+              "enum": [
+                "STRONG_BULLISH",
+                "BULLISH",
+                "MILD_BULLISH",
+                "NEUTRAL_WITH_UPSIDE_RISK",
+                "NEUTRAL",
+                "NEUTRAL_WITH_DOWNSIDE_RISK",
+                "MILD_BEARISH",
+                "BEARISH",
+                "STRONG_BEARISH",
+                "FRAGMENTED",
+                "EVENT_BINARY",
+                "UNDETERMINED"
+              ]
+            },
+            "fundamental_force_state": {
+              "enum": [
+                "ACTIVE",
+                "PARTIAL",
+                "WEAK",
+                "FRAGMENTED",
+                "UNDETERMINED"
+              ]
+            },
+            "narrative_clearance": {
+              "enum": [
+                "ALIGNED_DOMINANT",
+                "ALIGNED_EMERGING",
+                "NEUTRAL",
+                "CONFLICTED",
+                "OPPOSING",
+                "UNDETERMINED"
+              ]
+            },
+            "evidence_clearance": {
+              "enum": [
+                "CLEAR",
+                "CLEAR_WITH_CONFIDENCE_CAP",
+                "HOLD",
+                "BLOCK"
+              ]
+            },
+            "core_edge_candidate": {
+              "enum": [
+                "ACTIVE_CANDIDATE_BULL",
+                "ACTIVE_CANDIDATE_BEAR",
+                "CONDITIONAL_CANDIDATE_BULL",
+                "CONDITIONAL_CANDIDATE_BEAR",
+                "BIAS_ONLY",
+                "EDGE_RELATIVE",
+                "NO_EDGE",
+                "EVENT_OR_FRAGMENTED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "timing_clearance": {
+              "enum": [
+                "CLEAR",
+                "CLEAR_WITH_CONSTRAINTS",
+                "HOLD",
+                "VETO",
+                "UNDETERMINED_MATERIAL",
+                "CLOSED"
+              ]
+            },
+            "research_edge": {
+              "enum": [
+                "EDGE_ACTIVE",
+                "EDGE_CONDITIONAL",
+                "EDGE_RELATIVE",
+                "BIAS_ONLY",
+                "NO_EDGE",
+                "EVENT_OR_FRAGMENTED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "calibration_status": {
+              "enum": [
+                "COLD_START",
+                "DEVELOPING",
+                "ELIGIBLE_FOR_CALIBRATION",
+                "CALIBRATED_SHADOW",
+                "CALIBRATED_ENFORCED"
+              ]
+            },
+            "portfolio_gate": {
+              "enum": [
+                "ALLOW",
+                "SHADOW_ALLOW",
+                "SHADOW_WARNING",
+                "BLOCK"
+              ]
+            },
+            "operational_gate": {
+              "enum": [
+                "CLEAR",
+                "BLOCK_NEW_ENTRY",
+                "FREEZE_AUTOMATION",
+                "SAFE_CLOSE_IF_EXECUTION_POLICY_REQUIRES",
+                "MANUAL_ESCALATION"
+              ]
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "next_review_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "confidence_caps": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "decision_critical_unknowns": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false
+        },
+        "EURUSD": {
+          "type": "object",
+          "required": [
+            "fundamental_direction",
+            "fundamental_force_state",
+            "narrative_clearance",
+            "evidence_clearance",
+            "core_edge_candidate",
+            "timing_clearance",
+            "research_edge",
+            "calibration_status",
+            "portfolio_gate",
+            "operational_gate",
+            "permission",
+            "valid_until_utc",
+            "next_review_utc"
+          ],
+          "properties": {
+            "fundamental_direction": {
+              "enum": [
+                "STRONG_BULLISH",
+                "BULLISH",
+                "MILD_BULLISH",
+                "NEUTRAL_WITH_UPSIDE_RISK",
+                "NEUTRAL",
+                "NEUTRAL_WITH_DOWNSIDE_RISK",
+                "MILD_BEARISH",
+                "BEARISH",
+                "STRONG_BEARISH",
+                "FRAGMENTED",
+                "EVENT_BINARY",
+                "UNDETERMINED"
+              ]
+            },
+            "fundamental_force_state": {
+              "enum": [
+                "ACTIVE",
+                "PARTIAL",
+                "WEAK",
+                "FRAGMENTED",
+                "UNDETERMINED"
+              ]
+            },
+            "narrative_clearance": {
+              "enum": [
+                "ALIGNED_DOMINANT",
+                "ALIGNED_EMERGING",
+                "NEUTRAL",
+                "CONFLICTED",
+                "OPPOSING",
+                "UNDETERMINED"
+              ]
+            },
+            "evidence_clearance": {
+              "enum": [
+                "CLEAR",
+                "CLEAR_WITH_CONFIDENCE_CAP",
+                "HOLD",
+                "BLOCK"
+              ]
+            },
+            "core_edge_candidate": {
+              "enum": [
+                "ACTIVE_CANDIDATE_BULL",
+                "ACTIVE_CANDIDATE_BEAR",
+                "CONDITIONAL_CANDIDATE_BULL",
+                "CONDITIONAL_CANDIDATE_BEAR",
+                "BIAS_ONLY",
+                "EDGE_RELATIVE",
+                "NO_EDGE",
+                "EVENT_OR_FRAGMENTED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "timing_clearance": {
+              "enum": [
+                "CLEAR",
+                "CLEAR_WITH_CONSTRAINTS",
+                "HOLD",
+                "VETO",
+                "UNDETERMINED_MATERIAL",
+                "CLOSED"
+              ]
+            },
+            "research_edge": {
+              "enum": [
+                "EDGE_ACTIVE",
+                "EDGE_CONDITIONAL",
+                "EDGE_RELATIVE",
+                "BIAS_ONLY",
+                "NO_EDGE",
+                "EVENT_OR_FRAGMENTED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "calibration_status": {
+              "enum": [
+                "COLD_START",
+                "DEVELOPING",
+                "ELIGIBLE_FOR_CALIBRATION",
+                "CALIBRATED_SHADOW",
+                "CALIBRATED_ENFORCED"
+              ]
+            },
+            "portfolio_gate": {
+              "enum": [
+                "ALLOW",
+                "SHADOW_ALLOW",
+                "SHADOW_WARNING",
+                "BLOCK"
+              ]
+            },
+            "operational_gate": {
+              "enum": [
+                "CLEAR",
+                "BLOCK_NEW_ENTRY",
+                "FREEZE_AUTOMATION",
+                "SAFE_CLOSE_IF_EXECUTION_POLICY_REQUIRES",
+                "MANUAL_ESCALATION"
+              ]
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "next_review_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "confidence_caps": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "decision_critical_unknowns": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false
+        },
+        "USDJPY": {
+          "type": "object",
+          "required": [
+            "fundamental_direction",
+            "fundamental_force_state",
+            "narrative_clearance",
+            "evidence_clearance",
+            "core_edge_candidate",
+            "timing_clearance",
+            "research_edge",
+            "calibration_status",
+            "portfolio_gate",
+            "operational_gate",
+            "permission",
+            "valid_until_utc",
+            "next_review_utc"
+          ],
+          "properties": {
+            "fundamental_direction": {
+              "enum": [
+                "STRONG_BULLISH",
+                "BULLISH",
+                "MILD_BULLISH",
+                "NEUTRAL_WITH_UPSIDE_RISK",
+                "NEUTRAL",
+                "NEUTRAL_WITH_DOWNSIDE_RISK",
+                "MILD_BEARISH",
+                "BEARISH",
+                "STRONG_BEARISH",
+                "FRAGMENTED",
+                "EVENT_BINARY",
+                "UNDETERMINED"
+              ]
+            },
+            "fundamental_force_state": {
+              "enum": [
+                "ACTIVE",
+                "PARTIAL",
+                "WEAK",
+                "FRAGMENTED",
+                "UNDETERMINED"
+              ]
+            },
+            "narrative_clearance": {
+              "enum": [
+                "ALIGNED_DOMINANT",
+                "ALIGNED_EMERGING",
+                "NEUTRAL",
+                "CONFLICTED",
+                "OPPOSING",
+                "UNDETERMINED"
+              ]
+            },
+            "evidence_clearance": {
+              "enum": [
+                "CLEAR",
+                "CLEAR_WITH_CONFIDENCE_CAP",
+                "HOLD",
+                "BLOCK"
+              ]
+            },
+            "core_edge_candidate": {
+              "enum": [
+                "ACTIVE_CANDIDATE_BULL",
+                "ACTIVE_CANDIDATE_BEAR",
+                "CONDITIONAL_CANDIDATE_BULL",
+                "CONDITIONAL_CANDIDATE_BEAR",
+                "BIAS_ONLY",
+                "EDGE_RELATIVE",
+                "NO_EDGE",
+                "EVENT_OR_FRAGMENTED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "timing_clearance": {
+              "enum": [
+                "CLEAR",
+                "CLEAR_WITH_CONSTRAINTS",
+                "HOLD",
+                "VETO",
+                "UNDETERMINED_MATERIAL",
+                "CLOSED"
+              ]
+            },
+            "research_edge": {
+              "enum": [
+                "EDGE_ACTIVE",
+                "EDGE_CONDITIONAL",
+                "EDGE_RELATIVE",
+                "BIAS_ONLY",
+                "NO_EDGE",
+                "EVENT_OR_FRAGMENTED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "calibration_status": {
+              "enum": [
+                "COLD_START",
+                "DEVELOPING",
+                "ELIGIBLE_FOR_CALIBRATION",
+                "CALIBRATED_SHADOW",
+                "CALIBRATED_ENFORCED"
+              ]
+            },
+            "portfolio_gate": {
+              "enum": [
+                "ALLOW",
+                "SHADOW_ALLOW",
+                "SHADOW_WARNING",
+                "BLOCK"
+              ]
+            },
+            "operational_gate": {
+              "enum": [
+                "CLEAR",
+                "BLOCK_NEW_ENTRY",
+                "FREEZE_AUTOMATION",
+                "SAFE_CLOSE_IF_EXECUTION_POLICY_REQUIRES",
+                "MANUAL_ESCALATION"
+              ]
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "next_review_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "confidence_caps": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "decision_critical_unknowns": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

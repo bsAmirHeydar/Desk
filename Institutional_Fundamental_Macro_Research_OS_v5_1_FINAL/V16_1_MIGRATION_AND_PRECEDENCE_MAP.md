@@ -1,0 +1,13 @@
+# V16.1 Migration and Precedence
+
+Precedence for the live six-market profile:
+1. V11/V13 Fundamental causal direction.
+2. V12 Narrative **transmission clearance**, never independent direction.
+3. V16.1 evidence materiality/dependency clearance.
+4. V15.1 Timing with V16.1 materiality tiers.
+5. V16.1 Research Edge.
+6. Calibration and Portfolio SHADOW diagnostics.
+7. Operational Safety ENFORCED.
+8. BUY/SELL/NO_TRADE -> external Donchian-20 M1 -> 4ATR -> candle-close trail.
+
+`CURRENT_PRODUCTION_MANIFEST.json` is the sole machine manifest authority. Historical V14/V15/V16.0 prompts remain for lineage but are forbidden as live entrypoints.

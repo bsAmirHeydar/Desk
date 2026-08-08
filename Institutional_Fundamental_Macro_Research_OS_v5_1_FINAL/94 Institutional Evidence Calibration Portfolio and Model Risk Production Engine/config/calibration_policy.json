@@ -1,12 +1,49 @@
 {
-  "version": "16.0.0",
+  "version": "16.1.0",
   "mode": "SHADOW",
-  "policy_note": "Governance defaults, not universal statistical constants.",
+  "policy_note": "Sample floors are governance floors, not proof. Promotion requires stability/holdout/regime review and independent validation.",
   "min_independent_matured_observations": 30,
   "min_total_matured_observations": 60,
   "min_distinct_regime_labels": 3,
   "min_holdout_observations": 30,
   "enforcement_requires_manual_promotion": true,
   "unmatured_records_excluded": true,
-  "same_root_events_clustered": true
+  "same_root_events_clustered": true,
+  "promotion_requires_holdout_review": true,
+  "promotion_requires_regime_stability_review": true,
+  "promotion_requires_independent_validation": true,
+  "cohort_levels": {
+    "L1_EXACT": [
+      "symbol",
+      "horizon",
+      "core_direction",
+      "edge_class",
+      "timing_gate",
+      "narrative_clearance",
+      "driver_family",
+      "narrative_family",
+      "regime_label",
+      "evidence_quality_band",
+      "execution_profile_version"
+    ],
+    "L2_MECHANISM": [
+      "symbol",
+      "horizon",
+      "core_direction",
+      "edge_class",
+      "timing_gate",
+      "narrative_clearance",
+      "driver_family",
+      "execution_profile_version"
+    ],
+    "L3_CORE": [
+      "symbol",
+      "horizon",
+      "core_direction",
+      "edge_class",
+      "timing_gate",
+      "execution_profile_version"
+    ]
+  },
+  "backoff_rule": "REPORT_ALL_LEVELS_NEVER_SILENTLY_POOL"
 }

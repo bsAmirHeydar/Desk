@@ -94,3 +94,6 @@ Static recurring schedules are not trusted forever. Every live run re-fetches cu
 
 ## Failure principle
 If a material clock cannot be resolved, Timing does not guess. It returns `UNDETERMINED_MATERIAL` or `HOLD` according to materiality. If a permission expires before the next reliable review, downstream execution becomes `NO_TRADE` until refreshed.
+
+## V16.1 materiality integration
+Timing receives **Fundamental direction plus Narrative transmission clearance**; it never receives Narrative as an independent direction source. Clock coverage is decision-materiality aware: unresolved `DECISION_CRITICAL` clocks can HOLD/VETO, `MATERIAL_SECONDARY` clocks can constrain validity/review, and `CONTEXTUAL` clocks cannot block. Completeness means resolving clocks capable of changing the decision, not collecting every possible calendar item.

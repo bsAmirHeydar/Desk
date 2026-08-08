@@ -2,7 +2,7 @@
 title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 16.0.0
+version: 16.1.0
 created: 2026-07-29
 updated: 2026-08-08
 language: en
@@ -200,7 +200,7 @@ Start here:
 - [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/22 Full-Vault Forward-Learning Production Prompt]]
 - [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/23 Manual Ran Test Launcher]]
 - [[V14_1_RELEASE_NOTES]]
-- [[V14_1_CANONICAL_AUTHORITY_MAP]]
+- [[V14_1_CANONICAL_AUTHORITY_MAP.yaml]]
 
 Current production deployment profile: XAUUSD, NASDAQ100, SP500, DJIA, EURUSD and USDJPY. WTI is excluded **only from this deployment profile**, not from V13 universal commodity support.
 
@@ -221,7 +221,11 @@ V15.1 makes Timing a mandatory independent clearance gate before final `EDGE_ACT
 ## V16 Institutional production control
 
 - [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/00 Institutional Evidence Calibration Portfolio and Model Risk Production Engine MOC]] — executable evidence, calibration, portfolio, operational and model-risk control.
-- [[CURRENT_PRODUCTION_MANIFEST]] — mandatory first object for live production authority.
+- [[CURRENT_PRODUCTION_MANIFEST.json]] — mandatory first object for live production authority.
 - [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/17 V16 Full-Vault Production Prompt]] — sole full-production entry point.
 
 V16 does not add technical direction. Calibration and portfolio filtering start shadow-only; manifest/evidence integrity and operational safety are fail-closed.
+
+## V16.1 fuzzy-materiality integration
+
+Live production authority: [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt]]. Fundamental owns direction; Narrative clears transmission; Timing clears temporal usability; hard blocks are decision-materiality aware.

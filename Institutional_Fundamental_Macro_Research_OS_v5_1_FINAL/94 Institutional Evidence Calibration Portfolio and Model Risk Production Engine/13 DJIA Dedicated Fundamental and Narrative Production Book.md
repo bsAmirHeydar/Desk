@@ -1,7 +1,7 @@
-# DJIA Dedicated Fundamental and Narrative Production Book
+# DJIA Dedicated Fundamental and Narrative Production Book — V16.1
 
-DJIA must not inherit NASDAQ100 logic by default. Resolve the current price-weighted constituents and point-in-time weights. Separate industrial/cyclical, financial, health-care, consumer and mega-cap idiosyncratic earnings effects. Track earnings revisions, nominal/real-rate transmission, cyclical-growth sensitivity, USD translation where material, regulatory/industrial policy, constituent-specific gaps and index concentration.
+Use [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/40 DJIA Force Consumption and Persistence Book]] for causal direction and [[90 Market Narrative Intelligence Engine/53 DJIA Narrative Operating Book]] for transmission clearance.
 
-Narrative adjudication must ask whether the active story is broad US equity, old-economy/cyclical, financial/rates, health-care/regulation or one/few price-weighted constituent shocks. A broad S&P/Nasdaq move is corroboration only when the causal chain is shared.
+Production must resolve current price-weighted constituents and methodology, rank macro versus constituent roots, and prevent automatic inheritance from NDX/SPX. Broad-index movement is supporting evidence only when the root cause is shared.
 
-No stale constituent/weight map is allowed for a load-bearing claim.
+Narrative output is clearance (`ALIGNED_DOMINANT`, `ALIGNED_EMERGING`, `NEUTRAL`, `CONFLICTED`, `OPPOSING`, `UNDETERMINED`), never an independent directional authority.

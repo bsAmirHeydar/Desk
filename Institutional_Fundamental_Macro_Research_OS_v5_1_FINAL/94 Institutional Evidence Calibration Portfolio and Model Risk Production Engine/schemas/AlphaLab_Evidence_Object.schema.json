@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "AlphaLab Evidence Object",
+  "title": "AlphaLab Evidence Object V16.1",
   "type": "object",
   "required": [
     "evidence_id",
@@ -8,7 +8,9 @@
     "retrieved_at",
     "source_id",
     "observability_class",
-    "model_visible_at_analysis_time"
+    "model_visible_at_analysis_time",
+    "decision_materiality",
+    "decision_role"
   ],
   "properties": {
     "evidence_id": {
@@ -26,36 +28,62 @@
       }
     },
     "event_time": {
-      "type": [
-        "string",
-        "null"
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
       ]
     },
     "published_at": {
-      "type": [
-        "string",
-        "null"
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
       ]
     },
     "first_seen_at": {
-      "type": [
-        "string",
-        "null"
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
       ]
     },
     "retrieved_at": {
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "valid_from": {
-      "type": [
-        "string",
-        "null"
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
       ]
     },
     "valid_to": {
-      "type": [
-        "string",
-        "null"
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
       ]
     },
     "revision_number": {
@@ -75,7 +103,8 @@
       ]
     },
     "source_id": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "source_tier": {
       "type": [
@@ -93,7 +122,8 @@
       "type": [
         "string",
         "null"
-      ]
+      ],
+      "pattern": "^[a-fA-F0-9]{64}$"
     },
     "parser_version": {
       "type": [
@@ -115,7 +145,27 @@
         "UNAVAILABLE",
         "UNDETERMINED"
       ]
+    },
+    "decision_materiality": {
+      "enum": [
+        "DECISION_CRITICAL",
+        "MATERIAL_SECONDARY",
+        "CONTEXTUAL"
+      ]
+    },
+    "decision_role": {
+      "enum": [
+        "DIRECTION_ROOT",
+        "TRANSMISSION_CONFIRMATION",
+        "TIMING_CLEARANCE",
+        "INVALIDATION",
+        "CONTRADICTION",
+        "CONTEXT"
+      ]
+    },
+    "extensions": {
+      "type": "object"
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }

@@ -2,6 +2,8 @@
 title: "Dow Jones YM Institutional Driver Book"
 type: field-guide
 status: supporting-legacy
+production_retrieval: forbidden
+known_legacy_template_risk: true
 version: 5.0.0
 created: 2026-07-29
 updated: 2026-07-29
@@ -15,6 +17,10 @@ tags:
   - institutional-fundamental
 ---
 # Dow Jones YM Institutional Driver Book
+
+> [!danger] Production retrieval forbidden
+> This legacy DJIA/YM book is retained for lineage only. It may contain generic/template-era material and must not supply load-bearing V16.1 production claims. Use the canonical V16.1 asset books instead.
+
 
 > [!abstract] Research mandate
 > Construct a point-in-time, source-controlled, model-aware and falsifiable understanding of **Dow Jones YM Institutional Driver Book**. Canonical doctrine is linked; this note contains the topic-specific research object.
@@ -111,12 +117,12 @@ Score **Dow Jones YM Institutional Driver Book** separately for state estimation
 
 ## Primary source routes for Dow Jones YM Institutional Driver Book
 
-- [[65 Source Registry and Claim Lineage/SEC_EDGAR — SEC EDGAR]]
-- [[65 Source Registry and Claim Lineage/BEA_NIPA — US BEA — NIPA Handbook]]
-- [[65 Source Registry and Claim Lineage/FED_Z1 — Federal Reserve — Financial Accounts Z.1]]
-- [[65 Source Registry and Claim Lineage/NASDAQ_INDEX — Nasdaq Index Methodology]]
-- [[65 Source Registry and Claim Lineage/SPDJI — S&P Dow Jones Indices Methodology]]
-- [[65 Source Registry and Claim Lineage/MSCI — MSCI Index Methodology]]
+- [[65 Source Registry and Claim Lineage/SEC_EDGAR #U2014 SEC EDGAR]]
+- [[65 Source Registry and Claim Lineage/BEA_NIPA #U2014 US BEA #U2014 NIPA Handbook]]
+- [[65 Source Registry and Claim Lineage/FED_Z1 #U2014 Federal Reserve #U2014 Financial Accounts Z.1]]
+- [[65 Source Registry and Claim Lineage/NASDAQ_INDEX #U2014 Nasdaq Index Methodology]]
+- [[65 Source Registry and Claim Lineage/SPDJI #U2014 S&P Dow Jones Indices Methodology]]
+- [[65 Source Registry and Claim Lineage/MSCI #U2014 MSCI Index Methodology]]
 
 ## Canonical controls
 

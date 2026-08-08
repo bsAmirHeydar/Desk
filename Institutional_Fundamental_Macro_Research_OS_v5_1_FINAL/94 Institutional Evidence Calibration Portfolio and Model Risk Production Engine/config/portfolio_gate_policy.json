@@ -1,5 +1,5 @@
 {
-  "version": "16.0.0",
+  "version": "16.1.0",
   "mode": "SHADOW",
   "loading_map": {
     "STRONG_NEGATIVE": -2,
@@ -8,8 +8,10 @@
     "POSITIVE": 1,
     "STRONG_POSITIVE": 2
   },
-  "max_same_root_factor_trades": 2,
+  "max_same_direction_root_factor_trades": 2,
   "max_abs_factor_risk_units": 4.0,
   "unknown_material_factor_policy": "NO_DIVERSIFICATION_CREDIT",
-  "note": "Switch to ENFORCED only after forward validation and bridge acceptance."
+  "covariance_status": "UNAVAILABLE",
+  "enforcement_requires_forward_validation": true,
+  "note": "Direction-aware ordinal shadow model. Not a covariance/beta model and not permission authority until promoted."
 }

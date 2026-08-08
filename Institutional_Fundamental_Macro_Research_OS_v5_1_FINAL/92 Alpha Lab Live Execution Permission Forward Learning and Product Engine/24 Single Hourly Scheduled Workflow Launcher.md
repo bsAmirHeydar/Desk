@@ -1,8 +1,10 @@
 ---
-title: "Alpha Lab V16 Single Scheduled Workflow Launcher"
+title: "Alpha Lab V16.1 Single Scheduled Workflow Launcher"
 type: scheduled-workflow-contract
 status: canonical-operational
-version: 16.0.0
+version: 16.1.0
 ---
-# V16 Scheduled Workflow Launcher
-The single scheduled six-market workflow must execute [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/17 V16 Full-Vault Production Prompt]]. Timing is a sub-engine, not the final decision authority. Calibration and portfolio gate remain SHADOW until their versioned configs are promoted; operational fail-closed checks are ENFORCED. Email remains timestamp plus `Symbol | Edge Level | Permission`.
+# V16.1 Scheduled Workflow Launcher
+The single scheduled six-market workflow invokes [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt]].
+
+Use runtime preflight and smallest-sufficient Retrieval Plan. If required review precedes the next scheduler run, expire permission fail-closed; never imply continuous monitoring. Calibration/Portfolio remain SHADOW; Operational Gate is ENFORCED.

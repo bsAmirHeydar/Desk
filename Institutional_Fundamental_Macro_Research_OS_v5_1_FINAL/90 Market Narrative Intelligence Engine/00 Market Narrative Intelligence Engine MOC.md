@@ -2,7 +2,7 @@
 title: "Market Attention Narrative Selection Reflexivity and Daily Intelligence Engine"
 type: moc
 status: canonical
-version: 13.0.0
+version: 16.1.0
 created: 2026-08-06
 updated: 2026-08-06
 language: en
@@ -116,3 +116,6 @@ Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ra
 
 ## V16 production extensions
 Dedicated books: [[90 Market Narrative Intelligence Engine/53 DJIA Narrative Operating Book]] and [[90 Market Narrative Intelligence Engine/54 USDJPY Narrative Operating Book]]. Global root-cause IDs and price-blind validity checks reduce circular narrative confirmation.
+
+## V16.1 transmission-clearance authority
+For the six-market live profile, Module 90 does **not** create BUY/SELL direction. It returns the fuzzy transmission state `ALIGNED_DOMINANT`, `ALIGNED_EMERGING`, `NEUTRAL`, `CONFLICTED`, `OPPOSING` or `UNDETERMINED`. `ALIGNED_EMERGING` is deliberately usable with a confidence/validity cap so the system does not require late full-consensus confirmation. See [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/21 Narrative Transmission Clearance Engine]].

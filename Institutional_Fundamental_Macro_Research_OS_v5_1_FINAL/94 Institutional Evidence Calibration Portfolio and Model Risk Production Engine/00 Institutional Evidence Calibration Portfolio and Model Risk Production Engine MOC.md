@@ -2,7 +2,7 @@
 title: "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine"
 type: canonical-operational-module
 status: canonical
-version: 16.0.0
+version: 16.1.0
 created: 2026-08-08
 updated: 2026-08-08
 language: en
@@ -30,3 +30,17 @@ V16 does not add another opinion layer. It converts existing V11–V15.1 science
 - [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/07 Portfolio Factor Concentration and Capital Gate]]
 - [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/08 Operational Risk Kill Switch]]
 - [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/17 V16 Full-Vault Production Prompt]]
+
+## V16.1 fuzzy-materiality hardening
+
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/20 Decision Materiality and Fuzzy Clearance Doctrine]]
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/21 Narrative Transmission Clearance Engine]]
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/22 Decision-Critical Evidence and Marginal Impact Engine]]
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/23 Retrieval Planning and Context Firewall]]
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/24 Deployment versus Runtime Preflight]]
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/25 Two-Stage Operational Safety Gate]]
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/26 Calibration Uncertainty Stability and Promotion]]
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/27 Direction-Aware Portfolio Shadow Model]]
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/28 Event Fast Path Runtime Orchestration]]
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt]]
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/30 V16.1 Executable Validation and Acceptance Tests]]

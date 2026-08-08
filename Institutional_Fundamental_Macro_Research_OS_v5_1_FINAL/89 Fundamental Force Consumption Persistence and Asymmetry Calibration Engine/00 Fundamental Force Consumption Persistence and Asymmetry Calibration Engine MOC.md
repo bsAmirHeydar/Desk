@@ -2,7 +2,7 @@
 title: "Fundamental Force Consumption Persistence and Asymmetry Calibration Engine"
 type: moc
 status: canonical
-version: 13.0.0
+version: 16.1.0
 created: 2026-08-06
 updated: 2026-08-06
 language: en
@@ -98,3 +98,6 @@ Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ra
 
 ## V16 production extensions
 Dedicated production books: [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/40 DJIA Force Consumption and Persistence Book]] and [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/41 USDJPY Force Consumption and Persistence Book]]. Empirical outcome calibration is executed by Module 94 without changing V11 science.
+
+## V16.1 production authority
+For the six-market live profile, **Fundamental is the sole directional causal authority**. Narrative, Timing, Calibration, Portfolio and Execution cannot invent or flip direction. They may clear, constrain, cap, delay or block an already fundamental direction under their own authority boundaries. See [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/04 Cross-Layer Ownership and Authority Matrix]].

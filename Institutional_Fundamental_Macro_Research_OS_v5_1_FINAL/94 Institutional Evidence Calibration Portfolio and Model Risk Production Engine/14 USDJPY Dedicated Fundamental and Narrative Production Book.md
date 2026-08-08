@@ -1,7 +1,7 @@
-# USDJPY Dedicated Fundamental and Narrative Production Book
+# USDJPY Dedicated Fundamental and Narrative Production Book — V16.1
 
-USDJPY is explicitly bilateral. Required core blocks: Fed path, BoJ path, US/Japan nominal and real-rate differentials, JGB curve and policy operations, Japan wages/inflation, global USD funding, risk-off/repatriation channel, Japanese importer/exporter hedging evidence where observable, Tokyo/London/NY handoffs, MOF/BoJ intervention authority and verified intervention evidence.
+Use [[89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/41 USDJPY Force Consumption and Persistence Book]] for causal direction and [[90 Market Narrative Intelligence Engine/54 USDJPY Narrative Operating Book]] for transmission clearance.
 
-Do not label every yen move `risk-off` or every rate differential move causal. Intervention rumor is not intervention. Distinguish official action, official verbal intervention, public proxy and structured judgment.
+Mandatory live blocks: Fed, BoJ, US/Japan nominal and real rates, JGB policy/curve, Japan wages/inflation, relative carry, intervention evidence classes, global USD funding/risk and hedging/repatriation where observable.
 
-Narrative candidates must include at least policy-differential, intervention, global-risk/funding and Japan-domestic macro rivals when material.
+Missing proprietary flow evidence is not a default veto. Separate confirmed action, official verbal intervention, public proxy, rumor and structured judgment. Narrative cannot create the opposite direction without a corresponding Fundamental causal state change.

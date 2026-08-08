@@ -1,9 +1,11 @@
 {
-  "version": "16.0.0",
-  "current_stack": "V16.0.0",
-  "production_entrypoint": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/17 V16 Full-Vault Production Prompt.md",
+  "version": "16.1.0",
+  "current_stack": "V16.1.0",
+  "manifest_authority": "CURRENT_PRODUCTION_MANIFEST.json",
+  "human_mirror": "CURRENT_PRODUCTION_MANIFEST.yaml",
+  "production_entrypoint": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt.md",
   "allowed_live_entrypoints": [
-    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/17 V16 Full-Vault Production Prompt.md"
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt.md"
   ],
   "allowed_live_subengines": [
     "93 Temporal Market Structure Timing and Calendar Intelligence Engine/60 V15.1 Full-Vault Timing Clearance Production Prompt.md"
@@ -16,19 +18,51 @@
     "edge_permission_learning": "92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/00 Alpha Lab Live Execution Permission Forward Learning and Product Engine MOC.md",
     "production_control": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/00 Institutional Evidence Calibration Portfolio and Model Risk Production Engine MOC.md"
   },
+  "asset_books": {
+    "XAUUSD": [
+      "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/27 Gold Force Consumption and Persistence Book.md",
+      "90 Market Narrative Intelligence Engine/36 Gold Narrative Operating Book.md"
+    ],
+    "NASDAQ100": [
+      "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/25 Nasdaq 100 Force Consumption and Persistence Book.md",
+      "90 Market Narrative Intelligence Engine/34 Nasdaq 100 Narrative Operating Book.md"
+    ],
+    "SP500": [
+      "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/26 S&P 500 Force Consumption and Persistence Book.md",
+      "90 Market Narrative Intelligence Engine/35 S&P 500 Narrative Operating Book.md"
+    ],
+    "DJIA": [
+      "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/40 DJIA Force Consumption and Persistence Book.md",
+      "90 Market Narrative Intelligence Engine/53 DJIA Narrative Operating Book.md"
+    ],
+    "EURUSD": [
+      "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/28 EURUSD Force Consumption and Persistence Book.md",
+      "90 Market Narrative Intelligence Engine/37 EURUSD Narrative Operating Book.md"
+    ],
+    "USDJPY": [
+      "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/41 USDJPY Force Consumption and Persistence Book.md",
+      "90 Market Narrative Intelligence Engine/54 USDJPY Narrative Operating Book.md"
+    ]
+  },
   "forbidden_live_entrypoints": [
     "92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/baseline/AlphaLab_V14_Live_DayTrading_Intelligence_Prompt.md",
     "92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/baseline/AlphaLab_V14_Any_Symbol_Live_Launcher.md",
     "93 Temporal Market Structure Timing and Calendar Intelligence Engine/45 V15 Full-Vault Timing-Integrated Production Prompt.md",
-    "93 Temporal Market Structure Timing and Calendar Intelligence Engine/46 V15 Manual Ran and Scheduled Launcher Contract.md"
+    "93 Temporal Market Structure Timing and Calendar Intelligence Engine/46 V15 Manual Ran and Scheduled Launcher Contract.md",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/17 V16 Full-Vault Production Prompt.md"
   ],
   "required_runtime_contracts": [
     "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Evidence_Object.schema.json",
     "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Evidence_Graph.schema.json",
-    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_V16_StateBundle.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Outcome_Record.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_V16_1_StateBundle.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Retrieval_Plan.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Event_FastPath_Pack.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_policy.json",
     "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/calibration_policy.json",
     "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/portfolio_gate_policy.json",
-    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/operational_gate_policy.json"
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/operational_gate_policy.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Event_FastPath_Release.schema.json"
   ],
   "production_universe": [
     "XAUUSD",
@@ -43,6 +77,14 @@
     "USOIL",
     "CRUDE_OIL"
   ],
+  "decision_authority": {
+    "direction": "FUNDAMENTAL_ONLY",
+    "narrative": "TRANSMISSION_CLEARANCE",
+    "timing": "TEMPORAL_CLEARANCE",
+    "calibration": "SHADOW",
+    "portfolio_gate": "SHADOW",
+    "operational_gate": "ENFORCED"
+  },
   "technical_direction_boundary": {
     "direction_from_price_technical_analysis": false,
     "timing_clearance_from_price_technical_analysis": false,
@@ -53,5 +95,6 @@
     "portfolio_gate": "SHADOW",
     "operational_gate": "ENFORCED",
     "blind_validation": "SHADOW"
-  }
+  },
+  "retrieval_policy": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_policy.json"
 }

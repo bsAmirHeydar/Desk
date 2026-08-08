@@ -121,7 +121,7 @@ V15.1 makes Timing a mandatory independent clearance gate before final `EDGE_ACT
 
 | Capability | Production implementation | Initial mode |
 |---|---|---|
-| Single current authority / legacy firewall | [[CURRENT_PRODUCTION_MANIFEST]] + V16 preflight | ENFORCED |
+| Single current authority / legacy firewall | [[CURRENT_PRODUCTION_MANIFEST.json]] + V16 preflight | ENFORCED |
 | Bitemporal evidence + snapshot hashes | Module 94 Evidence Object + snapshot tool | ENFORCED for load-bearing metadata |
 | Global root-cause dedup | Module 94 Evidence Graph validator | ENFORCED on material evidence graph |
 | Forward reference-class calibration | Module 94 calibrator | SHADOW / COLD_START until mature |
@@ -130,3 +130,7 @@ V15.1 makes Timing a mandatory independent clearance gate before final `EDGE_ACT
 | Blind/independent validation | Module 94 validator contract | SHADOW; independence labelled honestly |
 | Statistical learning promotion | Module 94 promotion governance | ENFORCED for Canon mutation |
 | DJIA / USDJPY dedicated books | V16 asset books in Modules 89/90/94 | CANONICAL-OPERATIONAL |
+
+## V16.1 fuzzy-materiality integration
+
+Live production authority: [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt]]. Fundamental owns direction; Narrative clears transmission; Timing clears temporal usability; hard blocks are decision-materiality aware.

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Retrieval Plan V16.1",
+  "type": "object",
+  "required": [
+    "symbol",
+    "selected_paths",
+    "dimensions_covered",
+    "history_mode"
+  ],
+  "properties": {
+    "symbol": {
+      "enum": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ]
+    },
+    "selected_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "dimensions_covered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "history_mode": {
+      "type": "boolean"
+    },
+    "material_topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rejected_paths": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

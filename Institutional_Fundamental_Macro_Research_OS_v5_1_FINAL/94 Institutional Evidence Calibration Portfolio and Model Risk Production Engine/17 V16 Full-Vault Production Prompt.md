@@ -1,8 +1,8 @@
 ---
 title: "Alpha Lab V16 — Institutional Full-Vault Production Prompt"
 type: production-live-analysis-prompt
-status: execution-ready
-version: 16.0.0
+status: archived-superseded
+version: 16.0.0-superseded
 language: en
 output_language: fa
 ---
@@ -62,3 +62,5 @@ M1 Donchian-20, 4ATR initial stop and candle-close trail are external mechanical
 Run a blind second pass at minimum and label it honestly as same-model unless truly independent. Log disagreements. No single outcome may become Canonical.
 
 HTML remains deep and Persian RTL. Email remains only Tehran timestamp plus `Symbol | Edge Level | Permission`.
+
+> Superseded in production by [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt]].

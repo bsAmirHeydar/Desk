@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "AlphaLab Evidence Graph",
+  "title": "AlphaLab Evidence Graph V16.1",
   "type": "object",
   "required": [
     "analysis_id",
@@ -9,7 +9,8 @@
   ],
   "properties": {
     "analysis_id": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "nodes": {
       "type": "array",
@@ -17,16 +18,27 @@
         "type": "object",
         "required": [
           "evidence_id",
-          "root_cause_id"
+          "root_cause_id",
+          "decision_materiality"
         ],
         "properties": {
           "evidence_id": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "root_cause_id": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
+          },
+          "decision_materiality": {
+            "enum": [
+              "DECISION_CRITICAL",
+              "MATERIAL_SECONDARY",
+              "CONTEXTUAL"
+            ]
           }
-        }
+        },
+        "additionalProperties": false
       }
     },
     "edges": {
@@ -56,7 +68,8 @@
               "UNKNOWN_DEPENDENCY"
             ]
           }
-        }
+        },
+        "additionalProperties": false
       }
     }
   },
