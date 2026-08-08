@@ -229,3 +229,7 @@ V16 does not add technical direction. Calibration and portfolio filtering start 
 ## V16.1 fuzzy-materiality integration
 
 Live production authority: [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt]]. Fundamental owns direction; Narrative clears transmission; Timing clears temporal usability; hard blocks are decision-materiality aware.
+
+## V17 D1 — Truth & Evidence Foundation
+
+Production evidence is now governed by [[95 Fact Constitution and Institutional Evidence Fabric/00 Fact Constitution and Institutional Evidence Fabric MOC]]. D1 defines fact classes, source eligibility, point-in-time visibility, immutable revisions, claim/root lineage, materiality routing, Decision Evidence Packs and Fact Coverage Receipts before the V16.1 scientific stack is allowed to emit permission.

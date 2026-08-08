@@ -1,0 +1,5 @@
+"claim_id","claim","class","evidence_basis","status"
+"D1-C001","Fact classes are explicit and non-factual inference cannot masquerade as observation","governance","Module 95 policy/schema/self-test","implemented"
+"D1-C002","Historical replay excludes future vintages and unresolved publication-time records","governance","historical replay tool/self-test","implemented"
+"D1-C003","Same-root descendants cannot raise independent confidence","governance","root-cause doctrine and evidence dependency stack","implemented"
+"D1-C004","D2-pending domains are registered but not promoted","governance","family registry/coverage audit","implemented"

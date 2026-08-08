@@ -1,0 +1,337 @@
+{
+  "version": "1.0.0",
+  "production_universe": [
+    "XAUUSD",
+    "NASDAQ100",
+    "SP500",
+    "DJIA",
+    "EURUSD",
+    "USDJPY"
+  ],
+  "fact_families": [
+    "MACRO_FUNDAMENTAL",
+    "MARKET_IMPLIED",
+    "CORPORATE_EARNINGS_VALUATION",
+    "NARRATIVE_ATTENTION",
+    "TEMPORAL_CALENDAR",
+    "POSITIONING_OWNERSHIP",
+    "ACTUAL_FLOW",
+    "FUNDING_PLUMBING",
+    "INSTITUTIONAL_MECHANICS",
+    "MARKET_CAPACITY"
+  ],
+  "coverage": {
+    "XAUUSD": {
+      "MACRO_FUNDAMENTAL": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "MARKET_IMPLIED": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "CORPORATE_EARNINGS_VALUATION": {
+        "state": "ACTIVE_LIMITED",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "NARRATIVE_ATTENTION": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "TEMPORAL_CALENDAR": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "POSITIONING_OWNERSHIP": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "ACTUAL_FLOW": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "FUNDING_PLUMBING": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "INSTITUTIONAL_MECHANICS": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "MARKET_CAPACITY": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      }
+    },
+    "NASDAQ100": {
+      "MACRO_FUNDAMENTAL": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "MARKET_IMPLIED": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "CORPORATE_EARNINGS_VALUATION": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "NARRATIVE_ATTENTION": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "TEMPORAL_CALENDAR": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "POSITIONING_OWNERSHIP": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "ACTUAL_FLOW": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "FUNDING_PLUMBING": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "INSTITUTIONAL_MECHANICS": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "MARKET_CAPACITY": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      }
+    },
+    "SP500": {
+      "MACRO_FUNDAMENTAL": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "MARKET_IMPLIED": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "CORPORATE_EARNINGS_VALUATION": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "NARRATIVE_ATTENTION": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "TEMPORAL_CALENDAR": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "POSITIONING_OWNERSHIP": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "ACTUAL_FLOW": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "FUNDING_PLUMBING": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "INSTITUTIONAL_MECHANICS": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "MARKET_CAPACITY": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      }
+    },
+    "DJIA": {
+      "MACRO_FUNDAMENTAL": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "MARKET_IMPLIED": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "CORPORATE_EARNINGS_VALUATION": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "NARRATIVE_ATTENTION": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "TEMPORAL_CALENDAR": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "POSITIONING_OWNERSHIP": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "ACTUAL_FLOW": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "FUNDING_PLUMBING": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "INSTITUTIONAL_MECHANICS": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "MARKET_CAPACITY": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      }
+    },
+    "EURUSD": {
+      "MACRO_FUNDAMENTAL": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "MARKET_IMPLIED": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "CORPORATE_EARNINGS_VALUATION": {
+        "state": "ACTIVE_LIMITED",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "NARRATIVE_ATTENTION": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "TEMPORAL_CALENDAR": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "POSITIONING_OWNERSHIP": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "ACTUAL_FLOW": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "FUNDING_PLUMBING": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "INSTITUTIONAL_MECHANICS": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "MARKET_CAPACITY": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      }
+    },
+    "USDJPY": {
+      "MACRO_FUNDAMENTAL": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "MARKET_IMPLIED": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "CORPORATE_EARNINGS_VALUATION": {
+        "state": "ACTIVE_LIMITED",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "NARRATIVE_ATTENTION": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "TEMPORAL_CALENDAR": {
+        "state": "ACTIVE_CANONICAL",
+        "new_decision_authority": null,
+        "notes": "Governed through existing V11-V16.1 canonical science"
+      },
+      "POSITIONING_OWNERSHIP": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "ACTUAL_FLOW": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "FUNDING_PLUMBING": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "INSTITUTIONAL_MECHANICS": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      },
+      "MARKET_CAPACITY": {
+        "state": "REGISTERED_D2_PENDING",
+        "new_decision_authority": false,
+        "notes": "D1 registration only; dedicated science requires D2"
+      }
+    }
+  }
+}

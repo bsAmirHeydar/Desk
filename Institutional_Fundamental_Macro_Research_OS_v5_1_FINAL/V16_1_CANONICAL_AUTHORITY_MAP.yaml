@@ -7,3 +7,5 @@ timing_authority: TEMPORAL_CLEARANCE
 calibration_mode: SHADOW
 portfolio_mode: SHADOW
 operational_mode: ENFORCED
+
+# v17_successor_note: This file remains the historical V16.1 authority map. Current production authority is V17_D1_CANONICAL_AUTHORITY_MAP.yaml and CURRENT_PRODUCTION_MANIFEST.json.

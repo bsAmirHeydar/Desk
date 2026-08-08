@@ -1,0 +1,59 @@
+{
+  "target": "V17.0.0",
+  "deployment": "D1 \u2014 Truth & Evidence Foundation",
+  "fact_constitution": "1.0.0",
+  "baseline": "V16.1.0",
+  "native_delta": {
+    "added": 51,
+    "modified": 12,
+    "deleted": 0
+  },
+  "results": {
+    "d1_selftest": {
+      "status": "PASS"
+    },
+    "d1_deployment_preflight": {
+      "status": "PASS"
+    },
+    "d1_runtime_preflight": {
+      "status": "PASS"
+    },
+    "v16_1_selftest": {
+      "status": "PASS"
+    },
+    "v16_1_deployment_preflight_under_v17": {
+      "status": "PASS"
+    },
+    "coverage_audit": {
+      "status": "PASS"
+    },
+    "python_compile": {
+      "status": "PASS"
+    },
+    "runtime_json_parse": {
+      "status": "PASS"
+    },
+    "schema_check": {
+      "status": "PASS"
+    },
+    "changed_wikilinks": {
+      "status": "PASS"
+    },
+    "native_delta_count": {
+      "status": "PASS"
+    }
+  },
+  "scientific_boundaries": {
+    "direction": "FUNDAMENTAL_ONLY",
+    "narrative": "TRANSMISSION_CLEARANCE",
+    "timing": "TEMPORAL_CLEARANCE",
+    "d2_pending": [
+      "POSITIONING_OWNERSHIP",
+      "ACTUAL_FLOW",
+      "FUNDING_PLUMBING",
+      "INSTITUTIONAL_MECHANICS",
+      "MARKET_CAPACITY"
+    ]
+  },
+  "certification": "CERTIFIED \u2014 FULL"
+}

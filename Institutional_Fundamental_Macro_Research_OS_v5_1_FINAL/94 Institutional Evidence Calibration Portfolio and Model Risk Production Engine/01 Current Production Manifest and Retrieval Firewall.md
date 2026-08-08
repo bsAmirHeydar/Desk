@@ -11,3 +11,7 @@ Production must begin by reading `CURRENT_PRODUCTION_MANIFEST.yaml`. No launcher
 6. The preflight validator must run before a production permission can be emitted.
 
 The executable check is `tools/alphalab_preflight.py`.
+
+## V17 D1 production routing
+
+`CURRENT_PRODUCTION_MANIFEST.json` now routes live production to Module 95. The V16.1 integrated production prompt is allowlisted as a delegated live subengine. Retrieval still uses this module's smallest-sufficient firewall; Module 95 adds epistemic admission and coverage receipts before decision synthesis.

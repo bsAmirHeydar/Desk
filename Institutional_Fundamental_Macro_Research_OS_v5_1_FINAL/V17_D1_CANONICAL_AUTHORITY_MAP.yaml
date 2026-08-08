@@ -1,0 +1,14 @@
+version: 17.0.0
+deployment: D1
+fact_constitution_version: 1.0.0
+machine_manifest_authority: CURRENT_PRODUCTION_MANIFEST.json
+live_entrypoint: "95 Fact Constitution and Institutional Evidence Fabric/22 V17 D1 Fact-Governed Full-Vault Production Prompt.md"
+fact_constitution_authority: "95 Fact Constitution and Institutional Evidence Fabric/00 Fact Constitution and Institutional Evidence Fabric MOC.md"
+direction_authority: FUNDAMENTAL_ONLY
+narrative_authority: TRANSMISSION_CLEARANCE
+timing_authority: TEMPORAL_CLEARANCE
+v16_1_scientific_stack: DELEGATED_SUBENGINE
+positioning_flow_plumbing_mechanics_capacity: D2_PENDING
+calibration_mode: SHADOW
+portfolio_mode: SHADOW
+operational_mode: ENFORCED

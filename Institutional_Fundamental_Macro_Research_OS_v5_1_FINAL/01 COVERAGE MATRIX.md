@@ -198,3 +198,9 @@ V15.1 makes Timing a mandatory independent clearance gate before final `EDGE_ACT
 ## V16.1 fuzzy-materiality integration
 
 Live production authority: [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt]]. Fundamental owns direction; Narrative clears transmission; Timing clears temporal usability; hard blocks are decision-materiality aware.
+
+## V17 D1 evidence-governance coverage
+
+The live universe remains XAUUSD, NASDAQ100, SP500, DJIA, EURUSD and USDJPY. Module 95 registers ten fact families for every market. Existing Fundamental/Market-Implied/Earnings/Narrative/Temporal families remain governed through current canonical sciences. Positioning, Actual Flow, Funding/Plumbing, Institutional Mechanics and Market Capacity are explicitly `REGISTERED_D2_PENDING`: they are coverage obligations, not newly promoted D1 decision authorities.
+
+Machine-readable matrix: `V17_D1_FACT_FAMILY_COVERAGE_MATRIX.csv`.

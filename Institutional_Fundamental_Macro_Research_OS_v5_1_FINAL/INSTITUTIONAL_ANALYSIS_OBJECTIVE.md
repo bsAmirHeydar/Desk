@@ -68,3 +68,7 @@ A domain is complete only when the Vault can retrieve and combine its knowledge 
 - [[79 Institutional Fundamental Analysis Output Architecture/00 Institutional Fundamental Analysis Output Architecture MOC]]
 - [[76 Institutional Fundamental Knowledge Canon Completion Program/58 Ten-of-Ten Institutional Fundamental Knowledge Scorecard]]
 - [[78 Phase 01 Institutional Fundamental Foundations Canon/Phase 01 Completion and Ten-of-Ten Audit]]
+
+## V17 evidence-truth requirement
+
+Institutional completeness now also requires explicit epistemic class, source/vintage lineage and point-in-time visibility for every load-bearing claim. A conclusion is not considered defensible if it depends on future revisions, unlabeled proxies, inference presented as observation, or fabricated independence among same-root evidence.

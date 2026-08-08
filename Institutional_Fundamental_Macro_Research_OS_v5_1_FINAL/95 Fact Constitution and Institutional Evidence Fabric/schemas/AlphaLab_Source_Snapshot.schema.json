@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Source Snapshot",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "snapshot_id",
+    "source_id",
+    "source_tier",
+    "retrieval_time"
+  ],
+  "properties": {
+    "snapshot_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_tier": {
+      "enum": [
+        "OFFICIAL_PRIMARY",
+        "OFFICIAL_SECONDARY",
+        "EXCHANGE_ADMINISTRATOR",
+        "REGULATED_FILING",
+        "INSTITUTIONAL_PUBLIC",
+        "LICENSED",
+        "PUBLIC_PROXY",
+        "MEDIA_CONFIRMATION",
+        "UNVERIFIED"
+      ]
+    },
+    "locator": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publication_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "first_seen_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "retrieval_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "content_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dataset_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Fact Coverage Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "symbol",
+    "analysis_cutoff_utc",
+    "families",
+    "overall_decision_effect"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "symbol": {
+      "enum": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ]
+    },
+    "analysis_cutoff_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "families": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": [
+          "family",
+          "coverage_state",
+          "decision_effect"
+        ],
+        "properties": {
+          "family": {
+            "type": "string"
+          },
+          "coverage_state": {
+            "enum": [
+              "ACTIVE_CANONICAL",
+              "ACTIVE_LIMITED",
+              "REGISTERED_D2_PENDING",
+              "NOT_APPLICABLE",
+              "UNAVAILABLE"
+            ]
+          },
+          "source_tiers": {
+            "type": "array"
+          },
+          "fact_classes": {
+            "type": "array"
+          },
+          "gaps": {
+            "type": "array"
+          },
+          "decision_effect": {
+            "enum": [
+              "NONE",
+              "CONFIDENCE_CAP",
+              "VALIDITY_CAP",
+              "HOLD",
+              "BLOCK"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "overall_decision_effect": {
+      "enum": [
+        "NONE",
+        "CONFIDENCE_CAP",
+        "VALIDITY_CAP",
+        "HOLD",
+        "BLOCK"
+      ]
+    }
+  }
+}

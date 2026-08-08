@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab D1 Decision Evidence Pack",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "run_id",
+    "symbol",
+    "analysis_cutoff_utc",
+    "manifest_version",
+    "fact_records",
+    "coverage_receipt",
+    "future_vintages_excluded"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "symbol": {
+      "enum": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ]
+    },
+    "analysis_cutoff_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "manifest_version": {
+      "const": "17.0.0"
+    },
+    "fact_records": {
+      "type": "array",
+      "items": {
+        "$ref": "AlphaLab_Fact_Record.schema.json"
+      }
+    },
+    "decision_critical_unknowns": {
+      "type": "array"
+    },
+    "root_dependencies": {
+      "type": "array"
+    },
+    "coverage_receipt": {
+      "type": "object"
+    },
+    "future_vintages_excluded": {
+      "const": true
+    }
+  }
+}

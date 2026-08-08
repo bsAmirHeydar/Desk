@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Fact Record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "fact_id",
+    "primary_class",
+    "availability_state",
+    "decision_materiality",
+    "source",
+    "time"
+  ],
+  "properties": {
+    "fact_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "release_family_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "vintage_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "release_sequence": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "revision_of_fact_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_class": {
+      "enum": [
+        "OBSERVED_FACT",
+        "OBSERVED_MARKET_DATA",
+        "OFFICIAL_REPORTED_FACT",
+        "CONTRACTUAL_FACT",
+        "IDENTIFIED_FLOW_FACT",
+        "IDENTIFIED_POSITIONING_FACT",
+        "MARKET_IMPLIED_FACT",
+        "PUBLIC_PROXY",
+        "DERIVED_FACT",
+        "MODEL_INFERENCE",
+        "NARRATIVE_INFERENCE",
+        "SCENARIO_ASSUMPTION"
+      ]
+    },
+    "availability_state": {
+      "enum": [
+        "AVAILABLE",
+        "UNAVAILABLE",
+        "UNDETERMINED"
+      ]
+    },
+    "decision_materiality": {
+      "enum": [
+        "DECISION_CRITICAL",
+        "MATERIAL",
+        "SUPPORTING",
+        "CONTEXTUAL"
+      ]
+    },
+    "root_cause_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "load_bearing": {
+      "type": "boolean"
+    },
+    "direction_role": {
+      "enum": [
+        "FUNDAMENTAL_ROOT",
+        "SUPPORTING",
+        "TRANSMISSION",
+        "CLEARANCE",
+        "NONE"
+      ]
+    },
+    "parent_fact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "derivation_method_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "derivation_method_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "source_id",
+        "tier"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string"
+        },
+        "tier": {
+          "enum": [
+            "OFFICIAL_PRIMARY",
+            "OFFICIAL_SECONDARY",
+            "EXCHANGE_ADMINISTRATOR",
+            "REGULATED_FILING",
+            "INSTITUTIONAL_PUBLIC",
+            "LICENSED",
+            "PUBLIC_PROXY",
+            "MEDIA_CONFIRMATION",
+            "UNVERIFIED"
+          ]
+        },
+        "locator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "snapshot_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "content_sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "time": {
+      "type": "object",
+      "properties": {
+        "event_time": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "reference_time": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "effective_time": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "publication_time": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "first_seen_time": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "retrieval_time": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "ingestion_time": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "valid_from": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "superseded_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "timestamp_confidence": {
+      "enum": [
+        "EXACT",
+        "HIGH",
+        "APPROXIMATE",
+        "UNRESOLVED"
+      ]
+    },
+    "timestamp_disagreement_seconds": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    }
+  }
+}

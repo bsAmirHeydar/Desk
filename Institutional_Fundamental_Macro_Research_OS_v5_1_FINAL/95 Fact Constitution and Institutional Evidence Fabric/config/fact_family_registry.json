@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "families": [
+    {
+      "id": "MACRO_FUNDAMENTAL",
+      "authority": "EXISTING_CANONICAL_STACK",
+      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+    },
+    {
+      "id": "MARKET_IMPLIED",
+      "authority": "EXISTING_CANONICAL_STACK",
+      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+    },
+    {
+      "id": "CORPORATE_EARNINGS_VALUATION",
+      "authority": "EXISTING_CANONICAL_STACK",
+      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+    },
+    {
+      "id": "NARRATIVE_ATTENTION",
+      "authority": "EXISTING_CANONICAL_STACK",
+      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+    },
+    {
+      "id": "TEMPORAL_CALENDAR",
+      "authority": "EXISTING_CANONICAL_STACK",
+      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+    },
+    {
+      "id": "POSITIONING_OWNERSHIP",
+      "authority": "D2_PENDING",
+      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+    },
+    {
+      "id": "ACTUAL_FLOW",
+      "authority": "D2_PENDING",
+      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+    },
+    {
+      "id": "FUNDING_PLUMBING",
+      "authority": "D2_PENDING",
+      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+    },
+    {
+      "id": "INSTITUTIONAL_MECHANICS",
+      "authority": "D2_PENDING",
+      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+    },
+    {
+      "id": "MARKET_CAPACITY",
+      "authority": "D2_PENDING",
+      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+    }
+  ]
+}

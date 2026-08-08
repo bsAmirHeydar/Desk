@@ -5,7 +5,8 @@ p=argparse.ArgumentParser(); p.add_argument('--vault-root',required=True); p.add
 mf=r/'CURRENT_PRODUCTION_MANIFEST.json'
 try: m=json.loads(mf.read_text(encoding='utf-8'))
 except Exception as e: m={}; errors.append(f'manifest parse: {e}')
-if m.get('current_stack')!='V16.1.0': errors.append('current_stack is not V16.1.0')
+if m.get('current_stack') not in {'V16.1.0','V17.0.0'}: errors.append('current_stack is not a supported V16.1/V17.0 stack')
+if m.get('current_stack')=='V17.0.0' and 'fact_constitution' not in (m.get('canonical_authorities') or {}): errors.append('V17 fact_constitution authority missing')
 ep=m.get('production_entrypoint'); allowed=set(m.get('allowed_live_entrypoints') or []); sub=set(m.get('allowed_live_subengines') or [])
 if not ep or not (r/ep).exists(): errors.append('production_entrypoint missing')
 if ep and ep not in allowed: errors.append('production entrypoint not allowlisted')

@@ -1,13 +1,14 @@
 {
-  "version": "16.1.0",
-  "current_stack": "V16.1.0",
+  "version": "17.0.0",
+  "current_stack": "V17.0.0",
   "manifest_authority": "CURRENT_PRODUCTION_MANIFEST.json",
   "human_mirror": "CURRENT_PRODUCTION_MANIFEST.yaml",
-  "production_entrypoint": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt.md",
+  "production_entrypoint": "95 Fact Constitution and Institutional Evidence Fabric/22 V17 D1 Fact-Governed Full-Vault Production Prompt.md",
   "allowed_live_entrypoints": [
-    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt.md"
+    "95 Fact Constitution and Institutional Evidence Fabric/22 V17 D1 Fact-Governed Full-Vault Production Prompt.md"
   ],
   "allowed_live_subengines": [
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt.md",
     "93 Temporal Market Structure Timing and Calendar Intelligence Engine/60 V15.1 Full-Vault Timing Clearance Production Prompt.md"
   ],
   "canonical_authorities": {
@@ -16,7 +17,8 @@
     "instrument": "91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC.md",
     "timing": "93 Temporal Market Structure Timing and Calendar Intelligence Engine/00 Temporal Market Structure Timing and Calendar Intelligence Engine MOC.md",
     "edge_permission_learning": "92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/00 Alpha Lab Live Execution Permission Forward Learning and Product Engine MOC.md",
-    "production_control": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/00 Institutional Evidence Calibration Portfolio and Model Risk Production Engine MOC.md"
+    "production_control": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/00 Institutional Evidence Calibration Portfolio and Model Risk Production Engine MOC.md",
+    "fact_constitution": "95 Fact Constitution and Institutional Evidence Fabric/00 Fact Constitution and Institutional Evidence Fabric MOC.md"
   },
   "asset_books": {
     "XAUUSD": [
@@ -62,7 +64,14 @@
     "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/calibration_policy.json",
     "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/portfolio_gate_policy.json",
     "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/operational_gate_policy.json",
-    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Event_FastPath_Release.schema.json"
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Event_FastPath_Release.schema.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Fact_Record.schema.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Decision_Evidence_Pack.schema.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Fact_Coverage_Receipt.schema.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Source_Snapshot.schema.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/config/fact_constitution_policy.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/config/fact_family_registry.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/config/six_market_fact_coverage.json"
   ],
   "production_universe": [
     "XAUUSD",
@@ -96,5 +105,20 @@
     "operational_gate": "ENFORCED",
     "blind_validation": "SHADOW"
   },
-  "retrieval_policy": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_policy.json"
+  "retrieval_policy": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_policy.json",
+  "fact_constitution_version": "1.0.0",
+  "d1_evidence_governance": {
+    "decision_evidence_pack": "REQUIRED",
+    "fact_coverage_receipt": "REQUIRED",
+    "historical_visibility": "ENFORCED",
+    "revision_vintage_immutability": "ENFORCED",
+    "same_root_independence": "ENFORCED",
+    "d2_pending_sciences": [
+      "POSITIONING_OWNERSHIP",
+      "ACTUAL_FLOW",
+      "FUNDING_PLUMBING",
+      "INSTITUTIONAL_MECHANICS",
+      "MARKET_CAPACITY"
+    ]
+  }
 }

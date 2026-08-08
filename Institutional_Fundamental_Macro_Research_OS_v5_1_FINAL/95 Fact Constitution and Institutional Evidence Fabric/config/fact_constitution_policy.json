@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "release": "V17.0.0",
+  "direction_authority": "FUNDAMENTAL_ONLY",
+  "classes": {
+    "direct": [
+      "OBSERVED_FACT",
+      "OBSERVED_MARKET_DATA",
+      "OFFICIAL_REPORTED_FACT",
+      "CONTRACTUAL_FACT",
+      "IDENTIFIED_FLOW_FACT",
+      "IDENTIFIED_POSITIONING_FACT"
+    ],
+    "measured_derived": [
+      "MARKET_IMPLIED_FACT",
+      "PUBLIC_PROXY",
+      "DERIVED_FACT"
+    ],
+    "non_fact": [
+      "MODEL_INFERENCE",
+      "NARRATIVE_INFERENCE",
+      "SCENARIO_ASSUMPTION"
+    ]
+  },
+  "availability_states": [
+    "AVAILABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED"
+  ],
+  "source_tiers": [
+    "OFFICIAL_PRIMARY",
+    "OFFICIAL_SECONDARY",
+    "EXCHANGE_ADMINISTRATOR",
+    "REGULATED_FILING",
+    "INSTITUTIONAL_PUBLIC",
+    "LICENSED",
+    "PUBLIC_PROXY",
+    "MEDIA_CONFIRMATION",
+    "UNVERIFIED"
+  ],
+  "load_bearing_forbidden_tiers": [
+    "UNVERIFIED"
+  ],
+  "normally_supporting_only_tiers": [
+    "MEDIA_CONFIRMATION"
+  ],
+  "timestamp_tolerance_seconds": 60,
+  "timestamp_material_conflict_seconds": 300,
+  "materiality_mapping": {
+    "DECISION_CRITICAL": "DECISION_CRITICAL",
+    "MATERIAL": "MATERIAL_SECONDARY",
+    "SUPPORTING": "CONTEXTUAL",
+    "CONTEXTUAL": "CONTEXTUAL"
+  },
+  "d2_pending_families": [
+    "POSITIONING_OWNERSHIP",
+    "ACTUAL_FLOW",
+    "FUNDING_PLUMBING",
+    "INSTITUTIONAL_MECHANICS",
+    "MARKET_CAPACITY"
+  ]
+}

@@ -1,0 +1,7 @@
+"source_id","source_family","tier","role","live_data_included","notes"
+"D1-SRC-001","Official/statutory publisher","OFFICIAL_PRIMARY","preferred first-party evidence","no","Retrieve dynamically at run time"
+"D1-SRC-002","Exchange/benchmark/index administrator","EXCHANGE_ADMINISTRATOR","rules and venue facts","no","Use administrator-specific methodology/vintage"
+"D1-SRC-003","Regulated filings","REGULATED_FILING","issuer/company facts","no","Respect filing/publication time"
+"D1-SRC-004","Licensed institutional dataset","LICENSED","high-quality proprietary evidence when valid access exists","no","Never imply access unless actually supplied"
+"D1-SRC-005","Public proxy dataset","PUBLIC_PROXY","proxy only","no","Must retain proxy label"
+"D1-SRC-006","Media confirmation","MEDIA_CONFIRMATION","supporting confirmation/context","no","Normally not sole decision-critical evidence"

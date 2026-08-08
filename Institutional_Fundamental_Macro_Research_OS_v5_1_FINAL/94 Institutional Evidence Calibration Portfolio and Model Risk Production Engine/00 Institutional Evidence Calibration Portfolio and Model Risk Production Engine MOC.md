@@ -44,3 +44,7 @@ V16 does not add another opinion layer. It converts existing V11–V15.1 science
 - [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/28 Event Fast Path Runtime Orchestration]]
 - [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt]]
 - [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/30 V16.1 Executable Validation and Acceptance Tests]]
+
+## V17 D1 wrapper relationship
+
+Under V17 D1 this module remains the validated production-control subengine. Module 95 now governs fact admission and point-in-time evidence upstream, then delegates scientific synthesis and operational control here. This module does not lose its evidence-graph, materiality, calibration/portfolio shadow or operational-safety authority.

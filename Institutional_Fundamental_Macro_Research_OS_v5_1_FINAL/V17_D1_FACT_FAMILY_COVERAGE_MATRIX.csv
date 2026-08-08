@@ -1,0 +1,61 @@
+symbol,fact_family,coverage_state,new_decision_authority,notes
+XAUUSD,MACRO_FUNDAMENTAL,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+XAUUSD,MARKET_IMPLIED,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+XAUUSD,CORPORATE_EARNINGS_VALUATION,ACTIVE_LIMITED,,Governed through existing V11-V16.1 canonical science
+XAUUSD,NARRATIVE_ATTENTION,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+XAUUSD,TEMPORAL_CALENDAR,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+XAUUSD,POSITIONING_OWNERSHIP,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+XAUUSD,ACTUAL_FLOW,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+XAUUSD,FUNDING_PLUMBING,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+XAUUSD,INSTITUTIONAL_MECHANICS,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+XAUUSD,MARKET_CAPACITY,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+NASDAQ100,MACRO_FUNDAMENTAL,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+NASDAQ100,MARKET_IMPLIED,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+NASDAQ100,CORPORATE_EARNINGS_VALUATION,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+NASDAQ100,NARRATIVE_ATTENTION,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+NASDAQ100,TEMPORAL_CALENDAR,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+NASDAQ100,POSITIONING_OWNERSHIP,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+NASDAQ100,ACTUAL_FLOW,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+NASDAQ100,FUNDING_PLUMBING,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+NASDAQ100,INSTITUTIONAL_MECHANICS,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+NASDAQ100,MARKET_CAPACITY,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+SP500,MACRO_FUNDAMENTAL,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+SP500,MARKET_IMPLIED,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+SP500,CORPORATE_EARNINGS_VALUATION,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+SP500,NARRATIVE_ATTENTION,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+SP500,TEMPORAL_CALENDAR,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+SP500,POSITIONING_OWNERSHIP,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+SP500,ACTUAL_FLOW,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+SP500,FUNDING_PLUMBING,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+SP500,INSTITUTIONAL_MECHANICS,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+SP500,MARKET_CAPACITY,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+DJIA,MACRO_FUNDAMENTAL,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+DJIA,MARKET_IMPLIED,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+DJIA,CORPORATE_EARNINGS_VALUATION,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+DJIA,NARRATIVE_ATTENTION,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+DJIA,TEMPORAL_CALENDAR,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+DJIA,POSITIONING_OWNERSHIP,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+DJIA,ACTUAL_FLOW,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+DJIA,FUNDING_PLUMBING,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+DJIA,INSTITUTIONAL_MECHANICS,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+DJIA,MARKET_CAPACITY,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+EURUSD,MACRO_FUNDAMENTAL,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+EURUSD,MARKET_IMPLIED,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+EURUSD,CORPORATE_EARNINGS_VALUATION,ACTIVE_LIMITED,,Governed through existing V11-V16.1 canonical science
+EURUSD,NARRATIVE_ATTENTION,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+EURUSD,TEMPORAL_CALENDAR,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+EURUSD,POSITIONING_OWNERSHIP,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+EURUSD,ACTUAL_FLOW,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+EURUSD,FUNDING_PLUMBING,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+EURUSD,INSTITUTIONAL_MECHANICS,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+EURUSD,MARKET_CAPACITY,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+USDJPY,MACRO_FUNDAMENTAL,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+USDJPY,MARKET_IMPLIED,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+USDJPY,CORPORATE_EARNINGS_VALUATION,ACTIVE_LIMITED,,Governed through existing V11-V16.1 canonical science
+USDJPY,NARRATIVE_ATTENTION,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+USDJPY,TEMPORAL_CALENDAR,ACTIVE_CANONICAL,,Governed through existing V11-V16.1 canonical science
+USDJPY,POSITIONING_OWNERSHIP,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+USDJPY,ACTUAL_FLOW,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+USDJPY,FUNDING_PLUMBING,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+USDJPY,INSTITUTIONAL_MECHANICS,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2
+USDJPY,MARKET_CAPACITY,REGISTERED_D2_PENDING,False,D1 registration only; dedicated science requires D2

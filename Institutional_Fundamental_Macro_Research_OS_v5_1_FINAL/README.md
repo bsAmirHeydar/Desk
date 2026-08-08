@@ -134,3 +134,7 @@ V15.1 makes Timing a mandatory independent clearance gate before final `EDGE_ACT
 ## V16.1 fuzzy-materiality integration
 
 Live production authority: [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt]]. Fundamental owns direction; Narrative clears transmission; Timing clears temporal usability; hard blocks are decision-materiality aware.
+
+## V17.0.0 D1 — Truth & Evidence Foundation
+
+The current production entrypoint is `95 Fact Constitution and Institutional Evidence Fabric/22 V17 D1 Fact-Governed Full-Vault Production Prompt.md`. V17 D1 wraps the validated V16.1 scientific stack with a canonical fact/evidence constitution. Run Module 95 D1 preflight before production. Direction remains Fundamental-only; Narrative/Timing remain clearance layers; D2 institutional sciences remain pending dedicated deployment.
