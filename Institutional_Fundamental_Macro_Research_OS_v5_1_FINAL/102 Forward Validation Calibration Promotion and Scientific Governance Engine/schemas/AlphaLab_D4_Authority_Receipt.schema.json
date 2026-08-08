@@ -55,6 +55,34 @@
       "items": {
         "type": "string"
       }
+    },
+    "final_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "applied_rule_effects": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "conflicts_resolved": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "confidence_caps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "validity_action": {
+      "type": "string"
     }
   },
   "additionalProperties": false

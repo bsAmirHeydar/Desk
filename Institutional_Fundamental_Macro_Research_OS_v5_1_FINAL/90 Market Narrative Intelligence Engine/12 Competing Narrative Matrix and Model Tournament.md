@@ -23,3 +23,6 @@ No opaque aggregate is required. A summary rank must retain the component ledger
 ## Winning rule
 
 The winner is the narrative with the best current combination of explanatory control and admissible evidence—not necessarily the most valid structural thesis. The matrix must therefore display validity and dominance side by side. A challenger gains status when it explains new facts or reactions that the incumbent cannot.
+
+## V21 broader hypothesis tournament
+The V12 Narrative tournament remains authoritative for narrative competition. V21 adds a separate causal-hypothesis tournament that can include policy, growth, earnings, funding, mechanical and unknown-driver explanations. A narrative can dominate attention while a different hypothesis remains the best Fundamental causal explanation; both states must remain visible.

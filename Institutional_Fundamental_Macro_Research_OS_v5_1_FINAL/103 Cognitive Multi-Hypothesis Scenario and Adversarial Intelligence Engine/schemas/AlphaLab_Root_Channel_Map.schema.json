@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Root_Channel_Map.schema.json",
+  "title": "Alpha Lab V21 Root Channel Map",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "root_id",
+    "independent_root_count",
+    "channels",
+    "net_root_state"
+  ],
+  "properties": {
+    "root_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "independent_root_count": {
+      "const": 1
+    },
+    "channels": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "channel_id",
+          "channel_type",
+          "horizon",
+          "alignment",
+          "state",
+          "materiality",
+          "evidence_grade"
+        ],
+        "properties": {
+          "channel_id": {
+            "type": "string"
+          },
+          "channel_type": {
+            "enum": [
+              "CAUSAL",
+              "TRANSMISSION",
+              "REFLEXIVE",
+              "MECHANICAL",
+              "FLOW",
+              "FUNDING",
+              "CONFIRMATION",
+              "CORRELATED",
+              "ATTENTION",
+              "UNCERTAIN"
+            ]
+          },
+          "horizon": {
+            "enum": [
+              "MICRO_0_15M",
+              "SHORT_15_60M",
+              "SESSION_1_6H",
+              "DAILY_OPEN_TO_CLOSE",
+              "MULTI_DAY_2_10D",
+              "SWING_2_8W",
+              "CYCLICAL",
+              "STRUCTURAL"
+            ]
+          },
+          "alignment": {
+            "enum": [
+              "SUPPORTIVE",
+              "OPPOSING",
+              "NON_DIRECTIONAL",
+              "MIXED",
+              "UNKNOWN"
+            ]
+          },
+          "state": {
+            "enum": [
+              "ACTIVE",
+              "DORMANT",
+              "WEAKENING",
+              "BROKEN",
+              "UNCERTAIN"
+            ]
+          },
+          "materiality": {
+            "enum": [
+              "DECISION_CRITICAL",
+              "MATERIAL",
+              "SUPPORTING",
+              "CONTEXTUAL"
+            ]
+          },
+          "evidence_grade": {
+            "type": "string"
+          },
+          "science": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "net_root_state": {
+      "enum": [
+        "SUPPORTIVE",
+        "OBSTRUCTIVE",
+        "CONTESTED",
+        "NON_DIRECTIONAL",
+        "UNKNOWN"
+      ]
+    },
+    "dominant_channel_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unresolved_conflicts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

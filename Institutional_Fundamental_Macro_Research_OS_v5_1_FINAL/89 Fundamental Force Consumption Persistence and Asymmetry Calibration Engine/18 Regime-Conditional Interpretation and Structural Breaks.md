@@ -55,3 +55,6 @@ Condition score interpretation and empirical mappings on macro, volatility, liqu
 ## V11 authority
 
 This note governs its stated object for methodology version `11.0.0`. Earlier notes remain valid where they do not conflict. Scores remain ordinal unless the record explicitly declares an empirically calibrated estimand and validation evidence.
+
+## V21 regime-conditioned graph
+V21 upgrades regime use from a label attached to an analysis into an input to the dynamic causal graph. Multiple regime dimensions may coexist. When regime mapping is uncertain or breaking, the system expands the scenario tree and reduces reliance on fixed historical mappings rather than forcing one sign.

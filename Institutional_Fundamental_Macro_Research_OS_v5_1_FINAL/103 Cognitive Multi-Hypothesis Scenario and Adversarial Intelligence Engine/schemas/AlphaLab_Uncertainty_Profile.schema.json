@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Uncertainty_Profile.schema.json",
+  "title": "Alpha Lab V21 Uncertainty Profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "dimensions",
+    "decision_critical_dimensions",
+    "single_confidence_score_used"
+  ],
+  "properties": {
+    "dimensions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "dimension",
+          "level",
+          "reason",
+          "resolution_condition"
+        ],
+        "properties": {
+          "dimension": {
+            "enum": [
+              "DATA",
+              "MEASUREMENT",
+              "SOURCE",
+              "CAUSAL",
+              "MODEL",
+              "TIMING",
+              "REGIME",
+              "NARRATIVE",
+              "TRANSMISSION",
+              "EXECUTION",
+              "CALIBRATION"
+            ]
+          },
+          "level": {
+            "enum": [
+              "LOW",
+              "MODERATE",
+              "HIGH",
+              "DECISION_CRITICAL",
+              "UNKNOWN"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "resolution_condition": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "decision_critical_dimensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "single_confidence_score_used": {
+      "const": false
+    }
+  }
+}

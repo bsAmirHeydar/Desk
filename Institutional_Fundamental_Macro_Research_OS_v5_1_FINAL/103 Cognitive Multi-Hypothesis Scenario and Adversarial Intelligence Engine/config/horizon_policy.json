@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "horizons": [
+    "MICRO_0_15M",
+    "SHORT_15_60M",
+    "SESSION_1_6H",
+    "DAILY_OPEN_TO_CLOSE",
+    "MULTI_DAY_2_10D",
+    "SWING_2_8W",
+    "CYCLICAL",
+    "STRUCTURAL"
+  ],
+  "production_strategy_horizon_must_be_explicit": true,
+  "cross_horizon_copy_forbidden": true,
+  "structural_state_is_prior_not_tactical_command": true,
+  "cross_horizon_conflict_states": [
+    "ALIGNED",
+    "TACTICAL_OVERRIDE",
+    "STRUCTURAL_TACTICAL_DIVERGENCE",
+    "CONTESTED",
+    "UNRESOLVED"
+  ],
+  "direction_values": [
+    "STRONGLY_BEARISH",
+    "BEARISH",
+    "NEUTRAL",
+    "BULLISH",
+    "STRONGLY_BULLISH",
+    "MIXED",
+    "UNDETERMINED"
+  ]
+}

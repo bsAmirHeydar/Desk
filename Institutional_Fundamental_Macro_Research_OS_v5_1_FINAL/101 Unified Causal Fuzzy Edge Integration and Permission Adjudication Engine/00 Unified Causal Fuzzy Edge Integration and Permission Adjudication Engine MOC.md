@@ -29,3 +29,6 @@ D3 is a **causal obstruction/support lattice**, not a scorecard. Same-root obser
 3. [[12 Fuzzy Edge State Machine]]
 4. [[13 Permission Transformation Law]]
 5. [[27 V19 D3 Full-Vault Production Prompt]]
+
+## V21 cognitive handoff
+In V21 production, Module 103 runs before Module 101 and may constrain the pre-D3 permission when the causal tournament is decision-critically contested, a major unmodeled driver is unresolved, or the pre-mortem finds an unmonitorable critical failure path. Module 101 remains the only D2→Edge causal-modulation authority and now preserves multi-channel effects inside each independent root.

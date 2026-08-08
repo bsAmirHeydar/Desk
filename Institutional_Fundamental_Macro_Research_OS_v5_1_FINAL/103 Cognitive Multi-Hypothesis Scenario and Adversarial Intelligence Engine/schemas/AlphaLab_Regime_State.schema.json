@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Regime_State.schema.json",
+  "title": "Alpha Lab V21 Regime State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "as_of_utc",
+    "dimensions",
+    "overall_state",
+    "mapping_stability",
+    "structural_break_risk"
+  ],
+  "properties": {
+    "as_of_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dimensions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "dimension",
+          "state",
+          "evidence",
+          "uncertainty"
+        ],
+        "properties": {
+          "dimension": {
+            "enum": [
+              "GROWTH",
+              "INFLATION",
+              "POLICY",
+              "FISCAL_SUPPLY",
+              "EARNINGS",
+              "CREDIT",
+              "VOLATILITY",
+              "FUNDING_LIQUIDITY",
+              "MARKET_LIQUIDITY",
+              "POSITIONING",
+              "MARKET_STRUCTURE",
+              "GEOPOLITICAL"
+            ]
+          },
+          "state": {
+            "enum": [
+              "BENIGN",
+              "TIGHTENING",
+              "EASING",
+              "STRESS",
+              "TRANSITION",
+              "MIXED",
+              "UNDETERMINED"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "uncertainty": {
+            "enum": [
+              "LOW",
+              "MODERATE",
+              "HIGH",
+              "DECISION_CRITICAL",
+              "UNKNOWN"
+            ]
+          }
+        }
+      }
+    },
+    "overall_state": {
+      "enum": [
+        "COHERENT",
+        "MIXED",
+        "TRANSITION",
+        "STRESS",
+        "UNDETERMINED"
+      ]
+    },
+    "mapping_stability": {
+      "enum": [
+        "STABLE",
+        "WEAKENING",
+        "BROKEN",
+        "UNDETERMINED"
+      ]
+    },
+    "structural_break_risk": {
+      "enum": [
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "VERY_HIGH",
+        "UNDETERMINED"
+      ]
+    }
+  }
+}

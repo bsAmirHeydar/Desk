@@ -3,7 +3,7 @@
   "$id": "AlphaLab_D3_Adjudication.schema.json",
   "title": "Alpha Lab D3 Adjudication",
   "type": "object",
-  "additionalProperties": true,
+  "additionalProperties": false,
   "required": [
     "version",
     "instrument",
@@ -22,7 +22,7 @@
   ],
   "properties": {
     "version": {
-      "const": "1.0.0"
+      "const": "1.1.0"
     },
     "instrument": {
       "type": "string"
@@ -118,6 +118,25 @@
     },
     "new_permission_creation_forbidden_v19": {
       "const": true
+    },
+    "root_channel_map": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "contested_root_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "support_independent_root_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cognitive_context_received": {
+      "type": "boolean"
     }
   }
 }

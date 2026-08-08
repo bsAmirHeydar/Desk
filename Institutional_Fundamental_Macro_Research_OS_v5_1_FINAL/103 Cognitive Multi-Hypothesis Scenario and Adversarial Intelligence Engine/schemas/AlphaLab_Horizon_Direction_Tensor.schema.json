@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Horizon_Direction_Tensor.schema.json",
+  "title": "Alpha Lab V21 Horizon Direction Tensor",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "active_strategy_horizon",
+    "states",
+    "cross_horizon_conflict_state",
+    "direction_authority"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0.0"
+    },
+    "active_strategy_horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "states": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "horizon",
+          "fundamental_direction",
+          "force_band",
+          "persistence_class",
+          "consumption_band",
+          "remaining_asymmetry",
+          "reversal_hazard",
+          "causal_leader",
+          "next_update_trigger"
+        ],
+        "properties": {
+          "horizon": {
+            "enum": [
+              "MICRO_0_15M",
+              "SHORT_15_60M",
+              "SESSION_1_6H",
+              "DAILY_OPEN_TO_CLOSE",
+              "MULTI_DAY_2_10D",
+              "SWING_2_8W",
+              "CYCLICAL",
+              "STRUCTURAL"
+            ]
+          },
+          "fundamental_direction": {
+            "enum": [
+              "STRONGLY_BEARISH",
+              "BEARISH",
+              "NEUTRAL",
+              "BULLISH",
+              "STRONGLY_BULLISH",
+              "MIXED",
+              "UNDETERMINED"
+            ]
+          },
+          "force_band": {
+            "enum": [
+              "VERY_LOW",
+              "LOW",
+              "MODERATE",
+              "HIGH",
+              "VERY_HIGH",
+              "UNDETERMINED"
+            ]
+          },
+          "persistence_class": {
+            "type": "string"
+          },
+          "consumption_band": {
+            "enum": [
+              "VERY_LOW",
+              "LOW",
+              "MODERATE",
+              "HIGH",
+              "VERY_HIGH",
+              "UNKNOWN"
+            ]
+          },
+          "remaining_asymmetry": {
+            "enum": [
+              "VERY_POOR",
+              "POOR",
+              "DEGRADED",
+              "BALANCED",
+              "FAVORABLE",
+              "HIGHLY_FAVORABLE",
+              "UNDETERMINED"
+            ]
+          },
+          "reversal_hazard": {
+            "enum": [
+              "VERY_LOW",
+              "LOW",
+              "MODERATE",
+              "HIGH",
+              "VERY_HIGH",
+              "UNDETERMINED"
+            ]
+          },
+          "causal_leader": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "next_update_trigger": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "cross_horizon_conflict_state": {
+      "enum": [
+        "ALIGNED",
+        "TACTICAL_OVERRIDE",
+        "STRUCTURAL_TACTICAL_DIVERGENCE",
+        "CONTESTED",
+        "UNRESOLVED"
+      ]
+    },
+    "direction_authority": {
+      "const": "MODULE_89_FUNDAMENTAL_HORIZON_STATE_ONLY"
+    }
+  }
+}

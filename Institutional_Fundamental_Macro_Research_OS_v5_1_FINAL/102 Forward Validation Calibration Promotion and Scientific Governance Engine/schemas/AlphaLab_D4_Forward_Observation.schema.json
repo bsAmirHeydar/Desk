@@ -37,7 +37,8 @@
       ]
     },
     "analysis_cutoff_utc": {
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "vault_commit": {
       "type": "string"
@@ -105,7 +106,8 @@
       "type": "string"
     },
     "permission_valid_until_utc": {
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "independent_root_ids": {
       "type": "array",

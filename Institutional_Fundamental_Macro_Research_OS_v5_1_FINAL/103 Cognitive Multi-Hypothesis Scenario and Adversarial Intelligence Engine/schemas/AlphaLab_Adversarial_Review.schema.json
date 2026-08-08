@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Adversarial_Review.schema.json",
+  "title": "Alpha Lab V21 Adversarial Thesis Review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "builder_thesis",
+    "destroyer_findings",
+    "strongest_rival_hypothesis_id",
+    "strongest_contradictory_fact",
+    "missing_driver_candidates",
+    "post_hoc_rationalization_risk",
+    "adjudication"
+  ],
+  "properties": {
+    "builder_thesis": {
+      "type": "string"
+    },
+    "destroyer_findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "strongest_rival_hypothesis_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "strongest_contradictory_fact": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "same_root_double_count_risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_driver_candidates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "market_signature_contradictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "post_hoc_rationalization_risk": {
+      "enum": [
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "VERY_HIGH",
+        "UNDETERMINED"
+      ]
+    },
+    "falsification_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "adjudication": {
+      "enum": [
+        "THESIS_SURVIVES",
+        "THESIS_SURVIVES_CONSTRAINED",
+        "CONTESTED",
+        "REJECTED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    }
+  }
+}

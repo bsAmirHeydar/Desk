@@ -119,3 +119,6 @@ Dedicated books: [[90 Market Narrative Intelligence Engine/53 DJIA Narrative Ope
 
 ## V16.1 transmission-clearance authority
 For the six-market live profile, Module 90 does **not** create BUY/SELL direction. It returns the fuzzy transmission state `ALIGNED_DOMINANT`, `ALIGNED_EMERGING`, `NEUTRAL`, `CONFLICTED`, `OPPOSING` or `UNDETERMINED`. `ALIGNED_EMERGING` is deliberately usable with a confidence/validity cap so the system does not require late full-consensus confirmation. See [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/21 Narrative Transmission Clearance Engine]].
+
+## V21 cognitive integration
+Module 103 generalizes the V12 competing-narrative tournament into a broader competing-**causal-hypothesis** tournament. Narrative remains the market-attention/transmission science; it does not become Fundamental Direction authority. V12 reflexivity, transitions, cross-asset graph and uncertainty states feed the V21 cognitive loop.

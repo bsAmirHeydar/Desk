@@ -149,3 +149,9 @@ V19.0.0 adds Module 101 Unified Causal & Fuzzy Edge Integration. D2 sciences rem
 
 ## V20.0.0 — D4 complete
 The original D1–D4 architecture is feature-complete. V20 adds Module 102 for forward validation, calibration, counterfactual research, selective promotion, drift and retirement. The shipped promotion registry is empty, so V19 decision behavior is preserved until forward evidence justifies an explicit reviewed promotion.
+
+## V21 — Cognitive Hardening
+
+V21 converts the V20 architecture from a primarily linear controlled analysis into a multi-hypothesis cognitive loop while preserving every D1–D4 authority boundary. The production brain now keeps rival causal explanations alive, separates horizons, builds conditional scenario trees, treats market disagreement as a model diagnostic, preserves multiple channels under the same independent root, and requires an adversarial red-team and pre-mortem before final permission.
+
+Start production at `103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md`.

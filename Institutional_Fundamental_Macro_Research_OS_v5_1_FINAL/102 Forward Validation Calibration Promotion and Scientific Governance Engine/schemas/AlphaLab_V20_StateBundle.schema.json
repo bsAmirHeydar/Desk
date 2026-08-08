@@ -33,10 +33,60 @@
       ]
     },
     "d3_adjudication": {
-      "type": "object"
+      "type": "object",
+      "required": [
+        "fundamental_direction",
+        "final_direction",
+        "pre_d3_permission",
+        "final_permission",
+        "d3_edge_quality"
+      ],
+      "properties": {
+        "fundamental_direction": {
+          "type": "string"
+        },
+        "final_direction": {
+          "type": "string"
+        },
+        "pre_d3_permission": {
+          "enum": [
+            "BUY",
+            "SELL",
+            "NO_TRADE"
+          ]
+        },
+        "final_permission": {
+          "enum": [
+            "BUY",
+            "SELL",
+            "NO_TRADE"
+          ]
+        },
+        "d3_edge_quality": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
     },
     "d4_authority_receipt": {
-      "type": "object"
+      "type": "object",
+      "required": [
+        "registry_version",
+        "applied_promotion_ids",
+        "shadow_candidate_ids"
+      ],
+      "properties": {
+        "registry_version": {
+          "type": "string"
+        },
+        "applied_promotion_ids": {
+          "type": "array"
+        },
+        "shadow_candidate_ids": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": true
     },
     "final_permission": {
       "enum": [
@@ -46,7 +96,20 @@
       ]
     },
     "forward_observation": {
-      "type": "object"
+      "type": "object",
+      "required": [
+        "record_type",
+        "record_id"
+      ],
+      "properties": {
+        "record_type": {
+          "type": "string"
+        },
+        "record_id": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
     }
   },
   "additionalProperties": false

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Hypothesis_Set.schema.json",
+  "title": "Alpha Lab V21 Hypothesis Tournament",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "instrument",
+    "analysis_cutoff_utc",
+    "active_horizon",
+    "hypotheses",
+    "tournament_state",
+    "dominant_hypothesis_ids",
+    "strongest_challenger_ids",
+    "single_hypothesis_justification"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0.0"
+    },
+    "instrument": {
+      "enum": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ]
+    },
+    "analysis_cutoff_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active_horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "hypotheses": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "items": {
+        "$ref": "AlphaLab_Hypothesis.schema.json"
+      }
+    },
+    "tournament_state": {
+      "enum": [
+        "DOMINANT",
+        "CO_DOMINANT",
+        "CONTESTED",
+        "FRAGMENTED",
+        "NO_CREDIBLE_DOMINANT_HYPOTHESIS",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "dominant_hypothesis_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "strongest_challenger_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "single_hypothesis_justification": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decision_critical_conflicts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "resolution_observations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

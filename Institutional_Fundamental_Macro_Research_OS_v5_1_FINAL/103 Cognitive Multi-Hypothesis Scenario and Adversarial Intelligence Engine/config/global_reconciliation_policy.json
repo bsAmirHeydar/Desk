@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "purpose": "Check whether market-level conclusions imply a coherent global state without forcing one global story.",
+  "states": [
+    "COHERENT",
+    "MULTI_DRIVER_BUT_COHERENT",
+    "LOCAL_DIVERGENCE_EXPLAINED",
+    "INCONSISTENT",
+    "CONTESTED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "rules": [
+    "NO_CROSS_MARKET_VOTING",
+    "NO_GLOBAL_DIRECTION_OVERRIDE",
+    "SAME_ROOT_CROSS_MARKET_INCONSISTENCY_REQUIRES_REVIEW",
+    "LOCAL_IDIOSYNCRATIC_DIVERGENCE_ALLOWED_WITH_EVIDENCE"
+  ]
+}

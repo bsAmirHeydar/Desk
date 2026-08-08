@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "mode": "SHADOW_DESCRIPTIVE_UNTIL_D4_VALIDATED",
+  "selection": "STATE_SIMILARITY_AT_CUTOFF_ONLY",
+  "outcome_based_analog_selection_forbidden": true,
+  "future_information_in_similarity_features_forbidden": true,
+  "required_outputs": [
+    "REFERENCE_CLASS",
+    "MATCH_FEATURES",
+    "MISSING_FEATURES",
+    "SAMPLE_N",
+    "INDEPENDENT_ROOT_N",
+    "OUTCOME_DISTRIBUTION_DESCRIPTIVE_ONLY",
+    "REGIME_COVERAGE",
+    "LIMITATIONS"
+  ]
+}

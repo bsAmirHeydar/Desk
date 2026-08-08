@@ -52,3 +52,6 @@ You are executing **Alpha Lab Fundamental OS V19.0.0 — D3 Unified Causal & Fuz
 - exact sentence: `V19 D3 cannot create a new BUY/SELL from a pre-D3 NO_TRADE.`
 
 When evidence cannot establish a state, use `UNAVAILABLE`, `UNDETERMINED`, or `LICENSED_REQUIRED`. Never manufacture flow, positioning, dealer inventory or capacity.
+
+## V21 subengine status
+This prompt remains an allowed regression/subengine in V21. The V21 live entrypoint is Module 103. When called from V21, the `pre_d3_permission` may already have been cognitively constrained and the optional `cognitive_context` should be preserved in the D3 Decision Trace.

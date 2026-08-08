@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Decision_Utility.schema.json",
+  "title": "Alpha Lab V21 Decision Utility Vector",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "dimensions",
+    "utility_state",
+    "numeric_expected_utility_used"
+  ],
+  "properties": {
+    "dimensions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "dimension",
+          "band",
+          "reason"
+        ],
+        "properties": {
+          "dimension": {
+            "enum": [
+              "UPSIDE_POTENTIAL",
+              "DOWNSIDE_SEVERITY",
+              "MISSED_OPPORTUNITY_COST",
+              "FALSE_PERMISSION_COST",
+              "DELAY_COST",
+              "PATH_ASYMMETRY",
+              "GAP_RISK",
+              "REVERSIBILITY",
+              "URGENCY",
+              "CAPITAL_OPTIONALITY"
+            ]
+          },
+          "band": {
+            "enum": [
+              "VERY_LOW",
+              "LOW",
+              "MODERATE",
+              "HIGH",
+              "VERY_HIGH",
+              "UNDETERMINED"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "utility_state": {
+      "enum": [
+        "FAVOR_ACTION",
+        "FAVOR_CONDITIONAL_ACTION",
+        "FAVOR_DELAY",
+        "FAVOR_NO_TRADE",
+        "CONTESTED",
+        "UNDETERMINED"
+      ]
+    },
+    "numeric_expected_utility_used": {
+      "const": false
+    }
+  }
+}

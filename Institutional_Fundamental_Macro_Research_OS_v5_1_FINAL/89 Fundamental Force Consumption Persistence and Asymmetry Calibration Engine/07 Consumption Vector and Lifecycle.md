@@ -79,3 +79,6 @@ Alternative transitions include `REINFORCED_AND_REOPENED`, `OVER_CONSUMED` and `
 ## V11 authority
 
 This note governs its stated object for methodology version `11.0.0`. Earlier notes remain valid where they do not conflict. Scores remain ordinal unless the record explicitly declares an empirically calibrated estimand and validation evidence.
+
+## V21 live representation
+Production V21 uses the full vector directly and reports Remaining Asymmetry separately. Any 0–100 consumption value is an ordinal communication index unless D4 has calibrated a named estimand. It is not literal percent of the future move consumed, and Remaining Asymmetry is never calculated as `100 - consumption`. Module 103 adds flow continuation/exhaustion and explicit reopening logic to the cognitive state.

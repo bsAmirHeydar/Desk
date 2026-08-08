@@ -18,3 +18,6 @@ When several modifiers fire simultaneously, D4 distinguishes:
 - independent-root combinations.
 
 Unidentified interaction effects remain `UNDETERMINED`; they are not allocated by arbitrary score splitting.
+
+## V21 cluster implementation
+The runtime calibration tool now performs equal-weight resampling at the independent-root level when root IDs exist, falls back to trading day, and labels observation-level bootstrap as a last resort. This closes the gap between the dependence policy and the executable calibration path.

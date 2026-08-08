@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "candidate_count": {
+    "preferred_min": 2,
+    "preferred_max": 6,
+    "single_hypothesis_allowed_with_explicit_rival_search": true
+  },
+  "hypothesis_families": [
+    "POLICY_REACTION",
+    "INFLATION",
+    "GROWTH",
+    "LABOR",
+    "EARNINGS_CASHFLOW",
+    "FISCAL_SUPPLY",
+    "CREDIT",
+    "FX_RELATIVE_POLICY",
+    "PHYSICAL_BALANCE",
+    "FUNDING_LIQUIDITY",
+    "POSITIONING_FLOW",
+    "MECHANICAL",
+    "IDIOSYNCRATIC",
+    "GEOPOLITICAL",
+    "UNKNOWN_OTHER"
+  ],
+  "plausibility_bands": [
+    "DOMINANT",
+    "COMPETITIVE",
+    "SECONDARY",
+    "WEAK",
+    "UNSUPPORTED",
+    "UNDETERMINED"
+  ],
+  "tournament_outcomes": [
+    "DOMINANT",
+    "CO_DOMINANT",
+    "CONTESTED",
+    "FRAGMENTED",
+    "NO_CREDIBLE_DOMINANT_HYPOTHESIS",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "dominance_requirements": [
+    "EXPLAINS_MATERIAL_FACTS",
+    "EXPECTED_LEADERS_NOT_MATERIALLY_BROKEN",
+    "RIVAL_HYPOTHESES_EXPLICITLY_TESTED",
+    "NO_UNRESOLVED_DECISION_CRITICAL_CONTRADICTION_ON_LOAD_BEARING_PATH"
+  ],
+  "numeric_hypothesis_probability_authorized": false,
+  "tail_scenario_retention": "Keep low-plausibility scenarios when impact is decision-material or path-asymmetric."
+}

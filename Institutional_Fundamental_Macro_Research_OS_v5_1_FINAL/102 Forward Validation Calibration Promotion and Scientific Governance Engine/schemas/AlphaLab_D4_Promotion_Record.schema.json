@@ -41,7 +41,52 @@
       ]
     },
     "scope": {
-      "type": "object"
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "instruments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "horizons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sessions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "regimes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fundamental_directions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_grades": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "execution_profiles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
     },
     "allowed_preconditions": {
       "type": "object"
@@ -56,16 +101,21 @@
       "type": "string"
     },
     "activated_at_utc": {
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "expires_at_utc": {
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "retirement_triggers": {
       "type": "array",
       "items": {
         "type": "string"
       }
+    },
+    "effect_parameters": {
+      "type": "object"
     }
   },
   "additionalProperties": false

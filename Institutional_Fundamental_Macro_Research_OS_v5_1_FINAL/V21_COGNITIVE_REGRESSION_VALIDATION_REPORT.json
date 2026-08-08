@@ -1,0 +1,935 @@
+{
+  "status": "PASS",
+  "target": "V21.0.0",
+  "baseline": "V20.0.0",
+  "fact_constitution_version": "1.1.0",
+  "cognitive_engine": "Module 103 / 1.0.0",
+  "direction_authority": "FUNDAMENTAL_ONLY",
+  "positive_permission_creation_by_module_103": false,
+  "direction_flip_by_module_103": false,
+  "scenario_probability_mode": "QUALITATIVE_UNLESS_D4_CALIBRATED",
+  "test_results": {
+    "v21_cognitive_selftest": "19/19 PASS",
+    "v21_runtime_preflight": "PASS",
+    "v21_deployment_preflight": "PASS",
+    "d4_selftest": "8/8 PASS",
+    "d3_selftest": "13/13 PASS",
+    "d2_selftest": "31/31 PASS",
+    "d1_selftest": "20/20 PASS",
+    "v16_1_selftest": "21/21 PASS",
+    "d4_cascading_regression_preflight": "PASS",
+    "d4_coverage": "6/6 PASS",
+    "d3_coverage": "6/6 PASS",
+    "d2_coverage": "30/30 PASS",
+    "d1_coverage": "60/60 PASS",
+    "cognitive_coverage": "6/6 PASS",
+    "all_json_parse": "287/287 PASS",
+    "all_python_compile": "93/93 PASS at validation time",
+    "all_json_schema_wellformed": "72/72 PASS at validation time"
+  },
+  "acceptance": {
+    "multi_hypothesis": true,
+    "multi_horizon": true,
+    "multi_scenario_2_to_6": true,
+    "typed_uncertainty": true,
+    "market_vs_economic_surprise": true,
+    "policy_reaction_function": true,
+    "regime_conditioned_causal_graph": true,
+    "same_root_multi_channel": true,
+    "reflexivity": true,
+    "multi_dimensional_consumption": true,
+    "contested_state": true,
+    "unmodeled_driver_detection": true,
+    "driver_transition": true,
+    "causal_recheck_scheduler": true,
+    "global_reconciliation": true,
+    "thesis_destroyer": true,
+    "premortem": true,
+    "utility_aware_adjudication": true,
+    "meta_edge_router": true,
+    "outside_strategy_permission_effect": "NONE",
+    "fake_numeric_scenario_probabilities": "FORBIDDEN",
+    "d4_independent_root_cluster_resampling": true,
+    "d4_scope_aware_authority": true,
+    "d4_confidence_cap_effect": true,
+    "d4_validity_shortening_effect": true
+  },
+  "source_artifacts": {
+    "v21_cognitive_selftest": {
+      "status": "PASS",
+      "tests": 19,
+      "passed": 19,
+      "checks": [
+        {
+          "name": "stack_v21",
+          "pass": true,
+          "detail": "V21.0.0"
+        },
+        {
+          "name": "direction_fundamental_only",
+          "pass": true,
+          "detail": {
+            "direction": "FUNDAMENTAL_ONLY",
+            "narrative": "TRANSMISSION_CLEARANCE",
+            "timing": "TEMPORAL_CLEARANCE",
+            "calibration": "MODULE_102_GOVERNANCE_ENFORCED",
+            "portfolio_gate": "SHADOW",
+            "operational_gate": "ENFORCED",
+            "positioning_ownership": "MODULE_101_CONSTRAINED_MODIFIER",
+            "actual_flow": "MODULE_101_CONSTRAINED_MODIFIER",
+            "funding_plumbing": "MODULE_101_CONSTRAINED_MODIFIER",
+            "institutional_mechanics": "MODULE_101_CONSTRAINED_MODIFIER",
+            "market_capacity": "MODULE_101_EXECUTION_CAPACITY_GATE",
+            "d3_edge_integration": "ENFORCED_CAUSAL_MODULATION",
+            "d4_forward_validation": "GOVERNANCE_ENFORCED",
+            "d4_positive_permission": "PROMOTED_REGISTRY_ONLY",
+            "d4_direction_flip": "FORBIDDEN",
+            "cognitive_synthesis": "MODULE_103_ENFORCED_COGNITIVE_HARDENING",
+            "cognitive_positive_permission": "FORBIDDEN",
+            "outside_strategy_edges": "REPORT_AND_RESEARCH_ROUTE_ONLY",
+            "market_disagreement": "DIAGNOSTIC_CONSTRAINT_ONLY"
+          }
+        },
+        {
+          "name": "cognitive_enforced",
+          "pass": true,
+          "detail": {
+            "version": "1.0.0",
+            "release": "V21.0.0",
+            "authority_mode": "ENFORCED_COGNITIVE_HARDENING",
+            "orchestrator": "MODULE_103",
+            "direction_authority": "MODULE_89_FUNDAMENTAL_ACTIVE_HORIZON_ONLY",
+            "direction_flip_allowed": false,
+            "positive_permission_creation": false,
+            "outside_strategy_edge_permission_effect": "NONE",
+            "market_price_direction_authority": false,
+            "market_price_model_diagnostic": true,
+            "multi_hypothesis_required_when_material_ambiguity": true,
+            "scenario_probability_mode": "QUALITATIVE_UNLESS_D4_CALIBRATED",
+            "decision_critical_contested_action": "NO_TRADE_OR_HOLD",
+            "decision_critical_unmodeled_driver_action": "NO_TRADE_OR_HOLD",
+            "production_prompt": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md"
+          }
+        },
+        {
+          "name": "no_cognitive_direction_flip",
+          "pass": true,
+          "detail": {
+            "version": "1.0.0",
+            "release": "V21.0.0",
+            "authority_mode": "ENFORCED_COGNITIVE_HARDENING",
+            "orchestrator": "MODULE_103",
+            "direction_authority": "MODULE_89_FUNDAMENTAL_ACTIVE_HORIZON_ONLY",
+            "direction_flip_allowed": false,
+            "positive_permission_creation": false,
+            "outside_strategy_edge_permission_effect": "NONE",
+            "market_price_direction_authority": false,
+            "market_price_model_diagnostic": true,
+            "multi_hypothesis_required_when_material_ambiguity": true,
+            "scenario_probability_mode": "QUALITATIVE_UNLESS_D4_CALIBRATED",
+            "decision_critical_contested_action": "NO_TRADE_OR_HOLD",
+            "decision_critical_unmodeled_driver_action": "NO_TRADE_OR_HOLD",
+            "production_prompt": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md"
+          }
+        },
+        {
+          "name": "no_cognitive_positive_permission",
+          "pass": true,
+          "detail": {
+            "version": "1.0.0",
+            "release": "V21.0.0",
+            "authority_mode": "ENFORCED_COGNITIVE_HARDENING",
+            "orchestrator": "MODULE_103",
+            "direction_authority": "MODULE_89_FUNDAMENTAL_ACTIVE_HORIZON_ONLY",
+            "direction_flip_allowed": false,
+            "positive_permission_creation": false,
+            "outside_strategy_edge_permission_effect": "NONE",
+            "market_price_direction_authority": false,
+            "market_price_model_diagnostic": true,
+            "multi_hypothesis_required_when_material_ambiguity": true,
+            "scenario_probability_mode": "QUALITATIVE_UNLESS_D4_CALIBRATED",
+            "decision_critical_contested_action": "NO_TRADE_OR_HOLD",
+            "decision_critical_unmodeled_driver_action": "NO_TRADE_OR_HOLD",
+            "production_prompt": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md"
+          }
+        },
+        {
+          "name": "market_price_diagnostic_only",
+          "pass": true,
+          "detail": {
+            "version": "1.0.0",
+            "release": "V21.0.0",
+            "authority_mode": "ENFORCED_COGNITIVE_HARDENING",
+            "orchestrator": "MODULE_103",
+            "direction_authority": "MODULE_89_FUNDAMENTAL_ACTIVE_HORIZON_ONLY",
+            "direction_flip_allowed": false,
+            "positive_permission_creation": false,
+            "outside_strategy_edge_permission_effect": "NONE",
+            "market_price_direction_authority": false,
+            "market_price_model_diagnostic": true,
+            "multi_hypothesis_required_when_material_ambiguity": true,
+            "scenario_probability_mode": "QUALITATIVE_UNLESS_D4_CALIBRATED",
+            "decision_critical_contested_action": "NO_TRADE_OR_HOLD",
+            "decision_critical_unmodeled_driver_action": "NO_TRADE_OR_HOLD",
+            "production_prompt": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md"
+          }
+        },
+        {
+          "name": "qualitative_scenarios",
+          "pass": true,
+          "detail": {
+            "version": "1.0.0",
+            "release": "V21.0.0",
+            "authority_mode": "ENFORCED_COGNITIVE_HARDENING",
+            "orchestrator": "MODULE_103",
+            "direction_authority": "MODULE_89_FUNDAMENTAL_ACTIVE_HORIZON_ONLY",
+            "direction_flip_allowed": false,
+            "positive_permission_creation": false,
+            "outside_strategy_edge_permission_effect": "NONE",
+            "market_price_direction_authority": false,
+            "market_price_model_diagnostic": true,
+            "multi_hypothesis_required_when_material_ambiguity": true,
+            "scenario_probability_mode": "QUALITATIVE_UNLESS_D4_CALIBRATED",
+            "decision_critical_contested_action": "NO_TRADE_OR_HOLD",
+            "decision_critical_unmodeled_driver_action": "NO_TRADE_OR_HOLD",
+            "production_prompt": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md"
+          }
+        },
+        {
+          "name": "valid_multihypothesis_input",
+          "pass": true,
+          "detail": "{\n  \"status\": \"PASS\",\n  \"errors\": []\n}\n/mnt/data/alphalab_work/v21_target/103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/tools/alphalab_cognitive_validate.py:18: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.\n  resolver=jsonschema.RefResolver(base_uri=(mod/'schemas').resolve().as_uri()+'/', referrer=sch)\n"
+        },
+        {
+          "name": "clear_case_preserves_buy",
+          "pass": true,
+          "detail": {
+            "version": "1.0.0",
+            "instrument": "NASDAQ100",
+            "analysis_cutoff_utc": "2026-08-08T12:00:00Z",
+            "active_strategy_horizon": "SESSION_1_6H",
+            "fundamental_direction": "BULLISH",
+            "final_direction": "BULLISH",
+            "pre_cognitive_permission": "BUY",
+            "cognitive_permission": "BUY",
+            "cognitive_state": "CLEAR",
+            "tournament_state": "DOMINANT",
+            "scenario_state": "PRIMARY_SCENARIO_IDENTIFIED",
+            "decision_critical_uncertainties": [],
+            "unmodeled_driver_risk": "LOW",
+            "adversarial_adjudication": "THESIS_SURVIVES",
+            "utility_state": "FAVOR_ACTION",
+            "applied_cognitive_constraints": [],
+            "outside_strategy_edges": [],
+            "next_review_trigger": "NONE",
+            "direction_flip_forbidden": true,
+            "positive_permission_creation_forbidden": true
+          }
+        },
+        {
+          "name": "scenario_tree_valid",
+          "pass": true,
+          "detail": "{\n  \"status\": \"PASS\",\n  \"scenario_count\": 2,\n  \"errors\": []\n}\n"
+        },
+        {
+          "name": "critical_contest_no_trade",
+          "pass": true,
+          "detail": {
+            "version": "1.0.0",
+            "instrument": "NASDAQ100",
+            "analysis_cutoff_utc": "2026-08-08T12:00:00Z",
+            "active_strategy_horizon": "SESSION_1_6H",
+            "fundamental_direction": "BULLISH",
+            "final_direction": "BULLISH",
+            "pre_cognitive_permission": "BUY",
+            "cognitive_permission": "NO_TRADE",
+            "cognitive_state": "CONTESTED",
+            "tournament_state": "CONTESTED",
+            "scenario_state": "PRIMARY_SCENARIO_IDENTIFIED",
+            "decision_critical_uncertainties": [],
+            "unmodeled_driver_risk": "LOW",
+            "adversarial_adjudication": "THESIS_SURVIVES",
+            "utility_state": "FAVOR_ACTION",
+            "applied_cognitive_constraints": [
+              "DECISION_CRITICAL_HYPOTHESIS_CONTEST"
+            ],
+            "outside_strategy_edges": [],
+            "next_review_trigger": "NONE",
+            "direction_flip_forbidden": true,
+            "positive_permission_creation_forbidden": true
+          }
+        },
+        {
+          "name": "unmodeled_driver_no_trade_no_flip",
+          "pass": true,
+          "detail": {
+            "version": "1.0.0",
+            "instrument": "NASDAQ100",
+            "analysis_cutoff_utc": "2026-08-08T12:00:00Z",
+            "active_strategy_horizon": "SESSION_1_6H",
+            "fundamental_direction": "BULLISH",
+            "final_direction": "BULLISH",
+            "pre_cognitive_permission": "BUY",
+            "cognitive_permission": "NO_TRADE",
+            "cognitive_state": "MODEL_DISAGREEMENT",
+            "tournament_state": "DOMINANT",
+            "scenario_state": "PRIMARY_SCENARIO_IDENTIFIED",
+            "decision_critical_uncertainties": [],
+            "unmodeled_driver_risk": "DECISION_CRITICAL",
+            "adversarial_adjudication": "THESIS_SURVIVES",
+            "utility_state": "FAVOR_ACTION",
+            "applied_cognitive_constraints": [
+              "UNMODELED_DRIVER_RISK"
+            ],
+            "outside_strategy_edges": [],
+            "next_review_trigger": "HOLD_NO_TRADE",
+            "direction_flip_forbidden": true,
+            "positive_permission_creation_forbidden": true
+          }
+        },
+        {
+          "name": "outside_strategy_edge_report_only",
+          "pass": true,
+          "detail": {
+            "version": "1.0.0",
+            "instrument": "NASDAQ100",
+            "analysis_cutoff_utc": "2026-08-08T12:00:00Z",
+            "active_strategy_horizon": "SESSION_1_6H",
+            "fundamental_direction": "NEUTRAL",
+            "final_direction": "NEUTRAL",
+            "pre_cognitive_permission": "NO_TRADE",
+            "cognitive_permission": "NO_TRADE",
+            "cognitive_state": "CLEAR",
+            "tournament_state": "DOMINANT",
+            "scenario_state": "PRIMARY_SCENARIO_IDENTIFIED",
+            "decision_critical_uncertainties": [],
+            "unmodeled_driver_risk": "LOW",
+            "adversarial_adjudication": "THESIS_SURVIVES",
+            "utility_state": "FAVOR_ACTION",
+            "applied_cognitive_constraints": [],
+            "outside_strategy_edges": [
+              "FORCED_FLOW_EDGE"
+            ],
+            "next_review_trigger": "NONE",
+            "direction_flip_forbidden": true,
+            "positive_permission_creation_forbidden": true
+          }
+        },
+        {
+          "name": "premortem_unmonitorable_blocks",
+          "pass": true,
+          "detail": {
+            "version": "1.0.0",
+            "instrument": "NASDAQ100",
+            "analysis_cutoff_utc": "2026-08-08T12:00:00Z",
+            "active_strategy_horizon": "SESSION_1_6H",
+            "fundamental_direction": "BULLISH",
+            "final_direction": "BULLISH",
+            "pre_cognitive_permission": "BUY",
+            "cognitive_permission": "NO_TRADE",
+            "cognitive_state": "INSUFFICIENT_EVIDENCE",
+            "tournament_state": "DOMINANT",
+            "scenario_state": "PRIMARY_SCENARIO_IDENTIFIED",
+            "decision_critical_uncertainties": [],
+            "unmodeled_driver_risk": "LOW",
+            "adversarial_adjudication": "THESIS_SURVIVES",
+            "utility_state": "FAVOR_ACTION",
+            "applied_cognitive_constraints": [
+              "UNMONITORABLE_DECISION_CRITICAL_RISK"
+            ],
+            "outside_strategy_edges": [],
+            "next_review_trigger": "NONE",
+            "direction_flip_forbidden": true,
+            "positive_permission_creation_forbidden": true
+          }
+        },
+        {
+          "name": "fake_probability_rejected",
+          "pass": true,
+          "detail": "{\n  \"status\": \"FAIL\",\n  \"errors\": [\n    \"SCHEMA: False was expected\\n\\nFailed validating 'const' in schema['properties']['scenario_tree']['properties']['numeric_probabilities_used']:\\n    {'const': False}\\n\\nOn instance['scenario_tree']['numeric_probabilities_used']:\\n    True\",\n    \"Numeric scenario probabilities are not authorized.\"\n  ]\n}\n/mnt/data/alphalab_work/v21_target/103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/tools/alphalab_cognitive_validate.py:18: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.\n  resolver=jsonschema.RefResolver(base_uri=(mod/'schemas').resolve().as_uri()+'/', referrer=sch)\n"
+        },
+        {
+          "name": "global_reconcile_detects_inconsistency",
+          "pass": true,
+          "detail": {
+            "state": "INCONSISTENT",
+            "market_intents": [
+              {
+                "instrument": "NASDAQ100",
+                "direction": "BULLISH",
+                "implied_root_ids": [
+                  "FED"
+                ],
+                "root_direction_claims": [
+                  {
+                    "root_id": "FED",
+                    "root_state": "DOVISH"
+                  }
+                ]
+              },
+              {
+                "instrument": "SP500",
+                "direction": "BULLISH",
+                "implied_root_ids": [
+                  "FED"
+                ],
+                "root_direction_claims": [
+                  {
+                    "root_id": "FED",
+                    "root_state": "HAWKISH"
+                  }
+                ]
+              }
+            ],
+            "implied_global_roots": [
+              "FED"
+            ],
+            "inconsistencies": [
+              {
+                "root_id": "FED",
+                "claims": [
+                  [
+                    "NASDAQ100",
+                    "DOVISH"
+                  ],
+                  [
+                    "SP500",
+                    "HAWKISH"
+                  ]
+                ],
+                "reason": "same root has incompatible stated global condition"
+              }
+            ],
+            "resolution_actions": [
+              "REVIEW_SAME_ROOT_CLAIMS"
+            ],
+            "direction_override_applied": false
+          }
+        },
+        {
+          "name": "causal_recheck_scheduler",
+          "pass": true,
+          "detail": {
+            "next_review_trigger": {
+              "trigger_type": "EVENT",
+              "condition": "CPI",
+              "time_utc": "2026-08-08T13:30:00Z",
+              "materiality": "DECISION_CRITICAL"
+            },
+            "fixed_interval_fallback_used": false
+          }
+        },
+        {
+          "name": "acceptance_case_count",
+          "pass": true,
+          "detail": 14
+        },
+        {
+          "name": "acceptance_topic_breadth",
+          "pass": true,
+          "detail": [
+            "ADVERSARIAL",
+            "COMPETING_HYPOTHESES",
+            "CRITICAL_UNCERTAINTY",
+            "CROSS_HORIZON",
+            "EVENT_DRIVER_TRANSITION",
+            "GLOBAL_RECONCILIATION",
+            "MODEL_DISAGREEMENT",
+            "OUTSIDE_STRATEGY",
+            "PREMORTEM",
+            "QUIET_DAY",
+            "SAME_ROOT_MULTI_CHANNEL",
+            "SCENARIO_TREE",
+            "SURPRISE"
+          ]
+        }
+      ]
+    },
+    "v21_runtime_preflight": {
+      "status": "PASS",
+      "mode": "runtime",
+      "checks": [
+        {
+          "name": "manifest_sync",
+          "pass": true
+        },
+        {
+          "name": "base_production_preflight",
+          "pass": true
+        },
+        {
+          "name": "cognitive_selftest",
+          "pass": true
+        },
+        {
+          "name": "cognitive_schema_audit",
+          "pass": true
+        },
+        {
+          "name": "cognitive_coverage",
+          "pass": true
+        }
+      ],
+      "errors": []
+    },
+    "v21_deployment_preflight": {
+      "status": "PASS",
+      "mode": "deployment",
+      "checks": [
+        {
+          "name": "manifest_sync",
+          "pass": true
+        },
+        {
+          "name": "base_production_preflight",
+          "pass": true
+        },
+        {
+          "name": "cognitive_selftest",
+          "pass": true
+        },
+        {
+          "name": "cognitive_schema_audit",
+          "pass": true
+        },
+        {
+          "name": "cognitive_coverage",
+          "pass": true
+        }
+      ],
+      "errors": []
+    },
+    "d4_selftest": {
+      "status": "PASS",
+      "tests": 8,
+      "passed": 8,
+      "checks": [
+        {
+          "name": "stack_v20_or_v21",
+          "pass": true,
+          "detail": "V21.0.0"
+        },
+        {
+          "name": "direction_fundamental_only",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "registry_exists",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "empty_registry_preserves_base",
+          "pass": true,
+          "detail": "{\n  \"registry_version\": \"1.0.0\",\n  \"registry_sha256\": \"755f59f722ab2c3c284bed23d2739fce2af551c1adbe37cc97c4627025d4f9ae\",\n  \"fundamental_direction\": \"BULLISH\",\n  \"v19_d3_permission\": \"NO_TRADE\",\n  \"final_v20_permission\": \"NO_TRADE\",\n  \"final_permission\": \"NO_TRADE\",\n  \"applied_promotion_ids\": [],\n  \"applied_rule_effects\": [],\n  \"shadow_candidate_ids\": [\n    \"FLOW_SUPPORT_X\"\n  ],\n  \"fail_closed_reasons\": [],\n  \"conflicts_resolved\": [],\n  \"confidence_caps\": [],\n  \"validity_action\": \"KEEP_BASE\"\n}\n"
+        },
+        {
+          "name": "cluster_bootstrap_root",
+          "pass": true,
+          "detail": {
+            "record_type": "CALIBRATION_REPORT",
+            "calibration_version": "1.1.0",
+            "modifier_id": "M1",
+            "hypothesis_family_ids": [
+              "HF1"
+            ],
+            "development": {
+              "raw_n": 8,
+              "realized_n": 8,
+              "censored_or_not_triggered_n": 0,
+              "censored_or_not_triggered_rate": 0.0,
+              "unique_runs": 8,
+              "unique_trading_days": 4,
+              "independent_roots": 4,
+              "distinct_regimes": 1,
+              "mean_delta_r": 0.21500000000000002,
+              "median_delta_r": 0.21500000000000002,
+              "delta_r_95pct_cluster_bootstrap": [
+                0.20500000000000002,
+                0.225
+              ],
+              "resampling_unit": "independent_root_id",
+              "resampling_cluster_n": 4,
+              "mean_actual_r": 0.3,
+              "median_actual_r": 0.3,
+              "profit_factor_actual": null,
+              "lower_tail_mean_actual_r_5pct": 0.3,
+              "lower_tail_mean_counterfactual_r_5pct": 0.1,
+              "lower_tail_delta_r_5pct": 0.19999999999999998,
+              "mae_r_95pct": null,
+              "mfe_r_median": null,
+              "regime_effects": {
+                "RISK_ON": {
+                  "n": 8,
+                  "mean": 0.21500000000000002,
+                  "median": 0.21500000000000002
+                }
+              },
+              "effect_sign_stable_across_observed_regimes": true
+            },
+            "holdout": {
+              "raw_n": 8,
+              "realized_n": 8,
+              "censored_or_not_triggered_n": 0,
+              "censored_or_not_triggered_rate": 0.0,
+              "unique_runs": 8,
+              "unique_trading_days": 4,
+              "independent_roots": 4,
+              "distinct_regimes": 1,
+              "mean_delta_r": 0.21500000000000002,
+              "median_delta_r": 0.21500000000000002,
+              "delta_r_95pct_cluster_bootstrap": [
+                0.20500000000000002,
+                0.225
+              ],
+              "resampling_unit": "independent_root_id",
+              "resampling_cluster_n": 4,
+              "mean_actual_r": 0.3,
+              "median_actual_r": 0.3,
+              "profit_factor_actual": null,
+              "lower_tail_mean_actual_r_5pct": 0.3,
+              "lower_tail_mean_counterfactual_r_5pct": 0.1,
+              "lower_tail_delta_r_5pct": 0.19999999999999998,
+              "mae_r_95pct": null,
+              "mfe_r_median": null,
+              "regime_effects": {
+                "RISK_ON": {
+                  "n": 8,
+                  "mean": 0.21500000000000002,
+                  "median": 0.21500000000000002
+                }
+              },
+              "effect_sign_stable_across_observed_regimes": true
+            },
+            "dependence": {
+              "preferred_cluster_key": "independent_root_id",
+              "fallback_cluster_key": "trading_day",
+              "development_resampling_unit": "independent_root_id",
+              "holdout_resampling_unit": "independent_root_id",
+              "observation_level_bootstrap_used": false
+            },
+            "tail_risk": {
+              "development_lower_tail_delta_r_5pct": 0.19999999999999998,
+              "holdout_lower_tail_delta_r_5pct": 0.19999999999999998,
+              "comparison_available": true
+            },
+            "regime_stability": {
+              "development": {
+                "RISK_ON": {
+                  "n": 8,
+                  "mean": 0.21500000000000002,
+                  "median": 0.21500000000000002
+                }
+              },
+              "holdout": {
+                "RISK_ON": {
+                  "n": 8,
+                  "mean": 0.21500000000000002,
+                  "median": 0.21500000000000002
+                }
+              },
+              "holdout_sign_stable": true
+            },
+            "multiple_testing": {
+              "hypothesis_family_ids": [
+                "HF1"
+              ],
+              "max_declared_hypotheses_tested": 2,
+              "disclosure_complete": true
+            },
+            "chronological_split_attested": true,
+            "execution_profiles": [
+              "E1"
+            ],
+            "note": "Dependence-aware descriptive policy-effect calibration. Independent-root/trading-day cluster resampling is preferred; promotion still requires holdout, tail, multiplicity, stability and validator governance."
+          }
+        },
+        {
+          "name": "authority_cap_and_validity_effects",
+          "pass": true,
+          "detail": {
+            "registry_version": "TEST",
+            "registry_sha256": "579dcef4fc7dc65cee14d153ce13883f37e07ef136b9c26056cfb6d9421219cb",
+            "fundamental_direction": "BULLISH",
+            "v19_d3_permission": "BUY",
+            "final_v20_permission": "BUY",
+            "final_permission": "BUY",
+            "applied_promotion_ids": [
+              "P_VAL",
+              "P_CAP"
+            ],
+            "applied_rule_effects": [
+              {
+                "promotion_id": "P_VAL",
+                "authority_class": "VALIDITY_SHORTEN",
+                "effect": "VALIDITY_SHORTEN",
+                "validity_action": "SHORTEN_TO_NEXT_CAUSAL_REVIEW"
+              },
+              {
+                "promotion_id": "P_CAP",
+                "authority_class": "CONFIDENCE_CAP",
+                "effect": "CONFIDENCE_CAP",
+                "label": "CROWDING_VALIDATED_CAP"
+              }
+            ],
+            "shadow_candidate_ids": [],
+            "fail_closed_reasons": [],
+            "conflicts_resolved": [],
+            "confidence_caps": [
+              "CROWDING_VALIDATED_CAP"
+            ],
+            "validity_action": "SHORTEN_TO_NEXT_CAUSAL_REVIEW"
+          }
+        },
+        {
+          "name": "validated_positive_authority_respects_fundamental_direction",
+          "pass": true,
+          "detail": {
+            "registry_version": "TEST",
+            "registry_sha256": "579dcef4fc7dc65cee14d153ce13883f37e07ef136b9c26056cfb6d9421219cb",
+            "fundamental_direction": "BULLISH",
+            "v19_d3_permission": "NO_TRADE",
+            "final_v20_permission": "BUY",
+            "final_permission": "BUY",
+            "applied_promotion_ids": [
+              "P_CREATE"
+            ],
+            "applied_rule_effects": [
+              {
+                "promotion_id": "P_CREATE",
+                "authority_class": "CREATE_PERMISSION_WITH_EXISTING_FUNDAMENTAL_DIRECTION",
+                "effect": "PERMISSION",
+                "permission": "BUY"
+              }
+            ],
+            "shadow_candidate_ids": [],
+            "fail_closed_reasons": [],
+            "conflicts_resolved": [],
+            "confidence_caps": [],
+            "validity_action": "KEEP_BASE"
+          }
+        },
+        {
+          "name": "risk_constraint_precedes_positive_authority",
+          "pass": true,
+          "detail": {
+            "registry_version": "TEST",
+            "registry_sha256": "579dcef4fc7dc65cee14d153ce13883f37e07ef136b9c26056cfb6d9421219cb",
+            "fundamental_direction": "BULLISH",
+            "v19_d3_permission": "NO_TRADE",
+            "final_v20_permission": "NO_TRADE",
+            "final_permission": "NO_TRADE",
+            "applied_promotion_ids": [
+              "P_STOP"
+            ],
+            "applied_rule_effects": [
+              {
+                "promotion_id": "P_STOP",
+                "authority_class": "SUPPRESS_PERMISSION",
+                "effect": "NO_TRADE"
+              }
+            ],
+            "shadow_candidate_ids": [],
+            "fail_closed_reasons": [
+              "CREATE1: positive authority suppressed by higher-precedence risk constraint"
+            ],
+            "conflicts_resolved": [],
+            "confidence_caps": [],
+            "validity_action": "KEEP_BASE"
+          }
+        }
+      ]
+    },
+    "d3_selftest": {
+      "status": "PASS",
+      "passed": 13,
+      "total": 13,
+      "failed": []
+    },
+    "d2_selftest": {
+      "status": "PASS",
+      "passed": 31,
+      "total": 31,
+      "failed": []
+    },
+    "d1_selftest": {
+      "status": "PASS",
+      "passed": 20,
+      "total": 20,
+      "failed": []
+    },
+    "v16_1_selftest": {
+      "status": "PASS",
+      "count": 21,
+      "checks": [
+        {
+          "name": "deployment_preflight",
+          "pass": true,
+          "output": "{\n  \"status\": \"PASS\",\n  \"mode\": \"deployment\",\n  \"errors\": [],\n  \"warnings\": []\n}\n"
+        },
+        {
+          "name": "runtime_preflight",
+          "pass": true,
+          "output": "{\n  \"status\": \"PASS\",\n  \"mode\": \"runtime\",\n  \"errors\": [],\n  \"warnings\": []\n}\n"
+        },
+        {
+          "name": "emerging_narrative_allows_early_active_with_cap",
+          "pass": true,
+          "output": "{\"fundamental_direction\": \"BULLISH\", \"core_edge_candidate\": \"ACTIVE_CANDIDATE_BULL\", \"research_edge\": \"EDGE_ACTIVE\", \"permission_before_operational_and_portfolio\": \"BUY\", \"confidence_caps\": [\"NARRATIVE_EMERGING\"], \"rule\": \"Fundamental creates direction; Narrative and Timing only clear/constrain.\"}\n"
+        },
+        {
+          "name": "narrative_cannot_upgrade_weak_fundamental",
+          "pass": true,
+          "output": "{'fundamental_direction': 'BULLISH', 'core_edge_candidate': 'BIAS_ONLY', 'research_edge': 'BIAS_ONLY', 'permission_before_operational_and_portfolio': 'NO_TRADE', 'confidence_caps': [], 'rule': 'Fundamental creates direction; Narrative and Timing only clear/constrain.'}"
+        },
+        {
+          "name": "opposing_narrative_does_not_flip_direction",
+          "pass": true,
+          "output": "{'fundamental_direction': 'BULLISH', 'core_edge_candidate': 'BIAS_ONLY', 'research_edge': 'BIAS_ONLY', 'permission_before_operational_and_portfolio': 'NO_TRADE', 'confidence_caps': [], 'rule': 'Fundamental creates direction; Narrative and Timing only clear/constrain.'}"
+        },
+        {
+          "name": "neutral_narrative_is_conditional_not_hard_failure",
+          "pass": true,
+          "output": "{'fundamental_direction': 'BULLISH', 'core_edge_candidate': 'CONDITIONAL_CANDIDATE_BULL', 'research_edge': 'EDGE_CONDITIONAL', 'permission_before_operational_and_portfolio': 'NO_TRADE', 'confidence_caps': [], 'rule': 'Fundamental creates direction; Narrative and Timing only clear/constrain.'}"
+        },
+        {
+          "name": "critical_unknown_holds",
+          "pass": true,
+          "output": "{\n  \"status\": \"PASS\",\n  \"hard_errors\": [],\n  \"issues\": [\n    {\n      \"type\": \"UNKNOWN_DEPENDENCY\",\n      \"materiality\": \"DECISION_CRITICAL\",\n      \"edge\": {\n        \"from\": \"A\",\n        \"to\": \"B\",\n        \"relation\": \"UNKNOWN_DEPENDENCY\"\n      }\n    }\n  ],\n  \"decision_clearance\": \"HOLD\"\n}\n"
+        },
+        {
+          "name": "secondary_unknown_caps_not_blocks",
+          "pass": true,
+          "output": "{'status': 'PASS', 'hard_errors': [], 'issues': [{'type': 'UNKNOWN_DEPENDENCY', 'materiality': 'MATERIAL_SECONDARY', 'edge': {'from': 'A', 'to': 'B', 'relation': 'UNKNOWN_DEPENDENCY'}}], 'decision_clearance': 'CLEAR_WITH_CONFIDENCE_CAP'}"
+        },
+        {
+          "name": "contextual_unknown_does_not_block",
+          "pass": true,
+          "output": "{'status': 'PASS', 'hard_errors': [], 'issues': [{'type': 'UNKNOWN_DEPENDENCY', 'materiality': 'CONTEXTUAL', 'edge': {'from': 'A', 'to': 'B', 'relation': 'UNKNOWN_DEPENDENCY'}}], 'decision_clearance': 'CLEAR'}"
+        },
+        {
+          "name": "missing_clock_drift_blocks_buy",
+          "pass": true,
+          "output": "{'generated_at_utc': '2026-08-08T20:53:49.260417+00:00', 'stage': 'PERMISSION_INGEST', 'entry_requested': True, 'status': 'BLOCK_NEW_ENTRY', 'hard_block': True, 'reasons': ['MISSING_CLOCK_DRIFT_SECONDS'], 'info': []}"
+        },
+        {
+          "name": "no_trade_does_not_create_useless_operational_alarm",
+          "pass": true,
+          "output": "{'generated_at_utc': '2026-08-08T20:53:49.813238+00:00', 'stage': 'PERMISSION_INGEST', 'entry_requested': False, 'status': 'CLEAR', 'hard_block': False, 'reasons': [], 'info': ['NO_ENTRY_REQUESTED']}"
+        },
+        {
+          "name": "stale_quote_blocks_entry_trigger",
+          "pass": true,
+          "output": "{'generated_at_utc': '2026-08-08T20:53:50.395794+00:00', 'stage': 'ENTRY_TRIGGER', 'entry_requested': True, 'status': 'BLOCK_NEW_ENTRY', 'hard_block': True, 'reasons': ['QUOTE_STALE'], 'info': []}"
+        },
+        {
+          "name": "bad_atr_blocks_entry_trigger",
+          "pass": true,
+          "output": "{'generated_at_utc': '2026-08-08T20:53:51.017488+00:00', 'stage': 'ENTRY_TRIGGER', 'entry_requested': True, 'status': 'BLOCK_NEW_ENTRY', 'hard_block': True, 'reasons': ['ATR_INVALID'], 'info': []}"
+        },
+        {
+          "name": "direction_aware_portfolio_netting",
+          "pass": true,
+          "output": "{'mode': 'SHADOW', 'status': 'ALLOW', 'aggregate_signed_factor_risk_units': {'USD': 0.0}, 'unknown_material_exposures': [], 'offsetting_root_exposures': [{'factor': 'USD_ROOT', 'positive_symbols': ['USDJPY'], 'negative_symbols': ['EURUSD']}], 'violations': [], 'shadow_would_block': False, 'covariance_status': 'UNAVAILABLE'}"
+        },
+        {
+          "name": "legacy_retrieval_denied",
+          "pass": true,
+          "output": "{\n  \"status\": \"FAIL\",\n  \"errors\": [\n    \"forbidden production retrieval 59 Asset-Specific Institutional Driver Books/10 USDJPY Institutional Driver Book.md\"\n  ],\n  \"selected\": 29,\n  \"rejected\": [\n    {\n      \"path\": \"59 Asset-Specific Institutional Driver Books/10 USDJPY Institutional Driver Book.md\",\n      \"status\": \"supporting-legacy\"\n    }\n  ]\n}\n"
+        },
+        {
+          "name": "canonical_smallest_sufficient_plan_passes",
+          "pass": true,
+          "output": "{\n  \"status\": \"PASS\",\n  \"errors\": [],\n  \"selected\": 28,\n  \"rejected\": []\n}\n"
+        },
+        {
+          "name": "event_fastpath_frozen_pack_and_release_envelope",
+          "pass": true,
+          "output": "d9a70ebb754a01931d29ae5afb9244f59355bb6eafec34e8ae0be0161cf36d79\n{\n  \"status\": \"PASS\",\n  \"errors\": [],\n  \"phase\": \"PRE_EVENT\",\n  \"now_utc\": \"2026-08-08T20:53:53.921074+00:00\"\n}\n2cb2cbea5c9deb8319e9514415d865a3e6347f556d0c6fbe5db43888cd075fc8\n"
+        },
+        {
+          "name": "calibration_exact_cohort_separates_edge_class",
+          "pass": true,
+          "output": "[{'cohort_level': 'L1_EXACT', 'symbol': 'NASDAQ100', 'horizon': 'SHORT_15_60M', 'core_direction': 'BULLISH', 'edge_class': 'EDGE_ACTIVE', 'timing_gate': 'CLEAR', 'narrative_clearance': 'ALIGNED_EMERGING', 'driver_family': 'RATES', 'narrative_family': 'RATE_RELIEF', 'regime_label': 'R1', 'evidence_quality_band': 'HIGH', 'execution_profile_version': 'DONCHIAN20_M1_4ATR', 'n': 1, 'independent_root_events': 1, 'distinct_regimes': 1, 'status': 'COLD_S"
+        },
+        {
+          "name": "strict_state_semantics_pass",
+          "pass": true,
+          "output": "{\n  \"status\": \"PASS\",\n  \"errors\": []\n}\n"
+        },
+        {
+          "name": "state_validator_rejects_active_without_narrative_clearance",
+          "pass": true,
+          "output": "{\n  \"status\": \"FAIL\",\n  \"errors\": [\n    \"XAUUSD active edge without narrative alignment\"\n  ]\n}\n"
+        },
+        {
+          "name": "manifest_drift_detected",
+          "pass": true,
+          "output": "{\n  \"status\": \"FAIL\",\n  \"errors\": [\n    \"manifest YAML mirror drift\",\n    \"manifest YAML hash drift\"\n  ]\n}\n"
+        }
+      ]
+    },
+    "d4_coverage": {
+      "status": "PASS",
+      "markets_checked": 6,
+      "errors": []
+    },
+    "d3_coverage": {
+      "status": "PASS",
+      "markets": 6,
+      "integration_books": 6,
+      "errors": []
+    },
+    "d2_coverage": {
+      "status": "PASS",
+      "markets": 6,
+      "domains": 5,
+      "cells": 30,
+      "registered_sources": 22,
+      "errors": []
+    },
+    "d1_coverage": {
+      "status": "PASS",
+      "markets": 6,
+      "families": 10,
+      "cells": 60,
+      "errors": []
+    },
+    "d4_cascading_regression_preflight": {
+      "status": "PASS",
+      "mode": "runtime",
+      "checks": [
+        {
+          "name": "manifest_sync",
+          "pass": true
+        },
+        {
+          "name": "d4_selftest",
+          "pass": true
+        },
+        {
+          "name": "d4_coverage",
+          "pass": true
+        },
+        {
+          "name": "d3_regression",
+          "pass": true
+        },
+        {
+          "name": "d2_regression",
+          "pass": true
+        },
+        {
+          "name": "d1_regression",
+          "pass": true
+        },
+        {
+          "name": "v16_regression",
+          "pass": true
+        }
+      ],
+      "errors": []
+    }
+  }
+}

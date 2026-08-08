@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_PreMortem.schema.json",
+  "title": "Alpha Lab V21 Decision Pre-Mortem",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "assumed_action",
+    "failure_paths",
+    "unmonitorable_decision_critical_risk"
+  ],
+  "properties": {
+    "assumed_action": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE",
+        "HOLD"
+      ]
+    },
+    "failure_paths": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "failure_id",
+          "mechanism",
+          "early_warning",
+          "monitorable",
+          "response"
+        ],
+        "properties": {
+          "failure_id": {
+            "type": "string"
+          },
+          "mechanism": {
+            "type": "string"
+          },
+          "early_warning": {
+            "type": "string"
+          },
+          "monitorable": {
+            "type": "boolean"
+          },
+          "response": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "unmonitorable_decision_critical_risk": {
+      "type": "boolean"
+    },
+    "unmonitorable_risk_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

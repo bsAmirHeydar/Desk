@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "loop_phases": [
+    "NONE",
+    "EMERGING",
+    "SELF_REINFORCING",
+    "SATURATING",
+    "EXHAUSTING",
+    "BROKEN",
+    "NEGATIVE_FEEDBACK"
+  ],
+  "loop_polarity": [
+    "POSITIVE",
+    "NEGATIVE",
+    "MIXED",
+    "UNDETERMINED"
+  ],
+  "requirements": [
+    "INITIAL_FACT",
+    "BELIEF_TRANSITION",
+    "BEHAVIOR_CHANGE",
+    "PRICE_OR_FUNDING_EFFECT",
+    "REAL_STATE_OR_BALANCE_SHEET_CONSEQUENCE",
+    "BREAK_CONDITION",
+    "NON_PRICE_EVIDENCE_OR_PREDECLARED_SEQUENCE"
+  ],
+  "price_only_loop_forbidden": true
+}

@@ -23,3 +23,6 @@ Every loop must identify the initial fact, belief transition, behavior change, p
 ## Circularity control
 
 “Price rose because the narrative was strong” is inadmissible when price is also the only evidence of strength. At least one non-price observation or predeclared causal sequence is required to establish the loop.
+
+## V21 loop phase and asymmetry
+V21 records loop phase (`EMERGING`, `SELF_REINFORCING`, `SATURATING`, `EXHAUSTING`, `BROKEN`, `NEGATIVE_FEEDBACK`) and keeps two consequences separate: current reinforcement can strengthen persistence while simultaneously increasing crowding, fragility and future asymmetry risk.

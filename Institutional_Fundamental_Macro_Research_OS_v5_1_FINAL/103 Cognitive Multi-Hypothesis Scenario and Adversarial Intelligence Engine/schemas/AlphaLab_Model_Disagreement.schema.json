@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Model_Disagreement.schema.json",
+  "title": "Alpha Lab V21 Model Disagreement and Unmodeled Driver Risk",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "disagreement_level",
+    "unmodeled_driver_risk",
+    "expected_signatures",
+    "observed_contradictions",
+    "price_used_as_direction_authority",
+    "action"
+  ],
+  "properties": {
+    "disagreement_level": {
+      "enum": [
+        "NONE",
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "DECISION_CRITICAL",
+        "UNDETERMINED"
+      ]
+    },
+    "unmodeled_driver_risk": {
+      "enum": [
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "DECISION_CRITICAL",
+        "UNDETERMINED"
+      ]
+    },
+    "expected_signatures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "observed_contradictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "candidate_missing_drivers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "price_used_as_direction_authority": {
+      "const": false
+    },
+    "action": {
+      "enum": [
+        "NONE",
+        "EARLY_REVIEW",
+        "CONSTRAIN",
+        "HOLD_NO_TRADE",
+        "RESEARCH_ESCALATION"
+      ]
+    }
+  }
+}

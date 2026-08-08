@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Research_Intent.schema.json",
+  "title": "Alpha Lab V21 Rich Research Intent",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "strategy_family",
+    "active_horizon",
+    "fundamental_direction",
+    "edge_state",
+    "urgency",
+    "remaining_asymmetry",
+    "reversal_hazard",
+    "fragility",
+    "chase_policy",
+    "validity_action",
+    "review_trigger",
+    "invalidation_triggers",
+    "cognitive_permission_constraint"
+  ],
+  "properties": {
+    "strategy_family": {
+      "enum": [
+        "FUNDAMENTAL_EDGE",
+        "NO_FUNDAMENTAL_EDGE"
+      ]
+    },
+    "active_horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "fundamental_direction": {
+      "enum": [
+        "STRONGLY_BEARISH",
+        "BEARISH",
+        "NEUTRAL",
+        "BULLISH",
+        "STRONGLY_BULLISH",
+        "MIXED",
+        "UNDETERMINED"
+      ]
+    },
+    "edge_state": {
+      "enum": [
+        "ACTIVE",
+        "CONDITIONAL",
+        "FRAGILE",
+        "CONSTRAINED",
+        "DELAYED",
+        "SUPPRESSED",
+        "NO_EDGE",
+        "INSUFFICIENT_EVIDENCE",
+        "CONTESTED"
+      ]
+    },
+    "urgency": {
+      "enum": [
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "EVENT_FAST_PATH",
+        "UNDETERMINED"
+      ]
+    },
+    "remaining_asymmetry": {
+      "enum": [
+        "VERY_POOR",
+        "POOR",
+        "DEGRADED",
+        "BALANCED",
+        "FAVORABLE",
+        "HIGHLY_FAVORABLE",
+        "UNDETERMINED"
+      ]
+    },
+    "reversal_hazard": {
+      "enum": [
+        "VERY_LOW",
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "VERY_HIGH",
+        "UNDETERMINED"
+      ]
+    },
+    "fragility": {
+      "enum": [
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "VERY_HIGH",
+        "UNDETERMINED"
+      ]
+    },
+    "chase_policy": {
+      "enum": [
+        "ALLOW_WITH_EXECUTION_RULES",
+        "NO_CHASE",
+        "WAIT_FOR_RECONFIRMATION",
+        "NOT_APPLICABLE",
+        "UNDETERMINED"
+      ]
+    },
+    "validity_action": {
+      "type": "string"
+    },
+    "review_trigger": {
+      "type": "string"
+    },
+    "invalidation_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cognitive_permission_constraint": {
+      "enum": [
+        "NONE",
+        "CONSTRAIN",
+        "DELAY",
+        "HOLD_NO_TRADE"
+      ]
+    },
+    "constraint_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outside_strategy_edges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -23,3 +23,6 @@ Use `UNDETERMINED` when the evidence cannot distinguish attention, flow or causa
 - Mechanically related cross-asset evidence: cap confirmation confidence.
 
 Store unavailable inputs, proxy limitations, rival models and the observation that would resolve uncertainty.
+
+## V21 typed uncertainty
+Narrative uncertainty becomes one member of the V21 typed Uncertainty Profile alongside data, measurement, source, causal, model, timing, regime, transmission, execution and calibration uncertainty. These categories are not averaged into one opaque probability.

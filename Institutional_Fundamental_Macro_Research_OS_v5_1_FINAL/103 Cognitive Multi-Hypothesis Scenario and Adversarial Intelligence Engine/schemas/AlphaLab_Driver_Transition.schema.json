@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Driver_Transition.schema.json",
+  "title": "Alpha Lab V21 Driver Transition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "state",
+    "current_driver",
+    "strongest_challenger",
+    "target_horizon",
+    "first_detectable_time_utc",
+    "transition_evidence",
+    "next_resolution_trigger"
+  ],
+  "properties": {
+    "state": {
+      "enum": [
+        "STABLE",
+        "WEAKENING",
+        "CHALLENGED",
+        "TRANSFER",
+        "TAKEOVER",
+        "FRAGMENTED",
+        "RESET",
+        "UNDETERMINED"
+      ]
+    },
+    "current_driver": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "strongest_challenger": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "target_horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "first_detectable_time_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "transition_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_leader": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "failure_trigger": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "next_resolution_trigger": {
+      "type": "string"
+    }
+  }
+}

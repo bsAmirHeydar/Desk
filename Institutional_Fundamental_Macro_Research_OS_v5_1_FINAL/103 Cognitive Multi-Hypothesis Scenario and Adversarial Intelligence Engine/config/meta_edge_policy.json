@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "edge_classes": [
+    "FUNDAMENTAL_EDGE",
+    "MECHANICAL_EDGE",
+    "FORCED_FLOW_EDGE",
+    "EVENT_REPRICING_EDGE",
+    "LIQUIDITY_DISLOCATION_EDGE",
+    "RELATIVE_VALUE_EDGE",
+    "UNCLASSIFIED_EDGE",
+    "NO_EDGE"
+  ],
+  "fundamental_strategy_permission_classes": [
+    "FUNDAMENTAL_EDGE"
+  ],
+  "outside_strategy_behavior": "REPORT_AND_ROUTE_TO_SEPARATE_RESEARCH_ONLY",
+  "outside_strategy_edge_cannot_create_fundamental_permission": true,
+  "purpose": "Distinguish no edge from an edge that exists outside the current Fundamental strategy mandate."
+}

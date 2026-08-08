@@ -23,3 +23,6 @@ DXY and EURUSD, cash index and futures, or front-end yields and policy-implied r
 For each narrative predeclare the expected sequence. Example: Fed-path revision → front-end rates → real yields → Nasdaq duration valuation. If the target moves without the leader, downgrade causal confidence or activate a flow/rival model.
 
 The graph can show different narratives controlling different nodes. It must not force one global market story.
+
+## V21 dynamic causal graph
+V21 distinguishes the canonical possibility graph from the run-specific graph. Every material edge receives an active/dormant/weakening/broken/uncertain state and a horizon. Same-root independence is deduplicated while distinct channels are retained.

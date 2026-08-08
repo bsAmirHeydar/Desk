@@ -4,7 +4,7 @@ import argparse,json,subprocess,sys
 p=argparse.ArgumentParser();p.add_argument('--vault-root',required=True);p.add_argument('--mode',choices=['runtime','deployment'],default='runtime');a=p.parse_args();r=Path(a.vault_root);e=[];checks=[]
 try:m=json.loads((r/'CURRENT_PRODUCTION_MANIFEST.json').read_text())
 except Exception as x:m={};e.append('MANIFEST_PARSE '+str(x))
-if m.get('current_stack') not in {'V19.0.0','V20.0.0'}:e.append('CURRENT_STACK_NOT_V19_OR_V20')
+if m.get('current_stack') not in {'V19.0.0','V20.0.0','V21.0.0'}:e.append('CURRENT_STACK_NOT_V19_TO_V21')
 if m.get('fact_constitution_version')!='1.1.0':e.append('FACT_CONSTITUTION_DRIFT')
 if m.get('decision_authority',{}).get('direction')!='FUNDAMENTAL_ONLY':e.append('DIRECTION_AUTHORITY_DRIFT')
 d3=m.get('d3_unified_edge') or {}

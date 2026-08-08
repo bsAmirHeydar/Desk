@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "scenario_count": {
+    "preferred_min": 2,
+    "preferred_max": 6
+  },
+  "roles": [
+    "BASE",
+    "EXTENSION",
+    "ADVERSE",
+    "TAIL",
+    "ALTERNATIVE_REGIME",
+    "MECHANICAL_PATH"
+  ],
+  "plausibility_bands": [
+    "PRIMARY",
+    "COMPETITIVE",
+    "SECONDARY",
+    "TAIL",
+    "UNRESOLVED"
+  ],
+  "required_fields": [
+    "SCENARIO_ID",
+    "SOURCE_HYPOTHESES",
+    "HORIZON",
+    "REQUIRED_CONDITIONS",
+    "EARLY_INDICATORS",
+    "CONFIRMATION_TRIGGERS",
+    "INVALIDATION_TRIGGERS",
+    "EXPECTED_LEADERS",
+    "EXPECTED_MARKET_SIGNATURE",
+    "TRANSITION_PATHS"
+  ],
+  "numeric_scenario_probability_authorized": false,
+  "rules": [
+    "SCENARIOS_MUST_BE_PRE_OUTCOME",
+    "SCENARIOS_MUST_HAVE_OBSERVABLE_TRIGGERS",
+    "TAIL_SCENARIOS_RETAINED_WHEN_IMPACT_IS_MATERIAL",
+    "PERMISSION_IMPLICATION_IS_NOT_DIRECTION_AUTHORITY"
+  ]
+}

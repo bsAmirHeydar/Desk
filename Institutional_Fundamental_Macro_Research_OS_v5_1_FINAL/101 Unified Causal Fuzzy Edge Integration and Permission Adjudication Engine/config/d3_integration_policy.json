@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "release": "V19.0.0",
+  "version": "1.1.0",
+  "release": "V21.0.0-Cognitive-Hardening",
   "deployment": "D3",
   "authority_mode": "ENFORCED_CAUSAL_MODULATION",
   "direction_authority": "FUNDAMENTAL_ONLY",
@@ -66,6 +66,15 @@
     "mechanics_not_fundamental_direction": true,
     "capacity_not_directional": true,
     "model_inference_lower_authority_than_identified_fact": true,
-    "d3_extension_cannot_outlive_upstream_expiry": true
+    "d3_extension_cannot_outlive_upstream_expiry": true,
+    "same_root_channels_must_be_preserved": true,
+    "deduplicate_independence_not_effects": true,
+    "contested_root_cannot_count_as_clean_support": true,
+    "market_disagreement_is_diagnostic_not_directional": true
+  },
+  "cognitive_handoff": {
+    "module": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine",
+    "mode": "OPTIONAL_IN_LEGACY_V19_V20_REQUIRED_IN_V21_PRODUCTION",
+    "pre_d3_permission_may_be_cognitively_constrained": true
   }
 }

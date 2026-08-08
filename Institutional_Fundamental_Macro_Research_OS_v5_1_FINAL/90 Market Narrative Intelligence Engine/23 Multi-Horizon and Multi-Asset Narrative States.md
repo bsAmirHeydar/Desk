@@ -21,3 +21,6 @@ Long-horizon narratives provide priors, not automatic tactical signals. A flow n
 For every asset/horizon report dominant narrative, challenger, attention state, leaders, validity, persistence, fact persistence, consumption, remaining power, saturation, fragility and transition trigger.
 
 Conflicts remain explicit; never average incompatible horizons.
+
+## V21 active strategy horizon
+The final Fundamental permission is tied to an explicit active strategy horizon. Narrative states may differ across horizons and can describe tactical path control without silently changing the Fundamental Direction Tensor.

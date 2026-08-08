@@ -13,3 +13,6 @@ Reports must disclose:
 - unresolved dependence limitations.
 
 Sample floors are governance gates, not statistical proof.
+
+## V21 executable enforcement
+`alphalab_d4_calibrate.py` now reports raw N, realized N, censored/no-trigger N, unique runs, unique trading days, independent roots, the actual resampling unit, cluster count and whether observation-level fallback was used. Positive-authority review cannot claim dependence-aware evidence when root clusters existed but were ignored.

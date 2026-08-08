@@ -1,0 +1,89 @@
+{
+  "version": "1.0.0",
+  "cases": [
+    {
+      "id": "C01",
+      "name": "Competing dovish-vs-growth hypotheses",
+      "expected": "CONTESTED_ALLOWED_NO_FORCED_WINNER",
+      "topic": "COMPETING_HYPOTHESES"
+    },
+    {
+      "id": "C02",
+      "name": "Cross-horizon USDJPY intervention",
+      "expected": "HORIZON_DIRECTIONS_SEPARATE",
+      "topic": "CROSS_HORIZON"
+    },
+    {
+      "id": "C03",
+      "name": "Economic vs market surprise sign difference",
+      "expected": "BOTH_STATES_PRESERVED",
+      "topic": "SURPRISE"
+    },
+    {
+      "id": "C04",
+      "name": "One CPI root two opposite channels",
+      "expected": "ONE_ROOT_MULTI_CHANNEL_CONTESTED",
+      "topic": "SAME_ROOT_MULTI_CHANNEL"
+    },
+    {
+      "id": "C05",
+      "name": "Price contradicts expected leaders",
+      "expected": "UNMODELED_DRIVER_RISK_NOT_DIRECTION_FLIP",
+      "topic": "MODEL_DISAGREEMENT"
+    },
+    {
+      "id": "C06",
+      "name": "Mechanical edge outside Fundamental strategy",
+      "expected": "ROUTE_ONLY_NO_PERMISSION",
+      "topic": "OUTSIDE_STRATEGY"
+    },
+    {
+      "id": "C07",
+      "name": "Decision-critical causal uncertainty",
+      "expected": "NO_TRADE_HOLD",
+      "topic": "CRITICAL_UNCERTAINTY"
+    },
+    {
+      "id": "C08",
+      "name": "Scenario tree with adverse tail",
+      "expected": "2_TO_6_PATHS_WITH_TRIGGERS",
+      "topic": "SCENARIO_TREE"
+    },
+    {
+      "id": "C09",
+      "name": "Thesis Destroyer rejects unsupported base case",
+      "expected": "NO_TRADE",
+      "topic": "ADVERSARIAL"
+    },
+    {
+      "id": "C10",
+      "name": "Pre-mortem unmonitorable critical risk",
+      "expected": "NO_TRADE",
+      "topic": "PREMORTEM"
+    },
+    {
+      "id": "C11",
+      "name": "Global same-root inconsistency",
+      "expected": "REVIEW_FLAG_NO_DIRECTION_OVERRIDE",
+      "topic": "GLOBAL_RECONCILIATION"
+    },
+    {
+      "id": "C12",
+      "name": "Quiet-day minimum sufficient explanation",
+      "expected": "LEAN_VALID_ANALYSIS",
+      "topic": "QUIET_DAY"
+    },
+    {
+      "id": "C13",
+      "name": "Event fast path driver takeover",
+      "expected": "SCENARIO_TRANSITION_AND_RECHECK",
+      "topic": "EVENT_DRIVER_TRANSITION"
+    },
+    {
+      "id": "C14",
+      "name": "Outside-strategy forced-flow edge with neutral fundamental",
+      "expected": "FUNDAMENTAL_NO_TRADE_OUTSIDE_EDGE_REPORTED",
+      "topic": "OUTSIDE_STRATEGY"
+    }
+  ]
+}

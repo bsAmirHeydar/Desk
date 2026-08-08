@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "release": "V21.0.0",
+  "mode": "ENFORCED_COGNITIVE_HARDENING",
+  "purpose": "Multi-hypothesis, multi-horizon, scenario-aware, adversarial causal reasoning without changing the Fundamental-only direction authority of the Fundamental strategy.",
+  "authority": {
+    "direction_source": "MODULE_89_FUNDAMENTAL_HORIZON_STATE_ONLY",
+    "direction_flip_allowed": false,
+    "positive_permission_creation_by_module_103": false,
+    "outside_strategy_edge_permission_effect": "NONE",
+    "market_price_as_direction_authority": false,
+    "market_price_as_model_diagnostic": true,
+    "decision_critical_contested_state_action": "NO_TRADE_OR_HOLD",
+    "decision_critical_unmodeled_driver_action": "NO_TRADE_OR_HOLD"
+  },
+  "cognitive_loop": [
+    "INDEPENDENT_STATE_BUILD",
+    "COMPETING_HYPOTHESES",
+    "HORIZON_TENSOR",
+    "EXPECTATION_SURPRISE",
+    "POLICY_REACTION",
+    "REGIME_CONDITIONING",
+    "DYNAMIC_CAUSAL_GRAPH",
+    "ROOT_CHANNEL_FUSION",
+    "REFLEXIVITY",
+    "CONSUMPTION_REMAINING_ASYMMETRY",
+    "SCENARIO_TREE",
+    "DRIVER_TRANSITION",
+    "MODEL_DISAGREEMENT",
+    "CROSS_ASSET_RECONCILIATION",
+    "THESIS_BUILDER",
+    "THESIS_DESTROYER",
+    "PRE_MORTEM",
+    "UTILITY_ADJUDICATION",
+    "RESEARCH_INTENT",
+    "PERMISSION_ADAPTER",
+    "D4_LEARNING_HANDOFF"
+  ],
+  "anti_shortcut_rules": [
+    "NO_SINGLE_STORY_LOCK_BEFORE_RIVAL_HYPOTHESIS_TEST",
+    "NO_NUMERIC_SCENARIO_PROBABILITIES_UNLESS_EMPIRICALLY_CALIBRATED",
+    "NO_CROSS_HORIZON_DIRECTION_COPYING",
+    "NO_PRICE_MOVE_AS_CAUSAL_PROOF",
+    "NO_SAME_ROOT_DESCENDANT_MULTIPLICATION",
+    "NO_UNEXPLAINED_MARKET_DISAGREEMENT_RATIONALIZATION",
+    "NO_MECHANICAL_OR_FLOW_EDGE_RELABELED_AS_FUNDAMENTAL_DIRECTION",
+    "NO_COMPLEXITY_FOR_ITS_OWN_SAKE",
+    "NO_PERMISSION_WHEN_DECISION_CRITICAL_CONTRADICTION_REMAINS_UNRESOLVED"
+  ]
+}

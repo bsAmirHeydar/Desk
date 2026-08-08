@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "required_red_team_questions": [
+    "STRONGEST_RIVAL_HYPOTHESIS",
+    "STRONGEST_CONTRADICTORY_FACT",
+    "SAME_ROOT_DOUBLE_COUNT_RISK",
+    "MISSING_DRIVER_CANDIDATE",
+    "MARKET_SIGNATURE_CONTRADICTION",
+    "REGIME_MAPPING_FAILURE",
+    "POST_HOC_RATIONALIZATION_RISK",
+    "WHAT_WOULD_FALSIFY",
+    "WHAT_CANNOT_BE_MONITORED"
+  ],
+  "adjudication_states": [
+    "THESIS_SURVIVES",
+    "THESIS_SURVIVES_CONSTRAINED",
+    "CONTESTED",
+    "REJECTED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "premortem_min_failure_paths": 3,
+  "premortem_max_failure_paths": 7,
+  "unmonitorable_decision_critical_risk_action": "NO_TRADE_OR_HOLD"
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Reflexivity_State.schema.json",
+  "title": "Alpha Lab V21 Reflexivity State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "loops",
+    "aggregate_phase",
+    "price_only_inference_used"
+  ],
+  "properties": {
+    "loops": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "loop_id",
+          "initial_fact",
+          "belief_transition",
+          "behavior_change",
+          "price_or_funding_effect",
+          "real_state_consequence",
+          "break_condition",
+          "polarity",
+          "phase"
+        ],
+        "properties": {
+          "loop_id": {
+            "type": "string"
+          },
+          "initial_fact": {
+            "type": "string"
+          },
+          "belief_transition": {
+            "type": "string"
+          },
+          "behavior_change": {
+            "type": "string"
+          },
+          "price_or_funding_effect": {
+            "type": "string"
+          },
+          "real_state_consequence": {
+            "type": "string"
+          },
+          "alternative_explanation": {
+            "type": "string"
+          },
+          "break_condition": {
+            "type": "string"
+          },
+          "polarity": {
+            "enum": [
+              "POSITIVE",
+              "NEGATIVE",
+              "MIXED",
+              "UNDETERMINED"
+            ]
+          },
+          "phase": {
+            "enum": [
+              "NONE",
+              "EMERGING",
+              "SELF_REINFORCING",
+              "SATURATING",
+              "EXHAUSTING",
+              "BROKEN",
+              "NEGATIVE_FEEDBACK"
+            ]
+          }
+        }
+      }
+    },
+    "aggregate_phase": {
+      "enum": [
+        "NONE",
+        "EMERGING",
+        "SELF_REINFORCING",
+        "SATURATING",
+        "EXHAUSTING",
+        "BROKEN",
+        "MIXED",
+        "UNDETERMINED"
+      ]
+    },
+    "price_only_inference_used": {
+      "const": false
+    }
+  }
+}

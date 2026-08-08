@@ -1,0 +1,156 @@
+{
+  "version": "1.0.0",
+  "markets": {
+    "XAUUSD": {
+      "primary_horizons": [
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "special_hypotheses": [
+        "REAL_YIELD",
+        "USD",
+        "CENTRAL_BANK_DEMAND",
+        "PHYSICAL_BALANCE",
+        "SAFE_HAVEN",
+        "FUNDING_LIQUIDATION"
+      ],
+      "cross_asset_leaders": [
+        "US_REAL_YIELDS",
+        "DXY",
+        "UST_VOLATILITY"
+      ],
+      "outside_strategy_edges": [
+        "COMEX_MECHANICAL",
+        "LIQUIDATION"
+      ]
+    },
+    "NASDAQ100": {
+      "primary_horizons": [
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "special_hypotheses": [
+        "RATE_DURATION",
+        "EARNINGS_REVISION",
+        "AI_CAPEX",
+        "CREDIT",
+        "DEALER_OPTIONS",
+        "SYSTEMATIC_FLOW",
+        "TREASURY_SUPPLY"
+      ],
+      "cross_asset_leaders": [
+        "US2Y",
+        "US10Y_REAL",
+        "DXY",
+        "CREDIT_SPREADS",
+        "VIX"
+      ],
+      "outside_strategy_edges": [
+        "GAMMA",
+        "PASSIVE_REBALANCE",
+        "FORCED_DELEVERAGING"
+      ]
+    },
+    "SP500": {
+      "primary_horizons": [
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "special_hypotheses": [
+        "RATES",
+        "EARNINGS",
+        "BREADTH",
+        "CREDIT",
+        "BUYBACK",
+        "PASSIVE_FLOW",
+        "FISCAL_SUPPLY"
+      ],
+      "cross_asset_leaders": [
+        "US2Y",
+        "US10Y",
+        "CREDIT_SPREADS",
+        "VIX"
+      ],
+      "outside_strategy_edges": [
+        "ZERO_DTE",
+        "REBALANCE",
+        "DELEVERAGING"
+      ]
+    },
+    "DJIA": {
+      "primary_horizons": [
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "special_hypotheses": [
+        "CYCLICAL_GROWTH",
+        "RATES",
+        "CONSTITUENT_EARNINGS",
+        "PRICE_WEIGHTED_MECHANICS"
+      ],
+      "cross_asset_leaders": [
+        "US2Y",
+        "INDUSTRIAL_CYCLICALS",
+        "CREDIT_SPREADS"
+      ],
+      "outside_strategy_edges": [
+        "CONSTITUENT_MECHANICAL"
+      ]
+    },
+    "EURUSD": {
+      "primary_horizons": [
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "special_hypotheses": [
+        "ECB_VS_FED",
+        "GROWTH_DIFFERENTIAL",
+        "INFLATION_DIFFERENTIAL",
+        "TERMS_OF_TRADE",
+        "USD_FUNDING",
+        "INTERVENTION_OR_POLICY_COMMUNICATION"
+      ],
+      "cross_asset_leaders": [
+        "EUR_RATES",
+        "US_RATES",
+        "DXY",
+        "CROSS_CURRENCY_BASIS"
+      ],
+      "outside_strategy_edges": [
+        "FIXING",
+        "FORCED_HEDGING"
+      ]
+    },
+    "USDJPY": {
+      "primary_horizons": [
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "special_hypotheses": [
+        "FED_VS_BOJ",
+        "REAL_RATE_DIFFERENTIAL",
+        "CARRY",
+        "JAPAN_WAGES_INFLATION",
+        "INTERVENTION",
+        "HEDGING"
+      ],
+      "cross_asset_leaders": [
+        "US_RATES",
+        "JGB_YIELDS",
+        "DXY",
+        "JPY_VOLATILITY"
+      ],
+      "outside_strategy_edges": [
+        "INTERVENTION",
+        "FIXING",
+        "CARRY_UNWIND"
+      ]
+    }
+  }
+}

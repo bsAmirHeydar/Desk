@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Meta_Edge_Router.schema.json",
+  "title": "Alpha Lab V21 Meta Edge Router",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "primary_edge_class",
+    "detected_edges",
+    "fundamental_strategy_edge_class",
+    "outside_strategy_edges",
+    "outside_strategy_permission_effect"
+  ],
+  "properties": {
+    "primary_edge_class": {
+      "enum": [
+        "FUNDAMENTAL_EDGE",
+        "MECHANICAL_EDGE",
+        "FORCED_FLOW_EDGE",
+        "EVENT_REPRICING_EDGE",
+        "LIQUIDITY_DISLOCATION_EDGE",
+        "RELATIVE_VALUE_EDGE",
+        "UNCLASSIFIED_EDGE",
+        "NO_EDGE"
+      ]
+    },
+    "detected_edges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fundamental_strategy_edge_class": {
+      "enum": [
+        "FUNDAMENTAL_EDGE",
+        "NO_EDGE"
+      ]
+    },
+    "outside_strategy_edges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outside_strategy_permission_effect": {
+      "const": "NONE"
+    },
+    "research_routes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

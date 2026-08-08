@@ -40,7 +40,8 @@
       }
     },
     "created_at_utc": {
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     }
   },
   "additionalProperties": false

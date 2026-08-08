@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0",
+  "dimensions": [
+    "DATA",
+    "MEASUREMENT",
+    "SOURCE",
+    "CAUSAL",
+    "MODEL",
+    "TIMING",
+    "REGIME",
+    "NARRATIVE",
+    "TRANSMISSION",
+    "EXECUTION",
+    "CALIBRATION"
+  ],
+  "levels": [
+    "LOW",
+    "MODERATE",
+    "HIGH",
+    "DECISION_CRITICAL",
+    "UNKNOWN"
+  ],
+  "aggregation": "NON_ADDITIVE",
+  "rules": {
+    "decision_critical_data": "HOLD_OR_NO_TRADE",
+    "decision_critical_causal": "CONTESTED_AND_HOLD",
+    "decision_critical_model": "UNMODELED_DRIVER_ESCALATION",
+    "high_timing": "DELAY_OR_SHORTEN_VALIDITY",
+    "high_regime": "SCENARIO_SPLIT_AND_NO_UNCONDITIONAL_MAPPING",
+    "high_narrative": "KEEP_CHALLENGER_ACTIVE_AND_EARLY_REVIEW",
+    "high_execution": "RESEARCH_EDGE_MAY_SURVIVE_BUT_EXECUTION_PERMISSION_CAN_BLOCK"
+  },
+  "single_confidence_score_required": false
+}

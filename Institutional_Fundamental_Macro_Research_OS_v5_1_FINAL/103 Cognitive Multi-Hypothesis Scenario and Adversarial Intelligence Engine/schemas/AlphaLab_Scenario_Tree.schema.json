@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Scenario_Tree.schema.json",
+  "title": "Alpha Lab V21 Scenario Tree",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "as_of_utc",
+    "active_horizon",
+    "tree_state",
+    "scenarios",
+    "numeric_probabilities_used"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0.0"
+    },
+    "as_of_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active_horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "tree_state": {
+      "enum": [
+        "PRIMARY_SCENARIO_IDENTIFIED",
+        "MULTIPLE_COMPETITIVE",
+        "CONTESTED",
+        "FRAGMENTED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "scenarios": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scenario_id",
+          "role",
+          "source_hypothesis_ids",
+          "plausibility_band",
+          "horizon",
+          "direction",
+          "required_conditions",
+          "early_indicators",
+          "confirmation_triggers",
+          "invalidation_triggers",
+          "expected_leaders",
+          "expected_market_signature",
+          "transition_paths"
+        ],
+        "properties": {
+          "scenario_id": {
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "BASE",
+              "EXTENSION",
+              "ADVERSE",
+              "TAIL",
+              "ALTERNATIVE_REGIME",
+              "MECHANICAL_PATH"
+            ]
+          },
+          "source_hypothesis_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "plausibility_band": {
+            "enum": [
+              "PRIMARY",
+              "COMPETITIVE",
+              "SECONDARY",
+              "TAIL",
+              "UNRESOLVED"
+            ]
+          },
+          "horizon": {
+            "enum": [
+              "MICRO_0_15M",
+              "SHORT_15_60M",
+              "SESSION_1_6H",
+              "DAILY_OPEN_TO_CLOSE",
+              "MULTI_DAY_2_10D",
+              "SWING_2_8W",
+              "CYCLICAL",
+              "STRUCTURAL"
+            ]
+          },
+          "direction": {
+            "enum": [
+              "STRONGLY_BEARISH",
+              "BEARISH",
+              "NEUTRAL",
+              "BULLISH",
+              "STRONGLY_BULLISH",
+              "MIXED",
+              "UNDETERMINED"
+            ]
+          },
+          "required_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "early_indicators": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confirmation_triggers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "invalidation_triggers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "expected_leaders": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "expected_market_signature": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "permission_implication": {
+            "enum": [
+              "SUPPORT_EXISTING",
+              "CONSTRAIN_EXISTING",
+              "DELAY_EXISTING",
+              "BLOCK_EXISTING",
+              "OUTSIDE_STRATEGY",
+              "NONE"
+            ]
+          },
+          "transition_paths": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "to_scenario_id",
+                "trigger"
+              ],
+              "properties": {
+                "to_scenario_id": {
+                  "type": "string"
+                },
+                "trigger": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "numeric_probabilities_used": {
+      "const": false
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Causal_Graph.schema.json",
+  "title": "Alpha Lab V21 Dynamic Causal Graph",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "graph_id",
+    "as_of_utc",
+    "horizon",
+    "nodes",
+    "edges",
+    "root_channel_maps",
+    "graph_state"
+  ],
+  "properties": {
+    "graph_id": {
+      "type": "string"
+    },
+    "as_of_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "node_id",
+          "node_type",
+          "label"
+        ],
+        "properties": {
+          "node_id": {
+            "type": "string"
+          },
+          "node_type": {
+            "enum": [
+              "FACT",
+              "EXPECTATION",
+              "POLICY",
+              "RATE",
+              "FX",
+              "CREDIT",
+              "VOLATILITY",
+              "LIQUIDITY",
+              "POSITIONING",
+              "FLOW",
+              "MECHANIC",
+              "NARRATIVE",
+              "ASSET",
+              "REAL_STATE",
+              "UNKNOWN"
+            ]
+          },
+          "label": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "edge_id",
+          "from_node",
+          "to_node",
+          "edge_type",
+          "state",
+          "horizon",
+          "evidence"
+        ],
+        "properties": {
+          "edge_id": {
+            "type": "string"
+          },
+          "from_node": {
+            "type": "string"
+          },
+          "to_node": {
+            "type": "string"
+          },
+          "edge_type": {
+            "enum": [
+              "CAUSAL",
+              "TRANSMISSION",
+              "REFLEXIVE",
+              "MECHANICAL",
+              "FLOW",
+              "FUNDING",
+              "CONFIRMATION",
+              "CORRELATED",
+              "ATTENTION",
+              "UNCERTAIN"
+            ]
+          },
+          "state": {
+            "enum": [
+              "ACTIVE",
+              "DORMANT",
+              "WEAKENING",
+              "BROKEN",
+              "UNCERTAIN"
+            ]
+          },
+          "horizon": {
+            "enum": [
+              "MICRO_0_15M",
+              "SHORT_15_60M",
+              "SESSION_1_6H",
+              "DAILY_OPEN_TO_CLOSE",
+              "MULTI_DAY_2_10D",
+              "SWING_2_8W",
+              "CYCLICAL",
+              "STRUCTURAL"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "root_channel_maps": {
+      "type": "array",
+      "items": {
+        "$ref": "AlphaLab_Root_Channel_Map.schema.json"
+      }
+    },
+    "graph_state": {
+      "enum": [
+        "COHERENT",
+        "CONTESTED",
+        "FRAGMENTED",
+        "BROKEN",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    }
+  }
+}

@@ -34,3 +34,6 @@ D4 governance is live, but the shipped promotion registry contains **zero new po
 4. [[13 Promotion Lifecycle and Scientific States]]
 5. [[21 Promotion Registry and Runtime Authority]]
 6. [[31 V20 D4 Full-Vault Production Prompt]]
+
+## V21 cognitive-learning extension
+D4 remains the empirical judge after Cognitive Hardening. V21 adds forward fields for hypothesis tournaments, scenario transitions, typed uncertainties, unmodeled-driver alerts, adversarial review, pre-mortem paths, utility states, interaction hypotheses and outside-strategy edge detections. None receive positive authority without D4 evidence.

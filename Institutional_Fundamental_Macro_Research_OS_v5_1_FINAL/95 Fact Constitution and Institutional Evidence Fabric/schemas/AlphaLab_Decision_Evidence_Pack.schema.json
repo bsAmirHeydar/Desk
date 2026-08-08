@@ -31,7 +31,15 @@
       "format": "date-time"
     },
     "manifest_version": {
-      "const": "17.0.0"
+      "type": "string",
+      "enum": [
+        "17.0.0",
+        "18.0.0",
+        "19.0.0",
+        "20.0.0",
+        "21.0.0"
+      ],
+      "description": "Runtime stack version at the decision cutoff. The D1 schema itself is versioned separately."
     },
     "fact_records": {
       "type": "array",
@@ -50,6 +58,19 @@
     },
     "future_vintages_excluded": {
       "const": true
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "runtime_stack_version": {
+      "type": "string",
+      "enum": [
+        "17.0.0",
+        "18.0.0",
+        "19.0.0",
+        "20.0.0",
+        "21.0.0"
+      ]
     }
   }
 }

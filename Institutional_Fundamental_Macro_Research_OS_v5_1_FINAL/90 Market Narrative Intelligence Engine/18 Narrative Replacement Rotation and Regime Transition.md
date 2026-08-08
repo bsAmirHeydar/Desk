@@ -21,3 +21,6 @@ A transition requires an outgoing narrative, incoming candidate, first detectabl
 ## Regime transition
 
 A structural regime change is not merely a new headline. It alters the mapping between facts, expectations and asset sensitivity. When old reaction functions fail repeatedly, downgrade historical analogues and reopen the model tournament.
+
+## V21 driver-transition state machine
+Module 103 converts transition logic into a runtime state machine: `STABLE → WEAKENING → CHALLENGED → TRANSFER → TAKEOVER`, with `FRAGMENTED`, `RESET` and `UNDETERMINED` alternatives. The outgoing driver, incoming challenger, first detectable time, expected leader and transition trigger are explicit.

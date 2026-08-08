@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "objective": "ASYMMETRIC_DECISION_UTILITY_NOT_DIRECTION_ACCURACY",
+  "dimensions": [
+    "UPSIDE_POTENTIAL",
+    "DOWNSIDE_SEVERITY",
+    "MISSED_OPPORTUNITY_COST",
+    "FALSE_PERMISSION_COST",
+    "DELAY_COST",
+    "PATH_ASYMMETRY",
+    "GAP_RISK",
+    "REVERSIBILITY",
+    "URGENCY",
+    "CAPITAL_OPTIONALITY"
+  ],
+  "bands": [
+    "VERY_LOW",
+    "LOW",
+    "MODERATE",
+    "HIGH",
+    "VERY_HIGH",
+    "UNDETERMINED"
+  ],
+  "numeric_expected_utility_authorized": false,
+  "rules": [
+    "DO_NOT_OPTIMIZE_WIN_RATE_ALONE",
+    "NO_TRADE_HAS_OPPORTUNITY_COST",
+    "RISK_REDUCING_VETO_MUST_BE_JUDGED_AGAINST_MISSED_WINNERS",
+    "UTILITY_DOES_NOT_CREATE_DIRECTION"
+  ]
+}

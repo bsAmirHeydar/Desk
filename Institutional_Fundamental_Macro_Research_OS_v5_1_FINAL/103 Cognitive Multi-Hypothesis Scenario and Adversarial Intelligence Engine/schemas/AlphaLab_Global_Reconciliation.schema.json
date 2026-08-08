@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Global_Reconciliation.schema.json",
+  "title": "Alpha Lab V21 Cross-Asset Global Reconciliation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "state",
+    "market_intents",
+    "implied_global_roots",
+    "inconsistencies",
+    "direction_override_applied"
+  ],
+  "properties": {
+    "state": {
+      "enum": [
+        "COHERENT",
+        "MULTI_DRIVER_BUT_COHERENT",
+        "LOCAL_DIVERGENCE_EXPLAINED",
+        "INCONSISTENT",
+        "CONTESTED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "market_intents": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "implied_global_roots": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inconsistencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "resolution_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "direction_override_applied": {
+      "const": false
+    }
+  }
+}

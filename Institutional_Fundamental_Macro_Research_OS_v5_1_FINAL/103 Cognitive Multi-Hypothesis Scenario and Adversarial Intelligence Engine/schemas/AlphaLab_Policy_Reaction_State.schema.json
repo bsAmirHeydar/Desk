@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Policy_Reaction_State.schema.json",
+  "title": "Alpha Lab V21 Policy Reaction Function",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "policy_authority",
+    "as_of_utc",
+    "sensitivities",
+    "dominant_constraints",
+    "reaction_function_state",
+    "next_reassessment_trigger"
+  ],
+  "properties": {
+    "policy_authority": {
+      "type": "string"
+    },
+    "as_of_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sensitivities": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": [
+          "VERY_LOW",
+          "LOW",
+          "MODERATE",
+          "HIGH",
+          "VERY_HIGH",
+          "UNDETERMINED"
+        ]
+      }
+    },
+    "dominant_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reaction_function_state": {
+      "enum": [
+        "STABLE",
+        "SHIFTING",
+        "ASYMMETRIC",
+        "CONFLICTED",
+        "UNDETERMINED"
+      ]
+    },
+    "next_reassessment_trigger": {
+      "type": "string"
+    }
+  }
+}

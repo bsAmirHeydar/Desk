@@ -3,7 +3,7 @@
   "$id": "AlphaLab_D3_Integration_Input.schema.json",
   "title": "Alpha Lab D3 Integration Input",
   "type": "object",
-  "additionalProperties": true,
+  "additionalProperties": false,
   "required": [
     "version",
     "instrument",
@@ -15,7 +15,10 @@
   ],
   "properties": {
     "version": {
-      "const": "1.0.0"
+      "enum": [
+        "1.0.0",
+        "1.1.0"
+      ]
     },
     "instrument": {
       "enum": [
@@ -28,7 +31,8 @@
       ]
     },
     "analysis_cutoff_utc": {
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "fundamental_direction": {
       "type": "string"
@@ -89,6 +93,30 @@
         "string",
         "null"
       ]
+    },
+    "cognitive_context": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "cognitive_state": {
+          "type": "string"
+        },
+        "tournament_state": {
+          "type": "string"
+        },
+        "scenario_state": {
+          "type": "string"
+        },
+        "unmodeled_driver_risk": {
+          "type": "string"
+        },
+        "root_channel_maps": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
     }
   }
 }

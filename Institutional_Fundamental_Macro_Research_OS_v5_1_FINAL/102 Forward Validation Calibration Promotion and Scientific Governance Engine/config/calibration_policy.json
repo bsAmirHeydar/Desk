@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "primary_paired_metric": "delta_realized_r",
   "descriptive_metrics": [
     "mean_r",
@@ -22,7 +22,9 @@
     "iterations": 2000,
     "preferred_cluster_key": "independent_root_id",
     "fallback_cluster_key": "trading_day",
-    "last_resort": "observation"
+    "last_resort": "observation",
+    "cluster_equal_weighting": true,
+    "observation_level_fallback_must_be_labeled": true
   },
   "reference_class_backoff": [
     "exact",
@@ -32,5 +34,26 @@
     "market_family",
     "global_descriptive_only"
   ],
-  "numeric_predictive_probability_authorized": false
+  "numeric_predictive_probability_authorized": false,
+  "censoring": {
+    "not_triggered_states": [
+      "NOT_TRIGGERED",
+      "CENSORED",
+      "EXPIRED_WITHOUT_TRIGGER"
+    ],
+    "exclude_from_realized_trade_r": true,
+    "report_rate_required": true
+  },
+  "cognitive_v21_fields": [
+    "hypothesis_tournament_state",
+    "scenario_tree_state",
+    "uncertainty_dimensions",
+    "unmodeled_driver_risk",
+    "adversarial_adjudication",
+    "premortem_failure_ids",
+    "utility_state",
+    "complexity_class",
+    "interaction_hypothesis_ids",
+    "outside_strategy_edge_ids"
+  ]
 }

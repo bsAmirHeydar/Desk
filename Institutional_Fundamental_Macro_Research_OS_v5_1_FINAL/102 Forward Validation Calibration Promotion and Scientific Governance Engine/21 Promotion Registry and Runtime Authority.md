@@ -20,3 +20,6 @@ Runtime behavior is fail-closed:
 - registry mismatch → no new authority;
 - expired/suspended rule → no promoted effect;
 - scope mismatch → no promoted effect.
+
+## V21 scope and conflict resolution
+The authority gate now matches promotion scope across instrument, horizon, session, regime, Fundamental direction, evidence grade and execution profile. More specific scope wins; risk-reducing constraints have precedence over positive permission restoration/creation. `CONFIDENCE_CAP` and `VALIDITY_SHORTEN` now produce explicit runtime effects rather than a receipt-only label.

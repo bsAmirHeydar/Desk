@@ -101,3 +101,6 @@ Dedicated production books: [[89 Fundamental Force Consumption Persistence and A
 
 ## V16.1 production authority
 For the six-market live profile, **Fundamental is the sole directional causal authority**. Narrative, Timing, Calibration, Portfolio and Execution cannot invent or flip direction. They may clear, constrain, cap, delay or block an already fundamental direction under their own authority boundaries. See [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/04 Cross-Layer Ownership and Authority Matrix]].
+
+## V21 cognitive hardening handoff
+Module 103 does not replace V11 science. It operationalizes V11 horizon separation, surprise/reaction-function logic, regime conditioning and Consumption vectors inside a multi-hypothesis, multi-scenario cognitive loop. Module 89 remains the sole Fundamental Direction authority at the active strategy horizon.

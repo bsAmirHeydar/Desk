@@ -51,7 +51,29 @@
       ]
     },
     "created_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "calibration_version": {
       "type": "string"
+    },
+    "dependence": {
+      "type": "object"
+    },
+    "chronological_split_attested": {
+      "type": "boolean"
+    },
+    "execution_profiles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hypothesis_family_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "additionalProperties": false

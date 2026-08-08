@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Surprise_State.schema.json",
+  "title": "Alpha Lab V21 Surprise and Expectation State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "expectation_layers",
+    "economic_surprise",
+    "market_surprise",
+    "composition_surprise",
+    "revision_surprise",
+    "expectation_recoverability",
+    "interpretation"
+  ],
+  "properties": {
+    "expectation_layers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "layer",
+          "state",
+          "source_or_reason"
+        ],
+        "properties": {
+          "layer": {
+            "enum": [
+              "OFFICIAL_CONSENSUS",
+              "SURVEY_DISTRIBUTION",
+              "MARKET_IMPLIED",
+              "WHISPER_OR_ALTERNATIVE_EXPECTATION",
+              "POSITIONING_EXPECTATION",
+              "OPTION_IMPLIED_EVENT_DISTRIBUTION",
+              "PRIOR_TREND",
+              "REVISION_EXPECTATION"
+            ]
+          },
+          "state": {},
+          "source_or_reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "economic_surprise": {
+      "enum": [
+        "STRONGLY_DOVISH_OR_NEGATIVE",
+        "DOVISH_OR_NEGATIVE",
+        "NEUTRAL",
+        "HAWKISH_OR_POSITIVE",
+        "STRONGLY_HAWKISH_OR_POSITIVE",
+        "MIXED",
+        "UNDETERMINED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "market_surprise": {
+      "enum": [
+        "STRONGLY_BEARISH",
+        "BEARISH",
+        "NEUTRAL",
+        "BULLISH",
+        "STRONGLY_BULLISH",
+        "MIXED",
+        "UNDETERMINED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "composition_surprise": {
+      "type": "string"
+    },
+    "revision_surprise": {
+      "type": "string"
+    },
+    "expectation_recoverability": {
+      "enum": [
+        "FULL",
+        "PARTIAL",
+        "POOR",
+        "UNRECOVERABLE"
+      ]
+    },
+    "interpretation": {
+      "type": "string"
+    },
+    "numeric_probability_used": {
+      "const": false
+    }
+  }
+}

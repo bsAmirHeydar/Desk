@@ -244,3 +244,11 @@ Module 101 is the enforced D2→Edge integration authority. Fundamental Directio
 
 ## V20 / D4
 Production authority now enters through [[102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt]]. D4 closes the original roadmap with forward validation, counterfactual calibration and selective promotion governance.
+
+## V21 Cognitive Hardening
+
+**Current production stack: V21.0.0.** Live analysis enters through [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt]].
+
+V21 does not add a new Direction science. It hardens the existing stack with competing causal hypotheses, horizon-specific Direction tensors, typed uncertainty, economic-versus-market surprise, policy reaction functions, regime-conditioned dynamic causal graphs, multi-channel same-root fusion, reflexivity, multi-dimensional Consumption/Remaining Asymmetry, 2–6 branch scenario trees, driver-transition states, unmodeled-driver diagnostics, cross-asset reconciliation, mandatory Thesis Destroyer, pre-mortem and utility-aware Research Intent.
+
+The Fundamental strategy remains `FUNDAMENTAL_ONLY` for Direction. Cognitive hardening can constrain/delay/block; it cannot create or flip Direction. Outside-strategy mechanical/forced-flow/liquidity edges are reported and routed to research only.

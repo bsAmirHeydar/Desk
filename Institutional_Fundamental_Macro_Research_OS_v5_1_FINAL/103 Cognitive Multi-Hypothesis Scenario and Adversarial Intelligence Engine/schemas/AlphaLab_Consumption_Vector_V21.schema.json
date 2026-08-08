@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Consumption_Vector_V21.schema.json",
+  "title": "Alpha Lab V21 Consumption and Remaining Asymmetry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "horizon",
+    "dimensions",
+    "lifecycle_state",
+    "remaining_asymmetry",
+    "reopening_state",
+    "false_precision_guard"
+  ],
+  "properties": {
+    "horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "dimensions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "dimension",
+          "band",
+          "evidence",
+          "provenance"
+        ],
+        "properties": {
+          "dimension": {
+            "enum": [
+              "INFORMATION_AWARENESS",
+              "EXPECTATION_INCORPORATION",
+              "INSTRUMENT_REPRICING",
+              "CROSS_ASSET_TRANSMISSION",
+              "POSITIONING_ADJUSTMENT",
+              "MECHANICAL_FLOW_EXHAUSTION",
+              "NARRATIVE_SATURATION",
+              "VALUATION_PAYOFF_COMPRESSION",
+              "TIME_DECAY",
+              "CATALYST_EXPIRY",
+              "FLOW_CONTINUATION_OR_EXHAUSTION",
+              "REINFORCEMENT_OR_REOPENING"
+            ]
+          },
+          "band": {
+            "enum": [
+              "VERY_LOW",
+              "LOW",
+              "MODERATE",
+              "HIGH",
+              "VERY_HIGH",
+              "UNKNOWN",
+              "NOT_APPLICABLE"
+            ]
+          },
+          "ordinal_index": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 100
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "provenance": {
+            "enum": [
+              "DIRECT",
+              "DERIVED",
+              "PROXY",
+              "MODEL_INFERENCE",
+              "UNKNOWN"
+            ]
+          }
+        }
+      }
+    },
+    "lifecycle_state": {
+      "type": "string"
+    },
+    "remaining_asymmetry": {
+      "enum": [
+        "VERY_POOR",
+        "POOR",
+        "DEGRADED",
+        "BALANCED",
+        "FAVORABLE",
+        "HIGHLY_FAVORABLE",
+        "UNDETERMINED"
+      ]
+    },
+    "remaining_asymmetry_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reopening_state": {
+      "enum": [
+        "NONE",
+        "POSSIBLE",
+        "CONFIRMED",
+        "FAILED",
+        "UNDETERMINED"
+      ]
+    },
+    "false_precision_guard": {
+      "const": "ORDINAL_INDICES_ARE_NOT_PROBABILITIES_OR_LITERAL_PERCENT_REMAINING"
+    }
+  }
+}

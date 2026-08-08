@@ -1,0 +1,19 @@
+version: 21.0.0
+current_production_entrypoint: "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md"
+authorities:
+  fact_truth: "95 Fact Constitution and Institutional Evidence Fabric"
+  fundamental_direction: "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine"
+  narrative: "90 Market Narrative Intelligence Engine"
+  instrument_resolution: "91 Global Multi-Asset Coverage and Instrument Intelligence Engine"
+  timing: "93 Temporal Market Structure Timing and Calendar Intelligence Engine"
+  d2_sciences: "96-100"
+  cognitive_synthesis: "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine"
+  d3_edge_modulation: "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine"
+  d4_forward_governance: "102 Forward Validation Calibration Promotion and Scientific Governance Engine"
+  operational_control: "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine"
+non_negotiable:
+  direction: FUNDAMENTAL_ONLY_ACTIVE_HORIZON
+  module_103_direction_flip_allowed: false
+  module_103_positive_permission_creation: false
+  outside_strategy_edge_permission_effect: NONE
+  numeric_scenario_probability: D4_CALIBRATION_REQUIRED

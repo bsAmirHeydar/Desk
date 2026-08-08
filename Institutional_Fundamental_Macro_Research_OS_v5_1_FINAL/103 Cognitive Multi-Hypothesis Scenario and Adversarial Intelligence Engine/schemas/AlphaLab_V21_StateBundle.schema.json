@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_V21_StateBundle.schema.json",
+  "title": "Alpha Lab V21 Production State Bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "instrument",
+    "analysis_cutoff_utc",
+    "active_strategy_horizon",
+    "fundamental_direction",
+    "cognitive_adjudication",
+    "d3_adjudication",
+    "d4_authority_receipt",
+    "research_intent",
+    "final_permission"
+  ],
+  "properties": {
+    "version": {
+      "const": "21.0.0"
+    },
+    "instrument": {
+      "enum": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ]
+    },
+    "analysis_cutoff_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active_strategy_horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "fundamental_direction": {
+      "enum": [
+        "BULLISH",
+        "BEARISH",
+        "NEUTRAL",
+        "UNRESOLVED"
+      ]
+    },
+    "cognitive_adjudication": {
+      "$ref": "AlphaLab_Cognitive_Adjudication.schema.json"
+    },
+    "hypothesis_set": {
+      "$ref": "AlphaLab_Hypothesis_Set.schema.json"
+    },
+    "horizon_tensor": {
+      "$ref": "AlphaLab_Horizon_Direction_Tensor.schema.json"
+    },
+    "scenario_tree": {
+      "$ref": "AlphaLab_Scenario_Tree.schema.json"
+    },
+    "uncertainty_profile": {
+      "$ref": "AlphaLab_Uncertainty_Profile.schema.json"
+    },
+    "model_disagreement": {
+      "$ref": "AlphaLab_Model_Disagreement.schema.json"
+    },
+    "adversarial_review": {
+      "$ref": "AlphaLab_Adversarial_Review.schema.json"
+    },
+    "premortem": {
+      "$ref": "AlphaLab_PreMortem.schema.json"
+    },
+    "decision_utility": {
+      "$ref": "AlphaLab_Decision_Utility.schema.json"
+    },
+    "meta_edge_router": {
+      "$ref": "AlphaLab_Meta_Edge_Router.schema.json"
+    },
+    "research_intent": {
+      "$ref": "AlphaLab_Research_Intent.schema.json"
+    },
+    "d3_adjudication": {
+      "$ref": "../../101%20Unified%20Causal%20Fuzzy%20Edge%20Integration%20and%20Permission%20Adjudication%20Engine/schemas/AlphaLab_D3_Adjudication.schema.json"
+    },
+    "d4_authority_receipt": {
+      "$ref": "../../102%20Forward%20Validation%20Calibration%20Promotion%20and%20Scientific%20Governance%20Engine/schemas/AlphaLab_D4_Authority_Receipt.schema.json"
+    },
+    "final_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "forward_observation": {
+      "$ref": "../../102%20Forward%20Validation%20Calibration%20Promotion%20and%20Scientific%20Governance%20Engine/schemas/AlphaLab_D4_Forward_Observation.schema.json"
+    }
+  }
+}

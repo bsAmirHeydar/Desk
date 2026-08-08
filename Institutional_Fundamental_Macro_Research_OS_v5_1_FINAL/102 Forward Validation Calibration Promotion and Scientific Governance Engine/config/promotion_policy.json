@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "note": "These are governance eligibility floors, not proof of edge.",
+  "version": "1.1.0",
+  "note": "Governance eligibility floors and review requirements; still not proof of edge. V21 forbids promotion from observation-level IID confidence when independent-root clusters are available.",
   "states": [
     "OBSERVATION",
     "SHADOW",
@@ -57,5 +57,14 @@
     "effect_sign_stable": true,
     "independent_validator_approved": true
   },
-  "automatic_registry_write": false
+  "automatic_registry_write": false,
+  "review_requirements": {
+    "dependence_aware_resampling_when_clusters_available": true,
+    "holdout_required_for_positive_authority": true,
+    "regime_stability_disclosure_required": true,
+    "tail_risk_comparison_required_for_positive_authority": true,
+    "multiple_testing_disclosure_required": true,
+    "chronological_split_attestation_required": true,
+    "execution_profile_stability_required": true
+  }
 }

@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Cognitive_Adjudication.schema.json",
+  "title": "Alpha Lab V21 Cognitive Adjudication",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "instrument",
+    "analysis_cutoff_utc",
+    "active_strategy_horizon",
+    "fundamental_direction",
+    "final_direction",
+    "pre_cognitive_permission",
+    "cognitive_permission",
+    "cognitive_state",
+    "tournament_state",
+    "scenario_state",
+    "decision_critical_uncertainties",
+    "unmodeled_driver_risk",
+    "adversarial_adjudication",
+    "utility_state",
+    "applied_cognitive_constraints",
+    "outside_strategy_edges",
+    "direction_flip_forbidden",
+    "positive_permission_creation_forbidden"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0.0"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "analysis_cutoff_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active_strategy_horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "fundamental_direction": {
+      "enum": [
+        "BULLISH",
+        "BEARISH",
+        "NEUTRAL",
+        "UNRESOLVED"
+      ]
+    },
+    "final_direction": {
+      "enum": [
+        "BULLISH",
+        "BEARISH",
+        "NEUTRAL",
+        "UNRESOLVED"
+      ]
+    },
+    "pre_cognitive_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "cognitive_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "cognitive_state": {
+      "enum": [
+        "CLEAR",
+        "MULTI_SCENARIO_CLEAR",
+        "CONSTRAINED",
+        "DELAYED",
+        "CONTESTED",
+        "MODEL_DISAGREEMENT",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "tournament_state": {
+      "type": "string"
+    },
+    "scenario_state": {
+      "type": "string"
+    },
+    "decision_critical_uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unmodeled_driver_risk": {
+      "type": "string"
+    },
+    "adversarial_adjudication": {
+      "type": "string"
+    },
+    "utility_state": {
+      "type": "string"
+    },
+    "applied_cognitive_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outside_strategy_edges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_review_trigger": {
+      "type": "string"
+    },
+    "direction_flip_forbidden": {
+      "const": true
+    },
+    "positive_permission_creation_forbidden": {
+      "const": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "mode": "PREDECLARED_SHADOW_ONLY_UNTIL_D4_PROMOTION",
+  "max_default_interaction_order": 3,
+  "requirements": [
+    "INTERACTION_ID",
+    "COMPONENT_STATES",
+    "CAUSAL_RATIONALE",
+    "HYPOTHESIS_FAMILY_ID",
+    "REFERENCE_CLASS",
+    "PREDECLARED_PRIMARY_METRIC"
+  ],
+  "combinatorial_fishing_forbidden": true,
+  "multiple_testing_family_required": true
+}

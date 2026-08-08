@@ -27,7 +27,8 @@
       ]
     },
     "matured_at_utc": {
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "realized_r": {
       "type": "number"

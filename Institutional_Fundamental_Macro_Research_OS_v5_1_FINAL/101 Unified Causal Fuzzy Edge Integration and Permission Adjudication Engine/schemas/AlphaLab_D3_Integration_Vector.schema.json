@@ -3,7 +3,7 @@
   "$id": "AlphaLab_D3_Integration_Vector.schema.json",
   "title": "Alpha Lab D3 Integration Vector",
   "type": "object",
-  "additionalProperties": true,
+  "additionalProperties": false,
   "required": [
     "science",
     "causal_channel",
@@ -81,9 +81,41 @@
         "null"
       ],
       "minimum": 0,
-      "maximum": 1
+      "maximum": 1,
+      "description": "Legacy ordinal confidence metadata only; not a calibrated predictive probability in V21."
     },
     "notes": {
+      "type": "string"
+    },
+    "evidence_confidence_band": {
+      "enum": [
+        "VERY_LOW",
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "VERY_HIGH",
+        "UNDETERMINED"
+      ]
+    },
+    "horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "channel_id": {
+      "type": "string"
+    },
+    "fragility_state": {
+      "type": "string"
+    },
+    "crowding_state": {
       "type": "string"
     }
   }

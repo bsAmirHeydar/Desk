@@ -83,3 +83,9 @@ Institutional completeness now requires that Positioning, Actual Flow, Funding/P
 
 ## V20 scientific learning objective
 Every decision modifier must now be evaluated through immutable forward telemetry, horizon-correct outcomes and counterfactual policy comparison before any new authority is promoted.
+
+## V21 cognitive objective
+
+The analysis objective now includes **robust conditional reasoning under genuine ambiguity**. The system must be able to say not only what the base thesis is, but what credible rival theses exist, how Direction differs by horizon, which regime makes each causal mapping valid, what market signatures should appear if the thesis is correct, what would falsify it, how the driver can transition, what adverse/tail paths are live, and whether the decision remains worthwhile after opportunity-cost and failure-path analysis.
+
+Precision means explicit conditional states and triggers—not forced certainty.

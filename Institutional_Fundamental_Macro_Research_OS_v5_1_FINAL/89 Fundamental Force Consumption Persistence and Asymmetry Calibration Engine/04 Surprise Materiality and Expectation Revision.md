@@ -61,3 +61,6 @@ Materiality asks how strongly the observation changes the state path. A statisti
 ## V11 authority
 
 This note governs its stated object for methodology version `11.0.0`. Earlier notes remain valid where they do not conflict. Scores remain ordinal unless the record explicitly declares an empirically calibrated estimand and validation evidence.
+
+## V21 market-surprise extension
+V21 requires two separate objects: **economic surprise** and **market surprise**. The point-in-time expectation stack may include official consensus, survey dispersion, market-implied pricing, alternative/whisper expectations, positioning expectation, option-implied event distribution, prior trend and revision expectation. Economic surprise can differ in sign from market surprise. When the expectation baseline is not recoverable, numeric surprise is prohibited.

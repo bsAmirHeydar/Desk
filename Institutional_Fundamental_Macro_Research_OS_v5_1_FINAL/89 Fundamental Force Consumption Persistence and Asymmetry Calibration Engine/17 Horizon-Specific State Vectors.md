@@ -69,3 +69,6 @@ Every horizon owns a separate direction, force, consumption, remaining-pressure,
 ## V11 authority
 
 This note governs its stated object for methodology version `11.0.0`. Earlier notes remain valid where they do not conflict. Scores remain ordinal unless the record explicitly declares an empirically calibrated estimand and validation evidence.
+
+## V21 Horizon Direction Tensor
+Module 103 makes the horizon array a first-class runtime Tensor and adds `SWING_2_8W` as a cognitive overlay between multi-day and cyclical horizons. The active strategy horizon must be declared before permission. Cross-horizon conflict is preserved as information; structural state is a prior, not an automatic tactical command.

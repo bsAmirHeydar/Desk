@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "edge_types": [
+    "CAUSAL",
+    "TRANSMISSION",
+    "REFLEXIVE",
+    "MECHANICAL",
+    "FLOW",
+    "FUNDING",
+    "CONFIRMATION",
+    "CORRELATED",
+    "ATTENTION",
+    "UNCERTAIN"
+  ],
+  "edge_states": [
+    "ACTIVE",
+    "DORMANT",
+    "WEAKENING",
+    "BROKEN",
+    "UNCERTAIN"
+  ],
+  "root_channel_rule": "One independent root may contain multiple distinct causal channels. Deduplicate independence, not effects.",
+  "same_root_independence_count": 1,
+  "same_root_channels_must_be_preserved": true,
+  "dynamic_run_specific_graph_required_for_material_decisions": true
+}

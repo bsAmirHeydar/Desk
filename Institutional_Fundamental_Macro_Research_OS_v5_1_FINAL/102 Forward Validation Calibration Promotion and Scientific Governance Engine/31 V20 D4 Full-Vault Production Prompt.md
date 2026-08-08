@@ -52,3 +52,6 @@ Never:
 
 ## Initial V20 behavior
 The shipped D4 registry is intentionally empty. Therefore the clean V20 installation preserves V19 permission behavior while adding governed forward validation, counterfactual research and future selective-promotion capability.
+
+## V21 subengine status
+This V20 prompt remains an allowed D4 subengine for regression and promotion-registry enforcement. V21 live analysis enters through Module 103, which passes the cognitively hardened state into D3 and then into this D4 governance layer.
