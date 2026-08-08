@@ -204,11 +204,3 @@ Start here:
 
 Current production deployment profile: XAUUSD, NASDAQ100, SP500, DJIA, EURUSD and USDJPY. WTI is excluded **only from this deployment profile**, not from V13 universal commodity support.
 
-
-<!-- ALPHALAB_V15_TIMING_BEGIN -->
-## V15 Temporal Market Structure & Timing Intelligence
-- [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/00 Temporal Market Structure Timing and Calendar Intelligence Engine MOC]] — canonical institutional timing science.
-- Timing covers sessions, handoffs, information clocks, benchmarks/fixings, expiry/roll/settlement, rebalances, month/quarter/year-end, holiday/DST, funding and validity/veto.
-- Timing does not derive direction from technical price analysis. Module 92 consumes V15 temporal state before Edge/Permission.
-<!-- ALPHALAB_V15_TIMING_END -->
-

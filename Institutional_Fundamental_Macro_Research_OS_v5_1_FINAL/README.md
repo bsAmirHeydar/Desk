@@ -106,9 +106,3 @@ Start at [[92 Alpha Lab Live Execution Permission Forward Learning and Product E
 
 V14.1 preserves the authority split: Module 89 for force/consumption/persistence/asymmetry; Module 90 for attention/narrative/reflexivity; Module 91 for instrument resolution and asset-family adaptation; Module 92 for live operational adjudication, Edge/permission, forward learning and product handoff.
 
-
-<!-- ALPHALAB_V15_TIMING_BEGIN -->
-## V15 Temporal Intelligence
-Module 93 adds institutional time/calendar science while preserving V11–V14.1 authority. Start at [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/00 Temporal Market Structure Timing and Calendar Intelligence Engine MOC]].
-<!-- ALPHALAB_V15_TIMING_END -->
-

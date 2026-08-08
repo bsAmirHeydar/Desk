@@ -105,10 +105,3 @@ Send a simple no-attachment email: Tehran timestamp, optional one-line cross-mar
 
 ## 11. Quality gate
 Never call a run Full-Vault unless all six markets were freshly adjudicated at the required depth. Never fabricate unavailable data. Never claim a learning was persisted or the core Vault changed unless the write/update was actually completed and verified.
-
-
-<!-- ALPHALAB_V15_TIMING_BEGIN -->
-## V15 mandatory timing pass
-Before Edge adjudication execute [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/39 V15 Full-Vault Timing Integrated Production Prompt]]. Every Full-Vault run must rebuild the current six-market Global Clock graph and per-symbol Timing Intelligence.
-<!-- ALPHALAB_V15_TIMING_END -->
-

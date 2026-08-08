@@ -19,9 +19,3 @@ Expected delivery:
 - HTML complete in chat;
 - minimal permission JSON available in chat when supported;
 - simple no-attachment email.
-
-
-<!-- ALPHALAB_V15_TIMING_BEGIN -->
-Manual `ران` / `ران تست` / `ران تست رو اجرا کن` now requires V15 timing depth through [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/39 V15 Full-Vault Timing Integrated Production Prompt]].
-<!-- ALPHALAB_V15_TIMING_END -->
-
