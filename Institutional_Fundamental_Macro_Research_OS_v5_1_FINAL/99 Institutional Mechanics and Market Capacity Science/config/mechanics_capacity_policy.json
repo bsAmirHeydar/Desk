@@ -33,5 +33,11 @@
     "capacity_must_be_venue_size_horizon_state_specific": true,
     "expected_passive_flow_is_inference": true,
     "otc_capacity_not_inferred_from_futures_alone": true
-  }
+  },
+  "d3_integration_authority": "MODULE_101_ONLY",
+  "direct_permission_authority_v19": false,
+  "release_compatibility": [
+    "V18.0.0",
+    "V19.0.0"
+  ]
 }

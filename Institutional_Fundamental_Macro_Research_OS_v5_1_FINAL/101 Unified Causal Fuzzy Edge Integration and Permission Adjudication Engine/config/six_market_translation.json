@@ -1,0 +1,103 @@
+{
+  "version": "1.0.0",
+  "production_universe": [
+    "XAUUSD",
+    "NASDAQ100",
+    "SP500",
+    "DJIA",
+    "EURUSD",
+    "USDJPY"
+  ],
+  "generic_sign_mapping_forbidden": true,
+  "markets": {
+    "XAUUSD": {
+      "channels": [
+        "REAL_YIELD_USD_TRANSMISSION",
+        "OFFICIAL_SECTOR_FLOW",
+        "ETF_FLOW",
+        "PHYSICAL_FLOW",
+        "FUTURES_POSITIONING",
+        "COLLATERAL_LIQUIDATION",
+        "COMEX_LBMA_MECHANICS",
+        "SCOPED_CAPACITY"
+      ],
+      "forbidden": [
+        "COMEX_EQUALS_GLOBAL_GOLD",
+        "FUNDING_STRESS_ALWAYS_BULLISH"
+      ]
+    },
+    "NASDAQ100": {
+      "channels": [
+        "DURATION_RATE_TRANSMISSION",
+        "MEGACAP_PASSIVE_CONCENTRATION",
+        "NQ_QQQ_OPTIONS_POSITIONING",
+        "DEALER_HEDGE",
+        "SYSTEMATIC_FLOW",
+        "FUNDING_CAPACITY",
+        "EXPIRY_REBALANCE_AUCTION",
+        "SCOPED_CAPACITY"
+      ],
+      "forbidden": [
+        "CROWDED_LONG_EQUALS_SELL"
+      ]
+    },
+    "SP500": {
+      "channels": [
+        "BROAD_EARNINGS_MACRO",
+        "PASSIVE_INDEX_FLOW",
+        "ES_SPY_OPTIONS_POSITIONING",
+        "SYSTEMATIC_FLOW",
+        "FUNDING_CAPACITY",
+        "BUYBACK_ISSUANCE",
+        "EXPIRY_REBALANCE_AUCTION",
+        "SCOPED_CAPACITY"
+      ],
+      "forbidden": [
+        "MEGACAP_FLOW_EQUALS_BROAD_MARKET_FLOW"
+      ]
+    },
+    "DJIA": {
+      "channels": [
+        "CYCLICAL_FUNDAMENTAL_TRANSMISSION",
+        "PRICE_WEIGHTED_INDEX_MECHANICS",
+        "FUTURES_OPTIONS_POSITIONING",
+        "PASSIVE_REBALANCE",
+        "CORPORATE_ACTIONS",
+        "FUNDING",
+        "SCOPED_CAPACITY"
+      ],
+      "forbidden": [
+        "CAP_WEIGHTED_ASSUMPTION"
+      ]
+    },
+    "EURUSD": {
+      "channels": [
+        "BILATERAL_EUR_USD_FUNDING",
+        "RELATIVE_RATES",
+        "REAL_MONEY_HEDGING",
+        "LEVERAGED_POSITIONING",
+        "FIXING_OPTIONS",
+        "OTC_FUTURES_CAPACITY"
+      ],
+      "forbidden": [
+        "USD_SIDE_ONLY_DIRECTION",
+        "FUTURES_CAPACITY_EQUALS_OTC_CAPACITY"
+      ]
+    },
+    "USDJPY": {
+      "channels": [
+        "BILATERAL_US_JP_RATES",
+        "CARRY_POSITIONING",
+        "JAPANESE_HEDGING",
+        "OFFICIAL_POLICY_RISK",
+        "FIXING_OPTIONS",
+        "USD_JPY_FUNDING",
+        "OTC_FUTURES_CAPACITY"
+      ],
+      "forbidden": [
+        "CARRY_POSITION_EQUALS_DIRECTION",
+        "INTERVENTION_RISK_EQUALS_REVERSAL"
+      ]
+    }
+  }
+}

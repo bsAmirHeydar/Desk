@@ -27,5 +27,11 @@
     "gross_issuance_not_net_liquidity_drain": true,
     "expected_deleveraging_not_realized_flow": true,
     "direction_creation_forbidden": true
-  }
+  },
+  "d3_integration_authority": "MODULE_101_ONLY",
+  "direct_permission_authority_v19": false,
+  "release_compatibility": [
+    "V18.0.0",
+    "V19.0.0"
+  ]
 }

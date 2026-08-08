@@ -7,5 +7,5 @@ for k in ['version','authority_mode','instrument','analysis_cutoff_utc','positio
 if x.get('version')!='1.0.0':e.append('VERSION')
 if x.get('authority_mode')!='CANONICAL_SHADOW':e.append('AUTHORITY_NOT_SHADOW')
 if x.get('d2_permission_effect')!='NONE':e.append('PREMATURE_D2_PERMISSION')
-if x.get('d3_promotion_state')!='NOT_PROMOTED':e.append('PREMATURE_D3_PROMOTION')
+if x.get('d3_promotion_state') not in {'NOT_PROMOTED','PROMOTED_VIA_MODULE_101_ONLY'}:e.append('BAD_D3_PROMOTION_STATE')
 print(json.dumps({'status':'PASS' if not e else 'FAIL','errors':e},indent=2));sys.exit(0 if not e else 2)

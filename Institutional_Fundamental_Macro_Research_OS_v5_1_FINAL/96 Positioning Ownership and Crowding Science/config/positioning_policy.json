@@ -51,5 +51,11 @@
     "systematic_positions_are_model_inference_unless_identified": true,
     "aum_change_not_automatically_flow": true,
     "direction_creation_forbidden": true
-  }
+  },
+  "d3_integration_authority": "MODULE_101_ONLY",
+  "direct_permission_authority_v19": false,
+  "release_compatibility": [
+    "V18.0.0",
+    "V19.0.0"
+  ]
 }

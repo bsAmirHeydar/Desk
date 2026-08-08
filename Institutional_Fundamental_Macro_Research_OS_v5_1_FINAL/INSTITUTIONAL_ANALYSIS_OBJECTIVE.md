@@ -76,3 +76,8 @@ Institutional completeness now also requires explicit epistemic class, source/vi
 ## V18 D2 evidence-science objective
 
 Every production run must now distinguish institutional position, actual transaction flow, funding/plumbing conditions, institutional mechanics and market capacity under D1 point-in-time evidence rules. In V18 these states are captured for research and forward learning only; they may not originate Fundamental Direction or change final permission until D3 integration is validated.
+
+## V19 D3 causal-integration objective
+
+Institutional completeness now requires that Positioning, Actual Flow, Funding/Plumbing, Mechanics and Capacity be translated through explicit causal channels, materiality and independent-root lineage before they can affect edge usability. These sciences may constrain or suppress transmission but may not originate or flip Fundamental Direction.
+

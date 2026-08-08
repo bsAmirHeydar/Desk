@@ -2,7 +2,7 @@
 title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 16.1.0
+version: 19.0.0
 created: 2026-07-29
 updated: 2026-08-08
 language: en
@@ -237,3 +237,8 @@ Production evidence is now governed by [[95 Fact Constitution and Institutional 
 ## V18.0 D2 — Complete Fact-Based Market Sciences
 
 Production now routes through **Module 100**. Modules **96–99** canonically define Positioning/Ownership, Actual Flow, Funding/Plumbing, Institutional Mechanics and Market Capacity. These five sciences are **mandatory shadow states** in V18: they are evidence-governed and forward-logged, but they have **no final permission effect until D3 promotion**. Fundamental Direction remains Module 89 only.
+
+## V19 D3 unified causal edge integration
+
+Module 101 is the enforced D2→Edge integration authority. Fundamental Direction remains Module 89 only. D3 uses causal modifiers rather than voting/additive scoring and cannot create a new BUY/SELL from pre-D3 NO_TRADE in V19. Start at [[101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/00 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine MOC]].
+

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_D3_Integration_Input.schema.json",
+  "title": "Alpha Lab D3 Integration Input",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "version",
+    "instrument",
+    "analysis_cutoff_utc",
+    "fundamental_direction",
+    "pre_d3_research_edge",
+    "pre_d3_permission",
+    "integration_vectors"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0.0"
+    },
+    "instrument": {
+      "enum": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ]
+    },
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "fundamental_direction": {
+      "type": "string"
+    },
+    "pre_d3_research_edge": {
+      "enum": [
+        "EDGE_ACTIVE",
+        "EDGE_CONDITIONAL",
+        "EDGE_RELATIVE",
+        "BIAS_ONLY",
+        "NO_EDGE",
+        "EVENT_OR_FRAGMENTED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "pre_d3_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "base_confidence_caps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "integration_vectors": {
+      "type": "array",
+      "items": {
+        "$ref": "AlphaLab_D3_Integration_Vector.schema.json"
+      }
+    },
+    "capacity_sufficient_for_intended_execution": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "capacity_scope_matched": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "intended_execution_scope": {
+      "type": "object"
+    },
+    "base_valid_until_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "next_mechanical_event_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

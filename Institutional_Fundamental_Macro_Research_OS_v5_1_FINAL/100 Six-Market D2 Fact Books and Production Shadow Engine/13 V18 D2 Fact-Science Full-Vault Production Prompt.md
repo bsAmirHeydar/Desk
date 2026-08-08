@@ -46,3 +46,6 @@ You are executing the **Alpha Lab Fundamental OS V18.0.0 — D2 Complete Fact-Ba
 - next review time/trigger.
 
 Fail epistemically, not rhetorically: when a domain cannot be established, output `UNAVAILABLE` or `UNDETERMINED`; do not manufacture completeness.
+
+
+> V19 note: this V18 prompt is now a delegated scientific subengine. Top-level live authority is Module 101/27.

@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_D3_Adjudication.schema.json",
+  "title": "Alpha Lab D3 Adjudication",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "version",
+    "instrument",
+    "fundamental_direction",
+    "final_direction",
+    "pre_d3_permission",
+    "final_permission",
+    "d3_edge_quality",
+    "reversal_hazard",
+    "asymmetry_state",
+    "validity_action",
+    "applied_rules",
+    "deduplicated_root_ids",
+    "direction_flip_forbidden",
+    "new_permission_creation_forbidden_v19"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0.0"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "fundamental_direction": {
+      "type": "string"
+    },
+    "final_direction": {
+      "type": "string"
+    },
+    "pre_d3_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "final_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "d3_edge_quality": {
+      "enum": [
+        "AMPLIFIED",
+        "CONFIRMED",
+        "MAINTAINED",
+        "FRAGILE",
+        "CONSTRAINED",
+        "DELAYED",
+        "SUPPRESSED",
+        "CAPACITY_BLOCKED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "reversal_hazard": {
+      "enum": [
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "EXTREME",
+        "UNKNOWN"
+      ]
+    },
+    "asymmetry_state": {
+      "enum": [
+        "FAVORABLE",
+        "NEUTRAL",
+        "DEGRADED",
+        "POOR",
+        "UNKNOWN"
+      ]
+    },
+    "validity_action": {
+      "enum": [
+        "KEEP_BASE",
+        "SHORTEN_MODERATE",
+        "SHORTEN_SEVERE",
+        "UNTIL_MECHANICAL_EVENT",
+        "IMMEDIATE_REVIEW"
+      ]
+    },
+    "confidence_caps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "applied_rules": {
+      "type": "array"
+    },
+    "rejected_rules": {
+      "type": "array"
+    },
+    "deduplicated_root_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "promotion_readiness": {
+      "enum": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "direction_flip_forbidden": {
+      "const": true
+    },
+    "new_permission_creation_forbidden_v19": {
+      "const": true
+    }
+  }
+}

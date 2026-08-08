@@ -48,3 +48,6 @@ V16 does not add another opinion layer. It converts existing V11–V15.1 science
 ## V17 D1 wrapper relationship
 
 Under V17 D1 this module remains the validated production-control subengine. Module 95 now governs fact admission and point-in-time evidence upstream, then delegates scientific synthesis and operational control here. This module does not lose its evidence-graph, materiality, calibration/portfolio shadow or operational-safety authority.
+
+## V19 D3 delegation
+Module 101 is the enforced D2-to-edge causal integration layer. Module 94 continues retrieval, evidence, calibration, portfolio and operational governance and must reject direction-authority drift.

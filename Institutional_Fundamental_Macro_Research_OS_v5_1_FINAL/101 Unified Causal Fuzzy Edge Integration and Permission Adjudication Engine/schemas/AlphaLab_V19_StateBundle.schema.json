@@ -1,0 +1,305 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_V19_StateBundle.schema.json",
+  "title": "Alpha Lab V19 StateBundle",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "generated_at_utc",
+    "run_id",
+    "markets"
+  ],
+  "properties": {
+    "generated_at_utc": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "markets": {
+      "type": "object",
+      "required": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ],
+      "additionalProperties": false,
+      "patternProperties": {},
+      "properties": {
+        "XAUUSD": {
+          "type": "object",
+          "required": [
+            "fundamental_direction",
+            "pre_d3_permission",
+            "d3_edge_quality",
+            "permission"
+          ],
+          "properties": {
+            "fundamental_direction": {
+              "type": "string"
+            },
+            "pre_d3_permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "d3_edge_quality": {
+              "enum": [
+                "AMPLIFIED",
+                "CONFIRMED",
+                "MAINTAINED",
+                "FRAGILE",
+                "CONSTRAINED",
+                "DELAYED",
+                "SUPPRESSED",
+                "CAPACITY_BLOCKED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": true
+        },
+        "NASDAQ100": {
+          "type": "object",
+          "required": [
+            "fundamental_direction",
+            "pre_d3_permission",
+            "d3_edge_quality",
+            "permission"
+          ],
+          "properties": {
+            "fundamental_direction": {
+              "type": "string"
+            },
+            "pre_d3_permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "d3_edge_quality": {
+              "enum": [
+                "AMPLIFIED",
+                "CONFIRMED",
+                "MAINTAINED",
+                "FRAGILE",
+                "CONSTRAINED",
+                "DELAYED",
+                "SUPPRESSED",
+                "CAPACITY_BLOCKED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": true
+        },
+        "SP500": {
+          "type": "object",
+          "required": [
+            "fundamental_direction",
+            "pre_d3_permission",
+            "d3_edge_quality",
+            "permission"
+          ],
+          "properties": {
+            "fundamental_direction": {
+              "type": "string"
+            },
+            "pre_d3_permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "d3_edge_quality": {
+              "enum": [
+                "AMPLIFIED",
+                "CONFIRMED",
+                "MAINTAINED",
+                "FRAGILE",
+                "CONSTRAINED",
+                "DELAYED",
+                "SUPPRESSED",
+                "CAPACITY_BLOCKED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": true
+        },
+        "DJIA": {
+          "type": "object",
+          "required": [
+            "fundamental_direction",
+            "pre_d3_permission",
+            "d3_edge_quality",
+            "permission"
+          ],
+          "properties": {
+            "fundamental_direction": {
+              "type": "string"
+            },
+            "pre_d3_permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "d3_edge_quality": {
+              "enum": [
+                "AMPLIFIED",
+                "CONFIRMED",
+                "MAINTAINED",
+                "FRAGILE",
+                "CONSTRAINED",
+                "DELAYED",
+                "SUPPRESSED",
+                "CAPACITY_BLOCKED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": true
+        },
+        "EURUSD": {
+          "type": "object",
+          "required": [
+            "fundamental_direction",
+            "pre_d3_permission",
+            "d3_edge_quality",
+            "permission"
+          ],
+          "properties": {
+            "fundamental_direction": {
+              "type": "string"
+            },
+            "pre_d3_permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "d3_edge_quality": {
+              "enum": [
+                "AMPLIFIED",
+                "CONFIRMED",
+                "MAINTAINED",
+                "FRAGILE",
+                "CONSTRAINED",
+                "DELAYED",
+                "SUPPRESSED",
+                "CAPACITY_BLOCKED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": true
+        },
+        "USDJPY": {
+          "type": "object",
+          "required": [
+            "fundamental_direction",
+            "pre_d3_permission",
+            "d3_edge_quality",
+            "permission"
+          ],
+          "properties": {
+            "fundamental_direction": {
+              "type": "string"
+            },
+            "pre_d3_permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "d3_edge_quality": {
+              "enum": [
+                "AMPLIFIED",
+                "CONFIRMED",
+                "MAINTAINED",
+                "FRAGILE",
+                "CONSTRAINED",
+                "DELAYED",
+                "SUPPRESSED",
+                "CAPACITY_BLOCKED",
+                "INSUFFICIENT_EVIDENCE"
+              ]
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "extensions": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "release": "V19.0.0",
+  "deployment": "D3",
+  "status": "PASS",
+  "d3_selftest": {
+    "status": "PASS",
+    "passed": 22,
+    "total": 22,
+    "failed": []
+  },
+  "d3_runtime_preflight": {
+    "status": "PASS",
+    "mode": "runtime",
+    "checks": [
+      {
+        "name": "manifest_sync",
+        "pass": true
+      },
+      {
+        "name": "d3_coverage",
+        "pass": true
+      },
+      {
+        "name": "d2_regression",
+        "pass": true
+      },
+      {
+        "name": "d1_regression",
+        "pass": true
+      },
+      {
+        "name": "v16_regression",
+        "pass": true
+      }
+    ],
+    "errors": []
+  },
+  "d3_deployment_preflight": {
+    "status": "PASS",
+    "mode": "deployment",
+    "checks": [
+      {
+        "name": "manifest_sync",
+        "pass": true
+      },
+      {
+        "name": "d3_coverage",
+        "pass": true
+      },
+      {
+        "name": "d2_regression",
+        "pass": true
+      },
+      {
+        "name": "d1_regression",
+        "pass": true
+      },
+      {
+        "name": "v16_regression",
+        "pass": true
+      }
+    ],
+    "errors": []
+  },
+  "d2_regression": {
+    "status": "PASS",
+    "passed": 31,
+    "total": 31,
+    "failed": []
+  },
+  "d1_regression": {
+    "status": "PASS",
+    "passed": 20,
+    "total": 20,
+    "failed": []
+  },
+  "v16_1_regression": {
+    "status": "PASS",
+    "passed": 21,
+    "total": 21
+  },
+  "d1_coverage": {
+    "status": "PASS",
+    "markets": 6,
+    "families": 10,
+    "cells": 60,
+    "errors": []
+  },
+  "d2_coverage": {
+    "status": "PASS",
+    "markets": 6,
+    "domains": 5,
+    "cells": 30,
+    "registered_sources": 22,
+    "errors": []
+  },
+  "d3_coverage": {
+    "status": "PASS",
+    "markets": 6,
+    "integration_books": 6,
+    "errors": []
+  },
+  "static_validation": {
+    "status": "PASS",
+    "json_files": 217,
+    "python_files": 79,
+    "errors": []
+  },
+  "schema_validation": {
+    "status": "PASS",
+    "schemas_checked": 38,
+    "errors": []
+  },
+  "authority_assertions": {
+    "direction": "FUNDAMENTAL_ONLY",
+    "d2_direct_permission": "NONE",
+    "d3_integration": "ENFORCED_CAUSAL_MODULATION",
+    "direction_flip_allowed": false,
+    "new_permission_from_pre_d3_no_trade_v19": false,
+    "voting": false
+  }
+}

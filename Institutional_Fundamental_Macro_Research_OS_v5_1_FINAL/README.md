@@ -142,3 +142,8 @@ The current production entrypoint is `95 Fact Constitution and Institutional Evi
 ## V18 D2 production status
 
 V18.0.0 installs D2 Complete Fact-Based Market Sciences (Modules 96–100). The six-market production universe is unchanged. D2 states are canonical for scientific classification and mandatory reporting, but remain `CANONICAL_SHADOW`; the final trade permission is not modified by D2 in V18.
+
+## V19 D3 production status
+
+V19.0.0 adds Module 101 Unified Causal & Fuzzy Edge Integration. D2 sciences remain canonical source-state engines; Module 101 alone may modulate the edge. Direction remains Fundamental-only, science voting is forbidden, and V19 positive D3 support cannot create a new BUY/SELL from pre-D3 NO_TRADE.
+

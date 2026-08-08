@@ -1,0 +1,11 @@
+RULE_ID,DOMAIN,TRIGGER,D3_ACTION,CAN_FLIP_DIRECTION,CAN_CREATE_NEW_PERMISSION_V19
+D3-R01,ALL,Decision-critical unknown,INSUFFICIENT_EVIDENCE / NO_TRADE,NO,NO
+D3-R02,CAPACITY,Execution capacity insufficient,CAPACITY_BLOCKED / NO_TRADE,NO,NO
+D3-R03,MECHANICS,Material decision-critical delay,DELAYED / NO_TRADE until trigger,NO,NO
+D3-R04,FLOW/FUNDING,Material transmission break,SUPPRESSED / NO_TRADE,NO,NO
+D3-R05,ALL,Material friction,CONSTRAIN / shorten validity / cap,NO,NO
+D3-R06,POSITIONING,Very crowded + high/extreme fragility,Raise reversal hazard / degrade asymmetry,NO,NO
+D3-R07,ACTUAL_FLOW,Persistent opposing flow,Raise fragility; break only if causal obstruction is material,NO,NO
+D3-R08,ALL,Independent direct supportive root,CONFIRMED / AMPLIFIED existing edge,NO,NO
+D3-R09,ALL,Pre-D3 NO_TRADE + supportive D2,Promotion-readiness telemetry only,NO,NO
+D3-R10,ALL,Same-root repeated observations,Deduplicate to one root,NO,NO

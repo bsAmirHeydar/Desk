@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "reversal_hazard": [
+    "LOW",
+    "MODERATE",
+    "HIGH",
+    "EXTREME",
+    "UNKNOWN"
+  ],
+  "asymmetry_state": [
+    "FAVORABLE",
+    "NEUTRAL",
+    "DEGRADED",
+    "POOR",
+    "UNKNOWN"
+  ],
+  "validity_actions": [
+    "KEEP_BASE",
+    "SHORTEN_MODERATE",
+    "SHORTEN_SEVERE",
+    "UNTIL_MECHANICAL_EVENT",
+    "IMMEDIATE_REVIEW"
+  ],
+  "caps": [
+    "CROWDING_FRAGILITY",
+    "FLOW_OPPOSITION",
+    "FUNDING_RESTRICTION",
+    "MECHANICAL_DISTORTION",
+    "CAPACITY_UNCERTAINTY",
+    "SECONDARY_D2_EVIDENCE_GAP"
+  ],
+  "upstream_expiry_ceiling": true
+}

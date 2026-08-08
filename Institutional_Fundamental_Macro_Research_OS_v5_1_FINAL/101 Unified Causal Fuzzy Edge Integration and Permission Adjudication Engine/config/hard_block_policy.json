@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "blocks": [
+    {
+      "condition": "decision_critical_unknown",
+      "result": "INSUFFICIENT_EVIDENCE",
+      "permission": "NO_TRADE"
+    },
+    {
+      "condition": "capacity_execution_block",
+      "result": "CAPACITY_BLOCKED",
+      "permission": "NO_TRADE"
+    },
+    {
+      "condition": "decision_critical_mechanical_delay",
+      "result": "DELAYED",
+      "permission": "NO_TRADE"
+    },
+    {
+      "condition": "material_transmission_break",
+      "result": "SUPPRESSED",
+      "permission": "NO_TRADE"
+    }
+  ],
+  "no_direction_flip": true
+}

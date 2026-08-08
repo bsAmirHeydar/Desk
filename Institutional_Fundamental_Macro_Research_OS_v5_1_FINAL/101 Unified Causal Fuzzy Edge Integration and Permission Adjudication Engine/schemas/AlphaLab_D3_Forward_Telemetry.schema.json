@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_D3_Forward_Telemetry.schema.json",
+  "title": "Alpha Lab D3 Forward Telemetry",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "version",
+    "run_id",
+    "instrument",
+    "analysis_cutoff_utc",
+    "pre_d3_permission",
+    "final_permission",
+    "d3_edge_quality",
+    "applied_rules",
+    "root_ids",
+    "outcome_pending"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0.0"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "pre_d3_permission": {
+      "type": "string"
+    },
+    "final_permission": {
+      "type": "string"
+    },
+    "d3_edge_quality": {
+      "type": "string"
+    },
+    "applied_rules": {
+      "type": "array"
+    },
+    "rejected_rules": {
+      "type": "array"
+    },
+    "root_ids": {
+      "type": "array"
+    },
+    "outcome_pending": {
+      "const": true
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_D3_Integration_Vector.schema.json",
+  "title": "Alpha Lab D3 Integration Vector",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "science",
+    "causal_channel",
+    "alignment_to_fundamental",
+    "obstruction_class",
+    "materiality",
+    "evidence_grade",
+    "root_id"
+  ],
+  "properties": {
+    "science": {
+      "enum": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW",
+        "FUNDING_PLUMBING",
+        "INSTITUTIONAL_MECHANICS",
+        "MARKET_CAPACITY"
+      ]
+    },
+    "causal_channel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alignment_to_fundamental": {
+      "enum": [
+        "SUPPORTIVE",
+        "NEUTRAL",
+        "OPPOSING",
+        "NON_DIRECTIONAL",
+        "MIXED",
+        "UNKNOWN"
+      ]
+    },
+    "obstruction_class": {
+      "enum": [
+        "NONE",
+        "FRICTION",
+        "DELAY",
+        "TRANSMISSION_BREAK",
+        "EXECUTION_BLOCK",
+        "UNKNOWN"
+      ]
+    },
+    "materiality": {
+      "enum": [
+        "DECISION_CRITICAL",
+        "MATERIAL",
+        "SUPPORTING",
+        "CONTEXTUAL"
+      ]
+    },
+    "evidence_grade": {
+      "enum": [
+        "DIRECT_IDENTIFIED",
+        "OFFICIAL_OR_EXCHANGE",
+        "DERIVED_WITH_LINEAGE",
+        "PUBLIC_PROXY",
+        "MODEL_INFERENCE",
+        "UNKNOWN"
+      ]
+    },
+    "root_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "persistence": {
+      "type": "string"
+    },
+    "decision_critical_unknown": {
+      "type": "boolean"
+    },
+    "confidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

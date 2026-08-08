@@ -14,7 +14,7 @@ for mk in markets:
     for d in domains:
         x=cells.get(d,{})
         if x.get('baseline_state') not in states:e.append('BAD_STATE_'+mk+'_'+d)
-        if x.get('authority_mode')!='CANONICAL_SHADOW' or x.get('permission_effect_v18')!='NONE':e.append('PREMATURE_AUTHORITY_'+mk+'_'+d)
+        if x.get('authority_mode')!='CANONICAL_SHADOW' or x.get('permission_effect_v18')!='NONE':e.append('D2_SOURCE_AUTHORITY_DRIFT_'+mk+'_'+d)
         for sid in sm.get('markets',{}).get(mk,{}).get(d,[]):
             if sid not in ids:e.append('UNKNOWN_SOURCE_'+mk+'_'+d+'_'+sid)
 print(json.dumps({'status':'PASS' if not e else 'FAIL','markets':len(markets),'domains':len(domains),'cells':30,'registered_sources':len(ids),'errors':e},indent=2));sys.exit(0 if not e else 2)

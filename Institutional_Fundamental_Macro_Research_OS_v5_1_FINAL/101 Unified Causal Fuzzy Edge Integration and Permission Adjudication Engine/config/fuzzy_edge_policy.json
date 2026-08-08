@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "edge_quality_order": [
+    "AMPLIFIED",
+    "CONFIRMED",
+    "MAINTAINED",
+    "FRAGILE",
+    "CONSTRAINED",
+    "DELAYED",
+    "SUPPRESSED",
+    "CAPACITY_BLOCKED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "final_permission_rule": "BUY_OR_SELL_ONLY_IF_PRE_D3_PERMISSION_SAME_AND_NO_D3_BLOCK",
+  "support_can_create_new_permission": false,
+  "downgrade_actions": {
+    "FRICTION": "KEEP_OR_CONSTRAIN",
+    "DELAY": "NO_TRADE_UNTIL_TRIGGER",
+    "TRANSMISSION_BREAK": "NO_TRADE",
+    "EXECUTION_BLOCK": "NO_TRADE",
+    "DECISION_CRITICAL_UNKNOWN": "NO_TRADE"
+  }
+}

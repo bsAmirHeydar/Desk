@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "mode": "FORWARD_IMMUTABLE",
+  "permission_creation_from_positive_modifiers": "DISABLED_V19",
+  "d4_promotion_required": true,
+  "required_fields": [
+    "run_id",
+    "instrument",
+    "analysis_cutoff_utc",
+    "pre_d3_permission",
+    "final_permission",
+    "d3_edge_quality",
+    "applied_rules",
+    "rejected_rules",
+    "root_ids",
+    "outcome_pending"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "release": "V19.0.0",
+  "deployment": "D3",
+  "authority_mode": "ENFORCED_CAUSAL_MODULATION",
+  "direction_authority": "FUNDAMENTAL_ONLY",
+  "direct_d2_permission_authority": false,
+  "direction_flip_forbidden": true,
+  "science_voting_forbidden": true,
+  "additive_score_forbidden": true,
+  "pre_d3_no_trade_promotion_forbidden_v19": true,
+  "obstruction_classes": [
+    "NONE",
+    "FRICTION",
+    "DELAY",
+    "TRANSMISSION_BREAK",
+    "EXECUTION_BLOCK",
+    "UNKNOWN"
+  ],
+  "materiality": [
+    "DECISION_CRITICAL",
+    "MATERIAL",
+    "SUPPORTING",
+    "CONTEXTUAL"
+  ],
+  "alignment": [
+    "SUPPORTIVE",
+    "NEUTRAL",
+    "OPPOSING",
+    "NON_DIRECTIONAL",
+    "MIXED",
+    "UNKNOWN"
+  ],
+  "evidence_grades": [
+    "DIRECT_IDENTIFIED",
+    "OFFICIAL_OR_EXCHANGE",
+    "DERIVED_WITH_LINEAGE",
+    "PUBLIC_PROXY",
+    "MODEL_INFERENCE",
+    "UNKNOWN"
+  ],
+  "edge_quality": [
+    "AMPLIFIED",
+    "CONFIRMED",
+    "MAINTAINED",
+    "FRAGILE",
+    "CONSTRAINED",
+    "DELAYED",
+    "SUPPRESSED",
+    "CAPACITY_BLOCKED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "hard_precedence": [
+    "DECISION_CRITICAL_UNKNOWN",
+    "EXECUTION_BLOCK",
+    "MECHANICAL_FRAGMENTATION_OR_DELAY",
+    "TRANSMISSION_BREAK",
+    "FRICTION",
+    "SUPPORT"
+  ],
+  "rules": {
+    "same_root_dedup_required": true,
+    "positive_support_cannot_cancel_hard_obstruction_by_count": true,
+    "crowding_not_contrarian_signal": true,
+    "funding_no_universal_sign": true,
+    "mechanics_not_fundamental_direction": true,
+    "capacity_not_directional": true,
+    "model_inference_lower_authority_than_identified_fact": true,
+    "d3_extension_cannot_outlive_upstream_expiry": true
+  }
+}

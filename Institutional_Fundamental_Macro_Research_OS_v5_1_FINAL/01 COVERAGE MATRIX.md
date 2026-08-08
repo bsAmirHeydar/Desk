@@ -208,3 +208,8 @@ Machine-readable matrix: `V17_D1_FACT_FAMILY_COVERAGE_MATRIX.csv`.
 ## V18 D2 coverage extension
 
 The five D1-registered science families — `POSITIONING_OWNERSHIP`, `ACTUAL_FLOW`, `FUNDING_PLUMBING`, `INSTITUTIONAL_MECHANICS`, `MARKET_CAPACITY` — are now `ACTIVE_CANONICAL_SHADOW` across the six production markets. Detailed public/licensed coverage lives in Module 100. D2 adds science and coverage truth; it does not claim universal data availability or final permission authority.
+
+## V19 D3 integration coverage
+
+All six production markets now have dedicated D3 translation books. Positioning, Actual Flow, Funding/Plumbing, Institutional Mechanics and Market Capacity are integrated only through Module 101. Direct permission authority remains absent from Modules 96–100.
+

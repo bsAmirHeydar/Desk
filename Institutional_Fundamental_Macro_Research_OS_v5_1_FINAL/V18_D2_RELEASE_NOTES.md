@@ -13,3 +13,6 @@ D2 is `CANONICAL_SHADOW`: mandatory scientific reporting and forward telemetry, 
 
 ## Next
 D3 — Unified Causal & Fuzzy Edge integration. Promotion requires validated modifier semantics; no voting or naive additive scoring.
+
+## V19 promotion path
+V19 promotes D2 influence only through Module 101. Modules 96–100 remain direct-permission-free source-state authorities.

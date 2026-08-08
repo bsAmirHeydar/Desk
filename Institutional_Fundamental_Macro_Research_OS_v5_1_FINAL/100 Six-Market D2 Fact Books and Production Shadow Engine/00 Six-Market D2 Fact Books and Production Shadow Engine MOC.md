@@ -26,3 +26,6 @@ This avoids the fatal error of turning five heterogeneous sciences into a voting
 `Module95 Fact Admission -> Modules96-99 D2 States -> Module100 Six-Market Shadow Pack -> existing V17 causal/permission stack -> final permission`.
 
 D2 states accompany the decision for research/forward calibration; they cannot originate Fundamental Direction and cannot override the existing permission in V18.
+
+## V19 D3 integration
+In V19 these D2 states remain `CANONICAL_SHADOW` at source. Their only authorized path into final edge adjudication is Module 101. No Module 96–100 component gains direct permission authority.

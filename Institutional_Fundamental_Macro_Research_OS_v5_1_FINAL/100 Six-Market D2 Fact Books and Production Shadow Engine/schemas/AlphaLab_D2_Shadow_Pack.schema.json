@@ -64,7 +64,10 @@
       "const": "NONE"
     },
     "d3_promotion_state": {
-      "const": "NOT_PROMOTED"
+      "enum": [
+        "NOT_PROMOTED",
+        "PROMOTED_VIA_MODULE_101_ONLY"
+      ]
     }
   }
 }

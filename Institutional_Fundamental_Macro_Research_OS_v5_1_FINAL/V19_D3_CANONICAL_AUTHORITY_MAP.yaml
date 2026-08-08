@@ -1,0 +1,20 @@
+release: V19.0.0
+deployment: D3
+direction: FUNDAMENTAL_ONLY
+fact_authority: Module_95
+fundamental_authority: Module_89
+narrative_authority: Module_90
+timing_authority: Module_93
+d2_state_producers:
+  positioning: Module_96
+  actual_flow: Module_97
+  funding_plumbing: Module_98
+  mechanics_capacity: Module_99
+  six_market_router: Module_100
+d2_direct_permission_authority: NONE
+d3_integration_authority: Module_101
+d3_authority_mode: ENFORCED_CAUSAL_MODULATION
+direction_flip_allowed: false
+new_permission_from_pre_d3_no_trade_v19: false
+science_voting_allowed: false
+additive_scoring_allowed: false

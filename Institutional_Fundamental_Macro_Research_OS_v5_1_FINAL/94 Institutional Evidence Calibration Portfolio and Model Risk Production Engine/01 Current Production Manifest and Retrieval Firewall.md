@@ -15,3 +15,6 @@ The executable check is `tools/alphalab_preflight.py`.
 ## V17 D1 production routing
 
 `CURRENT_PRODUCTION_MANIFEST.json` now routes live production to Module 95. The V16.1 integrated production prompt is allowlisted as a delegated live subengine. Retrieval still uses this module's smallest-sufficient firewall; Module 95 adds epistemic admission and coverage receipts before decision synthesis.
+
+## V19 D3 delegation
+Module 101 is the enforced D2-to-edge causal integration layer. Module 94 continues retrieval, evidence, calibration, portfolio and operational governance and must reject direction-authority drift.

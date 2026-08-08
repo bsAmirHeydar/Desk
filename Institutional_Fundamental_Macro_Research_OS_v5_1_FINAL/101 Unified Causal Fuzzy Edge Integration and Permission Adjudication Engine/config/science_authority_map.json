@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "release": "V19.0.0",
+  "direction": "FUNDAMENTAL_ONLY",
+  "integration_authority": "MODULE_101_ONLY",
+  "sciences": {
+    "POSITIONING_OWNERSHIP": {
+      "producer": "96",
+      "direct_permission": false,
+      "d3_role": [
+        "FRAGILITY",
+        "ASYMMETRY",
+        "SQUEEZE_LIQUIDATION_SENSITIVITY"
+      ]
+    },
+    "ACTUAL_FLOW": {
+      "producer": "97",
+      "direct_permission": false,
+      "d3_role": [
+        "TRANSMISSION_CONFIRMATION",
+        "FRICTION",
+        "TRANSMISSION_BREAK"
+      ]
+    },
+    "FUNDING_PLUMBING": {
+      "producer": "98",
+      "direct_permission": false,
+      "d3_role": [
+        "TRANSMISSION_CAPACITY",
+        "FRICTION",
+        "TRANSMISSION_BREAK"
+      ]
+    },
+    "INSTITUTIONAL_MECHANICS": {
+      "producer": "99",
+      "direct_permission": false,
+      "d3_role": [
+        "DELAY",
+        "FRAGMENTATION",
+        "VALIDITY"
+      ]
+    },
+    "MARKET_CAPACITY": {
+      "producer": "99",
+      "direct_permission": false,
+      "d3_role": [
+        "EXECUTION_FEASIBILITY"
+      ]
+    }
+  }
+}
