@@ -1,12 +1,15 @@
 ---
 title: "Alpha Lab V14 — Live Day-Trading Direction, Pressure, Consumption and Narrative Intelligence Prompt"
 type: production-live-analysis-prompt
-status: execution-ready
+status: archived-superseded
 version: 14.0.0
 language: en
 output_language: fa
 output_format: professional-rtl-pdf
 scope: any-resolvable-fx-commodity-or-index-symbol
+
+production_authority: false
+superseded_by: V16.0.0
 ---
 
 # ALPHA LAB V14

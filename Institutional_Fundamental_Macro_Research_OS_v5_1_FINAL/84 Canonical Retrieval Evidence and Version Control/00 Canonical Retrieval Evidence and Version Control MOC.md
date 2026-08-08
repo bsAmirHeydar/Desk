@@ -42,3 +42,6 @@ For daily narrative analysis retrieve Module 89 fact-state controls before Modul
 ## V13 universal multi-asset coverage
 
 Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.
+
+## V16 production retrieval authority
+`CURRENT_PRODUCTION_MANIFEST.yaml` is the first production retrieval object. Legacy prompt retrieval does not confer authority. Run the V16 preflight before live permission.

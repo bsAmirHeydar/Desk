@@ -1,0 +1,42 @@
+[
+  {
+    "id": "manifest_single_entrypoint",
+    "expect": "PASS"
+  },
+  {
+    "id": "same_root_cpi_yield_dxy_not_three_independent_votes",
+    "expect": "PASS"
+  },
+  {
+    "id": "timing_cannot_create_direction",
+    "expect": "PASS"
+  },
+  {
+    "id": "cold_start_no_numeric_probability",
+    "expect": "PASS"
+  },
+  {
+    "id": "expired_permission_operational_block",
+    "expect": "PASS"
+  },
+  {
+    "id": "portfolio_duplicate_usd_rates_shadow_detected",
+    "expect": "PASS"
+  },
+  {
+    "id": "v14_baseline_not_execution_ready",
+    "expect": "PASS"
+  },
+  {
+    "id": "djia_dedicated_book_exists",
+    "expect": "PASS"
+  },
+  {
+    "id": "usdjpy_dedicated_book_exists",
+    "expect": "PASS"
+  },
+  {
+    "id": "same_model_validator_not_independent",
+    "expect": "PASS"
+  }
+]

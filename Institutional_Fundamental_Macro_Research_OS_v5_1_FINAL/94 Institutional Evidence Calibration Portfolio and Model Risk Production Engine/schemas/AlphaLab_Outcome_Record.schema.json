@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "run_id",
+    "symbol",
+    "horizon",
+    "matured",
+    "recorded_at_utc"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "horizon": {
+      "type": "string"
+    },
+    "matured": {
+      "type": "boolean"
+    },
+    "recorded_at_utc": {
+      "type": "string"
+    },
+    "realized_r": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "mfe_r": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "mae_r": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "time_to_trigger_seconds": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "time_to_mfe_seconds": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "expired_without_trigger": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "cost_r": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "incident_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

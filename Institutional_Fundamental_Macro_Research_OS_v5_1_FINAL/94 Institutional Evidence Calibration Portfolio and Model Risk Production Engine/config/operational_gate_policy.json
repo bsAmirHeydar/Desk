@@ -1,0 +1,9 @@
+{
+  "version": "16.0.0",
+  "permission_max_clock_drift_seconds": 5,
+  "default_fail_closed": true,
+  "expired_permission_blocks_new_entry": true,
+  "unknown_permission_blocks_new_entry": true,
+  "symbol_mapping_required": true,
+  "market_open_state_required": true
+}

@@ -112,3 +112,6 @@ V12 adds deterministic checks for fact/attention/narrative separation, validity/
 ## V13 universal multi-asset coverage
 
 Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.
+
+## V16 production validation hook
+Use [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/09 Independent Blind Validation and Disagreement Engine]] and [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/10 Statistical Learning Promotion and Multiple-Testing Control]].

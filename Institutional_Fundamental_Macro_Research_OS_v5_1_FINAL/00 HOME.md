@@ -2,13 +2,13 @@
 title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 15.1.0
+version: 16.0.0
 created: 2026-07-29
 updated: 2026-08-08
 language: en
 tags: [home, fundamental-only, institutional-macro, research-platform]
 ---
-# Institutional Fundamental Macro Research OS v6.2 — Knowledge Canon
+# Institutional Fundamental Macro Research OS v6.3 — Knowledge Canon
 
 > [!abstract] Fundamental-only institutional research architecture
 > A fundamental-only institutional knowledge canon for macroeconomics, accounting, financial systems, rates, FX, equities, corporate securities, credit, banks, commodities, real assets, digital assets, countries, geopolitics, research methods and multihorizon interpretation.
@@ -216,3 +216,12 @@ Current production deployment profile: XAUUSD, NASDAQ100, SP500, DJIA, EURUSD an
 ## V15.1 — Institutional Temporal Clearance Gate
 
 V15.1 makes Timing a mandatory independent clearance gate before final `EDGE_ACTIVE`. Fundamental/Narrative first produce a core Edge candidate; Module 93 must then return `CLEAR` or `CLEAR_WITH_CONSTRAINTS`. See [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/47 Institutional Temporal Clearance Gate]], [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/54 Timing Gate to Final Edge Transition Matrix]] and [[V15_1_RELEASE_NOTES]].
+
+
+## V16 Institutional production control
+
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/00 Institutional Evidence Calibration Portfolio and Model Risk Production Engine MOC]] — executable evidence, calibration, portfolio, operational and model-risk control.
+- [[CURRENT_PRODUCTION_MANIFEST]] — mandatory first object for live production authority.
+- [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/17 V16 Full-Vault Production Prompt]] — sole full-production entry point.
+
+V16 does not add technical direction. Calibration and portfolio filtering start shadow-only; manifest/evidence integrity and operational safety are fail-closed.

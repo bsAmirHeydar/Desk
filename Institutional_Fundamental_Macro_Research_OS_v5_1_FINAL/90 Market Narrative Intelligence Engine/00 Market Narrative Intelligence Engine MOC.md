@@ -113,3 +113,6 @@ V12 can be internally certified for ontology, provenance, point-in-time process,
 ## V13 universal multi-asset coverage
 
 Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ranking and relative value. Start at [[91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC]]. V11 and V12 authorities remain intact.
+
+## V16 production extensions
+Dedicated books: [[90 Market Narrative Intelligence Engine/53 DJIA Narrative Operating Book]] and [[90 Market Narrative Intelligence Engine/54 USDJPY Narrative Operating Book]]. Global root-cause IDs and price-blind validity checks reduce circular narrative confirmation.

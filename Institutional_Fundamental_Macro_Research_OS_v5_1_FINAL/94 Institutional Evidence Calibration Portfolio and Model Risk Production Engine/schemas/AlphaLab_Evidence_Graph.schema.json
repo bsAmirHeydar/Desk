@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Evidence Graph",
+  "type": "object",
+  "required": [
+    "analysis_id",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "analysis_id": {
+      "type": "string"
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "root_cause_id"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "root_cause_id": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "from",
+          "to",
+          "relation"
+        ],
+        "properties": {
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          },
+          "relation": {
+            "enum": [
+              "INDEPENDENT_EVIDENCE",
+              "CAUSAL_DESCENDANT",
+              "MECHANICAL_DESCENDANT",
+              "CORRELATED_OBSERVATION",
+              "DERIVED_MODEL_OUTPUT",
+              "CONTRADICTORY_EVIDENCE",
+              "UNKNOWN_DEPENDENCY"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

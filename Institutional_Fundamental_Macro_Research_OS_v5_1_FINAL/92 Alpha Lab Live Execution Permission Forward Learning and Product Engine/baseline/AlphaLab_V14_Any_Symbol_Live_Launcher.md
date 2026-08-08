@@ -1,3 +1,11 @@
+---
+status: archived-superseded
+production_authority: false
+superseded_by: V16.0.0
+---
+
+> [!warning] Historical baseline only. Never use for live production permission.
+
 # Alpha Lab V14 — Live Any-Symbol Launcher
 
 Use the current Alpha Lab Fundamental Vault and execute the canonical prompt:

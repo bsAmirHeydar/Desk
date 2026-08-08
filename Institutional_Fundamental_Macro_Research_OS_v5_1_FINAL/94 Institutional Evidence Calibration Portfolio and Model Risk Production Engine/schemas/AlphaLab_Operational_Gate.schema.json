@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "generated_at_utc",
+    "status",
+    "hard_block"
+  ],
+  "properties": {
+    "generated_at_utc": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "CLEAR",
+        "BLOCK_NEW_ENTRY",
+        "FREEZE_AUTOMATION",
+        "SAFE_CLOSE_IF_EXECUTION_POLICY_REQUIRES",
+        "MANUAL_ESCALATION"
+      ]
+    },
+    "hard_block": {
+      "type": "boolean"
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -23,3 +23,6 @@ tags: [fundamental-only, navigation, v8-repair]
 - [[55 Data Platform Ontology Lineage and Governance/06 Knowledge Graph and Causal Ontology]]
 - [[55 Data Platform Ontology Lineage and Governance/07 Data Quality Observability and Incident Response]]
 - [[55 Data Platform Ontology Lineage and Governance/08 Lineage Reproducibility Access and Retention]]
+
+## V16 executable evidence hook
+Use [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/02 Bitemporal Evidence Snapshot and Claim Lineage Runtime]] and [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/03 Global Evidence Dependency Graph and Root-Cause Deduplication]] for production records.

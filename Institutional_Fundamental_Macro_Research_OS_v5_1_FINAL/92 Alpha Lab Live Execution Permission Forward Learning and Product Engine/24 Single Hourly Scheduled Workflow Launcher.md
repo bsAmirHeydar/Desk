@@ -1,18 +1,8 @@
 ---
-title: "Single Hourly Scheduled Workflow Launcher"
-type: scheduled-workflow-profile
-status: active
-version: 15.0.0
+title: "Alpha Lab V16 Single Scheduled Workflow Launcher"
+type: scheduled-workflow-contract
+status: canonical-operational
+version: 16.0.0
 ---
-# Single Hourly Scheduled Workflow Launcher
-
-Use one scheduled workflow only. Run hourly in `Asia/Tehran` using the exact V15 Full-Vault Timing-Integrated Production Prompt.
-
-Every invocation re-adjudicates all six markets. Event sensitivity is evaluated inside each run. The scheduled workflow must not silently downgrade to a quick refresh.
-
-If the platform cannot schedule more frequently than hourly, do not claim sub-hourly execution. Exact event-time reactions require a separately supported external trigger/API architecture.
-
-Email stays simple and attachment-free. HTML remains the complete human-facing product in chat.
-
-
-Every scheduled run rebuilds the temporal clock graph from current official schedules and current methodology versions.
+# V16 Scheduled Workflow Launcher
+The single scheduled six-market workflow must execute [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/17 V16 Full-Vault Production Prompt]]. Timing is a sub-engine, not the final decision authority. Calibration and portfolio gate remain SHADOW until their versioned configs are promoted; operational fail-closed checks are ENFORCED. Email remains timestamp plus `Symbol | Edge Level | Permission`.

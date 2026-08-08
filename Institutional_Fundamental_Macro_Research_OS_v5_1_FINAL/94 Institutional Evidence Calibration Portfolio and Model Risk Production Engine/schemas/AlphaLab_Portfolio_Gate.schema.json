@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "mode",
+    "candidates",
+    "decision"
+  ],
+  "properties": {
+    "mode": {
+      "enum": [
+        "SHADOW",
+        "ENFORCED"
+      ]
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "decision": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

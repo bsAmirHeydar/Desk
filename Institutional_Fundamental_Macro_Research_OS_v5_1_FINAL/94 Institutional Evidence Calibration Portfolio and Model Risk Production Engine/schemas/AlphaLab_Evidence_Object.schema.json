@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Evidence Object",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "root_cause_id",
+    "retrieved_at",
+    "source_id",
+    "observability_class",
+    "model_visible_at_analysis_time"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "root_cause_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "event_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "first_seen_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "valid_from": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "valid_to": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revision_number": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "revision_state": {
+      "enum": [
+        "FIRST_RELEASE",
+        "REVISED",
+        "TENTATIVE",
+        "UNKNOWN",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_tier": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url_or_locator": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "raw_snapshot_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parser_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_visible_at_analysis_time": {
+      "type": "boolean"
+    },
+    "observability_class": {
+      "enum": [
+        "OBSERVED",
+        "OFFICIAL_FIRST_RELEASE",
+        "MARKET_IMPLIED",
+        "PUBLIC_PROXY",
+        "MODEL_IMPLIED",
+        "STRUCTURED_JUDGMENT",
+        "UNAVAILABLE",
+        "UNDETERMINED"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

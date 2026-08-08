@@ -179,3 +179,18 @@ Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ra
 ## V15.1 — Institutional Temporal Clearance Gate
 
 V15.1 makes Timing a mandatory independent clearance gate before final `EDGE_ACTIVE`. Fundamental/Narrative first produce a core Edge candidate; Module 93 must then return `CLEAR` or `CLEAR_WITH_CONSTRAINTS`. See [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/47 Institutional Temporal Clearance Gate]], [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/54 Timing Gate to Final Edge Transition Matrix]] and [[V15_1_RELEASE_NOTES]].
+
+
+## V16 institutional production-control coverage
+
+| Capability | Production implementation | Initial mode |
+|---|---|---|
+| Single current authority / legacy firewall | [[CURRENT_PRODUCTION_MANIFEST]] + V16 preflight | ENFORCED |
+| Bitemporal evidence + snapshot hashes | Module 94 Evidence Object + snapshot tool | ENFORCED for load-bearing metadata |
+| Global root-cause dedup | Module 94 Evidence Graph validator | ENFORCED on material evidence graph |
+| Forward reference-class calibration | Module 94 calibrator | SHADOW / COLD_START until mature |
+| Portfolio factor concentration | Module 94 portfolio gate | SHADOW until promoted |
+| Operational kill switch | Module 94 operational gate | ENFORCED fail-closed |
+| Blind/independent validation | Module 94 validator contract | SHADOW; independence labelled honestly |
+| Statistical learning promotion | Module 94 promotion governance | ENFORCED for Canon mutation |
+| DJIA / USDJPY dedicated books | V16 asset books in Modules 89/90/94 | CANONICAL-OPERATIONAL |

@@ -1,0 +1,15 @@
+{
+  "version": "16.0.0",
+  "mode": "SHADOW",
+  "loading_map": {
+    "STRONG_NEGATIVE": -2,
+    "NEGATIVE": -1,
+    "NEUTRAL": 0,
+    "POSITIVE": 1,
+    "STRONG_POSITIVE": 2
+  },
+  "max_same_root_factor_trades": 2,
+  "max_abs_factor_risk_units": 4.0,
+  "unknown_material_factor_policy": "NO_DIVERSIFICATION_CREDIT",
+  "note": "Switch to ENFORCED only after forward validation and bridge acceptance."
+}

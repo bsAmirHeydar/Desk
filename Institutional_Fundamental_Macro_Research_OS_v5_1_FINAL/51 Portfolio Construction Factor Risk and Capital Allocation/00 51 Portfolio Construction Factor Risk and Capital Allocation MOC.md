@@ -25,3 +25,6 @@ tags: [fundamental-only, navigation, v8-repair]
 - [[51 Portfolio Construction Factor Risk and Capital Allocation/08 Convexity Carry and Drawdown Trade-Off]]
 - [[51 Portfolio Construction Factor Risk and Capital Allocation/09 Portfolio Hedges and Basis Risk]]
 - [[51 Portfolio Construction Factor Risk and Capital Allocation/10 Capital Reallocation Kill and Scale Rules]]
+
+## V16 executable production hook
+Use [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/07 Portfolio Factor Concentration and Capital Gate]] and its tool/config for live six-market concentration control. Existing portfolio theory remains authoritative; V16 provides the executable gate.

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "run_id",
+    "validator_mode",
+    "verdict",
+    "material_disagreements"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "validator_mode": {
+      "enum": [
+        "NONE",
+        "BLIND_SECOND_PASS_SAME_MODEL",
+        "INDEPENDENT_MODEL_OR_ANALYST"
+      ]
+    },
+    "verdict": {
+      "enum": [
+        "PASS",
+        "CONDITIONAL",
+        "FAIL"
+      ]
+    },
+    "material_disagreements": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": true
+}

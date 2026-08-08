@@ -1,0 +1,12 @@
+{
+  "version": "16.0.0",
+  "mode": "SHADOW",
+  "policy_note": "Governance defaults, not universal statistical constants.",
+  "min_independent_matured_observations": 30,
+  "min_total_matured_observations": 60,
+  "min_distinct_regime_labels": 3,
+  "min_holdout_observations": 30,
+  "enforcement_requires_manual_promotion": true,
+  "unmatured_records_excluded": true,
+  "same_root_events_clustered": true
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "run_id",
+    "analysis_cutoff_utc",
+    "symbols",
+    "prompt_sha256",
+    "state_sha256",
+    "model_id"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "symbols": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "model_configuration": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "vault_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prompt_sha256": {
+      "type": "string"
+    },
+    "production_manifest_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "state_sha256": {
+      "type": "string"
+    },
+    "calibration_mode": {
+      "type": "string"
+    },
+    "portfolio_gate_mode": {
+      "type": "string"
+    },
+    "validator_mode": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

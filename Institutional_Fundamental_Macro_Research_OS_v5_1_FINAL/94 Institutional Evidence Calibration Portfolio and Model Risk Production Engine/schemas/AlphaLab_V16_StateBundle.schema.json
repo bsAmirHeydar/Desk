@@ -1,0 +1,272 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "generated_at_utc",
+    "run_id",
+    "markets"
+  ],
+  "properties": {
+    "generated_at_utc": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "markets": {
+      "type": "object",
+      "required": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "XAUUSD": {
+          "type": "object",
+          "required": [
+            "research_edge",
+            "timing_clearance",
+            "calibration_status",
+            "portfolio_gate",
+            "operational_gate",
+            "permission",
+            "valid_until_utc"
+          ],
+          "properties": {
+            "research_edge": {
+              "type": "string"
+            },
+            "timing_clearance": {
+              "type": "string"
+            },
+            "calibration_status": {
+              "type": "string"
+            },
+            "portfolio_gate": {
+              "type": "string"
+            },
+            "operational_gate": {
+              "type": "string"
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        },
+        "NASDAQ100": {
+          "type": "object",
+          "required": [
+            "research_edge",
+            "timing_clearance",
+            "calibration_status",
+            "portfolio_gate",
+            "operational_gate",
+            "permission",
+            "valid_until_utc"
+          ],
+          "properties": {
+            "research_edge": {
+              "type": "string"
+            },
+            "timing_clearance": {
+              "type": "string"
+            },
+            "calibration_status": {
+              "type": "string"
+            },
+            "portfolio_gate": {
+              "type": "string"
+            },
+            "operational_gate": {
+              "type": "string"
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        },
+        "SP500": {
+          "type": "object",
+          "required": [
+            "research_edge",
+            "timing_clearance",
+            "calibration_status",
+            "portfolio_gate",
+            "operational_gate",
+            "permission",
+            "valid_until_utc"
+          ],
+          "properties": {
+            "research_edge": {
+              "type": "string"
+            },
+            "timing_clearance": {
+              "type": "string"
+            },
+            "calibration_status": {
+              "type": "string"
+            },
+            "portfolio_gate": {
+              "type": "string"
+            },
+            "operational_gate": {
+              "type": "string"
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        },
+        "DJIA": {
+          "type": "object",
+          "required": [
+            "research_edge",
+            "timing_clearance",
+            "calibration_status",
+            "portfolio_gate",
+            "operational_gate",
+            "permission",
+            "valid_until_utc"
+          ],
+          "properties": {
+            "research_edge": {
+              "type": "string"
+            },
+            "timing_clearance": {
+              "type": "string"
+            },
+            "calibration_status": {
+              "type": "string"
+            },
+            "portfolio_gate": {
+              "type": "string"
+            },
+            "operational_gate": {
+              "type": "string"
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        },
+        "EURUSD": {
+          "type": "object",
+          "required": [
+            "research_edge",
+            "timing_clearance",
+            "calibration_status",
+            "portfolio_gate",
+            "operational_gate",
+            "permission",
+            "valid_until_utc"
+          ],
+          "properties": {
+            "research_edge": {
+              "type": "string"
+            },
+            "timing_clearance": {
+              "type": "string"
+            },
+            "calibration_status": {
+              "type": "string"
+            },
+            "portfolio_gate": {
+              "type": "string"
+            },
+            "operational_gate": {
+              "type": "string"
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        },
+        "USDJPY": {
+          "type": "object",
+          "required": [
+            "research_edge",
+            "timing_clearance",
+            "calibration_status",
+            "portfolio_gate",
+            "operational_gate",
+            "permission",
+            "valid_until_utc"
+          ],
+          "properties": {
+            "research_edge": {
+              "type": "string"
+            },
+            "timing_clearance": {
+              "type": "string"
+            },
+            "calibration_status": {
+              "type": "string"
+            },
+            "portfolio_gate": {
+              "type": "string"
+            },
+            "operational_gate": {
+              "type": "string"
+            },
+            "permission": {
+              "enum": [
+                "BUY",
+                "SELL",
+                "NO_TRADE"
+              ]
+            },
+            "valid_until_utc": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

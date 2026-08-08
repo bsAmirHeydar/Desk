@@ -1,7 +1,7 @@
 ---
-title: "Alpha Lab V16 — Full-Vault Forward-Learning Production Prompt (Module 92 Router)"
+title: "Alpha Lab V16 — Institutional Full-Vault Production Prompt"
 type: production-live-analysis-prompt
-status: router-only
+status: execution-ready
 version: 16.0.0
 language: en
 output_language: fa
@@ -62,6 +62,3 @@ M1 Donchian-20, 4ATR initial stop and candle-close trail are external mechanical
 Run a blind second pass at minimum and label it honestly as same-model unless truly independent. Log disagreements. No single outcome may become Canonical.
 
 HTML remains deep and Persian RTL. Email remains only Tehran timestamp plus `Symbol | Edge Level | Permission`.
-
-
-> Canonical production authority: [[94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/17 V16 Full-Vault Production Prompt]].
