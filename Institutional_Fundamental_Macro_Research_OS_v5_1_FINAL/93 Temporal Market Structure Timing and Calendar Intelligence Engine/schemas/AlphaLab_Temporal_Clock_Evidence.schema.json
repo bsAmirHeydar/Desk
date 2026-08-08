@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Alpha Lab V15.1 Temporal Clock Evidence Object",
+  "type": "object",
+  "required": [
+    "clock_id",
+    "clock_family",
+    "schedule_status",
+    "mechanism",
+    "materiality",
+    "source"
+  ],
+  "properties": {
+    "clock_id": {
+      "type": "string"
+    },
+    "clock_family": {
+      "type": "string"
+    },
+    "schedule_status": {
+      "enum": [
+        "CONFIRMED",
+        "TENTATIVE",
+        "TBD_TIME",
+        "REVISED",
+        "CANCELLED",
+        "UNSCHEDULED"
+      ]
+    },
+    "event_time_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "local_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "iana_timezone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mechanism": {
+      "type": "string"
+    },
+    "materiality": {
+      "enum": [
+        "IMMATERIAL",
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "CRITICAL",
+        "UNDETERMINED"
+      ]
+    },
+    "direction": {
+      "enum": [
+        "UP",
+        "DOWN",
+        "TWO_SIDED",
+        "NONE",
+        "UNDETERMINED"
+      ]
+    },
+    "dependency_relation": {
+      "enum": [
+        "INDEPENDENT",
+        "PARENT_CHILD",
+        "SAME_ROOT_MECHANISM",
+        "SEQUENTIAL_STAGE",
+        "MECHANICALLY_LINKED",
+        "AMPLIFIER",
+        "CORRELATED_ONLY",
+        "UNKNOWN_RELATION"
+      ]
+    },
+    "source": {
+      "type": "object"
+    },
+    "retrieved_at_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "methodology_effective_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "confidence": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    }
+  },
+  "additionalProperties": true
+}

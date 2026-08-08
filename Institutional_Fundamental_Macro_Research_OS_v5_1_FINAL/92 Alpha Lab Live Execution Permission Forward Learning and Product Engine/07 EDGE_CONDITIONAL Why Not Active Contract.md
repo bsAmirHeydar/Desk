@@ -2,21 +2,22 @@
 title: "EDGE_CONDITIONAL Why Not Active Contract"
 type: mandatory-output-contract
 status: canonical-operational
-version: 14.1.0
+version: 15.1.0
 ---
 # EDGE_CONDITIONAL — Why Not Active?
 
-A conditional Edge is never allowed to be a vague label such as “needs confirmation.” The deep report and HTML must include a dedicated `Why Not Active?` block with:
+Every Conditional state must identify **which gate failed**.
 
-1. why the state is not `EDGE_ACTIVE` now;
-2. decisive blockers ranked by importance;
-3. non-decisive caution factors separately;
-4. exact missing or insufficient evidence;
-5. exact upgrade triggers to `EDGE_ACTIVE`;
-6. exact downgrade triggers to `BIAS_ONLY`, `NO_EDGE` or `EVENT_OR_FRAGMENTED`;
-7. whether each scheduled event is a true veto or only a validity-window constraint;
-8. current usable time window and `valid_until` logic;
-9. the specific live evidence that would remove each blocker;
-10. whether a pre-event directional opportunity may exist but is withheld because evidence quality remains below Active threshold.
+## Required fields
+1. `failed_stage`: `CORE`, `TIMING`, or `BOTH`;
+2. why it is not Active now;
+3. decisive blockers ranked by importance;
+4. caution factors separately;
+5. exact missing/insufficient evidence;
+6. exact upgrade condition into a core Active Candidate and/or Timing CLEAR;
+7. downgrade triggers;
+8. if Timing blocks: exact clock, root mechanism, source, gate state, hard vs soft blocker, next clearing transition, safe-window status, and `valid_until` logic;
+9. whether the future event is only a validity constraint or a current HOLD/VETO;
+10. earliest plausible re-evaluation time.
 
-Each “confirmation” must name the causal channel, evidence and state transition it would create.
+“Needs confirmation” and “timing is bad” are invalid without the exact evidence object and state transition required.

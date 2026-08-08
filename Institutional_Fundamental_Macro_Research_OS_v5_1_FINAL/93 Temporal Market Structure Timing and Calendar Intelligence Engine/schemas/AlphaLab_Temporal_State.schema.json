@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Alpha Lab V15.1 Temporal State",
+  "type": "object",
+  "required": [
+    "generated_at_utc",
+    "symbol",
+    "gate_state",
+    "dominant_clock",
+    "safe_execution_window",
+    "valid_until_utc",
+    "next_review_utc",
+    "confidence"
+  ],
+  "properties": {
+    "generated_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "gate_state": {
+      "enum": [
+        "CLEAR",
+        "CLEAR_WITH_CONSTRAINTS",
+        "HOLD",
+        "VETO",
+        "UNDETERMINED_MATERIAL",
+        "CLOSED"
+      ]
+    },
+    "clearance_basis": {
+      "type": "string"
+    },
+    "dominant_clock": {
+      "type": "object"
+    },
+    "competing_clocks": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "hard_blockers": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "soft_constraints": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "clock_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "event_reset_severity": {
+      "enum": [
+        "NONE",
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "BINARY_RESET",
+        "UNKNOWN_MATERIAL"
+      ]
+    },
+    "safe_execution_window": {
+      "enum": [
+        "EMPIRICALLY_SUFFICIENT",
+        "QUALITATIVE_SAFE_MARGIN",
+        "MARGINAL",
+        "INSUFFICIENT",
+        "UNKNOWN"
+      ]
+    },
+    "time_budget_seconds": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "valid_from_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "valid_until_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "next_temporal_transition_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "next_review_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "review_feasibility": {
+      "enum": [
+        "FEASIBLE",
+        "EXPIRE_BEFORE_REVIEW",
+        "EXTERNAL_TRIGGER_REQUIRED",
+        "UNDETERMINED"
+      ]
+    },
+    "operational_latency_budget_seconds": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "schedule_revision_state": {
+      "enum": [
+        "CURRENT_CONFIRMED",
+        "TENTATIVE",
+        "TBD_TIME",
+        "REVISED",
+        "CANCELLED",
+        "UNSCHEDULED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "source_freshness": {
+      "enum": [
+        "CURRENT_PRIMARY",
+        "CURRENT_SECONDARY_CAPPED",
+        "STALE_MATERIAL",
+        "UNAVAILABLE_MATERIAL"
+      ]
+    },
+    "confidence": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "missing_data": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": true
+}

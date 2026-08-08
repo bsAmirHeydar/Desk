@@ -1,0 +1,212 @@
+[
+  {
+    "id": "V15_1_B01",
+    "scenario": "NFP four hours ahead, coherent core edge, generous safe window",
+    "expected": "CLEAR_WITH_CONSTRAINTS; event existence alone cannot veto; expire before adaptive pre-hazard boundary."
+  },
+  {
+    "id": "V15_1_B02",
+    "scenario": "NFP twenty minutes ahead, M1 time-to-exploit telemetry suggests most triggers occur later",
+    "expected": "HOLD or VETO depending safety buffer; no Active merely because core thesis is strong."
+  },
+  {
+    "id": "V15_1_B03",
+    "scenario": "High-impact event date confirmed but official release time TBD",
+    "expected": "Preserve TBD_TIME; do not invent timestamp; material uncertainty prevents exact clearance if relevant."
+  },
+  {
+    "id": "V15_1_B04",
+    "scenario": "Treasury tentative schedule later revised",
+    "expected": "Live uses latest official schedule; historical review uses only version known then."
+  },
+  {
+    "id": "V15_1_B05",
+    "scenario": "Month-end WMR exists but no sourced flow sign",
+    "expected": "Clock may constrain/review; no bullish/bearish temporal force."
+  },
+  {
+    "id": "V15_1_B06",
+    "scenario": "Month-end WMR plus asset-manager hedge are same root mechanism",
+    "expected": "Dependency graph prevents double-counting."
+  },
+  {
+    "id": "V15_1_B07",
+    "scenario": "Quarter-end with current funding/basis evidence unavailable",
+    "expected": "Do not assume stress; clock present but mechanism materiality capped."
+  },
+  {
+    "id": "V15_1_B08",
+    "scenario": "Quarter-end with documented funding constraint relevant to EURUSD",
+    "expected": "May HOLD/VETO or apply opposing temporal force; mechanism/source explicit."
+  },
+  {
+    "id": "V15_1_B09",
+    "scenario": "Nasdaq quarterly expiry + SOQ + cash open",
+    "expected": "Treat linked stages as one root expiry/settlement mechanism."
+  },
+  {
+    "id": "V15_1_B10",
+    "scenario": "SPX PM-settled option confused with AM-settled index series",
+    "expected": "Fail product/series resolution; no generic OpEx clearance."
+  },
+  {
+    "id": "V15_1_B11",
+    "scenario": "Daily/weekly option expiry on holiday-adjusted date",
+    "expected": "Use current official expiration calendar; do not rely on static weekday rule."
+  },
+  {
+    "id": "V15_1_B12",
+    "scenario": "NQ CFD open while Nasdaq cash market not yet open",
+    "expected": "Separate broker execution availability from reference cash clock."
+  },
+  {
+    "id": "V15_1_B13",
+    "scenario": "CFD maintenance closed while reference futures open",
+    "expected": "CLOSED/VETO for actual executor despite reference market availability."
+  },
+  {
+    "id": "V15_1_B14",
+    "scenario": "US holiday while London FX and gold markets open",
+    "expected": "Do not mark global closure; record asymmetric participation."
+  },
+  {
+    "id": "V15_1_B15",
+    "scenario": "DST mismatch week",
+    "expected": "Use IANA zones/current rules; no fixed UTC offset."
+  },
+  {
+    "id": "V15_1_B16",
+    "scenario": "Tokyo/London handoff without any material scheduled event",
+    "expected": "Session transition alone is not veto; at most EARLY_REVIEW/HOLD if thesis depends on participant handoff."
+  },
+  {
+    "id": "V15_1_B17",
+    "scenario": "London open on EURUSD with no other clock",
+    "expected": "No directional timing sign and no Active upgrade from weak core state."
+  },
+  {
+    "id": "V15_1_B18",
+    "scenario": "Friday afternoon with no specific obligation/reset",
+    "expected": "No automatic no-trade rule."
+  },
+  {
+    "id": "V15_1_B19",
+    "scenario": "Year-end thin calendar but target venue fully open",
+    "expected": "No veto from label alone; use structural closure/settlement facts."
+  },
+  {
+    "id": "V15_1_B20",
+    "scenario": "LBMA PM auction collides with US macro release",
+    "expected": "Build collision graph, rank root mechanisms, do not add arbitrary scores."
+  },
+  {
+    "id": "V15_1_B21",
+    "scenario": "WMR 4pm benchmark during coherent EURUSD core candidate",
+    "expected": "Benchmark is a real clock; direction remains undetermined absent sourced flow sign."
+  },
+  {
+    "id": "V15_1_B22",
+    "scenario": "Treasury auction and unrelated megacap earnings at similar time",
+    "expected": "Can remain independent clocks; rank by target linkage."
+  },
+  {
+    "id": "V15_1_B23",
+    "scenario": "FOMC statement then press conference",
+    "expected": "Sequential information stages; validity may expire between stages."
+  },
+  {
+    "id": "V15_1_B24",
+    "scenario": "BoJ meeting official time undecided",
+    "expected": "Preserve time uncertainty and avoid false precision."
+  },
+  {
+    "id": "V15_1_B25",
+    "scenario": "Unscheduled policy shock",
+    "expected": "Record detection time; no retroactive schedule before public information."
+  },
+  {
+    "id": "V15_1_B26",
+    "scenario": "Core state BIAS_ONLY and Timing CLEAR",
+    "expected": "Final remains BIAS_ONLY; Timing cannot upgrade."
+  },
+  {
+    "id": "V15_1_B27",
+    "scenario": "Core NO_EDGE and Timing FAVORABLE/clear",
+    "expected": "Final remains NO_EDGE."
+  },
+  {
+    "id": "V15_1_B28",
+    "scenario": "Core active candidate and Timing HOLD",
+    "expected": "Final EDGE_CONDITIONAL, NO_TRADE, Why Not Active names timing blocker."
+  },
+  {
+    "id": "V15_1_B29",
+    "scenario": "Core active candidate and Timing CLEAR_WITH_CONSTRAINTS",
+    "expected": "Final EDGE_ACTIVE with valid_until before hazard."
+  },
+  {
+    "id": "V15_1_B30",
+    "scenario": "Core active candidate and Timing VETO",
+    "expected": "NO_TRADE; thesis may remain valid internally."
+  },
+  {
+    "id": "V15_1_B31",
+    "scenario": "Material timing source stale",
+    "expected": "UNDETERMINED_MATERIAL or HOLD; cannot silently clear."
+  },
+  {
+    "id": "V15_1_B32",
+    "scenario": "Material clock primary source unavailable but current secondary corroboration exists",
+    "expected": "May use capped evidence only if not critical; disclose source tier."
+  },
+  {
+    "id": "V15_1_B33",
+    "scenario": "Permission generated close to expiry, transport delay consumes remaining window",
+    "expected": "Stale/expired permission becomes NO_TRADE; latency cannot extend TTL."
+  },
+  {
+    "id": "V15_1_B34",
+    "scenario": "Next required review at 15:30, scheduler cannot run until 16:00",
+    "expected": "Expire permission before 15:30 or HOLD; do not claim continuous monitoring."
+  },
+  {
+    "id": "V15_1_B35",
+    "scenario": "No empirical time-to-trigger sample but safe window several hours with no hard hazard",
+    "expected": "QUALITATIVE_SAFE_MARGIN allowed with confidence cap; avoid cold-start starvation."
+  },
+  {
+    "id": "V15_1_B36",
+    "scenario": "No empirical sample and safe window marginal",
+    "expected": "HOLD; no optimistic clearance."
+  },
+  {
+    "id": "V15_1_B37",
+    "scenario": "Large move after timing-vetoed NO_TRADE",
+    "expected": "Do not label over-veto unless evidence available then justified a clear safe window."
+  },
+  {
+    "id": "V15_1_B38",
+    "scenario": "Timing filter blocks 95% of core active candidates",
+    "expected": "Flag starvation/model-risk; compare CORE_ONLY control."
+  },
+  {
+    "id": "V15_1_B39",
+    "scenario": "Technical indicator says trend is strong during timing review",
+    "expected": "Ignore; technical signal has zero timing authority."
+  },
+  {
+    "id": "V15_1_B40",
+    "scenario": "Price/volume spike around expiry with no known clock mechanism",
+    "expected": "Cannot manufacture timing direction from price response."
+  },
+  {
+    "id": "V15_1_B41",
+    "scenario": "Historical backtest uses current holiday/calendar rule not known then",
+    "expected": "Fail point-in-time calendar versioning."
+  },
+  {
+    "id": "V15_1_B42",
+    "scenario": "Two clock timestamps close but one is child of the other and one independent",
+    "expected": "Collapse linked pair, keep independent root; dominance by mechanism not count."
+  }
+]

@@ -2,7 +2,7 @@
 title: "README"
 type: documentation
 status: canonical
-version: 14.1.0
+version: 15.1.0
 created: 2026-07-30
 updated: 2026-08-08
 language: en
@@ -106,3 +106,12 @@ Start at [[92 Alpha Lab Live Execution Permission Forward Learning and Product E
 
 V14.1 preserves the authority split: Module 89 for force/consumption/persistence/asymmetry; Module 90 for attention/narrative/reflexivity; Module 91 for instrument resolution and asset-family adaptation; Module 92 for live operational adjudication, Edge/permission, forward learning and product handoff.
 
+
+
+## V15 temporal intelligence
+Module 93 adds institutional timing science without violating the fundamental-only boundary. It dynamically resolves official calendars and market-mechanic clocks, builds multi-clock temporal state, and supplies validity/veto/temporary mechanical-force information to Module 92. Start at [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/00 Temporal Market Structure Timing and Calendar Intelligence Engine MOC]].
+
+
+## V15.1 — Institutional Temporal Clearance Gate
+
+V15.1 makes Timing a mandatory independent clearance gate before final `EDGE_ACTIVE`. Fundamental/Narrative first produce a core Edge candidate; Module 93 must then return `CLEAR` or `CLEAR_WITH_CONSTRAINTS`. See [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/47 Institutional Temporal Clearance Gate]], [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/54 Timing Gate to Final Edge Transition Matrix]] and [[V15_1_RELEASE_NOTES]].

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Alpha Lab V15 Temporal Event",
+  "type": "object",
+  "required": [
+    "event_id",
+    "event_type",
+    "scheduled_time",
+    "timezone",
+    "mechanism",
+    "source_id"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "scheduled_time": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "utc_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mechanism": {
+      "type": "string"
+    },
+    "affected_symbols": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "importance": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "SYSTEMIC",
+        "UNDETERMINED"
+      ]
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "version_effective": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "SCHEDULED",
+        "TENTATIVE",
+        "TIME_UNDECIDED",
+        "RESCHEDULED",
+        "CANCELLED",
+        "COMPLETED",
+        "UNSCHEDULED_SHOCK"
+      ]
+    }
+  }
+}

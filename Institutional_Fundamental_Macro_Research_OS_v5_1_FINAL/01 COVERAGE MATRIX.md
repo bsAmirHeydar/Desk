@@ -2,7 +2,7 @@
 title: "Institutional Fundamental Coverage and Production Maturity Matrix"
 type: coverage-matrix
 status: active
-version: 14.1.0
+version: 15.1.0
 created: 2026-07-29
 updated: 2026-08-08
 language: en
@@ -159,3 +159,23 @@ Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ra
 | Simple email output | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/21 Simple Email Output Contract]] | production output |
 | Full production prompt / manual launcher / hourly launcher | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/22 Full-Vault Forward-Learning Production Prompt]]; [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/23 Manual Ran Test Launcher]]; [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/24 Single Hourly Scheduled Workflow Launcher]] | production |
 
+
+
+## V15 temporal intelligence coverage
+
+| Capability | Canonical module | Status | Boundary |
+|---|---|---|---|
+| Global session/participant/handoff intelligence | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/05 Global Session Geography and Participant Control]] | Canonical | No technical direction |
+| Macro/central-bank event clock | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/09 Macro Release and Scheduled Information Clock]] | Canonical | Point-in-time official calendars |
+| Benchmarks/fixings | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/15 WMR FX Benchmark Fixing and Reference-Rate Intelligence]] / [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/16 LBMA Gold Benchmark Auction and Precious-Metals Clock]] | Canonical | Transactional vs reference distinction |
+| Futures/options expiry/roll/settlement | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/18 Futures Contract Lifecycle Expiry Roll Delivery and Final Settlement]] / [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/20 Options Expiration Daily Weekly Monthly Quarterly and 0DTE]] | Canonical | Product-specific |
+| Index rebalance/reconstitution | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/22 Index Rebalance Reconstitution and Implementation Clock]] | Canonical | Current methodology required |
+| Month/quarter/year-end | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/24 Month-End Portfolio Rebalance FX Hedge and Benchmark Flow]] / [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/25 Quarter-End Funding Balance-Sheet Window-Dressing and Basis]] / [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/26 Year-End Fiscal-Year Regulatory and Tax Clocks]] | Canonical | Direction requires causal evidence |
+| Temporal force / validity / veto | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/30 Temporal Mechanical Force Taxonomy]] / [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/32 Temporal Veto Validity Window and Edge Interaction]] | Canonical | Feeds Module 92 Edge |
+| Six-market timing books | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/35 XAUUSD Timing Operating Book]] through [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/40 USDJPY Timing Operating Book]] | Canonical-operational | Six-market production profile |
+| Timing forward learning | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/44 Forward Learning Timing Error Taxonomy and Validation]] | Canonical-governance | Hindsight firewall |
+
+
+## V15.1 — Institutional Temporal Clearance Gate
+
+V15.1 makes Timing a mandatory independent clearance gate before final `EDGE_ACTIVE`. Fundamental/Narrative first produce a core Edge candidate; Module 93 must then return `CLEAR` or `CLEAR_WITH_CONSTRAINTS`. See [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/47 Institutional Temporal Clearance Gate]], [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/54 Timing Gate to Final Edge Transition Matrix]] and [[V15_1_RELEASE_NOTES]].

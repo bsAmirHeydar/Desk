@@ -2,7 +2,7 @@
 title: "Alpha Lab Live Execution Permission Forward Learning and Product Engine"
 type: moc
 status: canonical-operational
-version: 14.1.0
+version: 15.0.0
 created: 2026-08-08
 ---
 # Alpha Lab Live Execution Permission Forward Learning and Product Engine
@@ -15,6 +15,7 @@ V11 force / consumption / remaining pressure / persistence
 + V12 attention / narrative / reflexivity / transition
 + V13 instrument + asset-family adaptation
 + V14 live multi-horizon state estimation
++ V15 temporal market structure / calendar / validity intelligence
 → V14.1 Edge adjudication
 → BUY / SELL / NO_TRADE
 → external mechanical execution
@@ -63,3 +64,7 @@ Module 92 does **not** redefine V11 force science, V12 narrative science or V13 
 - `templates/Simple_Email_Output_Template.md`
 - `templates/AlphaLab_Intelligence_Explorer_TEMPLATE.html`
 - `reference/AlphaLab_Intelligence_Explorer_REFERENCE_20260807.html`
+
+
+## V15 temporal dependency
+Before final Edge adjudication, retrieve [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/00 Temporal Market Structure Timing and Calendar Intelligence Engine MOC]]. Module 93 is authoritative for sessions, event clocks, benchmarks/fixings, expiry/roll/settlement, rebalance/reconstitution, month/quarter/year-end, holiday/DST, funding clocks and timing-based validity/veto.

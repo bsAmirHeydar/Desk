@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Alpha Lab V15.1 Temporal Clearance",
+  "type": "object",
+  "required": [
+    "core_edge_candidate",
+    "gate_state",
+    "final_edge_active_eligible",
+    "valid_until_utc"
+  ],
+  "properties": {
+    "core_edge_candidate": {
+      "enum": [
+        "ACTIVE_CANDIDATE_BULL",
+        "ACTIVE_CANDIDATE_BEAR",
+        "CONDITIONAL_CANDIDATE",
+        "RELATIVE_CANDIDATE",
+        "BIAS_ONLY",
+        "NO_EDGE",
+        "FRAGMENTED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "gate_state": {
+      "enum": [
+        "CLEAR",
+        "CLEAR_WITH_CONSTRAINTS",
+        "HOLD",
+        "VETO",
+        "UNDETERMINED_MATERIAL",
+        "CLOSED"
+      ]
+    },
+    "final_edge_active_eligible": {
+      "type": "boolean"
+    },
+    "valid_until_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "why_not_active": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "final_edge_active_eligible": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "core_edge_candidate": {
+            "enum": [
+              "ACTIVE_CANDIDATE_BULL",
+              "ACTIVE_CANDIDATE_BEAR"
+            ]
+          },
+          "gate_state": {
+            "enum": [
+              "CLEAR",
+              "CLEAR_WITH_CONSTRAINTS"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": true
+}

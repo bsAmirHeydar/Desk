@@ -1,11 +1,19 @@
 profile: alpha_lab_six_market_live
-version: 14.1.0
+version: 15.1.0
 timezone: Asia/Tehran
 symbols: [XAUUSD, NASDAQ100, SP500, DJIA, EURUSD, USDJPY]
 excluded_from_profile_only: [WTI, USOIL, CRUDE]
+edge_pipeline:
+  core_edge_candidate_required: true
+  timing_clearance_gate_required: true
+  final_edge_active_requires:
+    - CORE_ACTIVE_CANDIDATE
+    - TIMING_CLEAR_OR_CLEAR_WITH_CONSTRAINTS
+  timing_cannot_upgrade_non_active_core: true
 schedule:
   mode: single_hourly_workflow
   cadence: hourly
+  fail_closed_if_review_due_before_next_run: true
 email:
   attachments: false
   recipients:
@@ -22,3 +30,7 @@ execution:
   initial_stop_atr: 4
   exit: candle_by_candle_trail
   permission_controls_open_position_exit: false
+  execution_telemetry_may_inform_time_budget_only: true
+  execution_telemetry_may_not_supply_direction: true
+timing_engine: "93 Temporal Market Structure Timing and Calendar Intelligence Engine"
+timing_profile: "93 Temporal Market Structure Timing and Calendar Intelligence Engine/production_profiles/alpha_lab_six_market_timing_profile.yaml"

@@ -1,0 +1,20 @@
+version: 15.1.0
+canonical_authorities:
+  fundamental_force: 89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine
+  narrative_attention: 90 Market Narrative Intelligence Engine
+  instrument_asset_family: 91 Global Multi-Asset Coverage and Instrument Intelligence Engine
+  temporal_market_structure_and_clearance: 93 Temporal Market Structure Timing and Calendar Intelligence Engine
+  final_edge_permission_learning_product: 92 Alpha Lab Live Execution Permission Forward Learning and Product Engine
+active_edge_contract:
+  requires_core_active_candidate: true
+  requires_timing_gate: [CLEAR, CLEAR_WITH_CONSTRAINTS]
+  timing_cannot_upgrade_weak_core: true
+prohibitions:
+  - timing_from_price_patterns
+  - technical_indicator_timing_clearance
+  - unsourced_calendar_direction
+  - future_calendar_lookahead
+  - generic_expiry_without_product_resolution
+  - fixed_utc_offsets_for_dst_markets
+  - clock_double_counting
+  - validity_past_known_hazard

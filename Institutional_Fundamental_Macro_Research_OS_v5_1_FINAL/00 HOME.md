@@ -2,7 +2,7 @@
 title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 14.1.0
+version: 15.1.0
 created: 2026-07-29
 updated: 2026-08-08
 language: en
@@ -204,3 +204,15 @@ Start here:
 
 Current production deployment profile: XAUUSD, NASDAQ100, SP500, DJIA, EURUSD and USDJPY. WTI is excluded **only from this deployment profile**, not from V13 universal commodity support.
 
+
+
+## V15 Temporal Market Structure and Timing Intelligence
+
+- [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/00 Temporal Market Structure Timing and Calendar Intelligence Engine MOC]] — canonical science of sessions, participant handoffs, macro/central-bank clocks, benchmarks/fixings, Treasury auctions, futures/options expiry/roll/settlement, index rebalance/reconstitution, earnings clocks, month/quarter/year-end, holidays/DST, funding/payment clocks, temporal forces, validity windows and timing veto.
+- Timing is fundamental/institutional calendar science; it does **not** add technical price-direction analysis.
+- Module 92 Edge/Permission consumes V15 timing state before BUY/SELL/NO_TRADE.
+
+
+## V15.1 — Institutional Temporal Clearance Gate
+
+V15.1 makes Timing a mandatory independent clearance gate before final `EDGE_ACTIVE`. Fundamental/Narrative first produce a core Edge candidate; Module 93 must then return `CLEAR` or `CLEAR_WITH_CONSTRAINTS`. See [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/47 Institutional Temporal Clearance Gate]], [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/54 Timing Gate to Final Edge Transition Matrix]] and [[V15_1_RELEASE_NOTES]].

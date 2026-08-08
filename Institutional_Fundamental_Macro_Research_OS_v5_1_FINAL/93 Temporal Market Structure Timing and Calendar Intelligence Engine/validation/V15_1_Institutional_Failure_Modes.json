@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "EVENT_EXISTENCE_AUTO_VETO"
+  },
+  {
+    "id": 2,
+    "name": "FIXED_T_MINUS_UNIVERSAL_THRESHOLD"
+  },
+  {
+    "id": 3,
+    "name": "SESSION_AS_DIRECTION"
+  },
+  {
+    "id": 4,
+    "name": "UNSOURCED_MONTH_END_DIRECTION"
+  },
+  {
+    "id": 5,
+    "name": "GENERIC_EXPIRY_SIGN"
+  },
+  {
+    "id": 6,
+    "name": "AM_PM_CONFLATION"
+  },
+  {
+    "id": 7,
+    "name": "SOQ_OPEN_EXPIRY_DOUBLE_COUNT"
+  },
+  {
+    "id": 8,
+    "name": "ROLL_AS_DIRECTION"
+  },
+  {
+    "id": 9,
+    "name": "CFD_REFERENCE_CLOCK_CONFLATION"
+  },
+  {
+    "id": 10,
+    "name": "ASYMMETRIC_HOLIDAY_GLOBAL_CLOSURE"
+  },
+  {
+    "id": 11,
+    "name": "DST_FIXED_OFFSET_ERROR"
+  },
+  {
+    "id": 12,
+    "name": "DATE_ONTOLOGY_CONFLATION"
+  },
+  {
+    "id": 13,
+    "name": "TENTATIVE_SCHEDULE_AS_FINAL"
+  },
+  {
+    "id": 14,
+    "name": "TBD_TIME_FABRICATION"
+  },
+  {
+    "id": 15,
+    "name": "HISTORICAL_CALENDAR_REVISION_LOOKAHEAD"
+  },
+  {
+    "id": 16,
+    "name": "STALE_CALENDAR_ACCEPTED"
+  },
+  {
+    "id": 17,
+    "name": "PARTICIPANT_INFERENCE_AS_FACT"
+  },
+  {
+    "id": 18,
+    "name": "TECHNICAL_LEAKAGE"
+  },
+  {
+    "id": 19,
+    "name": "PRICE_ONLY_TIMING_DIRECTION"
+  },
+  {
+    "id": 20,
+    "name": "NAIVE_ADDITIVE_CLOCK_SCORE"
+  },
+  {
+    "id": 21,
+    "name": "ROOT_MECHANISM_DOUBLE_COUNT"
+  },
+  {
+    "id": 22,
+    "name": "TIMING_UPGRADES_WEAK_CORE"
+  },
+  {
+    "id": 23,
+    "name": "CORE_WAIVES_TIMING_BLOCKER"
+  },
+  {
+    "id": 24,
+    "name": "INSUFFICIENT_TIME_BUDGET_CLEARED"
+  },
+  {
+    "id": 25,
+    "name": "TTL_PAST_HAZARD"
+  },
+  {
+    "id": 26,
+    "name": "SCHEDULER_INFEASIBLE_BUT_PERMISSION_VALID"
+  },
+  {
+    "id": 27,
+    "name": "LATENCY_IGNORED"
+  },
+  {
+    "id": 28,
+    "name": "MATERIAL_CLOCK_MISSING_ASSUMED_BENIGN"
+  },
+  {
+    "id": 29,
+    "name": "COLD_START_UNIVERSAL_VETO"
+  },
+  {
+    "id": 30,
+    "name": "HINDSIGHT_REWRITES_PRIOR_EVIDENCE"
+  },
+  {
+    "id": 31,
+    "name": "SINGLE_CASE_CANONICAL_PROMOTION"
+  },
+  {
+    "id": 32,
+    "name": "NO_CONTROL_ARM_OVER_VETO_BLINDNESS"
+  }
+]

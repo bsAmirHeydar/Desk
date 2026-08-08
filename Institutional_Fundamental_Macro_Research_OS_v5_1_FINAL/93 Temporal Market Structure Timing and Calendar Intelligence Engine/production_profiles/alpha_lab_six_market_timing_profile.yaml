@@ -1,0 +1,55 @@
+profile: ALPHA_LAB_SIX_MARKET_TIMING_V15_1
+version: 15.1.0
+report_timezone: Asia/Tehran
+markets: [XAUUSD, NASDAQ100, SP500, DJIA, EURUSD, USDJPY]
+clearance_gate:
+  required_for_final_edge_active: true
+  pass_states: [CLEAR, CLEAR_WITH_CONSTRAINTS]
+  hold_states: [HOLD]
+  fail_states: [VETO, UNDETERMINED_MATERIAL, CLOSED]
+  timing_cannot_create_direction: true
+  timing_cannot_upgrade_weak_core: true
+  prefer_least_restrictive_correct_action: true
+  fail_closed_on_expiry: true
+common_clocks:
+  - US_MACRO
+  - FOMC
+  - US_TREASURY_AUCTIONS
+  - NY_CASH_OPEN_CLOSE
+  - LONDON_NY_OVERLAP
+  - WMR_4PM_LONDON
+  - MONTH_END
+  - QUARTER_END
+  - YEAR_END
+  - US_HOLIDAY_HALF_DAY
+asset_clocks:
+  XAUUSD: [LBMA_AM, LBMA_PM, COMEX_ROLL_EXPIRY, US_RATES_DATA]
+  NASDAQ100: [NQ_ROLL_EXPIRY, NASDAQ_OPEN_CLOSE_CROSS, NDX_OPTIONS, NDX_REBALANCE, MEGACAP_EARNINGS]
+  SP500: [ES_ROLL_EXPIRY, US_OPEN_CLOSE_AUCTIONS, SPX_OPTIONS, SP500_REBALANCE, BROAD_EARNINGS]
+  DJIA: [YM_ROLL_EXPIRY, US_OPEN_CLOSE_AUCTIONS, DJX_OPTIONS, DJIA_CONSTITUENT_EVENTS]
+  EURUSD: [ECB, EUR_BUSINESS_DAY, WMR_4PM, CME_EUR_FUTURES, QUARTER_END_BASIS]
+  USDJPY: [BOJ, JAPAN_BANKING_CALENDAR, WMR_4PM, CME_JPY_FUTURES, JAPAN_FISCAL_YEAR_END]
+source_policy:
+  primary_current_calendar_required_for_material_clock: true
+  preserve_tentative_tbd_revised_status: true
+hazard_policy:
+  fixed_t_minus_thresholds_are_sampling_anchors_only: true
+  adaptive_event_reset_severity: true
+time_budget:
+  execution_profile: DIRECT_PERMISSION_DONCHIAN20_M1
+  empirical_forward_telemetry_preferred: true
+  cold_start_qualitative_safe_margin_allowed: true
+  marginal_window_means_hold: true
+operational:
+  latency_counts_against_validity: true
+  scheduler_feasibility_required: true
+  stale_expired_permission_is_no_trade: true
+prohibitions:
+  - PRICE_PATTERN_DIRECTION
+  - TECHNICAL_INDICATOR_DIRECTION
+  - PRICE_ONLY_TIMING_CLEARANCE
+  - UNSOURCED_CALENDAR_EFFECT_DIRECTION
+  - GENERIC_OPEX_WITHOUT_SERIES_RESOLUTION
+  - FIXED_EVENT_VETO_WINDOW_WITHOUT_VALIDATION
+  - CLOCK_DOUBLE_COUNTING
+  - INVENTED_OPTIONS_POSITIONING
