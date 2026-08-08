@@ -1,0 +1,11 @@
+profile: ALPHA_LAB_SIX_MARKET_TIMING_V15
+version: 15.0.0
+report_timezone: Asia/Tehran
+markets: [XAUUSD, NASDAQ100, SP500, DJIA, EURUSD, USDJPY]
+fundamental_only_boundary: true
+execution:
+  permission: BUY_SELL_NO_TRADE
+  entry: M1_DONCHIAN_20
+  initial_stop: 4_ATR
+  exit: CANDLE_CLOSE_TRAIL
+  timing_controls_new_entries_only: true

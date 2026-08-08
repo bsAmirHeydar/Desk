@@ -1,0 +1,12 @@
+version: 15.0.0
+canonical_authorities:
+  fundamental_force: module_89
+  narrative_attention: module_90
+  instrument_routing: module_91
+  temporal_market_structure: module_93
+  edge_permission_learning: module_92
+prohibitions:
+  - timing_from_price_patterns
+  - unsourced_calendar_direction
+  - generic_expiry_without_product_resolution
+  - fixed_utc_offsets_for_dst_markets

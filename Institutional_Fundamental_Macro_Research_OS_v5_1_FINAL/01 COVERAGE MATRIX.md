@@ -159,3 +159,17 @@ Module 91 adds universal resolution, FX/commodity/index adapters, watchlists, ra
 | Simple email output | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/21 Simple Email Output Contract]] | production output |
 | Full production prompt / manual launcher / hourly launcher | [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/22 Full-Vault Forward-Learning Production Prompt]]; [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/23 Manual Ran Test Launcher]]; [[92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/24 Single Hourly Scheduled Workflow Launcher]] | production |
 
+
+<!-- ALPHALAB_V15_TIMING_BEGIN -->
+## V15 Temporal Intelligence Coverage
+| Capability | Canonical note |
+|---|---|
+| Multi-clock ontology | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/02 Multi-Clock Temporal Ontology]] |
+| Sessions / handoffs | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/04 Global Sessions Participant Control and Handoffs]] |
+| Macro / policy clocks | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/07 Macro Event Clock and Micro-Windows]] |
+| Benchmarks / fixing | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/12 FX Benchmark Fixing and Reference-Rate Intelligence]] |
+| Expiry / roll / settlement | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/15 Futures Lifecycle Roll Expiry Delivery and Final Settlement]] |
+| Month / quarter / year-end | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/20 Month-End Portfolio Rebalance FX Hedge and Benchmark Flow]] |
+| Timing -> Edge | [[93 Temporal Market Structure Timing and Calendar Intelligence Engine/27 Temporal Veto Validity Window and Edge Integration]] |
+<!-- ALPHALAB_V15_TIMING_END -->
+

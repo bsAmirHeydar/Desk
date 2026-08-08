@@ -1,0 +1,17 @@
+﻿organization,resource,url,role
+CME Group,Equity Index Futures / Micro E-mini resources,https://www.cmegroup.com/markets/equities.html,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+Nasdaq Trader,Opening and Closing Crosses,https://www.nasdaqtrader.com/Trader.aspx?id=OpenClose,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+NYSE,Trading Hours and Calendars,https://www.nyse.com/markets/hours-calendars,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+Cboe,SPX product specifications,https://www.cboe.com/tradable-products/sp-500/spx-options/spx-specifications/,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+OCC,Index options clearing and settlement,https://www.theocc.com/clearance-and-settlement/clearing/index-options,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+LSEG / FTSE Russell,WMR FX Benchmarks,https://www.lseg.com/en/ftse-russell/benchmarks/wmr-fx-benchmarks,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+ICE Benchmark Administration,LBMA Precious Metals Prices,https://www.ice.com/iba/lbma-precious-metals,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+U.S. Treasury,When Auctions Happen,https://www.treasurydirect.gov/auctions/when-auctions-happen/,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+BLS,Release Calendar,https://www.bls.gov/schedule/,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+BEA,Release Schedule,https://www.bea.gov/news/schedule/,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+Federal Reserve,FOMC Calendars,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+ECB,Governing Council Calendar,https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+Bank of Japan,Release Schedule,https://www.boj.or.jp/en/about/calendar/index.htm,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+S&P Dow Jones Indices,Methodologies,https://www.spglobal.com/spdji/en/governance/methodologies/,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+Nasdaq,Index methodologies,https://indexes.nasdaqomx.com/,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE
+BIS,FX liquidity and market structure research,https://www.bis.org/list/research/index.htm,PRIMARY_OR_INSTITUTIONAL_TIMING_SOURCE

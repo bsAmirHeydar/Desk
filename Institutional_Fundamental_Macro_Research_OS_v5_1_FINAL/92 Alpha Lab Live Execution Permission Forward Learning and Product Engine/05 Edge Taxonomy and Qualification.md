@@ -19,3 +19,10 @@ version: 14.1.0
 Edge must be adjudicated from direction, active-driver activation, conditional sensitivity, transmission integrity, independent confirmation, remaining pressure, consumption, fact/narrative persistence, narrative state, reversal hazard, horizon conflict, event risk, evidence quality, data availability and invalidation clarity.
 
 Do not infer Edge from one score or a mechanical weighted sum unless that score has been separately validated.
+
+
+<!-- ALPHALAB_V15_TIMING_BEGIN -->
+## V15 timing qualification
+Edge qualification must consume the current V15 temporal state. A true temporal veto can prevent Active status; a future event that only limits lifespan should shorten `valid_until`, not automatically force NO_TRADE.
+<!-- ALPHALAB_V15_TIMING_END -->
+

@@ -20,3 +20,10 @@ A conditional Edge is never allowed to be a vague label such as “needs confirm
 10. whether a pre-event directional opportunity may exist but is withheld because evidence quality remains below Active threshold.
 
 Each “confirmation” must name the causal channel, evidence and state transition it would create.
+
+
+<!-- ALPHALAB_V15_TIMING_BEGIN -->
+## Timing-specific Why Not Active?
+If Timing is a blocker, name the exact clock, mechanism, transition time, true-veto vs validity-constraint class, missing evidence, upgrade trigger, downgrade trigger and `valid_until`. “Timing is bad” is invalid.
+<!-- ALPHALAB_V15_TIMING_END -->
+
