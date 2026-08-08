@@ -1,0 +1,13 @@
+﻿# Alpha Lab patch artifacts
+/AlphaLab_Fundamental_OS_*_PATCH*.zip
+/AlphaLab_Fundamental_OS_*_PATCH*/
+/V12_PATCH*/
+/AlphaLab_V12_Narrative_PATCH_v2*/
+/V13_PATCH*/
+**/__pycache__/
+*.pyc
+
+# Local patch state / backups
+Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/.alphalab_patch_backups/
+Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/.abv12/
+Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/.abv13/
