@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "edge_types": [
     "CAUSAL",
     "TRANSMISSION",
@@ -22,5 +22,14 @@
   "root_channel_rule": "One independent root may contain multiple distinct causal channels. Deduplicate independence, not effects.",
   "same_root_independence_count": 1,
   "same_root_channels_must_be_preserved": true,
-  "dynamic_run_specific_graph_required_for_material_decisions": true
+  "dynamic_run_specific_graph_required_for_material_decisions": true,
+  "edge_required_semantics": [
+    "POLARITY",
+    "STRENGTH_BAND",
+    "LAG_CLASS",
+    "ENDOGENEITY",
+    "DECAY_STATE",
+    "ACTIVATION_CONDITIONS",
+    "BREAK_CONDITIONS"
+  ]
 }

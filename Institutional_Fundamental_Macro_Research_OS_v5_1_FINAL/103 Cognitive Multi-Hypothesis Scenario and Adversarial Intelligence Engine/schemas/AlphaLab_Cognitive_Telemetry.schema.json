@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Cognitive_Telemetry.schema.json",
+  "title": "Alpha Lab V21.1 Cognitive Forward Telemetry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "hypothesis_tournament_state",
+    "scenario_tree_state",
+    "active_horizon",
+    "unmodeled_driver_risk",
+    "complexity_class",
+    "abstention_reason_codes"
+  ],
+  "properties": {
+    "hypothesis_tournament_state": {
+      "type": "string"
+    },
+    "dominant_hypothesis_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "strongest_challenger_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "scenario_tree_state": {
+      "type": "string"
+    },
+    "active_horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "scenario_count": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 6
+    },
+    "uncertainty_dimensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "decision_critical_uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "unmodeled_driver_risk": {
+      "type": "string"
+    },
+    "adversarial_adjudication": {
+      "type": "string"
+    },
+    "utility_state": {
+      "type": "string"
+    },
+    "complexity_class": {
+      "type": "string"
+    },
+    "load_bearing_root_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "abstention_reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "cognitive_rescue_candidate": {
+      "type": "boolean"
+    },
+    "source_value_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "interaction_hypothesis_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

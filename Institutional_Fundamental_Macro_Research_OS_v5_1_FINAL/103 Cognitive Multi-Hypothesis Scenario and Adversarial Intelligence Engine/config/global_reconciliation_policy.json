@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "purpose": "Check whether market-level conclusions imply a coherent global state without forcing one global story.",
   "states": [
     "COHERENT",
@@ -14,5 +14,7 @@
     "NO_GLOBAL_DIRECTION_OVERRIDE",
     "SAME_ROOT_CROSS_MARKET_INCONSISTENCY_REQUIRES_REVIEW",
     "LOCAL_IDIOSYNCRATIC_DIVERGENCE_ALLOWED_WITH_EVIDENCE"
-  ]
+  ],
+  "root_ontology": "global_root_ontology.json",
+  "leader_relationship_metadata_required": true
 }

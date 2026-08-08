@@ -72,3 +72,6 @@ This note governs its stated object for methodology version `11.0.0`. Earlier no
 
 ## V21 Horizon Direction Tensor
 Module 103 makes the horizon array a first-class runtime Tensor and adds `SWING_2_8W` as a cognitive overlay between multi-day and cyclical horizons. The active strategy horizon must be declared before permission. Cross-horizon conflict is preserved as information; structural state is a prior, not an automatic tactical command.
+
+## V21.1 canonical SWING ownership
+`SWING_2_8W` is no longer only a Module 103 overlay. It is a canonical Module 89 Fundamental horizon between `MULTI_DAY_2_10D` and `CYCLICAL`; Module 103 may reason over it but cannot create its Direction. This closes the authority ambiguity introduced by V21.0.

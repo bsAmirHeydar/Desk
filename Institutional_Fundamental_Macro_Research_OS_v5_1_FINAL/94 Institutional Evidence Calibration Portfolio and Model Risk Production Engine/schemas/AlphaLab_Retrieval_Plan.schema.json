@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "AlphaLab Retrieval Plan V16.1",
+  "title": "AlphaLab Retrieval Plan V21.1",
   "type": "object",
   "required": [
     "symbol",
@@ -50,6 +50,33 @@
     },
     "extensions": {
       "type": "object"
+    },
+    "dimension_coverage": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "covered",
+          "evidence_paths"
+        ],
+        "properties": {
+          "covered": {
+            "type": "boolean"
+          },
+          "evidence_paths": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "topic_expansions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     }
   },
   "additionalProperties": false

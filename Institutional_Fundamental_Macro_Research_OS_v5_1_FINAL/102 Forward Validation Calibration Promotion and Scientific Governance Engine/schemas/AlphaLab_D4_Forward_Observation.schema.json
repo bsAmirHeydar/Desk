@@ -117,6 +117,12 @@
     },
     "metadata": {
       "type": "object"
+    },
+    "cognitive_telemetry": {
+      "$ref": "../../103%20Cognitive%20Multi-Hypothesis%20Scenario%20and%20Adversarial%20Intelligence%20Engine/schemas/AlphaLab_Cognitive_Telemetry.schema.json"
+    },
+    "cognitive_state_sha256": {
+      "type": "string"
     }
   },
   "additionalProperties": false

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "expectation_layers": [
     "OFFICIAL_CONSENSUS",
     "SURVEY_DISTRIBUTION",
@@ -11,11 +11,13 @@
     "REVISION_EXPECTATION"
   ],
   "surprise_objects": [
-    "ECONOMIC_SURPRISE",
+    "DATA_SURPRISE",
+    "ECONOMIC_IMPLICATION",
+    "POLICY_IMPLICATION",
+    "ASSET_IMPLICATION",
     "MARKET_SURPRISE",
     "COMPOSITION_SURPRISE",
-    "REVISION_SURPRISE",
-    "REACTION_FUNCTION_SURPRISE"
+    "REVISION_SURPRISE"
   ],
   "rules": [
     "ACTUAL_MINUS_CONSENSUS_IS_NOT_SUFFICIENT",

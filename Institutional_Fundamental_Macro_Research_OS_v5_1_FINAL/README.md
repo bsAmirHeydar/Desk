@@ -155,3 +155,6 @@ The original D1–D4 architecture is feature-complete. V20 adds Module 102 for f
 V21 converts the V20 architecture from a primarily linear controlled analysis into a multi-hypothesis cognitive loop while preserving every D1–D4 authority boundary. The production brain now keeps rival causal explanations alive, separates horizons, builds conditional scenario trees, treats market disagreement as a model diagnostic, preserves multiple channels under the same independent root, and requires an adversarial red-team and pre-mortem before final permission.
 
 Start production at `103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md`.
+
+## V21.1 semantic runtime hardening
+`V21.1.0` is the current production stack. It preserves V21 cognitive breadth while enforcing semantic consistency, explicit state applicability, evidence lineage, observable triggers, topic-aware retrieval and complete cognitive telemetry. It is a precision/hardening release, not a feature-expansion release.

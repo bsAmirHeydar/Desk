@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "id": "C01",
@@ -84,6 +84,42 @@
       "name": "Outside-strategy forced-flow edge with neutral fundamental",
       "expected": "FUNDAMENTAL_NO_TRADE_OUTSIDE_EDGE_REPORTED",
       "topic": "OUTSIDE_STRATEGY"
+    },
+    {
+      "id": "C15",
+      "name": "Cross-field instrument/cutoff mismatch",
+      "expected": "SEMANTIC_FAIL_CLOSED",
+      "topic": "SEMANTIC_INTEGRITY"
+    },
+    {
+      "id": "C16",
+      "name": "Unknown hypothesis/scenario reference",
+      "expected": "SEMANTIC_FAIL_CLOSED",
+      "topic": "SEMANTIC_INTEGRITY"
+    },
+    {
+      "id": "C17",
+      "name": "Untraceable load-bearing evidence",
+      "expected": "SEMANTIC_FAIL_CLOSED",
+      "topic": "EVIDENCE_LINEAGE"
+    },
+    {
+      "id": "C18",
+      "name": "Unmonitorable material trigger",
+      "expected": "SEMANTIC_FAIL_CLOSED",
+      "topic": "TRIGGER_MONITORABILITY"
+    },
+    {
+      "id": "C19",
+      "name": "Calibrated scenario probabilities require D4 record",
+      "expected": "CALIBRATION_REQUIRED",
+      "topic": "SCENARIO_TREE"
+    },
+    {
+      "id": "C20",
+      "name": "Past review event ignored",
+      "expected": "NEXT_FUTURE_MATERIAL_TRIGGER",
+      "topic": "EVENT_DRIVER_TRANSITION"
     }
   ]
 }

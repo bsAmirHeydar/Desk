@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "release": "V21.1.0",
+  "mode": "ENFORCED",
+  "principle": "MEANING_MUST_BE_MACHINE_CONSISTENT_NOT_ONLY_SCHEMA_VALID",
+  "cross_field_invariants": [
+    "INSTRUMENT",
+    "ANALYSIS_CUTOFF",
+    "ACTIVE_HORIZON",
+    "FUNDAMENTAL_DIRECTION",
+    "HYPOTHESIS_IDS",
+    "SCENARIO_HYPOTHESIS_REFS",
+    "GRAPH_NODE_REFS",
+    "UNCERTAINTY_DIMENSION_UNIQUENESS",
+    "TOURNAMENT_STATE",
+    "SCENARIO_STATE",
+    "APPLICABILITY_COMPLETENESS"
+  ],
+  "direction_mapping": {
+    "BULLISH": [
+      "BULLISH",
+      "STRONGLY_BULLISH"
+    ],
+    "BEARISH": [
+      "BEARISH",
+      "STRONGLY_BEARISH"
+    ],
+    "NEUTRAL": [
+      "NEUTRAL"
+    ],
+    "UNRESOLVED": [
+      "MIXED",
+      "UNDETERMINED"
+    ]
+  },
+  "load_bearing_evidence_requires_traceability": true,
+  "material_trigger_requires_monitorability": true,
+  "semantic_failure_action": "FAIL_CLOSED"
+}

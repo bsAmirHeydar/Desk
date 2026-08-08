@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "dimensions": [
     "GROWTH",
     "INFLATION",
@@ -30,5 +30,113 @@
     "REGIME_CONDITIONS_EDGE_MAPPINGS",
     "REGIME_UNCERTAINTY_MUST_SURVIVE_IN_OUTPUT",
     "STRUCTURAL_BREAK_REOPENS_HYPOTHESIS_TOURNAMENT"
-  ]
+  ],
+  "dimension_state_map": {
+    "GROWTH": [
+      "ACCELERATING",
+      "STABLE",
+      "DECELERATING",
+      "CONTRACTION",
+      "TRANSITION",
+      "MIXED",
+      "UNDETERMINED"
+    ],
+    "INFLATION": [
+      "REFLATING",
+      "STICKY",
+      "DISINFLATING",
+      "DEFLATIONARY",
+      "TRANSITION",
+      "MIXED",
+      "UNDETERMINED"
+    ],
+    "POLICY": [
+      "TIGHTENING",
+      "PAUSE",
+      "EASING",
+      "TRANSITION",
+      "MIXED",
+      "UNDETERMINED"
+    ],
+    "FISCAL_SUPPLY": [
+      "EASING",
+      "NORMAL",
+      "TIGHTENING",
+      "STRESS",
+      "TRANSITION",
+      "MIXED",
+      "UNDETERMINED"
+    ],
+    "EARNINGS": [
+      "ACCELERATING",
+      "STABLE",
+      "DECELERATING",
+      "CONTRACTION",
+      "TRANSITION",
+      "MIXED",
+      "UNDETERMINED"
+    ],
+    "CREDIT": [
+      "EASING",
+      "NORMAL",
+      "TIGHTENING",
+      "STRESS",
+      "TRANSITION",
+      "MIXED",
+      "UNDETERMINED"
+    ],
+    "VOLATILITY": [
+      "LOW_VOL",
+      "NORMAL",
+      "HIGH_VOL",
+      "STRESS",
+      "TRANSITION",
+      "MIXED",
+      "UNDETERMINED"
+    ],
+    "FUNDING_LIQUIDITY": [
+      "ABUNDANT",
+      "NORMAL",
+      "CONSTRAINED",
+      "STRESS",
+      "TRANSITION",
+      "MIXED",
+      "UNDETERMINED"
+    ],
+    "MARKET_LIQUIDITY": [
+      "ABUNDANT",
+      "NORMAL",
+      "CONSTRAINED",
+      "STRESS",
+      "TRANSITION",
+      "MIXED",
+      "UNDETERMINED"
+    ],
+    "POSITIONING": [
+      "CROWDED_LONG",
+      "CROWDED_SHORT",
+      "BALANCED",
+      "FRAGILE",
+      "TRANSITION",
+      "MIXED",
+      "UNDETERMINED"
+    ],
+    "MARKET_STRUCTURE": [
+      "ORDERLY",
+      "FRAGILE",
+      "DISLOCATED",
+      "TRANSITION",
+      "MIXED",
+      "UNDETERMINED"
+    ],
+    "GEOPOLITICAL": [
+      "DEESCALATING",
+      "STABLE",
+      "ESCALATING",
+      "STRESS",
+      "TRANSITION",
+      "MIXED",
+      "UNDETERMINED"
+    ]
+  }
 }

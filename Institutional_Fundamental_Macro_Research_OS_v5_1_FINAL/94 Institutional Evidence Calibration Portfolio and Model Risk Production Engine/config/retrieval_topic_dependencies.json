@@ -1,0 +1,133 @@
+{
+  "version": "1.0.0",
+  "topics": [
+    {
+      "keywords": [
+        "reaction function",
+        "fed",
+        "fomc",
+        "ecb",
+        "boj",
+        "central bank"
+      ],
+      "paths": [
+        "30 Comparative Central Bank Reaction Functions/00 30 Comparative Central Bank Reaction Functions MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "scenario",
+        "tail",
+        "wargame"
+      ],
+      "paths": [
+        "50 Scenario Intelligence Wargaming and Tail Systems/00 50 Scenario Intelligence Wargaming and Tail Systems MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "causal inference",
+        "statistics",
+        "validation"
+      ],
+      "paths": [
+        "53 Research Statistics Forecasting and Causal Inference/00 53 Research Statistics Forecasting and Causal Inference MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "historical analog",
+        "analogue",
+        "case study"
+      ],
+      "paths": [
+        "60 Historical Case Studies Failure Modes and Analogues/00 60 Historical Case Studies Failure Modes and Analogues MOC.md",
+        "69 Historical Point-in-Time Case Laboratory/00 Historical Point-in-Time Case Laboratory MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "competing model",
+        "economic school",
+        "model risk"
+      ],
+      "paths": [
+        "73 Economic Schools Competing Models and Adversarial Synthesis/00 Economic Schools Competing Models and Adversarial Synthesis MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "treasury auction",
+        "treasury supply",
+        "government bond"
+      ],
+      "paths": [
+        "29 Public Debt and Government Bond Market Intelligence/00 29 Public Debt and Government Bond Market Intelligence MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "options",
+        "gamma",
+        "volatility",
+        "0dte"
+      ],
+      "paths": [
+        "47 Derivatives Volatility Convexity and Tail Risk/00 47 Derivatives Volatility Convexity and Tail Risk MOC.md",
+        "46 Market Microstructure and Execution Intelligence/00 46 Market Microstructure and Execution Intelligence MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "credit",
+        "spread",
+        "default"
+      ],
+      "paths": [
+        "39 Credit Markets Default and Recovery Cycle/00 39 Credit Markets Default and Recovery Cycle MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "funding",
+        "repo",
+        "collateral",
+        "basis"
+      ],
+      "paths": [
+        "52 Liquidity Funding Collateral Margin and Operational Survival/00 52 Liquidity Funding Collateral Margin and Operational Survival MOC.md",
+        "98 Funding Plumbing Collateral and Balance Sheet Capacity Science/00 Funding Plumbing Collateral and Balance Sheet Capacity Science MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "earnings",
+        "revision",
+        "cash flow"
+      ],
+      "paths": [
+        "38 Corporate Earnings Industry and Competitive Intelligence/00 38 Corporate Earnings Industry and Competitive Intelligence MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "physical",
+        "commodity",
+        "inventory"
+      ],
+      "paths": [
+        "40 Commodity Supply Chains Shipping and Physical Intelligence/00 40 Commodity Supply Chains Shipping and Physical Intelligence MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "fx",
+        "currency",
+        "external balance"
+      ],
+      "paths": [
+        "17 Global FX External Balance and Dollar System/00 17 Global FX External Balance and Dollar System MOC.md"
+      ]
+    }
+  ]
+}

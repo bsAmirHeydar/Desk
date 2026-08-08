@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Cognitive_Applicability.schema.json",
+  "title": "Alpha Lab V21.1 Cognitive State Applicability",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "surprise_state",
+    "policy_reaction_state",
+    "regime_state",
+    "causal_graph",
+    "reflexivity_state",
+    "consumption_state",
+    "driver_transition",
+    "global_reconciliation"
+  ],
+  "properties": {
+    "surprise_state": {
+      "$ref": "#/$defs/entry"
+    },
+    "policy_reaction_state": {
+      "$ref": "#/$defs/entry"
+    },
+    "regime_state": {
+      "$ref": "#/$defs/entry"
+    },
+    "causal_graph": {
+      "$ref": "#/$defs/entry"
+    },
+    "reflexivity_state": {
+      "$ref": "#/$defs/entry"
+    },
+    "consumption_state": {
+      "$ref": "#/$defs/entry"
+    },
+    "driver_transition": {
+      "$ref": "#/$defs/entry"
+    },
+    "global_reconciliation": {
+      "$ref": "#/$defs/entry"
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "reason"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PRESENT",
+            "NOT_APPLICABLE",
+            "UNAVAILABLE",
+            "UNDETERMINED"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

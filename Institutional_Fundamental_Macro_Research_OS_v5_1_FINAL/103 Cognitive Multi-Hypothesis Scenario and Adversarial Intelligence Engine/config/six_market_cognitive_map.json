@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "markets": {
     "XAUUSD": {
       "primary_horizons": [
@@ -23,7 +23,12 @@
       "outside_strategy_edges": [
         "COMEX_MECHANICAL",
         "LIQUIDATION"
-      ]
+      ],
+      "leader_relationships": {
+        "US_REAL_YIELDS": "INDEPENDENT",
+        "DXY": "INDEPENDENT",
+        "UST_VOLATILITY": "INDEPENDENT"
+      }
     },
     "NASDAQ100": {
       "primary_horizons": [
@@ -51,7 +56,14 @@
         "GAMMA",
         "PASSIVE_REBALANCE",
         "FORCED_DELEVERAGING"
-      ]
+      ],
+      "leader_relationships": {
+        "US2Y": "INDEPENDENT",
+        "US10Y_REAL": "INDEPENDENT",
+        "DXY": "INDEPENDENT",
+        "CREDIT_SPREADS": "INDEPENDENT",
+        "VIX": "INDEPENDENT"
+      }
     },
     "SP500": {
       "primary_horizons": [
@@ -78,7 +90,13 @@
         "ZERO_DTE",
         "REBALANCE",
         "DELEVERAGING"
-      ]
+      ],
+      "leader_relationships": {
+        "US2Y": "INDEPENDENT",
+        "US10Y": "INDEPENDENT",
+        "CREDIT_SPREADS": "INDEPENDENT",
+        "VIX": "INDEPENDENT"
+      }
     },
     "DJIA": {
       "primary_horizons": [
@@ -99,7 +117,12 @@
       ],
       "outside_strategy_edges": [
         "CONSTITUENT_MECHANICAL"
-      ]
+      ],
+      "leader_relationships": {
+        "US2Y": "INDEPENDENT",
+        "INDUSTRIAL_CYCLICALS": "PARTIALLY_ENDOGENOUS",
+        "CREDIT_SPREADS": "INDEPENDENT"
+      }
     },
     "EURUSD": {
       "primary_horizons": [
@@ -124,7 +147,13 @@
       "outside_strategy_edges": [
         "FIXING",
         "FORCED_HEDGING"
-      ]
+      ],
+      "leader_relationships": {
+        "EUR_RATES": "INDEPENDENT",
+        "US_RATES": "INDEPENDENT",
+        "DXY": "PARTIALLY_ENDOGENOUS",
+        "CROSS_CURRENCY_BASIS": "INDEPENDENT"
+      }
     },
     "USDJPY": {
       "primary_horizons": [
@@ -150,7 +179,13 @@
         "INTERVENTION",
         "FIXING",
         "CARRY_UNWIND"
-      ]
+      ],
+      "leader_relationships": {
+        "US_RATES": "INDEPENDENT",
+        "JGB_YIELDS": "INDEPENDENT",
+        "DXY": "PARTIALLY_ENDOGENOUS",
+        "JPY_VOLATILITY": "INDEPENDENT"
+      }
     }
   }
 }

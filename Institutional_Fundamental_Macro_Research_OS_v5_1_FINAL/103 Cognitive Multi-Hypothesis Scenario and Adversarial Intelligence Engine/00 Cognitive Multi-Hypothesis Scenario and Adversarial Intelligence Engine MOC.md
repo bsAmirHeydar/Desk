@@ -2,7 +2,7 @@
 title: "Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine"
 type: moc
 status: canonical
-version: 21.0.0
+version: 21.1.0
 ---
 # Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine
 
@@ -37,3 +37,6 @@ The core change is from a mostly linear analytical sequence to a **controlled co
 10. [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/23 Thesis Builder and Positive Case]] ↔ [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/24 Thesis Destroyer and Adversarial Red Team]]
 11. [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/27 Utility-Aware Adjudication and Opportunity Cost]]
 12. [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt]]
+
+## V21.1 semantic integrity hardening
+V21.1 does **not** add another science layer. It closes the gap between conceptual reasoning and machine-enforced meaning: every first-class cognitive state is present or explicitly classified as not applicable/unavailable/undetermined; load-bearing evidence is lineage-referenced; material triggers are monitorable; cross-field IDs, horizons, cutoff times and directions must reconcile; and the full cognitive state is available to D4 telemetry. The design remains materiality-driven to avoid manufactured complexity.

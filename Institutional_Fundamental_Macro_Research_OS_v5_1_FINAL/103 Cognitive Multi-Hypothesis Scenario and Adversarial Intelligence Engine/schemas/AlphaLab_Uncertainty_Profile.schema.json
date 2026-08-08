@@ -53,7 +53,8 @@
             "type": "string"
           }
         }
-      }
+      },
+      "minItems": 1
     },
     "decision_critical_dimensions": {
       "type": "array",

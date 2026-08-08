@@ -1,5 +1,5 @@
 {
-  "version": "18.0.0",
+  "version": "21.1.0",
   "mode": "ENFORCED",
   "principle": "SMALLEST_SUFFICIENT_CANONICAL_SET",
   "allowed_load_bearing_statuses": [
@@ -31,10 +31,18 @@
     "actual_flow",
     "funding_plumbing",
     "institutional_mechanics",
-    "market_capacity"
+    "market_capacity",
+    "competing_hypotheses",
+    "horizon_reasoning",
+    "scenario_intelligence",
+    "regime_conditioning",
+    "adversarial_review",
+    "cognitive_semantic_integrity"
   ],
   "secondary_missing_policy": "CONFIDENCE_CAP_NOT_BLOCK",
   "contextual_missing_policy": "DISCLOSE_ONLY",
   "d2_science_mode": "MANDATORY_COVERAGE_SHADOW_ONLY",
-  "d2_missing_policy": "DISCLOSE_AND_TELEMETRY_NOT_AUTOMATIC_PERMISSION_BLOCK"
+  "d2_missing_policy": "DISCLOSE_AND_TELEMETRY_NOT_AUTOMATIC_PERMISSION_BLOCK",
+  "topic_aware_expansion": true,
+  "dimension_coverage_must_be_verified": true
 }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_Hypothesis_Set.schema.json",
-  "title": "Alpha Lab V21 Hypothesis Tournament",
+  "title": "Alpha Lab V21.1 Hypothesis Tournament",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -13,11 +13,12 @@
     "tournament_state",
     "dominant_hypothesis_ids",
     "strongest_challenger_ids",
-    "single_hypothesis_justification"
+    "single_hypothesis_justification",
+    "tournament_basis"
   ],
   "properties": {
     "version": {
-      "const": "1.0.0"
+      "const": "1.1.0"
     },
     "instrument": {
       "enum": [
@@ -90,7 +91,63 @@
     "resolution_observations": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "AlphaLab_Trigger_Predicate.schema.json"
+      }
+    },
+    "tournament_basis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "independent_root_count",
+        "critical_contradiction_count",
+        "signature_alignment",
+        "regime_consistency",
+        "falsifiability",
+        "complexity_state"
+      ],
+      "properties": {
+        "independent_root_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "critical_contradiction_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "signature_alignment": {
+          "enum": [
+            "STRONG",
+            "MODERATE",
+            "WEAK",
+            "CONTESTED",
+            "UNDETERMINED"
+          ]
+        },
+        "regime_consistency": {
+          "enum": [
+            "PASS",
+            "CONTESTED",
+            "FAIL",
+            "UNDETERMINED"
+          ]
+        },
+        "falsifiability": {
+          "enum": [
+            "HIGH",
+            "MODERATE",
+            "LOW",
+            "UNDETERMINED"
+          ]
+        },
+        "complexity_state": {
+          "enum": [
+            "LEAN",
+            "PROPORTIONATE",
+            "COMPLEX_BUT_JUSTIFIED",
+            "OVERCOMPLEX",
+            "UNDETERMINED"
+          ]
+        }
       }
     }
   }

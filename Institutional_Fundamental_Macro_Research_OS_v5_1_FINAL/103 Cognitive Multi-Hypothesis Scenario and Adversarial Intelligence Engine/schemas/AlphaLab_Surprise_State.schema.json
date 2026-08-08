@@ -1,12 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_Surprise_State.schema.json",
-  "title": "Alpha Lab V21 Surprise and Expectation State",
+  "title": "Alpha Lab V21.1 Surprise and Expectation State",
   "type": "object",
   "additionalProperties": false,
   "required": [
     "expectation_layers",
-    "economic_surprise",
+    "data_surprise",
+    "economic_implication",
+    "policy_implication",
+    "asset_implication",
     "market_surprise",
     "composition_surprise",
     "revision_surprise",
@@ -44,18 +47,6 @@
         }
       }
     },
-    "economic_surprise": {
-      "enum": [
-        "STRONGLY_DOVISH_OR_NEGATIVE",
-        "DOVISH_OR_NEGATIVE",
-        "NEUTRAL",
-        "HAWKISH_OR_POSITIVE",
-        "STRONGLY_HAWKISH_OR_POSITIVE",
-        "MIXED",
-        "UNDETERMINED",
-        "NOT_APPLICABLE"
-      ]
-    },
     "market_surprise": {
       "enum": [
         "STRONGLY_BEARISH",
@@ -87,6 +78,54 @@
     },
     "numeric_probability_used": {
       "const": false
+    },
+    "data_surprise": {
+      "enum": [
+        "STRONG_NEGATIVE",
+        "NEGATIVE",
+        "NEUTRAL",
+        "POSITIVE",
+        "STRONG_POSITIVE",
+        "MIXED",
+        "UNDETERMINED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "economic_implication": {
+      "enum": [
+        "STRONG_NEGATIVE",
+        "NEGATIVE",
+        "NEUTRAL",
+        "POSITIVE",
+        "STRONG_POSITIVE",
+        "MIXED",
+        "UNDETERMINED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "policy_implication": {
+      "enum": [
+        "STRONGLY_DOVISH",
+        "DOVISH",
+        "NEUTRAL",
+        "HAWKISH",
+        "STRONGLY_HAWKISH",
+        "MIXED",
+        "UNDETERMINED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "asset_implication": {
+      "enum": [
+        "STRONGLY_BEARISH",
+        "BEARISH",
+        "NEUTRAL",
+        "BULLISH",
+        "STRONGLY_BULLISH",
+        "MIXED",
+        "UNDETERMINED",
+        "NOT_APPLICABLE"
+      ]
     }
   }
 }

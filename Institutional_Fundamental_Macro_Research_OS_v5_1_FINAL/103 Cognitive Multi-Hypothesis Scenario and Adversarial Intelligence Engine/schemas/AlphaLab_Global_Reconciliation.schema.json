@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_Global_Reconciliation.schema.json",
-  "title": "Alpha Lab V21 Cross-Asset Global Reconciliation",
+  "title": "Alpha Lab V21.1 Cross-Asset Global Reconciliation",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -25,7 +25,77 @@
     "market_intents": {
       "type": "array",
       "items": {
-        "type": "object"
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "instrument",
+          "direction",
+          "root_direction_claims"
+        ],
+        "properties": {
+          "instrument": {
+            "enum": [
+              "XAUUSD",
+              "NASDAQ100",
+              "SP500",
+              "DJIA",
+              "EURUSD",
+              "USDJPY"
+            ]
+          },
+          "direction": {
+            "enum": [
+              "BULLISH",
+              "BEARISH",
+              "NEUTRAL",
+              "UNRESOLVED"
+            ]
+          },
+          "root_direction_claims": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "root_id",
+                "root_state"
+              ],
+              "properties": {
+                "root_id": {
+                  "type": "string"
+                },
+                "root_state": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "leader_relationships": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "leader",
+                "relationship"
+              ],
+              "properties": {
+                "leader": {
+                  "type": "string"
+                },
+                "relationship": {
+                  "enum": [
+                    "INDEPENDENT",
+                    "PARTIALLY_ENDOGENOUS",
+                    "MECHANICALLY_LINKED",
+                    "DERIVED_FROM_TARGET",
+                    "UNKNOWN"
+                  ]
+                }
+              }
+            }
+          }
+        }
       }
     },
     "implied_global_roots": {

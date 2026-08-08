@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_V21_StateBundle.schema.json",
-  "title": "Alpha Lab V21 Production State Bundle",
+  "title": "Alpha Lab V21.1 Production State Bundle",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -14,11 +14,22 @@
     "d3_adjudication",
     "d4_authority_receipt",
     "research_intent",
-    "final_permission"
+    "final_permission",
+    "hypothesis_set",
+    "horizon_tensor",
+    "scenario_tree",
+    "uncertainty_profile",
+    "model_disagreement",
+    "adversarial_review",
+    "premortem",
+    "decision_utility",
+    "meta_edge_router",
+    "cognitive_applicability",
+    "cognitive_telemetry"
   ],
   "properties": {
     "version": {
-      "const": "21.0.0"
+      "const": "21.1.0"
     },
     "instrument": {
       "enum": [
@@ -102,6 +113,36 @@
     },
     "forward_observation": {
       "$ref": "../../102%20Forward%20Validation%20Calibration%20Promotion%20and%20Scientific%20Governance%20Engine/schemas/AlphaLab_D4_Forward_Observation.schema.json"
+    },
+    "cognitive_applicability": {
+      "$ref": "AlphaLab_Cognitive_Applicability.schema.json"
+    },
+    "surprise_state": {
+      "$ref": "AlphaLab_Surprise_State.schema.json"
+    },
+    "policy_reaction_state": {
+      "$ref": "AlphaLab_Policy_Reaction_State.schema.json"
+    },
+    "regime_state": {
+      "$ref": "AlphaLab_Regime_State.schema.json"
+    },
+    "causal_graph": {
+      "$ref": "AlphaLab_Causal_Graph.schema.json"
+    },
+    "reflexivity_state": {
+      "$ref": "AlphaLab_Reflexivity_State.schema.json"
+    },
+    "consumption_state": {
+      "$ref": "AlphaLab_Consumption_Vector_V21.schema.json"
+    },
+    "driver_transition": {
+      "$ref": "AlphaLab_Driver_Transition.schema.json"
+    },
+    "global_reconciliation": {
+      "$ref": "AlphaLab_Global_Reconciliation.schema.json"
+    },
+    "cognitive_telemetry": {
+      "$ref": "AlphaLab_Cognitive_Telemetry.schema.json"
     }
   }
 }

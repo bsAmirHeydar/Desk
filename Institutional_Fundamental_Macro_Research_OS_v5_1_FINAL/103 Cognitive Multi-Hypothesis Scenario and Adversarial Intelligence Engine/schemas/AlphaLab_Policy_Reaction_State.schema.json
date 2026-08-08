@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_Policy_Reaction_State.schema.json",
-  "title": "Alpha Lab V21 Policy Reaction Function",
+  "title": "Alpha Lab V21.1 Policy Reaction Function",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -21,16 +21,68 @@
       "format": "date-time"
     },
     "sensitivities": {
-      "type": "object",
-      "additionalProperties": {
-        "enum": [
-          "VERY_LOW",
-          "LOW",
-          "MODERATE",
-          "HIGH",
-          "VERY_HIGH",
-          "UNDETERMINED"
-        ]
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "variable",
+          "sensitivity",
+          "asymmetry",
+          "threshold_state",
+          "policy_horizon",
+          "evidence_refs",
+          "change_from_prior"
+        ],
+        "properties": {
+          "variable": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sensitivity": {
+            "enum": [
+              "VERY_LOW",
+              "LOW",
+              "MODERATE",
+              "HIGH",
+              "VERY_HIGH",
+              "UNDETERMINED"
+            ]
+          },
+          "asymmetry": {
+            "enum": [
+              "SYMMETRIC",
+              "MORE_HAWKISH_TO_UPSIDE",
+              "MORE_DOVISH_TO_DOWNSIDE",
+              "NONLINEAR",
+              "UNDETERMINED"
+            ]
+          },
+          "threshold_state": {
+            "type": "string",
+            "minLength": 1
+          },
+          "policy_horizon": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "$ref": "AlphaLab_Evidence_Reference.schema.json"
+            }
+          },
+          "change_from_prior": {
+            "enum": [
+              "LOWER",
+              "UNCHANGED",
+              "HIGHER",
+              "SHIFTING",
+              "UNDETERMINED"
+            ]
+          }
+        }
       }
     },
     "dominant_constraints": {
@@ -49,7 +101,7 @@
       ]
     },
     "next_reassessment_trigger": {
-      "type": "string"
+      "$ref": "AlphaLab_Trigger_Predicate.schema.json"
     }
   }
 }

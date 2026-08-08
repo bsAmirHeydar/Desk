@@ -252,3 +252,6 @@ Production authority now enters through [[102 Forward Validation Calibration Pro
 V21 does not add a new Direction science. It hardens the existing stack with competing causal hypotheses, horizon-specific Direction tensors, typed uncertainty, economic-versus-market surprise, policy reaction functions, regime-conditioned dynamic causal graphs, multi-channel same-root fusion, reflexivity, multi-dimensional Consumption/Remaining Asymmetry, 2–6 branch scenario trees, driver-transition states, unmodeled-driver diagnostics, cross-asset reconciliation, mandatory Thesis Destroyer, pre-mortem and utility-aware Research Intent.
 
 The Fundamental strategy remains `FUNDAMENTAL_ONLY` for Direction. Cognitive hardening can constrain/delay/block; it cannot create or flip Direction. Outside-strategy mechanical/forced-flow/liquidity edges are reported and routed to research only.
+
+## V21.1 semantic runtime hardening
+Current stack: `V21.1.0`. V21.1 closes semantic/runtime gaps without adding another science layer. Use the Module 103 production prompt; every first-class state is present or explicitly classified, load-bearing evidence is traceable, material triggers are observable, and D4 receives cognitive telemetry.

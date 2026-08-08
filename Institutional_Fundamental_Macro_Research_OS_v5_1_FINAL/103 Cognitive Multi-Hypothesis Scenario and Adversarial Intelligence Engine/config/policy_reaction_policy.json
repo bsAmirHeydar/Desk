@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "reaction_dimensions": [
     "INFLATION_SENSITIVITY",
     "LABOR_SENSITIVITY",
@@ -22,5 +22,14 @@
     "REACTION_FUNCTION_MUST_BE_POINT_IN_TIME",
     "ASSET_EFFECT_FOLLOWS_POLICY_PATH_REVISION_NOT_HEADLINE_ONLY",
     "CENTRAL_BANKS_MAY_HAVE_MULTIPLE_CONSTRAINTS_SIMULTANEOUSLY"
+  ],
+  "structured_sensitivity_fields": [
+    "VARIABLE",
+    "SENSITIVITY",
+    "ASYMMETRY",
+    "THRESHOLD_STATE",
+    "POLICY_HORIZON",
+    "EVIDENCE_REFS",
+    "CHANGE_FROM_PRIOR"
   ]
 }

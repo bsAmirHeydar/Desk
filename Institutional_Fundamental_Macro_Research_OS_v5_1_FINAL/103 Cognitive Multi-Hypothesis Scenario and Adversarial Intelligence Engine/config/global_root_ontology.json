@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "roots": {
+    "US_MONETARY_POLICY": {
+      "aliases": [
+        "FED",
+        "FOMC",
+        "FED_POLICY",
+        "US_MONETARY_POLICY"
+      ],
+      "state_aliases": {
+        "DOVISH": "EASING",
+        "EASING": "EASING",
+        "HAWKISH": "TIGHTENING",
+        "TIGHTENING": "TIGHTENING",
+        "NEUTRAL": "NEUTRAL"
+      }
+    },
+    "ECB_MONETARY_POLICY": {
+      "aliases": [
+        "ECB",
+        "ECB_POLICY",
+        "ECB_MONETARY_POLICY"
+      ],
+      "state_aliases": {
+        "DOVISH": "EASING",
+        "EASING": "EASING",
+        "HAWKISH": "TIGHTENING",
+        "TIGHTENING": "TIGHTENING",
+        "NEUTRAL": "NEUTRAL"
+      }
+    },
+    "BOJ_MONETARY_POLICY": {
+      "aliases": [
+        "BOJ",
+        "BOJ_POLICY",
+        "BOJ_MONETARY_POLICY"
+      ],
+      "state_aliases": {
+        "DOVISH": "EASING",
+        "EASING": "EASING",
+        "HAWKISH": "TIGHTENING",
+        "TIGHTENING": "TIGHTENING",
+        "NEUTRAL": "NEUTRAL"
+      }
+    },
+    "US_GROWTH": {
+      "aliases": [
+        "US_GROWTH",
+        "GROWTH_US"
+      ],
+      "state_aliases": {
+        "STRONG": "ACCELERATING",
+        "WEAK": "DECELERATING",
+        "RECESSION": "CONTRACTION"
+      }
+    },
+    "US_INFLATION": {
+      "aliases": [
+        "US_INFLATION",
+        "INFLATION_US"
+      ],
+      "state_aliases": {
+        "HOT": "REFLATING",
+        "STICKY": "STICKY",
+        "COOLING": "DISINFLATING"
+      }
+    }
+  },
+  "relationship_classes": [
+    "INDEPENDENT",
+    "PARTIALLY_ENDOGENOUS",
+    "MECHANICALLY_LINKED",
+    "DERIVED_FROM_TARGET",
+    "UNKNOWN"
+  ]
+}

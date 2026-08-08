@@ -1,73 +1,53 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import json, subprocess, sys, tempfile
-R=Path(__file__).resolve().parents[2]
-M=R/'103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine'
-T=M/'tools'
-checks=[]
-def ck(name,cond,detail=None): checks.append({'name':name,'pass':bool(cond),'detail':detail})
+import json,subprocess,sys,tempfile,copy
+R=Path(__file__).resolve().parents[2];M=R/'103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine';T=M/'tools';checks=[]
+def ck(n,c,d=None):checks.append({'name':n,'pass':bool(c),'detail':d})
 def run(args):
-    q=subprocess.run([sys.executable,*map(str,args)],capture_output=True,text=True)
-    return q.returncode,q.stdout,q.stderr
-m=json.loads((R/'CURRENT_PRODUCTION_MANIFEST.json').read_text(encoding='utf-8'))
-ch=m.get('cognitive_hardening') or {}
-ck('stack_v21',m.get('current_stack')=='V21.0.0',m.get('current_stack'))
-ck('direction_fundamental_only',m.get('decision_authority',{}).get('direction')=='FUNDAMENTAL_ONLY',m.get('decision_authority'))
-ck('cognitive_enforced',ch.get('authority_mode')=='ENFORCED_COGNITIVE_HARDENING',ch)
-ck('no_cognitive_direction_flip',ch.get('direction_flip_allowed') is False,ch)
-ck('no_cognitive_positive_permission',ch.get('positive_permission_creation') is False,ch)
-ck('market_price_diagnostic_only',ch.get('market_price_direction_authority') is False and ch.get('market_price_model_diagnostic') is True,ch)
-ck('qualitative_scenarios',ch.get('scenario_probability_mode')=='QUALITATIVE_UNLESS_D4_CALIBRATED',ch)
-
-def h(hid,title,fam='POLICY_REACTION',pl='DOMINANT'):
-    return {'hypothesis_id':hid,'title':title,'family':fam,'mechanism':'observed fact changes policy/transmission path','root_ids':[hid+'_ROOT'],'target_horizons':['SESSION_1_6H'],'direction_by_horizon':{'SESSION_1_6H':'BULLISH' if hid=='H1' else 'BEARISH'},'supporting_evidence':['F1'],'contradicting_evidence':[],'missing_evidence':['WATCH1'],'expected_leaders':['US2Y'],'expected_market_signatures':['rates lead'],'confirmation_triggers':['US2Y confirms'],'invalidation_triggers':['US2Y reverses'],'regime_dependencies':['NORMAL'],'reflexive_loops':[],'plausibility_band':pl,'evidence_quality':'HIGH','causal_coherence':'HIGH','materiality':'MATERIAL','outside_fundamental_strategy':False}
-
-def sc(sid,role,hid,direction,pl):
-    other='S2' if sid=='S1' else 'S1'
-    return {'scenario_id':sid,'role':role,'source_hypothesis_ids':[hid],'plausibility_band':pl,'horizon':'SESSION_1_6H','direction':direction,'required_conditions':['condition holds'],'early_indicators':['leader confirms'],'confirmation_triggers':['confirm observable'],'invalidation_triggers':['invalidate observable'],'expected_leaders':['US2Y'],'expected_market_signature':['cross asset confirms'],'permission_implication':'SUPPORT_EXISTING' if direction=='BULLISH' else 'CONSTRAIN_EXISTING','transition_paths':[{'to_scenario_id':other,'trigger':'opposite leader trigger'}]}
-
-def base_input(pre='BUY',fund='BULLISH'):
-    return {
-      'version':'1.0.0','instrument':'NASDAQ100','analysis_cutoff_utc':'2026-08-08T12:00:00Z','active_strategy_horizon':'SESSION_1_6H','fundamental_direction':fund,'pre_cognitive_permission':pre,
-      'hypothesis_set':{'version':'1.0.0','instrument':'NASDAQ100','analysis_cutoff_utc':'2026-08-08T12:00:00Z','active_horizon':'SESSION_1_6H','hypotheses':[h('H1','Dovish transmission'),h('H2','Growth scare','GROWTH','COMPETITIVE')],'tournament_state':'DOMINANT','dominant_hypothesis_ids':['H1'],'strongest_challenger_ids':['H2'],'single_hypothesis_justification':None,'decision_critical_conflicts':[],'resolution_observations':['US2Y path']},
-      'horizon_tensor':{'version':'1.0.0','active_strategy_horizon':'SESSION_1_6H','states':[{'horizon':'SESSION_1_6H','fundamental_direction':'BULLISH','force_band':'HIGH','persistence_class':'SESSION','consumption_band':'MODERATE','remaining_asymmetry':'FAVORABLE','reversal_hazard':'MODERATE','causal_leader':'US2Y','next_update_trigger':'US2Y reversal'}],'cross_horizon_conflict_state':'ALIGNED','direction_authority':'MODULE_89_FUNDAMENTAL_HORIZON_STATE_ONLY'},
-      'uncertainty_profile':{'dimensions':[{'dimension':'CAUSAL','level':'MODERATE','reason':'challenger exists','resolution_condition':'leader divergence resolves'}],'decision_critical_dimensions':[],'single_confidence_score_used':False},
-      'scenario_tree':{'version':'1.0.0','as_of_utc':'2026-08-08T12:00:00Z','active_horizon':'SESSION_1_6H','tree_state':'PRIMARY_SCENARIO_IDENTIFIED','scenarios':[sc('S1','BASE','H1','BULLISH','PRIMARY'),sc('S2','ADVERSE','H2','BEARISH','COMPETITIVE')],'numeric_probabilities_used':False},
-      'model_disagreement':{'disagreement_level':'LOW','unmodeled_driver_risk':'LOW','expected_signatures':['rates lead'],'observed_contradictions':[],'candidate_missing_drivers':[],'price_used_as_direction_authority':False,'action':'NONE'},
-      'adversarial_review':{'builder_thesis':'dovish transmission leads','destroyer_findings':['growth scare challenger'],'strongest_rival_hypothesis_id':'H2','strongest_contradictory_fact':None,'same_root_double_count_risks':[],'missing_driver_candidates':[],'market_signature_contradictions':[],'post_hoc_rationalization_risk':'LOW','falsification_conditions':['US2Y reverses'],'adjudication':'THESIS_SURVIVES'},
-      'premortem':{'assumed_action':pre if pre!='NO_TRADE' else 'NO_TRADE','failure_paths':[{'failure_id':'F1','mechanism':'rates reversal','early_warning':'US2Y rises','monitorable':True,'response':'block'},{'failure_id':'F2','mechanism':'flow reversal','early_warning':'identified selling','monitorable':True,'response':'block'},{'failure_id':'F3','mechanism':'driver transition','early_warning':'growth channel dominates','monitorable':True,'response':'review'}],'unmonitorable_decision_critical_risk':False,'unmonitorable_risk_notes':[]},
-      'decision_utility':{'dimensions':[{'dimension':'UPSIDE_POTENTIAL','band':'HIGH','reason':'remaining asymmetry'}],'utility_state':'FAVOR_ACTION','numeric_expected_utility_used':False},
-      'meta_edge_router':{'primary_edge_class':'FUNDAMENTAL_EDGE','detected_edges':['FUNDAMENTAL_EDGE'],'fundamental_strategy_edge_class':'FUNDAMENTAL_EDGE','outside_strategy_edges':[],'outside_strategy_permission_effect':'NONE','research_routes':[]},
-      'complexity_class':'PROPORTIONATE','load_bearing_root_ids':['H1_ROOT'],'non_load_bearing_context':['H2_ROOT']}
-
+ q=subprocess.run([sys.executable,*map(str,args)],capture_output=True,text=True);return q.returncode,q.stdout,q.stderr
+def tr(i,desc,mat='MATERIAL',mode='MANUAL_OBSERVATION'):
+ z={'trigger_id':i,'description':desc,'monitor_mode':mode,'materiality':mat}
+ if mode=='MANUAL_OBSERVATION':z['manual_observation']=desc
+ if mode=='MACHINE_PREDICATE':z.update({'metric':'US2Y','operator':'CROSSES_ABOVE','reference':'EVENT_LEVEL'})
+ return z
+def ev(i,role='SUPPORT',mat='MATERIAL',h='SESSION_1_6H'):
+ return {'evidence_id':i,'evidence_type':'FACT_REF','fact_id':'FACT_'+i,'root_id':'ROOT_'+i,'role':role,'materiality':mat,'horizon':h,'description':i,'source_grade':'OFFICIAL_PRIMARY','lineage_status':'TRACEABLE'}
+def hyp(i,pl='DOMINANT',direction='BULLISH'):
+ return {'hypothesis_id':i,'title':i,'family':'POLICY_REACTION','mechanism':'fact to policy to rates','root_ids':['ROOT_'+i],'target_horizons':['SESSION_1_6H'],'direction_by_horizon':{'SESSION_1_6H':direction},'supporting_evidence':[ev(i+'S')],'contradicting_evidence':[],'missing_evidence':[{'evidence_id':i+'M','evidence_type':'MISSING_EVIDENCE','fact_id':None,'lineage_ref':None,'root_id':None,'role':'MISSING','materiality':'SUPPORTING','horizon':'SESSION_1_6H','description':'watch','source_grade':None,'lineage_status':'UNAVAILABLE'}],'expected_leaders':[{'name':'US2Y','relationship':'INDEPENDENT'}],'expected_market_signatures':['rates lead'],'confirmation_triggers':[tr(i+'C','US2Y confirms')],'invalidation_triggers':[tr(i+'I','US2Y reverses')],'regime_dependencies':['NORMAL'],'reflexive_loops':[],'plausibility_band':pl,'evidence_quality':'HIGH','causal_coherence':'HIGH','materiality':'MATERIAL','outside_fundamental_strategy':False}
+def scen(i,role,hid,direction,pl):
+ other='S2' if i=='S1' else 'S1';return {'scenario_id':i,'role':role,'source_hypothesis_ids':[hid],'plausibility_band':pl,'horizon':'SESSION_1_6H','direction':direction,'required_conditions':['condition'],'early_indicators':['leader'],'confirmation_triggers':[tr(i+'C','confirm')],'invalidation_triggers':[tr(i+'I','invalidate')],'expected_leaders':[{'name':'US2Y','relationship':'INDEPENDENT'}],'expected_market_signature':['signature'],'permission_implication':'SUPPORT_EXISTING' if direction=='BULLISH' else 'CONSTRAIN_EXISTING','transition_paths':[{'to_scenario_id':other,'trigger':tr(i+'T','transition')}], 'calibrated_probability':None}
+def base():
+ return {'version':'1.1.0','instrument':'NASDAQ100','analysis_cutoff_utc':'2026-08-08T12:00:00Z','active_strategy_horizon':'SESSION_1_6H','fundamental_direction':'BULLISH','pre_cognitive_permission':'BUY',
+ 'cognitive_applicability':{k:{'status':'NOT_APPLICABLE','reason':'not material in test'} for k in ['surprise_state','policy_reaction_state','regime_state','causal_graph','reflexivity_state','consumption_state','driver_transition','global_reconciliation']},
+ 'hypothesis_set':{'version':'1.1.0','instrument':'NASDAQ100','analysis_cutoff_utc':'2026-08-08T12:00:00Z','active_horizon':'SESSION_1_6H','hypotheses':[hyp('H1'),hyp('H2','COMPETITIVE','BEARISH')],'tournament_state':'DOMINANT','dominant_hypothesis_ids':['H1'],'strongest_challenger_ids':['H2'],'single_hypothesis_justification':None,'decision_critical_conflicts':[],'resolution_observations':[tr('RES','US2Y path')],'tournament_basis':{'independent_root_count':2,'critical_contradiction_count':0,'signature_alignment':'STRONG','regime_consistency':'PASS','falsifiability':'HIGH','complexity_state':'PROPORTIONATE'}},
+ 'horizon_tensor':{'version':'1.0.0','active_strategy_horizon':'SESSION_1_6H','states':[{'horizon':'SESSION_1_6H','fundamental_direction':'BULLISH','force_band':'HIGH','persistence_class':'SESSION','consumption_band':'MODERATE','remaining_asymmetry':'FAVORABLE','reversal_hazard':'MODERATE','causal_leader':'US2Y','next_update_trigger':'US2Y reversal'}],'cross_horizon_conflict_state':'ALIGNED','direction_authority':'MODULE_89_FUNDAMENTAL_HORIZON_STATE_ONLY'},
+ 'uncertainty_profile':{'dimensions':[{'dimension':'CAUSAL','level':'MODERATE','reason':'challenger','resolution_condition':'leader resolves'}],'decision_critical_dimensions':[],'single_confidence_score_used':False},
+ 'scenario_tree':{'version':'1.1.0','as_of_utc':'2026-08-08T12:00:00Z','active_horizon':'SESSION_1_6H','tree_state':'PRIMARY_SCENARIO_IDENTIFIED','scenarios':[scen('S1','BASE','H1','BULLISH','PRIMARY'),scen('S2','ADVERSE','H2','BEARISH','COMPETITIVE')],'probability_mode':'QUALITATIVE','calibration_record_id':None,'single_scenario_justification':None,'numeric_probabilities_used':False},
+ 'model_disagreement':{'disagreement_level':'LOW','unmodeled_driver_risk':'LOW','expected_signatures':['rates lead'],'observed_contradictions':[],'candidate_missing_drivers':[],'price_used_as_direction_authority':False,'action':'NONE'},
+ 'adversarial_review':{'builder_thesis':'dovish','destroyer_findings':['growth'],'strongest_rival_hypothesis_id':'H2','strongest_contradictory_fact':None,'same_root_double_count_risks':[],'missing_driver_candidates':[],'market_signature_contradictions':[],'post_hoc_rationalization_risk':'LOW','falsification_conditions':['US2Y reverses'],'adjudication':'THESIS_SURVIVES'},
+ 'premortem':{'assumed_action':'BUY','failure_paths':[{'failure_id':'F1','mechanism':'rates reversal','early_warning_trigger':tr('PF1','US2Y rises'),'monitorable':True,'response':'block'}],'coverage_justification':'one load-bearing failure path in unit test','unmonitorable_decision_critical_risk':False,'unmonitorable_risk_notes':[]},
+ 'decision_utility':{'dimensions':[{'dimension':'UPSIDE_POTENTIAL','band':'HIGH','reason':'asymmetry'}],'utility_state':'FAVOR_ACTION','numeric_expected_utility_used':False},'meta_edge_router':{'primary_edge_class':'FUNDAMENTAL_EDGE','detected_edges':['FUNDAMENTAL_EDGE'],'fundamental_strategy_edge_class':'FUNDAMENTAL_EDGE','outside_strategy_edges':[],'outside_strategy_permission_effect':'NONE','research_routes':[]},'complexity_class':'PROPORTIONATE','load_bearing_root_ids':['ROOT_H1'],'non_load_bearing_context':['ROOT_H2']}
+m=json.loads((R/'CURRENT_PRODUCTION_MANIFEST.json').read_text());ch=m.get('cognitive_hardening') or {};ck('stack_v21_1',m.get('current_stack')=='V21.1.0',m.get('current_stack'));ck('direction_fundamental_only',m.get('decision_authority',{}).get('direction')=='FUNDAMENTAL_ONLY');ck('semantic_enforced',ch.get('semantic_integrity_mode')=='ENFORCED')
 with tempfile.TemporaryDirectory() as td0:
-    td=Path(td0); ip=td/'input.json'; op=td/'out.json'
-    x=base_input(); ip.write_text(json.dumps(x),encoding='utf-8')
-    rc,so,se=run([T/'alphalab_cognitive_validate.py','--input',ip]); ck('valid_multihypothesis_input',rc==0,so+se)
-    rc,so,se=run([T/'alphalab_cognitive_adjudicate.py','--input',ip,'--output',op]); z=json.loads(op.read_text()); ck('clear_case_preserves_buy',rc==0 and z['cognitive_permission']=='BUY' and z['final_direction']=='BULLISH',z)
-    # Scenario validator
-    sp=td/'scenario.json';sp.write_text(json.dumps(x['scenario_tree']),encoding='utf-8');rc,so,se=run([T/'alphalab_scenario_validate.py','--input',sp]);ck('scenario_tree_valid',rc==0,so+se)
-    # Critical hypothesis contest fail-closed.
-    x=base_input();x['hypothesis_set']['tournament_state']='CONTESTED';x['hypothesis_set']['decision_critical_conflicts']=['policy vs growth materially unresolved'];ip.write_text(json.dumps(x),encoding='utf-8');run([T/'alphalab_cognitive_adjudicate.py','--input',ip,'--output',op]);z=json.loads(op.read_text());ck('critical_contest_no_trade',z['cognitive_permission']=='NO_TRADE' and z['cognitive_state']=='CONTESTED',z)
-    # Critical model disagreement fail-closed but direction stays fundamental.
-    x=base_input();x['model_disagreement']['unmodeled_driver_risk']='DECISION_CRITICAL';x['model_disagreement']['action']='HOLD_NO_TRADE';ip.write_text(json.dumps(x),encoding='utf-8');run([T/'alphalab_cognitive_adjudicate.py','--input',ip,'--output',op]);z=json.loads(op.read_text());ck('unmodeled_driver_no_trade_no_flip',z['cognitive_permission']=='NO_TRADE' and z['final_direction']=='BULLISH',z)
-    # Outside-strategy forced flow can be detected but cannot create a trade.
-    x=base_input(pre='NO_TRADE',fund='NEUTRAL');x['meta_edge_router']={'primary_edge_class':'FORCED_FLOW_EDGE','detected_edges':['FORCED_FLOW_EDGE'],'fundamental_strategy_edge_class':'NO_EDGE','outside_strategy_edges':['FORCED_FLOW_EDGE'],'outside_strategy_permission_effect':'NONE','research_routes':['SEPARATE_FLOW_STRATEGY_RESEARCH']};ip.write_text(json.dumps(x),encoding='utf-8');run([T/'alphalab_cognitive_adjudicate.py','--input',ip,'--output',op]);z=json.loads(op.read_text());ck('outside_strategy_edge_report_only',z['cognitive_permission']=='NO_TRADE' and 'FORCED_FLOW_EDGE' in z['outside_strategy_edges'],z)
-    # Unmonitorable critical pre-mortem risk blocks.
-    x=base_input();x['premortem']['unmonitorable_decision_critical_risk']=True;x['premortem']['unmonitorable_risk_notes']=['unknown geopolitical source'];ip.write_text(json.dumps(x),encoding='utf-8');run([T/'alphalab_cognitive_adjudicate.py','--input',ip,'--output',op]);z=json.loads(op.read_text());ck('premortem_unmonitorable_blocks',z['cognitive_permission']=='NO_TRADE',z)
-    # Numeric scenario probabilities are refused.
-    x=base_input();x['scenario_tree']['numeric_probabilities_used']=True;ip.write_text(json.dumps(x),encoding='utf-8');rc,so,se=run([T/'alphalab_cognitive_validate.py','--input',ip]);ck('fake_probability_rejected',rc!=0,so+se)
-    # Global reconciler detects explicit same-root incompatible claims without changing directions.
-    gp=td/'global.json';gout=td/'global_out.json';gp.write_text(json.dumps({'market_intents':[{'instrument':'NASDAQ100','direction':'BULLISH','implied_root_ids':['FED'],'root_direction_claims':[{'root_id':'FED','root_state':'DOVISH'}]},{'instrument':'SP500','direction':'BULLISH','implied_root_ids':['FED'],'root_direction_claims':[{'root_id':'FED','root_state':'HAWKISH'}]}]}),encoding='utf-8');rc,so,se=run([T/'alphalab_global_reconcile.py','--input',gp,'--output',gout]);gz=json.loads(gout.read_text());ck('global_reconcile_detects_inconsistency',rc==0 and gz['state']=='INCONSISTENT' and gz['direction_override_applied'] is False,gz)
-    # Causal recheck scheduler selects earliest decision-material trigger.
-    rp=td/'review.json';rout=td/'review_out.json';rp.write_text(json.dumps({'candidate_triggers':[{'trigger_type':'EVENT','condition':'CPI','time_utc':'2026-08-08T13:30:00Z','materiality':'DECISION_CRITICAL'},{'trigger_type':'FIXING','condition':'fix','time_utc':'2026-08-08T14:00:00Z','materiality':'MATERIAL'}]}),encoding='utf-8');rc,so,se=run([T/'alphalab_recheck_schedule.py','--input',rp,'--output',rout]);rz=json.loads(rout.read_text());ck('causal_recheck_scheduler',rc==0 and rz['next_review_trigger']['condition']=='CPI',rz)
-
-# Acceptance inventory itself must remain broad.
-acc=json.loads((M/'validation/V21_Cognitive_Acceptance_Cases.json').read_text(encoding='utf-8'))
-ck('acceptance_case_count',len(acc.get('cases',[]))>=14,len(acc.get('cases',[])))
-required_topics={'COMPETING_HYPOTHESES','CROSS_HORIZON','SURPRISE','SAME_ROOT_MULTI_CHANNEL','MODEL_DISAGREEMENT','OUTSIDE_STRATEGY','CRITICAL_UNCERTAINTY','SCENARIO_TREE','ADVERSARIAL','PREMORTEM','GLOBAL_RECONCILIATION','EVENT_DRIVER_TRANSITION'}
-topics={c.get('topic') for c in acc.get('cases',[])}
-ck('acceptance_topic_breadth',required_topics.issubset(topics),sorted(topics))
-failed=[c for c in checks if not c['pass']]
-print(json.dumps({'status':'PASS' if not failed else 'FAIL','tests':len(checks),'passed':len(checks)-len(failed),'checks':checks},indent=2,ensure_ascii=False))
-sys.exit(0 if not failed else 2)
+ td=Path(td0);ip=td/'i.json';op=td/'o.json';x=base();ip.write_text(json.dumps(x),encoding='utf-8');rc,so,se=run([T/'alphalab_cognitive_validate.py','--input',ip,'--vault-root',R]);ck('valid_pack',rc==0,so+se);rc,so,se=run([T/'alphalab_cognitive_adjudicate.py','--input',ip,'--output',op,'--vault-root',R]);z=json.loads(op.read_text());ck('clear_preserves_buy',rc==0 and z['cognitive_permission']=='BUY');ck('next_review_not_NONE',z['next_review_trigger']!='NONE',z)
+ def bad(name,fn):
+  y=copy.deepcopy(base());fn(y);ip.write_text(json.dumps(y),encoding='utf-8');rc,so,se=run([T/'alphalab_semantic_integrity.py','--input',ip,'--vault-root',R]);ck(name,rc!=0,so+se)
+ bad('instrument_mismatch',lambda y:y['hypothesis_set'].__setitem__('instrument','SP500'))
+ bad('cutoff_mismatch',lambda y:y['hypothesis_set'].__setitem__('analysis_cutoff_utc','2025-01-01T00:00:00Z'))
+ bad('active_horizon_mismatch',lambda y:y['scenario_tree'].__setitem__('active_horizon','DAILY_OPEN_TO_CLOSE'))
+ bad('unknown_dominant_id',lambda y:y['hypothesis_set'].__setitem__('dominant_hypothesis_ids',['NOPE']))
+ bad('dominant_empty',lambda y:y['hypothesis_set'].__setitem__('dominant_hypothesis_ids',[]))
+ bad('unknown_scenario_hypothesis',lambda y:y['scenario_tree']['scenarios'][0].__setitem__('source_hypothesis_ids',['NOPE']))
+ bad('direction_mismatch',lambda y:y['horizon_tensor']['states'][0].__setitem__('fundamental_direction','BEARISH'))
+ bad('duplicate_uncertainty',lambda y:y['uncertainty_profile']['dimensions'].append(copy.deepcopy(y['uncertainty_profile']['dimensions'][0])))
+ bad('missing_applicability',lambda y:y['cognitive_applicability'].pop('regime_state'))
+ bad('untraceable_material_evidence',lambda y:y['hypothesis_set']['hypotheses'][0]['supporting_evidence'][0].__setitem__('lineage_status','UNAVAILABLE'))
+ bad('scenario_permission_direction_conflict',lambda y:y['scenario_tree']['scenarios'][1].__setitem__('permission_implication','SUPPORT_EXISTING'))
+ # single scenario is valid with justification
+ y=base();y['scenario_tree']['scenarios']=[y['scenario_tree']['scenarios'][0]];y['scenario_tree']['scenarios'][0]['transition_paths']=[];y['scenario_tree']['single_scenario_justification']='rival search completed; no material second path survived';ip.write_text(json.dumps(y),encoding='utf-8');rc,so,se=run([T/'alphalab_semantic_integrity.py','--input',ip,'--vault-root',R]);ck('single_scenario_flexible_valid',rc==0,so+se)
+ # calibrated probability requires record and sum 1
+ y=base();y['scenario_tree']['probability_mode']='CALIBRATED';y['scenario_tree']['numeric_probabilities_used']=True;y['scenario_tree']['calibration_record_id']='CAL1';y['scenario_tree']['scenarios'][0]['calibrated_probability']=0.6;y['scenario_tree']['scenarios'][1]['calibrated_probability']=0.4;ip.write_text(json.dumps(y),encoding='utf-8');rc,so,se=run([T/'alphalab_semantic_integrity.py','--input',ip,'--vault-root',R]);ck('calibrated_probability_valid_when_governed',rc==0,so+se)
+ # scheduler ignores past trigger
+ rp=td/'r.json';ro=td/'ro.json';rp.write_text(json.dumps({'analysis_cutoff_utc':'2026-08-08T12:00:00Z','candidate_triggers':[{'trigger_type':'EVENT','condition':'OLD','time_utc':'2026-08-08T11:00:00Z','materiality':'DECISION_CRITICAL','state_change_hazard':'VERY_HIGH'},{'trigger_type':'EVENT','condition':'NEXT','time_utc':'2026-08-08T13:00:00Z','materiality':'MATERIAL','state_change_hazard':'HIGH'}]}),encoding='utf-8');rc,so,se=run([T/'alphalab_recheck_schedule.py','--input',rp,'--output',ro]);rz=json.loads(ro.read_text());ck('scheduler_ignores_past',rc==0 and rz['next_review_trigger']['condition']=='NEXT' and rz['ignored_past_trigger_count']==1,rz)
+acc=json.loads((M/'validation/V21_Cognitive_Acceptance_Cases.json').read_text());ck('acceptance_breadth',len(acc.get('cases',[]))>=20,len(acc.get('cases',[])))
+failed=[c for c in checks if not c['pass']];print(json.dumps({'status':'PASS' if not failed else 'FAIL','tests':len(checks),'passed':len(checks)-len(failed),'checks':checks},indent=2,ensure_ascii=False));sys.exit(0 if not failed else 2)

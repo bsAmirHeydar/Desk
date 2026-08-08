@@ -1,6 +1,6 @@
 {
-  "version": "21.0.0",
-  "current_stack": "V21.0.0",
+  "version": "21.1.0",
+  "current_stack": "V21.1.0",
   "manifest_authority": "CURRENT_PRODUCTION_MANIFEST.json",
   "human_mirror": "CURRENT_PRODUCTION_MANIFEST.yaml",
   "production_entrypoint": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md",
@@ -197,7 +197,14 @@
     "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Decision_Utility.schema.json",
     "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Meta_Edge_Router.schema.json",
     "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Research_Intent.schema.json",
-    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_V21_StateBundle.schema.json"
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_V21_StateBundle.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_topic_dependencies.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/semantic_integrity_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/global_root_ontology.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Applicability.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Evidence_Reference.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Trigger_Predicate.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Telemetry.schema.json"
   ],
   "production_universe": [
     "XAUUSD",
@@ -318,8 +325,8 @@
     "cognitive_fields": "V21_FORWARD_HANDOFF_ACTIVE"
   },
   "cognitive_hardening": {
-    "version": "1.0.0",
-    "release": "V21.0.0",
+    "version": "1.1.0",
+    "release": "V21.1.0",
     "authority_mode": "ENFORCED_COGNITIVE_HARDENING",
     "orchestrator": "MODULE_103",
     "direction_authority": "MODULE_89_FUNDAMENTAL_ACTIVE_HORIZON_ONLY",
@@ -332,6 +339,10 @@
     "scenario_probability_mode": "QUALITATIVE_UNLESS_D4_CALIBRATED",
     "decision_critical_contested_action": "NO_TRADE_OR_HOLD",
     "decision_critical_unmodeled_driver_action": "NO_TRADE_OR_HOLD",
-    "production_prompt": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md"
+    "production_prompt": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md",
+    "semantic_integrity_mode": "ENFORCED",
+    "state_presence_contract": "PRESENT_OR_EXPLICIT_APPLICABILITY",
+    "retrieval_mode": "TOPIC_AWARE_CANONICAL_DEPENDENCY",
+    "adaptive_detail": "MATERIALITY_DRIVEN"
   }
 }

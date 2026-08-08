@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Evidence_Reference.schema.json",
+  "title": "Alpha Lab V21.1 Cognitive Evidence Reference",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidence_id",
+    "evidence_type",
+    "role",
+    "materiality",
+    "horizon",
+    "description",
+    "lineage_status"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_type": {
+      "enum": [
+        "FACT_REF",
+        "DERIVED_REF",
+        "MARKET_OBSERVATION",
+        "PROXY_REF",
+        "MISSING_EVIDENCE"
+      ]
+    },
+    "fact_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lineage_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "root_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "role": {
+      "enum": [
+        "SUPPORT",
+        "CONTRADICT",
+        "CONTEXT",
+        "MISSING"
+      ]
+    },
+    "materiality": {
+      "enum": [
+        "DECISION_CRITICAL",
+        "MATERIAL",
+        "SUPPORTING",
+        "CONTEXTUAL"
+      ]
+    },
+    "horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_grade": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lineage_status": {
+      "enum": [
+        "TRACEABLE",
+        "PARTIAL",
+        "UNAVAILABLE",
+        "NOT_APPLICABLE"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "evidence_type": {
+            "const": "FACT_REF"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "fact_id"
+        ],
+        "properties": {
+          "fact_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lineage_status": {
+            "const": "TRACEABLE"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "evidence_type": {
+            "const": "DERIVED_REF"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "lineage_ref"
+        ],
+        "properties": {
+          "lineage_ref": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

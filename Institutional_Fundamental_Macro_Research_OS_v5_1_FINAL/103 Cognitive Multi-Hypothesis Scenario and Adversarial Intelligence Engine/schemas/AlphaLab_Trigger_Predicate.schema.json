@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Trigger_Predicate.schema.json",
+  "title": "Alpha Lab V21.1 Observable Trigger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "trigger_id",
+    "description",
+    "monitor_mode",
+    "materiality"
+  ],
+  "properties": {
+    "trigger_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "monitor_mode": {
+      "enum": [
+        "MACHINE_PREDICATE",
+        "SCHEDULED_TIME",
+        "EVENT_RELEASE",
+        "MANUAL_OBSERVATION"
+      ]
+    },
+    "materiality": {
+      "enum": [
+        "DECISION_CRITICAL",
+        "MATERIAL",
+        "SUPPORTING",
+        "CONTEXTUAL"
+      ]
+    },
+    "metric": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "operator": {
+      "enum": [
+        "GT",
+        "GTE",
+        "LT",
+        "LTE",
+        "EQ",
+        "NEQ",
+        "CROSSES_ABOVE",
+        "CROSSES_BELOW",
+        "CHANGES_STATE",
+        "OBSERVED"
+      ]
+    },
+    "value": {
+      "type": [
+        "number",
+        "string",
+        "null"
+      ]
+    },
+    "reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "persistence_observations": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "time_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "manual_observation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "response": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "monitor_mode": {
+            "const": "MACHINE_PREDICATE"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "metric",
+          "operator"
+        ],
+        "properties": {
+          "metric": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "monitor_mode": {
+            "const": "SCHEDULED_TIME"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "time_utc"
+        ],
+        "properties": {
+          "time_utc": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "monitor_mode": {
+            "const": "MANUAL_OBSERVATION"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "manual_observation"
+        ],
+        "properties": {
+          "manual_observation": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

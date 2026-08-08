@@ -1,13 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_PreMortem.schema.json",
-  "title": "Alpha Lab V21 Decision Pre-Mortem",
+  "title": "Alpha Lab V21.1 Decision Pre-Mortem",
   "type": "object",
   "additionalProperties": false,
   "required": [
     "assumed_action",
     "failure_paths",
-    "unmonitorable_decision_critical_risk"
+    "unmonitorable_decision_critical_risk",
+    "coverage_justification"
   ],
   "properties": {
     "assumed_action": {
@@ -20,7 +21,7 @@
     },
     "failure_paths": {
       "type": "array",
-      "minItems": 3,
+      "minItems": 1,
       "maxItems": 7,
       "items": {
         "type": "object",
@@ -28,9 +29,9 @@
         "required": [
           "failure_id",
           "mechanism",
-          "early_warning",
           "monitorable",
-          "response"
+          "response",
+          "early_warning_trigger"
         ],
         "properties": {
           "failure_id": {
@@ -39,14 +40,14 @@
           "mechanism": {
             "type": "string"
           },
-          "early_warning": {
-            "type": "string"
-          },
           "monitorable": {
             "type": "boolean"
           },
           "response": {
             "type": "string"
+          },
+          "early_warning_trigger": {
+            "$ref": "AlphaLab_Trigger_Predicate.schema.json"
           }
         }
       }
@@ -59,6 +60,10 @@
       "items": {
         "type": "string"
       }
+    },
+    "coverage_justification": {
+      "type": "string",
+      "minLength": 1
     }
   }
 }

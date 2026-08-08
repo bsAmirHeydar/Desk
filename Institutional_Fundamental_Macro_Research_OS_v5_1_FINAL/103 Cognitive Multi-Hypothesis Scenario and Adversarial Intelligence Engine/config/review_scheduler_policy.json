@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "candidate_trigger_types": [
     "SCHEDULED_EVENT",
     "UNSCHEDULED_EVENT",
@@ -20,5 +20,14 @@
     "T_PLUS_5M",
     "T_PLUS_15M",
     "T_PLUS_30M_OR_STABILIZATION"
-  ]
+  ],
+  "past_trigger_policy": "IGNORE",
+  "priority_order": [
+    "DECISION_CRITICAL_FUTURE_EVENT",
+    "MATERIAL_FUTURE_EVENT",
+    "CONDITIONAL_STATE_CHANGE",
+    "VALIDITY_EXPIRY",
+    "FALLBACK"
+  ],
+  "fixed_event_anchors_are_defaults_not_authority": true
 }

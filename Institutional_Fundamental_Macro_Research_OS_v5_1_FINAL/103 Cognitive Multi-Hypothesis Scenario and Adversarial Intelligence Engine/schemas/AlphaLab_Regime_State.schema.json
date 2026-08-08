@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_Regime_State.schema.json",
-  "title": "Alpha Lab V21 Regime State",
+  "title": "Alpha Lab V21.1 Regime State",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -46,10 +46,34 @@
           },
           "state": {
             "enum": [
-              "BENIGN",
+              "ACCELERATING",
+              "STABLE",
+              "DECELERATING",
+              "CONTRACTION",
+              "REFLATING",
+              "STICKY",
+              "DISINFLATING",
+              "DEFLATIONARY",
               "TIGHTENING",
+              "PAUSE",
               "EASING",
+              "LOOSE",
+              "NORMAL",
               "STRESS",
+              "RISK_ON",
+              "RISK_OFF",
+              "HIGH_VOL",
+              "LOW_VOL",
+              "ABUNDANT",
+              "CONSTRAINED",
+              "CROWDED_LONG",
+              "CROWDED_SHORT",
+              "BALANCED",
+              "FRAGILE",
+              "ORDERLY",
+              "DISLOCATED",
+              "ESCALATING",
+              "DEESCALATING",
               "TRANSITION",
               "MIXED",
               "UNDETERMINED"
@@ -58,7 +82,7 @@
           "evidence": {
             "type": "array",
             "items": {
-              "type": "string"
+              "$ref": "AlphaLab_Evidence_Reference.schema.json"
             }
           },
           "uncertainty": {

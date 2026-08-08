@@ -1,8 +1,9 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scenario_count": {
-    "preferred_min": 2,
-    "preferred_max": 6
+    "minimum": 1,
+    "maximum": 6,
+    "principle": "MATERIALLY_DISTINCT_PATHS_ONLY"
   },
   "roles": [
     "BASE",
@@ -31,11 +32,14 @@
     "EXPECTED_MARKET_SIGNATURE",
     "TRANSITION_PATHS"
   ],
-  "numeric_scenario_probability_authorized": false,
+  "numeric_scenario_probability_authorized": "D4_CALIBRATED_ONLY",
   "rules": [
     "SCENARIOS_MUST_BE_PRE_OUTCOME",
     "SCENARIOS_MUST_HAVE_OBSERVABLE_TRIGGERS",
     "TAIL_SCENARIOS_RETAINED_WHEN_IMPACT_IS_MATERIAL",
-    "PERMISSION_IMPLICATION_IS_NOT_DIRECTION_AUTHORITY"
+    "PERMISSION_IMPLICATION_IS_NOT_DIRECTION_AUTHORITY",
+    "ONE_SCENARIO_REQUIRES_EXPLICIT_RIVAL_SEARCH_AND_MATERIAL_PATH_JUSTIFICATION",
+    "NEAR_DUPLICATE_SCENARIOS_MUST_BE_MERGED",
+    "CALIBRATED_PROBABILITY_REQUIRES_CALIBRATION_RECORD"
   ]
 }

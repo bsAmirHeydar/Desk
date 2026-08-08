@@ -2,7 +2,7 @@
 title: "V21 Cognitive-Hardened Full-Vault Production Prompt"
 type: production-live-analysis-prompt
 status: execution-ready
-version: 21.0.0
+version: 21.1.0
 ---
 # Alpha Lab Fundamental OS V21 — Cognitive-Hardened Production Prompt
 
@@ -92,3 +92,9 @@ For CPI, NFP, FOMC, ECB, BoJ and other major shocks use staged states: `PRE_EVEN
 `Direction authority remains FUNDAMENTAL_ONLY at the active strategy horizon.`
 `V21 scenarios are conditional causal paths, not fabricated probabilities.`
 `Outside-strategy edges are reported but have no Fundamental permission authority.`
+
+## V21.1 runtime integrity addendum
+Before cognitive adjudication, run the semantic-integrity contract. A state may be omitted only when `cognitive_applicability` explicitly records `NOT_APPLICABLE`, `UNAVAILABLE`, or `UNDETERMINED` with a reason. Load-bearing hypothesis evidence must use structured D1-linked evidence references. Decision-material confirmation/invalidation/failure triggers must be machine predicates, scheduled/event triggers, or explicitly labeled manual observations. Scenario count is **1–6 materially distinct paths**; do not manufacture a second scenario when no material rival survives. Numeric scenario probabilities are allowed only in `CALIBRATED` mode with a D4 calibration record. `SWING_2_8W` Direction is owned by Module 89. Use topic-aware canonical retrieval for named material topics. Preserve all cognitive states in the V21.1 StateBundle/forward telemetry so D4 can learn whether the way the system reasoned actually added value.
+
+### Adaptive detail law
+Keep the machine state complete, but make the human report proportional to materiality. Quiet/clear runs may collapse non-material annexes to `NOT_APPLICABLE`/brief statements; event, contested, transition and crisis runs must expand the relevant hypotheses, scenarios and causal channels. More text is not more intelligence.
