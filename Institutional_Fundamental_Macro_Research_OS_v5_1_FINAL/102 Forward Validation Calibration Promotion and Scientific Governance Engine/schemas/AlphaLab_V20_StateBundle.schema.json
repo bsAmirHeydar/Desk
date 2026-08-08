@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab V20 State Bundle",
+  "type": "object",
+  "required": [
+    "version",
+    "instrument",
+    "fundamental_direction",
+    "d3_adjudication",
+    "d4_authority_receipt",
+    "final_permission"
+  ],
+  "properties": {
+    "version": {
+      "const": "20.0.0"
+    },
+    "instrument": {
+      "enum": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ]
+    },
+    "fundamental_direction": {
+      "enum": [
+        "BULLISH",
+        "BEARISH",
+        "NEUTRAL",
+        "UNRESOLVED"
+      ]
+    },
+    "d3_adjudication": {
+      "type": "object"
+    },
+    "d4_authority_receipt": {
+      "type": "object"
+    },
+    "final_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "forward_observation": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

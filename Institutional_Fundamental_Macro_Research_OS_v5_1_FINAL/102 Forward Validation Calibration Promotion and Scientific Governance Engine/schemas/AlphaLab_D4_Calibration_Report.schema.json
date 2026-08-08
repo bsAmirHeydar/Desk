@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab D4 Calibration Report",
+  "type": "object",
+  "required": [
+    "record_type",
+    "calibration_id",
+    "modifier_id",
+    "policy_version",
+    "development",
+    "holdout",
+    "promotion_eligibility"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "CALIBRATION_REPORT"
+    },
+    "calibration_id": {
+      "type": "string"
+    },
+    "modifier_id": {
+      "type": "string"
+    },
+    "policy_version": {
+      "type": "string"
+    },
+    "hypothesis_family_id": {
+      "type": "string"
+    },
+    "development": {
+      "type": "object"
+    },
+    "holdout": {
+      "type": "object"
+    },
+    "regime_stability": {
+      "type": "object"
+    },
+    "tail_risk": {
+      "type": "object"
+    },
+    "multiple_testing": {
+      "type": "object"
+    },
+    "promotion_eligibility": {
+      "enum": [
+        "NOT_ELIGIBLE",
+        "ELIGIBLE_FOR_REVIEW",
+        "VALIDATION_FAILED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "created_at_utc": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

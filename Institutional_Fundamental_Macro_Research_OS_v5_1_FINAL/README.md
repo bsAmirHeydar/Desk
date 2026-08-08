@@ -147,3 +147,5 @@ V18.0.0 installs D2 Complete Fact-Based Market Sciences (Modules 96–100). The 
 
 V19.0.0 adds Module 101 Unified Causal & Fuzzy Edge Integration. D2 sciences remain canonical source-state engines; Module 101 alone may modulate the edge. Direction remains Fundamental-only, science voting is forbidden, and V19 positive D3 support cannot create a new BUY/SELL from pre-D3 NO_TRADE.
 
+## V20.0.0 — D4 complete
+The original D1–D4 architecture is feature-complete. V20 adds Module 102 for forward validation, calibration, counterfactual research, selective promotion, drift and retirement. The shipped promotion registry is empty, so V19 decision behavior is preserved until forward evidence justifies an explicit reviewed promotion.

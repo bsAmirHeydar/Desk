@@ -1,0 +1,40 @@
+{
+  "release": "V20.0.0",
+  "deployment": "D4",
+  "status": "PASS",
+  "generated_at_utc": "2026-08-08T18:18:36.774682+00:00",
+  "architecture": {
+    "direction_authority": "FUNDAMENTAL_ONLY",
+    "d4_authority_mode": "GOVERNANCE_ENFORCED",
+    "initial_promotion_registry_records": 0,
+    "positive_permission_creation": "PROMOTED_REGISTRY_ONLY",
+    "runtime_registry_mutation_allowed": false
+  },
+  "tests": {
+    "d4_selftest": "17/17 PASS",
+    "d3_regression": "22/22 PASS",
+    "d2_regression": "31/31 PASS",
+    "d1_regression": "20/20 PASS",
+    "v16_1_regression": "21/21 PASS",
+    "deployment_preflight": "PASS",
+    "runtime_preflight": "PASS",
+    "d4_market_coverage": "6/6 PASS",
+    "d3_market_books": "6/6 PASS",
+    "d2_coverage_cells": "30/30 PASS",
+    "d1_coverage_cells": "60/60 PASS",
+    "json_parse": "240 PASS",
+    "python_compile": "84 PASS",
+    "json_schemas": "51 PASS"
+  },
+  "scientific_guards": [
+    "Forward-only frozen observations",
+    "Append-only hash-chained ledger",
+    "Same-root dependence disclosure",
+    "Development/holdout separation",
+    "Counterfactual policy branches frozen ex ante",
+    "No automatic promotion from single run",
+    "No D4 direction creation",
+    "Positive authority only via reviewed registry",
+    "Initial V20 registry empty-by-design"
+  ]
+}

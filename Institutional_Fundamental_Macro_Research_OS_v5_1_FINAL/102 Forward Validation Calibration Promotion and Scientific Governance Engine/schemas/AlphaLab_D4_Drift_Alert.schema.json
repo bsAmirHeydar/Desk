@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab D4 Drift Alert",
+  "type": "object",
+  "required": [
+    "record_type",
+    "alert_id",
+    "promotion_id",
+    "severity",
+    "action"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "DRIFT_ALERT"
+    },
+    "alert_id": {
+      "type": "string"
+    },
+    "promotion_id": {
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "INFO",
+        "WARNING",
+        "SEVERE"
+      ]
+    },
+    "action": {
+      "enum": [
+        "MONITOR",
+        "REVIEW",
+        "SUSPEND_PENDING_REVIEW"
+      ]
+    },
+    "signals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_at_utc": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -242,3 +242,5 @@ Production now routes through **Module 100**. Modules **96–99** canonically de
 
 Module 101 is the enforced D2→Edge integration authority. Fundamental Direction remains Module 89 only. D3 uses causal modifiers rather than voting/additive scoring and cannot create a new BUY/SELL from pre-D3 NO_TRADE in V19. Start at [[101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/00 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine MOC]].
 
+## V20 / D4
+Production authority now enters through [[102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt]]. D4 closes the original roadmap with forward validation, counterfactual calibration and selective promotion governance.

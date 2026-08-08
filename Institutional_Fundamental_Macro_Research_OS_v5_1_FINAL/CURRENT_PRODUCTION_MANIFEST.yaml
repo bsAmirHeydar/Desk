@@ -1,18 +1,19 @@
 # GENERATED MIRROR — machine authority is CURRENT_PRODUCTION_MANIFEST.json
 {
-  "version": "19.0.0",
-  "current_stack": "V19.0.0",
+  "version": "20.0.0",
+  "current_stack": "V20.0.0",
   "manifest_authority": "CURRENT_PRODUCTION_MANIFEST.json",
   "human_mirror": "CURRENT_PRODUCTION_MANIFEST.yaml",
-  "production_entrypoint": "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/27 V19 D3 Full-Vault Production Prompt.md",
+  "production_entrypoint": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt.md",
   "allowed_live_entrypoints": [
-    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/27 V19 D3 Full-Vault Production Prompt.md"
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt.md"
   ],
   "allowed_live_subengines": [
     "95 Fact Constitution and Institutional Evidence Fabric/22 V17 D1 Fact-Governed Full-Vault Production Prompt.md",
     "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt.md",
     "93 Temporal Market Structure Timing and Calendar Intelligence Engine/60 V15.1 Full-Vault Timing Clearance Production Prompt.md",
-    "100 Six-Market D2 Fact Books and Production Shadow Engine/13 V18 D2 Fact-Science Full-Vault Production Prompt.md"
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/13 V18 D2 Fact-Science Full-Vault Production Prompt.md",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/27 V19 D3 Full-Vault Production Prompt.md"
   ],
   "canonical_authorities": {
     "fundamental": "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/00 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine MOC.md",
@@ -27,44 +28,51 @@
     "funding_plumbing": "98 Funding Plumbing Collateral and Balance Sheet Capacity Science/00 Funding Plumbing Collateral and Balance Sheet Capacity Science MOC.md",
     "institutional_mechanics_capacity": "99 Institutional Mechanics and Market Capacity Science/00 Institutional Mechanics and Market Capacity Science MOC.md",
     "d2_six_market_router": "100 Six-Market D2 Fact Books and Production Shadow Engine/00 Six-Market D2 Fact Books and Production Shadow Engine MOC.md",
-    "d3_unified_edge": "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/00 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine MOC.md"
+    "d3_unified_edge": "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/00 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine MOC.md",
+    "d4_forward_validation": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/00 Forward Validation Calibration Promotion and Scientific Governance Engine MOC.md"
   },
   "asset_books": {
     "XAUUSD": [
       "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/27 Gold Force Consumption and Persistence Book.md",
       "90 Market Narrative Intelligence Engine/36 Gold Narrative Operating Book.md",
       "100 Six-Market D2 Fact Books and Production Shadow Engine/20 XAUUSD D2 Fact Book.md",
-      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/21 XAUUSD D3 Integration Book.md"
+      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/21 XAUUSD D3 Integration Book.md",
+      "102 Forward Validation Calibration Promotion and Scientific Governance Engine/24 XAUUSD D4 Validation Book.md"
     ],
     "NASDAQ100": [
       "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/25 Nasdaq 100 Force Consumption and Persistence Book.md",
       "90 Market Narrative Intelligence Engine/34 Nasdaq 100 Narrative Operating Book.md",
       "100 Six-Market D2 Fact Books and Production Shadow Engine/21 NASDAQ100 D2 Fact Book.md",
-      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/22 NASDAQ100 D3 Integration Book.md"
+      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/22 NASDAQ100 D3 Integration Book.md",
+      "102 Forward Validation Calibration Promotion and Scientific Governance Engine/25 NASDAQ100 D4 Validation Book.md"
     ],
     "SP500": [
       "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/26 S&P 500 Force Consumption and Persistence Book.md",
       "90 Market Narrative Intelligence Engine/35 S&P 500 Narrative Operating Book.md",
       "100 Six-Market D2 Fact Books and Production Shadow Engine/22 SP500 D2 Fact Book.md",
-      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/23 SP500 D3 Integration Book.md"
+      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/23 SP500 D3 Integration Book.md",
+      "102 Forward Validation Calibration Promotion and Scientific Governance Engine/26 SP500 D4 Validation Book.md"
     ],
     "DJIA": [
       "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/40 DJIA Force Consumption and Persistence Book.md",
       "90 Market Narrative Intelligence Engine/53 DJIA Narrative Operating Book.md",
       "100 Six-Market D2 Fact Books and Production Shadow Engine/23 DJIA D2 Fact Book.md",
-      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/24 DJIA D3 Integration Book.md"
+      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/24 DJIA D3 Integration Book.md",
+      "102 Forward Validation Calibration Promotion and Scientific Governance Engine/27 DJIA D4 Validation Book.md"
     ],
     "EURUSD": [
       "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/28 EURUSD Force Consumption and Persistence Book.md",
       "90 Market Narrative Intelligence Engine/37 EURUSD Narrative Operating Book.md",
       "100 Six-Market D2 Fact Books and Production Shadow Engine/24 EURUSD D2 Fact Book.md",
-      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/25 EURUSD D3 Integration Book.md"
+      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/25 EURUSD D3 Integration Book.md",
+      "102 Forward Validation Calibration Promotion and Scientific Governance Engine/28 EURUSD D4 Validation Book.md"
     ],
     "USDJPY": [
       "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/41 USDJPY Force Consumption and Persistence Book.md",
       "90 Market Narrative Intelligence Engine/54 USDJPY Narrative Operating Book.md",
       "100 Six-Market D2 Fact Books and Production Shadow Engine/25 USDJPY D2 Fact Book.md",
-      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/26 USDJPY D3 Integration Book.md"
+      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/26 USDJPY D3 Integration Book.md",
+      "102 Forward Validation Calibration Promotion and Scientific Governance Engine/29 USDJPY D4 Validation Book.md"
     ]
   },
   "forbidden_live_entrypoints": [
@@ -117,7 +125,28 @@
     "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_D3_Integration_Input.schema.json",
     "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_D3_Adjudication.schema.json",
     "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_D3_Forward_Telemetry.schema.json",
-    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_V19_StateBundle.schema.json"
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_V19_StateBundle.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/d4_governance_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/calibration_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/counterfactual_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/multiple_testing_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/drift_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/outcome_horizon_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/metric_registry.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/six_market_validation_map.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_registry.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Forward_Observation.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Outcome.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Counterfactual.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Calibration_Report.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Promotion_Proposal.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Validator_Decision.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Promotion_Record.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Authority_Receipt.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Drift_Alert.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Ledger_Record.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_V20_StateBundle.schema.json"
   ],
   "production_universe": [
     "XAUUSD",
@@ -136,7 +165,7 @@
     "direction": "FUNDAMENTAL_ONLY",
     "narrative": "TRANSMISSION_CLEARANCE",
     "timing": "TEMPORAL_CLEARANCE",
-    "calibration": "SHADOW",
+    "calibration": "MODULE_102_GOVERNANCE_ENFORCED",
     "portfolio_gate": "SHADOW",
     "operational_gate": "ENFORCED",
     "positioning_ownership": "MODULE_101_CONSTRAINED_MODIFIER",
@@ -144,7 +173,10 @@
     "funding_plumbing": "MODULE_101_CONSTRAINED_MODIFIER",
     "institutional_mechanics": "MODULE_101_CONSTRAINED_MODIFIER",
     "market_capacity": "MODULE_101_EXECUTION_CAPACITY_GATE",
-    "d3_edge_integration": "ENFORCED_CAUSAL_MODULATION"
+    "d3_edge_integration": "ENFORCED_CAUSAL_MODULATION",
+    "d4_forward_validation": "GOVERNANCE_ENFORCED",
+    "d4_positive_permission": "PROMOTED_REGISTRY_ONLY",
+    "d4_direction_flip": "FORBIDDEN"
   },
   "technical_direction_boundary": {
     "direction_from_price_technical_analysis": false,
@@ -152,7 +184,7 @@
     "donchian_execution_trigger_only": true
   },
   "modes": {
-    "calibration": "SHADOW",
+    "calibration": "D4_GOVERNANCE_ENFORCED",
     "portfolio_gate": "SHADOW",
     "operational_gate": "ENFORCED",
     "blind_validation": "SHADOW",
@@ -162,7 +194,9 @@
     "d2_institutional_mechanics": "CANONICAL_SHADOW",
     "d2_market_capacity": "CANONICAL_SHADOW",
     "d3_edge_integration": "ENFORCED_CAUSAL_MODULATION",
-    "d3_positive_permission_promotion": "DISABLED_V19"
+    "d3_positive_permission_promotion": "D4_PROMOTED_REGISTRY_ONLY",
+    "d4_forward_validation": "GOVERNANCE_ENFORCED",
+    "d4_initial_new_promotions": "NONE"
   },
   "retrieval_policy": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_policy.json",
   "fact_constitution_version": "1.1.0",
@@ -202,7 +236,21 @@
     "science_voting_allowed": false,
     "additive_scoring_allowed": false,
     "new_permission_from_pre_d3_no_trade_v19": false,
-    "positive_support_forward_validation": "D4_REQUIRED",
+    "positive_support_forward_validation": "D4_ACTIVE",
     "production_prompt": "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/27 V19 D3 Full-Vault Production Prompt.md"
+  },
+  "d4_forward_validation": {
+    "version": "1.0.0",
+    "deployment": "D4",
+    "authority_mode": "GOVERNANCE_ENFORCED",
+    "forward_only": true,
+    "direction_authority": "FUNDAMENTAL_ONLY",
+    "direction_flip_allowed": false,
+    "positive_permission_creation": "PROMOTED_REGISTRY_ONLY",
+    "initial_promotion_registry_empty": true,
+    "runtime_registry_mutation_allowed": false,
+    "baseline_policy": "V19_D3_GRANDFATHERED",
+    "production_prompt": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt.md",
+    "promotion_registry": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_registry.json"
   }
 }

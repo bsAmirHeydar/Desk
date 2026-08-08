@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "branches": [
+    "ACTUAL_V20",
+    "PRE_D3_BASELINE",
+    "V19_D3_BASELINE",
+    "REMOVE_MODIFIER",
+    "POSITIVE_PROMOTION_SHADOW",
+    "DELAY_ALTERNATIVE"
+  ],
+  "same_frozen_information_set_required": true,
+  "same_execution_profile_required": true,
+  "ex_post_entry_selection_forbidden": true,
+  "untriggered_trade_state": "UNSCORABLE_AS_REALIZED_TRADE",
+  "counterfactuals_must_reference_policy_version": true
+}

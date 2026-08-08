@@ -1,0 +1,22 @@
+release: V20.0.0
+deployment: D4
+direction: FUNDAMENTAL_ONLY
+fact_authority: Module_95
+fundamental_authority: Module_89
+narrative_authority: Module_90
+timing_authority: Module_93
+d2_state_producers:
+  positioning: Module_96
+  actual_flow: Module_97
+  funding_plumbing: Module_98
+  mechanics_capacity: Module_99
+  six_market_router: Module_100
+d2_direct_permission_authority: NONE
+d3_integration_authority: Module_101
+d3_authority_mode: ENFORCED_CAUSAL_MODULATION
+d4_forward_validation_authority: Module_102
+d4_authority_mode: GOVERNANCE_ENFORCED
+d4_positive_permission_creation: PROMOTED_REGISTRY_ONLY
+initial_new_promotions: NONE
+direction_flip_allowed: false
+runtime_registry_mutation_allowed: false

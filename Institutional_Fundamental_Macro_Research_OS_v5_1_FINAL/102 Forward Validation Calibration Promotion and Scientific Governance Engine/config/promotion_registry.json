@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "registry_id": "ALPHALAB_D4_PROMOTION_REGISTRY",
+  "authority_mode": "SELECTIVE_REGISTRY",
+  "default_behavior": "NO_NEW_AUTHORITY",
+  "records": [],
+  "initial_release_note": "V20 ships with zero new promoted modifier rules. V19 decision behavior is preserved until a reviewed registry change is committed."
+}

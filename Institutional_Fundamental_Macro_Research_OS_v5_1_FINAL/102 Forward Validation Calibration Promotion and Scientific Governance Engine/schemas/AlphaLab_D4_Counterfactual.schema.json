@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab D4 Counterfactual Outcome",
+  "type": "object",
+  "required": [
+    "record_type",
+    "counterfactual_id",
+    "run_id",
+    "branch",
+    "policy_version",
+    "score_state"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "COUNTERFACTUAL_OUTCOME"
+    },
+    "counterfactual_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "branch": {
+      "enum": [
+        "PRE_D3_BASELINE",
+        "V19_D3_BASELINE",
+        "REMOVE_MODIFIER",
+        "POSITIVE_PROMOTION_SHADOW",
+        "DELAY_ALTERNATIVE"
+      ]
+    },
+    "modifier_id": {
+      "type": "string"
+    },
+    "policy_version": {
+      "type": "string"
+    },
+    "score_state": {
+      "enum": [
+        "MATURE",
+        "EXPIRY_WITHOUT_TRIGGER",
+        "UNSCORABLE"
+      ]
+    },
+    "hypothetical_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "realized_r": {
+      "type": "number"
+    },
+    "mfe_r": {
+      "type": "number"
+    },
+    "mae_r": {
+      "type": "number"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

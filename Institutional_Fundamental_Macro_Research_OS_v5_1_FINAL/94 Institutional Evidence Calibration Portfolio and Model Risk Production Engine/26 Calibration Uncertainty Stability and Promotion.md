@@ -1,24 +1,9 @@
-# Calibration Uncertainty Stability and Promotion
+# Calibration Uncertainty Stability and Promotion — V20 bridge
 
-Calibration remains SHADOW until evidence matures. V16.1 makes the reference class executable and aligned with the telemetry schema.
+Module 94 calibration remains a supporting substrate. Module 102 is the canonical D4 authority for modifier validation and promotion.
 
-## Cohort key
-`symbol × horizon × core_direction × edge_class × timing_gate × driver_family × narrative_family × regime_label × evidence_quality_band × execution_profile_version`
+V20 requires development/holdout separation, independent-root counts, paired actual/counterfactual policy effects, tail-risk review, regime stability, multiplicity disclosure and independent validation.
 
-## Separate development and holdout
-Training/development observations and pre-designated holdout observations are reported separately. Holdout may never be silently merged into training metrics.
+Sample floors are governance floors, not proof. Crossing a floor only creates eligibility for review. Numeric predictive probability is not authorized by sample count alone.
 
-## Required descriptive outputs
-- N and independent root-event N;
-- train/holdout mean and median R;
-- train/holdout positive-R rate **descriptive only**;
-- approximate descriptive interval for mean R;
-- MFE/MAE;
-- time-to-trigger and time-to-MFE;
-- expiry-without-trigger rate;
-- state-survival rate;
-- cost R;
-- per-regime metrics and sign consistency.
-
-## Promotion logic
-Sample floors in config are governance floors, not proof. Crossing a floor only makes a cohort eligible for calibration review. Promotion additionally requires documented stability review, holdout review, regime review, multiple-testing control where relevant, and independent validation. No numeric predictive probability is authorized by sample count alone.
+See [[102 Forward Validation Calibration Promotion and Scientific Governance Engine/09 Metrics and Loss Functions]], [[102 Forward Validation Calibration Promotion and Scientific Governance Engine/11 Development Holdout and Walk-Forward Contract]], and [[102 Forward Validation Calibration Promotion and Scientific Governance Engine/15 Positive Permission Creation Promotion Gate]].

@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "metrics": [
+    {
+      "id": "delta_realized_r",
+      "kind": "paired",
+      "direction": "HIGHER_BETTER"
+    },
+    {
+      "id": "delta_mfe_r",
+      "kind": "paired",
+      "direction": "HIGHER_BETTER"
+    },
+    {
+      "id": "delta_mae_r",
+      "kind": "paired",
+      "direction": "HIGHER_BETTER_WHEN_LESS_NEGATIVE"
+    },
+    {
+      "id": "profit_factor",
+      "kind": "realized_trade",
+      "direction": "HIGHER_BETTER"
+    },
+    {
+      "id": "veto_save_rate",
+      "kind": "decision",
+      "direction": "HIGHER_BETTER"
+    },
+    {
+      "id": "veto_missed_opportunity_rate",
+      "kind": "decision",
+      "direction": "LOWER_BETTER"
+    },
+    {
+      "id": "harmful_delay_rate",
+      "kind": "decision",
+      "direction": "LOWER_BETTER"
+    },
+    {
+      "id": "lower_tail_mean_r_5pct",
+      "kind": "tail",
+      "direction": "HIGHER_BETTER"
+    }
+  ]
+}

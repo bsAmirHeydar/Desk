@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab D4 Forward Observation",
+  "type": "object",
+  "required": [
+    "record_type",
+    "run_id",
+    "analysis_id",
+    "instrument",
+    "analysis_cutoff_utc",
+    "vault_commit",
+    "prompt_sha256",
+    "registry_version",
+    "fundamental_direction",
+    "v19_d3_permission",
+    "final_v20_permission",
+    "execution_profile_version"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "FORWARD_OBSERVATION"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "analysis_id": {
+      "type": "string"
+    },
+    "instrument": {
+      "enum": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ]
+    },
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "vault_commit": {
+      "type": "string"
+    },
+    "prompt_sha256": {
+      "type": "string"
+    },
+    "state_sha256": {
+      "type": "string"
+    },
+    "registry_version": {
+      "type": "string"
+    },
+    "fundamental_direction": {
+      "enum": [
+        "BULLISH",
+        "BEARISH",
+        "NEUTRAL",
+        "UNRESOLVED"
+      ]
+    },
+    "pre_d3_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "v19_d3_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "final_v20_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "d3_edge_quality": {
+      "type": "string"
+    },
+    "modifier_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "active_promotion_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "shadow_candidate_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "execution_profile_version": {
+      "type": "string"
+    },
+    "permission_valid_until_utc": {
+      "type": "string"
+    },
+    "independent_root_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

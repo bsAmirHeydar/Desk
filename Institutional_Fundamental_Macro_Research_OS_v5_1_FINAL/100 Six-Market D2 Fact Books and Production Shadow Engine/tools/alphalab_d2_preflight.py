@@ -4,16 +4,16 @@ import argparse,json,subprocess,sys
 p=argparse.ArgumentParser();p.add_argument('--vault-root',required=True);p.add_argument('--mode',choices=['runtime','deployment'],default='runtime');a=p.parse_args();r=Path(a.vault_root);e=[];w=[]
 try:m=json.loads((r/'CURRENT_PRODUCTION_MANIFEST.json').read_text(encoding='utf-8'))
 except Exception as x:m={};e.append('MANIFEST_PARSE: '+str(x))
-if m.get('current_stack') not in {'V18.0.0','V19.0.0'}:e.append('CURRENT_STACK_NOT_V18_OR_V19')
+if m.get('current_stack') not in {'V18.0.0','V19.0.0','V20.0.0'}:e.append('CURRENT_STACK_NOT_V18_V19_OR_V20')
 if m.get('fact_constitution_version')!='1.1.0':e.append('FACT_CONSTITUTION_NOT_1_1')
 if m.get('decision_authority',{}).get('direction')!='FUNDAMENTAL_ONLY':e.append('DIRECTION_AUTHORITY_DRIFT')
 d2=m.get('d2_market_sciences') or {}
 if d2.get('authority_mode')!='CANONICAL_SHADOW':e.append('D2_NOT_CANONICAL_SHADOW')
 if m.get('current_stack')=='V18.0.0' and d2.get('final_permission_effect')!='NONE':e.append('D2_PREMATURE_PERMISSION_EFFECT')
-if m.get('current_stack')=='V19.0.0' and d2.get('direct_permission_effect')!='NONE':e.append('D2_DIRECT_PERMISSION_EFFECT')
+if m.get('current_stack') in {'V19.0.0','V20.0.0'} and d2.get('direct_permission_effect')!='NONE':e.append('D2_DIRECT_PERMISSION_EFFECT')
 
 if m.get('current_stack')=='V18.0.0' and d2.get('d3_promotion_state')!='NOT_PROMOTED':e.append('D3_PREMATURE_PROMOTION')
-if m.get('current_stack')=='V19.0.0' and d2.get('d3_promotion_state')!='PROMOTED_VIA_MODULE_101_ONLY':e.append('D3_PROMOTION_PATH_INVALID')
+if m.get('current_stack') in {'V19.0.0','V20.0.0'} and d2.get('d3_promotion_state')!='PROMOTED_VIA_MODULE_101_ONLY':e.append('D3_PROMOTION_PATH_INVALID')
 if m.get('current_stack')=='V18.0.0':
     expected={'positioning_ownership':'SHADOW_STATE_ONLY','actual_flow':'SHADOW_STATE_ONLY','funding_plumbing':'SHADOW_STATE_ONLY','institutional_mechanics':'SHADOW_STATE_ONLY','market_capacity':'SHADOW_STATE_ONLY'}
 else:

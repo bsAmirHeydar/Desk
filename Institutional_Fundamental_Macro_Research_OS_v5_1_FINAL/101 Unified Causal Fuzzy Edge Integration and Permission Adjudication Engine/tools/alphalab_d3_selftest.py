@@ -6,7 +6,7 @@ def chk(n,ok,d=''):checks.append((n,bool(ok),str(d)))
 def run(args):
  q=subprocess.run([sys.executable,*map(str,args)],capture_output=True,text=True);return q.returncode,q.stdout+q.stderr
 m=json.loads((V/'CURRENT_PRODUCTION_MANIFEST.json').read_text())
-chk('stack_v19',m.get('current_stack')=='V19.0.0',m.get('current_stack'))
+chk('stack_v19_or_v20',m.get('current_stack') in {'V19.0.0','V20.0.0'},m.get('current_stack'))
 chk('fundamental_only',m.get('decision_authority',{}).get('direction')=='FUNDAMENTAL_ONLY',m.get('decision_authority'))
 chk('module101_authority',m.get('canonical_authorities',{}).get('d3_unified_edge')=='101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/00 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine MOC.md',m.get('canonical_authorities'))
 d3=m.get('d3_unified_edge') or {};chk('d3_mode',d3.get('authority_mode')=='ENFORCED_CAUSAL_MODULATION',d3);chk('no_flip',d3.get('direction_flip_allowed') is False,d3);chk('no_new_perm',d3.get('new_permission_from_pre_d3_no_trade_v19') is False,d3)

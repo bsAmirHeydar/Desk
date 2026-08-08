@@ -213,3 +213,5 @@ The five D1-registered science families — `POSITIONING_OWNERSHIP`, `ACTUAL_FLO
 
 All six production markets now have dedicated D3 translation books. Positioning, Actual Flow, Funding/Plumbing, Institutional Mechanics and Market Capacity are integrated only through Module 101. Direct permission authority remains absent from Modules 96–100.
 
+## V20 D4 coverage
+All six production markets — XAUUSD, NASDAQ100, SP500, DJIA, EURUSD and USDJPY — now have D4 forward-validation books. Initial promotion authority is empty-by-design; forward evidence accumulation is active.

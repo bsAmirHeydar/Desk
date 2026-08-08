@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab D4 Promotion Record",
+  "type": "object",
+  "required": [
+    "promotion_id",
+    "modifier_id",
+    "modifier_version",
+    "status",
+    "authority_class",
+    "scope",
+    "activated_at_utc"
+  ],
+  "properties": {
+    "promotion_id": {
+      "type": "string"
+    },
+    "modifier_id": {
+      "type": "string"
+    },
+    "modifier_version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ACTIVE",
+        "SUSPENDED",
+        "RETIRED"
+      ]
+    },
+    "authority_class": {
+      "enum": [
+        "REPORT_ONLY",
+        "CONFIDENCE_CAP",
+        "VALIDITY_SHORTEN",
+        "DELAY_PERMISSION",
+        "SUPPRESS_PERMISSION",
+        "CAPACITY_BLOCK",
+        "RESTORE_EXISTING_DIRECTION_PERMISSION",
+        "CREATE_PERMISSION_WITH_EXISTING_FUNDAMENTAL_DIRECTION"
+      ]
+    },
+    "scope": {
+      "type": "object"
+    },
+    "allowed_preconditions": {
+      "type": "object"
+    },
+    "validation_record_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "validator_decision_id": {
+      "type": "string"
+    },
+    "activated_at_utc": {
+      "type": "string"
+    },
+    "expires_at_utc": {
+      "type": "string"
+    },
+    "retirement_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

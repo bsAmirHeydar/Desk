@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "cases": [
+    {
+      "id": "D4-001",
+      "name": "Empty registry preserves V19",
+      "expected": "final_v20_permission == v19_d3_permission"
+    },
+    {
+      "id": "D4-002",
+      "name": "Fundamental neutral cannot be upgraded",
+      "expected": "positive authority rejected"
+    },
+    {
+      "id": "D4-003",
+      "name": "Unregistered candidate remains shadow",
+      "expected": "no new authority"
+    },
+    {
+      "id": "D4-004",
+      "name": "Single run cannot promote",
+      "expected": "proposal only / registry unchanged"
+    },
+    {
+      "id": "D4-005",
+      "name": "Ledger hash chain detects mutation",
+      "expected": "validation fail"
+    },
+    {
+      "id": "D4-006",
+      "name": "Holdout remains separate",
+      "expected": "separate metrics"
+    },
+    {
+      "id": "D4-007",
+      "name": "Same-root N not counted as independent N",
+      "expected": "root-event count disclosed"
+    },
+    {
+      "id": "D4-008",
+      "name": "Permission-creating promotion requires directional fundamental",
+      "expected": "fail-closed"
+    },
+    {
+      "id": "D4-009",
+      "name": "Scope mismatch cannot apply promotion",
+      "expected": "shadow only"
+    },
+    {
+      "id": "D4-010",
+      "name": "Severe drift can suspend positive authority",
+      "expected": "suspend pending review"
+    }
+  ]
+}

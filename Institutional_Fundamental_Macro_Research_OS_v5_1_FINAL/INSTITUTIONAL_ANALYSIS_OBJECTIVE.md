@@ -81,3 +81,5 @@ Every production run must now distinguish institutional position, actual transac
 
 Institutional completeness now requires that Positioning, Actual Flow, Funding/Plumbing, Mechanics and Capacity be translated through explicit causal channels, materiality and independent-root lineage before they can affect edge usability. These sciences may constrain or suppress transmission but may not originate or flip Fundamental Direction.
 
+## V20 scientific learning objective
+Every decision modifier must now be evaluated through immutable forward telemetry, horizon-correct outcomes and counterfactual policy comparison before any new authority is promoted.

@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "family_id_required": true,
+  "screened_hypothesis_count_required": true,
+  "primary_metric_predeclaration_required": true,
+  "holdout_required_for_promotion": true,
+  "fdr_method": "BENJAMINI_HOCHBERG_WHEN_VALID_PVALUES_SUPPLIED",
+  "default_q": 0.1,
+  "fabricate_pvalues": false,
+  "exploratory_when_inference_unavailable": true
+}

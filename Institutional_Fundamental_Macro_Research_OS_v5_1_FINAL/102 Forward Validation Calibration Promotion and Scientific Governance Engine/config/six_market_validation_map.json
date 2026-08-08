@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "markets": {
+    "XAUUSD": {
+      "status": "D4_FORWARD_ACTIVE",
+      "book": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/24 XAUUSD D4 Validation Book.md"
+    },
+    "NASDAQ100": {
+      "status": "D4_FORWARD_ACTIVE",
+      "book": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/25 NASDAQ100 D4 Validation Book.md"
+    },
+    "SP500": {
+      "status": "D4_FORWARD_ACTIVE",
+      "book": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/26 SP500 D4 Validation Book.md"
+    },
+    "DJIA": {
+      "status": "D4_FORWARD_ACTIVE",
+      "book": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/27 DJIA D4 Validation Book.md"
+    },
+    "EURUSD": {
+      "status": "D4_FORWARD_ACTIVE",
+      "book": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/28 EURUSD D4 Validation Book.md"
+    },
+    "USDJPY": {
+      "status": "D4_FORWARD_ACTIVE",
+      "book": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/29 USDJPY D4 Validation Book.md"
+    }
+  },
+  "cross_market_pooling": "DESCRIPTIVE_UNLESS_EXPLICITLY_PROMOTED"
+}

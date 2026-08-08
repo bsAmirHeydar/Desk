@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "primary_paired_metric": "delta_realized_r",
+  "descriptive_metrics": [
+    "mean_r",
+    "median_r",
+    "profit_factor",
+    "positive_r_rate",
+    "mfe_r",
+    "mae_r",
+    "time_to_trigger_seconds",
+    "time_to_mfe_seconds",
+    "expiry_without_trigger_rate",
+    "veto_save_rate",
+    "veto_missed_opportunity_rate",
+    "delay_save_rate",
+    "harmful_delay_rate",
+    "lower_tail_mean_r_5pct"
+  ],
+  "bootstrap": {
+    "enabled": true,
+    "iterations": 2000,
+    "preferred_cluster_key": "independent_root_id",
+    "fallback_cluster_key": "trading_day",
+    "last_resort": "observation"
+  },
+  "reference_class_backoff": [
+    "exact",
+    "drop_session_event",
+    "drop_regime",
+    "merge_evidence_band",
+    "market_family",
+    "global_descriptive_only"
+  ],
+  "numeric_predictive_probability_authorized": false
+}

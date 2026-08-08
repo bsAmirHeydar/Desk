@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab D4 Outcome",
+  "type": "object",
+  "required": [
+    "record_type",
+    "outcome_id",
+    "run_id",
+    "maturity_state"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "OUTCOME"
+    },
+    "outcome_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "maturity_state": {
+      "enum": [
+        "IMMATURE",
+        "MATURE",
+        "EXPIRY_WITHOUT_TRIGGER",
+        "UNSCORABLE"
+      ]
+    },
+    "matured_at_utc": {
+      "type": "string"
+    },
+    "realized_r": {
+      "type": "number"
+    },
+    "mfe_r": {
+      "type": "number"
+    },
+    "mae_r": {
+      "type": "number"
+    },
+    "time_to_trigger_seconds": {
+      "type": "number"
+    },
+    "time_to_mfe_seconds": {
+      "type": "number"
+    },
+    "cost_r": {
+      "type": "number"
+    },
+    "exit_reason": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

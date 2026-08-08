@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab D4 Ledger Record",
+  "type": "object",
+  "required": [
+    "record_type",
+    "record_id",
+    "created_at_utc",
+    "previous_record_hash",
+    "record_hash",
+    "payload"
+  ],
+  "properties": {
+    "record_type": {
+      "enum": [
+        "FORWARD_OBSERVATION",
+        "OUTCOME",
+        "COUNTERFACTUAL_OUTCOME",
+        "CALIBRATION_REPORT",
+        "PROMOTION_PROPOSAL",
+        "VALIDATOR_DECISION",
+        "REGISTRY_CHANGE",
+        "DRIFT_ALERT",
+        "RETIREMENT_RECORD"
+      ]
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "created_at_utc": {
+      "type": "string"
+    },
+    "previous_record_hash": {
+      "type": "string"
+    },
+    "record_hash": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

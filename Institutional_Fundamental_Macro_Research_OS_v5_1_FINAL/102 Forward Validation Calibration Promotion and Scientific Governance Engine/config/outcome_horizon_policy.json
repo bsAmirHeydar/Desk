@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "horizons": {
+    "EVENT_15M": {
+      "maturity_minutes": 15
+    },
+    "INTRADAY_60M": {
+      "maturity_minutes": 60
+    },
+    "SESSION": {
+      "maturity": "SESSION_END"
+    },
+    "DAILY": {
+      "maturity": "NEXT_DAILY_CLOSE"
+    },
+    "MULTI_DAY": {
+      "maturity": "THESIS_SPECIFIC"
+    }
+  },
+  "score_only_at_declared_horizon": true,
+  "permission_expiry_respected": true,
+  "no_trigger_separate_state": true
+}

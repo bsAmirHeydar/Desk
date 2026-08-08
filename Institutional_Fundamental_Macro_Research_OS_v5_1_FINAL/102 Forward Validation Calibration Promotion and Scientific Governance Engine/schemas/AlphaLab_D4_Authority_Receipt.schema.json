@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab D4 Authority Receipt",
+  "type": "object",
+  "required": [
+    "registry_version",
+    "v19_d3_permission",
+    "final_v20_permission",
+    "applied_promotion_ids",
+    "shadow_candidate_ids"
+  ],
+  "properties": {
+    "registry_version": {
+      "type": "string"
+    },
+    "registry_sha256": {
+      "type": "string"
+    },
+    "v19_d3_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "final_v20_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "applied_promotion_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "shadow_candidate_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fundamental_direction": {
+      "enum": [
+        "BULLISH",
+        "BEARISH",
+        "NEUTRAL",
+        "UNRESOLVED"
+      ]
+    },
+    "fail_closed_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

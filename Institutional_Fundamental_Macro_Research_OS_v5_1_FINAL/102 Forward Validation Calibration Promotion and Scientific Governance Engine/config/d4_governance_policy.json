@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "authority_mode": "GOVERNANCE_ENFORCED",
+  "forward_only": true,
+  "direction_authority": "FUNDAMENTAL_ONLY",
+  "direction_flip_allowed": false,
+  "auto_promote_from_single_run": false,
+  "runtime_registry_mutation_allowed": false,
+  "initial_behavior": "PRESERVE_V19_UNLESS_ACTIVE_PROMOTION_MATCHES",
+  "positive_permission_creation_requires_promoted_rule": true,
+  "positive_permission_creation_requires_existing_fundamental_direction": true,
+  "fundamental_neutral_upgrade_forbidden": true,
+  "registry_file": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_registry.json",
+  "ledger_record_types": [
+    "FORWARD_OBSERVATION",
+    "OUTCOME",
+    "COUNTERFACTUAL_OUTCOME",
+    "CALIBRATION_REPORT",
+    "PROMOTION_PROPOSAL",
+    "VALIDATOR_DECISION",
+    "REGISTRY_CHANGE",
+    "DRIFT_ALERT",
+    "RETIREMENT_RECORD"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "monitor": [
+    "effect_sign",
+    "paired_delta_expectancy",
+    "lower_tail",
+    "source_version",
+    "schema_version",
+    "coverage_rate",
+    "regime_concentration",
+    "execution_profile_version",
+    "unknown_rate"
+  ],
+  "severe_positive_authority_response": "SUSPENDED_PENDING_REVIEW",
+  "risk_reducing_rule_auto_removal": false,
+  "registry_mutation_requires_review": true,
+  "default_revalidation_observations": 80
+}

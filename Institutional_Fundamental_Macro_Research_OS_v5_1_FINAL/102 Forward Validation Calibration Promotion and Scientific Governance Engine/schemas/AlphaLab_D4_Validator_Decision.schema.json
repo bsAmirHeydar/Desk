@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab D4 Validator Decision",
+  "type": "object",
+  "required": [
+    "record_type",
+    "validator_decision_id",
+    "proposal_id",
+    "decision"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "VALIDATOR_DECISION"
+    },
+    "validator_decision_id": {
+      "type": "string"
+    },
+    "proposal_id": {
+      "type": "string"
+    },
+    "validator_id": {
+      "type": "string"
+    },
+    "decision": {
+      "enum": [
+        "APPROVE",
+        "REJECT",
+        "REQUEST_MORE_EVIDENCE"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "created_at_utc": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

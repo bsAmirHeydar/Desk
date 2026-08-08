@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab D4 Promotion Proposal",
+  "type": "object",
+  "required": [
+    "record_type",
+    "proposal_id",
+    "modifier_id",
+    "authority_class",
+    "scope",
+    "state"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "PROMOTION_PROPOSAL"
+    },
+    "proposal_id": {
+      "type": "string"
+    },
+    "modifier_id": {
+      "type": "string"
+    },
+    "modifier_version": {
+      "type": "string"
+    },
+    "authority_class": {
+      "enum": [
+        "REPORT_ONLY",
+        "CONFIDENCE_CAP",
+        "VALIDITY_SHORTEN",
+        "DELAY_PERMISSION",
+        "SUPPRESS_PERMISSION",
+        "CAPACITY_BLOCK",
+        "RESTORE_EXISTING_DIRECTION_PERMISSION",
+        "CREATE_PERMISSION_WITH_EXISTING_FUNDAMENTAL_DIRECTION"
+      ]
+    },
+    "scope": {
+      "type": "object"
+    },
+    "validation_record_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "retirement_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "state": {
+      "enum": [
+        "CANDIDATE",
+        "VALIDATED",
+        "REJECTED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "created_at_utc": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

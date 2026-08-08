@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "note": "These are governance eligibility floors, not proof of edge.",
+  "states": [
+    "OBSERVATION",
+    "SHADOW",
+    "CANDIDATE",
+    "VALIDATED",
+    "PROMOTED",
+    "MONITORED",
+    "SUSPENDED",
+    "REJECTED",
+    "RETIRED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "authority_classes": [
+    "REPORT_ONLY",
+    "CONFIDENCE_CAP",
+    "VALIDITY_SHORTEN",
+    "DELAY_PERMISSION",
+    "SUPPRESS_PERMISSION",
+    "CAPACITY_BLOCK",
+    "RESTORE_EXISTING_DIRECTION_PERMISSION",
+    "CREATE_PERMISSION_WITH_EXISTING_FUNDAMENTAL_DIRECTION"
+  ],
+  "governance_floors": {
+    "risk_reducing_or_constraint": {
+      "min_observations": 60,
+      "min_independent_roots": 30,
+      "min_holdout_roots": 12,
+      "min_distinct_regimes": 2
+    },
+    "positive_permission_restore": {
+      "min_observations": 100,
+      "min_independent_roots": 50,
+      "min_holdout_roots": 20,
+      "min_distinct_regimes": 2
+    },
+    "positive_permission_create": {
+      "min_observations": 160,
+      "min_independent_roots": 80,
+      "min_holdout_roots": 30,
+      "min_distinct_regimes": 3
+    }
+  },
+  "required_reviews": [
+    "DEVELOPMENT",
+    "HOLDOUT",
+    "REGIME_STABILITY",
+    "TAIL_RISK",
+    "MULTIPLE_TESTING_DISCLOSURE",
+    "INDEPENDENT_VALIDATOR"
+  ],
+  "positive_create_requires": {
+    "holdout_paired_delta_r_gt": 0.0,
+    "tail_harm_within_policy": true,
+    "effect_sign_stable": true,
+    "independent_validator_approved": true
+  },
+  "automatic_registry_write": false
+}
