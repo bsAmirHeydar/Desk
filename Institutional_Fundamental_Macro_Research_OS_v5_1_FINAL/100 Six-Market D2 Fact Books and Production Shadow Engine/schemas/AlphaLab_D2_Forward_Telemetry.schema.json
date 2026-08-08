@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_D2_Forward_Telemetry.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "run_id",
+    "instrument",
+    "analysis_cutoff_utc",
+    "d2_pack",
+    "final_permission_without_d2_modification",
+    "immutable_after_outcome"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "d2_pack": {
+      "type": "object"
+    },
+    "final_permission_without_d2_modification": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE",
+        "HOLD",
+        "UNRESOLVED"
+      ]
+    },
+    "immutable_after_outcome": {
+      "const": true
+    },
+    "outcome_windows": {
+      "type": "object"
+    }
+  }
+}

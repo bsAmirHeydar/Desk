@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import json,subprocess,sys,tempfile
+HERE=Path(__file__).resolve().parent;MOD=HERE.parent;V=MOD.parent;checks=[]
+def chk(name,ok,detail=''):checks.append((name,bool(ok),str(detail)))
+def run(args):
+ q=subprocess.run([sys.executable,*map(str,args)],capture_output=True,text=True,timeout=45)
+ return q.returncode,q.stdout+q.stderr
+m=json.loads((V/'CURRENT_PRODUCTION_MANIFEST.json').read_text());
+chk('stack_v18',m.get('current_stack')=='V18.0.0',m.get('current_stack'))
+chk('fact_constitution_1_1',m.get('fact_constitution_version')=='1.1.0',m.get('fact_constitution_version'))
+chk('fundamental_only_direction',m.get('decision_authority',{}).get('direction')=='FUNDAMENTAL_ONLY',m.get('decision_authority'))
+d2=m.get('d2_market_sciences') or {};chk('d2_canonical_shadow',d2.get('authority_mode')=='CANONICAL_SHADOW',d2);chk('d2_zero_permission_effect',d2.get('final_permission_effect')=='NONE',d2);chk('d3_not_promoted',d2.get('d3_promotion_state')=='NOT_PROMOTED',d2)
+ca=m.get('canonical_authorities') or {}
+for k in ['positioning_ownership','actual_flow','funding_plumbing','institutional_mechanics_capacity','d2_six_market_router']:chk('authority_'+k,k in ca and (V/ca[k]).exists(),ca.get(k))
+# policies encode critical non-equivalences
+p96=json.loads((V/'96 Positioning Ownership and Crowding Science/config/positioning_policy.json').read_text());chk('positioning_flow_distinct','FLOW' in p96['canonical_distinctions'] and p96['rules']['open_interest_not_directional_flow'],p96)
+p97=json.loads((V/'97 Actual Flow and Transaction Pressure Science/config/flow_policy.json').read_text());chk('volume_not_net_flow',p97['rules']['volume_not_net_flow'],p97);chk('aum_not_auto_flow',p97['rules']['aum_change_not_flow_without_decomposition'],p97);chk('expected_hedge_not_realized',p97['rules']['expected_hedge_not_realized_flow'],p97)
+p98=json.loads((V/'98 Funding Plumbing Collateral and Balance Sheet Capacity Science/config/funding_plumbing_policy.json').read_text());chk('liquidity_decomposed',len(p98['components'])>=6 and p98['rules']['single_liquidity_scalar_forbidden_without_decomposition'],p98);chk('basis_not_spot_direction',p98['rules']['basis_not_spot_direction'],p98)
+p99=json.loads((V/'99 Institutional Mechanics and Market Capacity Science/config/mechanics_capacity_policy.json').read_text());chk('mechanics_not_realized_flow',p99['rules']['mechanical_event_not_realized_flow'],p99);chk('capacity_scoped',p99['rules']['capacity_must_be_venue_size_horizon_state_specific'],p99);chk('mechanics_not_direction',p99['rules']['mechanics_not_fundamental_direction'],p99)
+# 6x5 coverage and source registry
+rc,o=run([HERE/'alphalab_d2_coverage_audit.py','--vault-root',V]);z=json.loads(o);chk('six_by_five_d2_coverage',rc==0 and z.get('cells')==30,o)
+rc,o=run([HERE/'alphalab_d2_source_audit.py','--vault-root',V]);z=json.loads(o);chk('source_registry_audited',rc==0 and z.get('rule')=='REGISTRATION_DOES_NOT_IMPLY_LIVE_AVAILABILITY',o)
+# six market books
+books={'XAUUSD':20,'NASDAQ100':21,'SP500':22,'DJIA':23,'EURUSD':24,'USDJPY':25};chk('six_market_books',all((MOD/f'{n:02d} {mk} D2 Fact Book.md').exists() for mk,n in books.items()),books)
+# D1 registry transition remains no decision authority
+reg=json.loads((V/'95 Fact Constitution and Institutional Evidence Fabric/config/fact_family_registry.json').read_text());d2f=[x for x in reg['families'] if x.get('d2_role')=='CANONICAL_SHADOW_STATE'];chk('five_d2_families_canonical_shadow',len(d2f)==5 and all(x.get('new_decision_authority') is False for x in d2f),d2f)
+cov=json.loads((V/'95 Fact Constitution and Institutional Evidence Fabric/config/six_market_fact_coverage.json').read_text());chk('d1_six_by_ten_preserved',sum(len(x) for x in cov['coverage'].values())==60,cov.get('version'))
+# simple state validators
+with tempfile.TemporaryDirectory() as td0:
+ td=Path(td0)
+ samples=[
+  ('p.json',V/'96 Positioning Ownership and Crowding Science/tools/alphalab_positioning_validate.py',{'instrument':'NASDAQ100','as_of_utc':'2026-08-08T00:00:00Z','authority_mode':'CANONICAL_SHADOW','coverage_state':'PARTIAL_PUBLIC','crowding_state':'BALANCED','fragility_state':'MODERATE','evidence_ids':[],'permission_effect_v18':'NONE'}),
+  ('f.json',V/'97 Actual Flow and Transaction Pressure Science/tools/alphalab_flow_validate.py',{'instrument':'NASDAQ100','as_of_utc':'2026-08-08T00:00:00Z','authority_mode':'CANONICAL_SHADOW','coverage_state':'PARTIAL_PUBLIC','persistence':'UNKNOWN','absorption':'UNKNOWN','evidence_ids':[],'permission_effect_v18':'NONE'}),
+  ('u.json',V/'98 Funding Plumbing Collateral and Balance Sheet Capacity Science/tools/alphalab_funding_validate.py',{'instrument':'NASDAQ100','as_of_utc':'2026-08-08T00:00:00Z','authority_mode':'CANONICAL_SHADOW','coverage_state':'PARTIAL_PUBLIC','stress_state':'NORMAL','evidence_ids':[],'permission_effect_v18':'NONE'}),
+  ('c.json',V/'99 Institutional Mechanics and Market Capacity Science/tools/alphalab_mechanics_capacity_validate.py',{'instrument':'NASDAQ100','as_of_utc':'2026-08-08T00:00:00Z','authority_mode':'CANONICAL_SHADOW','coverage_state':'PARTIAL_PUBLIC','capacity_grade':'NORMAL','stress_capacity_grade':'LOW','evidence_ids':[],'permission_effect_v18':'NONE'})]
+ for fn,tool,obj in samples:
+  q=td/fn;q.write_text(json.dumps(obj));rc,o=run([tool,'--state',q]);chk('validator_'+fn,rc==0,o)
+ pack={'version':'1.0.0','authority_mode':'CANONICAL_SHADOW','instrument':'NASDAQ100','analysis_cutoff_utc':'2026-08-08T00:00:00Z','positioning':{},'actual_flow':{},'funding_plumbing':{},'institutional_mechanics':{},'market_capacity':{},'cross_science_independent_roots':0,'missing_or_licensed_required':[],'d2_permission_effect':'NONE','d3_promotion_state':'NOT_PROMOTED'}
+ q=td/'pack.json';q.write_text(json.dumps(pack));rc,o=run([HERE/'alphalab_d2_validate_pack.py','--pack',q]);chk('d2_pack_validator',rc==0,o)
+ bad=dict(pack);bad['d2_permission_effect']='BUY';q.write_text(json.dumps(bad));rc,o=run([HERE/'alphalab_d2_validate_pack.py','--pack',q]);chk('premature_permission_rejected',rc!=0 and 'PREMATURE_D2_PERMISSION' in o,o)
+# Regression self-tests and deployment/runtime preflights are executed independently by VERIFY_PATCH.py.
+passed=sum(ok for _,ok,_ in checks);failed=[{'name':n,'detail':d[-1500:]} for n,ok,d in checks if not ok]
+print(json.dumps({'status':'PASS' if not failed else 'FAIL','passed':passed,'total':len(checks),'failed':failed},indent=2));sys.exit(0 if not failed else 2)

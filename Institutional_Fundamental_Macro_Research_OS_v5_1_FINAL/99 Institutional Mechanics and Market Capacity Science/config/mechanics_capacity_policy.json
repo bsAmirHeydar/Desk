@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "release": "V18.0.0",
+  "authority_mode": "CANONICAL_SHADOW",
+  "permission_authority": false,
+  "mechanic_families": [
+    "OPTIONS_EXPIRY",
+    "FUTURES_EXPIRY_ROLL_SETTLEMENT",
+    "BENCHMARK_FIXING",
+    "OPENING_AUCTION",
+    "CLOSING_AUCTION",
+    "INDEX_REBALANCE_RECONSTITUTION",
+    "ETF_MECHANICS",
+    "CORPORATE_BUYBACK_ISSUANCE",
+    "TREASURY_AUCTION_SETTLEMENT",
+    "PERIOD_END_PROCESS",
+    "MARGIN_CLEARING_CHANGE",
+    "HOLIDAY_VENUE_CONSTRAINT"
+  ],
+  "capacity_grades": [
+    "VERY_HIGH",
+    "HIGH",
+    "NORMAL",
+    "LOW",
+    "VERY_LOW",
+    "DISLOCATED",
+    "UNKNOWN"
+  ],
+  "rules": {
+    "mechanical_event_not_realized_flow": true,
+    "mechanics_not_fundamental_direction": true,
+    "volume_not_capacity": true,
+    "capacity_must_be_venue_size_horizon_state_specific": true,
+    "expected_passive_flow_is_inference": true,
+    "otc_capacity_not_inferred_from_futures_alone": true
+  }
+}

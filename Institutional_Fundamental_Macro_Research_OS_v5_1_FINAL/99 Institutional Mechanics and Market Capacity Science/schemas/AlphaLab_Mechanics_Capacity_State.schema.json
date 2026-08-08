@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Mechanics_Capacity_State.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "instrument",
+    "as_of_utc",
+    "authority_mode",
+    "coverage_state",
+    "capacity_grade",
+    "stress_capacity_grade",
+    "evidence_ids",
+    "permission_effect_v18"
+  ],
+  "properties": {
+    "instrument": {
+      "type": "string"
+    },
+    "as_of_utc": {
+      "type": "string"
+    },
+    "authority_mode": {
+      "const": "CANONICAL_SHADOW"
+    },
+    "coverage_state": {
+      "enum": [
+        "FULL_PUBLIC",
+        "PARTIAL_PUBLIC",
+        "LICENSED_REQUIRED",
+        "UNAVAILABLE",
+        "UNDETERMINED"
+      ]
+    },
+    "active_mechanics": {
+      "type": "array"
+    },
+    "expected_mechanical_flows": {
+      "type": "array"
+    },
+    "realized_mechanical_flows": {
+      "type": "array"
+    },
+    "capacity_grade": {
+      "enum": [
+        "VERY_HIGH",
+        "HIGH",
+        "NORMAL",
+        "LOW",
+        "VERY_LOW",
+        "DISLOCATED",
+        "UNKNOWN"
+      ]
+    },
+    "stress_capacity_grade": {
+      "enum": [
+        "VERY_HIGH",
+        "HIGH",
+        "NORMAL",
+        "LOW",
+        "VERY_LOW",
+        "DISLOCATED",
+        "UNKNOWN"
+      ]
+    },
+    "venue_scope": {
+      "type": "array"
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "permission_effect_v18": {
+      "const": "NONE"
+    }
+  }
+}

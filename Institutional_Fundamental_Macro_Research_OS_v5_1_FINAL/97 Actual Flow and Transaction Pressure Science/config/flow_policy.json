@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "release": "V18.0.0",
+  "authority_mode": "CANONICAL_SHADOW",
+  "permission_authority": false,
+  "flow_types": [
+    "CASH_SECURITY_FLOW",
+    "FUTURES_TRANSACTION_FLOW",
+    "OPTION_TRANSACTION_FLOW",
+    "ETF_CREATION_REDEMPTION",
+    "FUND_SUBSCRIPTION_REDEMPTION",
+    "DEALER_HEDGE_FLOW",
+    "SYSTEMATIC_REBALANCE_FLOW",
+    "PASSIVE_INDEX_FLOW",
+    "CORPORATE_BUYBACK_FLOW",
+    "CORPORATE_ISSUANCE_FLOW",
+    "FX_HEDGE_FLOW",
+    "OFFICIAL_SECTOR_FLOW",
+    "PHYSICAL_COMMODITY_FLOW"
+  ],
+  "persistence_states": [
+    "ACCELERATING",
+    "PERSISTENT",
+    "DECELERATING",
+    "REVERSING",
+    "ONE_OFF",
+    "UNKNOWN"
+  ],
+  "absorption_states": [
+    "LOW_ABSORPTION",
+    "BALANCED",
+    "HIGH_ABSORPTION",
+    "UNKNOWN"
+  ],
+  "rules": {
+    "volume_not_net_flow": true,
+    "open_interest_change_not_directional_flow": true,
+    "price_move_not_flow_proof": true,
+    "aum_change_not_flow_without_decomposition": true,
+    "expected_hedge_not_realized_flow": true,
+    "modelled_systematic_flow_is_inference": true,
+    "direction_creation_forbidden": true
+  }
+}

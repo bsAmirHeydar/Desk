@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "families": [
     {
       "id": "MACRO_FUNDAMENTAL",
@@ -28,28 +28,39 @@
     },
     {
       "id": "POSITIONING_OWNERSHIP",
-      "authority": "D2_PENDING",
-      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+      "authority": "MODULE_96_CANONICAL_SHADOW",
+      "d1_role": "EVIDENCE_GOVERNANCE",
+      "d2_role": "CANONICAL_SHADOW_STATE",
+      "new_decision_authority": false
     },
     {
       "id": "ACTUAL_FLOW",
-      "authority": "D2_PENDING",
-      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+      "authority": "MODULE_97_CANONICAL_SHADOW",
+      "d1_role": "EVIDENCE_GOVERNANCE",
+      "d2_role": "CANONICAL_SHADOW_STATE",
+      "new_decision_authority": false
     },
     {
       "id": "FUNDING_PLUMBING",
-      "authority": "D2_PENDING",
-      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+      "authority": "MODULE_98_CANONICAL_SHADOW",
+      "d1_role": "EVIDENCE_GOVERNANCE",
+      "d2_role": "CANONICAL_SHADOW_STATE",
+      "new_decision_authority": false
     },
     {
       "id": "INSTITUTIONAL_MECHANICS",
-      "authority": "D2_PENDING",
-      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+      "authority": "MODULE_99_CANONICAL_SHADOW",
+      "d1_role": "EVIDENCE_GOVERNANCE",
+      "d2_role": "CANONICAL_SHADOW_STATE",
+      "new_decision_authority": false
     },
     {
       "id": "MARKET_CAPACITY",
-      "authority": "D2_PENDING",
-      "d1_role": "EVIDENCE_GOVERNANCE_ONLY"
+      "authority": "MODULE_99_CANONICAL_SHADOW",
+      "d1_role": "EVIDENCE_GOVERNANCE",
+      "d2_role": "CANONICAL_SHADOW_STATE",
+      "new_decision_authority": false
     }
-  ]
+  ],
+  "d2_router": "MODULE_100"
 }

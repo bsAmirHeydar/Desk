@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "production_universe": [
     "XAUUSD",
     "NASDAQ100",
@@ -48,29 +48,29 @@
         "notes": "Governed through existing V11-V16.1 canonical science"
       },
       "POSITIONING_OWNERSHIP": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "ACTUAL_FLOW": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "FUNDING_PLUMBING": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "INSTITUTIONAL_MECHANICS": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "MARKET_CAPACITY": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       }
     },
     "NASDAQ100": {
@@ -100,29 +100,29 @@
         "notes": "Governed through existing V11-V16.1 canonical science"
       },
       "POSITIONING_OWNERSHIP": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "ACTUAL_FLOW": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "FUNDING_PLUMBING": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "INSTITUTIONAL_MECHANICS": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "MARKET_CAPACITY": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       }
     },
     "SP500": {
@@ -152,29 +152,29 @@
         "notes": "Governed through existing V11-V16.1 canonical science"
       },
       "POSITIONING_OWNERSHIP": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "ACTUAL_FLOW": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "FUNDING_PLUMBING": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "INSTITUTIONAL_MECHANICS": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "MARKET_CAPACITY": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       }
     },
     "DJIA": {
@@ -204,29 +204,29 @@
         "notes": "Governed through existing V11-V16.1 canonical science"
       },
       "POSITIONING_OWNERSHIP": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "ACTUAL_FLOW": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "FUNDING_PLUMBING": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "INSTITUTIONAL_MECHANICS": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "MARKET_CAPACITY": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       }
     },
     "EURUSD": {
@@ -256,29 +256,29 @@
         "notes": "Governed through existing V11-V16.1 canonical science"
       },
       "POSITIONING_OWNERSHIP": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "ACTUAL_FLOW": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "FUNDING_PLUMBING": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "INSTITUTIONAL_MECHANICS": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "MARKET_CAPACITY": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       }
     },
     "USDJPY": {
@@ -308,29 +308,29 @@
         "notes": "Governed through existing V11-V16.1 canonical science"
       },
       "POSITIONING_OWNERSHIP": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "ACTUAL_FLOW": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "FUNDING_PLUMBING": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "INSTITUTIONAL_MECHANICS": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       },
       "MARKET_CAPACITY": {
-        "state": "REGISTERED_D2_PENDING",
+        "state": "ACTIVE_CANONICAL_SHADOW",
         "new_decision_authority": false,
-        "notes": "D1 registration only; dedicated science requires D2"
+        "notes": "V18 D2 canonical science active in shadow-only mode; final permission effect NONE until D3 promotion"
       }
     }
   }

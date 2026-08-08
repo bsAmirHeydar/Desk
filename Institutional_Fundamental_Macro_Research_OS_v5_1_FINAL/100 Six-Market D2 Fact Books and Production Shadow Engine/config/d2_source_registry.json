@@ -1,0 +1,224 @@
+{
+  "version": "1.0.0",
+  "release": "V18.0.0",
+  "rule": "REGISTRATION_DOES_NOT_IMPLY_LIVE_AVAILABILITY",
+  "sources": [
+    {
+      "source_id": "CFTC_COT",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "regulated U.S. futures/options participant categories",
+      "availability_default": "PUBLIC",
+      "latency_note": "reported reference and publication clocks must be preserved; not intraday live positioning"
+    },
+    {
+      "source_id": "CME_VOLUME_OI",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "ACTUAL_FLOW",
+        "POSITIONING_OWNERSHIP",
+        "MARKET_CAPACITY"
+      ],
+      "scope": "CME-listed futures/options activity and OI",
+      "availability_default": "PUBLIC",
+      "latency_note": "volume/OI are activity/outstanding-contract facts; not directional participant flow by themselves"
+    },
+    {
+      "source_id": "SEC_NPORT",
+      "tier": "REGULATED_FILING",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "registered fund portfolio filing data under filing methodology",
+      "availability_default": "PUBLIC",
+      "latency_note": "filing/reference lag preserved"
+    },
+    {
+      "source_id": "SEC_13F",
+      "tier": "REGULATED_FILING",
+      "domains": [
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "reportable institutional investment manager holdings under filing methodology",
+      "availability_default": "PUBLIC",
+      "latency_note": "structural/lagged ownership; not live position"
+    },
+    {
+      "source_id": "ETF_SPONSOR_DISCLOSURE",
+      "tier": "INSTITUTIONAL_PUBLIC",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "fund holdings/shares/creations where sponsor publishes them",
+      "availability_default": "PARTIAL",
+      "latency_note": "method and update frequency are product specific"
+    },
+    {
+      "source_id": "UST_TIC",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "ACTUAL_FLOW",
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "Treasury international capital datasets under official methodology",
+      "availability_default": "PUBLIC",
+      "latency_note": "publication lag; not live intraday flow"
+    },
+    {
+      "source_id": "NYFED_REPO_RRP",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "FUNDING_PLUMBING"
+      ],
+      "scope": "Federal Reserve Bank of New York repo/reverse-repo operations",
+      "availability_default": "PUBLIC"
+    },
+    {
+      "source_id": "NYFED_SOFR",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "FUNDING_PLUMBING"
+      ],
+      "scope": "secured overnight financing benchmark and supporting statistics",
+      "availability_default": "PUBLIC"
+    },
+    {
+      "source_id": "FED_H41",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "FUNDING_PLUMBING"
+      ],
+      "scope": "Federal Reserve balance-sheet factors/reserve balances",
+      "availability_default": "PUBLIC"
+    },
+    {
+      "source_id": "UST_DAILY_TREASURY_STATEMENT",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "FUNDING_PLUMBING"
+      ],
+      "scope": "U.S. Treasury cash/accounting statement under official methodology",
+      "availability_default": "PUBLIC"
+    },
+    {
+      "source_id": "ECB_STATISTICS",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "FUNDING_PLUMBING",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "euro-area official monetary/financial statistics",
+      "availability_default": "PUBLIC"
+    },
+    {
+      "source_id": "BOJ_STATISTICS",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "FUNDING_PLUMBING",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "Japan official central-bank monetary/financial statistics",
+      "availability_default": "PUBLIC"
+    },
+    {
+      "source_id": "JP_MOF_FX_INTERVENTION",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "ACTUAL_FLOW",
+        "INSTITUTIONAL_MECHANICS"
+      ],
+      "scope": "official Japan FX intervention reporting",
+      "availability_default": "PUBLIC"
+    },
+    {
+      "source_id": "CBOE_PRODUCT_CALENDAR",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "INSTITUTIONAL_MECHANICS",
+        "MARKET_CAPACITY"
+      ],
+      "scope": "Cboe product/expiration/trading-calendar mechanics",
+      "availability_default": "PUBLIC"
+    },
+    {
+      "source_id": "NASDAQ_INDEX_ADMIN",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "INSTITUTIONAL_MECHANICS",
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "Nasdaq index methodology/rebalance notices",
+      "availability_default": "PUBLIC"
+    },
+    {
+      "source_id": "SPDJI_INDEX_ADMIN",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "INSTITUTIONAL_MECHANICS",
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "S&P Dow Jones Indices methodology/rebalance notices",
+      "availability_default": "PUBLIC"
+    },
+    {
+      "source_id": "LBMA_IBA_BENCHMARK_INFO",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "INSTITUTIONAL_MECHANICS"
+      ],
+      "scope": "gold benchmark/market convention information where applicable",
+      "availability_default": "PUBLIC"
+    },
+    {
+      "source_id": "LICENSED_DEALER_POSITIONING",
+      "tier": "LICENSED",
+      "domains": [
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "dealer/client positioning if user has an admissible licensed source",
+      "availability_default": "LICENSED_REQUIRED"
+    },
+    {
+      "source_id": "LICENSED_CLIENT_FLOW",
+      "tier": "LICENSED",
+      "domains": [
+        "ACTUAL_FLOW"
+      ],
+      "scope": "identified client/dealer transaction flow if licensed",
+      "availability_default": "LICENSED_REQUIRED"
+    },
+    {
+      "source_id": "LICENSED_DEALER_BALANCE_SHEET",
+      "tier": "LICENSED",
+      "domains": [
+        "FUNDING_PLUMBING"
+      ],
+      "scope": "dealer balance sheet/capacity if licensed",
+      "availability_default": "LICENSED_REQUIRED"
+    },
+    {
+      "source_id": "LICENSED_ORDERBOOK_DEPTH",
+      "tier": "LICENSED",
+      "domains": [
+        "MARKET_CAPACITY"
+      ],
+      "scope": "venue/order-book depth and impact data if licensed",
+      "availability_default": "LICENSED_REQUIRED"
+    },
+    {
+      "source_id": "LICENSED_OTC_FX_GOLD_LIQUIDITY",
+      "tier": "LICENSED",
+      "domains": [
+        "ACTUAL_FLOW",
+        "MARKET_CAPACITY",
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "OTC FX/gold participant flow/position/liquidity if licensed",
+      "availability_default": "LICENSED_REQUIRED"
+    }
+  ]
+}

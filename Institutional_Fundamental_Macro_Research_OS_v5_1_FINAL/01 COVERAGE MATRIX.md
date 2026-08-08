@@ -204,3 +204,7 @@ Live production authority: [[94 Institutional Evidence Calibration Portfolio and
 The live universe remains XAUUSD, NASDAQ100, SP500, DJIA, EURUSD and USDJPY. Module 95 registers ten fact families for every market. Existing Fundamental/Market-Implied/Earnings/Narrative/Temporal families remain governed through current canonical sciences. Positioning, Actual Flow, Funding/Plumbing, Institutional Mechanics and Market Capacity are explicitly `REGISTERED_D2_PENDING`: they are coverage obligations, not newly promoted D1 decision authorities.
 
 Machine-readable matrix: `V17_D1_FACT_FAMILY_COVERAGE_MATRIX.csv`.
+
+## V18 D2 coverage extension
+
+The five D1-registered science families — `POSITIONING_OWNERSHIP`, `ACTUAL_FLOW`, `FUNDING_PLUMBING`, `INSTITUTIONAL_MECHANICS`, `MARKET_CAPACITY` — are now `ACTIVE_CANONICAL_SHADOW` across the six production markets. Detailed public/licensed coverage lives in Module 100. D2 adds science and coverage truth; it does not claim universal data availability or final permission authority.

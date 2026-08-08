@@ -1,5 +1,5 @@
 {
-  "version": "16.1.0",
+  "version": "18.0.0",
   "mode": "ENFORCED",
   "principle": "SMALLEST_SUFFICIENT_CANONICAL_SET",
   "allowed_load_bearing_statuses": [
@@ -26,8 +26,15 @@
     "timing",
     "evidence_governance",
     "edge_permission",
-    "operational_safety"
+    "operational_safety",
+    "positioning_ownership",
+    "actual_flow",
+    "funding_plumbing",
+    "institutional_mechanics",
+    "market_capacity"
   ],
   "secondary_missing_policy": "CONFIDENCE_CAP_NOT_BLOCK",
-  "contextual_missing_policy": "DISCLOSE_ONLY"
+  "contextual_missing_policy": "DISCLOSE_ONLY",
+  "d2_science_mode": "MANDATORY_COVERAGE_SHADOW_ONLY",
+  "d2_missing_policy": "DISCLOSE_AND_TELEMETRY_NOT_AUTOMATIC_PERMISSION_BLOCK"
 }

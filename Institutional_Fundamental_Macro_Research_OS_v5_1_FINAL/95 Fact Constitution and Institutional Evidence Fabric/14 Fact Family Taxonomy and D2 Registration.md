@@ -25,3 +25,7 @@ D1 registers ten families so every production run can declare coverage consisten
 10. `MARKET_CAPACITY` — registered now; dedicated science is D2-pending.
 
 Registration is not promotion. D2-pending families may contain useful existing facts, but D1 does not create a new decision authority or hidden-data inference engine for them.
+
+## V18 transition
+
+As of V18, Positioning/Ownership, Actual Flow, Funding/Plumbing, Institutional Mechanics and Market Capacity are no longer definition-pending. Their science authorities are Modules 96–99 and their six-market router is Module 100. They remain shadow-only for permission.

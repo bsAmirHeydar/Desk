@@ -13,5 +13,6 @@ for market in markets:
     cells=c.get('coverage',{}).get(market,{})
     if set(cells)!=set(fams): errors.append('COVERAGE_CELL_MISMATCH_'+market)
     for f,x in cells.items():
-        if x.get('state')=='REGISTERED_D2_PENDING' and x.get('new_decision_authority') is not False: errors.append('D2_PENDING_PROMOTED_'+market+'_'+f)
+        if x.get('state') in {'REGISTERED_D2_PENDING','ACTIVE_CANONICAL_SHADOW'} and x.get('new_decision_authority') is not False: errors.append('D2_AUTHORITY_BOUNDARY_VIOLATED_'+market+'_'+f)
+        if x.get('state')=='ACTIVE_CANONICAL_SHADOW' and 'shadow' not in str(x.get('notes','')).lower(): errors.append('D2_SHADOW_NOTE_MISSING_'+market+'_'+f)
 print(json.dumps({'status':'PASS' if not errors else 'FAIL','markets':len(markets),'families':len(fams),'cells':len(markets)*len(fams),'errors':errors},indent=2)); sys.exit(0 if not errors else 2)

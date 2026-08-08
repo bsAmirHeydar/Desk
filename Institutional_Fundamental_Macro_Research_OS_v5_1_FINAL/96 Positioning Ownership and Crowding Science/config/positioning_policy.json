@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "release": "V18.0.0",
+  "authority_mode": "CANONICAL_SHADOW",
+  "permission_authority": false,
+  "canonical_distinctions": [
+    "OWNERSHIP",
+    "POSITIONING",
+    "EXPOSURE",
+    "CROWDING",
+    "FLOW",
+    "ACTIVITY"
+  ],
+  "participant_universe": [
+    "DEALER_INTERMEDIARY",
+    "ASSET_MANAGER_INSTITUTIONAL",
+    "LEVERAGED_FUND",
+    "COMMERCIAL_HEDGER",
+    "PRODUCER_MERCHANT_PROCESSOR_USER",
+    "SWAP_DEALER",
+    "PENSION_INSURANCE_REAL_MONEY",
+    "MUTUAL_FUND_ETF",
+    "CTA_TREND",
+    "VOL_CONTROL",
+    "RISK_PARITY",
+    "PASSIVE_INDEX",
+    "CORPORATE_ISSUER_BUYBACK",
+    "CENTRAL_BANK_OFFICIAL_SECTOR",
+    "RETAIL",
+    "UNIDENTIFIED"
+  ],
+  "crowding_states": [
+    "VERY_LIGHT",
+    "LIGHT",
+    "BALANCED",
+    "CROWDED",
+    "VERY_CROWDED",
+    "UNKNOWN"
+  ],
+  "fragility_states": [
+    "LOW",
+    "MODERATE",
+    "HIGH",
+    "EXTREME",
+    "UNKNOWN"
+  ],
+  "rules": {
+    "weekly_report_never_intraday_relabel": true,
+    "open_interest_not_directional_flow": true,
+    "options_oi_not_dealer_inventory_without_lineage": true,
+    "systematic_positions_are_model_inference_unless_identified": true,
+    "aum_change_not_automatically_flow": true,
+    "direction_creation_forbidden": true
+  }
+}

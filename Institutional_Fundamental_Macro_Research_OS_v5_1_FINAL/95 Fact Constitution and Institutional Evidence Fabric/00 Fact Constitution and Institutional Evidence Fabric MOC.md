@@ -54,3 +54,7 @@ The chain is fail-closed only where the unresolved issue is capable of changing 
 - [[95 Fact Constitution and Institutional Evidence Fabric/17 Fact Coverage Receipt Contract]]
 - [[95 Fact Constitution and Institutional Evidence Fabric/22 V17 D1 Fact-Governed Full-Vault Production Prompt]]
 - [[95 Fact Constitution and Institutional Evidence Fabric/24 D1 Validation and Acceptance Tests]]
+
+## V18 D2 handoff state
+
+The five D2 families registered in V17 are now canonical shadow sciences in Modules 96–100. Module 95 remains the admission/governance authority over their facts. `Fact Constitution 1.1.0` adds no new decision authority; it records the transition from `D2_PENDING` to `CANONICAL_SHADOW_STATE`.

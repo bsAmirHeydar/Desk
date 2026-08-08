@@ -138,3 +138,7 @@ Live production authority: [[94 Institutional Evidence Calibration Portfolio and
 ## V17.0.0 D1 — Truth & Evidence Foundation
 
 The current production entrypoint is `95 Fact Constitution and Institutional Evidence Fabric/22 V17 D1 Fact-Governed Full-Vault Production Prompt.md`. V17 D1 wraps the validated V16.1 scientific stack with a canonical fact/evidence constitution. Run Module 95 D1 preflight before production. Direction remains Fundamental-only; Narrative/Timing remain clearance layers; D2 institutional sciences remain pending dedicated deployment.
+
+## V18 D2 production status
+
+V18.0.0 installs D2 Complete Fact-Based Market Sciences (Modules 96–100). The six-market production universe is unchanged. D2 states are canonical for scientific classification and mandatory reporting, but remain `CANONICAL_SHADOW`; the final trade permission is not modified by D2 in V18.

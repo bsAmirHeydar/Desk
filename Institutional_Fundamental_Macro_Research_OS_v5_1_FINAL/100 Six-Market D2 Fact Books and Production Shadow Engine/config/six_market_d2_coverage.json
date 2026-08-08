@@ -1,0 +1,214 @@
+{
+  "version": "1.0.0",
+  "release": "V18.0.0",
+  "authority_mode": "CANONICAL_SHADOW",
+  "production_universe": [
+    "XAUUSD",
+    "NASDAQ100",
+    "SP500",
+    "DJIA",
+    "EURUSD",
+    "USDJPY"
+  ],
+  "domains": [
+    "POSITIONING_OWNERSHIP",
+    "ACTUAL_FLOW",
+    "FUNDING_PLUMBING",
+    "INSTITUTIONAL_MECHANICS",
+    "MARKET_CAPACITY"
+  ],
+  "coverage": {
+    "XAUUSD": {
+      "POSITIONING_OWNERSHIP": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "ACTUAL_FLOW": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "FUNDING_PLUMBING": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "INSTITUTIONAL_MECHANICS": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "MARKET_CAPACITY": {
+        "baseline_state": "LICENSED_REQUIRED",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      }
+    },
+    "NASDAQ100": {
+      "POSITIONING_OWNERSHIP": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "ACTUAL_FLOW": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "FUNDING_PLUMBING": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "INSTITUTIONAL_MECHANICS": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "MARKET_CAPACITY": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      }
+    },
+    "SP500": {
+      "POSITIONING_OWNERSHIP": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "ACTUAL_FLOW": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "FUNDING_PLUMBING": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "INSTITUTIONAL_MECHANICS": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "MARKET_CAPACITY": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      }
+    },
+    "DJIA": {
+      "POSITIONING_OWNERSHIP": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "ACTUAL_FLOW": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "FUNDING_PLUMBING": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "INSTITUTIONAL_MECHANICS": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "MARKET_CAPACITY": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      }
+    },
+    "EURUSD": {
+      "POSITIONING_OWNERSHIP": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "ACTUAL_FLOW": {
+        "baseline_state": "LICENSED_REQUIRED",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "FUNDING_PLUMBING": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "INSTITUTIONAL_MECHANICS": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "MARKET_CAPACITY": {
+        "baseline_state": "LICENSED_REQUIRED",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      }
+    },
+    "USDJPY": {
+      "POSITIONING_OWNERSHIP": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "ACTUAL_FLOW": {
+        "baseline_state": "LICENSED_REQUIRED",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "FUNDING_PLUMBING": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "INSTITUTIONAL_MECHANICS": {
+        "baseline_state": "PARTIAL_PUBLIC",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      },
+      "MARKET_CAPACITY": {
+        "baseline_state": "LICENSED_REQUIRED",
+        "authority_mode": "CANONICAL_SHADOW",
+        "permission_effect_v18": "NONE",
+        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+      }
+    }
+  }
+}

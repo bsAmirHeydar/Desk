@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Positioning_State.schema.json",
+  "title": "Alpha Lab Positioning State",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "instrument",
+    "as_of_utc",
+    "authority_mode",
+    "coverage_state",
+    "crowding_state",
+    "fragility_state",
+    "evidence_ids",
+    "permission_effect_v18"
+  ],
+  "properties": {
+    "instrument": {
+      "type": "string"
+    },
+    "as_of_utc": {
+      "type": "string"
+    },
+    "authority_mode": {
+      "const": "CANONICAL_SHADOW"
+    },
+    "coverage_state": {
+      "enum": [
+        "FULL_PUBLIC",
+        "PARTIAL_PUBLIC",
+        "LICENSED_REQUIRED",
+        "UNAVAILABLE",
+        "UNDETERMINED"
+      ]
+    },
+    "crowding_state": {
+      "enum": [
+        "VERY_LIGHT",
+        "LIGHT",
+        "BALANCED",
+        "CROWDED",
+        "VERY_CROWDED",
+        "UNKNOWN"
+      ]
+    },
+    "fragility_state": {
+      "enum": [
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "EXTREME",
+        "UNKNOWN"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "independent_root_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "permission_effect_v18": {
+      "const": "NONE"
+    },
+    "observed_positions": {
+      "type": "array"
+    },
+    "derived_positioning_states": {
+      "type": "array"
+    },
+    "key_uncertainties": {
+      "type": "array"
+    }
+  }
+}

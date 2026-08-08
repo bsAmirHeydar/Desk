@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Flow_State.schema.json",
+  "title": "Alpha Lab Flow State",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "instrument",
+    "as_of_utc",
+    "authority_mode",
+    "coverage_state",
+    "persistence",
+    "absorption",
+    "evidence_ids",
+    "permission_effect_v18"
+  ],
+  "properties": {
+    "instrument": {
+      "type": "string"
+    },
+    "as_of_utc": {
+      "type": "string"
+    },
+    "authority_mode": {
+      "const": "CANONICAL_SHADOW"
+    },
+    "coverage_state": {
+      "enum": [
+        "FULL_PUBLIC",
+        "PARTIAL_PUBLIC",
+        "LICENSED_REQUIRED",
+        "UNAVAILABLE",
+        "UNDETERMINED"
+      ]
+    },
+    "persistence": {
+      "enum": [
+        "ACCELERATING",
+        "PERSISTENT",
+        "DECELERATING",
+        "REVERSING",
+        "ONE_OFF",
+        "UNKNOWN"
+      ]
+    },
+    "absorption": {
+      "enum": [
+        "LOW_ABSORPTION",
+        "BALANCED",
+        "HIGH_ABSORPTION",
+        "UNKNOWN"
+      ]
+    },
+    "identified_flows": {
+      "type": "array"
+    },
+    "derived_flow_proxies": {
+      "type": "array"
+    },
+    "model_implied_flows": {
+      "type": "array"
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "permission_effect_v18": {
+      "const": "NONE"
+    }
+  }
+}

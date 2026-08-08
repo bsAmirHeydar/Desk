@@ -72,3 +72,7 @@ A domain is complete only when the Vault can retrieve and combine its knowledge 
 ## V17 evidence-truth requirement
 
 Institutional completeness now also requires explicit epistemic class, source/vintage lineage and point-in-time visibility for every load-bearing claim. A conclusion is not considered defensible if it depends on future revisions, unlabeled proxies, inference presented as observation, or fabricated independence among same-root evidence.
+
+## V18 D2 evidence-science objective
+
+Every production run must now distinguish institutional position, actual transaction flow, funding/plumbing conditions, institutional mechanics and market capacity under D1 point-in-time evidence rules. In V18 these states are captured for research and forward learning only; they may not originate Fundamental Direction or change final permission until D3 integration is validated.

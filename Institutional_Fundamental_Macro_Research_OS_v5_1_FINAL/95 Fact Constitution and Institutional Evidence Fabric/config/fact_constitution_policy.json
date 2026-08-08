@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "release": "V17.0.0",
+  "version": "1.1.0",
+  "release": "V18.0.0",
   "direction_authority": "FUNDAMENTAL_ONLY",
   "classes": {
     "direct": [
@@ -52,11 +52,13 @@
     "SUPPORTING": "CONTEXTUAL",
     "CONTEXTUAL": "CONTEXTUAL"
   },
-  "d2_pending_families": [
+  "d2_pending_families": [],
+  "d2_canonical_shadow_families": [
     "POSITIONING_OWNERSHIP",
     "ACTUAL_FLOW",
     "FUNDING_PLUMBING",
     "INSTITUTIONAL_MECHANICS",
     "MARKET_CAPACITY"
-  ]
+  ],
+  "d2_shadow_permission_effect": "NONE"
 }

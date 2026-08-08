@@ -233,3 +233,7 @@ Live production authority: [[94 Institutional Evidence Calibration Portfolio and
 ## V17 D1 — Truth & Evidence Foundation
 
 Production evidence is now governed by [[95 Fact Constitution and Institutional Evidence Fabric/00 Fact Constitution and Institutional Evidence Fabric MOC]]. D1 defines fact classes, source eligibility, point-in-time visibility, immutable revisions, claim/root lineage, materiality routing, Decision Evidence Packs and Fact Coverage Receipts before the V16.1 scientific stack is allowed to emit permission.
+
+## V18.0 D2 — Complete Fact-Based Market Sciences
+
+Production now routes through **Module 100**. Modules **96–99** canonically define Positioning/Ownership, Actual Flow, Funding/Plumbing, Institutional Mechanics and Market Capacity. These five sciences are **mandatory shadow states** in V18: they are evidence-governed and forward-logged, but they have **no final permission effect until D3 promotion**. Fundamental Direction remains Module 89 only.

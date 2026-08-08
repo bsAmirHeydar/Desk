@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_D2_Shadow_Pack.schema.json",
+  "title": "Alpha Lab D2 Shadow Pack",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "version",
+    "authority_mode",
+    "instrument",
+    "analysis_cutoff_utc",
+    "positioning",
+    "actual_flow",
+    "funding_plumbing",
+    "institutional_mechanics",
+    "market_capacity",
+    "cross_science_independent_roots",
+    "d2_permission_effect",
+    "d3_promotion_state"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0.0"
+    },
+    "authority_mode": {
+      "const": "CANONICAL_SHADOW"
+    },
+    "instrument": {
+      "enum": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ]
+    },
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "positioning": {
+      "type": "object"
+    },
+    "actual_flow": {
+      "type": "object"
+    },
+    "funding_plumbing": {
+      "type": "object"
+    },
+    "institutional_mechanics": {
+      "type": "object"
+    },
+    "market_capacity": {
+      "type": "object"
+    },
+    "cross_science_independent_roots": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "missing_or_licensed_required": {
+      "type": "array"
+    },
+    "d2_permission_effect": {
+      "const": "NONE"
+    },
+    "d3_promotion_state": {
+      "const": "NOT_PROMOTED"
+    }
+  }
+}

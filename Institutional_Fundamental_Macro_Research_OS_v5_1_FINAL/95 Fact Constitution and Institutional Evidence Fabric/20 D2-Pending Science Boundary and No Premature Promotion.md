@@ -24,3 +24,7 @@ Existing V11–V16 notes may already mention or use parts of these domains. D1 d
 ## No premature authority
 
 Until D2 builds dedicated fact books, source contracts, schemas, asset-specific causal maps and forward validation, these domains remain `REGISTERED_D2_PENDING` as independent sciences. They cannot acquire a new veto/boost authority merely because a field exists in a report.
+
+## V18 status
+
+D2 science construction is complete at the canonical shadow-state level. The *no premature promotion* rule remains in force: D2 facts/states are not permission modifiers until D3 defines and validates causal integration semantics.

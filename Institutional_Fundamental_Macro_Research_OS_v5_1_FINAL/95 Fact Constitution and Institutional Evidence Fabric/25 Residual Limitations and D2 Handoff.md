@@ -25,3 +25,7 @@ D1 certifies an evidence constitution, not universal data acquisition or trading
 - true independent model validation requires a genuinely independent model/analyst, not merely a second prompt pass.
 
 These are inputs to D2 and D4, not reasons to blur evidence classes in D1.
+
+## V18 handoff completed
+
+D2 handoff is implemented in Modules 96–100. Remaining frontiers are data entitlement/coverage, D3 causal-fuzzy integration, and D4 forward validation/promotion.

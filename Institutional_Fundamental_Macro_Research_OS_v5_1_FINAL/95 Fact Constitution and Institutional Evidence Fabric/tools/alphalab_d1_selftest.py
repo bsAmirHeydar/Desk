@@ -42,7 +42,11 @@ with tempfile.TemporaryDirectory() as td0:
     # 16 same-root detection is enforced by D1 pack logic: two facts same root cannot count as independent roots
     roots=[base('A'),base('B')]; chk('same_root_false_independence_detected',len({x['root_cause_id'] for x in roots})==1 and len(roots)==2,str(roots))
     # 17 D2 authority registry
-    reg=json.loads((MOD/'config/fact_family_registry.json').read_text()); d2=[x for x in reg['families'] if x['authority']=='D2_PENDING']; chk('d2_pending_not_promoted',len(d2)==5 and all(x['d1_role']=='EVIDENCE_GOVERNANCE_ONLY' for x in d2),str(d2))
+    reg=json.loads((MOD/'config/fact_family_registry.json').read_text()); man_now=json.loads((V/'CURRENT_PRODUCTION_MANIFEST.json').read_text());
+    if man_now.get('current_stack')=='V17.0.0':
+        d2=[x for x in reg['families'] if x['authority']=='D2_PENDING']; ok17=len(d2)==5 and all(x['d1_role']=='EVIDENCE_GOVERNANCE_ONLY' for x in d2); chk('d2_pending_not_promoted',ok17,str(d2))
+    else:
+        d2=[x for x in reg['families'] if x.get('d2_role')=='CANONICAL_SHADOW_STATE']; ok18=len(d2)==5 and all(x.get('new_decision_authority') is False for x in d2); chk('d2_canonical_shadow_not_permission_promoted',ok18,str(d2))
     # 18 6x10 coverage
     cov=MOD/'tools/alphalab_fact_coverage_audit.py'; rc,o=run([cov,'--vault-root',V]); z=json.loads(o); chk('six_by_ten_coverage',rc==0 and z['cells']==60,o)
     # 19 decision evidence pack schema key contract

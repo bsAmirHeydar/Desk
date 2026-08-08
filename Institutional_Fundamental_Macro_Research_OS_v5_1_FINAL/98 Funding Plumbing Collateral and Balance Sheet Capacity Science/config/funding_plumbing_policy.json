@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "release": "V18.0.0",
+  "authority_mode": "CANONICAL_SHADOW",
+  "permission_authority": false,
+  "components": [
+    "MONETARY_LIQUIDITY",
+    "FUNDING_LIQUIDITY",
+    "MARKET_LIQUIDITY",
+    "COLLATERAL_LIQUIDITY",
+    "DEALER_BALANCE_SHEET_CAPACITY",
+    "SOLVENCY_CREDIT"
+  ],
+  "states": [
+    "EASY",
+    "NORMAL",
+    "TIGHT",
+    "STRESSED",
+    "DISLOCATED",
+    "UNKNOWN"
+  ],
+  "rules": {
+    "single_liquidity_scalar_forbidden_without_decomposition": true,
+    "stocks_not_flows": true,
+    "facility_balance_not_direct_trade_signal": true,
+    "basis_not_spot_direction": true,
+    "gross_issuance_not_net_liquidity_drain": true,
+    "expected_deleveraging_not_realized_flow": true,
+    "direction_creation_forbidden": true
+  }
+}
