@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "topics": [
     {
       "keywords": [
@@ -127,6 +127,48 @@
       ],
       "paths": [
         "17 Global FX External Balance and Dollar System/00 17 Global FX External Balance and Dollar System MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "nowcast",
+        "nowcasting",
+        "real-time growth"
+      ],
+      "paths": [
+        "15 Nowcasting Real-Time Growth Inflation Labor and Activity/00 15 Nowcasting Real-Time Growth Inflation Labor and Activity MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "driver transition",
+        "attention transition",
+        "narrative transition"
+      ],
+      "paths": [
+        "90 Market Narrative Intelligence Engine/00 Market Narrative Intelligence Engine MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "point-in-time",
+        "vintage",
+        "revision history"
+      ],
+      "paths": [
+        "69 Historical Point-in-Time Case Laboratory/00 Historical Point-in-Time Case Laboratory MOC.md",
+        "84 Canonical Retrieval Evidence and Version Control/00 Canonical Retrieval Evidence and Version Control MOC.md"
+      ]
+    },
+    {
+      "keywords": [
+        "dealer balance sheet",
+        "primary dealer",
+        "treasury financing"
+      ],
+      "paths": [
+        "29 Public Debt and Government Bond Market Intelligence/00 29 Public Debt and Government Bond Market Intelligence MOC.md",
+        "52 Liquidity Funding Collateral Margin and Operational Survival/00 52 Liquidity Funding Collateral Margin and Operational Survival MOC.md"
       ]
     }
   ]

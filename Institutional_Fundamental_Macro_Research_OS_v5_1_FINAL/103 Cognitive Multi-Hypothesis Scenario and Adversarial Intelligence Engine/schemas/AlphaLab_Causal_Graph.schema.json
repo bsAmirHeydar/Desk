@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_Causal_Graph.schema.json",
-  "title": "Alpha Lab V21.1 Dynamic Causal Graph",
+  "title": "Alpha Lab V21.2 Dynamic Causal Graph",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -197,6 +197,12 @@
             }
           },
           "break_conditions": {
+            "type": "array",
+            "items": {
+              "$ref": "AlphaLab_Trigger_Predicate.schema.json"
+            }
+          },
+          "activation_predicates": {
             "type": "array",
             "items": {
               "$ref": "AlphaLab_Trigger_Predicate.schema.json"

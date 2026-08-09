@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "primary_paired_metric": "delta_realized_r",
   "descriptive_metrics": [
     "mean_r",
@@ -54,6 +54,21 @@
     "utility_state",
     "complexity_class",
     "interaction_hypothesis_ids",
-    "outside_strategy_edge_ids"
-  ]
+    "outside_strategy_edge_ids",
+    "causal_graph_state",
+    "regime_overall_state",
+    "regime_mapping_stability",
+    "surprise_market_state",
+    "surprise_policy_implication",
+    "surprise_asset_implication",
+    "reflexivity_phase",
+    "remaining_asymmetry",
+    "driver_transition_state",
+    "global_reconciliation_state",
+    "source_grade_tags",
+    "propagation_exception_ids",
+    "cognitive_rescue_candidate",
+    "abstention_reason_codes"
+  ],
+  "promotion_eligibility_policy": "CALIBRATOR_MAY_ONLY_MARK_ELIGIBLE_FOR_INDEPENDENT_REVIEW; REGISTRY CHANGE REQUIRES VALIDATOR"
 }

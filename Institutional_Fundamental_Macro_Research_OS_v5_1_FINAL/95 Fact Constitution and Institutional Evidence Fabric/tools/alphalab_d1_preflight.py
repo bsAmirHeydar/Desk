@@ -4,8 +4,8 @@ import argparse,json,subprocess,sys
 p=argparse.ArgumentParser(); p.add_argument('--vault-root',required=True); p.add_argument('--mode',choices=['runtime','deployment'],default='runtime'); a=p.parse_args(); r=Path(a.vault_root); errors=[]; warnings=[]
 try: m=json.loads((r/'CURRENT_PRODUCTION_MANIFEST.json').read_text(encoding='utf-8'))
 except Exception as e: m={}; errors.append('MANIFEST_PARSE: '+str(e))
-if m.get('current_stack') not in {'V17.0.0','V18.0.0','V19.0.0','V20.0.0','V21.0.0','V21.1.0'}: errors.append('CURRENT_STACK_NOT_V17_TO_V21')
-expected_fc={'V17.0.0':'1.0.0','V18.0.0':'1.1.0','V19.0.0':'1.1.0','V20.0.0':'1.1.0','V21.0.0':'1.1.0','V21.1.0':'1.1.0'}.get(m.get('current_stack'))
+if m.get('current_stack') not in {'V17.0.0','V18.0.0','V19.0.0','V20.0.0','V21.0.0','V21.1.0','V21.2.0'}: errors.append('CURRENT_STACK_NOT_V17_TO_V21')
+expected_fc={'V17.0.0':'1.0.0','V18.0.0':'1.1.0','V19.0.0':'1.1.0','V20.0.0':'1.1.0','V21.0.0':'1.1.0','V21.1.0':'1.1.0','V21.2.0':'1.1.0'}.get(m.get('current_stack'))
 if expected_fc and m.get('fact_constitution_version')!=expected_fc: errors.append('FACT_CONSTITUTION_VERSION_MISMATCH')
 if m.get('decision_authority',{}).get('direction')!='FUNDAMENTAL_ONLY': errors.append('DIRECTION_AUTHORITY_DRIFT')
 if m.get('canonical_authorities',{}).get('fact_constitution')!='95 Fact Constitution and Institutional Evidence Fabric/00 Fact Constitution and Institutional Evidence Fabric MOC.md': errors.append('FACT_AUTHORITY_MISSING')

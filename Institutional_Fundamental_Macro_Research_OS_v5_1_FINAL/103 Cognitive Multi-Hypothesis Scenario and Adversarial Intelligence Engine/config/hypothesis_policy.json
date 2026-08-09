@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "candidate_count": {
     "preferred_min": 2,
     "preferred_max": 6,
@@ -45,5 +45,8 @@
     "NO_UNRESOLVED_DECISION_CRITICAL_CONTRADICTION_ON_LOAD_BEARING_PATH"
   ],
   "numeric_hypothesis_probability_authorized": false,
-  "tail_scenario_retention": "Keep low-plausibility scenarios when impact is decision-material or path-asymmetric."
+  "tail_scenario_retention": "Keep low-plausibility scenarios when impact is decision-material or path-asymmetric.",
+  "dominance_method": "NON_ADDITIVE_EVIDENCE_MATRIX_NO_MEGA_SCORE",
+  "root_count_policy": "DERIVE_FROM_LOAD_BEARING_ROOT_IDS_WHEN_AVAILABLE",
+  "critical_contradiction_policy": "DERIVE_FROM_DECISION_CRITICAL_CONTRADICTING_EVIDENCE_WHEN_AVAILABLE"
 }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_Trigger_Predicate.schema.json",
-  "title": "Alpha Lab V21.1 Observable Trigger",
+  "title": "Alpha Lab V21.2 Observable Trigger",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -99,6 +99,27 @@
         "string",
         "null"
       ]
+    },
+    "event_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "state_change_hazard": {
+      "enum": [
+        "VERY_HIGH",
+        "HIGH",
+        "MODERATE",
+        "LOW",
+        "UNDETERMINED"
+      ]
     }
   },
   "allOf": [
@@ -147,6 +168,26 @@
       "if": {
         "properties": {
           "monitor_mode": {
+            "const": "EVENT_RELEASE"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "event_id"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "monitor_mode": {
             "const": "MANUAL_OBSERVATION"
           }
         }
@@ -161,6 +202,113 @@
             "minLength": 1
           }
         }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "operator": {
+            "enum": [
+              "GT",
+              "GTE",
+              "LT",
+              "LTE",
+              "EQ",
+              "NEQ"
+            ]
+          }
+        },
+        "required": [
+          "operator"
+        ]
+      },
+      "then": {
+        "anyOf": [
+          {
+            "required": [
+              "value"
+            ]
+          },
+          {
+            "required": [
+              "reference"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "operator": {
+            "enum": [
+              "CROSSES_ABOVE",
+              "CROSSES_BELOW"
+            ]
+          }
+        },
+        "required": [
+          "operator"
+        ]
+      },
+      "then": {
+        "required": [
+          "reference"
+        ],
+        "properties": {
+          "reference": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "operator": {
+            "const": "CHANGES_STATE"
+          }
+        },
+        "required": [
+          "operator"
+        ]
+      },
+      "then": {
+        "required": [
+          "value"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "operator": {
+            "const": "OBSERVED"
+          }
+        },
+        "required": [
+          "operator"
+        ]
+      },
+      "then": {
+        "anyOf": [
+          {
+            "required": [
+              "reference"
+            ]
+          },
+          {
+            "required": [
+              "event_id"
+            ]
+          },
+          {
+            "required": [
+              "value"
+            ]
+          }
+        ]
       }
     }
   ]

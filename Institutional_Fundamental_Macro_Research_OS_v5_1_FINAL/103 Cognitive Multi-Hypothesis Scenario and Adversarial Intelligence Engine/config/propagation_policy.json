@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "release": "V21.2.0",
+  "mode": "SEMANTIC_PROPAGATION_GUARD",
+  "principle": "MATERIAL_UPSTREAM_STATE_MUST_PROPAGATE_OR_BE_EXPLICITLY_EXCEPTED",
+  "invariants": [
+    {
+      "id": "BROKEN_CAUSAL_GRAPH_PROPAGATES",
+      "source": "causal_graph.graph_state=BROKEN",
+      "acceptable_reflections": [
+        "TRANSMISSION_OR_CAUSAL_UNCERTAINTY_HIGH",
+        "ADVERSARIAL_NOT_CLEAR",
+        "UTILITY_NOT_FAVOR_ACTION",
+        "EXPLICIT_EXCEPTION"
+      ]
+    },
+    {
+      "id": "INCONSISTENT_GLOBAL_STATE_PROPAGATES",
+      "source": "global_reconciliation.state=INCONSISTENT",
+      "acceptable_reflections": [
+        "MODEL_OR_CAUSAL_UNCERTAINTY_HIGH",
+        "ADVERSARIAL_NOT_CLEAR",
+        "UTILITY_NOT_FAVOR_ACTION",
+        "EXPLICIT_EXCEPTION"
+      ]
+    },
+    {
+      "id": "POOR_REMAINING_ASYMMETRY_PROPAGATES",
+      "source": "consumption_state.remaining_asymmetry in VERY_POOR,POOR",
+      "acceptable_reflections": [
+        "UTILITY_NOT_FAVOR_ACTION",
+        "ADVERSARIAL_CONSTRAINED",
+        "EXPLICIT_EXCEPTION"
+      ]
+    },
+    {
+      "id": "DRIVER_TAKEOVER_PROPAGATES",
+      "source": "driver_transition.state in TAKEOVER,FRAGMENTED",
+      "acceptable_reflections": [
+        "CAUSAL_OR_TIMING_UNCERTAINTY_HIGH",
+        "ADVERSARIAL_NOT_CLEAR",
+        "EXPLICIT_EXCEPTION"
+      ]
+    },
+    {
+      "id": "REGIME_BREAK_RISK_PROPAGATES",
+      "source": "regime_state.mapping_stability=BROKEN or structural_break_risk in HIGH,VERY_HIGH",
+      "acceptable_reflections": [
+        "REGIME_UNCERTAINTY_HIGH",
+        "ADVERSARIAL_NOT_CLEAR",
+        "EXPLICIT_EXCEPTION"
+      ]
+    }
+  ]
+}

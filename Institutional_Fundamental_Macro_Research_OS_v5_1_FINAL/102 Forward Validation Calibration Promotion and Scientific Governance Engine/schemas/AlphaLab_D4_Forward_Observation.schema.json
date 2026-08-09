@@ -123,6 +123,21 @@
     },
     "cognitive_state_sha256": {
       "type": "string"
+    },
+    "research_intent_sha256": {
+      "type": "string"
+    },
+    "root_exposure_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "abstention_primary_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "additionalProperties": false

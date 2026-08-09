@@ -1,7 +1,7 @@
 {
-  "version": "1.1.0",
-  "release": "V21.1.0",
-  "mode": "ENFORCED_COGNITIVE_HARDENING_SEMANTIC",
+  "version": "1.2.0",
+  "release": "V21.2.0",
+  "mode": "ENFORCED_COGNITIVE_HARDENING_LAST_MILE",
   "purpose": "Multi-hypothesis, multi-horizon, scenario-aware, adversarial causal reasoning without changing the Fundamental-only direction authority of the Fundamental strategy.",
   "authority": {
     "direction_source": "MODULE_89_FUNDAMENTAL_HORIZON_STATE_ONLY",
@@ -48,6 +48,9 @@
     "NO_PERMISSION_WHEN_DECISION_CRITICAL_CONTRADICTION_REMAINS_UNRESOLVED"
   ],
   "semantic_integrity": "ENFORCED",
-  "state_presence_law": "PRESENT_OR_EXPLICIT_APPLICABILITY",
-  "adaptive_detail": "MATERIALITY_DRIVEN"
+  "state_presence_law": "PRESENT_OR_CONTEXT_JUSTIFIED_APPLICABILITY",
+  "adaptive_detail": "MATERIALITY_DRIVEN",
+  "final_trigger_contract": "STRUCTURED_TRIGGER_PREDICATE",
+  "evidence_lineage_contract": "D1_REFERENTIAL_WHEN_LOAD_BEARING",
+  "cognitive_learning_handoff": "TYPED_SUMMARY_PLUS_FULL_STATE_HASH"
 }

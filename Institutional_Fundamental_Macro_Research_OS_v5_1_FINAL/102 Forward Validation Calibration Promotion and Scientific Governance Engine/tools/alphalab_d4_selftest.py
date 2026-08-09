@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import json,subprocess,tempfile,sys,csv
+try: import jsonschema
+except Exception: jsonschema=None
 R=Path(__file__).resolve().parents[2];M=R/'102 Forward Validation Calibration Promotion and Scientific Governance Engine';checks=[]
 def ck(n,c,d=None):checks.append({'name':n,'pass':bool(c),'detail':d})
-m=json.loads((R/'CURRENT_PRODUCTION_MANIFEST.json').read_text());ck('stack_v20_or_v21',m.get('current_stack') in {'V20.0.0','V21.0.0','V21.1.0'},m.get('current_stack'));ck('direction_fundamental_only',m.get('decision_authority',{}).get('direction')=='FUNDAMENTAL_ONLY')
+m=json.loads((R/'CURRENT_PRODUCTION_MANIFEST.json').read_text());ck('stack_v20_or_v21',m.get('current_stack') in {'V20.0.0','V21.0.0','V21.1.0','V21.2.0'},m.get('current_stack'));ck('direction_fundamental_only',m.get('decision_authority',{}).get('direction')=='FUNDAMENTAL_ONLY')
 reg=json.loads((M/'config/promotion_registry.json').read_text());ck('registry_exists',isinstance(reg.get('records'),list))
 with tempfile.TemporaryDirectory() as td0:
  td=Path(td0)
@@ -20,7 +22,12 @@ with tempfile.TemporaryDirectory() as td0:
    for k in range(2):rows.append({'modifier_id':'M1','sample_split':split,'delta_r':str(.2+r*.01),'actual_r':'.3','counterfactual_r':'.1','independent_root_id':f'{split}_R{r}','trading_day':f'2026-08-{r+1:02d}','run_id':f'{split}_{r}_{k}','regime':'RISK_ON','outcome_status':'REALIZED','hypothesis_family_id':'HF1','hypotheses_tested_in_family':'2','chronological_split_attested':'true','execution_profile':'E1'})
  with cp.open('w',newline='',encoding='utf-8') as fh:
   wr=csv.DictWriter(fh,fieldnames=rows[0]);wr.writeheader();wr.writerows(rows)
- op=td/'cal.json';q=subprocess.run([sys.executable,str(M/'tools/alphalab_d4_calibrate.py'),'--input',str(cp),'--modifier-id','M1','--output',str(op)],capture_output=True,text=True);z=json.loads(op.read_text());ck('cluster_bootstrap_root',q.returncode==0 and z['development']['resampling_unit']=='independent_root_id' and z['development']['resampling_cluster_n']==4,z)
+ op=td/'cal.json';q=subprocess.run([sys.executable,str(M/'tools/alphalab_d4_calibrate.py'),'--input',str(cp),'--modifier-id','M1','--output',str(op)],capture_output=True,text=True);z=json.loads(op.read_text());ck('cluster_bootstrap_root',q.returncode==0 and z['development']['resampling_unit']=='independent_root_id' and z['development']['resampling_cluster_n']==4,z);ck('calibration_required_fields',all(k in z for k in ['calibration_id','policy_version','promotion_eligibility','created_at_utc']),z)
+ if jsonschema:
+  try:
+   sch=json.loads((M/'schemas/AlphaLab_D4_Calibration_Report.schema.json').read_text());jsonschema.validate(z,sch);ok_schema=True
+  except Exception as ex:ok_schema=False;schema_detail=str(ex)
+  ck('calibration_output_matches_schema',ok_schema,None if ok_schema else schema_detail)
 
  # Runtime authority effects and precedence.
  regp=td/'registry.json'

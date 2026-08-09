@@ -5,17 +5,17 @@ p=argparse.ArgumentParser(); p.add_argument('--vault-root',required=True); p.add
 mf=r/'CURRENT_PRODUCTION_MANIFEST.json'
 try: m=json.loads(mf.read_text(encoding='utf-8'))
 except Exception as e: m={}; errors.append(f'manifest parse: {e}')
-if m.get('current_stack') not in {'V16.1.0','V17.0.0','V18.0.0','V19.0.0','V20.0.0','V21.0.0','V21.1.0'}: errors.append('current_stack is not a supported V16.1/V17.0/V18.0/V19.0/V20.0/V21.x stack')
-if m.get('current_stack') in {'V17.0.0','V18.0.0','V19.0.0','V20.0.0','V21.0.0','V21.1.0'} and 'fact_constitution' not in (m.get('canonical_authorities') or {}): errors.append('V17+ fact_constitution authority missing')
-if m.get('current_stack') in {'V18.0.0','V19.0.0','V20.0.0','V21.0.0','V21.1.0'}:
+if m.get('current_stack') not in {'V16.1.0','V17.0.0','V18.0.0','V19.0.0','V20.0.0','V21.0.0','V21.1.0','V21.2.0'}: errors.append('current_stack is not a supported V16.1/V17.0/V18.0/V19.0/V20.0/V21.x stack')
+if m.get('current_stack') in {'V17.0.0','V18.0.0','V19.0.0','V20.0.0','V21.0.0','V21.1.0','V21.2.0'} and 'fact_constitution' not in (m.get('canonical_authorities') or {}): errors.append('V17+ fact_constitution authority missing')
+if m.get('current_stack') in {'V18.0.0','V19.0.0','V20.0.0','V21.0.0','V21.1.0','V21.2.0'}:
     ca=m.get('canonical_authorities') or {}
     for k in ['positioning_ownership','actual_flow','funding_plumbing','institutional_mechanics_capacity','d2_six_market_router']:
         if k not in ca: errors.append('V18 D2 authority missing: '+k)
     d2=m.get('d2_market_sciences') or {}
     if d2.get('authority_mode')!='CANONICAL_SHADOW': errors.append('V18+ D2 source authority boundary violated')
     if m.get('current_stack')=='V18.0.0' and d2.get('final_permission_effect')!='NONE': errors.append('V18 D2 shadow-only permission boundary violated')
-    if m.get('current_stack') in {'V19.0.0','V20.0.0','V21.0.0','V21.1.0'} and d2.get('direct_permission_effect')!='NONE': errors.append('V19 D2 direct permission boundary violated')
-if m.get('current_stack') in {'V21.0.0','V21.1.0'}:
+    if m.get('current_stack') in {'V19.0.0','V20.0.0','V21.0.0','V21.1.0','V21.2.0'} and d2.get('direct_permission_effect')!='NONE': errors.append('V19 D2 direct permission boundary violated')
+if m.get('current_stack') in {'V21.0.0','V21.1.0','V21.2.0'}:
     ca=m.get('canonical_authorities') or {}
     if ca.get('cognitive_scenario_reasoning')!='103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/00 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine MOC.md': errors.append('V21 cognitive authority missing')
     ch=m.get('cognitive_hardening') or {}

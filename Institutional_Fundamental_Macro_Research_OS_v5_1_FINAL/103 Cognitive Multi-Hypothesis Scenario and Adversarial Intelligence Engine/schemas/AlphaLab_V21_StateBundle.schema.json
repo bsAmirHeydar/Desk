@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_V21_StateBundle.schema.json",
-  "title": "Alpha Lab V21.1 Production State Bundle",
+  "title": "Alpha Lab V21.2 Production State Bundle",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -29,7 +29,7 @@
   ],
   "properties": {
     "version": {
-      "const": "21.1.0"
+      "const": "21.2.0"
     },
     "instrument": {
       "enum": [
@@ -121,7 +121,14 @@
       "$ref": "AlphaLab_Surprise_State.schema.json"
     },
     "policy_reaction_state": {
-      "$ref": "AlphaLab_Policy_Reaction_State.schema.json"
+      "oneOf": [
+        {
+          "$ref": "AlphaLab_Policy_Reaction_State.schema.json"
+        },
+        {
+          "$ref": "AlphaLab_Policy_Reaction_Bundle.schema.json"
+        }
+      ]
     },
     "regime_state": {
       "$ref": "AlphaLab_Regime_State.schema.json"
@@ -143,6 +150,39 @@
     },
     "cognitive_telemetry": {
       "$ref": "AlphaLab_Cognitive_Telemetry.schema.json"
+    },
+    "propagation_exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "invariant_id",
+          "reason"
+        ],
+        "properties": {
+          "invariant_id": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "$ref": "AlphaLab_Evidence_Reference.schema.json"
+            }
+          }
+        }
+      }
+    },
+    "interaction_hypothesis_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
     }
   }
 }

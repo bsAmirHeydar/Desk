@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_Hypothesis_Set.schema.json",
-  "title": "Alpha Lab V21.1 Hypothesis Tournament",
+  "title": "Alpha Lab V21.2 Hypothesis Tournament",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -18,7 +18,7 @@
   ],
   "properties": {
     "version": {
-      "const": "1.1.0"
+      "const": "1.2.0"
     },
     "instrument": {
       "enum": [
@@ -147,6 +147,73 @@
             "OVERCOMPLEX",
             "UNDETERMINED"
           ]
+        },
+        "root_count_mode": {
+          "enum": [
+            "DERIVED_COMPLETE",
+            "DERIVED_PARTIAL",
+            "MANUAL_WITH_DISCLOSURE"
+          ]
+        },
+        "derived_root_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "derived_critical_contradiction_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "dominance_audit_state": {
+          "enum": [
+            "PASS",
+            "CONTESTED",
+            "INSUFFICIENT_EVIDENCE",
+            "MANUAL_REVIEW"
+          ]
+        }
+      }
+    },
+    "evidence_matrix": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "hypothesis_id",
+          "verified_root_count",
+          "decision_critical_contradictions",
+          "missing_decision_critical_evidence",
+          "evidence_quality",
+          "causal_coherence"
+        ],
+        "properties": {
+          "hypothesis_id": {
+            "type": "string"
+          },
+          "verified_root_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "decision_critical_contradictions": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "missing_decision_critical_evidence": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "evidence_quality": {
+            "type": "string"
+          },
+          "causal_coherence": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
         }
       }
     }

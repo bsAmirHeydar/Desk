@@ -1,6 +1,6 @@
 {
-  "version": "21.1.0",
-  "current_stack": "V21.1.0",
+  "version": "21.2.0",
+  "current_stack": "V21.2.0",
   "manifest_authority": "CURRENT_PRODUCTION_MANIFEST.json",
   "human_mirror": "CURRENT_PRODUCTION_MANIFEST.yaml",
   "production_entrypoint": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md",
@@ -204,7 +204,10 @@
     "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Applicability.schema.json",
     "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Evidence_Reference.schema.json",
     "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Trigger_Predicate.schema.json",
-    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Telemetry.schema.json"
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Telemetry.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/applicability_profiles.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/propagation_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Policy_Reaction_Bundle.schema.json"
   ],
   "production_universe": [
     "XAUUSD",
@@ -309,7 +312,7 @@
     "same_root_mode": "DEDUP_INDEPENDENCE_PRESERVE_MULTI_CHANNEL_EFFECTS"
   },
   "d4_forward_validation": {
-    "version": "1.1.0",
+    "version": "1.2.0",
     "deployment": "D4",
     "authority_mode": "GOVERNANCE_ENFORCED",
     "forward_only": true,
@@ -322,11 +325,13 @@
     "production_prompt": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt.md",
     "promotion_registry": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_registry.json",
     "dependence_resampling": "INDEPENDENT_ROOT_THEN_TRADING_DAY_THEN_LABELED_OBSERVATION_FALLBACK",
-    "cognitive_fields": "V21_FORWARD_HANDOFF_ACTIVE"
+    "cognitive_fields": "V21_2_TYPED_FORWARD_HANDOFF_ACTIVE",
+    "calibration_schema_alignment": "ENFORCED",
+    "calibrated_probability_reference": "D4_LEDGER_REQUIRED"
   },
   "cognitive_hardening": {
-    "version": "1.1.0",
-    "release": "V21.1.0",
+    "version": "1.2.0",
+    "release": "V21.2.0",
     "authority_mode": "ENFORCED_COGNITIVE_HARDENING",
     "orchestrator": "MODULE_103",
     "direction_authority": "MODULE_89_FUNDAMENTAL_ACTIVE_HORIZON_ONLY",
@@ -340,9 +345,12 @@
     "decision_critical_contested_action": "NO_TRADE_OR_HOLD",
     "decision_critical_unmodeled_driver_action": "NO_TRADE_OR_HOLD",
     "production_prompt": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md",
-    "semantic_integrity_mode": "ENFORCED",
-    "state_presence_contract": "PRESENT_OR_EXPLICIT_APPLICABILITY",
-    "retrieval_mode": "TOPIC_AWARE_CANONICAL_DEPENDENCY",
-    "adaptive_detail": "MATERIALITY_DRIVEN"
+    "semantic_integrity_mode": "ENFORCED_LAST_MILE",
+    "state_presence_contract": "PRESENT_OR_CONTEXT_JUSTIFIED_APPLICABILITY",
+    "retrieval_mode": "TOPIC_AWARE_CANONICAL_CAUSAL_DEPENDENCY",
+    "adaptive_detail": "MATERIALITY_DRIVEN",
+    "final_trigger_contract": "STRUCTURED_TRIGGER_PREDICATE",
+    "evidence_lineage_contract": "D1_REFERENTIAL_ON_LOAD_BEARING_PRODUCTION_PATH",
+    "propagation_integrity": "ENFORCED_WITH_AUDITABLE_EXCEPTIONS"
   }
 }

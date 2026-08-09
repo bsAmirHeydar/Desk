@@ -2,9 +2,9 @@
 title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 19.0.0
+version: 21.2.0
 created: 2026-07-29
-updated: 2026-08-08
+updated: 2026-08-09
 language: en
 tags: [home, fundamental-only, institutional-macro, research-platform]
 ---
@@ -12,6 +12,10 @@ tags: [home, fundamental-only, institutional-macro, research-platform]
 
 > [!abstract] Fundamental-only institutional research architecture
 > A fundamental-only institutional knowledge canon for macroeconomics, accounting, financial systems, rates, FX, equities, corporate securities, credit, banks, commodities, real assets, digital assets, countries, geopolitics, research methods and multihorizon interpretation.
+
+
+> [!info] Current Alpha Lab production stack
+> `V21.2.0` — D1 truth/evidence → horizon-specific Fundamental Direction → Narrative/Timing/D2 sciences → V21.2 cognitive multi-hypothesis/scenario synthesis → D3 causal modulation → D4 validated promotion governance → operational gate. Direction remains `FUNDAMENTAL_ONLY`. Start live analysis at [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt]].
 
 ## Fundamental-only boundary
 

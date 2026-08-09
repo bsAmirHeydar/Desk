@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_Scenario_Tree.schema.json",
-  "title": "Alpha Lab V21.1 Scenario Tree",
+  "title": "Alpha Lab V21.2 Scenario Tree",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -16,7 +16,7 @@
   ],
   "properties": {
     "version": {
-      "const": "1.1.0"
+      "const": "1.2.0"
     },
     "as_of_utc": {
       "type": "string",
@@ -232,6 +232,12 @@
         "string",
         "null"
       ]
+    },
+    "calibration_reference_class_id": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "allOf": [
@@ -264,13 +270,18 @@
       },
       "then": {
         "required": [
-          "calibration_record_id"
+          "calibration_record_id",
+          "calibration_reference_class_id"
         ],
         "properties": {
           "numeric_probabilities_used": {
             "const": true
           },
           "calibration_record_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "calibration_reference_class_id": {
             "type": "string",
             "minLength": 1
           }

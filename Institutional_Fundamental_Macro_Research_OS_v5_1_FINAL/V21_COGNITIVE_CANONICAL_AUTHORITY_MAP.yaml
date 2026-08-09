@@ -1,4 +1,4 @@
-version: 21.0.0
+version: 21.2.0
 current_production_entrypoint: "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md"
 authorities:
   fact_truth: "95 Fact Constitution and Institutional Evidence Fabric"
@@ -17,3 +17,13 @@ non_negotiable:
   module_103_positive_permission_creation: false
   outside_strategy_edge_permission_effect: NONE
   numeric_scenario_probability: D4_CALIBRATION_REQUIRED
+
+runtime_hardening:
+  semantic_integrity: ENFORCED_LAST_MILE
+  applicability: CONTEXT_SENSITIVE_PROFILED
+  load_bearing_evidence: D1_REFERENTIAL_WHEN_STRICT_PRODUCTION
+  final_triggers: STRUCTURED_TRIGGER_PREDICATE
+  propagation: MATERIAL_UPSTREAM_STATE_MUST_PROPAGATE_OR_DECLARE_EXCEPTION
+  fx_policy_reaction: BILATERAL_WHEN_MATERIAL
+  calibrated_scenario_probability: D4_LEDGER_REFERENCE_REQUIRED
+  portfolio_authority: SHADOW_UNCHANGED

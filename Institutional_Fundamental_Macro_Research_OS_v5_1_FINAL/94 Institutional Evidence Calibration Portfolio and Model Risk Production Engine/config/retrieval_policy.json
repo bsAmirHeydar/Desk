@@ -1,5 +1,5 @@
 {
-  "version": "21.1.0",
+  "version": "21.2.0",
   "mode": "ENFORCED",
   "principle": "SMALLEST_SUFFICIENT_CANONICAL_SET",
   "allowed_load_bearing_statuses": [
@@ -44,5 +44,7 @@
   "d2_science_mode": "MANDATORY_COVERAGE_SHADOW_ONLY",
   "d2_missing_policy": "DISCLOSE_AND_TELEMETRY_NOT_AUTOMATIC_PERMISSION_BLOCK",
   "topic_aware_expansion": true,
-  "dimension_coverage_must_be_verified": true
+  "dimension_coverage_must_be_verified": true,
+  "dependency_resolution": "TOPIC_TO_CANONICAL_CAUSAL_DEPENDENCY",
+  "anti_bloat": "EXPAND_ONLY_ON_MATERIAL_TOPIC_OR_REQUIRED_DIMENSION"
 }

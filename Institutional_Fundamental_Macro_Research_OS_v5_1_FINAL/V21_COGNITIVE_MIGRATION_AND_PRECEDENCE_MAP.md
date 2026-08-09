@@ -9,3 +9,7 @@ Module 103 may fail-close an unresolved cognitive state before D3, but it cannot
 
 ## Legacy prompts
 V19 and V20 production prompts remain allowlisted only as delegated subengines/regression entrypoints. New live analysis must start at the V21 Module 103 production prompt.
+
+
+## V21.2 runtime precedence
+V21.2 is an in-place runtime hardening of V21, not a new authority layer. Semantic validation sits inside Module 103 before cognitive adjudication. It may fail-close an internally inconsistent state but cannot create Direction or positive permission. D1 evidence remains truth authority; Module 89 remains Direction authority; Module 101 remains D2-to-edge modulation authority; Module 102 remains empirical promotion authority; Module 94 remains final operational safety authority. Contextual applicability and explicit propagation exceptions preserve flexibility without permitting silent bypass.

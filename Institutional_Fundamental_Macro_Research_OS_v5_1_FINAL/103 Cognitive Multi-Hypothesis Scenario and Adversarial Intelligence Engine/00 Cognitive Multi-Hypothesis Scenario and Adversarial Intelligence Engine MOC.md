@@ -2,7 +2,7 @@
 title: "Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine"
 type: moc
 status: canonical
-version: 21.1.0
+version: 21.2.0
 ---
 # Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine
 
@@ -40,3 +40,7 @@ The core change is from a mostly linear analytical sequence to a **controlled co
 
 ## V21.1 semantic integrity hardening
 V21.1 does **not** add another science layer. It closes the gap between conceptual reasoning and machine-enforced meaning: every first-class cognitive state is present or explicitly classified as not applicable/unavailable/undetermined; load-bearing evidence is lineage-referenced; material triggers are monitorable; cross-field IDs, horizons, cutoff times and directions must reconcile; and the full cognitive state is available to D4 telemetry. The design remains materiality-driven to avoid manufactured complexity.
+
+
+## V21.2 last-mile runtime hardening
+V21.2 does not expand the market-science ontology. It closes high-value runtime gaps while preserving contextual flexibility: applicability is profile-driven, load-bearing evidence can be resolved to the actual D1 evidence pack, material triggers remain structured through final Research Intent, upstream cognitive states must propagate or declare an auditable exception, FX policy state can be bilateral, regime scope is horizon-aware, hypothesis independence is derived/cross-checked, calibrated scenario probabilities must resolve to D4 records, and deep cognitive telemetry is preserved for forward learning. See [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/51 V21.2 Last-Mile Runtime Integrity and Flexible Learning Hardening]].

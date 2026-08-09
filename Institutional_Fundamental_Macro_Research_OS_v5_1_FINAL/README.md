@@ -2,13 +2,24 @@
 title: "README"
 type: documentation
 status: canonical
-version: 15.1.0
+version: 21.2.0
 created: 2026-07-30
-updated: 2026-08-08
+updated: 2026-08-09
 language: en
 tags: [fundamental-only, navigation, v8-repair]
 ---
 # Institutional Fundamental Macro Research OS v6.0
+
+## Current Alpha Lab production stack
+
+- **Production stack:** `V21.2.0`
+- **Production entrypoint:** [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt]]
+- **Direction authority:** `FUNDAMENTAL_ONLY` at the active strategy horizon.
+- **Cognitive runtime:** multi-hypothesis, multi-horizon, scenario-conditional, adversarial and semantic-integrity enforced.
+- **Forward governance:** Module 102 / D4; positive permission creation remains `PROMOTED_REGISTRY_ONLY`.
+- **Portfolio gate:** still `SHADOW`; V21.2 does not promote unvalidated portfolio rules.
+- V21.2 is a last-mile hardening release, not a new science layer. See [[V21_2_LAST_MILE_RUNTIME_HARDENING_RELEASE_NOTES]].
+
 
 This repository is an English-language, fundamental-only Obsidian knowledge and transformation system.
 

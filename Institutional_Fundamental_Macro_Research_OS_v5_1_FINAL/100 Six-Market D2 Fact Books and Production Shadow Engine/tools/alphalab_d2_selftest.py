@@ -7,7 +7,7 @@ def run(args):
  q=subprocess.run([sys.executable,*map(str,args)],capture_output=True,text=True,timeout=45)
  return q.returncode,q.stdout+q.stderr
 m=json.loads((V/'CURRENT_PRODUCTION_MANIFEST.json').read_text());
-chk('stack_v18_to_v21',m.get('current_stack') in {'V18.0.0','V19.0.0','V20.0.0','V21.0.0','V21.1.0'},m.get('current_stack'))
+chk('stack_v18_to_v21',m.get('current_stack') in {'V18.0.0','V19.0.0','V20.0.0','V21.0.0','V21.1.0','V21.2.0'},m.get('current_stack'))
 chk('fact_constitution_1_1',m.get('fact_constitution_version')=='1.1.0',m.get('fact_constitution_version'))
 chk('fundamental_only_direction',m.get('decision_authority',{}).get('direction')=='FUNDAMENTAL_ONLY',m.get('decision_authority'))
 d2=m.get('d2_market_sciences') or {};chk('d2_canonical_shadow',d2.get('authority_mode')=='CANONICAL_SHADOW',d2);chk('d2_zero_direct_permission_effect', (d2.get('final_permission_effect')=='NONE' if m.get('current_stack')=='V18.0.0' else d2.get('direct_permission_effect')=='NONE'), d2);chk('d3_promotion_state_valid',d2.get('d3_promotion_state') in {'NOT_PROMOTED','PROMOTED_VIA_MODULE_101_ONLY'},d2)
@@ -36,7 +36,7 @@ with tempfile.TemporaryDirectory() as td0:
   ('c.json',V/'99 Institutional Mechanics and Market Capacity Science/tools/alphalab_mechanics_capacity_validate.py',{'instrument':'NASDAQ100','as_of_utc':'2026-08-08T00:00:00Z','authority_mode':'CANONICAL_SHADOW','coverage_state':'PARTIAL_PUBLIC','capacity_grade':'NORMAL','stress_capacity_grade':'LOW','evidence_ids':[],'permission_effect_v18':'NONE'})]
  for fn,tool,obj in samples:
   q=td/fn;q.write_text(json.dumps(obj));rc,o=run([tool,'--state',q]);chk('validator_'+fn,rc==0,o)
- pack={'version':'1.0.0','authority_mode':'CANONICAL_SHADOW','instrument':'NASDAQ100','analysis_cutoff_utc':'2026-08-08T00:00:00Z','positioning':{},'actual_flow':{},'funding_plumbing':{},'institutional_mechanics':{},'market_capacity':{},'cross_science_independent_roots':0,'missing_or_licensed_required':[],'d2_permission_effect':'NONE','d3_promotion_state':'PROMOTED_VIA_MODULE_101_ONLY' if m.get('current_stack') in {'V19.0.0','V20.0.0','V21.0.0','V21.1.0'} else 'NOT_PROMOTED'}
+ pack={'version':'1.0.0','authority_mode':'CANONICAL_SHADOW','instrument':'NASDAQ100','analysis_cutoff_utc':'2026-08-08T00:00:00Z','positioning':{},'actual_flow':{},'funding_plumbing':{},'institutional_mechanics':{},'market_capacity':{},'cross_science_independent_roots':0,'missing_or_licensed_required':[],'d2_permission_effect':'NONE','d3_promotion_state':'PROMOTED_VIA_MODULE_101_ONLY' if m.get('current_stack') in {'V19.0.0','V20.0.0','V21.0.0','V21.1.0','V21.2.0'} else 'NOT_PROMOTED'}
  q=td/'pack.json';q.write_text(json.dumps(pack));rc,o=run([HERE/'alphalab_d2_validate_pack.py','--pack',q]);chk('d2_pack_validator',rc==0,o)
  bad=dict(pack);bad['d2_permission_effect']='BUY';q.write_text(json.dumps(bad));rc,o=run([HERE/'alphalab_d2_validate_pack.py','--pack',q]);chk('premature_permission_rejected',rc!=0 and 'PREMATURE_D2_PERMISSION' in o,o)
 # Regression self-tests and deployment/runtime preflights are executed independently by VERIFY_PATCH.py.

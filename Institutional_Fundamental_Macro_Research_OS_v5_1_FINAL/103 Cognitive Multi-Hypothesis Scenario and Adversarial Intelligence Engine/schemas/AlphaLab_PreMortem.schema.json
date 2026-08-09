@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_PreMortem.schema.json",
-  "title": "Alpha Lab V21.1 Decision Pre-Mortem",
+  "title": "Alpha Lab V21.2 Decision Pre-Mortem",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -31,7 +31,8 @@
           "mechanism",
           "monitorable",
           "response",
-          "early_warning_trigger"
+          "early_warning_trigger",
+          "monitorability_mode"
         ],
         "properties": {
           "failure_id": {
@@ -48,6 +49,14 @@
           },
           "early_warning_trigger": {
             "$ref": "AlphaLab_Trigger_Predicate.schema.json"
+          },
+          "monitorability_mode": {
+            "enum": [
+              "AUTOMATIC",
+              "MANUAL",
+              "PARTIAL",
+              "UNMONITORABLE"
+            ]
           }
         }
       }

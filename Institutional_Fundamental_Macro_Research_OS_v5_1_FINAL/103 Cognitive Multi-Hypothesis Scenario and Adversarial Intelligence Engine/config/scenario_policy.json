@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "scenario_count": {
     "minimum": 1,
     "maximum": 6,
@@ -41,5 +41,7 @@
     "ONE_SCENARIO_REQUIRES_EXPLICIT_RIVAL_SEARCH_AND_MATERIAL_PATH_JUSTIFICATION",
     "NEAR_DUPLICATE_SCENARIOS_MUST_BE_MERGED",
     "CALIBRATED_PROBABILITY_REQUIRES_CALIBRATION_RECORD"
-  ]
+  ],
+  "final_trigger_contract": "STRUCTURED",
+  "calibration_reference_policy": "D4_LEDGER_RECORD_MUST_RESOLVE_WHEN_CALIBRATED"
 }

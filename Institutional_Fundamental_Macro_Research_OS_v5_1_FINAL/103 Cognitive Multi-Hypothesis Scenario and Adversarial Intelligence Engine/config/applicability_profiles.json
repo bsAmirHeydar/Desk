@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "release": "V21.2.0",
+  "principle": "FLEXIBLE_BY_CONTEXT_NOT_ARBITRARY_BYPASS",
+  "rules": {
+    "surprise_state": {
+      "not_applicable_allowed": true,
+      "notes": "Allowed when no decision-material event/expectation shock is active."
+    },
+    "policy_reaction_state": {
+      "not_applicable_allowed": true,
+      "conditional_required_hypothesis_families": [
+        "POLICY_REACTION",
+        "FX_RELATIVE_POLICY"
+      ],
+      "fx_bilateral_when_present": true
+    },
+    "regime_state": {
+      "not_applicable_allowed_for_directional_run": false,
+      "notes": "Directional Fundamental analysis must state regime, unavailable, or undetermined."
+    },
+    "causal_graph": {
+      "not_applicable_allowed_for_directional_run": false,
+      "notes": "Directional Fundamental analysis must state a graph, unavailable, or undetermined."
+    },
+    "reflexivity_state": {
+      "not_applicable_allowed": true,
+      "required_if_reflexive_loop_claimed": true
+    },
+    "consumption_state": {
+      "not_applicable_allowed_for_actionable_permission": false,
+      "notes": "BUY/SELL permission must characterize consumption or disclose unavailable/undetermined."
+    },
+    "driver_transition": {
+      "not_applicable_allowed": true,
+      "notes": "Allowed for first observation or no prior driver state."
+    },
+    "global_reconciliation": {
+      "not_applicable_allowed": true,
+      "notes": "Allowed for single-market runs with no cross-market reconciliation input."
+    }
+  }
+}

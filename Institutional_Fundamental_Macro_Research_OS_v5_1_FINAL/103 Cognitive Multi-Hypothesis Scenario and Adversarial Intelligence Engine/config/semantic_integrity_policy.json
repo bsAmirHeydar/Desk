@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "release": "V21.1.0",
+  "version": "1.1.0",
+  "release": "V21.2.0",
   "mode": "ENFORCED",
   "principle": "MEANING_MUST_BE_MACHINE_CONSISTENT_NOT_ONLY_SCHEMA_VALID",
   "cross_field_invariants": [
@@ -14,7 +14,13 @@
     "UNCERTAINTY_DIMENSION_UNIQUENESS",
     "TOURNAMENT_STATE",
     "SCENARIO_STATE",
-    "APPLICABILITY_COMPLETENESS"
+    "APPLICABILITY_COMPLETENESS",
+    "APPLICABILITY_CONTEXT",
+    "UPSTREAM_DOWNSTREAM_PROPAGATION",
+    "EVIDENCE_PACK_REFERENTIAL_INTEGRITY",
+    "CALIBRATION_RECORD_REFERENTIAL_INTEGRITY",
+    "DERIVED_ROOT_COUNT",
+    "STRUCTURED_FINAL_TRIGGERS"
   ],
   "direction_mapping": {
     "BULLISH": [
@@ -35,5 +41,10 @@
   },
   "load_bearing_evidence_requires_traceability": true,
   "material_trigger_requires_monitorability": true,
-  "semantic_failure_action": "FAIL_CLOSED"
+  "semantic_failure_action": "FAIL_CLOSED",
+  "applicability_profile": "config/applicability_profiles.json",
+  "propagation_policy": "config/propagation_policy.json",
+  "decision_critical_fact_ref_resolution": "REQUIRED_WHEN_EVIDENCE_PACK_SUPPLIED_OR_PRODUCTION_STRICT",
+  "material_fact_ref_resolution": "REQUIRED_OR_EXPLICIT_UNCERTAINTY_CONSTRAINT",
+  "derived_tournament_counts": "PREFERRED_AND_CROSS_CHECKED"
 }

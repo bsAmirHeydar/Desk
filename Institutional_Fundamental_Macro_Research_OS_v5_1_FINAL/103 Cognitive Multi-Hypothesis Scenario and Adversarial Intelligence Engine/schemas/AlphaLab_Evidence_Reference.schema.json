@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_Evidence_Reference.schema.json",
-  "title": "Alpha Lab V21.1 Cognitive Evidence Reference",
+  "title": "Alpha Lab V21.2 Cognitive Evidence Reference",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -89,6 +89,20 @@
         "PARTIAL",
         "UNAVAILABLE",
         "NOT_APPLICABLE"
+      ]
+    },
+    "resolved_fact_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "resolution_state": {
+      "enum": [
+        "RESOLVED",
+        "PARTIAL",
+        "UNRESOLVED",
+        "NOT_CHECKED"
       ]
     }
   },

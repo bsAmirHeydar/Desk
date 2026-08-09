@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "AlphaLab_Cognitive_Telemetry.schema.json",
-  "title": "Alpha Lab V21.1 Cognitive Forward Telemetry",
+  "title": "Alpha Lab V21.2 Cognitive Forward Telemetry",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -96,6 +96,50 @@
     },
     "interaction_hypothesis_ids": {
       "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "causal_graph_state": {
+      "type": "string"
+    },
+    "regime_overall_state": {
+      "type": "string"
+    },
+    "regime_mapping_stability": {
+      "type": "string"
+    },
+    "surprise_market_state": {
+      "type": "string"
+    },
+    "surprise_policy_implication": {
+      "type": "string"
+    },
+    "surprise_asset_implication": {
+      "type": "string"
+    },
+    "reflexivity_phase": {
+      "type": "string"
+    },
+    "remaining_asymmetry": {
+      "type": "string"
+    },
+    "driver_transition_state": {
+      "type": "string"
+    },
+    "global_reconciliation_state": {
+      "type": "string"
+    },
+    "source_grade_tags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "propagation_exception_ids": {
+      "type": "array",
+      "uniqueItems": true,
       "items": {
         "type": "string"
       }

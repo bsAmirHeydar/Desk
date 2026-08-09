@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Policy_Reaction_Bundle.schema.json",
+  "title": "Alpha Lab V21.2 Policy Reaction Bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "mode",
+    "as_of_utc",
+    "states",
+    "differential_state"
+  ],
+  "properties": {
+    "mode": {
+      "enum": [
+        "SINGLE",
+        "BILATERAL"
+      ]
+    },
+    "as_of_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "base_currency_authority": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "quote_currency_authority": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "states": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2,
+      "items": {
+        "$ref": "AlphaLab_Policy_Reaction_State.schema.json"
+      }
+    },
+    "differential_state": {
+      "enum": [
+        "BASE_MORE_HAWKISH",
+        "QUOTE_MORE_HAWKISH",
+        "CONVERGING",
+        "DIVERGING",
+        "BALANCED",
+        "CONFLICTED",
+        "UNDETERMINED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "differential_reason": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "BILATERAL"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "base_currency_authority",
+          "quote_currency_authority"
+        ],
+        "properties": {
+          "states": {
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "base_currency_authority": {
+            "type": "string",
+            "minLength": 1
+          },
+          "quote_currency_authority": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "SINGLE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "states": {
+            "minItems": 1,
+            "maxItems": 1
+          },
+          "differential_state": {
+            "const": "NOT_APPLICABLE"
+          }
+        }
+      }
+    }
+  ]
+}
