@@ -1,0 +1,42 @@
+{
+  "certification_levels": [
+    "CORE_CERTIFIED",
+    "FULL_OFFLINE_CERTIFIED",
+    "ENVIRONMENT_CERTIFIED",
+    "SHADOW_PRODUCTION_CERTIFIED",
+    "PRODUCTION_READY"
+  ],
+  "decision_parity": "ENVIRONMENT_CERTIFICATION",
+  "exact_input_reproduction_required": true,
+  "exact_output_reproduction": "REQUIRED_IF_HOST_DECLARED_DETERMINISTIC_OTHERWISE_VARIANCE_RECEIPT_REQUIRED",
+  "external_tzdata_required": false,
+  "full_tree_raw_hash": "FORBIDDEN_FOR_DEPLOYMENT",
+  "hard_failure_policy": "FAIL_CLOSED",
+  "install_auto_claim_max": "FULL_OFFLINE_CERTIFIED",
+  "new_direction_authority": false,
+  "new_permission_authority": false,
+  "operational_authority": "NONE_NEW",
+  "powershell": "ASCII_ONLY_THIN_WRAPPER",
+  "production_ready_auto_grant": false,
+  "profiles": {
+    "CORE": {
+      "destructive_isolated": false,
+      "requires_environment": false
+    },
+    "ENVIRONMENT": {
+      "destructive_isolated": false,
+      "requires_environment": true
+    },
+    "FULL": {
+      "destructive_isolated": true,
+      "requires_environment": false
+    }
+  },
+  "pyc_required": false,
+  "runtime_baseline": "R3.0.0",
+  "runtime_target": "R4.0.0",
+  "scientific_stack": "V21.3.0",
+  "strategy_profitability_certified": false,
+  "surface_fingerprint": "CANONICAL_TEXT_SELECTED_AUTHORITY_SURFACE",
+  "version": "R4_CERTIFICATION_POLICY_1.0.0"
+}

@@ -1,0 +1,42 @@
+{
+  "authority": {
+    "direction": "NONE",
+    "operational_execution": "NONE_NEW",
+    "permission": "NONE",
+    "promotion_registry_mutation": "NONE",
+    "scientific_mutation": "NONE"
+  },
+  "bundle": "R4 — SCIENTIFIC CERTIFICATION / REPRODUCIBILITY / HARDENING",
+  "certification": {
+    "environment": "EXPLICIT_ATTESTATION_REQUIRED",
+    "offline_core": "AUTOMATED",
+    "offline_full": "AUTOMATED_ISOLATED",
+    "production_ready": "HUMAN_GOVERNANCE_SIGNOFF_REQUIRED",
+    "shadow_production": "EXPLICIT_PROTOCOL_REQUIRED"
+  },
+  "certification_surface": "SELECTED_AUTHORITATIVE_RUNTIME_AND_SCIENCE_SURFACE",
+  "deployment_rules": {
+    "baseline_hashing": "CANONICAL_TEXT_CONTROLLED_ONLY",
+    "full_tree_deployment_hash": "FORBIDDEN",
+    "git_paths": "PYTHON_NUL_UTF8",
+    "powershell": "ASCII_ONLY_THIN_WRAPPER",
+    "pyc": "NEVER_REQUIRED",
+    "tzdata": "NO_NEW_DEPENDENCY"
+  },
+  "non_claims": [
+    "NO_PROFITABILITY_CERTIFICATION",
+    "NO_MARKET_FORECAST_GUARANTEE",
+    "NO_PROVIDER_DETERMINISM_WITHOUT_ATTESTATION"
+  ],
+  "phase": 7,
+  "prompt_context_drift_guard": "ENFORCED_BEFORE_HOST_INVOCATION",
+  "reproduction": "EXACT_INPUT_PARITY_CORE_DECISION_PARITY_ENVIRONMENT",
+  "requires": [
+    "R1.0.0",
+    "R2.0.0",
+    "R3.0.0"
+  ],
+  "runtime_version": "R4.0.0",
+  "scientific_stack": "V21.3.0",
+  "scientific_stack_mutation": "NONE"
+}

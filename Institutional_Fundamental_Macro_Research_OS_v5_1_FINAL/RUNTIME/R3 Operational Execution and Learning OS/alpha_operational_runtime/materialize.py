@@ -38,13 +38,18 @@ class InvocationMaterializer:
             out.append({'snapshot_id':sid,'artifact_hash':h,'encoding':enc,'byte_length':len(b),**payload})
         return out
     def build(self,job,payload_mode='FILE_REFERENCES'):
-        pid=job['process_id'];pm=self.r2.registry.manifest(pid);prompt_path=self.vault/pm['prompt_path'];prompt_bytes=prompt_path.read_bytes();ctx=job['context_bundle'];inputs=[];rows={r['logical_name']:r for r in self.rt.catalog.list_artifacts(job['run_id'])}
+        pid=job['process_id'];pm=self.r2.registry.manifest(pid);prompt_path=self.vault/pm['prompt_path'];prompt_bytes=prompt_path.read_bytes();ctx=job['context_bundle'];
+        if sha256_bytes(prompt_bytes)!=job['prompt_sha256']:raise MaterializeError('PROMPT_DRIFT_AFTER_JOB_CREATION: '+pid)
+        inputs=[];rows={r['logical_name']:r for r in self.rt.catalog.list_artifacts(job['run_id'])}
         for x in ctx['input_artifacts']:inputs.append(self._artifact_payload(job['run_id'],rows[x['logical_name']]))
-        canon=[]
+        canon=[]; expected_hashes={x['path']:x['sha256'] for x in ctx.get('canonical_context_hashes',[])}
         for rel in ctx['canonical_context_paths']:
             p=(self.vault/rel).resolve()
             if self.vault not in p.parents and p!=self.vault:raise MaterializeError('context path escaped vault')
-            b=p.read_bytes();item={'path':rel,'sha256':sha256_bytes(b),'byte_length':len(b)}
+            b=p.read_bytes(); actual=sha256_bytes(b); expected=expected_hashes.get(rel)
+            if expected is None:raise MaterializeError('CONTEXT_HASH_PIN_MISSING: '+rel)
+            if actual!=expected:raise MaterializeError('CANONICAL_CONTEXT_DRIFT_AFTER_JOB_CREATION: '+rel)
+            item={'path':rel,'sha256':actual,'byte_length':len(b)}
             if payload_mode=='INLINE':item['text']=b.decode('utf-8','replace')
             else:item['absolute_path']=str(p)
             canon.append(item)

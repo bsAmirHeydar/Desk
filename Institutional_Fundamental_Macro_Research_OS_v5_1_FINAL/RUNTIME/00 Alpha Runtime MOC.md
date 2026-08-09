@@ -47,3 +47,7 @@ Run data are not canonical Vault knowledge and must not be committed to the scie
 - [[R3 Operational Execution and Learning OS/00 R3 Operational Execution and Learning OS MOC]]
 - Runtime target: R3.0.0
 - R2 scientific prompt pack remains unchanged; R3 adds launch/host/retrieval/operational/outcome/learning planes.
+
+## R4 — Scientific Certification and Reproducibility Hardening
+- [[R4 Scientific Certification and Reproducibility Hardening/00 R4 Scientific Certification and Reproducibility Hardening MOC]]
+- Status: offline certification framework active; environment/shadow certification explicit.

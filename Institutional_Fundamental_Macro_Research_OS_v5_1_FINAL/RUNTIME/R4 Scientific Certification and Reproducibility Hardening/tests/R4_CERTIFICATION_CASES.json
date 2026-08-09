@@ -1,0 +1,281 @@
+{
+  "cases": [
+    {
+      "case_id": "R4-001",
+      "category": "INHERITED",
+      "description": "",
+      "hard": "R1 preflight passes"
+    },
+    {
+      "case_id": "R4-002",
+      "category": "INHERITED",
+      "description": "",
+      "hard": "R2 preflight/selftest passes under downstream runtime"
+    },
+    {
+      "case_id": "R4-003",
+      "category": "INHERITED",
+      "description": "",
+      "hard": "R3 preflight/selftest passes under downstream runtime"
+    },
+    {
+      "case_id": "R4-010",
+      "category": "TEMPORAL",
+      "description": "",
+      "hard": "future first-available blocked"
+    },
+    {
+      "case_id": "R4-011",
+      "category": "TEMPORAL",
+      "description": "",
+      "hard": "late live retrieval blocked"
+    },
+    {
+      "case_id": "R4-012",
+      "category": "TEMPORAL",
+      "description": "",
+      "hard": "late live ingestion blocked"
+    },
+    {
+      "case_id": "R4-013",
+      "category": "TEMPORAL",
+      "description": "",
+      "hard": "current-only historical blocked"
+    },
+    {
+      "case_id": "R4-014",
+      "category": "TEMPORAL",
+      "description": "",
+      "hard": "official archive historical admitted"
+    },
+    {
+      "case_id": "R4-015",
+      "category": "TEMPORAL",
+      "description": "",
+      "hard": "superseded snapshot blocked"
+    },
+    {
+      "case_id": "R4-016",
+      "category": "TEMPORAL",
+      "description": "",
+      "hard": "DST ambiguous local time rejected"
+    },
+    {
+      "case_id": "R4-017",
+      "category": "TEMPORAL",
+      "description": "",
+      "hard": "DST nonexistent local time rejected"
+    },
+    {
+      "case_id": "R4-020",
+      "category": "AUTHORITY",
+      "description": "",
+      "hard": "only W31 can create fundamental direction"
+    },
+    {
+      "case_id": "R4-021",
+      "category": "AUTHORITY",
+      "description": "",
+      "hard": "only P63 can create final permission"
+    },
+    {
+      "case_id": "R4-022",
+      "category": "AUTHORITY",
+      "description": "",
+      "hard": "R3 remains block-only"
+    },
+    {
+      "case_id": "R4-023",
+      "category": "AUTHORITY",
+      "description": "",
+      "hard": "adversaries cannot depend on final permission"
+    },
+    {
+      "case_id": "R4-030",
+      "category": "DRIFT",
+      "description": "",
+      "hard": "prompt hash pin enforced"
+    },
+    {
+      "case_id": "R4-031",
+      "category": "DRIFT",
+      "description": "",
+      "hard": "canonical context hash pin enforced"
+    },
+    {
+      "case_id": "R4-032",
+      "category": "DRIFT",
+      "description": "",
+      "hard": "job hash changes when inputs change"
+    },
+    {
+      "case_id": "R4-033",
+      "category": "DRIFT",
+      "description": "",
+      "hard": "certification surface fingerprint exact"
+    },
+    {
+      "case_id": "R4-040",
+      "category": "SEAL",
+      "description": "",
+      "hard": "outcome pre-seal blocked"
+    },
+    {
+      "case_id": "R4-041",
+      "category": "SEAL",
+      "description": "",
+      "hard": "decision post-seal blocked"
+    },
+    {
+      "case_id": "R4-042",
+      "category": "SEAL",
+      "description": "",
+      "hard": "decision object tamper detected"
+    },
+    {
+      "case_id": "R4-043",
+      "category": "SEAL",
+      "description": "",
+      "hard": "decision ref drift detected"
+    },
+    {
+      "case_id": "R4-044",
+      "category": "SEAL",
+      "description": "",
+      "hard": "close seal verifies"
+    },
+    {
+      "case_id": "R4-045",
+      "category": "SEAL",
+      "description": "",
+      "hard": "post-close mutation blocked"
+    },
+    {
+      "case_id": "R4-050",
+      "category": "REPLAY",
+      "description": "",
+      "hard": "reproduction visibility parity"
+    },
+    {
+      "case_id": "R4-051",
+      "category": "REPLAY",
+      "description": "",
+      "hard": "source replay provenance retained"
+    },
+    {
+      "case_id": "R4-060",
+      "category": "SOURCE",
+      "description": "",
+      "hard": "proxy does not satisfy direct requirement"
+    },
+    {
+      "case_id": "R4-061",
+      "category": "SOURCE",
+      "description": "",
+      "hard": "registered source is not assumed available"
+    },
+    {
+      "case_id": "R4-062",
+      "category": "SOURCE",
+      "description": "",
+      "hard": "historical current-only forbidden by R3"
+    },
+    {
+      "case_id": "R4-070",
+      "category": "D4",
+      "description": "",
+      "hard": "ledger chain verifies"
+    },
+    {
+      "case_id": "R4-071",
+      "category": "D4",
+      "description": "",
+      "hard": "ledger projection tamper detected"
+    },
+    {
+      "case_id": "R4-072",
+      "category": "D4",
+      "description": "",
+      "hard": "ledger projection rebuild verifies"
+    },
+    {
+      "case_id": "R4-073",
+      "category": "D4",
+      "description": "",
+      "hard": "promotion remains review-only"
+    },
+    {
+      "case_id": "R4-080",
+      "category": "SQLITE",
+      "description": "",
+      "hard": "catalog migrations idempotent"
+    },
+    {
+      "case_id": "R4-081",
+      "category": "SQLITE",
+      "description": "",
+      "hard": "SQLite integrity check passes"
+    },
+    {
+      "case_id": "R4-082",
+      "category": "SQLITE",
+      "description": "",
+      "hard": "concurrent event sequence monotonic"
+    },
+    {
+      "case_id": "R4-083",
+      "category": "SQLITE",
+      "description": "",
+      "hard": "isolated corruption detected"
+    },
+    {
+      "case_id": "R4-090",
+      "category": "HOST",
+      "description": "",
+      "hard": "production fixture forbidden"
+    },
+    {
+      "case_id": "R4-091",
+      "category": "HOST",
+      "description": "",
+      "hard": "authority errors non-retryable"
+    },
+    {
+      "case_id": "R4-092",
+      "category": "HOST",
+      "description": "",
+      "hard": "transient host errors retryable"
+    },
+    {
+      "case_id": "R4-100",
+      "category": "META",
+      "description": "",
+      "hard": "multi-market cutoff mismatch disclosed"
+    },
+    {
+      "case_id": "R4-101",
+      "category": "META",
+      "description": "",
+      "hard": "meta layer has no permission authority"
+    },
+    {
+      "case_id": "R4-110",
+      "category": "PORTABILITY",
+      "description": "",
+      "hard": "no pyc verification requirement"
+    },
+    {
+      "case_id": "R4-111",
+      "category": "PORTABILITY",
+      "description": "",
+      "hard": "no external tzdata requirement"
+    },
+    {
+      "case_id": "R4-112",
+      "category": "PORTABILITY",
+      "description": "",
+      "hard": "ASCII-only installer contract"
+    }
+  ],
+  "version": "1.0.0"
+}

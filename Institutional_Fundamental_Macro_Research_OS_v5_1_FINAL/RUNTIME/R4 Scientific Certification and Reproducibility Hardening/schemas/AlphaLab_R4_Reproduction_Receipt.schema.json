@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "decision_parity_state": {
+      "enum": [
+        "EXACT",
+        "DIFFERENT",
+        "NOT_EXECUTED",
+        "NONDETERMINISM_RECEIPT_REQUIRED"
+      ]
+    },
+    "invocation_parity": {
+      "type": "boolean"
+    },
+    "replay_run_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "source_run_id": {
+      "type": "string"
+    },
+    "visibility_parity": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "source_run_id",
+    "replay_run_id",
+    "visibility_parity",
+    "invocation_parity",
+    "decision_parity_state"
+  ],
+  "type": "object"
+}

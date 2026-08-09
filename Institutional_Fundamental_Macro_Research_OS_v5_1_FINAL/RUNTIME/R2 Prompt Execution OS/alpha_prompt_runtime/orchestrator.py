@@ -42,9 +42,18 @@ class R2Orchestrator:
             rr=c.execute("SELECT * FROM r2_process_runs WHERE run_id=?",(run_id,)).fetchone(); meta=dict(rr) if rr else None
         return {'run':meta,'processes':rows}
     def _status_map(self,run_id): return {x['process_id']:x['status'] for x in self.status(run_id)['processes']}
+    def _assert_prompt_pin(self,run_id,pid):
+        current=self.registry.prompt_hash(pid); pm=self.registry.manifest(pid)
+        with self.rt.catalog.connect() as c:
+            r=c.execute("SELECT process_version,prompt_hash,model_profile FROM r2_prompt_pins WHERE run_id=? AND process_id=?",(run_id,pid)).fetchone()
+        if not r: raise OrchestratorError('prompt pin missing for '+pid)
+        if r[0]!=pm['version'] or r[1]!=current or r[2]!=pm['model_profile']:
+            raise OrchestratorError('PROMPT_OR_PROFILE_DRIFT_AFTER_PIN: '+pid)
+        return True
     def ready_jobs(self,run_id):
         sm=self._status_map(run_id); ready=self.graph.ready(sm); jobs=[]
         for pid in ready:
+            self._assert_prompt_pin(run_id,pid)
             context=self.ctx.compile(run_id,pid); jobs.append(make_job(run_id,pid,self.registry,context))
         return jobs
     def start(self,run_id,pid,job_hash=None):

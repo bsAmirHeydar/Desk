@@ -31,7 +31,7 @@ def run(vault_root):
     # all output schema refs exist
     checks.append(('output_schemas_exist',all((v/o['schema_ref']).exists() for p in reg.process_ids() for o in reg.manifest(p)['outputs'])))
     # R1 runtime present
-    rm=json.loads((v/'RUNTIME'/'RUNTIME_MANIFEST.json').read_text(encoding='utf-8')); checks.append(('runtime_r2_active',rm.get('runtime_version')=='R2.0.0')); checks.append(('scientific_stack_v213',rm.get('scientific_stack')=='V21.3.0'))
+    rm=json.loads((v/'RUNTIME'/'RUNTIME_MANIFEST.json').read_text(encoding='utf-8')); checks.append(('runtime_r2_active',rm.get('runtime_version') in ('R2.0.0','R3.0.0','R4.0.0'))); checks.append(('scientific_stack_v213',rm.get('scientific_stack')=='V21.3.0'))
     checks.append(('zero_new_direction_authority',rm['authority']['direction']=='NONE')); checks.append(('zero_new_permission_authority',rm['authority']['permission']=='NONE'))
     errors=[n for n,ok in checks if not ok]
     return {'status':'PASS' if not errors else 'FAIL','checks':[{'name':n,'pass':ok} for n,ok in checks],'errors':errors+(errs or [])+(ge or [])}

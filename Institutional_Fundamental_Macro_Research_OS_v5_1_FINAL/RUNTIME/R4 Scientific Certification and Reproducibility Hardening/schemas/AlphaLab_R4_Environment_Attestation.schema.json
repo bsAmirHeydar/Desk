@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "created_at_utc": {
+      "type": "string"
+    },
+    "host_binding": {
+      "type": "string"
+    },
+    "provider_attested": {
+      "type": "boolean"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "secrets_policy": {
+      "type": "string"
+    },
+    "source_binding_state": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "host_binding",
+    "provider_attested",
+    "source_binding_state",
+    "secrets_policy",
+    "created_at_utc"
+  ],
+  "type": "object"
+}

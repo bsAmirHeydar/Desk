@@ -1,5 +1,9 @@
-# R4 Certification Handoff
+# R4 Certification Handoff — ACTIVE
 
-R4 begins only after R3 is installed and certified locally. R4 attacks the entire stack: replay parity, no-lookahead, prompt drift, host/model drift, source/vintage failures, tampering, partial failure, retry/caching, concurrent runs, timezone/DST, outcome firewall, ledger integrity and exact historical reproduction.
+R3 operational execution is now consumed by R4 certification. R4 has zero new market-direction or permission authority. It validates R1/R2/R3, enforces prompt/context drift guards and separates offline runtime certification from actual production-environment attestation.
 
-R4 is certification only; it must not add market-science authority.
+`R3 → R4` handoff contract:
+- R3 remains `BLOCK_ONLY` operational authority.
+- R4 may block certification; it may not create a market direction or trade permission.
+- Production provider/model and source bindings remain un-certified until environment attestation.
+- Reproduction requires exact visibility and invocation parity; decision parity is certified against the actual bound host.

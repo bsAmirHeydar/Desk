@@ -1,7 +1,38 @@
 {
-  "runtime_version": "R3.0.0",
-  "scientific_stack": "V21.3.0",
-  "status": "OPERATIONAL_EXECUTION_LEARNING_ACTIVE_R4_PENDING",
+  "authority": {
+    "direction": "NONE",
+    "permission": "NONE",
+    "scientific_mutation": "NONE"
+  },
+  "certification": "R4_CORE_AND_FULL_OFFLINE_FRAMEWORK_ACTIVE_ENVIRONMENT_AND_SHADOW_SIGNOFF_REQUIRED",
+  "certification_runtime": {
+    "environment": "PENDING_ATTESTATION",
+    "offline": "CORE_AND_FULL",
+    "production_ready": "NOT_AUTO_GRANTED",
+    "profitability_claim": "NONE",
+    "shadow_production": "PENDING",
+    "status": "ACTIVE"
+  },
+  "host_execution": {
+    "fixture_production": "FORBIDDEN",
+    "protocol": "R3_HOST_PROTOCOL_1.0.0",
+    "provider_neutral": true,
+    "secrets": "ENVIRONMENT_ONLY"
+  },
+  "launchers": "R3_ACTIVE",
+  "operational_execution": {
+    "authority": "BLOCK_ONLY",
+    "default_handoff": "FILE_OUTBOX",
+    "scientific_permission_mutation": "FORBIDDEN",
+    "status": "ACTIVE"
+  },
+  "outcome_learning": {
+    "counterfactuals": "FROZEN_INFORMATION_SET",
+    "d4_ledger": "APPEND_ONLY_HASH_CHAIN",
+    "decision_outcome_firewall": "R1_ENFORCED",
+    "promotion_registry_auto_write": false,
+    "status": "ACTIVE"
+  },
   "phases": {
     "0": "ARCHITECTURE_CONSTITUTION_COMPLETE",
     "1": "RUN_STORAGE_CORE_COMPLETE",
@@ -9,65 +40,49 @@
     "3": "PROMPT_REGISTRY_COMPLETE",
     "4": "ORCHESTRATOR_PROCESS_GRAPH_COMPLETE",
     "5": "UNIVERSAL_LAUNCH_OPERATIONAL_EXECUTION_COMPLETE",
-    "6": "OUTCOME_COUNTERFACTUAL_D4_ANALYTICS_COMPLETE"
+    "6": "OUTCOME_COUNTERFACTUAL_D4_ANALYTICS_COMPLETE",
+    "7": "SCIENTIFIC_REPRODUCIBILITY_CERTIFICATION_HARDENING_COMPLETE"
   },
-  "authority": {
-    "direction": "NONE",
-    "permission": "NONE",
-    "scientific_mutation": "NONE"
+  "prompt_execution": {
+    "completion_policy": "EPISTEMIC_COMPLETION",
+    "drift_guard": "PROMPT_AND_CANONICAL_CONTEXT_HASH_PIN_ENFORCED",
+    "executor_binding": "HOST_MANAGED_R3_OR_EXTERNAL",
+    "full_vault_mode": "STRICT_FULL",
+    "process_count": 25,
+    "process_graph": "R2_PROCESS_GRAPH_1.0.0",
+    "prompt_pack": "ALPHALAB_PROMPT_PACK_1.0.0"
   },
+  "prompt_runtime": "R2_ACTIVE_UNCHANGED",
+  "reproduction": {
+    "decision_parity": "ENVIRONMENT_REQUIRED_OR_VARIANCE_RECEIPT",
+    "invocation_parity": "CORE_REQUIRED",
+    "visibility_parity": "CORE_REQUIRED"
+  },
+  "retrieval_execution": {
+    "private_gap": "EXPLICIT",
+    "protocol": "R3_RETRIEVAL_RUNTIME_1.0.0",
+    "source_registry": "V21.3_D2_SOURCE_REGISTRY",
+    "strict_point_in_time": true
+  },
+  "runtime_version": "R4.0.0",
+  "scientific_stack": "V21.3.0",
+  "status": "SCIENTIFIC_CERTIFICATION_HARDENING_ACTIVE_OFFLINE_CERTIFIED_ENVIRONMENT_PENDING",
   "storage": {
     "backend": "LOCAL_FS_SQLITE",
-    "object_store": "CONTENT_ADDRESSED_SHA256",
     "catalog": "SQLITE",
+    "object_store": "CONTENT_ADDRESSED_SHA256",
     "warehouse": "SQLITE_CANONICAL_JSONL_DUCKDB_PARQUET_OPTIONAL"
   },
   "temporal": {
-    "lookahead": "STRICT_POINT_IN_TIME",
     "decision_outcome_firewall": "ENFORCED",
+    "lookahead": "STRICT_POINT_IN_TIME",
     "replay_visibility": "ENFORCED"
   },
-  "prompt_runtime": "R2_ACTIVE_UNCHANGED",
-  "launchers": "R3_ACTIVE",
-  "certification": "R1_PLUS_R2_PLUS_R3_SELFTEST_AND_PREFLIGHT",
   "windows_portability": {
-    "python_314_supported_by_design": true,
-    "pyc_required_for_verification": false,
+    "bundled_timezone_fallback": true,
     "external_tzdata_package_required": false,
-    "sqlite_explicit_close": true,
-    "bundled_timezone_fallback": true
-  },
-  "prompt_execution": {
-    "prompt_pack": "ALPHALAB_PROMPT_PACK_1.0.0",
-    "process_graph": "R2_PROCESS_GRAPH_1.0.0",
-    "process_count": 25,
-    "completion_policy": "EPISTEMIC_COMPLETION",
-    "full_vault_mode": "STRICT_FULL",
-    "executor_binding": "HOST_MANAGED_R3_OR_EXTERNAL"
-  },
-  "operational_execution": {
-    "status": "ACTIVE",
-    "authority": "BLOCK_ONLY",
-    "scientific_permission_mutation": "FORBIDDEN",
-    "default_handoff": "FILE_OUTBOX"
-  },
-  "outcome_learning": {
-    "status": "ACTIVE",
-    "decision_outcome_firewall": "R1_ENFORCED",
-    "counterfactuals": "FROZEN_INFORMATION_SET",
-    "d4_ledger": "APPEND_ONLY_HASH_CHAIN",
-    "promotion_registry_auto_write": false
-  },
-  "host_execution": {
-    "protocol": "R3_HOST_PROTOCOL_1.0.0",
-    "provider_neutral": true,
-    "secrets": "ENVIRONMENT_ONLY",
-    "fixture_production": "FORBIDDEN"
-  },
-  "retrieval_execution": {
-    "protocol": "R3_RETRIEVAL_RUNTIME_1.0.0",
-    "source_registry": "V21.3_D2_SOURCE_REGISTRY",
-    "strict_point_in_time": true,
-    "private_gap": "EXPLICIT"
+    "pyc_required_for_verification": false,
+    "python_314_supported_by_design": true,
+    "sqlite_explicit_close": true
   }
 }

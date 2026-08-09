@@ -1,5 +1,5 @@
 from pathlib import Path
-from .util import sha256_obj
+from .util import sha256_obj, sha256_file
 
 FORBIDDEN_NAMES={'outcome','path_metrics','counterfactuals','realized_r','future_price_path'}
 
@@ -35,6 +35,7 @@ class ContextCompiler:
             for p in prod.get('asset_books',{}).get(subj,[]):
                 if p not in paths and (self.vault/p).exists(): paths.append(p)
         except Exception: pass
-        bundle={'schema_version':'1.0.0','run_id':run_id,'process_id':pid,'analysis_cutoff_utc':m['analysis_cutoff_utc'],'prompt_sha256':self.registry.prompt_hash(pid),'prompt_pack_version':self.registry.pack['version'],'input_artifacts':sorted(inputs,key=lambda x:x['logical_name']),'canonical_context_paths':sorted(set(paths)),'forbidden_context_check':'PASS'}
+        canon_paths=sorted(set(paths)); canon_hashes=[{'path':p,'sha256':sha256_file(self.vault/p)} for p in canon_paths]
+        bundle={'schema_version':'1.0.0','run_id':run_id,'process_id':pid,'analysis_cutoff_utc':m['analysis_cutoff_utc'],'prompt_sha256':self.registry.prompt_hash(pid),'prompt_pack_version':self.registry.pack['version'],'input_artifacts':sorted(inputs,key=lambda x:x['logical_name']),'canonical_context_paths':canon_paths,'canonical_context_hashes':canon_hashes,'forbidden_context_check':'PASS'}
         bundle['bundle_hash']=sha256_obj({k:v for k,v in bundle.items() if k!='bundle_hash'})
         return bundle

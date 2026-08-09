@@ -9,7 +9,7 @@ def _r2_compat(v):
     reg=PromptRegistry(v);errs=list(reg.validate() or []);g=ProcessGraph(reg.graph);errs+=list(g.validate() or []);ids=reg.process_ids();checks=[('r2_process_count',len(ids)==25),('r2_direction_authority',[x for x in ids if 'fundamental_direction' in reg.manifest(x)['authority']['can_create']]==['W31_FUNDAMENTAL']),('r2_permission_authority',[x for x in ids if 'final_permission' in reg.manifest(x)['authority']['can_create']]==['P63_FINAL_DECISION']),('r2_prompt_pack',reg.pack.get('version')=='ALPHALAB_PROMPT_PACK_1.0.0')];return checks,errs
 def run(vault_root):
     v=Path(vault_root);checks=[];errors=[]
-    try:rm=json.loads((v/'RUNTIME'/'RUNTIME_MANIFEST.json').read_text(encoding='utf-8'));checks += [('runtime_r3',rm.get('runtime_version')=='R3.0.0'),('scientific_v213',rm.get('scientific_stack')=='V21.3.0'),('direction_authority_none',rm.get('authority',{}).get('direction')=='NONE'),('permission_authority_none',rm.get('authority',{}).get('permission')=='NONE'),('operational_block_only',rm.get('operational_execution',{}).get('authority')=='BLOCK_ONLY')]
+    try:rm=json.loads((v/'RUNTIME'/'RUNTIME_MANIFEST.json').read_text(encoding='utf-8'));checks += [('runtime_r3',rm.get('runtime_version') in ('R3.0.0','R4.0.0')),('scientific_v213',rm.get('scientific_stack')=='V21.3.0'),('direction_authority_none',rm.get('authority',{}).get('direction')=='NONE'),('permission_authority_none',rm.get('authority',{}).get('permission')=='NONE'),('operational_block_only',rm.get('operational_execution',{}).get('authority')=='BLOCK_ONLY')]
     except Exception as e:errors.append('runtime_manifest:'+str(e))
     try:c,e=_r2_compat(v);checks+=c;errors+=e
     except Exception as e:checks.append(('r2_compat',False));errors.append('r2_compat:'+str(e))

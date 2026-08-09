@@ -11,7 +11,7 @@ from .retrieval import RetrievalRuntime
 from .meta import MetaReconciler
 
 def run(vault_root):
-    v=Path(vault_root);checks=[];errors=[];rm=json.loads((v/'RUNTIME'/'RUNTIME_MANIFEST.json').read_text(encoding='utf-8'));checks += [('runtime_r3_active',rm.get('runtime_version')=='R3.0.0'),('scientific_stack_v213',rm.get('scientific_stack')=='V21.3.0'),('operational_gate_block_only',rm.get('operational_execution',{}).get('authority')=='BLOCK_ONLY')]
+    v=Path(vault_root);checks=[];errors=[];rm=json.loads((v/'RUNTIME'/'RUNTIME_MANIFEST.json').read_text(encoding='utf-8'));checks += [('runtime_r3_active',rm.get('runtime_version') in ('R3.0.0','R4.0.0')),('scientific_stack_v213',rm.get('scientific_stack')=='V21.3.0'),('operational_gate_block_only',rm.get('operational_execution',{}).get('authority')=='BLOCK_ONLY')]
     for p in (str(v/'RUNTIME'/'R1 Foundation'),str(v/'RUNTIME'/'R2 Prompt Execution OS')):
         if p not in sys.path:sys.path.insert(0,p)
     from alpha_runtime.runtime import AlphaRuntime
