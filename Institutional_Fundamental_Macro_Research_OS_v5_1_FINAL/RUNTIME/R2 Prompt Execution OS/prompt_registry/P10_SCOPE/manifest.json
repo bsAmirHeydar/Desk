@@ -1,0 +1,55 @@
+{
+  "process_id": "P10_SCOPE",
+  "version": "1.0.0",
+  "stage": "S1",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/P10_SCOPE/prompt.md",
+  "dependencies": [],
+  "required_inputs": [],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "scope_state",
+      "schema_ref": "RUNTIME/R2 Prompt Execution OS/schemas/AlphaLab_R2_Scope_State.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "EVIDENCE",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "MAX_PRECISION",
+  "canonical_dependencies": [
+    "91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC.md",
+    "CURRENT_PRODUCTION_MANIFEST.json"
+  ],
+  "authority": {
+    "can_create": [
+      "scope_state"
+    ],
+    "cannot_create": [
+      "fundamental_direction",
+      "final_permission"
+    ]
+  },
+  "independence_group": null,
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

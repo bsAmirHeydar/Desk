@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "cases": [
+    {
+      "id": "REGISTRY_25",
+      "expected": "25 unique process manifests/prompts"
+    },
+    {
+      "id": "DAG_ACYCLIC",
+      "expected": "no cycle"
+    },
+    {
+      "id": "WORKER_ISOLATION",
+      "expected": "8 independent state workers consume no peer conclusions"
+    },
+    {
+      "id": "DIRECTION_AUTHORITY",
+      "expected": "W31 only"
+    },
+    {
+      "id": "FINAL_PERMISSION_AUTHORITY",
+      "expected": "P63 only"
+    },
+    {
+      "id": "FULL_VAULT_COVERAGE",
+      "expected": "Modules 89-103 + 94 operational handoff accounted"
+    },
+    {
+      "id": "OUTCOME_FIREWALL",
+      "expected": "all process manifests forbid outcome/future inputs"
+    },
+    {
+      "id": "ADVERSARIAL_PREDECISION",
+      "expected": "P50-P53 cannot consume final permission"
+    },
+    {
+      "id": "PROMPT_HASHING",
+      "expected": "SHA256 prompt pins"
+    },
+    {
+      "id": "R1_INTEROP",
+      "expected": "R1 preflight passes"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "process_id": "P52_PREMORTEM",
+  "version": "1.0.0",
+  "stage": "S5",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/P52_PREMORTEM/prompt.md",
+  "dependencies": [
+    "P40_HYPOTHESIS",
+    "P41_CAUSAL_GRAPH",
+    "P42_SCENARIO",
+    "P38_MARKET_STATE_RECONCILER"
+  ],
+  "required_inputs": [
+    "hypothesis_set",
+    "causal_graph",
+    "root_channel_map",
+    "scenario_tree",
+    "d2_shadow_pack",
+    "market_state_reconciliation"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "premortem",
+      "schema_ref": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_PreMortem.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "COGNITION",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "ADVERSARIAL",
+  "canonical_dependencies": [
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/25 Mandatory Pre-Mortem and Observable Failure Paths.md"
+  ],
+  "authority": {
+    "can_create": [
+      "premortem"
+    ],
+    "cannot_create": [
+      "final_permission"
+    ]
+  },
+  "independence_group": null,
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

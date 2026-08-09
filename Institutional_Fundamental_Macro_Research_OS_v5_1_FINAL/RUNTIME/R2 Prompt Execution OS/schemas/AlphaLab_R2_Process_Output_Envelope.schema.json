@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "process_id",
+    "process_version",
+    "status",
+    "artifacts",
+    "completed_at_utc"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "process_id": {
+      "type": "string"
+    },
+    "process_version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PRESENT",
+        "NOT_APPLICABLE",
+        "UNAVAILABLE",
+        "UNDETERMINED",
+        "ESCALATE",
+        "FAILED"
+      ]
+    },
+    "reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "artifacts": {
+      "type": "object"
+    },
+    "completed_at_utc": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

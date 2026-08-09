@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "process_id",
+    "analysis_cutoff_utc",
+    "prompt_sha256",
+    "prompt_pack_version",
+    "input_artifacts",
+    "canonical_context_paths",
+    "forbidden_context_check",
+    "bundle_hash"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "process_id": {
+      "type": "string"
+    },
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "prompt_sha256": {
+      "type": "string"
+    },
+    "prompt_pack_version": {
+      "type": "string"
+    },
+    "input_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "canonical_context_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forbidden_context_check": {
+      "const": "PASS"
+    },
+    "bundle_hash": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

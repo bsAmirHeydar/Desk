@@ -1,0 +1,59 @@
+{
+  "process_id": "W35_ACTUAL_FLOW",
+  "version": "1.0.0",
+  "stage": "S3",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W35_ACTUAL_FLOW/prompt.md",
+  "dependencies": [
+    "W23_LINEAGE_VALIDATOR"
+  ],
+  "required_inputs": [
+    "evidence_integrity_receipt"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "flow_state",
+      "schema_ref": "97 Actual Flow and Transaction Pressure Science/schemas/AlphaLab_Flow_State.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "MARKET_STATE",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "INDEPENDENT_ANALYST",
+  "canonical_dependencies": [
+    "97 Actual Flow and Transaction Pressure Science/00 Actual Flow and Transaction Pressure Science MOC.md"
+  ],
+  "authority": {
+    "can_create": [
+      "flow_state"
+    ],
+    "cannot_create": [
+      "positioning_state",
+      "fundamental_direction",
+      "final_permission"
+    ]
+  },
+  "independence_group": "INDEPENDENT_STATE_CONSTRUCTION",
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

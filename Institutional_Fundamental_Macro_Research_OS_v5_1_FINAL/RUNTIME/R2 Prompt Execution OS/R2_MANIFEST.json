@@ -1,0 +1,28 @@
+{
+  "runtime_version": "R2.0.0",
+  "scientific_stack": "V21.3.0",
+  "status": "PROMPT_EXECUTION_OS_ACTIVE_R3_PENDING",
+  "phases": {
+    "0": "ARCHITECTURE_CONSTITUTION_COMPLETE",
+    "1": "RUN_STORAGE_CORE_COMPLETE",
+    "2": "POINT_IN_TIME_REPLAY_COMPLETE",
+    "3": "PROMPT_REGISTRY_COMPLETE",
+    "4": "ORCHESTRATOR_PROCESS_GRAPH_COMPLETE"
+  },
+  "authority": {
+    "direction": "NONE",
+    "permission": "NONE",
+    "scientific_mutation": "NONE"
+  },
+  "r1_required": "R1.0.0",
+  "prompt_pack": "ALPHALAB_PROMPT_PACK_1.0.0",
+  "process_graph": "R2_PROCESS_GRAPH_1.0.0",
+  "process_count": 25,
+  "independent_market_state_workers": 8,
+  "coverage_mode_default": "STRICT_FULL",
+  "completion": "EPISTEMIC_COMPLETION",
+  "decision_freeze": "R1_DECISION_SEAL_AFTER_G4",
+  "executor_binding": "HOST_MANAGED_R3_OR_EXTERNAL",
+  "launchers": "R3_PENDING",
+  "outcome_learning": "R3_PENDING"
+}

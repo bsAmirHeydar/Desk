@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "job_id",
+    "run_id",
+    "process_id",
+    "process_version",
+    "stage",
+    "prompt_path",
+    "prompt_sha256",
+    "model_profile",
+    "context_bundle",
+    "expected_outputs",
+    "job_hash"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "job_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "process_id": {
+      "type": "string"
+    },
+    "process_version": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "prompt_path": {
+      "type": "string"
+    },
+    "prompt_sha256": {
+      "type": "string"
+    },
+    "model_profile": {
+      "type": "string"
+    },
+    "context_bundle": {
+      "type": "object"
+    },
+    "expected_outputs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "job_hash": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

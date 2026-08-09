@@ -185,3 +185,8 @@ V21.3 expands the **observable fact surface**, not the direction model. It adds 
 ## Alpha Runtime R1 — Universal Run / Storage / Replay Foundation
 
 `R1.0.0` adds the runtime substrate beneath the unchanged `V21.3.0` scientific stack: a Universal Run Contract, content-addressed immutable artifact storage, SQLite run catalog, strict point-in-time visibility, Decision/Outcome World firewall, Decision Seals and evidence-level replay/reproduction. R1 creates no market Direction or trade Permission. Start at [[RUNTIME/00 Alpha Runtime MOC]].
+
+
+## Alpha Runtime R2 — Prompt Execution OS
+
+`R2.0.0` adds the typed Prompt Registry, Prompt Pack and deterministic Process Graph above certified R1. The scientific stack remains `V21.3.0` and Direction remains `FUNDAMENTAL_ONLY`. R2 executes full-vault science through 25 authority-separated processes, independent state workers, adversarial validation and epistemic completion gates; it creates no new scientific authority. Start at [[RUNTIME/R2 Prompt Execution OS/00 R2 Prompt Execution OS MOC]].

@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "scientific_stack": "V21.3.0",
+  "principle": "Every canonical authority is assigned to at least one process; coverage means governed/accounted, not blindly loaded in every prompt context.",
+  "authorities": {
+    "91_INSTRUMENT": [
+      "P10_SCOPE"
+    ],
+    "95_D1_FACT": [
+      "P11_EVIDENCE_PLAN",
+      "W21_SNAPSHOT_AUDIT",
+      "W22_FACT_CONSTRUCTOR",
+      "W23_LINEAGE_VALIDATOR"
+    ],
+    "93_TIMING": [
+      "W30_TEMPORAL"
+    ],
+    "89_FUNDAMENTAL": [
+      "W31_FUNDAMENTAL"
+    ],
+    "90_NARRATIVE": [
+      "W33_NARRATIVE_REFLEXIVITY_CONSUMPTION"
+    ],
+    "96_POSITIONING": [
+      "W34_POSITIONING"
+    ],
+    "97_ACTUAL_FLOW": [
+      "W35_ACTUAL_FLOW"
+    ],
+    "98_FUNDING": [
+      "W36_FUNDING_PLUMBING"
+    ],
+    "99_MECHANICS_CAPACITY": [
+      "W37_MECHANICS_CAPACITY_VOL"
+    ],
+    "100_D2_ROUTER": [
+      "P11_EVIDENCE_PLAN",
+      "P38_MARKET_STATE_RECONCILER"
+    ],
+    "103_COGNITIVE": [
+      "P40_HYPOTHESIS",
+      "P41_CAUSAL_GRAPH",
+      "P42_SCENARIO",
+      "P50_THESIS_DESTROYER",
+      "P51_MODEL_DISAGREEMENT",
+      "P52_PREMORTEM",
+      "P53_GLOBAL_RECONCILIATION",
+      "P61_UTILITY",
+      "P63_FINAL_DECISION"
+    ],
+    "101_D3": [
+      "P60_D3_EDGE"
+    ],
+    "102_D4": [
+      "P62_D4_GOVERNANCE"
+    ],
+    "94_OPERATIONAL": [
+      "P63_FINAL_DECISION"
+    ]
+  },
+  "production_markets": [
+    "XAUUSD",
+    "NASDAQ100",
+    "SP500",
+    "DJIA",
+    "EURUSD",
+    "USDJPY"
+  ],
+  "fact_observability_families": 16
+}

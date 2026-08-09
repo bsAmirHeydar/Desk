@@ -1,0 +1,54 @@
+{
+  "version": "R2_MODEL_PROFILES_1.0.0",
+  "profiles": {
+    "FACT_PRECISION": {
+      "purpose": "fact/source/vintage verification",
+      "reasoning": "HIGH",
+      "tool_use": "RETRIEVAL_HEAVY",
+      "context": "TARGETED",
+      "temperature_policy": "LOW_VARIANCE",
+      "provider_binding": "HOST_RESOLVED"
+    },
+    "MAX_PRECISION": {
+      "purpose": "deep causal scientific reasoning",
+      "reasoning": "MAX",
+      "tool_use": "FULL_ALLOWED",
+      "context": "MAX_MATERIAL",
+      "temperature_policy": "LOW_VARIANCE",
+      "provider_binding": "HOST_RESOLVED"
+    },
+    "INDEPENDENT_ANALYST": {
+      "purpose": "independent state construction with anchoring control",
+      "reasoning": "MAX",
+      "tool_use": "EVIDENCE_ONLY",
+      "context": "ISOLATED_BY_CONTRACT",
+      "temperature_policy": "LOW_VARIANCE",
+      "provider_binding": "HOST_RESOLVED"
+    },
+    "ADVERSARIAL": {
+      "purpose": "red-team falsification and failure search",
+      "reasoning": "MAX",
+      "tool_use": "EVIDENCE_AND_FROZEN_THESIS",
+      "context": "NO_FINAL_PERMISSION",
+      "temperature_policy": "LOW_VARIANCE",
+      "provider_binding": "HOST_RESOLVED"
+    },
+    "GOVERNANCE": {
+      "purpose": "authority/gate evaluation",
+      "reasoning": "HIGH",
+      "tool_use": "REGISTRY_AND_FROZEN_STATE",
+      "context": "STRICT",
+      "temperature_policy": "MINIMUM_VARIANCE",
+      "provider_binding": "HOST_RESOLVED"
+    },
+    "SYNTHESIS_MAX": {
+      "purpose": "final non-additive synthesis",
+      "reasoning": "MAX",
+      "tool_use": "FROZEN_UPSTREAM_ONLY",
+      "context": "MAX_MATERIAL",
+      "temperature_policy": "LOW_VARIANCE",
+      "provider_binding": "HOST_RESOLVED"
+    }
+  },
+  "rule": "Profiles are capability intents, not vendor/model names. R3/host binds them to concrete models and records the binding in the Run Manifest."
+}

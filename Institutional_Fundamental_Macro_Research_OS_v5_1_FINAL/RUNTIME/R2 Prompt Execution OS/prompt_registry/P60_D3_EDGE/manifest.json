@@ -1,0 +1,65 @@
+{
+  "process_id": "P60_D3_EDGE",
+  "version": "1.0.0",
+  "stage": "S6",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/P60_D3_EDGE/prompt.md",
+  "dependencies": [
+    "P50_THESIS_DESTROYER",
+    "P51_MODEL_DISAGREEMENT",
+    "P52_PREMORTEM",
+    "P53_GLOBAL_RECONCILIATION"
+  ],
+  "required_inputs": [
+    "adversarial_review",
+    "model_disagreement",
+    "premortem",
+    "global_reconciliation"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "d3_adjudication",
+      "schema_ref": "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_D3_Adjudication.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "DECISION",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "SYNTHESIS_MAX",
+  "canonical_dependencies": [
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/27 V19 D3 Full-Vault Production Prompt.md"
+  ],
+  "authority": {
+    "can_create": [
+      "d3_adjudication"
+    ],
+    "cannot_create": [
+      "direction_flip",
+      "science_voting",
+      "new_permission_from_no_trade"
+    ]
+  },
+  "independence_group": null,
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

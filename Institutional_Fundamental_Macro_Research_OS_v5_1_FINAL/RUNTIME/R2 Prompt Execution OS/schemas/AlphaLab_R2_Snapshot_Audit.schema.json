@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "status",
+    "analysis_cutoff_utc",
+    "visible_snapshot_count",
+    "invisible_snapshot_count",
+    "errors"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "visible_snapshot_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "invisible_snapshot_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

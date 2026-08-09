@@ -1,0 +1,37 @@
+{
+  "version": "R2.0.0",
+  "coverage_mode_default": "STRICT_FULL",
+  "research_depth_default": "AUTO",
+  "process_execution": "DAG_WITH_PARALLEL_INDEPENDENT_WORKERS",
+  "max_synthesis_loops": 2,
+  "retry_policy": {
+    "max_attempts_per_node": 2,
+    "retry_only_on": [
+      "TOOL_TRANSIENT",
+      "FORMAT_INVALID",
+      "SCHEMA_REPAIRABLE"
+    ],
+    "never_retry_silently": [
+      "EVIDENCE_CONTRADICTION",
+      "AUTHORITY_VIOLATION",
+      "LOOKAHEAD_VIOLATION"
+    ]
+  },
+  "fallback_policy": "NO_SILENT_DEGRADATION",
+  "completion_policy": "EPISTEMIC_COMPLETION_NOT_LENGTH",
+  "decision_freeze": "R1_DECISION_SEAL_AFTER_G4_ONLY",
+  "outcome_world_before_decision_seal": "FORBIDDEN",
+  "prompt_memory": "TYPED_CONTEXT_ONLY_NO_FREE_CONVERSATION_MEMORY",
+  "cache_key": [
+    "process_id",
+    "process_version",
+    "prompt_sha256",
+    "model_profile",
+    "input_artifact_hashes",
+    "context_bundle_hash",
+    "scientific_stack",
+    "prompt_pack_version"
+  ],
+  "cache_policy": "REUSE_EXACT_ONLY_BEFORE_DECISION_SEAL",
+  "full_vault_semantics": "ENTIRE_VAULT_GOVERNED_SMALLEST_SUFFICIENT_CANONICAL_CONTEXT_NO_SILENT_OMISSION"
+}

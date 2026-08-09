@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "depth_modes": [
+    "AUTO",
+    "STANDARD",
+    "DEEP"
+  ],
+  "execution_modes": [
+    "STRICT_FULL",
+    "EVENT_FAST_STRICT",
+    "DEEP_ESCALATION"
+  ],
+  "auto_escalate_when": [
+    "CONTESTED_DECISION_MATERIAL",
+    "UNMODELED_DRIVER_HIGH",
+    "MATERIAL_DATA_GAP",
+    "CROSS_ASSET_INCONSISTENCY",
+    "DRIVER_TRANSITION",
+    "EVENT_SHOCK",
+    "CRISIS_OR_DISLOCATION"
+  ],
+  "targeted_not_global": "Escalation adds the missing causal/scientific dependencies; it does not blindly load the full Vault.",
+  "event_fast": "Fast changes priority/order, not epistemic standards. Full reconciliation follows at event checkpoints or material triggers.",
+  "max_synthesis_loops": 2
+}

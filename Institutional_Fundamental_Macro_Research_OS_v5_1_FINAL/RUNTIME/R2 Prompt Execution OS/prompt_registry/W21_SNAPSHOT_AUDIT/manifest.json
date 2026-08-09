@@ -1,0 +1,69 @@
+{
+  "process_id": "W21_SNAPSHOT_AUDIT",
+  "version": "1.0.0",
+  "stage": "S2",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W21_SNAPSHOT_AUDIT/prompt.md",
+  "dependencies": [
+    "P11_EVIDENCE_PLAN"
+  ],
+  "required_inputs": [
+    "retrieval_plan",
+    "coverage_requirements",
+    "observability_plan"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "snapshot_manifest",
+      "schema_ref": "RUNTIME/R1 Foundation/schemas/AlphaLab_Snapshot_Manifest.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "EVIDENCE",
+      "mode": "R1_SNAPSHOT_MANIFEST"
+    },
+    {
+      "logical_name": "snapshot_audit",
+      "schema_ref": "RUNTIME/R2 Prompt Execution OS/schemas/AlphaLab_R2_Snapshot_Audit.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "EVIDENCE",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "FACT_PRECISION",
+  "canonical_dependencies": [
+    "95 Fact Constitution and Institutional Evidence Fabric/07 First-Seen Retrieval Ingestion and Snapshot Integrity.md",
+    "RUNTIME/R1 Foundation/03 Temporal Visibility and Point-in-Time Constitution.md"
+  ],
+  "authority": {
+    "can_create": [
+      "snapshot_manifest",
+      "snapshot_audit"
+    ],
+    "cannot_create": [
+      "market_thesis",
+      "future_outcome"
+    ]
+  },
+  "independence_group": null,
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

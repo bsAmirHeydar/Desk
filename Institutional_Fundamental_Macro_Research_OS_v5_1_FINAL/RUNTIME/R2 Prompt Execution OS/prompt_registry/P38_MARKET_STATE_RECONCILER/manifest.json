@@ -1,0 +1,85 @@
+{
+  "process_id": "P38_MARKET_STATE_RECONCILER",
+  "version": "1.0.0",
+  "stage": "S3",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/P38_MARKET_STATE_RECONCILER/prompt.md",
+  "dependencies": [
+    "W30_TEMPORAL",
+    "W31_FUNDAMENTAL",
+    "W32_EXPECTATIONS_POLICY_REGIME",
+    "W33_NARRATIVE_REFLEXIVITY_CONSUMPTION",
+    "W34_POSITIONING",
+    "W35_ACTUAL_FLOW",
+    "W36_FUNDING_PLUMBING",
+    "W37_MECHANICS_CAPACITY_VOL"
+  ],
+  "required_inputs": [
+    "temporal_clearance",
+    "fundamental_state",
+    "surprise_state",
+    "policy_reaction_state",
+    "regime_state",
+    "narrative_state",
+    "reflexivity_state",
+    "consumption_state",
+    "driver_transition",
+    "positioning_state",
+    "flow_state",
+    "funding_plumbing_state",
+    "mechanics_capacity_state"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "d2_shadow_pack",
+      "schema_ref": "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_D2_Shadow_Pack.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "MARKET_STATE",
+      "mode": "ARTIFACT"
+    },
+    {
+      "logical_name": "market_state_reconciliation",
+      "schema_ref": "RUNTIME/R2 Prompt Execution OS/schemas/AlphaLab_R2_Market_State_Reconciliation.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "MARKET_STATE",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "SYNTHESIS_MAX",
+  "canonical_dependencies": [
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/00 Six-Market D2 Fact Books and Production Shadow Engine MOC.md"
+  ],
+  "authority": {
+    "can_create": [
+      "d2_shadow_pack",
+      "market_state_reconciliation"
+    ],
+    "cannot_create": [
+      "fundamental_direction_flip",
+      "final_permission"
+    ]
+  },
+  "independence_group": null,
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

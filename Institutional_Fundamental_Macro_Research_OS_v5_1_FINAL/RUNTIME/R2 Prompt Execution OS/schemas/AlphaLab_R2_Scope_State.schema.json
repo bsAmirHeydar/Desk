@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "instrument",
+    "run_scope",
+    "active_horizon",
+    "strategy_id",
+    "production_profile_status",
+    "ambiguities"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "run_scope": {
+      "enum": [
+        "INSTRUMENT",
+        "MULTI_MARKET",
+        "PORTFOLIO",
+        "EPISODE"
+      ]
+    },
+    "active_horizon": {
+      "type": "string"
+    },
+    "strategy_id": {
+      "type": "string"
+    },
+    "asset_family": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "relevant_sessions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "production_profile_status": {
+      "enum": [
+        "PRODUCTION",
+        "RESEARCH_ONLY",
+        "UNRESOLVED"
+      ]
+    },
+    "ambiguities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

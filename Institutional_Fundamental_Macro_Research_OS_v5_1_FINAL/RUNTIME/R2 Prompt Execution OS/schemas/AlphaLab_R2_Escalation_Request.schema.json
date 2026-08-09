@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "source_process_id",
+    "reason_code",
+    "materiality",
+    "missing_question",
+    "targeted_dependencies",
+    "created_at_utc"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "source_process_id": {
+      "type": "string"
+    },
+    "reason_code": {
+      "type": "string"
+    },
+    "materiality": {
+      "enum": [
+        "DECISION_CRITICAL",
+        "MATERIAL",
+        "SUPPORTING"
+      ]
+    },
+    "missing_question": {
+      "type": "string"
+    },
+    "targeted_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_at_utc": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

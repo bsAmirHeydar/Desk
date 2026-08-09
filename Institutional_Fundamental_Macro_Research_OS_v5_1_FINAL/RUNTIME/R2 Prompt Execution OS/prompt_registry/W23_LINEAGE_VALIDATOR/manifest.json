@@ -1,0 +1,59 @@
+{
+  "process_id": "W23_LINEAGE_VALIDATOR",
+  "version": "1.0.0",
+  "stage": "S2",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W23_LINEAGE_VALIDATOR/prompt.md",
+  "dependencies": [
+    "W22_FACT_CONSTRUCTOR"
+  ],
+  "required_inputs": [
+    "decision_evidence_pack"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "evidence_integrity_receipt",
+      "schema_ref": "RUNTIME/R2 Prompt Execution OS/schemas/AlphaLab_R2_Evidence_Integrity_Receipt.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "EVIDENCE",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "FACT_PRECISION",
+  "canonical_dependencies": [
+    "95 Fact Constitution and Institutional Evidence Fabric/00 Fact Constitution and Institutional Evidence Fabric MOC.md"
+  ],
+  "authority": {
+    "can_create": [
+      "evidence_integrity_receipt"
+    ],
+    "cannot_create": [
+      "new_fact",
+      "direction",
+      "permission"
+    ]
+  },
+  "independence_group": null,
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

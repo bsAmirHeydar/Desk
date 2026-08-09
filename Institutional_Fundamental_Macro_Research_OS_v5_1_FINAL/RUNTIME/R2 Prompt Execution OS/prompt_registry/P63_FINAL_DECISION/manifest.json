@@ -1,0 +1,79 @@
+{
+  "process_id": "P63_FINAL_DECISION",
+  "version": "1.0.0",
+  "stage": "S6",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/P63_FINAL_DECISION/prompt.md",
+  "dependencies": [
+    "P61_UTILITY",
+    "P62_D4_GOVERNANCE"
+  ],
+  "required_inputs": [
+    "decision_utility",
+    "d4_authority_receipt"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "research_intent",
+      "schema_ref": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Research_Intent.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "DECISION",
+      "mode": "ARTIFACT"
+    },
+    {
+      "logical_name": "cognitive_adjudication",
+      "schema_ref": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Adjudication.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "DECISION",
+      "mode": "ARTIFACT"
+    },
+    {
+      "logical_name": "final_permission",
+      "schema_ref": "RUNTIME/R2 Prompt Execution OS/schemas/AlphaLab_R2_Final_Permission.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "DECISION",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "SYNTHESIS_MAX",
+  "canonical_dependencies": [
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/00 Institutional Evidence Calibration Portfolio and Model Risk Production Engine MOC.md"
+  ],
+  "authority": {
+    "can_create": [
+      "research_intent",
+      "cognitive_adjudication",
+      "final_permission"
+    ],
+    "cannot_create": [
+      "invent_evidence",
+      "mutate_frozen_fact",
+      "direction_flip",
+      "outcome_world_access"
+    ]
+  },
+  "independence_group": null,
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

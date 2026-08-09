@@ -1,0 +1,57 @@
+{
+  "process_id": "P61_UTILITY",
+  "version": "1.0.0",
+  "stage": "S6",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/P61_UTILITY/prompt.md",
+  "dependencies": [
+    "P60_D3_EDGE"
+  ],
+  "required_inputs": [
+    "d3_adjudication"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "decision_utility",
+      "schema_ref": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Decision_Utility.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "COGNITION",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "MAX_PRECISION",
+  "canonical_dependencies": [
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/27 Utility-Aware Adjudication and Opportunity Cost.md"
+  ],
+  "authority": {
+    "can_create": [
+      "decision_utility"
+    ],
+    "cannot_create": [
+      "final_permission"
+    ]
+  },
+  "independence_group": null,
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

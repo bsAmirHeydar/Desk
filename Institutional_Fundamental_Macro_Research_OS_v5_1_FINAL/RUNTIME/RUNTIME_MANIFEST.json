@@ -1,11 +1,13 @@
 {
-  "runtime_version": "R1.0.0",
+  "runtime_version": "R2.0.0",
   "scientific_stack": "V21.3.0",
-  "status": "FOUNDATION_ACTIVE_R2_PENDING",
+  "status": "PROMPT_EXECUTION_OS_ACTIVE_R3_PENDING",
   "phases": {
     "0": "ARCHITECTURE_CONSTITUTION_COMPLETE",
     "1": "RUN_STORAGE_CORE_COMPLETE",
-    "2": "POINT_IN_TIME_REPLAY_COMPLETE"
+    "2": "POINT_IN_TIME_REPLAY_COMPLETE",
+    "3": "PROMPT_REGISTRY_COMPLETE",
+    "4": "ORCHESTRATOR_PROCESS_GRAPH_COMPLETE"
   },
   "authority": {
     "direction": "NONE",
@@ -23,14 +25,22 @@
     "decision_outcome_firewall": "ENFORCED",
     "replay_visibility": "ENFORCED"
   },
-  "prompt_runtime": "R2_PENDING",
+  "prompt_runtime": "R2_ACTIVE",
   "launchers": "R3_PENDING",
-  "certification": "R1_SELFTEST_AND_PREFLIGHT",
+  "certification": "R1_PLUS_R2_SELFTEST_AND_PREFLIGHT",
   "windows_portability": {
     "python_314_supported_by_design": true,
     "pyc_required_for_verification": false,
     "external_tzdata_package_required": false,
     "sqlite_explicit_close": true,
     "bundled_timezone_fallback": true
+  },
+  "prompt_execution": {
+    "prompt_pack": "ALPHALAB_PROMPT_PACK_1.0.0",
+    "process_graph": "R2_PROCESS_GRAPH_1.0.0",
+    "process_count": 25,
+    "completion_policy": "EPISTEMIC_COMPLETION",
+    "full_vault_mode": "STRICT_FULL",
+    "executor_binding": "HOST_MANAGED_R3_OR_EXTERNAL"
   }
 }

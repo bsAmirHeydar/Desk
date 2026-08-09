@@ -1,0 +1,124 @@
+{
+  "version": "1.0.0",
+  "principle": "A run may reach final decision only after all decision-critical dimensions are resolved or explicitly unresolved with the appropriate constraint.",
+  "gates": {
+    "G1_SCOPE_EVIDENCE_PLAN": {
+      "required_processes": [
+        "P10_SCOPE",
+        "P11_EVIDENCE_PLAN"
+      ],
+      "required_artifacts": [
+        "scope_state",
+        "retrieval_plan",
+        "coverage_requirements",
+        "observability_plan"
+      ],
+      "checks": [
+        "subject_resolved",
+        "active_horizon_resolved_or_explicit_auto",
+        "all_16_fact_families_accounted",
+        "no_silent_material_omission"
+      ]
+    },
+    "G2_EVIDENCE_ADMISSION": {
+      "required_processes": [
+        "W21_SNAPSHOT_AUDIT",
+        "W22_FACT_CONSTRUCTOR",
+        "W23_LINEAGE_VALIDATOR"
+      ],
+      "required_artifacts": [
+        "snapshot_manifest",
+        "snapshot_audit",
+        "decision_evidence_pack",
+        "evidence_integrity_receipt"
+      ],
+      "checks": [
+        "snapshot_frozen",
+        "point_in_time_visible",
+        "load_bearing_lineage_resolved",
+        "material_gaps_explicit"
+      ]
+    },
+    "G3_COGNITIVE_INTEGRITY": {
+      "required_processes": [
+        "W30_TEMPORAL",
+        "W31_FUNDAMENTAL",
+        "W32_EXPECTATIONS_POLICY_REGIME",
+        "W33_NARRATIVE_REFLEXIVITY_CONSUMPTION",
+        "W34_POSITIONING",
+        "W35_ACTUAL_FLOW",
+        "W36_FUNDING_PLUMBING",
+        "W37_MECHANICS_CAPACITY_VOL",
+        "P38_MARKET_STATE_RECONCILER",
+        "P40_HYPOTHESIS",
+        "P41_CAUSAL_GRAPH",
+        "P42_SCENARIO",
+        "P50_THESIS_DESTROYER",
+        "P51_MODEL_DISAGREEMENT",
+        "P52_PREMORTEM",
+        "P53_GLOBAL_RECONCILIATION"
+      ],
+      "required_artifacts": [
+        "temporal_clearance",
+        "fundamental_state",
+        "surprise_state",
+        "policy_reaction_state",
+        "regime_state",
+        "narrative_state",
+        "reflexivity_state",
+        "consumption_state",
+        "driver_transition",
+        "positioning_state",
+        "flow_state",
+        "funding_plumbing_state",
+        "mechanics_capacity_state",
+        "d2_shadow_pack",
+        "hypothesis_set",
+        "causal_graph",
+        "scenario_tree",
+        "adversarial_review",
+        "model_disagreement",
+        "premortem",
+        "global_reconciliation"
+      ],
+      "checks": [
+        "material_rivals_searched",
+        "decision_material_adverse_path_present_or_reasoned_na",
+        "critical_contradictions_resolved_or_contested",
+        "unmodeled_driver_state_explicit",
+        "semantic_integrity_pass"
+      ]
+    },
+    "G4_DECISION_COMPLETION": {
+      "required_processes": [
+        "P60_D3_EDGE",
+        "P61_UTILITY",
+        "P62_D4_GOVERNANCE",
+        "P63_FINAL_DECISION"
+      ],
+      "required_artifacts": [
+        "d3_adjudication",
+        "decision_utility",
+        "d4_authority_receipt",
+        "research_intent",
+        "cognitive_adjudication",
+        "final_permission"
+      ],
+      "checks": [
+        "direction_authority_fundamental_only",
+        "no_outside_strategy_permission_leak",
+        "structured_review_and_invalidation",
+        "d4_authority_resolved",
+        "permission_is_buy_sell_or_no_trade",
+        "no_outcome_world_artifacts"
+      ]
+    }
+  },
+  "fail_closed": [
+    "DECISION_CRITICAL_UNRESOLVED",
+    "LOOKAHEAD_VIOLATION",
+    "MISSING_LOAD_BEARING_LINEAGE",
+    "AUTHORITY_VIOLATION",
+    "GATE_INCOMPLETE"
+  ]
+}

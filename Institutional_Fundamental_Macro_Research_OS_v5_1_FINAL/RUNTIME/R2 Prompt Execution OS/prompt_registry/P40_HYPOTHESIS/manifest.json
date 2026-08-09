@@ -1,0 +1,59 @@
+{
+  "process_id": "P40_HYPOTHESIS",
+  "version": "1.0.0",
+  "stage": "S4",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/P40_HYPOTHESIS/prompt.md",
+  "dependencies": [
+    "P38_MARKET_STATE_RECONCILER"
+  ],
+  "required_inputs": [
+    "d2_shadow_pack",
+    "market_state_reconciliation"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "hypothesis_set",
+      "schema_ref": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Hypothesis_Set.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "COGNITION",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "MAX_PRECISION",
+  "canonical_dependencies": [
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/03 Competing Causal Hypotheses and Model Tournament.md"
+  ],
+  "authority": {
+    "can_create": [
+      "hypothesis_set"
+    ],
+    "cannot_create": [
+      "final_permission",
+      "fact_mutation"
+    ]
+  },
+  "independence_group": null,
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "instrument",
+    "active_horizon",
+    "fact_families",
+    "mandatory_sciences",
+    "silent_gap_policy"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "active_horizon": {
+      "type": "string"
+    },
+    "fact_families": {
+      "type": "array",
+      "minItems": 16,
+      "items": {
+        "type": "object",
+        "required": [
+          "family_id",
+          "applicability",
+          "materiality",
+          "reason"
+        ],
+        "properties": {
+          "family_id": {
+            "type": "string"
+          },
+          "applicability": {
+            "enum": [
+              "APPLICABLE",
+              "NOT_APPLICABLE",
+              "UNAVAILABLE",
+              "UNDETERMINED"
+            ]
+          },
+          "materiality": {
+            "enum": [
+              "DECISION_CRITICAL",
+              "MATERIAL",
+              "SUPPORTING",
+              "CONTEXTUAL",
+              "NOT_MATERIAL"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "mandatory_sciences": {
+      "type": "array",
+      "minItems": 10,
+      "items": {
+        "type": "string"
+      }
+    },
+    "silent_gap_policy": {
+      "const": "FORBIDDEN"
+    }
+  },
+  "additionalProperties": false
+}

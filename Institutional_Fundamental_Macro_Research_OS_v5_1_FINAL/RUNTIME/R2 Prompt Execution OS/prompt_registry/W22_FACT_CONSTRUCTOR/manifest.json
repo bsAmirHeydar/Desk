@@ -1,0 +1,61 @@
+{
+  "process_id": "W22_FACT_CONSTRUCTOR",
+  "version": "1.0.0",
+  "stage": "S2",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W22_FACT_CONSTRUCTOR/prompt.md",
+  "dependencies": [
+    "W21_SNAPSHOT_AUDIT"
+  ],
+  "required_inputs": [
+    "snapshot_manifest",
+    "snapshot_audit"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "decision_evidence_pack",
+      "schema_ref": "95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Decision_Evidence_Pack.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "EVIDENCE",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "FACT_PRECISION",
+  "canonical_dependencies": [
+    "95 Fact Constitution and Institutional Evidence Fabric/00 Fact Constitution and Institutional Evidence Fabric MOC.md",
+    "95 Fact Constitution and Institutional Evidence Fabric/22 V17 D1 Fact-Governed Full-Vault Production Prompt.md"
+  ],
+  "authority": {
+    "can_create": [
+      "decision_evidence_pack"
+    ],
+    "cannot_create": [
+      "fundamental_direction",
+      "narrative",
+      "permission"
+    ]
+  },
+  "independence_group": null,
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

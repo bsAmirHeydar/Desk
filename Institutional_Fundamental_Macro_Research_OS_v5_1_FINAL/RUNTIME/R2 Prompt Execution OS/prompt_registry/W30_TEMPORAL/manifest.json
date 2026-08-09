@@ -1,0 +1,58 @@
+{
+  "process_id": "W30_TEMPORAL",
+  "version": "1.0.0",
+  "stage": "S3",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W30_TEMPORAL/prompt.md",
+  "dependencies": [
+    "W23_LINEAGE_VALIDATOR"
+  ],
+  "required_inputs": [
+    "evidence_integrity_receipt"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "temporal_clearance",
+      "schema_ref": "93 Temporal Market Structure Timing and Calendar Intelligence Engine/schemas/AlphaLab_Temporal_Clearance.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "MARKET_STATE",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "INDEPENDENT_ANALYST",
+  "canonical_dependencies": [
+    "93 Temporal Market Structure Timing and Calendar Intelligence Engine/00 Temporal Market Structure Timing and Calendar Intelligence Engine MOC.md"
+  ],
+  "authority": {
+    "can_create": [
+      "temporal_clearance"
+    ],
+    "cannot_create": [
+      "fundamental_direction",
+      "final_permission"
+    ]
+  },
+  "independence_group": "INDEPENDENT_STATE_CONSTRUCTION",
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

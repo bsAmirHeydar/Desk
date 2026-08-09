@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "RUN_EXAMPLE",
+  "process_id": "P10_SCOPE",
+  "process_version": "1.0.0",
+  "status": "PRESENT",
+  "reason": null,
+  "artifacts": {
+    "scope_state": {
+      "schema_version": "1.0.0",
+      "instrument": "NASDAQ100",
+      "run_scope": "INSTRUMENT",
+      "active_horizon": "SESSION_1_6H",
+      "strategy_id": "ALPHALAB_FUNDAMENTAL",
+      "asset_family": "GLOBAL_INDEX",
+      "relevant_sessions": [
+        "NEW_YORK"
+      ],
+      "production_profile_status": "PRODUCTION",
+      "ambiguities": []
+    }
+  },
+  "completed_at_utc": "2026-08-09T12:00:00Z"
+}

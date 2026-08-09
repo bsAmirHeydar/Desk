@@ -1,7 +1,7 @@
 ---
 title: Alpha Runtime
 status: canonical-runtime
-runtime_version: R1.0.0
+runtime_version: R2.0.0
 scientific_stack: V21.3.0
 ---
 # Alpha Runtime
@@ -10,13 +10,13 @@ Alpha Runtime is the execution substrate for the Alpha Lab scientific Vault. It 
 
 ## Current runtime status
 
-`R1.0.0` implements **Phase 0 + Phase 1 + Phase 2** only:
+`R2.0.0` preserves certified R1 Phase 0–2 and adds **Phase 3 + Phase 4**: Prompt Registry/Prompt Packs and the Prompt Process Graph Orchestrator.
 
 1. Architecture Constitution.
 2. Universal Run and immutable storage core.
 3. Point-in-time visibility, historical replay and outcome firewall.
 
-It does **not** yet replace the V21.3 production prompt or create a new trade-permission authority. Prompt-process execution and orchestration arrive in R2.
+R2 does **not** create new scientific or trade-permission authority. It executes the V21.3 production science through typed, versioned, authority-separated process prompts. Universal launchers and concrete host execution binding arrive in R3.
 
 ## Start here
 
@@ -36,3 +36,10 @@ Run Store = evidence / states / decisions / outcomes
 ```
 
 Run data are not canonical Vault knowledge and must not be committed to the scientific Git history.
+
+
+## R2 Prompt Execution OS
+
+- [[RUNTIME/R2 Prompt Execution OS/00 R2 Prompt Execution OS MOC]]
+- Prompt pack: `ALPHALAB_PROMPT_PACK_1.0.0`
+- 25 typed processes; 8 independent market-state workers; deterministic stage gates; R1 Decision Seal integration.

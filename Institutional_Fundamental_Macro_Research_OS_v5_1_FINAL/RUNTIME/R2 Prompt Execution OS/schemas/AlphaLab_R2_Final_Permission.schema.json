@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "instrument",
+    "active_horizon",
+    "direction_authority",
+    "permission",
+    "validity",
+    "review_trigger",
+    "invalidation_triggers",
+    "outside_strategy_edges_permission_effect"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "active_horizon": {
+      "type": "string"
+    },
+    "direction_authority": {
+      "const": "FUNDAMENTAL_ONLY"
+    },
+    "permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "validity": {
+      "type": "object"
+    },
+    "review_trigger": {
+      "type": "object"
+    },
+    "invalidation_triggers": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "outside_strategy_edges_permission_effect": {
+      "const": "NONE"
+    },
+    "operational_execution_gate": {
+      "const": "R3_PENDING"
+    }
+  },
+  "additionalProperties": true
+}

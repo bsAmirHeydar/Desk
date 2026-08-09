@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "state",
+    "contradictions",
+    "dependency_notes",
+    "unresolved_material_items"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "state": {
+      "enum": [
+        "COHERENT",
+        "CONTESTED",
+        "FRAGMENTED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "dependency_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unresolved_material_items": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

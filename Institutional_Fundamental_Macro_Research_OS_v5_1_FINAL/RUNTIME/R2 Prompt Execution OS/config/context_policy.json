@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "mode": "FULL_VAULT_STRICT_CONTEXT_COMPILATION",
+  "umbrella_authority": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md",
+  "machine_authority": "CURRENT_PRODUCTION_MANIFEST.json",
+  "always_account_for": [
+    "D1_FACT_CONSTITUTION",
+    "INSTRUMENT_RESOLUTION",
+    "FUNDAMENTAL",
+    "NARRATIVE",
+    "TIMING",
+    "POSITIONING",
+    "ACTUAL_FLOW",
+    "FUNDING_PLUMBING",
+    "MECHANICS_CAPACITY",
+    "D2_ROUTER",
+    "COGNITIVE_HARDENING",
+    "D3",
+    "D4",
+    "OPERATIONAL_HANDOFF"
+  ],
+  "fact_families": 16,
+  "rules": [
+    "ALL_MATERIAL_DIMENSIONS_ACCOUNTED",
+    "EXCLUDED_DIMENSION_REQUIRES_REASON",
+    "UNAVAILABLE_IS_STATE_NOT_ZERO",
+    "PROXY_NEVER_PROMOTED_TO_FACT",
+    "INFERENCE_NEVER_PROMOTED_TO_FACT",
+    "OUTCOME_WORLD_FORBIDDEN_PRE_SEAL",
+    "LEGACY_ENTRYPOINTS_FORBIDDEN",
+    "SMALLEST_SUFFICIENT_CANONICAL_SET"
+  ],
+  "dynamic_sources": [
+    "CURRENT_PRODUCTION_MANIFEST.asset_books",
+    "CURRENT_PRODUCTION_MANIFEST.required_runtime_contracts",
+    "94 retrieval planner/topic dependencies",
+    "100 observability map/source registry",
+    "process-specific canonical_dependencies"
+  ],
+  "forbidden_context_pre_decision": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision"
+  ]
+}

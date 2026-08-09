@@ -1,0 +1,59 @@
+{
+  "process_id": "W34_POSITIONING",
+  "version": "1.0.0",
+  "stage": "S3",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W34_POSITIONING/prompt.md",
+  "dependencies": [
+    "W23_LINEAGE_VALIDATOR"
+  ],
+  "required_inputs": [
+    "evidence_integrity_receipt"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "positioning_state",
+      "schema_ref": "96 Positioning Ownership and Crowding Science/schemas/AlphaLab_Positioning_State.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "MARKET_STATE",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "INDEPENDENT_ANALYST",
+  "canonical_dependencies": [
+    "96 Positioning Ownership and Crowding Science/00 Positioning Ownership and Crowding Science MOC.md"
+  ],
+  "authority": {
+    "can_create": [
+      "positioning_state"
+    ],
+    "cannot_create": [
+      "flow_state",
+      "fundamental_direction",
+      "final_permission"
+    ]
+  },
+  "independence_group": "INDEPENDENT_STATE_CONSTRUCTION",
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

@@ -1,0 +1,77 @@
+{
+  "process_id": "P11_EVIDENCE_PLAN",
+  "version": "1.0.0",
+  "stage": "S1",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/P11_EVIDENCE_PLAN/prompt.md",
+  "dependencies": [
+    "P10_SCOPE"
+  ],
+  "required_inputs": [
+    "scope_state"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "retrieval_plan",
+      "schema_ref": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Retrieval_Plan.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "EVIDENCE",
+      "mode": "ARTIFACT"
+    },
+    {
+      "logical_name": "coverage_requirements",
+      "schema_ref": "RUNTIME/R2 Prompt Execution OS/schemas/AlphaLab_R2_Coverage_Requirements.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "EVIDENCE",
+      "mode": "ARTIFACT"
+    },
+    {
+      "logical_name": "observability_plan",
+      "schema_ref": "RUNTIME/R2 Prompt Execution OS/schemas/AlphaLab_R2_Observability_Plan.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "EVIDENCE",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "FACT_PRECISION",
+  "canonical_dependencies": [
+    "95 Fact Constitution and Institutional Evidence Fabric/00 Fact Constitution and Institutional Evidence Fabric MOC.md",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/23 Retrieval Planning and Context Firewall.md",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/26 Fact Observability and Coverage Constitution.md"
+  ],
+  "authority": {
+    "can_create": [
+      "retrieval_plan",
+      "coverage_requirements",
+      "observability_plan"
+    ],
+    "cannot_create": [
+      "facts",
+      "hypotheses",
+      "final_permission"
+    ]
+  },
+  "independence_group": null,
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

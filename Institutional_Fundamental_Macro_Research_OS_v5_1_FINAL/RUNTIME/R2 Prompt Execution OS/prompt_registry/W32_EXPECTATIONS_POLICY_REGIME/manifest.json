@@ -1,0 +1,76 @@
+{
+  "process_id": "W32_EXPECTATIONS_POLICY_REGIME",
+  "version": "1.0.0",
+  "stage": "S3",
+  "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W32_EXPECTATIONS_POLICY_REGIME/prompt.md",
+  "dependencies": [
+    "W23_LINEAGE_VALIDATOR"
+  ],
+  "required_inputs": [
+    "evidence_integrity_receipt"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory"
+  ],
+  "outputs": [
+    {
+      "logical_name": "surprise_state",
+      "schema_ref": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Surprise_State.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "MARKET_STATE",
+      "mode": "ARTIFACT"
+    },
+    {
+      "logical_name": "policy_reaction_state",
+      "schema_ref": "RUNTIME/R2 Prompt Execution OS/schemas/AlphaLab_R2_Policy_Reaction_Output.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "MARKET_STATE",
+      "mode": "ARTIFACT"
+    },
+    {
+      "logical_name": "regime_state",
+      "schema_ref": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Regime_State.schema.json",
+      "world": "DECISION",
+      "artifact_stage": "MARKET_STATE",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "INDEPENDENT_ANALYST",
+  "canonical_dependencies": [
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/08 Economic Surprise versus Market Surprise.md",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/10 Policy Reaction Function Intelligence.md",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/11 Regime Vector and State-Dependent Causal Mapping.md"
+  ],
+  "authority": {
+    "can_create": [
+      "surprise_state",
+      "policy_reaction_state",
+      "regime_state"
+    ],
+    "cannot_create": [
+      "fundamental_direction",
+      "final_permission"
+    ]
+  },
+  "independence_group": "INDEPENDENT_STATE_CONSTRUCTION",
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "TARGETED_ONLY",
+  "context_mode": "TYPED_AND_CANONICAL_ONLY"
+}

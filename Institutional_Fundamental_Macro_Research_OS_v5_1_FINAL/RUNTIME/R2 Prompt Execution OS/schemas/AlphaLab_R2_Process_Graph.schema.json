@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "version",
+    "prompt_pack_version",
+    "stages",
+    "nodes",
+    "parallel_groups",
+    "decision_freeze_after"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "prompt_pack_version": {
+      "type": "string"
+    },
+    "stages": {
+      "type": "object"
+    },
+    "nodes": {
+      "type": "object"
+    },
+    "parallel_groups": {
+      "type": "array"
+    },
+    "decision_freeze_after": {
+      "type": "string"
+    },
+    "max_synthesis_loops": {
+      "type": "integer"
+    },
+    "loop_policy": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

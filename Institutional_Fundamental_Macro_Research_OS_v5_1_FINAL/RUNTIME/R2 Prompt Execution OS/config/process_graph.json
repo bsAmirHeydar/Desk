@@ -1,0 +1,312 @@
+{
+  "version": "R2_PROCESS_GRAPH_1.0.0",
+  "prompt_pack_version": "ALPHALAB_PROMPT_PACK_1.0.0",
+  "stages": {
+    "S1": {
+      "name": "Scope and Evidence Planning",
+      "nodes": [
+        "P10_SCOPE",
+        "P11_EVIDENCE_PLAN"
+      ],
+      "gate": "G1_SCOPE_EVIDENCE_PLAN"
+    },
+    "S2": {
+      "name": "Evidence Construction",
+      "nodes": [
+        "W21_SNAPSHOT_AUDIT",
+        "W22_FACT_CONSTRUCTOR",
+        "W23_LINEAGE_VALIDATOR"
+      ],
+      "gate": "G2_EVIDENCE_ADMISSION"
+    },
+    "S3": {
+      "name": "Independent Market State",
+      "nodes": [
+        "W30_TEMPORAL",
+        "W31_FUNDAMENTAL",
+        "W32_EXPECTATIONS_POLICY_REGIME",
+        "W33_NARRATIVE_REFLEXIVITY_CONSUMPTION",
+        "W34_POSITIONING",
+        "W35_ACTUAL_FLOW",
+        "W36_FUNDING_PLUMBING",
+        "W37_MECHANICS_CAPACITY_VOL",
+        "P38_MARKET_STATE_RECONCILER"
+      ],
+      "gate": null
+    },
+    "S4": {
+      "name": "Cognitive Synthesis",
+      "nodes": [
+        "P40_HYPOTHESIS",
+        "P41_CAUSAL_GRAPH",
+        "P42_SCENARIO"
+      ],
+      "gate": null
+    },
+    "S5": {
+      "name": "Adversarial Validation",
+      "nodes": [
+        "P50_THESIS_DESTROYER",
+        "P51_MODEL_DISAGREEMENT",
+        "P52_PREMORTEM",
+        "P53_GLOBAL_RECONCILIATION"
+      ],
+      "gate": "G3_COGNITIVE_INTEGRITY"
+    },
+    "S6": {
+      "name": "Decision Synthesis",
+      "nodes": [
+        "P60_D3_EDGE",
+        "P61_UTILITY",
+        "P62_D4_GOVERNANCE",
+        "P63_FINAL_DECISION"
+      ],
+      "gate": "G4_DECISION_COMPLETION"
+    }
+  },
+  "nodes": {
+    "P10_SCOPE": {
+      "stage": "S1",
+      "dependencies": [],
+      "independence_group": null,
+      "required": true
+    },
+    "P11_EVIDENCE_PLAN": {
+      "stage": "S1",
+      "dependencies": [
+        "P10_SCOPE"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "W21_SNAPSHOT_AUDIT": {
+      "stage": "S2",
+      "dependencies": [
+        "P11_EVIDENCE_PLAN"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "W22_FACT_CONSTRUCTOR": {
+      "stage": "S2",
+      "dependencies": [
+        "W21_SNAPSHOT_AUDIT"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "W23_LINEAGE_VALIDATOR": {
+      "stage": "S2",
+      "dependencies": [
+        "W22_FACT_CONSTRUCTOR"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "W30_TEMPORAL": {
+      "stage": "S3",
+      "dependencies": [
+        "W23_LINEAGE_VALIDATOR"
+      ],
+      "independence_group": "INDEPENDENT_STATE_CONSTRUCTION",
+      "required": true
+    },
+    "W31_FUNDAMENTAL": {
+      "stage": "S3",
+      "dependencies": [
+        "W23_LINEAGE_VALIDATOR"
+      ],
+      "independence_group": "INDEPENDENT_STATE_CONSTRUCTION",
+      "required": true
+    },
+    "W32_EXPECTATIONS_POLICY_REGIME": {
+      "stage": "S3",
+      "dependencies": [
+        "W23_LINEAGE_VALIDATOR"
+      ],
+      "independence_group": "INDEPENDENT_STATE_CONSTRUCTION",
+      "required": true
+    },
+    "W33_NARRATIVE_REFLEXIVITY_CONSUMPTION": {
+      "stage": "S3",
+      "dependencies": [
+        "W23_LINEAGE_VALIDATOR"
+      ],
+      "independence_group": "INDEPENDENT_STATE_CONSTRUCTION",
+      "required": true
+    },
+    "W34_POSITIONING": {
+      "stage": "S3",
+      "dependencies": [
+        "W23_LINEAGE_VALIDATOR"
+      ],
+      "independence_group": "INDEPENDENT_STATE_CONSTRUCTION",
+      "required": true
+    },
+    "W35_ACTUAL_FLOW": {
+      "stage": "S3",
+      "dependencies": [
+        "W23_LINEAGE_VALIDATOR"
+      ],
+      "independence_group": "INDEPENDENT_STATE_CONSTRUCTION",
+      "required": true
+    },
+    "W36_FUNDING_PLUMBING": {
+      "stage": "S3",
+      "dependencies": [
+        "W23_LINEAGE_VALIDATOR"
+      ],
+      "independence_group": "INDEPENDENT_STATE_CONSTRUCTION",
+      "required": true
+    },
+    "W37_MECHANICS_CAPACITY_VOL": {
+      "stage": "S3",
+      "dependencies": [
+        "W23_LINEAGE_VALIDATOR"
+      ],
+      "independence_group": "INDEPENDENT_STATE_CONSTRUCTION",
+      "required": true
+    },
+    "P38_MARKET_STATE_RECONCILER": {
+      "stage": "S3",
+      "dependencies": [
+        "W30_TEMPORAL",
+        "W31_FUNDAMENTAL",
+        "W32_EXPECTATIONS_POLICY_REGIME",
+        "W33_NARRATIVE_REFLEXIVITY_CONSUMPTION",
+        "W34_POSITIONING",
+        "W35_ACTUAL_FLOW",
+        "W36_FUNDING_PLUMBING",
+        "W37_MECHANICS_CAPACITY_VOL"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "P40_HYPOTHESIS": {
+      "stage": "S4",
+      "dependencies": [
+        "P38_MARKET_STATE_RECONCILER"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "P41_CAUSAL_GRAPH": {
+      "stage": "S4",
+      "dependencies": [
+        "P40_HYPOTHESIS"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "P42_SCENARIO": {
+      "stage": "S4",
+      "dependencies": [
+        "P40_HYPOTHESIS",
+        "P41_CAUSAL_GRAPH"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "P50_THESIS_DESTROYER": {
+      "stage": "S5",
+      "dependencies": [
+        "P40_HYPOTHESIS",
+        "P41_CAUSAL_GRAPH",
+        "P42_SCENARIO",
+        "P38_MARKET_STATE_RECONCILER"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "P51_MODEL_DISAGREEMENT": {
+      "stage": "S5",
+      "dependencies": [
+        "P40_HYPOTHESIS",
+        "P41_CAUSAL_GRAPH",
+        "P42_SCENARIO",
+        "P38_MARKET_STATE_RECONCILER"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "P52_PREMORTEM": {
+      "stage": "S5",
+      "dependencies": [
+        "P40_HYPOTHESIS",
+        "P41_CAUSAL_GRAPH",
+        "P42_SCENARIO",
+        "P38_MARKET_STATE_RECONCILER"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "P53_GLOBAL_RECONCILIATION": {
+      "stage": "S5",
+      "dependencies": [
+        "P40_HYPOTHESIS",
+        "P41_CAUSAL_GRAPH",
+        "P42_SCENARIO",
+        "P38_MARKET_STATE_RECONCILER"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "P60_D3_EDGE": {
+      "stage": "S6",
+      "dependencies": [
+        "P50_THESIS_DESTROYER",
+        "P51_MODEL_DISAGREEMENT",
+        "P52_PREMORTEM",
+        "P53_GLOBAL_RECONCILIATION"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "P61_UTILITY": {
+      "stage": "S6",
+      "dependencies": [
+        "P60_D3_EDGE"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "P62_D4_GOVERNANCE": {
+      "stage": "S6",
+      "dependencies": [
+        "P60_D3_EDGE"
+      ],
+      "independence_group": null,
+      "required": true
+    },
+    "P63_FINAL_DECISION": {
+      "stage": "S6",
+      "dependencies": [
+        "P61_UTILITY",
+        "P62_D4_GOVERNANCE"
+      ],
+      "independence_group": null,
+      "required": true
+    }
+  },
+  "parallel_groups": [
+    [
+      "W30_TEMPORAL",
+      "W31_FUNDAMENTAL",
+      "W32_EXPECTATIONS_POLICY_REGIME",
+      "W33_NARRATIVE_REFLEXIVITY_CONSUMPTION",
+      "W34_POSITIONING",
+      "W35_ACTUAL_FLOW",
+      "W36_FUNDING_PLUMBING",
+      "W37_MECHANICS_CAPACITY_VOL"
+    ],
+    [
+      "P50_THESIS_DESTROYER",
+      "P51_MODEL_DISAGREEMENT",
+      "P52_PREMORTEM",
+      "P53_GLOBAL_RECONCILIATION"
+    ]
+  ],
+  "decision_freeze_after": "G4_DECISION_COMPLETION",
+  "max_synthesis_loops": 2,
+  "loop_policy": "Only P40-P42 may be repeated, and only when G3 identifies a material missing rival/causal branch. Previous artifacts remain auditable attempts; no silent rewrite."
+}
