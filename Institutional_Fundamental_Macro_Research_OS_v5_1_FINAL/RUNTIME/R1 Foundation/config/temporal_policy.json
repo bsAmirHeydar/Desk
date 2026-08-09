@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "canonical_timezone": "UTC",
+  "canonical_format": "RFC3339_Z",
+  "visibility_rule": "FIRST_AVAILABLE_LTE_ANALYSIS_CUTOFF",
+  "strict_replay_vintage_integrity": [
+    "ORIGINAL_CAPTURE",
+    "OFFICIAL_VINTAGE_ARCHIVE"
+  ],
+  "limited_replay_vintage_integrity": [
+    "RECONSTRUCTED_WITH_PROVENANCE"
+  ],
+  "forbidden_replay_vintage_integrity": [
+    "CURRENT_ONLY"
+  ],
+  "undetermined_replay_vintage_integrity": [
+    "UNDETERMINED"
+  ],
+  "ambiguous_local_time": "REQUIRE_OFFSET_OR_FOLD",
+  "future_data": "FORBIDDEN_IN_DECISION_WORLD"
+}

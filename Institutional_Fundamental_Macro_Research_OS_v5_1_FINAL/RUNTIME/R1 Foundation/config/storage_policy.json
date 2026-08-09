@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "backend": "LOCAL_FS_SQLITE",
+  "object_hash": "SHA256",
+  "object_store": "objects/sha256",
+  "run_store": "runs",
+  "catalog": "catalog/catalog.sqlite3",
+  "locks": "locks",
+  "tmp": "tmp",
+  "sqlite_wal": true,
+  "busy_timeout_ms": 15000,
+  "default_data_root": "SIBLING_OF_GIT_REPOSITORY/AlphaLab_Data",
+  "data_root_precedence": [
+    "CLI",
+    "ALPHALAB_DATA_ROOT",
+    "SIBLING_DEFAULT"
+  ],
+  "run_data_in_git": "FORBIDDEN"
+}

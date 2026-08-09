@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "research_program_id": "ALPHALAB_FUNDAMENTAL_NDX",
+  "episode_id": null,
+  "run_scope": "INSTRUMENT",
+  "subject": "NASDAQ100",
+  "instrument": "NASDAQ100",
+  "run_mode": "LIVE",
+  "analysis_cutoff": "NOW",
+  "strategy_id": "ALPHALAB_FUNDAMENTAL",
+  "active_horizon": "AUTO",
+  "coverage_mode": "STRICT_FULL",
+  "research_depth": "AUTO",
+  "output_depth": "FULL",
+  "lookahead_policy": "STRICT_POINT_IN_TIME",
+  "execution_profile": "DONCHIAN_M1_20_ATR4",
+  "allow_private_sources": false,
+  "idempotency_policy": "REUSE_EXACT",
+  "tags": []
+}

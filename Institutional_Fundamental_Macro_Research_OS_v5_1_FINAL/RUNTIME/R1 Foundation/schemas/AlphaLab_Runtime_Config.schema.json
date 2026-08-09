@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Runtime Config",
+  "type": "object",
+  "required": [
+    "runtime_version",
+    "storage_backend",
+    "data_root_policy",
+    "lookahead_policy"
+  ],
+  "properties": {
+    "runtime_version": {
+      "const": "R1.0.0"
+    },
+    "storage_backend": {
+      "enum": [
+        "LOCAL_FS_SQLITE"
+      ]
+    },
+    "data_root_policy": {
+      "enum": [
+        "CLI_ENV_OR_SIBLING_DEFAULT"
+      ]
+    },
+    "lookahead_policy": {
+      "const": "STRICT_POINT_IN_TIME"
+    },
+    "sqlite_wal": {
+      "type": "boolean"
+    },
+    "busy_timeout_ms": {
+      "type": "integer",
+      "minimum": 1000
+    },
+    "object_hash": {
+      "const": "SHA256"
+    },
+    "warehouse_status": {
+      "enum": [
+        "R3_PENDING"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

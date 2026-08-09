@@ -31,7 +31,8 @@
     "d3_unified_edge": "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/00 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine MOC.md",
     "d4_forward_validation": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/00 Forward Validation Calibration Promotion and Scientific Governance Engine MOC.md",
     "cognitive_scenario_reasoning": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/00 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine MOC.md",
-    "fact_observability": "100 Six-Market D2 Fact Books and Production Shadow Engine/26 Fact Observability and Coverage Constitution.md"
+    "fact_observability": "100 Six-Market D2 Fact Books and Production Shadow Engine/26 Fact Observability and Coverage Constitution.md",
+    "runtime_foundation": "RUNTIME/R1 Foundation/00 R1 Foundation MOC.md"
   },
   "asset_books": {
     "XAUUSD": [
@@ -212,7 +213,20 @@
     "100 Six-Market D2 Fact Books and Production Shadow Engine/config/fact_observability_registry.json",
     "100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_observability_map.json",
     "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Receipt.schema.json",
-    "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Item.schema.json"
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Item.schema.json",
+    "RUNTIME/RUNTIME_MANIFEST.json",
+    "RUNTIME/R1 Foundation/config/runtime_policy.json",
+    "RUNTIME/R1 Foundation/config/storage_policy.json",
+    "RUNTIME/R1 Foundation/config/temporal_policy.json",
+    "RUNTIME/R1 Foundation/config/lifecycle_policy.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Runtime_Config.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Run_Request.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Run_Manifest.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Artifact_Ref.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Source_Snapshot_Record.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Visibility_Receipt.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Decision_Seal.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Replay_Request.schema.json"
   ],
   "production_universe": [
     "XAUUSD",
@@ -379,5 +393,26 @@
     "baseline_materiality": "SIX_MARKET_MAP_PRIOR",
     "runtime_materiality": "CONTEXT_SENSITIVE_WITH_EXPLICIT_REASON",
     "silent_gap_policy": "FORBIDDEN"
+  },
+  "alpha_runtime": {
+    "runtime_version": "R1.0.0",
+    "status": "FOUNDATION_ACTIVE_R2_PENDING",
+    "scientific_stack_binding": "V21.3.0",
+    "phases_installed": [
+      0,
+      1,
+      2
+    ],
+    "universal_run_contract": "RUNTIME/R1 Foundation/02 Universal Run Contract.md",
+    "storage_constitution": "RUNTIME/R1 Foundation/04 Storage Constitution.md",
+    "temporal_constitution": "RUNTIME/R1 Foundation/03 Temporal Visibility and Point-in-Time Constitution.md",
+    "decision_outcome_firewall": "ENFORCED",
+    "content_addressed_store": "SHA256",
+    "catalog_backend": "SQLITE",
+    "historical_live_schema_parity": "ENFORCED",
+    "prompt_runtime": "R2_PENDING",
+    "launcher_runtime": "R3_PENDING",
+    "market_direction_authority": "NONE",
+    "permission_authority": "NONE"
   }
 }

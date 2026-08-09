@@ -1,0 +1,24 @@
+{
+  "version": "R1.0.0",
+  "scientific_stack": "V21.3.0",
+  "authority": "ZERO_DIRECTION_ZERO_PERMISSION",
+  "default_coverage_mode": "STRICT_FULL",
+  "completion_policy": "EPISTEMIC_COMPLETION",
+  "lookahead_policy": "STRICT_POINT_IN_TIME",
+  "decision_outcome_firewall": "ENFORCED",
+  "run_modes": [
+    "LIVE",
+    "SHADOW_LIVE",
+    "HISTORICAL_REPLAY",
+    "RESEARCH_REPLAY",
+    "REPRODUCTION_REPLAY"
+  ],
+  "run_scopes": [
+    "INSTRUMENT",
+    "MULTI_MARKET",
+    "PORTFOLIO",
+    "EPISODE"
+  ],
+  "prompt_runtime_status": "R2_PENDING",
+  "warehouse_status": "R3_PENDING"
+}

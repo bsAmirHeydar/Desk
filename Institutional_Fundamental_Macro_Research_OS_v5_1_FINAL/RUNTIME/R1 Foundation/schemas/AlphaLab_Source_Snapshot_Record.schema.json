@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Source Snapshot Record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "snapshot_id",
+    "artifact_hash",
+    "source_id",
+    "requirement_id",
+    "materiality",
+    "applicability",
+    "first_available_time",
+    "retrieved_at",
+    "vintage_integrity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "snapshot_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artifact_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requirement_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fact_key": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "vintage_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "materiality": {
+      "enum": [
+        "DECISION_CRITICAL",
+        "MATERIAL",
+        "SUPPORTING",
+        "CONTEXTUAL"
+      ]
+    },
+    "applicability": {
+      "enum": [
+        "APPLICABLE",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "event_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reference_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "effective_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publication_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "first_available_time": {
+      "type": "string",
+      "minLength": 1
+    },
+    "retrieved_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ingested_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "superseded_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supersedes_snapshot_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "vintage_integrity": {
+      "enum": [
+        "ORIGINAL_CAPTURE",
+        "OFFICIAL_VINTAGE_ARCHIVE",
+        "RECONSTRUCTED_WITH_PROVENANCE",
+        "CURRENT_ONLY",
+        "UNDETERMINED"
+      ]
+    },
+    "source_semantics": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

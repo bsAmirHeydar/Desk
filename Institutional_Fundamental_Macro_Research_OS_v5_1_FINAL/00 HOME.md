@@ -270,3 +270,8 @@ V21.3 closes the highest-value residual **fact observability** gaps without addi
 
 - [[V21_3_FACT_OBSERVABILITY_AUTHORITY_MAP.yaml]] — V21.3 authority preservation and observability precedence.
 - [[V21_3_MIGRATION_AND_PRECEDENCE_MAP]] — baseline/materiality/coverage migration rules.
+
+
+## Alpha Runtime R1 — Universal Run / Storage / Replay Foundation
+
+`R1.0.0` adds the runtime substrate beneath the unchanged `V21.3.0` scientific stack: a Universal Run Contract, content-addressed immutable artifact storage, SQLite run catalog, strict point-in-time visibility, Decision/Outcome World firewall, Decision Seals and evidence-level replay/reproduction. R1 creates no market Direction or trade Permission. Start at [[RUNTIME/00 Alpha Runtime MOC]].

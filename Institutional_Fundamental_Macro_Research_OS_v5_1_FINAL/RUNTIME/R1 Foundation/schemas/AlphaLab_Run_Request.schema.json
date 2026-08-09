@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab Universal Run Request",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "research_program_id",
+    "run_scope",
+    "subject",
+    "run_mode",
+    "analysis_cutoff",
+    "strategy_id",
+    "coverage_mode",
+    "research_depth",
+    "output_depth",
+    "lookahead_policy"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "research_program_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "episode_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "run_scope": {
+      "enum": [
+        "INSTRUMENT",
+        "MULTI_MARKET",
+        "PORTFOLIO",
+        "EPISODE"
+      ]
+    },
+    "subject": {
+      "type": "string",
+      "minLength": 1
+    },
+    "instrument": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "run_mode": {
+      "enum": [
+        "LIVE",
+        "SHADOW_LIVE",
+        "HISTORICAL_REPLAY",
+        "RESEARCH_REPLAY",
+        "REPRODUCTION_REPLAY"
+      ]
+    },
+    "analysis_cutoff": {
+      "type": "string",
+      "minLength": 1
+    },
+    "strategy_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "active_horizon": {
+      "type": "string"
+    },
+    "coverage_mode": {
+      "enum": [
+        "STRICT_FULL",
+        "EVENT_FAST_STRICT",
+        "DEEP_ESCALATION"
+      ]
+    },
+    "research_depth": {
+      "enum": [
+        "AUTO",
+        "STANDARD",
+        "DEEP"
+      ]
+    },
+    "output_depth": {
+      "enum": [
+        "MACHINE",
+        "COMPACT",
+        "FULL"
+      ]
+    },
+    "lookahead_policy": {
+      "const": "STRICT_POINT_IN_TIME"
+    },
+    "execution_profile": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "allow_private_sources": {
+      "type": "boolean"
+    },
+    "idempotency_policy": {
+      "enum": [
+        "REUSE_EXACT",
+        "NEW_RUN"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

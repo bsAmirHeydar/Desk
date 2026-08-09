@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "worlds": {
+    "META": [
+      "request",
+      "manifest",
+      "events",
+      "artifact_index"
+    ],
+    "DECISION": [
+      "retrieval_plan",
+      "observability_receipt",
+      "snapshot_manifest",
+      "evidence_pack",
+      "fact_state",
+      "fundamental_state",
+      "expectation_state",
+      "policy_regime_state",
+      "narrative_state",
+      "d2_state",
+      "causal_graph",
+      "hypotheses",
+      "scenarios",
+      "adversarial",
+      "model_disagreement",
+      "premortem",
+      "global_reconciliation",
+      "d3",
+      "d4",
+      "research_intent",
+      "permission"
+    ],
+    "OUTCOME": [
+      "execution",
+      "outcome",
+      "path_metrics"
+    ],
+    "LEARNING": [
+      "counterfactuals",
+      "cognitive_telemetry",
+      "calibration_receipt"
+    ]
+  },
+  "decision_world_post_seal": "IMMUTABLE",
+  "outcome_world_pre_seal": "FORBIDDEN"
+}

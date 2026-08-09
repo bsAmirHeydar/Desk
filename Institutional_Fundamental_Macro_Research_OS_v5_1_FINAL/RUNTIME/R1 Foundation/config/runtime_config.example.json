@@ -1,0 +1,10 @@
+{
+  "runtime_version": "R1.0.0",
+  "storage_backend": "LOCAL_FS_SQLITE",
+  "data_root_policy": "CLI_ENV_OR_SIBLING_DEFAULT",
+  "lookahead_policy": "STRICT_POINT_IN_TIME",
+  "sqlite_wal": true,
+  "busy_timeout_ms": 15000,
+  "object_hash": "SHA256",
+  "warehouse_status": "R3_PENDING"
+}

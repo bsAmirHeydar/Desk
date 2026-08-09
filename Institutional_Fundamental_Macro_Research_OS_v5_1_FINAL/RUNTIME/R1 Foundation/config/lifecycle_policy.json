@@ -1,0 +1,98 @@
+{
+  "version": "1.0.0",
+  "initial_state": "REQUESTED",
+  "states": [
+    "REQUESTED",
+    "INPUTS_RESOLVED",
+    "SNAPSHOT_FROZEN",
+    "EVIDENCE_FROZEN",
+    "COGNITION_FROZEN",
+    "DECISION_FROZEN",
+    "PERMISSION_ISSUED",
+    "EXECUTION_PENDING",
+    "EXECUTED",
+    "NO_TRIGGER",
+    "NO_TRADE",
+    "OUTCOME_MATURED",
+    "COUNTERFACTUALS_ATTACHED",
+    "D4_CALIBRATED",
+    "CLOSED",
+    "FAILED",
+    "ABORTED"
+  ],
+  "allowed_transitions": {
+    "REQUESTED": [
+      "INPUTS_RESOLVED",
+      "FAILED",
+      "ABORTED"
+    ],
+    "INPUTS_RESOLVED": [
+      "SNAPSHOT_FROZEN",
+      "FAILED",
+      "ABORTED"
+    ],
+    "SNAPSHOT_FROZEN": [
+      "EVIDENCE_FROZEN",
+      "FAILED",
+      "ABORTED"
+    ],
+    "EVIDENCE_FROZEN": [
+      "COGNITION_FROZEN",
+      "FAILED",
+      "ABORTED"
+    ],
+    "COGNITION_FROZEN": [
+      "DECISION_FROZEN",
+      "FAILED",
+      "ABORTED"
+    ],
+    "DECISION_FROZEN": [
+      "PERMISSION_ISSUED",
+      "NO_TRADE",
+      "FAILED",
+      "ABORTED"
+    ],
+    "PERMISSION_ISSUED": [
+      "EXECUTION_PENDING",
+      "NO_TRADE",
+      "FAILED",
+      "ABORTED"
+    ],
+    "EXECUTION_PENDING": [
+      "EXECUTED",
+      "NO_TRIGGER",
+      "FAILED",
+      "ABORTED"
+    ],
+    "EXECUTED": [
+      "OUTCOME_MATURED",
+      "FAILED"
+    ],
+    "NO_TRIGGER": [
+      "OUTCOME_MATURED",
+      "CLOSED"
+    ],
+    "NO_TRADE": [
+      "OUTCOME_MATURED",
+      "CLOSED"
+    ],
+    "OUTCOME_MATURED": [
+      "COUNTERFACTUALS_ATTACHED",
+      "D4_CALIBRATED",
+      "CLOSED"
+    ],
+    "COUNTERFACTUALS_ATTACHED": [
+      "D4_CALIBRATED",
+      "CLOSED"
+    ],
+    "D4_CALIBRATED": [
+      "CLOSED"
+    ],
+    "FAILED": [],
+    "ABORTED": [],
+    "CLOSED": []
+  },
+  "outcome_world_minimum_state": "DECISION_FROZEN",
+  "decision_world_writable_until": "COGNITION_FROZEN",
+  "decision_seal_transition": "COGNITION_FROZEN_TO_DECISION_FROZEN"
+}

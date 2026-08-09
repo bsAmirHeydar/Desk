@@ -1,0 +1,36 @@
+{
+  "runtime_version": "R1.0.0",
+  "scientific_stack": "V21.3.0",
+  "status": "FOUNDATION_ACTIVE_R2_PENDING",
+  "phases": {
+    "0": "ARCHITECTURE_CONSTITUTION_COMPLETE",
+    "1": "RUN_STORAGE_CORE_COMPLETE",
+    "2": "POINT_IN_TIME_REPLAY_COMPLETE"
+  },
+  "authority": {
+    "direction": "NONE",
+    "permission": "NONE",
+    "scientific_mutation": "NONE"
+  },
+  "storage": {
+    "backend": "LOCAL_FS_SQLITE",
+    "object_store": "CONTENT_ADDRESSED_SHA256",
+    "catalog": "SQLITE",
+    "warehouse": "R3_PENDING"
+  },
+  "temporal": {
+    "lookahead": "STRICT_POINT_IN_TIME",
+    "decision_outcome_firewall": "ENFORCED",
+    "replay_visibility": "ENFORCED"
+  },
+  "prompt_runtime": "R2_PENDING",
+  "launchers": "R3_PENDING",
+  "certification": "R1_SELFTEST_AND_PREFLIGHT",
+  "windows_portability": {
+    "python_314_supported_by_design": true,
+    "pyc_required_for_verification": false,
+    "external_tzdata_package_required": false,
+    "sqlite_explicit_close": true,
+    "bundled_timezone_fallback": true
+  }
+}
