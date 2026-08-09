@@ -1,0 +1,24 @@
+{
+  "version": "R3_SOURCE_BINDINGS_1.0.0",
+  "rule": "Non-secret adapter declarations only. Default routing asks the configured R3 host for structured source-contract retrieval. A host that cannot prove timestamps/vintage must return unavailable, never invented evidence.",
+  "default": {
+    "adapter": "HOST_CAPABILITY",
+    "capability": "EVIDENCE_RETRIEVAL"
+  },
+  "bindings": {},
+  "examples": {
+    "LOCAL_FIXTURE": {
+      "adapter": "LOCAL_FILE",
+      "path_env": "ALPHALAB_SOURCE_LOCAL_FIXTURE"
+    },
+    "EXTERNAL_PROVIDER": {
+      "adapter": "EXTERNAL_COMMAND",
+      "command_env": "ALPHALAB_EVIDENCE_COMMAND"
+    },
+    "HTTP_PROVIDER": {
+      "adapter": "HTTP_JSON",
+      "endpoint_env": "ALPHALAB_EVIDENCE_ENDPOINT",
+      "token_env": "ALPHALAB_EVIDENCE_TOKEN"
+    }
+  }
+}

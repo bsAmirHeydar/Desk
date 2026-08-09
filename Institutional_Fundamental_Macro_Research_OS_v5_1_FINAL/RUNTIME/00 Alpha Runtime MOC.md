@@ -43,3 +43,7 @@ Run data are not canonical Vault knowledge and must not be committed to the scie
 - [[RUNTIME/R2 Prompt Execution OS/00 R2 Prompt Execution OS MOC]]
 - Prompt pack: `ALPHALAB_PROMPT_PACK_1.0.0`
 - 25 typed processes; 8 independent market-state workers; deterministic stage gates; R1 Decision Seal integration.
+## R3 — Operational Execution and Learning
+- [[R3 Operational Execution and Learning OS/00 R3 Operational Execution and Learning OS MOC]]
+- Runtime target: R3.0.0
+- R2 scientific prompt pack remains unchanged; R3 adds launch/host/retrieval/operational/outcome/learning planes.

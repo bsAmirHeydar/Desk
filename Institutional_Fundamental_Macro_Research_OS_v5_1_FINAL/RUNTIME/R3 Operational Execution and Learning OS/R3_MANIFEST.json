@@ -1,0 +1,46 @@
+{
+  "runtime_version": "R3.0.0",
+  "scientific_stack": "V21.3.0",
+  "requires": [
+    "R1.0.0",
+    "R2.0.0"
+  ],
+  "bundle": "R3 — UNIVERSAL LAUNCH / OPERATIONAL EXECUTION / OUTCOME / LEARNING",
+  "phases": [
+    5,
+    6
+  ],
+  "authority": {
+    "direction": "NONE",
+    "permission": "NONE",
+    "operational_execution": "BLOCK_ONLY",
+    "promotion_registry_mutation": "NONE"
+  },
+  "launcher": "ACTIVE",
+  "host_protocol": "R3_HOST_PROTOCOL_1.0.0",
+  "retrieval_runtime": "R3_RETRIEVAL_RUNTIME_1.0.0",
+  "outcome_runtime": "R3_OUTCOME_RUNTIME_1.0.0",
+  "warehouse": "R3_WAREHOUSE_1.0.0",
+  "d4_ledger": "HASH_CHAINED_APPEND_ONLY",
+  "prompt_runtime": "R2_ALPHALAB_PROMPT_PACK_1.0.0_UNCHANGED",
+  "scientific_mutation": "NONE",
+  "deployment_rules": {
+    "powershell": "ASCII_ONLY_THIN_WRAPPER",
+    "baseline_hashing": "CANONICAL_TEXT_CONTROLLED_ONLY",
+    "git_paths": "PYTHON_NUL_UTF8",
+    "pyc": "NEVER_REQUIRED",
+    "tzdata": "NO_NEW_DEPENDENCY",
+    "external_binary_dependencies": "OPTIONAL_ACCELERATORS_ONLY"
+  },
+  "live_cutoff_semantics": "STRICT_PRE_RUN_INTAKE_THEN_FREEZE",
+  "raw_evidence_delivery_to_w21_w22": "ENFORCED_BY_R3_MATERIALIZER",
+  "ledger_verification": "PAYLOAD_PLUS_CHAIN_PLUS_JSONL_PROJECTION",
+  "calibration_dependence": "ROOT_CONNECTED_COMPONENT_THEN_TRADING_DAY_THEN_OBSERVATION",
+  "scheduler": "DETERMINISTIC_SERIAL_DEFAULT_PARALLELIZABLE_DAG",
+  "hardening_revision": "R3_RELEASE_FINAL_1",
+  "live_preintake_request_cutoff": "NULL_WITH_CAPTURE_MODE_LIVE_PRE_RUN",
+  "multi_run_execution": "RUN_PLAN_PLUS_DAILY_SIX_RUN",
+  "meta_temporal_alignment": "EXPLICIT_COMPONENT_CUTOFFS_NO_FALSE_ATOMICITY",
+  "d4_schema_gate": "CANONICAL_SCIENTIFIC_SCHEMA_BEFORE_WRITE",
+  "reproduction_execution": "PLANNER_ONLY_R4_CERTIFICATION"
+}

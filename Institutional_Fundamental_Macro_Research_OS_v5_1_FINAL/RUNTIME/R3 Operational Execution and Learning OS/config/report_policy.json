@@ -1,0 +1,29 @@
+{
+  "version": "R3_REPORT_RUNTIME_1.0.0",
+  "canonical_machine_report": "JSON",
+  "human_report": "MARKDOWN",
+  "pdf_renderer": "EXTERNAL_OPTIONAL",
+  "output_depths": [
+    "MACHINE",
+    "COMPACT",
+    "FULL"
+  ],
+  "must_include": [
+    "run_id",
+    "analysis_cutoff_utc",
+    "instrument",
+    "final_permission",
+    "validity",
+    "review_trigger",
+    "invalidation_triggers",
+    "fundamental_direction",
+    "edge_state",
+    "material_gaps",
+    "decision_seal_hash"
+  ],
+  "must_not_claim": [
+    "UNVERIFIED_PROBABILITY",
+    "UNSEEN_DATA",
+    "UNAVAILABLE_PRIVATE_FLOW_AS_FACT"
+  ]
+}

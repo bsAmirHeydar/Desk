@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Retrieval Request",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "operation",
+    "run_id",
+    "analysis_cutoff_utc",
+    "run_mode",
+    "requirements"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "operation": {
+      "const": "EVIDENCE_RETRIEVAL"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "run_mode": {
+      "type": "string"
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "source_contracts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "strict_point_in_time": {
+      "const": true
+    }
+  },
+  "additionalProperties": false
+}

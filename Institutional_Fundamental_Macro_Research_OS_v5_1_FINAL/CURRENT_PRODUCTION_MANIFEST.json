@@ -33,7 +33,8 @@
     "cognitive_scenario_reasoning": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/00 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine MOC.md",
     "fact_observability": "100 Six-Market D2 Fact Books and Production Shadow Engine/26 Fact Observability and Coverage Constitution.md",
     "runtime_foundation": "RUNTIME/R1 Foundation/00 R1 Foundation MOC.md",
-    "prompt_execution_runtime": "RUNTIME/R2 Prompt Execution OS/00 R2 Prompt Execution OS MOC.md"
+    "prompt_execution_runtime": "RUNTIME/R2 Prompt Execution OS/00 R2 Prompt Execution OS MOC.md",
+    "operational_execution_learning_runtime": "RUNTIME/R3 Operational Execution and Learning OS/00 R3 Operational Execution and Learning OS MOC.md"
   },
   "asset_books": {
     "XAUUSD": [
@@ -227,7 +228,20 @@
     "RUNTIME/R1 Foundation/schemas/AlphaLab_Source_Snapshot_Record.schema.json",
     "RUNTIME/R1 Foundation/schemas/AlphaLab_Visibility_Receipt.schema.json",
     "RUNTIME/R1 Foundation/schemas/AlphaLab_Decision_Seal.schema.json",
-    "RUNTIME/R1 Foundation/schemas/AlphaLab_Replay_Request.schema.json"
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Replay_Request.schema.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/R3_MANIFEST.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/launcher_profiles.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/execution_profiles.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/host_policy.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/retrieval_runtime_policy.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/outcome_runtime_policy.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/counterfactual_runtime_policy.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/warehouse_policy.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/calibration_runtime_policy.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Execution_Handoff.schema.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Execution_Receipt.schema.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Retrieval_Receipt.schema.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Analytics_Row.schema.json"
   ],
   "production_universe": [
     "XAUUSD",
@@ -396,15 +410,17 @@
     "silent_gap_policy": "FORBIDDEN"
   },
   "alpha_runtime": {
-    "runtime_version": "R2.0.0",
-    "status": "PROMPT_EXECUTION_OS_ACTIVE_R3_PENDING",
+    "runtime_version": "R3.0.0",
+    "status": "OPERATIONAL_EXECUTION_LEARNING_ACTIVE_R4_PENDING",
     "scientific_stack_binding": "V21.3.0",
     "phases_installed": [
       0,
       1,
       2,
       3,
-      4
+      4,
+      5,
+      6
     ],
     "universal_run_contract": "RUNTIME/R1 Foundation/02 Universal Run Contract.md",
     "storage_constitution": "RUNTIME/R1 Foundation/04 Storage Constitution.md",
@@ -414,13 +430,20 @@
     "catalog_backend": "SQLITE",
     "historical_live_schema_parity": "ENFORCED",
     "prompt_runtime": "R2_ACTIVE",
-    "launcher_runtime": "R3_PENDING",
+    "launcher_runtime": "R3_ACTIVE",
+    "host_execution": "R3_ACTIVE_PROVIDER_NEUTRAL",
+    "retrieval_runtime": "R3_ACTIVE_SOURCE_CONTRACT_BOUND",
+    "operational_execution_authority": "BLOCK_ONLY",
     "market_direction_authority": "NONE",
     "permission_authority": "NONE",
     "prompt_pack_version": "ALPHALAB_PROMPT_PACK_1.0.0",
     "process_graph_version": "R2_PROCESS_GRAPH_1.0.0",
     "process_count": 25,
     "full_vault_execution": "STRICT_FULL_CONTEXT_COMPILATION",
-    "epistemic_completion_gate": "ENFORCED"
+    "epistemic_completion_gate": "ENFORCED",
+    "outcome_learning": "R3_ACTIVE",
+    "d4_ledger": "HASH_CHAINED_APPEND_ONLY",
+    "analytics_authority": "R1_OBJECT_STORE_PLUS_SQLITE",
+    "duckdb_parquet": "OPTIONAL_REBUILDABLE_ACCELERATOR"
   }
 }

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Retrieved Snapshot",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "snapshot_id",
+    "requirement_id",
+    "source_id",
+    "media_type",
+    "content",
+    "first_available_time",
+    "retrieved_at",
+    "ingested_at",
+    "vintage_integrity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "snapshot_id": {
+      "type": "string"
+    },
+    "requirement_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_uri": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "media_type": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "content_encoding": {
+      "enum": [
+        "UTF8_TEXT",
+        "BASE64"
+      ]
+    },
+    "publication_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "first_available_time": {
+      "type": "string"
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "ingested_at": {
+      "type": "string"
+    },
+    "event_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reference_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "effective_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "vintage_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "vintage_integrity": {
+      "enum": [
+        "ORIGINAL_CAPTURE",
+        "OFFICIAL_VINTAGE_ARCHIVE",
+        "RECONSTRUCTED_WITH_PROVENANCE",
+        "CURRENT_ONLY",
+        "UNDETERMINED"
+      ]
+    },
+    "superseded_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

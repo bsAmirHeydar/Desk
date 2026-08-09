@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Model Invocation",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "operation",
+    "invocation_id",
+    "run_id",
+    "process_id",
+    "job_hash",
+    "model_profile",
+    "prompt",
+    "context",
+    "output_contract"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "operation": {
+      "const": "MODEL_PROCESS"
+    },
+    "invocation_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "process_id": {
+      "type": "string"
+    },
+    "job_hash": {
+      "type": "string"
+    },
+    "model_profile": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "object"
+    },
+    "context": {
+      "type": "object"
+    },
+    "output_contract": {
+      "type": "object"
+    },
+    "host_hints": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

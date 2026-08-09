@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Host Response",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "invocation_id",
+    "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "invocation_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "OK",
+        "TRANSIENT_ERROR",
+        "PERMANENT_ERROR"
+      ]
+    },
+    "process_output": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "host_receipt": {
+      "type": "object"
+    },
+    "error": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

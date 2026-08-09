@@ -1,0 +1,13 @@
+{
+  "version": "R3_OUTCOME_RUNTIME_1.0.0",
+  "d4_schema": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Outcome.schema.json",
+  "maturity_policy": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/outcome_horizon_policy.json",
+  "score_only_declared_horizon": true,
+  "no_trigger_separate_state": true,
+  "execution_receipt_preferred": true,
+  "price_path_required_for_mfe_mae_unless_adapter_certifies_values": true,
+  "single_leg_normalized_r": "direction_sign * (exit_price-entry_price) / abs(entry_price-initial_stop_price) - cost_r",
+  "multi_leg_rule": "Require execution adapter realized_pnl and initial_risk_value, or fully specified legs; never approximate silently.",
+  "unscorable_policy": "EXPLICIT_UNSCORABLE",
+  "decision_artifact_mutation": "FORBIDDEN"
+}

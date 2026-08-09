@@ -1,0 +1,89 @@
+{
+  "version": "1.0.0",
+  "cases": [
+    {
+      "id": "LIVE_HISTORICAL_PARITY",
+      "expected": "same R1 request schema and same R2 graph"
+    },
+    {
+      "id": "HOST_STATELESS",
+      "expected": "no free conversation memory; prompt/context hashes pinned"
+    },
+    {
+      "id": "FIXTURE_PRODUCTION_BLOCK",
+      "expected": "test host cannot execute production"
+    },
+    {
+      "id": "RETRIEVAL_VISIBILITY",
+      "expected": "raw capture stored before W21 and R1 visibility receipt produced"
+    },
+    {
+      "id": "HISTORICAL_CURRENT_ONLY_BLOCK",
+      "expected": "strict replay cannot accept CURRENT_ONLY"
+    },
+    {
+      "id": "OPERATIONAL_BLOCK_ONLY",
+      "expected": "R3 may block but never create/flip scientific permission"
+    },
+    {
+      "id": "OUTCOME_FIREWALL",
+      "expected": "execution/outcome only after Decision Seal"
+    },
+    {
+      "id": "COUNTERFACTUAL_FROZEN",
+      "expected": "same frozen information set; no ex-post selection"
+    },
+    {
+      "id": "D4_LEDGER_HASH_CHAIN",
+      "expected": "append-only chain verifies"
+    },
+    {
+      "id": "WAREHOUSE_CANONICAL_SQLITE",
+      "expected": "optional DuckDB/Parquet absence causes zero precision loss"
+    },
+    {
+      "id": "WINDOWS_PORTABILITY",
+      "expected": "in-memory syntax checks, no pyc requirement, no new tzdata dependency"
+    },
+    {
+      "id": "R3-LIVE-CUTOFF-01",
+      "assert": "live evidence captured after a frozen cutoff is rejected; strict pre-run intake freezes cutoff after capture"
+    },
+    {
+      "id": "R3-EVIDENCE-RAW-01",
+      "assert": "W21/W22 host invocation contains immutable raw snapshot bytes for referenced evidence hashes"
+    },
+    {
+      "id": "R3-LEDGER-02",
+      "assert": "payload or JSONL projection tamper is detected by ledger verification"
+    },
+    {
+      "id": "R3-CAL-02",
+      "assert": "cluster bootstrap prefers connected independent-root components before day/observation fallback"
+    },
+    {
+      "id": "R3-D4-FWD-01",
+      "assert": "decision-sealed run emits one pinned immutable forward observation before operational handoff"
+    },
+    {
+      "id": "R3-LIVE-CUTOFF-02",
+      "assert": "pre-run live retrieval request carries null cutoff plus LIVE_PRE_RUN capture mode; no synthetic future cutoff"
+    },
+    {
+      "id": "R3-MULTIRUN-01",
+      "assert": "event/bulk plan executes unchanged requests through the same single-run driver"
+    },
+    {
+      "id": "R3-DAILY6-01",
+      "assert": "daily-six meta reconciliation discloses every component cutoff and never invents atomicity"
+    },
+    {
+      "id": "R3-D4-SCHEMA-01",
+      "assert": "forward/outcome/counterfactual/calibration artifacts validate against canonical scientific D4 schemas before write"
+    },
+    {
+      "id": "R3-REPRO-GUARD-01",
+      "assert": "generic run path refuses REPRODUCTION_REPLAY rather than silently behaving like ordinary historical replay"
+    }
+  ]
+}

@@ -280,3 +280,5 @@ V21.3 closes the highest-value residual **fact observability** gaps without addi
 ## Alpha Runtime R2 — Prompt Execution OS
 
 `R2.0.0` adds the typed Prompt Registry, Prompt Pack and deterministic Process Graph above certified R1. The scientific stack remains `V21.3.0` and Direction remains `FUNDAMENTAL_ONLY`. R2 executes full-vault science through 25 authority-separated processes, independent state workers, adversarial validation and epistemic completion gates; it creates no new scientific authority. Start at [[RUNTIME/R2 Prompt Execution OS/00 R2 Prompt Execution OS MOC]].
+## Alpha Runtime R3
+Operational launch, provider-neutral host execution, source retrieval binding, post-seal execution handoff, outcomes, counterfactuals and D4 analytics are governed by [[RUNTIME/R3 Operational Execution and Learning OS/00 R3 Operational Execution and Learning OS MOC]].

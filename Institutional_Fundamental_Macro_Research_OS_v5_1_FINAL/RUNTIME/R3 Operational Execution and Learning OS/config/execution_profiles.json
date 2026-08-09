@@ -1,0 +1,41 @@
+{
+  "version": "R3_EXECUTION_PROFILES_1.0.0",
+  "profiles": {
+    "PERMISSION_ONLY_V1": {
+      "mode": "RESEARCH_PERMISSION_ONLY",
+      "broker_write": false,
+      "order_creation": false,
+      "handoff_adapter": "FILE_OUTBOX",
+      "requires_buy_sell_permission": true,
+      "permission_expiry": "ENFORCE",
+      "operational_gate": "BLOCK_ONLY"
+    },
+    "SHADOW_ONLY_V1": {
+      "mode": "SHADOW_ONLY",
+      "broker_write": false,
+      "order_creation": false,
+      "handoff_adapter": "NONE",
+      "requires_buy_sell_permission": false,
+      "permission_expiry": "ENFORCE",
+      "operational_gate": "BLOCK_ONLY"
+    },
+    "ALPHA_DASHBOARD_PERMISSION_V1": {
+      "mode": "EA_PERMISSION_HANDOFF",
+      "broker_write": false,
+      "order_creation": false,
+      "handoff_adapter": "FILE_OUTBOX",
+      "requires_buy_sell_permission": true,
+      "payload": "BUY_SELL_NO_TRADE_PLUS_VALIDITY",
+      "permission_expiry": "ENFORCE",
+      "operational_gate": "BLOCK_ONLY",
+      "note": "Handoff is a permission signal only. Entry/stop/size remain the execution system responsibility."
+    }
+  },
+  "forbidden": [
+    "RUNTIME_DIRECTION_FLIP",
+    "RUNTIME_PERMISSION_CREATION",
+    "BROKER_ORDER_WITHOUT_EXPLICIT_ADAPTER",
+    "EXECUTE_EXPIRED_PERMISSION"
+  ],
+  "rule": "R3 can operationally block or expire a scientific permission, but can never turn NO_TRADE into BUY/SELL or flip BUY/SELL."
+}

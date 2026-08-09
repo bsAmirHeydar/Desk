@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Outcome Receipt",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "outcome_artifact_hash",
+    "calculation_basis",
+    "created_at_utc"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "outcome_artifact_hash": {
+      "type": "string"
+    },
+    "calculation_basis": {
+      "enum": [
+        "EXECUTION_VALUES",
+        "SINGLE_LEG_PRICE_PATH",
+        "NO_TRIGGER",
+        "UNSCORABLE"
+      ]
+    },
+    "verification": {
+      "type": "object"
+    },
+    "created_at_utc": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

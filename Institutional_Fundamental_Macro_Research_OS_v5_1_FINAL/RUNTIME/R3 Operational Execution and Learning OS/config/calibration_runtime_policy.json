@@ -1,0 +1,16 @@
+{
+  "version": "R3_CALIBRATION_RUNTIME_1.0.0",
+  "scientific_policy": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/calibration_policy.json",
+  "bootstrap_iterations": 2000,
+  "cluster_priority": [
+    "independent_root_id",
+    "trading_day",
+    "observation"
+  ],
+  "cluster_equal_weighting": true,
+  "deterministic_seed": "SHA256_DATASET",
+  "chronological_split_required_for_promotion_review": true,
+  "promotion_registry_auto_write": false,
+  "calibrator_authority": "ELIGIBLE_FOR_REVIEW_ONLY",
+  "numeric_predictive_probability_authorized": false
+}

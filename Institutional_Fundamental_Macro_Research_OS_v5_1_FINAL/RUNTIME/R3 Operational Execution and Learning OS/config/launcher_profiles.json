@@ -1,0 +1,74 @@
+{
+  "version": "R3_LAUNCHER_PROFILES_1.0.0",
+  "scientific_stack": "V21.3.0",
+  "runtime": "R3.0.0",
+  "defaults": {
+    "research_program_id": "ALPHALAB_PRODUCTION",
+    "strategy_id": "FUNDAMENTAL_EDGE_V21_3",
+    "coverage_mode": "STRICT_FULL",
+    "research_depth": "AUTO",
+    "output_depth": "FULL",
+    "lookahead_policy": "STRICT_POINT_IN_TIME",
+    "execution_profile": "PERMISSION_ONLY_V1",
+    "idempotency_policy": "NEW_RUN"
+  },
+  "aliases": {
+    "GOLD": "XAUUSD",
+    "XAU": "XAUUSD",
+    "XAUUSD": "XAUUSD",
+    "NAS": "NASDAQ100",
+    "NAS100": "NASDAQ100",
+    "NDX": "NASDAQ100",
+    "NASDAQ": "NASDAQ100",
+    "NASDAQ100": "NASDAQ100",
+    "SPX": "SP500",
+    "SP500": "SP500",
+    "S&P500": "SP500",
+    "US500": "SP500",
+    "US30": "DJIA",
+    "DOW": "DJIA",
+    "DJIA": "DJIA",
+    "EURUSD": "EURUSD",
+    "EU": "EURUSD",
+    "USDJPY": "USDJPY",
+    "UJ": "USDJPY"
+  },
+  "production_instruments": [
+    "XAUUSD",
+    "NASDAQ100",
+    "SP500",
+    "DJIA",
+    "EURUSD",
+    "USDJPY"
+  ],
+  "profiles": {
+    "LIVE_MAX": {
+      "run_mode": "LIVE",
+      "analysis_cutoff": "NOW",
+      "coverage_mode": "STRICT_FULL",
+      "research_depth": "AUTO"
+    },
+    "SHADOW_MAX": {
+      "run_mode": "SHADOW_LIVE",
+      "analysis_cutoff": "NOW",
+      "coverage_mode": "STRICT_FULL",
+      "research_depth": "AUTO"
+    },
+    "HISTORICAL_STRICT": {
+      "run_mode": "HISTORICAL_REPLAY",
+      "coverage_mode": "STRICT_FULL",
+      "research_depth": "AUTO"
+    },
+    "RESEARCH_REPLAY": {
+      "run_mode": "RESEARCH_REPLAY",
+      "coverage_mode": "STRICT_FULL",
+      "research_depth": "DEEP"
+    },
+    "REPRODUCTION": {
+      "run_mode": "REPRODUCTION_REPLAY",
+      "coverage_mode": "STRICT_FULL",
+      "research_depth": "STANDARD"
+    }
+  },
+  "rule": "Launcher compiles human intent into the R1 Universal Run Request. It has zero scientific, direction, or permission authority."
+}

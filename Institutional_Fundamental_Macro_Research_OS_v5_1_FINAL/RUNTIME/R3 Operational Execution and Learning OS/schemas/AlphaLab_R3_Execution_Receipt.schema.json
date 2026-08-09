@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Execution Receipt",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "execution_id",
+    "run_id",
+    "status",
+    "instrument",
+    "side",
+    "received_at_utc"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "execution_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PENDING",
+        "NOT_TRIGGERED",
+        "EXECUTED",
+        "CLOSED",
+        "CANCELLED",
+        "REJECTED"
+      ]
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "side": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NONE"
+      ]
+    },
+    "triggered_at_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "closed_at_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "entry_price": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "initial_stop_price": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "exit_price": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "initial_risk_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "realized_pnl": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cost_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cost_r": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "quantity": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "venue": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "broker_order_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "legs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "received_at_utc": {
+      "type": "string"
+    },
+    "adapter": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

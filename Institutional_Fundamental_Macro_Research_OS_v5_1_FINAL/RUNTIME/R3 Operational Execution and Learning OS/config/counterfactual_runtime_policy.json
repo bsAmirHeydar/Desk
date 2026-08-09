@@ -1,0 +1,17 @@
+{
+  "version": "R3_COUNTERFACTUAL_RUNTIME_1.0.0",
+  "scientific_policy": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/counterfactual_policy.json",
+  "branches": [
+    "PRE_D3_BASELINE",
+    "V19_D3_BASELINE",
+    "REMOVE_MODIFIER",
+    "POSITIVE_PROMOTION_SHADOW",
+    "DELAY_ALTERNATIVE"
+  ],
+  "same_frozen_information_set_required": true,
+  "same_execution_profile_required": true,
+  "ex_post_entry_selection_forbidden": true,
+  "untriggered_trade_state": "UNSCORABLE_AS_REALIZED_TRADE",
+  "branch_plan_created_after_decision_seal_from_frozen_decision_artifacts": true,
+  "automatic_promotion_from_counterfactual": "FORBIDDEN"
+}

@@ -1,0 +1,13 @@
+{
+  "version": "R3_BULK_REPLAY_1.0.0",
+  "default_parallel_runs": 1,
+  "max_parallel_runs_without_explicit_override": 4,
+  "historical_mode": "HISTORICAL_REPLAY",
+  "point_in_time_required": true,
+  "same_process_graph_required": true,
+  "same_prompt_pack_required": true,
+  "cache_reuse": "EXACT_HASH_ONLY",
+  "resume": "IDEMPOTENT_CHECKPOINTED",
+  "failure_policy": "CONTINUE_OTHER_RUNS_BUT_REPORT_EVERY_FAILURE",
+  "lookahead_attack_protection": "R1_ENFORCED"
+}

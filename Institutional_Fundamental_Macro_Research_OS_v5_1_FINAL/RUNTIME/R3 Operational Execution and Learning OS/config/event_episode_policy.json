@@ -1,0 +1,34 @@
+{
+  "version": "R3_EVENT_EPISODE_1.0.0",
+  "timezone": "UTC",
+  "strict_micro_offsets_minutes": [
+    -120,
+    -90,
+    -60,
+    -30,
+    -15,
+    -5,
+    0,
+    5,
+    15,
+    30,
+    60,
+    90,
+    120,
+    180,
+    240
+  ],
+  "minimum_grid_rule": "Within the event study window, 30-minute checkpoints are mandatory where applicable; denser checkpoints around release are additive, not substitutes.",
+  "adaptive_recheck_triggers": [
+    "DRIVER_TRANSITION",
+    "CONTESTED",
+    "UNMODELED_DRIVER_HIGH",
+    "MATERIAL_NEW_FACT",
+    "PERMISSION_INVALIDATION",
+    "MARKET_MODEL_DISAGREEMENT_HIGH"
+  ],
+  "same_episode_id": true,
+  "same_strategy": true,
+  "each_checkpoint_is_independent_run": true,
+  "outcome_firewall_per_run": true
+}

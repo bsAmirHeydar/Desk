@@ -1,0 +1,36 @@
+{
+  "version": "R3_RETRIEVAL_RUNTIME_1.0.0",
+  "mode_default": "STRICT_SOURCE_CONTRACT",
+  "source_of_truth_registry": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/d2_source_registry.json",
+  "fact_observability_registry": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/fact_observability_registry.json",
+  "six_market_map": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_observability_map.json",
+  "binding_overrides_file": "source_bindings.json",
+  "adapter_priority": [
+    "EXTERNAL_COMMAND",
+    "HTTP_JSON",
+    "LOCAL_FILE",
+    "HOST_CAPABILITY"
+  ],
+  "historical_current_only": "FORBIDDEN",
+  "private_gap": "EXPLICIT_NO_PROXY_SUBSTITUTION",
+  "decision_critical_unbound": "EXPLICIT_GAP_AND_FAIL_CLOSED_IF_REQUIRED_BY_G2",
+  "material_unbound": "EXPLICIT_GAP_NO_SILENT_DEGRADATION",
+  "supporting_unbound": "DISCLOSE",
+  "contextual_unbound": "DISCLOSE",
+  "capture_raw_bytes": true,
+  "content_addressed_storage": true,
+  "live_first_available_conservative_rule": "If source publication availability cannot be independently established, first_available_time is no earlier than successful retrieval time.",
+  "historical_vintage_rule": "Historical strict replay accepts ORIGINAL_CAPTURE or OFFICIAL_VINTAGE_ARCHIVE only; reconstructed/current-only material cannot silently become strict evidence.",
+  "live_on_demand_after_cutoff": "FORBIDDEN",
+  "live_intake_mode": "STRICT_PRE_RUN_CAPTURE",
+  "live_cutoff": "INTAKE_COMPLETION_UTC",
+  "live_retrieval_skew": {
+    "record_window": true,
+    "standard_warn_seconds": 120,
+    "event_fast_warn_seconds": 20,
+    "rule": "Skew is telemetry, never hidden. Decision-critical releases inside the intake window require targeted recheck."
+  },
+  "snapshot_contract_validation": "STRICT_BEFORE_R1_VISIBILITY",
+  "historical_original_capture_rule": "ORIGINAL_CAPTURE retrieved after historical cutoff is invalid; post-cutoff retrieval must be a timestamped OFFICIAL_VINTAGE_ARCHIVE.",
+  "proxy_rule": "PROXY_CONTEXT_MAY_BE_CAPTURED_BUT_NEVER_SATISFIES_A_DIRECT_REQUIREMENT"
+}

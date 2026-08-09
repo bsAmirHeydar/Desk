@@ -1,13 +1,15 @@
 {
-  "runtime_version": "R2.0.0",
+  "runtime_version": "R3.0.0",
   "scientific_stack": "V21.3.0",
-  "status": "PROMPT_EXECUTION_OS_ACTIVE_R3_PENDING",
+  "status": "OPERATIONAL_EXECUTION_LEARNING_ACTIVE_R4_PENDING",
   "phases": {
     "0": "ARCHITECTURE_CONSTITUTION_COMPLETE",
     "1": "RUN_STORAGE_CORE_COMPLETE",
     "2": "POINT_IN_TIME_REPLAY_COMPLETE",
     "3": "PROMPT_REGISTRY_COMPLETE",
-    "4": "ORCHESTRATOR_PROCESS_GRAPH_COMPLETE"
+    "4": "ORCHESTRATOR_PROCESS_GRAPH_COMPLETE",
+    "5": "UNIVERSAL_LAUNCH_OPERATIONAL_EXECUTION_COMPLETE",
+    "6": "OUTCOME_COUNTERFACTUAL_D4_ANALYTICS_COMPLETE"
   },
   "authority": {
     "direction": "NONE",
@@ -18,16 +20,16 @@
     "backend": "LOCAL_FS_SQLITE",
     "object_store": "CONTENT_ADDRESSED_SHA256",
     "catalog": "SQLITE",
-    "warehouse": "R3_PENDING"
+    "warehouse": "SQLITE_CANONICAL_JSONL_DUCKDB_PARQUET_OPTIONAL"
   },
   "temporal": {
     "lookahead": "STRICT_POINT_IN_TIME",
     "decision_outcome_firewall": "ENFORCED",
     "replay_visibility": "ENFORCED"
   },
-  "prompt_runtime": "R2_ACTIVE",
-  "launchers": "R3_PENDING",
-  "certification": "R1_PLUS_R2_SELFTEST_AND_PREFLIGHT",
+  "prompt_runtime": "R2_ACTIVE_UNCHANGED",
+  "launchers": "R3_ACTIVE",
+  "certification": "R1_PLUS_R2_PLUS_R3_SELFTEST_AND_PREFLIGHT",
   "windows_portability": {
     "python_314_supported_by_design": true,
     "pyc_required_for_verification": false,
@@ -42,5 +44,30 @@
     "completion_policy": "EPISTEMIC_COMPLETION",
     "full_vault_mode": "STRICT_FULL",
     "executor_binding": "HOST_MANAGED_R3_OR_EXTERNAL"
+  },
+  "operational_execution": {
+    "status": "ACTIVE",
+    "authority": "BLOCK_ONLY",
+    "scientific_permission_mutation": "FORBIDDEN",
+    "default_handoff": "FILE_OUTBOX"
+  },
+  "outcome_learning": {
+    "status": "ACTIVE",
+    "decision_outcome_firewall": "R1_ENFORCED",
+    "counterfactuals": "FROZEN_INFORMATION_SET",
+    "d4_ledger": "APPEND_ONLY_HASH_CHAIN",
+    "promotion_registry_auto_write": false
+  },
+  "host_execution": {
+    "protocol": "R3_HOST_PROTOCOL_1.0.0",
+    "provider_neutral": true,
+    "secrets": "ENVIRONMENT_ONLY",
+    "fixture_production": "FORBIDDEN"
+  },
+  "retrieval_execution": {
+    "protocol": "R3_RETRIEVAL_RUNTIME_1.0.0",
+    "source_registry": "V21.3_D2_SOURCE_REGISTRY",
+    "strict_point_in_time": true,
+    "private_gap": "EXPLICIT"
   }
 }

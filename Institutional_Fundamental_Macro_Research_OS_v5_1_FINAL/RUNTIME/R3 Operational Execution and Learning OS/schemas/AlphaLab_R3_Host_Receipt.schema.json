@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Host Receipt",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "invocation_id",
+    "adapter",
+    "started_at_utc",
+    "completed_at_utc",
+    "request_hash",
+    "response_hash"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "invocation_id": {
+      "type": "string"
+    },
+    "adapter": {
+      "type": "string"
+    },
+    "provider": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "request_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "temperature": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "reasoning_profile": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tool_profile": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "started_at_utc": {
+      "type": "string"
+    },
+    "completed_at_utc": {
+      "type": "string"
+    },
+    "latency_ms": {
+      "type": "number"
+    },
+    "input_tokens": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "output_tokens": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "request_hash": {
+      "type": "string"
+    },
+    "response_hash": {
+      "type": "string"
+    },
+    "attempt": {
+      "type": "integer"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

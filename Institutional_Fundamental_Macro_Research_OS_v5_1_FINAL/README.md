@@ -190,3 +190,5 @@ V21.3 expands the **observable fact surface**, not the direction model. It adds 
 ## Alpha Runtime R2 — Prompt Execution OS
 
 `R2.0.0` adds the typed Prompt Registry, Prompt Pack and deterministic Process Graph above certified R1. The scientific stack remains `V21.3.0` and Direction remains `FUNDAMENTAL_ONLY`. R2 executes full-vault science through 25 authority-separated processes, independent state workers, adversarial validation and epistemic completion gates; it creates no new scientific authority. Start at [[RUNTIME/R2 Prompt Execution OS/00 R2 Prompt Execution OS MOC]].
+## Runtime R3.0.0
+R3 activates universal launch, host/model execution protocol, strict source retrieval capture, BLOCK_ONLY execution handoff, outcome/counterfactual processing, hash-chained D4 ledger and canonical SQLite analytics. Scientific stack remains V21.3.0 and R2 prompt pack remains ALPHALAB_PROMPT_PACK_1.0.0.

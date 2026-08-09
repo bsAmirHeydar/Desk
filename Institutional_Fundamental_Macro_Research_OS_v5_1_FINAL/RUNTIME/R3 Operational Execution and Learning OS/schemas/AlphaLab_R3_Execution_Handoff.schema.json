@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Execution Handoff",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "handoff_id",
+    "run_id",
+    "instrument",
+    "scientific_permission",
+    "operational_status",
+    "execution_profile",
+    "decision_seal_hash",
+    "created_at_utc"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "handoff_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "scientific_permission": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "NO_TRADE"
+      ]
+    },
+    "operational_status": {
+      "enum": [
+        "AUTHORIZED_TO_HANDOFF",
+        "BLOCKED_NO_TRADE",
+        "BLOCKED_EXPIRED",
+        "BLOCKED_INVALID",
+        "SHADOW_ONLY",
+        "BLOCKED_EXECUTION_PROFILE"
+      ]
+    },
+    "execution_profile": {
+      "type": "string"
+    },
+    "valid_until_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_trigger": {
+      "type": "object"
+    },
+    "invalidation_triggers": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "decision_seal_hash": {
+      "type": "string"
+    },
+    "direction_authority": {
+      "const": "FUNDAMENTAL_ONLY"
+    },
+    "runtime_permission_mutation": {
+      "const": false
+    },
+    "created_at_utc": {
+      "type": "string"
+    },
+    "outbox_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

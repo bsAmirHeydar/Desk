@@ -1,0 +1,31 @@
+{
+  "version": "R3_WAREHOUSE_1.0.0",
+  "canonical_authority": "R1_OBJECT_STORE_PLUS_SQLITE_CATALOG",
+  "canonical_analytics_table": "SQLITE_R3_ANALYTICS_ROWS",
+  "append_only_ledger": "JSONL_HASH_CHAIN_PLUS_SQLITE_INDEX",
+  "materializations": {
+    "JSONL": {
+      "status": "ALWAYS_AVAILABLE",
+      "authoritative": false,
+      "rebuildable": true
+    },
+    "DUCKDB_PARQUET": {
+      "status": "OPTIONAL_ACCELERATOR",
+      "authoritative": false,
+      "rebuildable": true,
+      "python_modules": [
+        "duckdb",
+        "pyarrow"
+      ]
+    }
+  },
+  "missing_optional_dependency": "DO_NOT_FAIL_CORE_RUNTIME; REPORT ACCELERATOR_UNAVAILABLE",
+  "no_precision_loss_without_duckdb": true,
+  "partition_keys": [
+    "instrument",
+    "analysis_date",
+    "run_mode"
+  ],
+  "query_default": "SQLITE",
+  "derived_cache_may_be_deleted_and_rebuilt": true
+}

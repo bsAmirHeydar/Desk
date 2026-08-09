@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Analytics Row",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "instrument",
+    "run_mode",
+    "analysis_cutoff_utc",
+    "decision_seal_hash"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "run_mode": {
+      "type": "string"
+    },
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "decision_seal_hash": {
+      "type": "string"
+    },
+    "permission": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fundamental_direction": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "edge_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "active_horizon": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "execution_profile": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "outcome_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "realized_r": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "mfe_r": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "mae_r": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cost_r": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "independent_root_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "regime_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "complexity_class": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "unmodeled_driver_risk": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "abstention_reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "updated_at_utc": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

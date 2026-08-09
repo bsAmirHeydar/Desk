@@ -1,0 +1,1 @@
+jsonschema>=4.23,<5  # inherited R2 strict Draft 2020-12 output validation

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Counterfactual Plan",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "decision_seal_hash",
+    "policy_version",
+    "branches",
+    "created_at_utc"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "decision_seal_hash": {
+      "type": "string"
+    },
+    "policy_version": {
+      "type": "string"
+    },
+    "branches": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "same_frozen_information_set": {
+      "const": true
+    },
+    "same_execution_profile": {
+      "const": true
+    },
+    "ex_post_entry_selection": {
+      "const": false
+    },
+    "created_at_utc": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

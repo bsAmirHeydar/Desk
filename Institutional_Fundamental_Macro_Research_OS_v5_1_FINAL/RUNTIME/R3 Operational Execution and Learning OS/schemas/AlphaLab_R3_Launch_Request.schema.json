@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Launch Request",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "launcher_profile",
+    "instrument",
+    "run_mode"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "launcher_profile": {
+      "type": "string"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "run_mode": {
+      "enum": [
+        "LIVE",
+        "SHADOW_LIVE",
+        "HISTORICAL_REPLAY",
+        "RESEARCH_REPLAY",
+        "REPRODUCTION_REPLAY"
+      ]
+    },
+    "analysis_cutoff": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "active_horizon": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coverage_mode": {
+      "enum": [
+        "STRICT_FULL",
+        "EVENT_FAST_STRICT",
+        "DEEP_ESCALATION"
+      ]
+    },
+    "research_depth": {
+      "enum": [
+        "AUTO",
+        "STANDARD",
+        "DEEP"
+      ]
+    },
+    "output_depth": {
+      "enum": [
+        "MACHINE",
+        "COMPACT",
+        "FULL"
+      ]
+    },
+    "execution_profile": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "episode_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

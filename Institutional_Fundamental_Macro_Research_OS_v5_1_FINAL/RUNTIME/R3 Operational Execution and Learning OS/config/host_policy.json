@@ -1,0 +1,56 @@
+{
+  "version": "R3_HOST_PROTOCOL_1.0.0",
+  "default_binding": "PRODUCTION_COMMAND",
+  "bindings": {
+    "PRODUCTION_COMMAND": {
+      "adapter": "COMMAND",
+      "command_env": "ALPHALAB_HOST_COMMAND",
+      "timeout_seconds": 1200,
+      "max_parallel": 4,
+      "payload_mode": "FILE_REFERENCES",
+      "test_only": false,
+      "required_capabilities": [
+        "MODEL_PROCESS"
+      ],
+      "optional_capabilities": [
+        "EVIDENCE_RETRIEVAL",
+        "META_RECONCILIATION",
+        "REPORT_RENDER"
+      ]
+    },
+    "PRODUCTION_HTTP": {
+      "adapter": "HTTP_JSON",
+      "endpoint_env": "ALPHALAB_HOST_ENDPOINT",
+      "token_env": "ALPHALAB_HOST_TOKEN",
+      "timeout_seconds": 1200,
+      "max_parallel": 4,
+      "payload_mode": "INLINE",
+      "test_only": false,
+      "required_capabilities": [
+        "MODEL_PROCESS"
+      ],
+      "optional_capabilities": [
+        "EVIDENCE_RETRIEVAL"
+      ]
+    },
+    "FIXTURE_TEST": {
+      "adapter": "FIXTURE",
+      "timeout_seconds": 30,
+      "max_parallel": 8,
+      "payload_mode": "INLINE",
+      "test_only": true,
+      "required_capabilities": [
+        "MODEL_PROCESS",
+        "EVIDENCE_RETRIEVAL"
+      ]
+    }
+  },
+  "secret_policy": "ENVIRONMENT_ONLY_NEVER_VAULT",
+  "request_response": "JSON_UTF8",
+  "stateless_process_execution": true,
+  "model_binding_receipt_required": true,
+  "free_conversation_memory": "FORBIDDEN",
+  "scheduler_default": "SERIAL_DETERMINISTIC",
+  "parallel_independent_workers": "OPT_IN",
+  "live_intake": "PRE_RUN_STRICT_CAPTURE"
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Calibration Request",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "modifier_id",
+    "development_run_ids",
+    "holdout_run_ids"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "modifier_id": {
+      "type": "string"
+    },
+    "development_run_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "holdout_run_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authority_class": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hypothesis_family_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reference_class_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

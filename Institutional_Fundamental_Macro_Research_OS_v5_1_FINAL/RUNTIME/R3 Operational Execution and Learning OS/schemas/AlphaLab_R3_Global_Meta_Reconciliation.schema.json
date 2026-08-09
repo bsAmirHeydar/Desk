@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaLab R3 Global Meta Reconciliation",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "meta_run_id",
+    "component_run_ids",
+    "state",
+    "permission_effect",
+    "created_at_utc"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "meta_run_id": {
+      "type": "string"
+    },
+    "component_run_ids": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "state": {
+      "enum": [
+        "CONSISTENT",
+        "MIXED",
+        "CONTESTED",
+        "RECHECK_REQUIRED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "inconsistencies": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "recheck_run_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "permission_effect": {
+      "const": "NONE_DIRECT"
+    },
+    "created_at_utc": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
