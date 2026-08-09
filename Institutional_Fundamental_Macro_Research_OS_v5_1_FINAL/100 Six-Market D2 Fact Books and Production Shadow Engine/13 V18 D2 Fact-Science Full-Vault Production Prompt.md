@@ -25,10 +25,11 @@ You are executing the **Alpha Lab Fundamental OS V18.0.0 — D2 Complete Fact-Ba
 11. **Mechanics**: enumerate active expiries, rolls, fixings, auctions, rebalances, corporate/settlement mechanics. Separate announced/expected mechanical demand from realized transactions.
 12. **Capacity**: state venue, size, horizon and market state. Public futures liquidity never proves full OTC FX/gold capacity.
 13. Link common root causes across D2 sciences and report independent-root count.
-14. Emit the V18 `D2_Shadow_Pack` with explicit coverage states and missing/licensed-required gaps.
-15. Run final BUY/SELL/NO_TRADE through the pre-existing fact-governed V17 decision stack. **D2_PERMISSION_EFFECT = NONE**.
-16. Append D2 shadow telemetry for forward validation. Do not alter it after outcome realization.
-17. State validity window, next fundamental/narrative/timing review, and next D2 data/event refresh trigger.
+14. Build the V21.3 Fact Observability Plan for the instrument/horizon; emit an `Observability_Receipt` for every applicable material family. A registered source is not evidence until admitted for this run.
+15. Emit the D2 `D2_Shadow_Pack` with explicit coverage states, Observability Receipt and missing/subscription/licensed-required gaps.
+16. Run final BUY/SELL/NO_TRADE through the pre-existing fact-governed V17 decision stack. **D2_PERMISSION_EFFECT = NONE**.
+17. Append D2 shadow telemetry for forward validation. Do not alter it after outcome realization.
+18. State validity window, next fundamental/narrative/timing review, and next D2 data/event refresh trigger.
 
 ## Required output
 - instrument / cutoff / horizon;
@@ -40,6 +41,7 @@ You are executing the **Alpha Lab Fundamental OS V18.0.0 — D2 Complete Fact-Ba
 - D2 Mechanics state;
 - D2 Capacity state;
 - cross-science causal/root map;
+- Fact Observability Receipt: material families, direct/delayed/proxy status, admitted source IDs, freshness, private/licensed gaps;
 - evidence/coverage limitations;
 - existing final research edge/permission;
 - explicit line: `D2 decision modification in V18: NONE — shadow telemetry only`;

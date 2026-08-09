@@ -1,7 +1,7 @@
 # GENERATED MIRROR — machine authority is CURRENT_PRODUCTION_MANIFEST.json
 {
-  "version": "21.2.0",
-  "current_stack": "V21.2.0",
+  "version": "21.3.0",
+  "current_stack": "V21.3.0",
   "manifest_authority": "CURRENT_PRODUCTION_MANIFEST.json",
   "human_mirror": "CURRENT_PRODUCTION_MANIFEST.yaml",
   "production_entrypoint": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md",
@@ -31,7 +31,8 @@
     "d2_six_market_router": "100 Six-Market D2 Fact Books and Production Shadow Engine/00 Six-Market D2 Fact Books and Production Shadow Engine MOC.md",
     "d3_unified_edge": "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/00 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine MOC.md",
     "d4_forward_validation": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/00 Forward Validation Calibration Promotion and Scientific Governance Engine MOC.md",
-    "cognitive_scenario_reasoning": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/00 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine MOC.md"
+    "cognitive_scenario_reasoning": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/00 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine MOC.md",
+    "fact_observability": "100 Six-Market D2 Fact Books and Production Shadow Engine/26 Fact Observability and Coverage Constitution.md"
   },
   "asset_books": {
     "XAUUSD": [
@@ -208,7 +209,11 @@
     "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Telemetry.schema.json",
     "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/applicability_profiles.json",
     "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/propagation_policy.json",
-    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Policy_Reaction_Bundle.schema.json"
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Policy_Reaction_Bundle.schema.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/config/fact_observability_registry.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_observability_map.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Receipt.schema.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Item.schema.json"
   ],
   "production_universe": [
     "XAUUSD",
@@ -287,7 +292,7 @@
     ]
   },
   "d2_market_sciences": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "deployment": "D2",
     "authority_mode": "CANONICAL_SHADOW",
     "mandatory_reporting": true,
@@ -295,7 +300,12 @@
     "coverage_contract": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_d2_coverage.json",
     "source_registry": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/d2_source_registry.json",
     "shadow_pack_schema": "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_D2_Shadow_Pack.schema.json",
-    "direct_permission_effect": "NONE"
+    "direct_permission_effect": "NONE",
+    "release": "V21.3.0",
+    "observability_registry": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/fact_observability_registry.json",
+    "observability_map": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_observability_map.json",
+    "observability_receipt_schema": "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Receipt.schema.json",
+    "observability_mode": "MATERIALITY_DRIVEN_NO_SILENT_GAPS"
   },
   "d3_unified_edge": {
     "version": "1.1.0",
@@ -332,7 +342,7 @@
   },
   "cognitive_hardening": {
     "version": "1.2.0",
-    "release": "V21.2.0",
+    "release": "V21.3.0",
     "authority_mode": "ENFORCED_COGNITIVE_HARDENING",
     "orchestrator": "MODULE_103",
     "direction_authority": "MODULE_89_FUNDAMENTAL_ACTIVE_HORIZON_ONLY",
@@ -353,5 +363,22 @@
     "final_trigger_contract": "STRUCTURED_TRIGGER_PREDICATE",
     "evidence_lineage_contract": "D1_REFERENTIAL_ON_LOAD_BEARING_PRODUCTION_PATH",
     "propagation_integrity": "ENFORCED_WITH_AUDITABLE_EXCEPTIONS"
+  },
+  "fact_observability_completion": {
+    "version": "1.0.0",
+    "release": "V21.3.0",
+    "families": 16,
+    "markets": 6,
+    "cells": 96,
+    "principle": "EPISTEMIC_COVERAGE_NOT_OMNISCIENCE",
+    "new_direction_authority": false,
+    "new_permission_authority": false,
+    "private_gap_policy": "EXPLICIT_LICENSED_OR_UNAVAILABLE_NO_PROXY_SUBSTITUTION",
+    "alternative_data_mode": "SHADOW_UNTIL_D4_VALUE",
+    "registered_source_contracts": 57,
+    "licensed_placeholders": 8,
+    "baseline_materiality": "SIX_MARKET_MAP_PRIOR",
+    "runtime_materiality": "CONTEXT_SENSITIVE_WITH_EXPLICIT_REASON",
+    "silent_gap_policy": "FORBIDDEN"
   }
 }

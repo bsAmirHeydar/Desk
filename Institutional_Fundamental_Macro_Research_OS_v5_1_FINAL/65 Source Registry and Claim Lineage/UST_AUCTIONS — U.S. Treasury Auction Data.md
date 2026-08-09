@@ -29,3 +29,6 @@ Auction announcements, terms, results, allotments, and schedules.
 - [[77 Institutional Evidence and Monograph Production Standard/08 Source Contract Production Standard]]
 - [[77 Institutional Evidence and Monograph Production Standard/10 Citation Locator and Archival Standard]]
 - [[00 Core Standards/03 Point-in-Time and Bitemporal Data Standard]]
+
+## V21.3 observability note
+For event analysis preserve announcement, auction, result and settlement clocks. Tail/stop-through requires a defensible when-issued/reference price; bid-to-cover and indirect share are not standalone demand-quality scores.

@@ -2,7 +2,7 @@
 title: "README"
 type: documentation
 status: canonical
-version: 21.2.0
+version: 21.3.0
 created: 2026-07-30
 updated: 2026-08-09
 language: en
@@ -12,7 +12,7 @@ tags: [fundamental-only, navigation, v8-repair]
 
 ## Current Alpha Lab production stack
 
-- **Production stack:** `V21.2.0`
+- **Production stack:** `V21.3.0`
 - **Production entrypoint:** [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt]]
 - **Direction authority:** `FUNDAMENTAL_ONLY` at the active strategy horizon.
 - **Cognitive runtime:** multi-hypothesis, multi-horizon, scenario-conditional, adversarial and semantic-integrity enforced.
@@ -168,4 +168,15 @@ V21 converts the V20 architecture from a primarily linear controlled analysis in
 Start production at `103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md`.
 
 ## V21.1 semantic runtime hardening
-`V21.1.0` is the current production stack. It preserves V21 cognitive breadth while enforcing semantic consistency, explicit state applicability, evidence lineage, observable triggers, topic-aware retrieval and complete cognitive telemetry. It is a precision/hardening release, not a feature-expansion release.
+`V21.1.0` was the semantic-hardening production stack before V21.2/V21.3. It preserves V21 cognitive breadth while enforcing semantic consistency, explicit state applicability, evidence lineage, observable triggers, topic-aware retrieval and complete cognitive telemetry. It is a precision/hardening release, not a feature-expansion release.
+
+## V21.2 last-mile runtime hardening
+
+V21.2 closed last-mile runtime integrity gaps while preserving cognitive flexibility: context-sensitive applicability, strict load-bearing D1 evidence resolution, structured final triggers, propagation integrity with auditable exceptions, bilateral FX policy reaction and schema-aligned D4 calibration. No new Direction authority was created.
+
+## V21.3 — Fact Observability & Source Coverage Completion
+
+V21.3 expands the **observable fact surface**, not the direction model. It adds materiality-aware routing and source/latency semantics for public SDR swap transactions, primary dealers, Treasury auctions, TRACE credit, securities lending/short facts, auction imbalances, options/convexity, ETF/passive flow, constituent fundamentals, physical/OTC gold, FX OTC partial observability, global funding, unscheduled official policy facts and market-depth/capacity. Private gaps remain explicit. Alternative data remains shadow until D4 demonstrates incremental value.
+
+- [[V21_3_FACT_OBSERVABILITY_AUTHORITY_MAP.yaml]] — V21.3 authority preservation and observability precedence.
+- [[V21_3_MIGRATION_AND_PRECEDENCE_MAP]] — baseline/materiality/coverage migration rules.

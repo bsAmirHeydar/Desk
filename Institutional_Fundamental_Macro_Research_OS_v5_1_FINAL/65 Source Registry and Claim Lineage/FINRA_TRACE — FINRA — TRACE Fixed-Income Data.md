@@ -24,3 +24,6 @@ Corporate, agency, securitized and Treasury transaction reporting; account for d
 ## Citation contract
 
 Record the exact document, release, table, form, chapter, docket or series; publication timestamp; reference period; vintage or amendment; units and transformation; coverage; limitations; and any contradictory official source.
+
+## V21.3 observability note
+TRACE provides transaction evidence for eligible fixed-income markets, with product-specific dissemination caps/delays and subscription/public access distinctions. A TRACE print is a direct transaction fact; risk-on/risk-off classification remains a separate derived step.

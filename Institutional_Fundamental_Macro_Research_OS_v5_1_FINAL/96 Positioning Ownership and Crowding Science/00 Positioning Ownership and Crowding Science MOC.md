@@ -39,3 +39,6 @@ This module is governed by Module 95 Fact Constitution. It never converts an est
 - Options open interest is not dealer inventory without a defensible counterparty mapping/model.
 - CTA, vol-control, risk-parity and passive demand estimates remain `MODEL_INFERENCE` unless directly identified.
 - No positioning state may invert or originate Fundamental Direction in V18.
+
+## V21.3 observability completion
+- [[96 Positioning Ownership and Crowding Science/14 Securities Lending Short Interest and Borrow Ecology]]

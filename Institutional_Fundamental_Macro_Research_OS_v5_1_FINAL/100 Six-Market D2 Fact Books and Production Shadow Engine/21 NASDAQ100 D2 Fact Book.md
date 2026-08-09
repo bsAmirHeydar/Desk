@@ -14,3 +14,7 @@ Nasdaq-100 methodology/rebalances, NQ/options expiries, QQQ mechanics, open/clos
 
 ## Capacity
 Venue, contract, size, horizon, volatility and auction state matter. Listed liquidity may be strong but must still be scoped; full dealer/internalization liquidity may require licensed evidence.
+
+## V21.3 — high-value fact routes
+
+Prioritize, when material: Treasury auction/refunding and primary-dealer state; TRACE credit; Cboe options/participant data; Nasdaq NOII near open/close; FINRA lending/short facts; QQQ/passive mechanics; SEC constituent facts plus licensed estimate revisions; NQ depth/cost-to-trade. These modify transmission/path/capacity without creating Fundamental Direction.

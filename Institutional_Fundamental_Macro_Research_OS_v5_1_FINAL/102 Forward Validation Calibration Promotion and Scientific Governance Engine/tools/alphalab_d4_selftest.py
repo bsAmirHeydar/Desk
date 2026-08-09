@@ -5,7 +5,7 @@ try: import jsonschema
 except Exception: jsonschema=None
 R=Path(__file__).resolve().parents[2];M=R/'102 Forward Validation Calibration Promotion and Scientific Governance Engine';checks=[]
 def ck(n,c,d=None):checks.append({'name':n,'pass':bool(c),'detail':d})
-m=json.loads((R/'CURRENT_PRODUCTION_MANIFEST.json').read_text());ck('stack_v20_or_v21',m.get('current_stack') in {'V20.0.0','V21.0.0','V21.1.0','V21.2.0'},m.get('current_stack'));ck('direction_fundamental_only',m.get('decision_authority',{}).get('direction')=='FUNDAMENTAL_ONLY')
+m=json.loads((R/'CURRENT_PRODUCTION_MANIFEST.json').read_text());ck('stack_v20_or_v21',m.get('current_stack') in {'V20.0.0','V21.0.0','V21.1.0','V21.2.0','V21.3.0'},m.get('current_stack'));ck('direction_fundamental_only',m.get('decision_authority',{}).get('direction')=='FUNDAMENTAL_ONLY')
 reg=json.loads((M/'config/promotion_registry.json').read_text());ck('registry_exists',isinstance(reg.get('records'),list))
 with tempfile.TemporaryDirectory() as td0:
  td=Path(td0)

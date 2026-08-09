@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "release": "V18.0.0",
+  "version": "1.1.0",
+  "release": "V21.3.0",
   "authority_mode": "CANONICAL_SHADOW",
   "permission_authority": false,
   "components": [
@@ -9,7 +9,10 @@
     "MARKET_LIQUIDITY",
     "COLLATERAL_LIQUIDITY",
     "DEALER_BALANCE_SHEET_CAPACITY",
-    "SOLVENCY_CREDIT"
+    "SOLVENCY_CREDIT",
+    "PRIMARY_DEALER_FINANCING",
+    "TREASURY_AUCTION_SETTLEMENT",
+    "CROSS_CURRENCY_GLOBAL_FUNDING"
   ],
   "states": [
     "EASY",
@@ -26,7 +29,10 @@
     "basis_not_spot_direction": true,
     "gross_issuance_not_net_liquidity_drain": true,
     "expected_deleveraging_not_realized_flow": true,
-    "direction_creation_forbidden": true
+    "direction_creation_forbidden": true,
+    "primary_dealer_weekly_not_intraday": true,
+    "auction_result_requires_reference_price_context": true,
+    "investor_allotment_lag_preserved": true
   },
   "d3_integration_authority": "MODULE_101_ONLY",
   "direct_permission_authority_v19": false,

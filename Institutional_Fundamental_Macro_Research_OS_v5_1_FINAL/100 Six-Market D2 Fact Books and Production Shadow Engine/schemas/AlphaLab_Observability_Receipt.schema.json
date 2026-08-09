@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Observability_Receipt.schema.json",
+  "title": "Alpha Lab V21.3 Fact Observability Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "instrument",
+    "analysis_cutoff_utc",
+    "active_horizon",
+    "items",
+    "critical_gaps",
+    "silent_gap_count",
+    "permission_authority"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0.0"
+    },
+    "instrument": {
+      "enum": [
+        "XAUUSD",
+        "NASDAQ100",
+        "SP500",
+        "DJIA",
+        "EURUSD",
+        "USDJPY"
+      ]
+    },
+    "analysis_cutoff_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active_horizon": {
+      "enum": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ]
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "AlphaLab_Observability_Item.schema.json"
+      }
+    },
+    "critical_gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "silent_gap_count": {
+      "const": 0
+    },
+    "permission_authority": {
+      "const": "NONE_NEW"
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "direct_material_families": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "partial_or_delayed_families": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "subscription_or_licensed_gaps": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "proxy_only_families": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unavailable_or_undetermined_families": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

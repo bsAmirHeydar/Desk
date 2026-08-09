@@ -13,3 +13,8 @@ Represent **mechanically scheduled or structurally induced trading pressure** an
 `VOLUME != DEPTH != RESILIENCY != CAPACITY`
 
 Mechanics may distort, concentrate, delay or accelerate transmission. Capacity is conditional on instrument, venue, order size, horizon, volatility, spread, depth and participation.
+
+## V21.3 observability completion
+- [[99 Institutional Mechanics and Market Capacity Science/14 Equity Auction Imbalance and Closing Mechanics]]
+- [[99 Institutional Mechanics and Market Capacity Science/15 Options Surface Dealer Convexity and Dispersion Observability]]
+- [[99 Institutional Mechanics and Market Capacity Science/16 Market Depth Resiliency Impact and Capacity Observability]]

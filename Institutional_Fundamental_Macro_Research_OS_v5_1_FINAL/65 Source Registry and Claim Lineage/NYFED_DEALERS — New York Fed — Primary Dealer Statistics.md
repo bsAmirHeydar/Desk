@@ -29,3 +29,6 @@ Dealer positions, financing and activity.
 - [[77 Institutional Evidence and Monograph Production Standard/08 Source Contract Production Standard]]
 - [[77 Institutional Evidence and Monograph Production Standard/10 Citation Locator and Archival Standard]]
 - [[00 Core Standards/03 Point-in-Time and Bitemporal Data Standard]]
+
+## V21.3 observability note
+Primary Dealer Statistics cover positions, transactions, financing and settlement fails for the primary-dealer community. Treat the weekly aggregate as direct but lagged dealer-community evidence; it is not intraday dealer flow and not the entire market.

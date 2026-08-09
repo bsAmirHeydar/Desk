@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "release": "V18.0.0",
+  "version": "1.1.0",
+  "release": "V21.3.0",
   "authority_mode": "CANONICAL_SHADOW",
   "permission_authority": false,
   "mechanic_families": [
@@ -15,7 +15,12 @@
     "TREASURY_AUCTION_SETTLEMENT",
     "PERIOD_END_PROCESS",
     "MARGIN_CLEARING_CHANGE",
-    "HOLIDAY_VENUE_CONSTRAINT"
+    "HOLIDAY_VENUE_CONSTRAINT",
+    "AUCTION_IMBALANCE",
+    "OPTIONS_SURFACE_CONVEXITY",
+    "SECURITIES_LENDING_SETTLEMENT",
+    "ORDERBOOK_DEPTH_STATE",
+    "VOLATILITY_DISPERSION_STATE"
   ],
   "capacity_grades": [
     "VERY_HIGH",
@@ -32,7 +37,11 @@
     "volume_not_capacity": true,
     "capacity_must_be_venue_size_horizon_state_specific": true,
     "expected_passive_flow_is_inference": true,
-    "otc_capacity_not_inferred_from_futures_alone": true
+    "otc_capacity_not_inferred_from_futures_alone": true,
+    "indicative_imbalance_not_realized_flow": true,
+    "displayed_depth_not_total_liquidity": true,
+    "dealer_gamma_not_observed_without_position_lineage": true,
+    "volatility_state_not_direction_authority": true
   },
   "d3_integration_authority": "MODULE_101_ONLY",
   "direct_permission_authority_v19": false,

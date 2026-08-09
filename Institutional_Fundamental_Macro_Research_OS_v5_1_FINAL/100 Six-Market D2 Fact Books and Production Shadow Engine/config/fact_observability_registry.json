@@ -1,0 +1,308 @@
+{
+  "version": "1.0.0",
+  "release": "V21.3.0",
+  "principle": "KNOW_EVERY_MATERIAL_FACT_FAMILY_RETRIEVE_WHAT_IS_AVAILABLE_LABEL_THE_REST_HONESTLY",
+  "permission_authority": "NONE_NEW",
+  "families": [
+    {
+      "family_id": "SWAP_SDR_TRANSACTION",
+      "name": "Swap/OTC derivative transaction tape",
+      "destination_authority": "ACTUAL_FLOW",
+      "direct_or_primary_source_ids": [
+        "CFTC_PART43_FRAMEWORK",
+        "DTCC_SDR_PUBLIC",
+        "CME_SDR_PUBLIC",
+        "ICE_SDR_PUBLIC"
+      ],
+      "proxy_or_context_source_ids": [],
+      "licensed_or_private_source_ids": [
+        "LICENSED_CLIENT_FLOW"
+      ],
+      "hard_boundaries": [
+        "Public SDR transactions are direct transaction facts but not identified client direction."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "PRIMARY_DEALER_BALANCE_SHEET",
+      "name": "Primary-dealer positions, transactions, financing and fails",
+      "destination_authority": "FUNDING_PLUMBING",
+      "direct_or_primary_source_ids": [
+        "NYFED_PRIMARY_DEALERS"
+      ],
+      "proxy_or_context_source_ids": [],
+      "licensed_or_private_source_ids": [
+        "LICENSED_DEALER_BALANCE_SHEET"
+      ],
+      "hard_boundaries": [
+        "Weekly primary-dealer aggregates are not intraday dealer flow."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "TREASURY_AUCTION_REFUNDING",
+      "name": "Treasury auction/refunding/supply microstructure",
+      "destination_authority": "FUNDING_PLUMBING",
+      "direct_or_primary_source_ids": [
+        "UST_AUCTIONS",
+        "UST_INVESTOR_ALLOTMENTS"
+      ],
+      "proxy_or_context_source_ids": [],
+      "licensed_or_private_source_ids": [],
+      "hard_boundaries": [
+        "Auction result must be interpreted against when-issued/reference pricing; gross issuance is not a standalone liquidity drain."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "CREDIT_TRACE_TRANSACTIONS",
+      "name": "Corporate/agency/securitized fixed-income transaction tape",
+      "destination_authority": "ACTUAL_FLOW",
+      "direct_or_primary_source_ids": [
+        "FINRA_TRACE"
+      ],
+      "proxy_or_context_source_ids": [],
+      "licensed_or_private_source_ids": [],
+      "hard_boundaries": [
+        "TRACE trades do not identify risk-on/risk-off direction without a defensible classification."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "OPTIONS_DEALER_CONVEXITY",
+      "name": "Options surface, participant activity, dealer/hedging inference",
+      "destination_authority": "INSTITUTIONAL_MECHANICS",
+      "direct_or_primary_source_ids": [
+        "CBOE_OPTIONS_STATS"
+      ],
+      "proxy_or_context_source_ids": [
+        "CBOE_GAMMA_INDEX"
+      ],
+      "licensed_or_private_source_ids": [
+        "CBOE_OPEN_CLOSE_OPTIONS",
+        "LICENSED_DEALER_POSITIONING"
+      ],
+      "hard_boundaries": [
+        "Open interest and aggregate volume are not dealer inventory; dealer gamma remains inference unless directly identified."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "SECURITIES_LENDING_SHORT_BORROW",
+      "name": "Securities lending, short interest, borrow activity and crowding",
+      "destination_authority": "POSITIONING_OWNERSHIP",
+      "direct_or_primary_source_ids": [
+        "FINRA_SLATE",
+        "FINRA_SHORT_INTEREST",
+        "FINRA_SHORT_SALE_VOLUME"
+      ],
+      "proxy_or_context_source_ids": [],
+      "licensed_or_private_source_ids": [
+        "LICENSED_SECURITIES_LENDING"
+      ],
+      "hard_boundaries": [
+        "Short sale volume != short interest != securities-loan activity != directional net flow."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "EQUITY_AUCTION_IMBALANCE",
+      "name": "Opening/closing auction imbalance and realized cross flow",
+      "destination_authority": "INSTITUTIONAL_MECHANICS",
+      "direct_or_primary_source_ids": [
+        "NASDAQ_NOII",
+        "NYSE_ORDER_IMBALANCES"
+      ],
+      "proxy_or_context_source_ids": [],
+      "licensed_or_private_source_ids": [],
+      "hard_boundaries": [
+        "Indicative imbalance is not realized flow until the cross; index impact requires constituent weighting."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "ETF_AP_PASSIVE_FLOW",
+      "name": "ETF shares/creations-redemptions/passive basket mechanics",
+      "destination_authority": "ACTUAL_FLOW",
+      "direct_or_primary_source_ids": [
+        "ETF_SPONSOR_DISCLOSURE",
+        "SEC_NPORT"
+      ],
+      "proxy_or_context_source_ids": [],
+      "licensed_or_private_source_ids": [
+        "LICENSED_CLIENT_FLOW"
+      ],
+      "hard_boundaries": [
+        "AUM change is not flow; actual AP identity/activity is often private."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "CORPORATE_CONSTITUENT_FUNDAMENTALS",
+      "name": "Index constituent earnings/revisions/buybacks/issuance and weighted contribution",
+      "destination_authority": "FUNDAMENTAL",
+      "direct_or_primary_source_ids": [
+        "SEC_EDGAR",
+        "SEC_XBRL_DATA"
+      ],
+      "proxy_or_context_source_ids": [],
+      "licensed_or_private_source_ids": [
+        "LICENSED_EARNINGS_ESTIMATES"
+      ],
+      "hard_boundaries": [
+        "Authorization is not execution; analyst estimate revisions require licensed source if not public."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "GOLD_PHYSICAL_OTC",
+      "name": "Gold physical/OTC/location/arbitrage/inventory state",
+      "destination_authority": "ACTUAL_FLOW",
+      "direct_or_primary_source_ids": [
+        "WGC_ETF",
+        "WGC_GDT",
+        "CME_GOLD_STOCKS_DELIVERIES",
+        "LBMA_VAULT_DATA",
+        "LBMA_CLEARING_DATA"
+      ],
+      "proxy_or_context_source_ids": [
+        "LBMA_TRADE_DATA"
+      ],
+      "licensed_or_private_source_ids": [
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+      ],
+      "hard_boundaries": [
+        "COMEX/London/ETF subsets are not the entire global gold market."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "FX_OTC_FLOW",
+      "name": "OTC FX dealer/client/corporate/official flow",
+      "destination_authority": "ACTUAL_FLOW",
+      "direct_or_primary_source_ids": [
+        "DTCC_SDR_PUBLIC",
+        "CME_SDR_PUBLIC",
+        "ICE_SDR_PUBLIC",
+        "JP_MOF_FX_INTERVENTION",
+        "UST_TIC"
+      ],
+      "proxy_or_context_source_ids": [],
+      "licensed_or_private_source_ids": [
+        "LICENSED_CLIENT_FLOW",
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+      ],
+      "hard_boundaries": [
+        "Futures/TIC/SDR derivatives are partial subsets; comprehensive spot dealer/client flow remains private/licensed."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "CROSS_CURRENCY_GLOBAL_FUNDING",
+      "name": "Cross-currency basis/global dollar funding/bank and dealer financing",
+      "destination_authority": "FUNDING_PLUMBING",
+      "direct_or_primary_source_ids": [
+        "NYFED_SOFR",
+        "NYFED_PRIMARY_DEALERS",
+        "BIS_GLI",
+        "FED_H8",
+        "FED_Z1",
+        "ECB_STATISTICS",
+        "BOJ_STATISTICS"
+      ],
+      "proxy_or_context_source_ids": [],
+      "licensed_or_private_source_ids": [
+        "LICENSED_DEALER_BALANCE_SHEET"
+      ],
+      "hard_boundaries": [
+        "Basis/funding stress is not automatic spot direction."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "VOL_CONVEXITY_DISPERSION",
+      "name": "Implied/realized vol, skew, term structure, convexity and dispersion",
+      "destination_authority": "INSTITUTIONAL_MECHANICS",
+      "direct_or_primary_source_ids": [
+        "CBOE_OPTIONS_STATS",
+        "CME_VOLUME_OI"
+      ],
+      "proxy_or_context_source_ids": [
+        "CBOE_GAMMA_INDEX"
+      ],
+      "licensed_or_private_source_ids": [
+        "CBOE_OPEN_CLOSE_OPTIONS"
+      ],
+      "hard_boundaries": [
+        "Volatility state modifies path/fragility; it does not create Fundamental Direction."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "ALTERNATIVE_HIGH_FREQUENCY",
+      "name": "Alternative/high-frequency fundamental nowcast evidence",
+      "destination_authority": "FUNDAMENTAL",
+      "direct_or_primary_source_ids": [],
+      "proxy_or_context_source_ids": [],
+      "licensed_or_private_source_ids": [
+        "LICENSED_ALTERNATIVE_DATA"
+      ],
+      "hard_boundaries": [
+        "Shadow by default; promotion requires D4 incremental-value evidence and stable methodology."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "UNSCHEDULED_POLICY_GEOPOLITICAL",
+      "name": "Unscheduled legal, sanctions, tariff, policy and geopolitical official facts",
+      "destination_authority": "FUNDAMENTAL",
+      "direct_or_primary_source_ids": [
+        "OFAC_SANCTIONS",
+        "USTR_TRADE",
+        "FEDERAL_REGISTER"
+      ],
+      "proxy_or_context_source_ids": [],
+      "licensed_or_private_source_ids": [],
+      "hard_boundaries": [
+        "Official fact first; narrative/market implication remains separate causal inference."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    },
+    {
+      "family_id": "MARKET_DEPTH_IMPACT_CAPACITY",
+      "name": "Venue-specific depth, spread, resiliency, impact and executable capacity",
+      "destination_authority": "MARKET_CAPACITY",
+      "direct_or_primary_source_ids": [
+        "CME_LIQUIDITY_TOOL"
+      ],
+      "proxy_or_context_source_ids": [
+        "CME_VOLUME_OI"
+      ],
+      "licensed_or_private_source_ids": [
+        "CME_MARKET_DEPTH",
+        "LICENSED_ORDERBOOK_DEPTH",
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+      ],
+      "hard_boundaries": [
+        "Volume != depth != resiliency != capacity; capacity is venue/size/horizon/state specific."
+      ],
+      "runtime_rule": "MATERIALITY_DRIVEN_RETRIEVAL_NO_SILENT_GAP",
+      "new_direction_authority": false
+    }
+  ]
+}

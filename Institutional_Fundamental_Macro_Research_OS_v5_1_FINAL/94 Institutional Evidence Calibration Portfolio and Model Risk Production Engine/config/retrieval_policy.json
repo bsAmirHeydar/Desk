@@ -1,5 +1,5 @@
 {
-  "version": "21.2.0",
+  "version": "21.3.0",
   "mode": "ENFORCED",
   "principle": "SMALLEST_SUFFICIENT_CANONICAL_SET",
   "allowed_load_bearing_statuses": [
@@ -46,5 +46,7 @@
   "topic_aware_expansion": true,
   "dimension_coverage_must_be_verified": true,
   "dependency_resolution": "TOPIC_TO_CANONICAL_CAUSAL_DEPENDENCY",
-  "anti_bloat": "EXPAND_ONLY_ON_MATERIAL_TOPIC_OR_REQUIRED_DIMENSION"
+  "anti_bloat": "EXPAND_ONLY_ON_MATERIAL_TOPIC_OR_REQUIRED_DIMENSION",
+  "release": "V21.3.0",
+  "fact_observability_planning": "MATERIALITY_DRIVEN_16_FAMILY_REGISTRY"
 }

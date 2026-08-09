@@ -24,3 +24,6 @@ Cleared and uncleared swap data; coverage and aggregation limits apply.
 ## Citation contract
 
 Record the exact document, release, table, form, chapter, docket or series; publication timestamp; reference period; vintage or amendment; units and transformation; coverage; limitations; and any contradictory official source.
+
+## V21.3 observability note
+Use this source as a CFTC-level swaps/derivatives reporting route and aggregation context. For transaction-level Part 43 evidence, route to the registered SDR public dissemination source (`DTCC_SDR_PUBLIC`, `CME_SDR_PUBLIC`, `ICE_SDR_PUBLIC`) and preserve repository coverage and regulatory delays. Public swap prints are transactions, not identified client direction.

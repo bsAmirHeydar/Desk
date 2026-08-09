@@ -1,0 +1,50 @@
+release: V21.3.0
+purpose: fact_observability_and_source_coverage_completion
+principle: EPISTEMIC_COVERAGE_NOT_OMNISCIENCE
+
+authorities:
+  direction:
+    owner: MODULE_89
+    rule: FUNDAMENTAL_ONLY
+    changed_in_v21_3: false
+  truth_and_evidence:
+    owner: MODULE_95
+    rule: FACT_SOURCE_VINTAGE_LINEAGE_MATERIALITY
+    changed_in_v21_3: false
+  positioning:
+    owner: MODULE_96
+    mode: CANONICAL_SHADOW
+  actual_flow:
+    owner: MODULE_97
+    mode: CANONICAL_SHADOW
+  funding_plumbing:
+    owner: MODULE_98
+    mode: CANONICAL_SHADOW
+  mechanics_capacity:
+    owner: MODULE_99
+    mode: CANONICAL_SHADOW
+  fact_observability:
+    owner: MODULE_100
+    contract: 100 Six-Market D2 Fact Books and Production Shadow Engine/26 Fact Observability and Coverage Constitution.md
+    registry: 100 Six-Market D2 Fact Books and Production Shadow Engine/config/fact_observability_registry.json
+    market_map: 100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_observability_map.json
+    receipt_schema: 100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Receipt.schema.json
+    authority_effect: NONE_NEW
+  d2_causal_modulation:
+    owner: MODULE_101
+    rule: D3_ONLY
+  promotion:
+    owner: MODULE_102
+    rule: FORWARD_VALIDATED_REGISTRY_ONLY
+  cognition:
+    owner: MODULE_103
+    rule: ENFORCED_COGNITIVE_HARDENING
+
+observability_rules:
+  baseline_materiality: SIX_MARKET_MAP_PRIOR
+  runtime_materiality: CONTEXT_SENSITIVE_WITH_EXPLICIT_REASON
+  silent_gap: FORBIDDEN
+  registered_source_implies_available: false
+  proxy_may_replace_private_gap: false
+  licensed_gap_must_remain_explicit: true
+  alternative_data: SHADOW_UNTIL_D4_INCREMENTAL_VALUE

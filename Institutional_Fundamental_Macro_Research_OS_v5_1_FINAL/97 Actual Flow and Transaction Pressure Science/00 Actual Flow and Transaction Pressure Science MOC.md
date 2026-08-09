@@ -19,3 +19,11 @@ A flow claim requires a change process. If the buyer/seller cannot be identified
 4. derived flow proxy;
 5. model-implied flow;
 6. unavailable/undetermined.
+
+## V21.3 observability completion
+- [[97 Actual Flow and Transaction Pressure Science/13 Public Swap SDR Transaction Intelligence]]
+- [[97 Actual Flow and Transaction Pressure Science/14 TRACE Credit Transaction Intelligence]]
+- [[97 Actual Flow and Transaction Pressure Science/15 ETF AP Passive and Basket Flow Intelligence]]
+- [[97 Actual Flow and Transaction Pressure Science/16 Corporate Constituent Flow and Earnings Breadth]]
+- [[97 Actual Flow and Transaction Pressure Science/17 Gold Physical OTC Location and Flow Intelligence]]
+- [[97 Actual Flow and Transaction Pressure Science/18 FX OTC Flow Observability Boundary]]

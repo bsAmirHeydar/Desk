@@ -132,3 +132,42 @@ Topic notes are accepted only when they specify the object, data, point-in-time 
 - [[65 Source Registry and Claim Lineage/USDA_WASDE — USDA World Agricultural Supply and Demand Estimates]]
 - [[65 Source Registry and Claim Lineage/UNCTAD_SHIPPING — UNCTAD Review of Maritime Transport]]
 - [[65 Source Registry and Claim Lineage/EU_ETS — European Commission EU Emissions Trading System]]
+
+## V21.3 observability sources
+
+High-value fact routes added to the live observability registry:
+- [[65 Source Registry and Claim Lineage/CFTC_PART43 - CFTC Real-Time Public Swap Reporting]]
+- [[65 Source Registry and Claim Lineage/DTCC_SDR_PUBLIC - DTCC Public Price Dissemination]]
+- [[65 Source Registry and Claim Lineage/CME_SDR_PUBLIC - CME Swap Data Repository Public Data]]
+- [[65 Source Registry and Claim Lineage/ICE_SDR_PUBLIC - ICE Trade Vault Public Swap Data]]
+- [[65 Source Registry and Claim Lineage/UST_INVESTOR_ALLOTMENTS - Treasury Investor Class Auction Allotments]]
+- [[65 Source Registry and Claim Lineage/FINRA_SLATE - FINRA Securities Lending and Transparency Engine]]
+- [[65 Source Registry and Claim Lineage/FINRA_SHORT_INTEREST - FINRA Equity Short Interest]]
+- [[65 Source Registry and Claim Lineage/FINRA_SHORT_SALE_VOLUME - FINRA Short Sale Volume]]
+- [[65 Source Registry and Claim Lineage/NASDAQ_NOII - Nasdaq Net Order Imbalance Indicator]]
+- [[65 Source Registry and Claim Lineage/NYSE_IMBALANCES - NYSE Auction Imbalances]]
+- [[65 Source Registry and Claim Lineage/CBOE_OPTIONS_STATS - Cboe Options Market Statistics]]
+- [[65 Source Registry and Claim Lineage/CBOE_OPEN_CLOSE - Cboe Open-Close Options Data]]
+- [[65 Source Registry and Claim Lineage/CME_MARKET_DEPTH - CME Real-Time Market Depth and MBO]]
+- [[65 Source Registry and Claim Lineage/CME_LIQUIDITY_TOOL - CME Liquidity Tool]]
+- [[65 Source Registry and Claim Lineage/CME_GOLD_STOCKS - COMEX Gold Stocks and Deliveries]]
+- [[65 Source Registry and Claim Lineage/LBMA_VAULT - LBMA London Vault Data]]
+- [[65 Source Registry and Claim Lineage/LBMA_CLEARING - LBMA Clearing Data]]
+- [[65 Source Registry and Claim Lineage/LBMA_TRADE_DATA - LBMA Trade Data]]
+- [[65 Source Registry and Claim Lineage/FEDERAL_REGISTER - U.S. Federal Register]]
+
+- [[CBOE_GAMMA_INDEX - Cboe GAMMA Index]] — public gamma proxy; never dealer inventory.
+
+- [[BOJ_STATISTICS - Bank of Japan Statistics]] — V21.3 operational source contract.
+- [[CBOE_PRODUCT_CALENDAR - Cboe Product and Expiration Calendar]] — V21.3 operational source contract.
+- [[CME_VOLUME_OI - CME Volume and Open Interest]] — V21.3 operational source contract.
+- [[ECB_STATISTICS - ECB Data Portal]] — V21.3 operational source contract.
+- [[ETF_SPONSOR_DISCLOSURE - Official ETF Sponsor Disclosures]] — V21.3 operational source contract.
+- [[JP_MOF_FX_INTERVENTION - Japan MOF Foreign Exchange Intervention]] — V21.3 operational source contract.
+- [[LBMA_IBA_BENCHMARK_INFO - Precious Metal Benchmark Information]] — V21.3 operational source contract.
+- [[NASDAQ_INDEX_ADMIN - Nasdaq Index Administration]] — V21.3 operational source contract.
+- [[NYFED_REPO_RRP - New York Fed Repo and Reverse Repo Operations]] — V21.3 operational source contract.
+- [[SEC_13F - SEC Form 13F]] — V21.3 operational source contract.
+- [[SEC_NPORT - SEC Form N-PORT Data]] — V21.3 operational source contract.
+- [[SPDJI_INDEX_ADMIN - S&P Dow Jones Indices Administration]] — V21.3 operational source contract.
+- [[UST_DAILY_TREASURY_STATEMENT - Daily Treasury Statement]] — V21.3 operational source contract.

@@ -14,3 +14,7 @@ S&P index rebalance/reconstitution, ES/options expiry/roll, SPY mechanics, openi
 
 ## Capacity
 Scope estimates to venue/size/horizon/state. Stress capacity can be materially lower than normal-time capacity.
+
+## V21.3 — high-value fact routes
+
+Prioritize SPX options/0DTE and participant data, TRACE credit, Treasury/dealer conditions, SPY/passive flow, NYSE/Nasdaq constituent auction imbalances, corporate buyback/issuance facts, short/borrow ecology and ES depth/cost-to-trade.

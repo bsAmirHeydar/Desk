@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Observability_Item.schema.json",
+  "title": "Alpha Lab Fact Observability Item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "family_id",
+    "coverage_state",
+    "evidence_class",
+    "freshness_state",
+    "access_state",
+    "admitted_source_ids",
+    "current_state_eligible",
+    "known_private_gap",
+    "reason",
+    "baseline_materiality",
+    "runtime_materiality",
+    "materiality_reason"
+  ],
+  "properties": {
+    "family_id": {
+      "type": "string"
+    },
+    "coverage_state": {
+      "enum": [
+        "DIRECT_MATERIAL_COVERAGE",
+        "PARTIAL_DIRECT",
+        "DELAYED_DIRECT",
+        "SUBSCRIPTION_REQUIRED",
+        "LICENSED_REQUIRED",
+        "PROXY_ONLY",
+        "UNAVAILABLE",
+        "UNDETERMINED",
+        "NOT_MATERIAL"
+      ]
+    },
+    "evidence_class": {
+      "enum": [
+        "DIRECT",
+        "AGGREGATE_DIRECT",
+        "REGULATED_FILING",
+        "PROXY",
+        "MODEL_INFERENCE",
+        "MIXED",
+        "NONE"
+      ]
+    },
+    "freshness_state": {
+      "enum": [
+        "FRESH",
+        "STALE",
+        "MIXED",
+        "NOT_APPLICABLE",
+        "UNDETERMINED"
+      ]
+    },
+    "access_state": {
+      "enum": [
+        "PUBLIC_AVAILABLE",
+        "SUBSCRIPTION_AVAILABLE",
+        "LICENSED_AVAILABLE",
+        "MIXED_AVAILABLE",
+        "NOT_AVAILABLE",
+        "NOT_REQUIRED",
+        "UNDETERMINED"
+      ]
+    },
+    "admitted_source_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "context_source_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "current_state_eligible": {
+      "type": "boolean"
+    },
+    "known_private_gap": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reference_time_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "publication_time_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "next_refresh_trigger": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "prohibited_inference_checks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "baseline_materiality": {
+      "enum": [
+        "DECISION_CRITICAL",
+        "MATERIAL",
+        "SUPPORTING",
+        "CONTEXTUAL",
+        "NOT_MATERIAL"
+      ]
+    },
+    "runtime_materiality": {
+      "enum": [
+        "DECISION_CRITICAL",
+        "MATERIAL",
+        "SUPPORTING",
+        "CONTEXTUAL",
+        "NOT_MATERIAL"
+      ]
+    },
+    "materiality_reason": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

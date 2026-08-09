@@ -14,3 +14,7 @@ Dow index methodology changes, YM/options expiries, DIA mechanics, opening/closi
 
 ## Capacity
 Use instrument-specific liquidity/capacity. A small index basket, ETF, futures and constituent cash market each have different depth and execution properties.
+
+## V21.3 — high-value fact routes
+
+Prioritize price-weighted constituent earnings/capital allocation, NYSE closing/opening imbalances, Treasury/dealer conditions, TRACE credit, short/borrow ecology and YM/DIA capacity. Weight constituent evidence by the index's actual price-weighted mechanics.

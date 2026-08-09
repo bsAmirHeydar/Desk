@@ -29,3 +29,6 @@ Global gold-backed ETF holdings and flows.
 - [[77 Institutional Evidence and Monograph Production Standard/08 Source Contract Production Standard]]
 - [[77 Institutional Evidence and Monograph Production Standard/10 Citation Locator and Archival Standard]]
 - [[00 Core Standards/03 Point-in-Time and Bitemporal Data Standard]]
+
+## V21.3 observability note
+Use WGC gold-ETF holdings/flow data as a physically backed ETF subset of gold demand. Do not equate ETF flow with total gold demand, and keep AUM price effects separate from holdings/flow changes.

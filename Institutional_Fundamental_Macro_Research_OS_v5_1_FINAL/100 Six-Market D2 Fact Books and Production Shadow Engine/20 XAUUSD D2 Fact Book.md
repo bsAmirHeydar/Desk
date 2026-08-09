@@ -14,3 +14,14 @@ COMEX expiry/roll/settlement, options mechanics, benchmark/fixing conventions an
 
 ## Capacity
 COMEX futures/options can inform listed-market capacity only. Do not generalize to global OTC/physical gold. Strong full-market capacity claims require venue-specific/licensed evidence.
+
+## V21.3 — high-value fact routes
+
+### Physical/OTC/location
+Check WGC ETF/GDT, COMEX stocks/deliveries, LBMA vault/clearing and, when available, LBMA/OTC trade/liquidity data. Treat each as a subset with its own cadence.
+
+### Derivatives/funding
+Use public SDR swap transactions for rates/commodity-derivative context, NY Fed primary-dealer/funding data and Treasury auction clocks when USD-rate transmission is material.
+
+### Capacity
+For GC listed execution, prefer CME depth/liquidity evidence when available. Global OTC capacity remains a separate licensed/private layer.

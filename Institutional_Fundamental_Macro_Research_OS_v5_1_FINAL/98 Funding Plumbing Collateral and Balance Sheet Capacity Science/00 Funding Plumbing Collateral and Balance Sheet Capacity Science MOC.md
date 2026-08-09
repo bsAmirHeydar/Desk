@@ -22,3 +22,8 @@ The module refuses a single undifferentiated “liquidity” score unless every 
 - dealer/bank balance-sheet capacity;
 - margin and financing constraints;
 - calendar balance-sheet effects.
+
+## V21.3 observability completion
+- [[98 Funding Plumbing Collateral and Balance Sheet Capacity Science/14 Primary Dealer Positions Financing and Fails]]
+- [[98 Funding Plumbing Collateral and Balance Sheet Capacity Science/15 Treasury Auction Refunding and Settlement Microstructure]]
+- [[98 Funding Plumbing Collateral and Balance Sheet Capacity Science/16 Cross-Currency and Global Dollar Funding Observability]]

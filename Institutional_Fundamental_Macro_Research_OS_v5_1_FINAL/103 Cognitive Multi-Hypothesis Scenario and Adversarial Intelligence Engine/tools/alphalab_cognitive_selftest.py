@@ -40,9 +40,9 @@ def pack_for(x):
  for h in x['hypothesis_set']['hypotheses']:
   for evr in h['supporting_evidence']:
    facts.append({'fact_id':evr['fact_id'],'primary_class':'OFFICIAL_REPORTED_FACT','availability_state':'AVAILABLE','decision_materiality':evr['materiality'],'root_cause_id':evr['root_id'],'load_bearing':True,'direction_role':'FUNDAMENTAL_ROOT','source':{'source_id':'TEST','tier':'OFFICIAL_PRIMARY'},'time':{'first_seen_time':'2026-08-08T11:00:00Z'}})
- return {'run_id':'RUN','symbol':x['instrument'],'analysis_cutoff_utc':x['analysis_cutoff_utc'],'manifest_version':'21.2.0','runtime_stack_version':'21.2.0','schema_version':'1.0.0','fact_records':facts,'coverage_receipt':{},'future_vintages_excluded':True}
+ return {'run_id':'RUN','symbol':x['instrument'],'analysis_cutoff_utc':x['analysis_cutoff_utc'],'manifest_version':'21.3.0','runtime_stack_version':'21.3.0','schema_version':'1.0.0','fact_records':facts,'coverage_receipt':{},'future_vintages_excluded':True}
 
-m=json.loads((R/'CURRENT_PRODUCTION_MANIFEST.json').read_text());ch=m.get('cognitive_hardening') or {};ck('stack_v21_2',m.get('current_stack')=='V21.2.0',m.get('current_stack'));ck('direction_fundamental_only',m.get('decision_authority',{}).get('direction')=='FUNDAMENTAL_ONLY');ck('semantic_last_mile',ch.get('semantic_integrity_mode')=='ENFORCED_LAST_MILE')
+m=json.loads((R/'CURRENT_PRODUCTION_MANIFEST.json').read_text());ch=m.get('cognitive_hardening') or {};ck('stack_v21_2_or_v21_3',m.get('current_stack') in {'V21.2.0','V21.3.0'},m.get('current_stack'));ck('direction_fundamental_only',m.get('decision_authority',{}).get('direction')=='FUNDAMENTAL_ONLY');ck('semantic_last_mile',ch.get('semantic_integrity_mode')=='ENFORCED_LAST_MILE')
 with tempfile.TemporaryDirectory() as td0:
  td=Path(td0);ip=td/'i.json';op=td/'o.json';x=base();ip.write_text(json.dumps(x),encoding='utf-8');rc,so,se=run([T/'alphalab_cognitive_validate.py','--input',ip,'--vault-root',R]);ck('valid_pack',rc==0,so+se);rc,so,se=run([T/'alphalab_cognitive_adjudicate.py','--input',ip,'--output',op,'--vault-root',R]);z=json.loads(op.read_text());ck('clear_preserves_buy',rc==0 and z['cognitive_permission']=='BUY');ck('structured_next_review',isinstance(z.get('next_review_trigger'),dict) and z['next_review_trigger'].get('trigger_id'),z)
  def bad(name,fn):

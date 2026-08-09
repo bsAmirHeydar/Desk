@@ -20,3 +20,8 @@ d2_shadow:
 ```
 
 Final decision is then reported separately from the existing V17 stack.
+
+
+## V21.3 observability extension
+
+For production runs using D2 pack `1.1.0`, `observability_receipt` is mandatory. The receipt records `baseline_materiality` from the six-market map and a context-sensitive `runtime_materiality`. Runtime materiality may differ only with an explicit reason; the family may not disappear from the receipt. Private/licensed gaps remain explicit and never become facts through proxy substitution.

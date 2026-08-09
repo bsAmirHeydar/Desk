@@ -1,0 +1,1203 @@
+{
+  "version": "1.0.0",
+  "release": "V21.3.0",
+  "markets": {
+    "XAUUSD": {
+      "SWAP_SDR_TRANSACTION": {
+        "materiality": "SUPPORTING",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "rates/commodity swap repricing is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "PRIMARY_DEALER_BALANCE_SHEET": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "Treasury/dealer capacity is a live macro transmission concern"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "TREASURY_AUCTION_REFUNDING": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "major coupon auction/refunding/settlement is within validity window"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "CREDIT_TRACE_TRANSACTIONS": {
+        "materiality": "SUPPORTING",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "growth/risk-off hypothesis needs credit confirmation"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "OPTIONS_DEALER_CONVEXITY": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "expiry/event/large options concentration is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "SECURITIES_LENDING_SHORT_BORROW": {
+        "materiality": "CONTEXTUAL",
+        "active_horizons": [
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "gold ETF/miner crowding is explicitly part of thesis"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "EQUITY_AUCTION_IMBALANCE": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "ETF_AP_PASSIVE_FLOW": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "ETF flow is material to gold demand/transmission"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "CORPORATE_CONSTITUENT_FUNDAMENTALS": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "GOLD_PHYSICAL_OTC": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W",
+          "CYCLICAL"
+        ],
+        "required_when": [
+          "gold is analyzed beyond pure event micro-horizon"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "FX_OTC_FLOW": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "USD/FX transmission is central"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "CROSS_CURRENCY_GLOBAL_FUNDING": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "USD funding or stress regime is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "VOL_CONVEXITY_DISPERSION": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "path fragility/event convexity is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "ALTERNATIVE_HIGH_FREQUENCY": {
+        "materiality": "CONTEXTUAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "official macro releases are stale and a nowcast question is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "UNSCHEDULED_POLICY_GEOPOLITICAL": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W",
+          "CYCLICAL",
+          "STRUCTURAL"
+        ],
+        "required_when": [
+          "sanctions/geopolitical/policy shock is active"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "MARKET_DEPTH_IMPACT_CAPACITY": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "execution permission is being considered"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      }
+    },
+    "NASDAQ100": {
+      "SWAP_SDR_TRANSACTION": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "rates/equity/credit swap repricing is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "PRIMARY_DEALER_BALANCE_SHEET": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "rates/Treasury/dealer capacity is a dominant channel"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "TREASURY_AUCTION_REFUNDING": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "auction/refunding/settlement occurs within edge validity"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "CREDIT_TRACE_TRANSACTIONS": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "growth/credit/risk-off hypothesis is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "OPTIONS_DEALER_CONVEXITY": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "options/0DTE/expiry path can materially alter transmission"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "SECURITIES_LENDING_SHORT_BORROW": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "crowding/squeeze/constituent short exposure is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "EQUITY_AUCTION_IMBALANCE": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "near open/close, rebalance, month-end or index event"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "ETF_AP_PASSIVE_FLOW": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "ETF/passive/rebalance path is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "CORPORATE_CONSTITUENT_FUNDAMENTALS": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "earnings/guidance/revisions/mega-cap or sector contribution is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "GOLD_PHYSICAL_OTC": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "FX_OTC_FLOW": {
+        "materiality": "SUPPORTING",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "USD move is a major cross-asset channel"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "CROSS_CURRENCY_GLOBAL_FUNDING": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "funding/dealer/bank capacity is a major channel"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "VOL_CONVEXITY_DISPERSION": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "path/gap/fragility is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "ALTERNATIVE_HIGH_FREQUENCY": {
+        "materiality": "SUPPORTING",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "nowcast question is material and source has validated incremental value"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "UNSCHEDULED_POLICY_GEOPOLITICAL": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W",
+          "CYCLICAL",
+          "STRUCTURAL"
+        ],
+        "required_when": [
+          "policy/legal/geopolitical shock materially affects constituents or macro root"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "MARKET_DEPTH_IMPACT_CAPACITY": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "execution permission is being considered"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      }
+    },
+    "SP500": {
+      "SWAP_SDR_TRANSACTION": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "rates/equity/credit swap repricing is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "PRIMARY_DEALER_BALANCE_SHEET": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "rates/Treasury/dealer capacity is a dominant channel"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "TREASURY_AUCTION_REFUNDING": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "auction/refunding/settlement occurs within edge validity"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "CREDIT_TRACE_TRANSACTIONS": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "growth/credit/risk-off hypothesis is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "OPTIONS_DEALER_CONVEXITY": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "options/0DTE/expiry path can materially alter transmission"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "SECURITIES_LENDING_SHORT_BORROW": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "crowding/squeeze/constituent short exposure is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "EQUITY_AUCTION_IMBALANCE": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "near open/close, rebalance, month-end or index event"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "ETF_AP_PASSIVE_FLOW": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "ETF/passive/rebalance path is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "CORPORATE_CONSTITUENT_FUNDAMENTALS": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "earnings/guidance/revisions/mega-cap or sector contribution is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "GOLD_PHYSICAL_OTC": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "FX_OTC_FLOW": {
+        "materiality": "SUPPORTING",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "USD move is a major cross-asset channel"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "CROSS_CURRENCY_GLOBAL_FUNDING": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "funding/dealer/bank capacity is a major channel"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "VOL_CONVEXITY_DISPERSION": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "path/gap/fragility is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "ALTERNATIVE_HIGH_FREQUENCY": {
+        "materiality": "SUPPORTING",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "nowcast question is material and source has validated incremental value"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "UNSCHEDULED_POLICY_GEOPOLITICAL": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W",
+          "CYCLICAL",
+          "STRUCTURAL"
+        ],
+        "required_when": [
+          "policy/legal/geopolitical shock materially affects constituents or macro root"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "MARKET_DEPTH_IMPACT_CAPACITY": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "execution permission is being considered"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      }
+    },
+    "DJIA": {
+      "SWAP_SDR_TRANSACTION": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "rates/equity/credit swap repricing is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "PRIMARY_DEALER_BALANCE_SHEET": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "rates/Treasury/dealer capacity is a dominant channel"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "TREASURY_AUCTION_REFUNDING": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "auction/refunding/settlement occurs within edge validity"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "CREDIT_TRACE_TRANSACTIONS": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "growth/credit/risk-off hypothesis is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "OPTIONS_DEALER_CONVEXITY": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "options/0DTE/expiry path can materially alter transmission"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "SECURITIES_LENDING_SHORT_BORROW": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "crowding/squeeze/constituent short exposure is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "EQUITY_AUCTION_IMBALANCE": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "near open/close, rebalance, month-end or index event"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "ETF_AP_PASSIVE_FLOW": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "ETF/passive/rebalance path is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "CORPORATE_CONSTITUENT_FUNDAMENTALS": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "earnings/guidance/revisions/mega-cap or sector contribution is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "GOLD_PHYSICAL_OTC": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "FX_OTC_FLOW": {
+        "materiality": "SUPPORTING",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "USD move is a major cross-asset channel"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "CROSS_CURRENCY_GLOBAL_FUNDING": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "funding/dealer/bank capacity is a major channel"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "VOL_CONVEXITY_DISPERSION": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "path/gap/fragility is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "ALTERNATIVE_HIGH_FREQUENCY": {
+        "materiality": "SUPPORTING",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "nowcast question is material and source has validated incremental value"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "UNSCHEDULED_POLICY_GEOPOLITICAL": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W",
+          "CYCLICAL",
+          "STRUCTURAL"
+        ],
+        "required_when": [
+          "policy/legal/geopolitical shock materially affects constituents or macro root"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "MARKET_DEPTH_IMPACT_CAPACITY": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "execution permission is being considered"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      }
+    },
+    "EURUSD": {
+      "SWAP_SDR_TRANSACTION": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "rates/FX derivative repricing is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "PRIMARY_DEALER_BALANCE_SHEET": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "USD dealer/funding capacity is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "TREASURY_AUCTION_REFUNDING": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "U.S. rates channel is material and auction is within edge validity"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "CREDIT_TRACE_TRANSACTIONS": {
+        "materiality": "SUPPORTING",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "risk-off/dollar funding hypothesis needs credit evidence"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "OPTIONS_DEALER_CONVEXITY": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "FX/rates options path or expiry is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "SECURITIES_LENDING_SHORT_BORROW": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "EQUITY_AUCTION_IMBALANCE": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "ETF_AP_PASSIVE_FLOW": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "CORPORATE_CONSTITUENT_FUNDAMENTALS": {
+        "materiality": "CONTEXTUAL",
+        "active_horizons": [
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "relative growth/earnings channel is explicitly material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "GOLD_PHYSICAL_OTC": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "FX_OTC_FLOW": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "spot/hedging/fixing/official flow is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "CROSS_CURRENCY_GLOBAL_FUNDING": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "basis/carry/bank-dollar-funding is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "VOL_CONVEXITY_DISPERSION": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "option-implied path/convexity is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "ALTERNATIVE_HIGH_FREQUENCY": {
+        "materiality": "SUPPORTING",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "relative macro nowcast is material and source validated"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "UNSCHEDULED_POLICY_GEOPOLITICAL": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W",
+          "CYCLICAL",
+          "STRUCTURAL"
+        ],
+        "required_when": [
+          "intervention/sanction/tariff/policy/geopolitical shock is active"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "MARKET_DEPTH_IMPACT_CAPACITY": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "execution permission is being considered"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      }
+    },
+    "USDJPY": {
+      "SWAP_SDR_TRANSACTION": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "rates/FX derivative repricing is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "PRIMARY_DEALER_BALANCE_SHEET": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "USD dealer/funding capacity is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "TREASURY_AUCTION_REFUNDING": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "U.S. rates channel is material and auction is within edge validity"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "CREDIT_TRACE_TRANSACTIONS": {
+        "materiality": "SUPPORTING",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "risk-off/dollar funding hypothesis needs credit evidence"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "OPTIONS_DEALER_CONVEXITY": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "FX/rates options path or expiry is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "SECURITIES_LENDING_SHORT_BORROW": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "EQUITY_AUCTION_IMBALANCE": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "ETF_AP_PASSIVE_FLOW": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "CORPORATE_CONSTITUENT_FUNDAMENTALS": {
+        "materiality": "CONTEXTUAL",
+        "active_horizons": [
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "relative growth/earnings channel is explicitly material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "GOLD_PHYSICAL_OTC": {
+        "materiality": "NOT_MATERIAL",
+        "active_horizons": [],
+        "required_when": [],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "FX_OTC_FLOW": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "spot/hedging/fixing/official flow is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "CROSS_CURRENCY_GLOBAL_FUNDING": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W"
+        ],
+        "required_when": [
+          "basis/carry/bank-dollar-funding is material"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "VOL_CONVEXITY_DISPERSION": {
+        "materiality": "MATERIAL",
+        "active_horizons": [
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "option-implied path/convexity is material"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "ALTERNATIVE_HIGH_FREQUENCY": {
+        "materiality": "SUPPORTING",
+        "active_horizons": [
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D"
+        ],
+        "required_when": [
+          "relative macro nowcast is material and source validated"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      },
+      "UNSCHEDULED_POLICY_GEOPOLITICAL": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE",
+          "MULTI_DAY_2_10D",
+          "SWING_2_8W",
+          "CYCLICAL",
+          "STRUCTURAL"
+        ],
+        "required_when": [
+          "intervention/sanction/tariff/policy/geopolitical shock is active"
+        ],
+        "known_private_gap": false,
+        "notes": ""
+      },
+      "MARKET_DEPTH_IMPACT_CAPACITY": {
+        "materiality": "DECISION_CRITICAL",
+        "active_horizons": [
+          "MICRO_0_15M",
+          "SHORT_15_60M",
+          "SESSION_1_6H",
+          "DAILY_OPEN_TO_CLOSE"
+        ],
+        "required_when": [
+          "execution permission is being considered"
+        ],
+        "known_private_gap": true,
+        "notes": ""
+      }
+    }
+  }
+}

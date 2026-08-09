@@ -221,3 +221,7 @@ All six production markets — XAUUSD, NASDAQ100, SP500, DJIA, EURUSD and USDJPY
 All six production markets — XAUUSD, NASDAQ100, SP500, DJIA, EURUSD and USDJPY — now have dedicated V21 Cognitive Books under Module 103. The cognitive layer is mandatory for production, but individual states remain evidence-dependent. A required object can validly be `UNDETERMINED`, `CONTESTED`, `UNAVAILABLE` or `NOT_APPLICABLE`; completeness means the state was explicitly adjudicated, not that data was fabricated.
 
 Mandatory V21 cognitive dimensions: hypothesis tournament, horizon tensor, typed uncertainty, surprise/expectation state where applicable, policy reaction function where applicable, regime vector, dynamic causal graph, root-channel map, reflexivity, consumption/remaining asymmetry, scenario tree, driver transition, model-disagreement risk, adversarial review, pre-mortem, decision utility, Meta Edge Router and D4 learning handoff.
+
+## V21.3 observability completion
+
+The six-market production universe now has a separate **6 × 16 Fact Observability Matrix** covering residual transaction, dealer, Treasury, credit, options, securities-lending, auction, ETF/passive, constituent, physical-gold, FX-OTC, funding, volatility, alternative-data, unscheduled-policy and capacity families. This matrix measures *what is observable and how directly*, not alpha quality. `LICENSED_REQUIRED`, `SUBSCRIPTION_REQUIRED`, `PROXY_ONLY`, `UNAVAILABLE` and `UNDETERMINED` are valid completion states; silent gaps are not.

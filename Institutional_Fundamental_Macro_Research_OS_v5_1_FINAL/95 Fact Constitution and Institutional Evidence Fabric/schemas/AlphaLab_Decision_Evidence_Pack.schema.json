@@ -39,7 +39,8 @@
         "20.0.0",
         "21.0.0",
         "21.1.0",
-        "21.2.0"
+        "21.2.0",
+        "21.3.0"
       ],
       "description": "Runtime stack version at the decision cutoff. The D1 schema itself is versioned separately."
     },
@@ -73,7 +74,8 @@
         "20.0.0",
         "21.0.0",
         "21.1.0",
-        "21.2.0"
+        "21.2.0",
+        "21.3.0"
       ]
     }
   }

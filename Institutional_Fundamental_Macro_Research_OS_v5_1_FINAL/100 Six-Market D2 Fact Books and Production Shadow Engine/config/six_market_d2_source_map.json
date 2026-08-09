@@ -1,34 +1,56 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "markets": {
     "XAUUSD": {
       "POSITIONING_OWNERSHIP": [
         "CFTC_COT",
         "ETF_SPONSOR_DISCLOSURE",
         "LICENSED_DEALER_POSITIONING",
-        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY",
+        "WGC_ETF",
+        "WGC_GDT",
+        "CME_GOLD_STOCKS_DELIVERIES",
+        "LBMA_VAULT_DATA"
       ],
       "ACTUAL_FLOW": [
         "CME_VOLUME_OI",
         "ETF_SPONSOR_DISCLOSURE",
         "LICENSED_CLIENT_FLOW",
-        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY",
+        "DTCC_SDR_PUBLIC",
+        "CME_SDR_PUBLIC",
+        "ICE_SDR_PUBLIC",
+        "WGC_ETF",
+        "CME_GOLD_STOCKS_DELIVERIES",
+        "LBMA_CLEARING_DATA",
+        "LBMA_TRADE_DATA"
       ],
       "FUNDING_PLUMBING": [
         "NYFED_SOFR",
         "NYFED_REPO_RRP",
         "FED_H41",
-        "LICENSED_DEALER_BALANCE_SHEET"
+        "LICENSED_DEALER_BALANCE_SHEET",
+        "NYFED_PRIMARY_DEALERS",
+        "UST_AUCTIONS",
+        "BIS_GLI",
+        "FED_H8"
       ],
       "INSTITUTIONAL_MECHANICS": [
         "CME_VOLUME_OI",
         "LBMA_IBA_BENCHMARK_INFO",
-        "ETF_SPONSOR_DISCLOSURE"
+        "ETF_SPONSOR_DISCLOSURE",
+        "CBOE_OPTIONS_STATS",
+        "CME_GOLD_STOCKS_DELIVERIES",
+        "UST_AUCTIONS"
       ],
       "MARKET_CAPACITY": [
         "CME_VOLUME_OI",
         "LICENSED_ORDERBOOK_DEPTH",
-        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY",
+        "CME_LIQUIDITY_TOOL",
+        "CME_MARKET_DEPTH",
+        "LBMA_CLEARING_DATA",
+        "LBMA_TRADE_DATA"
       ]
     },
     "NASDAQ100": {
@@ -37,29 +59,64 @@
         "SEC_NPORT",
         "SEC_13F",
         "ETF_SPONSOR_DISCLOSURE",
-        "LICENSED_DEALER_POSITIONING"
+        "LICENSED_DEALER_POSITIONING",
+        "FINRA_SHORT_INTEREST",
+        "FINRA_SLATE",
+        "FINRA_SHORT_SALE_VOLUME",
+        "CBOE_OPTIONS_STATS",
+        "NYFED_PRIMARY_DEALERS",
+        "SEC_EDGAR",
+        "SEC_XBRL_DATA",
+        "LICENSED_EARNINGS_ESTIMATES",
+        "LICENSED_SECURITIES_LENDING"
       ],
       "ACTUAL_FLOW": [
         "CME_VOLUME_OI",
         "ETF_SPONSOR_DISCLOSURE",
-        "LICENSED_CLIENT_FLOW"
+        "LICENSED_CLIENT_FLOW",
+        "DTCC_SDR_PUBLIC",
+        "CME_SDR_PUBLIC",
+        "ICE_SDR_PUBLIC",
+        "FINRA_TRACE",
+        "FINRA_SLATE",
+        "FINRA_SHORT_SALE_VOLUME",
+        "CBOE_OPEN_CLOSE_OPTIONS",
+        "SEC_EDGAR",
+        "NASDAQ_NOII"
       ],
       "FUNDING_PLUMBING": [
         "NYFED_REPO_RRP",
         "NYFED_SOFR",
         "FED_H41",
         "UST_DAILY_TREASURY_STATEMENT",
-        "LICENSED_DEALER_BALANCE_SHEET"
+        "LICENSED_DEALER_BALANCE_SHEET",
+        "NYFED_PRIMARY_DEALERS",
+        "UST_AUCTIONS",
+        "UST_INVESTOR_ALLOTMENTS",
+        "BIS_GLI",
+        "FED_H8",
+        "FED_Z1"
       ],
       "INSTITUTIONAL_MECHANICS": [
         "NASDAQ_INDEX_ADMIN",
         "CBOE_PRODUCT_CALENDAR",
         "CME_VOLUME_OI",
-        "ETF_SPONSOR_DISCLOSURE"
+        "ETF_SPONSOR_DISCLOSURE",
+        "UST_AUCTIONS",
+        "CBOE_OPTIONS_STATS",
+        "CBOE_OPEN_CLOSE_OPTIONS",
+        "NASDAQ_NOII",
+        "OFAC_SANCTIONS",
+        "USTR_TRADE",
+        "FEDERAL_REGISTER"
       ],
       "MARKET_CAPACITY": [
         "CME_VOLUME_OI",
-        "LICENSED_ORDERBOOK_DEPTH"
+        "LICENSED_ORDERBOOK_DEPTH",
+        "CME_MARKET_DEPTH",
+        "CME_LIQUIDITY_TOOL",
+        "NASDAQ_NOII",
+        "FINRA_TRACE"
       ]
     },
     "SP500": {
@@ -68,29 +125,64 @@
         "SEC_NPORT",
         "SEC_13F",
         "ETF_SPONSOR_DISCLOSURE",
-        "LICENSED_DEALER_POSITIONING"
+        "LICENSED_DEALER_POSITIONING",
+        "FINRA_SHORT_INTEREST",
+        "FINRA_SLATE",
+        "FINRA_SHORT_SALE_VOLUME",
+        "CBOE_OPTIONS_STATS",
+        "NYFED_PRIMARY_DEALERS",
+        "SEC_EDGAR",
+        "SEC_XBRL_DATA",
+        "LICENSED_EARNINGS_ESTIMATES",
+        "LICENSED_SECURITIES_LENDING"
       ],
       "ACTUAL_FLOW": [
         "CME_VOLUME_OI",
         "ETF_SPONSOR_DISCLOSURE",
-        "LICENSED_CLIENT_FLOW"
+        "LICENSED_CLIENT_FLOW",
+        "DTCC_SDR_PUBLIC",
+        "CME_SDR_PUBLIC",
+        "ICE_SDR_PUBLIC",
+        "FINRA_TRACE",
+        "FINRA_SLATE",
+        "FINRA_SHORT_SALE_VOLUME",
+        "CBOE_OPEN_CLOSE_OPTIONS",
+        "SEC_EDGAR",
+        "NYSE_ORDER_IMBALANCES"
       ],
       "FUNDING_PLUMBING": [
         "NYFED_REPO_RRP",
         "NYFED_SOFR",
         "FED_H41",
         "UST_DAILY_TREASURY_STATEMENT",
-        "LICENSED_DEALER_BALANCE_SHEET"
+        "LICENSED_DEALER_BALANCE_SHEET",
+        "NYFED_PRIMARY_DEALERS",
+        "UST_AUCTIONS",
+        "UST_INVESTOR_ALLOTMENTS",
+        "BIS_GLI",
+        "FED_H8",
+        "FED_Z1"
       ],
       "INSTITUTIONAL_MECHANICS": [
         "SPDJI_INDEX_ADMIN",
         "CBOE_PRODUCT_CALENDAR",
         "CME_VOLUME_OI",
-        "ETF_SPONSOR_DISCLOSURE"
+        "ETF_SPONSOR_DISCLOSURE",
+        "UST_AUCTIONS",
+        "CBOE_OPTIONS_STATS",
+        "CBOE_OPEN_CLOSE_OPTIONS",
+        "NYSE_ORDER_IMBALANCES",
+        "OFAC_SANCTIONS",
+        "USTR_TRADE",
+        "FEDERAL_REGISTER"
       ],
       "MARKET_CAPACITY": [
         "CME_VOLUME_OI",
-        "LICENSED_ORDERBOOK_DEPTH"
+        "LICENSED_ORDERBOOK_DEPTH",
+        "CME_MARKET_DEPTH",
+        "CME_LIQUIDITY_TOOL",
+        "NYSE_ORDER_IMBALANCES",
+        "FINRA_TRACE"
       ]
     },
     "DJIA": {
@@ -99,29 +191,64 @@
         "SEC_NPORT",
         "SEC_13F",
         "ETF_SPONSOR_DISCLOSURE",
-        "LICENSED_DEALER_POSITIONING"
+        "LICENSED_DEALER_POSITIONING",
+        "FINRA_SHORT_INTEREST",
+        "FINRA_SLATE",
+        "FINRA_SHORT_SALE_VOLUME",
+        "CBOE_OPTIONS_STATS",
+        "NYFED_PRIMARY_DEALERS",
+        "SEC_EDGAR",
+        "SEC_XBRL_DATA",
+        "LICENSED_EARNINGS_ESTIMATES",
+        "LICENSED_SECURITIES_LENDING"
       ],
       "ACTUAL_FLOW": [
         "CME_VOLUME_OI",
         "ETF_SPONSOR_DISCLOSURE",
-        "LICENSED_CLIENT_FLOW"
+        "LICENSED_CLIENT_FLOW",
+        "DTCC_SDR_PUBLIC",
+        "CME_SDR_PUBLIC",
+        "ICE_SDR_PUBLIC",
+        "FINRA_TRACE",
+        "FINRA_SLATE",
+        "FINRA_SHORT_SALE_VOLUME",
+        "CBOE_OPEN_CLOSE_OPTIONS",
+        "SEC_EDGAR",
+        "NYSE_ORDER_IMBALANCES"
       ],
       "FUNDING_PLUMBING": [
         "NYFED_REPO_RRP",
         "NYFED_SOFR",
         "FED_H41",
         "UST_DAILY_TREASURY_STATEMENT",
-        "LICENSED_DEALER_BALANCE_SHEET"
+        "LICENSED_DEALER_BALANCE_SHEET",
+        "NYFED_PRIMARY_DEALERS",
+        "UST_AUCTIONS",
+        "UST_INVESTOR_ALLOTMENTS",
+        "BIS_GLI",
+        "FED_H8",
+        "FED_Z1"
       ],
       "INSTITUTIONAL_MECHANICS": [
         "SPDJI_INDEX_ADMIN",
         "CBOE_PRODUCT_CALENDAR",
         "CME_VOLUME_OI",
-        "ETF_SPONSOR_DISCLOSURE"
+        "ETF_SPONSOR_DISCLOSURE",
+        "UST_AUCTIONS",
+        "CBOE_OPTIONS_STATS",
+        "CBOE_OPEN_CLOSE_OPTIONS",
+        "NYSE_ORDER_IMBALANCES",
+        "OFAC_SANCTIONS",
+        "USTR_TRADE",
+        "FEDERAL_REGISTER"
       ],
       "MARKET_CAPACITY": [
         "CME_VOLUME_OI",
-        "LICENSED_ORDERBOOK_DEPTH"
+        "LICENSED_ORDERBOOK_DEPTH",
+        "CME_MARKET_DEPTH",
+        "CME_LIQUIDITY_TOOL",
+        "NYSE_ORDER_IMBALANCES",
+        "FINRA_TRACE"
       ]
     },
     "EURUSD": {
@@ -129,28 +256,44 @@
         "CFTC_COT",
         "UST_TIC",
         "LICENSED_DEALER_POSITIONING",
-        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY",
+        "NYFED_PRIMARY_DEALERS"
       ],
       "ACTUAL_FLOW": [
         "UST_TIC",
         "ECB_STATISTICS",
         "LICENSED_CLIENT_FLOW",
-        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY",
+        "DTCC_SDR_PUBLIC",
+        "CME_SDR_PUBLIC",
+        "ICE_SDR_PUBLIC"
       ],
       "FUNDING_PLUMBING": [
         "NYFED_SOFR",
         "FED_H41",
         "ECB_STATISTICS",
-        "LICENSED_DEALER_BALANCE_SHEET"
+        "LICENSED_DEALER_BALANCE_SHEET",
+        "NYFED_PRIMARY_DEALERS",
+        "UST_AUCTIONS",
+        "BIS_GLI",
+        "FED_H8",
+        "FED_Z1"
       ],
       "INSTITUTIONAL_MECHANICS": [
         "CME_VOLUME_OI",
-        "CBOE_PRODUCT_CALENDAR"
+        "CBOE_PRODUCT_CALENDAR",
+        "UST_AUCTIONS",
+        "OFAC_SANCTIONS",
+        "USTR_TRADE",
+        "FEDERAL_REGISTER",
+        "CBOE_OPTIONS_STATS"
       ],
       "MARKET_CAPACITY": [
         "CME_VOLUME_OI",
         "LICENSED_ORDERBOOK_DEPTH",
-        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY",
+        "CME_MARKET_DEPTH",
+        "CME_LIQUIDITY_TOOL"
       ]
     },
     "USDJPY": {
@@ -159,30 +302,46 @@
         "UST_TIC",
         "BOJ_STATISTICS",
         "LICENSED_DEALER_POSITIONING",
-        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY",
+        "NYFED_PRIMARY_DEALERS"
       ],
       "ACTUAL_FLOW": [
         "UST_TIC",
         "BOJ_STATISTICS",
         "JP_MOF_FX_INTERVENTION",
         "LICENSED_CLIENT_FLOW",
-        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY",
+        "DTCC_SDR_PUBLIC",
+        "CME_SDR_PUBLIC",
+        "ICE_SDR_PUBLIC"
       ],
       "FUNDING_PLUMBING": [
         "NYFED_SOFR",
         "FED_H41",
         "BOJ_STATISTICS",
-        "LICENSED_DEALER_BALANCE_SHEET"
+        "LICENSED_DEALER_BALANCE_SHEET",
+        "NYFED_PRIMARY_DEALERS",
+        "UST_AUCTIONS",
+        "BIS_GLI",
+        "FED_H8",
+        "FED_Z1"
       ],
       "INSTITUTIONAL_MECHANICS": [
         "CME_VOLUME_OI",
         "CBOE_PRODUCT_CALENDAR",
-        "JP_MOF_FX_INTERVENTION"
+        "JP_MOF_FX_INTERVENTION",
+        "UST_AUCTIONS",
+        "OFAC_SANCTIONS",
+        "USTR_TRADE",
+        "FEDERAL_REGISTER",
+        "CBOE_OPTIONS_STATS"
       ],
       "MARKET_CAPACITY": [
         "CME_VOLUME_OI",
         "LICENSED_ORDERBOOK_DEPTH",
-        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY",
+        "CME_MARKET_DEPTH",
+        "CME_LIQUIDITY_TOOL"
       ]
     }
   }

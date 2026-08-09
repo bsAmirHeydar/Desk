@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "release": "V18.0.0",
+  "version": "1.1.0",
+  "release": "V21.3.0",
   "authority_mode": "CANONICAL_SHADOW",
   "production_universe": [
     "XAUUSD",
@@ -154,10 +154,10 @@
         "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
       },
       "ACTUAL_FLOW": {
-        "baseline_state": "LICENSED_REQUIRED",
+        "baseline_state": "PARTIAL_PUBLIC",
         "authority_mode": "CANONICAL_SHADOW",
         "permission_effect_v18": "NONE",
-        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+        "note": "Public derivatives/official/cross-border subsets exist; comprehensive live OTC spot client/dealer flow remains licensed/private."
       },
       "FUNDING_PLUMBING": {
         "baseline_state": "PARTIAL_PUBLIC",
@@ -186,10 +186,10 @@
         "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
       },
       "ACTUAL_FLOW": {
-        "baseline_state": "LICENSED_REQUIRED",
+        "baseline_state": "PARTIAL_PUBLIC",
         "authority_mode": "CANONICAL_SHADOW",
         "permission_effect_v18": "NONE",
-        "note": "Conservative baseline; live run may downgrade; upgrade requires admitted source evidence."
+        "note": "Public derivatives/official/cross-border subsets exist; comprehensive live OTC spot client/dealer flow remains licensed/private."
       },
       "FUNDING_PLUMBING": {
         "baseline_state": "PARTIAL_PUBLIC",

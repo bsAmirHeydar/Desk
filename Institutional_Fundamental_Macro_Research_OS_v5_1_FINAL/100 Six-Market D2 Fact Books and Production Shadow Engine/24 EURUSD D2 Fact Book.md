@@ -17,3 +17,7 @@ FX fixings, futures/options expiries, holidays and settlement conventions. Expec
 
 ## Capacity
 Public futures activity does not define global OTC spot capacity. Strong claims require venue/LP/order-book or licensed data.
+
+## V21.3 — high-value fact routes
+
+Use public FX/rates SDR transactions as a direct derivatives-transaction subset, not global spot flow. Combine with bilateral Fed/ECB reaction functions, cross-currency/global funding, Treasury/dealer state, futures positioning and options path. If live dealer/client spot flow is unavailable, the observability receipt must retain the `LICENSED_REQUIRED` gap.

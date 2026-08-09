@@ -2,7 +2,7 @@
 title: "Institutional Fundamental Macro Research OS v6.1 Knowledge Canon"
 type: home
 status: transformation-program
-version: 21.2.0
+version: 21.3.0
 created: 2026-07-29
 updated: 2026-08-09
 language: en
@@ -15,7 +15,7 @@ tags: [home, fundamental-only, institutional-macro, research-platform]
 
 
 > [!info] Current Alpha Lab production stack
-> `V21.2.0` — D1 truth/evidence → horizon-specific Fundamental Direction → Narrative/Timing/D2 sciences → V21.2 cognitive multi-hypothesis/scenario synthesis → D3 causal modulation → D4 validated promotion governance → operational gate. Direction remains `FUNDAMENTAL_ONLY`. Start live analysis at [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt]].
+> `V21.3.0` — D1 truth/evidence → horizon-specific Fundamental Direction → Narrative/Timing/D2 sciences → V21.3 observability-complete cognitive multi-hypothesis/scenario synthesis → D3 causal modulation → D4 validated promotion governance → operational gate. Direction remains `FUNDAMENTAL_ONLY`. Start live analysis at [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt]].
 
 ## Fundamental-only boundary
 
@@ -251,11 +251,22 @@ Production authority now enters through [[102 Forward Validation Calibration Pro
 
 ## V21 Cognitive Hardening
 
-**Current production stack: V21.0.0.** Live analysis enters through [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt]].
+**Historical V21 cognitive-hardening release.** Live analysis enters through [[103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt]].
 
 V21 does not add a new Direction science. It hardens the existing stack with competing causal hypotheses, horizon-specific Direction tensors, typed uncertainty, economic-versus-market surprise, policy reaction functions, regime-conditioned dynamic causal graphs, multi-channel same-root fusion, reflexivity, multi-dimensional Consumption/Remaining Asymmetry, 2–6 branch scenario trees, driver-transition states, unmodeled-driver diagnostics, cross-asset reconciliation, mandatory Thesis Destroyer, pre-mortem and utility-aware Research Intent.
 
 The Fundamental strategy remains `FUNDAMENTAL_ONLY` for Direction. Cognitive hardening can constrain/delay/block; it cannot create or flip Direction. Outside-strategy mechanical/forced-flow/liquidity edges are reported and routed to research only.
 
 ## V21.1 semantic runtime hardening
-Current stack: `V21.1.0`. V21.1 closes semantic/runtime gaps without adding another science layer. Use the Module 103 production prompt; every first-class state is present or explicitly classified, load-bearing evidence is traceable, material triggers are observable, and D4 receives cognitive telemetry.
+Historical V21.1 release: V21.1 closes semantic/runtime gaps without adding another science layer. Use the Module 103 production prompt; every first-class state is present or explicitly classified, load-bearing evidence is traceable, material triggers are observable, and D4 receives cognitive telemetry.
+
+## V21.2 last-mile runtime hardening
+
+V21.2 closed last-mile runtime integrity gaps while preserving cognitive flexibility: context-sensitive applicability, strict load-bearing D1 evidence resolution, structured final triggers, propagation integrity with auditable exceptions, bilateral FX policy reaction and schema-aligned D4 calibration. No new Direction authority was created.
+
+## V21.3 fact observability completion
+
+V21.3 closes the highest-value residual **fact observability** gaps without adding a new decision authority. Sixteen residual fact universes are routed by instrument/horizon/materiality and every applicable run emits an explicit Observability Receipt. Public derivatives, dealer, Treasury, credit, securities-lending, auction, options, gold-physical and market-depth sources are distinguished from delayed, subscription, licensed/private and proxy evidence. Start from the same Module 103 production prompt; D1–D4 authority boundaries are unchanged.
+
+- [[V21_3_FACT_OBSERVABILITY_AUTHORITY_MAP.yaml]] — V21.3 authority preservation and observability precedence.
+- [[V21_3_MIGRATION_AND_PRECEDENCE_MAP]] — baseline/materiality/coverage migration rules.

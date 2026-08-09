@@ -29,3 +29,10 @@ D2 states accompany the decision for research/forward calibration; they cannot o
 
 ## V19 D3 integration
 In V19 these D2 states remain `CANONICAL_SHADOW` at source. Their only authorized path into final edge adjudication is Module 101. No Module 96–100 component gains direct permission authority.
+
+## V21.3 fact observability completion
+- [[100 Six-Market D2 Fact Books and Production Shadow Engine/26 Fact Observability and Coverage Constitution]]
+- [[100 Six-Market D2 Fact Books and Production Shadow Engine/27 Six-Market Observability Matrix]]
+- [[100 Six-Market D2 Fact Books and Production Shadow Engine/28 V21.3 Fact Coverage Production Handoff]]
+
+V21.3 expands **observability**, not decision authority. D2 source states remain subject to Module 101 causal integration only.

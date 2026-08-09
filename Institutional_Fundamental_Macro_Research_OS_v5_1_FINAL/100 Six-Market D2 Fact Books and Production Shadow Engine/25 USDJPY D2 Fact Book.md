@@ -17,3 +17,7 @@ Tokyo/NY holidays and settlement, fixings, futures/options expiries and official
 
 ## Capacity
 OTC depth is venue/LP/time-zone/state dependent. Futures activity is a subset, not proof of global USDJPY capacity.
+
+## V21.3 — high-value fact routes
+
+Use public FX/rates SDR transactions, bilateral Fed/BoJ policy/funding, official MOF intervention facts, Treasury/dealer state, futures positioning and options/carry mechanics. Rumored intervention remains inference until official or otherwise admissible evidence. Comprehensive spot client/dealer flow remains private/licensed.

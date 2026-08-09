@@ -1,8 +1,190 @@
 {
-  "version": "1.0.0",
-  "release": "V18.0.0",
+  "version": "1.1.0",
+  "release": "V21.3.0",
   "rule": "REGISTRATION_DOES_NOT_IMPLY_LIVE_AVAILABILITY",
   "sources": [
+    {
+      "source_id": "BIS_GLI",
+      "tier": "OFFICIAL_SECONDARY",
+      "domains": [
+        "FUNDING_PLUMBING"
+      ],
+      "scope": "BIS Global Liquidity Indicators for cross-border credit/global dollar liquidity",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "QUARTERLY",
+      "fact_semantics": [
+        "DIRECT_BALANCE_SHEET"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "GLI_IS_NOT_INTRADAY_DOLLAR_FUNDING"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/BIS_GLI — BIS Global Liquidity Indicators.md"
+    },
+    {
+      "source_id": "BOJ_STATISTICS",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "FUNDING_PLUMBING",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "Japan official central-bank monetary/financial statistics",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "MIXED",
+      "fact_semantics": [
+        "DIRECT_BALANCE_SHEET",
+        "DIRECT_OFFICIAL_FLOW"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "OFFICIAL_STATISTICS_ARE_NOT_LIVE_CLIENT_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/BOJ_STATISTICS - Bank of Japan Statistics.md"
+    },
+    {
+      "source_id": "CBOE_GAMMA_INDEX",
+      "tier": "PUBLIC_PROXY",
+      "domains": [
+        "INSTITUTIONAL_MECHANICS",
+        "MARKET_CAPACITY"
+      ],
+      "scope": "Cboe GAMMA Index / dashboard-derived options gamma exposure context as a public proxy; not a direct observation of dealer inventory.",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "PRODUCT_SPECIFIC",
+      "fact_semantics": [
+        "PUBLIC_PROXY",
+        "DERIVED_LIQUIDITY_METRIC"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D"
+      ],
+      "prohibited_inferences": [
+        "GAMMA_INDEX_IS_NOT_DEALER_INVENTORY",
+        "PUBLIC_GAMMA_PROXY_IS_NOT_COMPLETE_OPTIONS_BOOK",
+        "PROXY_SIGN_IS_NOT_IDENTIFIED_HEDGE_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/CBOE_GAMMA_INDEX - Cboe GAMMA Index.md"
+    },
+    {
+      "source_id": "CBOE_OPEN_CLOSE_OPTIONS",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "ACTUAL_FLOW",
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "Cboe Open-Close options volume summaries by participant/action/open-close classification where subscribed",
+      "availability_default": "PARTIAL",
+      "access_class": "SUBSCRIPTION_REQUIRED",
+      "freshness_class": "INTRADAY",
+      "fact_semantics": [
+        "DIRECT_TRANSACTION",
+        "AGGREGATE_ACTIVITY"
+      ],
+      "current_state_horizons": [
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "PARTICIPANT_CLASS_IS_NOT_COMPLETE_DEALER_BOOK",
+        "TRADE_CLASSIFICATION_IS_NOT_GAMMA_SIGN_WITHOUT_POSITION_CONTEXT"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/CBOE_OPEN_CLOSE - Cboe Open-Close Options Data.md"
+    },
+    {
+      "source_id": "CBOE_OPTIONS_STATS",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW",
+        "INSTITUTIONAL_MECHANICS"
+      ],
+      "scope": "Cboe public options daily/historical volume, open interest and product statistics",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "END_OF_DAY",
+      "fact_semantics": [
+        "AGGREGATE_ACTIVITY"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "prohibited_inferences": [
+        "OPTIONS_VOLUME_IS_NOT_DEALER_POSITION",
+        "OPEN_INTEREST_IS_NOT_DEALER_INVENTORY"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/CBOE_OPTIONS_STATS - Cboe Options Market Statistics.md"
+    },
+    {
+      "source_id": "CBOE_PRODUCT_CALENDAR",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "INSTITUTIONAL_MECHANICS",
+        "MARKET_CAPACITY"
+      ],
+      "scope": "Cboe product/expiration/trading-calendar mechanics",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "EVENT_DRIVEN",
+      "fact_semantics": [
+        "ADMINISTRATIVE_EVENT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "EXPIRY_EVENT_IS_NOT_REALIZED_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/CBOE_PRODUCT_CALENDAR - Cboe Product and Expiration Calendar.md"
+    },
     {
       "source_id": "CFTC_COT",
       "tier": "OFFICIAL_PRIMARY",
@@ -11,7 +193,188 @@
       ],
       "scope": "regulated U.S. futures/options participant categories",
       "availability_default": "PUBLIC",
-      "latency_note": "reported reference and publication clocks must be preserved; not intraday live positioning"
+      "latency_note": "reported reference and publication clocks must be preserved; not intraday live positioning",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "WEEKLY",
+      "fact_semantics": [
+        "DIRECT_POSITION"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "COT_IS_NOT_LIVE_INTRADAY_POSITIONING"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/CFTC_COT — CFTC Commitments of Traders.md"
+    },
+    {
+      "source_id": "CFTC_PART43_FRAMEWORK",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "ACTUAL_FLOW"
+      ],
+      "scope": "CFTC Part 43 real-time public reporting framework for swap transaction/pricing data; raw transactions are disseminated by registered SDRs",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "EVENT_DRIVEN",
+      "fact_semantics": [
+        "ADMINISTRATIVE_EVENT"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "RULE_FRAMEWORK_IS_NOT_TRANSACTION_TAPE",
+        "PUBLIC_SWAP_TRANSACTION_IS_NOT_IDENTIFIED_CLIENT_DIRECTION"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/CFTC_PART43 - CFTC Real-Time Public Swap Reporting.md"
+    },
+    {
+      "source_id": "CME_GOLD_STOCKS_DELIVERIES",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW",
+        "INSTITUTIONAL_MECHANICS"
+      ],
+      "scope": "COMEX gold depository registered/eligible stocks and delivery notices",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "DAILY",
+      "fact_semantics": [
+        "DIRECT_POSITION",
+        "DIRECT_TRANSACTION",
+        "ADMINISTRATIVE_EVENT"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL"
+      ],
+      "prohibited_inferences": [
+        "REGISTERED_STOCK_IS_NOT_TOTAL_GLOBAL_GOLD_INVENTORY",
+        "DELIVERY_NOTICE_IS_NOT_GLOBAL_PHYSICAL_DEMAND"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/CME_GOLD_STOCKS - COMEX Gold Stocks and Deliveries.md"
+    },
+    {
+      "source_id": "CME_LIQUIDITY_TOOL",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "MARKET_CAPACITY"
+      ],
+      "scope": "CME liquidity analytics for bid-ask spread, book depth and cost-to-trade statistics",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "MIXED",
+      "fact_semantics": [
+        "DERIVED_LIQUIDITY_METRIC"
+      ],
+      "current_state_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "TOOL_METRIC_IS_NOT_RAW_ORDERBOOK",
+        "FUTURES_CAPACITY_IS_NOT_OTC_CAPACITY"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/CME_LIQUIDITY_TOOL - CME Liquidity Tool.md"
+    },
+    {
+      "source_id": "CME_MARKET_DEPTH",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "MARKET_CAPACITY",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "CME real-time/historical trades, top-of-book, market-depth and Market-by-Order data",
+      "availability_default": "PARTIAL",
+      "access_class": "SUBSCRIPTION_REQUIRED",
+      "freshness_class": "REAL_TIME",
+      "fact_semantics": [
+        "DIRECT_ORDERBOOK",
+        "DIRECT_TRANSACTION"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "FUTURES_DEPTH_IS_NOT_OTC_DEPTH",
+        "DISPLAYED_DEPTH_IS_NOT_TOTAL_LIQUIDITY",
+        "DEPTH_ALONE_IS_NOT_RESILIENCY"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/CME_MARKET_DEPTH - CME Real-Time Market Depth and MBO.md"
+    },
+    {
+      "source_id": "CME_SDR_PUBLIC",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "ACTUAL_FLOW"
+      ],
+      "scope": "CME Swap Data Repository public transaction/pricing data across rates, FX, credit, commodity and equity swaps reported to CME SDR",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "NEAR_REAL_TIME",
+      "fact_semantics": [
+        "DIRECT_TRANSACTION"
+      ],
+      "current_state_horizons": [
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "SDR_TRANSACTION_IS_NOT_CLIENT_DIRECTION",
+        "NOTIONAL_IS_NOT_NET_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/CME_SDR_PUBLIC - CME Swap Data Repository Public Data.md"
     },
     {
       "source_id": "CME_VOLUME_OI",
@@ -23,28 +386,94 @@
       ],
       "scope": "CME-listed futures/options activity and OI",
       "availability_default": "PUBLIC",
-      "latency_note": "volume/OI are activity/outstanding-contract facts; not directional participant flow by themselves"
+      "latency_note": "volume/OI are activity/outstanding-contract facts; not directional participant flow by themselves",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "MIXED",
+      "fact_semantics": [
+        "AGGREGATE_ACTIVITY"
+      ],
+      "current_state_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "VOLUME_IS_NOT_NET_FLOW",
+        "OPEN_INTEREST_IS_NOT_DIRECTIONAL_FLOW",
+        "ACTIVITY_IS_NOT_CAPACITY"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/CME_VOLUME_OI - CME Volume and Open Interest.md"
     },
     {
-      "source_id": "SEC_NPORT",
-      "tier": "REGULATED_FILING",
+      "source_id": "DTCC_SDR_PUBLIC",
+      "tier": "INSTITUTIONAL_PUBLIC",
       "domains": [
-        "POSITIONING_OWNERSHIP",
         "ACTUAL_FLOW"
       ],
-      "scope": "registered fund portfolio filing data under filing methodology",
+      "scope": "DTCC Data Repository U.S. public price dissemination for reportable OTC derivative transactions",
       "availability_default": "PUBLIC",
-      "latency_note": "filing/reference lag preserved"
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "NEAR_REAL_TIME",
+      "fact_semantics": [
+        "DIRECT_TRANSACTION"
+      ],
+      "current_state_horizons": [
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "SDR_TRANSACTION_IS_NOT_CLIENT_DIRECTION",
+        "NOTIONAL_IS_NOT_NET_FLOW",
+        "PUBLIC_FIELDS_MAY_BE_CAPPED_OR_DELAYED"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/DTCC_SDR_PUBLIC - DTCC Public Price Dissemination.md"
     },
     {
-      "source_id": "SEC_13F",
-      "tier": "REGULATED_FILING",
+      "source_id": "ECB_STATISTICS",
+      "tier": "OFFICIAL_PRIMARY",
       "domains": [
-        "POSITIONING_OWNERSHIP"
+        "FUNDING_PLUMBING",
+        "ACTUAL_FLOW"
       ],
-      "scope": "reportable institutional investment manager holdings under filing methodology",
+      "scope": "euro-area official monetary/financial statistics",
       "availability_default": "PUBLIC",
-      "latency_note": "structural/lagged ownership; not live position"
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "MIXED",
+      "fact_semantics": [
+        "DIRECT_BALANCE_SHEET",
+        "DIRECT_OFFICIAL_FLOW"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "OFFICIAL_STATISTICS_ARE_NOT_LIVE_CLIENT_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/ECB_STATISTICS - ECB Data Portal.md"
     },
     {
       "source_id": "ETF_SPONSOR_DISCLOSURE",
@@ -55,36 +484,71 @@
       ],
       "scope": "fund holdings/shares/creations where sponsor publishes them",
       "availability_default": "PARTIAL",
-      "latency_note": "method and update frequency are product specific"
+      "latency_note": "method and update frequency are product specific",
+      "access_class": "PRODUCT_SPECIFIC",
+      "freshness_class": "PRODUCT_SPECIFIC",
+      "fact_semantics": [
+        "DIRECT_POSITION",
+        "AGGREGATE_ACTIVITY"
+      ],
+      "current_state_horizons": [
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "AUM_CHANGE_IS_NOT_FLOW",
+        "HOLDINGS_CHANGE_REQUIRES_CAUSAL_DECOMPOSITION"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/ETF_SPONSOR_DISCLOSURE - Official ETF Sponsor Disclosures.md"
     },
     {
-      "source_id": "UST_TIC",
+      "source_id": "FEDERAL_REGISTER",
       "tier": "OFFICIAL_PRIMARY",
       "domains": [
-        "ACTUAL_FLOW",
-        "POSITIONING_OWNERSHIP"
+        "INSTITUTIONAL_MECHANICS"
       ],
-      "scope": "Treasury international capital datasets under official methodology",
+      "scope": "U.S. Federal Register official rules, notices, executive and agency actions",
       "availability_default": "PUBLIC",
-      "latency_note": "publication lag; not live intraday flow"
-    },
-    {
-      "source_id": "NYFED_REPO_RRP",
-      "tier": "OFFICIAL_PRIMARY",
-      "domains": [
-        "FUNDING_PLUMBING"
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "EVENT_DRIVEN",
+      "fact_semantics": [
+        "ADMINISTRATIVE_EVENT"
       ],
-      "scope": "Federal Reserve Bank of New York repo/reverse-repo operations",
-      "availability_default": "PUBLIC"
-    },
-    {
-      "source_id": "NYFED_SOFR",
-      "tier": "OFFICIAL_PRIMARY",
-      "domains": [
-        "FUNDING_PLUMBING"
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
       ],
-      "scope": "secured overnight financing benchmark and supporting statistics",
-      "availability_default": "PUBLIC"
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "PROPOSAL_IS_NOT_FINAL_RULE",
+        "PUBLICATION_DATE_MAY_DIFFER_FROM_EFFECTIVE_DATE"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/FEDERAL_REGISTER - U.S. Federal Register.md"
     },
     {
       "source_id": "FED_H41",
@@ -93,36 +557,222 @@
         "FUNDING_PLUMBING"
       ],
       "scope": "Federal Reserve balance-sheet factors/reserve balances",
-      "availability_default": "PUBLIC"
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "WEEKLY",
+      "fact_semantics": [
+        "DIRECT_BALANCE_SHEET"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "RESERVE_BALANCE_IS_NOT_SINGLE_LIQUIDITY_SIGNAL"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/FED_H41 — Federal Reserve — H.4.1.md"
     },
     {
-      "source_id": "UST_DAILY_TREASURY_STATEMENT",
+      "source_id": "FED_H8",
       "tier": "OFFICIAL_PRIMARY",
       "domains": [
         "FUNDING_PLUMBING"
       ],
-      "scope": "U.S. Treasury cash/accounting statement under official methodology",
-      "availability_default": "PUBLIC"
+      "scope": "Federal Reserve H.8 banking assets/liabilities including credit and deposits",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "WEEKLY",
+      "fact_semantics": [
+        "DIRECT_BALANCE_SHEET"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "BANK_BALANCE_SHEET_CHANGE_IS_NOT_INTRADAY_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/FED_H8 — Federal Reserve — H.8.md"
     },
     {
-      "source_id": "ECB_STATISTICS",
+      "source_id": "FED_Z1",
       "tier": "OFFICIAL_PRIMARY",
       "domains": [
         "FUNDING_PLUMBING",
-        "ACTUAL_FLOW"
+        "POSITIONING_OWNERSHIP"
       ],
-      "scope": "euro-area official monetary/financial statistics",
-      "availability_default": "PUBLIC"
+      "scope": "Federal Reserve Financial Accounts Z.1 sector balance sheets and flows",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "QUARTERLY",
+      "fact_semantics": [
+        "DIRECT_BALANCE_SHEET"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "Z1_IS_NOT_INTRADAY_POSITIONING"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/FED_Z1 — Federal Reserve — Financial Accounts Z.1.md"
     },
     {
-      "source_id": "BOJ_STATISTICS",
-      "tier": "OFFICIAL_PRIMARY",
+      "source_id": "FINRA_SHORT_INTEREST",
+      "tier": "INSTITUTIONAL_PUBLIC",
       "domains": [
-        "FUNDING_PLUMBING",
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "FINRA reported equity short-interest positions on designated settlement dates",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "SEMIMONTHLY",
+      "fact_semantics": [
+        "DIRECT_POSITION"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "SHORT_INTEREST_IS_NOT_DAILY_FLOW",
+        "SHORT_INTEREST_IS_NOT_SHORT_SALE_VOLUME"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/FINRA_SHORT_INTEREST - FINRA Equity Short Interest.md"
+    },
+    {
+      "source_id": "FINRA_SHORT_SALE_VOLUME",
+      "tier": "INSTITUTIONAL_PUBLIC",
+      "domains": [
+        "ACTUAL_FLOW",
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "FINRA daily/monthly short-sale transaction volume data",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "DAILY",
+      "fact_semantics": [
+        "AGGREGATE_ACTIVITY"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "prohibited_inferences": [
+        "SHORT_SALE_VOLUME_IS_NOT_SHORT_INTEREST",
+        "SHORT_SALE_VOLUME_IS_NOT_NET_BEARISH_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/FINRA_SHORT_SALE_VOLUME - FINRA Short Sale Volume.md"
+    },
+    {
+      "source_id": "FINRA_SLATE",
+      "tier": "INSTITUTIONAL_PUBLIC",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
         "ACTUAL_FLOW"
       ],
-      "scope": "Japan official central-bank monetary/financial statistics",
-      "availability_default": "PUBLIC"
+      "scope": "FINRA Securities Lending and Transparency Engine loan transaction dissemination and daily loan statistics",
+      "availability_default": "PARTIAL",
+      "access_class": "MIXED_PUBLIC_SUBSCRIPTION",
+      "freshness_class": "NEXT_BUSINESS_DAY",
+      "fact_semantics": [
+        "DIRECT_TRANSACTION",
+        "AGGREGATE_ACTIVITY"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "SECURITIES_LOAN_IS_NOT_SHORT_SALE",
+        "LOAN_ACTIVITY_IS_NOT_SHORT_POSITION",
+        "LOAN_AMOUNT_HAS_PUBLICATION_DELAY"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/FINRA_SLATE - FINRA Securities Lending and Transparency Engine.md"
+    },
+    {
+      "source_id": "FINRA_TRACE",
+      "tier": "REGULATED_FILING",
+      "domains": [
+        "ACTUAL_FLOW",
+        "MARKET_CAPACITY"
+      ],
+      "scope": "TRACE corporate, agency and securitized fixed-income transaction reporting and disseminated trade data",
+      "availability_default": "PARTIAL",
+      "access_class": "MIXED_PUBLIC_SUBSCRIPTION",
+      "freshness_class": "MIXED",
+      "fact_semantics": [
+        "DIRECT_TRANSACTION",
+        "AGGREGATE_ACTIVITY"
+      ],
+      "current_state_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "TRACE_TRADE_IS_NOT_IDENTIFIED_RISK_ON_OR_OFF_FLOW",
+        "PUBLIC_DISSEMINATION_CAPS_AND_DELAYS_MUST_BE_PRESERVED"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/FINRA_TRACE — FINRA — TRACE Fixed-Income Data.md"
+    },
+    {
+      "source_id": "ICE_SDR_PUBLIC",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "ACTUAL_FLOW"
+      ],
+      "scope": "ICE Trade Vault public swap transaction/pricing dissemination subject to applicable regulatory delays",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "NEAR_REAL_TIME",
+      "fact_semantics": [
+        "DIRECT_TRANSACTION"
+      ],
+      "current_state_horizons": [
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "SDR_TRANSACTION_IS_NOT_CLIENT_DIRECTION",
+        "NOTIONAL_IS_NOT_NET_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/ICE_SDR_PUBLIC - ICE Trade Vault Public Swap Data.md"
     },
     {
       "source_id": "JP_MOF_FX_INTERVENTION",
@@ -132,37 +782,50 @@
         "INSTITUTIONAL_MECHANICS"
       ],
       "scope": "official Japan FX intervention reporting",
-      "availability_default": "PUBLIC"
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "EVENT_DRIVEN",
+      "fact_semantics": [
+        "DIRECT_OFFICIAL_FLOW"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "OFFICIAL_INTERVENTION_DISCLOSURE_LAG_PRESERVED",
+        "RUMOR_IS_NOT_INTERVENTION_FACT"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/JP_MOF_FX_INTERVENTION - Japan MOF Foreign Exchange Intervention.md"
     },
     {
-      "source_id": "CBOE_PRODUCT_CALENDAR",
-      "tier": "EXCHANGE_ADMINISTRATOR",
+      "source_id": "LBMA_CLEARING_DATA",
+      "tier": "INSTITUTIONAL_PUBLIC",
       "domains": [
-        "INSTITUTIONAL_MECHANICS",
+        "ACTUAL_FLOW",
         "MARKET_CAPACITY"
       ],
-      "scope": "Cboe product/expiration/trading-calendar mechanics",
-      "availability_default": "PUBLIC"
-    },
-    {
-      "source_id": "NASDAQ_INDEX_ADMIN",
-      "tier": "EXCHANGE_ADMINISTRATOR",
-      "domains": [
-        "INSTITUTIONAL_MECHANICS",
-        "POSITIONING_OWNERSHIP"
+      "scope": "LBMA monthly clearing statistics: ounces/value/number of transfers",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "MONTHLY",
+      "fact_semantics": [
+        "AGGREGATE_ACTIVITY"
       ],
-      "scope": "Nasdaq index methodology/rebalance notices",
-      "availability_default": "PUBLIC"
-    },
-    {
-      "source_id": "SPDJI_INDEX_ADMIN",
-      "tier": "EXCHANGE_ADMINISTRATOR",
-      "domains": [
-        "INSTITUTIONAL_MECHANICS",
-        "POSITIONING_OWNERSHIP"
+      "current_state_horizons": [],
+      "context_horizons": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
       ],
-      "scope": "S&P Dow Jones Indices methodology/rebalance notices",
-      "availability_default": "PUBLIC"
+      "prohibited_inferences": [
+        "CLEARING_VOLUME_IS_NOT_DIRECTIONAL_FLOW",
+        "CLEARING_ACTIVITY_IS_NOT_FULL_OTC_LIQUIDITY"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/LBMA_CLEARING - LBMA Clearing Data.md"
     },
     {
       "source_id": "LBMA_IBA_BENCHMARK_INFO",
@@ -171,16 +834,127 @@
         "INSTITUTIONAL_MECHANICS"
       ],
       "scope": "gold benchmark/market convention information where applicable",
-      "availability_default": "PUBLIC"
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "EVENT_DRIVEN",
+      "fact_semantics": [
+        "ADMINISTRATIVE_EVENT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "BENCHMARK_CONVENTION_IS_NOT_OTC_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/LBMA_IBA_BENCHMARK_INFO - Precious Metal Benchmark Information.md"
     },
     {
-      "source_id": "LICENSED_DEALER_POSITIONING",
+      "source_id": "LBMA_TRADE_DATA",
+      "tier": "INSTITUTIONAL_PUBLIC",
+      "domains": [
+        "ACTUAL_FLOW",
+        "MARKET_CAPACITY"
+      ],
+      "scope": "LBMA trade-data products for London OTC precious-metals activity where access is available",
+      "availability_default": "PARTIAL",
+      "access_class": "SUBSCRIPTION_REQUIRED",
+      "freshness_class": "DAILY",
+      "fact_semantics": [
+        "AGGREGATE_ACTIVITY"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "prohibited_inferences": [
+        "AGGREGATE_TRADE_DATA_IS_NOT_IDENTIFIED_CLIENT_FLOW",
+        "LONDON_OTC_IS_NOT_WHOLE_GLOBAL_GOLD_MARKET"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/LBMA_TRADE_DATA - LBMA Trade Data.md"
+    },
+    {
+      "source_id": "LBMA_VAULT_DATA",
+      "tier": "INSTITUTIONAL_PUBLIC",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "LBMA London vault holdings for gold and silver",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "MONTHLY",
+      "fact_semantics": [
+        "DIRECT_POSITION"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "LONDON_VAULT_STOCK_IS_NOT_DAILY_FLOW",
+        "VAULT_STOCK_IS_NOT_GLOBAL_GOLD_STOCK"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/LBMA_VAULT - LBMA London Vault Data.md"
+    },
+    {
+      "source_id": "LICENSED_ALTERNATIVE_DATA",
       "tier": "LICENSED",
       "domains": [
-        "POSITIONING_OWNERSHIP"
+        "ACTUAL_FLOW"
       ],
-      "scope": "dealer/client positioning if user has an admissible licensed source",
-      "availability_default": "LICENSED_REQUIRED"
+      "scope": "alternative/high-frequency fundamental data only when source lineage, methodology and incremental-value governance are admitted",
+      "availability_default": "LICENSED_REQUIRED",
+      "access_class": "LICENSED_REQUIRED",
+      "freshness_class": "PRODUCT_SPECIFIC",
+      "fact_semantics": [
+        "LICENSED_DIRECT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "ALTERNATIVE_DATA_NOT_CRITICAL_WITHOUT_D4_VALUE_EVIDENCE",
+        "LICENSED_ACCESS_MUST_BE_ATTESTED"
+      ],
+      "source_note": null
     },
     {
       "source_id": "LICENSED_CLIENT_FLOW",
@@ -189,7 +963,36 @@
         "ACTUAL_FLOW"
       ],
       "scope": "identified client/dealer transaction flow if licensed",
-      "availability_default": "LICENSED_REQUIRED"
+      "availability_default": "LICENSED_REQUIRED",
+      "access_class": "LICENSED_REQUIRED",
+      "freshness_class": "REAL_TIME",
+      "fact_semantics": [
+        "LICENSED_DIRECT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "LICENSED_ACCESS_MUST_BE_ATTESTED"
+      ],
+      "source_note": null
     },
     {
       "source_id": "LICENSED_DEALER_BALANCE_SHEET",
@@ -198,7 +1001,108 @@
         "FUNDING_PLUMBING"
       ],
       "scope": "dealer balance sheet/capacity if licensed",
-      "availability_default": "LICENSED_REQUIRED"
+      "availability_default": "LICENSED_REQUIRED",
+      "access_class": "LICENSED_REQUIRED",
+      "freshness_class": "INTRADAY",
+      "fact_semantics": [
+        "LICENSED_DIRECT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "LICENSED_ACCESS_MUST_BE_ATTESTED"
+      ],
+      "source_note": null
+    },
+    {
+      "source_id": "LICENSED_DEALER_POSITIONING",
+      "tier": "LICENSED",
+      "domains": [
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "dealer/client positioning if user has an admissible licensed source",
+      "availability_default": "LICENSED_REQUIRED",
+      "access_class": "LICENSED_REQUIRED",
+      "freshness_class": "REAL_TIME",
+      "fact_semantics": [
+        "LICENSED_DIRECT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "LICENSED_ACCESS_MUST_BE_ATTESTED"
+      ],
+      "source_note": null
+    },
+    {
+      "source_id": "LICENSED_EARNINGS_ESTIMATES",
+      "tier": "LICENSED",
+      "domains": [
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "analyst consensus/revision/breadth history where user has licensed institutional earnings-estimate data",
+      "availability_default": "LICENSED_REQUIRED",
+      "access_class": "LICENSED_REQUIRED",
+      "freshness_class": "INTRADAY",
+      "fact_semantics": [
+        "LICENSED_DIRECT"
+      ],
+      "current_state_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "LICENSED_ACCESS_MUST_BE_ATTESTED"
+      ],
+      "source_note": null
     },
     {
       "source_id": "LICENSED_ORDERBOOK_DEPTH",
@@ -207,7 +1111,38 @@
         "MARKET_CAPACITY"
       ],
       "scope": "venue/order-book depth and impact data if licensed",
-      "availability_default": "LICENSED_REQUIRED"
+      "availability_default": "LICENSED_REQUIRED",
+      "access_class": "LICENSED_REQUIRED",
+      "freshness_class": "REAL_TIME",
+      "fact_semantics": [
+        "LICENSED_DIRECT",
+        "DIRECT_ORDERBOOK"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "LICENSED_ACCESS_MUST_BE_ATTESTED",
+        "DEPTH_IS_VENUE_SPECIFIC"
+      ],
+      "source_note": null
     },
     {
       "source_id": "LICENSED_OTC_FX_GOLD_LIQUIDITY",
@@ -218,7 +1153,712 @@
         "POSITIONING_OWNERSHIP"
       ],
       "scope": "OTC FX/gold participant flow/position/liquidity if licensed",
-      "availability_default": "LICENSED_REQUIRED"
+      "availability_default": "LICENSED_REQUIRED",
+      "access_class": "LICENSED_REQUIRED",
+      "freshness_class": "REAL_TIME",
+      "fact_semantics": [
+        "LICENSED_DIRECT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "LICENSED_ACCESS_MUST_BE_ATTESTED",
+        "FUTURES_LIQUIDITY_IS_NOT_FULL_OTC_LIQUIDITY"
+      ],
+      "source_note": null
+    },
+    {
+      "source_id": "LICENSED_SECURITIES_LENDING",
+      "tier": "LICENSED",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "real-time/near-real-time borrow fees, utilization, inventory or securities-lending feeds if licensed",
+      "availability_default": "LICENSED_REQUIRED",
+      "access_class": "LICENSED_REQUIRED",
+      "freshness_class": "INTRADAY",
+      "fact_semantics": [
+        "LICENSED_DIRECT"
+      ],
+      "current_state_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "LICENSED_ACCESS_MUST_BE_ATTESTED"
+      ],
+      "source_note": null
+    },
+    {
+      "source_id": "NASDAQ_INDEX_ADMIN",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "INSTITUTIONAL_MECHANICS",
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "Nasdaq index methodology/rebalance notices",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "EVENT_DRIVEN",
+      "fact_semantics": [
+        "ADMINISTRATIVE_EVENT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "INDEX_ANNOUNCEMENT_IS_NOT_REALIZED_PASSIVE_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/NASDAQ_INDEX_ADMIN - Nasdaq Index Administration.md"
+    },
+    {
+      "source_id": "NASDAQ_NOII",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "ACTUAL_FLOW",
+        "INSTITUTIONAL_MECHANICS",
+        "MARKET_CAPACITY"
+      ],
+      "scope": "Nasdaq Net Order Imbalance Indicator for opening/closing crosses and indicative clearing information",
+      "availability_default": "PARTIAL",
+      "access_class": "SUBSCRIPTION_REQUIRED",
+      "freshness_class": "REAL_TIME",
+      "fact_semantics": [
+        "DIRECT_ORDERBOOK",
+        "ADMINISTRATIVE_EVENT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "prohibited_inferences": [
+        "IMBALANCE_IS_NOT_EXECUTED_FLOW_UNTIL_CROSS",
+        "INDEX_IMBALANCE_REQUIRES_CONSTITUENT_AGGREGATION"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/NASDAQ_NOII - Nasdaq Net Order Imbalance Indicator.md"
+    },
+    {
+      "source_id": "NYFED_PRIMARY_DEALERS",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW",
+        "FUNDING_PLUMBING"
+      ],
+      "scope": "New York Fed primary-dealer positions, transactions, financing and settlement fails",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "WEEKLY",
+      "fact_semantics": [
+        "DIRECT_POSITION",
+        "AGGREGATE_ACTIVITY",
+        "DIRECT_BALANCE_SHEET"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "PRIMARY_DEALERS_ARE_NOT_WHOLE_MARKET",
+        "WEEKLY_DATA_IS_NOT_INTRADAY_DEALER_FLOW",
+        "FINANCING_LEVEL_IS_NOT_DIRECTION"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/NYFED_DEALERS — New York Fed — Primary Dealer Statistics.md"
+    },
+    {
+      "source_id": "NYFED_REPO_RRP",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "FUNDING_PLUMBING"
+      ],
+      "scope": "Federal Reserve Bank of New York repo/reverse-repo operations",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "DAILY",
+      "fact_semantics": [
+        "DIRECT_BALANCE_SHEET",
+        "DIRECT_OFFICIAL_FLOW"
+      ],
+      "current_state_horizons": [
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "FACILITY_BALANCE_IS_NOT_RISK_ASSET_DIRECTION"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/NYFED_REPO_RRP - New York Fed Repo and Reverse Repo Operations.md"
+    },
+    {
+      "source_id": "NYFED_SOFR",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "FUNDING_PLUMBING"
+      ],
+      "scope": "secured overnight financing benchmark and supporting statistics",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "DAILY",
+      "fact_semantics": [
+        "DIRECT_FUNDING_RATE"
+      ],
+      "current_state_horizons": [
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "SOFR_LEVEL_IS_NOT_SPOT_DIRECTION"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/NYFED_SOFR — New York Fed — SOFR.md"
+    },
+    {
+      "source_id": "NYSE_ORDER_IMBALANCES",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "ACTUAL_FLOW",
+        "INSTITUTIONAL_MECHANICS",
+        "MARKET_CAPACITY"
+      ],
+      "scope": "NYSE-group real-time opening/closing auction order-imbalance publications",
+      "availability_default": "PARTIAL",
+      "access_class": "SUBSCRIPTION_REQUIRED",
+      "freshness_class": "REAL_TIME",
+      "fact_semantics": [
+        "DIRECT_ORDERBOOK",
+        "ADMINISTRATIVE_EVENT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "prohibited_inferences": [
+        "IMBALANCE_IS_NOT_EXECUTED_FLOW_UNTIL_AUCTION",
+        "CONSTITUENT_IMBALANCES_REQUIRE_INDEX_WEIGHT_AGGREGATION"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/NYSE_IMBALANCES - NYSE Auction Imbalances.md"
+    },
+    {
+      "source_id": "OFAC_SANCTIONS",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "INSTITUTIONAL_MECHANICS"
+      ],
+      "scope": "U.S. Treasury OFAC official sanctions programs/actions; event-driven legal/policy facts",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "EVENT_DRIVEN",
+      "fact_semantics": [
+        "ADMINISTRATIVE_EVENT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "SANCTION_ANNOUNCEMENT_REQUIRES_ASSET_SPECIFIC_CAUSAL_MAPPING"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/OFAC_SANCTIONS — U.S. Treasury OFAC — Sanctions Programs and Lists.md"
+    },
+    {
+      "source_id": "SEC_13F",
+      "tier": "REGULATED_FILING",
+      "domains": [
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "reportable institutional investment manager holdings under filing methodology",
+      "availability_default": "PUBLIC",
+      "latency_note": "structural/lagged ownership; not live position",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "QUARTERLY",
+      "fact_semantics": [
+        "REGULATED_FILING",
+        "DIRECT_POSITION"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "13F_IS_NOT_CURRENT_POSITIONING",
+        "13F_IS_NOT_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/SEC_13F - SEC Form 13F.md"
+    },
+    {
+      "source_id": "SEC_EDGAR",
+      "tier": "REGULATED_FILING",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "SEC company filings including earnings facts, repurchase disclosures, issuance and corporate actions",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "EVENT_DRIVEN",
+      "fact_semantics": [
+        "REGULATED_FILING",
+        "DIRECT_FILING"
+      ],
+      "current_state_horizons": [
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "AUTHORIZATION_IS_NOT_EXECUTED_BUYBACK",
+        "FILING_DATE_IS_NOT_ECONOMIC_REFERENCE_DATE"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/SEC_EDGAR — SEC EDGAR.md"
+    },
+    {
+      "source_id": "SEC_NPORT",
+      "tier": "REGULATED_FILING",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "registered fund portfolio filing data under filing methodology",
+      "availability_default": "PUBLIC",
+      "latency_note": "filing/reference lag preserved",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "MONTHLY",
+      "fact_semantics": [
+        "REGULATED_FILING",
+        "DIRECT_POSITION"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "FILING_POSITION_IS_NOT_LIVE_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/SEC_NPORT - SEC Form N-PORT Data.md"
+    },
+    {
+      "source_id": "SEC_XBRL_DATA",
+      "tier": "REGULATED_FILING",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "SEC structured financial-statement and company-facts data derived from filed XBRL",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "EVENT_DRIVEN",
+      "fact_semantics": [
+        "REGULATED_FILING",
+        "DIRECT_FILING"
+      ],
+      "current_state_horizons": [
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "XBRL_FACT_IS_NOT_ANALYST_CONSENSUS",
+        "ACCOUNTING_FACT_REQUIRES_PERIOD_CONTEXT"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/SEC_XBRL_DATA — SEC EDGAR Inline XBRL and Financial Statement Data Sets.md"
+    },
+    {
+      "source_id": "SPDJI_INDEX_ADMIN",
+      "tier": "EXCHANGE_ADMINISTRATOR",
+      "domains": [
+        "INSTITUTIONAL_MECHANICS",
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "S&P Dow Jones Indices methodology/rebalance notices",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "EVENT_DRIVEN",
+      "fact_semantics": [
+        "ADMINISTRATIVE_EVENT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "INDEX_ANNOUNCEMENT_IS_NOT_REALIZED_PASSIVE_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/SPDJI_INDEX_ADMIN - S&P Dow Jones Indices Administration.md"
+    },
+    {
+      "source_id": "USTR_TRADE",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "INSTITUTIONAL_MECHANICS"
+      ],
+      "scope": "USTR official tariff/trade-policy actions and notices",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "EVENT_DRIVEN",
+      "fact_semantics": [
+        "ADMINISTRATIVE_EVENT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "POLICY_ANNOUNCEMENT_REQUIRES_IMPLEMENTATION_AND_SCOPE_CHECK"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/USTR_TRADE — USTR — Trade Policy and Tariff Actions.md"
+    },
+    {
+      "source_id": "UST_AUCTIONS",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "FUNDING_PLUMBING",
+        "INSTITUTIONAL_MECHANICS"
+      ],
+      "scope": "Treasury auction announcements, schedules, terms and results",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "EVENT_DRIVEN",
+      "fact_semantics": [
+        "DIRECT_AUCTION",
+        "ADMINISTRATIVE_EVENT"
+      ],
+      "current_state_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "context_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "BID_TO_COVER_ALONE_IS_NOT_DEMAND_QUALITY",
+        "AUCTION_TAIL_REQUIRES_WHEN_ISSUED_REFERENCE",
+        "GROSS_ISSUANCE_IS_NOT_NET_LIQUIDITY_DRAIN"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/UST_AUCTIONS — U.S. Treasury Auction Data.md"
+    },
+    {
+      "source_id": "UST_DAILY_TREASURY_STATEMENT",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "FUNDING_PLUMBING"
+      ],
+      "scope": "U.S. Treasury cash/accounting statement under official methodology",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "DAILY",
+      "fact_semantics": [
+        "DIRECT_BALANCE_SHEET"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "TGA_CHANGE_REQUIRES_CAUSAL_CONTEXT"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/UST_DAILY_TREASURY_STATEMENT - Daily Treasury Statement.md"
+    },
+    {
+      "source_id": "UST_INVESTOR_ALLOTMENTS",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW",
+        "FUNDING_PLUMBING"
+      ],
+      "scope": "Treasury investor-class auction allotments; lagged class distribution of awards",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "MONTHLY",
+      "fact_semantics": [
+        "DIRECT_AUCTION",
+        "DIRECT_POSITION"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "ALLOTMENTS_ARE_NOT_LIVE_AUCTION_FLOW",
+        "INDIRECT_BIDDER_IS_NOT_SYNONYM_FOR_FOREIGN_OFFICIAL"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/UST_INVESTOR_ALLOTMENTS - Treasury Investor Class Auction Allotments.md"
+    },
+    {
+      "source_id": "UST_TIC",
+      "tier": "OFFICIAL_PRIMARY",
+      "domains": [
+        "ACTUAL_FLOW",
+        "POSITIONING_OWNERSHIP"
+      ],
+      "scope": "Treasury international capital datasets under official methodology",
+      "availability_default": "PUBLIC",
+      "latency_note": "publication lag; not live intraday flow",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "MONTHLY",
+      "fact_semantics": [
+        "DIRECT_OFFICIAL_FLOW",
+        "DIRECT_POSITION"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "TIC_IS_NOT_INTRADAY_FX_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/UST_TIC — U.S. Treasury International Capital System.md"
+    },
+    {
+      "source_id": "WGC_ETF",
+      "tier": "INSTITUTIONAL_PUBLIC",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "World Gold Council global physically backed gold ETF holdings and flows",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_FREE",
+      "freshness_class": "MONTHLY",
+      "fact_semantics": [
+        "DIRECT_POSITION",
+        "AGGREGATE_ACTIVITY"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "ETF_FLOW_IS_NOT_TOTAL_GOLD_DEMAND",
+        "ETF_AUM_CHANGE_REQUIRES_PRICE_EFFECT_DECOMPOSITION"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/WGC_ETF — World Gold Council Gold ETF Data.md"
+    },
+    {
+      "source_id": "WGC_GDT",
+      "tier": "INSTITUTIONAL_PUBLIC",
+      "domains": [
+        "POSITIONING_OWNERSHIP",
+        "ACTUAL_FLOW"
+      ],
+      "scope": "World Gold Council Gold Demand Trends physical/official-sector demand analysis",
+      "availability_default": "PUBLIC",
+      "access_class": "PUBLIC_DELAYED",
+      "freshness_class": "QUARTERLY",
+      "fact_semantics": [
+        "AGGREGATE_ACTIVITY",
+        "DIRECT_OFFICIAL_FLOW"
+      ],
+      "current_state_horizons": [],
+      "context_horizons": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "prohibited_inferences": [
+        "QUARTERLY_DEMAND_IS_NOT_INTRADAY_FLOW"
+      ],
+      "source_note": "65 Source Registry and Claim Lineage/WGC_GDT — World Gold Council Gold Demand Trends.md"
     }
+  ],
+  "observability_rule": "REGISTERED_SOURCE_NEVER_IMPLIES_CURRENT_RUN_AVAILABILITY_OR_DIRECTNESS",
+  "access_classes": [
+    "PUBLIC_FREE",
+    "PUBLIC_DELAYED",
+    "MIXED_PUBLIC_SUBSCRIPTION",
+    "SUBSCRIPTION_REQUIRED",
+    "LICENSED_REQUIRED",
+    "PRODUCT_SPECIFIC"
+  ],
+  "freshness_classes": [
+    "REAL_TIME",
+    "NEAR_REAL_TIME",
+    "INTRADAY",
+    "NEXT_BUSINESS_DAY",
+    "END_OF_DAY",
+    "DAILY",
+    "WEEKLY",
+    "SEMIMONTHLY",
+    "MONTHLY",
+    "QUARTERLY",
+    "EVENT_DRIVEN",
+    "PRODUCT_SPECIFIC",
+    "MIXED"
+  ],
+  "horizons": [
+    "MICRO_0_15M",
+    "SHORT_15_60M",
+    "SESSION_1_6H",
+    "DAILY_OPEN_TO_CLOSE",
+    "MULTI_DAY_2_10D",
+    "SWING_2_8W",
+    "CYCLICAL",
+    "STRUCTURAL"
   ]
 }
