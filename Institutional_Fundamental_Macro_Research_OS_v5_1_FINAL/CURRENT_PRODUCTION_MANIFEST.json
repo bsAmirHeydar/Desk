@@ -172,6 +172,18 @@
     "state_presence_contract": "PRESENT_OR_CONTEXT_JUSTIFIED_APPLICABILITY",
     "version": "1.2.0"
   },
+  "continuous_true_forward_operations": {
+    "apl_a": "SHADOW_ONLY",
+    "apl_b": "NOT_IMPLEMENTED",
+    "authority_added": "NONE",
+    "broker_write": "NONE",
+    "maturity": "RUNTIME_EVIDENCE_DEPENDENT",
+    "outcome_maturation": "ACTIVE",
+    "owner": "C1_D4_FORWARD_OPERATIONS",
+    "periodic_review": "TF2_REUSED_FROZEN_CUTOFF",
+    "scheduler": "HOURLY_CANONICAL_WORKFLOW",
+    "version": "TF3.0.0"
+  },
   "current_stack": "V21.3.0",
   "d1_evidence_governance": {
     "d2_canonical_shadow_sciences": [

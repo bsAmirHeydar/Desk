@@ -8,6 +8,7 @@
     "m1_new_direction_authority": "NONE",
     "permission": "NONE"
   },
+  "continuous_true_forward_operations": "TF3.0.0",
   "decision_parity_required": true,
   "installed_validation_evidence": [
     "SYNTHETIC_VALIDATION"

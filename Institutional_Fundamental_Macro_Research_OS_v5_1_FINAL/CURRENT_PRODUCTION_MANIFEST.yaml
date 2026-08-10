@@ -514,3 +514,15 @@
   },
   "version": "21.3.0"
 }
+
+continuous_true_forward_operations:
+  version: TF3.0.0
+  owner: C1_D4_FORWARD_OPERATIONS
+  scheduler: HOURLY_CANONICAL_WORKFLOW
+  outcome_maturation: ACTIVE
+  periodic_review: TF2_REUSED_FROZEN_CUTOFF
+  authority_added: NONE
+  broker_write: NONE
+  apl_a: SHADOW_ONLY
+  apl_b: NOT_IMPLEMENTED
+  maturity: RUNTIME_EVIDENCE_DEPENDENT

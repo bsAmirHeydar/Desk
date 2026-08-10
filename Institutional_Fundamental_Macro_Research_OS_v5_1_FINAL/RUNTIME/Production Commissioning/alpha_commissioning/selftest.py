@@ -42,5 +42,13 @@ def run(vault_root):
         tr=tf_selftest(v);checks.append(('tf1_true_forward_selftest',tr.get('status')=='PASS'))
     except Exception as e:
         checks.append(('tf1_true_forward_selftest',False));errors.append('TF1: '+str(e))
+    # TF3 continuous forward operations: operations only, no authority.
+    try:
+        tf3=load_json(c/'TF3_CONTINUOUS_FORWARD_OPERATIONS_MANIFEST.json');t3p=load_json(c/'config'/'continuous_forward_policy.json')
+        checks += [('tf3_manifest',tf3.get('version')=='TF3.0.0'),('tf3_broker_none',tf3.get('authority',{}).get('broker_write')=='NONE' and t3p.get('broker_write') is False),('tf3_apla_shadow_only',tf3.get('authority',{}).get('apl_a')=='SHADOW_ONLY'),('tf3_mutable_records_outside_r4',t3p.get('mutable_forward_records_in_r4_source_fingerprint') is False)]
+        from .continuous_forward import selftest as tf3_selftest
+        t3=tf3_selftest(v);checks.append(('tf3_continuous_forward_selftest',t3.get('status')=='PASS'))
+    except Exception as e:
+        checks.append(('tf3_continuous_forward_selftest',False));errors.append('TF3: '+str(e))
     errors += [n for n,ok in checks if not ok]
     return {'schema_version':'1.0.0','status':'PASS' if not errors else 'FAIL','passed':sum(1 for _,x in checks if x),'total':len(checks),'checks':[{'name':n,'pass':bool(ok)} for n,ok in checks],'errors':errors}

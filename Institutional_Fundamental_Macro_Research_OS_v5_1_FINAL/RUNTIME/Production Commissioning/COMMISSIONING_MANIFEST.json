@@ -16,15 +16,20 @@
     "root launch wrappers",
     "TF1 real-host platform certificate",
     "TF1 immutable pre-outcome commitment store",
-    "TF1 outcome linker and review objects"
+    "TF1 outcome linker and review objects",
+    "TF3 continuous true-forward operator",
+    "TF3 hourly Windows scheduler control",
+    "TF3 automatic outcome maturation",
+    "TF3 periodic TF2 frozen-cutoff review orchestration"
   ],
+  "continuous_forward_operations": "TF3.0.0",
   "external_attestation": "REQUIRED_AFTER_INSTALL",
   "host_protocol": "R3_HOST_PROTOCOL_1.1.0",
   "prompt_pack": "ALPHALAB_PROMPT_PACK_1.1.0",
   "retrieval_protocol": "R3_RETRIEVAL_RUNTIME_1.1.0+C1",
   "runtime": "R4.0.0",
   "scientific_stack": "V21.3.0",
-  "status": "INSTALLABLE_WITH_TF1_HOST_AND_FORWARD_ACTIVATION",
+  "status": "INSTALLABLE_WITH_TF3_CONTINUOUS_FORWARD_OPERATIONS",
   "true_forward_extension": "TF1.0.1",
   "true_forward_maturity": "INSUFFICIENT_UNTIL_REAL_OUTCOMES",
   "true_forward_review": "TF2.0.0_D4_OWNED_NO_AUTHORITY"

@@ -1,0 +1,28 @@
+{
+  "apl_b": "NOT_IMPLEMENTED",
+  "authority": {
+    "apl_a": "SHADOW_ONLY",
+    "broker_write": "NONE",
+    "direction": "NONE",
+    "m1_new_direction_authority": "NONE",
+    "permission": "NONE"
+  },
+  "mission": "CONTINUOUS_SHADOW_RESEARCH_OUTCOME_MATURATION_PERIODIC_FROZEN_REVIEW",
+  "mutable_evidence_location": "ALPHALAB_DATA_ROOT/forward",
+  "name": "Continuous True-Forward Accumulation and Periodic Evidence Review",
+  "promotion": "FORBIDDEN",
+  "requires": {
+    "apl_a": "APL-A 1.0.0",
+    "c1": "C1.0.0",
+    "fv1": "FV1.0.0",
+    "m1": "M1.0.1",
+    "runtime": "R4.0.0",
+    "tf1_min": "TF1.0.1",
+    "tf2": "TF2.0.0"
+  },
+  "review_engine": "TF2_REUSED_NOT_DUPLICATED",
+  "scheduler_cadence": "AUTHORITATIVE_HOURLY_INFRASTRUCTURE_LIMIT",
+  "source_fingerprint_rule": "TF3_SOURCE_INCLUDED_MUTABLE_FORWARD_EVIDENCE_EXCLUDED",
+  "status": "CONTINUOUS_FORWARD_OPERATIONS_SOURCE_ACTIVE_HOST_RUNTIME_DEPENDENT",
+  "version": "TF3.0.0"
+}

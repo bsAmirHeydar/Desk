@@ -1,0 +1,51 @@
+{
+  "cases": [
+    {
+      "id": "BASELINE"
+    },
+    {
+      "id": "SCHEDULER_SAFETY"
+    },
+    {
+      "id": "TRUE_FORWARD_TRUTH"
+    },
+    {
+      "id": "SNAPSHOT_COMPLETENESS"
+    },
+    {
+      "id": "OUTCOME_MATURATION"
+    },
+    {
+      "id": "OUTCOME_LINKING"
+    },
+    {
+      "id": "REVIEW_FREEZE"
+    },
+    {
+      "id": "REVIEW_REPRODUCIBILITY"
+    },
+    {
+      "id": "COLLECTION_CONTINUES"
+    },
+    {
+      "id": "VERSION_AWARENESS"
+    },
+    {
+      "id": "AUTHORITY_ISOLATION"
+    },
+    {
+      "id": "BROKER_NONE"
+    },
+    {
+      "id": "R4_MUTABLE_EXCLUSION"
+    },
+    {
+      "id": "C1_COMPATIBILITY"
+    },
+    {
+      "id": "NO_APL_B"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "tf3_version": "TF3.0.0"
+}

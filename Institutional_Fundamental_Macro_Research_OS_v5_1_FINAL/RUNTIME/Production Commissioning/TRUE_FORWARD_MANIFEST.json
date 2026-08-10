@@ -19,8 +19,12 @@
     "review objects",
     "operator status and verification",
     "immutable M1 finding snapshot",
-    "immutable APL-A lens/output snapshot"
+    "immutable APL-A lens/output snapshot",
+    "continuous forward scheduler/operator",
+    "automatic outcome maturation and inbox linking",
+    "periodic frozen-cutoff TF2 review orchestration"
   ],
+  "continuous_operations": "TF3.0.0",
   "fv1": "FV1.0.0",
   "method_kernel": "M1.0.1",
   "mission": "REAL_HOST_SHADOW_COMMISSIONING_AND_TRUE_FORWARD_ACTIVATION",

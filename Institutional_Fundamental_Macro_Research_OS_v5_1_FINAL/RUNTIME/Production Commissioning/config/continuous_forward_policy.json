@@ -1,0 +1,49 @@
+{
+  "apl_a_authority": "SHADOW_ONLY",
+  "apl_b": "NOT_IMPLEMENTED",
+  "backups_relpath": "forward/backups",
+  "broker_write": false,
+  "collection_pause_on": [
+    "SEAL_CORRUPTION",
+    "TEMPORAL_INTEGRITY_FAILURE",
+    "AUTHORITY_LEAK",
+    "MAJOR_DATA_CONTAMINATION"
+  ],
+  "configured_market_universe_source": "RUNTIME/Production Commissioning/config/commissioning_policy.json#shadow_instruments",
+  "direction_authority_added": "NONE",
+  "disk_warning_free_bytes": 1073741824,
+  "horizon_maturity": {
+    "DAILY": 86400,
+    "DAILY_OPEN_TO_CLOSE": 86400,
+    "IMMEDIATE_EVENT": 900,
+    "INTRADAY": 14400,
+    "MEDIUM_TERM": 2592000,
+    "MULTI_DAY": 259200,
+    "SESSION": 28800,
+    "STRUCTURAL": 7776000,
+    "TACTICAL": 604800,
+    "UNSPECIFIED": 86400
+  },
+  "m1_new_direction_authority": "NONE",
+  "mutable_forward_records_in_r4_source_fingerprint": false,
+  "operations_relpath": "forward/operations",
+  "outcome_inbox_relpath": "forward/outcome_inbox",
+  "outcome_processed_relpath": "forward/outcome_processed",
+  "owner": "C1_D4_FORWARD_OPERATIONS",
+  "permission_authority_added": "NONE",
+  "review_trigger": {
+    "minimum_new_matured": "CONFIGURED_MARKET_COUNT",
+    "mode": "MATURED_FULL_UNIVERSE_BATCH",
+    "operator_force_allowed": true
+  },
+  "scheduler": {
+    "cadence_source": "93 Temporal Market Structure Timing and Calendar Intelligence Engine/61 V15.1 Manual and Scheduled Launcher Contract.md",
+    "enabled_by_default_on_real_windows_install": true,
+    "frequency": "HOURLY",
+    "interval_hours": 1,
+    "task_name": "AlphaLab-TF3-ContinuousForward"
+  },
+  "stale_operation_lock_seconds": 7200,
+  "tf3_version": "TF3.0.0",
+  "version": "TF3_POLICY_1.0.0"
+}
