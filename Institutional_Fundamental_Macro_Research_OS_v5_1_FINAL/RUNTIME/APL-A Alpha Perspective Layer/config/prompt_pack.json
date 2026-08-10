@@ -1,0 +1,65 @@
+{
+  "version": "ALPHALAB_APL_PROMPT_PACK_1.0.0",
+  "layer": "APL-A",
+  "mode": "SHADOW_ONLY",
+  "process_count": 8,
+  "processes": [
+    {
+      "process_id": "V01_SCOPE_AND_LENS_ROUTER",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V01_SCOPE_AND_LENS_ROUTER/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V01_SCOPE_AND_LENS_ROUTER/prompt.md",
+      "prompt_sha256": "sha256:b3a03bb3635163f3e7acb0f79bc508e7b1c5243bb02c3479ddcd81f42400b094",
+      "manifest_sha256": "sha256:93b7590db4ce539dd35b66c84935c6012e9f6e170d035d80fb9945771fa43de7"
+    },
+    {
+      "process_id": "V02_EPISTEMIC_FRAGILITY_AUDITOR",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V02_EPISTEMIC_FRAGILITY_AUDITOR/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V02_EPISTEMIC_FRAGILITY_AUDITOR/prompt.md",
+      "prompt_sha256": "sha256:781f8f67049cf8ab812bd9760af7b98fa2d34d9c1b90191edcbbd956022fd251",
+      "manifest_sha256": "sha256:5113b01d8d0fad79d3c5bc4ea330bf2782450eb01ca80729efc4f0d7b07556d7"
+    },
+    {
+      "process_id": "V03_STORY_MODEL_SOURCE_REMOVAL",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V03_STORY_MODEL_SOURCE_REMOVAL/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V03_STORY_MODEL_SOURCE_REMOVAL/prompt.md",
+      "prompt_sha256": "sha256:583b18063ffda712aaf69d9729eb64f70d56413052b4f310f4c6adc7f2bb233a",
+      "manifest_sha256": "sha256:40e12967230841348cb090576c570163888fb3e0ff71bde39180917c1bc3eb1f"
+    },
+    {
+      "process_id": "V04_INVARIANT_AND_UNKNOWNS_ANALYST",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V04_INVARIANT_AND_UNKNOWNS_ANALYST/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V04_INVARIANT_AND_UNKNOWNS_ANALYST/prompt.md",
+      "prompt_sha256": "sha256:aa6479b20f69cafcc3c211ea4518ae4d88a61572a53cd86b98ab4b7b848d83ee",
+      "manifest_sha256": "sha256:95bc8bdcfd7d33ded4986907ec1b667887e6eed2236575b99296fd130a372881"
+    },
+    {
+      "process_id": "V10_FRAGILITY_GEOMETRY",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V10_FRAGILITY_GEOMETRY/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V10_FRAGILITY_GEOMETRY/prompt.md",
+      "prompt_sha256": "sha256:8a9c9a833f3d61d47d22c46fddea4095bcd0ce5047701eac26a9ded580710b24",
+      "manifest_sha256": "sha256:02083ca1bb607593caf0df1933131c5d0acef8a3c1ccc8d643c9af3773b57d9d"
+    },
+    {
+      "process_id": "V11_EXPOSURE_OPTIONALITY_TAIL",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V11_EXPOSURE_OPTIONALITY_TAIL/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V11_EXPOSURE_OPTIONALITY_TAIL/prompt.md",
+      "prompt_sha256": "sha256:650897869848707c94132320f7f1eb37a555e3e84ab2c7cdb60aaf9bc2fa4d42",
+      "manifest_sha256": "sha256:d3d8efcd59e4b25ca4c6c665a601966ab542f22912ddd1e42ed968ed392cc291"
+    },
+    {
+      "process_id": "V12_NETWORK_COMMON_MODE_FORCED_ACTORS",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V12_NETWORK_COMMON_MODE_FORCED_ACTORS/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V12_NETWORK_COMMON_MODE_FORCED_ACTORS/prompt.md",
+      "prompt_sha256": "sha256:810761281381add31cfcc4e125b09cbd116868506dea0b245e0d14f983bfb77a",
+      "manifest_sha256": "sha256:5e8ca479e28bf8e37edd28a5adb6733febfef5c310ed6578ed4ec2644ce03813"
+    },
+    {
+      "process_id": "V13_INCENTIVE_TRANSFER_INTERVENTION",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V13_INCENTIVE_TRANSFER_INTERVENTION/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V13_INCENTIVE_TRANSFER_INTERVENTION/prompt.md",
+      "prompt_sha256": "sha256:0d6f8b2ac6a9937f877d8f97c2a65dee434d3233631e1ca3af28ec8aba39e06d",
+      "manifest_sha256": "sha256:67e8f115656506973e20b115ec93e4654646daf81578c62aa6d9b473a393fb5f"
+    }
+  ],
+  "pack_hash": "sha256:07422558a2f74d75a06a7364a29e53c2d0e1a127033462612e3262c7ffaab225"
+}

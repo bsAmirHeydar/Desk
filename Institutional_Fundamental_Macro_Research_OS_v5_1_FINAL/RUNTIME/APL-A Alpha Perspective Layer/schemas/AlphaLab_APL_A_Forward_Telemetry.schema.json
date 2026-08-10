@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "active_lenses",
+    "material_findings",
+    "would_request",
+    "complexity",
+    "authority"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "active_lenses": {
+      "type": "array"
+    },
+    "material_findings": {
+      "type": "array"
+    },
+    "would_request": {
+      "type": "array"
+    },
+    "complexity": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,38 @@
+{
+  "version": "APL_A_PROCESS_GRAPH_1.0.0",
+  "mode": "POST_DECISION_SHADOW_OVER_FROZEN_PREDECISION_CONTEXT",
+  "order": [
+    "V01_SCOPE_AND_LENS_ROUTER",
+    "V02_EPISTEMIC_FRAGILITY_AUDITOR",
+    "V03_STORY_MODEL_SOURCE_REMOVAL",
+    "V04_INVARIANT_AND_UNKNOWNS_ANALYST",
+    "V10_FRAGILITY_GEOMETRY",
+    "V11_EXPOSURE_OPTIONALITY_TAIL",
+    "V12_NETWORK_COMMON_MODE_FORCED_ACTORS",
+    "V13_INCENTIVE_TRANSFER_INTERVENTION"
+  ],
+  "core_dependencies": [
+    "decision_evidence_pack",
+    "evidence_integrity_receipt",
+    "market_state_reconciliation",
+    "hypothesis_set",
+    "causal_graph",
+    "root_channel_map",
+    "scenario_tree"
+  ],
+  "forbidden_core_inputs": [
+    "thesis_destroyer",
+    "model_disagreement",
+    "premortem",
+    "global_reconciliation",
+    "d3_edge",
+    "utility_state",
+    "d4_governance",
+    "final_permission",
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome"
+  ],
+  "influences_core_decision": false
+}

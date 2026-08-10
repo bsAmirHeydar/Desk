@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "known_unknowns",
+    "unobservables",
+    "unmodeled_driver_candidates"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "known_unknowns": {
+      "type": "array"
+    },
+    "unobservables": {
+      "type": "array"
+    },
+    "unmodeled_driver_candidates": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

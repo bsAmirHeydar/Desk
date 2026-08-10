@@ -37,12 +37,26 @@ class RunDriver:
         if 'r3_retrieval_receipt' in names:return
         h=self.host(production);retriever=h.retrieve if 'EVIDENCE_RETRIEVAL' in self.binding.get('optional_capabilities',[])+self.binding.get('required_capabilities',[]) else None
         self.retrieval.capture(run_id,host_retriever=retriever,live_intake=self.live_intake)
+
+    def _run_apl_a_shadow(self,run_id,production=True):
+        root=self.vault/'RUNTIME'/'APL-A Alpha Perspective Layer'
+        if not (root/'APL_A_MANIFEST.json').is_file():return None
+        import sys
+        if str(root) not in sys.path:sys.path.insert(0,str(root))
+        try:
+            from alpha_perspective_runtime.shadow import run_shadow
+            return run_shadow(self.vault,self.rt,self.host,run_id,production=production)
+        except Exception as e:
+            self.rt.lifecycle.event(run_id,'APL_A_SHADOW_FAILED',{'error':str(e),'core_decision_mutated':False})
+            return {'status':'FAIL','error':str(e),'core_decision_mutated':False}
     def run_to_decision(self,run_id,production=True):
         st=self.r2.status(run_id)
         if not st['run']:self.r2.bootstrap(run_id)
         while True:
             m=self.rt.store.load_manifest(run_id)
-            if m.get('decision_seal_hash'):return m
+            if m.get('decision_seal_hash'):
+                self._run_apl_a_shadow(run_id,production)
+                return self.rt.store.load_manifest(run_id)
             jobs=self.r2.ready_jobs(run_id)
             if not jobs:raise DriverError('no ready jobs before decision seal; inspect R2 status/gates')
             # Deterministic serial scheduling is the accuracy-first baseline. The DAG remains parallelizable.
@@ -56,4 +70,6 @@ class RunDriver:
                 if pid=='P63_FINAL_DECISION':
                     g=self.r2.gate(run_id,'G4_DECISION_COMPLETION',store_receipt=False)
                     if g['status']!='PASS':raise DriverError('G4 failed: '+repr(g.get('missing_artifacts')))
-                    return self.r2.finalize_decision(run_id)
+                    m=self.r2.finalize_decision(run_id)
+                    self._run_apl_a_shadow(run_id,production)
+                    return m

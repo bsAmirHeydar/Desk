@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "mode",
+    "decision_seal_hash",
+    "artifacts",
+    "authority"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "mode": {
+      "const": "SHADOW_ONLY"
+    },
+    "decision_seal_hash": {
+      "type": "string"
+    },
+    "artifacts": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "maps"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "maps": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "required": [
+          "system",
+          "stressor",
+          "stressor_range",
+          "state",
+          "horizon",
+          "welfare_metric",
+          "path",
+          "scale",
+          "geometry_state",
+          "thresholds",
+          "tail_orientation",
+          "reversal_conditions",
+          "evidence_references"
+        ],
+        "properties": {
+          "system": {},
+          "stressor": {},
+          "stressor_range": {},
+          "state": {},
+          "horizon": {},
+          "welfare_metric": {},
+          "path": {},
+          "scale": {},
+          "geometry_state": {},
+          "thresholds": {},
+          "tail_orientation": {},
+          "reversal_conditions": {},
+          "evidence_references": {}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

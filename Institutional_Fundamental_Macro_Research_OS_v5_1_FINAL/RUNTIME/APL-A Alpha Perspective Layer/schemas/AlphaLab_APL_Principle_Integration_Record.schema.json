@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "principle_id",
+    "title",
+    "provenance_class",
+    "source_refs",
+    "problem_solved",
+    "domain",
+    "system_boundary",
+    "stressor",
+    "welfare_metric",
+    "mechanism",
+    "reversal_conditions",
+    "allowed_authority",
+    "forbidden_authority",
+    "version"
+  ],
+  "properties": {
+    "principle_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "provenance_class": {
+      "enum": [
+        "TALEB_SOURCE_DERIVED",
+        "TALEB_PRIMARY_SYNTHESIS",
+        "TALEB_EXPANDED_SYNTHESIS"
+      ]
+    },
+    "source_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object"
+      }
+    },
+    "problem_solved": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "system_boundary": {
+      "type": "string"
+    },
+    "stressor": {
+      "type": "string"
+    },
+    "stressor_range": {},
+    "state": {},
+    "scale": {},
+    "horizon": {},
+    "path_dependence": {},
+    "welfare_metric": {},
+    "mechanism": {
+      "type": "string"
+    },
+    "required_conditions": {
+      "type": "array"
+    },
+    "assumptions": {
+      "type": "array"
+    },
+    "observable_signatures": {
+      "type": "array"
+    },
+    "measurement_limits": {
+      "type": "array"
+    },
+    "counterexamples": {
+      "type": "array"
+    },
+    "reversal_conditions": {
+      "type": "array"
+    },
+    "failure_conditions": {
+      "type": "array"
+    },
+    "externalities": {
+      "type": "array"
+    },
+    "existing_alpha_overlap": {
+      "type": "array"
+    },
+    "incremental_value_hypothesis": {
+      "type": "string"
+    },
+    "allowed_authority": {
+      "type": "array"
+    },
+    "forbidden_authority": {
+      "type": "array"
+    },
+    "activation_conditions": {
+      "type": "array"
+    },
+    "deactivation_conditions": {
+      "type": "array"
+    },
+    "forward_validation_requirement": {},
+    "retirement_test": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

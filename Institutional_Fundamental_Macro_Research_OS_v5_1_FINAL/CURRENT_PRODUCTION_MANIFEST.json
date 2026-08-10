@@ -454,5 +454,20 @@
     "donchian_execution_trigger_only": true,
     "timing_clearance_from_price_technical_analysis": false
   },
-  "version": "21.3.0"
+  "version": "21.3.0",
+  "alpha_perspective": {
+    "version": "APL-A 1.0.0",
+    "mode": "SHADOW_ONLY",
+    "authority": {
+      "fact": "NONE",
+      "direction": "NONE",
+      "permission": "NONE",
+      "broker_write": "NONE"
+    },
+    "source": "Talebian Systems Philosophy OS v3.0.0 MAXIMAL",
+    "data_first": true,
+    "direct_retrieval": false,
+    "decision_influence": "NONE_PENDING_FORWARD_VALIDATION",
+    "manifest": "RUNTIME/APL-A Alpha Perspective Layer/APL_A_MANIFEST.json"
+  }
 }

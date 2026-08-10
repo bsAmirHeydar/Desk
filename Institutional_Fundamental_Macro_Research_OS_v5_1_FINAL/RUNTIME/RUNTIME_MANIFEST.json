@@ -96,5 +96,20 @@
     "production_ready": "NOT_AUTO_GRANTED",
     "broker_write_authority": "NONE",
     "scientific_authority_added": "NONE"
+  },
+  "perspective_layer": {
+    "version": "APL-A 1.0.0",
+    "status": "SHADOW_ONLY_ACTIVE",
+    "prompt_pack": "ALPHALAB_APL_PROMPT_PACK_1.0.0",
+    "process_count": 8,
+    "authority": {
+      "fact": "NONE",
+      "direction": "NONE",
+      "permission": "NONE",
+      "broker_write": "NONE"
+    },
+    "data_plane": "READ_ONLY",
+    "direct_retrieval": "FORBIDDEN",
+    "forward_validation": "REQUIRED_BEFORE_ANY_DECISION_INFLUENCE"
   }
 }

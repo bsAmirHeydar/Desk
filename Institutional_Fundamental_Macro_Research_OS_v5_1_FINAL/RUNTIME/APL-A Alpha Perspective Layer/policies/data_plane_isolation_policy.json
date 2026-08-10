@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "upstream_immutable_through": "P38_MARKET_STATE_RECONCILER",
+  "apl_world": "LEARNING",
+  "requires_decision_seal": true,
+  "direct_retrieval": false,
+  "research_request_route": [
+    "P11_EVIDENCE_PLAN",
+    "C1_RETRIEVAL",
+    "R1_CAPTURE",
+    "D1_ADMISSION",
+    "NEW_OR_CONTINUED_GOVERNED_RUN"
+  ],
+  "invariants": [
+    "UNKNOWN_NE_ZERO",
+    "UNAVAILABLE_NE_ABSENT",
+    "PROXY_NE_DIRECT_FACT",
+    "INFERENCE_NE_OBSERVED_FACT",
+    "DATA_ABUNDANCE_NE_INDEPENDENCE"
+  ]
+}

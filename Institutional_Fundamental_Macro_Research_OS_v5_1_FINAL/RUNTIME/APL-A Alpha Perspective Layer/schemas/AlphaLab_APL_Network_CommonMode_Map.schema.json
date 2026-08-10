@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "nominal_support_count",
+    "independent_root_count",
+    "dependencies",
+    "common_mode_risks",
+    "forced_actors"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "nominal_support_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "independent_root_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "dependencies": {
+      "type": "array"
+    },
+    "common_mode_risks": {
+      "type": "array"
+    },
+    "forced_actors": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

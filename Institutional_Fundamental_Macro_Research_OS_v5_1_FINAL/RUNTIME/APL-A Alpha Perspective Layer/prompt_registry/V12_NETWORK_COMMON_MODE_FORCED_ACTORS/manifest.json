@@ -1,0 +1,74 @@
+{
+  "process_id": "V12_NETWORK_COMMON_MODE_FORCED_ACTORS",
+  "version": "1.0.0",
+  "stage": "APL_A_SHADOW",
+  "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V12_NETWORK_COMMON_MODE_FORCED_ACTORS/prompt.md",
+  "dependencies": [],
+  "required_inputs": [
+    "decision_evidence_pack",
+    "evidence_integrity_receipt",
+    "market_state_reconciliation",
+    "causal_graph",
+    "root_channel_map",
+    "scenario_tree",
+    "apl_epistemic_perspective"
+  ],
+  "optional_inputs": [
+    "run_request",
+    "scope_state",
+    "visibility_receipt",
+    "retrieval_plan"
+  ],
+  "forbidden_inputs": [
+    "final_permission",
+    "d3_edge",
+    "utility_state",
+    "d4_governance",
+    "outcome",
+    "future_price_path",
+    "realized_r",
+    "counterfactual_outcome",
+    "post_cutoff_revision",
+    "free_conversation_memory",
+    "unadmitted_web_results"
+  ],
+  "outputs": [
+    {
+      "logical_name": "apl_network_common_mode_map",
+      "schema_ref": "RUNTIME/APL-A Alpha Perspective Layer/schemas/AlphaLab_APL_Network_CommonMode_Map.schema.json",
+      "world": "LEARNING",
+      "artifact_stage": "LEARNING",
+      "mode": "ARTIFACT"
+    }
+  ],
+  "model_profile": "INDEPENDENT_ANALYST",
+  "canonical_dependencies": [
+    "RUNTIME/APL-A Alpha Perspective Layer/canon/lenses/V12_NETWORK_COMMON_MODE_FORCED_ACTORS.md",
+    "RUNTIME/APL-A Alpha Perspective Layer/canon/APL_A_PRINCIPLE_REGISTRY.json"
+  ],
+  "authority": {
+    "can_create": [
+      "apl_network_common_mode_map"
+    ],
+    "cannot_create": [
+      "CREATE_FACT",
+      "EDIT_FACT",
+      "RECLASSIFY_D1_FACT",
+      "CREATE_FUNDAMENTAL_DIRECTION",
+      "FLIP_FUNDAMENTAL_DIRECTION",
+      "CREATE_BUY_SELL",
+      "OVERRIDE_P63",
+      "BROKER_WRITE",
+      "DIRECT_WEB_RETRIEVAL"
+    ]
+  },
+  "failure_semantics": [
+    "PRESENT",
+    "NOT_APPLICABLE",
+    "UNAVAILABLE",
+    "UNDETERMINED",
+    "ESCALATE"
+  ],
+  "escalation_policy": "GOVERNED_RESEARCH_REQUEST_ONLY",
+  "context_mode": "TYPED_HASH_PINNED_NO_WEB"
+}

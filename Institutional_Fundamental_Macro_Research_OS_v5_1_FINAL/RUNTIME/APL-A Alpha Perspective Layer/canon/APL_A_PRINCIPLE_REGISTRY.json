@@ -1,0 +1,2431 @@
+{
+  "schema_version": "1.0.0",
+  "version": "APL_A_PRINCIPLES_1.0.0",
+  "count": 33,
+  "principles": [
+    {
+      "principle_id": "APL_SCOPE_REQUIRED",
+      "title": "No principle without declared scope",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "39 LAYER 12 SCOPE LIMITS ANTI SLOGAN/14 Full Technical Synthesis.md",
+          "sha256": "sha256:cc076361c337a64d18616f8edaa5fea6fafa375f59422491999d088715e62ed7",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent slogan transfer and scope drift",
+      "domain": "all",
+      "system_boundary": "declared per run",
+      "stressor": "principle transfer",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Require domain, boundary, stressor, welfare, scale, horizon, mechanism and reversal metadata before activation.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [
+        "A principle can be inactive or reversed by scope."
+      ],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_FRAGILITY_RELATIONAL",
+      "title": "Fragility is relational, not an object label",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "28 LAYER 01 FRAGILITY GEOMETRY/14 Full Technical Synthesis.md",
+          "sha256": "sha256:e7f57a33049a88cb5b6580af672776438634dbc9b8c217faa59772d52ed537fe",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent global fragile/antifragile labeling",
+      "domain": "nonlinear response",
+      "system_boundary": "declared per run",
+      "stressor": "dispersion/stress",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Response sign depends on curvature, state, scale, path, boundary and survival constraints.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [
+        "Curvature may reverse after saturation or threshold crossing."
+      ],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_LOCAL_NOT_GLOBAL_CURVATURE",
+      "title": "Local curvature is not global curvature",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "28 LAYER 01 FRAGILITY GEOMETRY/14 Full Technical Synthesis.md",
+          "sha256": "sha256:e7f57a33049a88cb5b6580af672776438634dbc9b8c217faa59772d52ed537fe",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent extrapolation beyond observed stress bands",
+      "domain": "nonlinear response",
+      "system_boundary": "declared per run",
+      "stressor": "stressor magnitude",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Estimate local bands and retain unknown regions.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [
+        "A different stress range may have opposite curvature."
+      ],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_MODEL_ERROR_STRESSOR",
+      "title": "Model error is a second-order stressor",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "28 LAYER 01 FRAGILITY GEOMETRY/14 Full Technical Synthesis.md",
+          "sha256": "sha256:e7f57a33049a88cb5b6580af672776438634dbc9b8c217faa59772d52ed537fe",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "29 LAYER 02 OPACITY EPISTEMIC ARCHITECTURE/14 Full Technical Synthesis.md",
+          "sha256": "sha256:766685fc1cad98d0af838a7b8845f4d6b96e438d59a972f1af5d5b0edc31b299",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Expose sensitivity to model-class misspecification",
+      "domain": "epistemic/nonlinear",
+      "system_boundary": "declared per run",
+      "stressor": "model error",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Perturb model class and observe conclusion/exposure stability.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_OPACITY_STRUCTURAL",
+      "title": "Opacity is structural",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "29 LAYER 02 OPACITY EPISTEMIC ARCHITECTURE/14 Full Technical Synthesis.md",
+          "sha256": "sha256:766685fc1cad98d0af838a7b8845f4d6b96e438d59a972f1af5d5b0edc31b299",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent false omniscience",
+      "domain": "epistemology",
+      "system_boundary": "declared per run",
+      "stressor": "hidden variables / regime change",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Treat hidden variables, silent evidence and model-class uncertainty as legitimate states.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_EPISTEMIC_VECTOR_NO_SCALAR",
+      "title": "Do not collapse epistemic quality to a fake scalar",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "29 LAYER 02 OPACITY EPISTEMIC ARCHITECTURE/14 Full Technical Synthesis.md",
+          "sha256": "sha256:766685fc1cad98d0af838a7b8845f4d6b96e438d59a972f1af5d5b0edc31b299",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Preserve typed uncertainty",
+      "domain": "epistemology",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Represent source directness, independence, freshness, measurement, model dependence, causality, observability, scope and falsifier separately.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_UNKNOWN_NOT_ZERO",
+      "title": "Unknown and unavailable are not zero/absence",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "29 LAYER 02 OPACITY EPISTEMIC ARCHITECTURE/14 Full Technical Synthesis.md",
+          "sha256": "sha256:766685fc1cad98d0af838a7b8845f4d6b96e438d59a972f1af5d5b0edc31b299",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent missing-data coercion",
+      "domain": "epistemology",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Keep UNKNOWN, UNAVAILABLE, UNOBSERVABLE and INDETERMINATE first-class.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [
+        "D1 epistemic states"
+      ],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_STORY_REMOVAL",
+      "title": "Story removal tests narrative dependence",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "29 LAYER 02 OPACITY EPISTEMIC ARCHITECTURE/14 Full Technical Synthesis.md",
+          "sha256": "sha256:766685fc1cad98d0af838a7b8845f4d6b96e438d59a972f1af5d5b0edc31b299",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "37 LAYER 10 NARRATIVE SCIENCE TINKERING/14 Full Technical Synthesis.md",
+          "sha256": "sha256:73a0e60ed995fe4d4525c1c841ccc55a3e0ff71b17b93ece464452756b056208",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "26 ALGORITHMIC AUDITS/18 Narrative Stripping Algorithm.md",
+          "sha256": "sha256:7cfa0c53240f4cbf887a0f2183e66d504e727511f7737c424367b4d9d50b0682",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Detect conclusion dependence on attractive explanation",
+      "domain": "interpretation",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Strip narrative prose while retaining admitted facts and causal relations.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_MODEL_REMOVAL",
+      "title": "Model removal tests model single-point failure",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "29 LAYER 02 OPACITY EPISTEMIC ARCHITECTURE/14 Full Technical Synthesis.md",
+          "sha256": "sha256:766685fc1cad98d0af838a7b8845f4d6b96e438d59a972f1af5d5b0edc31b299",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "26 ALGORITHMIC AUDITS/20 Model Removal Algorithm.md",
+          "sha256": "sha256:389b2b43e8b74d5d892a8815c21e2ed558f5bc907326f8342e010ded3f13c332",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Detect model fragility",
+      "domain": "model pluralism",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Remove a load-bearing model class without mutating original hypotheses.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_SOURCE_REMOVAL",
+      "title": "Source removal tests source single-point failure",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "29 LAYER 02 OPACITY EPISTEMIC ARCHITECTURE/14 Full Technical Synthesis.md",
+          "sha256": "sha256:766685fc1cad98d0af838a7b8845f4d6b96e438d59a972f1af5d5b0edc31b299",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "26 ALGORITHMIC AUDITS/21 Source Removal Algorithm.md",
+          "sha256": "sha256:8c2e653d7f9d7fe0119c3ddd9c660c048f8947f54cdf4c473845167e1b9fd48e",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Detect source fragility",
+      "domain": "evidence",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Remove a load-bearing independent source/root counterfactually; preserve D1 evidence.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [
+        "D1 lineage and independent-root semantics"
+      ],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_INVARIANT_DISCOVERY",
+      "title": "Prefer invariants that survive plausible removals",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "29 LAYER 02 OPACITY EPISTEMIC ARCHITECTURE/14 Full Technical Synthesis.md",
+          "sha256": "sha256:766685fc1cad98d0af838a7b8845f4d6b96e438d59a972f1af5d5b0edc31b299",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "ENTAILMENTS AND TENSIONS.md",
+          "sha256": "sha256:07760cbc895dd3a69f9b6deb0e751915103cd1efafb78219551666891228c1d5",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "26 ALGORITHMIC AUDITS/22 Invariant Discovery Algorithm.md",
+          "sha256": "sha256:83ce3f436d494d7e50e720e11b0becf344271de08570b26cbd5bb6bfe762eff9",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Bridge model pluralism and action",
+      "domain": "epistemology",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Search for propositions stable across model/source/story removals.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_OPTIONALITY_COSTED",
+      "title": "Optionality requires cost, expiry and exercise feasibility",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "30 LAYER 03 EXPOSURE OPTIONALITY BARBELL/14 Full Technical Synthesis.md",
+          "sha256": "sha256:3f11c36aeb63c73c87c2e7d0db8f57a7b22ab41591471a288d7147463e0d9388",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent free-optionality assumptions",
+      "domain": "exposure",
+      "system_boundary": "declared per run",
+      "stressor": "uncertainty",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Map rights, obligations, carrying costs, expiry, liquidity and exercise constraints.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [
+        "Commitment may dominate when evidence/path dependence justifies it."
+      ],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_REVERSIBILITY_GRADIENT",
+      "title": "Reversibility is graded and state-dependent",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "30 LAYER 03 EXPOSURE OPTIONALITY BARBELL/14 Full Technical Synthesis.md",
+          "sha256": "sha256:3f11c36aeb63c73c87c2e7d0db8f57a7b22ab41591471a288d7147463e0d9388",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Expose hidden lock-in",
+      "domain": "exposure",
+      "system_boundary": "declared per run",
+      "stressor": "commitment",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Classify reversible/partially reversible/irreversible conditional on liquidity and forced-action thresholds.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_FIXED_OBLIGATION_STRESS_PATH",
+      "title": "Fixed obligations require stress-path analysis",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "30 LAYER 03 EXPOSURE OPTIONALITY BARBELL/14 Full Technical Synthesis.md",
+          "sha256": "sha256:3f11c36aeb63c73c87c2e7d0db8f57a7b22ab41591471a288d7147463e0d9388",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "26 ALGORITHMIC AUDITS/06 Fixed Obligation Audit.md",
+          "sha256": "sha256:f7d82ade970976456e326446db470ca397f48fdd67fd0d533b54cc395203ce20",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Detect hidden concavity/forced action",
+      "domain": "exposure",
+      "system_boundary": "declared per run",
+      "stressor": "stress path",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Map obligations, thresholds, liquidity and path dependence.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_RUIN_SPECIAL",
+      "title": "Ruin is qualitatively special",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "33 LAYER 06 RUIN FAT TAILS PRECAUTION/14 Full Technical Synthesis.md",
+          "sha256": "sha256:3052b9b456fcd67f858431a5ea9080b983061beb334708b00e9c49b35e075d53",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "26 ALGORITHMIC AUDITS/23 Ruin Gate Algorithm.md",
+          "sha256": "sha256:4d448ab517d5e92a7188dfd6052cc0653827fe5a2b8c7ab3eac527744ec04d2d",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Keep terminal/systemic failure distinct from ordinary loss",
+      "domain": "survival",
+      "system_boundary": "declared per run",
+      "stressor": "tail/systemic shock",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Flag terminal, irreversible or propagation-sensitive failure without converting APL into position sizing.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [
+        "Local reversible risk should not trigger systemic precaution."
+      ],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_PRECAUTION_SCOPED",
+      "title": "Precaution is scoped to systemic/irreversible harm",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "33 LAYER 06 RUIN FAT TAILS PRECAUTION/14 Full Technical Synthesis.md",
+          "sha256": "sha256:3052b9b456fcd67f858431a5ea9080b983061beb334708b00e9c49b35e075d53",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "26 ALGORITHMIC AUDITS/24 Precaution Classifier.md",
+          "sha256": "sha256:d82a706768e208ee9fee0e94051c825f7876948b08c5bc26f70654f9f03284b9",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "ENTAILMENTS AND TENSIONS.md",
+          "sha256": "sha256:07760cbc895dd3a69f9b6deb0e751915103cd1efafb78219551666891228c1d5",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent hyper-conservatism",
+      "domain": "survival",
+      "system_boundary": "declared per run",
+      "stressor": "systemic uncertainty",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Classify local reversible versus systemic/irreversible harm before precaution.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [
+        "Opportunity cost dominates for ordinary reversible risk."
+      ],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_REDUNDANCY_INDEPENDENCE",
+      "title": "Nominal redundancy is not independent redundancy",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "32 LAYER 05 SCALE NETWORKS DECENTRALIZATION/14 Full Technical Synthesis.md",
+          "sha256": "sha256:a476ae954a33549a2814160034bd178546bceaf49f6cf7d357c544d214e58c5b",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "26 ALGORITHMIC AUDITS/08 Redundancy Independence Test.md",
+          "sha256": "sha256:5ddcb24b7fe5bf92f800b5a2fccf6d91d81b4c56a310e28c481fb13b074f0622",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Detect common failure roots",
+      "domain": "networks",
+      "system_boundary": "declared per run",
+      "stressor": "shared dependency",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Trace upstream roots before counting redundancy.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [
+        "D1 same-root deduplication"
+      ],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_COMMON_MODE_FAILURE",
+      "title": "Common-mode failure can erase apparent diversity",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "32 LAYER 05 SCALE NETWORKS DECENTRALIZATION/14 Full Technical Synthesis.md",
+          "sha256": "sha256:a476ae954a33549a2814160034bd178546bceaf49f6cf7d357c544d214e58c5b",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "26 ALGORITHMIC AUDITS/09 Common-Mode Failure Audit.md",
+          "sha256": "sha256:eae7856b96c8dc6b6d9ea9a935bbfa704c3694431672d03f3d7d471142754c8f",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Expose shared dependencies",
+      "domain": "networks",
+      "system_boundary": "declared per run",
+      "stressor": "common shock",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Map centrality, coupling, shared upstream dependencies and blast radius.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_DECENTRALIZATION_CONDITIONAL",
+      "title": "Decentralization is conditional, not universally good",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "32 LAYER 05 SCALE NETWORKS DECENTRALIZATION/14 Full Technical Synthesis.md",
+          "sha256": "sha256:a476ae954a33549a2814160034bd178546bceaf49f6cf7d357c544d214e58c5b",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "39 LAYER 12 SCOPE LIMITS ANTI SLOGAN/14 Full Technical Synthesis.md",
+          "sha256": "sha256:cc076361c337a64d18616f8edaa5fea6fafa375f59422491999d088715e62ed7",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "ENTAILMENTS AND TENSIONS.md",
+          "sha256": "sha256:07760cbc895dd3a69f9b6deb0e751915103cd1efafb78219551666891228c1d5",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent decentralization slogan",
+      "domain": "systems",
+      "system_boundary": "declared per run",
+      "stressor": "local/systemic failure",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Compare localization benefit with coordination and externality costs.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [
+        "Central coordination can dominate when externalities or coordination needs are systemic."
+      ],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_FRAGILITY_TRANSFER",
+      "title": "Local robustness may transfer fragility elsewhere",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "34 LAYER 07 SKIN ETHICS FRAGILITY TRANSFER/14 Full Technical Synthesis.md",
+          "sha256": "sha256:0b98dd1cb0fc86be3aedd2404e8dcf4ac8c73b240dab9b22fe481056379ab69f",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "26 ALGORITHMIC AUDITS/17 Fragility Transfer Audit.md",
+          "sha256": "sha256:2873308da3d7e913124eecb71941a82dba22679f3157575fd75ab93d93f3ad91",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "39 LAYER 12 SCOPE LIMITS ANTI SLOGAN/14 Full Technical Synthesis.md",
+          "sha256": "sha256:cc076361c337a64d18616f8edaa5fea6fafa375f59422491999d088715e62ed7",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Expose boundary manipulation and tail transfer",
+      "domain": "agency/system boundary",
+      "system_boundary": "declared per run",
+      "stressor": "tail loss",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Map control, upside, ordinary downside, tail downside, exit and liability across actors.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_SKIN_NOT_TRUTH",
+      "title": "Skin in the game is not proof of correctness",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "34 LAYER 07 SKIN ETHICS FRAGILITY TRANSFER/14 Full Technical Synthesis.md",
+          "sha256": "sha256:0b98dd1cb0fc86be3aedd2404e8dcf4ac8c73b240dab9b22fe481056379ab69f",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent incentive alignment from becoming epistemic authority",
+      "domain": "agency",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Use downside alignment as incentive evidence, not truth evidence.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_INTERVENTION_SECOND_ORDER",
+      "title": "Intervention creates new causal pathways under opacity",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "35 LAYER 08 IATROGENICS HORMESIS VIA NEGATIVA/14 Full Technical Synthesis.md",
+          "sha256": "sha256:1ca26d0472858103aea1e22b2af467d3037abe39f8220583c29cd7017f1c235e",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "26 ALGORITHMIC AUDITS/14 Iatrogenic Risk Audit.md",
+          "sha256": "sha256:d13ffc0033dd89f9d2f2cf49c2e6842f01ad9c159a78a7eb627667a8b472cb92",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Expose second/third-order intervention effects",
+      "domain": "intervention",
+      "system_boundary": "declared per run",
+      "stressor": "intervention shock",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Map target problem, intended mechanism, new dependency, side effects and reversal conditions.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_VIA_NEGATIVA_CONDITIONAL",
+      "title": "Via negativa is conditional",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "35 LAYER 08 IATROGENICS HORMESIS VIA NEGATIVA/14 Full Technical Synthesis.md",
+          "sha256": "sha256:1ca26d0472858103aea1e22b2af467d3037abe39f8220583c29cd7017f1c235e",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "ENTAILMENTS AND TENSIONS.md",
+          "sha256": "sha256:07760cbc895dd3a69f9b6deb0e751915103cd1efafb78219551666891228c1d5",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent subtraction dogma",
+      "domain": "intervention",
+      "system_boundary": "declared per run",
+      "stressor": "known harm",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Prefer removal only when harm is established and intervention uncertainty is material.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [
+        "Positive intervention can dominate when untreated severity is high."
+      ],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_HORMESIS_DOSE_WINDOW",
+      "title": "Hormesis requires a dose-response and recovery window",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "35 LAYER 08 IATROGENICS HORMESIS VIA NEGATIVA/14 Full Technical Synthesis.md",
+          "sha256": "sha256:1ca26d0472858103aea1e22b2af467d3037abe39f8220583c29cd7017f1c235e",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "26 ALGORITHMIC AUDITS/15 Hormesis Dose Window Audit.md",
+          "sha256": "sha256:b04800d56b4515152a7e3a796cc4edf23c9903cc67e8bb9958b11394217c788e",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent stress-is-good slogan",
+      "domain": "adaptation",
+      "system_boundary": "declared per run",
+      "stressor": "bounded stress",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Require adaptive capacity, dose window and recovery.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [
+        "Beyond the adaptive dose, stress can be destructive."
+      ],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_NARRATIVE_BELOW_OBSERVATION",
+      "title": "Narrative cannot outrank observation or falsification",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "37 LAYER 10 NARRATIVE SCIENCE TINKERING/14 Full Technical Synthesis.md",
+          "sha256": "sha256:73a0e60ed995fe4d4525c1c841ccc55a3e0ff71b17b93ece464452756b056208",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent narrative compression from becoming authority",
+      "domain": "interpretation",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Keep narrative as model/attention context, not fact authority.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [
+        "Module 90 narrative boundary"
+      ],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_NO_UNIVERSAL_ALGORITHM",
+      "title": "Do not turn Talebian philosophy into one universal algorithm",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "38 LAYER 11 UNIFIED TALEBIAN SYSTEM/14 Full Technical Synthesis.md",
+          "sha256": "sha256:ab778bf68ddc96e8ef4d16815ad9dbad846216f737a29db820c2de075003e7fa",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "39 LAYER 12 SCOPE LIMITS ANTI SLOGAN/14 Full Technical Synthesis.md",
+          "sha256": "sha256:cc076361c337a64d18616f8edaa5fea6fafa375f59422491999d088715e62ed7",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent philosophical totalization",
+      "domain": "meta-governance",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Activate only material lenses; allow non-use.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [
+        "Some domains are well-modelled and benefit from optimization."
+      ],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_ROBUSTNESS_CAN_BE_ENOUGH",
+      "title": "Robustness can be enough",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "38 LAYER 11 UNIFIED TALEBIAN SYSTEM/14 Full Technical Synthesis.md",
+          "sha256": "sha256:ab778bf68ddc96e8ef4d16815ad9dbad846216f737a29db820c2de075003e7fa",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "39 LAYER 12 SCOPE LIMITS ANTI SLOGAN/14 Full Technical Synthesis.md",
+          "sha256": "sha256:cc076361c337a64d18616f8edaa5fea6fafa375f59422491999d088715e62ed7",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent antifragility fetish",
+      "domain": "meta-governance",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Do not prefer antifragility when robustness better satisfies scope and constraints.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_THEORY_CAN_DOMINATE",
+      "title": "Theory can dominate tinkering when causal knowledge is strong",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "38 LAYER 11 UNIFIED TALEBIAN SYSTEM/14 Full Technical Synthesis.md",
+          "sha256": "sha256:ab778bf68ddc96e8ef4d16815ad9dbad846216f737a29db820c2de075003e7fa",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "39 LAYER 12 SCOPE LIMITS ANTI SLOGAN/14 Full Technical Synthesis.md",
+          "sha256": "sha256:cc076361c337a64d18616f8edaa5fea6fafa375f59422491999d088715e62ed7",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent theory-is-bad slogan",
+      "domain": "science",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Choose comparative consequence sensitivity under realistic uncertainty.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_POSITIVE_INTERVENTION_CAN_DOMINATE",
+      "title": "Positive intervention can dominate subtraction",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "38 LAYER 11 UNIFIED TALEBIAN SYSTEM/14 Full Technical Synthesis.md",
+          "sha256": "sha256:ab778bf68ddc96e8ef4d16815ad9dbad846216f737a29db820c2de075003e7fa",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "39 LAYER 12 SCOPE LIMITS ANTI SLOGAN/14 Full Technical Synthesis.md",
+          "sha256": "sha256:cc076361c337a64d18616f8edaa5fea6fafa375f59422491999d088715e62ed7",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent via-negativa absolutism",
+      "domain": "intervention",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Allow positive intervention where severity and causal knowledge justify it.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_COORDINATION_CAN_DOMINATE",
+      "title": "Coordination can dominate decentralization",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "38 LAYER 11 UNIFIED TALEBIAN SYSTEM/14 Full Technical Synthesis.md",
+          "sha256": "sha256:ab778bf68ddc96e8ef4d16815ad9dbad846216f737a29db820c2de075003e7fa",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "39 LAYER 12 SCOPE LIMITS ANTI SLOGAN/14 Full Technical Synthesis.md",
+          "sha256": "sha256:cc076361c337a64d18616f8edaa5fea6fafa375f59422491999d088715e62ed7",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "ENTAILMENTS AND TENSIONS.md",
+          "sha256": "sha256:07760cbc895dd3a69f9b6deb0e751915103cd1efafb78219551666891228c1d5",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent small/decentralized-is-good slogans",
+      "domain": "systems",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Evaluate coordination need, propagation externalities and scale economies.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_BOUNDARY_WELFARE_REQUIRED",
+      "title": "Every fragility claim requires boundary and welfare measure",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "28 LAYER 01 FRAGILITY GEOMETRY/14 Full Technical Synthesis.md",
+          "sha256": "sha256:e7f57a33049a88cb5b6580af672776438634dbc9b8c217faa59772d52ed537fe",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "39 LAYER 12 SCOPE LIMITS ANTI SLOGAN/14 Full Technical Synthesis.md",
+          "sha256": "sha256:cc076361c337a64d18616f8edaa5fea6fafa375f59422491999d088715e62ed7",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent actor-relative benefit from being called system benefit",
+      "domain": "scope",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Declare whose welfare/output is being measured and where the system boundary sits.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_TECHNICAL_NOT_MORAL",
+      "title": "Technical results are not morally self-justifying",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "34 LAYER 07 SKIN ETHICS FRAGILITY TRANSFER/14 Full Technical Synthesis.md",
+          "sha256": "sha256:0b98dd1cb0fc86be3aedd2404e8dcf4ac8c73b240dab9b22fe481056379ab69f",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "39 LAYER 12 SCOPE LIMITS ANTI SLOGAN/14 Full Technical Synthesis.md",
+          "sha256": "sha256:cc076361c337a64d18616f8edaa5fea6fafa375f59422491999d088715e62ed7",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Prevent technical metaphor from becoming moral authority",
+      "domain": "ethics",
+      "system_boundary": "declared per run",
+      "stressor": "context-dependent",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Keep externality/ethical boundary explicit when others bear downside.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    },
+    {
+      "principle_id": "APL_SOURCE_SINGLE_POINT_AVOIDANCE",
+      "title": "Critical source single points should be exposed",
+      "provenance_class": "TALEB_EXPANDED_SYNTHESIS",
+      "source_refs": [
+        {
+          "path": "TALEBIAN META-CONSTITUTION V3.md",
+          "sha256": "sha256:50631285231e1acb26917da5c7a6e2c8f476137f02dd917a790efd21438b1450",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        },
+        {
+          "path": "29 LAYER 02 OPACITY EPISTEMIC ARCHITECTURE/14 Full Technical Synthesis.md",
+          "sha256": "sha256:766685fc1cad98d0af838a7b8845f4d6b96e438d59a972f1af5d5b0edc31b299",
+          "provenance_class": "TALEB_EXPANDED_SYNTHESIS"
+        }
+      ],
+      "problem_solved": "Detect critical epistemic concentration",
+      "domain": "epistemology",
+      "system_boundary": "declared per run",
+      "stressor": "source failure",
+      "stressor_range": "declared per run",
+      "state": "declared per run",
+      "scale": "declared per run",
+      "horizon": "declared per run",
+      "path_dependence": "explicit when material",
+      "welfare_metric": "decision-quality / epistemic-integrity",
+      "mechanism": "Use source removal and independent-root analysis where feasible.",
+      "required_conditions": [],
+      "assumptions": [],
+      "observable_signatures": [],
+      "measurement_limits": [
+        "Do not manufacture precision beyond available evidence."
+      ],
+      "counterexamples": [],
+      "reversal_conditions": [],
+      "failure_conditions": [],
+      "externalities": [
+        "Audit externalized fragility when another agent/system can bear the downside."
+      ],
+      "existing_alpha_overlap": [
+        "D1 source hierarchy and lineage"
+      ],
+      "incremental_value_hypothesis": "Adds a scoped perspective challenge without replacing upstream Alpha science.",
+      "allowed_authority": [
+        "OBSERVE",
+        "QUESTION",
+        "STRESS_TEST",
+        "REQUEST_EVIDENCE",
+        "REQUEST_RECHECK",
+        "SHADOW_TELEMETRY"
+      ],
+      "forbidden_authority": [
+        "CREATE_FACT",
+        "EDIT_FACT",
+        "RECLASSIFY_D1_FACT",
+        "CREATE_FUNDAMENTAL_DIRECTION",
+        "FLIP_FUNDAMENTAL_DIRECTION",
+        "CREATE_BUY_SELL",
+        "OVERRIDE_P63",
+        "BROKER_WRITE"
+      ],
+      "activation_conditions": [
+        "Material to current evidence/model/exposure and complete scope card."
+      ],
+      "deactivation_conditions": [
+        "NOT_MATERIAL",
+        "NOT_APPLICABLE",
+        "REVERSED_BY_SCOPE"
+      ],
+      "forward_validation_requirement": "SHADOW_FORWARD_VALIDATION_REQUIRED",
+      "retirement_test": "Retire or narrow if forward telemetry shows no incremental perspective value or repeated false warnings.",
+      "version": "1.0.0"
+    }
+  ],
+  "registry_hash": "sha256:c8c792e1d84e89e46f761ff4b16acd425f6357a18868015960cccc6dbbd6cffa"
+}

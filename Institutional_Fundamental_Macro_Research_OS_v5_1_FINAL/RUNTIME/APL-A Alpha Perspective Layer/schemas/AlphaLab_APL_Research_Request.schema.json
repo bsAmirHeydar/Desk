@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "request_id",
+    "run_id",
+    "perspective_process",
+    "material_question",
+    "required_fact_family",
+    "required_source_semantics",
+    "required_horizon",
+    "reason",
+    "decision_materiality",
+    "current_gap",
+    "acceptable_direct_evidence",
+    "proxy_acceptable",
+    "deadline_recheck_trigger"
+  ],
+  "properties": {
+    "request_id": {},
+    "run_id": {},
+    "perspective_process": {},
+    "material_question": {},
+    "required_fact_family": {},
+    "required_source_semantics": {},
+    "required_horizon": {},
+    "reason": {},
+    "decision_materiality": {},
+    "current_gap": {},
+    "acceptable_direct_evidence": {},
+    "proxy_acceptable": {},
+    "deadline_recheck_trigger": {}
+  },
+  "additionalProperties": true
+}

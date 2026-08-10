@@ -1,0 +1,21 @@
+{
+  "perspective_version": "APL-A 1.0.0",
+  "scientific_stack": "V21.3.0",
+  "runtime": "R4.0.0",
+  "commissioning": "C1.0.0",
+  "mode": "SHADOW_ONLY",
+  "prompt_pack": "ALPHALAB_APL_PROMPT_PACK_1.0.0",
+  "process_count": 8,
+  "authority": {
+    "fact": "NONE",
+    "direction": "NONE",
+    "permission": "NONE",
+    "broker_write": "NONE"
+  },
+  "source_vault": "Talebian Systems Philosophy OS v3.0.0 MAXIMAL READ_ONLY",
+  "extraction_notes": 696,
+  "execution_boundary": "POST_DECISION_SEAL_OVER_FROZEN_PREDECISION_CONTEXT",
+  "data_plane_mutation": "FORBIDDEN",
+  "direct_retrieval": "FORBIDDEN",
+  "status": "INSTALLED_SHADOW_FORWARD_VALIDATION_REQUIRED"
+}

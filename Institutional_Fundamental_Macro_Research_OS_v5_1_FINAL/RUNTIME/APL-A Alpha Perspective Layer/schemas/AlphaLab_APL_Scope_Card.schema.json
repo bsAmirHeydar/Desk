@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "lens_id",
+    "domain",
+    "system_boundary",
+    "stressor",
+    "stressor_range",
+    "welfare_metric",
+    "scale",
+    "horizon",
+    "state",
+    "mechanism",
+    "evidence_layer",
+    "reversal_conditions",
+    "externalities"
+  ],
+  "properties": {
+    "lens_id": {},
+    "domain": {},
+    "system_boundary": {},
+    "stressor": {},
+    "stressor_range": {},
+    "welfare_metric": {},
+    "scale": {},
+    "horizon": {},
+    "state": {},
+    "mechanism": {},
+    "evidence_layer": {},
+    "reversal_conditions": {},
+    "externalities": {}
+  },
+  "additionalProperties": true
+}

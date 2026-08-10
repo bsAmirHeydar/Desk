@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "actors",
+    "fragility_transfers",
+    "interventions"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "actors": {
+      "type": "array"
+    },
+    "fragility_transfers": {
+      "type": "array"
+    },
+    "interventions": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

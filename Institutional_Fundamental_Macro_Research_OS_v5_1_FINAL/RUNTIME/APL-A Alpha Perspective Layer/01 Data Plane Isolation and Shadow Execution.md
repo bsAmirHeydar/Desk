@@ -1,0 +1,3 @@
+# Data Plane Isolation and Shadow Execution
+
+APL-A physically executes after the core decision seal but its authorized context is restricted to pre-adversarial/pre-decision core artifacts: admitted evidence, P38 market state, P40 hypotheses, P41 causal graph and P42 scenarios. P50-P63 outputs and Outcome World are forbidden. All APL outputs are LEARNING-world shadow artifacts. This physical placement guarantees zero production-decision dependency while preserving the intended epistemic boundary. Any additional evidence need becomes an `APL_RESEARCH_REQUEST` routed to a new/continued governed evidence cycle.

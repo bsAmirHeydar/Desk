@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "audits"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "audits": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "required": [
+          "audit_type",
+          "removed_object",
+          "baseline_conclusion",
+          "surviving_evidence",
+          "changed_conclusions",
+          "unchanged_conclusions",
+          "fragile_dependencies",
+          "robust_dependencies",
+          "decision_sensitive_dependency",
+          "invariant_candidates"
+        ],
+        "properties": {
+          "audit_type": {},
+          "removed_object": {},
+          "baseline_conclusion": {},
+          "surviving_evidence": {},
+          "changed_conclusions": {},
+          "unchanged_conclusions": {},
+          "fragile_dependencies": {},
+          "robust_dependencies": {},
+          "decision_sensitive_dependency": {},
+          "invariant_candidates": {}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

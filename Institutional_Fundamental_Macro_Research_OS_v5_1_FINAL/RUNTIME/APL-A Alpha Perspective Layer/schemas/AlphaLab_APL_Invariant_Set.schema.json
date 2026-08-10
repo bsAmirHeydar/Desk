@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "invariants"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "invariants": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "required": [
+          "invariant_id",
+          "statement",
+          "supporting_model_classes",
+          "surviving_source_roots",
+          "horizon",
+          "scope",
+          "break_condition",
+          "evidence_references",
+          "known_limitations"
+        ],
+        "properties": {
+          "invariant_id": {},
+          "statement": {},
+          "supporting_model_classes": {},
+          "surviving_source_roots": {},
+          "horizon": {},
+          "scope": {},
+          "break_condition": {},
+          "evidence_references": {},
+          "known_limitations": {}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

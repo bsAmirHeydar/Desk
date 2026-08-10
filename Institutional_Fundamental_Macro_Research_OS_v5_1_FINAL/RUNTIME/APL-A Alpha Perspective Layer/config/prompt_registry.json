@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "processes": [
+    {
+      "process_id": "V01_SCOPE_AND_LENS_ROUTER",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V01_SCOPE_AND_LENS_ROUTER/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V01_SCOPE_AND_LENS_ROUTER/prompt.md",
+      "prompt_sha256": "sha256:b3a03bb3635163f3e7acb0f79bc508e7b1c5243bb02c3479ddcd81f42400b094"
+    },
+    {
+      "process_id": "V02_EPISTEMIC_FRAGILITY_AUDITOR",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V02_EPISTEMIC_FRAGILITY_AUDITOR/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V02_EPISTEMIC_FRAGILITY_AUDITOR/prompt.md",
+      "prompt_sha256": "sha256:781f8f67049cf8ab812bd9760af7b98fa2d34d9c1b90191edcbbd956022fd251"
+    },
+    {
+      "process_id": "V03_STORY_MODEL_SOURCE_REMOVAL",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V03_STORY_MODEL_SOURCE_REMOVAL/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V03_STORY_MODEL_SOURCE_REMOVAL/prompt.md",
+      "prompt_sha256": "sha256:583b18063ffda712aaf69d9729eb64f70d56413052b4f310f4c6adc7f2bb233a"
+    },
+    {
+      "process_id": "V04_INVARIANT_AND_UNKNOWNS_ANALYST",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V04_INVARIANT_AND_UNKNOWNS_ANALYST/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V04_INVARIANT_AND_UNKNOWNS_ANALYST/prompt.md",
+      "prompt_sha256": "sha256:aa6479b20f69cafcc3c211ea4518ae4d88a61572a53cd86b98ab4b7b848d83ee"
+    },
+    {
+      "process_id": "V10_FRAGILITY_GEOMETRY",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V10_FRAGILITY_GEOMETRY/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V10_FRAGILITY_GEOMETRY/prompt.md",
+      "prompt_sha256": "sha256:8a9c9a833f3d61d47d22c46fddea4095bcd0ce5047701eac26a9ded580710b24"
+    },
+    {
+      "process_id": "V11_EXPOSURE_OPTIONALITY_TAIL",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V11_EXPOSURE_OPTIONALITY_TAIL/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V11_EXPOSURE_OPTIONALITY_TAIL/prompt.md",
+      "prompt_sha256": "sha256:650897869848707c94132320f7f1eb37a555e3e84ab2c7cdb60aaf9bc2fa4d42"
+    },
+    {
+      "process_id": "V12_NETWORK_COMMON_MODE_FORCED_ACTORS",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V12_NETWORK_COMMON_MODE_FORCED_ACTORS/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V12_NETWORK_COMMON_MODE_FORCED_ACTORS/prompt.md",
+      "prompt_sha256": "sha256:810761281381add31cfcc4e125b09cbd116868506dea0b245e0d14f983bfb77a"
+    },
+    {
+      "process_id": "V13_INCENTIVE_TRANSFER_INTERVENTION",
+      "manifest_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V13_INCENTIVE_TRANSFER_INTERVENTION/manifest.json",
+      "prompt_path": "RUNTIME/APL-A Alpha Perspective Layer/prompt_registry/V13_INCENTIVE_TRANSFER_INTERVENTION/prompt.md",
+      "prompt_sha256": "sha256:0d6f8b2ac6a9937f877d8f97c2a65dee434d3233631e1ca3af28ec8aba39e06d"
+    }
+  ]
+}

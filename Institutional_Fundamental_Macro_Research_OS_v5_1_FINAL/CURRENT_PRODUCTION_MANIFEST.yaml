@@ -1,430 +1,474 @@
-version: 21.3.0
-current_stack: V21.3.0
-manifest_authority: CURRENT_PRODUCTION_MANIFEST.json
-human_mirror: CURRENT_PRODUCTION_MANIFEST.yaml
-production_entrypoint: 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md
-allowed_live_entrypoints:
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md
-allowed_live_subengines:
-- 95 Fact Constitution and Institutional Evidence Fabric/22 V17 D1 Fact-Governed Full-Vault Production Prompt.md
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt.md
-- 93 Temporal Market Structure Timing and Calendar Intelligence Engine/60 V15.1 Full-Vault Timing Clearance Production Prompt.md
-- 100 Six-Market D2 Fact Books and Production Shadow Engine/13 V18 D2 Fact-Science Full-Vault Production Prompt.md
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/27 V19 D3 Full-Vault Production Prompt.md
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt.md
-canonical_authorities:
-  fundamental: 89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/00 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine MOC.md
-  narrative: 90 Market Narrative Intelligence Engine/00 Market Narrative Intelligence Engine MOC.md
-  instrument: 91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC.md
-  timing: 93 Temporal Market Structure Timing and Calendar Intelligence Engine/00 Temporal Market Structure Timing and Calendar Intelligence Engine MOC.md
-  edge_permission_learning: 92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/00 Alpha Lab Live Execution Permission Forward Learning and Product Engine MOC.md
-  production_control: 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/00 Institutional Evidence Calibration Portfolio and Model Risk Production Engine MOC.md
-  fact_constitution: 95 Fact Constitution and Institutional Evidence Fabric/00 Fact Constitution and Institutional Evidence Fabric MOC.md
-  positioning_ownership: 96 Positioning Ownership and Crowding Science/00 Positioning Ownership and Crowding Science MOC.md
-  actual_flow: 97 Actual Flow and Transaction Pressure Science/00 Actual Flow and Transaction Pressure Science MOC.md
-  funding_plumbing: 98 Funding Plumbing Collateral and Balance Sheet Capacity Science/00 Funding Plumbing Collateral and Balance Sheet Capacity Science MOC.md
-  institutional_mechanics_capacity: 99 Institutional Mechanics and Market Capacity Science/00 Institutional Mechanics and Market Capacity Science MOC.md
-  d2_six_market_router: 100 Six-Market D2 Fact Books and Production Shadow Engine/00 Six-Market D2 Fact Books and Production Shadow Engine MOC.md
-  d3_unified_edge: 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/00 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine MOC.md
-  d4_forward_validation: 102 Forward Validation Calibration Promotion and Scientific Governance Engine/00 Forward Validation Calibration Promotion and Scientific Governance Engine MOC.md
-  cognitive_scenario_reasoning: 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/00 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine MOC.md
-  fact_observability: 100 Six-Market D2 Fact Books and Production Shadow Engine/26 Fact Observability and Coverage Constitution.md
-  runtime_foundation: RUNTIME/R1 Foundation/00 R1 Foundation MOC.md
-  prompt_execution_runtime: RUNTIME/R2 Prompt Execution OS/00 R2 Prompt Execution OS MOC.md
-  operational_execution_learning_runtime: RUNTIME/R3 Operational Execution and Learning OS/00 R3 Operational Execution and Learning OS MOC.md
-  runtime_certification: RUNTIME/R4 Scientific Certification and Reproducibility Hardening/00 R4 Scientific Certification and Reproducibility Hardening MOC.md
-asset_books:
-  XAUUSD:
-  - 89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/27 Gold Force Consumption and Persistence Book.md
-  - 90 Market Narrative Intelligence Engine/36 Gold Narrative Operating Book.md
-  - 100 Six-Market D2 Fact Books and Production Shadow Engine/20 XAUUSD D2 Fact Book.md
-  - 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/21 XAUUSD D3 Integration Book.md
-  - 102 Forward Validation Calibration Promotion and Scientific Governance Engine/24 XAUUSD D4 Validation Book.md
-  - 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/40 XAUUSD Cognitive Book.md
-  NASDAQ100:
-  - 89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/25 Nasdaq 100 Force Consumption and Persistence Book.md
-  - 90 Market Narrative Intelligence Engine/34 Nasdaq 100 Narrative Operating Book.md
-  - 100 Six-Market D2 Fact Books and Production Shadow Engine/21 NASDAQ100 D2 Fact Book.md
-  - 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/22 NASDAQ100 D3 Integration Book.md
-  - 102 Forward Validation Calibration Promotion and Scientific Governance Engine/25 NASDAQ100 D4 Validation Book.md
-  - 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/41 NASDAQ100 Cognitive Book.md
-  SP500:
-  - 89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/26 S&P 500 Force Consumption and Persistence Book.md
-  - 90 Market Narrative Intelligence Engine/35 S&P 500 Narrative Operating Book.md
-  - 100 Six-Market D2 Fact Books and Production Shadow Engine/22 SP500 D2 Fact Book.md
-  - 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/23 SP500 D3 Integration Book.md
-  - 102 Forward Validation Calibration Promotion and Scientific Governance Engine/26 SP500 D4 Validation Book.md
-  - 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/42 SP500 Cognitive Book.md
-  DJIA:
-  - 89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/40 DJIA Force Consumption and Persistence Book.md
-  - 90 Market Narrative Intelligence Engine/53 DJIA Narrative Operating Book.md
-  - 100 Six-Market D2 Fact Books and Production Shadow Engine/23 DJIA D2 Fact Book.md
-  - 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/24 DJIA D3 Integration Book.md
-  - 102 Forward Validation Calibration Promotion and Scientific Governance Engine/27 DJIA D4 Validation Book.md
-  - 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/43 DJIA Cognitive Book.md
-  EURUSD:
-  - 89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/28 EURUSD Force Consumption and Persistence Book.md
-  - 90 Market Narrative Intelligence Engine/37 EURUSD Narrative Operating Book.md
-  - 100 Six-Market D2 Fact Books and Production Shadow Engine/24 EURUSD D2 Fact Book.md
-  - 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/25 EURUSD D3 Integration Book.md
-  - 102 Forward Validation Calibration Promotion and Scientific Governance Engine/28 EURUSD D4 Validation Book.md
-  - 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/44 EURUSD Cognitive Book.md
-  USDJPY:
-  - 89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/41 USDJPY Force Consumption and Persistence Book.md
-  - 90 Market Narrative Intelligence Engine/54 USDJPY Narrative Operating Book.md
-  - 100 Six-Market D2 Fact Books and Production Shadow Engine/25 USDJPY D2 Fact Book.md
-  - 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/26 USDJPY D3 Integration Book.md
-  - 102 Forward Validation Calibration Promotion and Scientific Governance Engine/29 USDJPY D4 Validation Book.md
-  - 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/45 USDJPY Cognitive Book.md
-forbidden_live_entrypoints:
-- 92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/baseline/AlphaLab_V14_Live_DayTrading_Intelligence_Prompt.md
-- 92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/baseline/AlphaLab_V14_Any_Symbol_Live_Launcher.md
-- 93 Temporal Market Structure Timing and Calendar Intelligence Engine/45 V15 Full-Vault Timing-Integrated Production Prompt.md
-- 93 Temporal Market Structure Timing and Calendar Intelligence Engine/46 V15 Manual Ran and Scheduled Launcher Contract.md
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/17 V16 Full-Vault Production Prompt.md
-required_runtime_contracts:
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Evidence_Object.schema.json
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Evidence_Graph.schema.json
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Outcome_Record.schema.json
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_V16_1_StateBundle.schema.json
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Retrieval_Plan.schema.json
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Event_FastPath_Pack.schema.json
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_policy.json
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/calibration_policy.json
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/portfolio_gate_policy.json
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/operational_gate_policy.json
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Event_FastPath_Release.schema.json
-- 95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Fact_Record.schema.json
-- 95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Decision_Evidence_Pack.schema.json
-- 95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Fact_Coverage_Receipt.schema.json
-- 95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Source_Snapshot.schema.json
-- 95 Fact Constitution and Institutional Evidence Fabric/config/fact_constitution_policy.json
-- 95 Fact Constitution and Institutional Evidence Fabric/config/fact_family_registry.json
-- 95 Fact Constitution and Institutional Evidence Fabric/config/six_market_fact_coverage.json
-- 96 Positioning Ownership and Crowding Science/config/positioning_policy.json
-- 96 Positioning Ownership and Crowding Science/schemas/AlphaLab_Positioning_State.schema.json
-- 97 Actual Flow and Transaction Pressure Science/config/flow_policy.json
-- 97 Actual Flow and Transaction Pressure Science/schemas/AlphaLab_Flow_State.schema.json
-- 98 Funding Plumbing Collateral and Balance Sheet Capacity Science/config/funding_plumbing_policy.json
-- 98 Funding Plumbing Collateral and Balance Sheet Capacity Science/schemas/AlphaLab_Funding_Plumbing_State.schema.json
-- 99 Institutional Mechanics and Market Capacity Science/config/mechanics_capacity_policy.json
-- 99 Institutional Mechanics and Market Capacity Science/schemas/AlphaLab_Mechanics_Capacity_State.schema.json
-- 100 Six-Market D2 Fact Books and Production Shadow Engine/config/d2_source_registry.json
-- 100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_d2_coverage.json
-- 100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_d2_source_map.json
-- 100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_D2_Shadow_Pack.schema.json
-- 100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_D2_Forward_Telemetry.schema.json
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/d3_integration_policy.json
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/science_authority_map.json
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/fuzzy_edge_policy.json
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/confidence_validity_policy.json
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/hard_block_policy.json
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/six_market_translation.json
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/d3_telemetry_policy.json
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_D3_Integration_Vector.schema.json
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_D3_Integration_Input.schema.json
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_D3_Adjudication.schema.json
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_D3_Forward_Telemetry.schema.json
-- 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_V19_StateBundle.schema.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/d4_governance_policy.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_policy.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/calibration_policy.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/counterfactual_policy.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/multiple_testing_policy.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/drift_policy.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/outcome_horizon_policy.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/metric_registry.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/six_market_validation_map.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_registry.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Forward_Observation.schema.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Outcome.schema.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Counterfactual.schema.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Calibration_Report.schema.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Promotion_Proposal.schema.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Validator_Decision.schema.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Promotion_Record.schema.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Authority_Receipt.schema.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Drift_Alert.schema.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Ledger_Record.schema.json
-- 102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_V20_StateBundle.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/cognitive_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/hypothesis_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/horizon_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/uncertainty_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/surprise_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/policy_reaction_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/regime_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/causal_graph_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/reflexivity_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/consumption_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/scenario_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/driver_transition_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/review_scheduler_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/global_reconciliation_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/adversarial_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/utility_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/meta_edge_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/complexity_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/analog_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/interaction_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/six_market_cognitive_map.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Input.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Adjudication.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Hypothesis.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Hypothesis_Set.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Horizon_Direction_Tensor.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Uncertainty_Profile.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Surprise_State.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Policy_Reaction_State.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Regime_State.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Causal_Graph.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Root_Channel_Map.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Reflexivity_State.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Consumption_Vector_V21.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Scenario_Tree.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Driver_Transition.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Model_Disagreement.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Global_Reconciliation.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Adversarial_Review.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_PreMortem.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Decision_Utility.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Meta_Edge_Router.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Research_Intent.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_V21_StateBundle.schema.json
-- 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_topic_dependencies.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/semantic_integrity_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/global_root_ontology.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Applicability.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Evidence_Reference.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Trigger_Predicate.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Telemetry.schema.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/applicability_profiles.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/propagation_policy.json
-- 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Policy_Reaction_Bundle.schema.json
-- 100 Six-Market D2 Fact Books and Production Shadow Engine/config/fact_observability_registry.json
-- 100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_observability_map.json
-- 100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Receipt.schema.json
-- 100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Item.schema.json
-- RUNTIME/RUNTIME_MANIFEST.json
-- RUNTIME/R1 Foundation/config/runtime_policy.json
-- RUNTIME/R1 Foundation/config/storage_policy.json
-- RUNTIME/R1 Foundation/config/temporal_policy.json
-- RUNTIME/R1 Foundation/config/lifecycle_policy.json
-- RUNTIME/R1 Foundation/schemas/AlphaLab_Runtime_Config.schema.json
-- RUNTIME/R1 Foundation/schemas/AlphaLab_Run_Request.schema.json
-- RUNTIME/R1 Foundation/schemas/AlphaLab_Run_Manifest.schema.json
-- RUNTIME/R1 Foundation/schemas/AlphaLab_Artifact_Ref.schema.json
-- RUNTIME/R1 Foundation/schemas/AlphaLab_Source_Snapshot_Record.schema.json
-- RUNTIME/R1 Foundation/schemas/AlphaLab_Visibility_Receipt.schema.json
-- RUNTIME/R1 Foundation/schemas/AlphaLab_Decision_Seal.schema.json
-- RUNTIME/R1 Foundation/schemas/AlphaLab_Replay_Request.schema.json
-- RUNTIME/R3 Operational Execution and Learning OS/R3_MANIFEST.json
-- RUNTIME/R3 Operational Execution and Learning OS/config/launcher_profiles.json
-- RUNTIME/R3 Operational Execution and Learning OS/config/execution_profiles.json
-- RUNTIME/R3 Operational Execution and Learning OS/config/host_policy.json
-- RUNTIME/R3 Operational Execution and Learning OS/config/retrieval_runtime_policy.json
-- RUNTIME/R3 Operational Execution and Learning OS/config/outcome_runtime_policy.json
-- RUNTIME/R3 Operational Execution and Learning OS/config/counterfactual_runtime_policy.json
-- RUNTIME/R3 Operational Execution and Learning OS/config/warehouse_policy.json
-- RUNTIME/R3 Operational Execution and Learning OS/config/calibration_runtime_policy.json
-- RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Execution_Handoff.schema.json
-- RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Execution_Receipt.schema.json
-- RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Retrieval_Receipt.schema.json
-- RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Analytics_Row.schema.json
-production_universe:
-- XAUUSD
-- NASDAQ100
-- SP500
-- DJIA
-- EURUSD
-- USDJPY
-excluded_from_production_profile:
-- WTI
-- USOIL
-- CRUDE_OIL
-decision_authority:
-  direction: FUNDAMENTAL_ONLY
-  narrative: TRANSMISSION_CLEARANCE
-  timing: TEMPORAL_CLEARANCE
-  calibration: MODULE_102_GOVERNANCE_ENFORCED
-  portfolio_gate: SHADOW
-  operational_gate: ENFORCED
-  positioning_ownership: MODULE_101_CONSTRAINED_MODIFIER
-  actual_flow: MODULE_101_CONSTRAINED_MODIFIER
-  funding_plumbing: MODULE_101_CONSTRAINED_MODIFIER
-  institutional_mechanics: MODULE_101_CONSTRAINED_MODIFIER
-  market_capacity: MODULE_101_EXECUTION_CAPACITY_GATE
-  d3_edge_integration: ENFORCED_CAUSAL_MODULATION
-  d4_forward_validation: GOVERNANCE_ENFORCED
-  d4_positive_permission: PROMOTED_REGISTRY_ONLY
-  d4_direction_flip: FORBIDDEN
-  cognitive_synthesis: MODULE_103_ENFORCED_COGNITIVE_HARDENING
-  cognitive_positive_permission: FORBIDDEN
-  outside_strategy_edges: REPORT_AND_RESEARCH_ROUTE_ONLY
-  market_disagreement: DIAGNOSTIC_CONSTRAINT_ONLY
-technical_direction_boundary:
-  direction_from_price_technical_analysis: false
-  timing_clearance_from_price_technical_analysis: false
-  donchian_execution_trigger_only: true
-modes:
-  calibration: D4_GOVERNANCE_ENFORCED
-  portfolio_gate: SHADOW
-  operational_gate: ENFORCED
-  blind_validation: SHADOW
-  d2_positioning: CANONICAL_SHADOW
-  d2_actual_flow: CANONICAL_SHADOW
-  d2_funding_plumbing: CANONICAL_SHADOW
-  d2_institutional_mechanics: CANONICAL_SHADOW
-  d2_market_capacity: CANONICAL_SHADOW
-  d3_edge_integration: ENFORCED_CAUSAL_MODULATION
-  d3_positive_permission_promotion: D4_PROMOTED_REGISTRY_ONLY
-  d4_forward_validation: GOVERNANCE_ENFORCED
-  d4_initial_new_promotions: NONE
-  cognitive_hardening: ENFORCED
-  multi_hypothesis: ENFORCED_WHEN_MATERIAL_AMBIGUITY
-  multi_scenario: ENFORCED
-  adversarial_red_team: MANDATORY
-  numeric_scenario_probability: FORBIDDEN_UNLESS_D4_CALIBRATED
-retrieval_policy: 94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_policy.json
-fact_constitution_version: 1.1.0
-d1_evidence_governance:
-  decision_evidence_pack: REQUIRED
-  fact_coverage_receipt: REQUIRED
-  historical_visibility: ENFORCED
-  revision_vintage_immutability: ENFORCED
-  same_root_independence: ENFORCED
-  d2_pending_sciences: []
-  d2_canonical_shadow_sciences:
-  - POSITIONING_OWNERSHIP
-  - ACTUAL_FLOW
-  - FUNDING_PLUMBING
-  - INSTITUTIONAL_MECHANICS
-  - MARKET_CAPACITY
-d2_market_sciences:
-  version: 1.1.0
-  deployment: D2
-  authority_mode: CANONICAL_SHADOW
-  mandatory_reporting: true
-  d3_promotion_state: PROMOTED_VIA_MODULE_101_ONLY
-  coverage_contract: 100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_d2_coverage.json
-  source_registry: 100 Six-Market D2 Fact Books and Production Shadow Engine/config/d2_source_registry.json
-  shadow_pack_schema: 100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_D2_Shadow_Pack.schema.json
-  direct_permission_effect: NONE
-  release: V21.3.0
-  observability_registry: 100 Six-Market D2 Fact Books and Production Shadow Engine/config/fact_observability_registry.json
-  observability_map: 100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_observability_map.json
-  observability_receipt_schema: 100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Receipt.schema.json
-  observability_mode: MATERIALITY_DRIVEN_NO_SILENT_GAPS
-d3_unified_edge:
-  version: 1.1.0
-  deployment: D3
-  authority_mode: ENFORCED_CAUSAL_MODULATION
-  integration_authority: MODULE_101_ONLY
-  direction_authority: FUNDAMENTAL_ONLY
-  direction_flip_allowed: false
-  science_voting_allowed: false
-  additive_scoring_allowed: false
-  new_permission_from_pre_d3_no_trade_v19: false
-  positive_support_forward_validation: D4_ACTIVE
-  production_prompt: 101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/27 V19 D3 Full-Vault Production Prompt.md
-  cognitive_handoff: MODULE_103_PRE_D3_CONSTRAINT_CONTEXT
-  same_root_mode: DEDUP_INDEPENDENCE_PRESERVE_MULTI_CHANNEL_EFFECTS
-d4_forward_validation:
-  version: 1.2.0
-  deployment: D4
-  authority_mode: GOVERNANCE_ENFORCED
-  forward_only: true
-  direction_authority: FUNDAMENTAL_ONLY
-  direction_flip_allowed: false
-  positive_permission_creation: PROMOTED_REGISTRY_ONLY
-  initial_promotion_registry_empty: true
-  runtime_registry_mutation_allowed: false
-  baseline_policy: V19_D3_GRANDFATHERED
-  production_prompt: 102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt.md
-  promotion_registry: 102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_registry.json
-  dependence_resampling: INDEPENDENT_ROOT_THEN_TRADING_DAY_THEN_LABELED_OBSERVATION_FALLBACK
-  cognitive_fields: V21_2_TYPED_FORWARD_HANDOFF_ACTIVE
-  calibration_schema_alignment: ENFORCED
-  calibrated_probability_reference: D4_LEDGER_REQUIRED
-cognitive_hardening:
-  version: 1.2.0
-  release: V21.3.0
-  authority_mode: ENFORCED_COGNITIVE_HARDENING
-  orchestrator: MODULE_103
-  direction_authority: MODULE_89_FUNDAMENTAL_ACTIVE_HORIZON_ONLY
-  direction_flip_allowed: false
-  positive_permission_creation: false
-  outside_strategy_edge_permission_effect: NONE
-  market_price_direction_authority: false
-  market_price_model_diagnostic: true
-  multi_hypothesis_required_when_material_ambiguity: true
-  scenario_probability_mode: QUALITATIVE_UNLESS_D4_CALIBRATED
-  decision_critical_contested_action: NO_TRADE_OR_HOLD
-  decision_critical_unmodeled_driver_action: NO_TRADE_OR_HOLD
-  production_prompt: 103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md
-  semantic_integrity_mode: ENFORCED_LAST_MILE
-  state_presence_contract: PRESENT_OR_CONTEXT_JUSTIFIED_APPLICABILITY
-  retrieval_mode: TOPIC_AWARE_CANONICAL_CAUSAL_DEPENDENCY
-  adaptive_detail: MATERIALITY_DRIVEN
-  final_trigger_contract: STRUCTURED_TRIGGER_PREDICATE
-  evidence_lineage_contract: D1_REFERENTIAL_ON_LOAD_BEARING_PRODUCTION_PATH
-  propagation_integrity: ENFORCED_WITH_AUDITABLE_EXCEPTIONS
-fact_observability_completion:
-  version: 1.0.0
-  release: V21.3.0
-  families: 16
-  markets: 6
-  cells: 96
-  principle: EPISTEMIC_COVERAGE_NOT_OMNISCIENCE
-  new_direction_authority: false
-  new_permission_authority: false
-  private_gap_policy: EXPLICIT_LICENSED_OR_UNAVAILABLE_NO_PROXY_SUBSTITUTION
-  alternative_data_mode: SHADOW_UNTIL_D4_VALUE
-  registered_source_contracts: 57
-  licensed_placeholders: 8
-  baseline_materiality: SIX_MARKET_MAP_PRIOR
-  runtime_materiality: CONTEXT_SENSITIVE_WITH_EXPLICIT_REASON
-  silent_gap_policy: FORBIDDEN
-alpha_runtime:
-  runtime_version: R4.0.0
-  status: SCIENTIFIC_CERTIFICATION_HARDENING_ACTIVE_OFFLINE_CERTIFIED_ENVIRONMENT_PENDING
-  scientific_stack_binding: V21.3.0
-  phases_installed:
-  - 0
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  universal_run_contract: RUNTIME/R1 Foundation/02 Universal Run Contract.md
-  storage_constitution: RUNTIME/R1 Foundation/04 Storage Constitution.md
-  temporal_constitution: RUNTIME/R1 Foundation/03 Temporal Visibility and Point-in-Time Constitution.md
-  decision_outcome_firewall: ENFORCED
-  content_addressed_store: SHA256
-  catalog_backend: SQLITE
-  historical_live_schema_parity: ENFORCED
-  prompt_runtime: R2_ACTIVE
-  launcher_runtime: R3_ACTIVE
-  host_execution: R3_ACTIVE_PROVIDER_NEUTRAL
-  retrieval_runtime: R3_ACTIVE_SOURCE_CONTRACT_BOUND
-  operational_execution_authority: BLOCK_ONLY
-  market_direction_authority: NONE
-  permission_authority: NONE
-  prompt_pack_version: ALPHALAB_PROMPT_PACK_1.0.0
-  process_graph_version: R2_PROCESS_GRAPH_1.0.0
-  process_count: 25
-  full_vault_execution: STRICT_FULL_CONTEXT_COMPILATION
-  epistemic_completion_gate: ENFORCED
-  outcome_learning: R3_ACTIVE
-  d4_ledger: HASH_CHAINED_APPEND_ONLY
-  analytics_authority: R1_OBJECT_STORE_PLUS_SQLITE
-  duckdb_parquet: OPTIONAL_REBUILDABLE_ACCELERATOR
-  certification_runtime: R4_ACTIVE
-  offline_certification: CORE_AND_FULL_AVAILABLE
-  environment_certification: PENDING_ACTUAL_HOST_AND_SOURCE_ATTESTATION
-  shadow_production_certification: PENDING
-  production_ready: NOT_AUTO_GRANTED
-  prompt_context_drift_guard: ENFORCED
-  reproduction_parity: VISIBILITY_AND_INVOCATION_CORE_DECISION_ENVIRONMENT
+# GENERATED MIRROR — machine authority is CURRENT_PRODUCTION_MANIFEST.json
+{
+  "allowed_live_entrypoints": [
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md"
+  ],
+  "allowed_live_subengines": [
+    "95 Fact Constitution and Institutional Evidence Fabric/22 V17 D1 Fact-Governed Full-Vault Production Prompt.md",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/29 V16.1 Fuzzy-Materiality Integrated Production Prompt.md",
+    "93 Temporal Market Structure Timing and Calendar Intelligence Engine/60 V15.1 Full-Vault Timing Clearance Production Prompt.md",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/13 V18 D2 Fact-Science Full-Vault Production Prompt.md",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/27 V19 D3 Full-Vault Production Prompt.md",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt.md"
+  ],
+  "alpha_runtime": {
+    "analytics_authority": "R1_OBJECT_STORE_PLUS_SQLITE",
+    "catalog_backend": "SQLITE",
+    "certification_runtime": "R4_ACTIVE",
+    "content_addressed_store": "SHA256",
+    "d4_ledger": "HASH_CHAINED_APPEND_ONLY",
+    "decision_outcome_firewall": "ENFORCED",
+    "duckdb_parquet": "OPTIONAL_REBUILDABLE_ACCELERATOR",
+    "environment_certification": "PENDING_ACTUAL_HOST_AND_SOURCE_ATTESTATION",
+    "epistemic_completion_gate": "ENFORCED",
+    "full_vault_execution": "STRICT_FULL_CONTEXT_COMPILATION",
+    "historical_live_schema_parity": "ENFORCED",
+    "host_execution": "R3_ACTIVE_PROVIDER_NEUTRAL",
+    "launcher_runtime": "R3_ACTIVE",
+    "market_direction_authority": "NONE",
+    "offline_certification": "CORE_AND_FULL_AVAILABLE",
+    "operational_execution_authority": "BLOCK_ONLY",
+    "outcome_learning": "R3_ACTIVE",
+    "permission_authority": "NONE",
+    "phases_installed": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "process_count": 25,
+    "process_graph_version": "R2_PROCESS_GRAPH_1.0.0",
+    "production_ready": "NOT_AUTO_GRANTED",
+    "prompt_context_drift_guard": "ENFORCED",
+    "prompt_pack_version": "ALPHALAB_PROMPT_PACK_1.0.0",
+    "prompt_runtime": "R2_ACTIVE",
+    "reproduction_parity": "VISIBILITY_AND_INVOCATION_CORE_DECISION_ENVIRONMENT",
+    "retrieval_runtime": "R3_ACTIVE_SOURCE_CONTRACT_BOUND",
+    "runtime_version": "R4.0.0",
+    "scientific_stack_binding": "V21.3.0",
+    "shadow_production_certification": "PENDING",
+    "status": "SCIENTIFIC_CERTIFICATION_HARDENING_ACTIVE_OFFLINE_CERTIFIED_ENVIRONMENT_PENDING",
+    "storage_constitution": "RUNTIME/R1 Foundation/04 Storage Constitution.md",
+    "temporal_constitution": "RUNTIME/R1 Foundation/03 Temporal Visibility and Point-in-Time Constitution.md",
+    "universal_run_contract": "RUNTIME/R1 Foundation/02 Universal Run Contract.md"
+  },
+  "asset_books": {
+    "DJIA": [
+      "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/40 DJIA Force Consumption and Persistence Book.md",
+      "90 Market Narrative Intelligence Engine/53 DJIA Narrative Operating Book.md",
+      "100 Six-Market D2 Fact Books and Production Shadow Engine/23 DJIA D2 Fact Book.md",
+      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/24 DJIA D3 Integration Book.md",
+      "102 Forward Validation Calibration Promotion and Scientific Governance Engine/27 DJIA D4 Validation Book.md",
+      "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/43 DJIA Cognitive Book.md"
+    ],
+    "EURUSD": [
+      "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/28 EURUSD Force Consumption and Persistence Book.md",
+      "90 Market Narrative Intelligence Engine/37 EURUSD Narrative Operating Book.md",
+      "100 Six-Market D2 Fact Books and Production Shadow Engine/24 EURUSD D2 Fact Book.md",
+      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/25 EURUSD D3 Integration Book.md",
+      "102 Forward Validation Calibration Promotion and Scientific Governance Engine/28 EURUSD D4 Validation Book.md",
+      "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/44 EURUSD Cognitive Book.md"
+    ],
+    "NASDAQ100": [
+      "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/25 Nasdaq 100 Force Consumption and Persistence Book.md",
+      "90 Market Narrative Intelligence Engine/34 Nasdaq 100 Narrative Operating Book.md",
+      "100 Six-Market D2 Fact Books and Production Shadow Engine/21 NASDAQ100 D2 Fact Book.md",
+      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/22 NASDAQ100 D3 Integration Book.md",
+      "102 Forward Validation Calibration Promotion and Scientific Governance Engine/25 NASDAQ100 D4 Validation Book.md",
+      "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/41 NASDAQ100 Cognitive Book.md"
+    ],
+    "SP500": [
+      "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/26 S&P 500 Force Consumption and Persistence Book.md",
+      "90 Market Narrative Intelligence Engine/35 S&P 500 Narrative Operating Book.md",
+      "100 Six-Market D2 Fact Books and Production Shadow Engine/22 SP500 D2 Fact Book.md",
+      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/23 SP500 D3 Integration Book.md",
+      "102 Forward Validation Calibration Promotion and Scientific Governance Engine/26 SP500 D4 Validation Book.md",
+      "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/42 SP500 Cognitive Book.md"
+    ],
+    "USDJPY": [
+      "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/41 USDJPY Force Consumption and Persistence Book.md",
+      "90 Market Narrative Intelligence Engine/54 USDJPY Narrative Operating Book.md",
+      "100 Six-Market D2 Fact Books and Production Shadow Engine/25 USDJPY D2 Fact Book.md",
+      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/26 USDJPY D3 Integration Book.md",
+      "102 Forward Validation Calibration Promotion and Scientific Governance Engine/29 USDJPY D4 Validation Book.md",
+      "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/45 USDJPY Cognitive Book.md"
+    ],
+    "XAUUSD": [
+      "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/27 Gold Force Consumption and Persistence Book.md",
+      "90 Market Narrative Intelligence Engine/36 Gold Narrative Operating Book.md",
+      "100 Six-Market D2 Fact Books and Production Shadow Engine/20 XAUUSD D2 Fact Book.md",
+      "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/21 XAUUSD D3 Integration Book.md",
+      "102 Forward Validation Calibration Promotion and Scientific Governance Engine/24 XAUUSD D4 Validation Book.md",
+      "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/40 XAUUSD Cognitive Book.md"
+    ]
+  },
+  "canonical_authorities": {
+    "actual_flow": "97 Actual Flow and Transaction Pressure Science/00 Actual Flow and Transaction Pressure Science MOC.md",
+    "cognitive_scenario_reasoning": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/00 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine MOC.md",
+    "d2_six_market_router": "100 Six-Market D2 Fact Books and Production Shadow Engine/00 Six-Market D2 Fact Books and Production Shadow Engine MOC.md",
+    "d3_unified_edge": "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/00 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine MOC.md",
+    "d4_forward_validation": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/00 Forward Validation Calibration Promotion and Scientific Governance Engine MOC.md",
+    "edge_permission_learning": "92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/00 Alpha Lab Live Execution Permission Forward Learning and Product Engine MOC.md",
+    "fact_constitution": "95 Fact Constitution and Institutional Evidence Fabric/00 Fact Constitution and Institutional Evidence Fabric MOC.md",
+    "fact_observability": "100 Six-Market D2 Fact Books and Production Shadow Engine/26 Fact Observability and Coverage Constitution.md",
+    "fundamental": "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/00 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine MOC.md",
+    "funding_plumbing": "98 Funding Plumbing Collateral and Balance Sheet Capacity Science/00 Funding Plumbing Collateral and Balance Sheet Capacity Science MOC.md",
+    "institutional_mechanics_capacity": "99 Institutional Mechanics and Market Capacity Science/00 Institutional Mechanics and Market Capacity Science MOC.md",
+    "instrument": "91 Global Multi-Asset Coverage and Instrument Intelligence Engine/00 Global Multi-Asset Coverage and Instrument Intelligence Engine MOC.md",
+    "narrative": "90 Market Narrative Intelligence Engine/00 Market Narrative Intelligence Engine MOC.md",
+    "operational_execution_learning_runtime": "RUNTIME/R3 Operational Execution and Learning OS/00 R3 Operational Execution and Learning OS MOC.md",
+    "positioning_ownership": "96 Positioning Ownership and Crowding Science/00 Positioning Ownership and Crowding Science MOC.md",
+    "production_control": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/00 Institutional Evidence Calibration Portfolio and Model Risk Production Engine MOC.md",
+    "prompt_execution_runtime": "RUNTIME/R2 Prompt Execution OS/00 R2 Prompt Execution OS MOC.md",
+    "runtime_certification": "RUNTIME/R4 Scientific Certification and Reproducibility Hardening/00 R4 Scientific Certification and Reproducibility Hardening MOC.md",
+    "runtime_foundation": "RUNTIME/R1 Foundation/00 R1 Foundation MOC.md",
+    "timing": "93 Temporal Market Structure Timing and Calendar Intelligence Engine/00 Temporal Market Structure Timing and Calendar Intelligence Engine MOC.md"
+  },
+  "cognitive_hardening": {
+    "adaptive_detail": "MATERIALITY_DRIVEN",
+    "authority_mode": "ENFORCED_COGNITIVE_HARDENING",
+    "decision_critical_contested_action": "NO_TRADE_OR_HOLD",
+    "decision_critical_unmodeled_driver_action": "NO_TRADE_OR_HOLD",
+    "direction_authority": "MODULE_89_FUNDAMENTAL_ACTIVE_HORIZON_ONLY",
+    "direction_flip_allowed": false,
+    "evidence_lineage_contract": "D1_REFERENTIAL_ON_LOAD_BEARING_PRODUCTION_PATH",
+    "final_trigger_contract": "STRUCTURED_TRIGGER_PREDICATE",
+    "market_price_direction_authority": false,
+    "market_price_model_diagnostic": true,
+    "multi_hypothesis_required_when_material_ambiguity": true,
+    "orchestrator": "MODULE_103",
+    "outside_strategy_edge_permission_effect": "NONE",
+    "positive_permission_creation": false,
+    "production_prompt": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md",
+    "propagation_integrity": "ENFORCED_WITH_AUDITABLE_EXCEPTIONS",
+    "release": "V21.3.0",
+    "retrieval_mode": "TOPIC_AWARE_CANONICAL_CAUSAL_DEPENDENCY",
+    "scenario_probability_mode": "QUALITATIVE_UNLESS_D4_CALIBRATED",
+    "semantic_integrity_mode": "ENFORCED_LAST_MILE",
+    "state_presence_contract": "PRESENT_OR_CONTEXT_JUSTIFIED_APPLICABILITY",
+    "version": "1.2.0"
+  },
+  "current_stack": "V21.3.0",
+  "d1_evidence_governance": {
+    "d2_canonical_shadow_sciences": [
+      "POSITIONING_OWNERSHIP",
+      "ACTUAL_FLOW",
+      "FUNDING_PLUMBING",
+      "INSTITUTIONAL_MECHANICS",
+      "MARKET_CAPACITY"
+    ],
+    "d2_pending_sciences": [],
+    "decision_evidence_pack": "REQUIRED",
+    "fact_coverage_receipt": "REQUIRED",
+    "historical_visibility": "ENFORCED",
+    "revision_vintage_immutability": "ENFORCED",
+    "same_root_independence": "ENFORCED"
+  },
+  "d2_market_sciences": {
+    "authority_mode": "CANONICAL_SHADOW",
+    "coverage_contract": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_d2_coverage.json",
+    "d3_promotion_state": "PROMOTED_VIA_MODULE_101_ONLY",
+    "deployment": "D2",
+    "direct_permission_effect": "NONE",
+    "mandatory_reporting": true,
+    "observability_map": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_observability_map.json",
+    "observability_mode": "MATERIALITY_DRIVEN_NO_SILENT_GAPS",
+    "observability_receipt_schema": "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Receipt.schema.json",
+    "observability_registry": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/fact_observability_registry.json",
+    "release": "V21.3.0",
+    "shadow_pack_schema": "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_D2_Shadow_Pack.schema.json",
+    "source_registry": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/d2_source_registry.json",
+    "version": "1.1.0"
+  },
+  "d3_unified_edge": {
+    "additive_scoring_allowed": false,
+    "authority_mode": "ENFORCED_CAUSAL_MODULATION",
+    "cognitive_handoff": "MODULE_103_PRE_D3_CONSTRAINT_CONTEXT",
+    "deployment": "D3",
+    "direction_authority": "FUNDAMENTAL_ONLY",
+    "direction_flip_allowed": false,
+    "integration_authority": "MODULE_101_ONLY",
+    "new_permission_from_pre_d3_no_trade_v19": false,
+    "positive_support_forward_validation": "D4_ACTIVE",
+    "production_prompt": "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/27 V19 D3 Full-Vault Production Prompt.md",
+    "same_root_mode": "DEDUP_INDEPENDENCE_PRESERVE_MULTI_CHANNEL_EFFECTS",
+    "science_voting_allowed": false,
+    "version": "1.1.0"
+  },
+  "d4_forward_validation": {
+    "authority_mode": "GOVERNANCE_ENFORCED",
+    "baseline_policy": "V19_D3_GRANDFATHERED",
+    "calibrated_probability_reference": "D4_LEDGER_REQUIRED",
+    "calibration_schema_alignment": "ENFORCED",
+    "cognitive_fields": "V21_2_TYPED_FORWARD_HANDOFF_ACTIVE",
+    "dependence_resampling": "INDEPENDENT_ROOT_THEN_TRADING_DAY_THEN_LABELED_OBSERVATION_FALLBACK",
+    "deployment": "D4",
+    "direction_authority": "FUNDAMENTAL_ONLY",
+    "direction_flip_allowed": false,
+    "forward_only": true,
+    "initial_promotion_registry_empty": true,
+    "positive_permission_creation": "PROMOTED_REGISTRY_ONLY",
+    "production_prompt": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt.md",
+    "promotion_registry": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_registry.json",
+    "runtime_registry_mutation_allowed": false,
+    "version": "1.2.0"
+  },
+  "decision_authority": {
+    "actual_flow": "MODULE_101_CONSTRAINED_MODIFIER",
+    "calibration": "MODULE_102_GOVERNANCE_ENFORCED",
+    "cognitive_positive_permission": "FORBIDDEN",
+    "cognitive_synthesis": "MODULE_103_ENFORCED_COGNITIVE_HARDENING",
+    "d3_edge_integration": "ENFORCED_CAUSAL_MODULATION",
+    "d4_direction_flip": "FORBIDDEN",
+    "d4_forward_validation": "GOVERNANCE_ENFORCED",
+    "d4_positive_permission": "PROMOTED_REGISTRY_ONLY",
+    "direction": "FUNDAMENTAL_ONLY",
+    "funding_plumbing": "MODULE_101_CONSTRAINED_MODIFIER",
+    "institutional_mechanics": "MODULE_101_CONSTRAINED_MODIFIER",
+    "market_capacity": "MODULE_101_EXECUTION_CAPACITY_GATE",
+    "market_disagreement": "DIAGNOSTIC_CONSTRAINT_ONLY",
+    "narrative": "TRANSMISSION_CLEARANCE",
+    "operational_gate": "ENFORCED",
+    "outside_strategy_edges": "REPORT_AND_RESEARCH_ROUTE_ONLY",
+    "portfolio_gate": "SHADOW",
+    "positioning_ownership": "MODULE_101_CONSTRAINED_MODIFIER",
+    "timing": "TEMPORAL_CLEARANCE"
+  },
+  "excluded_from_production_profile": [
+    "WTI",
+    "USOIL",
+    "CRUDE_OIL"
+  ],
+  "fact_constitution_version": "1.1.0",
+  "fact_observability_completion": {
+    "alternative_data_mode": "SHADOW_UNTIL_D4_VALUE",
+    "baseline_materiality": "SIX_MARKET_MAP_PRIOR",
+    "cells": 96,
+    "families": 16,
+    "licensed_placeholders": 8,
+    "markets": 6,
+    "new_direction_authority": false,
+    "new_permission_authority": false,
+    "principle": "EPISTEMIC_COVERAGE_NOT_OMNISCIENCE",
+    "private_gap_policy": "EXPLICIT_LICENSED_OR_UNAVAILABLE_NO_PROXY_SUBSTITUTION",
+    "registered_source_contracts": 57,
+    "release": "V21.3.0",
+    "runtime_materiality": "CONTEXT_SENSITIVE_WITH_EXPLICIT_REASON",
+    "silent_gap_policy": "FORBIDDEN",
+    "version": "1.0.0"
+  },
+  "forbidden_live_entrypoints": [
+    "92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/baseline/AlphaLab_V14_Live_DayTrading_Intelligence_Prompt.md",
+    "92 Alpha Lab Live Execution Permission Forward Learning and Product Engine/baseline/AlphaLab_V14_Any_Symbol_Live_Launcher.md",
+    "93 Temporal Market Structure Timing and Calendar Intelligence Engine/45 V15 Full-Vault Timing-Integrated Production Prompt.md",
+    "93 Temporal Market Structure Timing and Calendar Intelligence Engine/46 V15 Manual Ran and Scheduled Launcher Contract.md",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/17 V16 Full-Vault Production Prompt.md"
+  ],
+  "human_mirror": "CURRENT_PRODUCTION_MANIFEST.yaml",
+  "manifest_authority": "CURRENT_PRODUCTION_MANIFEST.json",
+  "modes": {
+    "adversarial_red_team": "MANDATORY",
+    "blind_validation": "SHADOW",
+    "calibration": "D4_GOVERNANCE_ENFORCED",
+    "cognitive_hardening": "ENFORCED",
+    "d2_actual_flow": "CANONICAL_SHADOW",
+    "d2_funding_plumbing": "CANONICAL_SHADOW",
+    "d2_institutional_mechanics": "CANONICAL_SHADOW",
+    "d2_market_capacity": "CANONICAL_SHADOW",
+    "d2_positioning": "CANONICAL_SHADOW",
+    "d3_edge_integration": "ENFORCED_CAUSAL_MODULATION",
+    "d3_positive_permission_promotion": "D4_PROMOTED_REGISTRY_ONLY",
+    "d4_forward_validation": "GOVERNANCE_ENFORCED",
+    "d4_initial_new_promotions": "NONE",
+    "multi_hypothesis": "ENFORCED_WHEN_MATERIAL_AMBIGUITY",
+    "multi_scenario": "ENFORCED",
+    "numeric_scenario_probability": "FORBIDDEN_UNLESS_D4_CALIBRATED",
+    "operational_gate": "ENFORCED",
+    "portfolio_gate": "SHADOW"
+  },
+  "production_entrypoint": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md",
+  "production_universe": [
+    "XAUUSD",
+    "NASDAQ100",
+    "SP500",
+    "DJIA",
+    "EURUSD",
+    "USDJPY"
+  ],
+  "required_runtime_contracts": [
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Evidence_Object.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Evidence_Graph.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Outcome_Record.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_V16_1_StateBundle.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Retrieval_Plan.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Event_FastPath_Pack.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_policy.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/calibration_policy.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/portfolio_gate_policy.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/operational_gate_policy.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Event_FastPath_Release.schema.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Fact_Record.schema.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Decision_Evidence_Pack.schema.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Fact_Coverage_Receipt.schema.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/schemas/AlphaLab_Source_Snapshot.schema.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/config/fact_constitution_policy.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/config/fact_family_registry.json",
+    "95 Fact Constitution and Institutional Evidence Fabric/config/six_market_fact_coverage.json",
+    "96 Positioning Ownership and Crowding Science/config/positioning_policy.json",
+    "96 Positioning Ownership and Crowding Science/schemas/AlphaLab_Positioning_State.schema.json",
+    "97 Actual Flow and Transaction Pressure Science/config/flow_policy.json",
+    "97 Actual Flow and Transaction Pressure Science/schemas/AlphaLab_Flow_State.schema.json",
+    "98 Funding Plumbing Collateral and Balance Sheet Capacity Science/config/funding_plumbing_policy.json",
+    "98 Funding Plumbing Collateral and Balance Sheet Capacity Science/schemas/AlphaLab_Funding_Plumbing_State.schema.json",
+    "99 Institutional Mechanics and Market Capacity Science/config/mechanics_capacity_policy.json",
+    "99 Institutional Mechanics and Market Capacity Science/schemas/AlphaLab_Mechanics_Capacity_State.schema.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/config/d2_source_registry.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_d2_coverage.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_d2_source_map.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_D2_Shadow_Pack.schema.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_D2_Forward_Telemetry.schema.json",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/d3_integration_policy.json",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/science_authority_map.json",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/fuzzy_edge_policy.json",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/confidence_validity_policy.json",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/hard_block_policy.json",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/six_market_translation.json",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/config/d3_telemetry_policy.json",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_D3_Integration_Vector.schema.json",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_D3_Integration_Input.schema.json",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_D3_Adjudication.schema.json",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_D3_Forward_Telemetry.schema.json",
+    "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/schemas/AlphaLab_V19_StateBundle.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/d4_governance_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/calibration_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/counterfactual_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/multiple_testing_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/drift_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/outcome_horizon_policy.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/metric_registry.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/six_market_validation_map.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_registry.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Forward_Observation.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Outcome.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Counterfactual.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Calibration_Report.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Promotion_Proposal.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Validator_Decision.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Promotion_Record.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Authority_Receipt.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Drift_Alert.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Ledger_Record.schema.json",
+    "102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_V20_StateBundle.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/cognitive_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/hypothesis_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/horizon_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/uncertainty_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/surprise_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/policy_reaction_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/regime_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/causal_graph_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/reflexivity_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/consumption_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/scenario_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/driver_transition_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/review_scheduler_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/global_reconciliation_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/adversarial_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/utility_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/meta_edge_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/complexity_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/analog_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/interaction_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/six_market_cognitive_map.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Input.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Adjudication.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Hypothesis.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Hypothesis_Set.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Horizon_Direction_Tensor.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Uncertainty_Profile.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Surprise_State.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Policy_Reaction_State.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Regime_State.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Causal_Graph.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Root_Channel_Map.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Reflexivity_State.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Consumption_Vector_V21.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Scenario_Tree.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Driver_Transition.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Model_Disagreement.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Global_Reconciliation.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Adversarial_Review.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_PreMortem.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Decision_Utility.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Meta_Edge_Router.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Research_Intent.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_V21_StateBundle.schema.json",
+    "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_topic_dependencies.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/semantic_integrity_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/global_root_ontology.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Applicability.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Evidence_Reference.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Trigger_Predicate.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Cognitive_Telemetry.schema.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/applicability_profiles.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/config/propagation_policy.json",
+    "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Policy_Reaction_Bundle.schema.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/config/fact_observability_registry.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_observability_map.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Receipt.schema.json",
+    "100 Six-Market D2 Fact Books and Production Shadow Engine/schemas/AlphaLab_Observability_Item.schema.json",
+    "RUNTIME/RUNTIME_MANIFEST.json",
+    "RUNTIME/R1 Foundation/config/runtime_policy.json",
+    "RUNTIME/R1 Foundation/config/storage_policy.json",
+    "RUNTIME/R1 Foundation/config/temporal_policy.json",
+    "RUNTIME/R1 Foundation/config/lifecycle_policy.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Runtime_Config.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Run_Request.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Run_Manifest.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Artifact_Ref.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Source_Snapshot_Record.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Visibility_Receipt.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Decision_Seal.schema.json",
+    "RUNTIME/R1 Foundation/schemas/AlphaLab_Replay_Request.schema.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/R3_MANIFEST.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/launcher_profiles.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/execution_profiles.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/host_policy.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/retrieval_runtime_policy.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/outcome_runtime_policy.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/counterfactual_runtime_policy.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/warehouse_policy.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/config/calibration_runtime_policy.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Execution_Handoff.schema.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Execution_Receipt.schema.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Retrieval_Receipt.schema.json",
+    "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Analytics_Row.schema.json"
+  ],
+  "retrieval_policy": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_policy.json",
+  "technical_direction_boundary": {
+    "direction_from_price_technical_analysis": false,
+    "donchian_execution_trigger_only": true,
+    "timing_clearance_from_price_technical_analysis": false
+  },
+  "version": "21.3.0",
+  "alpha_perspective": {
+    "version": "APL-A 1.0.0",
+    "mode": "SHADOW_ONLY",
+    "authority": {
+      "fact": "NONE",
+      "direction": "NONE",
+      "permission": "NONE",
+      "broker_write": "NONE"
+    },
+    "source": "Talebian Systems Philosophy OS v3.0.0 MAXIMAL",
+    "data_first": true,
+    "direct_retrieval": false,
+    "decision_influence": "NONE_PENDING_FORWARD_VALIDATION",
+    "manifest": "RUNTIME/APL-A Alpha Perspective Layer/APL_A_MANIFEST.json"
+  }
+}

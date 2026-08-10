@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "activation_states": [
+    "ACTIVE",
+    "CONDITIONAL",
+    "CONTESTED",
+    "NOT_MATERIAL",
+    "NOT_APPLICABLE",
+    "UNRESOLVED"
+  ],
+  "no_score": true,
+  "no_voting": true,
+  "smallest_sufficient_canon": true,
+  "all_processes_shadow_observers": true,
+  "initial_influence": "ZERO_ON_P50_P63",
+  "research_request_only": true
+}
