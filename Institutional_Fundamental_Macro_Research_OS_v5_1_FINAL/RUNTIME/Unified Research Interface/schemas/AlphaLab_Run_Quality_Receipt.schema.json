@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Run_Quality_Receipt.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "gate_set_version": {
+      "const": "RUN2.0.0"
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "PASS_WITH_WARNINGS",
+        "PARTIAL",
+        "BLOCKED"
+      ]
+    },
+    "scientific_process_status": {
+      "enum": [
+        "PASS",
+        "PASS_WITH_WARNINGS",
+        "PARTIAL",
+        "BLOCKED"
+      ]
+    },
+    "market_state_resolution": {
+      "type": "string"
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "gate_id",
+          "status",
+          "severity"
+        ],
+        "properties": {
+          "gate_id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "PASS",
+              "WARN",
+              "FAIL",
+              "NOT_APPLICABLE",
+              "PENDING"
+            ]
+          },
+          "severity": {
+            "enum": [
+              "HARD",
+              "SOFT"
+            ]
+          }
+        }
+      }
+    },
+    "hard_failures": {
+      "type": "array"
+    },
+    "warnings": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "gate_set_version",
+    "status",
+    "scientific_process_status",
+    "market_state_resolution",
+    "gates",
+    "hard_failures",
+    "warnings"
+  ]
+}

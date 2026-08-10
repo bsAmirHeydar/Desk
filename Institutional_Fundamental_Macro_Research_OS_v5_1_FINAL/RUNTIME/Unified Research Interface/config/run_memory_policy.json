@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "memory_contract_version": "RUN2.0.0",
+  "local_root": "AlphaLab_Data/runs",
+  "index": "AlphaLab_Data/runs/index.jsonl",
+  "event_log": "AlphaLab_Data/runs/events.jsonl",
+  "capsule_immutable": true,
+  "atomic_write": true,
+  "source_fingerprint_includes_run_memory": false,
+  "git_includes_run_memory": false,
+  "chat_native": {
+    "mutate_uploaded_vault_in_place": false,
+    "portable_capsule_required": true,
+    "portable_filename": "AlphaLab_Run_<SUBJECT>_<UTC_TIMESTAMP>_<RUN_ID>.json",
+    "state_update_optional": true
+  },
+  "comparison": {
+    "auto_previous_comparable": true,
+    "dimensions": [
+      "subject",
+      "mode",
+      "horizon",
+      "primary_research_class"
+    ]
+  },
+  "retention": {
+    "sealed_capsules": "PRESERVE",
+    "reports": "CONFIGURABLE",
+    "evidence_snapshots": "PRESERVE_WHEN_MATERIAL",
+    "cache": "EPHEMERAL"
+  },
+  "secret_fields_forbidden": [
+    "OPENAI_API_KEY",
+    "api_key",
+    "access_token",
+    "authorization",
+    "cookie",
+    "cookies",
+    "refresh_token"
+  ],
+  "reproducibility_states": [
+    "FULL_REPRODUCIBLE",
+    "EVIDENCE_SNAPSHOT_REPRODUCIBLE",
+    "PARTIAL_EXTERNAL_REPRODUCIBILITY",
+    "NON_REPRODUCIBLE"
+  ],
+  "authority": {
+    "direction": "NONE",
+    "broker_write": "NONE",
+    "apl_a": "SHADOW_ONLY"
+  }
+}

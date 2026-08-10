@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0.0",
+  "gate_set_version": "RUN2.0.0",
+  "name": "Alpha Lab Mandatory Run Quality Gates",
+  "policy": "MULTIDIMENSIONAL_NO_SINGLE_SCORE",
+  "gates": [
+    {
+      "gate_id": "PRE_RUN_INTEGRITY",
+      "description": "Vault/runtime identity, request, subject, mode, horizon and as-of integrity.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "BLOCKED",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "POINT_IN_TIME_INTEGRITY",
+      "description": "Historical cutoff is timezone-aware and future information is excluded.",
+      "severity": "HARD",
+      "applies_to": [
+        "HISTORICAL",
+        "WALK_FORWARD",
+        "REPLAY"
+      ],
+      "failure_state": "BLOCKED",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "EVIDENCE_PLAN",
+      "description": "Required evidence plan and coverage requirements are present.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "EVIDENCE_INTEGRITY",
+      "description": "Decision evidence pack and evidence-integrity receipt are present and valid.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "ROOT_SOURCE_INDEPENDENCE",
+      "description": "Root-source identity is preserved so repeated publications do not become fake independence.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "SOURCE_FRESHNESS",
+      "description": "Evidence freshness is evaluated relative to source, asset and horizon.",
+      "severity": "HARD",
+      "applies_to": [
+        "LIVE",
+        "SHADOW"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "EIGHT_CLUSTER_COVERAGE",
+      "description": "All eight canonical analytical families explicitly resolve to COMPLETE/PARTIAL/UNKNOWN/NOT_MATERIAL/FAILED.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "M1_HARD_GATE",
+      "description": "M1 predecision validation exists with no hard failures.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "BLOCKED",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "PROXY_MODEL_GOVERNANCE",
+      "description": "Proxy/model scope limitations remain explicit through M1.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "CAUSAL_LANGUAGE",
+      "description": "Causal status is explicit and reporting cannot strengthen it.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "BLOCKED",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "CONTRADICTION_PRESERVATION",
+      "description": "Material contradictions remain represented rather than averaged away.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "HYPOTHESIS_SET",
+      "description": "Primary/rival hypotheses are represented where material.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "THESIS_DESTROYER",
+      "description": "Adversarial thesis-destruction output is present before decision.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "MODEL_DISAGREEMENT",
+      "description": "Model disagreement output is preserved before decision.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "PREMORTEM",
+      "description": "Pre-mortem failure paths are represented before decision.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "DIRECTION_AUTHORITY",
+      "description": "RUN2, reporting, memory and APL-A add zero Direction authority.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "BLOCKED",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "FORCE_STATE_INTEGRITY",
+      "description": "Direction, force, consumption, remaining pressure, persistence, reversal, invalidation and review remain separate.",
+      "severity": "HARD",
+      "applies_to": [
+        "DIRECTIONAL"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "APL_A_SEPARATION",
+      "description": "APL-A remains SHADOW_ONLY and cannot mutate Direction.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "BLOCKED",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "REPORT_FIDELITY",
+      "description": "UI2 preserves canonical Direction/permission/force lifecycle/UNKNOWN/causal status.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "BLOCKED",
+      "version": "1.0.0"
+    },
+    {
+      "gate_id": "PERSISTENCE",
+      "description": "Run Capsule can be atomically sealed, indexed and verified without source mutation.",
+      "severity": "HARD",
+      "applies_to": [
+        "ALL"
+      ],
+      "failure_state": "PARTIAL",
+      "version": "1.0.0"
+    }
+  ]
+}

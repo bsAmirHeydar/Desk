@@ -54,3 +54,8 @@ Resolve aliases through the Vault. If the subject is outside the certified runti
 ### No follow-up friction
 
 Do not ask the user for extra fields that can be inferred safely. If the symbol is genuinely ambiguous, resolve using the Vault's subject resolver or state the ambiguity briefly and use the most defensible canonical interpretation.
+
+
+## RUN2 automatic quality and memory
+
+Every `run <subject>` now automatically executes mandatory scientific quality gates, seals a canonical Run Capsule, persists local history under `AlphaLab_Data/runs`, and compares the latest comparable prior Run when available. In Chat, the same contract produces a portable Run Capsule rather than pretending to mutate the uploaded Vault.

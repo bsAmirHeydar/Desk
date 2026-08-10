@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Run_Capsule.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "capsule_version": {
+      "const": "RUN2.0.0"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "request_id": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "horizon": {
+      "type": "string"
+    },
+    "quality_status": {
+      "enum": [
+        "PASS",
+        "PASS_WITH_WARNINGS",
+        "PARTIAL",
+        "BLOCKED"
+      ]
+    },
+    "run_quality_receipt": {
+      "type": "object"
+    },
+    "canonical_result_hash": {
+      "type": "string"
+    },
+    "capsule_hash": {
+      "type": "string"
+    },
+    "reproducibility_state": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "capsule_version",
+    "run_id",
+    "request_id",
+    "subject",
+    "mode",
+    "as_of",
+    "horizon",
+    "quality_status",
+    "run_quality_receipt",
+    "canonical_result_hash",
+    "capsule_hash",
+    "reproducibility_state"
+  ]
+}

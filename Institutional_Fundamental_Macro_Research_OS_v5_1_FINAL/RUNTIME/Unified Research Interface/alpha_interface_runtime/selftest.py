@@ -40,5 +40,31 @@ def run(vault_root):
     ck('chat_run_no_local_api_requirement',run_policy['openai_api_key_required_for_chat'] is False and run_policy['environment_certification_required_for_chat'] is False)
     ck('root_run_contract',(v.parent/'RUN.md').is_file() and 'run NASDAQ100' in (v.parent/'RUN.md').read_text(encoding='utf-8'))
     ck('apl_b_not_implemented',not any(p.is_dir() and 'APL-B' in p.name for p in (v/'RUNTIME').iterdir()))
+    from .quality import pre_run, report_fidelity, set_gate
+    from .memory import _secret_scan, detect_changes, verify_capsule, persist, status as memory_status
+    import tempfile,shutil
+    qreg=json.loads((v/'RUNTIME'/'Unified Research Interface'/'config'/'run_quality_registry.json').read_text(encoding='utf-8'))
+    ck('run2_gate_registry',qreg['gate_set_version']=='RUN2.0.0' and len(qreg['gates'])>=20)
+    ck('run2_no_quality_score',qreg['policy']=='MULTIDIMENSIONAL_NO_SINGLE_SCORE')
+    pr=pre_run(v,compile_request(v,{'subject':'NASDAQ100','request_text':'تحلیل کامل امروز','mode':'LIVE','depth':'DEEP'}));ck('run2_pre_run_gate',pr['status']=='PASS')
+    ck('run2_secret_guard',bool(_secret_scan({'OPENAI_API_KEY':'secret'})) and not _secret_scan({'market':'NASDAQ100'}))
+    ck('run2_change_detection',detect_changes({'run_id':'A','direction':'BULLISH','permission':'BUY','force_lifecycle':{},'unknowns':[]},{'run_id':'B','direction':'BEARISH','permission':'NO_TRADE','force_lifecycle':{},'unknowns':['x']})['has_comparison'])
+    ms=json.loads((v/'RUNTIME'/'Unified Research Interface'/'config'/'run_memory_policy.json').read_text(encoding='utf-8'));ck('run2_chat_truth',ms['chat_native']['mutate_uploaded_vault_in_place'] is False and ms['chat_native']['portable_capsule_required'] is True)
+    ck('run2_capsule_schema',(v/'RUNTIME'/'Unified Research Interface'/'schemas'/'AlphaLab_Run_Capsule.schema.json').is_file())
+    ck('run2_quality_schema',(v/'RUNTIME'/'Unified Research Interface'/'schemas'/'AlphaLab_Run_Quality_Receipt.schema.json').is_file())
+    # Persistence/capsule immutability and integrity are tested without touching real AlphaLab_Data.
+    td=Path(tempfile.mkdtemp(prefix='alphalab_run2_'))
+    try:
+        q={'schema_version':'1.0.0','gate_set_version':'RUN2.0.0','run_id':'RUN_TEST','status':'PASS','scientific_process_status':'PASS','market_state_resolution':'UNKNOWN','gates':[{'gate_id':'PERSISTENCE','status':'PENDING','severity':'HARD','detail':None}],'hard_failures':[],'warnings':[]}
+        cap={'schema_version':'1.0.0','capsule_version':'RUN2.0.0','run_id':'RUN_TEST','request_id':'REQ_TEST','subject':'NASDAQ100','mode':'LIVE','as_of':'2026-08-10T10:00:00Z','horizon':'DAILY_OPEN_TO_CLOSE','primary_research_class':'DIRECTIONAL_FORECAST','direction':'UNKNOWN','permission':'NO_TRADE','force_lifecycle':{'direction':'UNKNOWN','force':'UNKNOWN','consumption':'UNKNOWN','remaining_pressure':'UNKNOWN','persistence':'UNKNOWN','reversal':'UNKNOWN'},'unknowns':['state unresolved'],'run_quality_receipt':q,'quality_status':'PASS','canonical_result_hash':'sha256:'+'1'*64,'reproducibility_state':'EVIDENCE_SNAPSHOT_REPRODUCIBLE','created_at':'2026-08-10T10:00:00Z'}
+        sealed,pr=persist(td,cap);ck('run2_capsule_atomic_persist',pr['status']=='PASS' and Path(pr['path']).is_file());ck('run2_capsule_verify',verify_capsule(pr['path'])['status']=='PASS');ck('run2_unknown_can_be_quality_pass',sealed['quality_status']=='PASS' and sealed['direction']=='UNKNOWN')
+        try:persist(td,cap);dup=False
+        except RuntimeError:dup=True
+        ck('run2_capsule_duplicate_rejected',dup)
+        tam=json.loads(Path(pr['path']).read_text(encoding='utf-8'));tam['direction']='BEARISH';tp=td/'tampered.json';tp.write_text(json.dumps(tam),encoding='utf-8');ck('run2_capsule_tamper_detected',verify_capsule(tp)['status']=='FAIL')
+        ck('run2_memory_status',memory_status(td)['status']=='PASS' and memory_status(td)['runs']==1)
+    finally:shutil.rmtree(td,ignore_errors=True)
+    future=compile_request(v,{'subject':'NASDAQ100','request_text':'historical','mode':'HISTORICAL','as_of':'2099-01-01T00:00:00Z'});ck('run2_future_historical_blocked',pre_run(v,future)['status']=='BLOCKED')
+    badmodel=_fixture();badmodel['layer1']['direction']='BULLISH';can={'decision':{'final_direction':'BEARISH','permission':'NO_TRADE'},'science':{'force_lifecycle':{}}};ck('run2_report_mismatch_detected',report_fidelity(can,badmodel)['status']=='FAIL')
     bad=[x for x in checks if not x['pass']]
     return {'schema_version':'1.0.0','status':'PASS' if not bad else 'FAIL','interface_version':'UI2.1.0','passed':len(checks)-len(bad),'total':len(checks),'checks':checks,'errors':[x['name'] for x in bad]}

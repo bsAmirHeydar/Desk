@@ -129,3 +129,8 @@ Minimize jargon. Do not simplify away uncertainty or causal status.
 ## One-command freeze
 
 This is the canonical human shortcut. Future research features should extend the underlying registries and method system; do not create new one-off human launcher prompts when `run <subject>` can compile the intent.
+
+
+## RUN2.0.0 Quality and memory hardening
+
+Every Chat-native `run <subject>` MUST apply the canonical gate registry and produce a schema-valid Run Quality Receipt. When file creation is supported it MUST also emit a portable immutable Run Capsule. Chat must never claim to mutate the uploaded original Vault. Prior capsules, when supplied, are verified and automatically indexed for comparison.

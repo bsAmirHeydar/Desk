@@ -1,4 +1,4 @@
-param(
+﻿param(
     [Parameter(ValueFromRemainingArguments = $true)]
     [string[]]$AlphaArgs
 )
@@ -10,6 +10,7 @@ if (-not $AlphaArgs -or $AlphaArgs.Count -eq 0) {
     Write-Host "Alpha Lab canonical research interface"
     Write-Host "Usage: .\AlphaLab.ps1 run NASDAQ100"
     Write-Host "Advanced: .\AlphaLab.ps1 research --subject NASDAQ100 --request '...' [--mode LIVE|SHADOW|HISTORICAL] [--output EXPLORER]"
+    Write-Host "Run memory: .\AlphaLab.ps1 run-status"
     Write-Host "Operations: .\AlphaLab_Commission.ps1 <command>"
     exit 0
 }
@@ -19,6 +20,12 @@ if ($AlphaArgs[0].ToLowerInvariant() -eq "run") {
     $Subject = $AlphaArgs[1]
     $Req = "Analyze the current market comprehensively. Determine the current fundamental direction, active force, consumption, remaining pressure, persistence, reversal conditions, dominant drivers, meaningful contradictions, key uncertainty, and next review."
     & python $Research --vault-root $Vault run --subject $Subject --request $Req --mode LIVE --horizon DAILY_OPEN_TO_CLOSE --depth DEEP --output EXPLORER --locale fa-IR
+    exit $LASTEXITCODE
+}
+
+
+if ($AlphaArgs[0].ToLowerInvariant() -eq "run-status") {
+    & python $Research --vault-root $Vault run-status
     exit $LASTEXITCODE
 }
 

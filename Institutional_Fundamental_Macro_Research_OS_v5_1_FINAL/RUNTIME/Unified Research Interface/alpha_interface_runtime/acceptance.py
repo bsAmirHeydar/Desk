@@ -33,5 +33,10 @@ def run(vault_root):
     ck('chat_native_defaults',rp['defaults']=={'mode':'LIVE','as_of':'NOW','horizon':'AUTO_INTRADAY_SESSION_WITH_DAILY_CONTEXT','depth':'DEEP','output_profile':'EXPLORER','locale':'fa-IR'})
     ck('chat_native_authority',rp['direction_authority']=='NONE' and rp['broker_write']=='NONE' and rp['research_orchestration']['perspective']=='APL-A_SHADOW_ONLY')
     ck('apl_b_not_implemented',not any(p.is_dir() and 'APL-B' in p.name for p in (v/'RUNTIME').iterdir()))
+    q=json.loads((v/'RUNTIME'/'Unified Research Interface'/'config'/'run_quality_registry.json').read_text(encoding='utf-8'));ck('run2_mandatory_quality',q['gate_set_version']=='RUN2.0.0' and {x['gate_id'] for x in q['gates']}.issuperset({'PRE_RUN_INTEGRITY','EVIDENCE_INTEGRITY','EIGHT_CLUSTER_COVERAGE','M1_HARD_GATE','THESIS_DESTROYER','PREMORTEM','REPORT_FIDELITY','PERSISTENCE'}))
+    mp=json.loads((v/'RUNTIME'/'Unified Research Interface'/'config'/'run_memory_policy.json').read_text(encoding='utf-8'));ck('run2_persistence_contract',mp['capsule_immutable'] is True and mp['source_fingerprint_includes_run_memory'] is False)
+    ck('run2_one_command_persistence',rp.get('quality_gates')=='MANDATORY' and rp.get('persistence')=='ON' and rp.get('previous_run_compare')=='AUTO')
+    ck('run2_chat_portable_memory',mp['chat_native']['portable_capsule_required'] is True and mp['chat_native']['mutate_uploaded_vault_in_place'] is False)
+    ck('run2_direction_authority',mp['authority']['direction']=='NONE' and mp['authority']['broker_write']=='NONE')
     bad=[x for x in checks if not x['pass']]
     return {'schema_version':'1.0.0','status':'PASS' if not bad else 'FAIL','interface_version':'UI2.1.0','passed':len(checks)-len(bad),'total':len(checks),'checks':checks,'errors':[x['name'] for x in bad]}

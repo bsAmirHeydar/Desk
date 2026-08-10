@@ -20,7 +20,7 @@
   "prompt_os": "RUNTIME/R2 Prompt Execution OS",
   "report_model_version": "2.0.0",
   "scientific_runtime": "RUNTIME/R3 Operational Execution and Learning OS",
-  "status": "CANONICAL_ONE_COMMAND_CHAT_AND_THREE_LAYER_HUMAN_EXPERIENCE_BASELINE",
+  "status": "CANONICAL_ONE_COMMAND_CHAT_THREE_LAYER_RUN2_QUALITY_AND_MEMORY_BASELINE",
   "ux": {
     "architecture": "THREE_LAYER_PROGRESSIVE_DISCLOSURE",
     "layers": [
@@ -46,5 +46,11 @@
   "canonical_local_shortcut": "../../../AlphaLab.ps1 run <subject>",
   "chat_native_run_contract": "04 Chat-Native Run Contract.md",
   "run_command_policy": "config/run_command_policy.json",
-  "run_command_schema": "schemas/AlphaLab_Run_Command.schema.json"
+  "run_command_schema": "schemas/AlphaLab_Run_Command.schema.json",
+  "run_contract_version": "RUN2.0.0",
+  "quality_gate_registry": "config/run_quality_registry.json",
+  "run_quality_schema": "schemas/AlphaLab_Run_Quality_Receipt.schema.json",
+  "run_capsule_schema": "schemas/AlphaLab_Run_Capsule.schema.json",
+  "run_memory_policy": "config/run_memory_policy.json",
+  "persistence_contract": "LOCAL_APPEND_ONLY_PLUS_CHAT_PORTABLE_CAPSULE"
 }

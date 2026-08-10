@@ -1,9 +1,10 @@
-import argparse,json,sys
+import argparse,json,sys,os
 from pathlib import Path
 from .compiler import compile_request
 from .executor import execute
 from .selftest import run as selftest
 from .acceptance import run as acceptance
+from .memory import status as memory_status, verify_capsule, migrate_legacy
 
 def _request_from_args(a):
     if a.request_file:return json.loads(Path(a.request_file).read_text(encoding='utf-8'))
@@ -13,13 +14,20 @@ def main(argv=None):
     for name in ('compile','run'):
         p=sp.add_parser(name);p.add_argument('--request-file');p.add_argument('--subject');p.add_argument('--request');p.add_argument('--mode',default='LIVE');p.add_argument('--as-of');p.add_argument('--horizon');p.add_argument('--depth',default='AUTO');p.add_argument('--output',default='EXPLORER');p.add_argument('--locale');p.add_argument('--research-class');p.add_argument('--tag',action='append');
         if name=='run':p.add_argument('--truth-state',choices=['SHADOW_LIVE','TRUE_FORWARD'])
-    sp.add_parser('selftest');sp.add_parser('acceptance')
+    sp.add_parser('selftest');sp.add_parser('acceptance');sp.add_parser('run-status');sp.add_parser('run-memory-migrate');cv=sp.add_parser('capsule-verify');cv.add_argument('--path',required=True)
     a=ap.parse_args(argv);v=Path(a.vault_root).resolve()
     if a.cmd=='selftest':out=selftest(v)
     elif a.cmd=='acceptance':out=acceptance(v)
+    elif a.cmd=='run-status':
+        dr=Path(a.data_root).resolve() if a.data_root else Path(os.environ.get('ALPHALAB_DATA_ROOT') or (v.parent/'AlphaLab_Data')).resolve()
+        out=memory_status(dr)
+    elif a.cmd=='run-memory-migrate':
+        dr=Path(a.data_root).resolve() if a.data_root else Path(os.environ.get('ALPHALAB_DATA_ROOT') or (v.parent/'AlphaLab_Data')).resolve()
+        out=migrate_legacy(dr)
+    elif a.cmd=='capsule-verify':out=verify_capsule(a.path)
     else:
         req=_request_from_args(a)
         if not req.get('subject') or not req.get('request_text'):raise RuntimeError('subject and request are required')
         comp=compile_request(v,req);out=comp if a.cmd=='compile' else execute(v,comp,a.data_root,a.truth_state)
-    print(json.dumps(out,ensure_ascii=False,indent=2));return 0 if out.get('status','PASS') in ('PASS','PLAN_ONLY') else 2
+    print(json.dumps(out,ensure_ascii=False,indent=2));return 0 if out.get('status','PASS') in ('PASS','PASS_WITH_WARNINGS','PARTIAL','PLAN_ONLY') else 2
 if __name__=='__main__':raise SystemExit(main())

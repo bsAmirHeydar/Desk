@@ -13,7 +13,7 @@
       "type": "object"
     },
     "interface_version": {
-      "const": "UI1.0.0"
+      "const": "UI2.1.0"
     },
     "method_health": {
       "type": "object"
@@ -35,6 +35,9 @@
     },
     "traceability": {
       "type": "object"
+    },
+    "run_contract_version": {
+      "const": "RUN2.0.0"
     }
   },
   "required": [
