@@ -1,0 +1,51 @@
+{
+  "allowed_truth_states": [
+    "SHADOW_LIVE",
+    "TRUE_FORWARD"
+  ],
+  "apl_a_authority": "SHADOW_ONLY",
+  "broker_write": false,
+  "commissioning": "C1.0.0",
+  "commitments_relpath": "forward/commitments",
+  "configured_market_universe_source": "RUNTIME/Production Commissioning/config/commissioning_policy.json#shadow_instruments",
+  "direction_authority_added": "NONE",
+  "forward_root_relpath": "forward",
+  "fv1": "FV1.0.0",
+  "locks_relpath": "forward/locks",
+  "m1_new_direction_authority": "NONE",
+  "maturity_states": [
+    "INSUFFICIENT",
+    "EARLY",
+    "DEVELOPING",
+    "MODERATE",
+    "SUBSTANTIAL"
+  ],
+  "max_true_forward_cutoff_age_seconds": 43200,
+  "mechanism_outcomes": [
+    "FULL_REALIZATION",
+    "PARTIAL_REALIZATION",
+    "WRONG_SEQUENCE",
+    "WRONG_TIMING",
+    "ALTERNATIVE_MECHANISM",
+    "NOT_OBSERVABLE",
+    "FAILED"
+  ],
+  "mutable_forward_records_in_r4_source_fingerprint": false,
+  "order_creation": false,
+  "outcome_observation_states": [
+    "OBSERVABLE",
+    "PARTIALLY_OBSERVABLE",
+    "NOT_YET_OBSERVABLE",
+    "STRUCTURALLY_UNOBSERVABLE"
+  ],
+  "outcomes_relpath": "forward/outcomes",
+  "permission_authority_added": "NONE",
+  "require_apl_shadow_artifact": true,
+  "require_decision_seal": true,
+  "require_method_plan": true,
+  "require_no_outcome_artifact_at_seal": true,
+  "reviews_relpath": "forward/reviews",
+  "true_forward_required_run_mode": "SHADOW_LIVE",
+  "true_forward_version": "TF1.0.0",
+  "version": "TF1_POLICY_1.0.0"
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "assessment": {},
+    "classification": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "commitment_id": {
+      "type": "string"
+    },
+    "commitment_seal": {
+      "type": "string"
+    },
+    "evidence": {},
+    "review_id": {
+      "type": "string"
+    },
+    "reviewed_at_utc": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "seal": {
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "true_forward_version": {
+      "const": "TF1.0.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "true_forward_version",
+    "review_id",
+    "commitment_id",
+    "commitment_seal",
+    "reviewed_at_utc",
+    "assessment",
+    "seal"
+  ],
+  "type": "object"
+}

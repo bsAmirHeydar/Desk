@@ -34,5 +34,13 @@ def run(vault_root):
         rb=[c/'wrappers'/'AlphaLab.ps1',c/'wrappers'/'AlphaLab_Commission.ps1'];wrapok=all(p.is_file() and all(b<128 for b in p.read_bytes()) for p in rb)
     except Exception:wrapok=False
     checks.append(('wrapper_templates_ascii',wrapok))
+    # TF1 true-forward activation is source/runtime observability only; no new authority.
+    try:
+        tf=load_json(c/'TRUE_FORWARD_MANIFEST.json');tp=load_json(c/'config'/'true_forward_policy.json')
+        checks += [('tf1_manifest',tf.get('true_forward_version')=='TF1.0.0'),('tf1_broker_none',tf.get('authority',{}).get('broker_write')=='NONE' and tp.get('broker_write') is False),('tf1_apla_shadow_only',tf.get('authority',{}).get('apl_a')=='SHADOW_ONLY'),('tf1_mutable_records_outside_r4',tp.get('mutable_forward_records_in_r4_source_fingerprint') is False)]
+        from .true_forward import selftest as tf_selftest
+        tr=tf_selftest(v);checks.append(('tf1_true_forward_selftest',tr.get('status')=='PASS'))
+    except Exception as e:
+        checks.append(('tf1_true_forward_selftest',False));errors.append('TF1: '+str(e))
     errors += [n for n,ok in checks if not ok]
     return {'schema_version':'1.0.0','status':'PASS' if not errors else 'FAIL','passed':sum(1 for _,x in checks if x),'total':len(checks),'checks':[{'name':n,'pass':bool(ok)} for n,ok in checks],'errors':errors}

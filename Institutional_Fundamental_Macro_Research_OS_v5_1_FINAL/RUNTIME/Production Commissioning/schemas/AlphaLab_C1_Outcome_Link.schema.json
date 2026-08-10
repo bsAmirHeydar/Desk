@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "commitment_id": {
+      "type": "string"
+    },
+    "commitment_seal": {
+      "type": "string"
+    },
+    "evaluation": {},
+    "linked_at_utc": {
+      "type": "string"
+    },
+    "observation_state": {
+      "enum": [
+        "OBSERVABLE",
+        "PARTIALLY_OBSERVABLE",
+        "NOT_YET_OBSERVABLE",
+        "STRUCTURALLY_UNOBSERVABLE"
+      ]
+    },
+    "observed_at_utc": {
+      "type": "string"
+    },
+    "outcome": {},
+    "outcome_link_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "seal": {
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "true_forward_version": {
+      "const": "TF1.0.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "true_forward_version",
+    "outcome_link_id",
+    "commitment_id",
+    "commitment_seal",
+    "observed_at_utc",
+    "linked_at_utc",
+    "observation_state",
+    "outcome",
+    "seal"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "apl_a": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    },
+    "commitment_id": {
+      "type": "string"
+    },
+    "decision_seal_hash": {
+      "type": "string"
+    },
+    "evidence_cutoff_utc": {
+      "type": "string"
+    },
+    "expected_outcome_contract": {
+      "type": "object"
+    },
+    "horizon": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "method": {
+      "type": "object"
+    },
+    "payload_hash": {
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "research_class": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "science": {
+      "type": "object"
+    },
+    "seal": {
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "sealed_at_utc": {
+      "type": "string"
+    },
+    "source_surface_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "state": {
+      "const": "SEALED_PRE_OUTCOME"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "true_forward_version": {
+      "const": "TF1.0.0"
+    },
+    "truth_state": {
+      "enum": [
+        "SHADOW_LIVE",
+        "TRUE_FORWARD"
+      ]
+    },
+    "uncertainty": {}
+  },
+  "required": [
+    "schema_version",
+    "true_forward_version",
+    "commitment_id",
+    "run_id",
+    "truth_state",
+    "state",
+    "subject",
+    "analysis_cutoff_utc",
+    "sealed_at_utc",
+    "decision_seal_hash",
+    "method",
+    "apl_a",
+    "authority",
+    "payload_hash",
+    "seal"
+  ],
+  "type": "object"
+}

@@ -22,6 +22,7 @@
     "scientific_authority_added": "NONE",
     "shadow_production_certification": "PENDING_RUNTIME_ATTESTATION",
     "status": "INSTALLED_ENVIRONMENT_ATTESTATION_REQUIRED",
+    "true_forward_extension": "TF1.0.0",
     "version": "C1.0.0"
   },
   "host_execution": {
@@ -135,6 +136,21 @@
     "decision_outcome_firewall": "ENFORCED",
     "lookahead": "STRICT_POINT_IN_TIME",
     "replay_visibility": "ENFORCED"
+  },
+  "true_forward_activation": {
+    "apl_a": "SHADOW_ONLY",
+    "apl_b": "NOT_IMPLEMENTED",
+    "broker_write": "NONE",
+    "direction_authority_added": "NONE",
+    "host_certificate": "REAL_WINDOWS_REQUIRED_FOR_PASS",
+    "mutable_records": "OUTSIDE_R4_SOURCE_FINGERPRINT",
+    "owner": "C1+D4/FV1",
+    "permission_authority_added": "NONE",
+    "shadow_runtime": "C1_EXISTING_EXTENDED_WITH_PRE_OUTCOME_SEALS",
+    "status": "SOURCE_ACTIVE_HOST_RUNTIME_ATTESTATION_PENDING",
+    "true_forward_data": "ACCRUING_AFTER_REAL_HOST_RUNS",
+    "true_forward_maturity": "INSUFFICIENT",
+    "version": "TF1.0.0"
   },
   "windows_portability": {
     "bundled_timezone_fallback": true,

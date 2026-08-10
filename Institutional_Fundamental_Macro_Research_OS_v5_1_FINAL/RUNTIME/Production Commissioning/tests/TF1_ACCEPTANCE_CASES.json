@@ -1,0 +1,45 @@
+{
+  "cases": [
+    {
+      "expected": "PASS",
+      "id": "TF1-A",
+      "name": "immutable pre-outcome seal"
+    },
+    {
+      "expected": "PASS",
+      "id": "TF1-B",
+      "name": "duplicate commitment rejected"
+    },
+    {
+      "expected": "PASS",
+      "id": "TF1-C",
+      "name": "tamper detected"
+    },
+    {
+      "expected": "PASS",
+      "id": "TF1-D",
+      "name": "outcome before seal rejected"
+    },
+    {
+      "expected": "PASS",
+      "id": "TF1-E",
+      "name": "mutable forward data excluded from R4 source fingerprint"
+    },
+    {
+      "expected": "PASS",
+      "id": "TF1-F",
+      "name": "APL-A remains shadow only"
+    },
+    {
+      "expected": "PASS",
+      "id": "TF1-G",
+      "name": "broker execution none"
+    },
+    {
+      "expected": "PASS",
+      "id": "TF1-H",
+      "name": "non-Windows host cannot be certified as real Windows host"
+    }
+  ],
+  "version": "TF1_ACCEPTANCE_1.0.0"
+}

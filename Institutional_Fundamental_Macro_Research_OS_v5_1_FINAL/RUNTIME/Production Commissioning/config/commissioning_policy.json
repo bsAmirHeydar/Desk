@@ -1,15 +1,21 @@
 {
-  "version": "C1_COMMISSIONING_POLICY_1.0.0",
-  "scientific_stack": "V21.3.0",
-  "runtime": "R4.0.0",
+  "automatic_provider_fallback": false,
+  "broker_write": false,
   "commissioning": "C1.0.0",
-  "offline_install_claim": "C1_INSTALLED_ONLY",
   "environment_classification": "ENVIRONMENT_CERTIFIED",
-  "shadow_classification": "SHADOW_PRODUCTION_CERTIFIED",
-  "readiness_classification": "PRODUCTION_READY_PERMISSION_ONLY",
   "environment_receipt_relpath": "commissioning/environment_receipt.json",
-  "shadow_receipt_relpath": "commissioning/shadow_receipt.json",
+  "forward_activation": "REAL_CHRONOLOGICAL_SHADOW_SEALING",
+  "host_certificate_relpath": "commissioning/host_certificate.json",
+  "manual_signoff_required": true,
+  "offline_install_claim": "C1_INSTALLED_ONLY",
+  "order_creation": false,
+  "readiness_classification": "PRODUCTION_READY_PERMISSION_ONLY",
   "readiness_receipt_relpath": "commissioning/readiness_receipt.json",
+  "readiness_requires_zero_decision_critical_gaps_in_shadow_basket": true,
+  "runtime": "R4.0.0",
+  "scientific_stack": "V21.3.0",
+  "secrets": "ENVIRONMENT_ONLY_NEVER_LOG_OR_COMMIT",
+  "shadow_classification": "SHADOW_PRODUCTION_CERTIFIED",
   "shadow_instruments": [
     "XAUUSD",
     "NASDAQ100",
@@ -19,17 +25,14 @@
     "USDJPY"
   ],
   "shadow_profile": {
-    "run_mode": "SHADOW_LIVE",
     "coverage_mode": "STRICT_FULL",
-    "research_depth": "DEEP",
-    "output_depth": "FULL",
     "execution_profile": "SHADOW_ONLY_V1",
+    "output_depth": "FULL",
+    "research_depth": "DEEP",
+    "run_mode": "SHADOW_LIVE",
     "runs_per_instrument": 1
   },
-  "readiness_requires_zero_decision_critical_gaps_in_shadow_basket": true,
-  "manual_signoff_required": true,
-  "broker_write": false,
-  "order_creation": false,
-  "automatic_provider_fallback": false,
-  "secrets": "ENVIRONMENT_ONLY_NEVER_LOG_OR_COMMIT"
+  "shadow_receipt_relpath": "commissioning/shadow_receipt.json",
+  "true_forward_extension": "TF1.0.0",
+  "version": "C1_COMMISSIONING_POLICY_1.0.0"
 }

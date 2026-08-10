@@ -25,8 +25,16 @@ def certify(vault_root,runs_per_instrument=None):
                 item['status']='FAIL';item['error']=(q.stdout+q.stderr)[-8000:];errors.append(inst+': runtime failure');results.append(item);continue
             try:
                 out=_read_json_stdout(q.stdout);rid=out['run_id'];add_runtime_paths(v);from alpha_runtime.runtime import AlphaRuntime;rt=AlphaRuntime(v,dr);m=rt.store.load_manifest(rid);ret=rt.store.load_artifact_json(rid,'r3_retrieval_receipt');fp=rt.store.load_artifact_json(rid,'final_permission');
-                item.update({'status':'PASS','run_id':rid,'analysis_cutoff_utc':m.get('analysis_cutoff_utc'),'decision_seal_hash':m.get('decision_seal_hash'),'permission':fp.get('permission'),'decision_critical_gap_count':ret.get('decision_critical_gap_count',0),'material_gap_count':ret.get('material_gap_count',0),'retrieval_skew_seconds':ret.get('retrieval_skew_seconds')})
+                names={a['logical_name'] for a in rt.catalog.list_artifacts(rid)}
+                method_ok='method_plan' in names and 'method_predecision_validation_receipt' in names
+                apl_ok='apl_a_shadow_bundle' in names or 'apl_a_forward_telemetry' in names
+                from .true_forward import seal_run,verify_commitment
+                fc=seal_run(v,rid,'TRUE_FORWARD');fv=verify_commitment(v,fc['commitment_id'])
+                item.update({'status':'PASS','run_id':rid,'analysis_cutoff_utc':m.get('analysis_cutoff_utc'),'decision_seal_hash':m.get('decision_seal_hash'),'permission':fp.get('permission'),'decision_critical_gap_count':ret.get('decision_critical_gap_count',0),'material_gap_count':ret.get('material_gap_count',0),'retrieval_skew_seconds':ret.get('retrieval_skew_seconds'),'m1_observed':method_ok,'apl_a_shadow_observed':apl_ok,'forward_commitment_id':fc['commitment_id'],'forward_seal_valid':fv['status']=='PASS'})
                 if not m.get('decision_seal_hash'):item['status']='FAIL';errors.append(inst+': decision seal missing')
+                if not method_ok:item['status']='FAIL';errors.append(inst+': M1 method artifacts missing')
+                if not apl_ok:item['status']='FAIL';errors.append(inst+': APL-A shadow artifact missing')
+                if fv['status']!='PASS':item['status']='FAIL';errors.append(inst+': forward seal invalid')
             except Exception as e:item.update({'status':'FAIL','error':str(e)});errors.append(inst+': receipt inspection failed')
             results.append(item)
     runtime_ok=all(x.get('status')=='PASS' for x in results) and len(results)==len(pol['shadow_instruments'])*n;dc=sum(int(x.get('decision_critical_gap_count') or 0) for x in results);mat=sum(int(x.get('material_gap_count') or 0) for x in results);status='PASS' if runtime_ok else 'FAIL'

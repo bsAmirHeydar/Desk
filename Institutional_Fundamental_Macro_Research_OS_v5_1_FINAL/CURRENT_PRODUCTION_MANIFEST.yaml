@@ -28,6 +28,7 @@
   },
   "alpha_runtime": {
     "analytics_authority": "R1_OBJECT_STORE_PLUS_SQLITE",
+    "broker_write_authority": "NONE",
     "catalog_backend": "SQLITE",
     "certification_runtime": "R4_ACTIVE",
     "content_addressed_store": "SHA256",
@@ -43,7 +44,7 @@
     "market_direction_authority": "NONE",
     "method_artifact_world": "META",
     "method_decision_authority": "NONE",
-    "method_kernel": "M1.0.0_ACTIVE_CONSERVATIVE_METHOD_GOVERNANCE",
+    "method_kernel": "M1.0.1_ACTIVE_CONSERVATIVE_METHOD_GOVERNANCE",
     "offline_certification": "CORE_AND_FULL_AVAILABLE",
     "operational_execution_authority": "BLOCK_ONLY",
     "outcome_learning": "R3_ACTIVE",
@@ -72,6 +73,7 @@
     "status": "SCIENTIFIC_CERTIFICATION_HARDENING_ACTIVE_OFFLINE_CERTIFIED_ENVIRONMENT_PENDING",
     "storage_constitution": "RUNTIME/R1 Foundation/04 Storage Constitution.md",
     "temporal_constitution": "RUNTIME/R1 Foundation/03 Temporal Visibility and Point-in-Time Constitution.md",
+    "true_forward_activation": "TF1.0.0_SOURCE_ACTIVE_HOST_RUNTIME_ATTESTATION_PENDING",
     "universal_run_contract": "RUNTIME/R1 Foundation/02 Universal Run Contract.md"
   },
   "asset_books": {
@@ -235,7 +237,8 @@
       "authority_change": "NONE",
       "m1": "M1.0.1",
       "status": "SYNTHETIC_VALIDATED_TRUE_FORWARD_PENDING",
-      "true_forward_status": "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+      "true_forward_activation": "TF1.0.0",
+      "true_forward_status": "REAL_EVIDENCE_ACQUISITION_READY_MATURITY_INSUFFICIENT",
       "version": "FV1.0.0"
     },
     "positive_permission_creation": "PROMOTED_REGISTRY_ONLY",
@@ -326,6 +329,16 @@
     "EURUSD",
     "USDJPY"
   ],
+  "real_host_true_forward": {
+    "apl_b": "NOT_IMPLEMENTED",
+    "broker_write": "NONE",
+    "direction_authority_added": "NONE",
+    "host_certification": "PENDING_REAL_WINDOWS_EXECUTION_UNTIL_INSTALLER_RUNS",
+    "outcome_linking": "ACTIVE",
+    "pre_outcome_sealing": "ACTIVE",
+    "shadow_universe_source": "C1_COMMISSIONING_POLICY",
+    "version": "TF1.0.0"
+  },
   "required_runtime_contracts": [
     "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Evidence_Object.schema.json",
     "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Evidence_Graph.schema.json",

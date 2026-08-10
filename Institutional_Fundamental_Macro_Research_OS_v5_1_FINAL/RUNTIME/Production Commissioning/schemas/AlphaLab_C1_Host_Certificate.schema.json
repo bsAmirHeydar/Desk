@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "checks": {
+      "type": "array"
+    },
+    "classification": {
+      "type": "string"
+    },
+    "created_at_utc": {
+      "type": "string"
+    },
+    "host": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "PENDING"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "status",
+    "classification",
+    "created_at_utc",
+    "checks",
+    "host"
+  ],
+  "type": "object"
+}

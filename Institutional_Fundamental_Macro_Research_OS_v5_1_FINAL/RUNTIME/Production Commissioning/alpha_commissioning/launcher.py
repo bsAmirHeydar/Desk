@@ -36,7 +36,7 @@ def _report(v,dr,rid):
     fp=rt.store.load_artifact_json(rid,'final_permission');ri=rt.store.load_artifact_json(rid,'research_intent');ret=rt.store.load_artifact_json(rid,'r3_retrieval_receipt');m=rt.store.load_manifest(rid)
     return {'run_id':rid,'instrument':m['subject'],'mode':m['run_mode'],'analysis_cutoff_utc':m['analysis_cutoff_utc'],'permission':fp.get('permission'),'fundamental_direction':ri.get('fundamental_direction'),'edge_state':ri.get('edge_state'),'decision_critical_gap_count':ret.get('decision_critical_gap_count'),'material_gap_count':ret.get('material_gap_count'),'decision_seal_hash':m.get('decision_seal_hash'),'report_path':str(p)}
 
-def main(vault_root,args):
+def main(vault_root,args,seal_truth_state=None):
     v=Path(vault_root).resolve();dr=data_root(v);tool=v/'RUNTIME'/'R3 Operational Execution and Learning OS'/'tools'/'alpha.py';env={**os.environ,'ALPHALAB_HOST_COMMAND':host_command_json(v),'ALPHALAB_VAULT_ROOT':str(v),'PYTHONDONTWRITEBYTECODE':'1'}
     if not args:raise RuntimeError('usage: AlphaLab.ps1 <INSTRUMENT|DAILY6> <LIVE|SHADOW|HISTORICAL> [timestamp]')
     subject=args[0].upper();mode=(args[1].upper() if len(args)>1 else 'LIVE');at=args[2] if len(args)>2 else None
@@ -62,4 +62,9 @@ def main(vault_root,args):
     if subject=='DAILY6':rids=[x['run_id'] for x in out['results']]
     else:rids=[out['run_id']]
     reports=[_report(v,dr,r) for r in rids]
-    return {'schema_version':'1.0.0','status':'PASS','commissioning':'C1.0.0','generated_at_utc':now(),'results':reports,'meta_reconciliation':out.get('meta_reconciliation')}
+    commitments=[]
+    if mode=='SHADOW':
+        from .true_forward import seal_run
+        truth=seal_truth_state or 'SHADOW_LIVE'
+        for r in rids: commitments.append(seal_run(v,r,truth))
+    return {'schema_version':'1.0.0','status':'PASS','commissioning':'C1.0.0','true_forward_extension':'TF1.0.0','generated_at_utc':now(),'results':reports,'forward_commitments':commitments,'meta_reconciliation':out.get('meta_reconciliation')}
