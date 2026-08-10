@@ -1,0 +1,64 @@
+{
+  "apl_a_promotion": false,
+  "authority_change": false,
+  "broker_write": false,
+  "harmful_false_positive_classes": [
+    "FALSE_HARD_BLOCK",
+    "QUARANTINE_CAUSING_FALSE_POSITIVE",
+    "DECISION_THREATENING_FALSE_POSITIVE"
+  ],
+  "m1_direction_promotion": false,
+  "maturity_logic": "COVERAGE_AND_INTEGRITY_DECOMPOSED_NOT_A_CONFIDENCE_SCORE",
+  "maturity_states": [
+    "INSUFFICIENT",
+    "EARLY",
+    "DEVELOPING",
+    "MODERATE",
+    "SUBSTANTIAL"
+  ],
+  "moderate_coverage": {
+    "horizons": 3,
+    "markets": 4,
+    "research_classes": 4
+  },
+  "record_classes": [
+    "VALID_TRUE_FORWARD",
+    "VALID_SHADOW_LIVE",
+    "WALK_FORWARD",
+    "HISTORICAL_REPLAY",
+    "SYNTHETIC",
+    "INVALID_TIME_ORDER",
+    "INVALID_SEAL",
+    "OUTCOME_KNOWN_AT_GENERATION",
+    "SOURCE_CONTAMINATED",
+    "METHOD_INVALID",
+    "OUTCOME_PENDING",
+    "AFTER_REVIEW_CUTOFF"
+  ],
+  "review_classifications": [
+    "TRUE_POSITIVE",
+    "TRUE_NEGATIVE",
+    "FALSE_POSITIVE",
+    "FALSE_NEGATIVE",
+    "CORRECT_SILENCE",
+    "UNNECESSARY_WARNING",
+    "FALSE_HARD_BLOCK",
+    "HARMLESS_FALSE_POSITIVE",
+    "DISTRACTING_FALSE_POSITIVE",
+    "RESEARCH_COSTLY_FALSE_POSITIVE",
+    "ESCALATION_CAUSING_FALSE_POSITIVE",
+    "QUARANTINE_CAUSING_FALSE_POSITIVE",
+    "DECISION_THREATENING_FALSE_POSITIVE",
+    "ACTIONABLE",
+    "UNIQUE_VALUE",
+    "REDUNDANT",
+    "REVIEW_UNRESOLVED"
+  ],
+  "review_version": "TF2.0.0",
+  "substantial_coverage": {
+    "configured_market_fraction": 1.0,
+    "horizons": 4,
+    "research_classes": 6
+  },
+  "version": "TF2_POLICY_1.0.0"
+}

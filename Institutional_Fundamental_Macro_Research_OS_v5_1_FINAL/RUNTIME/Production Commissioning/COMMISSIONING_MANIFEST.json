@@ -25,6 +25,7 @@
   "runtime": "R4.0.0",
   "scientific_stack": "V21.3.0",
   "status": "INSTALLABLE_WITH_TF1_HOST_AND_FORWARD_ACTIVATION",
-  "true_forward_extension": "TF1.0.0",
-  "true_forward_maturity": "INSUFFICIENT_UNTIL_REAL_OUTCOMES"
+  "true_forward_extension": "TF1.0.1",
+  "true_forward_maturity": "INSUFFICIENT_UNTIL_REAL_OUTCOMES",
+  "true_forward_review": "TF2.0.0_D4_OWNED_NO_AUTHORITY"
 }

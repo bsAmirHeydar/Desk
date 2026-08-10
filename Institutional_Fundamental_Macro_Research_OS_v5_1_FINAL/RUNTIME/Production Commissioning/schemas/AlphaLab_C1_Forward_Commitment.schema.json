@@ -71,7 +71,11 @@
       "type": "string"
     },
     "true_forward_version": {
-      "const": "TF1.0.0"
+      "enum": [
+        "TF1.0.0",
+        "TF1.0.1"
+      ],
+      "type": "string"
     },
     "truth_state": {
       "enum": [

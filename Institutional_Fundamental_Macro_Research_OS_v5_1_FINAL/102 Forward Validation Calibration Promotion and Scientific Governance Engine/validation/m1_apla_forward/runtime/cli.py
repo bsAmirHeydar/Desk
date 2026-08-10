@@ -8,13 +8,25 @@ from .util import sha,now
 
 def main(argv=None):
     p=argparse.ArgumentParser(prog='alphalab-m1-apla-forward-validate');p.add_argument('--vault-root',required=True);sp=p.add_subparsers(dest='cmd',required=True)
-    sp.add_parser('preflight');sp.add_parser('selftest');sp.add_parser('suite');sp.add_parser('acceptance');q=sp.add_parser('ledger-validate');q.add_argument('--ledger',required=True);q=sp.add_parser('append-suite');q.add_argument('--ledger',required=True);q=sp.add_parser('commit-forward');q.add_argument('--ledger',required=True);q.add_argument('--run-id',required=True);q.add_argument('--analysis-cutoff-utc',required=True);q.add_argument('--payload',required=True);q.add_argument('--truth-state',choices=['SHADOW_LIVE','TRUE_FORWARD_VALIDATION'],required=True)
+    sp.add_parser('preflight');sp.add_parser('selftest');sp.add_parser('suite');sp.add_parser('acceptance')
+    sp.add_parser('tf2-preflight');sp.add_parser('tf2-selftest');sp.add_parser('tf2-acceptance');sp.add_parser('tf2-status');q=sp.add_parser('tf2-review');q.add_argument('--cutoff-utc',default=None)
+    q=sp.add_parser('ledger-validate');q.add_argument('--ledger',required=True);q=sp.add_parser('append-suite');q.add_argument('--ledger',required=True);q=sp.add_parser('commit-forward');q.add_argument('--ledger',required=True);q.add_argument('--run-id',required=True);q.add_argument('--analysis-cutoff-utc',required=True);q.add_argument('--payload',required=True);q.add_argument('--truth-state',choices=['SHADOW_LIVE','TRUE_FORWARD_VALIDATION'],required=True)
     a=p.parse_args(argv);v=Path(a.vault_root).resolve()
     if a.cmd=='preflight':out=preflight(v)
     elif a.cmd=='selftest':
         from .selftest import run as selftest;out=selftest(v)
     elif a.cmd=='suite':out=run_suite(v)
     elif a.cmd=='acceptance':out=acceptance(v)
+    elif a.cmd=='tf2-preflight':
+        from .tf2_review import preflight as f;out=f(v)
+    elif a.cmd=='tf2-selftest':
+        from .tf2_review import selftest as f;out=f(v)
+    elif a.cmd=='tf2-acceptance':
+        from .tf2_acceptance import run as f;out=f(v)
+    elif a.cmd=='tf2-status':
+        from .tf2_review import latest as f;out=f(v)
+    elif a.cmd=='tf2-review':
+        from .tf2_review import build_snapshot as f;out=f(v,a.cutoff_utc,True)
     elif a.cmd=='ledger-validate':out=validate(a.ledger)
     elif a.cmd=='append-suite':
         s=run_suite(v);out={'status':'PASS','appended':[]}

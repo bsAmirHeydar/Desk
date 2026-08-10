@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "apl_a_readiness": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    },
+    "coverage": {
+      "type": "object"
+    },
+    "created_at_utc": {
+      "type": "string"
+    },
+    "forward_data_state": {
+      "type": "string"
+    },
+    "interaction": {
+      "type": "object"
+    },
+    "m1_readiness": {
+      "type": "object"
+    },
+    "maturity": {
+      "enum": [
+        "INSUFFICIENT",
+        "EARLY",
+        "DEVELOPING",
+        "MODERATE",
+        "SUBSTANTIAL"
+      ]
+    },
+    "record_forensics": {
+      "type": "object"
+    },
+    "review_cutoff_utc": {
+      "type": "string"
+    },
+    "review_id": {
+      "type": "string"
+    },
+    "review_version": {
+      "const": "TF2.0.0"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "seal": {
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "review_version",
+    "review_id",
+    "review_cutoff_utc",
+    "created_at_utc",
+    "forward_data_state",
+    "maturity",
+    "coverage",
+    "record_forensics",
+    "m1_readiness",
+    "apl_a_readiness",
+    "interaction",
+    "authority",
+    "seal"
+  ],
+  "type": "object"
+}

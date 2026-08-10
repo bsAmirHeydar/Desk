@@ -17,18 +17,21 @@
     "immutable commitment store",
     "outcome linker",
     "review objects",
-    "operator status and verification"
+    "operator status and verification",
+    "immutable M1 finding snapshot",
+    "immutable APL-A lens/output snapshot"
   ],
   "fv1": "FV1.0.0",
   "method_kernel": "M1.0.1",
   "mission": "REAL_HOST_SHADOW_COMMISSIONING_AND_TRUE_FORWARD_ACTIVATION",
   "mutable_evidence_location": "ALPHALAB_DATA_ROOT/forward",
+  "review_snapshot_compatibility": "TF2_READY",
   "runtime": "R4.0.0",
   "scientific_stack": "V21.3.0",
   "source_fingerprint_rule": "MUTABLE_FORWARD_RECORDS_EXCLUDED_FROM_R4_SOURCE_SURFACE",
   "status": "SOURCE_INSTALLED_HOST_AND_TRUE_FORWARD_EVIDENCE_RUNTIME_DEPENDENT",
   "true_forward_maturity": "INSUFFICIENT_UNTIL_REAL_POST_INSTALLATION_OUTCOMES_MATURE",
-  "true_forward_version": "TF1.0.0",
+  "true_forward_version": "TF1.0.1",
   "truth_states": [
     "SYNTHETIC",
     "HISTORICAL_REPLAY",

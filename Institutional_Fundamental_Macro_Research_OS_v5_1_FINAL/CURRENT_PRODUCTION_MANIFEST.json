@@ -72,7 +72,7 @@
     "status": "SCIENTIFIC_CERTIFICATION_HARDENING_ACTIVE_OFFLINE_CERTIFIED_ENVIRONMENT_PENDING",
     "storage_constitution": "RUNTIME/R1 Foundation/04 Storage Constitution.md",
     "temporal_constitution": "RUNTIME/R1 Foundation/03 Temporal Visibility and Point-in-Time Constitution.md",
-    "true_forward_activation": "TF1.0.0_SOURCE_ACTIVE_HOST_RUNTIME_ATTESTATION_PENDING",
+    "true_forward_activation": "TF1.0.1_SOURCE_ACTIVE_TF2_REVIEW_READY_HOST_RUNTIME_DATA_DEPENDENT",
     "universal_run_contract": "RUNTIME/R1 Foundation/02 Universal Run Contract.md"
   },
   "asset_books": {
@@ -333,10 +333,12 @@
     "broker_write": "NONE",
     "direction_authority_added": "NONE",
     "host_certification": "PENDING_REAL_WINDOWS_EXECUTION_UNTIL_INSTALLER_RUNS",
+    "legacy_tf1_0_0": "VALID_LIMITED_REVIEWABILITY",
     "outcome_linking": "ACTIVE",
     "pre_outcome_sealing": "ACTIVE",
+    "review_snapshot": "FULL_M1_APL_SNAPSHOT_FOR_NEW_RECORDS",
     "shadow_universe_source": "C1_COMMISSIONING_POLICY",
-    "version": "TF1.0.0"
+    "version": "TF1.0.1"
   },
   "required_runtime_contracts": [
     "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/schemas/AlphaLab_Evidence_Object.schema.json",
@@ -499,6 +501,15 @@
     "direction_from_price_technical_analysis": false,
     "donchian_execution_trigger_only": true,
     "timing_clearance_from_price_technical_analysis": false
+  },
+  "true_forward_evidence_review": {
+    "apl_a": "SHADOW_ONLY",
+    "apl_b": "NOT_IMPLEMENTED",
+    "authority_added": "NONE",
+    "owner": "D4_FORWARD_VALIDATION",
+    "promotion": "FORBIDDEN_IN_THIS_PHASE",
+    "status": "ACTIVE_REVIEW_INFRASTRUCTURE_EVIDENCE_MATURITY_RUNTIME_DEPENDENT",
+    "version": "TF2.0.0"
   },
   "version": "21.3.0"
 }

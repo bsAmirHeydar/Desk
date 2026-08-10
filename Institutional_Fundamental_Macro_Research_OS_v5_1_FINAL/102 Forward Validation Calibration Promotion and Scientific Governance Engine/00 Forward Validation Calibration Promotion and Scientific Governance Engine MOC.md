@@ -40,3 +40,8 @@ D4 remains the empirical judge after Cognitive Hardening. V21 adds forward field
 ## FV1 Method / Perspective Validation Extension
 
 - [[validation/m1_apla_forward/00 M1 APL-A Forward Validation MOC]] — M1 + APL-A shadow validation; no authority promotion.
+
+
+## TF2 True-Forward Evidence Review
+
+- [[validation/m1_apla_forward/01 TF2 True Forward Evidence Review]] — version-aware review of immutable true-forward M1/APL-A evidence. No automatic promotion; APL-A remains shadow-only.

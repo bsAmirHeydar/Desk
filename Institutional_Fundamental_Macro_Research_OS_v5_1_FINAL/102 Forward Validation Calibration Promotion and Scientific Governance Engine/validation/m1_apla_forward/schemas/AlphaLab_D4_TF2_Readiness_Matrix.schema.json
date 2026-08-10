@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "authority_unchanged": {
+      "const": true
+    },
+    "records": {
+      "type": "array"
+    },
+    "subject_type": {
+      "enum": [
+        "M1_CAPABILITY",
+        "APL_A_LENS"
+      ]
+    }
+  },
+  "required": [
+    "subject_type",
+    "records",
+    "authority_unchanged"
+  ],
+  "type": "object"
+}

@@ -46,4 +46,5 @@ with tempfile.TemporaryDirectory() as td0:
  q=subprocess.run([sys.executable,str(M/'tools/alphalab_d4_authority_gate.py'),'--input',str(aip),'--registry',str(regp)],capture_output=True,text=True);z=json.loads(q.stdout);ck('risk_constraint_precedes_positive_authority',q.returncode==0 and z.get('final_permission')=='NO_TRADE' and 'P_STOP' in z.get('applied_promotion_ids',[]) and 'P_CREATE' not in z.get('applied_promotion_ids',[]),z)
 
 q=subprocess.run([sys.executable,str(M/'tools/alphalab_m1_apla_forward_validate.py'),'--vault-root',str(R),'preflight'],capture_output=True,text=True);ck('m1_apla_fv1_preflight',q.returncode==0,(q.stdout+q.stderr)[-1200:])
+q=subprocess.run([sys.executable,str(M/'tools/alphalab_m1_apla_forward_validate.py'),'--vault-root',str(R),'tf2-preflight'],capture_output=True,text=True);ck('tf2_preflight',q.returncode==0,(q.stdout+q.stderr)[-1200:])
 err=[x for x in checks if not x['pass']];print(json.dumps({'status':'PASS' if not err else 'FAIL','tests':len(checks),'passed':len(checks)-len(err),'checks':checks},indent=2));sys.exit(0 if not err else 2)

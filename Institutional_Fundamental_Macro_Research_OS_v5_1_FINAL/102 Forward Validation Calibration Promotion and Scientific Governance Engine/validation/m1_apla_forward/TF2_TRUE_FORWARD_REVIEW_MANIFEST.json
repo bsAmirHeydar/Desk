@@ -1,0 +1,26 @@
+{
+  "apl_b": "NOT_IMPLEMENTED",
+  "authority": {
+    "apl_a": "SHADOW_ONLY",
+    "broker_write": "NONE",
+    "direction": "NONE",
+    "m1_new_direction_authority": "NONE",
+    "permission": "NONE"
+  },
+  "legacy_record_policy": "TF1.0.0_VALID_IF_SEAL_AND_TIME_PASS_BUT_LIMITED_LENS_METHOD_REVIEWABILITY",
+  "mutable_review_location": "ALPHALAB_DATA_ROOT/forward/reviews",
+  "name": "True-Forward Evidence Review and Calibration Gate",
+  "owner": "D4_FORWARD_VALIDATION",
+  "promotion": "FORBIDDEN_IN_THIS_PHASE",
+  "requires": {
+    "apl_a": "APL-A 1.0.0",
+    "fv1": "FV1.0.0",
+    "m1": "M1.0.1",
+    "runtime": "R4.0.0",
+    "tf1_min": "TF1.0.0"
+  },
+  "review_truth": "ONLY_VALID_TRUE_FORWARD_COUNTS_AS_TRUE_FORWARD_EVIDENCE",
+  "source_fingerprint_rule": "TF2_SOURCE_INCLUDED_MUTABLE_REVIEW_SNAPSHOTS_EXCLUDED",
+  "status": "REVIEW_INFRASTRUCTURE_ACTIVE_EVIDENCE_DRIVEN_MATURITY_AUTHORITY_UNCHANGED",
+  "version": "TF2.0.0"
+}

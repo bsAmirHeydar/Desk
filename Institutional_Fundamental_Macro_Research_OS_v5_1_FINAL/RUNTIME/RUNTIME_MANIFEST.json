@@ -143,14 +143,26 @@
     "broker_write": "NONE",
     "direction_authority_added": "NONE",
     "host_certificate": "REAL_WINDOWS_REQUIRED_FOR_PASS",
+    "legacy_tf1_0_0": "VALID_BUT_LIMITED_REVIEWABILITY",
     "mutable_records": "OUTSIDE_R4_SOURCE_FINGERPRINT",
     "owner": "C1+D4/FV1",
     "permission_authority_added": "NONE",
+    "review_snapshot": "M1_AND_APL_A_FINDINGS_IMMUTABLY_CAPTURED_FOR_NEW_RECORDS",
     "shadow_runtime": "C1_EXISTING_EXTENDED_WITH_PRE_OUTCOME_SEALS",
     "status": "SOURCE_ACTIVE_HOST_RUNTIME_ATTESTATION_PENDING",
     "true_forward_data": "ACCRUING_AFTER_REAL_HOST_RUNS",
     "true_forward_maturity": "INSUFFICIENT",
-    "version": "TF1.0.0"
+    "version": "TF1.0.1"
+  },
+  "true_forward_evidence_review": {
+    "apl_a": "SHADOW_ONLY",
+    "apl_b": "NOT_IMPLEMENTED",
+    "authority": "NONE_NEW",
+    "auto_promotion": false,
+    "forward_collection": "CONTINUES",
+    "owner": "D4",
+    "status": "ACTIVE_EVIDENCE_REVIEW_RUNTIME_DATA_DEPENDENT",
+    "version": "TF2.0.0"
   },
   "windows_portability": {
     "bundled_timezone_fallback": true,
