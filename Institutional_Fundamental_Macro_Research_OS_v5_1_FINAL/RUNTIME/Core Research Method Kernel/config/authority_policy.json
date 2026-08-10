@@ -1,0 +1,27 @@
+{
+  "apl_a_authority_unchanged": true,
+  "apl_b_forbidden": true,
+  "authority_states": [
+    "INFO",
+    "WARNING",
+    "RESEARCH_REQUIRED",
+    "METHOD_INVALID",
+    "OUTPUT_QUARANTINED"
+  ],
+  "default_authority": "VALIDATE_ANNOTATE_RESEARCH_TRIGGER",
+  "direction_authority": "NONE",
+  "forward_validation_required_for_new_behavioral_authority": true,
+  "hard_block_scope": [
+    "CONFIRMED_LOOKAHEAD",
+    "UNKNOWN_TO_ZERO",
+    "CORRUPTED_PROVENANCE",
+    "MISSING_DECISION_CUTOFF",
+    "RETROSPECTIVE_REGIME_LEAKAGE_WHEN_USED_AS_CONTEMPORANEOUS",
+    "UNREGISTERED_HARD_EXCEPTION"
+  ],
+  "method_version": "M1.0.0",
+  "permission_authority": "NONE",
+  "quarantine_reversible": true,
+  "soft_concerns_never_direction_override": true,
+  "version": "1.0.0"
+}

@@ -1,5 +1,5 @@
 from pathlib import Path
-import json
+import json, sys
 from datetime import datetime, timezone
 from .registry import PromptRegistry
 from .graph import ProcessGraph
@@ -13,6 +13,13 @@ R2_VERSION='R2.0.0'; PACK='ALPHALAB_PROMPT_PACK_1.1.0'; GRAPH='R2_PROCESS_GRAPH_
 def now(): return datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
 
 class OrchestratorError(RuntimeError): pass
+
+def _method_api(vault):
+    root=Path(vault)/'RUNTIME'/'Core Research Method Kernel'
+    if not (root/'METHOD_KERNEL_MANIFEST.json').is_file(): return None
+    if str(root) not in sys.path: sys.path.insert(0,str(root))
+    from alpha_method_runtime.integration import ensure_plan, validate_phase, MethodInvalid
+    return ensure_plan, validate_phase, MethodInvalid
 
 class R2Orchestrator:
     def __init__(self,rt):
@@ -34,6 +41,10 @@ class R2Orchestrator:
         with self.rt.catalog.connect() as c:
             c.execute("UPDATE runs SET manifest_revision=?,updated_at_utc=? WHERE run_id=?",(m['manifest_revision'],n,run_id))
         self.rt.lifecycle.event(run_id,'R2_BOOTSTRAPPED',{'runtime':'R2.0.0','prompt_pack':PACK,'graph':GRAPH})
+        api=_method_api(self.vault)
+        if api:
+            ensure_plan,_,_=api
+            ensure_plan(self.vault,self.rt,run_id)
         return self.status(run_id)
     def status(self,run_id):
         with self.rt.catalog.connect() as c:
@@ -94,6 +105,17 @@ class R2Orchestrator:
         if pid=='W23_LINEAGE_VALIDATOR' and status=='PRESENT':
             m=self.rt.store.load_manifest(run_id)
             if m['state']=='SNAPSHOT_FROZEN': self.rt.lifecycle.transition(run_id,'EVIDENCE_FROZEN','R2_EVIDENCE_FROZEN',{})
+            api=_method_api(self.vault)
+            if api:
+                _,validate_phase,MethodInvalid=api
+                try: validate_phase(self.vault,self.rt,run_id,'EVIDENCE',logical_name='method_evidence_validation_receipt')
+                except MethodInvalid as e: raise OrchestratorError(str(e)) from e
+        if pid=='P53_GLOBAL_RECONCILIATION' and status=='PRESENT':
+            api=_method_api(self.vault)
+            if api:
+                _,validate_phase,MethodInvalid=api
+                try: validate_phase(self.vault,self.rt,run_id,'COGNITION',logical_name='method_cognition_validation_receipt')
+                except MethodInvalid as e: raise OrchestratorError(str(e)) from e
         return self.status(run_id)
     def gate(self,run_id,gate_id,store_receipt=True):
         rec=self.gates.evaluate(run_id,gate_id,self._status_map(run_id))
@@ -106,6 +128,11 @@ class R2Orchestrator:
                 c.execute("INSERT OR REPLACE INTO r2_stage_gates(run_id,gate_id,status,receipt_hash,created_at_utc) VALUES(?,?,?,?,?)",(run_id,gate_id,rec['status'],ref['artifact_hash'] if ref else None,rec['created_at_utc']))
         return rec
     def finalize_decision(self,run_id):
+        api=_method_api(self.vault)
+        if api:
+            _,validate_phase,MethodInvalid=api
+            try: validate_phase(self.vault,self.rt,run_id,'PRE_DECISION',logical_name='method_predecision_validation_receipt')
+            except MethodInvalid as e: raise OrchestratorError(str(e)) from e
         rec=self.gate(run_id,'G4_DECISION_COMPLETION',store_receipt=True)
         if rec['status']!='PASS': raise OrchestratorError('G4 decision completion failed')
         m=self.rt.store.load_manifest(run_id)

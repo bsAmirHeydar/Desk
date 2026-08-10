@@ -1,0 +1,118 @@
+{
+  "invariants": [
+    {
+      "hard": true,
+      "id": "INV01",
+      "name": "THREE_WORLD_SEPARATION",
+      "rule": "Evidence, interpretation, and decision remain distinguishable."
+    },
+    {
+      "hard": true,
+      "id": "INV02",
+      "name": "STRICT_POINT_IN_TIME",
+      "rule": "No information first available after analysis cutoff may enter decision research."
+    },
+    {
+      "hard": true,
+      "id": "INV03",
+      "name": "PROVENANCE_REQUIRED",
+      "rule": "Decision-material evidence must retain reconstructable provenance."
+    },
+    {
+      "hard": true,
+      "id": "INV04",
+      "name": "UNKNOWN_FIRST_CLASS",
+      "rule": "Unknown, unavailable, unresolved, and not identified may not silently collapse to zero/neutral."
+    },
+    {
+      "hard": true,
+      "id": "INV05",
+      "name": "NO_FAKE_PRECISION",
+      "rule": "Numeric probability/confidence requires an explicit epistemic type and calibration basis when asserted as calibrated."
+    },
+    {
+      "hard": false,
+      "id": "INV06",
+      "name": "CLAIM_TYPE_EXPLICIT",
+      "rule": "Material assertions should be typed as observation, report, measurement, estimate, proxy, model output, association, causal hypothesis, mechanism, narrative, regime, forecast, scenario, expert judgment, decision rule, unknown, unresolved, or not identified."
+    },
+    {
+      "hard": true,
+      "id": "INV07",
+      "name": "CAUSAL_AUTHORITY_EARNED",
+      "rule": "Causal certainty requires temporal order, mechanism and non-NOT_IDENTIFIED identification state."
+    },
+    {
+      "hard": true,
+      "id": "INV08",
+      "name": "CONTRADICTION_VISIBLE",
+      "rule": "Material contradictory evidence may not be silently suppressed."
+    },
+    {
+      "hard": false,
+      "id": "INV09",
+      "name": "SOURCE_DEPENDENCY_VISIBLE",
+      "rule": "Multiple wrappers around one root source are not independent evidence."
+    },
+    {
+      "hard": false,
+      "id": "INV10",
+      "name": "PROXY_NOT_REALITY",
+      "rule": "A proxy may not be presented as direct observation of its latent target without an explicit proxy contract."
+    },
+    {
+      "hard": false,
+      "id": "INV11",
+      "name": "MODEL_NOT_FACT",
+      "rule": "Model output remains identifiable as model output downstream."
+    },
+    {
+      "hard": false,
+      "id": "INV12",
+      "name": "EXPLORATION_NOT_CONFIRMATION",
+      "rule": "Search-discovered specifications do not inherit confirmatory authority without validation."
+    },
+    {
+      "hard": true,
+      "id": "INV13",
+      "name": "NO_RETROACTIVE_HISTORY_REWRITE",
+      "rule": "Method upgrades create reanalysis, not silent rewriting of historical knowledge states."
+    },
+    {
+      "hard": true,
+      "id": "INV14",
+      "name": "AUDITABLE_FLEXIBILITY",
+      "rule": "Protocol adaptation and exceptions must be explicit and versioned."
+    }
+  ],
+  "method_version": "M1.0.0",
+  "non_doctrines": [
+    "TALEB",
+    "BAYESIANISM",
+    "POPPERIAN_FALSIFICATION",
+    "ECONOMETRICS",
+    "MACHINE_LEARNING",
+    "CAUSAL_DAGS",
+    "FUZZY_LOGIC",
+    "NARRATIVE",
+    "TECHNICAL_PRICE_ACTION",
+    "MACRO_THEORY"
+  ],
+  "unknown_states": [
+    "UNKNOWN",
+    "NOT_MEASURED",
+    "NOT_AVAILABLE",
+    "NOT_IDENTIFIED",
+    "CONFLICTING",
+    "NOT_APPLICABLE",
+    "BELOW_DETECTION",
+    "STRUCTURALLY_UNOBSERVABLE",
+    "UNRESOLVED"
+  ],
+  "version": "1.0.0",
+  "worlds": [
+    "REALITY_EVIDENCE",
+    "SCIENTIFIC_INTERPRETATION",
+    "DECISION"
+  ]
+}

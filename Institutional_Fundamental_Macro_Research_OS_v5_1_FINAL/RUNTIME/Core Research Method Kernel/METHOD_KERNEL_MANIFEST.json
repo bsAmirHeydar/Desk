@@ -1,0 +1,33 @@
+{
+  "apl": "APL-A 1.0.0",
+  "apl_a_boundary": "CHALLENGER_SHADOW_ONLY_UNCHANGED",
+  "apl_b": "NOT_IMPLEMENTED",
+  "architecture": "INVARIANT_CONSTITUTION_PLUS_ADAPTIVE_PROTOCOLS",
+  "artifact_world": "META",
+  "authority": {
+    "broker_write": "NONE",
+    "direction": "NONE",
+    "fact": "NONE",
+    "hard_method_invalidity": "BLOCK_PRESEAL_ONLY",
+    "permission": "NONE",
+    "scientific_mutation": "NONE"
+  },
+  "commissioning": "C1.0.0",
+  "decision_seal_mutation": "FORBIDDEN_FOR_VALID_RUNS",
+  "decision_world_mutation": "FORBIDDEN",
+  "forward_validation": "REQUIRED_BEFORE_ANY_NEW_BEHAVIORAL_AUTHORITY",
+  "method_version": "M1.0.0",
+  "mode": "ACTIVE_METHOD_GOVERNANCE_CONSERVATIVE_AUTHORITY",
+  "name": "Alpha Lab Core Research Method & Epistemology Kernel",
+  "new_direction_science": "NONE",
+  "runtime": "R4.0.0",
+  "runtime_hooks": [
+    "R2_BOOTSTRAP_METHOD_PLAN",
+    "R2_POST_W23_EVIDENCE_VALIDATION",
+    "R2_POST_P53_COGNITION_VALIDATION",
+    "R2_PRE_DECISION_METHOD_VALIDATION",
+    "R4_INHERITED_METHOD_PREFLIGHT"
+  ],
+  "scientific_stack": "V21.3.0",
+  "status": "INSTALLED_ACTIVE_METHOD_GOVERNANCE_FORWARD_VALIDATION_REQUIRED"
+}

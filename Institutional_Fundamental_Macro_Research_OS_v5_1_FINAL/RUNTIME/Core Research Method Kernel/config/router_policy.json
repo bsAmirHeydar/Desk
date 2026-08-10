@@ -1,0 +1,96 @@
+{
+  "asset_family_map": {
+    "DJIA": "EQUITY_INDEX",
+    "EURUSD": "FX",
+    "NASDAQ100": "EQUITY_INDEX",
+    "SP500": "EQUITY_INDEX",
+    "USDJPY": "FX",
+    "XAUUSD": "PRECIOUS_METAL"
+  },
+  "coverage_rules": {
+    "EVENT_FAST_STRICT": "EVENT_ANALYSIS"
+  },
+  "default_research_class": "DIRECTIONAL_FORECAST",
+  "explicit_tag_prefixes": [
+    "research_class:",
+    "method_class:"
+  ],
+  "horizon_classes": [
+    "MICRO_0_15M",
+    "SHORT_15_60M",
+    "SESSION_1_6H",
+    "DAILY_OPEN_TO_CLOSE",
+    "MULTI_DAY_2_10D",
+    "SWING_2_8W",
+    "CYCLICAL",
+    "STRUCTURAL"
+  ],
+  "rigor_escalators": [
+    "EXPLICIT_DEEP",
+    "CRITICAL_MATERIALITY",
+    "NEW_ASSET",
+    "CAUSAL_ATTRIBUTION",
+    "MODEL_VALIDATION",
+    "MATERIAL_CONTRADICTION",
+    "NOVEL_REGIME",
+    "TAIL_EXPOSURE",
+    "APL_A_FRAGILITY_ALERT"
+  ],
+  "rigor_levels": [
+    "LIGHT",
+    "STANDARD",
+    "DEEP",
+    "CRITICAL"
+  ],
+  "tag_rules": [
+    {
+      "class": "EVENT_ANALYSIS",
+      "contains": "event:"
+    },
+    {
+      "class": "CAUSAL_ATTRIBUTION",
+      "contains": "causal"
+    },
+    {
+      "class": "PERSISTENCE_REVERSAL",
+      "contains": "persistence"
+    },
+    {
+      "class": "NARRATIVE_ATTENTION",
+      "contains": "narrative"
+    },
+    {
+      "class": "REGIME_ANALYSIS",
+      "contains": "regime"
+    },
+    {
+      "class": "STRUCTURAL_LONG_HORIZON_THESIS",
+      "contains": "structural"
+    },
+    {
+      "class": "CROSS_SECTIONAL_RELATIVE_VALUE",
+      "contains": "relative-value"
+    },
+    {
+      "class": "EXPOSURE_RISK_ANALYSIS",
+      "contains": "exposure"
+    },
+    {
+      "class": "MODEL_VALIDATION",
+      "contains": "model-validation"
+    },
+    {
+      "class": "ANOMALY_FAILURE_INVESTIGATION",
+      "contains": "failure-investigation"
+    },
+    {
+      "class": "NEW_ASSET_RESEARCH",
+      "contains": "new-asset"
+    },
+    {
+      "class": "DESCRIPTIVE_STATE_ESTIMATION",
+      "contains": "descriptive"
+    }
+  ],
+  "version": "1.0.0"
+}

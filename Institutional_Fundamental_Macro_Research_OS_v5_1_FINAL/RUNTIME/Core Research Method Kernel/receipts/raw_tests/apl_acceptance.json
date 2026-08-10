@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PASS",
+  "passed": 30,
+  "total": 30,
+  "checks": [
+    {
+      "case_id": "APL-A-001",
+      "name": "UNKNOWN is not ZERO",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-002",
+      "name": "UNAVAILABLE is not ABSENT",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-003",
+      "name": "PROXY cannot satisfy DIRECT FACT",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-004",
+      "name": "Narrative repetition cannot become independent evidence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-005",
+      "name": "Same-root sources remain one independent root",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-006",
+      "name": "Story Removal may weaken a thesis without deleting facts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-007",
+      "name": "Model Removal cannot mutate original hypotheses",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-008",
+      "name": "Source Removal cannot mutate D1 evidence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-009",
+      "name": "Invariant survives the stated removals",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-010",
+      "name": "Fragility classification requires stressor/scope/horizon",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-011",
+      "name": "Antifragile without a stressor is rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-012",
+      "name": "Local convexity is not global convexity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-013",
+      "name": "Curvature reversal can remain UNRESOLVED/unknown",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-014",
+      "name": "Optionality is not assumed free",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-015",
+      "name": "Apparent optionality can be ILLUSORY",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-016",
+      "name": "Network redundancy checks common upstream roots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-017",
+      "name": "Fragility transfer identifies the tail carrier where evidence supports it",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-018",
+      "name": "Intervention analysis includes reversal/side-effect conditions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-019",
+      "name": "No APL process creates Direction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-020",
+      "name": "No APL process creates BUY/SELL",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-021",
+      "name": "No APL process directly retrieves web data",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-022",
+      "name": "Final production decision/world is identical with APL-A shadow enabled vs disabled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-023",
+      "name": "APL can emit only governed research requests",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-024",
+      "name": "Taleb provenance survives to all load-bearing principle records",
+      "pass": true,
+      "detail": {
+        "principle_count": 33
+      }
+    },
+    {
+      "case_id": "APL-A-025",
+      "name": "No total Taleb/Perspective score or voting layer exists",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "case_id": "APL-A-026",
+      "name": "Taleb source vault remains external/read-only and is not vendored",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-027",
+      "name": "Complete 696-note Taleb extraction inventory exists",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-028",
+      "name": "All extraction records have explicit dispositions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-029",
+      "name": "APL-A remains SHADOW_ONLY",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "APL-A-030",
+      "name": "APL-A has no dependency from core P50-P63 decision path",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "errors": []
+}

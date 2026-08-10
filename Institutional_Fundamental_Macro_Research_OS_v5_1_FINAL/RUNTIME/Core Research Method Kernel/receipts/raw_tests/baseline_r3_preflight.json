@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "runtime_r3",
+      "pass": true
+    },
+    {
+      "name": "scientific_v213",
+      "pass": true
+    },
+    {
+      "name": "direction_authority_none",
+      "pass": true
+    },
+    {
+      "name": "permission_authority_none",
+      "pass": true
+    },
+    {
+      "name": "operational_block_only",
+      "pass": true
+    },
+    {
+      "name": "r2_process_count",
+      "pass": true
+    },
+    {
+      "name": "r2_direction_authority",
+      "pass": true
+    },
+    {
+      "name": "r2_permission_authority",
+      "pass": true
+    },
+    {
+      "name": "r2_prompt_pack",
+      "pass": true
+    },
+    {
+      "name": "r1_preflight",
+      "pass": true
+    },
+    {
+      "name": "jsonschema_runtime_available",
+      "pass": true
+    },
+    {
+      "name": "r3_selftest",
+      "pass": true
+    }
+  ],
+  "selftest": {
+    "status": "PASS",
+    "passed": 28,
+    "total": 28,
+    "checks": [
+      {
+        "name": "runtime_r3_active",
+        "pass": true
+      },
+      {
+        "name": "scientific_stack_v213",
+        "pass": true
+      },
+      {
+        "name": "operational_gate_block_only",
+        "pass": true
+      },
+      {
+        "name": "alias_resolution",
+        "pass": true
+      },
+      {
+        "name": "live_cutoff_now",
+        "pass": true
+      },
+      {
+        "name": "historical_explicit_cutoff",
+        "pass": true
+      },
+      {
+        "name": "same_run_contract_shape",
+        "pass": true
+      },
+      {
+        "name": "daily_six_count",
+        "pass": true
+      },
+      {
+        "name": "daily_six_common_historical_cutoff",
+        "pass": true
+      },
+      {
+        "name": "bulk_plan_count",
+        "pass": true
+      },
+      {
+        "name": "unknown_alias_fail_closed",
+        "pass": true
+      },
+      {
+        "name": "fixture_forbidden_production",
+        "pass": true
+      },
+      {
+        "name": "live_preintake_has_no_fake_future_cutoff",
+        "pass": true
+      },
+      {
+        "name": "live_intake_cutoff_semantics",
+        "pass": true
+      },
+      {
+        "name": "decision_seal_required_worlds",
+        "pass": true
+      },
+      {
+        "name": "forward_observation_created",
+        "pass": true
+      },
+      {
+        "name": "forward_observation_pinned",
+        "pass": true
+      },
+      {
+        "name": "d4_forward_schema_valid",
+        "pass": true
+      },
+      {
+        "name": "warehouse_sqlite_row",
+        "pass": true
+      },
+      {
+        "name": "warehouse_accelerator_non_authoritative",
+        "pass": true
+      },
+      {
+        "name": "ledger_hash_chain_and_payload",
+        "pass": true
+      },
+      {
+        "name": "ledger_jsonl_tamper_detected",
+        "pass": true
+      },
+      {
+        "name": "ledger_rebuild_verifies",
+        "pass": true
+      },
+      {
+        "name": "meta_cutoff_disclosed",
+        "pass": true
+      },
+      {
+        "name": "meta_has_no_permission_authority",
+        "pass": true
+      },
+      {
+        "name": "six_production_instruments",
+        "pass": true
+      },
+      {
+        "name": "historical_current_only_forbidden",
+        "pass": true
+      },
+      {
+        "name": "live_postcutoff_retrieval_forbidden",
+        "pass": true
+      }
+    ],
+    "errors": []
+  },
+  "errors": []
+}

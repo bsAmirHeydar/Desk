@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0.0",
+  "deployment": "CORE_RESEARCH_METHOD_AND_EPISTEMOLOGY_HARDENING",
+  "method_version": "M1.0.0",
+  "baseline": {
+    "r1_preflight": "PASS",
+    "r2_preflight": "PASS",
+    "r3_preflight": "PASS",
+    "c1_selftest": {
+      "status": "PASS",
+      "passed": 31,
+      "total": 31
+    },
+    "apl_selftest": {
+      "status": "PASS",
+      "passed": 26,
+      "total": 26
+    },
+    "apl_acceptance": {
+      "status": "PASS",
+      "passed": 30,
+      "total": 30
+    },
+    "apl_parity": "PASS",
+    "r4_core": {
+      "status": "PASS",
+      "classification": "CORE_CERTIFIED",
+      "surface_fingerprint": "sha256:1907e99708730e7f81b1bfe32789c520a89a9e8f9b5d9442569bbbb1d728e758",
+      "case_count": 46
+    }
+  },
+  "post_implementation": {
+    "r1_preflight": "PASS",
+    "r2_preflight": "PASS",
+    "r3_preflight": "PASS",
+    "method_preflight": "PASS",
+    "method_selftest": {
+      "status": "PASS",
+      "passed": 33,
+      "total": 33
+    },
+    "method_acceptance": {
+      "status": "PASS",
+      "passed": 33,
+      "total": 33
+    },
+    "method_parity": "PASS",
+    "c1_selftest": {
+      "status": "PASS",
+      "passed": 31,
+      "total": 31
+    },
+    "apl_preflight": "PASS",
+    "apl_selftest": {
+      "status": "PASS",
+      "passed": 26,
+      "total": 26
+    },
+    "apl_acceptance": {
+      "status": "PASS",
+      "passed": 30,
+      "total": 30
+    },
+    "apl_parity": "PASS",
+    "r4_preflight": "PASS",
+    "r4_core": {
+      "status": "PASS",
+      "classification": "CORE_CERTIFIED",
+      "surface_fingerprint": "sha256:520c86dfaa7299dc73d7d6d1ac2543050199551c5a009ac701d48784f6b4245a",
+      "case_count": 47
+    },
+    "r4_full": {
+      "status": "PASS",
+      "classification": "FULL_OFFLINE_CERTIFIED",
+      "surface_fingerprint": "sha256:520c86dfaa7299dc73d7d6d1ac2543050199551c5a009ac701d48784f6b4245a",
+      "case_count": 47
+    }
+  },
+  "decision_parity": {
+    "status": "PASS",
+    "decision_world_identical": true,
+    "event_sequence_identical": true,
+    "method_artifacts_meta_only": true,
+    "direction_authority": "NONE",
+    "permission_authority": "NONE"
+  },
+  "adversarial_and_flexibility": {
+    "status": "PASS",
+    "method_selftest_total": 33,
+    "required_adversarial_cases_covered": 12,
+    "protocol_classes": 13
+  },
+  "performance": {
+    "bootstrap_microbenchmark_n": 12,
+    "baseline_median_ms": 19.676,
+    "m1_median_ms": 36.483,
+    "median_increment_ms": 16.807,
+    "note": "Local synthetic bootstrap benchmark; not a production-host latency claim. Deep validation is routed conditionally."
+  },
+  "syntax_and_json_validation": {
+    "status": "PASS",
+    "python_files_checked": 19,
+    "json_files_checked": 20,
+    "errors": 0
+  },
+  "taleb_boundary": {
+    "schema_version": "1.0.0",
+    "status": "PASS",
+    "source_vault": "Talebian Systems Philosophy OS v3.0.0 MAXIMAL",
+    "receipt_records": 696,
+    "hash_matches": 696,
+    "hash_mismatches": 0,
+    "missing": 0,
+    "production_dispositions": {
+      "CONTEXT_ONLY": 433,
+      "DEFER_TO_APL_B": 80,
+      "INTEGRATED": 183
+    },
+    "apl_b_boundary": "UNCHANGED_80_DEFERRED_NOT_IMPLEMENTED",
+    "created_at_utc": "2026-08-10T08:05:00Z"
+  },
+  "limitations": [
+    "C1 environment certification remains host-specific/pending according to the commissioning/runtime manifests.",
+    "C1 six-market shadow production certification remains a forward/host gate.",
+    "M1 new behavioral authority requires forward validation; M1 currently has no Direction or Permission authority.",
+    "APL-A remains SHADOW_ONLY and requires forward validation before any future promotion.",
+    "APL-B is not implemented."
+  ],
+  "created_at_utc": "2026-08-10T08:05:00Z"
+}

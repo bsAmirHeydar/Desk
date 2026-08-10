@@ -1,0 +1,66 @@
+{
+  "cases": [
+    {
+      "case_id": "M1-ADV-001",
+      "expected": "OUTPUT_QUARANTINED",
+      "name": "Future revision leakage"
+    },
+    {
+      "case_id": "M1-ADV-002",
+      "expected": "RESEARCH_REQUIRED",
+      "name": "Same root source pseudo-independence"
+    },
+    {
+      "case_id": "M1-ADV-003",
+      "expected": "RESEARCH_REQUIRED",
+      "name": "Proxy reification"
+    },
+    {
+      "case_id": "M1-ADV-004",
+      "expected": "OUTPUT_QUARANTINED",
+      "name": "Unknown collapse to zero"
+    },
+    {
+      "case_id": "M1-ADV-005",
+      "expected": "METHOD_INVALID",
+      "name": "Correlation as causation"
+    },
+    {
+      "case_id": "M1-ADV-006",
+      "expected": "RESEARCH_REQUIRED",
+      "name": "Narrative circularity"
+    },
+    {
+      "case_id": "M1-ADV-007",
+      "expected": "OUTPUT_QUARANTINED",
+      "name": "Retrospective regime leakage"
+    },
+    {
+      "case_id": "M1-ADV-008",
+      "expected": "METHOD_INVALID",
+      "name": "Contradiction suppression"
+    },
+    {
+      "case_id": "M1-ADV-009",
+      "expected": "METHOD_INVALID",
+      "name": "Fake calibrated probability"
+    },
+    {
+      "case_id": "M1-ADV-010",
+      "expected": "PASS_OR_WARNING",
+      "name": "Horizon conflict preserved"
+    },
+    {
+      "case_id": "M1-ADV-011",
+      "expected": "RESEARCH_REQUIRED",
+      "name": "Exploratory overfit mislabeled confirmatory"
+    },
+    {
+      "case_id": "M1-ADV-012",
+      "expected": "PASS",
+      "name": "Valid simple factual research"
+    }
+  ],
+  "method_version": "M1.0.0",
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,240 @@
+{
+  "method_version": "M1.0.0",
+  "protocols": [
+    {
+      "default_rigor": "LIGHT",
+      "invalidation": [
+        "SOURCE_RETRACTION",
+        "TIMESTAMP_INVALID"
+      ],
+      "minimum_evidence": "ONE_VERIFIABLE_SOURCE_APPROPRIATE_TO_CLAIM",
+      "protocol_id": "M10_DESCRIPTIVE",
+      "required_evidence": [
+        "DIRECT_OR_SOURCE_REPORTED_STATE"
+      ],
+      "research_class": "DESCRIPTIVE_STATE_ESTIMATION",
+      "update_cadence": "ON_SOURCE_CHANGE"
+    },
+    {
+      "default_rigor": "STANDARD",
+      "invalidation": [
+        "EVENT_TIME_UNRESOLVED",
+        "EXPECTATION_BASELINE_UNAVAILABLE"
+      ],
+      "minimum_evidence": "EVENT_TIME_AND_EXPECTATION_BASELINE",
+      "protocol_id": "M20_EVENT",
+      "required_evidence": [
+        "POINT_IN_TIME_EVENT_FACT",
+        "PRE_EVENT_EXPECTATION",
+        "POST_EVENT_REACTION"
+      ],
+      "research_class": "EVENT_ANALYSIS",
+      "update_cadence": "EVENT_MICROWINDOW"
+    },
+    {
+      "default_rigor": "DEEP",
+      "invalidation": [
+        "REVERSE_CAUSALITY_DOMINATES",
+        "IDENTIFICATION_FAILS"
+      ],
+      "minimum_evidence": "MECHANISM_PLUS_DISCRIMINATING_EVIDENCE",
+      "protocol_id": "M30_CAUSAL",
+      "required_evidence": [
+        "TEMPORAL_ORDER",
+        "MECHANISM",
+        "RIVAL_HYPOTHESIS",
+        "COUNTERFACTUAL_FRAME"
+      ],
+      "research_class": "CAUSAL_ATTRIBUTION",
+      "update_cadence": "ON_DISCRIMINATING_EVIDENCE"
+    },
+    {
+      "default_rigor": "DEEP",
+      "invalidation": [
+        "DOMINANT_DRIVER_BREAK",
+        "MATERIAL_NEW_CONTRADICTION"
+      ],
+      "minimum_evidence": "EXISTING_V21_3_COMPLETION_GATES",
+      "protocol_id": "M40_DIRECTION",
+      "required_evidence": [
+        "FUNDAMENTAL_STATE",
+        "EXPECTATIONS_PRICING",
+        "NARRATIVE_ATTENTION",
+        "POSITIONING_FLOW_MECHANICS",
+        "RIVALS"
+      ],
+      "research_class": "DIRECTIONAL_FORECAST",
+      "update_cadence": "HORIZON_AND_EVENT_DRIVEN"
+    },
+    {
+      "default_rigor": "DEEP",
+      "invalidation": [
+        "FORCE_EXHAUSTED",
+        "REVERSAL_TRIGGER_FIRES"
+      ],
+      "minimum_evidence": "FORCE_STATE_PLUS_REVERSAL_CRITERIA",
+      "protocol_id": "M50_PERSISTENCE",
+      "required_evidence": [
+        "ACTIVE_FORCE",
+        "CONSUMPTION",
+        "PERSISTENCE",
+        "REVERSAL_TRIGGERS"
+      ],
+      "research_class": "PERSISTENCE_REVERSAL",
+      "update_cadence": "STATE_CHANGE"
+    },
+    {
+      "default_rigor": "STANDARD",
+      "invalidation": [
+        "ATTENTION_ROTATION",
+        "NARRATIVE_PRICE_DECOUPLING"
+      ],
+      "minimum_evidence": "MULTIPLE_ATTENTION_SIGNALS_OR_EXPLICIT_LIMITATION",
+      "protocol_id": "M60_NARRATIVE",
+      "required_evidence": [
+        "ATTENTION",
+        "INTERPRETATION",
+        "IGNORED_FACTS",
+        "REFLEXIVITY"
+      ],
+      "research_class": "NARRATIVE_ATTENTION",
+      "update_cadence": "ATTENTION_CHANGE"
+    },
+    {
+      "default_rigor": "DEEP",
+      "invalidation": [
+        "REGIME_CRITERIA_FAIL",
+        "CIRCULAR_CLASSIFICATION"
+      ],
+      "minimum_evidence": "NON_CIRCULAR_REGIME_EVIDENCE",
+      "protocol_id": "M70_REGIME",
+      "required_evidence": [
+        "REGIME_DEFINITION",
+        "CURRENT_EVIDENCE",
+        "COMPETING_REGIME",
+        "TRANSITION_RISK"
+      ],
+      "research_class": "REGIME_ANALYSIS",
+      "update_cadence": "STRUCTURAL_BREAK_OR_TRANSITION"
+    },
+    {
+      "default_rigor": "DEEP",
+      "invalidation": [
+        "MECHANISM_BREAK",
+        "STRUCTURAL_COUNTEREVIDENCE"
+      ],
+      "minimum_evidence": "MECHANISM_PLUS_CROSS_PERIOD_SUPPORT",
+      "protocol_id": "M80_STRUCTURAL",
+      "required_evidence": [
+        "STRUCTURAL_MECHANISM",
+        "LONG_HORIZON_DATA",
+        "ALTERNATIVES",
+        "BREAK_CONDITIONS"
+      ],
+      "research_class": "STRUCTURAL_LONG_HORIZON_THESIS",
+      "update_cadence": "STRUCTURAL_EVIDENCE_CHANGE"
+    },
+    {
+      "default_rigor": "DEEP",
+      "invalidation": [
+        "COMPARABILITY_BREAKS",
+        "COMMON_FACTOR_DOMINATES"
+      ],
+      "minimum_evidence": "COMPARABLE_POINT_IN_TIME_CROSS_SECTION",
+      "protocol_id": "M90_RELATIVE_VALUE",
+      "required_evidence": [
+        "COMMON_FRAME",
+        "RELATIVE_DRIVERS",
+        "COMPARABILITY",
+        "IMPLEMENTATION_CONSTRAINTS"
+      ],
+      "research_class": "CROSS_SECTIONAL_RELATIVE_VALUE",
+      "update_cadence": "RELATIVE_DRIVER_CHANGE"
+    },
+    {
+      "default_rigor": "DEEP",
+      "invalidation": [
+        "EXPOSURE_REVERSED",
+        "BOUNDARY_INVALID"
+      ],
+      "minimum_evidence": "EXPOSURE_AND_STRESSOR_DEFINED",
+      "protocol_id": "M100_EXPOSURE",
+      "required_evidence": [
+        "EXPOSURE_MAP",
+        "NONLINEARITY",
+        "TAIL",
+        "LIQUIDITY_OR_RUIN_CONSTRAINT"
+      ],
+      "research_class": "EXPOSURE_RISK_ANALYSIS",
+      "update_cadence": "EXPOSURE_OR_STRESS_CHANGE"
+    },
+    {
+      "default_rigor": "DEEP",
+      "invalidation": [
+        "CALIBRATION_DECAY",
+        "SCHEMA_OR_MODEL_DRIFT"
+      ],
+      "minimum_evidence": "VERSIONED_MODEL_PLUS_VALIDATION_SET",
+      "protocol_id": "M110_MODEL_VALIDATION",
+      "required_evidence": [
+        "MODEL_VERSION",
+        "POINT_IN_TIME_TEST",
+        "OUT_OF_SAMPLE_OR_FORWARD",
+        "FAILURE_MODES"
+      ],
+      "research_class": "MODEL_VALIDATION",
+      "update_cadence": "MODEL_OR_DATA_DRIFT"
+    },
+    {
+      "default_rigor": "DEEP",
+      "invalidation": [
+        "EVIDENCE_SHOWS_NO_FAILURE"
+      ],
+      "minimum_evidence": "REPRODUCIBLE_FAILURE_OR_EXPLICIT_UNRESOLVED",
+      "protocol_id": "M120_ANOMALY",
+      "required_evidence": [
+        "FAILURE_CLASS",
+        "FROZEN_PRIOR_STATE",
+        "ALTERNATIVE_CAUSES",
+        "REPRODUCTION_ATTEMPT"
+      ],
+      "research_class": "ANOMALY_FAILURE_INVESTIGATION",
+      "update_cadence": "UNTIL_CLASSIFIED"
+    },
+    {
+      "default_rigor": "CRITICAL",
+      "invalidation": [
+        "INSTRUMENT_UNRESOLVED",
+        "SOURCE_COVERAGE_INADEQUATE"
+      ],
+      "minimum_evidence": "LIMITED_OR_TEMPLATE_STATE_EXPLICIT",
+      "protocol_id": "M130_NEW_ASSET",
+      "required_evidence": [
+        "INSTRUMENT_RESOLUTION",
+        "ASSET_FAMILY",
+        "MARKET_STRUCTURE",
+        "SOURCE_MAP",
+        "DRIVER_MAP",
+        "LIMITATIONS"
+      ],
+      "research_class": "NEW_ASSET_RESEARCH",
+      "update_cadence": "COVERAGE_MATURITY"
+    }
+  ],
+  "research_classes": [
+    "DESCRIPTIVE_STATE_ESTIMATION",
+    "EVENT_ANALYSIS",
+    "CAUSAL_ATTRIBUTION",
+    "DIRECTIONAL_FORECAST",
+    "PERSISTENCE_REVERSAL",
+    "NARRATIVE_ATTENTION",
+    "REGIME_ANALYSIS",
+    "STRUCTURAL_LONG_HORIZON_THESIS",
+    "CROSS_SECTIONAL_RELATIVE_VALUE",
+    "EXPOSURE_RISK_ANALYSIS",
+    "MODEL_VALIDATION",
+    "ANOMALY_FAILURE_INVESTIGATION",
+    "NEW_ASSET_RESEARCH"
+  ],
+  "version": "1.0.0"
+}

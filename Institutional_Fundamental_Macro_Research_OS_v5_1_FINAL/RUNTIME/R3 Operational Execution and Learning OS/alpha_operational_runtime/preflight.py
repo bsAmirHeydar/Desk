@@ -13,6 +13,7 @@ def run(vault_root):
     except Exception as e:errors.append('runtime_manifest:'+str(e))
     try:c,e=_r2_compat(v);checks+=c;errors+=e
     except Exception as e:checks.append(('r2_compat',False));errors.append('r2_compat:'+str(e))
+    method=v/'RUNTIME'/'Core Research Method Kernel'/'METHOD_KERNEL_MANIFEST.json';checks.append(('method_kernel_installed',method.is_file()))
     tool=v/'RUNTIME'/'R1 Foundation'/'tools'/'alpha_runtime.py';q=subprocess.run([sys.executable,str(tool),'--vault-root',str(v),'preflight'],capture_output=True,text=True,env={**os.environ,'PYTHONDONTWRITEBYTECODE':'1'});checks.append(('r1_preflight',q.returncode==0))
     if q.returncode:errors.append('r1_preflight:'+(q.stdout+q.stderr)[-3000:])
     has_js=importlib.util.find_spec('jsonschema') is not None;checks.append(('jsonschema_runtime_available',has_js));

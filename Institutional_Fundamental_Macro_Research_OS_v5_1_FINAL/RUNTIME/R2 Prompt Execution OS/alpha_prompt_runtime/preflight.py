@@ -11,6 +11,12 @@ def run(vault_root):
         q=subprocess.run([sys.executable,str(tool),'--vault-root',str(v),'preflight'],capture_output=True,text=True,env={**__import__('os').environ,'PYTHONDONTWRITEBYTECODE':'1'})
         checks.append({'name':'r1_preflight','pass':q.returncode==0,'detail':(q.stdout+q.stderr)[-4000:]})
     else: checks.append({'name':'r1_preflight','pass':False,'detail':'R1 tool missing'})
+    # M1 Core Research Method Kernel is a required cross-cutting governance extension when installed.
+    method_tool=v/'RUNTIME'/'Core Research Method Kernel'/'tools'/'alpha_method.py'
+    if method_tool.exists():
+        q=subprocess.run([sys.executable,str(method_tool),'--vault-root',str(v),'selftest'],capture_output=True,text=True,env={**__import__('os').environ,'PYTHONDONTWRITEBYTECODE':'1'})
+        checks.append({'name':'method_kernel_selftest','pass':q.returncode==0,'detail':(q.stdout+q.stderr)[-4000:]})
+    else: checks.append({'name':'method_kernel_selftest','pass':False,'detail':'M1 method tool missing'})
     # scientific production prompt/manifest exists
     try:
         j=json.loads((v/'CURRENT_PRODUCTION_MANIFEST.json').read_text(encoding='utf-8')); ok=j.get('current_stack')=='V21.3.0' and (v/j['production_entrypoint']).exists()

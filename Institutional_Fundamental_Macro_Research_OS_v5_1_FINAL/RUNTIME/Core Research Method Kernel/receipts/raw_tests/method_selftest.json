@@ -1,0 +1,176 @@
+{
+  "status": "PASS",
+  "passed": 33,
+  "total": 33,
+  "checks": [
+    {
+      "name": "manifest_registry",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "route_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route_3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route_4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route_5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route_6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route_7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route_8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route_9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route_10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route_11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route_12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route_13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "plan_schema",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "r2_bootstrap_method_plan_meta",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "r2_method_no_extra_event",
+      "pass": true,
+      "detail": {
+        "before": 1,
+        "after": 2
+      }
+    },
+    {
+      "name": "adv_future_leakage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adv_same_root",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adv_proxy_reification",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adv_unknown_zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adv_correlation_causation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adv_narrative_circularity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adv_regime_leakage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adv_contradiction_suppression",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adv_fake_probability",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adv_horizon_conflict_preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adv_exploratory_overfit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adv_valid_simple",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no_direction_authority",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no_permission_authority",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no_apl_b",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "meta_world",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "errors": []
+}

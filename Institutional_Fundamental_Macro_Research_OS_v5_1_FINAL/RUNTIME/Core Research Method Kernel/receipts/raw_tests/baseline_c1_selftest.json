@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PASS",
+  "passed": 31,
+  "total": 31,
+  "checks": [
+    {
+      "name": "runtime_r4",
+      "pass": true
+    },
+    {
+      "name": "scientific_v213",
+      "pass": true
+    },
+    {
+      "name": "commissioning_c1",
+      "pass": true
+    },
+    {
+      "name": "broker_write_none",
+      "pass": true
+    },
+    {
+      "name": "model_gpt_5_6_sol",
+      "pass": true
+    },
+    {
+      "name": "no_auto_downgrade",
+      "pass": true
+    },
+    {
+      "name": "max_profiles",
+      "pass": true
+    },
+    {
+      "name": "store_false",
+      "pass": true
+    },
+    {
+      "name": "max_output_128k",
+      "pass": true
+    },
+    {
+      "name": "retrieval_unlimited_budget",
+      "pass": true
+    },
+    {
+      "name": "overflow_fail_closed",
+      "pass": true
+    },
+    {
+      "name": "reasoning_stateless_current_turn",
+      "pass": true
+    },
+    {
+      "name": "source_count_57",
+      "pass": true
+    },
+    {
+      "name": "source_policy_complete",
+      "pass": true
+    },
+    {
+      "name": "synthetic_discovery_four",
+      "pass": true
+    },
+    {
+      "name": "subscription_explicit_unbound",
+      "pass": true
+    },
+    {
+      "name": "licensed_explicit_unbound",
+      "pass": true
+    },
+    {
+      "name": "s3_decision_evidence_pack_transport",
+      "pass": true
+    },
+    {
+      "name": "dynamic_retrieval_plan_execution",
+      "pass": true
+    },
+    {
+      "name": "json_argv_host_contract",
+      "pass": true
+    },
+    {
+      "name": "discovery_prefetch_present",
+      "pass": true
+    },
+    {
+      "name": "discovery_not_direct_candidate",
+      "pass": true
+    },
+    {
+      "name": "host_timeout_3600",
+      "pass": true
+    },
+    {
+      "name": "accuracy_serial",
+      "pass": true
+    },
+    {
+      "name": "default_deep",
+      "pass": true
+    },
+    {
+      "name": "readiness_manual_signoff",
+      "pass": true
+    },
+    {
+      "name": "readiness_zero_dc_gap",
+      "pass": true
+    },
+    {
+      "name": "commissioning_python_syntax_in_memory",
+      "pass": true
+    },
+    {
+      "name": "host_command_json_argv_roundtrip",
+      "pass": true
+    },
+    {
+      "name": "live_requires_signed_current_readiness",
+      "pass": true
+    },
+    {
+      "name": "wrapper_templates_ascii",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

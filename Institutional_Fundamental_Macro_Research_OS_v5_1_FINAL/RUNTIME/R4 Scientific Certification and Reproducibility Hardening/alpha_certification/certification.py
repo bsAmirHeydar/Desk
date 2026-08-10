@@ -8,7 +8,7 @@ from .environment import inspect as inspect_environment
 def run(vault_root,profile='CORE'):
     v=Path(vault_root).resolve();profile=profile.upper();add_runtime_paths(v);cases=[]
     # inherited preflights
-    tools=[('R4-001','R1',v/'RUNTIME'/'R1 Foundation'/'tools'/'alpha_runtime.py',['--vault-root',str(v),'preflight']),('R4-002','R2',v/'RUNTIME'/'R2 Prompt Execution OS'/'tools'/'alpha_prompt_runtime.py',['preflight','--vault-root',str(v)]),('R4-003','R3',v/'RUNTIME'/'R3 Operational Execution and Learning OS'/'tools'/'alpha.py',['--vault-root',str(v),'preflight'])]
+    tools=[('R4-001','R1',v/'RUNTIME'/'R1 Foundation'/'tools'/'alpha_runtime.py',['--vault-root',str(v),'preflight']),('R4-002','R2',v/'RUNTIME'/'R2 Prompt Execution OS'/'tools'/'alpha_prompt_runtime.py',['preflight','--vault-root',str(v)]),('R4-003','R3',v/'RUNTIME'/'R3 Operational Execution and Learning OS'/'tools'/'alpha.py',['--vault-root',str(v),'preflight']),('R4-004','M1_METHOD',v/'RUNTIME'/'Core Research Method Kernel'/'tools'/'alpha_method.py',['--vault-root',str(v),'preflight'])]
     for cid,name,t,args in tools:
         q=run_tool([sys.executable,str(t),*args]);cases.append(case(cid,'INHERITED','PASS' if q.returncode==0 else 'FAIL',{'component':name,'tail':(q.stdout+q.stderr)[-5000:]}))
     fp=verify_fingerprint(v);cases.append(case('R4-033','DRIFT','PASS' if fp['pass'] else 'FAIL',fp))

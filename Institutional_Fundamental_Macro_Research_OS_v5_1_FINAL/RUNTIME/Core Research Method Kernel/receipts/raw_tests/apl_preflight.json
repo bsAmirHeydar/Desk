@@ -1,0 +1,411 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "scientific_v213",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "runtime_r4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "commissioning_c1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "apl_a_manifest",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "apl_a_selftest",
+      "pass": true,
+      "detail": {
+        "status": "PASS",
+        "passed": 26,
+        "total": 26,
+        "checks": [
+          {
+            "name": "process_count_8",
+            "pass": true
+          },
+          {
+            "name": "registry_valid",
+            "pass": true
+          },
+          {
+            "name": "zero_direction_authority",
+            "pass": true
+          },
+          {
+            "name": "zero_permission_authority",
+            "pass": true
+          },
+          {
+            "name": "no_direct_web",
+            "pass": true
+          },
+          {
+            "name": "shadow_only",
+            "pass": true
+          },
+          {
+            "name": "unknown_not_zero",
+            "pass": true
+          },
+          {
+            "name": "unavailable_not_absent",
+            "pass": true
+          },
+          {
+            "name": "proxy_not_direct",
+            "pass": true
+          },
+          {
+            "name": "same_root_one",
+            "pass": true
+          },
+          {
+            "name": "fragility_requires_stressor",
+            "pass": true
+          },
+          {
+            "name": "local_convexity_not_global",
+            "pass": true
+          },
+          {
+            "name": "optionality_not_free",
+            "pass": true
+          },
+          {
+            "name": "illusory_optionality",
+            "pass": true
+          },
+          {
+            "name": "invariant_survives_removals",
+            "pass": true
+          },
+          {
+            "name": "pack_hash_present",
+            "pass": true
+          },
+          {
+            "name": "taleb_696_inventory",
+            "pass": true
+          },
+          {
+            "name": "taleb_receipt_hash",
+            "pass": true
+          },
+          {
+            "name": "principles_scoped",
+            "pass": true
+          },
+          {
+            "name": "principles_reversal_field",
+            "pass": true
+          },
+          {
+            "name": "no_total_score_or_voting",
+            "pass": true
+          },
+          {
+            "name": "source_vault_not_copied",
+            "pass": true
+          },
+          {
+            "name": "runtime_r4",
+            "pass": true
+          },
+          {
+            "name": "commissioning_c1",
+            "pass": true
+          },
+          {
+            "name": "apl_hook_after_finalize",
+            "pass": true
+          },
+          {
+            "name": "core_no_apl_dependency",
+            "pass": true
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "name": "apl_a_data_parity",
+      "pass": true,
+      "detail": {
+        "schema_version": "1.0.0",
+        "status": "PASS",
+        "run_id": "RUN_APL_A_PARITY",
+        "mode": "APL_DISABLED_VS_APL_ENABLED_SHADOW",
+        "upstream_artifacts_before": {
+          "causal_graph": "sha256:cbdae35d1acb2ab239e1aeff336f192b1bf46b3c252b36cecbcd8a900df8f9f8",
+          "decision_evidence_pack": "sha256:a3e82f842f55fd2b74c4822a760bb8ea01e011a7bcf43e98d45d6e0216c5dc07",
+          "evidence_integrity_receipt": "sha256:cd01d2a6f4ad61b11920bdc7e427c220258c6fe8846a0ed8e3a201ec4c00f3d5",
+          "hypothesis_set": "sha256:bda7916be75f298978abfc3e80418530def61b96d1e78e41fe7ead5129ab18ca",
+          "market_state_reconciliation": "sha256:380ecd2d1ec52686778bf22355894cfac919aeb4772bf1c82ea40b02cf2cb1c2",
+          "root_channel_map": "sha256:8943dc6d4284f1202f07fbace03135071f8ae1b70d91d9b863b3c3977f181e5c",
+          "scenario_tree": "sha256:7451a3e0092aeddc2d609a1fde64d7daf820758f81567d09af9d7f6e9a885d3b"
+        },
+        "upstream_artifacts_after": {
+          "causal_graph": "sha256:cbdae35d1acb2ab239e1aeff336f192b1bf46b3c252b36cecbcd8a900df8f9f8",
+          "decision_evidence_pack": "sha256:a3e82f842f55fd2b74c4822a760bb8ea01e011a7bcf43e98d45d6e0216c5dc07",
+          "evidence_integrity_receipt": "sha256:cd01d2a6f4ad61b11920bdc7e427c220258c6fe8846a0ed8e3a201ec4c00f3d5",
+          "hypothesis_set": "sha256:bda7916be75f298978abfc3e80418530def61b96d1e78e41fe7ead5129ab18ca",
+          "market_state_reconciliation": "sha256:380ecd2d1ec52686778bf22355894cfac919aeb4772bf1c82ea40b02cf2cb1c2",
+          "root_channel_map": "sha256:8943dc6d4284f1202f07fbace03135071f8ae1b70d91d9b863b3c3977f181e5c",
+          "scenario_tree": "sha256:7451a3e0092aeddc2d609a1fde64d7daf820758f81567d09af9d7f6e9a885d3b"
+        },
+        "decision_seal_before": "sha256:db0c7b5cf4db8e0a091cb4b0927b94d6c1696b0d6cfabd03018d458ba0e6531a",
+        "decision_seal_after": "sha256:db0c7b5cf4db8e0a091cb4b0927b94d6c1696b0d6cfabd03018d458ba0e6531a",
+        "checks": [
+          {
+            "name": "upstream_hashes_identical",
+            "pass": true
+          },
+          {
+            "name": "entire_decision_world_identical",
+            "pass": true
+          },
+          {
+            "name": "decision_seal_identical",
+            "pass": true
+          },
+          {
+            "name": "apl_shadow_pass",
+            "pass": true
+          },
+          {
+            "name": "apl_outputs_learning_only",
+            "pass": true
+          }
+        ],
+        "learning_artifacts": [
+          "apl_a_forward_telemetry",
+          "apl_a_host_receipt_v01_scope_and_lens_router",
+          "apl_a_host_receipt_v02_epistemic_fragility_auditor",
+          "apl_a_host_receipt_v03_story_model_source_removal",
+          "apl_a_host_receipt_v04_invariant_and_unknowns_analyst",
+          "apl_a_host_receipt_v10_fragility_geometry",
+          "apl_a_host_receipt_v11_exposure_optionality_tail",
+          "apl_a_host_receipt_v12_network_common_mode_forced_actors",
+          "apl_a_host_receipt_v13_incentive_transfer_intervention",
+          "apl_a_shadow_bundle",
+          "apl_agency_intervention_map",
+          "apl_epistemic_perspective",
+          "apl_exposure_optionality_map",
+          "apl_fragility_map",
+          "apl_invariant_set",
+          "apl_lens_activation_receipt",
+          "apl_network_common_mode_map",
+          "apl_removal_audit",
+          "apl_research_requests",
+          "apl_unknowns_register"
+        ]
+      }
+    },
+    {
+      "name": "apl_a_behavioral_acceptance",
+      "pass": true,
+      "detail": {
+        "schema_version": "1.0.0",
+        "status": "PASS",
+        "passed": 30,
+        "total": 30,
+        "checks": [
+          {
+            "case_id": "APL-A-001",
+            "name": "UNKNOWN is not ZERO",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-002",
+            "name": "UNAVAILABLE is not ABSENT",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-003",
+            "name": "PROXY cannot satisfy DIRECT FACT",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-004",
+            "name": "Narrative repetition cannot become independent evidence",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-005",
+            "name": "Same-root sources remain one independent root",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-006",
+            "name": "Story Removal may weaken a thesis without deleting facts",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-007",
+            "name": "Model Removal cannot mutate original hypotheses",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-008",
+            "name": "Source Removal cannot mutate D1 evidence",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-009",
+            "name": "Invariant survives the stated removals",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-010",
+            "name": "Fragility classification requires stressor/scope/horizon",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-011",
+            "name": "Antifragile without a stressor is rejected",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-012",
+            "name": "Local convexity is not global convexity",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-013",
+            "name": "Curvature reversal can remain UNRESOLVED/unknown",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-014",
+            "name": "Optionality is not assumed free",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-015",
+            "name": "Apparent optionality can be ILLUSORY",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-016",
+            "name": "Network redundancy checks common upstream roots",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-017",
+            "name": "Fragility transfer identifies the tail carrier where evidence supports it",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-018",
+            "name": "Intervention analysis includes reversal/side-effect conditions",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-019",
+            "name": "No APL process creates Direction",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-020",
+            "name": "No APL process creates BUY/SELL",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-021",
+            "name": "No APL process directly retrieves web data",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-022",
+            "name": "Final production decision/world is identical with APL-A shadow enabled vs disabled",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-023",
+            "name": "APL can emit only governed research requests",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-024",
+            "name": "Taleb provenance survives to all load-bearing principle records",
+            "pass": true,
+            "detail": {
+              "principle_count": 33
+            }
+          },
+          {
+            "case_id": "APL-A-025",
+            "name": "No total Taleb/Perspective score or voting layer exists",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "case_id": "APL-A-026",
+            "name": "Taleb source vault remains external/read-only and is not vendored",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-027",
+            "name": "Complete 696-note Taleb extraction inventory exists",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-028",
+            "name": "All extraction records have explicit dispositions",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-029",
+            "name": "APL-A remains SHADOW_ONLY",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "case_id": "APL-A-030",
+            "name": "APL-A has no dependency from core P50-P63 decision path",
+            "pass": true,
+            "detail": null
+          }
+        ],
+        "errors": []
+      }
+    }
+  ],
+  "errors": []
+}

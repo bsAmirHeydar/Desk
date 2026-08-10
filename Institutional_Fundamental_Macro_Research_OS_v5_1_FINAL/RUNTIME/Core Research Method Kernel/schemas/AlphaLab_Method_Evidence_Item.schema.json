@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "availability_state": {
+      "enum": [
+        "AVAILABLE",
+        "UNAVAILABLE",
+        "UNDETERMINED",
+        "UNKNOWN",
+        "NOT_AVAILABLE",
+        "NOT_MEASURED"
+      ]
+    },
+    "dataset_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_class": {
+      "enum": [
+        "DIRECT_OBSERVATION",
+        "SOURCE_REPORT",
+        "MEASUREMENT",
+        "DERIVED",
+        "PROXY",
+        "MODEL_OUTPUT",
+        "NARRATIVE",
+        "CONTEXTUAL"
+      ]
+    },
+    "evidence_id": {
+      "type": "string"
+    },
+    "first_available_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "first_seen_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ingestion_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "materiality": {
+      "enum": [
+        "DECISION_CRITICAL",
+        "MATERIAL",
+        "SUPPORTING",
+        "CONTEXTUAL"
+      ]
+    },
+    "model_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "proxy_contract_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publication_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "relation": {
+      "enum": [
+        "SUPPORTING",
+        "CONTRADICTING",
+        "ORTHOGONAL",
+        "HORIZON_DEPENDENT",
+        "REGIME_DEPENDENT",
+        "UNRESOLVED"
+      ]
+    },
+    "root_source_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "value": {}
+  },
+  "required": [
+    "evidence_id",
+    "evidence_class",
+    "availability_state",
+    "materiality"
+  ],
+  "title": "AlphaLab Method Evidence Item",
+  "type": "object"
+}

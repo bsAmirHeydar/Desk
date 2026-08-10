@@ -13,14 +13,43 @@
     "shadow_production": "C1_RUNTIME_ATTESTATION_PENDING",
     "status": "ACTIVE"
   },
+  "commissioning": {
+    "broker_write_authority": "NONE",
+    "environment_certification": "PENDING_RUNTIME_ATTESTATION",
+    "model_host": "OPENAI_RESPONSES_GPT_5_6_SOL_MAX_ACCURACY_BINDING",
+    "production_ready": "NOT_AUTO_GRANTED",
+    "retrieval_host": "OPENAI_WEB_SEARCH_DOMAIN_GOVERNED",
+    "scientific_authority_added": "NONE",
+    "shadow_production_certification": "PENDING_RUNTIME_ATTESTATION",
+    "status": "INSTALLED_ENVIRONMENT_ATTESTATION_REQUIRED",
+    "version": "C1.0.0"
+  },
   "host_execution": {
+    "commissioned_default": "OPENAI_GPT_5_6_SOL",
     "fixture_production": "FORBIDDEN",
     "protocol": "R3_HOST_PROTOCOL_1.1.0",
     "provider_neutral": true,
-    "secrets": "ENVIRONMENT_ONLY",
-    "commissioned_default": "OPENAI_GPT_5_6_SOL"
+    "secrets": "ENVIRONMENT_ONLY"
   },
   "launchers": "R3_ACTIVE",
+  "method_kernel": {
+    "apl_a_boundary": "SHADOW_ONLY_UNCHANGED",
+    "apl_b": "NOT_IMPLEMENTED",
+    "architecture": "INVARIANT_CONSTITUTION_PLUS_ADAPTIVE_PROTOCOLS",
+    "artifact_world": "META",
+    "authority": {
+      "broker_write": "NONE",
+      "direction": "NONE",
+      "fact": "NONE",
+      "permission": "NONE"
+    },
+    "decision_world_mutation": "FORBIDDEN_FOR_VALID_RUNS",
+    "forward_validation": "REQUIRED_BEFORE_NEW_BEHAVIORAL_AUTHORITY",
+    "hard_invalidity": "PRESEAL_BLOCK_ONLY",
+    "new_direction_science": "NONE",
+    "status": "INSTALLED_ACTIVE_METHOD_GOVERNANCE_FORWARD_VALIDATION_REQUIRED",
+    "version": "M1.0.0"
+  },
   "operational_execution": {
     "authority": "BLOCK_ONLY",
     "default_handoff": "FILE_OUTBOX",
@@ -33,6 +62,21 @@
     "decision_outcome_firewall": "R1_ENFORCED",
     "promotion_registry_auto_write": false,
     "status": "ACTIVE"
+  },
+  "perspective_layer": {
+    "authority": {
+      "broker_write": "NONE",
+      "direction": "NONE",
+      "fact": "NONE",
+      "permission": "NONE"
+    },
+    "data_plane": "READ_ONLY",
+    "direct_retrieval": "FORBIDDEN",
+    "forward_validation": "REQUIRED_BEFORE_ANY_DECISION_INFLUENCE",
+    "process_count": 8,
+    "prompt_pack": "ALPHALAB_APL_PROMPT_PACK_1.0.0",
+    "status": "SHADOW_ONLY_ACTIVE",
+    "version": "APL-A 1.0.0"
   },
   "phases": {
     "0": "ARCHITECTURE_CONSTITUTION_COMPLETE",
@@ -85,31 +129,5 @@
     "pyc_required_for_verification": false,
     "python_314_supported_by_design": true,
     "sqlite_explicit_close": true
-  },
-  "commissioning": {
-    "version": "C1.0.0",
-    "status": "INSTALLED_ENVIRONMENT_ATTESTATION_REQUIRED",
-    "model_host": "OPENAI_RESPONSES_GPT_5_6_SOL_MAX_ACCURACY_BINDING",
-    "retrieval_host": "OPENAI_WEB_SEARCH_DOMAIN_GOVERNED",
-    "environment_certification": "PENDING_RUNTIME_ATTESTATION",
-    "shadow_production_certification": "PENDING_RUNTIME_ATTESTATION",
-    "production_ready": "NOT_AUTO_GRANTED",
-    "broker_write_authority": "NONE",
-    "scientific_authority_added": "NONE"
-  },
-  "perspective_layer": {
-    "version": "APL-A 1.0.0",
-    "status": "SHADOW_ONLY_ACTIVE",
-    "prompt_pack": "ALPHALAB_APL_PROMPT_PACK_1.0.0",
-    "process_count": 8,
-    "authority": {
-      "fact": "NONE",
-      "direction": "NONE",
-      "permission": "NONE",
-      "broker_write": "NONE"
-    },
-    "data_plane": "READ_ONLY",
-    "direct_retrieval": "FORBIDDEN",
-    "forward_validation": "REQUIRED_BEFORE_ANY_DECISION_INFLUENCE"
   }
 }

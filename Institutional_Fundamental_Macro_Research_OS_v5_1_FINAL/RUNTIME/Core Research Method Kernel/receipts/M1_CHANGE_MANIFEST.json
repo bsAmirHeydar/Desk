@@ -1,0 +1,486 @@
+{
+  "schema_version": "1.0.0",
+  "deployment": "M1_CORE_RESEARCH_METHOD_AND_EPISTEMOLOGY_HARDENING",
+  "method_version": "M1.0.0",
+  "summary": {
+    "added": 69,
+    "modified": 9,
+    "removed": 0,
+    "unchanged": 2932
+  },
+  "entries": [
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/CURRENT_PRODUCTION_MANIFEST.json",
+      "change": "MODIFIED",
+      "old_sha256": "sha256:d774842ab05b9f75ae7546796376a507ba78a8ba18a806bce79031c5bf3ece34",
+      "new_sha256": "sha256:d717ca48726f5a1ac3c36f9e7ba7d06589181bcbb16d775bf4bef77e302b877a"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/00 Alpha Runtime MOC.md",
+      "change": "MODIFIED",
+      "old_sha256": "sha256:e721c1a1404906559b32beac23bd52f06bbd55525342cee961a98096aa41007e",
+      "new_sha256": "sha256:06096da16eb05407ca6bbb39be9c82638e03989d51922b4d3317426f32841cc3"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/00 Core Research Method Kernel MOC.md",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:1a095448fa0fc009e8346f817643968b6c0b206b474839e620330eb41c665c60"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/01 Research Constitution.md",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:287d92c21befdd770009c44016976165de2be2915d18ce09cf63ce8e96deb8a9"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/02 Claim Ontology and Lifecycle.md",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:be33e9cebf6a2736b6ce2c39360525ea0edc9b4646b2bc8d86f501b609bbe142"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/03 Evidence Contract and Source Dependency.md",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:413b55a5e9d31afb878ff9bf9a212db96b2cb1607a67ba68c5320cd04aec39ce"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/04 Uncertainty and Precision Governance.md",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:9d4defdd61939787ab25d6e5a60a0152e19df0853315466c2701a01b534d9ec4"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/05 Causal Inference and Rival Hypothesis Contract.md",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:156a2b2f8649127cecd7e7288a20f41d696373227861b678c8f36b06f871cef8"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/06 Adaptive Protocol Router.md",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:217442ba2be2778932c944de111ef723ab7eefe022a7fb54457309e41005bdca"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/07 Method Receipts Exceptions and Quarantine.md",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:2c1dffc921f4be9e4ca0804bd434fe4b948631c19c14b5ecaa4abf09dca53933"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/08 Runtime Integration and Authority Boundary.md",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:7e554805a8bd535e0911427173eacbf52c8bab27f0890fdbb9c2da1c769f08bf"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/09 Validation Forward Evidence and Change Governance.md",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:bf68ed04393581aa0aa3075a9153faff4658ffc7c49eba349503658b3a2b5f02"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/METHOD_KERNEL_MANIFEST.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:c12e55a5820050be413eb5b5e0f224704cb2ad592c7eddafff016f75b36d5861"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/__init__.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:7b020cd3672ca32043fc2a086a1ed890911d7b2d530bb72397360b150a2915fa"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/acceptance.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:3a3c2218e9bab068200ccff51c77cbe1124bdd54844d2ae5bcab0c8190493bd8"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/cli.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:56574aa0ad0438d0b3974ae24c3f38912b5aafa349204760f316a8ec8b065377"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/evidence.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:62034e3f9e186bde46d6149d0c7d66acbffb236737aad7ad650e68d2abe8975d"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/integration.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:7246b60b63a419a4ee5f7ce2331510429a51d5f2d7098a8f69c43db0e6252da1"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/parity.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:979ff80c3b810b26099ad39425938a1bbd99fa284a43a4edb50eb08c93a17d93"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/plan.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:da9d18e614786ae0d092f89fdcb1a9ed1d6986e37cbd08de8f96f6ff21c9a0f9"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/preflight.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:d9e5abd64f1cfdefa807340615e9b6f247cf3f49c226d77c73857b243e965ade"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/registry.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:dd1dcdade210b1c75f2113dc9166c70764acd96440bc62a8480dfeb9f68c43af"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/router.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:89aabad7518f29f0143ce9c27156ee52e881e1218a797f1bc9154d5e4183fd76"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/selftest.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:7467c27c1406abbe837ccc1775bc88cff07c5560de137cc99152171008e2f695"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/util.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:ab97a12c833cc4d2572deea0c2ed99c7e3cb9700e5e2bb7629cab7d2bc9f240e"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/alpha_method_runtime/validator.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:b4ea5ace573323ab2b6a1220a2f643bfc4ca9cc3becd50ad886772afffb4cbf2"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/config/authority_policy.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:c320e994c82e20bd471bf8f27ba72bba16a95e25f43392d86bea92e8c353955f"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/config/protocol_registry.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:7106253980da125b13b260d122878a5bbd2ddafa02f2f817ce05bb247e11e510"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/config/research_constitution.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:6333fc1a06f068e59fcdeebddd497545c97fd2952ad4bf7b78bbcbade371e118"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/config/router_policy.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:cf80554b9b26468a2fc46b596e15cfc98636c1facce09de6b5f6bcc99730a5e7"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/config/validation_policy.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:91b7f6f53bf75cd83e09b14ba7accd5e89b881d1b72e4a28ea637b2b741fc077"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/M1_ARCHITECTURE_IMPLEMENTATION_REPORT.md",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:832289b97eaff59ba5866508032952800923cd987a2189db700974b22796ef39"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/M1_BASELINE_AND_TEST_REPORT.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:b7326c8010f413a3033214a19044050425f865d7e17ffb2b711b39babe97ae66"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/M1_CERTIFICATION_STATUS.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:fbbd4d145da7eb863ffc452e141900363c9d38165929530646c20b61bca71c4c"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/M1_CHANGE_MANIFEST.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "SELF_NOT_HASHED_TO_AVOID_CIRCULAR_MANIFEST"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/M1_FORWARD_VALIDATION_READINESS.md",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:97e1d5a5bce44cfd466191d2e8281b0194ce7b7aab81932769a2000b38d2054f"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/M1_TALEB_BOUNDARY_VERIFICATION.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:d2e6acea2cee638f0c968d4f928d7e2fd3e4762012e6e7a5ddb70267f3149ad5"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/apl_acceptance.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:cbea3d18413b8a8d29c63af4f27bf863930c4e7d49b14813e2983c101c70ad7a"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/apl_parity.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:3db2cfe4834a1d077e08afbc34af033ab3b462f38e8bd318b3935d7d0901bac2"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/apl_preflight.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:f4ce97948092b27c90c99e5391a6dabb4c48ccf8dfbcbe99ad779655e23b3e86"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/apl_selftest.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:cedc498f8b90e911b08670ae93a946d14f106a03c8010f1043a82d5c0484ff69"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/baseline_apl_acceptance.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:cbea3d18413b8a8d29c63af4f27bf863930c4e7d49b14813e2983c101c70ad7a"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/baseline_apl_parity.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:3db2cfe4834a1d077e08afbc34af033ab3b462f38e8bd318b3935d7d0901bac2"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/baseline_apl_selftest.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:cedc498f8b90e911b08670ae93a946d14f106a03c8010f1043a82d5c0484ff69"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/baseline_c1_selftest.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:aa3d2cc0084c50afaa1f6c0fa8dbb942b1d210bc29eff0cb2f746a20fd6b954f"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/baseline_r1_preflight.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:63f7e51e45cb3760a88d5e6ac7eb3693fcffc1b3bc311f1f5d05b74e4fbcd221"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/baseline_r2_preflight.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:1336a03c11830657c2f7b3bc95f01016229b1c6ebab6543a718794766aefab0d"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/baseline_r3_preflight.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:490dea22bd66fc819d43a242f07c2307f98fe490069adc7525062d1f25ece4d3"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/baseline_r4_core.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:45e4b1400f053c52492c8ea6a25383742e7f27f5daffee62a982455528af4531"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/c1_selftest.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:aa3d2cc0084c50afaa1f6c0fa8dbb942b1d210bc29eff0cb2f746a20fd6b954f"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/method_acceptance.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:559186b8b08c920d7d7f33a7680719d7cdbbd4a4a53add71c227ba4870aa23f4"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/method_parity.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:29883465aaec954f75c12f476cceb02ad3648dc3ea22e19df0d4301322bd2de4"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/method_preflight.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:136762b9495aeb9f15c56bb092dc3e2480e86c05dbd20d168b04e5e4961ca482"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/method_selftest.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:559186b8b08c920d7d7f33a7680719d7cdbbd4a4a53add71c227ba4870aa23f4"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/r1_preflight.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:63f7e51e45cb3760a88d5e6ac7eb3693fcffc1b3bc311f1f5d05b74e4fbcd221"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/r2_preflight.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:1027a85d08b28e67a2d0d3f3fd69eb9fea911b9c04886e84d6e6c50505efdb90"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/r3_preflight.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:2619542db657eec8f42c8d355e9ae2cb08ad903e3bef15210ed551069027aefb"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/r4_core.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:22c453caed3fc397e8f3dcea22b1f8f55d7c1197a14f0fef1f234c8bf82888b9"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/receipts/raw_tests/r4_preflight.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:1b10eef39945c2448473b24dacbe382b1a83c9cad6b636270a62634ccad88b5a"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Method_Claim.schema.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:bd5b383a450443cb85cd33ed7935b50c39c16693421dd66de8d9a0ea58f1405e"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Method_Evidence_Item.schema.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:a0bedc69e7719924b9f8d7370db357642694e272fecb9cf311abceaaf1c76eaa"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Method_Exception.schema.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:aeb7da9312520f06673c5745044d55cafbcb7e53cb5414a9a83aa1801a00f223"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Method_Plan.schema.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:4f4e33f9363677c733f71749d838c20387a19fab685149e23be5d6a5b5b2a189"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Method_Quarantine_Receipt.schema.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:e9fe4e260b498aa36c5190df14f472794b542e6e3a99cb42d4d09d1f8787888c"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Method_Receipt.schema.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:d257f03b2f8483f579cb48be15f3a1949585f5534a7c8e8962334012fee9db63"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Method_Source_Dependency_Graph.schema.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:f9745bb057218ebd06b10591b558f884433da8f854cc83ba6158de61c8c3c216"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Method_Uncertainty_Register.schema.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:cf1da9db359f79533440b1712387fa90ca5658639137f015c07110b4ed5437ad"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Model_Method_Card.schema.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:c19d9d05fbb8f151526dc05eef49076aab9c5e286beb96521ee7639164779844"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Proxy_Contract.schema.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:7a1ccfcbc06092b428712cd8febaf61fe5502ca9e0fca29613edd5e5a1023c54"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/tests/METHOD_ACCEPTANCE_CASES.json",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:2b0b68d17aba88da90efea1c70096d171910cb413edcc5c1a1773507e0ae7ec0"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/Core Research Method Kernel/tools/alpha_method.py",
+      "change": "ADDED",
+      "old_sha256": null,
+      "new_sha256": "sha256:d53433ecc215546091be36dda2a91f700fa9cf607ed17808b4a01ce9882373ea"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/R2 Prompt Execution OS/alpha_prompt_runtime/orchestrator.py",
+      "change": "MODIFIED",
+      "old_sha256": "sha256:8d0d09adbde958729b17ab7ffa9270844d640ca4b47d36f3299b4225da298fbe",
+      "new_sha256": "sha256:81431e4826a49c07f40f5272fb6fa69b538cea787c6c2229e48de50128ec5e79"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/R2 Prompt Execution OS/alpha_prompt_runtime/preflight.py",
+      "change": "MODIFIED",
+      "old_sha256": "sha256:a0a33c79a1092da621e3c47d04968bb931d1f1c29dee6f7e3a0bae1e8db065c1",
+      "new_sha256": "sha256:63b11be9b44629cfa78118f4b1deb3316e58d71ffa0e86e7685671be9d7f7689"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/R3 Operational Execution and Learning OS/alpha_operational_runtime/preflight.py",
+      "change": "MODIFIED",
+      "old_sha256": "sha256:14779962205c02dcc7d8e1418d6762ade512aa646c990deb088b3302d66ff60a",
+      "new_sha256": "sha256:5809acd7978644ec524228450abea707152be5ef2c520f53f9f4850a8402d9c9"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/R4 Scientific Certification and Reproducibility Hardening/alpha_certification/certification.py",
+      "change": "MODIFIED",
+      "old_sha256": "sha256:d3d4ee05031cbf801a30cec5dbdd988cb4c003690fc51adbd8602997c8c753a6",
+      "new_sha256": "sha256:7e78a0a02fa8abe458b3f9f141021a2010b6c642090a5f2f955e698431a94487"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/R4 Scientific Certification and Reproducibility Hardening/alpha_certification/util.py",
+      "change": "MODIFIED",
+      "old_sha256": "sha256:a4183aaf63a55d345c364d2c9094df79284f8f025b6e30cc32c036b23337fb5f",
+      "new_sha256": "sha256:76a64a38634249b3851616be467d010b10b691d07ffcd36aa9731a04f81a9fee"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/R4 Scientific Certification and Reproducibility Hardening/config/certification_surface_baseline.json",
+      "change": "MODIFIED",
+      "old_sha256": "sha256:5e70f2dfcc9c0fd99ee1f582f041a3f4465e092bd0abc19b31e0ac8d8b987196",
+      "new_sha256": "sha256:fd5b2f0c160572d883c479da884a72a33bd3e4762392ea19d9a8d7f31e3ab8c0"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/RUNTIME/RUNTIME_MANIFEST.json",
+      "change": "MODIFIED",
+      "old_sha256": "sha256:f188c11f8d2f94f913c19d0f3a74ecf234810bf66744808b0ee844b1e566a140",
+      "new_sha256": "sha256:da1da66b80da6f3e066879636b2e99708dce44f6a7ee17b97c4cabc1bf2467d8"
+    }
+  ],
+  "notes": [
+    "No authoritative file was removed.",
+    "Generated M1 receipts/raw test evidence are non-authoritative META/audit deliverables and are intentionally outside the R4 authoritative surface list.",
+    "The manifest does not hash itself to avoid a circular digest."
+  ]
+}

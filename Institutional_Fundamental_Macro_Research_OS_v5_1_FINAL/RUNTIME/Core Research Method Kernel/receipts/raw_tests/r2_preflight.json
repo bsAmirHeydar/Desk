@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "runtime": "R2.0.0",
+  "scientific_stack": "V21.3.0",
+  "checks": [
+    {
+      "name": "r2_selftest",
+      "pass": true,
+      "detail": {
+        "status": "PASS",
+        "checks": [
+          {
+            "name": "registry_25",
+            "pass": true
+          },
+          {
+            "name": "registry_integrity",
+            "pass": true
+          },
+          {
+            "name": "graph_acyclic",
+            "pass": true
+          },
+          {
+            "name": "independent_worker_count",
+            "pass": true
+          },
+          {
+            "name": "independent_worker_isolation",
+            "pass": true
+          },
+          {
+            "name": "direction_authority",
+            "pass": true
+          },
+          {
+            "name": "permission_authority",
+            "pass": true
+          },
+          {
+            "name": "full_vault_authority_coverage",
+            "pass": true
+          },
+          {
+            "name": "fact_families_16",
+            "pass": true
+          },
+          {
+            "name": "prompt_hash_sha256",
+            "pass": true
+          },
+          {
+            "name": "initial_ready_scope_only",
+            "pass": true
+          },
+          {
+            "name": "outcome_forbidden_all",
+            "pass": true
+          },
+          {
+            "name": "adversarial_predecision",
+            "pass": true
+          },
+          {
+            "name": "output_schemas_exist",
+            "pass": true
+          },
+          {
+            "name": "runtime_r2_active",
+            "pass": true
+          },
+          {
+            "name": "scientific_stack_v213",
+            "pass": true
+          },
+          {
+            "name": "zero_new_direction_authority",
+            "pass": true
+          },
+          {
+            "name": "zero_new_permission_authority",
+            "pass": true
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "name": "r1_preflight",
+      "pass": true,
+      "detail": "rage_policy.json\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:config/temporal_policy.json\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:config/lifecycle_policy.json\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:sql/catalog_schema.sql\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:tools/alpha_runtime.py\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"schema_count\",\n      \"pass\": true,\n      \"count\": 15\n    },\n    {\n      \"name\": \"runtime_python_syntax\",\n      \"pass\": true,\n      \"count\": 15\n    },\n    {\n      \"name\": \"r1_selftest\",\n      \"pass\": true,\n      \"detail\": {\n        \"status\": \"PASS\",\n        \"passed\": 26,\n        \"total\": 26,\n        \"checks\": [\n          {\n            \"name\": \"run_created\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"content_address_dedup\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"future_excluded\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"late_ingest_excluded\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"revision_selected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"no_silent_gap\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"official_archive_admissible\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"current_only_forbidden\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"outcome_firewall_preseal\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"decision_seal_created\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"decision_seal_verifies\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"decision_mutation_blocked\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"outcome_postseal_allowed\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"replay_visibility_parity\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"replay_snapshot_provenance\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"event_sequences_monotonic\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"sqlite_integrity\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"dst_ambiguity_rejected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"dst_nonexistent_time_rejected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"tamper_detected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"seal_reverifies_after_restore\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"ref_tamper_detected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"seal_reverifies_after_ref_restore\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"run_close_seal_created\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"run_close_seal_verifies\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"post_close_mutation_blocked\",\n            \"pass\": true,\n            \"message\": null\n          }\n        ]\n      }\n    }\n  ],\n  \"errors\": []\n}\n"
+    },
+    {
+      "name": "method_kernel_selftest",
+      "pass": true,
+      "detail": "{\n  \"status\": \"PASS\",\n  \"passed\": 33,\n  \"total\": 33,\n  \"checks\": [\n    {\n      \"name\": \"manifest_registry\",\n      \"pass\": true,\n      \"detail\": []\n    },\n    {\n      \"name\": \"route_1\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"route_2\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"route_3\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"route_4\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"route_5\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"route_6\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"route_7\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"route_8\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"route_9\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"route_10\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"route_11\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"route_12\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"route_13\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"plan_schema\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"r2_bootstrap_method_plan_meta\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"r2_method_no_extra_event\",\n      \"pass\": true,\n      \"detail\": {\n        \"before\": 1,\n        \"after\": 2\n      }\n    },\n    {\n      \"name\": \"adv_future_leakage\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"adv_same_root\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"adv_proxy_reification\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"adv_unknown_zero\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"adv_correlation_causation\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"adv_narrative_circularity\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"adv_regime_leakage\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"adv_contradiction_suppression\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"adv_fake_probability\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"adv_horizon_conflict_preserved\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"adv_exploratory_overfit\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"adv_valid_simple\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"no_direction_authority\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"no_permission_authority\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"no_apl_b\",\n      \"pass\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"meta_world\",\n      \"pass\": true,\n      \"detail\": null\n    }\n  ],\n  \"errors\": []\n}\n"
+    },
+    {
+      "name": "scientific_stack_and_entrypoint",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

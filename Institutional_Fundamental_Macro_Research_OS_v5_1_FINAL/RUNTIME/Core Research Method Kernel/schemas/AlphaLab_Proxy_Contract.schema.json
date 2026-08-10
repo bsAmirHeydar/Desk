@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "alternative_proxies": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "expected_relationship": {
+      "type": "string"
+    },
+    "horizons": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "known_break_conditions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "latent_target": {
+      "type": "string"
+    },
+    "proxy_contract_id": {
+      "type": "string"
+    },
+    "proxy_variable": {
+      "type": "string"
+    },
+    "regime_sensitivity": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "validation_evidence": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "proxy_contract_id",
+    "latent_target",
+    "proxy_variable",
+    "expected_relationship",
+    "domain",
+    "horizons",
+    "known_break_conditions",
+    "validation_evidence"
+  ],
+  "type": "object"
+}

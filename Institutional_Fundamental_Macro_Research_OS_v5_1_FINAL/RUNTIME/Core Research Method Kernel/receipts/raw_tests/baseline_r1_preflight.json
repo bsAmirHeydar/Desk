@@ -1,0 +1,187 @@
+{
+  "status": "PASS",
+  "runtime": "R1.0.0",
+  "scientific_stack": "V21.3.0",
+  "checks": [
+    {
+      "name": "exists:00 R1 Foundation MOC.md",
+      "pass": true
+    },
+    {
+      "name": "exists:config/runtime_policy.json",
+      "pass": true
+    },
+    {
+      "name": "exists:config/storage_policy.json",
+      "pass": true
+    },
+    {
+      "name": "exists:config/temporal_policy.json",
+      "pass": true
+    },
+    {
+      "name": "exists:config/lifecycle_policy.json",
+      "pass": true
+    },
+    {
+      "name": "exists:sql/catalog_schema.sql",
+      "pass": true
+    },
+    {
+      "name": "exists:tools/alpha_runtime.py",
+      "pass": true
+    },
+    {
+      "name": "schema_count",
+      "pass": true,
+      "count": 15
+    },
+    {
+      "name": "runtime_python_syntax",
+      "pass": true,
+      "count": 15
+    },
+    {
+      "name": "r1_selftest",
+      "pass": true,
+      "detail": {
+        "status": "PASS",
+        "passed": 26,
+        "total": 26,
+        "checks": [
+          {
+            "name": "run_created",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "content_address_dedup",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "future_excluded",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "late_ingest_excluded",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "revision_selected",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "no_silent_gap",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "official_archive_admissible",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "current_only_forbidden",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "outcome_firewall_preseal",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "decision_seal_created",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "decision_seal_verifies",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "decision_mutation_blocked",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "outcome_postseal_allowed",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "replay_visibility_parity",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "replay_snapshot_provenance",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "event_sequences_monotonic",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "sqlite_integrity",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "dst_ambiguity_rejected",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "dst_nonexistent_time_rejected",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "tamper_detected",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "seal_reverifies_after_restore",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "ref_tamper_detected",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "seal_reverifies_after_ref_restore",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "run_close_seal_created",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "run_close_seal_verifies",
+            "pass": true,
+            "message": null
+          },
+          {
+            "name": "post_close_mutation_blocked",
+            "pass": true,
+            "message": null
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

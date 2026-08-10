@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "applicable_assets": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "applicable_horizons": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "applicable_regimes": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "assumptions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "calibration_period": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "inputs": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "known_failure_modes": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "last_validation_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_class": {
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "model_version": {
+      "type": "string"
+    },
+    "output_type": {
+      "type": "string"
+    },
+    "point_in_time_restrictions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "retirement_criteria": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "target": {
+      "type": "string"
+    },
+    "training_period": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "validation_state": {
+      "enum": [
+        "UNVALIDATED",
+        "BACKTESTED",
+        "PSEUDO_OUT_OF_SAMPLE",
+        "FORWARD_SHADOW",
+        "PRODUCTION_VALIDATED",
+        "DEGRADED",
+        "RETIRED"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "model_id",
+    "model_version",
+    "purpose",
+    "model_class",
+    "inputs",
+    "target",
+    "output_type",
+    "assumptions",
+    "known_failure_modes",
+    "point_in_time_restrictions",
+    "validation_state"
+  ],
+  "type": "object"
+}

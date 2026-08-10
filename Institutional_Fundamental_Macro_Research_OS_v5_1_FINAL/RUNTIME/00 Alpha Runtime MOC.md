@@ -57,3 +57,12 @@ Run data are not canonical Vault knowledge and must not be committed to the scie
 - Commissioning: `C1.0.0`
 - Default production model host: OpenAI Responses API / GPT-5.6 Sol, explicit environment binding.
 - Environment and shadow certifications remain runtime receipts outside Git until actually executed.
+## M1 — Core Research Method & Epistemology Kernel
+
+- [[Core Research Method Kernel/00 Core Research Method Kernel MOC]]
+- Version: `M1.0.0`.
+- Architecture: invariant scientific constitution + adaptive research protocols.
+- Runtime artifacts: META world only for valid runs; no Direction/permission authority.
+- Hard methodological violations may block a run before Decision Seal; they do not create a substitute decision.
+- APL-A remains shadow-only; APL-B is not installed.
+

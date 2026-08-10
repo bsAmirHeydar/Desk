@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "calibration_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "circular_validation": {
+      "type": "boolean"
+    },
+    "claim_id": {
+      "type": "string"
+    },
+    "claim_type": {
+      "enum": [
+        "OBSERVATION",
+        "SOURCE_REPORT",
+        "MEASUREMENT",
+        "DERIVED_DATUM",
+        "ESTIMATE",
+        "PROXY",
+        "MODEL_OUTPUT",
+        "EMPIRICAL_ASSOCIATION",
+        "CAUSAL_HYPOTHESIS",
+        "MECHANISM_CLAIM",
+        "NARRATIVE_CLAIM",
+        "REGIME_CLAIM",
+        "FORECAST",
+        "CONDITIONAL_FORECAST",
+        "SCENARIO",
+        "EXPERT_JUDGMENT",
+        "DECISION_RULE_OUTPUT",
+        "UNKNOWN",
+        "UNRESOLVED",
+        "NOT_IDENTIFIED"
+      ]
+    },
+    "contradictory_evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "directness": {
+      "enum": [
+        "DIRECT",
+        "INDIRECT",
+        "PROXY",
+        "MODEL_DERIVED",
+        "NARRATIVE",
+        "CONTEXTUAL"
+      ]
+    },
+    "discovered_post_search": {
+      "type": "boolean"
+    },
+    "evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "horizon": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "identification_state": {
+      "enum": [
+        "IDENTIFIED",
+        "PARTIALLY_IDENTIFIED",
+        "MECHANISM_SUPPORTED_NOT_IDENTIFIED",
+        "NOT_IDENTIFIED",
+        "UNDETERMINED"
+      ]
+    },
+    "lifecycle_state": {
+      "enum": [
+        "PROPOSED",
+        "ACTIVE",
+        "SUPPORTED",
+        "CHALLENGED",
+        "WEAKENED",
+        "DEGRADED",
+        "SUPERSEDED",
+        "FALSIFIED",
+        "RETIRED",
+        "UNRESOLVED"
+      ]
+    },
+    "mechanism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "probability": {
+      "maximum": 1,
+      "minimum": 0,
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "probability_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "regime_label_available_at_cutoff": {
+      "type": "boolean"
+    },
+    "research_mode": {
+      "enum": [
+        "EXPLORATORY",
+        "CONFIRMATORY",
+        "OPERATIONAL"
+      ]
+    },
+    "search_space_size": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "statement": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "claim_id",
+    "claim_type",
+    "lifecycle_state",
+    "statement"
+  ],
+  "title": "AlphaLab Method Claim",
+  "type": "object"
+}

@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "passed": 26,
+  "total": 26,
+  "checks": [
+    {
+      "name": "process_count_8",
+      "pass": true
+    },
+    {
+      "name": "registry_valid",
+      "pass": true
+    },
+    {
+      "name": "zero_direction_authority",
+      "pass": true
+    },
+    {
+      "name": "zero_permission_authority",
+      "pass": true
+    },
+    {
+      "name": "no_direct_web",
+      "pass": true
+    },
+    {
+      "name": "shadow_only",
+      "pass": true
+    },
+    {
+      "name": "unknown_not_zero",
+      "pass": true
+    },
+    {
+      "name": "unavailable_not_absent",
+      "pass": true
+    },
+    {
+      "name": "proxy_not_direct",
+      "pass": true
+    },
+    {
+      "name": "same_root_one",
+      "pass": true
+    },
+    {
+      "name": "fragility_requires_stressor",
+      "pass": true
+    },
+    {
+      "name": "local_convexity_not_global",
+      "pass": true
+    },
+    {
+      "name": "optionality_not_free",
+      "pass": true
+    },
+    {
+      "name": "illusory_optionality",
+      "pass": true
+    },
+    {
+      "name": "invariant_survives_removals",
+      "pass": true
+    },
+    {
+      "name": "pack_hash_present",
+      "pass": true
+    },
+    {
+      "name": "taleb_696_inventory",
+      "pass": true
+    },
+    {
+      "name": "taleb_receipt_hash",
+      "pass": true
+    },
+    {
+      "name": "principles_scoped",
+      "pass": true
+    },
+    {
+      "name": "principles_reversal_field",
+      "pass": true
+    },
+    {
+      "name": "no_total_score_or_voting",
+      "pass": true
+    },
+    {
+      "name": "source_vault_not_copied",
+      "pass": true
+    },
+    {
+      "name": "runtime_r4",
+      "pass": true
+    },
+    {
+      "name": "commissioning_c1",
+      "pass": true
+    },
+    {
+      "name": "apl_hook_after_finalize",
+      "pass": true
+    },
+    {
+      "name": "core_no_apl_dependency",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

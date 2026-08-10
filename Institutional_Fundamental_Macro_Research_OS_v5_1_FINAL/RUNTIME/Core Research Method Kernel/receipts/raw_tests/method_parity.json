@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PASS",
+  "mode": "METHOD_DISABLED_VS_METHOD_ENABLED_META_ONLY",
+  "checks": [
+    {
+      "name": "decision_world_identical",
+      "pass": true
+    },
+    {
+      "name": "event_sequence_identical",
+      "pass": true
+    },
+    {
+      "name": "method_artifacts_meta_only",
+      "pass": true
+    },
+    {
+      "name": "no_method_decision_authority",
+      "pass": true
+    }
+  ],
+  "decision_artifacts_before": {
+    "decision_evidence_pack": "sha256:a3da26fd8a66ad50d5ca13a1edac88baca63566da586df5429fac0c9b7ba9f70",
+    "final_permission": "sha256:316643dcad838adf2634cdc9262929d67166e987a0e644daa970f618d2890abb",
+    "hypothesis_set": "sha256:bdd5cdc0b328d163bbb0b9b11f3f072cf5ed080c10942b89cce21b00029536d7",
+    "market_state_reconciliation": "sha256:7545f9a67afcd16891019e720824179c9ceb3f76e0ca150a11869b30d4f32660"
+  },
+  "decision_artifacts_after": {
+    "decision_evidence_pack": "sha256:a3da26fd8a66ad50d5ca13a1edac88baca63566da586df5429fac0c9b7ba9f70",
+    "final_permission": "sha256:316643dcad838adf2634cdc9262929d67166e987a0e644daa970f618d2890abb",
+    "hypothesis_set": "sha256:bdd5cdc0b328d163bbb0b9b11f3f072cf5ed080c10942b89cce21b00029536d7",
+    "market_state_reconciliation": "sha256:7545f9a67afcd16891019e720824179c9ceb3f76e0ca150a11869b30d4f32660"
+  },
+  "event_sequence_before": 5,
+  "event_sequence_after": 5
+}

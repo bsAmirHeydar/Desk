@@ -1,0 +1,60 @@
+{
+  "causal_identification_states": [
+    "IDENTIFIED",
+    "PARTIALLY_IDENTIFIED",
+    "MECHANISM_SUPPORTED_NOT_IDENTIFIED",
+    "NOT_IDENTIFIED",
+    "UNDETERMINED"
+  ],
+  "decision_materiality": [
+    "DECISION_CRITICAL",
+    "MATERIAL",
+    "SUPPORTING",
+    "CONTEXTUAL"
+  ],
+  "evidence_relations": [
+    "SUPPORTING",
+    "CONTRADICTING",
+    "ORTHOGONAL",
+    "HORIZON_DEPENDENT",
+    "REGIME_DEPENDENT",
+    "UNRESOLVED"
+  ],
+  "legacy_compatibility": "WARN_ON_NEW_METADATA_GAPS_HARD_FAIL_ONLY_EXPLICIT_INVARIANT_BREACH",
+  "probability_types": [
+    "CALIBRATED_PROBABILITY",
+    "ESTIMATED_PROBABILITY",
+    "MODEL_IMPLIED_PROBABILITY",
+    "SCENARIO_WEIGHT",
+    "ORDINAL_CONFIDENCE",
+    "EXPERT_JUDGMENT",
+    "UNKNOWN_PROBABILITY"
+  ],
+  "research_modes": [
+    "EXPLORATORY",
+    "CONFIRMATORY",
+    "OPERATIONAL"
+  ],
+  "time_fields": [
+    "publication_time",
+    "first_available_time",
+    "first_seen_time",
+    "ingestion_time",
+    "ingested_at"
+  ],
+  "uncertainty_types": [
+    "MEASUREMENT",
+    "DATA",
+    "EPISTEMIC",
+    "MODEL",
+    "PARAMETER",
+    "STRUCTURAL",
+    "REGIME",
+    "REFLEXIVE",
+    "NARRATIVE",
+    "TIMING",
+    "TAIL",
+    "DEEP"
+  ],
+  "version": "1.0.0"
+}

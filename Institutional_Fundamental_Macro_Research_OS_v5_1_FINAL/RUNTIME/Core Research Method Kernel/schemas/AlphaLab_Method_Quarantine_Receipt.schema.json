@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "created_at_utc": {
+      "type": "string"
+    },
+    "reason_codes": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "repair_conditions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "reversible": {
+      "const": true
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "status": {
+      "const": "OUTPUT_QUARANTINED"
+    }
+  },
+  "required": [
+    "schema_version",
+    "run_id",
+    "status",
+    "reason_codes",
+    "reversible",
+    "repair_conditions"
+  ],
+  "type": "object"
+}

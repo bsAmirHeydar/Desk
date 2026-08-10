@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "items": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "decision_materiality": {
+            "enum": [
+              "DECISION_CRITICAL",
+              "MATERIAL",
+              "SUPPORTING",
+              "CONTEXTUAL"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "LOW",
+              "MODERATE",
+              "HIGH",
+              "UNRESOLVED",
+              "UNKNOWN",
+              "NOT_IDENTIFIED"
+            ]
+          },
+          "type": {
+            "enum": [
+              "MEASUREMENT",
+              "DATA",
+              "EPISTEMIC",
+              "MODEL",
+              "PARAMETER",
+              "STRUCTURAL",
+              "REGIME",
+              "REFLEXIVE",
+              "NARRATIVE",
+              "TIMING",
+              "TAIL",
+              "DEEP"
+            ]
+          },
+          "uncertainty_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "uncertainty_id",
+          "type",
+          "state"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "run_id",
+    "items"
+  ],
+  "title": "AlphaLab Method Uncertainty Register",
+  "type": "object"
+}

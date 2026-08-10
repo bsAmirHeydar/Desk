@@ -16,7 +16,7 @@ def sha256_bytes(b): return 'sha256:'+hashlib.sha256(b).hexdigest()
 def sha256_obj(x): return sha256_bytes(json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode('utf-8'))
 def add_runtime_paths(v):
     v=Path(v)
-    for rel in ('RUNTIME/R1 Foundation','RUNTIME/R2 Prompt Execution OS','RUNTIME/R3 Operational Execution and Learning OS','RUNTIME/R4 Scientific Certification and Reproducibility Hardening'):
+    for rel in ('RUNTIME/R1 Foundation','RUNTIME/R2 Prompt Execution OS','RUNTIME/R3 Operational Execution and Learning OS','RUNTIME/R4 Scientific Certification and Reproducibility Hardening','RUNTIME/Core Research Method Kernel'):
         p=str(v/rel)
         if p not in sys.path:sys.path.insert(0,p)
 def run_tool(cmd):

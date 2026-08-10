@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "active_horizon": {
+      "type": "string"
+    },
+    "alternative_protocols": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "asset_family": {
+      "type": "string"
+    },
+    "authority": {
+      "const": "METHOD_GOVERNANCE_ONLY"
+    },
+    "created_at_utc": {
+      "type": "string"
+    },
+    "invalidation_criteria": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "invariants": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "method_version": {
+      "const": "M1.0.0"
+    },
+    "minimum_evidence": {
+      "type": "string"
+    },
+    "protocol_id": {
+      "type": "string"
+    },
+    "required_evidence": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "research_class": {
+      "enum": [
+        "DESCRIPTIVE_STATE_ESTIMATION",
+        "EVENT_ANALYSIS",
+        "CAUSAL_ATTRIBUTION",
+        "DIRECTIONAL_FORECAST",
+        "PERSISTENCE_REVERSAL",
+        "NARRATIVE_ATTENTION",
+        "REGIME_ANALYSIS",
+        "STRUCTURAL_LONG_HORIZON_THESIS",
+        "CROSS_SECTIONAL_RELATIVE_VALUE",
+        "EXPOSURE_RISK_ANALYSIS",
+        "MODEL_VALIDATION",
+        "ANOMALY_FAILURE_INVESTIGATION",
+        "NEW_ASSET_RESEARCH"
+      ]
+    },
+    "rigor_tier": {
+      "enum": [
+        "LIGHT",
+        "STANDARD",
+        "DEEP",
+        "CRITICAL"
+      ]
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "selection_basis": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "update_cadence": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "method_version",
+    "run_id",
+    "research_class",
+    "protocol_id",
+    "selection_basis",
+    "rigor_tier",
+    "asset_family",
+    "active_horizon",
+    "invariants",
+    "required_evidence",
+    "minimum_evidence",
+    "update_cadence",
+    "invalidation_criteria",
+    "authority"
+  ],
+  "title": "AlphaLab Method Plan",
+  "type": "object"
+}

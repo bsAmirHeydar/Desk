@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "approving_authority": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created_at_utc": {
+      "type": "string"
+    },
+    "default_rule": {
+      "type": "string"
+    },
+    "exception_id": {
+      "type": "string"
+    },
+    "expected_risk": {
+      "type": "string"
+    },
+    "expires_at_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hard_invariant_relaxed": {
+      "const": false
+    },
+    "reason": {
+      "type": "string"
+    },
+    "relaxed_rule": {
+      "type": "string"
+    },
+    "review_condition": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "scope": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "exception_id",
+    "default_rule",
+    "relaxed_rule",
+    "reason",
+    "scope",
+    "expected_risk",
+    "created_at_utc",
+    "review_condition"
+  ],
+  "type": "object"
+}

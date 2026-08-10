@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PASS",
+  "run_id": "RUN_APL_A_PARITY",
+  "mode": "APL_DISABLED_VS_APL_ENABLED_SHADOW",
+  "upstream_artifacts_before": {
+    "causal_graph": "sha256:cbdae35d1acb2ab239e1aeff336f192b1bf46b3c252b36cecbcd8a900df8f9f8",
+    "decision_evidence_pack": "sha256:a3e82f842f55fd2b74c4822a760bb8ea01e011a7bcf43e98d45d6e0216c5dc07",
+    "evidence_integrity_receipt": "sha256:cd01d2a6f4ad61b11920bdc7e427c220258c6fe8846a0ed8e3a201ec4c00f3d5",
+    "hypothesis_set": "sha256:bda7916be75f298978abfc3e80418530def61b96d1e78e41fe7ead5129ab18ca",
+    "market_state_reconciliation": "sha256:380ecd2d1ec52686778bf22355894cfac919aeb4772bf1c82ea40b02cf2cb1c2",
+    "root_channel_map": "sha256:8943dc6d4284f1202f07fbace03135071f8ae1b70d91d9b863b3c3977f181e5c",
+    "scenario_tree": "sha256:7451a3e0092aeddc2d609a1fde64d7daf820758f81567d09af9d7f6e9a885d3b"
+  },
+  "upstream_artifacts_after": {
+    "causal_graph": "sha256:cbdae35d1acb2ab239e1aeff336f192b1bf46b3c252b36cecbcd8a900df8f9f8",
+    "decision_evidence_pack": "sha256:a3e82f842f55fd2b74c4822a760bb8ea01e011a7bcf43e98d45d6e0216c5dc07",
+    "evidence_integrity_receipt": "sha256:cd01d2a6f4ad61b11920bdc7e427c220258c6fe8846a0ed8e3a201ec4c00f3d5",
+    "hypothesis_set": "sha256:bda7916be75f298978abfc3e80418530def61b96d1e78e41fe7ead5129ab18ca",
+    "market_state_reconciliation": "sha256:380ecd2d1ec52686778bf22355894cfac919aeb4772bf1c82ea40b02cf2cb1c2",
+    "root_channel_map": "sha256:8943dc6d4284f1202f07fbace03135071f8ae1b70d91d9b863b3c3977f181e5c",
+    "scenario_tree": "sha256:7451a3e0092aeddc2d609a1fde64d7daf820758f81567d09af9d7f6e9a885d3b"
+  },
+  "decision_seal_before": "sha256:db0c7b5cf4db8e0a091cb4b0927b94d6c1696b0d6cfabd03018d458ba0e6531a",
+  "decision_seal_after": "sha256:db0c7b5cf4db8e0a091cb4b0927b94d6c1696b0d6cfabd03018d458ba0e6531a",
+  "checks": [
+    {
+      "name": "upstream_hashes_identical",
+      "pass": true
+    },
+    {
+      "name": "entire_decision_world_identical",
+      "pass": true
+    },
+    {
+      "name": "decision_seal_identical",
+      "pass": true
+    },
+    {
+      "name": "apl_shadow_pass",
+      "pass": true
+    },
+    {
+      "name": "apl_outputs_learning_only",
+      "pass": true
+    }
+  ],
+  "learning_artifacts": [
+    "apl_a_forward_telemetry",
+    "apl_a_host_receipt_v01_scope_and_lens_router",
+    "apl_a_host_receipt_v02_epistemic_fragility_auditor",
+    "apl_a_host_receipt_v03_story_model_source_removal",
+    "apl_a_host_receipt_v04_invariant_and_unknowns_analyst",
+    "apl_a_host_receipt_v10_fragility_geometry",
+    "apl_a_host_receipt_v11_exposure_optionality_tail",
+    "apl_a_host_receipt_v12_network_common_mode_forced_actors",
+    "apl_a_host_receipt_v13_incentive_transfer_intervention",
+    "apl_a_shadow_bundle",
+    "apl_agency_intervention_map",
+    "apl_epistemic_perspective",
+    "apl_exposure_optionality_map",
+    "apl_fragility_map",
+    "apl_invariant_set",
+    "apl_lens_activation_receipt",
+    "apl_network_common_mode_map",
+    "apl_removal_audit",
+    "apl_research_requests",
+    "apl_unknowns_register"
+  ]
+}

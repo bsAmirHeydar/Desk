@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "created_at_utc": {
+      "type": "string"
+    },
+    "decision_authority": {
+      "const": "NONE"
+    },
+    "decision_world_mutated": {
+      "const": false
+    },
+    "findings": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "claim_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "code": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "hard": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string"
+          },
+          "severity": {
+            "enum": [
+              "INFO",
+              "WARNING",
+              "RESEARCH_REQUIRED",
+              "METHOD_INVALID",
+              "OUTPUT_QUARANTINED"
+            ]
+          }
+        },
+        "required": [
+          "code",
+          "severity",
+          "hard",
+          "message"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "hard_failure_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "method_version": {
+      "const": "M1.0.0"
+    },
+    "phase": {
+      "enum": [
+        "PLAN",
+        "EVIDENCE",
+        "COGNITION",
+        "PRE_DECISION",
+        "AD_HOC"
+      ]
+    },
+    "protocol_id": {
+      "type": "string"
+    },
+    "research_class": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "source_dependency_graph": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "WARNING",
+        "RESEARCH_REQUIRED",
+        "METHOD_INVALID",
+        "OUTPUT_QUARANTINED"
+      ]
+    },
+    "uncertainty_summary": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "method_version",
+    "run_id",
+    "phase",
+    "status",
+    "research_class",
+    "protocol_id",
+    "findings",
+    "hard_failure_count",
+    "decision_authority",
+    "decision_world_mutated"
+  ],
+  "type": "object"
+}

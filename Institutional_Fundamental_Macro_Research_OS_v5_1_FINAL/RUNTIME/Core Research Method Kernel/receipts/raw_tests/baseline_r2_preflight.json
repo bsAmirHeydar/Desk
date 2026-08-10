@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "runtime": "R2.0.0",
+  "scientific_stack": "V21.3.0",
+  "checks": [
+    {
+      "name": "r2_selftest",
+      "pass": true,
+      "detail": {
+        "status": "PASS",
+        "checks": [
+          {
+            "name": "registry_25",
+            "pass": true
+          },
+          {
+            "name": "registry_integrity",
+            "pass": true
+          },
+          {
+            "name": "graph_acyclic",
+            "pass": true
+          },
+          {
+            "name": "independent_worker_count",
+            "pass": true
+          },
+          {
+            "name": "independent_worker_isolation",
+            "pass": true
+          },
+          {
+            "name": "direction_authority",
+            "pass": true
+          },
+          {
+            "name": "permission_authority",
+            "pass": true
+          },
+          {
+            "name": "full_vault_authority_coverage",
+            "pass": true
+          },
+          {
+            "name": "fact_families_16",
+            "pass": true
+          },
+          {
+            "name": "prompt_hash_sha256",
+            "pass": true
+          },
+          {
+            "name": "initial_ready_scope_only",
+            "pass": true
+          },
+          {
+            "name": "outcome_forbidden_all",
+            "pass": true
+          },
+          {
+            "name": "adversarial_predecision",
+            "pass": true
+          },
+          {
+            "name": "output_schemas_exist",
+            "pass": true
+          },
+          {
+            "name": "runtime_r2_active",
+            "pass": true
+          },
+          {
+            "name": "scientific_stack_v213",
+            "pass": true
+          },
+          {
+            "name": "zero_new_direction_authority",
+            "pass": true
+          },
+          {
+            "name": "zero_new_permission_authority",
+            "pass": true
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "name": "r1_preflight",
+      "pass": true,
+      "detail": "rage_policy.json\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:config/temporal_policy.json\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:config/lifecycle_policy.json\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:sql/catalog_schema.sql\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:tools/alpha_runtime.py\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"schema_count\",\n      \"pass\": true,\n      \"count\": 15\n    },\n    {\n      \"name\": \"runtime_python_syntax\",\n      \"pass\": true,\n      \"count\": 15\n    },\n    {\n      \"name\": \"r1_selftest\",\n      \"pass\": true,\n      \"detail\": {\n        \"status\": \"PASS\",\n        \"passed\": 26,\n        \"total\": 26,\n        \"checks\": [\n          {\n            \"name\": \"run_created\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"content_address_dedup\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"future_excluded\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"late_ingest_excluded\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"revision_selected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"no_silent_gap\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"official_archive_admissible\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"current_only_forbidden\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"outcome_firewall_preseal\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"decision_seal_created\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"decision_seal_verifies\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"decision_mutation_blocked\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"outcome_postseal_allowed\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"replay_visibility_parity\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"replay_snapshot_provenance\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"event_sequences_monotonic\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"sqlite_integrity\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"dst_ambiguity_rejected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"dst_nonexistent_time_rejected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"tamper_detected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"seal_reverifies_after_restore\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"ref_tamper_detected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"seal_reverifies_after_ref_restore\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"run_close_seal_created\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"run_close_seal_verifies\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"post_close_mutation_blocked\",\n            \"pass\": true,\n            \"message\": null\n          }\n        ]\n      }\n    }\n  ],\n  \"errors\": []\n}\n"
+    },
+    {
+      "name": "scientific_stack_and_entrypoint",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

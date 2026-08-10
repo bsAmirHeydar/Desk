@@ -1,0 +1,378 @@
+{
+  "schema_version": "1.0.0",
+  "certification_id": "CERT_0C6D5C6ADF9441CFADB2",
+  "profile": "CORE",
+  "status": "PASS",
+  "classification": "CORE_CERTIFIED",
+  "scientific_stack": "V21.3.0",
+  "runtime": "R4.0.0",
+  "surface_fingerprint": "sha256:1907e99708730e7f81b1bfe32789c520a89a9e8f9b5d9442569bbbb1d728e758",
+  "cases": [
+    {
+      "case_id": "R4-001",
+      "category": "INHERITED",
+      "hard": true,
+      "status": "PASS",
+      "detail": {
+        "component": "R1",
+        "tail": "{\n  \"status\": \"PASS\",\n  \"runtime\": \"R1.0.0\",\n  \"scientific_stack\": \"V21.3.0\",\n  \"checks\": [\n    {\n      \"name\": \"exists:00 R1 Foundation MOC.md\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:config/runtime_policy.json\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:config/storage_policy.json\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:config/temporal_policy.json\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:config/lifecycle_policy.json\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:sql/catalog_schema.sql\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"exists:tools/alpha_runtime.py\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"schema_count\",\n      \"pass\": true,\n      \"count\": 15\n    },\n    {\n      \"name\": \"runtime_python_syntax\",\n      \"pass\": true,\n      \"count\": 15\n    },\n    {\n      \"name\": \"r1_selftest\",\n      \"pass\": true,\n      \"detail\": {\n        \"status\": \"PASS\",\n        \"passed\": 26,\n        \"total\": 26,\n        \"checks\": [\n          {\n            \"name\": \"run_created\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"content_address_dedup\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"future_excluded\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"late_ingest_excluded\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"revision_selected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"no_silent_gap\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"official_archive_admissible\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"current_only_forbidden\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"outcome_firewall_preseal\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"decision_seal_created\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"decision_seal_verifies\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"decision_mutation_blocked\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"outcome_postseal_allowed\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"replay_visibility_parity\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"replay_snapshot_provenance\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"event_sequences_monotonic\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"sqlite_integrity\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"dst_ambiguity_rejected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"dst_nonexistent_time_rejected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"tamper_detected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"seal_reverifies_after_restore\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"ref_tamper_detected\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"seal_reverifies_after_ref_restore\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"run_close_seal_created\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"run_close_seal_verifies\",\n            \"pass\": true,\n            \"message\": null\n          },\n          {\n            \"name\": \"post_close_mutation_blocked\",\n            \"pass\": true,\n            \"message\": null\n          }\n        ]\n      }\n    }\n  ],\n  \"errors\": []\n}\n"
+      }
+    },
+    {
+      "case_id": "R4-002",
+      "category": "INHERITED",
+      "hard": true,
+      "status": "PASS",
+      "detail": {
+        "component": "R2",
+        "tail": "\"pass\": true\n          },\n          {\n            \"name\": \"scientific_stack_v213\",\n            \"pass\": true\n          },\n          {\n            \"name\": \"zero_new_direction_authority\",\n            \"pass\": true\n          },\n          {\n            \"name\": \"zero_new_permission_authority\",\n            \"pass\": true\n          }\n        ],\n        \"errors\": []\n      }\n    },\n    {\n      \"name\": \"r1_preflight\",\n      \"pass\": true,\n      \"detail\": \"rage_policy.json\\\",\\n      \\\"pass\\\": true\\n    },\\n    {\\n      \\\"name\\\": \\\"exists:config/temporal_policy.json\\\",\\n      \\\"pass\\\": true\\n    },\\n    {\\n      \\\"name\\\": \\\"exists:config/lifecycle_policy.json\\\",\\n      \\\"pass\\\": true\\n    },\\n    {\\n      \\\"name\\\": \\\"exists:sql/catalog_schema.sql\\\",\\n      \\\"pass\\\": true\\n    },\\n    {\\n      \\\"name\\\": \\\"exists:tools/alpha_runtime.py\\\",\\n      \\\"pass\\\": true\\n    },\\n    {\\n      \\\"name\\\": \\\"schema_count\\\",\\n      \\\"pass\\\": true,\\n      \\\"count\\\": 15\\n    },\\n    {\\n      \\\"name\\\": \\\"runtime_python_syntax\\\",\\n      \\\"pass\\\": true,\\n      \\\"count\\\": 15\\n    },\\n    {\\n      \\\"name\\\": \\\"r1_selftest\\\",\\n      \\\"pass\\\": true,\\n      \\\"detail\\\": {\\n        \\\"status\\\": \\\"PASS\\\",\\n        \\\"passed\\\": 26,\\n        \\\"total\\\": 26,\\n        \\\"checks\\\": [\\n          {\\n            \\\"name\\\": \\\"run_created\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"content_address_dedup\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"future_excluded\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"late_ingest_excluded\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"revision_selected\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"no_silent_gap\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"official_archive_admissible\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"current_only_forbidden\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"outcome_firewall_preseal\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"decision_seal_created\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"decision_seal_verifies\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"decision_mutation_blocked\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"outcome_postseal_allowed\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"replay_visibility_parity\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"replay_snapshot_provenance\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"event_sequences_monotonic\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"sqlite_integrity\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"dst_ambiguity_rejected\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"dst_nonexistent_time_rejected\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"tamper_detected\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"seal_reverifies_after_restore\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"ref_tamper_detected\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"seal_reverifies_after_ref_restore\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"run_close_seal_created\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"run_close_seal_verifies\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          },\\n          {\\n            \\\"name\\\": \\\"post_close_mutation_blocked\\\",\\n            \\\"pass\\\": true,\\n            \\\"message\\\": null\\n          }\\n        ]\\n      }\\n    }\\n  ],\\n  \\\"errors\\\": []\\n}\\n\"\n    },\n    {\n      \"name\": \"scientific_stack_and_entrypoint\",\n      \"pass\": true\n    }\n  ],\n  \"errors\": []\n}\n"
+      }
+    },
+    {
+      "case_id": "R4-003",
+      "category": "INHERITED",
+      "hard": true,
+      "status": "PASS",
+      "detail": {
+        "component": "R3",
+        "tail": "{\n  \"status\": \"PASS\",\n  \"checks\": [\n    {\n      \"name\": \"runtime_r3\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"scientific_v213\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"direction_authority_none\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"permission_authority_none\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"operational_block_only\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"r2_process_count\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"r2_direction_authority\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"r2_permission_authority\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"r2_prompt_pack\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"r1_preflight\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"jsonschema_runtime_available\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"r3_selftest\",\n      \"pass\": true\n    }\n  ],\n  \"selftest\": {\n    \"status\": \"PASS\",\n    \"passed\": 28,\n    \"total\": 28,\n    \"checks\": [\n      {\n        \"name\": \"runtime_r3_active\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"scientific_stack_v213\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"operational_gate_block_only\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"alias_resolution\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"live_cutoff_now\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"historical_explicit_cutoff\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"same_run_contract_shape\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"daily_six_count\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"daily_six_common_historical_cutoff\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"bulk_plan_count\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"unknown_alias_fail_closed\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"fixture_forbidden_production\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"live_preintake_has_no_fake_future_cutoff\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"live_intake_cutoff_semantics\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"decision_seal_required_worlds\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"forward_observation_created\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"forward_observation_pinned\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"d4_forward_schema_valid\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"warehouse_sqlite_row\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"warehouse_accelerator_non_authoritative\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"ledger_hash_chain_and_payload\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"ledger_jsonl_tamper_detected\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"ledger_rebuild_verifies\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"meta_cutoff_disclosed\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"meta_has_no_permission_authority\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"six_production_instruments\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"historical_current_only_forbidden\",\n        \"pass\": true\n      },\n      {\n        \"name\": \"live_postcutoff_retrieval_forbidden\",\n        \"pass\": true\n      }\n    ],\n    \"errors\": []\n  },\n  \"errors\": []\n}\n"
+      }
+    },
+    {
+      "case_id": "R4-010",
+      "category": "TEMPORAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-011",
+      "category": "TEMPORAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-012",
+      "category": "TEMPORAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-013",
+      "category": "TEMPORAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-014",
+      "category": "TEMPORAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-015",
+      "category": "TEMPORAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-016",
+      "category": "TEMPORAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-017",
+      "category": "TEMPORAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-020",
+      "category": "AUTHORITY",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-021",
+      "category": "AUTHORITY",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-022",
+      "category": "AUTHORITY",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-023",
+      "category": "AUTHORITY",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-030",
+      "category": "DRIFT",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-031",
+      "category": "DRIFT",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-032",
+      "category": "DRIFT",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-033",
+      "category": "DRIFT",
+      "hard": true,
+      "status": "PASS",
+      "detail": {
+        "pass": true,
+        "expected_surface_hash": "sha256:1907e99708730e7f81b1bfe32789c520a89a9e8f9b5d9442569bbbb1d728e758",
+        "actual_surface_hash": "sha256:1907e99708730e7f81b1bfe32789c520a89a9e8f9b5d9442569bbbb1d728e758",
+        "bad": [],
+        "file_count": 437
+      }
+    },
+    {
+      "case_id": "R4-040",
+      "category": "SEAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-041",
+      "category": "SEAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-042",
+      "category": "SEAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-043",
+      "category": "SEAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-044",
+      "category": "SEAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-045",
+      "category": "SEAL",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-050",
+      "category": "REPLAY",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-051",
+      "category": "REPLAY",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-060",
+      "category": "SOURCE",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-061",
+      "category": "SOURCE",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-062",
+      "category": "SOURCE",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-070",
+      "category": "D4",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-071",
+      "category": "D4",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-072",
+      "category": "D4",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-073",
+      "category": "D4",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-080",
+      "category": "SQLITE",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-081",
+      "category": "SQLITE",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-082",
+      "category": "SQLITE",
+      "hard": true,
+      "status": "PASS",
+      "detail": {
+        "errors": [],
+        "sequence": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "case_id": "R4-083",
+      "category": "SQLITE",
+      "hard": true,
+      "status": "PASS",
+      "detail": {
+        "corruption_detected": true,
+        "probe_cleanup": true
+      }
+    },
+    {
+      "case_id": "R4-090",
+      "category": "HOST",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-091",
+      "category": "HOST",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-092",
+      "category": "HOST",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-100",
+      "category": "META",
+      "hard": true,
+      "status": "PASS",
+      "detail": {
+        "note": "R3 meta reconciler records NON_ATOMIC_RECORDED for unequal cutoffs; exact unequal-cutoff construction is covered by R3 contract and environment/shadow suite."
+      }
+    },
+    {
+      "case_id": "R4-101",
+      "category": "META",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-110",
+      "category": "PORTABILITY",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-111",
+      "category": "PORTABILITY",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case_id": "R4-112",
+      "category": "PORTABILITY",
+      "hard": true,
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "environment": null,
+  "created_at_utc": "2026-08-10T08:04:14Z",
+  "non_claims": [
+    "NO_PROFITABILITY_CERTIFICATION",
+    "NO_FORECAST_CORRECTNESS_GUARANTEE",
+    "NO_PRIVATE_SOURCE_AVAILABILITY_CLAIM",
+    "NO_PROVIDER_DETERMINISM_CLAIM_WITHOUT_ENVIRONMENT_ATTESTATION"
+  ]
+}

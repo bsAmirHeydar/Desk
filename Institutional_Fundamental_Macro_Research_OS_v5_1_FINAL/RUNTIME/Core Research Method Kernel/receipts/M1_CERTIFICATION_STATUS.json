@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "deployment": "M1_CORE_RESEARCH_METHOD_KERNEL",
+  "method_version": "M1.0.0",
+  "status": "INSTALLED_ACTIVE_METHOD_GOVERNANCE_FORWARD_VALIDATION_REQUIRED",
+  "mode": "ACTIVE_METHOD_GOVERNANCE_CONSERVATIVE_AUTHORITY",
+  "scientific_stack": "V21.3.0",
+  "runtime": "R4.0.0",
+  "commissioning": "C1.0.0",
+  "r4_core": {
+    "status": "PASS",
+    "classification": "CORE_CERTIFIED",
+    "surface_fingerprint": "sha256:520c86dfaa7299dc73d7d6d1ac2543050199551c5a009ac701d48784f6b4245a",
+    "case_count": 47
+  },
+  "r4_full": {
+    "status": "PASS",
+    "classification": "FULL_OFFLINE_CERTIFIED",
+    "surface_fingerprint": "sha256:520c86dfaa7299dc73d7d6d1ac2543050199551c5a009ac701d48784f6b4245a",
+    "case_count": 47
+  },
+  "r4_preflight_status": "PASS",
+  "method_preflight": "PASS",
+  "method_selftest": "33/33 PASS",
+  "method_acceptance": "33/33 PASS",
+  "method_parity": "PASS",
+  "apl_a_status": "INSTALLED_SHADOW_FORWARD_VALIDATION_REQUIRED",
+  "apl_a_mode": "SHADOW_ONLY",
+  "apl_a_authority": {
+    "fact": "NONE",
+    "direction": "NONE",
+    "permission": "NONE",
+    "broker_write": "NONE"
+  },
+  "apl_b": "NOT_IMPLEMENTED",
+  "authority": {
+    "broker_write": "NONE",
+    "direction": "NONE",
+    "fact": "NONE",
+    "hard_method_invalidity": "BLOCK_PRESEAL_ONLY",
+    "permission": "NONE",
+    "scientific_mutation": "NONE"
+  },
+  "decision_behavior": "UNCHANGED_FOR_VALID_RUNS",
+  "decision_world_parity": "PASS",
+  "environment_certification": "PENDING_HOST_SPECIFIC",
+  "forward_validation_required": true,
+  "next_scientific_gate": "HOST_ENVIRONMENT_AND_SHADOW_COMMISSIONING_PLUS_M1_APL_A_FORWARD_VALIDATION",
+  "created_at_utc": "2026-08-10T08:05:00Z"
+}
