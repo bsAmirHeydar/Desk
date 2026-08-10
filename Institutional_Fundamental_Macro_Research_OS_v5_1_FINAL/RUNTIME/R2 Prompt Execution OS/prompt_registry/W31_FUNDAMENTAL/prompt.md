@@ -1,7 +1,7 @@
 ---
 prompt_id: W31_FUNDAMENTAL
-version: 1.0.0
-prompt_pack: ALPHALAB_PROMPT_PACK_1.0.0
+version: 1.1.0
+prompt_pack: ALPHALAB_PROMPT_PACK_1.1.0
 scientific_stack: V21.3.0
 runtime: R2.0.0
 ---
@@ -23,12 +23,15 @@ Module 89 only: create horizon-specific Fundamental Direction, force, persistenc
 - Keep interpretation flexible and multi-model, but evidence/time/authority rules strict.
 
 ## Allowed typed inputs
+- `decision_evidence_pack`
 - `evidence_integrity_receipt`
 
 ## Canonical Vault dependencies
 - `89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/00 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine MOC.md`
 
 ## Process instructions
+Use the admitted `decision_evidence_pack` as the substantive evidence body and `evidence_integrity_receipt` as its lineage/integrity gate. Never infer substantive facts from IDs alone.
+
 Act as Module 89 only. Build the horizon-specific Fundamental Direction Tensor/active-horizon direction from causal fundamental roots, with force, persistence, consumption-related fundamental state and invalidations. Ignore conclusions from Narrative/Flow/Positioning; they are not provided by design. Do not infer direction from price.
 
 ## Authority

@@ -14,7 +14,7 @@
     "production_ready": "HUMAN_GOVERNANCE_SIGNOFF_REQUIRED",
     "shadow_production": "EXPLICIT_PROTOCOL_REQUIRED"
   },
-  "certification_surface": "SELECTED_AUTHORITATIVE_RUNTIME_AND_SCIENCE_SURFACE",
+  "certification_surface": "SELECTED_AUTHORITATIVE_RUNTIME_SCIENCE_AND_C1_COMMISSIONING_SURFACE",
   "deployment_rules": {
     "baseline_hashing": "CANONICAL_TEXT_CONTROLLED_ONLY",
     "full_tree_deployment_hash": "FORBIDDEN",
@@ -29,6 +29,7 @@
     "NO_PROVIDER_DETERMINISM_WITHOUT_ATTESTATION"
   ],
   "phase": 7,
+  "production_commissioning": "C1.0.0_SURFACE_INCLUDED_ENVIRONMENT_AND_SHADOW_ATTESTATION_EXTERNAL",
   "prompt_context_drift_guard": "ENFORCED_BEFORE_HOST_INVOCATION",
   "reproduction": "EXACT_INPUT_PARITY_CORE_DECISION_PARITY_ENVIRONMENT",
   "requires": [

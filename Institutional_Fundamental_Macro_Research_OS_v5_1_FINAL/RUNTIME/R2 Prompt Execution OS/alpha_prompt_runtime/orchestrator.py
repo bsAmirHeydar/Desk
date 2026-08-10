@@ -9,7 +9,7 @@ from .jobs import make_job
 from .validation import validate_json_schema
 from .gates import GateEngine
 
-R2_VERSION='R2.0.0'; PACK='ALPHALAB_PROMPT_PACK_1.0.0'; GRAPH='R2_PROCESS_GRAPH_1.0.0'; MODELS='R2_MODEL_PROFILES_1.0.0'
+R2_VERSION='R2.0.0'; PACK='ALPHALAB_PROMPT_PACK_1.1.0'; GRAPH='R2_PROCESS_GRAPH_1.0.0'; MODELS='R2_MODEL_PROFILES_1.0.0'
 def now(): return datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
 
 class OrchestratorError(RuntimeError): pass

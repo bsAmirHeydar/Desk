@@ -1,6 +1,6 @@
 {
-  "version": "R2_PROMPT_REGISTRY_1.0.0",
-  "prompt_pack_version": "ALPHALAB_PROMPT_PACK_1.0.0",
+  "version": "R2_PROMPT_REGISTRY_1.1.0",
+  "prompt_pack_version": "ALPHALAB_PROMPT_PACK_1.1.0",
   "scientific_stack": "V21.3.0",
   "runtime_baseline": "R1.0.0",
   "processes": [
@@ -41,56 +41,56 @@
     },
     {
       "process_id": "W30_TEMPORAL",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "manifest_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W30_TEMPORAL/manifest.json",
       "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W30_TEMPORAL/prompt.md",
       "stage": "S3"
     },
     {
       "process_id": "W31_FUNDAMENTAL",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "manifest_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W31_FUNDAMENTAL/manifest.json",
       "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W31_FUNDAMENTAL/prompt.md",
       "stage": "S3"
     },
     {
       "process_id": "W32_EXPECTATIONS_POLICY_REGIME",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "manifest_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W32_EXPECTATIONS_POLICY_REGIME/manifest.json",
       "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W32_EXPECTATIONS_POLICY_REGIME/prompt.md",
       "stage": "S3"
     },
     {
       "process_id": "W33_NARRATIVE_REFLEXIVITY_CONSUMPTION",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "manifest_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W33_NARRATIVE_REFLEXIVITY_CONSUMPTION/manifest.json",
       "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W33_NARRATIVE_REFLEXIVITY_CONSUMPTION/prompt.md",
       "stage": "S3"
     },
     {
       "process_id": "W34_POSITIONING",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "manifest_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W34_POSITIONING/manifest.json",
       "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W34_POSITIONING/prompt.md",
       "stage": "S3"
     },
     {
       "process_id": "W35_ACTUAL_FLOW",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "manifest_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W35_ACTUAL_FLOW/manifest.json",
       "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W35_ACTUAL_FLOW/prompt.md",
       "stage": "S3"
     },
     {
       "process_id": "W36_FUNDING_PLUMBING",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "manifest_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W36_FUNDING_PLUMBING/manifest.json",
       "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W36_FUNDING_PLUMBING/prompt.md",
       "stage": "S3"
     },
     {
       "process_id": "W37_MECHANICS_CAPACITY_VOL",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "manifest_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W37_MECHANICS_CAPACITY_VOL/manifest.json",
       "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W37_MECHANICS_CAPACITY_VOL/prompt.md",
       "stage": "S3"

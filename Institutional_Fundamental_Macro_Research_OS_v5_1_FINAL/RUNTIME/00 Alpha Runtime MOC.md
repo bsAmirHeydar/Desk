@@ -41,7 +41,7 @@ Run data are not canonical Vault knowledge and must not be committed to the scie
 ## R2 Prompt Execution OS
 
 - [[RUNTIME/R2 Prompt Execution OS/00 R2 Prompt Execution OS MOC]]
-- Prompt pack: `ALPHALAB_PROMPT_PACK_1.0.0`
+- Prompt pack: `ALPHALAB_PROMPT_PACK_1.1.0`
 - 25 typed processes; 8 independent market-state workers; deterministic stage gates; R1 Decision Seal integration.
 ## R3 — Operational Execution and Learning
 - [[R3 Operational Execution and Learning OS/00 R3 Operational Execution and Learning OS MOC]]
@@ -51,3 +51,9 @@ Run data are not canonical Vault knowledge and must not be committed to the scie
 ## R4 — Scientific Certification and Reproducibility Hardening
 - [[R4 Scientific Certification and Reproducibility Hardening/00 R4 Scientific Certification and Reproducibility Hardening MOC]]
 - Status: offline certification framework active; environment/shadow certification explicit.
+
+## Production Commissioning
+
+- Commissioning: `C1.0.0`
+- Default production model host: OpenAI Responses API / GPT-5.6 Sol, explicit environment binding.
+- Environment and shadow certifications remain runtime receipts outside Git until actually executed.

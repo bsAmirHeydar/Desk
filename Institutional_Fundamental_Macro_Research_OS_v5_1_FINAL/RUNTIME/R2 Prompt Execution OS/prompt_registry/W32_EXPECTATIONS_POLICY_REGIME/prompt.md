@@ -1,7 +1,7 @@
 ---
 prompt_id: W32_EXPECTATIONS_POLICY_REGIME
-version: 1.0.0
-prompt_pack: ALPHALAB_PROMPT_PACK_1.0.0
+version: 1.1.0
+prompt_pack: ALPHALAB_PROMPT_PACK_1.1.0
 scientific_stack: V21.3.0
 runtime: R2.0.0
 ---
@@ -23,6 +23,7 @@ Construct expectation stack, economic/market surprise, bilateral policy reaction
 - Keep interpretation flexible and multi-model, but evidence/time/authority rules strict.
 
 ## Allowed typed inputs
+- `decision_evidence_pack`
 - `evidence_integrity_receipt`
 
 ## Canonical Vault dependencies
@@ -31,6 +32,8 @@ Construct expectation stack, economic/market surprise, bilateral policy reaction
 - `103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/11 Regime Vector and State-Dependent Causal Mapping.md`
 
 ## Process instructions
+Use the admitted `decision_evidence_pack` as the substantive evidence body and `evidence_integrity_receipt` as its lineage/integrity gate. Never infer substantive facts from IDs alone.
+
 Build the expectation stack; distinguish data surprise, economic implication, policy implication, asset implication and market surprise. Build policy reaction function(s), bilateral for FX when relevant, and a horizon-aware multidimensional regime. If reaction/regime mapping is ambiguous, preserve competing states rather than universal signs.
 
 ## Authority

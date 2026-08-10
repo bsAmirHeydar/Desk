@@ -1,6 +1,6 @@
 {
   "version": "R2_PROCESS_GRAPH_1.0.0",
-  "prompt_pack_version": "ALPHALAB_PROMPT_PACK_1.0.0",
+  "prompt_pack_version": "ALPHALAB_PROMPT_PACK_1.1.0",
   "stages": {
     "S1": {
       "name": "Scope and Evidence Planning",

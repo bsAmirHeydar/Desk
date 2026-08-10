@@ -1,12 +1,13 @@
 {
   "process_id": "W35_ACTUAL_FLOW",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "stage": "S3",
   "prompt_path": "RUNTIME/R2 Prompt Execution OS/prompt_registry/W35_ACTUAL_FLOW/prompt.md",
   "dependencies": [
     "W23_LINEAGE_VALIDATOR"
   ],
   "required_inputs": [
+    "decision_evidence_pack",
     "evidence_integrity_receipt"
   ],
   "optional_inputs": [

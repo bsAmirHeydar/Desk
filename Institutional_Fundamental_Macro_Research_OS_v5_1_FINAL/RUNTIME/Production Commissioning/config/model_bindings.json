@@ -1,0 +1,95 @@
+{
+  "version": "C1_MODEL_BINDINGS_1.0.0",
+  "provider": "OPENAI",
+  "api": "RESPONSES",
+  "endpoint": "https://api.openai.com/v1/responses",
+  "api_key_env": "OPENAI_API_KEY",
+  "default_model": "gpt-5.6-sol",
+  "automatic_model_downgrade": false,
+  "store": false,
+  "context_policy": {
+    "max_materialized_input_bytes": 3500000,
+    "overflow": "FAIL_CLOSED_NO_TRUNCATION"
+  },
+  "output_policy": {
+    "max_output_tokens": 128000,
+    "schema_repair_attempts": 1,
+    "transport_format": "RESPONSES_TEXT_JSON_SCHEMA_NON_STRICT_LOCAL_SCHEMA_AUTHORITATIVE"
+  },
+  "profiles": {
+    "FACT_PRECISION": {
+      "model": "gpt-5.6-sol",
+      "reasoning": {
+        "mode": "pro",
+        "effort": "xhigh",
+        "context": "current_turn"
+      },
+      "text_verbosity": "high"
+    },
+    "MAX_PRECISION": {
+      "model": "gpt-5.6-sol",
+      "reasoning": {
+        "mode": "pro",
+        "effort": "max",
+        "context": "current_turn"
+      },
+      "text_verbosity": "high"
+    },
+    "INDEPENDENT_ANALYST": {
+      "model": "gpt-5.6-sol",
+      "reasoning": {
+        "mode": "pro",
+        "effort": "max",
+        "context": "current_turn"
+      },
+      "text_verbosity": "high"
+    },
+    "ADVERSARIAL": {
+      "model": "gpt-5.6-sol",
+      "reasoning": {
+        "mode": "pro",
+        "effort": "max",
+        "context": "current_turn"
+      },
+      "text_verbosity": "high"
+    },
+    "GOVERNANCE": {
+      "model": "gpt-5.6-sol",
+      "reasoning": {
+        "mode": "pro",
+        "effort": "xhigh",
+        "context": "current_turn"
+      },
+      "text_verbosity": "high"
+    },
+    "SYNTHESIS_MAX": {
+      "model": "gpt-5.6-sol",
+      "reasoning": {
+        "mode": "pro",
+        "effort": "max",
+        "context": "current_turn"
+      },
+      "text_verbosity": "high"
+    }
+  },
+  "retrieval_profile": {
+    "model": "gpt-5.6-sol",
+    "reasoning": {
+      "mode": "pro",
+      "effort": "xhigh",
+      "context": "current_turn"
+    },
+    "search_context_size": "high",
+    "tool_choice": "required",
+    "return_token_budget": "unlimited"
+  },
+  "health_profile": {
+    "model": "gpt-5.6-sol",
+    "reasoning": {
+      "mode": "pro",
+      "effort": "high",
+      "context": "current_turn"
+    }
+  },
+  "receipt_rule": "RECORD_ACTUAL_RESPONSE_MODEL_ID_NO_FALSE_DATED_SNAPSHOT_CLAIM"
+}

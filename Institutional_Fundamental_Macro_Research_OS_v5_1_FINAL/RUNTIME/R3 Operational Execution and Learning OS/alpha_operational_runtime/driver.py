@@ -14,7 +14,7 @@ class RunDriver:
         except Exception:ref=None
         with self.rt.catalog.connect() as c:c.execute("INSERT OR REPLACE INTO r3_model_invocations(invocation_id,run_id,process_id,job_hash,adapter,provider,model,model_version,request_hash,response_hash,status,attempt,started_at_utc,completed_at_utc,latency_ms,receipt_artifact_hash) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(receipt['invocation_id'],run_id,pid,job['job_hash'],receipt['adapter'],receipt.get('provider'),receipt.get('model'),receipt.get('model_version'),receipt['request_hash'],receipt.get('response_hash'),status,receipt['attempt'],receipt['started_at_utc'],receipt.get('completed_at_utc'),receipt.get('latency_ms'),ref['artifact_hash'] if ref else None))
     def _retryable(self,e):
-        if isinstance(e,HostError):return e.category=='TRANSIENT_ERROR'
+        if isinstance(e,HostError):return e.category in ('TRANSIENT_ERROR','SCHEMA_REPAIRABLE','FORMAT_INVALID')
         s=str(e).lower();return any(x in s for x in ('schema validation failed','missing expected output','invalid output status','host missing process_output')) and not any(x in s for x in ('authority','lookahead','identity mismatch','forbidden future'))
     def _execute_job(self,job,production=True):
         maxa=int(self.ep['retry_policy']['max_attempts_per_node']);last=None

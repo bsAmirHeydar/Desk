@@ -1,7 +1,7 @@
 ---
 prompt_id: W35_ACTUAL_FLOW
-version: 1.0.0
-prompt_pack: ALPHALAB_PROMPT_PACK_1.0.0
+version: 1.1.0
+prompt_pack: ALPHALAB_PROMPT_PACK_1.1.0
 scientific_stack: V21.3.0
 runtime: R2.0.0
 ---
@@ -23,12 +23,15 @@ Classify actual/identified/derived/model-implied flow while preserving flow != v
 - Keep interpretation flexible and multi-model, but evidence/time/authority rules strict.
 
 ## Allowed typed inputs
+- `decision_evidence_pack`
 - `evidence_integrity_receipt`
 
 ## Canonical Vault dependencies
 - `97 Actual Flow and Transaction Pressure Science/00 Actual Flow and Transaction Pressure Science MOC.md`
 
 ## Process instructions
+Use the admitted `decision_evidence_pack` as the substantive evidence body and `evidence_integrity_receipt` as its lineage/integrity gate. Never infer substantive facts from IDs alone.
+
 Distinguish identified/transaction flow, derived flow proxies, model-implied flow and expected mechanical flow. Flow is not volume, OI change, price move or AUM change. Preserve public/private/licensed coverage gaps and participant/venue scope.
 
 ## Authority

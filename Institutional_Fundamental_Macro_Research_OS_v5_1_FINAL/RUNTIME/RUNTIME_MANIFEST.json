@@ -6,18 +6,19 @@
   },
   "certification": "R4_CORE_AND_FULL_OFFLINE_FRAMEWORK_ACTIVE_ENVIRONMENT_AND_SHADOW_SIGNOFF_REQUIRED",
   "certification_runtime": {
-    "environment": "PENDING_ATTESTATION",
+    "environment": "C1_RUNTIME_ATTESTATION_PENDING",
     "offline": "CORE_AND_FULL",
     "production_ready": "NOT_AUTO_GRANTED",
     "profitability_claim": "NONE",
-    "shadow_production": "PENDING",
+    "shadow_production": "C1_RUNTIME_ATTESTATION_PENDING",
     "status": "ACTIVE"
   },
   "host_execution": {
     "fixture_production": "FORBIDDEN",
-    "protocol": "R3_HOST_PROTOCOL_1.0.0",
+    "protocol": "R3_HOST_PROTOCOL_1.1.0",
     "provider_neutral": true,
-    "secrets": "ENVIRONMENT_ONLY"
+    "secrets": "ENVIRONMENT_ONLY",
+    "commissioned_default": "OPENAI_GPT_5_6_SOL"
   },
   "launchers": "R3_ACTIVE",
   "operational_execution": {
@@ -47,10 +48,10 @@
     "completion_policy": "EPISTEMIC_COMPLETION",
     "drift_guard": "PROMPT_AND_CANONICAL_CONTEXT_HASH_PIN_ENFORCED",
     "executor_binding": "HOST_MANAGED_R3_OR_EXTERNAL",
-    "full_vault_mode": "STRICT_FULL",
+    "full_vault_mode": "STRICT_FULL_DYNAMIC_HASH_PINNED_CONTEXT",
     "process_count": 25,
     "process_graph": "R2_PROCESS_GRAPH_1.0.0",
-    "prompt_pack": "ALPHALAB_PROMPT_PACK_1.0.0"
+    "prompt_pack": "ALPHALAB_PROMPT_PACK_1.1.0"
   },
   "prompt_runtime": "R2_ACTIVE_UNCHANGED",
   "reproduction": {
@@ -60,13 +61,13 @@
   },
   "retrieval_execution": {
     "private_gap": "EXPLICIT",
-    "protocol": "R3_RETRIEVAL_RUNTIME_1.0.0",
+    "protocol": "R3_RETRIEVAL_RUNTIME_1.1.0+C1",
     "source_registry": "V21.3_D2_SOURCE_REGISTRY",
     "strict_point_in_time": true
   },
   "runtime_version": "R4.0.0",
   "scientific_stack": "V21.3.0",
-  "status": "SCIENTIFIC_CERTIFICATION_HARDENING_ACTIVE_OFFLINE_CERTIFIED_ENVIRONMENT_PENDING",
+  "status": "R4_OFFLINE_CERTIFIED_C1_PRODUCTION_COMMISSIONING_INSTALLED_ENVIRONMENT_PENDING",
   "storage": {
     "backend": "LOCAL_FS_SQLITE",
     "catalog": "SQLITE",
@@ -84,5 +85,16 @@
     "pyc_required_for_verification": false,
     "python_314_supported_by_design": true,
     "sqlite_explicit_close": true
+  },
+  "commissioning": {
+    "version": "C1.0.0",
+    "status": "INSTALLED_ENVIRONMENT_ATTESTATION_REQUIRED",
+    "model_host": "OPENAI_RESPONSES_GPT_5_6_SOL_MAX_ACCURACY_BINDING",
+    "retrieval_host": "OPENAI_WEB_SEARCH_DOMAIN_GOVERNED",
+    "environment_certification": "PENDING_RUNTIME_ATTESTATION",
+    "shadow_production_certification": "PENDING_RUNTIME_ATTESTATION",
+    "production_ready": "NOT_AUTO_GRANTED",
+    "broker_write_authority": "NONE",
+    "scientific_authority_added": "NONE"
   }
 }

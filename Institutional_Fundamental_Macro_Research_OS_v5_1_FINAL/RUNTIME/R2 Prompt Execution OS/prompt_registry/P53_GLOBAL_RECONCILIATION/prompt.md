@@ -1,7 +1,7 @@
 ---
 prompt_id: P53_GLOBAL_RECONCILIATION
 version: 1.0.0
-prompt_pack: ALPHALAB_PROMPT_PACK_1.0.0
+prompt_pack: ALPHALAB_PROMPT_PACK_1.1.0
 scientific_stack: V21.3.0
 runtime: R2.0.0
 ---

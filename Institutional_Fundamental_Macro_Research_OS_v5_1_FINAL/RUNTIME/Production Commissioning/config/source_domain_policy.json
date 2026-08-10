@@ -1,0 +1,471 @@
+{
+  "version": "C1_SOURCE_DOMAIN_POLICY_1.0.0",
+  "rule": "Every V21.3 source ID is explicitly public-web, subscription-unbound, or licensed-unbound. Domain filtering is mandatory for OpenAI web retrieval. Registration never implies availability.",
+  "sources": {
+    "BIS_GLI": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "bis.org"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "BOJ_STATISTICS": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "boj.or.jp"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "CBOE_GAMMA_INDEX": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "cboe.com"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "CBOE_OPTIONS_STATS": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "cboe.com"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "CBOE_PRODUCT_CALENDAR": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "cboe.com"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "CFTC_COT": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "cftc.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "CFTC_PART43_FRAMEWORK": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "cftc.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "CME_GOLD_STOCKS_DELIVERIES": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "cmegroup.com"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "CME_LIQUIDITY_TOOL": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "cmegroup.com"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "CME_SDR_PUBLIC": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "cmegroup.com"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "CME_VOLUME_OI": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "cmegroup.com"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "DTCC_SDR_PUBLIC": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "dtcc.com"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "ECB_STATISTICS": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "ecb.europa.eu"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "ETF_SPONSOR_DISCLOSURE": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "ishares.com",
+        "ssga.com",
+        "invesco.com",
+        "vanguard.com"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "FEDERAL_REGISTER": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "federalregister.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "FED_H41": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "federalreserve.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "FED_H8": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "federalreserve.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "FED_Z1": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "federalreserve.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "FINRA_SHORT_INTEREST": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "finra.org"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "FINRA_SHORT_SALE_VOLUME": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "finra.org"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "FINRA_SLATE": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "finra.org"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "FINRA_TRACE": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "finra.org"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "ICE_SDR_PUBLIC": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "ice.com"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "JP_MOF_FX_INTERVENTION": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "mof.go.jp"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "LBMA_CLEARING_DATA": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "lbma.org.uk"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "LBMA_IBA_BENCHMARK_INFO": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "lbma.org.uk"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "LBMA_VAULT_DATA": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "lbma.org.uk"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "NASDAQ_INDEX_ADMIN": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "nasdaq.com",
+        "indexes.nasdaqomx.com"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "NYFED_PRIMARY_DEALERS": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "newyorkfed.org"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "NYFED_REPO_RRP": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "newyorkfed.org"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "NYFED_SOFR": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "newyorkfed.org"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "OFAC_SANCTIONS": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "ofac.treasury.gov",
+        "home.treasury.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "SEC_13F": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "sec.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "SEC_EDGAR": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "sec.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "SEC_NPORT": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "sec.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "SEC_XBRL_DATA": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "sec.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "SPDJI_INDEX_ADMIN": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "spglobal.com"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "USTR_TRADE": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "ustr.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "UST_AUCTIONS": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "treasury.gov",
+        "fiscaldata.treasury.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "UST_DAILY_TREASURY_STATEMENT": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "treasury.gov",
+        "fiscaldata.treasury.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "UST_INVESTOR_ALLOTMENTS": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "treasury.gov",
+        "fiscaldata.treasury.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "UST_TIC": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "treasury.gov"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "WGC_ETF": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "gold.org"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "WGC_GDT": {
+      "access_mode": "PUBLIC_WEB",
+      "allowed_domains": [
+        "gold.org"
+      ],
+      "historical_web_archive": "CONSERVATIVE_OFFICIAL_ONLY"
+    },
+    "CBOE_OPEN_CLOSE_OPTIONS": {
+      "access_mode": "SUBSCRIPTION_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "CME_MARKET_DEPTH": {
+      "access_mode": "SUBSCRIPTION_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "LBMA_TRADE_DATA": {
+      "access_mode": "SUBSCRIPTION_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "NASDAQ_NOII": {
+      "access_mode": "SUBSCRIPTION_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "NYSE_ORDER_IMBALANCES": {
+      "access_mode": "SUBSCRIPTION_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "LICENSED_ALTERNATIVE_DATA": {
+      "access_mode": "LICENSED_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "LICENSED_CLIENT_FLOW": {
+      "access_mode": "LICENSED_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "LICENSED_DEALER_BALANCE_SHEET": {
+      "access_mode": "LICENSED_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "LICENSED_DEALER_POSITIONING": {
+      "access_mode": "LICENSED_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "LICENSED_EARNINGS_ESTIMATES": {
+      "access_mode": "LICENSED_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "LICENSED_ORDERBOOK_DEPTH": {
+      "access_mode": "LICENSED_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "LICENSED_OTC_FX_GOLD_LIQUIDITY": {
+      "access_mode": "LICENSED_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "LICENSED_SECURITIES_LENDING": {
+      "access_mode": "LICENSED_UNBOUND",
+      "allowed_domains": [],
+      "historical_web_archive": "UNAVAILABLE_UNLESS_EXPLICIT_BINDING"
+    },
+    "ALPHALAB_OFFICIAL_MACRO_WEB": {
+      "access_mode": "DISCOVERY_WEB",
+      "allowed_domains": [
+        "bls.gov",
+        "bea.gov",
+        "census.gov",
+        "dol.gov",
+        "federalreserve.gov",
+        "newyorkfed.org",
+        "treasury.gov",
+        "fiscaldata.treasury.gov",
+        "eia.gov",
+        "cftc.gov",
+        "sec.gov",
+        "federalregister.gov",
+        "ecb.europa.eu",
+        "ec.europa.eu",
+        "boj.or.jp",
+        "mof.go.jp",
+        "stat.go.jp",
+        "cao.go.jp",
+        "mhlw.go.jp",
+        "meti.go.jp",
+        "bankofengland.co.uk",
+        "ons.gov.uk",
+        "imf.org",
+        "bis.org",
+        "oecd.org"
+      ],
+      "evidence_role": "DISCOVERY_OFFICIAL"
+    },
+    "ALPHALAB_NARRATIVE_WEB": {
+      "access_mode": "DISCOVERY_WEB",
+      "allowed_domains": [
+        "reuters.com",
+        "bloomberg.com",
+        "ft.com",
+        "wsj.com",
+        "cnbc.com",
+        "apnews.com"
+      ],
+      "evidence_role": "DISCOVERY_NEWS"
+    },
+    "ALPHALAB_EVENT_WEB": {
+      "access_mode": "DISCOVERY_WEB",
+      "allowed_domains": [
+        "bls.gov",
+        "bea.gov",
+        "census.gov",
+        "dol.gov",
+        "federalreserve.gov",
+        "newyorkfed.org",
+        "treasury.gov",
+        "fiscaldata.treasury.gov",
+        "ecb.europa.eu",
+        "ec.europa.eu",
+        "boj.or.jp",
+        "mof.go.jp",
+        "bankofengland.co.uk",
+        "ons.gov.uk",
+        "cmegroup.com",
+        "cboe.com",
+        "cftc.gov"
+      ],
+      "evidence_role": "DISCOVERY_OFFICIAL"
+    },
+    "ALPHALAB_INSTITUTIONAL_MACRO_WEB": {
+      "access_mode": "DISCOVERY_WEB",
+      "allowed_domains": [
+        "ismworld.org",
+        "conference-board.org",
+        "spglobal.com"
+      ],
+      "evidence_role": "DISCOVERY_INSTITUTIONAL"
+    }
+  },
+  "synthetic_discovery_ids": [
+    "ALPHALAB_OFFICIAL_MACRO_WEB",
+    "ALPHALAB_INSTITUTIONAL_MACRO_WEB",
+    "ALPHALAB_NARRATIVE_WEB",
+    "ALPHALAB_EVENT_WEB"
+  ],
+  "domain_validation": "REQUIRE_AT_LEAST_ONE_ALLOWED_SOURCE_URL",
+  "subscription_fallback": "UNAVAILABLE_NEVER_PUBLIC_PROXY",
+  "licensed_fallback": "UNAVAILABLE_NEVER_FABRICATE"
+}

@@ -1,12 +1,12 @@
 {
-  "version": "R3_LAUNCHER_PROFILES_1.0.0",
+  "version": "R3_LAUNCHER_PROFILES_1.1.0",
   "scientific_stack": "V21.3.0",
-  "runtime": "R3.0.0",
+  "runtime": "R3.0.0+C1",
   "defaults": {
     "research_program_id": "ALPHALAB_PRODUCTION",
     "strategy_id": "FUNDAMENTAL_EDGE_V21_3",
     "coverage_mode": "STRICT_FULL",
-    "research_depth": "AUTO",
+    "research_depth": "DEEP",
     "output_depth": "FULL",
     "lookahead_policy": "STRICT_POINT_IN_TIME",
     "execution_profile": "PERMISSION_ONLY_V1",
@@ -46,18 +46,18 @@
       "run_mode": "LIVE",
       "analysis_cutoff": "NOW",
       "coverage_mode": "STRICT_FULL",
-      "research_depth": "AUTO"
+      "research_depth": "DEEP"
     },
     "SHADOW_MAX": {
       "run_mode": "SHADOW_LIVE",
       "analysis_cutoff": "NOW",
       "coverage_mode": "STRICT_FULL",
-      "research_depth": "AUTO"
+      "research_depth": "DEEP"
     },
     "HISTORICAL_STRICT": {
       "run_mode": "HISTORICAL_REPLAY",
       "coverage_mode": "STRICT_FULL",
-      "research_depth": "AUTO"
+      "research_depth": "DEEP"
     },
     "RESEARCH_REPLAY": {
       "run_mode": "RESEARCH_REPLAY",
@@ -70,5 +70,6 @@
       "research_depth": "STANDARD"
     }
   },
-  "rule": "Launcher compiles human intent into the R1 Universal Run Request. It has zero scientific, direction, or permission authority."
+  "rule": "Launcher compiles human intent into the R1 Universal Run Request. It has zero scientific, direction, or permission authority.",
+  "commissioning_default": "STRICT_FULL_DEEP_NO_SILENT_MODEL_DOWNGRADE"
 }

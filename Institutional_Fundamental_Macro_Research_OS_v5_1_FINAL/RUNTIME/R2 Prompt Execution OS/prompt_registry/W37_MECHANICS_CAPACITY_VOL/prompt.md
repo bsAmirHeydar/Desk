@@ -1,7 +1,7 @@
 ---
 prompt_id: W37_MECHANICS_CAPACITY_VOL
-version: 1.0.0
-prompt_pack: ALPHALAB_PROMPT_PACK_1.0.0
+version: 1.1.0
+prompt_pack: ALPHALAB_PROMPT_PACK_1.1.0
 scientific_stack: V21.3.0
 runtime: R2.0.0
 ---
@@ -23,12 +23,15 @@ Classify institutional mechanics, capacity, options/convexity/volatility and exe
 - Keep interpretation flexible and multi-model, but evidence/time/authority rules strict.
 
 ## Allowed typed inputs
+- `decision_evidence_pack`
 - `evidence_integrity_receipt`
 
 ## Canonical Vault dependencies
 - `99 Institutional Mechanics and Market Capacity Science/00 Institutional Mechanics and Market Capacity Science MOC.md`
 
 ## Process instructions
+Use the admitted `decision_evidence_pack` as the substantive evidence body and `evidence_integrity_receipt` as its lineage/integrity gate. Never infer substantive facts from IDs alone.
+
 Classify institutional mechanics and execution capacity: expiry/roll, auction/fixing, rebalance, ETF mechanics, margin/clearing, options/convexity/0DTE, volatility path, spread/depth/resiliency/impact. Capacity is instrument x venue x size x horizon x state. Do not infer dealer book from proxy as fact.
 
 ## Authority

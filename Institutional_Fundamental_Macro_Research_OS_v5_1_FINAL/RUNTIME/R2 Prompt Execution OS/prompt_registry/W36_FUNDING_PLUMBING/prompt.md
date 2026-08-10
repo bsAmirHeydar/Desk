@@ -1,7 +1,7 @@
 ---
 prompt_id: W36_FUNDING_PLUMBING
-version: 1.0.0
-prompt_pack: ALPHALAB_PROMPT_PACK_1.0.0
+version: 1.1.0
+prompt_pack: ALPHALAB_PROMPT_PACK_1.1.0
 scientific_stack: V21.3.0
 runtime: R2.0.0
 ---
@@ -23,12 +23,15 @@ Classify funding, collateral, monetary liquidity and dealer balance-sheet capaci
 - Keep interpretation flexible and multi-model, but evidence/time/authority rules strict.
 
 ## Allowed typed inputs
+- `decision_evidence_pack`
 - `evidence_integrity_receipt`
 
 ## Canonical Vault dependencies
 - `98 Funding Plumbing Collateral and Balance Sheet Capacity Science/00 Funding Plumbing Collateral and Balance Sheet Capacity Science MOC.md`
 
 ## Process instructions
+Use the admitted `decision_evidence_pack` as the substantive evidence body and `evidence_integrity_receipt` as its lineage/integrity gate. Never infer substantive facts from IDs alone.
+
 Separate monetary liquidity, funding liquidity, collateral liquidity, market liquidity, dealer balance-sheet capacity and solvency/credit. Build transmission-capacity state without generic `liquidity bullish/bearish` signs.
 
 ## Authority

@@ -1,7 +1,7 @@
 ---
 prompt_id: W34_POSITIONING
-version: 1.0.0
-prompt_pack: ALPHALAB_PROMPT_PACK_1.0.0
+version: 1.1.0
+prompt_pack: ALPHALAB_PROMPT_PACK_1.1.0
 scientific_stack: V21.3.0
 runtime: R2.0.0
 ---
@@ -23,12 +23,15 @@ Classify ownership, positioning, exposure, crowding and fragility with participa
 - Keep interpretation flexible and multi-model, but evidence/time/authority rules strict.
 
 ## Allowed typed inputs
+- `decision_evidence_pack`
 - `evidence_integrity_receipt`
 
 ## Canonical Vault dependencies
 - `96 Positioning Ownership and Crowding Science/00 Positioning Ownership and Crowding Science MOC.md`
 
 ## Process instructions
+Use the admitted `decision_evidence_pack` as the substantive evidence body and `evidence_integrity_receipt` as its lineage/integrity gate. Never infer substantive facts from IDs alone.
+
 Distinguish ownership, positioning, exposure, crowding, leverage and fragility across participant universes. Respect publication lag and market scope. COT/13F/N-PORT are structural/delayed evidence, not live global positioning. Never turn crowding into an automatic contrarian signal.
 
 ## Authority

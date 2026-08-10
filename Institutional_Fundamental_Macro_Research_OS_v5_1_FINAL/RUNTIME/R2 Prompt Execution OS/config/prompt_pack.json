@@ -1,5 +1,5 @@
 {
-  "version": "ALPHALAB_PROMPT_PACK_1.0.0",
+  "version": "ALPHALAB_PROMPT_PACK_1.1.0",
   "runtime": "R2.0.0",
   "scientific_stack": "V21.3.0",
   "registry": "RUNTIME/R2 Prompt Execution OS/config/prompt_registry.json",
@@ -9,5 +9,6 @@
   "completion_policy": "RUNTIME/R2 Prompt Execution OS/config/completion_policy.json",
   "prompt_count": 25,
   "pack_hash_basis": "PROMPT_FILE_HASHES_AND_MANIFEST_HASHES",
-  "authority": "ZERO_NEW_SCIENTIFIC_AUTHORITY"
+  "authority": "ZERO_NEW_SCIENTIFIC_AUTHORITY",
+  "commissioning_revision": "C1_EVIDENCE_TRANSPORT_AND_DYNAMIC_CONTEXT"
 }

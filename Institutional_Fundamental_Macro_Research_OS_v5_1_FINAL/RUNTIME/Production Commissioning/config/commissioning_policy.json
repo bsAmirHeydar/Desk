@@ -1,0 +1,35 @@
+{
+  "version": "C1_COMMISSIONING_POLICY_1.0.0",
+  "scientific_stack": "V21.3.0",
+  "runtime": "R4.0.0",
+  "commissioning": "C1.0.0",
+  "offline_install_claim": "C1_INSTALLED_ONLY",
+  "environment_classification": "ENVIRONMENT_CERTIFIED",
+  "shadow_classification": "SHADOW_PRODUCTION_CERTIFIED",
+  "readiness_classification": "PRODUCTION_READY_PERMISSION_ONLY",
+  "environment_receipt_relpath": "commissioning/environment_receipt.json",
+  "shadow_receipt_relpath": "commissioning/shadow_receipt.json",
+  "readiness_receipt_relpath": "commissioning/readiness_receipt.json",
+  "shadow_instruments": [
+    "XAUUSD",
+    "NASDAQ100",
+    "SP500",
+    "DJIA",
+    "EURUSD",
+    "USDJPY"
+  ],
+  "shadow_profile": {
+    "run_mode": "SHADOW_LIVE",
+    "coverage_mode": "STRICT_FULL",
+    "research_depth": "DEEP",
+    "output_depth": "FULL",
+    "execution_profile": "SHADOW_ONLY_V1",
+    "runs_per_instrument": 1
+  },
+  "readiness_requires_zero_decision_critical_gaps_in_shadow_basket": true,
+  "manual_signoff_required": true,
+  "broker_write": false,
+  "order_creation": false,
+  "automatic_provider_fallback": false,
+  "secrets": "ENVIRONMENT_ONLY_NEVER_LOG_OR_COMMIT"
+}

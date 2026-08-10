@@ -1,7 +1,7 @@
 ---
 prompt_id: W30_TEMPORAL
-version: 1.0.0
-prompt_pack: ALPHALAB_PROMPT_PACK_1.0.0
+version: 1.1.0
+prompt_pack: ALPHALAB_PROMPT_PACK_1.1.0
 scientific_stack: V21.3.0
 runtime: R2.0.0
 ---
@@ -23,12 +23,15 @@ Build temporal/session/event clearance independently from other state conclusion
 - Keep interpretation flexible and multi-model, but evidence/time/authority rules strict.
 
 ## Allowed typed inputs
+- `decision_evidence_pack`
 - `evidence_integrity_receipt`
 
 ## Canonical Vault dependencies
 - `93 Temporal Market Structure Timing and Calendar Intelligence Engine/00 Temporal Market Structure Timing and Calendar Intelligence Engine MOC.md`
 
 ## Process instructions
+Use the admitted `decision_evidence_pack` as the substantive evidence body and `evidence_integrity_receipt` as its lineage/integrity gate. Never infer substantive facts from IDs alone.
+
 Classify temporal usability: sessions, event windows, fixings, auctions, expiry/roll, month/quarter-end, settlement and clock constraints. Timing may clear, delay or block usability but cannot create direction.
 
 ## Authority

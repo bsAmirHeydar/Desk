@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "mode": "FULL_VAULT_STRICT_CONTEXT_COMPILATION",
   "umbrella_authority": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/46 V21 Cognitive-Hardened Full-Vault Production Prompt.md",
   "machine_authority": "CURRENT_PRODUCTION_MANIFEST.json",
@@ -43,5 +43,6 @@
     "realized_r",
     "counterfactual_outcome",
     "post_cutoff_revision"
-  ]
+  ],
+  "dynamic_retrieval_plan_execution": "HASH_PINNED_SELECTED_PATHS_REQUIRED"
 }

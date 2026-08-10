@@ -1,12 +1,12 @@
 {
-  "version": "R3_HOST_PROTOCOL_1.0.0",
+  "version": "R3_HOST_PROTOCOL_1.1.0",
   "default_binding": "PRODUCTION_COMMAND",
   "bindings": {
     "PRODUCTION_COMMAND": {
       "adapter": "COMMAND",
       "command_env": "ALPHALAB_HOST_COMMAND",
-      "timeout_seconds": 1200,
-      "max_parallel": 4,
+      "timeout_seconds": 3600,
+      "max_parallel": 1,
       "payload_mode": "FILE_REFERENCES",
       "test_only": false,
       "required_capabilities": [
@@ -52,5 +52,6 @@
   "free_conversation_memory": "FORBIDDEN",
   "scheduler_default": "SERIAL_DETERMINISTIC",
   "parallel_independent_workers": "OPT_IN",
-  "live_intake": "PRE_RUN_STRICT_CAPTURE"
+  "live_intake": "PRE_RUN_STRICT_CAPTURE",
+  "commissioning_command_encoding": "JSON_ARGV_ARRAY_PREFERRED"
 }

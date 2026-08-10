@@ -8,7 +8,17 @@ class HostError(RuntimeError):
 def _command_from_env(name):
     v=os.environ.get(name)
     if not v: raise HostError('host command env not set: '+name,'CONFIGURATION')
-    return shlex.split(v,posix=(os.name!='nt'))
+    # C1 Windows-safe contract: prefer a JSON argv array. This avoids quoting/space/Unicode
+    # ambiguities in paths while remaining backward-compatible with legacy command strings.
+    t=v.strip()
+    if t.startswith('['):
+        try:
+            a=json.loads(t)
+        except Exception as e: raise HostError('host command JSON invalid: '+name,'CONFIGURATION') from e
+        if not isinstance(a,list) or not a or not all(isinstance(x,str) and x for x in a):
+            raise HostError('host command JSON must be a non-empty string array: '+name,'CONFIGURATION')
+        return a
+    return shlex.split(v,posix=True)
 class _Base:
     def _receipt(self,payload,out,raw,started,t0,attempt,adapter):
         hr=out.get('host_receipt',{}) if isinstance(out,dict) else {}

@@ -1,7 +1,7 @@
 ---
 prompt_id: W33_NARRATIVE_REFLEXIVITY_CONSUMPTION
-version: 1.0.0
-prompt_pack: ALPHALAB_PROMPT_PACK_1.0.0
+version: 1.1.0
+prompt_pack: ALPHALAB_PROMPT_PACK_1.1.0
 scientific_stack: V21.3.0
 runtime: R2.0.0
 ---
@@ -23,6 +23,7 @@ Build attention/narrative, reflexivity, consumption and driver-transition states
 - Keep interpretation flexible and multi-model, but evidence/time/authority rules strict.
 
 ## Allowed typed inputs
+- `decision_evidence_pack`
 - `evidence_integrity_receipt`
 
 ## Canonical Vault dependencies
@@ -31,6 +32,8 @@ Build attention/narrative, reflexivity, consumption and driver-transition states
 - `103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/00 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine MOC.md`
 
 ## Process instructions
+Use the admitted `decision_evidence_pack` as the substantive evidence body and `evidence_integrity_receipt` as its lineage/integrity gate. Never infer substantive facts from IDs alone.
+
 Build narrative candidates/attention/dominance, reflexive-loop phase, multi-dimensional consumption/remaining asymmetry and driver-transition state. Narrative is transmission/attention, not fact authority and not Fundamental Direction. Distinguish exogenous driver from endogenous amplification/exhaustion.
 
 ## Authority

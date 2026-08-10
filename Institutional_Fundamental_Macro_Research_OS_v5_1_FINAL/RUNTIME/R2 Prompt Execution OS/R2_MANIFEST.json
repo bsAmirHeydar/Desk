@@ -15,7 +15,7 @@
     "scientific_mutation": "NONE"
   },
   "r1_required": "R1.0.0",
-  "prompt_pack": "ALPHALAB_PROMPT_PACK_1.0.0",
+  "prompt_pack": "ALPHALAB_PROMPT_PACK_1.1.0",
   "process_graph": "R2_PROCESS_GRAPH_1.0.0",
   "process_count": 25,
   "independent_market_state_workers": 8,
@@ -24,5 +24,6 @@
   "decision_freeze": "R1_DECISION_SEAL_AFTER_G4",
   "executor_binding": "HOST_MANAGED_R3_OR_EXTERNAL",
   "launchers": "R3_PENDING",
-  "outcome_learning": "R3_PENDING"
+  "outcome_learning": "R3_PENDING",
+  "commissioning_revision": "C1.0.0"
 }

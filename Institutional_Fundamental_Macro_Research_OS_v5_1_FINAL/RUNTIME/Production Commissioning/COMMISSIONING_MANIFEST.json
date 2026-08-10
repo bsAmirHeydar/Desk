@@ -1,0 +1,25 @@
+{
+  "commissioning_version": "C1.0.0",
+  "scientific_stack": "V21.3.0",
+  "runtime": "R4.0.0",
+  "prompt_pack": "ALPHALAB_PROMPT_PACK_1.1.0",
+  "host_protocol": "R3_HOST_PROTOCOL_1.1.0",
+  "retrieval_protocol": "R3_RETRIEVAL_RUNTIME_1.1.0+C1",
+  "authority": {
+    "direction": "NONE",
+    "permission": "NONE",
+    "broker_write": "NONE",
+    "scientific_mutation": "NONE"
+  },
+  "components": [
+    "OpenAI Responses command host",
+    "domain-governed web retrieval",
+    "max-accuracy model profile bindings",
+    "environment certification",
+    "six-market shadow certification",
+    "permission-only production readiness gate",
+    "root launch wrappers"
+  ],
+  "external_attestation": "REQUIRED_AFTER_INSTALL",
+  "status": "INSTALLABLE"
+}
