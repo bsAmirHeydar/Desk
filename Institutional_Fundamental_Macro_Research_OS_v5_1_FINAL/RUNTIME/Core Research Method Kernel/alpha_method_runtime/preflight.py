@@ -20,4 +20,4 @@ def run(vault_root):
     tools=[v/'RUNTIME'/'R1 Foundation'/'tools'/'alpha_runtime.py',v/'RUNTIME'/'R2 Prompt Execution OS'/'tools'/'alpha_prompt_runtime.py']
     if not all(x.is_file() for x in tools): errors.append('inherited runtime tool missing')
     bad=[x for x in checks if not x['pass']]; errors += [x['name'] for x in bad]
-    return {'status':'PASS' if not errors else 'FAIL','method_version':'M1.0.0','scientific_stack':'V21.3.0','runtime':'R4.0.0','checks':checks,'errors':errors}
+    return {'status':'PASS' if not errors else 'FAIL','method_version':'M1.0.1','scientific_stack':'V21.3.0','runtime':'R4.0.0','checks':checks,'errors':errors}

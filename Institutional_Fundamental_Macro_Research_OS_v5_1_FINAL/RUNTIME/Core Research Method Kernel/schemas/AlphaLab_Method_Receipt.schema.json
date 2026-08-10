@@ -61,7 +61,7 @@
       "type": "integer"
     },
     "method_version": {
-      "const": "M1.0.0"
+      "const": "M1.0.1"
     },
     "phase": {
       "enum": [

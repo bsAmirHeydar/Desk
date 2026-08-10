@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authority_unchanged": {
+      "const": true
+    },
+    "records": {
+      "items": {
+        "additionalProperties": true,
+        "properties": {
+          "evidence_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "evidence_sufficiency": {
+            "type": "string"
+          },
+          "false_negatives": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "false_positives": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "recommendation": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "subject",
+          "evidence_count",
+          "false_positives",
+          "false_negatives",
+          "recommendation",
+          "evidence_sufficiency"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "subject_type": {
+      "enum": [
+        "M1_CAPABILITY",
+        "APL_A_LENS"
+      ]
+    },
+    "true_forward_status": {
+      "enum": [
+        "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+        "TRUE_FORWARD_EARLY",
+        "TRUE_FORWARD_MODERATE",
+        "TRUE_FORWARD_SUBSTANTIAL"
+      ]
+    },
+    "validation_version": {
+      "const": "FV1.0.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "validation_version",
+    "subject_type",
+    "records",
+    "true_forward_status",
+    "authority_unchanged"
+  ],
+  "type": "object"
+}

@@ -44,11 +44,24 @@
       "permission": "NONE"
     },
     "decision_world_mutation": "FORBIDDEN_FOR_VALID_RUNS",
-    "forward_validation": "REQUIRED_BEFORE_NEW_BEHAVIORAL_AUTHORITY",
+    "forward_validation": "FV1_ACTIVE_TRUE_FORWARD_PENDING",
     "hard_invalidity": "PRESEAL_BLOCK_ONLY",
     "new_direction_science": "NONE",
     "status": "INSTALLED_ACTIVE_METHOD_GOVERNANCE_FORWARD_VALIDATION_REQUIRED",
-    "version": "M1.0.0"
+    "version": "M1.0.1"
+  },
+  "method_perspective_forward_validation": {
+    "apl_a": "SHADOW_ONLY",
+    "apl_b": "NOT_IMPLEMENTED",
+    "direction_authority_added": "NONE",
+    "m1": "ACTIVE_METHOD_GOVERNANCE",
+    "owner": "D4",
+    "permission_authority_added": "NONE",
+    "promotion": "FORBIDDEN_IN_THIS_PHASE",
+    "status": "SYNTHETIC_VALIDATED_TRUE_FORWARD_PENDING",
+    "true_forward_status": "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+    "truth_state_at_installation": "SYNTHETIC_VALIDATION",
+    "version": "FV1.0.0"
   },
   "operational_execution": {
     "authority": "BLOCK_ONLY",

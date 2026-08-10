@@ -54,6 +54,7 @@ def run(vault_root):
     r=A([ev('FUT',publication_time='2026-08-01T13:00:00Z')]); ck('adv_future_leakage',r['status']=='OUTPUT_QUARANTINED' and r['hard_failure_count']>0)
     r=A([ev('A',root_source_id='ROOT_X'),ev('B',root_source_id='ROOT_X')]); ck('adv_same_root',r['status']=='RESEARCH_REQUIRED')
     pe=ev('P',evidence_class='PROXY',proxy_contract_id=None); pc=claim('C',evidence_ids=['P'],directness='DIRECT'); r=A([pe],[pc]); ck('adv_proxy_reification',r['status']=='RESEARCH_REQUIRED')
+    pe=ev('PDOM',evidence_class='PROXY',proxy_contract_id='PX_VALID',proxy_domain_state='OUT_OF_DOMAIN'); pc=claim('PDOM_C',evidence_ids=['PDOM'],directness='INDIRECT'); r=A([pe],[pc]); ck('adv_proxy_out_of_domain',r['status']=='RESEARCH_REQUIRED' and any(x['code']=='M015_PROXY_OUT_OF_DOMAIN' for x in r['findings']))
     r=A([ev('U',availability_state='UNAVAILABLE',value=0)]); ck('adv_unknown_zero',r['status']=='OUTPUT_QUARANTINED')
     r=A([], [claim('CA',claim_type='CAUSAL_HYPOTHESIS',mechanism=None,identification_state='NOT_IDENTIFIED',assertion_strength='CAUSAL_ESTABLISHED',directness='INDIRECT')]); ck('adv_correlation_causation',r['status']=='METHOD_INVALID')
     r=A([], [claim('NC',claim_type='NARRATIVE_CLAIM',circular_validation=True,directness='NARRATIVE')]); ck('adv_narrative_circularity',r['status']=='RESEARCH_REQUIRED')

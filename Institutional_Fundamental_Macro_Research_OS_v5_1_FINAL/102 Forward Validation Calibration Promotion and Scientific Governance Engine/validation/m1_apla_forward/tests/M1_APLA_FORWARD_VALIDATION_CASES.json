@@ -1,0 +1,90 @@
+{
+  "cases": [
+    {
+      "case_id": "FV1-A",
+      "name": "Valid research negative control"
+    },
+    {
+      "case_id": "FV1-B",
+      "name": "Revised CPI leakage"
+    },
+    {
+      "case_id": "FV1-C",
+      "name": "Same root pseudo-independence"
+    },
+    {
+      "case_id": "FV1-D",
+      "name": "Correlation as causation"
+    },
+    {
+      "case_id": "FV1-E",
+      "name": "Valid proxy in domain"
+    },
+    {
+      "case_id": "FV1-F",
+      "name": "Proxy outside domain"
+    },
+    {
+      "case_id": "FV1-G",
+      "name": "Narrative truth separation"
+    },
+    {
+      "case_id": "FV1-H",
+      "name": "Robust source removal"
+    },
+    {
+      "case_id": "FV1-I",
+      "name": "Source fragile thesis"
+    },
+    {
+      "case_id": "FV1-J",
+      "name": "Common mode"
+    },
+    {
+      "case_id": "FV1-K",
+      "name": "Horizon separation"
+    },
+    {
+      "case_id": "FV1-L",
+      "name": "Vague philosophical warning"
+    },
+    {
+      "case_id": "FV1-M",
+      "name": "Same issue both layers"
+    },
+    {
+      "case_id": "FV1-N",
+      "name": "Valid method + perspective fragility"
+    },
+    {
+      "case_id": "FV1-P",
+      "name": "Unknown invariant"
+    },
+    {
+      "case_id": "FV1-Q",
+      "name": "Illusory optionality"
+    },
+    {
+      "case_id": "FV1-R",
+      "name": "Scoped fragility"
+    },
+    {
+      "case_id": "FV1-S",
+      "name": "Incentive transfer"
+    },
+    {
+      "case_id": "FV1-T",
+      "name": "Scope routing"
+    },
+    {
+      "case_id": "FV1-U",
+      "name": "Epistemic fragility"
+    },
+    {
+      "case_id": "FV1-V",
+      "name": "Different dimensions both layers"
+    }
+  ],
+  "truth_state": "SYNTHETIC_VALIDATION",
+  "version": "FV1.0.0"
+}

@@ -1,0 +1,31 @@
+{
+  "apl_a": "APL-A 1.0.0",
+  "apl_b": "NOT_IMPLEMENTED",
+  "authority": {
+    "apl_a": "SHADOW_ONLY",
+    "broker_write": "NONE",
+    "direction": "NONE",
+    "m1_new_direction_authority": "NONE",
+    "permission": "NONE"
+  },
+  "decision_parity_required": true,
+  "installed_validation_evidence": [
+    "SYNTHETIC_VALIDATION"
+  ],
+  "method_kernel": "M1.0.1",
+  "name": "M1 + APL-A Forward Validation",
+  "owner": "D4_FORWARD_VALIDATION",
+  "promotion": "FORBIDDEN_IN_THIS_PHASE",
+  "runtime": "R4.0.0",
+  "scientific_stack": "V21.3.0",
+  "status": "VALIDATION_INFRASTRUCTURE_ACTIVE_SYNTHETIC_VALIDATED_TRUE_FORWARD_PENDING_AUTHORITY_UNCHANGED",
+  "true_forward_status": "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+  "validation_truth_states": [
+    "SYNTHETIC_VALIDATION",
+    "HISTORICAL_REPLAY",
+    "PSEUDO_FORWARD_WALK_FORWARD",
+    "SHADOW_LIVE",
+    "TRUE_FORWARD_VALIDATION"
+  ],
+  "version": "FV1.0.0"
+}

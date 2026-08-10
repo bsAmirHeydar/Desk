@@ -11,6 +11,21 @@
     "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/27 V19 D3 Full-Vault Production Prompt.md",
     "102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt.md"
   ],
+  "alpha_perspective": {
+    "authority": {
+      "broker_write": "NONE",
+      "direction": "NONE",
+      "fact": "NONE",
+      "permission": "NONE"
+    },
+    "data_first": true,
+    "decision_influence": "NONE_PENDING_FORWARD_VALIDATION",
+    "direct_retrieval": false,
+    "manifest": "RUNTIME/APL-A Alpha Perspective Layer/APL_A_MANIFEST.json",
+    "mode": "SHADOW_ONLY",
+    "source": "Talebian Systems Philosophy OS v3.0.0 MAXIMAL",
+    "version": "APL-A 1.0.0"
+  },
   "alpha_runtime": {
     "analytics_authority": "R1_OBJECT_STORE_PLUS_SQLITE",
     "catalog_backend": "SQLITE",
@@ -26,6 +41,9 @@
     "host_execution": "R3_ACTIVE_PROVIDER_NEUTRAL",
     "launcher_runtime": "R3_ACTIVE",
     "market_direction_authority": "NONE",
+    "method_artifact_world": "META",
+    "method_decision_authority": "NONE",
+    "method_kernel": "M1.0.0_ACTIVE_CONSERVATIVE_METHOD_GOVERNANCE",
     "offline_certification": "CORE_AND_FULL_AVAILABLE",
     "operational_execution_authority": "BLOCK_ONLY",
     "outcome_learning": "R3_ACTIVE",
@@ -124,6 +142,7 @@
     "positioning_ownership": "96 Positioning Ownership and Crowding Science/00 Positioning Ownership and Crowding Science MOC.md",
     "production_control": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/00 Institutional Evidence Calibration Portfolio and Model Risk Production Engine MOC.md",
     "prompt_execution_runtime": "RUNTIME/R2 Prompt Execution OS/00 R2 Prompt Execution OS MOC.md",
+    "research_method_governance": "RUNTIME/Core Research Method Kernel/00 Core Research Method Kernel MOC.md",
     "runtime_certification": "RUNTIME/R4 Scientific Certification and Reproducibility Hardening/00 R4 Scientific Certification and Reproducibility Hardening MOC.md",
     "runtime_foundation": "RUNTIME/R1 Foundation/00 R1 Foundation MOC.md",
     "timing": "93 Temporal Market Structure Timing and Calendar Intelligence Engine/00 Temporal Market Structure Timing and Calendar Intelligence Engine MOC.md"
@@ -211,6 +230,14 @@
     "direction_flip_allowed": false,
     "forward_only": true,
     "initial_promotion_registry_empty": true,
+    "m1_apla_validation": {
+      "apl_a": "SHADOW_ONLY",
+      "authority_change": "NONE",
+      "m1": "M1.0.1",
+      "status": "SYNTHETIC_VALIDATED_TRUE_FORWARD_PENDING",
+      "true_forward_status": "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+      "version": "FV1.0.0"
+    },
     "positive_permission_creation": "PROMOTED_REGISTRY_ONLY",
     "production_prompt": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt.md",
     "promotion_registry": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_registry.json",
@@ -447,7 +474,13 @@
     "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Execution_Handoff.schema.json",
     "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Execution_Receipt.schema.json",
     "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Retrieval_Receipt.schema.json",
-    "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Analytics_Row.schema.json"
+    "RUNTIME/R3 Operational Execution and Learning OS/schemas/AlphaLab_R3_Analytics_Row.schema.json",
+    "RUNTIME/Core Research Method Kernel/METHOD_KERNEL_MANIFEST.json",
+    "RUNTIME/Core Research Method Kernel/config/research_constitution.json",
+    "RUNTIME/Core Research Method Kernel/config/protocol_registry.json",
+    "RUNTIME/Core Research Method Kernel/config/authority_policy.json",
+    "RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Method_Plan.schema.json",
+    "RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Method_Receipt.schema.json"
   ],
   "retrieval_policy": "94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/config/retrieval_policy.json",
   "technical_direction_boundary": {
@@ -455,20 +488,5 @@
     "donchian_execution_trigger_only": true,
     "timing_clearance_from_price_technical_analysis": false
   },
-  "version": "21.3.0",
-  "alpha_perspective": {
-    "version": "APL-A 1.0.0",
-    "mode": "SHADOW_ONLY",
-    "authority": {
-      "fact": "NONE",
-      "direction": "NONE",
-      "permission": "NONE",
-      "broker_write": "NONE"
-    },
-    "source": "Talebian Systems Philosophy OS v3.0.0 MAXIMAL",
-    "data_first": true,
-    "direct_retrieval": false,
-    "decision_influence": "NONE_PENDING_FORWARD_VALIDATION",
-    "manifest": "RUNTIME/APL-A Alpha Perspective Layer/APL_A_MANIFEST.json"
-  }
+  "version": "21.3.0"
 }

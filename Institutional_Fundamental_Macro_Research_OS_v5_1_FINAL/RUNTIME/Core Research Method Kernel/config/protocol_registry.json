@@ -1,5 +1,5 @@
 {
-  "method_version": "M1.0.0",
+  "method_version": "M1.0.1",
   "protocols": [
     {
       "default_rigor": "LIGHT",

@@ -35,6 +35,10 @@ def assess(vault_root, run_id, plan, bundle, phase='AD_HOC'):
             findings.append(finding('M012_UNKNOWN_TO_ZERO','OUTPUT_QUARANTINED','Unavailable/unknown evidence collapsed to zero.',True,[eid]))
         if e.get('evidence_class')=='PROXY' and not e.get('proxy_contract_id'):
             findings.append(finding('M013_PROXY_CONTRACT_GAP','WARNING','Proxy evidence lacks an explicit method proxy contract; legacy evidence remains admissible but cannot be reified as the latent target.',False,[eid]))
+        if e.get('evidence_class')=='PROXY' and e.get('proxy_domain_state')=='OUT_OF_DOMAIN':
+            findings.append(finding('M015_PROXY_OUT_OF_DOMAIN','RESEARCH_REQUIRED','Proxy is being used outside its declared domain of validity.',False,[eid]))
+        if e.get('evidence_class')=='PROXY' and e.get('proxy_horizon_state')=='OUT_OF_HORIZON':
+            findings.append(finding('M016_PROXY_OUT_OF_HORIZON','RESEARCH_REQUIRED','Proxy is being used outside its declared horizon of validity.',False,[eid]))
         if e.get('evidence_class')=='MODEL_OUTPUT' and not e.get('model_version'):
             findings.append(finding('M014_MODEL_VERSION_GAP','WARNING','Model-derived evidence lacks explicit model/derivation version metadata.',False,[eid]))
     dg=dependency_graph(run_id,evidence)
@@ -82,4 +86,4 @@ def assess(vault_root, run_id, plan, bundle, phase='AD_HOC'):
             if not h.get('invalidation_triggers'):
                 findings.append(finding('M071_NO_INVALIDATION_TRIGGER','RESEARCH_REQUIRED','Material hypothesis lacks an operational invalidation trigger.',False,claim_ids=[h.get('hypothesis_id','?')]))
     status=_status(findings); hard=sum(1 for x in findings if x['hard'])
-    return {'schema_version':'1.0.0','method_version':'M1.0.0','run_id':run_id,'phase':phase,'status':status,'research_class':plan.get('research_class','UNRESOLVED'),'protocol_id':plan.get('protocol_id','UNRESOLVED'),'findings':findings,'hard_failure_count':hard,'source_dependency_graph':dg,'uncertainty_summary':list(bundle.get('uncertainty_summary') or []),'decision_authority':'NONE','decision_world_mutated':False,'created_at_utc':now()}
+    return {'schema_version':'1.0.0','method_version':'M1.0.1','run_id':run_id,'phase':phase,'status':status,'research_class':plan.get('research_class','UNRESOLVED'),'protocol_id':plan.get('protocol_id','UNRESOLVED'),'findings':findings,'hard_failure_count':hard,'source_dependency_graph':dg,'uncertainty_summary':list(bundle.get('uncertainty_summary') or []),'decision_authority':'NONE','decision_world_mutated':False,'created_at_utc':now()}

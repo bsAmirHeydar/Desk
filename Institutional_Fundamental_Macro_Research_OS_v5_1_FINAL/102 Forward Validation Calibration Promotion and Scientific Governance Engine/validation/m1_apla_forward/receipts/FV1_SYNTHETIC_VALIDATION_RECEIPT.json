@@ -1,0 +1,1273 @@
+{
+  "schema_version": "1.0.0",
+  "validation_version": "FV1.0.0",
+  "status": "PASS",
+  "truth_states_observed": [
+    "SYNTHETIC_VALIDATION"
+  ],
+  "true_forward_status": "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+  "authority_unchanged": true,
+  "records": [
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-A",
+      "case_id": "FV1-A",
+      "case_name": "Valid research negative control",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "NONE",
+      "expected_interaction": "NONE",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-B",
+      "case_id": "FV1-B",
+      "case_name": "Revised CPI leakage",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "OUTPUT_QUARANTINED",
+        "findings": [
+          {
+            "code": "M010_FUTURE_INFORMATION",
+            "severity": "OUTPUT_QUARANTINED",
+            "hard": true,
+            "message": "Evidence contains post-cutoff availability/publication/ingestion time: publication_time",
+            "evidence_ids": [
+              "B1"
+            ],
+            "claim_ids": []
+          }
+        ],
+        "expected": "OUTPUT_QUARANTINED",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "M1_ONLY",
+      "expected_interaction": "M1_ONLY",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-C",
+      "case_id": "FV1-C",
+      "case_name": "Same root pseudo independence",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "RESEARCH_REQUIRED",
+        "findings": [
+          {
+            "code": "M020_PSEUDO_INDEPENDENCE",
+            "severity": "RESEARCH_REQUIRED",
+            "hard": false,
+            "message": "Multiple evidence items share an underlying root; independence must not be counted nominally.",
+            "evidence_ids": [
+              "C1",
+              "C2"
+            ],
+            "claim_ids": []
+          }
+        ],
+        "expected": "RESEARCH_REQUIRED",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "M1_ONLY",
+      "expected_interaction": "M1_ONLY",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-D",
+      "case_id": "FV1-D",
+      "case_name": "Correlation presented as causation",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "METHOD_INVALID",
+        "findings": [
+          {
+            "code": "M030_CAUSAL_NO_MECHANISM",
+            "severity": "METHOD_INVALID",
+            "hard": true,
+            "message": "Causal claim lacks an explicit mechanism.",
+            "evidence_ids": [],
+            "claim_ids": [
+              "D_C"
+            ]
+          },
+          {
+            "code": "M031_CAUSAL_NOT_IDENTIFIED",
+            "severity": "METHOD_INVALID",
+            "hard": true,
+            "message": "Claim asserts causal certainty while causal effect is NOT_IDENTIFIED.",
+            "evidence_ids": [],
+            "claim_ids": [
+              "D_C"
+            ]
+          }
+        ],
+        "expected": "METHOD_INVALID",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "M1_ONLY",
+      "expected_interaction": "M1_ONLY",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-E",
+      "case_id": "FV1-E",
+      "case_name": "Valid proxy in domain",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "NONE",
+      "expected_interaction": "NONE",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-F",
+      "case_id": "FV1-F",
+      "case_name": "Proxy outside declared domain",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "RESEARCH_REQUIRED",
+        "findings": [
+          {
+            "code": "M015_PROXY_OUT_OF_DOMAIN",
+            "severity": "RESEARCH_REQUIRED",
+            "hard": false,
+            "message": "Proxy is being used outside its declared domain of validity.",
+            "evidence_ids": [
+              "F1"
+            ],
+            "claim_ids": []
+          }
+        ],
+        "expected": "RESEARCH_REQUIRED",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "M1_ONLY",
+      "expected_interaction": "M1_ONLY",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-G",
+      "case_id": "FV1-G",
+      "case_name": "Narrative may matter while later false",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V02_EPISTEMIC_FRAGILITY_AUDITOR",
+            "code": "APL_NARRATIVE_NOT_FACT",
+            "severity": "INFO",
+            "specific": true,
+            "actionable": true,
+            "domain": "NARRATIVE",
+            "classified_false_positive": false,
+            "detail": {
+              "kind": "NARRATIVE_SEPARATION"
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "APL_A_ONLY",
+      "expected_interaction": "APL_A_ONLY",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-H",
+      "case_id": "FV1-H",
+      "case_name": "Robust thesis survives source removal",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "NONE",
+      "expected_interaction": "NONE",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-I",
+      "case_id": "FV1-I",
+      "case_name": "Source fragile thesis",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V03_STORY_MODEL_SOURCE_REMOVAL",
+            "code": "APL_SOURCE_FRAGILITY",
+            "severity": "MATERIAL",
+            "specific": true,
+            "actionable": true,
+            "domain": "SOURCE_DEPENDENCY",
+            "classified_false_positive": false,
+            "detail": {
+              "kind": "SOURCE_REMOVAL",
+              "before": "SUPPORTED",
+              "after": "UNRESOLVED",
+              "material": true
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "CONFLICT",
+      "expected_interaction": "CONFLICT",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-J",
+      "case_id": "FV1-J",
+      "case_name": "Common mode hidden by nominal diversification",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V12_NETWORK_COMMON_MODE_FORCED_ACTORS",
+            "code": "APL_COMMON_MODE",
+            "severity": "MATERIAL",
+            "specific": true,
+            "actionable": true,
+            "domain": "NETWORK",
+            "classified_false_positive": false,
+            "detail": {
+              "kind": "COMMON_MODE",
+              "nominal_support_count": 3,
+              "independent_root_count": 1,
+              "root": "USD_FUNDING"
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "CONFLICT",
+      "expected_interaction": "CONFLICT",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-K",
+      "case_id": "FV1-K",
+      "case_name": "Structural bullish and intraday bearish coexist",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V04_INVARIANT_AND_UNKNOWNS_ANALYST",
+            "code": "APL_HORIZON_SEPARATION",
+            "severity": "INFO",
+            "specific": true,
+            "actionable": true,
+            "domain": "HORIZON",
+            "classified_false_positive": false,
+            "detail": {
+              "kind": "HORIZON_SEPARATION"
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "APL_A_ONLY",
+      "expected_interaction": "APL_A_ONLY",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-L",
+      "case_id": "FV1-L",
+      "case_name": "Vague philosophical fragility warning",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V10_FRAGILITY_GEOMETRY",
+            "code": "APL_VAGUE_FRAGILITY",
+            "severity": "LOW",
+            "specific": false,
+            "actionable": false,
+            "domain": "EXPOSURE",
+            "classified_false_positive": true,
+            "detail": {
+              "kind": "VAGUE_FRAGILITY",
+              "system_boundary": null,
+              "stressor": null,
+              "horizon": null,
+              "mechanism": null
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "APL_A_ONLY",
+      "expected_interaction": "APL_A_ONLY",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-M",
+      "case_id": "FV1-M",
+      "case_name": "M1 and APL-A identify source dependence",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "RESEARCH_REQUIRED",
+        "findings": [
+          {
+            "code": "M020_PSEUDO_INDEPENDENCE",
+            "severity": "RESEARCH_REQUIRED",
+            "hard": false,
+            "message": "Multiple evidence items share an underlying root; independence must not be counted nominally.",
+            "evidence_ids": [
+              "M1",
+              "M2"
+            ],
+            "claim_ids": []
+          }
+        ],
+        "expected": "RESEARCH_REQUIRED",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V03_STORY_MODEL_SOURCE_REMOVAL",
+            "code": "APL_SOURCE_FRAGILITY",
+            "severity": "MATERIAL",
+            "specific": true,
+            "actionable": true,
+            "domain": "SOURCE_DEPENDENCY",
+            "classified_false_positive": false,
+            "detail": {
+              "kind": "SOURCE_REMOVAL",
+              "before": "SUPPORTED",
+              "after": "UNRESOLVED",
+              "material": true
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "BOTH_SAME_ISSUE",
+      "expected_interaction": "BOTH_SAME_ISSUE",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-N",
+      "case_id": "FV1-N",
+      "case_name": "Method valid but scoped exposure fragility",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V10_FRAGILITY_GEOMETRY",
+            "code": "APL_SCOPED_FRAGILITY",
+            "severity": "MATERIAL",
+            "specific": true,
+            "actionable": true,
+            "domain": "EXPOSURE",
+            "classified_false_positive": false,
+            "detail": {
+              "kind": "FRAGILITY",
+              "system_boundary": "NASDAQ_THESIS",
+              "stressor": "REAL_YIELD_SHOCK",
+              "horizon": "SESSION",
+              "mechanism": "duration convexity",
+              "geometry": "LOCALLY_CONCAVE"
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "CONFLICT",
+      "expected_interaction": "CONFLICT",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-P",
+      "case_id": "FV1-P",
+      "case_name": "Unknown remains unknown and invariant visible",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V04_INVARIANT_AND_UNKNOWNS_ANALYST",
+            "code": "APL_UNKNOWN_INVARIANT",
+            "severity": "INFO",
+            "specific": true,
+            "actionable": true,
+            "domain": "UNKNOWNS",
+            "classified_false_positive": false,
+            "detail": {
+              "kind": "UNKNOWNS",
+              "unknowns": [
+                "POSITIONING_STATE"
+              ],
+              "invariant": "DIRECTION_NOT_PROVEN"
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "APL_A_ONLY",
+      "expected_interaction": "APL_A_ONLY",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-Q",
+      "case_id": "FV1-Q",
+      "case_name": "Illusory optionality",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V11_EXPOSURE_OPTIONALITY_TAIL",
+            "code": "APL_ILLUSORY_OPTIONALITY",
+            "severity": "MATERIAL",
+            "specific": true,
+            "actionable": true,
+            "domain": "EXPOSURE",
+            "classified_false_positive": false,
+            "detail": {
+              "state": "ILLUSORY_OPTIONALITY",
+              "kind": "OPTIONALITY",
+              "cost": "LOW",
+              "expiry": "OPEN",
+              "exercise": false
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "CONFLICT",
+      "expected_interaction": "CONFLICT",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-R",
+      "case_id": "FV1-R",
+      "case_name": "Scoped fragility geometry",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V10_FRAGILITY_GEOMETRY",
+            "code": "APL_SCOPED_FRAGILITY",
+            "severity": "MATERIAL",
+            "specific": true,
+            "actionable": true,
+            "domain": "EXPOSURE",
+            "classified_false_positive": false,
+            "detail": {
+              "kind": "FRAGILITY",
+              "system_boundary": "GOLD_THESIS",
+              "stressor": "REAL_YIELD_SHOCK",
+              "horizon": "DAILY",
+              "mechanism": "discounting",
+              "geometry": "LOCALLY_CONCAVE"
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "CONFLICT",
+      "expected_interaction": "CONFLICT",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-S",
+      "case_id": "FV1-S",
+      "case_name": "Incentive and tail-transfer analysis",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V13_INCENTIVE_TRANSFER_INTERVENTION",
+            "code": "APL_FRAGILITY_TRANSFER",
+            "severity": "INFO",
+            "specific": true,
+            "actionable": true,
+            "domain": "INCENTIVES",
+            "classified_false_positive": false,
+            "detail": {
+              "kind": "INCENTIVE_TRANSFER",
+              "actor": "DEALER",
+              "tail_carrier": "LEVERAGED_BUYER",
+              "intervention": "MARGIN_CHANGE",
+              "reversal_condition": "VOL_NORMALIZES"
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "APL_A_ONLY",
+      "expected_interaction": "APL_A_ONLY",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-T",
+      "case_id": "FV1-T",
+      "case_name": "APL scope router activation",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V01_SCOPE_AND_LENS_ROUTER",
+            "code": "APL_SCOPE_ACTIVATION",
+            "severity": "INFO",
+            "specific": true,
+            "actionable": true,
+            "domain": "SCOPE",
+            "classified_false_positive": false,
+            "detail": {
+              "lenses": [
+                "V02",
+                "V03"
+              ]
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "APL_A_ONLY",
+      "expected_interaction": "APL_A_ONLY",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-U",
+      "case_id": "FV1-U",
+      "case_name": "Epistemic fragility auditor",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "PASS",
+        "findings": [],
+        "expected": "PASS",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V02_EPISTEMIC_FRAGILITY_AUDITOR",
+            "code": "APL_EPISTEMIC_FRAGILITY",
+            "severity": "MATERIAL",
+            "specific": true,
+            "actionable": true,
+            "domain": "SOURCE_DEPENDENCY",
+            "classified_false_positive": false,
+            "detail": {
+              "kind": "EPISTEMIC",
+              "root_count": 1,
+              "unknown_material": true
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "CONFLICT",
+      "expected_interaction": "CONFLICT",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    },
+    {
+      "schema_version": "1.0.0",
+      "validation_version": "FV1.0.0",
+      "record_id": "FV1_REC_FV1-V",
+      "case_id": "FV1-V",
+      "case_name": "Different dimensions same case",
+      "truth_state": "SYNTHETIC_VALIDATION",
+      "m1": {
+        "status": "RESEARCH_REQUIRED",
+        "findings": [
+          {
+            "code": "M020_PSEUDO_INDEPENDENCE",
+            "severity": "RESEARCH_REQUIRED",
+            "hard": false,
+            "message": "Multiple evidence items share an underlying root; independence must not be counted nominally.",
+            "evidence_ids": [
+              "V1",
+              "V2"
+            ],
+            "claim_ids": []
+          }
+        ],
+        "expected": "RESEARCH_REQUIRED",
+        "expected_match": true
+      },
+      "apl_a": {
+        "findings": [
+          {
+            "lens": "V12_NETWORK_COMMON_MODE_FORCED_ACTORS",
+            "code": "APL_COMMON_MODE",
+            "severity": "MATERIAL",
+            "specific": true,
+            "actionable": true,
+            "domain": "NETWORK",
+            "classified_false_positive": false,
+            "detail": {
+              "kind": "COMMON_MODE",
+              "nominal_support_count": 3,
+              "independent_root_count": 1,
+              "root": "COLLATERAL"
+            }
+          }
+        ],
+        "mode": "SYNTHETIC_LENS_HARNESS",
+        "shadow_only": true
+      },
+      "interaction": "BOTH_DIFFERENT_DIMENSIONS",
+      "expected_interaction": "BOTH_DIFFERENT_DIMENSIONS",
+      "interaction_match": true,
+      "authority": {
+        "direction_mutated": false,
+        "permission_mutated": false,
+        "apl_a": "SHADOW_ONLY",
+        "m1_new_direction_authority": "NONE"
+      },
+      "created_at_utc": "2026-08-10T08:40:41Z"
+    }
+  ],
+  "router": {
+    "paraphrase_stable": true,
+    "default_class": "DIRECTIONAL_FORECAST",
+    "proportional": {
+      "DESCRIPTIVE_STATE_ESTIMATION": true,
+      "CAUSAL_ATTRIBUTION": true,
+      "NEW_ASSET_RESEARCH": true
+    }
+  },
+  "performance": {
+    "scope": "LOCAL_COMPONENT_ONLY_NO_LLM_NO_RETRIEVAL",
+    "m1_ms": {
+      "median": 0.3038,
+      "p95": 0.3531
+    },
+    "apl_harness_ms": {
+      "median": 0.0025,
+      "p95": 0.0029
+    }
+  },
+  "interaction_matrix": {
+    "schema_version": "1.0.0",
+    "validation_version": "FV1.0.0",
+    "records": [
+      {
+        "case_id": "FV1-A",
+        "interaction": "NONE",
+        "expected": "NONE",
+        "match": true
+      },
+      {
+        "case_id": "FV1-B",
+        "interaction": "M1_ONLY",
+        "expected": "M1_ONLY",
+        "match": true
+      },
+      {
+        "case_id": "FV1-C",
+        "interaction": "M1_ONLY",
+        "expected": "M1_ONLY",
+        "match": true
+      },
+      {
+        "case_id": "FV1-D",
+        "interaction": "M1_ONLY",
+        "expected": "M1_ONLY",
+        "match": true
+      },
+      {
+        "case_id": "FV1-E",
+        "interaction": "NONE",
+        "expected": "NONE",
+        "match": true
+      },
+      {
+        "case_id": "FV1-F",
+        "interaction": "M1_ONLY",
+        "expected": "M1_ONLY",
+        "match": true
+      },
+      {
+        "case_id": "FV1-G",
+        "interaction": "APL_A_ONLY",
+        "expected": "APL_A_ONLY",
+        "match": true
+      },
+      {
+        "case_id": "FV1-H",
+        "interaction": "NONE",
+        "expected": "NONE",
+        "match": true
+      },
+      {
+        "case_id": "FV1-I",
+        "interaction": "CONFLICT",
+        "expected": "CONFLICT",
+        "match": true
+      },
+      {
+        "case_id": "FV1-J",
+        "interaction": "CONFLICT",
+        "expected": "CONFLICT",
+        "match": true
+      },
+      {
+        "case_id": "FV1-K",
+        "interaction": "APL_A_ONLY",
+        "expected": "APL_A_ONLY",
+        "match": true
+      },
+      {
+        "case_id": "FV1-L",
+        "interaction": "APL_A_ONLY",
+        "expected": "APL_A_ONLY",
+        "match": true
+      },
+      {
+        "case_id": "FV1-M",
+        "interaction": "BOTH_SAME_ISSUE",
+        "expected": "BOTH_SAME_ISSUE",
+        "match": true
+      },
+      {
+        "case_id": "FV1-N",
+        "interaction": "CONFLICT",
+        "expected": "CONFLICT",
+        "match": true
+      },
+      {
+        "case_id": "FV1-P",
+        "interaction": "APL_A_ONLY",
+        "expected": "APL_A_ONLY",
+        "match": true
+      },
+      {
+        "case_id": "FV1-Q",
+        "interaction": "CONFLICT",
+        "expected": "CONFLICT",
+        "match": true
+      },
+      {
+        "case_id": "FV1-R",
+        "interaction": "CONFLICT",
+        "expected": "CONFLICT",
+        "match": true
+      },
+      {
+        "case_id": "FV1-S",
+        "interaction": "APL_A_ONLY",
+        "expected": "APL_A_ONLY",
+        "match": true
+      },
+      {
+        "case_id": "FV1-T",
+        "interaction": "APL_A_ONLY",
+        "expected": "APL_A_ONLY",
+        "match": true
+      },
+      {
+        "case_id": "FV1-U",
+        "interaction": "CONFLICT",
+        "expected": "CONFLICT",
+        "match": true
+      },
+      {
+        "case_id": "FV1-V",
+        "interaction": "BOTH_DIFFERENT_DIMENSIONS",
+        "expected": "BOTH_DIFFERENT_DIMENSIONS",
+        "match": true
+      }
+    ]
+  },
+  "m1_readiness": {
+    "schema_version": "1.0.0",
+    "validation_version": "FV1.0.0",
+    "subject_type": "M1_CAPABILITY",
+    "records": [
+      {
+        "subject": "CLAIM_ONTOLOGY",
+        "evidence_count": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "recommendation": "RETAIN_CURRENT_AUTHORITY",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "UNKNOWN_PRESERVATION",
+        "evidence_count": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "recommendation": "HARD_METHOD_GUARD_ALREADY_VALID",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "PROVENANCE",
+        "evidence_count": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "recommendation": "HARD_METHOD_GUARD_ALREADY_VALID",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "SOURCE_DEPENDENCY",
+        "evidence_count": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "recommendation": "HARD_METHOD_GUARD_ALREADY_VALID",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "PROXY_GOVERNANCE",
+        "evidence_count": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "recommendation": "RETAIN_CURRENT_AUTHORITY",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "CAUSAL_GOVERNANCE",
+        "evidence_count": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "recommendation": "HARD_METHOD_GUARD_ALREADY_VALID",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "CONTRADICTION_PRESERVATION",
+        "evidence_count": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "recommendation": "RETAIN_CURRENT_AUTHORITY",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "PROTOCOL_ROUTER",
+        "evidence_count": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "recommendation": "RETAIN_CURRENT_AUTHORITY",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "EXCEPTIONS",
+        "evidence_count": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "recommendation": "RETAIN_CURRENT_AUTHORITY",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "QUARANTINE",
+        "evidence_count": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "recommendation": "HARD_METHOD_GUARD_ALREADY_VALID",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "LANGUAGE_DISCIPLINE",
+        "evidence_count": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "recommendation": "RETAIN_CURRENT_AUTHORITY",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "ESCALATION",
+        "evidence_count": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "recommendation": "RETAIN_CURRENT_AUTHORITY",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      }
+    ],
+    "true_forward_status": "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+    "authority_unchanged": true
+  },
+  "apl_a_readiness": {
+    "schema_version": "1.0.0",
+    "validation_version": "FV1.0.0",
+    "subject_type": "APL_A_LENS",
+    "records": [
+      {
+        "subject": "V01_SCOPE_AND_LENS_ROUTER",
+        "evidence_count": 1,
+        "material_findings": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "unique_value": 1,
+        "recommendation": "RETAIN_SHADOW",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "V02_EPISTEMIC_FRAGILITY_AUDITOR",
+        "evidence_count": 2,
+        "material_findings": 1,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "unique_value": 2,
+        "recommendation": "RETAIN_SHADOW",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "V03_STORY_MODEL_SOURCE_REMOVAL",
+        "evidence_count": 2,
+        "material_findings": 2,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "unique_value": 1,
+        "recommendation": "RETAIN_SHADOW",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "V04_INVARIANT_AND_UNKNOWNS_ANALYST",
+        "evidence_count": 2,
+        "material_findings": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "unique_value": 2,
+        "recommendation": "RETAIN_SHADOW",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "V10_FRAGILITY_GEOMETRY",
+        "evidence_count": 3,
+        "material_findings": 2,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "unique_value": 3,
+        "recommendation": "RETAIN_SHADOW",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "V11_EXPOSURE_OPTIONALITY_TAIL",
+        "evidence_count": 1,
+        "material_findings": 1,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "unique_value": 1,
+        "recommendation": "RETAIN_SHADOW",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "V12_NETWORK_COMMON_MODE_FORCED_ACTORS",
+        "evidence_count": 2,
+        "material_findings": 2,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "unique_value": 1,
+        "recommendation": "RETAIN_SHADOW",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      },
+      {
+        "subject": "V13_INCENTIVE_TRANSFER_INTERVENTION",
+        "evidence_count": 1,
+        "material_findings": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "unique_value": 1,
+        "recommendation": "RETAIN_SHADOW",
+        "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+      }
+    ],
+    "true_forward_status": "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+    "authority_unchanged": true
+  },
+  "deployment_status": "VALIDATION_INFRASTRUCTURE_ACTIVE_SYNTHETIC_VALIDATED_TRUE_FORWARD_PENDING_AUTHORITY_UNCHANGED",
+  "created_at_utc": "2026-08-10T08:40:41Z"
+}

@@ -15,11 +15,18 @@
   "commissioning": "C1.0.0",
   "decision_seal_mutation": "FORBIDDEN_FOR_VALID_RUNS",
   "decision_world_mutation": "FORBIDDEN",
-  "forward_validation": "REQUIRED_BEFORE_ANY_NEW_BEHAVIORAL_AUTHORITY",
-  "method_version": "M1.0.0",
+  "forward_validation": "FV1_INFRASTRUCTURE_ACTIVE_TRUE_FORWARD_EVIDENCE_REQUIRED",
+  "method_version": "M1.0.1",
   "mode": "ACTIVE_METHOD_GOVERNANCE_CONSERVATIVE_AUTHORITY",
   "name": "Alpha Lab Core Research Method & Epistemology Kernel",
   "new_direction_science": "NONE",
+  "repair_history": [
+    {
+      "authority_change": "NONE",
+      "reason": "Forward-validation adversarial case verified missing enforcement for proxy use outside declared domain/horizon; added RESEARCH_REQUIRED guards only.",
+      "version": "M1.0.1"
+    }
+  ],
   "runtime": "R4.0.0",
   "runtime_hooks": [
     "R2_BOOTSTRAP_METHOD_PLAN",

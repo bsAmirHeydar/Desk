@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "validation_version": "FV1.0.0",
+  "classification": "PRE_EXISTING_BASELINE_DEFECT_REPAIRED",
+  "defect": "R4 certification surface baseline contained 13 volatile __pycache__/pyc entries although deployment policy says pyc is never required. Python execution could invalidate the fingerprint.",
+  "repair": "Removed volatile entries from R4 authoritative surface and added a fingerprint guard rejecting volatile surface entries.",
+  "m1_behavioral_repair": {
+    "from": "M1.0.0",
+    "to": "M1.0.1",
+    "defect": "Proxy contract existed but out-of-domain/out-of-horizon use was not explicitly warned by the method validator.",
+    "repair": "Added RESEARCH_REQUIRED guards M015/M016.",
+    "authority_change": "NONE"
+  },
+  "unrelated_inherited_gap": {
+    "d2_source_note_audit": "PRE_EXISTING_FAIL",
+    "missing_note_count": 16,
+    "phase_action": "NOT_REPAIRED_UNRELATED_TO_FV1",
+    "impact": "D4 aggregate preflight can remain slow/failing on inherited D2 source-note documentation coverage; D4 selftest and FV1 integration pass."
+  },
+  "r4_individual_certification": {
+    "CORE": "PASS",
+    "FULL": "PASS"
+  },
+  "true_forward_status": "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+  "authority_unchanged": true
+}

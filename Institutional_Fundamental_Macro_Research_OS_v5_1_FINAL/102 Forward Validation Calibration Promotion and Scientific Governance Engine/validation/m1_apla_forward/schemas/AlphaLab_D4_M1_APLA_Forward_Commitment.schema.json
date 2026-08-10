@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "apl_version": {
+      "type": "string"
+    },
+    "commitment_id": {
+      "type": "string"
+    },
+    "created_at_utc": {
+      "type": "string"
+    },
+    "method_version": {
+      "type": "string"
+    },
+    "payload_hash": {
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "truth_state": {
+      "enum": [
+        "SHADOW_LIVE",
+        "TRUE_FORWARD_VALIDATION"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "commitment_id",
+    "run_id",
+    "truth_state",
+    "analysis_cutoff_utc",
+    "method_version",
+    "apl_version",
+    "payload_hash",
+    "created_at_utc"
+  ],
+  "type": "object"
+}

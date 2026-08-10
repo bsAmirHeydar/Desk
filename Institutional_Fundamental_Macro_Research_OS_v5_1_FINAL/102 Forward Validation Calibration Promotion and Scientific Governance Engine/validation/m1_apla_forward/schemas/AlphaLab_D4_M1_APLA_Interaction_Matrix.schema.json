@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "records": {
+      "items": {
+        "additionalProperties": true,
+        "properties": {
+          "case_id": {
+            "type": "string"
+          },
+          "interaction": {
+            "enum": [
+              "NONE",
+              "M1_ONLY",
+              "APL_A_ONLY",
+              "BOTH_SAME_ISSUE",
+              "BOTH_DIFFERENT_DIMENSIONS",
+              "CONFLICT"
+            ]
+          }
+        },
+        "required": [
+          "case_id",
+          "interaction"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "validation_version": {
+      "const": "FV1.0.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "validation_version",
+    "records"
+  ],
+  "type": "object"
+}

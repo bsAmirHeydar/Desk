@@ -16,6 +16,7 @@ for req in m.get('required_runtime_contracts',[]):
     if not (r/req).exists():e.append('MISSING_RUNTIME_CONTRACT '+req)
 cmds=[
  ('manifest_sync',[r/'94 Institutional Evidence Calibration Portfolio and Model Risk Production Engine/tools/alphalab_manifest_sync.py','--vault-root',r,'--check']),
+ ('m1_apla_forward_validation',[r/'102 Forward Validation Calibration Promotion and Scientific Governance Engine/tools/alphalab_m1_apla_forward_validate.py','--vault-root',r,'preflight']),
  ('d4_selftest',[r/'102 Forward Validation Calibration Promotion and Scientific Governance Engine/tools/alphalab_d4_selftest.py']),
  ('d4_coverage',[r/'102 Forward Validation Calibration Promotion and Scientific Governance Engine/tools/alphalab_d4_coverage_audit.py','--vault-root',r]),
  ('d3_regression',[r/'101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/tools/alphalab_d3_preflight.py','--vault-root',r,'--mode',a.mode]),

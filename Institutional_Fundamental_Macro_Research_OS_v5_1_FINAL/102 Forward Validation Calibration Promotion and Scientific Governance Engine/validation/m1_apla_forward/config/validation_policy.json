@@ -1,0 +1,48 @@
+{
+  "append_only_ledger": true,
+  "authority_readiness_labels": [
+    "RETAIN_SHADOW",
+    "RETAIN_CURRENT_AUTHORITY",
+    "RESEARCH_TRIGGER_CANDIDATE",
+    "ADVISORY_CANDIDATE",
+    "HARD_METHOD_GUARD_ALREADY_VALID",
+    "REQUIRES_REPAIR",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "default_truth_state": "SYNTHETIC_VALIDATION",
+  "evidence_sufficiency_labels": [
+    "INSUFFICIENT",
+    "EARLY",
+    "MODERATE",
+    "SUBSTANTIAL",
+    "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+  ],
+  "forbidden": [
+    "APL_B_IMPLEMENTATION",
+    "APL_A_AUTO_PROMOTION",
+    "M1_DIRECTION_PROMOTION",
+    "DIRECTION_MUTATION",
+    "BROKER_PERMISSION_MUTATION",
+    "TALeb_SCORE",
+    "APL_SCORE",
+    "EPISTEMIC_SCORE",
+    "COMBINED_SCORE",
+    "WEIGHTED_LENS_VOTE"
+  ],
+  "hard_false_positive_class": "SEVERE_VALIDATION_FAILURE",
+  "no_score_collapse": true,
+  "owner": "D4",
+  "pre_outcome_commitment_required_for": [
+    "SHADOW_LIVE",
+    "TRUE_FORWARD_VALIDATION"
+  ],
+  "true_forward_required_before_new_authority": true,
+  "truth_labels": [
+    "SYNTHETIC_VALIDATION",
+    "HISTORICAL_REPLAY",
+    "PSEUDO_FORWARD_WALK_FORWARD",
+    "SHADOW_LIVE",
+    "TRUE_FORWARD_VALIDATION"
+  ],
+  "version": "FV1.0.0"
+}

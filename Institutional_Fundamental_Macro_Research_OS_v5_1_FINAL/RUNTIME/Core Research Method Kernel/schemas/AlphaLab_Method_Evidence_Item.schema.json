@@ -71,6 +71,22 @@
         "null"
       ]
     },
+    "proxy_domain_state": {
+      "enum": [
+        "IN_DOMAIN",
+        "OUT_OF_DOMAIN",
+        "UNKNOWN",
+        null
+      ]
+    },
+    "proxy_horizon_state": {
+      "enum": [
+        "IN_HORIZON",
+        "OUT_OF_HORIZON",
+        "UNKNOWN",
+        null
+      ]
+    },
     "publication_time": {
       "type": [
         "string",

@@ -15,7 +15,7 @@ class MethodRegistry:
     def schema_ref(self,name): return f'RUNTIME/Core Research Method Kernel/schemas/{name}'
     def validate(self):
         errs=[]
-        if self.manifest.get('method_version')!='M1.0.0': errs.append('method version')
+        if self.manifest.get('method_version')!='M1.0.1': errs.append('method version')
         if self.manifest.get('authority',{}).get('direction')!='NONE': errs.append('direction authority')
         if self.manifest.get('authority',{}).get('permission')!='NONE': errs.append('permission authority')
         if self.manifest.get('apl_b')!='NOT_IMPLEMENTED': errs.append('APL-B boundary')

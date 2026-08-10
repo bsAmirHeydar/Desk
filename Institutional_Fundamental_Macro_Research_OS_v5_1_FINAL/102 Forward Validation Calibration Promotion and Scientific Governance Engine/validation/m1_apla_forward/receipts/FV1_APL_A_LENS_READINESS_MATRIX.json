@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "validation_version": "FV1.0.0",
+  "subject_type": "APL_A_LENS",
+  "records": [
+    {
+      "subject": "V01_SCOPE_AND_LENS_ROUTER",
+      "evidence_count": 1,
+      "material_findings": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "unique_value": 1,
+      "recommendation": "RETAIN_SHADOW",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "V02_EPISTEMIC_FRAGILITY_AUDITOR",
+      "evidence_count": 2,
+      "material_findings": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "unique_value": 2,
+      "recommendation": "RETAIN_SHADOW",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "V03_STORY_MODEL_SOURCE_REMOVAL",
+      "evidence_count": 2,
+      "material_findings": 2,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "unique_value": 1,
+      "recommendation": "RETAIN_SHADOW",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "V04_INVARIANT_AND_UNKNOWNS_ANALYST",
+      "evidence_count": 2,
+      "material_findings": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "unique_value": 2,
+      "recommendation": "RETAIN_SHADOW",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "V10_FRAGILITY_GEOMETRY",
+      "evidence_count": 3,
+      "material_findings": 2,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "unique_value": 3,
+      "recommendation": "RETAIN_SHADOW",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "V11_EXPOSURE_OPTIONALITY_TAIL",
+      "evidence_count": 1,
+      "material_findings": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "unique_value": 1,
+      "recommendation": "RETAIN_SHADOW",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "V12_NETWORK_COMMON_MODE_FORCED_ACTORS",
+      "evidence_count": 2,
+      "material_findings": 2,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "unique_value": 1,
+      "recommendation": "RETAIN_SHADOW",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "V13_INCENTIVE_TRANSFER_INTERVENTION",
+      "evidence_count": 1,
+      "material_findings": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "unique_value": 1,
+      "recommendation": "RETAIN_SHADOW",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    }
+  ],
+  "true_forward_status": "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+  "authority_unchanged": true
+}

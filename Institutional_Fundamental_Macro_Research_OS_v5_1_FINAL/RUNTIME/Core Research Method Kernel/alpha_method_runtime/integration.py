@@ -18,7 +18,7 @@ def ensure_plan(vault_root,rt,run_id):
     # R1 stores resolved cutoff under analysis_cutoff_utc; preserve original request shape plus resolved manifest cutoff.
     req=dict(req); req['analysis_cutoff_utc']=rt.store.load_manifest(run_id).get('analysis_cutoff_utc')
     plan=build_plan(vault_root,run_id,req)
-    rt.store.put_artifact(run_id,'method_plan','META','META',plan,'application/json',producer_process_id='M1_METHOD_ROUTER',producer_version='M1.0.0')
+    rt.store.put_artifact(run_id,'method_plan','META','META',plan,'application/json',producer_process_id='M1_METHOD_ROUTER',producer_version='M1.0.1')
     return plan
 
 def collect_bundle(rt,run_id):
@@ -33,7 +33,7 @@ def validate_phase(vault_root,rt,run_id,phase,logical_name=None,store=True,raise
     plan=ensure_plan(vault_root,rt,run_id); out=assess(vault_root,run_id,plan,collect_bundle(rt,run_id),phase)
     validate_schema(vault_root,'RUNTIME/Core Research Method Kernel/schemas/AlphaLab_Method_Receipt.schema.json',out)
     lname=logical_name or 'method_'+phase.lower()+'_validation_receipt'
-    if store and lname not in _names(rt,run_id): rt.store.put_artifact(run_id,lname,'META','META',out,'application/json',producer_process_id='M1_METHOD_VALIDATOR',producer_version='M1.0.0')
+    if store and lname not in _names(rt,run_id): rt.store.put_artifact(run_id,lname,'META','META',out,'application/json',producer_process_id='M1_METHOD_VALIDATOR',producer_version='M1.0.1')
     if raise_hard and out['hard_failure_count']>0:
         raise MethodInvalid('method validation '+phase+' failed: '+','.join(x['code'] for x in out['findings'] if x['hard']))
     return out

@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "validation_version": "FV1.0.0",
+  "subject_type": "M1_CAPABILITY",
+  "records": [
+    {
+      "subject": "CLAIM_ONTOLOGY",
+      "evidence_count": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recommendation": "RETAIN_CURRENT_AUTHORITY",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "UNKNOWN_PRESERVATION",
+      "evidence_count": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recommendation": "HARD_METHOD_GUARD_ALREADY_VALID",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "PROVENANCE",
+      "evidence_count": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recommendation": "HARD_METHOD_GUARD_ALREADY_VALID",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "SOURCE_DEPENDENCY",
+      "evidence_count": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recommendation": "HARD_METHOD_GUARD_ALREADY_VALID",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "PROXY_GOVERNANCE",
+      "evidence_count": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recommendation": "RETAIN_CURRENT_AUTHORITY",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "CAUSAL_GOVERNANCE",
+      "evidence_count": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recommendation": "HARD_METHOD_GUARD_ALREADY_VALID",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "CONTRADICTION_PRESERVATION",
+      "evidence_count": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recommendation": "RETAIN_CURRENT_AUTHORITY",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "PROTOCOL_ROUTER",
+      "evidence_count": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recommendation": "RETAIN_CURRENT_AUTHORITY",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "EXCEPTIONS",
+      "evidence_count": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recommendation": "RETAIN_CURRENT_AUTHORITY",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "QUARANTINE",
+      "evidence_count": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recommendation": "HARD_METHOD_GUARD_ALREADY_VALID",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "LANGUAGE_DISCIPLINE",
+      "evidence_count": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recommendation": "RETAIN_CURRENT_AUTHORITY",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    },
+    {
+      "subject": "ESCALATION",
+      "evidence_count": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recommendation": "RETAIN_CURRENT_AUTHORITY",
+      "evidence_sufficiency": "SYNTHETIC_ONLY_TRUE_FORWARD_INSUFFICIENT"
+    }
+  ],
+  "true_forward_status": "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+  "authority_unchanged": true
+}

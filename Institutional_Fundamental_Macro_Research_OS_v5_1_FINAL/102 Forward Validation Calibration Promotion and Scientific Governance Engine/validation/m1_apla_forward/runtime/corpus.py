@@ -1,0 +1,32 @@
+BASE_REQ={'schema_version':'1.0.0','research_program_id':'FV1','run_scope':'INSTRUMENT','subject':'NASDAQ100','instrument':'NASDAQ100','run_mode':'HISTORICAL_REPLAY','analysis_cutoff':'2026-08-01T12:00:00Z','analysis_cutoff_utc':'2026-08-01T12:00:00Z','strategy_id':'FUNDAMENTAL_ONLY','active_horizon':'DAILY_OPEN_TO_CLOSE','coverage_mode':'STRICT_FULL','research_depth':'AUTO','output_depth':'MACHINE','lookahead_policy':'STRICT_POINT_IN_TIME','tags':[]}
+def ev(eid,**kw):
+    x={'evidence_id':eid,'evidence_class':'DIRECT_OBSERVATION','availability_state':'AVAILABLE','materiality':'MATERIAL','source_id':'SRC_'+eid,'root_source_id':'ROOT_'+eid,'publication_time':'2026-08-01T10:00:00Z','first_available_time':'2026-08-01T10:00:00Z','ingestion_time':'2026-08-01T10:05:00Z','value':1,'relation':'SUPPORTING'};x.update(kw);return x
+def cl(cid,**kw):
+    x={'claim_id':cid,'claim_type':'OBSERVATION','lifecycle_state':'ACTIVE','statement':'fixture','evidence_ids':[],'contradictory_evidence_ids':[],'research_mode':'OPERATIONAL','directness':'DIRECT'};x.update(kw);return x
+def case(cid,name,req=None,evidence=None,claims=None,apl=None,expect='PASS',interaction=None):
+    return {'case_id':cid,'name':name,'truth_state':'SYNTHETIC_VALIDATION','request':req or dict(BASE_REQ),'bundle':{'run_request':req or dict(BASE_REQ),'evidence':evidence or [],'claims':claims or []},'apl_fixture':apl or {},'expected_m1':expect,'expected_interaction':interaction}
+def cases():
+    b=dict(BASE_REQ)
+    out=[]
+    out.append(case('FV1-A','Valid research negative control',evidence=[ev('A1')],claims=[cl('A_C',evidence_ids=['A1'])],apl={'kind':'QUIET'},expect='PASS',interaction='NONE'))
+    out.append(case('FV1-B','Revised CPI leakage',evidence=[ev('B1',publication_time='2026-08-01T13:00:00Z')],expect='OUTPUT_QUARANTINED',interaction='M1_ONLY'))
+    out.append(case('FV1-C','Same root pseudo independence',evidence=[ev('C1',root_source_id='ROOT_C'),ev('C2',root_source_id='ROOT_C')],expect='RESEARCH_REQUIRED',interaction='M1_ONLY'))
+    out.append(case('FV1-D','Correlation presented as causation',claims=[cl('D_C',claim_type='CAUSAL_HYPOTHESIS',mechanism=None,identification_state='NOT_IDENTIFIED',assertion_strength='CAUSAL_ESTABLISHED',directness='INDIRECT')],expect='METHOD_INVALID',interaction='M1_ONLY'))
+    out.append(case('FV1-E','Valid proxy in domain',evidence=[ev('E1',evidence_class='PROXY',proxy_contract_id='PX1',proxy_domain_state='IN_DOMAIN')],claims=[cl('E_C',claim_type='ESTIMATE',evidence_ids=['E1'],directness='INDIRECT')],expect='PASS',interaction='NONE'))
+    out.append(case('FV1-F','Proxy outside declared domain',evidence=[ev('F1',evidence_class='PROXY',proxy_contract_id='PX1',proxy_domain_state='OUT_OF_DOMAIN')],claims=[cl('F_C',claim_type='ESTIMATE',evidence_ids=['F1'],directness='INDIRECT')],expect='RESEARCH_REQUIRED',interaction='M1_ONLY'))
+    out.append(case('FV1-G','Narrative may matter while later false',evidence=[ev('G1',evidence_class='NARRATIVE')],claims=[cl('G_C',claim_type='NARRATIVE_CLAIM',evidence_ids=['G1'],directness='NARRATIVE')],apl={'kind':'NARRATIVE_SEPARATION'},expect='PASS',interaction='APL_A_ONLY'))
+    out.append(case('FV1-H','Robust thesis survives source removal',evidence=[ev('H1'),ev('H2')],apl={'kind':'SOURCE_REMOVAL','before':'SUPPORTED','after':'SUPPORTED','material':False},expect='PASS',interaction='NONE'))
+    out.append(case('FV1-I','Source fragile thesis',evidence=[ev('I1'),ev('I2')],apl={'kind':'SOURCE_REMOVAL','before':'SUPPORTED','after':'UNRESOLVED','material':True},expect='PASS',interaction='CONFLICT'))
+    out.append(case('FV1-J','Common mode hidden by nominal diversification',apl={'kind':'COMMON_MODE','nominal_support_count':3,'independent_root_count':1,'root':'USD_FUNDING'},expect='PASS',interaction='CONFLICT'))
+    out.append(case('FV1-K','Structural bullish and intraday bearish coexist',evidence=[ev('K1',relation='HORIZON_DEPENDENT'),ev('K2',relation='HORIZON_DEPENDENT')],claims=[cl('K_C',evidence_ids=['K1','K2'],directness='INDIRECT')],apl={'kind':'HORIZON_SEPARATION'},expect='PASS',interaction='APL_A_ONLY'))
+    out.append(case('FV1-L','Vague philosophical fragility warning',apl={'kind':'VAGUE_FRAGILITY','system_boundary':None,'stressor':None,'horizon':None,'mechanism':None},expect='PASS',interaction='APL_A_ONLY'))
+    out.append(case('FV1-M','M1 and APL-A identify source dependence',evidence=[ev('M1',root_source_id='ROOT_M'),ev('M2',root_source_id='ROOT_M')],apl={'kind':'SOURCE_REMOVAL','before':'SUPPORTED','after':'UNRESOLVED','material':True},expect='RESEARCH_REQUIRED',interaction='BOTH_SAME_ISSUE'))
+    out.append(case('FV1-N','Method valid but scoped exposure fragility',apl={'kind':'FRAGILITY','system_boundary':'NASDAQ_THESIS','stressor':'REAL_YIELD_SHOCK','horizon':'SESSION','mechanism':'duration convexity','geometry':'LOCALLY_CONCAVE'},expect='PASS',interaction='CONFLICT'))
+    out.append(case('FV1-P','Unknown remains unknown and invariant visible',evidence=[ev('P1',availability_state='UNKNOWN',value=None)],apl={'kind':'UNKNOWNS','unknowns':['POSITIONING_STATE'],'invariant':'DIRECTION_NOT_PROVEN'},expect='PASS',interaction='APL_A_ONLY'))
+    out.append(case('FV1-Q','Illusory optionality',apl={'kind':'OPTIONALITY','cost':'LOW','expiry':'OPEN','exercise':False},expect='PASS',interaction='CONFLICT'))
+    out.append(case('FV1-R','Scoped fragility geometry',apl={'kind':'FRAGILITY','system_boundary':'GOLD_THESIS','stressor':'REAL_YIELD_SHOCK','horizon':'DAILY','mechanism':'discounting','geometry':'LOCALLY_CONCAVE'},expect='PASS',interaction='CONFLICT'))
+    out.append(case('FV1-S','Incentive and tail-transfer analysis',apl={'kind':'INCENTIVE_TRANSFER','actor':'DEALER','tail_carrier':'LEVERAGED_BUYER','intervention':'MARGIN_CHANGE','reversal_condition':'VOL_NORMALIZES'},expect='PASS',interaction='APL_A_ONLY'))
+    out.append(case('FV1-T','APL scope router activation',apl={'kind':'SCOPE','lenses':['V02','V03']},expect='PASS',interaction='APL_A_ONLY'))
+    out.append(case('FV1-U','Epistemic fragility auditor',apl={'kind':'EPISTEMIC','root_count':1,'unknown_material':True},expect='PASS',interaction='CONFLICT'))
+    out.append(case('FV1-V','Different dimensions same case',evidence=[ev('V1',root_source_id='ROOT_V'),ev('V2',root_source_id='ROOT_V')],apl={'kind':'COMMON_MODE','nominal_support_count':3,'independent_root_count':1,'root':'COLLATERAL'},expect='RESEARCH_REQUIRED',interaction='BOTH_DIFFERENT_DIMENSIONS'))
+    return out

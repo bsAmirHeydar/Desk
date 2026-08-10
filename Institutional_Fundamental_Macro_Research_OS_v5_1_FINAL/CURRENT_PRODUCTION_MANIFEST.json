@@ -229,6 +229,14 @@
     "direction_flip_allowed": false,
     "forward_only": true,
     "initial_promotion_registry_empty": true,
+    "m1_apla_validation": {
+      "apl_a": "SHADOW_ONLY",
+      "authority_change": "NONE",
+      "m1": "M1.0.1",
+      "status": "SYNTHETIC_VALIDATED_TRUE_FORWARD_PENDING",
+      "true_forward_status": "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+      "version": "FV1.0.0"
+    },
     "positive_permission_creation": "PROMOTED_REGISTRY_ONLY",
     "production_prompt": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/31 V20 D4 Full-Vault Production Prompt.md",
     "promotion_registry": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_registry.json",

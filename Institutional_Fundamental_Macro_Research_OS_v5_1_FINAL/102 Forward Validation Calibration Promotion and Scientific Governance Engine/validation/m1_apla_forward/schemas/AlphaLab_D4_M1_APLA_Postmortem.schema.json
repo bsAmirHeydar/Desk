@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "created_at_utc": {
+      "type": "string"
+    },
+    "failure_class": {
+      "enum": [
+        "DATA",
+        "MODEL",
+        "MECHANISM",
+        "TIMING",
+        "REGIME",
+        "NARRATIVE",
+        "METHOD",
+        "PERSPECTIVE",
+        "NONE",
+        "UNRESOLVED"
+      ]
+    },
+    "original_record_id": {
+      "type": "string"
+    },
+    "original_truth_state": {
+      "enum": [
+        "SYNTHETIC_VALIDATION",
+        "HISTORICAL_REPLAY",
+        "PSEUDO_FORWARD_WALK_FORWARD",
+        "SHADOW_LIVE",
+        "TRUE_FORWARD_VALIDATION"
+      ]
+    },
+    "outcome_observed_at_utc": {
+      "type": "string"
+    },
+    "postmortem_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "postmortem_id",
+    "original_record_id",
+    "original_truth_state",
+    "outcome_observed_at_utc",
+    "failure_class",
+    "created_at_utc"
+  ],
+  "type": "object"
+}

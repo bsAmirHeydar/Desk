@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0.0",
+  "validation_version": "FV1.0.0",
+  "records": [
+    {
+      "case_id": "FV1-A",
+      "interaction": "NONE",
+      "expected": "NONE",
+      "match": true
+    },
+    {
+      "case_id": "FV1-B",
+      "interaction": "M1_ONLY",
+      "expected": "M1_ONLY",
+      "match": true
+    },
+    {
+      "case_id": "FV1-C",
+      "interaction": "M1_ONLY",
+      "expected": "M1_ONLY",
+      "match": true
+    },
+    {
+      "case_id": "FV1-D",
+      "interaction": "M1_ONLY",
+      "expected": "M1_ONLY",
+      "match": true
+    },
+    {
+      "case_id": "FV1-E",
+      "interaction": "NONE",
+      "expected": "NONE",
+      "match": true
+    },
+    {
+      "case_id": "FV1-F",
+      "interaction": "M1_ONLY",
+      "expected": "M1_ONLY",
+      "match": true
+    },
+    {
+      "case_id": "FV1-G",
+      "interaction": "APL_A_ONLY",
+      "expected": "APL_A_ONLY",
+      "match": true
+    },
+    {
+      "case_id": "FV1-H",
+      "interaction": "NONE",
+      "expected": "NONE",
+      "match": true
+    },
+    {
+      "case_id": "FV1-I",
+      "interaction": "CONFLICT",
+      "expected": "CONFLICT",
+      "match": true
+    },
+    {
+      "case_id": "FV1-J",
+      "interaction": "CONFLICT",
+      "expected": "CONFLICT",
+      "match": true
+    },
+    {
+      "case_id": "FV1-K",
+      "interaction": "APL_A_ONLY",
+      "expected": "APL_A_ONLY",
+      "match": true
+    },
+    {
+      "case_id": "FV1-L",
+      "interaction": "APL_A_ONLY",
+      "expected": "APL_A_ONLY",
+      "match": true
+    },
+    {
+      "case_id": "FV1-M",
+      "interaction": "BOTH_SAME_ISSUE",
+      "expected": "BOTH_SAME_ISSUE",
+      "match": true
+    },
+    {
+      "case_id": "FV1-N",
+      "interaction": "CONFLICT",
+      "expected": "CONFLICT",
+      "match": true
+    },
+    {
+      "case_id": "FV1-P",
+      "interaction": "APL_A_ONLY",
+      "expected": "APL_A_ONLY",
+      "match": true
+    },
+    {
+      "case_id": "FV1-Q",
+      "interaction": "CONFLICT",
+      "expected": "CONFLICT",
+      "match": true
+    },
+    {
+      "case_id": "FV1-R",
+      "interaction": "CONFLICT",
+      "expected": "CONFLICT",
+      "match": true
+    },
+    {
+      "case_id": "FV1-S",
+      "interaction": "APL_A_ONLY",
+      "expected": "APL_A_ONLY",
+      "match": true
+    },
+    {
+      "case_id": "FV1-T",
+      "interaction": "APL_A_ONLY",
+      "expected": "APL_A_ONLY",
+      "match": true
+    },
+    {
+      "case_id": "FV1-U",
+      "interaction": "CONFLICT",
+      "expected": "CONFLICT",
+      "match": true
+    },
+    {
+      "case_id": "FV1-V",
+      "interaction": "BOTH_DIFFERENT_DIMENSIONS",
+      "expected": "BOTH_DIFFERENT_DIMENSIONS",
+      "match": true
+    }
+  ]
+}

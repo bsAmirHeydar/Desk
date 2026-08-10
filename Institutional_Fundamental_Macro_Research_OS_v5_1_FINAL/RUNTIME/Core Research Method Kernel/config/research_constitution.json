@@ -85,7 +85,7 @@
       "rule": "Protocol adaptation and exceptions must be explicit and versioned."
     }
   ],
-  "method_version": "M1.0.0",
+  "method_version": "M1.0.1",
   "non_doctrines": [
     "TALEB",
     "BAYESIANISM",

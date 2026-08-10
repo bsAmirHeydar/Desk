@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "validation_version": "FV1.0.0",
+  "passed": 18,
+  "total": 18,
+  "gates": [
+    {
+      "gate": "A_BASELINE_HEALTH",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "gate": "B_M1_REGRESSION",
+      "pass": true,
+      "detail": {
+        "passed": 34,
+        "total": 34
+      }
+    },
+    {
+      "gate": "C_APL_A_REGRESSION",
+      "pass": true,
+      "detail": {
+        "selftest": "PASS",
+        "acceptance": "PASS"
+      }
+    },
+    {
+      "gate": "D_DECISION_PARITY",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "gate": "E_AUTHORITY_ISOLATION",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "gate": "F_ROUTER_VALIDATION",
+      "pass": true,
+      "detail": {
+        "paraphrase_stable": true,
+        "default_class": "DIRECTIONAL_FORECAST",
+        "proportional": {
+          "DESCRIPTIVE_STATE_ESTIMATION": true,
+          "CAUSAL_ATTRIBUTION": true,
+          "NEW_ASSET_RESEARCH": true
+        }
+      }
+    },
+    {
+      "gate": "G_NEGATIVE_CONTROLS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "gate": "H_SOURCE_DEPENDENCY",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "gate": "I_UNKNOWN_PRESERVATION",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "gate": "J_CAUSAL_GOVERNANCE",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "gate": "K_APL_A_LENS_EXECUTION",
+      "pass": true,
+      "detail": [
+        "V01_SCOPE_AND_LENS_ROUTER",
+        "V02_EPISTEMIC_FRAGILITY_AUDITOR",
+        "V03_STORY_MODEL_SOURCE_REMOVAL",
+        "V04_INVARIANT_AND_UNKNOWNS_ANALYST",
+        "V10_FRAGILITY_GEOMETRY",
+        "V11_EXPOSURE_OPTIONALITY_TAIL",
+        "V12_NETWORK_COMMON_MODE_FORCED_ACTORS",
+        "V13_INCENTIVE_TRANSFER_INTERVENTION"
+      ]
+    },
+    {
+      "gate": "L_INTERACTION_MATRIX",
+      "pass": true,
+      "detail": [
+        "APL_A_ONLY",
+        "BOTH_DIFFERENT_DIMENSIONS",
+        "BOTH_SAME_ISSUE",
+        "CONFLICT",
+        "M1_ONLY",
+        "NONE"
+      ]
+    },
+    {
+      "gate": "M_FALSE_POSITIVE_TRACKING",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "gate": "N_PERFORMANCE",
+      "pass": true,
+      "detail": {
+        "scope": "LOCAL_COMPONENT_ONLY_NO_LLM_NO_RETRIEVAL",
+        "m1_ms": {
+          "median": 0.3031,
+          "p95": 0.3531
+        },
+        "apl_harness_ms": {
+          "median": 0.0026,
+          "p95": 0.0032
+        }
+      }
+    },
+    {
+      "gate": "O_NO_APL_B",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "gate": "P_NO_UNAUTHORIZED_PROMOTION",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "gate": "Q_VALIDATION_TRUTH_LABELING",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "gate": "R_R4_C1_COMPATIBILITY",
+      "pass": true,
+      "detail": {
+        "r4": {
+          "pass": true,
+          "expected_surface_hash": "sha256:e282bbe73cb555ece19a792f892f5fe5394504f24682620c67b06db021969024",
+          "actual_surface_hash": "sha256:e282bbe73cb555ece19a792f892f5fe5394504f24682620c67b06db021969024",
+          "bad": [],
+          "file_count": 499
+        },
+        "c1": "C1.0.0"
+      }
+    }
+  ],
+  "suite_status": "PASS",
+  "true_forward_status": "TRUE_FORWARD_EVIDENCE_INSUFFICIENT",
+  "authority_unchanged": true,
+  "errors": []
+}

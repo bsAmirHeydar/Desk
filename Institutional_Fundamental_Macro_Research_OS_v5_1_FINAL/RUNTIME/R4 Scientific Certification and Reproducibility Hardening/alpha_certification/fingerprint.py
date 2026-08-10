@@ -3,6 +3,8 @@ from .util import load_json,chash,sha256_obj
 
 def verify(vault_root):
     v=Path(vault_root); cfg=load_json(v/'RUNTIME'/'R4 Scientific Certification and Reproducibility Hardening'/'config'/'certification_surface_baseline.json');bad=[]
+    volatile=[rel for rel in cfg.get('files',{}) if '__pycache__' in Path(rel).parts or rel.endswith('.pyc')]
+    for rel in volatile: bad.append({'path':rel,'reason':'VOLATILE_SURFACE_ENTRY'})
     for rel,h in cfg['files'].items():
         p=v/rel
         if not p.is_file(): bad.append({'path':rel,'reason':'MISSING'})

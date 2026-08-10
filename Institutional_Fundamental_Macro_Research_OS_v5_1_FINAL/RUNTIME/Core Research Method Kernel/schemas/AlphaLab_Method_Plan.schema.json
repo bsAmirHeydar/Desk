@@ -36,7 +36,7 @@
       "type": "array"
     },
     "method_version": {
-      "const": "M1.0.0"
+      "const": "M1.0.1"
     },
     "minimum_evidence": {
       "type": "string"

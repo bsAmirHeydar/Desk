@@ -37,3 +37,6 @@ D4 governance is live, but the shipped promotion registry contains **zero new po
 
 ## V21 cognitive-learning extension
 D4 remains the empirical judge after Cognitive Hardening. V21 adds forward fields for hypothesis tournaments, scenario transitions, typed uncertainties, unmodeled-driver alerts, adversarial review, pre-mortem paths, utility states, interaction hypotheses and outside-strategy edge detections. None receive positive authority without D4 evidence.
+## FV1 Method / Perspective Validation Extension
+
+- [[validation/m1_apla_forward/00 M1 APL-A Forward Validation MOC]] — M1 + APL-A shadow validation; no authority promotion.

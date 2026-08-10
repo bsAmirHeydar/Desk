@@ -1,16 +1,11 @@
 {
-  "version": "1.0.0",
   "authority_mode": "GOVERNANCE_ENFORCED",
-  "forward_only": true,
+  "auto_promote_from_single_run": false,
   "direction_authority": "FUNDAMENTAL_ONLY",
   "direction_flip_allowed": false,
-  "auto_promote_from_single_run": false,
-  "runtime_registry_mutation_allowed": false,
-  "initial_behavior": "PRESERVE_V19_UNLESS_ACTIVE_PROMOTION_MATCHES",
-  "positive_permission_creation_requires_promoted_rule": true,
-  "positive_permission_creation_requires_existing_fundamental_direction": true,
+  "forward_only": true,
   "fundamental_neutral_upgrade_forbidden": true,
-  "registry_file": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_registry.json",
+  "initial_behavior": "PRESERVE_V19_UNLESS_ACTIVE_PROMOTION_MATCHES",
   "ledger_record_types": [
     "FORWARD_OBSERVATION",
     "OUTCOME",
@@ -20,6 +15,22 @@
     "VALIDATOR_DECISION",
     "REGISTRY_CHANGE",
     "DRIFT_ALERT",
-    "RETIREMENT_RECORD"
-  ]
+    "RETIREMENT_RECORD",
+    "METHOD_PERSPECTIVE_VALIDATION",
+    "METHOD_PERSPECTIVE_POSTMORTEM",
+    "METHOD_PERSPECTIVE_FORWARD_COMMITMENT"
+  ],
+  "m1_apla_forward_validation": {
+    "apl_a_mode": "SHADOW_ONLY",
+    "authority": "NONE_NEW",
+    "m1_direction_authority": "NONE",
+    "owner": "D4",
+    "true_forward_required_before_promotion": true,
+    "version": "FV1.0.0"
+  },
+  "positive_permission_creation_requires_existing_fundamental_direction": true,
+  "positive_permission_creation_requires_promoted_rule": true,
+  "registry_file": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/promotion_registry.json",
+  "runtime_registry_mutation_allowed": false,
+  "version": "1.0.0"
 }

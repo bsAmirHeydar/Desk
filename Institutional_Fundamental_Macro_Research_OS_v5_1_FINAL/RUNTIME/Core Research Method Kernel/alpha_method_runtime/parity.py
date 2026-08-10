@@ -16,8 +16,8 @@ def run(vault_root):
         before={r['logical_name']:r['artifact_hash'] for r in rt.catalog.list_artifacts(rid,'DECISION')}
         with rt.catalog.connect() as c: seq_before=c.execute('SELECT COALESCE(MAX(sequence),0)+1 FROM run_events WHERE run_id=?',(rid,)).fetchone()[0]
         # Method artifacts are META and intentionally create no lifecycle events.
-        rr=rt.store.load_artifact_json(rid,'run_request'); rr=dict(rr); rr['analysis_cutoff_utc']=m['analysis_cutoff_utc']; plan=build_plan(v,rid,rr); rt.store.put_artifact(rid,'method_plan','META','META',plan,'application/json',producer_process_id='M1_METHOD_ROUTER',producer_version='M1.0.0')
-        rt.store.put_artifact(rid,'method_predecision_validation_receipt','META','META',{'fixture':'PASS'},'application/json',producer_process_id='M1_METHOD_VALIDATOR',producer_version='M1.0.0')
+        rr=rt.store.load_artifact_json(rid,'run_request'); rr=dict(rr); rr['analysis_cutoff_utc']=m['analysis_cutoff_utc']; plan=build_plan(v,rid,rr); rt.store.put_artifact(rid,'method_plan','META','META',plan,'application/json',producer_process_id='M1_METHOD_ROUTER',producer_version='M1.0.1')
+        rt.store.put_artifact(rid,'method_predecision_validation_receipt','META','META',{'fixture':'PASS'},'application/json',producer_process_id='M1_METHOD_VALIDATOR',producer_version='M1.0.1')
         after={r['logical_name']:r['artifact_hash'] for r in rt.catalog.list_artifacts(rid,'DECISION')}
         with rt.catalog.connect() as c: seq_after=c.execute('SELECT COALESCE(MAX(sequence),0)+1 FROM run_events WHERE run_id=?',(rid,)).fetchone()[0]
         # Prospective decision-root basis depends on decision rows, sequence and unchanged manifest scientific fields; all remain identical.

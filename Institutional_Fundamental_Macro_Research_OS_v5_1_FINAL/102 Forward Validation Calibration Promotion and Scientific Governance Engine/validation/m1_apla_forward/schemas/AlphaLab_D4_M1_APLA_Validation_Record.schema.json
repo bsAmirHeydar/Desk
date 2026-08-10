@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "apl_a": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "created_at_utc": {
+      "type": "string"
+    },
+    "interaction": {
+      "enum": [
+        "NONE",
+        "M1_ONLY",
+        "APL_A_ONLY",
+        "BOTH_SAME_ISSUE",
+        "BOTH_DIFFERENT_DIMENSIONS",
+        "CONFLICT"
+      ]
+    },
+    "m1": {
+      "type": "object"
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "truth_state": {
+      "enum": [
+        "SYNTHETIC_VALIDATION",
+        "HISTORICAL_REPLAY",
+        "PSEUDO_FORWARD_WALK_FORWARD",
+        "SHADOW_LIVE",
+        "TRUE_FORWARD_VALIDATION"
+      ]
+    },
+    "validation_version": {
+      "const": "FV1.0.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "validation_version",
+    "record_id",
+    "case_id",
+    "truth_state",
+    "m1",
+    "apl_a",
+    "interaction",
+    "authority",
+    "created_at_utc"
+  ],
+  "type": "object"
+}

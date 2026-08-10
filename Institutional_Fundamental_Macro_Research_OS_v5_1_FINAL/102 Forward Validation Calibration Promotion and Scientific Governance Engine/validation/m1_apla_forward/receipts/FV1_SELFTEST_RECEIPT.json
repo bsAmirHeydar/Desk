@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "validation_version": "FV1.0.0",
+  "passed": 8,
+  "total": 8,
+  "checks": [
+    {
+      "name": "preflight",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "synthetic_suite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "truth_label",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "true_forward_not_fabricated",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "authority_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "append_only_hash_chain",
+      "pass": true,
+      "detail": {
+        "status": "PASS",
+        "records": 1,
+        "tip_hash": "sha256:6ae29d7672b3d217c722a12dd84f93af52193a817b9f6234969da84f60bbd620",
+        "errors": []
+      }
+    },
+    {
+      "name": "duplicate_record_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preoutcome_payload_hash",
+      "pass": true,
+      "detail": "sha256:09f3d92799d3bb1d1a8e9cb6a6ca7dd1ef1bc23920b3fcfed136673c36a4f57d"
+    }
+  ],
+  "errors": []
+}
