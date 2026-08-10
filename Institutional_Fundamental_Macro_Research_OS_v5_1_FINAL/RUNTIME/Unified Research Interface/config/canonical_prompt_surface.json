@@ -1,0 +1,23 @@
+{
+  "prompt_graph": "R2",
+  "rule": "Interface cannot bypass M1/R2/R3. Legacy V10-V14 human launch surfaces are non-canonical.",
+  "s3_clusters": [
+    "W30_TEMPORAL",
+    "W31_FUNDAMENTAL",
+    "W32_EXPECTATIONS_POLICY_REGIME",
+    "W33_NARRATIVE_REFLEXIVITY_CONSUMPTION",
+    "W34_POSITIONING",
+    "W35_ACTUAL_FLOW",
+    "W36_FUNDING_PLUMBING",
+    "W37_MECHANICS_CAPACITY_VOL"
+  ],
+  "stages": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+  ],
+  "version": "1.0.0"
+}

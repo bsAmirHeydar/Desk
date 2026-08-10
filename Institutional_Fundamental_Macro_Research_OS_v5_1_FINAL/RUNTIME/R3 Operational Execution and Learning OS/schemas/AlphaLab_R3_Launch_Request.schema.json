@@ -1,21 +1,74 @@
 {
+  "$id": "AlphaLab_R3_Launch_Request.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "AlphaLab R3 Launch Request",
-  "type": "object",
-  "required": [
-    "schema_version",
-    "launcher_profile",
-    "instrument",
-    "run_mode"
-  ],
+  "additionalProperties": false,
   "properties": {
-    "schema_version": {
-      "const": "1.0.0"
-    },
-    "launcher_profile": {
+    "active_horizon": {
       "type": "string"
     },
+    "allow_private_sources": {
+      "type": "boolean"
+    },
+    "analysis_cutoff": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "coverage_mode": {
+      "enum": [
+        "STRICT_FULL",
+        "EVENT_FAST_STRICT",
+        "DEEP_ESCALATION"
+      ]
+    },
+    "episode_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "execution_profile": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "idempotency_policy": {
+      "enum": [
+        "REUSE_EXACT",
+        "NEW_RUN"
+      ]
+    },
     "instrument": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "launcher_profile": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lookahead_policy": {
+      "const": "STRICT_POINT_IN_TIME"
+    },
+    "output_depth": {
+      "enum": [
+        "MACHINE",
+        "COMPACT",
+        "FULL"
+      ]
+    },
+    "research_depth": {
+      "enum": [
+        "AUTO",
+        "STANDARD",
+        "DEEP"
+      ]
+    },
+    "research_program_id": {
+      "minLength": 1,
       "type": "string"
     },
     "run_mode": {
@@ -27,57 +80,45 @@
         "REPRODUCTION_REPLAY"
       ]
     },
-    "analysis_cutoff": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "active_horizon": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "coverage_mode": {
+    "run_scope": {
       "enum": [
-        "STRICT_FULL",
-        "EVENT_FAST_STRICT",
-        "DEEP_ESCALATION"
+        "INSTRUMENT",
+        "MULTI_MARKET",
+        "PORTFOLIO",
+        "EPISODE"
       ]
     },
-    "research_depth": {
-      "enum": [
-        "AUTO",
-        "STANDARD",
-        "DEEP"
-      ]
+    "schema_version": {
+      "const": "1.0.0"
     },
-    "output_depth": {
-      "enum": [
-        "MACHINE",
-        "COMPACT",
-        "FULL"
-      ]
+    "strategy_id": {
+      "minLength": 1,
+      "type": "string"
     },
-    "execution_profile": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "episode_id": {
-      "type": [
-        "string",
-        "null"
-      ]
+    "subject": {
+      "minLength": 1,
+      "type": "string"
     },
     "tags": {
-      "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "type": "array"
     }
   },
-  "additionalProperties": false
+  "required": [
+    "schema_version",
+    "research_program_id",
+    "run_scope",
+    "subject",
+    "run_mode",
+    "analysis_cutoff",
+    "strategy_id",
+    "coverage_mode",
+    "research_depth",
+    "output_depth",
+    "lookahead_policy"
+  ],
+  "title": "AlphaLab R3 Launch Request — Universal Run Contract",
+  "type": "object"
 }

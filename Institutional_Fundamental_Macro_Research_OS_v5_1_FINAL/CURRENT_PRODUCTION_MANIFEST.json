@@ -523,5 +523,20 @@
     "status": "ACTIVE_REVIEW_INFRASTRUCTURE_EVIDENCE_MATURITY_RUNTIME_DEPENDENT",
     "version": "TF2.0.0"
   },
+  "unified_research_interface": {
+    "apl_a": "SHADOW_ONLY",
+    "apl_b": "NOT_IMPLEMENTED",
+    "authority_added": "NONE",
+    "broker_write": "NONE",
+    "human_entrypoint": "AlphaLab.ps1 research",
+    "legacy_active_surface": "RETIRED_OR_REDIRECTED",
+    "primary_human_view": "EXPLORER_HTML",
+    "prompt_graph": "R2",
+    "report_model": "CANONICAL",
+    "request_compiler": "SEMANTIC_PERSIAN_ENGLISH",
+    "scientific_runtime": "R3",
+    "status": "CANONICAL_INTERFACE_BASELINE",
+    "version": "UI1.0.0"
+  },
   "version": "21.3.0"
 }

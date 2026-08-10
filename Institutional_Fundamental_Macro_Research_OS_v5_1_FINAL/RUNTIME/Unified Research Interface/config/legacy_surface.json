@@ -1,0 +1,15 @@
+{
+  "active_canonical_entrypoints": [
+    "AlphaLab.ps1 research",
+    "RUNTIME/Unified Research Interface/tools/alpha_research.py"
+  ],
+  "any_symbol_claim": "RESEARCH_CAPABILITY_MAY_BE_BROAD; CERTIFIED_PRODUCTION_UNIVERSE_IS_EXPLICIT_AND_NARROWER",
+  "historical_vault_prompts_policy": "DOCUMENTATION_OR_SCIENTIFIC_HISTORY_ONLY_NOT_HUMAN_PRODUCTION_ENTRYPOINT",
+  "operational_admin_entrypoint": "AlphaLab_Commission.ps1",
+  "retired_root_files": [
+    "AlphaLab_V14_Any_Symbol_Live_Launcher.md",
+    "AlphaLab_V14_Live_DayTrading_Intelligence_Prompt.md"
+  ],
+  "v10_v14_launcher_status": "LEGACY_SUPERSEDED",
+  "version": "1.0.0"
+}

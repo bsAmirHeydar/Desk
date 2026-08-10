@@ -1,0 +1,24 @@
+{
+  "apl_a_authority": "SHADOW_ONLY",
+  "broker_write": "NONE",
+  "certified_universe_source": "RUNTIME/R3 Operational Execution and Learning OS/config/launcher_profiles.json#production_instruments",
+  "default_depth": "AUTO",
+  "default_horizon": "DAILY_OPEN_TO_CLOSE",
+  "default_interface_mode": "LIVE",
+  "default_locale": "fa-IR",
+  "default_output_profile": "EXPLORER",
+  "interface_version": "UI1.0.0",
+  "legacy_root_markdown_entrypoints": "RETIRED",
+  "pdf_renderer": "EDGE_OR_CHROME_PRINT_TO_PDF_OPTIONAL",
+  "report_composer_direction_authority": "NONE",
+  "report_output_root": "reports/unified",
+  "request_compiler_direction_authority": "NONE",
+  "simple_language": {
+    "forbid_fake_precision": true,
+    "preserve_causal_status": true,
+    "preserve_negation": true,
+    "preserve_uncertainty": true
+  },
+  "uncertified_subject_execution": "PLAN_ONLY_NEW_ASSET_RESEARCH",
+  "version": "UI_INTERFACE_POLICY_1.0.0"
+}

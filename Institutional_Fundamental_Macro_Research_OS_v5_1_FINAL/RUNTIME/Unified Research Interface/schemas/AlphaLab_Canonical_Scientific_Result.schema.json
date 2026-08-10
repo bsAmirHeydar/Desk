@@ -1,0 +1,54 @@
+{
+  "$id": "AlphaLab_Canonical_Scientific_Result.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "analysis_cutoff_utc": {
+      "type": "string"
+    },
+    "apl_a": {
+      "type": "object"
+    },
+    "decision": {
+      "type": "object"
+    },
+    "interface_version": {
+      "const": "UI1.0.0"
+    },
+    "method_health": {
+      "type": "object"
+    },
+    "request_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "science": {
+      "type": "object"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "traceability": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "interface_version",
+    "run_id",
+    "request_id",
+    "subject",
+    "analysis_cutoff_utc",
+    "decision",
+    "science",
+    "method_health",
+    "apl_a",
+    "traceability"
+  ],
+  "type": "object"
+}

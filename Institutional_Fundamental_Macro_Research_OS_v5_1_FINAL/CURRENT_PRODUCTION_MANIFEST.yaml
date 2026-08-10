@@ -526,3 +526,15 @@ continuous_true_forward_operations:
   apl_a: SHADOW_ONLY
   apl_b: NOT_IMPLEMENTED
   maturity: RUNTIME_EVIDENCE_DEPENDENT
+
+unified_research_interface:
+  version: UI1.0.0
+  status: CANONICAL_INTERFACE_BASELINE
+  human_entrypoint: AlphaLab.ps1 research
+  prompt_graph: R2
+  scientific_runtime: R3
+  primary_human_view: EXPLORER_HTML
+  authority_added: NONE
+  apl_a: SHADOW_ONLY
+  broker_write: NONE
+  apl_b: NOT_IMPLEMENTED

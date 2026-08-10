@@ -1,13 +1,6 @@
 {
-  "version": "R3_REPORT_RUNTIME_1.0.0",
-  "canonical_machine_report": "JSON",
-  "human_report": "MARKDOWN",
-  "pdf_renderer": "EXTERNAL_OPTIONAL",
-  "output_depths": [
-    "MACHINE",
-    "COMPACT",
-    "FULL"
-  ],
+  "canonical_machine_report": "CANONICAL_SCIENTIFIC_RESULT_JSON",
+  "human_report": "UNIFIED_EXPLORER_HTML",
   "must_include": [
     "run_id",
     "analysis_cutoff_utc",
@@ -25,5 +18,23 @@
     "UNVERIFIED_PROBABILITY",
     "UNSEEN_DATA",
     "UNAVAILABLE_PRIVATE_FLOW_AS_FACT"
+  ],
+  "output_depths": [
+    "MACHINE",
+    "COMPACT",
+    "FULL"
+  ],
+  "pdf_renderer": "SAME_REPORT_MODEL_EXTERNAL_BROWSER_OPTIONAL",
+  "report_model": "RUNTIME/Unified Research Interface/schemas/AlphaLab_Report_Model.schema.json",
+  "version": "R3_REPORT_RUNTIME_1.1.0",
+  "views": [
+    "EXPLORER",
+    "COMPACT",
+    "HOURLY",
+    "DAILY",
+    "EVENT",
+    "DEEP",
+    "AUDIT",
+    "ARCHIVE_PDF"
   ]
 }

@@ -1,0 +1,56 @@
+{
+  "$id": "AlphaLab_Report_Model.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "analytical_cards": {
+      "maxItems": 8,
+      "minItems": 8,
+      "type": "array"
+    },
+    "audit": {
+      "type": "object"
+    },
+    "decision_strip": {
+      "type": "object"
+    },
+    "drivers": {
+      "type": "object"
+    },
+    "header": {
+      "type": "object"
+    },
+    "method_health": {
+      "type": "object"
+    },
+    "perspective": {
+      "type": "object"
+    },
+    "pressure": {
+      "type": "object"
+    },
+    "report_model_version": {
+      "const": "1.0.0"
+    },
+    "scenarios": {
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "report_model_version",
+    "header",
+    "decision_strip",
+    "analytical_cards",
+    "drivers",
+    "pressure",
+    "scenarios",
+    "method_health",
+    "perspective",
+    "audit"
+  ],
+  "type": "object"
+}

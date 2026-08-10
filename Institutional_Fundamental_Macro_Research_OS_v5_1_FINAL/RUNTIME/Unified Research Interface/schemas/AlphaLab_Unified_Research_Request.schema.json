@@ -1,0 +1,140 @@
+{
+  "$id": "AlphaLab_Unified_Research_Request.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "as_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "comparison_subjects": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "depth": {
+      "enum": [
+        "AUTO",
+        "LIGHT",
+        "STANDARD",
+        "DEEP",
+        "CRITICAL"
+      ]
+    },
+    "event_context": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "historical_cutoff": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "horizon": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "intent_tags": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "locale": {
+      "enum": [
+        "fa-IR",
+        "en-US"
+      ]
+    },
+    "mode": {
+      "enum": [
+        "LIVE",
+        "SHADOW",
+        "HISTORICAL",
+        "WALK_FORWARD",
+        "REPLAY",
+        "DEEP_RESEARCH"
+      ]
+    },
+    "operator_metadata": {
+      "type": "object"
+    },
+    "output_profile": {
+      "enum": [
+        "EXPLORER",
+        "COMPACT",
+        "HOURLY",
+        "DAILY",
+        "EVENT",
+        "DEEP",
+        "AUDIT",
+        "ARCHIVE_PDF"
+      ]
+    },
+    "request_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "request_text": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "requested_review_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "research_class": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "subject": {
+      "oneOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      ]
+    },
+    "universe_scope": {
+      "enum": [
+        "AUTO",
+        "SINGLE",
+        "MULTI_MARKET",
+        "FULL_CONFIGURED_UNIVERSE",
+        "RESEARCH_ONLY"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "subject",
+    "request_text"
+  ],
+  "title": "Alpha Lab Unified Research Request",
+  "type": "object"
+}

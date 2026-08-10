@@ -1,0 +1,76 @@
+{
+  "$id": "AlphaLab_Unified_Compiled_Intent.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "active_horizon": {
+      "type": "string"
+    },
+    "authority": {
+      "type": "object"
+    },
+    "compiler_rationale": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "depth": {
+      "type": "string"
+    },
+    "execution_eligibility": {
+      "enum": [
+        "CERTIFIED_RUNTIME",
+        "RESEARCH_ONLY_UNCERTIFIED",
+        "UNKNOWN_SUBJECT"
+      ]
+    },
+    "mode": {
+      "type": "string"
+    },
+    "original_request": {
+      "type": "object"
+    },
+    "output_profile": {
+      "type": "string"
+    },
+    "primary_research_class": {
+      "type": "string"
+    },
+    "r3_run_mode": {
+      "type": "string"
+    },
+    "request_id": {
+      "type": "string"
+    },
+    "research_classes": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "resolved_subjects": {
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "request_id",
+    "original_request",
+    "resolved_subjects",
+    "primary_research_class",
+    "research_classes",
+    "mode",
+    "r3_run_mode",
+    "active_horizon",
+    "depth",
+    "output_profile",
+    "execution_eligibility",
+    "compiler_rationale",
+    "authority"
+  ],
+  "type": "object"
+}

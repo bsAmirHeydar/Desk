@@ -1,0 +1,34 @@
+{
+  "apl_b": "NOT_IMPLEMENTED",
+  "authority": {
+    "apl_a": "SHADOW_ONLY",
+    "broker_write": "NONE",
+    "report_composer_direction": "NONE",
+    "request_compiler_direction": "NONE"
+  },
+  "canonical_compiled_intent_schema": "schemas/AlphaLab_Unified_Compiled_Intent.schema.json",
+  "canonical_human_entrypoint": "../../AlphaLab.ps1 research",
+  "canonical_report_model_schema": "schemas/AlphaLab_Report_Model.schema.json",
+  "canonical_request_schema": "schemas/AlphaLab_Unified_Research_Request.schema.json",
+  "canonical_result_schema": "schemas/AlphaLab_Canonical_Scientific_Result.schema.json",
+  "interface_freeze": true,
+  "legacy_policy": "ACTIVE_HUMAN_SURFACES_RETIRED_OR_REDIRECTED",
+  "method_authority": "RUNTIME/Core Research Method Kernel",
+  "mission": "ONE_REQUEST_SURFACE_ONE_COMPILER_M1_R2_R3_ONE_RESULT_ONE_REPORT_MODEL",
+  "name": "Alpha Lab Unified Research Interface",
+  "perspective": "RUNTIME/APL-A Alpha Perspective Layer",
+  "prompt_os": "RUNTIME/R2 Prompt Execution OS",
+  "scientific_runtime": "RUNTIME/R3 Operational Execution and Learning OS",
+  "status": "CANONICAL_INTERFACE_BASELINE",
+  "version": "UI1.0.0",
+  "views": [
+    "EXPLORER",
+    "COMPACT",
+    "HOURLY",
+    "DAILY",
+    "EVENT",
+    "DEEP",
+    "AUDIT",
+    "ARCHIVE_PDF"
+  ]
+}
