@@ -9,7 +9,7 @@ def run(vault_root):
     v=Path(vault_root).resolve();checks=[]
     def ck(n,b,d=None):checks.append({'name':n,'pass':bool(b),'detail':d})
     st=selftest(v);ck('selftest',st['status']=='PASS',st.get('errors'))
-    m=json.loads((v/'RUNTIME'/'Unified Research Interface'/'UNIFIED_INTERFACE_MANIFEST.json').read_text(encoding='utf-8'));ck('ui2_frozen',m['version']=='UI2.0.0' and m['interface_freeze'] is True and m['ux']['architecture']=='THREE_LAYER_PROGRESSIVE_DISCLOSURE')
+    m=json.loads((v/'RUNTIME'/'Unified Research Interface'/'UNIFIED_INTERFACE_MANIFEST.json').read_text(encoding='utf-8'));ck('ui2_frozen',m['version']=='UI2.1.0' and m['interface_freeze'] is True and m['ux']['architecture']=='THREE_LAYER_PROGRESSIVE_DISCLOSURE')
     schema=json.loads((v/'RUNTIME'/'Unified Research Interface'/'schemas'/'AlphaLab_Report_Model.schema.json').read_text(encoding='utf-8'));ck('report_model_v2',schema['properties']['report_model_version']['const']=='2.0.0' and 'layer1' in schema['required'] and 'layer3' in schema['required'])
     c=compile_request(v,{'subject':'NASDAQ100','request_text':'نزدک امروز چرا ریخت و فشار فروش چقدر مونده؟','mode':'LIVE'});ck('multi_intent','CAUSAL_ATTRIBUTION' in c['research_classes'] and 'PERSISTENCE_REVERSAL' in c['research_classes'])
     ck('authority',m['authority']['request_compiler_direction']=='NONE' and m['authority']['report_composer_direction']=='NONE' and m['authority']['apl_a']=='SHADOW_ONLY' and m['authority']['broker_write']=='NONE')
@@ -28,6 +28,10 @@ def run(vault_root):
     ck('no_fake_precision','67/100' not in h and '67%' not in h)
     preg=json.loads((v/'RUNTIME'/'R2 Prompt Execution OS'/'config'/'prompt_registry.json').read_text(encoding='utf-8'));ids={x.get('process_id') or x.get('prompt_id') or x.get('id') for x in (preg.get('processes') or preg.get('prompts') or preg.get('registry') or [])};needed={'W30_TEMPORAL','W31_FUNDAMENTAL','W32_EXPECTATIONS_POLICY_REGIME','W33_NARRATIVE_REFLEXIVITY_CONSUMPTION','W34_POSITIONING','W35_ACTUAL_FLOW','W36_FUNDING_PLUMBING','W37_MECHANICS_CAPACITY_VOL'};ck('eight_clusters',needed.issubset(ids),sorted(needed-ids))
     ck('root_entrypoint',(v.parent/'AlphaLab.ps1').is_file() and not (v.parent/'AlphaLab_V14_Any_Symbol_Live_Launcher.md').exists())
+    rp=json.loads((v/'RUNTIME'/'Unified Research Interface'/'config'/'run_command_policy.json').read_text(encoding='utf-8'))
+    ck('one_command_human_surface',m.get('canonical_local_shortcut','').endswith('AlphaLab.ps1 run <subject>') and rp['command']=='run <subject>')
+    ck('chat_native_defaults',rp['defaults']=={'mode':'LIVE','as_of':'NOW','horizon':'AUTO_INTRADAY_SESSION_WITH_DAILY_CONTEXT','depth':'DEEP','output_profile':'EXPLORER','locale':'fa-IR'})
+    ck('chat_native_authority',rp['direction_authority']=='NONE' and rp['broker_write']=='NONE' and rp['research_orchestration']['perspective']=='APL-A_SHADOW_ONLY')
     ck('apl_b_not_implemented',not any(p.is_dir() and 'APL-B' in p.name for p in (v/'RUNTIME').iterdir()))
     bad=[x for x in checks if not x['pass']]
-    return {'schema_version':'1.0.0','status':'PASS' if not bad else 'FAIL','interface_version':'UI2.0.0','passed':len(checks)-len(bad),'total':len(checks),'checks':checks,'errors':[x['name'] for x in bad]}
+    return {'schema_version':'1.0.0','status':'PASS' if not bad else 'FAIL','interface_version':'UI2.1.0','passed':len(checks)-len(bad),'total':len(checks),'checks':checks,'errors':[x['name'] for x in bad]}

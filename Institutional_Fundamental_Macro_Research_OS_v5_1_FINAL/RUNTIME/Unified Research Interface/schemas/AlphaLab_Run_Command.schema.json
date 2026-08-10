@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaLab_Run_Command.schema.json",
+  "title": "Alpha Lab One-Command Run Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "command",
+    "subject"
+  ],
+  "properties": {
+    "command": {
+      "const": "run"
+    },
+    "subject": {
+      "type": "string",
+      "minLength": 1
+    },
+    "raw_command": {
+      "type": "string"
+    },
+    "compiled_defaults": {
+      "type": "object"
+    }
+  }
+}

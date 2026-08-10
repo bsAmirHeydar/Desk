@@ -1,0 +1,131 @@
+# Chat-Native Run Contract
+
+## Status
+
+CANONICAL ONE-COMMAND HUMAN RESEARCH SURFACE
+
+## Trigger
+
+When the user's latest message is structurally equivalent to:
+
+`run <subject>`
+
+execute this contract immediately. The command is case-insensitive. A comma-separated subject list may be treated as a multi-market request.
+
+## Purpose
+
+The user should never need to operate the internal complexity of Alpha Lab. `run <subject>` compiles automatically into the current canonical research architecture.
+
+## Automatic request compilation
+
+For a normal `run <subject>` invocation, compile the request as:
+
+- `subject`: resolved from `<subject>` using the current Vault resolver and aliases;
+- `request_text`: **Analyze the current market comprehensively. Determine the current fundamental Direction, active force, consumption, remaining pressure, persistence, reversal conditions, dominant drivers, meaningful contradictions, key uncertainty, and next review. Use every relevant Alpha Lab analytical layer and preserve scientific disagreement.**
+- `mode`: `LIVE`;
+- `as_of`: `NOW`;
+- `horizon`: `AUTO`, centered on current intraday/session state with daily carry context unless the market structure demands otherwise;
+- `depth`: `DEEP` internally;
+- `output_profile`: `EXPLORER`;
+- `locale`: `fa-IR`;
+- `report architecture`: `UI2 THREE_LAYER_PROGRESSIVE_DISCLOSURE`.
+
+Do not expose this compiled request unless the user asks for audit details.
+
+## Chat-native source model
+
+The attached current Alpha Lab Vault is authoritative for:
+
+- research method;
+- evidence rules;
+- prompt architecture;
+- analytical clusters;
+- M1;
+- Direction authority;
+- APL-A;
+- reporting semantics.
+
+For `LIVE`, current market facts must be retrieved from current external sources. Prefer primary/official sources for facts and high-quality financial sources for current narrative/reaction context.
+
+Do not require local Alpha Lab API execution for Chat-native use. Do not require the user's local `OPENAI_API_KEY`.
+
+## Research orchestration
+
+1. Inspect the attached current Vault.
+2. Resolve subject and certified/research-only status.
+3. Compile the implicit run request into M1-compatible research intent.
+4. Apply M1 to choose the appropriate research classes/protocols.
+5. Use the canonical R2 scientific prompt graph.
+6. Execute all relevant independent S3 clusters:
+   - Timing;
+   - Fundamental;
+   - Expectations / Policy / Regime;
+   - Narrative / Reflexivity / Consumption;
+   - Positioning;
+   - Actual Flow;
+   - Funding / Plumbing;
+   - Mechanics / Capacity / Liquidity / Volatility.
+7. Apply higher-order competing hypotheses, causal reasoning, scenario analysis, red team / thesis destroyer / premortem where material.
+8. Determine canonical Direction only through the Vault's valid Direction authority.
+9. Separate Force, Consumption, Remaining Pressure, Persistence and Reversal.
+10. Apply M1 research-health checks.
+11. Apply APL-A separately as `SHADOW_ONLY`; it cannot change Direction.
+12. Produce the UI2 three-layer Persian report.
+
+## Default research objective
+
+Unless the user has explicitly overridden the command in the same message, `run <subject>` must answer at least:
+
+1. جهت فعلی چیست؟
+2. اجازه معامله چیست، اگر canonical science آن را ارائه می‌کند؟
+3. مهم‌ترین عامل حرکت چیست؟
+4. نیروی فعلی چقدر قوی است؟
+5. چقدر از فشار مصرف شده؟
+6. چقدر فشار باقی مانده؟
+7. فشار چقدر ماندگار است؟
+8. چه چیزی تحلیل را ضعیف یا معکوس می‌کند؟
+9. مهم‌ترین UNKNOWN یا تعارض چیست؟
+10. چه زمانی/با چه شرطی باید دوباره بررسی شود؟
+
+## Market-closed behavior
+
+If the relevant market is currently closed, do not fabricate live flow. Analyze the latest valid state, distinguish stale/closed-session evidence from live evidence, and state the next relevant session or event review condition.
+
+## Certified vs research-only
+
+Do not confuse broad research capability with production certification.
+
+- Certified runtime subject: may be labeled accordingly if the current Vault says so.
+- Research-supported but uncertified: perform research, but label it `research-only / uncertified`.
+- Unknown subject: route through `NEW_ASSET_RESEARCH`; do not fabricate an asset model.
+
+## No needless questions
+
+The command exists to remove user friction. Do not ask for mode, horizon, depth, output style, or research class. Infer them from this contract.
+
+## Output
+
+Default visible output is Persian and follows UI2:
+
+### Layer 1 — نتیجه فوری
+Very short, request-aware, simple.
+
+### Layer 2 — تصویر کامل ساده
+All eight major analytical dimensions, dominant drivers, force/consumption/remaining pressure, scenarios, change conditions, and analysis health.
+
+### Layer 3 — جزئیات عمیق
+Full section-specific scientific detail, evidence, opposing evidence, unknowns, mechanism, horizon, invalidation, source lineage, M1 and APL-A perspective.
+
+Minimize jargon. Do not simplify away uncertainty or causal status.
+
+## Authority
+
+- Request command direction authority: `NONE`
+- Report composer direction authority: `NONE`
+- M1: method governance only according to installed policy
+- APL-A: `SHADOW_ONLY`
+- Broker write: `NONE`
+
+## One-command freeze
+
+This is the canonical human shortcut. Future research features should extend the underlying registries and method system; do not create new one-off human launcher prompts when `run <subject>` can compile the intent.

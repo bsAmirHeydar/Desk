@@ -1,17 +1,29 @@
 # How to Request Research
 
-The canonical human entrypoint is `AlphaLab.ps1 research`. The user supplies a subject and natural-language request; prompt IDs, R2 stages, and M1 class IDs are implementation details.
+## Normal user workflow — one command
 
-Examples:
+After uploading the complete current Vault to ChatGPT, type only:
 
-```powershell
-.\AlphaLab.ps1 research --subject NASDAQ100 --request "جهت امروز و مقدار فشار باقی‌مانده را بررسی کن." --mode LIVE --output EXPLORER
+```text
+run NASDAQ100
 ```
 
+The canonical `RUN.md` / Chat-Native Run Contract automatically supplies LIVE mode, current time, deep internal analysis, M1 method routing, R2/R3 science, all relevant analytical clusters, APL-A shadow review, and the UI2 three-layer Persian report.
+
+No prompt IDs, mode, horizon, depth, cluster list, or report format are required.
+
+## Local runtime equivalent
+
 ```powershell
-.\AlphaLab.ps1 research --subject XAUUSD --request "چرا طلا بعد از CPI حرکت کرد و آیا ادامه دارد؟" --mode LIVE --output EVENT
+.\AlphaLab.ps1 run NASDAQ100
 ```
 
-For operations/certification/scheduler use `AlphaLab_Commission.ps1`, not the research interface.
+## Advanced explicit research
 
-Certified runtime subjects are defined by R3 launcher profiles. An un-certified subject compiles to NEW_ASSET_RESEARCH but production execution remains blocked until separately certified.
+For special historical / causal / comparison / audit requests, the full canonical interface remains available:
+
+```powershell
+.\AlphaLab.ps1 research --subject NASDAQ100 --request "..." --mode LIVE --output EXPLORER
+```
+
+Commissioning, certification, scheduler and true-forward operations remain under `AlphaLab_Commission.ps1`.

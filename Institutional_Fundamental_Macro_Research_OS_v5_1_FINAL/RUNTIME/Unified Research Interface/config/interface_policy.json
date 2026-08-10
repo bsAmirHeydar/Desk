@@ -7,7 +7,7 @@
   "default_interface_mode": "LIVE",
   "default_locale": "fa-IR",
   "default_output_profile": "EXPLORER",
-  "interface_version": "UI2.0.0",
+  "interface_version": "UI2.1.0",
   "legacy_root_markdown_entrypoints": "RETIRED",
   "pdf_renderer": "EDGE_OR_CHROME_PRINT_TO_PDF_OPTIONAL",
   "progressive_disclosure": {
@@ -35,5 +35,15 @@
     "preserve_unknown": true
   },
   "uncertified_subject_execution": "PLAN_ONLY_NEW_ASSET_RESEARCH",
-  "version": "UI_INTERFACE_POLICY_2.0.0"
+  "version": "UI_INTERFACE_POLICY_2.1.0",
+  "canonical_one_command": "run <subject>",
+  "chat_native_run_contract": "04 Chat-Native Run Contract.md",
+  "run_defaults": {
+    "mode": "LIVE",
+    "as_of": "NOW",
+    "horizon": "AUTO_INTRADAY_SESSION_WITH_DAILY_CONTEXT",
+    "depth": "DEEP",
+    "output_profile": "EXPLORER",
+    "locale": "fa-IR"
+  }
 }

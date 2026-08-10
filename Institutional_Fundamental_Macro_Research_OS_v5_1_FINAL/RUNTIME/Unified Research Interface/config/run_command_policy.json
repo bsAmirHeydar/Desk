@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "command": "run <subject>",
+  "case_insensitive": true,
+  "chat_native": true,
+  "default_request": "Analyze the current market comprehensively. Determine current fundamental Direction, active force, consumption, remaining pressure, persistence, reversal conditions, dominant drivers, meaningful contradictions, key uncertainty, and next review.",
+  "defaults": {
+    "mode": "LIVE",
+    "as_of": "NOW",
+    "horizon": "AUTO_INTRADAY_SESSION_WITH_DAILY_CONTEXT",
+    "depth": "DEEP",
+    "output_profile": "EXPLORER",
+    "locale": "fa-IR"
+  },
+  "research_orchestration": {
+    "method_authority": "M1",
+    "prompt_graph": "R2",
+    "scientific_runtime": "R3",
+    "clusters": [
+      "TIMING",
+      "FUNDAMENTAL",
+      "EXPECTATIONS_POLICY_REGIME",
+      "NARRATIVE_REFLEXIVITY_CONSUMPTION",
+      "POSITIONING",
+      "ACTUAL_FLOW",
+      "FUNDING_PLUMBING",
+      "MECHANICS_CAPACITY_LIQUIDITY_VOLATILITY"
+    ],
+    "perspective": "APL-A_SHADOW_ONLY"
+  },
+  "chat_external_evidence": "CURRENT_WEB_REQUIRED_FOR_LIVE_WHEN_NEEDED",
+  "local_runtime_required_for_chat": false,
+  "openai_api_key_required_for_chat": false,
+  "environment_certification_required_for_chat": false,
+  "broker_write": "NONE",
+  "direction_authority": "NONE",
+  "market_closed_policy": "USE_LATEST_VALID_STATE_AND_LABEL_NON_LIVE_FLOW",
+  "uncertified_subject_policy": "RESEARCH_ONLY_NEW_ASSET_RESEARCH_NO_CERTIFICATION_CLAIM",
+  "report": "UI2_THREE_LAYER_PERSIAN_SIMPLE_LANGUAGE",
+  "follow_up_policy": "NO_EXTRA_FIELDS_UNLESS_SUBJECT_GENUINELY_AMBIGUOUS"
+}

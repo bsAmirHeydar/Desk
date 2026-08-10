@@ -1,10 +1,21 @@
-# Fundamental
-## Canonical Alpha Lab Research Interface
+# Fundamental — Alpha Lab
 
-Research requests now enter through one interface:
+## Chat usage
 
-```powershell
-.\AlphaLab.ps1 research --subject NASDAQ100 --request "جهت امروز و فشار باقی‌مانده را بررسی کن." --mode LIVE --output EXPLORER
+Upload this complete Vault and type only:
+
+```text
+run NASDAQ100
 ```
 
-Use `AlphaLab_Commission.ps1` only for commissioning, certification, TF3 scheduler, and forward-evidence operations. Historical V10–V14 prompt/launcher documents are not production entrypoints.
+That single command activates the canonical Chat-Native Run Contract in `RUN.md`: live evidence retrieval, semantic request compilation, M1 method routing, R2/R3 scientific execution logic, APL-A shadow perspective, and the UI2 three-layer Persian report.
+
+You do not need to specify prompts, clusters, mode, horizon, depth, or report format.
+
+## Local runtime equivalent
+
+```powershell
+.\AlphaLab.ps1 run NASDAQ100
+```
+
+Advanced research remains available through `.\AlphaLab.ps1 research ...`. Commissioning / TF / scheduler operations remain under `.\AlphaLab_Commission.ps1`.

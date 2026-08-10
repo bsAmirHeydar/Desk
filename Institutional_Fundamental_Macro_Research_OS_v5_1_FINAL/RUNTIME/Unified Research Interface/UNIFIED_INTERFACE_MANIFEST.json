@@ -7,20 +7,20 @@
     "request_compiler_direction": "NONE"
   },
   "canonical_compiled_intent_schema": "schemas/AlphaLab_Unified_Compiled_Intent.schema.json",
-  "canonical_human_entrypoint": "../../AlphaLab.ps1 research",
+  "canonical_human_entrypoint": "../../../RUN.md -> run <subject>",
   "canonical_report_model_schema": "schemas/AlphaLab_Report_Model.schema.json",
   "canonical_request_schema": "schemas/AlphaLab_Unified_Research_Request.schema.json",
   "canonical_result_schema": "schemas/AlphaLab_Canonical_Scientific_Result.schema.json",
   "interface_freeze": true,
   "legacy_policy": "ACTIVE_HUMAN_SURFACES_RETIRED_OR_REDIRECTED",
   "method_authority": "RUNTIME/Core Research Method Kernel",
-  "mission": "ONE_REQUEST_SURFACE_ONE_COMPILER_M1_R2_R3_ONE_RESULT_ONE_REPORT_MODEL",
+  "mission": "ONE_COMMAND_RUN_ONE_REQUEST_COMPILER_M1_R2_R3_ONE_RESULT_UI2_THREE_LAYER",
   "name": "Alpha Lab Unified Research Interface",
   "perspective": "RUNTIME/APL-A Alpha Perspective Layer",
   "prompt_os": "RUNTIME/R2 Prompt Execution OS",
   "report_model_version": "2.0.0",
   "scientific_runtime": "RUNTIME/R3 Operational Execution and Learning OS",
-  "status": "CANONICAL_THREE_LAYER_HUMAN_EXPERIENCE_BASELINE",
+  "status": "CANONICAL_ONE_COMMAND_CHAT_AND_THREE_LAYER_HUMAN_EXPERIENCE_BASELINE",
   "ux": {
     "architecture": "THREE_LAYER_PROGRESSIVE_DISCLOSURE",
     "layers": [
@@ -32,7 +32,7 @@
     "primary_locale": "fa-IR",
     "simple_language": "CONTROLLED_SCIENTIFIC_TO_SIMPLE_PERSIAN"
   },
-  "version": "UI2.0.0",
+  "version": "UI2.1.0",
   "views": [
     "EXPLORER",
     "COMPACT",
@@ -42,5 +42,9 @@
     "DEEP",
     "AUDIT",
     "ARCHIVE_PDF"
-  ]
+  ],
+  "canonical_local_shortcut": "../../../AlphaLab.ps1 run <subject>",
+  "chat_native_run_contract": "04 Chat-Native Run Contract.md",
+  "run_command_policy": "config/run_command_policy.json",
+  "run_command_schema": "schemas/AlphaLab_Run_Command.schema.json"
 }
