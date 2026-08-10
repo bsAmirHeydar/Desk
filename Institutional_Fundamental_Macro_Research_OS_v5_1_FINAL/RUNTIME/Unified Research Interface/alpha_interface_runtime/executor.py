@@ -38,11 +38,11 @@ def execute(vault_root,compiled,data_root=None,truth_state=None):
             host=make_host(binding,dr,production=True);retriever=host.retrieve if 'EVIDENCE_RETRIEVAL' in binding.get('optional_capabilities',[])+binding.get('required_capabilities',[]) else None
             live_intake=RetrievalRuntime(v,rt).prefetch_live(req['instrument'],req['active_horizon'],retriever,req.get('allow_private_sources',False));req=dict(req);req['analysis_cutoff']=live_intake['cutoff_utc'];req['tags']=list(req.get('tags') or [])+['live-intake:'+live_intake['intake_id']]
         launch=L.create_request(req);rid=launch['run_id']
-        rt.store.put_artifact(rid,'unified_request','META','META',compiled['original_request'],'application/json',producer_process_id='UI_REQUEST',producer_version='UI1.0.0')
-        rt.store.put_artifact(rid,'compiled_intent','META','META',compiled,'application/json',producer_process_id='UI_COMPILER',producer_version='UI1.0.0')
+        rt.store.put_artifact(rid,'unified_request','META','META',compiled['original_request'],'application/json',producer_process_id='UI_REQUEST',producer_version='UI2.0.0')
+        rt.store.put_artifact(rid,'compiled_intent','META','META',compiled,'application/json',producer_process_id='UI_COMPILER',producer_version='UI2.0.0')
         r2.bootstrap(rid,req['coverage_mode'],req['research_depth']);seal=RunDriver(v,rt,r2,'PRODUCTION_COMMAND',live_intake=live_intake).run_to_decision(rid,production=True)
-        can=build_result(rt,rid,compiled['request_id']);rt.store.put_artifact(rid,'canonical_scientific_result','META','OUTCOME',can,'application/json',producer_process_id='UI_RESULT',producer_version='UI1.0.0')
-        rm=build_report(rt,rid,can,compiled);rt.store.put_artifact(rid,'canonical_report_model','META','OUTCOME',rm,'application/json',producer_process_id='UI_REPORT_MODEL',producer_version='UI1.0.0')
+        can=build_result(rt,rid,compiled['request_id']);rt.store.put_artifact(rid,'canonical_scientific_result','META','OUTCOME',can,'application/json',producer_process_id='UI_RESULT',producer_version='UI2.0.0')
+        rm=build_report(rt,rid,can,compiled);rt.store.put_artifact(rid,'canonical_report_model','META','OUTCOME',rm,'application/json',producer_process_id='UI_REPORT_MODEL',producer_version='UI2.0.0')
         outdir=dr/'reports'/'unified';files=render_files(outdir,rm,compiled['output_profile'])
         if compiled['output_profile']=='ARCHIVE_PDF':files['pdf']=render_pdf_from_html(files['html_path'],str(Path(files['html_path']).with_suffix('.pdf')))
         commitment=None
@@ -50,4 +50,4 @@ def execute(vault_root,compiled,data_root=None,truth_state=None):
             from alpha_commissioning.true_forward import seal_run
             commitment=seal_run(v,rid,truth_state or 'SHADOW_LIVE')
         results.append({'run_id':rid,'decision_seal_hash':seal.get('decision_seal_hash'),'canonical_result':can,'report':files,'forward_commitment':commitment})
-    return {'schema_version':'1.0.0','status':'PASS','interface_version':'UI1.0.0','request_id':compiled['request_id'],'compiled_intent':compiled,'results':results,'authority':{'direction':'UNCHANGED','broker_write':'NONE','apl_a':'SHADOW_ONLY'},'created_at_utc':now()}
+    return {'schema_version':'1.0.0','status':'PASS','interface_version':'UI2.0.0','request_id':compiled['request_id'],'compiled_intent':compiled,'results':results,'authority':{'direction':'UNCHANGED','broker_write':'NONE','apl_a':'SHADOW_ONLY'},'created_at_utc':now()}

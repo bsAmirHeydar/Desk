@@ -1,0 +1,19 @@
+{
+  "principles": [
+    "PRESERVE_UNCERTAINTY",
+    "PRESERVE_CAUSAL_STATUS",
+    "NO_FAKE_PRECISION",
+    "MINIMAL_JARGON"
+  ],
+  "schema_version": "1.0.0",
+  "states": {
+    "BEARISH": "نزولی",
+    "BULLISH": "صعودی",
+    "CONTRADICTING": "مخالف",
+    "NO_TRADE": "فعلاً معامله نکن",
+    "SUPPORTING": "تأییدکننده",
+    "UNKNOWN": "نامشخص",
+    "UNRESOLVED": "هنوز نتیجه روشن نیست"
+  },
+  "version": "UI2.0.0"
+}

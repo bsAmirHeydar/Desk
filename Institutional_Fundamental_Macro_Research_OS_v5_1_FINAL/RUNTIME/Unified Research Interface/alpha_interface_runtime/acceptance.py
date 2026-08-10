@@ -1,22 +1,33 @@
 from pathlib import Path
-import json,re
-from .selftest import run as selftest
+import json
+from .selftest import run as selftest,_fixture
 from .compiler import compile_request
+from .render import explorer_html
+from .simple_language import simplify_text,to_fa
 
 def run(vault_root):
     v=Path(vault_root).resolve();checks=[]
     def ck(n,b,d=None):checks.append({'name':n,'pass':bool(b),'detail':d})
     st=selftest(v);ck('selftest',st['status']=='PASS',st.get('errors'))
-    m=json.loads((v/'RUNTIME'/'Unified Research Interface'/'UNIFIED_INTERFACE_MANIFEST.json').read_text(encoding='utf-8'));ck('one_interface',m['version']=='UI1.0.0' and m['interface_freeze'] is True)
-    r3=json.loads((v/'RUNTIME'/'R3 Operational Execution and Learning OS'/'schemas'/'AlphaLab_R3_Launch_Request.schema.json').read_text(encoding='utf-8'));ck('r3_schema_universal','research_program_id' in r3['properties'] and 'strategy_id' in r3['properties'] and 'lookahead_policy' in r3['properties'])
+    m=json.loads((v/'RUNTIME'/'Unified Research Interface'/'UNIFIED_INTERFACE_MANIFEST.json').read_text(encoding='utf-8'));ck('ui2_frozen',m['version']=='UI2.0.0' and m['interface_freeze'] is True and m['ux']['architecture']=='THREE_LAYER_PROGRESSIVE_DISCLOSURE')
+    schema=json.loads((v/'RUNTIME'/'Unified Research Interface'/'schemas'/'AlphaLab_Report_Model.schema.json').read_text(encoding='utf-8'));ck('report_model_v2',schema['properties']['report_model_version']['const']=='2.0.0' and 'layer1' in schema['required'] and 'layer3' in schema['required'])
     c=compile_request(v,{'subject':'NASDAQ100','request_text':'نزدک امروز چرا ریخت و فشار فروش چقدر مونده؟','mode':'LIVE'});ck('multi_intent','CAUSAL_ATTRIBUTION' in c['research_classes'] and 'PERSISTENCE_REVERSAL' in c['research_classes'])
-    ck('certified_truth',c['execution_eligibility']=='CERTIFIED_RUNTIME')
     ck('authority',m['authority']['request_compiler_direction']=='NONE' and m['authority']['report_composer_direction']=='NONE' and m['authority']['apl_a']=='SHADOW_ONLY' and m['authority']['broker_write']=='NONE')
-    # R2 eight clusters intact
+    model=_fixture();h=explorer_html(model)
+    ck('layer1_seconds_surface','class="hero layer layer-1"' in h and 'الان مهم‌ترین چیز چیست؟' in h)
+    ck('layer2_complete','class="analysis-grid"' in h and h.count('class="analysis-card"')==8)
+    ck('layer3_clickable',h.count('class="deep-button"')==8 and 'id="deep-dialog"' in h)
+    ck('simple_language','convexity' not in simplify_text('duration convexity is high').lower() and to_fa('UNKNOWN')=='نامشخص')
+    ck('scientific_fidelity','علت قطعی هنوز شناسایی نشده' in h)
+    ck('request_awareness','اصلی‌ترین توضیح فعلی' in h)
+    ck('pressure_surface',all(x in h for x in ['قدرت نیروی فعلی','چقدر مصرف شده','فشار باقی‌مانده','ریسک برگشت']))
+    ck('method_health','کیفیت و سلامت تحلیل' in h and 'جهت بازار را تعیین نمی‌کند' in h)
+    ck('apl_separation','بررسی شکنندگی تحلیل' in h and 'APL-A فقط ناظر است' in h)
+    ck('evidence_explorer','شواهد و منابع کامل' in h and 'Scientific Audit' in h)
+    ck('responsive_and_accessible','@media(max-width:520px)' in h and 'focus-visible' in h and 'prefers-reduced-motion' in h)
+    ck('no_fake_precision','67/100' not in h and '67%' not in h)
     preg=json.loads((v/'RUNTIME'/'R2 Prompt Execution OS'/'config'/'prompt_registry.json').read_text(encoding='utf-8'));ids={x.get('process_id') or x.get('prompt_id') or x.get('id') for x in (preg.get('processes') or preg.get('prompts') or preg.get('registry') or [])};needed={'W30_TEMPORAL','W31_FUNDAMENTAL','W32_EXPECTATIONS_POLICY_REGIME','W33_NARRATIVE_REFLEXIVITY_CONSUMPTION','W34_POSITIONING','W35_ACTUAL_FLOW','W36_FUNDING_PLUMBING','W37_MECHANICS_CAPACITY_VOL'};ck('eight_clusters',needed.issubset(ids),sorted(needed-ids))
-    # root human entrypoint uses UI, commission remains separate
-    root=(v.parent/'AlphaLab.ps1').read_text(encoding='utf-8');ck('root_research_entrypoint','Unified Research Interface' in root and 'alpha_research.py' in root)
-    ck('operations_separate',(v.parent/'AlphaLab_Commission.ps1').is_file())
-    # no misleading active root any-symbol
-    ck('legacy_root_removed',not (v.parent/'AlphaLab_V14_Any_Symbol_Live_Launcher.md').exists())
-    bad=[x for x in checks if not x['pass']];return {'schema_version':'1.0.0','status':'PASS' if not bad else 'FAIL','interface_version':'UI1.0.0','passed':len(checks)-len(bad),'total':len(checks),'checks':checks,'errors':[x['name'] for x in bad]}
+    ck('root_entrypoint',(v.parent/'AlphaLab.ps1').is_file() and not (v.parent/'AlphaLab_V14_Any_Symbol_Live_Launcher.md').exists())
+    ck('apl_b_not_implemented',not any(p.is_dir() and 'APL-B' in p.name for p in (v/'RUNTIME').iterdir()))
+    bad=[x for x in checks if not x['pass']]
+    return {'schema_version':'1.0.0','status':'PASS' if not bad else 'FAIL','interface_version':'UI2.0.0','passed':len(checks)-len(bad),'total':len(checks),'checks':checks,'errors':[x['name'] for x in bad]}

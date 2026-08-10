@@ -1,3 +1,3 @@
-# Reporting Contract
+# Reporting Contract — UI2
 
-One canonical scientific result and one presentation-neutral Report Model feed all views. Explorer HTML is the primary operational human format. PDF is archive/on-demand and may be produced only from the same Report Model. Renderers may summarize, translate, reorder, collapse, or expand; they cannot invent claims, change Direction/permission, hide UNKNOWN, resolve contradictions, or create probability.
+One canonical scientific result feeds one Report Model. UI2 renders that snapshot through three disclosure layers: L1 instant answer, L2 complete simple overview, and L3 section-specific deep dive. Explorer HTML is primary. PDF is archive/on-demand and must consume the same Report Model. The report composer may simplify, translate, reorder, collapse, or expand but may not create claims, alter Direction/permission, hide UNKNOWN, resolve contradictions, or invent probability.

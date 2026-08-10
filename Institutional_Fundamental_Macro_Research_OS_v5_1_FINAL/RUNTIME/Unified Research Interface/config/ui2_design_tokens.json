@@ -1,0 +1,20 @@
+{
+  "accessibility": [
+    "keyboard",
+    "visible-focus",
+    "semantic-headings",
+    "no-color-only-meaning",
+    "reduced-motion"
+  ],
+  "identity": "ALPHA_LAB_EDITORIAL",
+  "schema_version": "1.0.0",
+  "tokens": {
+    "accent": "muted-gold",
+    "background": "warm-ivory",
+    "density": "calm",
+    "hero": "near-black",
+    "motion": "minimal",
+    "radius": "soft"
+  },
+  "version": "UI2.0.0"
+}

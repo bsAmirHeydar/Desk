@@ -18,9 +18,21 @@
   "name": "Alpha Lab Unified Research Interface",
   "perspective": "RUNTIME/APL-A Alpha Perspective Layer",
   "prompt_os": "RUNTIME/R2 Prompt Execution OS",
+  "report_model_version": "2.0.0",
   "scientific_runtime": "RUNTIME/R3 Operational Execution and Learning OS",
-  "status": "CANONICAL_INTERFACE_BASELINE",
-  "version": "UI1.0.0",
+  "status": "CANONICAL_THREE_LAYER_HUMAN_EXPERIENCE_BASELINE",
+  "ux": {
+    "architecture": "THREE_LAYER_PROGRESSIVE_DISCLOSURE",
+    "layers": [
+      "INSTANT_ANSWER",
+      "SIMPLE_OVERVIEW",
+      "SECTION_DEEP_DIVE"
+    ],
+    "primary_human_format": "EXPLORER_HTML",
+    "primary_locale": "fa-IR",
+    "simple_language": "CONTROLLED_SCIENTIFIC_TO_SIMPLE_PERSIAN"
+  },
+  "version": "UI2.0.0",
   "views": [
     "EXPLORER",
     "COMPACT",

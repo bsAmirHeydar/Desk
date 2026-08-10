@@ -7,18 +7,33 @@
   "default_interface_mode": "LIVE",
   "default_locale": "fa-IR",
   "default_output_profile": "EXPLORER",
-  "interface_version": "UI1.0.0",
+  "interface_version": "UI2.0.0",
   "legacy_root_markdown_entrypoints": "RETIRED",
   "pdf_renderer": "EDGE_OR_CHROME_PRINT_TO_PDF_OPTIONAL",
+  "progressive_disclosure": {
+    "layers": [
+      "L1_INSTANT_ANSWER",
+      "L2_SIMPLE_OVERVIEW",
+      "L3_SECTION_DEEP_DIVE"
+    ],
+    "primary_format": "EXPLORER_HTML",
+    "request_aware_layer1": true,
+    "technical_details_collapsed_by_default": true
+  },
   "report_composer_direction_authority": "NONE",
+  "report_model_version": "2.0.0",
   "report_output_root": "reports/unified",
   "request_compiler_direction_authority": "NONE",
   "simple_language": {
+    "default_language": "fa-IR",
     "forbid_fake_precision": true,
+    "minimal_jargon": true,
+    "no_childish_language": true,
     "preserve_causal_status": true,
     "preserve_negation": true,
-    "preserve_uncertainty": true
+    "preserve_uncertainty": true,
+    "preserve_unknown": true
   },
   "uncertified_subject_execution": "PLAN_ONLY_NEW_ASSET_RESEARCH",
-  "version": "UI_INTERFACE_POLICY_1.0.0"
+  "version": "UI_INTERFACE_POLICY_2.0.0"
 }

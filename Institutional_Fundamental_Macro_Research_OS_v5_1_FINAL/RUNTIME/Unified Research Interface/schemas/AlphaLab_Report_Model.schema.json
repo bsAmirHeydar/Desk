@@ -17,7 +17,45 @@
     "drivers": {
       "type": "object"
     },
+    "evidence_explorer": {
+      "type": "object"
+    },
     "header": {
+      "type": "object"
+    },
+    "interface_version": {
+      "const": "UI2.0.0"
+    },
+    "layer1": {
+      "required": [
+        "focus",
+        "direction",
+        "permission",
+        "force",
+        "consumption",
+        "remaining_pressure",
+        "persistence",
+        "reversal_risk",
+        "what_matters_now_fa",
+        "what_would_change_this_fa"
+      ],
+      "type": "object"
+    },
+    "layer2": {
+      "required": [
+        "cards",
+        "drivers",
+        "causal_chain",
+        "pressure",
+        "changes",
+        "scenarios"
+      ],
+      "type": "object"
+    },
+    "layer3": {
+      "required": [
+        "sections"
+      ],
       "type": "object"
     },
     "method_health": {
@@ -30,27 +68,35 @@
       "type": "object"
     },
     "report_model_version": {
-      "const": "1.0.0"
+      "const": "2.0.0"
     },
     "scenarios": {
       "type": "array"
     },
     "schema_version": {
       "const": "1.0.0"
+    },
+    "ux": {
+      "type": "object"
     }
   },
   "required": [
     "schema_version",
     "report_model_version",
+    "interface_version",
     "header",
+    "layer1",
     "decision_strip",
+    "layer2",
     "analytical_cards",
     "drivers",
     "pressure",
     "scenarios",
+    "layer3",
     "method_health",
     "perspective",
-    "audit"
+    "audit",
+    "ux"
   ],
   "type": "object"
 }
