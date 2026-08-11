@@ -28,7 +28,7 @@ For a normal `run <subject>` invocation, compile the request as:
 - `depth`: `DEEP` internally;
 - `output_profile`: `EXPLORER`;
 - `locale`: `fa-IR`;
-- `report architecture`: `UI2 THREE_LAYER_PROGRESSIVE_DISCLOSURE`.
+- `report architecture`: `UX3 COMMAND_CENTER_MARKET_WORKSPACE_LENS_DEEP_DIVE`.
 
 Do not expose this compiled request unless the user asks for audit details.
 
@@ -70,7 +70,7 @@ Do not require local Alpha Lab API execution for Chat-native use. Do not require
 9. Separate Force, Consumption, Remaining Pressure, Persistence and Reversal.
 10. Apply M1 research-health checks.
 11. Apply APL-A separately as `SHADOW_ONLY`; it cannot change Direction.
-12. Produce the UI2 three-layer Persian report.
+12. Produce the UX3 Persian Research Experience: Command Center → Market Workspace → Lens Index → single section-specific Deep Dive drawer, plus Scenario Navigator, high-level Thinking Guide, Philosophy/Fragility, evidence meaning and limitations.
 
 ## Default research objective
 
@@ -105,18 +105,27 @@ The command exists to remove user friction. Do not ask for mode, horizon, depth,
 
 ## Output
 
-Default visible output is Persian and follows UI2:
+Default visible output is Persian and follows UX3.
 
-### Layer 1 — نتیجه فوری
-Very short, request-aware, simple.
+### نتیجه فوری / Command Center
+Very short and request-aware. In multi-market runs, show all markets and the common driver/opposition plus next material review/event.
 
-### Layer 2 — تصویر کامل ساده
-All eight major analytical dimensions, dominant drivers, force/consumption/remaining pressure, scenarios, change conditions, and analysis health.
+### تصویر کامل تحلیل / Market Workspace
+Only one selected market is fully expanded. Show Know / Current Interpretation / Unknown and all eight dimensions as compact analytical lenses.
 
-### Layer 3 — جزئیات عمیق
-Full section-specific scientific detail, evidence, opposing evidence, unknowns, mechanism, horizon, invalidation, source lineage, M1 and APL-A perspective.
+### جزئیات کامل هر بخش / Deep Dive
+One reusable section-specific drawer with observations, supporting/opposing evidence, unknowns, lens-specific mechanism, causal strength, rival explanation, invalidation and likely failure path.
 
-Minimize jargon. Do not simplify away uncertainty or causal status.
+### Scenario Navigator
+Keep multiple observable scenarios open without fake probabilities: base, upside, downside, reversal, range, event, no-trade and rare-shock where material.
+
+### Thinking / Philosophy / Fragility
+Explain high-level method and epistemic principles only. Never expose private chain-of-thought. Fragility perspective cannot change Direction.
+
+### Visible-product boundary
+Do not expose filenames, hashes, internal module/process/gate names, raw audit metadata, repository paths, runtime/certification engineering or raw JSON in the visible HTML.
+
+Minimize jargon. Do not simplify away uncertainty, negation, horizon, causal status or evidence limitations.
 
 ## Authority
 

@@ -24,7 +24,7 @@
       "type": "object"
     },
     "interface_version": {
-      "const": "UI2.0.0"
+      "const": "UX3.0.0"
     },
     "layer1": {
       "required": [

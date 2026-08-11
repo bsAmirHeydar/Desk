@@ -1,0 +1,34 @@
+{
+  "version": "UX3.0.0",
+  "identity": "ALPHA_DESK_EDITORIAL_RESEARCH_OS",
+  "schema_version": "1.0.0",
+  "tokens": {
+    "background": "warm-ivory",
+    "ink": "deep-charcoal",
+    "accent": "muted-gold",
+    "density": "editorial-calm",
+    "cardification": "minimal",
+    "radius": "disciplined",
+    "motion_ms": "100-180",
+    "content_width_px": "1200-1320",
+    "sidebar_px": "220-240"
+  },
+  "architecture": {
+    "desktop": "command-center + selected-market-workspace",
+    "mobile": "sticky-topbar + market-selector + menu-drawer",
+    "deep_dive": "single-reusable-drawer",
+    "scenarios": "navigator + single-canvas"
+  },
+  "accessibility": [
+    "skip-link",
+    "keyboard",
+    "visible-focus",
+    "semantic-headings",
+    "aria-current",
+    "aria-expanded",
+    "aria-controls",
+    "no-color-only-meaning",
+    "reduced-motion",
+    "rtl-ltr-bdi"
+  ]
+}

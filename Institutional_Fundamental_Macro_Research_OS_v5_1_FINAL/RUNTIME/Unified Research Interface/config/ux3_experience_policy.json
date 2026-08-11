@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "version": "UX3.0.0",
+  "status": "CANONICAL",
+  "experience_model": [
+    "COMMAND_CENTER",
+    "MARKET_WORKSPACE",
+    "ANALYTICAL_LENS",
+    "DEEP_DIVE"
+  ],
+  "hourly_delta": "FIRST_CLASS_VERIFIED_COMPARABLE_ONLY",
+  "visible_internal_engineering": false,
+  "eight_dimensions": [
+    "timing",
+    "fundamental",
+    "expectations",
+    "narrative",
+    "positioning",
+    "flow",
+    "funding",
+    "mechanics"
+  ],
+  "scenario_roles": [
+    "BASE",
+    "UPSIDE",
+    "DOWNSIDE",
+    "REVERSAL",
+    "RANGE",
+    "EVENT",
+    "NO_TRADE",
+    "RARE_SHOCK"
+  ],
+  "single_workspace": true,
+  "single_deep_drawer": true,
+  "single_scenario_canvas": true,
+  "compare_max_markets": 3,
+  "plain_persian_targets": {
+    "layer1": 0.95,
+    "layer2": 0.9
+  },
+  "acceptance": {
+    "desktop_first_viewport": "1440x900_ALL_SIX_PLUS_COMMON_DRIVERS_EVENT",
+    "visible_card_reduction_min": 0.5,
+    "no_preloaded_48_dialogs": true,
+    "mobile_navigation_required": true,
+    "no_fake_probabilities": true
+  }
+}

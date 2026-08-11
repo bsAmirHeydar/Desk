@@ -7,18 +7,23 @@
   "default_interface_mode": "LIVE",
   "default_locale": "fa-IR",
   "default_output_profile": "EXPLORER",
-  "interface_version": "UI2.1.0",
+  "interface_version": "UX3.0.0",
   "legacy_root_markdown_entrypoints": "RETIRED",
   "pdf_renderer": "EDGE_OR_CHROME_PRINT_TO_PDF_OPTIONAL",
   "progressive_disclosure": {
+    "architecture": "COMMAND_CENTER_MARKET_WORKSPACE_LENS_DEEP_DIVE",
     "layers": [
-      "L1_INSTANT_ANSWER",
-      "L2_SIMPLE_OVERVIEW",
-      "L3_SECTION_DEEP_DIVE"
+      "COMMAND_CENTER",
+      "MARKET_WORKSPACE",
+      "ANALYTICAL_LENS_INDEX",
+      "SECTION_DEEP_DIVE"
     ],
     "primary_format": "EXPLORER_HTML",
     "request_aware_layer1": true,
-    "technical_details_collapsed_by_default": true
+    "single_reusable_deep_drawer": true,
+    "single_market_workspace": true,
+    "scenario_navigator": true,
+    "technical_details_visible": false
   },
   "report_composer_direction_authority": "NONE",
   "report_model_version": "2.0.0",
@@ -35,7 +40,7 @@
     "preserve_unknown": true
   },
   "uncertified_subject_execution": "PLAN_ONLY_NEW_ASSET_RESEARCH",
-  "version": "UI_INTERFACE_POLICY_2.1.0",
+  "version": "UI_INTERFACE_POLICY_3.0.0",
   "canonical_one_command": "run <subject>",
   "chat_native_run_contract": "04 Chat-Native Run Contract.md",
   "run_defaults": {
@@ -45,5 +50,10 @@
     "depth": "DEEP",
     "output_profile": "EXPLORER",
     "locale": "fa-IR"
-  }
+  },
+  "hourly_usage": {
+    "prioritize_verified_delta": true,
+    "no_fabricated_comparison": true
+  },
+  "user_facing_engineering_metadata": "FORBIDDEN"
 }

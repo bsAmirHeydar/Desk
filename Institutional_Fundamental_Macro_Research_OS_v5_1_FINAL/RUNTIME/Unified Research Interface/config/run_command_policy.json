@@ -36,12 +36,14 @@
   "direction_authority": "NONE",
   "market_closed_policy": "USE_LATEST_VALID_STATE_AND_LABEL_NON_LIVE_FLOW",
   "uncertified_subject_policy": "RESEARCH_ONLY_NEW_ASSET_RESEARCH_NO_CERTIFICATION_CLAIM",
-  "report": "UI2_THREE_LAYER_PERSIAN_SIMPLE_LANGUAGE",
+  "report": "UX3_PERSIAN_RESEARCH_EXPERIENCE",
   "follow_up_policy": "NO_EXTRA_FIELDS_UNLESS_SUBJECT_GENUINELY_AMBIGUOUS",
   "run_contract_version": "RUN2.0.0",
   "quality_gates": "MANDATORY",
   "persistence": "ON",
   "previous_run_compare": "AUTO",
   "quality_registry": "config/run_quality_registry.json",
-  "run_capsule": "MANDATORY_LOCAL_PORTABLE_CHAT_WHEN_FILE_CREATION_AVAILABLE"
+  "run_capsule": "MANDATORY_LOCAL_PORTABLE_CHAT_WHEN_FILE_CREATION_AVAILABLE",
+  "report_contract": "06 UX3 World-Class Research Experience Contract.md",
+  "visible_engineering_metadata": "FORBIDDEN"
 }

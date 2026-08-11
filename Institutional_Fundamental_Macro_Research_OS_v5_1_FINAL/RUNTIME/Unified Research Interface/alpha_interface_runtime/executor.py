@@ -45,14 +45,14 @@ def execute(vault_root,compiled,data_root=None,truth_state=None):
         rt.store.put_artifact(rid,'compiled_intent','META','META',compiled,'application/json',producer_process_id='RUN2_COMPILER',producer_version='RUN2.0.0')
         rt.store.put_artifact(rid,'run2_pre_run_receipt','META','META',pre,'application/json',producer_process_id='RUN2_QUALITY',producer_version='RUN2.0.0')
         r2.bootstrap(rid,req['coverage_mode'],req['research_depth']);seal=RunDriver(v,rt,r2,'PRODUCTION_COMMAND',live_intake=live_intake).run_to_decision(rid,production=True)
-        can=build_result(rt,rid,compiled['request_id']);rt.store.put_artifact(rid,'canonical_scientific_result','META','OUTCOME',can,'application/json',producer_process_id='UI_RESULT',producer_version='UI2.1.0')
+        can=build_result(rt,rid,compiled['request_id']);rt.store.put_artifact(rid,'canonical_scientific_result','META','OUTCOME',can,'application/json',producer_process_id='UI_RESULT',producer_version='UX3.0.0')
         quality=evaluate(rt,rid,compiled,can)
         preliminary=build_report(rt,rid,can,compiled,quality,None,None);fid=report_fidelity(can,preliminary);quality=set_gate(quality,'REPORT_FIDELITY','PASS' if fid['status']=='PASS' else 'FAIL',fid)
         cap0=build_capsule(rt,rid,compiled,can,quality,previous=previous);cap,persist_receipt=persist(dr,cap0);quality=cap['run_quality_receipt']
         rt.store.put_artifact(rid,'run_quality_receipt','META','OUTCOME',quality,'application/json',producer_process_id='RUN2_QUALITY',producer_version='RUN2.0.0')
         rt.store.put_artifact(rid,'run_capsule','META','OUTCOME',cap,'application/json',producer_process_id='RUN2_MEMORY',producer_version='RUN2.0.0')
         rt.store.put_artifact(rid,'run_persistence_receipt','META','OUTCOME',persist_receipt,'application/json',producer_process_id='RUN2_MEMORY',producer_version='RUN2.0.0')
-        rm=build_report(rt,rid,can,compiled,quality,cap,cap.get('changes_since_previous'));rt.store.put_artifact(rid,'canonical_report_model','META','OUTCOME',rm,'application/json',producer_process_id='UI_REPORT_MODEL',producer_version='UI2.1.0')
+        rm=build_report(rt,rid,can,compiled,quality,cap,cap.get('changes_since_previous'));rt.store.put_artifact(rid,'canonical_report_model','META','OUTCOME',rm,'application/json',producer_process_id='UI_REPORT_MODEL',producer_version='UX3.0.0')
         outdir=dr/'reports'/'unified';files=render_files(outdir,rm,compiled['output_profile'])
         if compiled['output_profile']=='ARCHIVE_PDF':files['pdf']=render_pdf_from_html(files['html_path'],str(Path(files['html_path']).with_suffix('.pdf')))
         commitment=None
@@ -61,4 +61,4 @@ def execute(vault_root,compiled,data_root=None,truth_state=None):
             commitment=seal_run(v,rid,truth_state or 'SHADOW_LIVE')
         results.append({'run_id':rid,'decision_seal_hash':seal.get('decision_seal_hash'),'canonical_result':can,'run_quality_receipt':quality,'run_capsule':{'path':persist_receipt['path'],'capsule_hash':cap['capsule_hash'],'quality_status':cap['quality_status'],'reproducibility_state':cap['reproducibility_state']},'changes_since_previous':cap.get('changes_since_previous'),'report':files,'forward_commitment':commitment})
     overall='PASS' if all(x['run_quality_receipt']['status'] in ('PASS','PASS_WITH_WARNINGS') for x in results) else ('PARTIAL' if all(x['run_quality_receipt']['status']!='BLOCKED' for x in results) else 'BLOCKED')
-    return {'schema_version':'1.0.0','status':overall,'interface_version':'UI2.1.0','run_contract_version':'RUN2.0.0','request_id':compiled['request_id'],'compiled_intent':compiled,'results':results,'authority':{'direction':'UNCHANGED','broker_write':'NONE','apl_a':'SHADOW_ONLY'},'created_at_utc':now()}
+    return {'schema_version':'1.0.0','status':overall,'interface_version':'UX3.0.0','run_contract_version':'RUN2.0.0','request_id':compiled['request_id'],'compiled_intent':compiled,'results':results,'authority':{'direction':'UNCHANGED','broker_write':'NONE','apl_a':'SHADOW_ONLY'},'created_at_utc':now()}

@@ -1,4 +1,4 @@
-# ALPHA LAB — RUN COMMAND
+# ALPHA DESK — RUN COMMAND
 
 ## The only command the user needs
 
@@ -28,15 +28,18 @@ The user does **not** need to specify mode, horizon, depth, research classes, pr
 - `AS_OF = NOW`;
 - current-session / day-trading focus with daily carry context;
 - maximum scientifically useful depth internally;
-- all relevant Alpha Lab research classes selected automatically;
+- all relevant Alpha Desk/Alpha Lab internal research classes selected automatically;
 - the eight canonical analytical clusters executed as needed;
 - M1 method governance applied;
 - APL-A applied separately as shadow perspective only;
 - current external evidence retrieved when needed;
-- final output in Persian using UI2 three-layer reporting;
-- Layer 1: instant answer;
-- Layer 2: complete simple overview;
-- Layer 3: full section-specific deep dives;
+- final output in Persian using the canonical UX3 research experience;
+- Command Center: immediate market state;
+- Market Workspace: one selected market at a time;
+- Analytical Lens Index: all eight dimensions in compact form;
+- Deep Dive: one reusable section-specific drawer;
+- Scenario Navigator: multiple observable paths without fake probabilities;
+- Thinking/Philosophy chapters: high-level method and fragility guidance without internal engineering exposure;
 - next review time/condition included when scientifically available.
 
 ### Chat-native execution

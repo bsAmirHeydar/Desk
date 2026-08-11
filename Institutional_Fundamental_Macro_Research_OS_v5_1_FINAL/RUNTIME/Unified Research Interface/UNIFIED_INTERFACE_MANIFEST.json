@@ -14,25 +14,30 @@
   "interface_freeze": true,
   "legacy_policy": "ACTIVE_HUMAN_SURFACES_RETIRED_OR_REDIRECTED",
   "method_authority": "RUNTIME/Core Research Method Kernel",
-  "mission": "ONE_COMMAND_RUN_ONE_REQUEST_COMPILER_M1_R2_R3_ONE_RESULT_UI2_THREE_LAYER",
+  "mission": "ONE_COMMAND_RUN_ONE_REQUEST_COMPILER_M1_R2_R3_ONE_RESULT_UX3_RESEARCH_EXPERIENCE",
   "name": "Alpha Lab Unified Research Interface",
   "perspective": "RUNTIME/APL-A Alpha Perspective Layer",
   "prompt_os": "RUNTIME/R2 Prompt Execution OS",
   "report_model_version": "2.0.0",
   "scientific_runtime": "RUNTIME/R3 Operational Execution and Learning OS",
-  "status": "CANONICAL_ONE_COMMAND_CHAT_THREE_LAYER_RUN2_QUALITY_AND_MEMORY_BASELINE",
+  "status": "CANONICAL_ONE_COMMAND_CHAT_UX3_RUN2_QUALITY_AND_MEMORY",
   "ux": {
-    "architecture": "THREE_LAYER_PROGRESSIVE_DISCLOSURE",
+    "architecture": "COMMAND_CENTER_MARKET_WORKSPACE_LENS_DEEP_DIVE",
     "layers": [
-      "INSTANT_ANSWER",
-      "SIMPLE_OVERVIEW",
+      "COMMAND_CENTER",
+      "MARKET_WORKSPACE",
+      "ANALYTICAL_LENS_INDEX",
       "SECTION_DEEP_DIVE"
     ],
     "primary_human_format": "EXPLORER_HTML",
     "primary_locale": "fa-IR",
-    "simple_language": "CONTROLLED_SCIENTIFIC_TO_SIMPLE_PERSIAN"
+    "simple_language": "CONTROLLED_SCIENTIFIC_TO_SIMPLE_PERSIAN",
+    "single_reusable_deep_drawer": true,
+    "scenario_navigator": true,
+    "visible_engineering_metadata": false,
+    "hourly_delta_first_class": true
   },
-  "version": "UI2.1.0",
+  "version": "UX3.0.0",
   "views": [
     "EXPLORER",
     "COMPACT",
@@ -52,5 +57,8 @@
   "run_quality_schema": "schemas/AlphaLab_Run_Quality_Receipt.schema.json",
   "run_capsule_schema": "schemas/AlphaLab_Run_Capsule.schema.json",
   "run_memory_policy": "config/run_memory_policy.json",
-  "persistence_contract": "LOCAL_APPEND_ONLY_PLUS_CHAT_PORTABLE_CAPSULE"
+  "persistence_contract": "LOCAL_APPEND_ONLY_PLUS_CHAT_PORTABLE_CAPSULE",
+  "ux3_contract": "06 UX3 World-Class Research Experience Contract.md",
+  "ux3_policy": "config/ux3_experience_policy.json",
+  "ux3_design_tokens": "config/ux3_design_tokens.json"
 }
