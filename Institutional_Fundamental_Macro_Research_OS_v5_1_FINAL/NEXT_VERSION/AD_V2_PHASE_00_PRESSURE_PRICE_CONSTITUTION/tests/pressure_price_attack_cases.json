@@ -1,0 +1,128 @@
+{
+  "version": "1.0.0",
+  "phase": "AD-V2-P00",
+  "cases": [
+    {
+      "id": "P00-A01",
+      "kind": "PRICE_CONTAMINATION",
+      "drivers_hash": "SAME",
+      "price_path_a": "RALLY_5PCT",
+      "price_path_b": "SELLOFF_5PCT",
+      "expected": {
+        "pressure_equal": true,
+        "transmission_may_differ": true,
+        "permission_may_differ": true
+      }
+    },
+    {
+      "id": "P00-A02",
+      "kind": "MOMENTUM_TIEBREAKER",
+      "causal_pressure": "UNRESOLVED",
+      "target_momentum": "STRONG_UP",
+      "expected": {
+        "pressure": "UNRESOLVED",
+        "momentum_may_set_pressure": false
+      }
+    },
+    {
+      "id": "P00-A03",
+      "kind": "PRICE_CONSUMPTION",
+      "causal_evidence_change": false,
+      "target_move": "VERY_LARGE",
+      "expected": {
+        "driver_consumption_inferred_from_price": false,
+        "price_consumption_allowed": true
+      }
+    },
+    {
+      "id": "P00-A04",
+      "kind": "HIDDEN_STATE_STORY",
+      "price_shape": "STOP_RUN_LOOKING_WICK",
+      "independent_flow_evidence": false,
+      "expected": {
+        "max_epistemic_class": "PLAUSIBLE_HYPOTHESIS",
+        "confirmed_absorption": false
+      }
+    },
+    {
+      "id": "P00-A05",
+      "kind": "CAUSAL_DRIVER_CHANGE",
+      "target_price_change": false,
+      "causal_driver_change": true,
+      "expected": {
+        "pressure_reestimation_allowed": true
+      }
+    },
+    {
+      "id": "P00-A06",
+      "kind": "RESEARCH_CALLBACK_NO_NEW_EVIDENCE",
+      "severe_price_disagreement": true,
+      "new_causal_evidence": false,
+      "expected": {
+        "research_escalation": true,
+        "direct_pressure_mutation": false
+      }
+    },
+    {
+      "id": "P00-A07",
+      "kind": "RESEARCH_CALLBACK_WITH_NEW_EVIDENCE",
+      "severe_price_disagreement": true,
+      "new_causal_evidence": true,
+      "expected": {
+        "pressure_reestimation_allowed": true
+      }
+    },
+    {
+      "id": "P00-A08",
+      "kind": "D4_RETROACTIVE",
+      "future_outcome_known": true,
+      "historical_cutoff_frozen": true,
+      "expected": {
+        "historical_pressure_rewrite": false,
+        "future_calibration_allowed": true
+      }
+    },
+    {
+      "id": "P00-A09",
+      "kind": "TECHNICAL_BOUNDARY",
+      "technical_breakout": true,
+      "new_causal_evidence": false,
+      "expected": {
+        "pressure_mutation": false,
+        "timing_or_permission_change_allowed": true
+      }
+    },
+    {
+      "id": "P00-A10",
+      "kind": "CONFIDENCE_SEPARATION",
+      "price_disagreement": "EXTREME",
+      "new_causal_evidence": false,
+      "expected": {
+        "pressure_level_mutation": false,
+        "model_completeness_confidence_may_fall": true
+      }
+    },
+    {
+      "id": "P00-A11",
+      "kind": "CROSS_ASSET_CAUSAL_NUANCE",
+      "target_price_change": false,
+      "causal_leader_market_variable_change": true,
+      "mechanism_declared": true,
+      "expected": {
+        "pressure_reestimation_allowed": true,
+        "target_price_circularity": false
+      }
+    },
+    {
+      "id": "P00-A12",
+      "kind": "NO_FORCED_TRADE",
+      "pressure": "BUY_HIGH",
+      "transmission": "NEGATIVE",
+      "event_risk": "DECISION_CRITICAL",
+      "expected": {
+        "trade_required": false,
+        "no_trade_allowed": true
+      }
+    }
+  ]
+}

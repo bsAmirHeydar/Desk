@@ -1,0 +1,89 @@
+{
+  "version": "1.0.0",
+  "baseline_label": "ALPHA_DESK_V1_CLOSED_REFERENCE",
+  "scientific_stack": "V21.3.0",
+  "runtime": "R4.0.0",
+  "source": "user_supplied_Fundamental-main_8_zip",
+  "critical_files": [
+    {
+      "path": "CURRENT_PRODUCTION_MANIFEST.json",
+      "sha256": "02ee9b7f77fdd7d85ca5dd47c840e22b472861f7b3b7285e37bf6eef9e49344f",
+      "size": 39135
+    },
+    {
+      "path": "CURRENT_PRODUCTION_MANIFEST.yaml",
+      "sha256": "d47e347a107bfb75f2c5ecb6e7ff05eef28cda44f83fab5456eeee8ffd91c52c",
+      "size": 38915
+    },
+    {
+      "path": "V21_COGNITIVE_MIGRATION_AND_PRECEDENCE_MAP.md",
+      "sha256": "9a2485e15f4a042321544d39259357e03bf5cd3d80d0db87a8c30f813dd381c3",
+      "size": 1493
+    },
+    {
+      "path": "V21_COGNITIVE_CANONICAL_AUTHORITY_MAP.yaml",
+      "sha256": "68183a829762b51f8dd31a7f7c1faeff9bd64a043659d3aa50719f2a9349c282",
+      "size": 1735
+    },
+    {
+      "path": "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/00 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine MOC.md",
+      "sha256": "efb6491636bb2aa02f6ee0ef63b1c42f9a35e0416e7d2fb17cf7ad2d253d0303",
+      "size": 8945
+    },
+    {
+      "path": "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/03 Fundamental Force and Intensity Decomposition.md",
+      "sha256": "7268fa762faabfe05f616ce85f645b5e396b0312578ff721e13e6d12f5d6d98a",
+      "size": 4014
+    },
+    {
+      "path": "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/05 Transmission Breadth Depth and Independence.md",
+      "sha256": "935e0b7e500223d82808c7266897c47180855cbe97945c57edcaa268e2c42abc",
+      "size": 2933
+    },
+    {
+      "path": "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/13 Remaining Fundamental Pressure Decomposition.md",
+      "sha256": "bbcf837c51a35b67f6f98c24b8595c95fc96468589df241ac7dea255dd351cde",
+      "size": 3018
+    },
+    {
+      "path": "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/27 Gold Force Consumption and Persistence Book.md",
+      "sha256": "0f39fcb615cfe1d16750e3d1752c9c78799f3c08c97c90f0626087253ce128af",
+      "size": 4011
+    },
+    {
+      "path": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/00 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine MOC.md",
+      "sha256": "52bba07df8456ea6e584d0383607370648e1ef4377d8dae6fee96b86067d7e84",
+      "size": 4900
+    },
+    {
+      "path": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/01 Mission Scope and Authority Boundary.md",
+      "sha256": "ffcf730dc35c9d008857d0ea68921215434a43b04fc99e9436448c246a9835d6",
+      "size": 1550
+    },
+    {
+      "path": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/02 Cognitive Loop and Independent State Construction.md",
+      "sha256": "397e329180a383d9446f45f5c04f219239f808741412f40439120c9ee396b1ef",
+      "size": 1118
+    },
+    {
+      "path": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/17 Model Disagreement and Unmodeled Driver Risk.md",
+      "sha256": "18d95ea9f6c236d5bae6041c0c7bd170fdd0b73f6b9f81b778848bc11e47f895",
+      "size": 865
+    },
+    {
+      "path": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/40 XAUUSD Cognitive Book.md",
+      "sha256": "b1c68f0066c599c633dfad7f02e68e999293418b99166790dfc2902fe982e08c",
+      "size": 1474
+    },
+    {
+      "path": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/51 V21.2 Last-Mile Runtime Integrity and Flexible Learning Hardening.md",
+      "sha256": "4b30a5a02cfaa28233365de7d3cc53c24be9740e523473578052a289a59c5186",
+      "size": 2107
+    },
+    {
+      "path": "RUNTIME/R4 Scientific Certification and Reproducibility Hardening/R4_MANIFEST.json",
+      "sha256": "831d944e35c5cae96307139002f2dcc624b5f874341e1dbc387f0b2d69ae4d78",
+      "size": 1481
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "version": "0.1.0",
+  "status": "SHADOW_ONLY",
+  "nodes": [
+    {
+      "id": "D1_CAUSAL_EVIDENCE",
+      "authority": "TRUTH_EVIDENCE"
+    },
+    {
+      "id": "INDEPENDENT_SCIENCE_STATES",
+      "authority": "DOMAIN_STATE"
+    },
+    {
+      "id": "DIRECTIONAL_PRESSURE",
+      "authority": "MODULE_89"
+    },
+    {
+      "id": "EXPECTED_SIGNATURES",
+      "authority": "MODULE_103_DIAGNOSTIC_MODEL"
+    },
+    {
+      "id": "TARGET_PRICE_TRANSMISSION",
+      "authority": "MODULE_103_DIAGNOSTIC"
+    },
+    {
+      "id": "MODEL_DISAGREEMENT",
+      "authority": "MODULE_103"
+    },
+    {
+      "id": "RESEARCH_ESCALATION",
+      "authority": "MODULE_103"
+    },
+    {
+      "id": "D3_EDGE_PERMISSION",
+      "authority": "MODULE_101"
+    },
+    {
+      "id": "TECHNICAL_EXECUTION_TIMING",
+      "authority": "EXECUTION_LAYER"
+    },
+    {
+      "id": "D4_FORWARD_LEARNING",
+      "authority": "MODULE_102"
+    }
+  ],
+  "edges": [
+    [
+      "D1_CAUSAL_EVIDENCE",
+      "INDEPENDENT_SCIENCE_STATES"
+    ],
+    [
+      "INDEPENDENT_SCIENCE_STATES",
+      "DIRECTIONAL_PRESSURE"
+    ],
+    [
+      "DIRECTIONAL_PRESSURE",
+      "EXPECTED_SIGNATURES"
+    ],
+    [
+      "EXPECTED_SIGNATURES",
+      "TARGET_PRICE_TRANSMISSION"
+    ],
+    [
+      "TARGET_PRICE_TRANSMISSION",
+      "MODEL_DISAGREEMENT"
+    ],
+    [
+      "MODEL_DISAGREEMENT",
+      "RESEARCH_ESCALATION"
+    ],
+    [
+      "DIRECTIONAL_PRESSURE",
+      "D3_EDGE_PERMISSION"
+    ],
+    [
+      "TARGET_PRICE_TRANSMISSION",
+      "D3_EDGE_PERMISSION"
+    ],
+    [
+      "D3_EDGE_PERMISSION",
+      "TECHNICAL_EXECUTION_TIMING"
+    ],
+    [
+      "TECHNICAL_EXECUTION_TIMING",
+      "D4_FORWARD_LEARNING"
+    ]
+  ],
+  "controlled_callback_edges": [
+    [
+      "RESEARCH_ESCALATION",
+      "D1_CAUSAL_EVIDENCE"
+    ]
+  ],
+  "forbidden_edges": [
+    [
+      "TARGET_PRICE_TRANSMISSION",
+      "DIRECTIONAL_PRESSURE"
+    ],
+    [
+      "TECHNICAL_EXECUTION_TIMING",
+      "DIRECTIONAL_PRESSURE"
+    ],
+    [
+      "D4_FORWARD_LEARNING",
+      "DIRECTIONAL_PRESSURE_HISTORICAL_REWRITE"
+    ]
+  ]
+}

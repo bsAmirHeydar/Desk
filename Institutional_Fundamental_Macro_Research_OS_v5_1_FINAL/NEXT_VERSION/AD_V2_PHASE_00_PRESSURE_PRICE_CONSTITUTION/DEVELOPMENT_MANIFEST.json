@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "product": "Alpha Desk",
+  "product_generation": "V2_DEVELOPMENT",
+  "phase_id": "AD-V2-P00",
+  "phase_name": "PRESSURE_PRICE_CONSTITUTION",
+  "phase_version": "0.1.0",
+  "status": "SHADOW_ONLY",
+  "created": "2026-08-15",
+  "v1_baseline": {
+    "scientific_stack": "V21.3.0",
+    "runtime": "R4.0.0",
+    "production_manifest": "CURRENT_PRODUCTION_MANIFEST.json"
+  },
+  "target_scientific_lineage": "V22_PLUS_NOT_PROMOTED",
+  "authority_change": "NONE",
+  "direction_authority_change": "NONE",
+  "permission_authority_change": "NONE",
+  "broker_write_change": "NONE",
+  "active_production_manifest_modified": false,
+  "active_production_files_modified": [],
+  "implementation_scope": [
+    "V1_FREEZE_BOUNDARY",
+    "DIRECTIONAL_PRESSURE_AUTHORITY_CONSTITUTION",
+    "TARGET_PRICE_TRANSMISSION_CONSTITUTION",
+    "ONE_WAY_CAUSAL_PROVENANCE_GRAPH",
+    "COUNTERFACTUAL_RESIDUAL_AND_MISSING_DRIVER_ESCALATION",
+    "LATENT_STATE_ANTI_STORYTELLING_BOUNDARY",
+    "TRADE_PERMISSION_AND_TECHNICAL_AUTHORITY_BOUNDARY",
+    "SEMANTIC_ATTACK_CERTIFICATION",
+    "V1_BACKWARD_COMPATIBILITY_AND_NON_PROMOTION",
+    "PHASE_01_RUNTIME_REPAIR_HANDOFF"
+  ],
+  "future_owners": {
+    "directional_pressure": "MODULE_89",
+    "price_transmission_and_model_disagreement": "MODULE_103",
+    "edge_permission_modulation": "MODULE_101",
+    "forward_validation_and_promotion": "MODULE_102_D4",
+    "quality_and_certification": "RUN2_R4"
+  },
+  "hard_invariants": [
+    "TARGET_PRICE_NEVER_DIRECT_PRESSURE_AUTHORITY",
+    "TARGET_PRICE_NEVER_DIRECTION_TIEBREAKER",
+    "TARGET_PRICE_NEVER_DRIVER_CONSUMPTION_BY_DISTANCE",
+    "PRICE_DISAGREEMENT_TRIGGERS_DIAGNOSTIC_NOT_DIRECT_PRESSURE_MUTATION",
+    "PRESSURE_REESTIMATION_REQUIRES_NEW_OR_CORRECTED_CAUSAL_EVIDENCE",
+    "HIDDEN_STATE_REQUIRES_EVIDENCE_CLASSIFICATION",
+    "NO_FAKE_LATENT_PROBABILITY",
+    "POINT_IN_TIME_PRESSURE_RECORD_IMMUTABLE_TO_FUTURE_OUTCOME",
+    "PHASE_00_SHADOW_ONLY"
+  ],
+  "allowed_target_price_roles": [
+    "TRANSMISSION_RESPONSE",
+    "TIMING",
+    "MODEL_DISAGREEMENT",
+    "UNMODELED_DRIVER_SEARCH_TRIGGER",
+    "TRADE_QUALITY_AND_PERMISSION_MODULATION",
+    "TECHNICAL_TRIGGER",
+    "D4_OUTCOME_EVALUATION"
+  ],
+  "forbidden_target_price_roles": [
+    "PRESSURE_SOURCE",
+    "PRESSURE_WEIGHT",
+    "PRESSURE_FALLBACK",
+    "PRESSURE_TIEBREAKER",
+    "PRESSURE_STRENGTH_MUTATOR",
+    "DRIVER_CONSUMPTION_PROXY",
+    "CAUSAL_BUYER_SELLER_IDENTITY_PROOF",
+    "HIDDEN_STATE_CONFIRMATION_FROM_PRICE_ALONE"
+  ]
+}

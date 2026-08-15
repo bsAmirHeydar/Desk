@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "constitution_id": "AD-V2-P00-PRESSURE-PRICE",
+  "status": "SHADOW_ONLY",
+  "baseline": {
+    "scientific_stack": "V21.3.0",
+    "runtime": "R4.0.0"
+  },
+  "pressure": {
+    "owner": "MODULE_89",
+    "target_price_direct_authority": false,
+    "target_price_may_change_pressure_directly": false,
+    "target_price_may_lower_pressure_confidence_directly": false,
+    "target_price_may_lower_model_completeness_confidence": true,
+    "reestimate_only_on_reason_codes": [
+      "NEW_CAUSAL_FACT",
+      "SOURCE_CORRECTION",
+      "HORIZON_CORRECTION",
+      "REGIME_REMAP",
+      "ROOT_DEPENDENCE_CORRECTION",
+      "CAUSAL_LEADER_CHANGE_WITH_EVIDENCE",
+      "NEW_VERIFIED_FLOW_OR_POSITIONING_DRIVER",
+      "NEW_FUNDING_OR_MECHANICS_DRIVER",
+      "MISSING_DRIVER_IDENTIFIED_WITH_EVIDENCE"
+    ],
+    "forbidden_reason_codes": [
+      "TARGET_PRICE_MOVED_AGAINST_THESIS",
+      "TARGET_PRICE_MOMENTUM",
+      "TARGET_BREAKOUT_OR_BREAKDOWN_ONLY"
+    ]
+  },
+  "target_price": {
+    "owner": "TRANSMISSION_DIAGNOSTIC_ONLY",
+    "allowed_roles": [
+      "TRANSMISSION_RESPONSE",
+      "TIMING",
+      "MODEL_DISAGREEMENT",
+      "UNMODELED_DRIVER_SEARCH_TRIGGER",
+      "TRADE_QUALITY_AND_PERMISSION_MODULATION",
+      "TECHNICAL_TRIGGER",
+      "D4_OUTCOME_EVALUATION"
+    ],
+    "forbidden_roles": [
+      "PRESSURE_SOURCE",
+      "PRESSURE_WEIGHT",
+      "PRESSURE_FALLBACK",
+      "PRESSURE_TIEBREAKER",
+      "PRESSURE_STRENGTH_MUTATOR",
+      "DRIVER_CONSUMPTION_PROXY",
+      "CAUSAL_BUYER_SELLER_IDENTITY_PROOF",
+      "HIDDEN_STATE_CONFIRMATION_FROM_PRICE_ALONE"
+    ]
+  },
+  "audit_callback": {
+    "path": [
+      "PRICE_DISAGREEMENT",
+      "RESEARCH_ESCALATION",
+      "NEW_OR_CORRECTED_CAUSAL_EVIDENCE",
+      "PRESSURE_REESTIMATION"
+    ],
+    "direct_price_to_pressure_edge": false
+  },
+  "consumption": {
+    "driver_consumption_separate_from_price_consumption": true,
+    "target_price_distance_sufficient_for_driver_consumption": false
+  },
+  "latent_state": {
+    "phase00_authority": "RESERVED_NOT_IMPLEMENTED",
+    "unreleased_pressure_probability_allowed": false,
+    "ordinal_language_allowed": true,
+    "price_shape_alone_can_confirm_absorption": false,
+    "price_shape_alone_can_confirm_liquidity_sweep": false,
+    "price_shape_alone_can_confirm_institutional_accumulation": false,
+    "epistemic_classes": [
+      "OBSERVED",
+      "SUPPORTED_INFERENCE",
+      "PLAUSIBLE_HYPOTHESIS",
+      "UNRESOLVED"
+    ]
+  },
+  "execution": {
+    "price_can_modulate_permission": true,
+    "technical_can_modulate_timing": true,
+    "technical_can_change_fundamental_pressure": false,
+    "high_pressure_implies_trade": false
+  },
+  "frozen_record": {
+    "future_outcome_can_rewrite_historical_pressure": false,
+    "d4_can_calibrate_future_mapping": true
+  }
+}
