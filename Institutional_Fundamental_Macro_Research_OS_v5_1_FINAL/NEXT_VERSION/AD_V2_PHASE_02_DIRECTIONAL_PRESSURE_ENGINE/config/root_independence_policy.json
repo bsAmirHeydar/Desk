@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P02",
+  "mode": "EXPLICIT_ROOT_LEDGER",
+  "root_requirements": [
+    "root_id",
+    "label",
+    "active_horizon",
+    "applicability",
+    "weight",
+    "polarity",
+    "magnitude_range",
+    "confidence",
+    "provenance",
+    "source_kind",
+    "source_locator",
+    "mechanism",
+    "observed_at_utc"
+  ],
+  "top_level_root_depends_on_other_root": "FORBIDDEN",
+  "dependent_signals": "NESTED_NON_ADDITIVE",
+  "not_applicable": "EXCLUDE_AND_RENORMALIZE",
+  "unavailable_applicable": "KEEP_ECONOMIC_WEIGHT_AS_FULL_SIGN_UNCERTAINTY",
+  "expired_applicable": "TREAT_AS_UNAVAILABLE_UNTIL_REFRESH",
+  "aggregation": "DISCLOSED_WEIGHTED_ORDINAL_INTERVAL",
+  "probability_claim": "NONE"
+}

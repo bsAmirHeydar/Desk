@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P02",
+  "deployment": "SHADOW_ONLY",
+  "scale_type": "ANALYTICAL_ORDINAL_NOT_PROBABILITY",
+  "magnitude_bands": [
+    {
+      "name": "VERY_LOW",
+      "low": 0,
+      "high_exclusive": 20
+    },
+    {
+      "name": "LOW",
+      "low": 20,
+      "high_exclusive": 40
+    },
+    {
+      "name": "MEDIUM",
+      "low": 40,
+      "high_exclusive": 60
+    },
+    {
+      "name": "HIGH",
+      "low": 60,
+      "high_exclusive": 75
+    },
+    {
+      "name": "VERY_HIGH",
+      "low": 75,
+      "high_exclusive": 90
+    },
+    {
+      "name": "EXTREME",
+      "low": 90,
+      "high_inclusive": 100
+    }
+  ],
+  "precision_width": {
+    "NARROW_MAX": 15,
+    "MEDIUM_MAX": 30,
+    "BROAD_ABOVE": 30
+  },
+  "trend_thresholds": {
+    "FAST_ABS_DELTA": 12,
+    "NORMAL_ABS_DELTA": 4
+  },
+  "acceleration_threshold_abs_second_difference": 4,
+  "freshness_fraction": {
+    "FRESH_MAX": 0.5,
+    "AGING_MAX": 0.75,
+    "STALE_MAX": 1.0,
+    "EXPIRED_ABOVE": 1.0
+  },
+  "contradiction_weight": {
+    "LOW_MAX": 0.15,
+    "MEDIUM_MAX": 0.35,
+    "HIGH_ABOVE": 0.35
+  },
+  "confidence_coverage": {
+    "HIGH_MIN": 0.9,
+    "MEDIUM_MIN": 0.7,
+    "LOW_BELOW": 0.7
+  },
+  "forbidden_future_fields": [
+    "price_transmission",
+    "unreleased_pressure",
+    "opposing_move_maturity",
+    "release_readiness"
+  ]
+}

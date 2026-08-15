@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P02",
+  "requires": [
+    {
+      "phase": "AD-V2-P00",
+      "path": "NEXT_VERSION/AD_V2_PHASE_00_PRESSURE_PRICE_CONSTITUTION/DEVELOPMENT_MANIFEST.json",
+      "sha256": "a38bc594860fd0d86370888fca6809ecea5ada38933db36f690fb0ff9ccd2ce3"
+    },
+    {
+      "phase": "AD-V2-P01",
+      "path": "NEXT_VERSION/AD_V2_PHASE_01_RUNTIME_SEMANTIC_REPAIR/DEVELOPMENT_MANIFEST.json",
+      "sha256": "be6e4b711581d232c699af09f6925595af287086e5db99e4e2b3a955c38c6b64"
+    },
+    {
+      "phase": "AD-V2-P01_RUNTIME",
+      "path": "NEXT_VERSION/AD_V2_PHASE_01_RUNTIME_SEMANTIC_REPAIR/runtime/semantic_lifecycle.py",
+      "sha256": "b9e0efa7d14357b955b6c3fef443b45241c4143f516df6d63ace1aeb99c472d4"
+    },
+    {
+      "phase": "AD-V2-P01_OWNERSHIP",
+      "path": "NEXT_VERSION/AD_V2_PHASE_01_RUNTIME_SEMANTIC_REPAIR/config/semantic_ownership_registry.json",
+      "sha256": "295111990b7660ecee1878cd0f73e2f2d499262f57a01c079b94693ea1172f33"
+    }
+  ]
+}

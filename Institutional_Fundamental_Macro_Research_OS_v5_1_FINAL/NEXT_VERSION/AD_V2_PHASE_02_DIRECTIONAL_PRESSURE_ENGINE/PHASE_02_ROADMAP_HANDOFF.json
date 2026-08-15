@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P02",
+  "status": "COMPLETE_WHEN_ACCEPTANCE_PASSES",
+  "next_phase": "AD-V2-P03_PRICE_TRANSMISSION_ENGINE",
+  "handoff_guards": [
+    "P02 pressure is immutable upstream causal state for P03",
+    "Target price cannot mutate P02 pressure",
+    "P03 may create transmission residuals and missing-driver escalation",
+    "Latent/release science waits until after P03"
+  ]
+}

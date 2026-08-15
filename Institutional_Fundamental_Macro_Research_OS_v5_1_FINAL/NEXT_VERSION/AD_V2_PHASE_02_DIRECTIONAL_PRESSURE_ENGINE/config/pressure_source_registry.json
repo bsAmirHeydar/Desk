@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P02",
+  "allowed_source_kinds": [
+    "OFFICIAL_MACRO_FACT",
+    "EXPECTATIONS_STATE",
+    "POLICY_REACTION_STATE",
+    "CROSS_ASSET_CAUSAL_STATE",
+    "PHYSICAL_BALANCE",
+    "VERIFIED_FLOW",
+    "POSITIONING_STATE",
+    "FUNDING_LIQUIDITY_STATE",
+    "STRUCTURAL_DEMAND_SUPPLY",
+    "GEOPOLITICAL_POLICY_STATE",
+    "CORPORATE_CASH_FLOW",
+    "MODEL_DERIVED_CAUSAL_STATE"
+  ],
+  "forbidden_pressure_source_kinds": [
+    "TARGET_PRICE",
+    "TARGET_PRICE_RETURN",
+    "TARGET_TECHNICAL_MOMENTUM",
+    "TARGET_BREAKOUT",
+    "TARGET_SUPPORT_RESISTANCE",
+    "TARGET_CANDLE_PATTERN",
+    "TRADE_OUTCOME"
+  ],
+  "cross_asset_rule": "Allowed only with explicit causal mechanism and root/dependence declaration.",
+  "target_price_rule": "Never a direct or indirect pressure strength input."
+}

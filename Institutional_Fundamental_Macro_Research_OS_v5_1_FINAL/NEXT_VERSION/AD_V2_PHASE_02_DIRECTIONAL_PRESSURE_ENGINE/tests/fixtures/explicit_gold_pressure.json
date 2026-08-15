@@ -1,0 +1,146 @@
+{
+  "active_horizon": "MULTI_DAY_2_10D",
+  "as_of_utc": "2026-08-15T08:00:00Z",
+  "roots": [
+    {
+      "root_id": "POLICY_EXPECTATIONS",
+      "label": "Fed policy path repricing",
+      "active_horizon": "MULTI_DAY_2_10D",
+      "applicability": "APPLICABLE",
+      "weight": 0.3,
+      "polarity": "BUY",
+      "magnitude_range": {
+        "low": 70,
+        "high": 80
+      },
+      "confidence": 82,
+      "provenance": "STRUCTURED_JUDGMENT",
+      "source_kind": "EXPECTATIONS_STATE",
+      "source_locator": "fixture://policy",
+      "mechanism": "Softer expected policy path reduces opportunity cost for gold.",
+      "observed_at_utc": "2026-08-15T07:45:00Z",
+      "freshness_ttl_seconds": 7200,
+      "half_life": {
+        "provenance": "JUDGMENTAL",
+        "range": {
+          "low": 6,
+          "high": 24,
+          "unit": "hours"
+        }
+      },
+      "dependent_signals": [
+        {
+          "name": "front_end_yields",
+          "additive_weight": false
+        }
+      ]
+    },
+    {
+      "root_id": "USD_FINANCIAL_CONDITIONS",
+      "label": "Broad USD conditions",
+      "active_horizon": "MULTI_DAY_2_10D",
+      "applicability": "APPLICABLE",
+      "weight": 0.2,
+      "polarity": "BUY",
+      "magnitude_range": {
+        "low": 60,
+        "high": 70
+      },
+      "confidence": 78,
+      "provenance": "OBSERVED",
+      "source_kind": "CROSS_ASSET_CAUSAL_STATE",
+      "source_locator": "fixture://dxy",
+      "mechanism": "A softer broad dollar lowers the USD translation hurdle for gold.",
+      "observed_at_utc": "2026-08-15T07:58:00Z",
+      "freshness_ttl_seconds": 3600,
+      "dependent_signals": []
+    },
+    {
+      "root_id": "REAL_RATE_DISCOUNT",
+      "label": "Real-rate discount channel",
+      "active_horizon": "MULTI_DAY_2_10D",
+      "applicability": "APPLICABLE",
+      "weight": 0.2,
+      "polarity": "BUY",
+      "magnitude_range": {
+        "low": 65,
+        "high": 75
+      },
+      "confidence": 76,
+      "provenance": "OBSERVED",
+      "source_kind": "CROSS_ASSET_CAUSAL_STATE",
+      "source_locator": "fixture://real_yield",
+      "mechanism": "Lower real discount rates reduce non-yielding asset opportunity cost.",
+      "observed_at_utc": "2026-08-15T07:55:00Z",
+      "freshness_ttl_seconds": 3600,
+      "dependent_signals": []
+    },
+    {
+      "root_id": "STRUCTURAL_OFFICIAL_DEMAND",
+      "label": "Official-sector structural demand",
+      "active_horizon": "MULTI_DAY_2_10D",
+      "applicability": "APPLICABLE",
+      "weight": 0.2,
+      "polarity": "BUY",
+      "magnitude_range": {
+        "low": 70,
+        "high": 80
+      },
+      "confidence": 80,
+      "provenance": "OBSERVED",
+      "source_kind": "STRUCTURAL_DEMAND_SUPPLY",
+      "source_locator": "fixture://official_demand",
+      "mechanism": "Persistent reserve diversification adds structural physical demand.",
+      "observed_at_utc": "2026-08-14T12:00:00Z",
+      "freshness_ttl_seconds": 172800,
+      "half_life": {
+        "provenance": "MODEL_IMPLIED",
+        "range": {
+          "low": 10,
+          "high": 60,
+          "unit": "days"
+        },
+        "validation_ref": "model://structural-demand-v1"
+      },
+      "dependent_signals": []
+    },
+    {
+      "root_id": "ASIA_PHYSICAL",
+      "label": "Asia physical demand",
+      "active_horizon": "MULTI_DAY_2_10D",
+      "applicability": "APPLICABLE",
+      "weight": 0.1,
+      "polarity": "SELL",
+      "magnitude_range": {
+        "low": 25,
+        "high": 40
+      },
+      "confidence": 65,
+      "provenance": "OBSERVED",
+      "source_kind": "PHYSICAL_BALANCE",
+      "source_locator": "fixture://asia_physical",
+      "mechanism": "Weak premiums/discounts reduce marginal physical sponsorship.",
+      "observed_at_utc": "2026-08-15T06:00:00Z",
+      "freshness_ttl_seconds": 21600,
+      "dependent_signals": []
+    }
+  ],
+  "fundamental_driver_consumption": {
+    "state": "PARTIALLY_ABSORBED",
+    "owner": "MODULE_89",
+    "target_price_used": false
+  },
+  "remaining_causal_pressure": {
+    "class": "HIGH",
+    "range": {
+      "low": 60,
+      "high": 78
+    },
+    "owner": "MODULE_89"
+  },
+  "persistence": {
+    "class": "MULTI_DAY",
+    "survival_window": "2-10D",
+    "owner": "MODULE_89"
+  }
+}

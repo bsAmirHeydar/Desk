@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaDesk_V2_DirectionalPressureState.schema.json",
+  "title": "Alpha Desk V2 P02 Directional Pressure State",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "phase",
+    "deployment",
+    "status",
+    "aggregation_mode",
+    "active_horizon",
+    "as_of_utc",
+    "pressure_core",
+    "pressure_dynamics",
+    "causal_root_ledger",
+    "fundamental_driver_consumption",
+    "remaining_causal_pressure",
+    "persistence",
+    "contradiction_load",
+    "pressure_confidence",
+    "provenance",
+    "integrity"
+  ],
+  "properties": {
+    "phase": {
+      "const": "AD-V2-P02"
+    },
+    "deployment": {
+      "const": "SHADOW_ONLY"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL_CLOSED"
+      ]
+    },
+    "aggregation_mode": {
+      "enum": [
+        "LEGACY_MODULE89_WRAP",
+        "EXPLICIT_ROOT_LEDGER"
+      ]
+    },
+    "pressure_core": {
+      "type": "object",
+      "required": [
+        "sign",
+        "class",
+        "magnitude_class",
+        "signed_range",
+        "signed_midpoint",
+        "precision",
+        "scale"
+      ]
+    },
+    "pressure_dynamics": {
+      "type": "object",
+      "required": [
+        "trend",
+        "snapshot_delta",
+        "acceleration",
+        "second_difference"
+      ]
+    },
+    "causal_root_ledger": {
+      "type": "array"
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "status",
+        "target_price_contamination",
+        "future_fields_present",
+        "diagnostics"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

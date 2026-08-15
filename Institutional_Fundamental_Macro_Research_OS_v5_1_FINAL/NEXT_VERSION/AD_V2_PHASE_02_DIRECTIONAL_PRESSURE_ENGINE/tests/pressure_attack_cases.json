@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P02",
+  "cases": [
+    {
+      "id": "PRICE_CONTAMINATION_ATTACK",
+      "hard": true,
+      "invariant": "Same causal state + opposite target-price moves => identical pressure core."
+    },
+    {
+      "id": "TARGET_PRICE_SOURCE_ATTACK",
+      "hard": true,
+      "invariant": "TARGET_PRICE source_kind => FAIL_CLOSED."
+    },
+    {
+      "id": "DUPLICATE_ROOT_ATTACK",
+      "hard": true,
+      "invariant": "Duplicate root_id => FAIL_CLOSED."
+    },
+    {
+      "id": "DEPENDENT_ROOT_DOUBLE_COUNT_ATTACK",
+      "hard": true,
+      "invariant": "Top-level depends_on_root_ids => FAIL_CLOSED."
+    },
+    {
+      "id": "HORIZON_BLEED_ATTACK",
+      "hard": true,
+      "invariant": "Root horizon mismatch => FAIL_CLOSED."
+    },
+    {
+      "id": "UNAVAILABLE_DENOMINATOR_ATTACK",
+      "hard": true,
+      "invariant": "Applicable unavailable root widens uncertainty; it is not deleted."
+    },
+    {
+      "id": "NOT_APPLICABLE_RENORMALIZATION",
+      "hard": true,
+      "invariant": "N/A roots leave denominator and remaining roots renormalize."
+    },
+    {
+      "id": "EXPIRED_ROOT_ATTACK",
+      "hard": true,
+      "invariant": "Expired applicable root becomes unavailable; stale force is not carried."
+    },
+    {
+      "id": "EMPIRICAL_HALF_LIFE_PROVENANCE",
+      "hard": true,
+      "invariant": "Empirical half-life requires validation_ref."
+    },
+    {
+      "id": "FUTURE_SCIENCE_SCOPE_ATTACK",
+      "hard": true,
+      "invariant": "P02 output contains no transmission/unreleased/maturity/release fields."
+    }
+  ]
+}

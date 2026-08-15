@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "phase_id": "AD-V2-P02",
+  "name": "Directional Pressure Engine 2.0",
+  "status": "SHADOW_ONLY",
+  "version": "0.2.0",
+  "product_generation": "Alpha Desk V2",
+  "baseline": "V1 closed / V21.3.0 / R4.0.0 + exact P00/P01",
+  "changes_active_v1_production_authority": false,
+  "direction_authority": "MODULE_89_EXACT_HORIZON",
+  "trade_permission_authority": "NONE",
+  "broker_authority": "NONE",
+  "adds": [
+    "signed_pressure",
+    "pressure_class_vocabulary",
+    "pressure_trend",
+    "pressure_acceleration",
+    "root_independence",
+    "freshness_ttl",
+    "half_life_provenance",
+    "contradiction_load",
+    "remaining_causal_pressure_namespace",
+    "driver_consumption_namespace"
+  ],
+  "explicitly_excludes": [
+    "price_transmission",
+    "unreleased_pressure",
+    "opposing_move_maturity",
+    "release_readiness",
+    "gold_probability_calibration"
+  ],
+  "dependencies": [
+    "AD-V2-P00",
+    "AD-V2-P01"
+  ]
+}
