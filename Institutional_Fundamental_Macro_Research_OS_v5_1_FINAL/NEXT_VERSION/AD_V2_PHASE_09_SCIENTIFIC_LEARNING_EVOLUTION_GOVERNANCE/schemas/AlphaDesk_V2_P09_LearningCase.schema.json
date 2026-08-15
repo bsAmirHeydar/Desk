@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P09 Learning Case",
+  "type": "object",
+  "required": [
+    "record_type",
+    "learning_case_id",
+    "outcome_link_id",
+    "sample_provenance",
+    "suspected_failure_modes",
+    "integrity"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "P09_LEARNING_CASE"
+    },
+    "learning_case_id": {
+      "type": "string"
+    },
+    "outcome_link_id": {
+      "type": "string"
+    },
+    "sample_provenance": {
+      "enum": [
+        "TRUE_FORWARD",
+        "HOLDOUT",
+        "DEVELOPMENT_CASE",
+        "HISTORICAL_RECONSTRUCTION"
+      ]
+    },
+    "suspected_failure_modes": {
+      "type": "array"
+    },
+    "integrity": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

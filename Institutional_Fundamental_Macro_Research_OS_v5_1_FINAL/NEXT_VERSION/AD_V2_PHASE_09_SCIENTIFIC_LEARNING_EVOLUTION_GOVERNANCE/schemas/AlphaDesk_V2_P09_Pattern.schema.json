@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P09 Pattern",
+  "type": "object",
+  "required": [
+    "record_type",
+    "pattern_id",
+    "failure_family",
+    "counts",
+    "proposal_eligible"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "P09_RECURRING_PATTERN"
+    },
+    "pattern_id": {
+      "type": "string"
+    },
+    "failure_family": {
+      "type": "string"
+    },
+    "counts": {
+      "type": "object"
+    },
+    "proposal_eligible": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true
+}

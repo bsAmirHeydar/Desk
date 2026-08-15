@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "allowed_families": [
+    "PRESSURE_ROOT_RESEARCH",
+    "EXPECTED_SIGNATURE_REVIEW",
+    "LATENT_THRESHOLD_REVIEW",
+    "MATURITY_RULE_REVIEW",
+    "RELEASE_RULE_REVIEW",
+    "GOLD_EVIDENCE_ROLE_REVIEW",
+    "MISSING_DRIVER_SEARCH",
+    "EVENT_RESET_GUARD",
+    "DATA_QUALITY_GUARD",
+    "EVALUATION_PROFILE_REVIEW",
+    "NO_CHANGE"
+  ],
+  "forbidden_tokens": [
+    "target_price_to_pressure",
+    "target_momentum_pressure",
+    "auto_permission",
+    "positive_permission",
+    "future_data_fit",
+    "post_hoc_best_threshold",
+    "disable_independence",
+    "confirm_liquidity_from_price",
+    "rewrite_upstream"
+  ],
+  "auto_apply": false,
+  "upstream_write": false,
+  "requires_operator_review": true,
+  "requires_future_validation": true
+}

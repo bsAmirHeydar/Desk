@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P09 Experiment",
+  "type": "object",
+  "required": [
+    "record_type",
+    "experiment_id",
+    "challenger_id",
+    "sealed_at_utc",
+    "validation_policy"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "P09_CHALLENGER_EXPERIMENT"
+    },
+    "experiment_id": {
+      "type": "string"
+    },
+    "challenger_id": {
+      "type": "string"
+    },
+    "sealed_at_utc": {
+      "type": "string"
+    },
+    "validation_policy": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P09",
+  "title": "Scientific Learning, Failure Attribution & Model Evolution Governance",
+  "version": "1.0.0",
+  "status": "COMPLETE",
+  "deployment": "SHADOW_LEARNING_ONLY",
+  "requires": [
+    "AD-V2-P00",
+    "AD-V2-P01",
+    "AD-V2-P02",
+    "AD-V2-P03",
+    "AD-V2-P04",
+    "AD-V2-P05",
+    "AD-V2-P06",
+    "AD-V2-P07",
+    "AD-V2-P08",
+    "AD-V2-P07_TRUE_FORWARD",
+    "AD-V2-P07_OUTCOME",
+    "AD-V2-P08_OPERATIONS"
+  ],
+  "science_authority": "NONE",
+  "auto_mutation": false,
+  "trade_permission": "V1_INHERITED",
+  "broker": "NONE",
+  "main_contracts": [
+    "immutable learning cases",
+    "hypothesis-only failure attribution",
+    "dependence-aware recurrence",
+    "no single-case rewrite",
+    "shadow challenger registry",
+    "future-only challenger experiments",
+    "research queue",
+    "no upstream mutation"
+  ]
+}

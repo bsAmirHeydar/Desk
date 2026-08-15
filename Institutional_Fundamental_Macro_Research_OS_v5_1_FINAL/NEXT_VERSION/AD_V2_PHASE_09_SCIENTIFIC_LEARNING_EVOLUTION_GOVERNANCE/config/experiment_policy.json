@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "hypothesis_generation_samples_are_development": true,
+  "reuse_generation_episodes_for_validation": false,
+  "validation_must_be_post_experiment_seal": true,
+  "eligible_validation_provenance": [
+    "HOLDOUT",
+    "TRUE_FORWARD"
+  ],
+  "auto_promote_challenger": false,
+  "minimum_candidate_validation_episodes": 20
+}

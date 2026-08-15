@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P09",
+  "deployment": "SHADOW_LEARNING_ONLY",
+  "mature_states": [
+    "MATURE"
+  ],
+  "positive_mfe_r_threshold": 2.0,
+  "weak_mfe_r_threshold": 1.0,
+  "severe_mae_r_threshold": 1.5,
+  "recurrence_gate": {
+    "min_true_forward_independent_episodes": 5,
+    "min_true_forward_trading_days": 3,
+    "min_true_forward_regimes": 2
+  },
+  "single_case_can_change_model": false,
+  "historical_can_satisfy_tf_gate": false,
+  "auto_mutation": false,
+  "authority": {
+    "v1": "UNCHANGED",
+    "p02_pressure": "UNCHANGED",
+    "p03_transmission": "UNCHANGED",
+    "p04_release": "UNCHANGED",
+    "p05_gold": "UNCHANGED",
+    "p06_memory": "UNCHANGED",
+    "p07_promotion": "UNCHANGED",
+    "p08_operations": "UNCHANGED",
+    "trade_permission": "V1_INHERITED",
+    "broker": "NONE"
+  }
+}

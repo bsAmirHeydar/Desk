@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P09 Challenger",
+  "type": "object",
+  "required": [
+    "record_type",
+    "challenger_id",
+    "family",
+    "spec",
+    "authority"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "P09_SHADOW_CHALLENGER"
+    },
+    "challenger_id": {
+      "type": "string"
+    },
+    "family": {
+      "type": "string"
+    },
+    "spec": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

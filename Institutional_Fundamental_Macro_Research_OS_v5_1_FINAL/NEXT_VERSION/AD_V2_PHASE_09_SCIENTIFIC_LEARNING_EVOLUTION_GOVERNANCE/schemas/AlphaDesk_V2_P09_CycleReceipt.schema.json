@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P09 Cycle Receipt",
+  "type": "object",
+  "required": [
+    "record_type",
+    "cycle_id",
+    "status",
+    "learning",
+    "patterns",
+    "hypotheses",
+    "authority"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "P09_LEARNING_CYCLE_RECEIPT"
+    },
+    "cycle_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "learning": {
+      "type": "object"
+    },
+    "patterns": {
+      "type": "object"
+    },
+    "hypotheses": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

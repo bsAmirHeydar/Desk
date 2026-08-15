@@ -1,0 +1,54 @@
+[
+  {
+    "id": "SINGLE_12R_NO_REWRITE",
+    "expect": "no proposal from single development winner"
+  },
+  {
+    "id": "HISTORICAL_NOT_TF_GATE",
+    "expect": "historical cases never satisfy TF recurrence"
+  },
+  {
+    "id": "HOURLY_PSEUDOREPLICATION",
+    "expect": "same episode counts once"
+  },
+  {
+    "id": "RELEASE_FALSE_POSITIVE_HYPOTHESIS_ONLY",
+    "expect": "poor high-readiness outcome is hypothesis not fact"
+  },
+  {
+    "id": "PRESSURE_MISS_NOT_PRICE_PROOF",
+    "expect": "pressure miss confidence cannot be asserted from price alone"
+  },
+  {
+    "id": "CHALLENGER_TARGET_PRICE_PRESSURE_BLOCK",
+    "expect": "forbidden"
+  },
+  {
+    "id": "CHALLENGER_PERMISSION_BLOCK",
+    "expect": "forbidden"
+  },
+  {
+    "id": "CHALLENGER_BROKER_BLOCK",
+    "expect": "forbidden"
+  },
+  {
+    "id": "CHALLENGER_ANTI_STORYTELLING_BLOCK",
+    "expect": "forbidden"
+  },
+  {
+    "id": "GENERATION_EPISODE_EXCLUDED",
+    "expect": "future experiment excludes generation episodes"
+  },
+  {
+    "id": "POST_SEAL_VALIDATION_ONLY",
+    "expect": "experiment validation after seal"
+  },
+  {
+    "id": "NO_AUTO_MUTATION",
+    "expect": "authority stays none"
+  },
+  {
+    "id": "RECURRENCE_GATE_5_3_2",
+    "expect": "five TF episodes, 3 days, 2 regimes can propose"
+  }
+]

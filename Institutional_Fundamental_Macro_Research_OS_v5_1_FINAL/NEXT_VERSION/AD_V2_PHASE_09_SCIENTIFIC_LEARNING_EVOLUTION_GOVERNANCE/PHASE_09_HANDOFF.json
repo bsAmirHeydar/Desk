@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P09",
+  "status": "COMPLETE",
+  "next_state": "EVIDENCE_DRIVEN_CHALLENGER_RESEARCH",
+  "auto_next_phase": false,
+  "principle": "Do not create a new science phase unless recurring P09 evidence identifies a specific incumbent weakness worth challenging.",
+  "authority": {
+    "auto_mutation": false,
+    "trade_permission": "V1_INHERITED",
+    "broker": "NONE"
+  }
+}

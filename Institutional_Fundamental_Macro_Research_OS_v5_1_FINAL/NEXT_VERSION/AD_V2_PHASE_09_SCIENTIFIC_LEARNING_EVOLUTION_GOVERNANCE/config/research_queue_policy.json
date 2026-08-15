@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "priority_weights": {
+    "recurrence": 0.35,
+    "severity": 0.25,
+    "regime_breadth": 0.15,
+    "uncertainty": 0.25
+  },
+  "max_open_items": 200,
+  "single_case_priority_cap": "LOW",
+  "pnl_emotion_not_input": true
+}

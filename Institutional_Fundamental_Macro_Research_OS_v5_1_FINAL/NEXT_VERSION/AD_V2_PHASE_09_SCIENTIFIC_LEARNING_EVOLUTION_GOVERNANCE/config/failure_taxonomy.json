@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "families": [
+    {
+      "id": "PRESSURE_MODEL_MISS",
+      "owner": "P02",
+      "candidate_family": "PRESSURE_ROOT_RESEARCH"
+    },
+    {
+      "id": "TRANSMISSION_EXPECTATION_MISS",
+      "owner": "P03",
+      "candidate_family": "EXPECTED_SIGNATURE_REVIEW"
+    },
+    {
+      "id": "LATENT_PRESSURE_OVERSTATEMENT",
+      "owner": "P04",
+      "candidate_family": "LATENT_THRESHOLD_REVIEW"
+    },
+    {
+      "id": "OPPOSING_MATURITY_PREMATURE",
+      "owner": "P04",
+      "candidate_family": "MATURITY_RULE_REVIEW"
+    },
+    {
+      "id": "RELEASE_FALSE_POSITIVE",
+      "owner": "P04",
+      "candidate_family": "RELEASE_RULE_REVIEW"
+    },
+    {
+      "id": "MISSING_DRIVER_UNRESOLVED",
+      "owner": "P03/P05",
+      "candidate_family": "MISSING_DRIVER_SEARCH"
+    },
+    {
+      "id": "EVENT_RESET_GUARD_MISS",
+      "owner": "P05",
+      "candidate_family": "EVENT_RESET_GUARD"
+    },
+    {
+      "id": "DATA_QUALITY_OR_COVERAGE",
+      "owner": "P05/P08",
+      "candidate_family": "DATA_QUALITY_GUARD"
+    },
+    {
+      "id": "EVALUATION_PROFILE_MISMATCH",
+      "owner": "P08",
+      "candidate_family": "EVALUATION_PROFILE_REVIEW"
+    },
+    {
+      "id": "NO_CLEAR_MODEL_FAILURE",
+      "owner": "P09",
+      "candidate_family": "NO_CHANGE"
+    }
+  ]
+}

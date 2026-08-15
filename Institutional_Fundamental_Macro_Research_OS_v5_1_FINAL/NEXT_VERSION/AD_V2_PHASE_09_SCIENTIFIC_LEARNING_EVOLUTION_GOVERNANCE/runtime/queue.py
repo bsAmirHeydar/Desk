@@ -1,0 +1,4 @@
+def priority(pattern,policy):
+ c=pattern['counts'];eps=c['true_forward_independent_episodes'];days=c['true_forward_trading_days'];regs=c['true_forward_regimes'];rec=min(1,eps/10);sev=0.8 if pattern['failure_family'] in {'RELEASE_FALSE_POSITIVE','PRESSURE_MODEL_MISS'} else 0.5;breadth=min(1,regs/4);unc=0.8 if pattern['failure_family'] in {'MISSING_DRIVER_UNRESOLVED','PRESSURE_MODEL_MISS'} else 0.5;w=policy['priority_weights'];score=rec*w['recurrence']+sev*w['severity']+breadth*w['regime_breadth']+unc*w['uncertainty'];return round(score,4)
+def item(pattern,policy):
+ score=priority(pattern,policy);level='HIGH' if score>=.7 else 'MEDIUM' if score>=.4 else 'LOW';return {'pattern_id':pattern['pattern_id'],'failure_family':pattern['failure_family'],'priority_score':score,'priority':level,'proposal_eligible':pattern['proposal_eligible'],'counts':pattern['counts'],'status':'OPEN_RESEARCH'}
