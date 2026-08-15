@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "product": "Alpha Desk",
+  "product_generation": "V2_DEVELOPMENT",
+  "phase_id": "AD-V2-P01",
+  "phase_name": "RUNTIME_SEMANTIC_REPAIR",
+  "phase_version": "0.1.0",
+  "status": "SHADOW_ONLY",
+  "created": "2026-08-15",
+  "requires": [
+    "AD-V2-P00"
+  ],
+  "v1_baseline": {
+    "scientific_stack": "V21.3.0",
+    "runtime": "R4.0.0",
+    "production_manifest": "CURRENT_PRODUCTION_MANIFEST.json"
+  },
+  "target_scientific_lineage": "V22_PLUS_NOT_PROMOTED",
+  "authority_change": "NONE",
+  "active_production_manifest_modified": false,
+  "active_production_files_modified": [],
+  "implementation_scope": [
+    "V1_RUNTIME_SEMANTIC_DEFECT_CENSUS",
+    "SEMANTIC_OWNERSHIP_REGISTRY",
+    "V2_SHADOW_LIFECYCLE_CONTRACT",
+    "EXACT_HORIZON_RESOLUTION",
+    "NO_SEMANTIC_SUBSTITUTION",
+    "FIELD_LEVEL_SOURCE_PROVENANCE",
+    "LEGACY_V1_READ_ADAPTER",
+    "FAIL_CLOSED_ATTACK_SUITE",
+    "P02_HANDOFF"
+  ],
+  "known_v1_defects_not_mutated": [
+    "DRIVER_TRANSITION_STATE_CAN_FILL_FORCE",
+    "CONSUMPTION_LIFECYCLE_KEY_MISMATCH",
+    "REMAINING_ASYMMETRY_CAN_FILL_REMAINING_PRESSURE",
+    "PERSISTENCE_OWNER_BYPASSED",
+    "REPORT_REMAINING_PRESSURE_FALLBACK",
+    "PRESENCE_ONLY_FORCE_STATE_GATE"
+  ],
+  "hard_invariants": [
+    "V1_CLOSED_RUNTIME_BYTE_IDENTICAL",
+    "P00_REQUIRED",
+    "MODULE_89_OWNS_FUNDAMENTAL_LIFECYCLE",
+    "DRIVER_TRANSITION_NEVER_FORCE",
+    "REMAINING_ASYMMETRY_NEVER_REMAINING_PRESSURE",
+    "EXACT_ACTIVE_HORIZON_ONLY",
+    "NO_FORCE_CLASS_INVENTED_IN_P01",
+    "SUBSTITUTIONS_USED_EMPTY",
+    "FAIL_CLOSED_ON_MISSING_AUTHORITATIVE_FIELD",
+    "SHADOW_ONLY"
+  ]
+}

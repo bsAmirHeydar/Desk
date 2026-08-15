@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P01",
+  "read_contract": "V1_ARTIFACTS_TO_V2_SHADOW_SEMANTICS",
+  "mappings": [
+    {
+      "semantic": "fundamental_direction",
+      "v1_source": "fundamental_state.v11_fundamental_state.horizon_states[active_horizon].direction",
+      "fallback": "NONE"
+    },
+    {
+      "semantic": "fundamental_force.active_horizon_range",
+      "v1_source": "fundamental_state.v11_fundamental_state.horizon_states[active_horizon].force_range",
+      "fallback": "NONE"
+    },
+    {
+      "semantic": "fundamental_force.aggregate_value",
+      "v1_source": "fundamental_state.v11_fundamental_state.force.aggregate_value",
+      "fallback": "NONE"
+    },
+    {
+      "semantic": "fundamental_consumption",
+      "v1_source": "fundamental_state.v11_fundamental_state.consumption_v2.summary_state",
+      "fallback": "NONE"
+    },
+    {
+      "semantic": "cognitive_consumption",
+      "v1_source": "consumption_state.lifecycle_state",
+      "fallback": "NONE"
+    },
+    {
+      "semantic": "remaining_fundamental_pressure",
+      "v1_source": "fundamental_state.v11_fundamental_state.remaining_pressure_v2.aggregate_class",
+      "fallback": "NONE"
+    },
+    {
+      "semantic": "remaining_asymmetry_research_intent",
+      "v1_source": "research_intent.remaining_asymmetry",
+      "fallback": "NONE"
+    },
+    {
+      "semantic": "remaining_asymmetry_cognitive",
+      "v1_source": "consumption_state.remaining_asymmetry",
+      "fallback": "NONE"
+    },
+    {
+      "semantic": "persistence",
+      "v1_source": "fundamental_state.v11_fundamental_state.horizon_states[active_horizon].persistence_class",
+      "fallback": "NONE"
+    },
+    {
+      "semantic": "reversal_risk",
+      "v1_source": "fundamental_state.v11_fundamental_state.horizon_states[active_horizon].reversal_risk",
+      "fallback": "NONE"
+    },
+    {
+      "semantic": "driver_transition",
+      "v1_source": "driver_transition.state",
+      "fallback": "NONE"
+    }
+  ],
+  "legacy_v1_runtime_fallbacks_forbidden_in_v2": [
+    "research_intent.force* -> force",
+    "driver_transition.state -> force",
+    "generic consumption state/status -> consumption",
+    "remaining_asymmetry -> remaining_pressure",
+    "driver_transition.* -> persistence"
+  ]
+}

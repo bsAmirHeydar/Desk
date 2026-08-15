@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P01",
+  "cases": [
+    {
+      "id": "A01_DRIVER_STATE_NOT_FORCE",
+      "mutation": "driver_transition.state=TAKEOVER",
+      "expected": "fundamental_force remains Module89 range; no TAKEOVER force"
+    },
+    {
+      "id": "A02_ASYMMETRY_NOT_REMAINING_PRESSURE",
+      "mutation": "research_intent.remaining_asymmetry=HIGHLY_FAVORABLE",
+      "expected": "remaining_fundamental_pressure remains MODERATE"
+    },
+    {
+      "id": "A03_COGNITIVE_CONSUMPTION_SEPARATE",
+      "mutation": "consumption_state.lifecycle_state=FLOW_PROPAGATION",
+      "expected": "fundamental_consumption remains PARTIALLY_ABSORBED; cognitive consumption FLOW_PROPAGATION"
+    },
+    {
+      "id": "A04_EXACT_HORIZON",
+      "mutation": "SESSION row opposite direction",
+      "expected": "MULTI_DAY active horizon remains BULLISH"
+    },
+    {
+      "id": "A05_NO_ACTIVE_HORIZON_FALLBACK",
+      "mutation": "remove MULTI_DAY horizon row",
+      "expected": "FAIL_CLOSED; no SESSION substitution"
+    },
+    {
+      "id": "A06_NO_FORCE_FALLBACK",
+      "mutation": "remove Module89 force_range",
+      "expected": "FAIL_CLOSED; driver_transition.state not used"
+    },
+    {
+      "id": "A07_NO_REMAINING_PRESSURE_FALLBACK",
+      "mutation": "remove Module89 remaining aggregate",
+      "expected": "FAIL_CLOSED; remaining_asymmetry not used"
+    },
+    {
+      "id": "A08_NO_PERSISTENCE_FALLBACK",
+      "mutation": "remove active persistence_class",
+      "expected": "FAIL_CLOSED; driver transition/review trigger not used"
+    },
+    {
+      "id": "A09_FORCE_CLASS_NOT_INVENTED",
+      "mutation": "valid V11 ordinal range only",
+      "expected": "force_class=UNMAPPED_IN_P01"
+    },
+    {
+      "id": "A10_SUBSTITUTION_LEDGER_EMPTY",
+      "mutation": "valid fixture",
+      "expected": "substitutions_used=[]"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "phase": "AD-V2-P01",
+  "status": "COMPLETE_WHEN_ACCEPTANCE_PASSES",
+  "requires": "AD-V2-P00",
+  "next_phase": "AD-V2-P02_DIRECTIONAL_PRESSURE_ENGINE_2",
+  "reserved_later_phases": [
+    "P03_PRICE_TRANSMISSION_ENGINE",
+    "P04_LATENT_PRESSURE_MATURITY_RELEASE",
+    "P05_GOLD_SPECIALIZATION",
+    "P06_RUN_UI_MEMORY_INTEGRATION",
+    "P07_D4_CALIBRATION_AND_PROMOTION"
+  ],
+  "promotion_after_phase01": "NONE",
+  "runtime_integration_after_phase01": "SHADOW_ONLY"
+}

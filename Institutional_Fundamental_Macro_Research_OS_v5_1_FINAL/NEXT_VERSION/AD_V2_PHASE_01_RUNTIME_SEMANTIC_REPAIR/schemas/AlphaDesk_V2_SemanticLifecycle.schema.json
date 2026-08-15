@@ -1,0 +1,251 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaDesk_V2_SemanticLifecycle.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "contract_version",
+    "deployment",
+    "active_horizon",
+    "fundamental_direction",
+    "fundamental_force",
+    "fundamental_consumption",
+    "cognitive_consumption",
+    "remaining_fundamental_pressure",
+    "remaining_asymmetry",
+    "persistence",
+    "reversal_risk",
+    "driver_transition",
+    "timing",
+    "semantic_integrity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "contract_version": {
+      "const": "AD-V2-P01.0"
+    },
+    "deployment": {
+      "const": "SHADOW_ONLY"
+    },
+    "active_horizon": {
+      "type": "string"
+    },
+    "fundamental_direction": {
+      "$ref": "#/$defs/ownedScalar"
+    },
+    "fundamental_force": {
+      "type": "object",
+      "required": [
+        "status",
+        "owner",
+        "artifact",
+        "active_horizon_range",
+        "aggregate_value",
+        "aggregate_range",
+        "aggregate_provenance",
+        "force_class"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PRESENT",
+            "MISSING",
+            "INVALID"
+          ]
+        },
+        "owner": {
+          "const": "MODULE_89"
+        },
+        "artifact": {
+          "const": "fundamental_state"
+        },
+        "active_horizon_range": {},
+        "aggregate_value": {},
+        "aggregate_range": {},
+        "aggregate_provenance": {},
+        "force_class": {
+          "const": "UNMAPPED_IN_P01"
+        },
+        "source_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "fundamental_consumption": {
+      "$ref": "#/$defs/ownedScalar"
+    },
+    "cognitive_consumption": {
+      "$ref": "#/$defs/ownedScalar"
+    },
+    "remaining_fundamental_pressure": {
+      "type": "object",
+      "required": [
+        "status",
+        "owner",
+        "artifact",
+        "value",
+        "range",
+        "source_paths"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PRESENT",
+            "MISSING",
+            "INVALID"
+          ]
+        },
+        "owner": {
+          "const": "MODULE_89"
+        },
+        "artifact": {
+          "const": "fundamental_state"
+        },
+        "value": {},
+        "range": {},
+        "source_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "remaining_asymmetry": {
+      "type": "object",
+      "required": [
+        "research_intent",
+        "cognitive_consumption"
+      ],
+      "properties": {
+        "research_intent": {
+          "$ref": "#/$defs/ownedScalar"
+        },
+        "cognitive_consumption": {
+          "$ref": "#/$defs/ownedScalar"
+        }
+      },
+      "additionalProperties": false
+    },
+    "persistence": {
+      "type": "object",
+      "required": [
+        "status",
+        "owner",
+        "artifact",
+        "value",
+        "horizon",
+        "survival_metadata",
+        "source_paths"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PRESENT",
+            "MISSING",
+            "INVALID"
+          ]
+        },
+        "owner": {
+          "const": "MODULE_89"
+        },
+        "artifact": {
+          "const": "fundamental_state"
+        },
+        "value": {},
+        "horizon": {},
+        "survival_metadata": {},
+        "source_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "reversal_risk": {
+      "$ref": "#/$defs/ownedScalar"
+    },
+    "driver_transition": {
+      "type": "object"
+    },
+    "timing": {
+      "type": "object"
+    },
+    "semantic_integrity": {
+      "type": "object",
+      "required": [
+        "status",
+        "substitutions_used",
+        "illegal_substitutions_detected",
+        "missing_authoritative_fields",
+        "diagnostics"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PASS",
+            "FAIL_CLOSED"
+          ]
+        },
+        "substitutions_used": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "illegal_substitutions_detected": {
+          "type": "array"
+        },
+        "missing_authoritative_fields": {
+          "type": "array"
+        },
+        "diagnostics": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "ownedScalar": {
+      "type": "object",
+      "required": [
+        "status",
+        "owner",
+        "artifact",
+        "source_path",
+        "value"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PRESENT",
+            "MISSING",
+            "INVALID",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "owner": {
+          "type": "string"
+        },
+        "artifact": {
+          "type": "string"
+        },
+        "source_path": {
+          "type": "string"
+        },
+        "value": {},
+        "horizon": {}
+      },
+      "additionalProperties": true
+    }
+  }
+}

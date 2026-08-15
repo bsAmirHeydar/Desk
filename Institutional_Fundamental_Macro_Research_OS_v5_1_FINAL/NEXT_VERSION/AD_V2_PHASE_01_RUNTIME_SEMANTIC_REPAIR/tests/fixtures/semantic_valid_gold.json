@@ -1,0 +1,102 @@
+{
+  "active_horizon": "MULTI_DAY_2_10D",
+  "artifacts": {
+    "fundamental_state": {
+      "v11_fundamental_state": {
+        "force": {
+          "aggregate_value": 62,
+          "aggregate_range": {
+            "low": 52,
+            "high": 72,
+            "unit": "ordinal_score"
+          },
+          "aggregate_provenance": "STRUCTURED_JUDGMENT"
+        },
+        "consumption_v2": {
+          "summary_state": "PARTIALLY_ABSORBED"
+        },
+        "remaining_pressure_v2": {
+          "aggregate_class": "MODERATE",
+          "aggregate_range": {
+            "low": 45,
+            "high": 65,
+            "unit": "ordinal_score"
+          }
+        },
+        "persistence_v2": {
+          "survival_window": "SESSION_TO_MULTI_DAY",
+          "half_life_type": "EVIDENCE_DRIVEN_RANGE",
+          "half_life_range": {
+            "low": 1,
+            "high": 3,
+            "unit": "sessions"
+          },
+          "decay_basis": "Evidence-driven reassessment.",
+          "reopening_conditions": [
+            "Independent confirming release."
+          ],
+          "expiry_conditions": [
+            "Expectation gap closes."
+          ],
+          "invalidating_evidence": [
+            "Causal leader reverses."
+          ],
+          "state_survival_confidence": 60
+        },
+        "horizon_states": [
+          {
+            "horizon": "SESSION_1_6H",
+            "direction": "BEARISH",
+            "force_range": {
+              "low": 20,
+              "high": 30,
+              "unit": "ordinal_score"
+            },
+            "persistence_class": "SESSION",
+            "reversal_risk": "HIGH",
+            "next_update_trigger": "session trigger"
+          },
+          {
+            "horizon": "MULTI_DAY_2_10D",
+            "direction": "BULLISH",
+            "force_range": {
+              "low": 52,
+              "high": 72,
+              "unit": "ordinal_score"
+            },
+            "persistence_class": "MULTI_DAY",
+            "reversal_risk": "MODERATE",
+            "next_update_trigger": "next observation"
+          }
+        ]
+      }
+    },
+    "consumption_state": {
+      "horizon": "MULTI_DAY_2_10D",
+      "dimensions": [],
+      "lifecycle_state": "FLOW_PROPAGATION",
+      "remaining_asymmetry": "FAVORABLE",
+      "reopening_state": "POSSIBLE",
+      "false_precision_guard": "ORDINAL_INDICES_ARE_NOT_PROBABILITIES_OR_LITERAL_PERCENT_REMAINING"
+    },
+    "research_intent": {
+      "fundamental_direction": "BULLISH",
+      "remaining_asymmetry": "HIGHLY_FAVORABLE",
+      "reversal_hazard": "LOW",
+      "review_trigger": {
+        "trigger_id": "R1",
+        "description": "review",
+        "monitor_mode": "MANUAL_OBSERVATION",
+        "materiality": "MATERIAL",
+        "state_change_hazard": "MODERATE",
+        "manual_observation": "review"
+      },
+      "invalidation_triggers": []
+    },
+    "driver_transition": {
+      "state": "TAKEOVER",
+      "current_driver": "driver_A",
+      "strongest_challenger": "driver_B"
+    }
+  }
+}

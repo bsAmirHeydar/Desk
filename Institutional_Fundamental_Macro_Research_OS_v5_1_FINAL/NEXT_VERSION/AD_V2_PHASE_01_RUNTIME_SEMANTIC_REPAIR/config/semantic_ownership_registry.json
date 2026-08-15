@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P01",
+  "deployment": "SHADOW_ONLY",
+  "fields": {
+    "fundamental_direction": {
+      "owner": "MODULE_89",
+      "artifact": "fundamental_state",
+      "source": "v11_fundamental_state.horizon_states[active_horizon].direction",
+      "horizon_required": true
+    },
+    "fundamental_force": {
+      "owner": "MODULE_89",
+      "artifact": "fundamental_state",
+      "sources": [
+        "v11_fundamental_state.horizon_states[active_horizon].force_range",
+        "v11_fundamental_state.force.aggregate_value",
+        "v11_fundamental_state.force.aggregate_range",
+        "v11_fundamental_state.force.aggregate_provenance"
+      ],
+      "horizon_required": true,
+      "class_mapping": "NONE_IN_P01"
+    },
+    "fundamental_consumption": {
+      "owner": "MODULE_89",
+      "artifact": "fundamental_state",
+      "source": "v11_fundamental_state.consumption_v2.summary_state"
+    },
+    "cognitive_consumption": {
+      "owner": "MODULE_103",
+      "artifact": "consumption_state",
+      "source": "lifecycle_state"
+    },
+    "remaining_fundamental_pressure": {
+      "owner": "MODULE_89",
+      "artifact": "fundamental_state",
+      "sources": [
+        "v11_fundamental_state.remaining_pressure_v2.aggregate_class",
+        "v11_fundamental_state.remaining_pressure_v2.aggregate_range"
+      ]
+    },
+    "remaining_asymmetry_research_intent": {
+      "owner": "MODULE_103_FINAL_SYNTHESIS",
+      "artifact": "research_intent",
+      "source": "remaining_asymmetry"
+    },
+    "remaining_asymmetry_cognitive": {
+      "owner": "MODULE_103",
+      "artifact": "consumption_state",
+      "source": "remaining_asymmetry"
+    },
+    "persistence": {
+      "owner": "MODULE_89",
+      "artifact": "fundamental_state",
+      "sources": [
+        "v11_fundamental_state.horizon_states[active_horizon].persistence_class",
+        "v11_fundamental_state.persistence_v2"
+      ],
+      "horizon_required": true
+    },
+    "reversal_risk": {
+      "owner": "MODULE_89",
+      "artifact": "fundamental_state",
+      "source": "v11_fundamental_state.horizon_states[active_horizon].reversal_risk",
+      "horizon_required": true
+    },
+    "pressure_next_update_trigger": {
+      "owner": "MODULE_89",
+      "artifact": "fundamental_state",
+      "source": "v11_fundamental_state.horizon_states[active_horizon].next_update_trigger",
+      "horizon_required": true
+    },
+    "driver_transition": {
+      "owner": "MODULE_103",
+      "artifact": "driver_transition",
+      "source": "state",
+      "excluded_from": [
+        "fundamental_force",
+        "remaining_fundamental_pressure",
+        "persistence"
+      ]
+    },
+    "decision_review_trigger": {
+      "owner": "MODULE_103_FINAL_SYNTHESIS",
+      "artifact": "research_intent",
+      "source": "review_trigger"
+    },
+    "decision_invalidation_triggers": {
+      "owner": "MODULE_103_FINAL_SYNTHESIS",
+      "artifact": "research_intent",
+      "source": "invalidation_triggers"
+    }
+  },
+  "forbidden_substitutions": [
+    {
+      "from": "driver_transition.state",
+      "to": "fundamental_force"
+    },
+    {
+      "from": "driver_transition.state",
+      "to": "persistence"
+    },
+    {
+      "from": "research_intent.remaining_asymmetry",
+      "to": "remaining_fundamental_pressure"
+    },
+    {
+      "from": "consumption_state.remaining_asymmetry",
+      "to": "remaining_fundamental_pressure"
+    },
+    {
+      "from": "target_price",
+      "to": "fundamental_force"
+    },
+    {
+      "from": "target_price_move",
+      "to": "fundamental_consumption"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P01",
+  "baseline": "V1_CLOSED_V21.3.0_R4.0.0",
+  "critical_files": [
+    {
+      "path": "RUNTIME/Unified Research Interface/alpha_interface_runtime/result.py",
+      "sha256": "28069741cdb48c4ff9f1b76c66ff53d40866234fcf7aed2d342bf9155c7c33ce",
+      "size_bytes": 3863
+    },
+    {
+      "path": "RUNTIME/Unified Research Interface/alpha_interface_runtime/report_model.py",
+      "sha256": "88d33ddd9fa8b18e6d7dfe701d1353649191dd1cf5f28cbec0395c4f6fa11372",
+      "size_bytes": 16126
+    },
+    {
+      "path": "RUNTIME/Unified Research Interface/alpha_interface_runtime/quality.py",
+      "sha256": "b9b95fca6cb8592c1cfebf40815a6f4d5184ea86523c174f97f91d7d02a2221c",
+      "size_bytes": 11840
+    },
+    {
+      "path": "RUNTIME/Unified Research Interface/alpha_interface_runtime/memory.py",
+      "sha256": "932bf823e9e1b781d2f81085a0d2162a2229fa341cb878e2451bc75116da645e",
+      "size_bytes": 13172
+    },
+    {
+      "path": "RUNTIME/Unified Research Interface/schemas/AlphaLab_Canonical_Scientific_Result.schema.json",
+      "sha256": "c9573dfcbd8bb7e0ab28dc42553bf77f35a98ca1e48a5264e5a65784f8f28a68",
+      "size_bytes": 1048
+    },
+    {
+      "path": "RUNTIME/Unified Research Interface/schemas/AlphaLab_Report_Model.schema.json",
+      "sha256": "57b1ea55c94ecfeefdf06d41a9fdeac7b5b8e0407543d3de9d495d6cefa5d21e",
+      "size_bytes": 1861
+    },
+    {
+      "path": "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/v11_fundamental_state.schema.json",
+      "sha256": "95da264c3db5d96ae0dea39ad15c0ac696fe9088924405f22cc76182d6ee5c4b",
+      "size_bytes": 23267
+    },
+    {
+      "path": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Research_Intent.schema.json",
+      "sha256": "31edd50d0dd01aeb4fe84a83824f730a374d18d70bf61825eefbc5f92e50ee66",
+      "size_bytes": 3053
+    },
+    {
+      "path": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Consumption_Vector_V21.schema.json",
+      "sha256": "9aa23004845663ce19c0fc7566f878a85657cc842f7021ef34b0d3135db6cc50",
+      "size_bytes": 2922
+    },
+    {
+      "path": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/schemas/AlphaLab_Driver_Transition.schema.json",
+      "sha256": "0bb0ae76af395dfbc70174400b7ad03074a00ad2dba3b274527bf07f93e8abe0",
+      "size_bytes": 1675
+    }
+  ]
+}
