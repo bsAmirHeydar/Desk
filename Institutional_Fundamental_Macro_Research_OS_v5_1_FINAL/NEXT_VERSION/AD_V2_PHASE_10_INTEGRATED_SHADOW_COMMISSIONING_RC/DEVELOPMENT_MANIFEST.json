@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P10",
+  "version": "0.10.0",
+  "title": "Integrated Shadow Commissioning & Release Candidate Hardening",
+  "deployment": "V2_RC_SHADOW_ONLY",
+  "v1_authority_unchanged": true,
+  "mainline_override": false,
+  "auto_promotion": false,
+  "broker": "NONE"
+}

@@ -1,0 +1,9 @@
+{
+  "phase": "AD-V2-P10",
+  "status": "IMPLEMENTED",
+  "rc_id": "ALPHA_DESK_V2_RC1_SHADOW",
+  "science_change": false,
+  "integration_change": true,
+  "empirical_promotion": false,
+  "next_action": "OPERATE_TRUE_FORWARD_AND_LEARN; BUILD CHALLENGER ONLY FROM EVIDENCE"
+}

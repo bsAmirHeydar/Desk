@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "AlphaDesk V2 Gold Shadow Run Input",
+  "required": [
+    "base_capsule",
+    "pressure_input",
+    "expected_signature",
+    "actual_response",
+    "gold_observations"
+  ],
+  "properties": {
+    "base_capsule": {
+      "type": "object"
+    },
+    "pressure_input": {
+      "type": "object"
+    },
+    "expected_signature": {
+      "type": "object"
+    },
+    "actual_response": {
+      "type": "object"
+    },
+    "gold_observations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "pressure_history": {
+      "type": "array"
+    },
+    "transmission_history": {
+      "type": "array"
+    },
+    "lifecycle_history": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P10",
+  "rc_id": "ALPHA_DESK_V2_RC1_SHADOW",
+  "deployment": "V2_RC_SHADOW_ONLY",
+  "subject": "XAUUSD",
+  "v1_production_authoritative": true,
+  "mainline_override": false,
+  "positive_permission_creation": false,
+  "broker_authority": "NONE",
+  "auto_promotion": false,
+  "auto_tuning": false,
+  "synthetic_cases_are_development_only": true,
+  "true_forward_owner": "AD-V2-P08",
+  "learning_owner": "AD-V2-P09",
+  "promotion_owner": "AD-V2-P07"
+}

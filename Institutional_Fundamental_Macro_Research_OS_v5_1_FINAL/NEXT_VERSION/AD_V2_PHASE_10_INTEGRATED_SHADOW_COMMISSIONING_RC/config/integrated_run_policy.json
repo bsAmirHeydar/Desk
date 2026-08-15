@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P10",
+  "subject": "XAUUSD",
+  "owners": [
+    "AD-V2-P02",
+    "AD-V2-P03",
+    "AD-V2-P04",
+    "AD-V2-P05",
+    "AD-V2-P06"
+  ],
+  "network_fetch": false,
+  "missing_data_imputation": false,
+  "pressure_from_target_price": false,
+  "bind_pressure_fingerprint_mechanically": true,
+  "p08_admission_after_p06_seal": true,
+  "p10_can_mark_true_forward": false
+}

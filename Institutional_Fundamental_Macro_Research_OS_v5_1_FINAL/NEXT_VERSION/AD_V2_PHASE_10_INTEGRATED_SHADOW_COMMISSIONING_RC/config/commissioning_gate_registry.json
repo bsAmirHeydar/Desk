@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P10",
+  "required_gates": [
+    "EXACT_P00_P09_DEPENDENCIES",
+    "P10_VALIDATOR",
+    "P09_REGRESSION",
+    "INTEGRATED_GOLD_E2E",
+    "R4_CORE",
+    "AUTHORITY_FREEZE",
+    "EXTERNAL_DATA_ROOT"
+  ],
+  "optional_gates": [
+    "R4_FULL"
+  ],
+  "empirical_maturity_is_separate": true,
+  "engineering_pass_does_not_imply_promotion": true
+}

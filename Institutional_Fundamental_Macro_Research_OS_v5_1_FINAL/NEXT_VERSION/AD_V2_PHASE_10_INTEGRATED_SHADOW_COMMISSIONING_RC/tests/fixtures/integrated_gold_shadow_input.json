@@ -1,0 +1,244 @@
+{
+  "base_capsule": {
+    "schema_version": "1.0.0",
+    "capsule_version": "RUN2.0.0",
+    "run_id": "P10-SYNTH-GOLD-001",
+    "request_id": "P10-SYNTH-REQ-001",
+    "subject": "XAUUSD",
+    "mode": "LIVE_SHADOW_SYNTHETIC",
+    "as_of": "2026-08-15T10:21:00Z",
+    "horizon": "SESSION_1_6H",
+    "permission": "NO_TRADE",
+    "quality_status": "PASS",
+    "capsule_hash": "sha256:SYNTHETIC_V1_CAPSULE",
+    "canonical_result_hash": "sha256:SYNTHETIC_V1_RESULT"
+  },
+  "pressure_input": {
+    "active_horizon": "SESSION_1_6H",
+    "as_of_utc": "2026-08-15T10:00:00Z",
+    "roots": [
+      {
+        "root_id": "POLICY",
+        "label": "Policy repricing",
+        "active_horizon": "SESSION_1_6H",
+        "polarity": "BUY",
+        "magnitude_range": {
+          "low": 60,
+          "high": 75
+        },
+        "weight": 0.35,
+        "confidence": 85,
+        "source_kind": "EXPECTATIONS_STATE",
+        "mechanism": "lower expected policy path reduces Gold opportunity cost",
+        "observed_at_utc": "2026-08-15T10:00:00Z",
+        "freshness_ttl_seconds": 3600,
+        "applicability": "APPLICABLE"
+      },
+      {
+        "root_id": "REAL_RATE",
+        "label": "Real-rate discount",
+        "active_horizon": "SESSION_1_6H",
+        "polarity": "BUY",
+        "magnitude_range": {
+          "low": 55,
+          "high": 70
+        },
+        "weight": 0.25,
+        "confidence": 80,
+        "source_kind": "CROSS_ASSET_CAUSAL_STATE",
+        "mechanism": "lower real discount rate supports Gold",
+        "observed_at_utc": "2026-08-15T10:00:00Z",
+        "freshness_ttl_seconds": 3600,
+        "applicability": "APPLICABLE"
+      },
+      {
+        "root_id": "OFFICIAL",
+        "label": "Official demand",
+        "active_horizon": "SESSION_1_6H",
+        "polarity": "BUY",
+        "magnitude_range": {
+          "low": 60,
+          "high": 80
+        },
+        "weight": 0.25,
+        "confidence": 75,
+        "source_kind": "STRUCTURAL_DEMAND_SUPPLY",
+        "mechanism": "official-sector demand supports Gold balance",
+        "observed_at_utc": "2026-08-15T09:55:00Z",
+        "freshness_ttl_seconds": 86400,
+        "applicability": "APPLICABLE"
+      },
+      {
+        "root_id": "PHYSICAL",
+        "label": "Regional physical demand",
+        "active_horizon": "SESSION_1_6H",
+        "polarity": "SELL",
+        "magnitude_range": {
+          "low": 25,
+          "high": 40
+        },
+        "weight": 0.15,
+        "confidence": 65,
+        "source_kind": "PHYSICAL_BALANCE",
+        "mechanism": "weak regional physical demand offsets part of Gold support",
+        "observed_at_utc": "2026-08-15T09:55:00Z",
+        "freshness_ttl_seconds": 21600,
+        "applicability": "APPLICABLE"
+      }
+    ],
+    "remaining_causal_pressure": {
+      "value": "HIGH"
+    },
+    "fundamental_driver_consumption": {
+      "value": "PARTIAL"
+    },
+    "persistence": {
+      "value": "HIGH"
+    }
+  },
+  "expected_signature": {
+    "signature_id": "P10-SYNTH-SIG",
+    "active_horizon": "SESSION_1_6H",
+    "declared_at_utc": "2026-08-15T10:01:00Z",
+    "method": "EXPERT_RANGE",
+    "method_provenance": "JUDGMENTAL",
+    "target_response": {
+      "instrument": "XAUUSD",
+      "unit": "PCT_RETURN",
+      "minimum_material_response": 0.05,
+      "earliest_material_response_seconds": 0,
+      "latest_expected_lag_seconds": 1800,
+      "expected_aligned_range": {
+        "low": 0.3,
+        "high": 0.7
+      }
+    },
+    "pathways": [
+      {
+        "channel_id": "US2Y",
+        "expected_direction": "DOWN",
+        "independence_group": "POLICY_PATH"
+      },
+      {
+        "channel_id": "REAL10Y",
+        "expected_direction": "DOWN",
+        "independence_group": "REAL_RATE"
+      },
+      {
+        "channel_id": "DXY",
+        "expected_direction": "DOWN",
+        "independence_group": "USD"
+      },
+      {
+        "channel_id": "GC_PROXY",
+        "expected_direction": "UP",
+        "independence_group": "TARGET_PROXY",
+        "mechanically_linked_target_proxy": true
+      }
+    ]
+  },
+  "actual_response": {
+    "window_start_utc": "2026-08-15T10:01:00Z",
+    "window_end_utc": "2026-08-15T10:21:00Z",
+    "target": {
+      "instrument": "XAUUSD",
+      "unit": "PCT_RETURN",
+      "observed_response": -0.4,
+      "data_quality": "DIRECT"
+    },
+    "channels": [
+      {
+        "channel_id": "US2Y",
+        "observed_direction": "DOWN"
+      },
+      {
+        "channel_id": "REAL10Y",
+        "observed_direction": "DOWN"
+      },
+      {
+        "channel_id": "DXY",
+        "observed_direction": "DOWN"
+      },
+      {
+        "channel_id": "GC_PROXY",
+        "observed_direction": "DOWN"
+      }
+    ]
+  },
+  "gold_observations": [
+    {
+      "observation_id": "xau",
+      "metric_id": "XAUUSD_RETURN",
+      "source_id": "XAUUSD_RUNTIME_FEED",
+      "provider_id": "TEST_PROVIDER",
+      "observed_at_utc": "2026-08-15T10:00:00Z",
+      "status": "AVAILABLE",
+      "value": -0.4
+    },
+    {
+      "observation_id": "dxy",
+      "metric_id": "DXY_STATE",
+      "source_id": "DXY_RUNTIME_FEED",
+      "provider_id": "TEST_PROVIDER",
+      "observed_at_utc": "2026-08-15T10:00:00Z",
+      "status": "AVAILABLE",
+      "value": -0.2
+    },
+    {
+      "observation_id": "tips",
+      "metric_id": "UST10Y_TIPS_STATE",
+      "source_id": "UST10Y_TIPS_RUNTIME_FEED",
+      "provider_id": "TEST_PROVIDER",
+      "observed_at_utc": "2026-08-15T10:00:00Z",
+      "status": "AVAILABLE",
+      "causal_interpretation": {
+        "polarity": "BUY",
+        "magnitude_range": {
+          "low": 55,
+          "high": 70
+        },
+        "mechanism": "lower real discount rate supports non-yielding Gold"
+      },
+      "provenance_ref": "TEST:TIPS"
+    },
+    {
+      "observation_id": "policy",
+      "metric_id": "POLICY_REPRICING_STATE",
+      "source_id": "CME_FEDWATCH",
+      "observed_at_utc": "2026-08-15T10:00:00Z",
+      "status": "AVAILABLE",
+      "causal_interpretation": {
+        "polarity": "BUY",
+        "magnitude_range": {
+          "low": 60,
+          "high": 75
+        },
+        "mechanism": "lower expected policy path reduces Gold opportunity cost"
+      },
+      "provenance_ref": "TEST:POLICY"
+    },
+    {
+      "observation_id": "flow",
+      "metric_id": "GC_SIGNED_TRADE_IMBALANCE",
+      "source_id": "CME_MARKET_DEPTH",
+      "observed_at_utc": "2026-08-15T10:00:00Z",
+      "status": "AVAILABLE",
+      "state_code": "OPPOSING_FLOW_DECAYING",
+      "strength": "HIGH",
+      "confidence": "HIGH",
+      "provenance_ref": "TEST:MBO"
+    },
+    {
+      "observation_id": "depth",
+      "metric_id": "GC_DEPTH_RESILIENCY",
+      "source_id": "CME_MARKET_DEPTH",
+      "observed_at_utc": "2026-08-15T10:00:00Z",
+      "status": "AVAILABLE",
+      "state_code": "RELEASE_MECHANICS_SUPPORT",
+      "strength": "MEDIUM",
+      "confidence": "HIGH",
+      "provenance_ref": "TEST:DEPTH"
+    }
+  ],
+  "divergence_history_count": 1
+}

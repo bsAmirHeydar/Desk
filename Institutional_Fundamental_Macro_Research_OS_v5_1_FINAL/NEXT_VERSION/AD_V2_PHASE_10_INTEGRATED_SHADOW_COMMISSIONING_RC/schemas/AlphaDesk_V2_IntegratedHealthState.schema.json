@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "AlphaDesk V2 Integrated Health State",
+  "required": [
+    "schema_version",
+    "phase",
+    "status",
+    "source",
+    "operations",
+    "evidence",
+    "authority"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "phase": {
+      "const": "AD-V2-P10"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "PASS_WITH_WARNINGS",
+        "FAIL_CLOSED"
+      ]
+    },
+    "source": {
+      "type": "object"
+    },
+    "operations": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

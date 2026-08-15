@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P10",
+  "cases": [
+    {
+      "id": "PRICE_CANNOT_MUTATE_PRESSURE",
+      "law": "P10 wrapper cannot feed target-price action into P02 Pressure."
+    },
+    {
+      "id": "EXPECTED_SIGNATURE_PREDECLARED",
+      "law": "Expected response definition remains point-in-time safe."
+    },
+    {
+      "id": "SYNTHETIC_NOT_TRUE_FORWARD",
+      "law": "Integrated synthetic commissioning data cannot enter true-forward counts."
+    },
+    {
+      "id": "V1_PERMISSION_INHERITED",
+      "law": "P10 cannot create positive permission."
+    },
+    {
+      "id": "NO_BROKER",
+      "law": "Broker authority remains NONE."
+    },
+    {
+      "id": "UPSTREAM_HASH_BINDINGS",
+      "law": "P03/P04/P05/P06 upstream fingerprints must match exact supplied states."
+    },
+    {
+      "id": "NO_AUTO_PROMOTION",
+      "law": "Engineering RC commissioning cannot promote science."
+    },
+    {
+      "id": "P08_P09_STATUS_NON_AUTHORITY",
+      "law": "Operational uptime cannot alter science or permission."
+    }
+  ]
+}

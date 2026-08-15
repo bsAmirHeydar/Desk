@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "AlphaDesk V2 Integrated Gold Shadow Run Receipt",
+  "required": [
+    "schema_version",
+    "phase",
+    "status",
+    "run_id",
+    "p02",
+    "p03",
+    "p04",
+    "p05",
+    "p06",
+    "authority"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "phase": {
+      "const": "AD-V2-P10"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL_CLOSED"
+      ]
+    },
+    "run_id": {},
+    "p02": {
+      "type": "object"
+    },
+    "p03": {
+      "type": "object"
+    },
+    "p04": {
+      "type": "object"
+    },
+    "p05": {
+      "type": "object"
+    },
+    "p06": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

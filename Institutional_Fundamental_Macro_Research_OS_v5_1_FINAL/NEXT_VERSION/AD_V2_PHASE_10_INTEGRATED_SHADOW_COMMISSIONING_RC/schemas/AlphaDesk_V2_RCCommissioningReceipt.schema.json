@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "AlphaDesk V2 RC Commissioning Receipt",
+  "required": [
+    "schema_version",
+    "phase",
+    "record_type",
+    "status",
+    "rc_id",
+    "engineering",
+    "evidence_maturity",
+    "authority",
+    "receipt_hash"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "phase": {
+      "const": "AD-V2-P10"
+    },
+    "record_type": {
+      "const": "P10_RC_COMMISSIONING_RECEIPT"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "PASS_WITH_WARNINGS",
+        "FAIL_CLOSED"
+      ]
+    },
+    "rc_id": {
+      "type": "string"
+    },
+    "engineering": {
+      "type": "object"
+    },
+    "evidence_maturity": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    },
+    "receipt_hash": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

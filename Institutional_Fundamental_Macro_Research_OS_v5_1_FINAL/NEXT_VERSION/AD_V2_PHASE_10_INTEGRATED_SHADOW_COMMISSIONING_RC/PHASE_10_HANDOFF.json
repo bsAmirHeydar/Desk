@@ -1,0 +1,7 @@
+{
+  "phase": "AD-V2-P10",
+  "default_next_phase": null,
+  "evidence_driven_next_phase_only": true,
+  "candidate_next_phase": "P11_CHALLENGER_DEPLOYMENT_ONLY_IF_P09_PATTERN_ELIGIBLE",
+  "operating_state": "V2_RC_SHADOW_ONLY"
+}

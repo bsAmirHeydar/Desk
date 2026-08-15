@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P10",
+  "source_required": [
+    "P06",
+    "P07",
+    "P08",
+    "P09"
+  ],
+  "mutable_states": {
+    "P08": "WARN_IF_UNAVAILABLE",
+    "P09": "WARN_IF_UNAVAILABLE"
+  },
+  "zero_true_forward_is_not_failure": true,
+  "zero_learning_cases_is_not_failure": true
+}
