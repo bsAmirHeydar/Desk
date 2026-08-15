@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "cases": [
+    {
+      "case_id": "TARGET_PRICE_AS_PRESSURE_ROOT"
+    },
+    {
+      "case_id": "TARGET_PRICE_AS_P04_EVIDENCE"
+    },
+    {
+      "case_id": "GC_PRICE_INDEPENDENT_CONFIRMATION"
+    },
+    {
+      "case_id": "DXY_DEFAULT_ROOT_DOUBLE_COUNT"
+    },
+    {
+      "case_id": "VOLUME_AS_FLOW"
+    },
+    {
+      "case_id": "OI_AS_DIRECTION"
+    },
+    {
+      "case_id": "OPTIONS_OI_AS_DEALER_GAMMA"
+    },
+    {
+      "case_id": "CFTC_AS_LIVE_FLOW"
+    },
+    {
+      "case_id": "LBMA_CLEARING_AS_DIRECTION"
+    },
+    {
+      "case_id": "LBMA_VAULT_AS_DAILY_FLOW"
+    },
+    {
+      "case_id": "ETF_AUM_AS_FLOW"
+    },
+    {
+      "case_id": "COMEX_AS_GLOBAL_GOLD"
+    },
+    {
+      "case_id": "LONDON_AS_GLOBAL_GOLD"
+    },
+    {
+      "case_id": "SILVER_AS_GOLD_ROOT"
+    },
+    {
+      "case_id": "RUNTIME_FEED_WITHOUT_PROVIDER"
+    },
+    {
+      "case_id": "FUTURE_OBSERVATION"
+    },
+    {
+      "case_id": "STALE_FAST_OBSERVATION"
+    },
+    {
+      "case_id": "HORIZON_BLEED"
+    },
+    {
+      "case_id": "ROLE_OVERRIDE"
+    },
+    {
+      "case_id": "MODEL_CLAIM_WITHOUT_MODEL_REF"
+    },
+    {
+      "case_id": "EVENT_CALENDAR_AS_DIRECTION"
+    },
+    {
+      "case_id": "EVENT_RESET_CAP"
+    },
+    {
+      "case_id": "MISSING_OTC_TREATED_NEUTRAL"
+    },
+    {
+      "case_id": "DUPLICATE_INDEPENDENCE_GROUP"
+    },
+    {
+      "case_id": "NEW_DRIVER_MUTATES_UPSTREAM"
+    },
+    {
+      "case_id": "P04_RELEASE_FROM_PRICE_ONLY"
+    },
+    {
+      "case_id": "SLOW_SOURCE_AS_INTRADAY_TRIGGER"
+    },
+    {
+      "case_id": "SOURCE_METRIC_MISMATCH"
+    },
+    {
+      "case_id": "UNKNOWN_METRIC"
+    },
+    {
+      "case_id": "DUPLICATE_OBSERVATION_ID"
+    }
+  ]
+}

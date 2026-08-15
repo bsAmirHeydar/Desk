@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "root_families": [
+    {
+      "root_id": "POLICY_EXPECTATIONS",
+      "default_source_kinds": [
+        "EXPECTATIONS_STATE",
+        "POLICY_REACTION_STATE"
+      ],
+      "default_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "dependent_groups": [
+        "US_POLICY_PATH",
+        "USD_FX_COMPLEX",
+        "REAL_RATE_DISCOUNT"
+      ],
+      "price_root_forbidden": true
+    },
+    {
+      "root_id": "REAL_RATE_DISCOUNT",
+      "default_source_kinds": [
+        "CROSS_ASSET_CAUSAL_STATE"
+      ],
+      "default_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "dependent_groups": [
+        "US_POLICY_PATH"
+      ],
+      "price_root_forbidden": false,
+      "requires_no_double_count_with": "POLICY_EXPECTATIONS"
+    },
+    {
+      "root_id": "USD_AUTONOMOUS",
+      "default_source_kinds": [
+        "CROSS_ASSET_CAUSAL_STATE"
+      ],
+      "default_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "dependent_groups": [
+        "USD_FX_COMPLEX"
+      ],
+      "price_root_forbidden": false,
+      "conditional": "Only autonomous USD shock, not generic policy transmission."
+    },
+    {
+      "root_id": "STRUCTURAL_OFFICIAL_DEMAND",
+      "default_source_kinds": [
+        "STRUCTURAL_DEMAND_SUPPLY"
+      ],
+      "default_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "dependent_groups": [
+        "OFFICIAL_GOLD_DEMAND"
+      ],
+      "price_root_forbidden": true
+    },
+    {
+      "root_id": "ETF_INVESTMENT_DEMAND",
+      "default_source_kinds": [
+        "VERIFIED_FLOW",
+        "STRUCTURAL_DEMAND_SUPPLY"
+      ],
+      "default_horizons": [
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "dependent_groups": [
+        "GOLD_ETF_INVESTMENT"
+      ],
+      "price_root_forbidden": true
+    },
+    {
+      "root_id": "PHYSICAL_REGIONAL_BALANCE",
+      "default_source_kinds": [
+        "PHYSICAL_BALANCE"
+      ],
+      "default_horizons": [
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "dependent_groups": [
+        "REGIONAL_PHYSICAL_GOLD"
+      ],
+      "price_root_forbidden": true
+    },
+    {
+      "root_id": "GEOPOLITICAL_CREDIBILITY_RISK",
+      "default_source_kinds": [
+        "GEOPOLITICAL_POLICY_STATE"
+      ],
+      "default_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "dependent_groups": [
+        "GEOPOLITICAL_RISK"
+      ],
+      "price_root_forbidden": true
+    },
+    {
+      "root_id": "FUNDING_COLLATERAL_STRESS",
+      "default_source_kinds": [
+        "FUNDING_LIQUIDITY_STATE"
+      ],
+      "default_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "dependent_groups": [
+        "USD_FUNDING",
+        "GOLD_FINANCING"
+      ],
+      "price_root_forbidden": true
+    }
+  ],
+  "aggregation_owner": "AD-V2-P02",
+  "no_vote_counting": true
+}

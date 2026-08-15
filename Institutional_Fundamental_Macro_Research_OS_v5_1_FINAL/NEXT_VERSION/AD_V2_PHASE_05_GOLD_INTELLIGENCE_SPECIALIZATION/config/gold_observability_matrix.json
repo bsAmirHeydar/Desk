@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "matrix": [
+    {
+      "family": "TARGET_PRICE",
+      "public": "HIGH",
+      "licensed": "HIGH",
+      "private_gap": "LOW",
+      "notes": "XAU/GC prices observable but downstream only."
+    },
+    {
+      "family": "RATES_USD",
+      "public": "MEDIUM_HIGH",
+      "licensed": "HIGH",
+      "private_gap": "LOW_MEDIUM",
+      "notes": "Live synchronization/provider quality varies."
+    },
+    {
+      "family": "ETF_FLOW",
+      "public": "MEDIUM_HIGH",
+      "licensed": "HIGH",
+      "private_gap": "LOW",
+      "notes": "Subset of investment demand."
+    },
+    {
+      "family": "OFFICIAL_DEMAND",
+      "public": "MEDIUM",
+      "licensed": "MEDIUM",
+      "private_gap": "MEDIUM",
+      "notes": "Reported with lags/incompleteness."
+    },
+    {
+      "family": "FUTURES_POSITIONING",
+      "public": "MEDIUM",
+      "licensed": "HIGH",
+      "private_gap": "MEDIUM",
+      "notes": "CFTC public subset; live participant state incomplete."
+    },
+    {
+      "family": "LISTED_ORDER_FLOW",
+      "public": "LOW",
+      "licensed": "HIGH",
+      "private_gap": "LOW",
+      "notes": "MBO/depth generally subscription."
+    },
+    {
+      "family": "LONDON_OTC_FLOW",
+      "public": "LOW",
+      "licensed": "MEDIUM_HIGH",
+      "private_gap": "HIGH",
+      "notes": "Client/dealer intent not public."
+    },
+    {
+      "family": "PHYSICAL_ASIA",
+      "public": "MEDIUM",
+      "licensed": "HIGH",
+      "private_gap": "MEDIUM",
+      "notes": "Source/location-specific."
+    },
+    {
+      "family": "FUNDING_GOLD_FINANCING",
+      "public": "MEDIUM",
+      "licensed": "HIGH",
+      "private_gap": "HIGH",
+      "notes": "Global OTC financing incomplete."
+    },
+    {
+      "family": "OPTIONS_DEALER",
+      "public": "LOW_MEDIUM",
+      "licensed": "HIGH",
+      "private_gap": "MEDIUM_HIGH",
+      "notes": "OI not dealer sign."
+    },
+    {
+      "family": "MECHANICS_EVENT",
+      "public": "HIGH",
+      "licensed": "HIGH",
+      "private_gap": "LOW",
+      "notes": "Calendar/mechanics observable; realized flow separate."
+    }
+  ],
+  "missing_is_not_neutral": true
+}

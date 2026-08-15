@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaDesk_V2_GoldIntelligenceState.schema.json",
+  "title": "Alpha Desk V2 Gold Intelligence State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "phase",
+    "version",
+    "deployment",
+    "status",
+    "subject",
+    "integrity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "phase": {
+      "const": "AD-V2-P05"
+    },
+    "version": {
+      "type": "string"
+    },
+    "deployment": {
+      "const": "SHADOW_ONLY"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL_CLOSED"
+      ]
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "as_of_utc": {
+      "type": "string"
+    },
+    "active_horizon": {
+      "type": "string"
+    },
+    "upstream_references": {
+      "type": "object"
+    },
+    "instrument_topology": {
+      "type": "object"
+    },
+    "admitted_observations": {
+      "type": "array"
+    },
+    "observability_coverage": {
+      "type": "object"
+    },
+    "p02_adapter": {
+      "type": "object"
+    },
+    "p03_adapter": {
+      "type": "object"
+    },
+    "p04_adapter": {
+      "type": "object"
+    },
+    "event_reset": {
+      "type": "object"
+    },
+    "missing_driver_search": {
+      "type": "object"
+    },
+    "coverage_gaps": {
+      "type": "object"
+    },
+    "integrity": {
+      "type": "object"
+    }
+  }
+}

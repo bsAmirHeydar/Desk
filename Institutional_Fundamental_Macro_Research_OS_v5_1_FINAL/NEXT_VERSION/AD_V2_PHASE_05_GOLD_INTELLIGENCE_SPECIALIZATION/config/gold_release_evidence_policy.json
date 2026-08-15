@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "owner": "AD-V2-P04",
+  "gold_rules": {
+    "direct_signed_cme_flow_can_support_release": true,
+    "cme_depth_resiliency_can_support_mechanics": true,
+    "volume_alone_can_support_release": false,
+    "oi_alone_can_support_release": false,
+    "cftc_can_be_live_release_trigger": false,
+    "wgc_gdt_can_be_live_release_trigger": false,
+    "lbma_clearing_can_be_directional_flow": false,
+    "lbma_vault_can_be_daily_flow": false,
+    "gc_price_can_be_independent_release_support": false,
+    "silver_price_can_be_independent_release_support": false,
+    "dxy_price_can_be_independent_release_support": false,
+    "target_price_reversal_can_confirm_absorption": false,
+    "options_oi_can_define_dealer_gamma_without_model": false,
+    "release_still_requires_p04_independent_groups": true
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "pathways": [
+    {
+      "pathway_id": "POLICY_REAL_YIELD_USD",
+      "root_id": "POLICY_EXPECTATIONS",
+      "channels": [
+        "UST2Y_STATE",
+        "UST10Y_TIPS_STATE",
+        "DXY_STATE"
+      ],
+      "target": "XAUUSD_RETURN",
+      "notes": "Channels may share root information; do not count as independent Pressure roots."
+    },
+    {
+      "pathway_id": "REAL_YIELD_DIRECT",
+      "root_id": "REAL_RATE_DISCOUNT",
+      "channels": [
+        "UST10Y_TIPS_STATE",
+        "DXY_STATE"
+      ],
+      "target": "XAUUSD_RETURN",
+      "notes": "Avoid double-counting with policy root when same information shock owns real-yield move."
+    },
+    {
+      "pathway_id": "FUNDING_LIQUIDATION",
+      "root_id": "FUNDING_COLLATERAL_STRESS",
+      "channels": [
+        "DXY_STATE",
+        "UST2Y_STATE"
+      ],
+      "target": "XAUUSD_RETURN",
+      "notes": "Target can initially fall during cash/liquidity demand even with structural Gold support."
+    },
+    {
+      "pathway_id": "STRUCTURAL_DEMAND_SLOW",
+      "root_id": "STRUCTURAL_OFFICIAL_DEMAND",
+      "channels": [
+        "ETF_HOLDINGS_FLOW",
+        "ASIA_PHYSICAL_BALANCE"
+      ],
+      "target": "XAUUSD_RETURN",
+      "notes": "Slow pathway; not an intraday expected-response template by default."
+    },
+    {
+      "pathway_id": "GEOPOLITICAL_TWO_CHANNEL",
+      "root_id": "GEOPOLITICAL_CREDIBILITY_RISK",
+      "channels": [
+        "DXY_STATE",
+        "UST10Y_TIPS_STATE"
+      ],
+      "target": "XAUUSD_RETURN",
+      "notes": "Gold and USD can both strengthen; rates/oil counter-channel may fragment ordinary correlations."
+    }
+  ],
+  "owner": "AD-V2-P03"
+}

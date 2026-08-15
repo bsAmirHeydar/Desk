@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "instruments": [
+    {
+      "instrument_id": "XAUUSD",
+      "market": "OTC_SPOT_COMPOSITE",
+      "role": [
+        "TARGET_PRICE"
+      ],
+      "independence_group": "GOLD_TARGET_PRICE_COMPLEX",
+      "price_can_enter_p02": false,
+      "price_can_enter_p04_independent_evidence": false
+    },
+    {
+      "instrument_id": "GC",
+      "market": "COMEX_FUTURES",
+      "role": [
+        "TARGET_PROXY",
+        "LISTED_FLOW_MECHANICS"
+      ],
+      "independence_group": "GOLD_TARGET_PRICE_COMPLEX",
+      "price_can_enter_p02": false,
+      "price_can_enter_p04_independent_evidence": false
+    },
+    {
+      "instrument_id": "GOLD_OPTIONS",
+      "market": "COMEX_OPTIONS",
+      "role": [
+        "OPTIONS_MECHANICS"
+      ],
+      "independence_group": "COMEX_OPTIONS",
+      "price_can_enter_p02": false,
+      "price_can_enter_p04_independent_evidence": false
+    },
+    {
+      "instrument_id": "DXY",
+      "market": "USD_INDEX",
+      "role": [
+        "P03_PATHWAY",
+        "P02_CONDITIONAL_SUPPORT"
+      ],
+      "independence_group": "USD_FX_COMPLEX",
+      "price_can_enter_p02": "CONDITIONAL_CAUSAL_ROLE_ONLY",
+      "price_can_enter_p04_independent_evidence": false
+    },
+    {
+      "instrument_id": "UST2Y",
+      "market": "US_RATES",
+      "role": [
+        "P03_PATHWAY",
+        "P02_CONDITIONAL_SUPPORT"
+      ],
+      "independence_group": "US_POLICY_PATH",
+      "price_can_enter_p02": "CONDITIONAL_CAUSAL_ROLE_ONLY",
+      "price_can_enter_p04_independent_evidence": false
+    },
+    {
+      "instrument_id": "UST10Y_TIPS",
+      "market": "US_REAL_RATES",
+      "role": [
+        "P03_PATHWAY",
+        "P02_ROOT_ELIGIBLE"
+      ],
+      "independence_group": "REAL_RATE_DISCOUNT",
+      "price_can_enter_p02": "EXPLICIT_ROOT_ONLY",
+      "price_can_enter_p04_independent_evidence": false
+    },
+    {
+      "instrument_id": "SILVER",
+      "market": "PRECIOUS_METALS",
+      "role": [
+        "P03_CROSS_ASSET_DIAGNOSTIC"
+      ],
+      "independence_group": "PRECIOUS_COMPLEX",
+      "price_can_enter_p02": false,
+      "price_can_enter_p04_independent_evidence": false
+    },
+    {
+      "instrument_id": "GOLD_ETF",
+      "market": "ETF",
+      "role": [
+        "FLOW",
+        "POSITIONING",
+        "STRUCTURAL_DEMAND"
+      ],
+      "independence_group": "GOLD_ETF_INVESTMENT",
+      "price_can_enter_p02": false,
+      "price_can_enter_p04_independent_evidence": "FLOW_ONLY_NOT_ETF_PRICE"
+    }
+  ],
+  "global_gold_single_venue_equivalence": false
+}

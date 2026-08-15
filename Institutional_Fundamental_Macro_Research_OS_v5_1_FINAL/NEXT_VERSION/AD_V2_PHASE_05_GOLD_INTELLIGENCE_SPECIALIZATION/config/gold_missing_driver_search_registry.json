@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "priorities": [
+    {
+      "priority": 1,
+      "family": "DATA_INTEGRITY",
+      "queries": [
+        "instrument/contract mismatch",
+        "timestamp staleness",
+        "spot-futures basis/roll",
+        "unit/FX mismatch"
+      ]
+    },
+    {
+      "priority": 2,
+      "family": "RATES_USD",
+      "queries": [
+        "2Y/policy path",
+        "real yield",
+        "curve",
+        "autonomous USD shock"
+      ]
+    },
+    {
+      "priority": 3,
+      "family": "LISTED_FLOW",
+      "queries": [
+        "GC signed trades/MBO",
+        "depth/resiliency",
+        "volume/OI non-equivalence"
+      ]
+    },
+    {
+      "priority": 4,
+      "family": "POSITIONING",
+      "queries": [
+        "CFTC",
+        "ETF creations/redemptions",
+        "options/systematic unwind"
+      ]
+    },
+    {
+      "priority": 5,
+      "family": "FUNDING",
+      "queries": [
+        "repo/dealer balance sheet",
+        "margin/collateral",
+        "lease/basis/physical financing"
+      ]
+    },
+    {
+      "priority": 6,
+      "family": "OPTIONS_MECHANICS",
+      "queries": [
+        "expiry",
+        "convexity",
+        "settlement",
+        "roll",
+        "benchmark effects"
+      ]
+    },
+    {
+      "priority": 7,
+      "family": "PHYSICAL_OFFICIAL_ETF",
+      "queries": [
+        "ETF flow",
+        "COMEX deliveries/location",
+        "LBMA activity",
+        "Asia premiums/imports",
+        "official demand"
+      ]
+    },
+    {
+      "priority": 8,
+      "family": "NEW_EVENT",
+      "queries": [
+        "macro surprise",
+        "policy communication",
+        "geopolitical escalation"
+      ]
+    },
+    {
+      "priority": 9,
+      "family": "PRIVATE_OTC_GAP",
+      "queries": [
+        "licensed London/client/dealer flow unavailable"
+      ]
+    }
+  ],
+  "new_causal_driver_requires_p02_recompute": true
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "groups": {
+    "GOLD_TARGET_PRICE_COMPLEX": [
+      "XAUUSD_RETURN",
+      "GC_PRICE_RETURN"
+    ],
+    "US_POLICY_PATH": [
+      "POLICY_REPRICING_STATE",
+      "UST2Y_STATE"
+    ],
+    "US_POLICY_FACT": [
+      "OFFICIAL_POLICY_FACT"
+    ],
+    "REAL_RATE_DISCOUNT": [
+      "UST10Y_TIPS_STATE"
+    ],
+    "USD_FX_COMPLEX": [
+      "DXY_STATE"
+    ],
+    "GOLD_ETF_INVESTMENT": [
+      "ETF_HOLDINGS_FLOW",
+      "ETF_SPONSOR_SHARES_HOLDINGS"
+    ],
+    "CFTC_GOLD_POSITIONING": [
+      "CFTC_GOLD_POSITIONING"
+    ],
+    "COMEX_ACTIVITY": [
+      "GC_VOLUME"
+    ],
+    "COMEX_OI": [
+      "GC_OPEN_INTEREST"
+    ],
+    "COMEX_SIGNED_FLOW": [
+      "GC_SIGNED_TRADE_IMBALANCE"
+    ],
+    "COMEX_LIQUIDITY": [
+      "GC_DEPTH_RESILIENCY"
+    ],
+    "COMEX_OPTIONS": [
+      "GC_OPTIONS_OI"
+    ],
+    "COMEX_OPTIONS_MODEL": [
+      "GC_DEALER_CONVEXITY_MODEL"
+    ],
+    "COMEX_PHYSICAL_SUBSET": [
+      "COMEX_STOCKS_DELIVERIES"
+    ],
+    "LONDON_OTC_ACTIVITY": [
+      "LBMA_TRADE_ACTIVITY"
+    ],
+    "LONDON_CLEARING": [
+      "LBMA_CLEARING_ACTIVITY"
+    ],
+    "LONDON_VAULT": [
+      "LBMA_VAULT_STOCK"
+    ],
+    "REGIONAL_PHYSICAL_GOLD": [
+      "ASIA_PHYSICAL_BALANCE"
+    ],
+    "USD_FUNDING": [
+      "USD_FUNDING_STATE"
+    ],
+    "DEALER_BALANCE_SHEET": [
+      "DEALER_BALANCE_SHEET_STATE"
+    ],
+    "UST_AUCTION_EVENT": [
+      "TREASURY_AUCTION_EVENT"
+    ],
+    "US_MACRO_EVENT": [
+      "US_MACRO_EVENT",
+      "RETAIL_SALES_EVENT"
+    ],
+    "GEOPOLITICAL_RISK": [
+      "GEOPOLITICAL_RISK_STATE"
+    ],
+    "GOLD_FINANCING": [
+      "GOLD_FINANCING_STATE"
+    ],
+    "PRECIOUS_COMPLEX": [
+      "SILVER_PRICE_RESPONSE"
+    ],
+    "OFFICIAL_GOLD_DEMAND": [
+      "GOLD_DEMAND_TRENDS"
+    ]
+  },
+  "count_unique_groups_for_p04_thresholds": true
+}

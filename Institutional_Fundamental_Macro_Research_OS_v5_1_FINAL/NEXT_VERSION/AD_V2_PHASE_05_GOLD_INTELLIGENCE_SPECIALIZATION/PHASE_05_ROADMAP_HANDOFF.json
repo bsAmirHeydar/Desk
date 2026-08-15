@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "next_phase": "AD-V2-P06",
+  "next_phase_name": "RUN2 Capsule Persistence and UX Integration",
+  "p06_mission": "Wire P02 Pressure, P03 Transmission, P04 Latent/Release and P05 Gold specialization into the one-command Run contract, Run Capsule/history/change detection and Alpha Desk command-center UI without promoting shadow science into broker authority.",
+  "p05_complete": [
+    "Gold role/source/venue constitution",
+    "Gold adapter runtime",
+    "Gold observability and independence map",
+    "Gold release evidence policy",
+    "Gold missing-driver search order"
+  ],
+  "still_shadow_only": true
+}

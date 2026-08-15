@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "templates": [
+    {
+      "event_type": "US_MAJOR_MACRO",
+      "effect": "EVENT_RESET",
+      "clock_source_required": true,
+      "typical_source_ids": [
+        "BLS_MACRO",
+        "CENSUS_RETAIL"
+      ],
+      "pre_event_readiness_cap": "WATCH"
+    },
+    {
+      "event_type": "FOMC_POLICY",
+      "effect": "P02_AND_P03_RECOMPUTE",
+      "clock_source_required": true,
+      "typical_source_ids": [
+        "FED_POLICY"
+      ],
+      "pre_event_readiness_cap": "WATCH"
+    },
+    {
+      "event_type": "TREASURY_AUCTION",
+      "effect": "RATES_PATHWAY_RESET",
+      "clock_source_required": true,
+      "typical_source_ids": [
+        "UST_AUCTIONS"
+      ],
+      "pre_event_readiness_cap": "WATCH"
+    },
+    {
+      "event_type": "COMEX_EXPIRY_ROLL_SETTLEMENT",
+      "effect": "MECHANICS_RESET",
+      "clock_source_required": true,
+      "typical_source_ids": [
+        "CME_METALS"
+      ],
+      "pre_event_readiness_cap": "WATCH"
+    },
+    {
+      "event_type": "UNSCHEDULED_GEOPOLITICAL",
+      "effect": "P02_RECOMPUTE_IF_CAUSAL",
+      "clock_source_required": false,
+      "typical_source_ids": [
+        "GEOPOLITICAL_EVIDENCE"
+      ],
+      "pre_event_readiness_cap": "WATCH"
+    }
+  ],
+  "registry_is_not_current_calendar": true
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "name": "Gold Intelligence Specialization",
+  "version": "0.5.0",
+  "status": "SHADOW_ONLY",
+  "baseline": "V1 closed + P00 + P01 + P02 + P03 + P04",
+  "mission": "Bind generic causal-pressure/transmission/latent-release science to Gold-specific instruments, sources, roles, cadence, independence and observability without granting a new Direction, Pressure, Release or trade authority.",
+  "authorities": {
+    "direction_pressure": "AD-V2-P02",
+    "price_transmission": "AD-V2-P03",
+    "latent_release": "AD-V2-P04",
+    "gold_specialization": "AD-V2-P05_ADAPTER_ONLY",
+    "trade_permission": "UNCHANGED",
+    "broker": "NONE"
+  },
+  "hard_invariants": [
+    "XAUUSD_PRICE_DOWNSTREAM_ONLY",
+    "COMEX_NOT_GLOBAL_GOLD",
+    "VOLUME_NOT_FLOW",
+    "OI_NOT_DIRECTION",
+    "OPTIONS_OI_NOT_DEALER_SIGN",
+    "ETF_AUM_NOT_FLOW",
+    "CFTC_NOT_LIVE_FLOW",
+    "LBMA_CLEARING_NOT_DIRECTIONAL_FLOW",
+    "MISSING_OTC_NOT_NEUTRAL",
+    "NO_ROLE_OVERRIDE",
+    "NO_SINGLE_VENUE_COMPLETENESS"
+  ],
+  "next_phase": "AD-V2-P06 RUN2 Capsule Persistence UX Integration"
+}

@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "sources": [
+    {
+      "source_id": "XAUUSD_RUNTIME_FEED",
+      "v1_source_key": null,
+      "access": "RUNTIME_PROVIDER_REQUIRED",
+      "cadence": "REALTIME_OR_PROVIDER_SPECIFIC",
+      "coverage": "TARGET_SPOT_PRICE",
+      "hard_boundary": "Target price only; provider must be named."
+    },
+    {
+      "source_id": "GC_RUNTIME_FEED",
+      "v1_source_key": "CME_METALS",
+      "access": "PUBLIC_OR_LICENSED_PROVIDER",
+      "cadence": "REALTIME_OR_PROVIDER_SPECIFIC",
+      "coverage": "COMEX_GC_PRICE",
+      "hard_boundary": "GC price is not global Gold price or independent target confirmation."
+    },
+    {
+      "source_id": "DXY_RUNTIME_FEED",
+      "v1_source_key": null,
+      "access": "RUNTIME_PROVIDER_REQUIRED",
+      "cadence": "REALTIME_OR_PROVIDER_SPECIFIC",
+      "coverage": "USD_INDEX",
+      "hard_boundary": "DXY is euro-heavy and not the whole USD complex."
+    },
+    {
+      "source_id": "UST2Y_RUNTIME_FEED",
+      "v1_source_key": null,
+      "access": "RUNTIME_PROVIDER_REQUIRED",
+      "cadence": "REALTIME_OR_PROVIDER_SPECIFIC",
+      "coverage": "US_2Y_YIELD",
+      "hard_boundary": "Market yield is a pathway state; source/provider must be retained."
+    },
+    {
+      "source_id": "UST10Y_RUNTIME_FEED",
+      "v1_source_key": null,
+      "access": "RUNTIME_PROVIDER_REQUIRED",
+      "cadence": "REALTIME_OR_PROVIDER_SPECIFIC",
+      "coverage": "US_10Y_YIELD",
+      "hard_boundary": "Nominal yield is not real yield."
+    },
+    {
+      "source_id": "UST10Y_TIPS_RUNTIME_FEED",
+      "v1_source_key": "FRED",
+      "access": "RUNTIME_PROVIDER_OR_OFFICIAL_DELAYED",
+      "cadence": "REALTIME_IF_LICENSED_OR_DAILY_OFFICIAL",
+      "coverage": "US_REAL_YIELD",
+      "hard_boundary": "Do not pretend delayed official series is live intraday."
+    },
+    {
+      "source_id": "SILVER_RUNTIME_FEED",
+      "v1_source_key": "CME_METALS",
+      "access": "PUBLIC_OR_LICENSED_PROVIDER",
+      "cadence": "REALTIME_OR_PROVIDER_SPECIFIC",
+      "coverage": "SILVER_CROSS_ASSET",
+      "hard_boundary": "Silver has independent industrial drivers; diagnostic by default."
+    },
+    {
+      "source_id": "FED_POLICY",
+      "v1_source_key": "FED_FOMC",
+      "access": "PUBLIC_FREE",
+      "cadence": "EVENT/MEETING",
+      "coverage": "POLICY_FACT",
+      "hard_boundary": "Policy fact is not market repricing by itself."
+    },
+    {
+      "source_id": "CME_FEDWATCH",
+      "v1_source_key": "CME_FEDWATCH",
+      "access": "PUBLIC_FREE",
+      "cadence": "MARKET_IMPLIED/PROVIDER_SPECIFIC",
+      "coverage": "POLICY_EXPECTATIONS",
+      "hard_boundary": "Model/display of futures-implied probabilities; not official Fed intent."
+    },
+    {
+      "source_id": "WGC_ETF",
+      "v1_source_key": "WGC_ETF",
+      "access": "PUBLIC_FREE",
+      "cadence": "DAILY_OR_PRODUCT_SPECIFIC",
+      "coverage": "GLOBAL_GOLD_ETF_SUBSET",
+      "hard_boundary": "ETF flow is not total Gold demand; AUM price effect must be separated."
+    },
+    {
+      "source_id": "ETF_SPONSOR",
+      "v1_source_key": "ETF_SPONSOR_DISCLOSURE",
+      "access": "PUBLIC_PRODUCT_SPECIFIC",
+      "cadence": "PRODUCT_SPECIFIC",
+      "coverage": "ETF_PRODUCT",
+      "hard_boundary": "Product-specific; AUM change is not automatically flow."
+    },
+    {
+      "source_id": "WGC_GDT",
+      "v1_source_key": "WGC_GDT",
+      "access": "PUBLIC_FREE",
+      "cadence": "QUARTERLY/PERIODIC",
+      "coverage": "STRUCTURAL_GOLD_DEMAND",
+      "hard_boundary": "Structural/cyclical; not intraday flow."
+    },
+    {
+      "source_id": "CFTC_COT",
+      "v1_source_key": "CFTC_COT",
+      "access": "PUBLIC_FREE",
+      "cadence": "WEEKLY_LAGGED",
+      "coverage": "REGULATED_FUTURES_POSITIONING",
+      "hard_boundary": "Not live flow and not global Gold positioning."
+    },
+    {
+      "source_id": "CME_VOLUME_OI",
+      "v1_source_key": "CME_VOLUME_OI",
+      "access": "PUBLIC_FREE",
+      "cadence": "DAILY/PRODUCT_SPECIFIC",
+      "coverage": "LISTED_ACTIVITY_OI",
+      "hard_boundary": "Volume is activity; OI is outstanding contracts; neither is signed flow alone."
+    },
+    {
+      "source_id": "CME_MARKET_DEPTH",
+      "v1_source_key": "CME_MARKET_DEPTH",
+      "access": "SUBSCRIPTION_REQUIRED",
+      "cadence": "REALTIME/HISTORICAL",
+      "coverage": "GC_TRADES_DEPTH_MBO",
+      "hard_boundary": "Displayed/listed liquidity is not total latent/global OTC liquidity."
+    },
+    {
+      "source_id": "CME_GOLD_STOCKS_DELIVERIES",
+      "v1_source_key": "CME_GOLD_STOCKS_DELIVERIES",
+      "access": "PUBLIC_FREE",
+      "cadence": "DAILY",
+      "coverage": "COMEX_STOCKS_DELIVERIES",
+      "hard_boundary": "COMEX-deliverable subset, not global inventory/demand."
+    },
+    {
+      "source_id": "LBMA_TRADE_DATA",
+      "v1_source_key": "LBMA_TRADE_DATA",
+      "access": "SUBSCRIPTION_REQUIRED",
+      "cadence": "PRODUCT_SPECIFIC_DELAYED_AGGREGATE",
+      "coverage": "LONDON_OTC_TRADE_SUBSET",
+      "hard_boundary": "Aggregate trade data is not client flow or whole global market."
+    },
+    {
+      "source_id": "LBMA_CLEARING",
+      "v1_source_key": "LBMA_CLEARING_DATA",
+      "access": "PUBLIC_DELAYED",
+      "cadence": "MONTHLY_LAGGED",
+      "coverage": "LONDON_CLEARING_ACTIVITY",
+      "hard_boundary": "Clearing volume is not directional flow or full OTC capacity."
+    },
+    {
+      "source_id": "LBMA_VAULT",
+      "v1_source_key": "LBMA_VAULT_DATA",
+      "access": "PUBLIC_DELAYED",
+      "cadence": "MONTHLY_LAGGED",
+      "coverage": "LONDON_VAULT_STOCK",
+      "hard_boundary": "Vault stock is not daily flow or global inventory."
+    },
+    {
+      "source_id": "NYFED_DEALERS",
+      "v1_source_key": "NYFED_DEALERS",
+      "access": "PUBLIC_FREE",
+      "cadence": "WEEKLY",
+      "coverage": "DEALER_BALANCE_SHEET",
+      "hard_boundary": "Indirect funding/capacity state; not Gold client flow."
+    },
+    {
+      "source_id": "NYFED_REPO_RRP",
+      "v1_source_key": "NYFED_REPO_RRP",
+      "access": "PUBLIC_FREE",
+      "cadence": "DAILY/OPERATION",
+      "coverage": "USD_FUNDING",
+      "hard_boundary": "System funding state, not a standalone Gold direction signal."
+    },
+    {
+      "source_id": "UST_AUCTIONS",
+      "v1_source_key": "UST_AUCTIONS",
+      "access": "PUBLIC_FREE",
+      "cadence": "EVENT",
+      "coverage": "TREASURY_AUCTION",
+      "hard_boundary": "Auction metrics require reference/when-issued context; event can reset rates transmission."
+    },
+    {
+      "source_id": "CFTC_PART43",
+      "v1_source_key": "CFTC_PART43",
+      "access": "PUBLIC_FREE",
+      "cadence": "TRANSACTION/DELAYED_BY_RULE",
+      "coverage": "PUBLIC_SWAP_TRANSACTIONS",
+      "hard_boundary": "Partial reportable swap universe, not complete Gold/rates flow."
+    },
+    {
+      "source_id": "BLS_MACRO",
+      "v1_source_key": "BLS_CPI/BLS_PPI/BLS_EMP",
+      "access": "PUBLIC_FREE",
+      "cadence": "SCHEDULED_EVENT",
+      "coverage": "US_MACRO_EVENTS",
+      "hard_boundary": "Release fact affects Pressure only through a causal surprise/repricing interpretation."
+    },
+    {
+      "source_id": "CENSUS_RETAIL",
+      "v1_source_key": "CENSUS_RETAIL",
+      "access": "PUBLIC_FREE",
+      "cadence": "SCHEDULED_EVENT",
+      "coverage": "US_RETAIL_EVENT",
+      "hard_boundary": "Calendar alone is event risk, not directional Pressure."
+    },
+    {
+      "source_id": "GEOPOLITICAL_EVIDENCE",
+      "v1_source_key": null,
+      "access": "SOURCE_SPECIFIC",
+      "cadence": "UNSCHEDULED",
+      "coverage": "GEOPOLITICAL_RISK",
+      "hard_boundary": "Requires named evidence; headline alone is not permanent Gold demand."
+    },
+    {
+      "source_id": "ASIA_PHYSICAL_EVIDENCE",
+      "v1_source_key": null,
+      "access": "SOURCE_SPECIFIC",
+      "cadence": "DAILY/PERIODIC",
+      "coverage": "REGIONAL_PHYSICAL",
+      "hard_boundary": "Location-specific premium/import evidence; source and unit must be named."
+    },
+    {
+      "source_id": "GOLD_FINANCING_EVIDENCE",
+      "v1_source_key": null,
+      "access": "LICENSED_OR_SOURCE_SPECIFIC",
+      "cadence": "PRODUCT_SPECIFIC",
+      "coverage": "LEASE_BASIS_PHYSICAL_FINANCING",
+      "hard_boundary": "Unavailable unless directly sourced; never proxied as complete OTC financing."
+    }
+  ],
+  "registered_source_is_not_assumed_available": true
+}

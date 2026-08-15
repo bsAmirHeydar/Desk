@@ -1,0 +1,75 @@
+[
+  {
+    "observation_id": "xau",
+    "metric_id": "XAUUSD_RETURN",
+    "source_id": "XAUUSD_RUNTIME_FEED",
+    "provider_id": "TEST_PROVIDER",
+    "observed_at_utc": "2026-08-15T10:00:00Z",
+    "status": "AVAILABLE",
+    "value": -0.4
+  },
+  {
+    "observation_id": "dxy",
+    "metric_id": "DXY_STATE",
+    "source_id": "DXY_RUNTIME_FEED",
+    "provider_id": "TEST_PROVIDER",
+    "observed_at_utc": "2026-08-15T10:00:00Z",
+    "status": "AVAILABLE",
+    "value": -0.2
+  },
+  {
+    "observation_id": "tips",
+    "metric_id": "UST10Y_TIPS_STATE",
+    "source_id": "UST10Y_TIPS_RUNTIME_FEED",
+    "provider_id": "TEST_PROVIDER",
+    "observed_at_utc": "2026-08-15T10:00:00Z",
+    "status": "AVAILABLE",
+    "causal_interpretation": {
+      "polarity": "BUY",
+      "magnitude_range": {
+        "low": 55,
+        "high": 70
+      },
+      "mechanism": "lower real discount rate supports non-yielding Gold"
+    },
+    "provenance_ref": "TEST:TIPS"
+  },
+  {
+    "observation_id": "policy",
+    "metric_id": "POLICY_REPRICING_STATE",
+    "source_id": "CME_FEDWATCH",
+    "observed_at_utc": "2026-08-15T10:00:00Z",
+    "status": "AVAILABLE",
+    "causal_interpretation": {
+      "polarity": "BUY",
+      "magnitude_range": {
+        "low": 60,
+        "high": 75
+      },
+      "mechanism": "lower expected policy path reduces Gold opportunity cost"
+    },
+    "provenance_ref": "TEST:POLICY"
+  },
+  {
+    "observation_id": "flow",
+    "metric_id": "GC_SIGNED_TRADE_IMBALANCE",
+    "source_id": "CME_MARKET_DEPTH",
+    "observed_at_utc": "2026-08-15T10:00:00Z",
+    "status": "AVAILABLE",
+    "state_code": "OPPOSING_FLOW_DECAYING",
+    "strength": "HIGH",
+    "confidence": "HIGH",
+    "provenance_ref": "TEST:MBO"
+  },
+  {
+    "observation_id": "depth",
+    "metric_id": "GC_DEPTH_RESILIENCY",
+    "source_id": "CME_MARKET_DEPTH",
+    "observed_at_utc": "2026-08-15T10:00:00Z",
+    "status": "AVAILABLE",
+    "state_code": "RELEASE_MECHANICS_SUPPORT",
+    "strength": "MEDIUM",
+    "confidence": "HIGH",
+    "provenance_ref": "TEST:DEPTH"
+  }
+]
