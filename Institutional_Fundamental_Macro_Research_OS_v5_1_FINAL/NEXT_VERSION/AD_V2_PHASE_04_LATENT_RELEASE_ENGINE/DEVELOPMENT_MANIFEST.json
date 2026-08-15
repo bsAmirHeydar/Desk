@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P04",
+  "version": "0.4.0",
+  "name": "Latent Pressure Maturity and Release Engine",
+  "status": "COMPLETE_SHADOW_PENDING_INSTALL",
+  "deployment": "SHADOW_ONLY",
+  "baseline": "V1 closed + P00 + P01 + P02 + P03",
+  "production_authority_changed": false,
+  "pressure_authority_changed": false,
+  "transmission_authority_changed": false,
+  "broker_authority": "NONE",
+  "adds": [
+    "Unreleased Pressure",
+    "Opposing-Move Maturity",
+    "Transmission Inflection",
+    "Latent Causal Reserve",
+    "Release Readiness",
+    "Release Lifecycle",
+    "Liquidity hypothesis support with anti-storytelling",
+    "P02 recompute blockers",
+    "Event reset veto"
+  ],
+  "does_not_add": [
+    "Trade permission",
+    "Technical trigger ownership",
+    "Probability",
+    "Expected return",
+    "Gold-specific adapters",
+    "Broker execution"
+  ],
+  "next_phase": "AD-V2-P05 Gold Intelligence Specialization"
+}

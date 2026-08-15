@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P04",
+  "scale": [
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "VERY_HIGH",
+    "UNDETERMINED"
+  ],
+  "maximum_pre_calibration_class": "VERY_HIGH",
+  "not_probability": true,
+  "inputs": [
+    "P02 pressure magnitude",
+    "P02 remaining causal pressure",
+    "P02 persistence",
+    "P02 driver consumption",
+    "P03 transmission state",
+    "P03 counterfactual residual",
+    "P03 efficiency",
+    "independent pressure continuity evidence"
+  ],
+  "forbidden_formulas": [
+    "PRESSURE_MINUS_PRICE",
+    "PRICE_DISTANCE_TO_UNRELEASED",
+    "TIME_ELAPSED_TO_UNRELEASED"
+  ],
+  "decision_critical_missing_driver_behavior": "UNDETERMINED"
+}

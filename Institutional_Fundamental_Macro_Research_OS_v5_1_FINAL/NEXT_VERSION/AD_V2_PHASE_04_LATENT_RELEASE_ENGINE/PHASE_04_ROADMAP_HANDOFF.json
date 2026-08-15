@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P04",
+  "status": "COMPLETE_SHADOW_PENDING_INSTALL",
+  "next_phase": "AD-V2-P05",
+  "next_phase_name": "Gold Intelligence Specialization",
+  "handoff_objects": [
+    "P02 Directional Pressure",
+    "P03 Price Transmission",
+    "P04 Unreleased Pressure",
+    "Opposing-Move Maturity",
+    "Latent Causal Reserve",
+    "Release Readiness",
+    "Release Lifecycle"
+  ],
+  "p05_mission": "Bind generic P02-P04 science to Gold-specific evidence adapters, timing regimes and dependency-aware diagnostics without granting production authority.",
+  "hard_laws": [
+    "No target-price authority over pressure",
+    "No price-only maturity",
+    "No price-only release",
+    "No absorption/liquidity confirmation from price alone"
+  ]
+}

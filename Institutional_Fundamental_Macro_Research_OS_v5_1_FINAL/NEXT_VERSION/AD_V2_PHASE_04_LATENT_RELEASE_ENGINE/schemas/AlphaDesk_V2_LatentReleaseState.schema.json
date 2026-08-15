@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaDesk V2 Latent Pressure Maturity and Release State",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "phase",
+    "version",
+    "deployment",
+    "status",
+    "integrity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "phase": {
+      "const": "AD-V2-P04"
+    },
+    "version": {
+      "type": "string"
+    },
+    "deployment": {
+      "const": "SHADOW_ONLY"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL_CLOSED"
+      ]
+    },
+    "as_of_utc": {
+      "type": "string"
+    },
+    "active_horizon": {
+      "type": "string"
+    },
+    "upstream_pressure_reference": {
+      "type": "object"
+    },
+    "upstream_transmission_reference": {
+      "type": "object"
+    },
+    "evidence_summary": {
+      "type": "object"
+    },
+    "unreleased_pressure": {
+      "type": "object",
+      "properties": {
+        "class": {
+          "enum": [
+            "LOW",
+            "MEDIUM",
+            "HIGH",
+            "VERY_HIGH",
+            "UNDETERMINED"
+          ]
+        }
+      }
+    },
+    "opposing_move_maturity": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "enum": [
+            "UNRESOLVED",
+            "FORMING",
+            "ACTIVE",
+            "MATURE",
+            "EXHAUSTING",
+            "EXHAUSTED"
+          ]
+        }
+      }
+    },
+    "transmission_inflection": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "enum": [
+            "IMPROVING_FAST",
+            "IMPROVING",
+            "STABLE",
+            "DETERIORATING",
+            "UNKNOWN"
+          ]
+        }
+      }
+    },
+    "latent_causal_reserve": {
+      "type": "object",
+      "properties": {
+        "class": {
+          "enum": [
+            "LOW",
+            "BUILDING",
+            "ELEVATED",
+            "HIGH",
+            "VERY_HIGH",
+            "UNDETERMINED"
+          ]
+        }
+      }
+    },
+    "release_readiness": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "enum": [
+            "BLOCKED_UNRESOLVED",
+            "NOT_READY",
+            "WATCH",
+            "PRE_RELEASE",
+            "HIGH_READINESS"
+          ]
+        }
+      }
+    },
+    "release_lifecycle": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "enum": [
+            "PRESSURE_BUILDING",
+            "DIVERGENCE",
+            "OPPOSING_MOVE_ACTIVE",
+            "PRE_RELEASE",
+            "RELEASE_CANDIDATE",
+            "RELEASE",
+            "EXPANSION",
+            "CONSUMPTION",
+            "EXHAUSTION",
+            "UNDETERMINED"
+          ]
+        }
+      }
+    },
+    "liquidity_hypotheses": {
+      "type": "object"
+    },
+    "research_blockers": {
+      "type": "array"
+    },
+    "confidence": {
+      "type": "object"
+    },
+    "integrity": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

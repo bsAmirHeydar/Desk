@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P04",
+  "states": [
+    "UNRESOLVED",
+    "FORMING",
+    "ACTIVE",
+    "MATURE",
+    "EXHAUSTING",
+    "EXHAUSTED"
+  ],
+  "hard_veto_roles": [
+    "NEW_CAUSAL_DRIVER_AGAINST_PRESSURE",
+    "REPLACEMENT_OPPOSING_DRIVER"
+  ],
+  "active_roles": [
+    "OPPOSING_DRIVER_ACTIVE",
+    "OPPOSING_FLOW_ACTIVE",
+    "POSITIONING_UNWIND_ACTIVE",
+    "FUNDING_HEADWIND_ACTIVE",
+    "MECHANICAL_HEADWIND_ACTIVE"
+  ],
+  "exhaustion_roles": [
+    "OPPOSING_FLOW_DECAYING",
+    "POSITIONING_UNWIND_EXHAUSTING",
+    "FUNDING_HEADWIND_EASING",
+    "MECHANICAL_HEADWIND_EASING"
+  ],
+  "price_distance_counts_as_evidence": false,
+  "elapsed_time_counts_as_evidence": false,
+  "exhausted_min_independent_exhaustion_groups": 3
+}

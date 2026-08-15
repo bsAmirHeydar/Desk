@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P04",
+  "cases": [
+    {
+      "id": "PRICE_DISTANCE_NOT_MATURITY",
+      "expected": "PASS",
+      "law": "Changing only target-price distance cannot independently promote maturity."
+    },
+    {
+      "id": "TIME_NOT_MATURITY",
+      "expected": "PASS",
+      "law": "Elapsed time alone cannot promote opposing-move maturity."
+    },
+    {
+      "id": "PRICE_FLIP_NOT_RELEASE",
+      "expected": "PASS",
+      "law": "Aligned target-price flip without independent release support cannot produce RELEASE."
+    },
+    {
+      "id": "NEW_CAUSAL_DRIVER_BLOCKS",
+      "expected": "PASS",
+      "law": "New causal driver against pressure requires P02 recompute and blocks latent promotion."
+    },
+    {
+      "id": "INDEPENDENCE_GROUP_DEDUP",
+      "expected": "PASS",
+      "law": "Two observations from one group count once."
+    },
+    {
+      "id": "ABSORPTION_NO_PRICE_CONFIRM",
+      "expected": "PASS",
+      "law": "Price action alone cannot support absorption."
+    },
+    {
+      "id": "EVENT_RESET_CAP",
+      "expected": "PASS",
+      "law": "High event reset risk caps readiness at WATCH."
+    },
+    {
+      "id": "UNRELEASED_NOT_PRICE_MINUS_PRESSURE",
+      "expected": "PASS",
+      "law": "Unreleased pressure is conjunctive and ordinal."
+    },
+    {
+      "id": "RELEASE_TWO_GROUPS",
+      "expected": "PASS",
+      "law": "RELEASE needs at least two independent non-price release groups."
+    },
+    {
+      "id": "UPSTREAM_HASH_INTEGRITY",
+      "expected": "PASS",
+      "law": "P03 must reference exact P02 pressure fingerprint."
+    }
+  ]
+}

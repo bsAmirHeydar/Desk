@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P04",
+  "requires": [
+    {
+      "phase": "AD-V2-P00",
+      "path": "NEXT_VERSION/AD_V2_PHASE_00_PRESSURE_PRICE_CONSTITUTION/DEVELOPMENT_MANIFEST.json",
+      "sha256": "a38bc594860fd0d86370888fca6809ecea5ada38933db36f690fb0ff9ccd2ce3"
+    },
+    {
+      "phase": "AD-V2-P01",
+      "path": "NEXT_VERSION/AD_V2_PHASE_01_RUNTIME_SEMANTIC_REPAIR/DEVELOPMENT_MANIFEST.json",
+      "sha256": "be6e4b711581d232c699af09f6925595af287086e5db99e4e2b3a955c38c6b64"
+    },
+    {
+      "phase": "AD-V2-P02",
+      "path": "NEXT_VERSION/AD_V2_PHASE_02_DIRECTIONAL_PRESSURE_ENGINE/DEVELOPMENT_MANIFEST.json",
+      "sha256": "b51e1f8ce5376d56325fddaa8dc8595ea635eac18915ce42d4f34cfca4e883fa"
+    },
+    {
+      "phase": "AD-V2-P02_RUNTIME",
+      "path": "NEXT_VERSION/AD_V2_PHASE_02_DIRECTIONAL_PRESSURE_ENGINE/runtime/directional_pressure.py",
+      "sha256": "0263c51bdb2781236513e7eefe2bd6b235545d2c17a22779e13e483a45c15a2a"
+    },
+    {
+      "phase": "AD-V2-P03",
+      "path": "NEXT_VERSION/AD_V2_PHASE_03_PRICE_TRANSMISSION_ENGINE/DEVELOPMENT_MANIFEST.json",
+      "sha256": "c00d7860b6ff00a6776cd262e8ca7ada54714a6bb4a3ba72b886273aef30fc12"
+    },
+    {
+      "phase": "AD-V2-P03_RUNTIME",
+      "path": "NEXT_VERSION/AD_V2_PHASE_03_PRICE_TRANSMISSION_ENGINE/runtime/price_transmission.py",
+      "sha256": "d29545e4c8db2b21f7f1eb70ed27ba5f869ac235a94826aa05515638401ef699"
+    },
+    {
+      "phase": "AD-V2-P03_POLICY",
+      "path": "NEXT_VERSION/AD_V2_PHASE_03_PRICE_TRANSMISSION_ENGINE/config/transmission_state_policy.json",
+      "sha256": "0b64534a219c62d085a3ada8f850cd657e81c0ac059e47e3967d4cf05685a53b"
+    }
+  ]
+}

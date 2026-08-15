@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P04",
+  "readiness": [
+    "BLOCKED_UNRESOLVED",
+    "NOT_READY",
+    "WATCH",
+    "PRE_RELEASE",
+    "HIGH_READINESS"
+  ],
+  "lifecycle": [
+    "PRESSURE_BUILDING",
+    "DIVERGENCE",
+    "OPPOSING_MOVE_ACTIVE",
+    "PRE_RELEASE",
+    "RELEASE_CANDIDATE",
+    "RELEASE",
+    "EXPANSION",
+    "CONSUMPTION",
+    "EXHAUSTION",
+    "UNDETERMINED"
+  ],
+  "release_min_independent_non_price_groups": 2,
+  "release_requires_transmission_flip": true,
+  "event_reset_can_cap_readiness": "WATCH",
+  "trade_permission_added": false,
+  "empirical_probability_added": false
+}
