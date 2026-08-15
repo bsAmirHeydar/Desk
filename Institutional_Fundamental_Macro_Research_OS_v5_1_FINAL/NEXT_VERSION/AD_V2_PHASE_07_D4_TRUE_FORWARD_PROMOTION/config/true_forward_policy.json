@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P07",
+  "store_namespace": "alpha_desk_v2/p07_validation",
+  "true_forward_label": "TRUE_FORWARD",
+  "non_promotable_labels": [
+    "DEVELOPMENT_CASE",
+    "HISTORICAL_RECONSTRUCTION",
+    "HOLDOUT"
+  ],
+  "default_episode_key": "TRADING_DAY_HORIZON_ROOTSET",
+  "allow_relabel_to_true_forward": false,
+  "immutable_commitment": true,
+  "append_only_outcomes": true
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "status",
+    "commissioned",
+    "reason_codes",
+    "authority"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "V2_COMMISSIONING_RECEIPT"
+    }
+  },
+  "additionalProperties": true
+}

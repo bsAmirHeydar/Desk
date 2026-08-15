@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P07",
+  "rolling_true_forward_episodes": 30,
+  "min_window_episodes": 20,
+  "alerts": {
+    "coverage_drop_fraction": 0.25,
+    "mean_mfe_deterioration_r": 0.5,
+    "mae_worsening_r": 0.5,
+    "false_release_rate_increase": 0.15
+  },
+  "demotion_target": "SHADOW_ONLY",
+  "automatic_authority_change": false
+}

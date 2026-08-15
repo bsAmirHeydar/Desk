@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "decision_id",
+    "status",
+    "highest_eligible_class",
+    "gate_results",
+    "authority"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "V2_PROMOTION_DECISION"
+    }
+  },
+  "additionalProperties": true
+}

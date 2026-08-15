@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P07",
+  "version": "1.0.0",
+  "bootstrap_iterations": 1000,
+  "bootstrap_seed": 37,
+  "preferred_cluster_key": "independent_episode_key",
+  "fallback_cluster_key": "trading_day",
+  "ordinal_axes": {
+    "release_readiness": [
+      "NOT_READY",
+      "WATCH",
+      "PRE_RELEASE",
+      "HIGH_READINESS"
+    ],
+    "unreleased_pressure": [
+      "LOW",
+      "MEDIUM",
+      "HIGH",
+      "VERY_HIGH"
+    ],
+    "opposing_move_maturity": [
+      "FORMING",
+      "ACTIVE",
+      "MATURE",
+      "EXHAUSTING",
+      "EXHAUSTED"
+    ]
+  },
+  "report_metrics": [
+    "n",
+    "independent_episodes",
+    "trading_days",
+    "mean_mfe_r",
+    "median_mfe_r",
+    "mean_mae_r",
+    "median_mae_r",
+    "mean_realized_r",
+    "profit_factor_realized",
+    "mfe_2r_rate",
+    "mfe_5r_rate",
+    "median_time_to_mfe_seconds"
+  ],
+  "baseline_models": [
+    "PRESSURE_ONLY",
+    "PRESSURE_PLUS_TRANSMISSION",
+    "FULL_V2_STATE"
+  ]
+}

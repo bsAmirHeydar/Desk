@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P07",
+  "name": "D4 Calibration True-Forward Validation and V2 Promotion",
+  "version": "0.7.0",
+  "deployment": "SHADOW_ONLY",
+  "v1_closed": true,
+  "p06_required": true,
+  "true_forward_required_before_promotion": true,
+  "auto_promotion": false,
+  "runtime_mainline_mutation": false,
+  "trade_permission": "V1_INHERITED",
+  "broker": "NONE"
+}

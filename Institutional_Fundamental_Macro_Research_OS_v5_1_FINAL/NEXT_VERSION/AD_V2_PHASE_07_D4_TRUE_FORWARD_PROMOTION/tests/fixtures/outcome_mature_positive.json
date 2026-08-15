@@ -1,0 +1,14 @@
+{
+  "record_type": "OUTCOME",
+  "outcome_id": "OUT_FIX_POS",
+  "run_id": "RUN_FIXTURE_002",
+  "maturity_state": "MATURE",
+  "matured_at_utc": "2026-08-14T18:30:00Z",
+  "realized_r": 3.0,
+  "mfe_r": 5.5,
+  "mae_r": 0.7,
+  "time_to_trigger_seconds": 600,
+  "time_to_mfe_seconds": 7200,
+  "cost_r": 0.05,
+  "exit_reason": "TEST_MATURE"
+}

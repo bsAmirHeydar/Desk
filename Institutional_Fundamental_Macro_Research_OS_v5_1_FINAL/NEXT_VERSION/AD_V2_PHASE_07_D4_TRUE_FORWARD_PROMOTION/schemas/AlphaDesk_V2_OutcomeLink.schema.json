@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "outcome_link_id",
+    "commitment_id",
+    "run_id",
+    "maturity_state",
+    "joined_at_utc",
+    "commitment_hash",
+    "outcome_hash",
+    "integrity"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "V2_OUTCOME_LINK"
+    },
+    "maturity_state": {
+      "enum": [
+        "IMMATURE",
+        "MATURE",
+        "EXPIRY_WITHOUT_TRIGGER",
+        "UNSCORABLE"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P07",
+  "version": "1.0.0",
+  "auto_promote": false,
+  "independent_validator_required": true,
+  "operator_approval_required": true,
+  "direction_flip_allowed": false,
+  "positive_permission_creation_allowed": false,
+  "broker_authority": "NONE",
+  "gates": {
+    "RESEARCH_VALIDATED": {
+      "min_mature_true_forward_episodes": 30,
+      "min_true_forward_trading_days": 20,
+      "min_distinct_regimes": 3,
+      "require_holdout_nonnegative": true,
+      "require_true_forward_nonnegative": true
+    },
+    "MAINLINE_PRESENTATION_CANDIDATE": {
+      "min_mature_true_forward_episodes": 60,
+      "min_true_forward_trading_days": 40,
+      "min_distinct_regimes": 4,
+      "require_incremental_value": true,
+      "require_tail_nonworse": true,
+      "require_bootstrap_lower_bound_nonnegative": true
+    },
+    "DECISION_SUPPORT_CANDIDATE": {
+      "min_mature_true_forward_episodes": 100,
+      "min_true_forward_trading_days": 60,
+      "min_distinct_regimes": 4,
+      "require_incremental_value": true,
+      "require_tail_nonworse": true,
+      "require_bootstrap_lower_bound_positive": true,
+      "require_drift_clear": true
+    },
+    "PERMISSION_MODULATION_CANDIDATE": {
+      "min_mature_true_forward_episodes": 150,
+      "min_true_forward_trading_days": 90,
+      "min_distinct_regimes": 5,
+      "require_incremental_value": true,
+      "require_tail_nonworse": true,
+      "require_bootstrap_lower_bound_positive": true,
+      "require_drift_clear": true,
+      "requires_existing_d4_promoted_rule": true
+    }
+  }
+}

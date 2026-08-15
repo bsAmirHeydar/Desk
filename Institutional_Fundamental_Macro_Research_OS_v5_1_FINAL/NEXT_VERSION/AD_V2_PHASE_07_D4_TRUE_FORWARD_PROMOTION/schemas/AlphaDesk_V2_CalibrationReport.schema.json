@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "report_id",
+    "status",
+    "sample_counts",
+    "state_metrics",
+    "incremental_value",
+    "true_forward",
+    "integrity"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "V2_CALIBRATION_REPORT"
+    }
+  },
+  "additionalProperties": true
+}

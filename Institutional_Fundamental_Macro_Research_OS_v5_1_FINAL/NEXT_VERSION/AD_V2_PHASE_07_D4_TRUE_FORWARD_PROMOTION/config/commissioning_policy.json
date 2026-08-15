@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P07",
+  "initial_state": "NOT_COMMISSIONED_TRUE_FORWARD_PENDING",
+  "commissionable_classes": [
+    "MAINLINE_PRESENTATION_CANDIDATE",
+    "DECISION_SUPPORT_CANDIDATE"
+  ],
+  "requires_independent_validator": true,
+  "requires_operator_approval": true,
+  "runtime_mutation_performed_by_p07": false,
+  "trade_permission_remains_v1_until_separate_governed_promotion": true,
+  "broker": "NONE"
+}

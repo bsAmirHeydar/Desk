@@ -1,0 +1,7 @@
+{
+  "record_type": "OUTCOME",
+  "outcome_id": "OUT_FIX_IMM",
+  "run_id": "RUN_FIXTURE_002",
+  "maturity_state": "IMMATURE",
+  "matured_at_utc": "2026-08-14T13:00:00Z"
+}

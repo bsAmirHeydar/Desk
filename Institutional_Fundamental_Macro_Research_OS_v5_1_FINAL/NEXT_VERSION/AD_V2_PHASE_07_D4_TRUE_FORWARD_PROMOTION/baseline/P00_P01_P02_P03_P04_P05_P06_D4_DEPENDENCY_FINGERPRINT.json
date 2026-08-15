@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P07",
+  "dependencies": [
+    {
+      "phase": "AD-V2-P00",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_00_PRESSURE_PRICE_CONSTITUTION/DEVELOPMENT_MANIFEST.json",
+      "sha256": "a38bc594860fd0d86370888fca6809ecea5ada38933db36f690fb0ff9ccd2ce3"
+    },
+    {
+      "phase": "AD-V2-P01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_01_RUNTIME_SEMANTIC_REPAIR/DEVELOPMENT_MANIFEST.json",
+      "sha256": "be6e4b711581d232c699af09f6925595af287086e5db99e4e2b3a955c38c6b64"
+    },
+    {
+      "phase": "AD-V2-P02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_02_DIRECTIONAL_PRESSURE_ENGINE/DEVELOPMENT_MANIFEST.json",
+      "sha256": "b51e1f8ce5376d56325fddaa8dc8595ea635eac18915ce42d4f34cfca4e883fa"
+    },
+    {
+      "phase": "AD-V2-P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_03_PRICE_TRANSMISSION_ENGINE/DEVELOPMENT_MANIFEST.json",
+      "sha256": "c00d7860b6ff00a6776cd262e8ca7ada54714a6bb4a3ba72b886273aef30fc12"
+    },
+    {
+      "phase": "AD-V2-P04",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_04_LATENT_RELEASE_ENGINE/DEVELOPMENT_MANIFEST.json",
+      "sha256": "2ba20647a9cb673ec1b5dfa215cb518a746b65c3725acaecfadd31b0f4d6b3f3"
+    },
+    {
+      "phase": "AD-V2-P05",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_05_GOLD_INTELLIGENCE_SPECIALIZATION/DEVELOPMENT_MANIFEST.json",
+      "sha256": "32adfa55e3b02d1c4a4df9c808199e8b86565aa269d33bb615af57918d7fa24a"
+    },
+    {
+      "phase": "AD-V2-P06",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_06_RUN_MEMORY_UX_INTEGRATION/DEVELOPMENT_MANIFEST.json",
+      "sha256": "313f373b182efc8bd1476505b8f3faf85c2c77bd4c4a191f7c5d3f3ba72189ce"
+    },
+    {
+      "phase": "AD-V2-P06_RUNTIME",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_06_RUN_MEMORY_UX_INTEGRATION/runtime/run_overlay.py",
+      "sha256": "e4812a78b71ef7a884b41848b72b77c53471f0ef64d350a7e4f1d747a881816d"
+    },
+    {
+      "phase": "V1-D4-GOVERNANCE",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/102 Forward Validation Calibration Promotion and Scientific Governance Engine/config/d4_governance_policy.json",
+      "sha256": "3f20a9de6ac4bd0cd5ffb07031463eddb60170a8301efaaad79a0ee66fe1047f"
+    },
+    {
+      "phase": "V1-D4-OUTCOME-SCHEMA",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/102 Forward Validation Calibration Promotion and Scientific Governance Engine/schemas/AlphaLab_D4_Outcome.schema.json",
+      "sha256": "87b4f949cd6796905624a631720a6864fb739e815a69325880d54994694cdb43"
+    },
+    {
+      "phase": "V1-D4-XAU-BOOK",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/102 Forward Validation Calibration Promotion and Scientific Governance Engine/24 XAUUSD D4 Validation Book.md",
+      "sha256": "f91ecb0ca70bdc1527b3f0a7d5647d2998069ee08f5af13d8a7332a37a23fb35"
+    }
+  ]
+}

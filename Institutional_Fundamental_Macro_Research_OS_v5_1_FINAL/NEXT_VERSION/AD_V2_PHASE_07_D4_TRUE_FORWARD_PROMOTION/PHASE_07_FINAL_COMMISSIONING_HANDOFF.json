@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P07",
+  "engineering_complete": true,
+  "initial_empirical_state": "TRUE_FORWARD_PENDING",
+  "commissioned_at_install": false,
+  "future_actions": [
+    "ACCUMULATE_TRUE_FORWARD_COMMITMENTS",
+    "MATURE_OUTCOMES",
+    "RUN_CALIBRATION",
+    "INDEPENDENT_VALIDATOR_REVIEW",
+    "OPERATOR_APPROVAL_IF_GATES_PASS"
+  ],
+  "authorities": {
+    "v1_production": "UNCHANGED",
+    "trade_permission": "V1_INHERITED",
+    "broker": "NONE"
+  }
+}

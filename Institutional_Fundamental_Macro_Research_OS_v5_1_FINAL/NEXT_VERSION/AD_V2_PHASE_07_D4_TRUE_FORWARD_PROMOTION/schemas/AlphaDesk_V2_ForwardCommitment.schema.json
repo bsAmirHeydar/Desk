@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "commitment_id",
+    "run_id",
+    "subject",
+    "horizon",
+    "analysis_cutoff_utc",
+    "sealed_at_utc",
+    "sample_provenance",
+    "independent_episode_key",
+    "features",
+    "p06_state_hash",
+    "commitment_hash",
+    "integrity"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "V2_FORWARD_COMMITMENT"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "sample_provenance": {
+      "enum": [
+        "TRUE_FORWARD",
+        "DEVELOPMENT_CASE",
+        "HISTORICAL_RECONSTRUCTION",
+        "HOLDOUT"
+      ]
+    },
+    "features": {
+      "type": "object"
+    },
+    "integrity": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

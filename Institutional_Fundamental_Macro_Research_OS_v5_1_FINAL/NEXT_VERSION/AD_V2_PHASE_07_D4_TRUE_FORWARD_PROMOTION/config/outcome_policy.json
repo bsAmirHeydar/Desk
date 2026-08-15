@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P07",
+  "compatible_record_type": "OUTCOME",
+  "maturity_states": [
+    "IMMATURE",
+    "MATURE",
+    "EXPIRY_WITHOUT_TRIGGER",
+    "UNSCORABLE"
+  ],
+  "metrics": [
+    "mfe_r",
+    "mae_r",
+    "realized_r",
+    "time_to_trigger_seconds",
+    "time_to_mfe_seconds",
+    "cost_r"
+  ],
+  "counterfactual_requires_label": true,
+  "commitment_rewrite_allowed": false,
+  "outcome_before_commitment_forbidden": true
+}

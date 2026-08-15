@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P07",
+  "subject": "XAUUSD",
+  "features": [
+    {
+      "id": "pressure_class",
+      "owner": "P02",
+      "path": "science_v2.pressure.pressure_core.class",
+      "ordinal": true
+    },
+    {
+      "id": "pressure_sign",
+      "owner": "P02",
+      "path": "science_v2.pressure.pressure_core.sign"
+    },
+    {
+      "id": "pressure_trend",
+      "owner": "P02",
+      "path": "science_v2.pressure.pressure_dynamics.trend"
+    },
+    {
+      "id": "pressure_acceleration",
+      "owner": "P02",
+      "path": "science_v2.pressure.pressure_dynamics.acceleration"
+    },
+    {
+      "id": "remaining_causal_pressure",
+      "owner": "P02",
+      "path": "science_v2.pressure.remaining_causal_pressure.value"
+    },
+    {
+      "id": "transmission_state",
+      "owner": "P03",
+      "path": "science_v2.transmission.transmission_state.state"
+    },
+    {
+      "id": "transmission_efficiency",
+      "owner": "P03",
+      "path": "science_v2.transmission.transmission_efficiency.class",
+      "ordinal": true
+    },
+    {
+      "id": "residual_magnitude",
+      "owner": "P03",
+      "path": "science_v2.transmission.counterfactual_residual.magnitude_class",
+      "ordinal": true
+    },
+    {
+      "id": "missing_driver_escalation",
+      "owner": "P03",
+      "path": "science_v2.transmission.missing_driver_escalation.level"
+    },
+    {
+      "id": "unreleased_pressure",
+      "owner": "P04",
+      "path": "science_v2.latent_release.unreleased_pressure.class",
+      "ordinal": true
+    },
+    {
+      "id": "opposing_move_maturity",
+      "owner": "P04",
+      "path": "science_v2.latent_release.opposing_move_maturity.state",
+      "ordinal": true
+    },
+    {
+      "id": "latent_reserve",
+      "owner": "P04",
+      "path": "science_v2.latent_release.latent_causal_reserve.class",
+      "ordinal": true
+    },
+    {
+      "id": "transmission_inflection",
+      "owner": "P04",
+      "path": "science_v2.latent_release.transmission_inflection.state"
+    },
+    {
+      "id": "release_readiness",
+      "owner": "P04",
+      "path": "science_v2.latent_release.release_readiness.state",
+      "ordinal": true
+    },
+    {
+      "id": "release_lifecycle",
+      "owner": "P04",
+      "path": "science_v2.latent_release.release_lifecycle.state"
+    },
+    {
+      "id": "event_readiness_cap",
+      "owner": "P05",
+      "path": "science_v2.gold_intelligence.event_reset.release_readiness_cap_recommended"
+    },
+    {
+      "id": "gold_missing_driver_search",
+      "owner": "P05",
+      "path": "science_v2.gold_intelligence.missing_driver_search.required"
+    },
+    {
+      "id": "v1_permission",
+      "owner": "V1",
+      "path": "execution.permission"
+    }
+  ],
+  "forbidden_commitment_tokens": [
+    "mfe",
+    "mae",
+    "realized_r",
+    "future_price",
+    "exit_reason",
+    "matured_at",
+    "outcome",
+    "profit",
+    "loss"
+  ]
+}
