@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaDesk_V2_GoldRunState.schema.json",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "phase",
+    "status",
+    "run_id",
+    "subject",
+    "horizon",
+    "science_v2",
+    "execution",
+    "change_set",
+    "portable_memory",
+    "canonical_v2_state_hash",
+    "integrity"
+  ],
+  "properties": {
+    "phase": {
+      "const": "AD-V2-P06"
+    },
+    "status": {
+      "const": "PASS"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "science_v2": {
+      "type": "object",
+      "required": [
+        "pressure",
+        "transmission",
+        "latent_release",
+        "gold_intelligence"
+      ]
+    },
+    "execution": {
+      "type": "object",
+      "required": [
+        "permission",
+        "permission_source",
+        "v2_override_allowed",
+        "broker_authority"
+      ],
+      "properties": {
+        "permission_source": {
+          "const": "V1_BASE_CAPSULE"
+        },
+        "v2_override_allowed": {
+          "const": false
+        },
+        "broker_authority": {
+          "const": "NONE"
+        }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "status",
+        "pressure_price_separation_preserved"
+      ],
+      "properties": {
+        "status": {
+          "const": "PASS"
+        },
+        "pressure_price_separation_preserved": {
+          "const": true
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

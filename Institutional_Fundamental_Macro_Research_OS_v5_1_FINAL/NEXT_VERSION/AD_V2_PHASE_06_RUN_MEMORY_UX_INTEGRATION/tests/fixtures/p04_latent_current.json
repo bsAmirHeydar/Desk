@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P04",
+  "version": "0.4.0",
+  "deployment": "SHADOW_ONLY",
+  "status": "PASS",
+  "as_of_utc": "2026-08-14T12:30:00Z",
+  "active_horizon": "SESSION_1_6H",
+  "upstream_pressure_reference": {
+    "fingerprint": "e5af90d5e39e7d49508a52eb12cdacb1c54182f7213c034f4d9c46ce4851052f",
+    "class": "BUY_MEDIUM",
+    "sign": "BUY",
+    "immutable": true
+  },
+  "upstream_transmission_reference": {
+    "fingerprint": "06a483479923cc422502fda48a9a9ac69209795893db52f82e9bc77e78d76e43",
+    "state": "NEGATIVE_TRANSMISSION",
+    "immutable": true
+  },
+  "evidence_summary": {
+    "present_observations": 2,
+    "unavailable_or_expired": 0,
+    "independent_group_count": 2,
+    "domains": [
+      "FLOW",
+      "POSITIONING"
+    ]
+  },
+  "unreleased_pressure": {
+    "class": "UNDETERMINED",
+    "confidence": "LOW",
+    "ordinal_score": null,
+    "reasons": [
+      "INSUFFICIENT_UPSTREAM_CONFIDENCE_OR_REMAINING_PRESSURE"
+    ],
+    "caps": [
+      "UPSTREAM_UNCERTAINTY"
+    ],
+    "not_probability": true
+  },
+  "opposing_move_maturity": {
+    "state": "EXHAUSTING",
+    "confidence": "MEDIUM",
+    "active_opposition_groups": [],
+    "exhaustion_groups": [
+      "FLOW_A",
+      "POS_A"
+    ],
+    "hard_veto_groups": [],
+    "release_support_groups": [],
+    "price_distance_used": false,
+    "elapsed_time_used_as_maturity_evidence": false
+  },
+  "transmission_inflection": {
+    "state": "UNKNOWN",
+    "prior_state": null,
+    "current_state": "NEGATIVE_TRANSMISSION",
+    "rank_delta": null
+  },
+  "latent_causal_reserve": {
+    "class": "UNDETERMINED",
+    "not_expected_return": true
+  },
+  "release_readiness": {
+    "state": "NOT_READY",
+    "reasons": [
+      "UNRELEASED_PRESSURE_NOT_HIGH"
+    ],
+    "independent_release_support_groups": [],
+    "release_opposition_groups": [],
+    "event_reset_groups": [],
+    "event_cap_applied": false,
+    "not_probability": true,
+    "trade_permission_granted": false
+  },
+  "release_lifecycle": {
+    "state": "DIVERGENCE",
+    "evidence": [
+      "PRESSURE_PRICE_DIVERGENCE"
+    ],
+    "independent_release_groups": [],
+    "price_flip_alone_sufficient": false,
+    "trade_permission_granted": false
+  },
+  "liquidity_hypotheses": {
+    "absorption": {
+      "status": "UNSUPPORTED",
+      "independent_support_groups": [],
+      "confirmation_claim_allowed": false
+    },
+    "liquidity_sweep": {
+      "status": "UNSUPPORTED",
+      "independent_support_groups": [],
+      "confirmation_claim_allowed": false
+    },
+    "definitive_confirmation_allowed": false
+  },
+  "research_blockers": [
+    {
+      "type": "RESEARCH_ESCALATION",
+      "reason": "P03_DISAGREEMENT_REQUIRES_RESEARCH",
+      "blocking": false
+    }
+  ],
+  "confidence": {
+    "class": "LOW",
+    "not_probability": true
+  },
+  "integrity": {
+    "status": "PASS",
+    "pressure_mutated": false,
+    "transmission_mutated": false,
+    "target_price_used_as_independent_evidence": false,
+    "price_distance_used_for_maturity": false,
+    "time_elapsed_used_for_maturity": false,
+    "release_from_price_alone": false,
+    "trade_permission_granted": false,
+    "broker_authority": "NONE",
+    "anti_storytelling_pass": true
+  }
+}

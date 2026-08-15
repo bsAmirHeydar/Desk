@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "capsule_version": "RUN2.0.0",
+  "run_id": "RUN_FIXTURE_002",
+  "request_id": "REQ_FIXTURE_002",
+  "subject": "XAUUSD",
+  "mode": "LIVE",
+  "as_of": "2026-08-14T12:30:00Z",
+  "horizon": "SESSION_1_6H",
+  "permission": "NO_TRADE",
+  "quality_status": "PASS_WITH_WARNINGS",
+  "canonical_result_hash": "sha256:base2",
+  "capsule_hash": "sha256:cap2"
+}

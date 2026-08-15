@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P05",
+  "version": "0.5.0",
+  "deployment": "SHADOW_ONLY",
+  "status": "PASS",
+  "subject": "XAUUSD",
+  "as_of_utc": "2026-08-14T12:30:00Z",
+  "active_horizon": "SESSION_1_6H",
+  "upstream_references": {
+    "pressure_fingerprint": "6bb300e179e6b2db1110b0956831f3880501494f4fb362bdf48af4683e53d2af",
+    "transmission_fingerprint": "a7e3b1ec820c4fc741b489066d2d5554b1fac13d25683734f27ad9b1d0e893bd",
+    "latent_fingerprint": "5cf527a0459a2c1b6333a11eb048e59bd78ebccfc55446eb0b043b8ba5a407b2"
+  },
+  "observability_coverage": {},
+  "event_reset": {
+    "events": [],
+    "release_readiness_cap_recommended": null
+  },
+  "missing_driver_search": {
+    "required": false,
+    "trigger": "NONE",
+    "priorities": []
+  },
+  "coverage_gaps": {
+    "otc_client_dealer_flow": "UNAVAILABLE"
+  },
+  "integrity": {
+    "status": "PASS",
+    "p02_mutated": false,
+    "p03_mutated": false,
+    "p04_mutated": false,
+    "target_price_used_as_pressure_root": false,
+    "target_price_used_as_independent_release_evidence": false,
+    "volume_treated_as_directional_flow": false,
+    "oi_treated_as_directional_flow": false,
+    "single_venue_equated_to_global_gold": false,
+    "trade_permission_granted": false,
+    "broker_authority": "NONE"
+  }
+}

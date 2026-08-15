@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P06",
+  "name": "RUN Capsule Persistence Change Detection and UX Integration",
+  "version": "0.6.0",
+  "status": "SHADOW_ONLY",
+  "baseline": "V1 closed + P00 + P01 + P02 + P03 + P04 + P05",
+  "mission": "Compose, persist, compare and render P02-P05 Gold science as an immutable V2 shadow run extension without modifying V1 production runtime, V1 capsule history or trade/broker authority.",
+  "authorities": {
+    "direction_pressure": "AD-V2-P02",
+    "price_transmission": "AD-V2-P03",
+    "latent_release": "AD-V2-P04",
+    "gold_specialization": "AD-V2-P05",
+    "run_memory_ux": "AD-V2-P06",
+    "trade_permission": "V1_INHERITED",
+    "broker": "NONE"
+  },
+  "hard_invariants": [
+    "NO_UPSTREAM_MUTATION",
+    "NO_PERMISSION_OVERRIDE",
+    "NO_DECISION_WORLD_WRITE",
+    "NO_V1_CAPSULE_REWRITE",
+    "NO_V1_MEMORY_INDEX_REWRITE",
+    "PRICE_ONLY_CHANGE_NOT_PRESSURE_CHANGE",
+    "APPEND_ONLY_V2_HISTORY",
+    "IMMUTABLE_CAPSULE_EXTENSION",
+    "RELEASE_READINESS_NOT_PERMISSION",
+    "UX_PRESENTATION_ONLY"
+  ],
+  "next_phase": "AD-V2-P07 D4 Calibration True-Forward Validation and V2 Promotion"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "cases": [
+    {
+      "id": "P03_P02_FINGERPRINT_MISMATCH",
+      "expect": "FAIL_CLOSED"
+    },
+    {
+      "id": "P04_P03_FINGERPRINT_MISMATCH",
+      "expect": "FAIL_CLOSED"
+    },
+    {
+      "id": "P05_UPSTREAM_FINGERPRINT_MISMATCH",
+      "expect": "FAIL_CLOSED"
+    },
+    {
+      "id": "SUBJECT_NOT_GOLD",
+      "expect": "FAIL_CLOSED"
+    },
+    {
+      "id": "HORIZON_MISMATCH",
+      "expect": "FAIL_CLOSED"
+    },
+    {
+      "id": "P04_PERMISSION_GRANT",
+      "expect": "FAIL_CLOSED"
+    },
+    {
+      "id": "P05_PERMISSION_GRANT",
+      "expect": "FAIL_CLOSED"
+    },
+    {
+      "id": "PRICE_ONLY_CHANGE_NOT_PRESSURE_CHANGE",
+      "expect": "PASS"
+    },
+    {
+      "id": "IMMUTABLE_CAPSULE_COLLISION",
+      "expect": "FAIL_CLOSED"
+    },
+    {
+      "id": "TAMPERED_CAPSULE_HASH",
+      "expect": "FAIL"
+    },
+    {
+      "id": "SECRET_FIELD_PERSISTENCE",
+      "expect": "FAIL_CLOSED"
+    },
+    {
+      "id": "RUN_STORE_CLOSE_SEAL_NON_DESTRUCTIVE",
+      "expect": "SKIP"
+    },
+    {
+      "id": "PORTABLE_MEMORY_NOT_AUTHORITATIVE",
+      "expect": "PASS"
+    },
+    {
+      "id": "UX_RELEASE_READINESS_NOT_PERMISSION",
+      "expect": "PASS"
+    }
+  ]
+}

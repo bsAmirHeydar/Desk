@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "rtl": true,
+  "primary_language": "fa-IR",
+  "sections": [
+    "PRESSURE",
+    "TRANSMISSION",
+    "LATENT_RELEASE",
+    "GOLD_EVIDENCE",
+    "EXECUTION",
+    "CHANGE_HISTORY",
+    "QUALITY"
+  ],
+  "required_separations": [
+    "PRESSURE_NE_PRICE",
+    "RELEASE_READINESS_NE_PERMISSION",
+    "LIQUIDITY_HYPOTHESIS_NE_FACT"
+  ],
+  "presentation_authority_only": true
+}

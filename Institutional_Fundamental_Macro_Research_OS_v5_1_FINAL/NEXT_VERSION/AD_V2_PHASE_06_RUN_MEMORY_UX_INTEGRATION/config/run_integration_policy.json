@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P06",
+  "deployment": "SHADOW_ONLY",
+  "subject": "XAUUSD",
+  "owners": {
+    "pressure": "AD-V2-P02",
+    "transmission": "AD-V2-P03",
+    "latent_release": "AD-V2-P04",
+    "gold_specialization": "AD-V2-P05",
+    "composition_memory_ux": "AD-V2-P06",
+    "trade_permission": "V1_INHERITED",
+    "broker": "NONE"
+  },
+  "hard_invariants": [
+    "NO_UPSTREAM_MUTATION",
+    "NO_PERMISSION_OVERRIDE",
+    "NO_DECISION_WORLD_WRITE",
+    "NO_V1_CAPSULE_REWRITE",
+    "NO_V1_MEMORY_INDEX_REWRITE",
+    "PRICE_ONLY_CHANGE_NOT_PRESSURE_CHANGE",
+    "RELEASE_READINESS_NOT_PERMISSION"
+  ],
+  "attachment_world": "OUTCOME",
+  "attachment_stage": "OUTCOME"
+}

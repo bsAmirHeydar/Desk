@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "artifacts": {
+    "state": "v2_gold_run_state",
+    "capsule": "v2_run_capsule_extension",
+    "changes": "v2_change_set",
+    "portable_memory": "v2_portable_memory",
+    "report_model": "v2_report_model"
+  },
+  "world": "OUTCOME",
+  "stage": "OUTCOME",
+  "decision_world_write": false
+}

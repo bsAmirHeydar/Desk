@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "phase",
+    "run_id",
+    "subject",
+    "canonical_v2_state",
+    "canonical_v2_state_hash",
+    "change_set",
+    "portable_memory",
+    "quality_status",
+    "capsule_extension_hash"
+  ],
+  "properties": {
+    "phase": {
+      "const": "AD-V2-P06"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "deployment": {
+      "const": "SHADOW_ONLY"
+    }
+  },
+  "additionalProperties": true
+}

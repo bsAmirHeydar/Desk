@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "root_dir": "alpha_desk_v2",
+  "immutable_capsule_name": "capsule_extension.json",
+  "index": "runs/index.jsonl",
+  "events": "runs/events.jsonl",
+  "history_pattern": "history/{subject}/{horizon}.jsonl",
+  "atomic_write": true,
+  "append_only": true,
+  "rewrite_existing_capsule": false,
+  "rewrite_v1_history": false,
+  "secret_scan": true
+}

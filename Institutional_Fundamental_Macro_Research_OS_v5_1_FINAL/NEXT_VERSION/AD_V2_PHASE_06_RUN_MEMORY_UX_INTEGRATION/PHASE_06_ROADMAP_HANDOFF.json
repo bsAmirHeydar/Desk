@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P06",
+  "next_phase": "AD-V2-P07",
+  "next_phase_name": "D4 Calibration True-Forward Validation and V2 Promotion",
+  "p06_complete": [
+    "V2 run composition",
+    "V2 capsule extension",
+    "append-only persistence/history",
+    "semantic change detector",
+    "portable memory",
+    "Gold V2 Explorer",
+    "optional AlphaRuntime outcome-artifact bridge"
+  ],
+  "still_shadow_only": true,
+  "p07_mission": "Instrument P02-P06 states in D4/True-Forward, calibrate predictive/decision relevance, define promotion thresholds, certify no-regression and commission V2 mainline authority only after sufficient evidence."
+}

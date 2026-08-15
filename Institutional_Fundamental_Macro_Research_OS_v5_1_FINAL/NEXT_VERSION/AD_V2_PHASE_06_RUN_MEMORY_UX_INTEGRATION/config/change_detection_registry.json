@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P06",
+  "fields": [
+    {
+      "id": "pressure_class",
+      "owner": "P02",
+      "path": "science_v2.pressure.pressure_core.class",
+      "domain": "PRESSURE"
+    },
+    {
+      "id": "pressure_sign",
+      "owner": "P02",
+      "path": "science_v2.pressure.pressure_core.sign",
+      "domain": "PRESSURE"
+    },
+    {
+      "id": "pressure_trend",
+      "owner": "P02",
+      "path": "science_v2.pressure.pressure_dynamics.trend",
+      "domain": "PRESSURE"
+    },
+    {
+      "id": "pressure_acceleration",
+      "owner": "P02",
+      "path": "science_v2.pressure.pressure_dynamics.acceleration",
+      "domain": "PRESSURE"
+    },
+    {
+      "id": "remaining_causal_pressure",
+      "owner": "P02",
+      "path": "science_v2.pressure.remaining_causal_pressure.value",
+      "domain": "PRESSURE"
+    },
+    {
+      "id": "transmission_state",
+      "owner": "P03",
+      "path": "science_v2.transmission.transmission_state.state",
+      "domain": "TRANSMISSION"
+    },
+    {
+      "id": "transmission_efficiency",
+      "owner": "P03",
+      "path": "science_v2.transmission.transmission_efficiency.class",
+      "domain": "TRANSMISSION"
+    },
+    {
+      "id": "residual_state",
+      "owner": "P03",
+      "path": "science_v2.transmission.counterfactual_residual.state",
+      "domain": "TRANSMISSION"
+    },
+    {
+      "id": "residual_magnitude",
+      "owner": "P03",
+      "path": "science_v2.transmission.counterfactual_residual.magnitude_class",
+      "domain": "TRANSMISSION"
+    },
+    {
+      "id": "missing_driver_escalation",
+      "owner": "P03",
+      "path": "science_v2.transmission.missing_driver_escalation.level",
+      "domain": "TRANSMISSION"
+    },
+    {
+      "id": "unreleased_pressure",
+      "owner": "P04",
+      "path": "science_v2.latent_release.unreleased_pressure.class",
+      "domain": "LATENT"
+    },
+    {
+      "id": "opposing_move_maturity",
+      "owner": "P04",
+      "path": "science_v2.latent_release.opposing_move_maturity.state",
+      "domain": "LATENT"
+    },
+    {
+      "id": "latent_reserve",
+      "owner": "P04",
+      "path": "science_v2.latent_release.latent_causal_reserve.class",
+      "domain": "LATENT"
+    },
+    {
+      "id": "transmission_inflection",
+      "owner": "P04",
+      "path": "science_v2.latent_release.transmission_inflection.state",
+      "domain": "LATENT"
+    },
+    {
+      "id": "release_readiness",
+      "owner": "P04",
+      "path": "science_v2.latent_release.release_readiness.state",
+      "domain": "LATENT"
+    },
+    {
+      "id": "release_lifecycle",
+      "owner": "P04",
+      "path": "science_v2.latent_release.release_lifecycle.state",
+      "domain": "LATENT"
+    },
+    {
+      "id": "event_readiness_cap",
+      "owner": "P05",
+      "path": "science_v2.gold_intelligence.event_reset.release_readiness_cap_recommended",
+      "domain": "GOLD"
+    },
+    {
+      "id": "gold_missing_driver_search",
+      "owner": "P05",
+      "path": "science_v2.gold_intelligence.missing_driver_search.required",
+      "domain": "GOLD"
+    },
+    {
+      "id": "trade_permission",
+      "owner": "V1",
+      "path": "execution.permission",
+      "domain": "EXECUTION"
+    }
+  ],
+  "forbidden_pressure_paths": [
+    "base.price",
+    "science_v2.transmission",
+    "science_v2.latent_release",
+    "science_v2.gold_intelligence"
+  ]
+}

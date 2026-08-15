@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "phase",
+    "subject",
+    "command_center",
+    "pressure",
+    "transmission",
+    "latent_release",
+    "gold_evidence",
+    "execution",
+    "changes",
+    "ux"
+  ],
+  "properties": {
+    "phase": {
+      "const": "AD-V2-P06"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "ux": {
+      "type": "object",
+      "properties": {
+        "pressure_price_separated": {
+          "const": true
+        },
+        "release_readiness_is_permission": {
+          "const": false
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

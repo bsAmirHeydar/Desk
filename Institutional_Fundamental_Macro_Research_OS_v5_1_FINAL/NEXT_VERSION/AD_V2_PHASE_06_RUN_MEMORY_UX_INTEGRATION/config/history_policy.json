@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "comparison_key": [
+    "subject",
+    "mode",
+    "horizon"
+  ],
+  "eligible_quality": [
+    "PASS",
+    "PASS_WITH_WARNINGS",
+    "PARTIAL"
+  ],
+  "semantic_delta_only": true,
+  "price_only_pressure_delta_forbidden": true,
+  "timeline_append_only": true
+}

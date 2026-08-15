@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "phase",
+    "status",
+    "has_comparison",
+    "items",
+    "pressure_changed"
+  ],
+  "properties": {
+    "phase": {
+      "const": "AD-V2-P06"
+    },
+    "status": {
+      "const": "PASS"
+    },
+    "items": {
+      "type": "array"
+    },
+    "pressure_changed": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true
+}

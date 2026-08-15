@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P02",
+  "version": "0.2.0",
+  "deployment": "SHADOW_ONLY",
+  "status": "PASS",
+  "aggregation_mode": "EXPLICIT_ROOT_LEDGER",
+  "active_horizon": "SESSION_1_6H",
+  "as_of_utc": "2026-08-14T12:00:00Z",
+  "pressure_core": {
+    "sign": "BUY",
+    "class": "BUY_MEDIUM",
+    "magnitude_class": "MEDIUM",
+    "signed_range": {
+      "low": 50.5,
+      "high": 61.75,
+      "unit": "ordinal_pressure"
+    },
+    "signed_midpoint": 56.125,
+    "magnitude_interval_classes": {
+      "low": "MEDIUM",
+      "high": "HIGH"
+    },
+    "precision": "NARROW",
+    "scale": "ANALYTICAL_ORDINAL_NOT_PROBABILITY"
+  },
+  "pressure_dynamics": {
+    "trend": "UNKNOWN",
+    "snapshot_delta": null,
+    "acceleration": "UNKNOWN",
+    "second_difference": null
+  },
+  "causal_root_ledger": [
+    {
+      "root_id": "POLICY",
+      "active_horizon": "SESSION_1_6H",
+      "source_kind": "EXPECTATIONS_STATE",
+      "applicability": "APPLICABLE",
+      "polarity": "BUY",
+      "magnitude_range": {
+        "low": 70,
+        "high": 80
+      },
+      "weight": 0.35,
+      "confidence": 85,
+      "mechanism": "Softer policy path lowers opportunity cost",
+      "observed_at_utc": "2026-08-14T11:50:00Z",
+      "freshness_ttl_seconds": 3600,
+      "normalized_weight": 0.35,
+      "freshness": {
+        "state": "FRESH",
+        "age_seconds": 600.0,
+        "ttl_seconds": 3600.0,
+        "age_fraction_of_ttl": 0.166667
+      },
+      "effective_state": "PRESENT",
+      "signed_contribution_interval": {
+        "low": 24.5,
+        "high": 28.0
+      }
+    },
+    {
+      "root_id": "REAL",
+      "active_horizon": "SESSION_1_6H",
+      "source_kind": "CROSS_ASSET_CAUSAL_STATE",
+      "applicability": "APPLICABLE",
+      "polarity": "BUY",
+      "magnitude_range": {
+        "low": 60,
+        "high": 72
+      },
+      "weight": 0.25,
+      "confidence": 80,
+      "mechanism": "Real-rate discount supports gold",
+      "observed_at_utc": "2026-08-14T11:55:00Z",
+      "freshness_ttl_seconds": 3600,
+      "normalized_weight": 0.25,
+      "freshness": {
+        "state": "FRESH",
+        "age_seconds": 300.0,
+        "ttl_seconds": 3600.0,
+        "age_fraction_of_ttl": 0.083333
+      },
+      "effective_state": "PRESENT",
+      "signed_contribution_interval": {
+        "low": 15.0,
+        "high": 18.0
+      }
+    },
+    {
+      "root_id": "STRUCT",
+      "active_horizon": "SESSION_1_6H",
+      "source_kind": "STRUCTURAL_DEMAND_SUPPLY",
+      "applicability": "APPLICABLE",
+      "polarity": "BUY",
+      "magnitude_range": {
+        "low": 65,
+        "high": 75
+      },
+      "weight": 0.25,
+      "confidence": 75,
+      "mechanism": "Official/investor demand provides structural bid",
+      "observed_at_utc": "2026-08-14T10:00:00Z",
+      "freshness_ttl_seconds": 14400,
+      "normalized_weight": 0.25,
+      "freshness": {
+        "state": "FRESH",
+        "age_seconds": 7200.0,
+        "ttl_seconds": 14400.0,
+        "age_fraction_of_ttl": 0.5
+      },
+      "effective_state": "PRESENT",
+      "signed_contribution_interval": {
+        "low": 16.25,
+        "high": 18.75
+      }
+    },
+    {
+      "root_id": "PHYS",
+      "active_horizon": "SESSION_1_6H",
+      "source_kind": "PHYSICAL_BALANCE",
+      "applicability": "APPLICABLE",
+      "polarity": "SELL",
+      "magnitude_range": {
+        "low": 20,
+        "high": 35
+      },
+      "weight": 0.15,
+      "confidence": 65,
+      "mechanism": "Weak regional physical demand offsets part of pressure",
+      "observed_at_utc": "2026-08-14T10:30:00Z",
+      "freshness_ttl_seconds": 14400,
+      "normalized_weight": 0.15,
+      "freshness": {
+        "state": "FRESH",
+        "age_seconds": 5400.0,
+        "ttl_seconds": 14400.0,
+        "age_fraction_of_ttl": 0.375
+      },
+      "effective_state": "PRESENT",
+      "signed_contribution_interval": {
+        "low": -5.25,
+        "high": -3.0
+      }
+    }
+  ],
+  "freshness_and_coverage": {
+    "class": "HIGH",
+    "root_coverage_weight": 1.0,
+    "unknown_weight": 0.0,
+    "weighted_evidence_confidence": 78.25,
+    "not_probability": true
+  },
+  "fundamental_driver_consumption": null,
+  "remaining_causal_pressure": null,
+  "persistence": null,
+  "contradiction_load": {
+    "class": "LOW",
+    "opposing_weight": 0.15
+  },
+  "pressure_confidence": {
+    "class": "HIGH",
+    "root_coverage_weight": 1.0,
+    "unknown_weight": 0.0,
+    "weighted_evidence_confidence": 78.25,
+    "not_probability": true
+  },
+  "provenance": {
+    "root_count": 4,
+    "aggregation": "DISCLOSED_WEIGHTED_ORDINAL_INTERVAL",
+    "target_price_used": false
+  },
+  "integrity": {
+    "status": "PASS",
+    "target_price_contamination": false,
+    "future_fields_present": [],
+    "diagnostics": []
+  }
+}
