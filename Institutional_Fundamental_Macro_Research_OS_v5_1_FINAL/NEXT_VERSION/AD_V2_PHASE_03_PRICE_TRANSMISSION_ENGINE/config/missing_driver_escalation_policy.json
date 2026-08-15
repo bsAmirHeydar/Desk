@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P03",
+  "version": "0.3.0",
+  "levels": [
+    "NONE",
+    "WATCH",
+    "RESEARCH_ESCALATION",
+    "DECISION_CRITICAL"
+  ],
+  "decision_critical_min_persistent_snapshots": 2,
+  "negative_transmission_action": "RESEARCH_ESCALATION",
+  "compression_after_lag_action": "WATCH_OR_RESEARCH_ESCALATION",
+  "fragmented_pathway_action": "WATCH",
+  "candidate_default_status": "UNCONFIRMED",
+  "forbidden_price_only_confirmations": [
+    "ABSORPTION_CONFIRMED",
+    "LIQUIDITY_GRAB_CONFIRMED",
+    "INSTITUTIONAL_ACCUMULATION_CONFIRMED",
+    "FORCED_LIQUIDATION_CONFIRMED"
+  ],
+  "no_pressure_mutation": true
+}

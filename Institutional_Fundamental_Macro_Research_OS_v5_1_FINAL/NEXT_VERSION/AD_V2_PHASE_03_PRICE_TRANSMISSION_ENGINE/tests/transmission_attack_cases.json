@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P03",
+  "cases": [
+    {
+      "id": "T01",
+      "name": "BUY pressure + aligned expected response",
+      "expected": "ALIGNED"
+    },
+    {
+      "id": "T02",
+      "name": "BUY pressure + material price decline",
+      "expected": "NEGATIVE_TRANSMISSION"
+    },
+    {
+      "id": "T03",
+      "name": "SELL pressure + price decline",
+      "expected": "ALIGNED"
+    },
+    {
+      "id": "T04",
+      "name": "SELL pressure + price rise",
+      "expected": "NEGATIVE_TRANSMISSION"
+    },
+    {
+      "id": "T05",
+      "name": "No material response within lag",
+      "expected": "DELAYED"
+    },
+    {
+      "id": "T06",
+      "name": "No material response after lag",
+      "expected": "COMPRESSION"
+    },
+    {
+      "id": "T07",
+      "name": "Aligned but under range within lag",
+      "expected": "ALIGNED_INCOMPLETE"
+    },
+    {
+      "id": "T08",
+      "name": "Aligned but under range after lag",
+      "expected": "UNDER_TRANSMISSION"
+    },
+    {
+      "id": "T09",
+      "name": "Aligned response far above expected",
+      "expected": "OVER_TRANSMISSION"
+    },
+    {
+      "id": "T10",
+      "name": "Direction-only aligned",
+      "expected": "ALIGNED_DIRECTION_ONLY"
+    },
+    {
+      "id": "T11",
+      "name": "Signature declared after response starts",
+      "expected": "FAIL_CLOSED"
+    },
+    {
+      "id": "T12",
+      "name": "Pressure fingerprint mismatch",
+      "expected": "FAIL_CLOSED"
+    },
+    {
+      "id": "T13",
+      "name": "Horizon mismatch",
+      "expected": "FAIL_CLOSED"
+    },
+    {
+      "id": "T14",
+      "name": "Unit mismatch",
+      "expected": "FAIL_CLOSED"
+    },
+    {
+      "id": "T15",
+      "name": "Post-hoc method forbidden",
+      "expected": "FAIL_CLOSED"
+    },
+    {
+      "id": "T16",
+      "name": "Empirical signature missing validation",
+      "expected": "FAIL_CLOSED"
+    },
+    {
+      "id": "T17",
+      "name": "Mechanically linked target proxy excluded from independent coherence",
+      "expected": "PASS"
+    },
+    {
+      "id": "T18",
+      "name": "Pathway conflicts create fragmentation",
+      "expected": "FRAGMENTED"
+    },
+    {
+      "id": "T19",
+      "name": "Unknown pathway lowers coverage without pressure mutation",
+      "expected": "PASS"
+    },
+    {
+      "id": "T20",
+      "name": "Compression does not confirm absorption",
+      "expected": "PASS"
+    },
+    {
+      "id": "T21",
+      "name": "Negative transmission does not reverse pressure",
+      "expected": "PASS"
+    },
+    {
+      "id": "T22",
+      "name": "Missing driver candidates remain unconfirmed",
+      "expected": "PASS"
+    },
+    {
+      "id": "T23",
+      "name": "Persistent negative disagreement escalates decision critical",
+      "expected": "DECISION_CRITICAL"
+    },
+    {
+      "id": "T24",
+      "name": "P03 emits no unreleased pressure",
+      "expected": "PASS"
+    },
+    {
+      "id": "T25",
+      "name": "P03 emits no release readiness",
+      "expected": "PASS"
+    },
+    {
+      "id": "T26",
+      "name": "P03 emits no trade permission",
+      "expected": "PASS"
+    }
+  ]
+}

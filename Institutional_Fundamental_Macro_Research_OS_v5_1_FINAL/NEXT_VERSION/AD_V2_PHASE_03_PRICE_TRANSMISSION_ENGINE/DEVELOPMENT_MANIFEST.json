@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P03",
+  "version": "0.3.0",
+  "name": "Price Transmission Engine",
+  "status": "SHADOW_ONLY",
+  "baseline": "V1 closed + P00 + P01 + P02",
+  "production_authority_changed": false,
+  "p02_pressure_authority_changed": false,
+  "target_price_role": "DOWNSTREAM_DIAGNOSTIC_ONLY",
+  "next_phase": "AD-V2-P04"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P03",
+  "version": "0.3.0",
+  "allowed_methods": [
+    "EVENT_CONDITIONED_RANGE",
+    "REGIME_CONDITIONED_LOCAL_PROJECTION",
+    "POLICY_PATH_DECOMPOSITION",
+    "DURATION_CONVEXITY_BRIDGE",
+    "PHYSICAL_BALANCE_ELASTICITY",
+    "OPTIONS_IMPLIED_SHIFT",
+    "MATCHED_HISTORICAL_CONTROLS",
+    "EXPERT_RANGE",
+    "DIRECTION_ONLY"
+  ],
+  "forbidden_methods": [
+    "POST_HOC_PRICE_FIT",
+    "EX_POST_BEST_WINDOW",
+    "OUTCOME_SELECTED_RANGE",
+    "FUTURE_DATA_FIT"
+  ],
+  "empirical_methods_require_validation_ref": true,
+  "required_order": "PRESSURE_ASOF <= SIGNATURE_DECLARED <= RESPONSE_START < RESPONSE_END",
+  "target_units": [
+    "PCT_RETURN",
+    "LOG_RETURN",
+    "BPS_PRICE_RETURN",
+    "STANDARDIZED_RESPONSE"
+  ],
+  "same_underlying_proxy_is_not_independent_confirmation": true
+}

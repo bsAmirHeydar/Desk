@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P03",
+  "version": "0.3.0",
+  "deployment": "SHADOW_ONLY",
+  "states": [
+    "NOT_YET_OBSERVABLE",
+    "DELAYED",
+    "COMPRESSION",
+    "ALIGNED_INCOMPLETE",
+    "UNDER_TRANSMISSION",
+    "ALIGNED",
+    "OVER_TRANSMISSION",
+    "NEGATIVE_TRANSMISSION",
+    "ALIGNED_DIRECTION_ONLY",
+    "UNDETERMINED"
+  ],
+  "materiality_tolerance_fraction_of_expected_midpoint": 0.15,
+  "over_transmission_ratio_threshold": 1.5,
+  "efficiency_classes": [
+    {
+      "name": "NEGATIVE",
+      "min": null,
+      "max": 0.0
+    },
+    {
+      "name": "VERY_LOW",
+      "min": 0.0,
+      "max": 0.25
+    },
+    {
+      "name": "LOW",
+      "min": 0.25,
+      "max": 0.75
+    },
+    {
+      "name": "EXPECTED",
+      "min": 0.75,
+      "max": 1.25
+    },
+    {
+      "name": "HIGH",
+      "min": 1.25,
+      "max": 1.75
+    },
+    {
+      "name": "OVER",
+      "min": 1.75,
+      "max": null
+    }
+  ],
+  "not_probability": true,
+  "no_release_state_in_p03": true,
+  "compression_not_absorption_proof": true,
+  "negative_transmission_not_pressure_reversal": true
+}

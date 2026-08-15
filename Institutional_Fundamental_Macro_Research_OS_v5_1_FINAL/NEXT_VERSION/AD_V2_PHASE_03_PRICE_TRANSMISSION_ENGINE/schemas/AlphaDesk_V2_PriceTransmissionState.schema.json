@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaDesk V2 Price Transmission State",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "phase",
+    "version",
+    "deployment",
+    "status",
+    "integrity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "phase": {
+      "const": "AD-V2-P03"
+    },
+    "version": {
+      "type": "string"
+    },
+    "deployment": {
+      "const": "SHADOW_ONLY"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL_CLOSED"
+      ]
+    },
+    "upstream_pressure_reference": {
+      "type": "object"
+    },
+    "expected_signature_reference": {
+      "type": "object"
+    },
+    "response_window": {
+      "type": "object"
+    },
+    "target_response": {
+      "type": "object"
+    },
+    "transmission_state": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "enum": [
+            "NOT_YET_OBSERVABLE",
+            "DELAYED",
+            "COMPRESSION",
+            "ALIGNED_INCOMPLETE",
+            "UNDER_TRANSMISSION",
+            "ALIGNED",
+            "OVER_TRANSMISSION",
+            "NEGATIVE_TRANSMISSION",
+            "ALIGNED_DIRECTION_ONLY",
+            "UNDETERMINED"
+          ]
+        }
+      }
+    },
+    "counterfactual_residual": {
+      "type": "object"
+    },
+    "transmission_efficiency": {
+      "type": "object"
+    },
+    "pathway_diagnostics": {
+      "type": "object"
+    },
+    "model_disagreement": {
+      "type": "object"
+    },
+    "missing_driver_escalation": {
+      "type": "object"
+    },
+    "transmission_confidence": {
+      "type": "object"
+    },
+    "integrity": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}
