@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "subject",
+    "observed_at_utc",
+    "source_id",
+    "price",
+    "quality_status",
+    "provenance_ref"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "GOLD_MARKET_OBSERVATION"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "price": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    }
+  },
+  "additionalProperties": true
+}

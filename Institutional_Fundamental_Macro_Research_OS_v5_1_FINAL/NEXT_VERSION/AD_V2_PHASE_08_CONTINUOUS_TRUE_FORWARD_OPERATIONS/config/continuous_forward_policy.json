@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P08",
+  "version": "1.0.0",
+  "subject": "XAUUSD",
+  "max_analysis_to_p06_seal_seconds": 900,
+  "max_p06_to_commitment_freeze_seconds": 300,
+  "max_new_commitments_per_cycle": 50,
+  "late_run_action": "LATE_TRUE_FORWARD_REJECTED",
+  "cycle_order": [
+    "DISCOVER_P06_RUNS",
+    "FREEZE_ELIGIBLE_COMMITMENTS",
+    "SEAL_OPERATING_BINDINGS",
+    "READ_FUTURE_OBSERVATIONS",
+    "MATURE_OUTCOMES",
+    "CALIBRATE",
+    "EVALUATE_PROMOTION",
+    "WRITE_CYCLE_RECEIPT"
+  ],
+  "freeze_before_observation_read": true,
+  "auto_sample_provenance": "TRUE_FORWARD",
+  "default_regime": "UNKNOWN",
+  "allowed_p06_deployments": [
+    "SHADOW_ONLY",
+    "TRUE_FORWARD_SHADOW"
+  ],
+  "trade_permission": "V1_INHERITED",
+  "broker": "NONE",
+  "auto_promotion": false,
+  "bootstrap_lookback_seconds": 300,
+  "pre_activation_runs_action": "IGNORE_AS_PRE_P08_BASELINE"
+}

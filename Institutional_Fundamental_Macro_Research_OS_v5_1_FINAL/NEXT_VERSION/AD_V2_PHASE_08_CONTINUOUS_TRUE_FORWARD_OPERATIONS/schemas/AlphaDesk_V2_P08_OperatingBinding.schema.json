@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "run_id",
+    "commitment_id",
+    "commitment_hash",
+    "sealed_at_utc",
+    "freeze_before_observation_read",
+    "binding_hash"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "P08_OPERATING_BINDING"
+    },
+    "freeze_before_observation_read": {
+      "const": true
+    }
+  },
+  "additionalProperties": true
+}

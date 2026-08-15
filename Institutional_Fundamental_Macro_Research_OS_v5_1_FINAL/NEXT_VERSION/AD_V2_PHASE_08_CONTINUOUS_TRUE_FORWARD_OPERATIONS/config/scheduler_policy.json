@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P08",
+  "windows_task_name": "AlphaDesk-V2-P08-ContinuousForward",
+  "default_interval_minutes": 5,
+  "minimum_interval_minutes": 1,
+  "single_instance": true,
+  "run_when_logged_on": true,
+  "auto_install_during_source_apply": false,
+  "data_root_resolution": "ALPHALAB_DATA_ROOT_OR_SIBLING_REPO_AlphaLab_Data"
+}

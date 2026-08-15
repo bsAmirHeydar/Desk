@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P08",
+  "subject": "XAUUSD",
+  "record_type": "GOLD_MARKET_OBSERVATION",
+  "allowed_quality": [
+    "PASS",
+    "PASS_WITH_WARNINGS",
+    "PARTIAL"
+  ],
+  "max_future_clock_skew_seconds": 30,
+  "duplicate_identical_allowed": true,
+  "conflicting_duplicate_forbidden": true,
+  "network_fetch_by_p08": false,
+  "credentials_in_source_tree_forbidden": true
+}

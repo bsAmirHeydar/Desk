@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "profile_id",
+    "subject",
+    "horizon",
+    "sealed_at_utc",
+    "maturity_seconds",
+    "one_r_price_distance",
+    "reference_capture_seconds",
+    "max_observation_gap_seconds",
+    "profile_kind"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "P08_EVALUATION_PROFILE"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "one_r_price_distance": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    }
+  },
+  "additionalProperties": true
+}

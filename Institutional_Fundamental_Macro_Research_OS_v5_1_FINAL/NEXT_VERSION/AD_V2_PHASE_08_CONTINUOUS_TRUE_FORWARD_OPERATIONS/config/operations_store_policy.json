@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P08",
+  "namespace": "alpha_desk_v2/p08_operations",
+  "append_only": true,
+  "immutable_bindings": true,
+  "immutable_cycle_receipts": true,
+  "observation_store_append_only": true,
+  "calibration_snapshots_immutable_by_hash": true,
+  "promotion_receipts_immutable_by_hash": true
+}

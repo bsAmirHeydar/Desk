@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P08",
+  "engineering_complete": true,
+  "continuous_forward_ready": true,
+  "scheduler_available": true,
+  "scheduler_auto_enabled_by_source_apply": false,
+  "outcome_scoring_requires_predeclared_profile": true,
+  "market_observations_required": true,
+  "promotion_still_requires_p07_independent_review": true,
+  "future_actions": [
+    "ACTIVATE_P08_SCHEDULER",
+    "REGISTER_PREDECLARED_EVALUATION_PROFILE_IF_R_SCORING_DESIRED",
+    "FEED_GOLD_MARKET_OBSERVATIONS",
+    "ACCUMULATE_TRUE_FORWARD_EVIDENCE",
+    "WAIT_FOR_P07_PROMOTION_MATURITY"
+  ],
+  "authorities": {
+    "v1_production": "UNCHANGED",
+    "trade_permission": "V1_INHERITED",
+    "broker": "NONE"
+  }
+}

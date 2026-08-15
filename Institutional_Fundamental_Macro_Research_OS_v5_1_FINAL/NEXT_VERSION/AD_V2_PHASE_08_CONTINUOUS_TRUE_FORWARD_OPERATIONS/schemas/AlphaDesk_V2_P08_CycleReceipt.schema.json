@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "cycle_id",
+    "status",
+    "integrity",
+    "authority",
+    "cycle_hash"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "P08_CYCLE_RECEIPT"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "PASS_WITH_WARNINGS",
+        "BUSY"
+      ]
+    },
+    "integrity": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

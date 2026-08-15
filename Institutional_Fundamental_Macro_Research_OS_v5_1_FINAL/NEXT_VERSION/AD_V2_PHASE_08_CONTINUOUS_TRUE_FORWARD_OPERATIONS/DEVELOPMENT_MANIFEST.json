@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P08",
+  "name": "Continuous True-Forward Shadow Operations",
+  "version": "0.8.0",
+  "deployment": "CONTINUOUS_TRUE_FORWARD_SHADOW",
+  "v1_closed": true,
+  "p07_required": true,
+  "market_science_mutation": false,
+  "automatic_commitment_collection": true,
+  "automatic_outcome_scoring": "PROFILE_AND_OBSERVATION_GATED",
+  "auto_promotion": false,
+  "scheduler_source_apply": false,
+  "trade_permission": "V1_INHERITED",
+  "broker": "NONE"
+}

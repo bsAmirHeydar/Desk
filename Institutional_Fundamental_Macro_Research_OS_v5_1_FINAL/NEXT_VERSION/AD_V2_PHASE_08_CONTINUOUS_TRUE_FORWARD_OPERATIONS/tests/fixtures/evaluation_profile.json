@@ -1,0 +1,14 @@
+{
+  "record_type": "P08_EVALUATION_PROFILE",
+  "profile_id": "TEST_XAU_SESSION_1R10",
+  "subject": "XAUUSD",
+  "horizon": "SESSION_1_6H",
+  "sealed_at_utc": "2026-08-15T09:00:00Z",
+  "active_from_utc": "2026-08-15T09:00:00Z",
+  "maturity_seconds": 3600,
+  "one_r_price_distance": 10.0,
+  "reference_capture_seconds": 300,
+  "max_observation_gap_seconds": 900,
+  "profile_kind": "COUNTERFACTUAL_RESEARCH",
+  "description": "P08 acceptance-only predeclared research profile"
+}

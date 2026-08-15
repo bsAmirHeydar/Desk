@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P08",
+  "record_type": "P08_EVALUATION_PROFILE",
+  "subject": "XAUUSD",
+  "active_profile_required_for_automatic_r_scoring": true,
+  "retroactive_profile_binding_forbidden": true,
+  "one_r_price_distance_must_be_positive": true,
+  "profile_sealed_before_commitment": true,
+  "counterfactual_profile_must_be_labeled": true,
+  "default_profile": null,
+  "synthetic_r_default_forbidden": true
+}

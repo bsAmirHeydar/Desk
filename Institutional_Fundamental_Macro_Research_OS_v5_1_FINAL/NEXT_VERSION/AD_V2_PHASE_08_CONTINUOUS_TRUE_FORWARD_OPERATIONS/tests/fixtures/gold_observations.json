@@ -1,0 +1,72 @@
+[
+  {
+    "record_type": "GOLD_MARKET_OBSERVATION",
+    "subject": "XAUUSD",
+    "observed_at_utc": "2026-08-15T10:01:00Z",
+    "source_id": "TEST_XAU_FEED",
+    "provider_id": "TEST",
+    "price": 4350.0,
+    "quality_status": "PASS",
+    "provenance_ref": "TEST:P0"
+  },
+  {
+    "record_type": "GOLD_MARKET_OBSERVATION",
+    "subject": "XAUUSD",
+    "observed_at_utc": "2026-08-15T10:11:00Z",
+    "source_id": "TEST_XAU_FEED",
+    "provider_id": "TEST",
+    "price": 4345.0,
+    "quality_status": "PASS",
+    "provenance_ref": "TEST:P1"
+  },
+  {
+    "record_type": "GOLD_MARKET_OBSERVATION",
+    "subject": "XAUUSD",
+    "observed_at_utc": "2026-08-15T10:21:00Z",
+    "source_id": "TEST_XAU_FEED",
+    "provider_id": "TEST",
+    "price": 4360.0,
+    "quality_status": "PASS",
+    "provenance_ref": "TEST:P2"
+  },
+  {
+    "record_type": "GOLD_MARKET_OBSERVATION",
+    "subject": "XAUUSD",
+    "observed_at_utc": "2026-08-15T10:31:00Z",
+    "source_id": "TEST_XAU_FEED",
+    "provider_id": "TEST",
+    "price": 4370.0,
+    "quality_status": "PASS",
+    "provenance_ref": "TEST:P3"
+  },
+  {
+    "record_type": "GOLD_MARKET_OBSERVATION",
+    "subject": "XAUUSD",
+    "observed_at_utc": "2026-08-15T10:41:00Z",
+    "source_id": "TEST_XAU_FEED",
+    "provider_id": "TEST",
+    "price": 4380.0,
+    "quality_status": "PASS",
+    "provenance_ref": "TEST:P4"
+  },
+  {
+    "record_type": "GOLD_MARKET_OBSERVATION",
+    "subject": "XAUUSD",
+    "observed_at_utc": "2026-08-15T10:51:00Z",
+    "source_id": "TEST_XAU_FEED",
+    "provider_id": "TEST",
+    "price": 4375.0,
+    "quality_status": "PASS",
+    "provenance_ref": "TEST:P5"
+  },
+  {
+    "record_type": "GOLD_MARKET_OBSERVATION",
+    "subject": "XAUUSD",
+    "observed_at_utc": "2026-08-15T11:01:00Z",
+    "source_id": "TEST_XAU_FEED",
+    "provider_id": "TEST",
+    "price": 4390.0,
+    "quality_status": "PASS",
+    "provenance_ref": "TEST:P6"
+  }
+]
