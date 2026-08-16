@@ -55,6 +55,10 @@ def main():
     with tempfile.TemporaryDirectory() as td:
         p1=Path(td)/'a.html';p2=Path(td)/'b.html';render(m,p1);render(m,p2);checks.append(check('rtl_renderer_deterministic',p1.read_bytes()==p2.read_bytes() and 'dir="rtl"' in p1.read_text(encoding='utf-8')))
     checks.append(check('section_order',load_json(BASE/'config/output_contract.json')['section_order']==['overview','pressure','transmission_release','eight_layers','events_timing','runs_memory','report_audit','data_health']))
+    # Windows PowerShell 5.1 reads UTF-8-without-BOM scripts through the active ANSI code page.
+    # Keep the root launcher ASCII-only so UTF-8 punctuation can never be mis-decoded as smart quote delimiters.
+    launcher_bytes=(repo/'AlphaDesk.ps1').read_bytes()
+    checks.append(check('windows_powershell51_launcher_encoding_safe',all(b < 128 for b in launcher_bytes),{'non_ascii_bytes':sum(1 for b in launcher_bytes if b >= 128)}))
     gov=verify_p12_authorized_delta(repo,BASE);checks.append(check('p12_governance_authorized_delta',gov['status']=='PASS',gov.get('failed')))
     bad=[x for x in checks if x['status']!='PASS'];out={'schema_version':'1.0.0','phase':'AD-V2-P13','status':'PASS' if not bad else 'FAIL','passed':len(checks)-len(bad),'failed':len(bad),'checks':checks};print(json.dumps(out,ensure_ascii=False,indent=2));return 0 if not bad else 1
 if __name__=='__main__':raise SystemExit(main())

@@ -7,7 +7,7 @@ $Repo = $PSScriptRoot
 $Tool = Join-Path $Repo "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL\NEXT_VERSION\AD_V2_PHASE_13_CANONICAL_GOLD_CONTROL_ROOM_OUTPUT\tools\alpha_desk_v2.py"
 if (-not (Test-Path -LiteralPath $Tool)) { throw "Alpha Desk V2 P13 canonical Gold Control Room is not installed." }
 if (-not $AlphaArgs -or $AlphaArgs.Count -eq 0) {
-    Write-Host "Alpha Desk V2 — Gold Control Room"
+    Write-Host "Alpha Desk V2 - Gold Control Room"
     Write-Host "Run Gold:          .\AlphaDesk.ps1 run Gold"
     Write-Host "Latest report:     .\AlphaDesk.ps1 report Gold"
     Write-Host "Open Control Room: .\AlphaDesk.ps1 open Gold"
