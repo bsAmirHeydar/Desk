@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P12",
+  "implementation_version": "2.0.0-RC1-SHADOW",
+  "normal_command": "AlphaDesk.ps1 run Gold",
+  "implementation": "COMPLETE",
+  "empirical_validation": "PENDING_TRUE_FORWARD_MATURITY",
+  "production_promotion": "NOT_GRANTED",
+  "default_next_phase": null,
+  "future_development": "EVIDENCE_DRIVEN_ONLY"
+}

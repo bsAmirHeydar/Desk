@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P12",
+  "fixed_roadmap_closed": true,
+  "default_next_phase": null,
+  "future_change_requires": [
+    "P09_EVIDENCE_DRIVEN_HYPOTHESIS_OR",
+    "P07_PROMOTION_EVIDENCE_OR",
+    "OPERATIONAL_DEFECT_OR",
+    "EXPLICIT_PRODUCT_CHANGE"
+  ],
+  "phase_proliferation_for_its_own_sake": false
+}

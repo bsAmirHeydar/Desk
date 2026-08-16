@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P12",
+  "required": [
+    "EXACT_P00_P11_SURFACE",
+    "P11_VALIDATOR",
+    "P11_ACCEPTANCE",
+    "P10_ACCEPTANCE",
+    "P09_REGRESSION",
+    "P08_REGRESSION",
+    "V1_LAUNCHER_PRESERVED",
+    "V2_FRONT_DOOR_FROZEN",
+    "R4_CORE"
+  ],
+  "commissioning_optional": [
+    "R4_FULL"
+  ],
+  "engineering_pass_does_not_imply_empirical_promotion": true
+}

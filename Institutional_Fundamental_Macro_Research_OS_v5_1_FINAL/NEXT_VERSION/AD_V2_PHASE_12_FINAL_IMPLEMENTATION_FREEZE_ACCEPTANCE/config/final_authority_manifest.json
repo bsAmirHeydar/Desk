@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P12",
+  "v1_production_authoritative": true,
+  "v2_implementation": "FROZEN_RC1_SHADOW",
+  "pressure_owner": "AD-V2-P02",
+  "transmission_owner": "AD-V2-P03",
+  "release_owner": "AD-V2-P04",
+  "gold_owner": "AD-V2-P05",
+  "true_forward_owner": "AD-V2-P08",
+  "learning_owner": "AD-V2-P09",
+  "unified_command_owner": "AD-V2-P11",
+  "trade_permission": "V1_INHERITED",
+  "positive_permission_creation": false,
+  "mainline_override": false,
+  "auto_promotion": false,
+  "auto_tuning": false,
+  "broker": "NONE"
+}
