@@ -24,6 +24,9 @@ def main():
     checks.append(check('schema_contract',m.get('schema_id')=='alpha_desk_v2.gold_control_room.v1' and m.get('contract')=='ALPHA_DESK_V2_GOLD_CONTROL_ROOM_V1'))
     checks.append(check('gold_only',m.get('identity',{}).get('subject')=='XAUUSD' and m.get('identity',{}).get('gold_only') is True))
     checks.append(check('eight_layers', [x.get('id') for x in m.get('layers',[])]==['timing','fundamental','expectations_policy','narrative_consumption','positioning','flow','funding','mechanics']))
+    checks.append(check('human_brief_present',all((m.get('overview',{}).get('human_brief') or {}).get(k) for k in ['headline','pressure_story','price_story','maturity_story','action_context'])))
+    checks.append(check('human_layer_summaries',all(bool(x.get('human_summary')) for x in m.get('layers',[]))))
+    checks.append(check('presentation_revision',m.get('output_contract_version')=='1.1.0' and m.get('renderer_version')=='1.1.0'))
     checks.append(check('permission_visible',m.get('overview',{}).get('trade_permission')=='NO_TRADE'))
     checks.append(check('same_owner_integrity',m.get('audit',{}).get('science_owner_integrity')=='PASS'))
     # Price contamination attack: pressure_input unchanged, target response altered materially.

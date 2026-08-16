@@ -14,6 +14,46 @@ LAYER_ORDER = [
     ('mechanics','مکانیک بازار / نقدشوندگی / نوسان','Mechanics / Liquidity / Volatility','ساختار بازار، Depth، Options، Expiry و شرایط نوسان/نقدشوندگی.'),
 ]
 
+
+HUMAN_LABELS = {
+    'BUY':'خرید','SELL':'فروش','NEUTRAL':'خنثی',
+    'BUY_VERY_LOW':'خرید بسیار ضعیف','BUY_LOW':'خرید ضعیف','BUY_MEDIUM':'خرید متوسط','BUY_HIGH':'خرید قوی','BUY_VERY_HIGH':'خرید بسیار قوی','BUY_EXTREME':'خرید بسیار شدید',
+    'SELL_VERY_LOW':'فروش بسیار ضعیف','SELL_LOW':'فروش ضعیف','SELL_MEDIUM':'فروش متوسط','SELL_HIGH':'فروش قوی','SELL_VERY_HIGH':'فروش بسیار قوی','SELL_EXTREME':'فروش بسیار شدید',
+    'VERY_LOW':'بسیار پایین','LOW':'پایین','MEDIUM':'متوسط','HIGH':'بالا','VERY_HIGH':'بسیار بالا','EXTREME':'بسیار شدید',
+    'RISING':'رو به تقویت','FALLING':'رو به تضعیف','STABLE':'تقریباً پایدار','UNKNOWN':'نامشخص','UNDETERMINED':'نامشخص',
+    'FRESH':'تازه','AGING':'در حال قدیمی‌شدن','STALE':'قدیمی','EXPIRED':'منقضی','PARTIAL':'ناقص','AVAILABLE':'در دسترس','UNAVAILABLE':'در دسترس نیست','UNAVAILABLE_OR_NOT_CONNECTED':'متصل نیست / در دسترس نیست',
+    'ALIGNED':'قیمت با فشار اصلی هماهنگ است','DELAYED':'انتقال فشار با تأخیر انجام می‌شود','COMPRESSION':'فشار هست اما هنوز کامل به حرکت تبدیل نشده','UNDER_TRANSMISSION':'قیمت کمتر از انتظار به فشار واکنش داده','NEGATIVE_TRANSMISSION':'قیمت فعلاً خلاف فشار اصلی حرکت می‌کند','OVER_TRANSMISSION':'قیمت بیش از انتظار مدل حرکت کرده',
+    'UNRESOLVED':'هنوز حل نشده','FORMING':'در حال شکل‌گیری','ACTIVE':'فعال','MATURE':'بالغ','EXHAUSTING':'در حال فرسودگی','EXHAUSTED':'فرسوده',
+    'NOT_READY':'هنوز آماده نیست','WATCH':'فقط زیر نظر','PRE_RELEASE':'نزدیک‌تر به رهاشدن','HIGH_READINESS':'آمادگی بالا',
+    'NO_TRADE':'فعلاً بدون ورود','PASS':'معتبر','FAIL':'نامعتبر','CONTESTED_OR_UNDETERMINED':'متعارض / نامشخص',
+    'RESEARCH_ESCALATION':'نیازمند بررسی بیشتر','DECISION_CRITICAL':'برای تصمیم حیاتی','NONE':'هیچ‌کدام',
+    'CONTEXT':'زمینه‌ای','VERY_HIGH':'بسیار بالا','CONDITIONAL_HIGH':'در شرایط خاص بالا',
+}
+
+ROOT_LABELS_FA = {
+    'POLICY':'بازقیمت‌گذاری مسیر سیاست پولی',
+    'REAL_RATE':'نرخ واقعی و هزینه فرصت نگهداری طلا',
+    'OFFICIAL':'تقاضای رسمی و بانک‌های مرکزی',
+    'PHYSICAL':'تقاضای فیزیکی منطقه‌ای',
+    'USD_AUTONOMOUS':'قدرت یا ضعف مستقل دلار',
+    'ETF_INVESTMENT_DEMAND':'تقاضای سرمایه‌گذاری ETF',
+    'FUNDING_COLLATERAL_STRESS':'فشار فاندینگ و وثیقه',
+}
+
+def human_label(value):
+    if isinstance(value,dict):
+        for key in ('state','class','value','level'):
+            if value.get(key) not in (None,'',[],{}):
+                return human_label(value.get(key))
+        return 'نامشخص'
+    if value in (None,'',[],{}): return 'نامشخص'
+    s=str(value)
+    return HUMAN_LABELS.get(s.upper(),s.replace('_',' ').lower())
+
+def _root_label_fa(root):
+    rid=str(root.get('root_id') or '').upper()
+    return ROOT_LABELS_FA.get(rid, root.get('label') or rid or 'Driver نامشخص')
+
 PERSIAN_STATE = {
     'NEGATIVE_TRANSMISSION':'انتقال منفی؛ قیمت فعلاً خلاف فشار اصلی حرکت می‌کند.',
     'COMPRESSION':'فشار وجود دارد اما هنوز به حرکت کامل قیمت تبدیل نشده.',
@@ -141,6 +181,20 @@ def _layer_objects(repo,p02,p03,p04,p05,input_pack):
         layers['flow']['missing_data'].append('TRUE_ORDER_FLOW_NOT_OBSERVED')
     layers['flow']['current_signal']='OBSERVED_TRUE_FLOW' if true_flow else 'NO_TRUE_FLOW_SIGNAL'
     if volume_only: layers['flow']['missing_data'].append('VOLUME_AVAILABLE_BUT_NOT_FLOW')
+    for lid,layer in layers.items():
+        roots_here=[x for x in layer['evidence'] if x.get('type')=='CAUSAL_ROOT']
+        obs_here=[x for x in layer['evidence'] if x.get('type')=='OBSERVATION']
+        if lid=='flow' and not true_flow:
+            layer['human_summary']='فلو واقعیِ قابل اتکا در این ران مشاهده نشده. اگر Volume موجود باشد فقط به‌عنوان فعالیت بازار دیده می‌شود، نه جهت سفارش‌ها.'
+        elif not layer['evidence']:
+            layer['human_summary']='برای این لایه در این ران داده‌ی کافی نداریم؛ بهتر است نتیجه‌ای از سکوت داده استخراج نکنیم.'
+        elif roots_here:
+            same=sum(1 for x in roots_here if x.get('polarity')==_val(p02,'pressure_core','sign')); opp=sum(1 for x in roots_here if x.get('polarity') and x.get('polarity')!=_val(p02,'pressure_core','sign'))
+            layer['human_summary']=f'{same} ریشه با فشار اصلی همسو و {opp} ریشه مخالف در این لایه دیده می‌شود.'
+        elif obs_here:
+            layer['human_summary']=f'{len(obs_here)} مشاهده‌ی معتبر در این لایه ثبت شده؛ وضعیت داده {human_label(layer.get("freshness"))} است.'
+        else:
+            layer['human_summary']='این لایه در تحلیل حاضر نقش زمینه‌ای دارد؛ جزئیات را فقط در صورت نیاز باز کن.'
     return [layers[k] for k,_,_,_ in LAYER_ORDER]
 
 
@@ -181,18 +235,67 @@ def _context(input_pack,p03,p05):
 
 def _persian_interpretation(p02,p03,p04,execution):
     sign=_val(p02,'pressure_core','sign'); pclass=_val(p02,'pressure_core','class'); trans=_val(p03,'transmission_state','state'); maturity=_val(p04,'opposing_move_maturity','state'); readiness=_val(p04,'release_readiness','state'); perm=execution.get('permission') or 'UNKNOWN'
-    direction={'BUY':'خرید','SELL':'فروش'}.get(sign,'نامشخص')
-    trans_text=PERSIAN_STATE.get(trans,f'وضعیت انتقال فشار {trans} است.')
-    return f'فشار اصلی فعلاً به سمت {direction} است ({pclass}). {trans_text} بلوغ حرکت مخالف {maturity} و آمادگی رهاشدن {readiness} است. Permission فعلی {perm} است و مستقل از Readiness باقی می‌ماند.'
+    direction=human_label(sign); strength=human_label(_val(p02,'pressure_core','magnitude_class')); trans_text=PERSIAN_STATE.get(trans,human_label(trans)); maturity_text=human_label(maturity); readiness_text=human_label(readiness); perm_text=human_label(perm)
+    if sign in {'BUY','SELL'}:
+        lead=f'کفه‌ی اصلی تحلیل فعلاً به سمت {direction} است و شدت فشار {strength} ارزیابی می‌شود.'
+    else:
+        lead='فعلاً کفه‌ی روشنی برای جهت بازار نداریم.'
+    return f'{lead} {trans_text} حرکت مخالف در وضعیت «{maturity_text}» است و آمادگی رهاشدن «{readiness_text}» ارزیابی می‌شود. از نظر Permission، وضعیت فعلی «{perm_text}» است.'
+
+
+def _human_brief(p02,p03,p04,execution,data_health):
+    sign=_val(p02,'pressure_core','sign'); mag=_val(p02,'pressure_core','magnitude_class'); trans=_val(p03,'transmission_state','state'); maturity=_val(p04,'opposing_move_maturity','state'); readiness=_val(p04,'release_readiness','state'); perm=execution.get('permission') or 'UNKNOWN'; trend=_val(p02,'pressure_dynamics','trend')
+    roots=p02.get('causal_root_ledger') or []
+    aligned=[_root_label_fa(r) for r in roots if r.get('polarity')==sign][:3]
+    opposing=[_root_label_fa(r) for r in roots if r.get('polarity') and r.get('polarity')!=sign][:2]
+    direction=human_label(sign); strength=human_label(mag); trend_fa=human_label(trend)
+    if sign in {'BUY','SELL'}:
+        headline=f'کفه‌ی تحلیل به سمت {direction} است؛ اما وضعیت ورود را باید جدا از جهت ببینیم.'
+        pressure_story=f'فشار اصلی {direction} با شدت {strength} است و روند آن {trend_fa} گزارش شده.'
+    else:
+        headline='فعلاً جهت غالب به اندازه‌ی کافی روشن نیست.'
+        pressure_story='فشار جهت‌دار هنوز به جمع‌بندی روشن نرسیده است.'
+    price_story=PERSIAN_STATE.get(trans,human_label(trans))
+    maturity_story=f'حرکت مخالف: {human_label(maturity)}. آمادگی رهاشدن: {human_label(readiness)}.'
+    if perm=='NO_TRADE':
+        action='فعلاً فقط رصد. سیستم هنوز مجوز ورود نداده؛ Readiness یا جهت بنیادی به‌تنهایی جای تریگر را نمی‌گیرد.'
+    elif perm in {'UNKNOWN',None}:
+        action='وضعیت Permission روشن نیست؛ تا مشخص‌شدن آن، خروجی را صرفاً تحلیلی بخوان.'
+    else:
+        action=f'Permission فعلی: {human_label(perm)}. نقطه‌ی ورود همچنان باید با تریگر تکنیکال مستقل تطبیق داده شود.'
+    escalation=_val(p03,'missing_driver_escalation','level')
+    watch=[]
+    if escalation not in {'NONE','UNKNOWN'}:
+        watch.append('اختلاف مدل و رفتار قیمت جدی شده؛ قبل از نتیجه‌گیری، عامل گمشده را بررسی کن.')
+    if data_health.get('overall')!='FRESH':
+        watch.append('بخشی از داده‌ها کامل یا تازه نیست؛ Confidence عملی باید پایین‌تر باشد.')
+    if opposing:
+        watch.append('نیروی مخالف فعلی: '+ '، '.join(opposing)+'.')
+    if not watch:
+        watch.append('فعلاً هشدار داده‌ای برجسته‌ای ثبت نشده است.')
+    return {
+      'headline':headline,
+      'pressure_story':pressure_story,
+      'why':aligned or ['Driver همسوی روشنی برای نمایش انسانی ثبت نشده است.'],
+      'price_story':price_story,
+      'maturity_story':maturity_story,
+      'action_context':action,
+      'watch_next':watch[:4],
+      'data_note':'وضعیت داده‌ها: '+human_label(data_health.get('overall'))+'.',
+      'technical_codes':{'pressure':_val(p02,'pressure_core','class'),'trend':trend,'transmission':trans,'maturity':maturity,'readiness':readiness,'permission':perm}
+    }
 
 
 def _what_matters(p02,p03,p04,p05,execution,data_health):
     rows=[]
-    rows.append(f"Pressure: {_val(p02,'pressure_core','class')} | Trend: {_val(p02,'pressure_dynamics','trend')}")
-    rows.append(f"Transmission: {_val(p03,'transmission_state','state')} | Residual: {_val(p03,'counterfactual_residual','magnitude_class')}")
-    if _val(p03,'missing_driver_escalation','level') not in {'NONE','UNKNOWN'}: rows.append(f"Missing-driver escalation: {_val(p03,'missing_driver_escalation','level')}")
-    rows.append(f"Release readiness: {_val(p04,'release_readiness','state')} | Permission: {execution.get('permission','UNKNOWN')}")
-    if data_health.get('overall')!='FRESH': rows.append(f"Data health: {data_health.get('overall')}; gaps must remain explicit.")
+    sign=_val(p02,'pressure_core','sign'); mag=_val(p02,'pressure_core','magnitude_class'); trend=_val(p02,'pressure_dynamics','trend'); trans=_val(p03,'transmission_state','state'); maturity=_val(p04,'opposing_move_maturity','state'); readiness=_val(p04,'release_readiness','state'); perm=execution.get('permission','UNKNOWN')
+    rows.append(f'فشار اصلی {human_label(sign)} است؛ شدت {human_label(mag)} و روند {human_label(trend)} است.')
+    rows.append(PERSIAN_STATE.get(trans,f'وضعیت انتقال فشار: {human_label(trans)}.'))
+    if _val(p03,'missing_driver_escalation','level') not in {'NONE','UNKNOWN'}:
+        rows.append('اختلاف مدل و قیمت به اندازه‌ای است که جست‌وجوی عامل گمشده لازم شده.')
+    rows.append(f'حرکت مخالف {human_label(maturity)} است و آمادگی رهاشدن {human_label(readiness)} است.')
+    rows.append(f'از نظر سیستم، وضعیت اقدام «{human_label(perm)}» است.')
+    if data_health.get('overall')!='FRESH': rows.append('پوشش داده کامل نیست؛ بخش‌های ناقص را با احتیاط بیشتری بخوان.')
     return rows[:5]
 
 
@@ -254,7 +357,7 @@ def build_control_room(repo,p11_receipt,*,input_pack=None,data_root=None):
     release={'unreleased_pressure':deepcopy(p04.get('unreleased_pressure')) if p04.get('unreleased_pressure') is not None else 'UNKNOWN','latent_causal_reserve':deepcopy(p04.get('latent_causal_reserve')) if p04.get('latent_causal_reserve') is not None else 'UNKNOWN','opposing_move_maturity':deepcopy(p04.get('opposing_move_maturity')) if p04.get('opposing_move_maturity') is not None else 'UNKNOWN','transmission_inflection':deepcopy(p04.get('transmission_inflection')) if p04.get('transmission_inflection') is not None else 'UNKNOWN','release_readiness':deepcopy(p04.get('release_readiness')) if p04.get('release_readiness') is not None else 'UNKNOWN','lifecycle':deepcopy(p04.get('release_lifecycle')) if p04.get('release_lifecycle') is not None else 'UNKNOWN','event_reset':deepcopy(p05.get('event_reset')) if p05.get('event_reset') is not None else 'UNKNOWN','liquidity_hypotheses':deepcopy(p04.get('liquidity_hypotheses')) if p04.get('liquidity_hypotheses') is not None else 'UNKNOWN','research_blockers':deepcopy(p04.get('research_blockers')) if p04.get('research_blockers') is not None else [],'owner':'AD-V2-P04','source_state_hash':hobj(p04)}
     current={'run_id':state.get('run_id') or p10.get('run_id'),'as_of':state.get('as_of') or p04.get('as_of_utc'),'pressure':pressure['class'],'transmission':transmission['state'],'maturity':_val(p04,'opposing_move_maturity','state'),'readiness':_val(p04,'release_readiness','state'),'permission':execution.get('permission','UNKNOWN')}
     hist=_history(data_root,current) if data_root else [current]
-    overview={'directional_pressure':pressure['class'],'pressure_sign':pressure['sign'],'pressure_magnitude_class':pressure['magnitude_class'],'pressure_trend':pressure['trend'],'persistence':pressure['persistence'],'driver_consumption':pressure['driver_consumption'],'remaining_causal_pressure':pressure['remaining_causal_pressure'],'price_transmission':transmission['state'],'unreleased_pressure':_val(p04,'unreleased_pressure','class'),'opposing_move_maturity':current['maturity'],'release_readiness':current['readiness'],'technical_trigger':'UNKNOWN','trade_permission':execution.get('permission','UNKNOWN'),'data_health':dh['overall'],'last_run_time':current['as_of'],'lifecycle':_val(p04,'release_lifecycle','state'),'what_matters_now':_what_matters(p02,p03,p04,p05,execution,dh),'current_interpretation':_persian_interpretation(p02,p03,p04,execution),'changed_since_previous_run':changes,'invalidation_conditions':_invalidations(p02,p03,p04),'market_context':_context(input_pack or {},p03,p05)}
-    obj={'schema_id':SCHEMA_ID,'schema_version':SCHEMA_VERSION,'contract':CONTRACT,'output_contract_version':'1.0.0','renderer_version':'1.0.0','generated_at':now_utc(),'identity':{'product':'ALPHA DESK V2','desk':'GOLD CONTROL ROOM','subject':'XAUUSD','gold_only':True,'language':'fa-IR','direction':'rtl'},'run':{'run_id':current['run_id'],'as_of':current['as_of'],'horizon':state.get('horizon') or p02.get('active_horizon'),'mode':state.get('mode') or p11_receipt.get('mode'),'p11_mode':p11_receipt.get('mode'),'p10_receipt_hash':p10.get('receipt_hash'),'canonical_v2_state_hash':state.get('canonical_v2_state_hash')},'authority':{'v1':'AUTHORITATIVE','v2':'SHADOW','presentation_science_authority':'NONE','trade_permission':execution.get('permission','UNKNOWN'),'permission_source':execution.get('permission_source','UNKNOWN'),'v2_override_allowed':False,'broker':'NONE','auto_promotion':False},'overview':overview,'pressure':pressure,'transmission':transmission,'release':release,'layers':layers,'events':{'event_reset':deepcopy(p05.get('event_reset')),'response_window':deepcopy(p03.get('response_window')),'expected_signature':deepcopy(p03.get('expected_signature_reference')),'next_major_event':'UNKNOWN'},'memory':{'changes':changes,'timeline':hist,'portable_memory':deepcopy(state.get('portable_memory'))},'audit':_audit(p02,p03,p04,p05,layers,execution),'data_health':dh,'provenance':{'upstream_state_hashes':{'p02':hobj(p02),'p03':hobj(p03),'p04':hobj(p04),'p05':hobj(p05),'p06':state.get('canonical_v2_state_hash') or hobj(state)},'owners':{'pressure':'AD-V2-P02','transmission':'AD-V2-P03','release':'AD-V2-P04','gold':'AD-V2-P05','memory':'AD-V2-P06','permission':'V1_BASE_CAPSULE'},'presentation_only':True}}
+    overview={'directional_pressure':pressure['class'],'pressure_sign':pressure['sign'],'pressure_magnitude_class':pressure['magnitude_class'],'pressure_trend':pressure['trend'],'persistence':pressure['persistence'],'driver_consumption':pressure['driver_consumption'],'remaining_causal_pressure':pressure['remaining_causal_pressure'],'price_transmission':transmission['state'],'unreleased_pressure':_val(p04,'unreleased_pressure','class'),'opposing_move_maturity':current['maturity'],'release_readiness':current['readiness'],'technical_trigger':'UNKNOWN','trade_permission':execution.get('permission','UNKNOWN'),'data_health':dh['overall'],'last_run_time':current['as_of'],'lifecycle':_val(p04,'release_lifecycle','state'),'what_matters_now':_what_matters(p02,p03,p04,p05,execution,dh),'current_interpretation':_persian_interpretation(p02,p03,p04,execution),'human_brief':_human_brief(p02,p03,p04,execution,dh),'changed_since_previous_run':changes,'invalidation_conditions':_invalidations(p02,p03,p04),'market_context':_context(input_pack or {},p03,p05)}
+    obj={'schema_id':SCHEMA_ID,'schema_version':SCHEMA_VERSION,'contract':CONTRACT,'output_contract_version':'1.1.0','renderer_version':'1.1.0','generated_at':now_utc(),'identity':{'product':'ALPHA DESK V2','desk':'GOLD CONTROL ROOM','subject':'XAUUSD','gold_only':True,'language':'fa-IR','direction':'rtl'},'run':{'run_id':current['run_id'],'as_of':current['as_of'],'horizon':state.get('horizon') or p02.get('active_horizon'),'mode':state.get('mode') or p11_receipt.get('mode'),'p11_mode':p11_receipt.get('mode'),'p10_receipt_hash':p10.get('receipt_hash'),'canonical_v2_state_hash':state.get('canonical_v2_state_hash')},'authority':{'v1':'AUTHORITATIVE','v2':'SHADOW','presentation_science_authority':'NONE','trade_permission':execution.get('permission','UNKNOWN'),'permission_source':execution.get('permission_source','UNKNOWN'),'v2_override_allowed':False,'broker':'NONE','auto_promotion':False},'overview':overview,'pressure':pressure,'transmission':transmission,'release':release,'layers':layers,'events':{'event_reset':deepcopy(p05.get('event_reset')),'response_window':deepcopy(p03.get('response_window')),'expected_signature':deepcopy(p03.get('expected_signature_reference')),'next_major_event':'UNKNOWN'},'memory':{'changes':changes,'timeline':hist,'portable_memory':deepcopy(state.get('portable_memory'))},'audit':_audit(p02,p03,p04,p05,layers,execution),'data_health':dh,'provenance':{'upstream_state_hashes':{'p02':hobj(p02),'p03':hobj(p03),'p04':hobj(p04),'p05':hobj(p05),'p06':state.get('canonical_v2_state_hash') or hobj(state)},'owners':{'pressure':'AD-V2-P02','transmission':'AD-V2-P03','release':'AD-V2-P04','gold':'AD-V2-P05','memory':'AD-V2-P06','permission':'V1_BASE_CAPSULE'},'presentation_only':True}}
     content=deepcopy(obj);content.pop('generated_at',None);obj['canonical_content_hash']=hobj(content)
     return obj

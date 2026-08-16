@@ -1,21 +1,30 @@
 {
-  "schema_version":"1.0.0",
-  "phase":"AD-V2-P13",
-  "contract":"ALPHA_DESK_V2_GOLD_CONTROL_ROOM_V1",
-  "schema_id":"alpha_desk_v2.gold_control_room.v1",
-  "subject":"XAUUSD",
-  "gold_only":true,
-  "primary_language":"fa-IR",
-  "direction":"rtl",
-  "section_order":["overview","pressure","transmission_release","eight_layers","events_timing","runs_memory","report_audit","data_health"],
-  "presentation_science_authority":"NONE",
-  "trade_permission_owner":"V1_BASE_CAPSULE",
-  "broker_authority":"NONE",
-  "immutable_archive":true,
-  "latest_copy":true,
-  "terminal_html_json_same_model":true,
-  "unknown_is_valid":true,
-  "laws":[
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P13",
+  "contract": "ALPHA_DESK_V2_GOLD_CONTROL_ROOM_V1",
+  "schema_id": "alpha_desk_v2.gold_control_room.v1",
+  "subject": "XAUUSD",
+  "gold_only": true,
+  "primary_language": "fa-IR",
+  "direction": "rtl",
+  "section_order": [
+    "overview",
+    "pressure",
+    "transmission_release",
+    "eight_layers",
+    "events_timing",
+    "runs_memory",
+    "report_audit",
+    "data_health"
+  ],
+  "presentation_science_authority": "NONE",
+  "trade_permission_owner": "V1_BASE_CAPSULE",
+  "broker_authority": "NONE",
+  "immutable_archive": true,
+  "latest_copy": true,
+  "terminal_html_json_same_model": true,
+  "unknown_is_valid": true,
+  "laws": [
     "PRICE_DOES_NOT_MUTATE_PRESSURE",
     "NEGATIVE_TRANSMISSION_IS_NOT_SELL_PRESSURE",
     "COMPRESSION_IS_NOT_ABSORPTION",
@@ -25,5 +34,14 @@
     "OPEN_INTEREST_IS_NOT_DIRECTION",
     "OPTIONS_OI_IS_NOT_DEALER_GAMMA",
     "READINESS_IS_NOT_PERMISSION"
+  ],
+  "presentation_revision": "1.1.0",
+  "human_first_presentation": true,
+  "human_first_rules": [
+    "PERSIAN_PLAIN_LANGUAGE_FIRST",
+    "TECHNICAL_CODES_SECONDARY",
+    "HUMAN_BRIEF_REQUIRED",
+    "ACTION_CONTEXT_MUST_RESPECT_PERMISSION",
+    "DETAILS_PROGRESSIVELY_DISCLOSED"
   ]
 }

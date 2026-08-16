@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "phase": "AD-V2-P13",
-  "release": "1.0.2",
+  "release": "1.0.3",
   "changes": [
     "single canonical presentation object",
     "Persian RTL control room",
@@ -16,7 +16,12 @@
     "P13-HF02 operational environment bootstrap: Run Gold now verifies or certifies the required C1 environment receipt before entering P11 shadow research",
     "Legacy C1 root-wrapper doctor failure is superseded only when the governed P11 direct V1 runtime authority binding passes; all other doctor failures remain blocking",
     "AlphaDesk commands environment-status and environment-certify added; OPENAI_API_KEY remains external to the repository and is never persisted by P13",
-    "P13 status now exposes environment certification state"
+    "P13 status now exposes environment certification state",
+    "P13-HF03 human-first presentation: plain Persian briefing is now the primary reading surface and machine codes are secondary details",
+    "Overview now answers in human language: what the desk thinks, why, what price is doing, what the trader should understand, and what to watch next",
+    "Eight analytical layers now include deterministic human summaries while preserving raw evidence behind progressive disclosure",
+    "Terminal output is human-first Persian with technical codes moved to a compact secondary section",
+    "Canonical schema id remains unchanged; output_contract_version and renderer_version advance to 1.1.0 with no science mutation"
   ],
   "unchanged": [
     "P02 science",

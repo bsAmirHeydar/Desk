@@ -40,8 +40,9 @@ def structural(name,text):
       'mobile_breakpoints':'@media(max-width:820px)' in text and '@media(max-width:520px)' in text,
       'wrap_safety':'overflow-wrap:anywhere' in text and '.table-wrap{overflow:auto' in text,
       'offline_no_cdn':'<script src=' not in text and '<link rel=' not in text,
-      'persian_labels':all(x in text for x in ['نمای کلی','فشار و جهت','انتقال و آزادشدن','هشت لایه تحلیل','زمان‌بندی و رویدادها','ران‌ها و حافظه','گزارش و ممیزی','سلامت داده']),
+      'persian_labels':all(x in text for x in ['نمای کلی','فشار و جهت','انتقال و آزادشدن','هشت لایه تحلیل','زمان‌بندی و رویدادها','ران‌ها و حافظه','گزارش و بررسی','سلامت داده']),
       'semantic_laws':all(x in text for x in ['NEGATIVE TRANSMISSION ≠ SELL PRESSURE','COMPRESSION ≠ ABSORPTION','PRICE REVERSAL ≠ RELEASE','UNRELEASED ≠ PRICE DISTANCE']),
+      'human_first_surface':all(x in text for x in ['چرا این سمت؟','قیمت چه می‌گوید؟','برای منِ تریدر یعنی چه؟','دیدن کدها و وضعیت‌های فنی']),
     }
     bad=[k for k,v in checks.items() if not v]
     return {'fixture':name,'status':'PASS' if not bad else 'FAIL','checks':checks,'failed_checks':bad}

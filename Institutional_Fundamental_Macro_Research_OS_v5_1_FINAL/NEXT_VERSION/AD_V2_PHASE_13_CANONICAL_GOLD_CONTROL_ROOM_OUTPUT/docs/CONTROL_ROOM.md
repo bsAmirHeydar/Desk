@@ -29,3 +29,15 @@ Renderer laws: Price does not alter Pressure; Volume is not Flow; OI is not Dire
 - `./AlphaDesk.ps1 run Gold` auto-certifies only when the receipt is missing/stale and `OPENAI_API_KEY` is available in the process environment.
 - The API key is never written to the repository or AlphaLab_Data by P13.
 - The legacy root `AlphaLab.ps1` wrapper is not required when the P11 frozen direct V1 runtime binding passes. No other C1 doctor failure is waived.
+
+
+## Human-first presentation (P13-HF03)
+
+The canonical Gold Control Room is read in two layers:
+
+1. **Human layer first** — plain Persian: current thesis, why, price relationship, opposing-move state, action context, and what to watch next.
+2. **Technical layer second** — canonical codes, provenance, raw evidence, and governance details behind expandable sections.
+
+This is presentation-only. The human text is deterministic and may only translate or summarize canonical upstream states. It may not create a new Direction, Pressure, Release state, Permission, Flow inference, or missing-driver claim. `UNKNOWN` remains an acceptable human answer such as «نامشخص» or «داده کافی نداریم».
+
+The goal is that a trader can understand the report without first decoding machine enums, while an auditor can still open the technical details and inspect the exact canonical codes.
