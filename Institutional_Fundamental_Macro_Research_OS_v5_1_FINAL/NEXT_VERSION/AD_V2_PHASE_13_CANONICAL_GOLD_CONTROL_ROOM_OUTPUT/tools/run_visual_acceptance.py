@@ -43,6 +43,8 @@ def structural(name,text):
       'persian_labels':all(x in text for x in ['نمای کلی','فشار و جهت','انتقال و آزادشدن','هشت لایه تحلیل','زمان‌بندی و رویدادها','ران‌ها و حافظه','گزارش و بررسی','سلامت داده']),
       'semantic_laws':all(x in text for x in ['NEGATIVE TRANSMISSION ≠ SELL PRESSURE','COMPRESSION ≠ ABSORPTION','PRICE REVERSAL ≠ RELEASE','UNRELEASED ≠ PRICE DISTANCE']),
       'human_first_surface':all(x in text for x in ['چرا این سمت؟','قیمت چه می‌گوید؟','برای منِ تریدر یعنی چه؟','دیدن کدها و وضعیت‌های فنی']),
+      'contextual_learning_surface':all(x in text for x in ['data-help="directional_pressure"','data-help="transmission"','درباره این لایه یاد بگیر','id="help-drawer"','id="gold-contextual-help"']),
+      'contextual_help_is_distributed': 'data-tab="guide"' not in text,
     }
     bad=[k for k,v in checks.items() if not v]
     return {'fixture':name,'status':'PASS' if not bad else 'FAIL','checks':checks,'failed_checks':bad}
@@ -62,10 +64,14 @@ async def browser_checks(rendered):
             for name,text in rendered:
                 for label,w,h in [('desktop',1440,1000),('mobile',390,844)]:
                     page=await browser.new_page(viewport={'width':w,'height':h});await page.set_content(text,wait_until='domcontentloaded');await page.wait_for_timeout(20)
-                    data=await page.evaluate("""() => ({dir:document.documentElement.dir,lang:document.documentElement.lang,overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+2,tabs:document.querySelectorAll('.nav button').length,panels:document.querySelectorAll('.panel').length})""")
+                    data=await page.evaluate("""() => ({dir:document.documentElement.dir,lang:document.documentElement.lang,overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+2,tabs:document.querySelectorAll('.nav button').length,panels:document.querySelectorAll('.panel').length,helpButtons:document.querySelectorAll('[data-help]').length,guideTopics:Object.keys(JSON.parse(document.getElementById('gold-contextual-help').textContent||'{}')).length})""")
                     buttons=page.locator('.nav button')
                     for i in range(await buttons.count()):await buttons.nth(i).click()
-                    ok=data['dir']=='rtl' and data['lang']=='fa' and not data['overflow'] and data['tabs']==8 and data['panels']==8
+                    await page.locator('.nav button[data-tab="overview"]').click();await page.wait_for_timeout(10)
+                    await page.locator('[data-help="directional_pressure"]').first.click();await page.wait_for_timeout(10)
+                    help_open=await page.locator('#help-drawer').evaluate("el => el.classList.contains('open') && el.getAttribute('aria-hidden')==='false'")
+                    help_text=await page.locator('#help-body').inner_text();await page.locator('#help-close').click()
+                    ok=data['dir']=='rtl' and data['lang']=='fa' and not data['overflow'] and data['tabs']==8 and data['panels']==8 and data['helpButtons']>=12 and data['guideTopics']>=30 and help_open and 'برای دی‌ترید' in help_text
                     rows.append({'fixture':name,'viewport':label,'status':'PASS' if ok else 'FAIL','detail':data});await page.close()
             await browser.close()
     except Exception as e:

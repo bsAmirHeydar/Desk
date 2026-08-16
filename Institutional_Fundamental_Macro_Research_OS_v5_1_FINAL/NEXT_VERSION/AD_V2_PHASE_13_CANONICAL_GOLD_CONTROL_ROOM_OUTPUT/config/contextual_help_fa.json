@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0.0",
+  "presentation_revision": "1.2.0",
+  "principle": "CONTEXTUAL_LEARNING_NOT_CENTRAL_GUIDE",
+  "topics": {
+    "overview": {
+      "title": "نمای کلی را چطور بخوانم؟",
+      "short": "این صفحه برای فهم سریع وضعیت فعلی است؛ نه برای دیدن همه جزئیات.",
+      "meaning": "اول سمت اصلی، رفتار قیمت، وضعیت حرکت مخالف و Permission را ببین. بعد فقط اگر چیزی مبهم بود وارد تب‌های عمیق‌تر شو.",
+      "day_trading": "در چند ثانیه باید بفهمی امروز بیشتر دنبال کدام سمت هستی، آیا بازار آماده است یا هنوز باید صبر کنی.",
+      "mistakes": ["فقط یک کارت را دیدن و بقیه تصویر را نادیده گرفتن", "HIGH_READINESS را با اجازه ورود یکی دانستن"],
+      "questions": ["سمت اصلی چیست؟", "قیمت با آن هماهنگ است؟", "حرکت مخالف هنوز زنده است؟", "Permission واقعاً چیست؟"]
+    },
+    "directional_pressure": {
+      "title": "فشار جهت‌دار چیست؟",
+      "short": "جمع‌بندی نیروی اصلی پشت بازار است؛ نه جهت آخرین کندل طلا.",
+      "meaning": "Pressure از Driverهای علّی مثل نرخ‌ها، دلار، انتظارات سیاستی، تقاضای ساختاری و سایر ریشه‌های معتبر ساخته می‌شود. حرکت خود XAUUSD به‌تنهایی حق ندارد Pressure را قوی یا ضعیف کند.",
+      "day_trading": "Pressure به تو می‌گوید در کدام سمت دنبال فرصت باشی. نقطه ورود را تعیین نمی‌کند.",
+      "mistakes": ["Price down = Buy Pressure weak", "چند Driver وابسته را چند رأی مستقل حساب کردن"],
+      "questions": ["سه Driver اصلی چیست؟", "آیا این Driverها مستقل‌اند؟", "آیا Price وارد محاسبه Pressure شده؟"]
+    },
+    "pressure_quality": {
+      "title": "کیفیت Pressure یعنی چه؟",
+      "short": "دو Pressure هم‌جهت می‌توانند از نظر کیفیت کاملاً متفاوت باشند.",
+      "meaning": "کیفیت به شدت، روند، تازگی، ماندگاری، مصرف‌شدگی و تناقض‌های Pressure نگاه می‌کند.",
+      "day_trading": "BUY_HIGH تازه و پایدار با BUY_HIGH قدیمی و پرمصرف یک فرصت نیست.",
+      "mistakes": ["فقط HIGH/LOW را دیدن", "تازگی و مصرف را نادیده گرفتن"],
+      "questions": ["Pressure در حال قوی‌تر شدن است؟", "تازه است؟", "چقدر مصرف شده؟"]
+    },
+    "pressure_trend": {
+      "title": "روند Pressure چیست؟",
+      "short": "می‌گوید خود Pressure نسبت به ران‌های قبلی در حال رشد، افت یا ثبات است.",
+      "meaning": "این Trend از Stateهای Pressure می‌آید، نه از Trend قیمت طلا.",
+      "day_trading": "Pressure رو به رشد معمولاً ارزش بیشتری برای پیگیری دارد؛ مخصوصاً اگر Price هنوز عقب باشد.",
+      "mistakes": ["روند قیمت را جای روند Pressure گذاشتن"],
+      "questions": ["Pressure نسبت به قبل چه تغییری کرده؟", "این تغییر از کدام Driver آمده؟"]
+    },
+    "persistence": {
+      "title": "ماندگاری Pressure چیست؟",
+      "short": "برآورد می‌کند نیروی فعلی چقدر احتمال دارد دوام داشته باشد.",
+      "meaning": "یک شوک کوتاه خبری با یک تغییر پایدار در رژیم نرخ‌ها یا تقاضای ساختاری یکسان نیست.",
+      "day_trading": "ماندگاری بالاتر کمک می‌کند بین حرکت گذرا و Thesis قابل‌پیگیری فرق بگذاری.",
+      "mistakes": ["یک خبر تازه را خودکار پایدار فرض کردن"],
+      "questions": ["این Driver چند ساعت/روز می‌تواند زنده بماند؟", "چه چیزی آن را از بین می‌برد؟"]
+    },
+    "driver_consumption": {
+      "title": "مصرف Driverها چیست؟",
+      "short": "می‌گوید چه مقدار از اثر Driver اصلی احتمالاً قبلاً در بازار هضم شده است.",
+      "meaning": "جهت درست لزوماً فرصت تازه نیست. اگر Story قدیمی و پرمصرف باشد، بخش مهمی از حرکت ممکن است قبلاً اتفاق افتاده باشد.",
+      "day_trading": "کم‌مصرف بودن Pressure می‌تواند به ظرفیت حرکت باقی‌مانده کمک کند.",
+      "mistakes": ["مقدار حرکت Price را مستقیم برابر Consumption گرفتن"],
+      "questions": ["این Story تازه است؟", "بازار از قبل چقدر انتظارش را داشته؟"]
+    },
+    "remaining_pressure": {
+      "title": "فشار علّی باقی‌مانده چیست؟",
+      "short": "بخشی از Pressure بنیادی است که هنوز از نظر Driverها زنده مانده است.",
+      "meaning": "Remaining Causal Pressure با Remaining Asymmetry یا فاصله قیمت فرق دارد.",
+      "day_trading": "اگر Pressure بالا باشد ولی بخش زیادی از آن دیگر باقی نمانده باشد، دنبال‌کردن حرکت می‌تواند کیفیت کمتری داشته باشد.",
+      "mistakes": ["Remaining Pressure را از فاصله Price محاسبه کردن"],
+      "questions": ["کدام Driver هنوز زنده است؟", "کدام Driver مصرف یا منقضی شده؟"]
+    },
+    "transmission": {
+      "title": "انتقال فشار به قیمت چیست؟",
+      "short": "می‌گوید Price چقدر Pressure موجود را نشان می‌دهد.",
+      "meaning": "ممکن است Pressure خرید باشد ولی Price فعلاً خلاف آن حرکت کند. این وضعیت Negative Transmission است، نه Sell Pressure.",
+      "day_trading": "Transmission برای فهمیدن اینکه بازار در حال رهاشدن است یا هنوز مقاومت می‌کند بسیار مهم است.",
+      "mistakes": ["NEGATIVE_TRANSMISSION را SELL دانستن", "COMPRESSION را Absorption قطعی دانستن"],
+      "questions": ["Price نسبت به انتظار مدل چه کرده؟", "کدام Channel انتقال را مختل کرده؟"]
+    },
+    "expected_response": {
+      "title": "Expected Response چیست؟",
+      "short": "پیش از دیدن پاسخ بعدی Price، سیستم مشخص می‌کند با Driverهای فعلی چه واکنشی انتظار دارد.",
+      "meaning": "این انتظار باید قبل از مشاهده Outcome فریز شود تا تحلیل بعداً با Price بازنویسی نشود.",
+      "day_trading": "به تو کمک می‌کند بفهمی رفتار واقعی بازار چقدر با Thesis سازگار است.",
+      "mistakes": ["بعد از حرکت قیمت، انتظار قبلی را تغییر دادن"],
+      "questions": ["این انتظار چه زمانی فریز شده؟", "روش ساخت آن چه بوده؟"]
+    },
+    "counterfactual_residual": {
+      "title": "فاصله از انتظار مدل چیست؟",
+      "short": "اختلاف بین واکنش مورد انتظار و واکنش واقعی Price است.",
+      "meaning": "Residual بزرگ می‌تواند نشانه Driver گمشده، انتقال ناقص یا نقص مدل باشد؛ نه اثبات Manipulation یا Absorption.",
+      "day_trading": "Residual بزرگ می‌گوید قبل از ورود باید بفهمی چه چیزی را نمی‌بینی.",
+      "mistakes": ["هر Residual را Liquidity Grab نامیدن"],
+      "questions": ["اختلاف چقدر بزرگ است؟", "چه Driver گمشده‌ای می‌تواند آن را توضیح دهد؟"]
+    },
+    "unreleased_pressure": {
+      "title": "فشار آزادنشده چیست؟",
+      "short": "Pressure معتبری است که هنوز کامل به Price منتقل نشده است.",
+      "meaning": "Unreleased Pressure فقط وقتی معنی دارد که Pressure اصلی هنوز زنده، کم‌مصرف و معتبر باشد. صرف حرکت مخالف Price آن را بزرگ نمی‌کند.",
+      "day_trading": "برای شکار حرکتی مفید است که هنوز بخش مهمی از انرژی بنیادی آن در Price دیده نشده.",
+      "mistakes": ["هرچه Price بیشتر خلاف رفت، Unreleased را بیشتر دانستن"],
+      "questions": ["Pressure هنوز معتبر است؟", "Driver جدید مخالف آمده؟", "Consumption چقدر است؟"]
+    },
+    "opposing_move": {
+      "title": "بلوغ حرکت مخالف چیست؟",
+      "short": "می‌گوید حرکت خلاف Pressure هنوز فعال است یا به فرسودگی نزدیک شده.",
+      "meaning": "بلوغ با زمان یا تعداد دلار حرکت اثبات نمی‌شود. باید سازوکار مخالف با چند شاهد مستقل ضعیف شود.",
+      "day_trading": "این بخش کمک می‌کند جهت را درست بفهمی ولی خیلی زود وارد نشوی.",
+      "mistakes": ["چون Price زیاد خلاف رفت، حرکت را Exhausted دانستن"],
+      "questions": ["نیروی مخالف هنوز چه شواهدی دارد؟", "آیا چند شاهد مستقل از فرسودگی داریم؟"]
+    },
+    "release_readiness": {
+      "title": "آمادگی رهاشدن چیست؟",
+      "short": "جمع‌بندی می‌کند آیا زمینه برای انتقال محسوس Pressure به Price آماده‌تر شده یا نه.",
+      "meaning": "Readiness بالا معمولاً نیازمند Pressure معتبر، Unreleased مناسب، فرسودگی حرکت مخالف و بهبود Transmission است.",
+      "day_trading": "به تو می‌گوید چه زمانی بیشتر آماده‌ی دیدن تریگر تکنیکال باشی.",
+      "mistakes": ["HIGH_READINESS = BUY NOW", "Readiness را Permission دانستن"],
+      "questions": ["Transmission بهتر شده؟", "حرکت مخالف واقعاً فرسوده است؟", "Permission چیست؟"]
+    },
+    "permission": {
+      "title": "Permission چیست؟",
+      "short": "مجوز اقدام سیستم است و از Readiness یا Direction جداست.",
+      "meaning": "ممکن است Pressure خرید و Readiness بالا باشد ولی Permission همچنان NO_TRADE باشد.",
+      "day_trading": "این بخش جلوی تبدیل تحلیل خوب به ورود عجولانه را می‌گیرد.",
+      "mistakes": ["جهت را با مجوز معامله یکی دانستن"],
+      "questions": ["Permission دقیقاً از کدام Owner آمده؟", "تریگر تکنیکال فعال شده؟"]
+    },
+    "timing": {
+      "title": "لایه زمان‌بندی چه می‌کند؟",
+      "short": "می‌گوید چه زمانی احتمال تغییر رفتار بازار بیشتر است.",
+      "meaning": "خبرها، سشن‌ها، حراج‌ها و پنجره‌های زمانی می‌توانند زمان آزادشدن Pressure را تغییر دهند؛ ولی خودشان Direction نمی‌سازند.",
+      "day_trading": "برای اینکه بدانی چه زمانی بیشتر مراقب Release، Noise یا Event Reset باشی.",
+      "mistakes": ["وجود Event را جهت معامله دانستن"],
+      "questions": ["رویداد بعدی چیست؟", "بازار قبل یا بعد از Event است؟"]
+    },
+    "fundamental": {
+      "title": "لایه فاندامنتال چه می‌کند؟",
+      "short": "ریشه‌های اقتصادی و ساختاری Pressure طلا را بررسی می‌کند.",
+      "meaning": "نرخ‌ها، تورم، رشد، دلار، تقاضای رسمی، ریسک‌های اعتباری و عوامل ساختاری می‌توانند در این لایه قرار بگیرند.",
+      "day_trading": "پایه‌ی سمت اصلی را می‌دهد؛ نه نقطه ورود.",
+      "mistakes": ["حرکت Price را فاندامنتال حساب کردن"],
+      "questions": ["علت اصلی امروز چیست؟", "این علت تازه است یا قدیمی؟"]
+    },
+    "expectations_policy": {
+      "title": "انتظارات و سیاست چه می‌گویند؟",
+      "short": "بازار بیشتر به تغییر انتظار آینده واکنش می‌دهد تا خود عدد خام.",
+      "meaning": "مسیر احتمالی نرخ‌ها، انتظارات فدرال رزرو و Surprise نسبت به Consensus در اینجا مهم‌اند.",
+      "day_trading": "کمک می‌کند بفهمی یک خبر واقعاً جدید است یا قبلاً Price-in شده.",
+      "mistakes": ["خبر خوب را بدون مقایسه با انتظار بازار تفسیر کردن"],
+      "questions": ["بازار قبل از خبر چه انتظار داشت؟", "بعد از خبر انتظارها چطور تغییر کرد؟"]
+    },
+    "narrative_consumption": {
+      "title": "روایت و بازقیمت‌گذاری چیست؟",
+      "short": "بررسی می‌کند Story غالب بازار چقدر تازه و چقدر مصرف شده است.",
+      "meaning": "ممکن است Thesis درست باشد ولی همه آن را بدانند و بخش بزرگی از آن از قبل در بازار باشد.",
+      "day_trading": "برای فرق بین Direction درست و Opportunity خوب مهم است.",
+      "mistakes": ["Story معروف را لزوماً Edge دانستن"],
+      "questions": ["چه چیزی واقعاً جدید شده؟", "بازار چند روز است همین Story را معامله می‌کند؟"]
+    },
+    "positioning": {
+      "title": "پوزیشنینگ چیست؟",
+      "short": "نشان می‌دهد بازیگران بازار از قبل چطور چیده شده‌اند.",
+      "meaning": "COT، OI، ETF/Options positioning و Crowding بیشتر Context می‌دهند؛ معمولاً Flow زنده یا Trigger نیستند.",
+      "day_trading": "برای سنجش Fragility، Squeeze و خطر Liquidation مفید است.",
+      "mistakes": ["Open Interest = Direction", "COT هفتگی را Live Flow دانستن"],
+      "questions": ["بازار شلوغ Long/Short است؟", "داده چقدر قدیمی است؟"]
+    },
+    "flow": {
+      "title": "فلو واقعی چیست؟",
+      "short": "می‌خواهد بفهمد فشار واقعی معاملات چگونه وارد بازار می‌شود و بازار چگونه پاسخ می‌دهد.",
+      "meaning": "Volume فقط Activity است. Flow حرفه‌ای‌تر می‌تواند Trades، Aggression، Depth، MBO، Replenishment و Liquidity Response را ببیند؛ اگر Feed وجود داشته باشد.",
+      "day_trading": "یکی از نزدیک‌ترین لایه‌ها به رفتار Intraday است، مخصوصاً برای فهم حرکت مخالف و Release.",
+      "mistakes": ["Volume = Flow", "قیمت را جای Order Flow استفاده کردن", "داده MBO نداشتن ولی Flow قطعی گزارش کردن"],
+      "questions": ["آیا True Flow واقعاً مشاهده شده؟", "Coverage کامل است یا Partial؟"]
+    },
+    "funding": {
+      "title": "Funding / Plumbing چیست؟",
+      "short": "فشارهای نقدینگی و تأمین مالی زیر پوست بازار را بررسی می‌کند.",
+      "meaning": "در شرایط استرس، Dollar Funding، Margin، Collateral یا Basis می‌توانند رفتار طلا را موقتاً خلاف Thesis بنیادی کنند.",
+      "day_trading": "در روزهای عادی ممکن است آرام باشد؛ در شوک نقدینگی بسیار مهم می‌شود.",
+      "mistakes": ["در هر روز عادی به زور Funding signal ساختن"],
+      "questions": ["آیا نشانه Stress واقعی داریم؟", "این فشار موقت است یا ساختاری؟"]
+    },
+    "mechanics": {
+      "title": "مکانیک، نقدشوندگی و نوسان چیست؟",
+      "short": "می‌گوید ساختار بازار چقدر اجازه حرکت تمیز یا ناگهانی می‌دهد.",
+      "meaning": "Volatility، Liquidity، Options، Expiry، Basis و Depth در این لایه بررسی می‌شوند، فقط وقتی داده معتبر وجود داشته باشد.",
+      "day_trading": "برای کیفیت حرکت، سرعت، ریسک Slippage و رفتار اطراف Eventها مهم است.",
+      "mistakes": ["Options OI = Dealer Gamma", "چارت تزئینی بدون داده واقعی"],
+      "questions": ["Liquidity الان خوب است؟", "Volatility regime چیست؟", "Options model واقعاً موجود است؟"]
+    },
+    "events": {
+      "title": "رویدادها و Timing را چطور بخوانم؟",
+      "short": "این بخش پنجره‌های زمانی و Catalystهای مهم را نشان می‌دهد.",
+      "meaning": "Event می‌تواند مدل را Reset کند یا Transmission را تغییر دهد. Event به تنهایی Direction نمی‌سازد.",
+      "day_trading": "قبل خبر، Expected Response را بفهم؛ بعد خبر، رفتار واقعی را با آن مقایسه کن.",
+      "mistakes": ["خبر مهم = جهت مشخص"],
+      "questions": ["Event بعدی چیست؟", "Expected Signature قبل از Outcome فریز شده؟"]
+    },
+    "memory": {
+      "title": "ران‌ها و حافظه چرا مهم‌اند؟",
+      "short": "به جای یک Snapshot، تغییر Stateها را در زمان دنبال می‌کند.",
+      "meaning": "گاهی Edge اصلی در Transition است: مثلاً Transmission از Negative به Compression و Maturity از Active به Mature می‌رود.",
+      "day_trading": "به تو کمک می‌کند ببینی بازار واقعاً در حال نزدیک‌شدن به Release است یا فقط یک عکس لحظه‌ای جذاب دارد.",
+      "mistakes": ["فقط آخرین Run را دیدن"],
+      "questions": ["چه چیزی از ران قبلی تغییر کرده؟", "کدام تغییر از نظر تصمیم مهم است؟"]
+    },
+    "audit": {
+      "title": "گزارش و ممیزی برای چیست؟",
+      "short": "اینجا باید تحلیل را به چالش بکشی، نه فقط قبولش کنی.",
+      "meaning": "فرض‌ها، تناقض‌ها، Missing Driver، Provenance و مرزهای داده را بررسی کن.",
+      "day_trading": "اگر Thesis نتواند سؤال‌های ممیزی را جواب دهد، Confidence باید پایین بیاید.",
+      "mistakes": ["گزارش GPT را Authority نهایی دانستن"],
+      "questions": ["چه چیزی Thesis را باطل می‌کند؟", "کدام داده واقعاً در دسترس نیست؟"]
+    },
+    "data_health": {
+      "title": "سلامت داده چیست؟",
+      "short": "می‌گوید سیستم کجا داده واقعی دارد و کجا ندارد.",
+      "meaning": "Freshness، Coverage، Availability و Access Class را جدا می‌کند. Registered source به معنی Connected source نیست.",
+      "day_trading": "اگر داده کلیدی Stale یا Partial باشد، تحلیل باید با احتیاط بیشتری خوانده شود.",
+      "mistakes": ["وجود نام یک Source را به معنی دسترسی زنده دانستن"],
+      "questions": ["کدام داده Critical ولی Stale است؟", "کدام Layer فقط Partial coverage دارد؟"]
+    },
+    "freshness": {
+      "title": "Freshness یعنی چه؟",
+      "short": "تازگی زمانی داده یا Driver را نشان می‌دهد.",
+      "meaning": "FRESH، AGING، STALE و EXPIRED یک چیز نیستند. داده قدیمی ممکن است هنوز Context بدهد ولی نباید مثل Live evidence خوانده شود.",
+      "day_trading": "برای Positioning و داده‌های کند بسیار مهم است.",
+      "mistakes": ["داده هفتگی را مثل داده لحظه‌ای استفاده کردن"],
+      "questions": ["آخرین Timestamp چیست؟", "Cadence طبیعی این Source چقدر است؟"]
+    },
+    "coverage": {
+      "title": "Coverage یعنی چه؟",
+      "short": "می‌گوید چند بخش لازم از یک Layer واقعاً مشاهده شده است.",
+      "meaning": "Partial یعنی بخشی از تصویر داریم، نه اینکه نتیجه حتماً غلط باشد؛ اما باید عدم‌قطعیت را ببینیم.",
+      "day_trading": "مثلاً Volume موجود ولی MBO غایب یعنی Flow coverage هنوز Partial است.",
+      "mistakes": ["Partial را Full فرض کردن"],
+      "questions": ["چه چیزی موجود است؟", "چه چیزی هنوز مشاهده نشده؟"]
+    },
+    "root_independence": {
+      "title": "استقلال Driverها چیست؟",
+      "short": "جلوی دوباره‌شماری یک علت در چند شکل مختلف را می‌گیرد.",
+      "meaning": "مثلاً Fed، 2Y، Real Yield و DXY گاهی اعضای یک زنجیره علّی‌اند و نباید همیشه چهار رأی مستقل حساب شوند.",
+      "day_trading": "باعث می‌شود Confidence مصنوعی تولید نشود.",
+      "mistakes": ["هر نمودار همسو را یک تأیید مستقل دانستن"],
+      "questions": ["این Driver ریشه است یا Channel؟", "Independence group چیست؟"]
+    },
+    "missing_driver": {
+      "title": "Missing Driver چیست؟",
+      "short": "وقتی Price با مدل به‌شکل معنادار نمی‌خواند، سیستم دنبال عامل دیده‌نشده می‌گردد.",
+      "meaning": "اختلاف شدید می‌تواند از Data gap، Funding، Flow، Positioning، Mechanics یا یک Event جدید بیاید.",
+      "day_trading": "قبل از اینکه Divergence را Opportunity بدانی، Missing Driver را بررسی کن.",
+      "mistakes": ["Mismatch را خودکار Manipulation یا Liquidity Grab دانستن"],
+      "questions": ["اولین Gap داده‌ای چیست؟", "عامل مخالف تازه‌ای وارد شده؟"]
+    },
+    "technical_trigger": {
+      "title": "تریگر تکنیکال چه نقشی دارد؟",
+      "short": "Alpha Desk سمت و State را می‌دهد؛ تریگر تکنیکال زمان ورود را مشخص می‌کند.",
+      "meaning": "حتی Thesis عالی و Readiness بالا بدون Trigger معتبر نباید به ورود خودکار تبدیل شود.",
+      "day_trading": "این مرز بین تحلیل و اجراست.",
+      "mistakes": ["فاندامنتال خوب = نقطه ورود خوب"],
+      "questions": ["تریگر واقعی فعال شده؟", "Stop و ساختار معامله مشخص است؟"]
+    }
+  }
+}

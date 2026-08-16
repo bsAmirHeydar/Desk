@@ -26,7 +26,9 @@ def main():
     checks.append(check('eight_layers', [x.get('id') for x in m.get('layers',[])]==['timing','fundamental','expectations_policy','narrative_consumption','positioning','flow','funding','mechanics']))
     checks.append(check('human_brief_present',all((m.get('overview',{}).get('human_brief') or {}).get(k) for k in ['headline','pressure_story','price_story','maturity_story','action_context'])))
     checks.append(check('human_layer_summaries',all(bool(x.get('human_summary')) for x in m.get('layers',[]))))
-    checks.append(check('presentation_revision',m.get('output_contract_version')=='1.1.0' and m.get('renderer_version')=='1.1.0'))
+    checks.append(check('presentation_revision',m.get('output_contract_version')=='1.2.0' and m.get('renderer_version')=='1.2.0'))
+    guide=load_json(BASE/'config/contextual_help_fa.json');topics=guide.get('topics') or {};required_help={'overview','directional_pressure','pressure_quality','pressure_trend','persistence','driver_consumption','remaining_pressure','transmission','expected_response','counterfactual_residual','unreleased_pressure','opposing_move','release_readiness','permission','timing','fundamental','expectations_policy','narrative_consumption','positioning','flow','funding','mechanics','events','memory','audit','data_health','freshness','coverage','root_independence','missing_driver','technical_trigger'}
+    checks.append(check('contextual_help_registry',guide.get('principle')=='CONTEXTUAL_LEARNING_NOT_CENTRAL_GUIDE' and required_help.issubset(set(topics)),{'topics':len(topics),'missing':sorted(required_help-set(topics))}))
     checks.append(check('permission_visible',m.get('overview',{}).get('trade_permission')=='NO_TRADE'))
     checks.append(check('same_owner_integrity',m.get('audit',{}).get('science_owner_integrity')=='PASS'))
     # Price contamination attack: pressure_input unchanged, target response altered materially.
@@ -57,7 +59,7 @@ def main():
     checks.append(check('unknown_remains_unknown',mm['release']['latent_causal_reserve']=='UNKNOWN' or mm['release']['latent_causal_reserve']=={}))
     # Renderer deterministic for same model.
     with tempfile.TemporaryDirectory() as td:
-        p1=Path(td)/'a.html';p2=Path(td)/'b.html';render(m,p1);render(m,p2);checks.append(check('rtl_renderer_deterministic',p1.read_bytes()==p2.read_bytes() and 'dir="rtl"' in p1.read_text(encoding='utf-8')))
+        p1=Path(td)/'a.html';p2=Path(td)/'b.html';render(m,p1);render(m,p2);text=p1.read_text(encoding='utf-8');checks.append(check('rtl_renderer_deterministic',p1.read_bytes()==p2.read_bytes() and 'dir="rtl"' in text));checks.append(check('contextual_help_rendered',all(x in text for x in ['data-help="directional_pressure"','data-help="transmission"','id="help-drawer"','id="gold-contextual-help"','درباره این لایه یاد بگیر'])))
     checks.append(check('section_order',load_json(BASE/'config/output_contract.json')['section_order']==['overview','pressure','transmission_release','eight_layers','events_timing','runs_memory','report_audit','data_health']))
     # Windows PowerShell 5.1 reads UTF-8-without-BOM scripts through the active ANSI code page.
     # Keep the root launcher ASCII-only so UTF-8 punctuation can never be mis-decoded as smart quote delimiters.

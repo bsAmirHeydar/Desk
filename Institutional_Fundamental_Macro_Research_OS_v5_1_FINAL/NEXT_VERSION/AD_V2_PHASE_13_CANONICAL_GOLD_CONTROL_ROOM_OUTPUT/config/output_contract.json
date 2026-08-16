@@ -35,13 +35,19 @@
     "OPTIONS_OI_IS_NOT_DEALER_GAMMA",
     "READINESS_IS_NOT_PERMISSION"
   ],
-  "presentation_revision": "1.1.0",
+  "presentation_revision": "1.2.0",
   "human_first_presentation": true,
   "human_first_rules": [
     "PERSIAN_PLAIN_LANGUAGE_FIRST",
     "TECHNICAL_CODES_SECONDARY",
     "HUMAN_BRIEF_REQUIRED",
     "ACTION_CONTEXT_MUST_RESPECT_PERMISSION",
-    "DETAILS_PROGRESSIVELY_DISCLOSED"
-  ]
+    "DETAILS_PROGRESSIVELY_DISCLOSED",
+    "CONTEXTUAL_HELP_DISTRIBUTED",
+    "HELP_MUST_NOT_CHANGE_SCIENCE",
+    "LEARN_IN_PLACE"
+  ],
+  "contextual_learning": true,
+  "contextual_learning_mode": "DISTRIBUTED_CLICK_TO_LEARN",
+  "contextual_learning_registry": "config/contextual_help_fa.json"
 }

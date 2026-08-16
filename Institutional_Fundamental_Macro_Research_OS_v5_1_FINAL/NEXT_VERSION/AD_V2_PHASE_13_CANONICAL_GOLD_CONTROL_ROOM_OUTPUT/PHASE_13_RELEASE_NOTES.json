@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "phase": "AD-V2-P13",
-  "release": "1.0.3",
+  "release": "1.0.4",
   "changes": [
     "single canonical presentation object",
     "Persian RTL control room",
@@ -21,7 +21,12 @@
     "Overview now answers in human language: what the desk thinks, why, what price is doing, what the trader should understand, and what to watch next",
     "Eight analytical layers now include deterministic human summaries while preserving raw evidence behind progressive disclosure",
     "Terminal output is human-first Persian with technical codes moved to a compact secondary section",
-    "Canonical schema id remains unchanged; output_contract_version and renderer_version advance to 1.1.0 with no science mutation"
+    "Canonical schema id remains unchanged; output_contract_version and renderer_version advance to 1.1.0 with no science mutation",
+    "P13-HF04 distributed contextual learning: help is embedded next to the concepts it explains instead of adding a central guide tab",
+    "Overview metrics, Pressure concepts, Transmission/Release concepts, all eight analytical layers, Events, Memory, Audit, and Data Health now expose click-to-learn Persian help",
+    "Contextual help opens in an RTL side drawer on desktop and bottom sheet on mobile with meaning, day-trading use, common mistakes, and control questions",
+    "Contextual help is presentation-only and cannot alter canonical science, Direction, Pressure, Release, Permission, Flow inference, or source availability",
+    "Canonical schema id remains unchanged; output_contract_version and renderer_version advance to 1.2.0"
   ],
   "unchanged": [
     "P02 science",

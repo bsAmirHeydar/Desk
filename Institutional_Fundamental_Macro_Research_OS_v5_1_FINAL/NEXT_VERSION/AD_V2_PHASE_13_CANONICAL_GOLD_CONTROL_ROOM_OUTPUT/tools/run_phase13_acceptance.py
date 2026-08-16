@@ -19,6 +19,8 @@ def main():
    {'name':'terminal_same_model','status':'PASS' if str(m['overview']['directional_pressure']) in term(m) and str(m['overview']['trade_permission']) in term(m) else 'FAIL'},
    {'name':'human_first_terminal','status':'PASS' if all(x in term(m) for x in ['جمع‌بندی:','چرا؟','رفتار قیمت:','وضعیت حرکت و ورود:']) else 'FAIL'},
    {'name':'human_brief_in_html','status':'PASS' if all(x in Path(rec['latest_html']).read_text(encoding='utf-8') for x in ['چرا این سمت؟','قیمت چه می‌گوید؟','برای منِ تریدر یعنی چه؟']) else 'FAIL'},
-   {'name':'tabs_present','status':'PASS' if all(x in Path(rec['latest_html']).read_text(encoding='utf-8') for x in ['نمای کلی','فشار و جهت','انتقال و آزادشدن','هشت لایه تحلیل','زمان‌بندی و رویدادها','ران‌ها و حافظه','گزارش و بررسی','سلامت داده']) else 'FAIL'}]
+   {'name':'tabs_present','status':'PASS' if all(x in Path(rec['latest_html']).read_text(encoding='utf-8') for x in ['نمای کلی','فشار و جهت','انتقال و آزادشدن','هشت لایه تحلیل','زمان‌بندی و رویدادها','ران‌ها و حافظه','گزارش و بررسی','سلامت داده']) else 'FAIL'},
+   {'name':'contextual_learning_in_place','status':'PASS' if all(x in Path(rec['latest_html']).read_text(encoding='utf-8') for x in ['راهنمای این صفحه','راهنمای این بخش','درباره این لایه یاد بگیر','id="help-drawer"','این مفهوم یعنی چه؟','برای دی‌ترید چه کاربردی دارد؟']) else 'FAIL'},
+   {'name':'contextual_help_not_central_tab','status':'PASS' if 'data-tab="guide"' not in Path(rec['latest_html']).read_text(encoding='utf-8') else 'FAIL'}]
   bad=[x for x in checks if x['status']!='PASS'];out={'schema_version':'1.0.0','phase':'AD-V2-P13','status':'PASS' if not bad else 'FAIL','checks':checks};print(json.dumps(out,ensure_ascii=False,indent=2));return 0 if not bad else 1
 if __name__=='__main__':raise SystemExit(main())

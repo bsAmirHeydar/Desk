@@ -41,3 +41,19 @@ The canonical Gold Control Room is read in two layers:
 This is presentation-only. The human text is deterministic and may only translate or summarize canonical upstream states. It may not create a new Direction, Pressure, Release state, Permission, Flow inference, or missing-driver claim. `UNKNOWN` remains an acceptable human answer such as «نامشخص» or «داده کافی نداریم».
 
 The goal is that a trader can understand the report without first decoding machine enums, while an auditor can still open the technical details and inspect the exact canonical codes.
+
+
+## Contextual learning (P13-HF04)
+
+The Persian guide is distributed across the Control Room instead of living in a separate central manual tab. Wherever a concept needs interpretation, the UI exposes a `؟ / یاد بگیر` control.
+
+Clicking it opens an RTL contextual drawer (desktop) or bottom sheet (mobile) that explains:
+
+- what the concept means;
+- why it matters for Gold day trading;
+- common interpretation mistakes;
+- questions the human should ask to audit the report.
+
+The eight analytical layers each carry their own in-place guide. Overview, Pressure, Transmission/Release, Events, Memory, Audit, and Data Health also expose local guides.
+
+The guide registry is `config/contextual_help_fa.json`. It is presentation-only. Help text cannot calculate or mutate Direction, Pressure, Transmission, Unreleased Pressure, Maturity, Release Readiness, Permission, Flow, or source availability. It exists to teach the human how to read the canonical states, not to become another research model.
