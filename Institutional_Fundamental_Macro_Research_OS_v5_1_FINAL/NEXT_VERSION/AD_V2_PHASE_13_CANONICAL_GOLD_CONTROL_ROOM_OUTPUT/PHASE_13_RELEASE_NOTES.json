@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "phase": "AD-V2-P13",
-  "release": "1.0.1",
+  "release": "1.0.2",
   "changes": [
     "single canonical presentation object",
     "Persian RTL control room",
@@ -12,7 +12,11 @@
     "data-health disclosure",
     "post-P12 governed amendment",
     "Windows PowerShell 5.1 launcher encoding hardening: ASCII-only root launcher prevents UTF-8 punctuation from being mis-decoded as quote delimiters",
-    "P13 validator now enforces Windows PowerShell 5.1-safe launcher encoding"
+    "P13 validator now enforces Windows PowerShell 5.1-safe launcher encoding",
+    "P13-HF02 operational environment bootstrap: Run Gold now verifies or certifies the required C1 environment receipt before entering P11 shadow research",
+    "Legacy C1 root-wrapper doctor failure is superseded only when the governed P11 direct V1 runtime authority binding passes; all other doctor failures remain blocking",
+    "AlphaDesk commands environment-status and environment-certify added; OPENAI_API_KEY remains external to the repository and is never persisted by P13",
+    "P13 status now exposes environment certification state"
   ],
   "unchanged": [
     "P02 science",

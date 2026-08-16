@@ -12,6 +12,8 @@ if (-not $AlphaArgs -or $AlphaArgs.Count -eq 0) {
     Write-Host "Latest report:     .\AlphaDesk.ps1 report Gold"
     Write-Host "Open Control Room: .\AlphaDesk.ps1 open Gold"
     Write-Host "Output status:     .\AlphaDesk.ps1 output-status Gold"
+    Write-Host "Environment:       .\AlphaDesk.ps1 environment-status"
+    Write-Host "Certify env:       .\AlphaDesk.ps1 environment-certify"
     Write-Host "Cluster:           .\AlphaDesk.ps1 cluster Gold"
     Write-Host "Status:            .\AlphaDesk.ps1 status"
     Write-Host "Health:            .\AlphaDesk.ps1 health"

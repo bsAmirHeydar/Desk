@@ -6,6 +6,7 @@ from runtime.common import data_root,load_json
 from runtime.model import build_control_room
 from runtime.persistence import persist,latest,root
 from runtime.terminal import render as render_terminal
+from runtime.environment_gate import environment_status, certify_environment, ensure_environment, EnvironmentGateError
 
 def _p11(repo):
     nv=Path(repo)/'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION'
@@ -23,11 +24,14 @@ def main():
     rep=sp.add_parser('report');rep.add_argument('subject',nargs='?',default='Gold');rep.add_argument('which',nargs='?',default='latest')
     op=sp.add_parser('open');op.add_argument('subject',nargs='?',default='Gold')
     os=sp.add_parser('output-status');os.add_argument('subject',nargs='?',default='Gold')
-    for c in ['cluster','status','health','tf-status','learning-status','rc-status']:
+    for c in ['cluster','status','health','tf-status','learning-status','rc-status','environment-status','environment-certify']:
         q=sp.add_parser(c);q.add_argument('subject',nargs='?') if c=='cluster' else None
     a=ap.parse_args();repo=Path(a.repo_root).resolve();dr=data_root(repo);dr.mkdir(parents=True,exist_ok=True)
     if a.cmd=='run':
         if str(a.subject).upper() not in {'GOLD','XAU','XAUUSD'}:raise SystemExit('P13 canonical output is Gold-only')
+        vault=repo/'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL'
+        try: ensure_environment(repo,vault,dr,auto_certify=True)
+        except EnvironmentGateError as e: raise SystemExit(str(e))
         run_gold,_=_p11(repo);p11=run_gold(repo,input_pack=a.input_pack,window_seconds=a.window_seconds,output_dir=a.output_dir,persist=not a.no_persist)
         pack=None
         if a.input_pack:pack=load_json(a.input_pack)
@@ -48,6 +52,10 @@ def main():
         print(str(p));return 0
     if a.cmd=='output-status':
         m=latest(dr);print(json.dumps({'schema_version':'1.0.0','phase':'AD-V2-P13','status':'PASS' if m else 'NO_OUTPUT','root':str(root(dr)),'latest_run':((m or {}).get('run') or {}).get('run_id'),'schema_id':(m or {}).get('schema_id'),'contract':(m or {}).get('contract')},ensure_ascii=False,indent=2));return 0
+    if a.cmd=='environment-status':
+        vault=repo/'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL';print(json.dumps(environment_status(vault,dr),ensure_ascii=False,indent=2));return 0
+    if a.cmd=='environment-certify':
+        vault=repo/'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL';out=certify_environment(repo,vault,dr);print(json.dumps(out,ensure_ascii=False,indent=2));return 0 if out.get('status')=='PASS' else 2
     # Existing operational commands remain owned by P11/P08/P09/P10.
     args=[a.cmd]
     if a.cmd=='cluster' and a.subject:args.append(a.subject)

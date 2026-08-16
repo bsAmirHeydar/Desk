@@ -19,3 +19,13 @@ Mutable output lives under `ALPHALAB_DATA_ROOT` when set; otherwise the reposito
 Primary tabs are permanently ordered as: Overview, Pressure, Transmission & Release, Eight Layers, Events & Timing, Runs & Memory, Report & Audit, Data Health.
 
 Renderer laws: Price does not alter Pressure; Volume is not Flow; OI is not Direction; Readiness is not Permission; missing data stays UNKNOWN/PARTIAL.
+
+## Environment certification for live one-command Gold runs
+
+`Run Gold` uses the governed V1 SHADOW runtime and therefore requires a valid C1 environment receipt. P13 release 1.0.2 checks this automatically before P11 runs.
+
+- `./AlphaDesk.ps1 environment-status` shows the receipt state.
+- `./AlphaDesk.ps1 environment-certify` performs the live environment attestation.
+- `./AlphaDesk.ps1 run Gold` auto-certifies only when the receipt is missing/stale and `OPENAI_API_KEY` is available in the process environment.
+- The API key is never written to the repository or AlphaLab_Data by P13.
+- The legacy root `AlphaLab.ps1` wrapper is not required when the P11 frozen direct V1 runtime binding passes. No other C1 doctor failure is waived.

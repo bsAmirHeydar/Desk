@@ -9,7 +9,9 @@
   "latest": "AlphaLab_Data/alpha_desk_v2/control_room/latest",
   "post_p12_change": "EXPLICIT_PRODUCT_CHANGE",
   "science_mutation": false,
-  "implementation_revision": "1.0.1",
+  "implementation_revision": "1.0.2",
   "windows_powershell51_launcher": "ASCII_SAFE",
-  "hotfix": "P13-HF01_WINDOWS_POWERSHELL_LAUNCHER_ENCODING"
+  "hotfix": "P13-HF02_ENVIRONMENT_BOOTSTRAP_COMPATIBILITY",
+  "environment_bootstrap": "AUTO_CERTIFY_IF_MISSING_OR_STALE_WHEN_OPENAI_API_KEY_PRESENT",
+  "legacy_root_launcher_requirement": "SUPERSEDED_BY_P11_DIRECT_V1_RUNTIME_BINDING_ONLY"
 }

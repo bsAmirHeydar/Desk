@@ -6,6 +6,7 @@ from runtime.common import load_json,hobj
 from runtime.model import build_control_room
 from runtime.render_html import render
 from runtime.governance import verify_p12_authorized_delta
+from runtime.environment_gate import reconcile_doctor, environment_status
 
 def run_p10(repo,pack):
     pp=Path(repo)/'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION';sys.path.insert(0,str(pp))
@@ -59,6 +60,13 @@ def main():
     # Keep the root launcher ASCII-only so UTF-8 punctuation can never be mis-decoded as smart quote delimiters.
     launcher_bytes=(repo/'AlphaDesk.ps1').read_bytes()
     checks.append(check('windows_powershell51_launcher_encoding_safe',all(b < 128 for b in launcher_bytes),{'non_ascii_bytes':sum(1 for b in launcher_bytes if b >= 128)}))
+    # The legacy C1 doctor still expects root AlphaLab wrappers, but P11/P12 govern a direct V1 runtime bridge.
+    synthetic_doctor={'status':'FAIL','checks':[{'name':'scientific_v213','pass':True},{'name':'root_launchers_match_certified_templates','pass':False},{'name':'r4_full_preflight','pass':True}],'errors':['root_launchers_match_certified_templates']}
+    compat=reconcile_doctor(repo,repo/'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL',synthetic_doctor)
+    checks.append(check('environment_legacy_wrapper_reconciled_only_by_p11_direct_binding',compat.get('status')=='PASS' and compat.get('legacy_root_launcher_reconciled') is True and (compat.get('v1_direct_binding') or {}).get('bridge_mode')=='DIRECT_V1_RUNTIME_SURFACE'))
+    with tempfile.TemporaryDirectory() as td:
+        es=environment_status(repo/'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL',Path(td))
+        checks.append(check('environment_missing_receipt_remains_blocked',es.get('status')=='MISSING'))
     gov=verify_p12_authorized_delta(repo,BASE);checks.append(check('p12_governance_authorized_delta',gov['status']=='PASS',gov.get('failed')))
     bad=[x for x in checks if x['status']!='PASS'];out={'schema_version':'1.0.0','phase':'AD-V2-P13','status':'PASS' if not bad else 'FAIL','passed':len(checks)-len(bad),'failed':len(bad),'checks':checks};print(json.dumps(out,ensure_ascii=False,indent=2));return 0 if not bad else 1
 if __name__=='__main__':raise SystemExit(main())
