@@ -1,0 +1,34 @@
+{
+  "phase": "AD-V3-P02",
+  "subject": "XAUUSD",
+  "deployment": "SHADOW_ONLY",
+  "depends_on": "AD-V3-P01",
+  "capabilities": [
+    "mandatory public acquisition planning",
+    "network acquisition",
+    "structured parsing",
+    "evidence snapshot fallback",
+    "raw snapshot hashing",
+    "time/vintage metadata",
+    "coverage fail-closed gate",
+    "network adapter contract certification",
+    "network worker exception containment",
+    "official API and static fallback hardening",
+    "source-specific HTTP method/header/body contracts",
+    "BLS public API batch acquisition",
+    "dedicated Federal Reserve H.10 daily dollar index parsing",
+    "CME delayed web JSON with official Daily Bulletin fallback",
+    "proxy-preserving China/India fallbacks",
+    "direct Census retail-sales current release parsing",
+    "Federal Reserve H.10 Indian Rupee parsing for India affordability proxy",
+    "current Government of India gold-duty policy proxy with legal-rate boundary"
+  ],
+  "forbidden": [
+    "Direction authority",
+    "trade permission",
+    "price-as-cause",
+    "silent source omission",
+    "proxy-closes-private-gap"
+  ],
+  "revision": "3.2.4"
+}

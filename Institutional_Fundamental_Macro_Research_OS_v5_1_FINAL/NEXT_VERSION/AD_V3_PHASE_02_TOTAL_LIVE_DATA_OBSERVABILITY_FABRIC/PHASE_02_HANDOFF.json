@@ -1,0 +1,19 @@
+{
+  "phase": "AD-V3-P02",
+  "status": "READY_FOR_ACCEPTANCE",
+  "deployment": "SHADOW_ONLY",
+  "p01_fact_count": 192,
+  "source_contract_count": 95,
+  "mandatory_public_fact_attempt_contracts": 126,
+  "direction_authority": false,
+  "trade_permission_authority": false,
+  "p03_required_inputs": [
+    "fact observations",
+    "coverage receipt",
+    "raw snapshot provenance",
+    "P01 causal ontology and role registry"
+  ],
+  "hard_rule": "P03 analysis MUST NOT start when P02 coverage receipt is BLOCKED.",
+  "revision": "3.2.4",
+  "live_hardening_note": "REV 3.2.4 targets the final three VPN-era blockers using direct Census retail data, Fed H.10 INR, and current PIB gold-duty policy evidence without weakening proxy/legal-tariff boundaries."
+}

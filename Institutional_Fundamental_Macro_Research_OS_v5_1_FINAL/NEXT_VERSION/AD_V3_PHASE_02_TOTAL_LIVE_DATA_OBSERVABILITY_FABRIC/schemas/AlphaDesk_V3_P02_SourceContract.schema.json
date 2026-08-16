@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P02 Source Contract",
+  "type": "object",
+  "required": [
+    "source_id",
+    "publisher",
+    "collector_type",
+    "access_class",
+    "cadence"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "collector_type": {
+      "type": "string"
+    },
+    "access_class": {
+      "type": "string"
+    },
+    "cadence": {
+      "type": "string"
+    },
+    "canonical_url": {
+      "type": "string"
+    },
+    "machine_endpoint": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "request_method": {
+      "type": "string",
+      "enum": [
+        "GET",
+        "POST"
+      ]
+    },
+    "request_headers": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "request_json": {
+      "type": "object"
+    },
+    "request_body": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "backup_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_priority": {
+      "type": "string"
+    },
+    "must_preserve_raw_snapshot": {
+      "type": "boolean"
+    }
+  }
+}

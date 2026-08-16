@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P02 Coverage Receipt",
+  "type": "object",
+  "required": [
+    "receipt_id",
+    "analysis_admission",
+    "analysis_may_start",
+    "fact_counts",
+    "source_counts",
+    "zero_silent_omission"
+  ],
+  "properties": {
+    "analysis_admission": {
+      "enum": [
+        "PASS",
+        "DEGRADED",
+        "BLOCKED"
+      ]
+    },
+    "analysis_may_start": {
+      "type": "boolean"
+    },
+    "zero_silent_omission": {
+      "type": "boolean"
+    },
+    "direction_authority_granted": {
+      "const": false
+    },
+    "trade_permission_authority_granted": {
+      "const": false
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P02",
+  "freshness_by_cadence": {
+    "REALTIME": {
+      "max_age_seconds": 300
+    },
+    "REALTIME_OR_DELAYED": {
+      "max_age_seconds": 1800
+    },
+    "INTRADAY": {
+      "max_age_seconds": 3600
+    },
+    "DAILY_INTRADAY": {
+      "max_age_seconds": 7200
+    },
+    "INTRADAY_DAILY": {
+      "max_age_seconds": 86400
+    },
+    "DAILY_OR_INTRADAY": {
+      "max_age_seconds": 86400
+    },
+    "DAILY": {
+      "max_age_seconds": 172800
+    },
+    "EVENT": {
+      "max_age_seconds": null
+    },
+    "MONTHLY_EVENT": {
+      "max_age_seconds": 3888000
+    },
+    "WEEKLY_EVENT": {
+      "max_age_seconds": 864000
+    },
+    "QUARTERLY_EVENT": {
+      "max_age_seconds": 10368000
+    },
+    "RELEASE_SPECIFIC": {
+      "max_age_seconds": null
+    },
+    "WEEKLY": {
+      "max_age_seconds": 864000
+    },
+    "WEEKLY_LAGGED": {
+      "max_age_seconds": 864000
+    },
+    "MONTHLY": {
+      "max_age_seconds": 3888000
+    },
+    "QUARTERLY": {
+      "max_age_seconds": 10368000
+    },
+    "MONTHLY_QUARTERLY": {
+      "max_age_seconds": 10368000
+    },
+    "QUARTERLY_MONTHLY": {
+      "max_age_seconds": 10368000
+    },
+    "DAILY_MONTHLY": {
+      "max_age_seconds": 3888000
+    },
+    "WEEKLY_MONTHLY": {
+      "max_age_seconds": 3888000
+    },
+    "DAILY_WEEKLY": {
+      "max_age_seconds": 864000
+    },
+    "CONTRACT_CYCLE": {
+      "max_age_seconds": 3888000
+    },
+    "CALENDAR": {
+      "max_age_seconds": null
+    },
+    "STRUCTURAL": {
+      "max_age_seconds": 31536000
+    },
+    "SEASONAL": {
+      "max_age_seconds": 31536000
+    },
+    "MIXED": {
+      "max_age_seconds": 10368000
+    },
+    "SOURCE_SPECIFIC": {
+      "max_age_seconds": null
+    },
+    "EACH_RUN": {
+      "max_age_seconds": 0
+    },
+    "TRANSACTION_DELAYED": {
+      "max_age_seconds": 86400
+    },
+    "MONTHLY_OR_QUARTERLY": {
+      "max_age_seconds": 10368000
+    },
+    "QUARTERLY_OR_ANNUAL": {
+      "max_age_seconds": 34560000
+    },
+    "DAILY_EVENT": {
+      "max_age_seconds": 172800
+    },
+    "EVENT_DAILY": {
+      "max_age_seconds": 172800
+    },
+    "TWICE_DAILY_EVENT": {
+      "max_age_seconds": 86400
+    }
+  },
+  "required_observation_time_fields": [
+    "reference_period",
+    "event_time",
+    "published_at",
+    "first_seen_at",
+    "retrieved_at",
+    "revision_number",
+    "supersedes_observation_id"
+  ],
+  "hard_rules": [
+    "retrieved_at is never substituted for reference_period or event_time.",
+    "Data freshness and economic persistence are separate.",
+    "LATEST_VALID requires proof that no newer release is expected yet.",
+    "Publication lag is preserved explicitly."
+  ]
+}

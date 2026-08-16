@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P02 Fact Acquisition Contract",
+  "type": "object",
+  "required": [
+    "fact_id",
+    "acquisition_mode",
+    "source_ids",
+    "must_attempt_when_applicable",
+    "active_horizons"
+  ],
+  "properties": {
+    "fact_id": {
+      "type": "string"
+    },
+    "acquisition_mode": {
+      "type": "string"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "must_attempt_when_applicable": {
+      "type": "boolean"
+    },
+    "active_horizons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

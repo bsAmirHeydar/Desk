@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P02 Fact Observation",
+  "type": "object",
+  "required": [
+    "record_type",
+    "observation_id",
+    "fact_id",
+    "source_id",
+    "epistemic_state",
+    "retrieved_at",
+    "directness"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P02_FACT_OBSERVATION"
+    },
+    "observation_id": {
+      "type": "string"
+    },
+    "fact_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "epistemic_state": {
+      "type": "string"
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "raw_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

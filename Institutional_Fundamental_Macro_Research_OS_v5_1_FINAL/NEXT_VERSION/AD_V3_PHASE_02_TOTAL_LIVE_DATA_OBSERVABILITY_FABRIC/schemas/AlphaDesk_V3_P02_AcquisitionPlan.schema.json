@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P02 Acquisition Plan",
+  "type": "object",
+  "required": [
+    "plan_id",
+    "horizon",
+    "fact_items",
+    "source_ids_to_attempt"
+  ],
+  "properties": {
+    "plan_id": {
+      "type": "string"
+    },
+    "horizon": {
+      "type": "string"
+    },
+    "fact_items": {
+      "type": "array"
+    },
+    "source_ids_to_attempt": {
+      "type": "array"
+    }
+  }
+}
