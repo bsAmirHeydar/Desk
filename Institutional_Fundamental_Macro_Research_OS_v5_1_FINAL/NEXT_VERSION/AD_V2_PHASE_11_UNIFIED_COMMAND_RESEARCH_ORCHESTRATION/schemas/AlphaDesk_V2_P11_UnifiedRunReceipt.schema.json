@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "Alpha Desk V2 P11 Unified Run Receipt",
+  "required": [
+    "schema_version",
+    "phase",
+    "status",
+    "command",
+    "subject",
+    "v1_run_id",
+    "p10_receipt",
+    "integrity",
+    "authority"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "phase": {
+      "const": "AD-V2-P11"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL_CLOSED"
+      ]
+    },
+    "command": {
+      "const": "run"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "v1_run_id": {
+      "type": "string"
+    },
+    "p10_receipt": {
+      "type": "object"
+    },
+    "integrity": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

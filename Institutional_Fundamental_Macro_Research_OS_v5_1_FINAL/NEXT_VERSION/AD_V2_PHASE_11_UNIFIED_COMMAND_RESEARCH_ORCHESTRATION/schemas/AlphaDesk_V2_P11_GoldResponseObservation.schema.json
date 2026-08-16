@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "Alpha Desk V2 P11 Gold Response Observation",
+  "required": [
+    "actual_response",
+    "gold_observations",
+    "integrity"
+  ],
+  "properties": {
+    "actual_response": {
+      "type": "object"
+    },
+    "gold_observations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "integrity": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

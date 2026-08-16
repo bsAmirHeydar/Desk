@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "Alpha Desk V2 P11 Gold Precommit",
+  "required": [
+    "pressure_input",
+    "expected_signature_template",
+    "missing_driver_candidates",
+    "integrity"
+  ],
+  "properties": {
+    "pressure_input": {
+      "type": "object"
+    },
+    "expected_signature_template": {
+      "type": "object"
+    },
+    "missing_driver_candidates": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "integrity": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

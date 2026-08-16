@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P11",
+  "version": "1.0.0",
+  "title": "Unified Command and Gold Research Orchestration",
+  "deployment": "UNIFIED_FRONT_DOOR_SHADOW",
+  "subject": "XAUUSD",
+  "v1_production_authority_unchanged": true,
+  "v1_prompt_registry_mutated": false,
+  "one_command": "AlphaDesk.ps1 run Gold",
+  "broker": "NONE"
+}

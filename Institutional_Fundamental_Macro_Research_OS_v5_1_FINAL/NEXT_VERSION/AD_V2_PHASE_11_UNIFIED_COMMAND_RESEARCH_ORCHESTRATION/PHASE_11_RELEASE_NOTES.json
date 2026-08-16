@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P11",
+  "status": "IMPLEMENTED",
+  "adds": [
+    "Gold master prompt cluster",
+    "two-stage point-in-time precommit/response orchestration",
+    "AlphaDesk.ps1 unified launcher",
+    "unified status/health/TF/learning/RC commands"
+  ],
+  "does_not_add": [
+    "new market science",
+    "V1 mutation",
+    "permission authority",
+    "broker authority"
+  ],
+  "hardening": [
+    "Git-tracked semantic binding for the installed pre-P00 V1 root launcher",
+    "Cross-snapshot launcher compatibility without weakening V1/V2 boundary"
+  ]
+}

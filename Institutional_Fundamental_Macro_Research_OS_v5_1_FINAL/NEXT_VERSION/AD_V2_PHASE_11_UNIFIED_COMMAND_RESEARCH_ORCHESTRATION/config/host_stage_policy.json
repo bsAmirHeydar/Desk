@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P11",
+  "binding": "PRODUCTION_COMMAND",
+  "required_capabilities": [
+    "MODEL_PROCESS",
+    "EVIDENCE_RETRIEVAL"
+  ],
+  "precommit_process_id": "V2_GOLD_MASTER_PRECOMMIT",
+  "observation_process_id": "V2_GOLD_RESPONSE_OBSERVATION",
+  "no_free_conversation_memory": true,
+  "strict_point_in_time": true,
+  "network_fetch_by_p11_itself": false
+}

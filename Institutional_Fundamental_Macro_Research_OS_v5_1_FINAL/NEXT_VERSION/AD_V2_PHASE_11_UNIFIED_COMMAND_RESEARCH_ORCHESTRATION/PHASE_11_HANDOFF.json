@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P11",
+  "next_phase": "AD-V2-P12",
+  "purpose": "Final V2 implementation freeze and acceptance",
+  "fixed_roadmap_after_p12": false
+}

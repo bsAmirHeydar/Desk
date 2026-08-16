@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P11",
+  "cluster_id": "GOLD_MASTER_CLUSTER_V2_1",
+  "subject": "XAUUSD",
+  "ordered_clusters": [
+    {
+      "cluster_id": "C01_TIMING_EVENT",
+      "title": "Timing, event windows and market clock",
+      "prompt_path": "prompt_cluster/C01_TIMING_EVENT.md",
+      "legacy_node_anchor": "W30_TEMPORAL",
+      "pressure_root_candidate": false,
+      "legacy_node_anchors": [
+        "W30_TEMPORAL"
+      ]
+    },
+    {
+      "cluster_id": "C02_CAUSAL_FUNDAMENTAL_ROOTS",
+      "title": "Causal fundamental roots and active-horizon Pressure basis",
+      "prompt_path": "prompt_cluster/C02_CAUSAL_FUNDAMENTAL_ROOTS.md",
+      "legacy_node_anchor": "W31_FUNDAMENTAL",
+      "pressure_root_candidate": true,
+      "legacy_node_anchors": [
+        "W31_FUNDAMENTAL"
+      ]
+    },
+    {
+      "cluster_id": "C03_POLICY_RATES_USD",
+      "title": "Expectations, Fed policy, rates, real yields and autonomous USD channels",
+      "prompt_path": "prompt_cluster/C03_POLICY_RATES_USD.md",
+      "legacy_node_anchor": "W32_EXPECTATIONS_POLICY_REGIME",
+      "pressure_root_candidate": true,
+      "legacy_node_anchors": [
+        "W32_EXPECTATIONS_POLICY_REGIME"
+      ]
+    },
+    {
+      "cluster_id": "C04_STRUCTURAL_PHYSICAL",
+      "title": "Official/ETF/physical/geopolitical structural Gold demand and supply",
+      "prompt_path": "prompt_cluster/C04_STRUCTURAL_PHYSICAL.md",
+      "legacy_node_anchor": "W31_FUNDAMENTAL",
+      "pressure_root_candidate": true,
+      "legacy_node_anchors": [
+        "W31_FUNDAMENTAL",
+        "W33_NARRATIVE_REFLEXIVITY_CONSUMPTION"
+      ]
+    },
+    {
+      "cluster_id": "C05_POSITIONING",
+      "title": "Positioning, crowding and unwind context",
+      "prompt_path": "prompt_cluster/C05_POSITIONING.md",
+      "legacy_node_anchor": "W34_POSITIONING",
+      "pressure_root_candidate": false,
+      "legacy_node_anchors": [
+        "W34_POSITIONING"
+      ]
+    },
+    {
+      "cluster_id": "C06_ACTUAL_FLOW",
+      "title": "Identified listed/ETF/physical flow; volume is not flow",
+      "prompt_path": "prompt_cluster/C06_ACTUAL_FLOW.md",
+      "legacy_node_anchor": "W35_ACTUAL_FLOW",
+      "pressure_root_candidate": false,
+      "legacy_node_anchors": [
+        "W35_ACTUAL_FLOW"
+      ]
+    },
+    {
+      "cluster_id": "C07_FUNDING_LIQUIDITY",
+      "title": "Funding, margin, collateral, lease/basis and forced-actor channels",
+      "prompt_path": "prompt_cluster/C07_FUNDING_LIQUIDITY.md",
+      "legacy_node_anchor": "W36_FUNDING_PLUMBING",
+      "pressure_root_candidate": true,
+      "legacy_node_anchors": [
+        "W36_FUNDING_PLUMBING"
+      ]
+    },
+    {
+      "cluster_id": "C08_MECHANICS_EVENTS",
+      "title": "GC/options/expiry/auction/cash-open mechanics and event-reset state",
+      "prompt_path": "prompt_cluster/C08_MECHANICS_EVENTS.md",
+      "legacy_node_anchor": "W37_MECHANICS_CAPACITY_VOL",
+      "pressure_root_candidate": false,
+      "legacy_node_anchors": [
+        "W37_MECHANICS_CAPACITY_VOL"
+      ]
+    },
+    {
+      "cluster_id": "C09_EXPECTED_SIGNATURE_MISSING_DRIVER",
+      "title": "Predeclare expected transmission signature and candidate missing drivers without seeing future response",
+      "prompt_path": "prompt_cluster/C09_EXPECTED_SIGNATURE_MISSING_DRIVER.md",
+      "legacy_node_anchor": "P51_MODEL_DISAGREEMENT",
+      "pressure_root_candidate": false,
+      "legacy_node_anchors": [
+        "P51_MODEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "cluster_id": "C10_RECONCILIATION_PRECOMMIT",
+      "title": "Reconcile root independence, contradictions, observability gaps and produce V2 precommit only",
+      "prompt_path": "prompt_cluster/C10_RECONCILIATION_PRECOMMIT.md",
+      "legacy_node_anchor": "P53_GLOBAL_RECONCILIATION",
+      "pressure_root_candidate": false,
+      "legacy_node_anchors": [
+        "P53_GLOBAL_RECONCILIATION"
+      ]
+    }
+  ],
+  "legacy_r2_required_nodes": [
+    "W30_TEMPORAL",
+    "W31_FUNDAMENTAL",
+    "W32_EXPECTATIONS_POLICY_REGIME",
+    "W33_NARRATIVE_REFLEXIVITY_CONSUMPTION",
+    "W34_POSITIONING",
+    "W35_ACTUAL_FLOW",
+    "W36_FUNDING_PLUMBING",
+    "W37_MECHANICS_CAPACITY_VOL"
+  ],
+  "pressure_price_separation": true,
+  "v1_prompt_registry_mutated": false,
+  "direction_authority": "NONE",
+  "permission_authority": "NONE"
+}

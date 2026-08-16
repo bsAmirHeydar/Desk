@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "subject": "XAUUSD",
+  "requirements": [
+    {
+      "requirement_id": "P11_XAUUSD_TARGET",
+      "instrument": "XAUUSD",
+      "fact_family": "TARGET_PRICE_RESPONSE",
+      "materiality": "DECISION_CRITICAL",
+      "source_ids": [
+        "ALPHADESK_V2_XAUUSD_LIVE"
+      ]
+    },
+    {
+      "requirement_id": "P11_DXY",
+      "instrument": "XAUUSD",
+      "fact_family": "USD_PATHWAY",
+      "materiality": "MATERIAL",
+      "source_ids": [
+        "ALPHADESK_V2_DXY_LIVE"
+      ]
+    },
+    {
+      "requirement_id": "P11_US2Y",
+      "instrument": "XAUUSD",
+      "fact_family": "POLICY_PATHWAY",
+      "materiality": "MATERIAL",
+      "source_ids": [
+        "ALPHADESK_V2_US2Y_LIVE"
+      ]
+    },
+    {
+      "requirement_id": "P11_REAL10Y",
+      "instrument": "XAUUSD",
+      "fact_family": "REAL_RATE_PATHWAY",
+      "materiality": "MATERIAL",
+      "source_ids": [
+        "ALPHADESK_V2_REAL10Y_LIVE"
+      ]
+    },
+    {
+      "requirement_id": "P11_GC",
+      "instrument": "XAUUSD",
+      "fact_family": "GC_TARGET_PROXY",
+      "materiality": "SUPPORTING",
+      "source_ids": [
+        "ALPHADESK_V2_GC_LIVE"
+      ]
+    },
+    {
+      "requirement_id": "P11_GC_FLOW",
+      "instrument": "XAUUSD",
+      "fact_family": "GC_LISTED_FLOW",
+      "materiality": "SUPPORTING",
+      "source_ids": [
+        "ALPHADESK_V2_GC_FLOW"
+      ]
+    },
+    {
+      "requirement_id": "P11_GC_DEPTH",
+      "instrument": "XAUUSD",
+      "fact_family": "GC_LIQUIDITY_MECHANICS",
+      "materiality": "SUPPORTING",
+      "source_ids": [
+        "ALPHADESK_V2_GC_DEPTH"
+      ]
+    }
+  ],
+  "strict_point_in_time": true
+}

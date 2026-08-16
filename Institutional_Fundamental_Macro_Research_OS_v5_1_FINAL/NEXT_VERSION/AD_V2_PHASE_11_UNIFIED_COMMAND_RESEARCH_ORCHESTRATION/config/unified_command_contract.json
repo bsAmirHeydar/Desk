@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P11",
+  "launcher": "AlphaDesk.ps1",
+  "aliases": {
+    "GOLD": "XAUUSD",
+    "XAU": "XAUUSD",
+    "XAUUSD": "XAUUSD"
+  },
+  "commands": {
+    "run": "canonical V2 integrated Gold shadow run",
+    "cluster": "show canonical Gold master cluster",
+    "status": "unified V2 status",
+    "health": "P10 integrated health",
+    "tf-status": "P08 status",
+    "learning-status": "P09 status",
+    "rc-status": "P10 status"
+  },
+  "default_run": {
+    "mode": "SHADOW",
+    "horizon": "SESSION_1_6H",
+    "depth": "DEEP",
+    "locale": "fa-IR",
+    "transmission_window_seconds": 60
+  },
+  "unsupported_subject_policy": "FAIL_CLOSED",
+  "v1_mainline_mutation": false,
+  "broker": "NONE"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "cases": [
+    {
+      "id": "TARGET_PRICE_CANNOT_BE_PRESSURE_CLUSTER_AUTHORITY",
+      "expected": "PASS"
+    },
+    {
+      "id": "ALL_R2_S3_CLUSTERS_COVERED",
+      "expected": "PASS"
+    },
+    {
+      "id": "V1_PROMPT_REGISTRY_UNCHANGED",
+      "expected": "PASS"
+    },
+    {
+      "id": "SIGNATURE_SEALED_BEFORE_T0",
+      "expected": "PASS"
+    },
+    {
+      "id": "T1_AFTER_T0",
+      "expected": "PASS"
+    },
+    {
+      "id": "RESPONSE_STAGE_CANNOT_MUTATE_PRESSURE",
+      "expected": "PASS"
+    },
+    {
+      "id": "P08_OWNS_TRUE_FORWARD",
+      "expected": "PASS"
+    },
+    {
+      "id": "GOLD_ONLY_FRONT_DOOR",
+      "expected": "PASS"
+    },
+    {
+      "id": "NO_BROKER",
+      "expected": "PASS"
+    },
+    {
+      "id": "EXPLICIT_INPUT_PACK_REPLAY",
+      "expected": "PASS"
+    }
+  ]
+}
