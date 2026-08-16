@@ -1,0 +1,6 @@
+{
+  "schema_version":"1.0.0",
+  "theme":"LIGHT_PREMIUM_GOLD_CONTROL_ROOM",
+  "tokens":{"bg_main":"#f4f1ea","bg_panel":"#fffefa","text_primary":"#161512","text_secondary":"#777064","border_soft":"#ded7ca","gold_primary":"#a9853e","gold_soft":"#efe3c7","buy":"#2f684d","sell":"#7d3a3d","neutral":"#66645f","warning":"#94632d","fresh":"#2f684d","stale":"#94632d"},
+  "forbidden":["NEON_CRYPTO","GAMING_UI","COLOR_ONLY_SEMANTICS","FAKE_CHARTS"]
+}

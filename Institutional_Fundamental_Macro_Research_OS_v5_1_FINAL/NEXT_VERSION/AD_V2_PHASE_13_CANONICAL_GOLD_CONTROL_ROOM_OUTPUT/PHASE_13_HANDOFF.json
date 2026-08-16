@@ -1,0 +1,12 @@
+{
+  "schema_version":"1.0.0",
+  "phase":"AD-V2-P13",
+  "status":"IMPLEMENTED",
+  "normal_command":".\\AlphaDesk.ps1 run Gold",
+  "primary_output":"Persian RTL Gold Control Room",
+  "machine_output":"alpha_desk_v2.gold_control_room.v1",
+  "archive":"AlphaLab_Data/alpha_desk_v2/control_room/runs/<RUN_ID>",
+  "latest":"AlphaLab_Data/alpha_desk_v2/control_room/latest",
+  "post_p12_change":"EXPLICIT_PRODUCT_CHANGE",
+  "science_mutation":false
+}

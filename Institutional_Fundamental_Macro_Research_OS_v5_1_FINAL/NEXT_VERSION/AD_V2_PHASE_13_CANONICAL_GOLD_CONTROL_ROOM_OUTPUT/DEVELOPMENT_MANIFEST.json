@@ -1,0 +1,14 @@
+{
+  "schema_version":"1.0.0",
+  "phase":"AD-V2-P13",
+  "title":"Canonical Gold Control Room Output Contract",
+  "deployment":"PRESENTATION_GOVERNANCE_AMENDMENT",
+  "subject":"XAUUSD",
+  "science_mutation":false,
+  "presentation_science_authority":"NONE",
+  "canonical_contract":"ALPHA_DESK_V2_GOLD_CONTROL_ROOM_V1",
+  "canonical_schema":"alpha_desk_v2.gold_control_room.v1",
+  "v1_authoritative":true,
+  "trade_permission":"V1_INHERITED",
+  "broker":"NONE"
+}

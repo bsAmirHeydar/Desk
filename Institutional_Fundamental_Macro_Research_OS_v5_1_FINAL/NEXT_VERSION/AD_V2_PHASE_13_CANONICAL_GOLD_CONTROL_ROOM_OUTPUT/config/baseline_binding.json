@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V2-P13",
+  "baseline_commit": "257b6df7fe123c7a1d8557f47e90cc3e76bd0024",
+  "binding_mode": "GIT_BLOB_ACTUAL_INSTALLED_SURFACE",
+  "git_blob_dependencies": [
+    {"id":"P11_CLI","rel":"Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_11_UNIFIED_COMMAND_RESEARCH_ORCHESTRATION/tools/alpha_desk_v2.py","git_blob":"0689661822c5498b9195d97e5048145bfab1434a"},
+    {"id":"P11_LAUNCHER","rel":"Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_11_UNIFIED_COMMAND_RESEARCH_ORCHESTRATION/runtime/unified_launcher.py","git_blob":"514652917864ed5a0cc1a2e2251fc1719150e0d8"},
+    {"id":"P10_PIPELINE","rel":"Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_10_INTEGRATED_SHADOW_COMMISSIONING_RC/runtime/shadow_pipeline.py","git_blob":"0c70cc041b20c641b07260abc04a90d3a3bd8975"},
+    {"id":"P06_OVERLAY","rel":"Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_06_RUN_MEMORY_UX_INTEGRATION/runtime/run_overlay.py","git_blob":"4d596b8639baf4c221e058c57420084f6dbb1b42"},
+    {"id":"P12_FREEZE","rel":"Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_12_FINAL_IMPLEMENTATION_FREEZE_ACCEPTANCE/config/final_freeze_registry.json","git_blob":"29a95fba197ab3442d9929a78576563af2d277fc"},
+    {"id":"P12_POST_POLICY","rel":"Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_12_FINAL_IMPLEMENTATION_FREEZE_ACCEPTANCE/config/post_p12_policy.json","git_blob":"01a5b37e8f4ea3e2f4e666acbc6bfd4cb628c68c"},
+    {"id":"ROOT_V2_LAUNCHER_BASE","rel":"AlphaDesk.ps1","git_blob":"f90acb0d12fbb83588e34477fefdc14acae4196d"}
+  ],
+  "line_ending_policy": "GIT_BLOB_CANONICAL_NO_WORKTREE_CRLF_DEPENDENCY",
+  "real_mutation_fails_closed": true
+}

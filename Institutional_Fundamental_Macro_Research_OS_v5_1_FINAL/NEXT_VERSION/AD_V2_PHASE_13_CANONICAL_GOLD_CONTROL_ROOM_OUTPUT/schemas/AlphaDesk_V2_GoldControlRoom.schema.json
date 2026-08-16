@@ -1,0 +1,12 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"alpha_desk_v2.gold_control_room.v1",
+  "type":"object",
+  "required":["schema_id","schema_version","contract","identity","run","authority","overview","pressure","transmission","release","layers","events","memory","audit","data_health","provenance","canonical_content_hash"],
+  "properties":{
+    "schema_id":{"const":"alpha_desk_v2.gold_control_room.v1"},
+    "contract":{"const":"ALPHA_DESK_V2_GOLD_CONTROL_ROOM_V1"},
+    "identity":{"type":"object"},"run":{"type":"object"},"authority":{"type":"object"},"overview":{"type":"object"},"pressure":{"type":"object"},"transmission":{"type":"object"},"release":{"type":"object"},"layers":{"type":"array","minItems":8,"maxItems":8},"events":{"type":"object"},"memory":{"type":"object"},"audit":{"type":"object"},"data_health":{"type":"object"},"provenance":{"type":"object"}
+  },
+  "additionalProperties":true
+}

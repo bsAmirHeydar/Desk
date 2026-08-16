@@ -1,0 +1,14 @@
+{
+  "schema_version":"1.0.0",
+  "phase":"AD-V2-P13",
+  "change_basis":"EXPLICIT_PRODUCT_CHANGE",
+  "authorized_frozen_delta":["AlphaDesk.ps1"],
+  "science_mutation":false,
+  "old_p12_receipts_are_immutable":true,
+  "amendment_receipt_append_only":true,
+  "canonical_output_contract":"AD-V2-P13",
+  "gold_control_room_schema":"alpha_desk_v2.gold_control_room.v1",
+  "presentation_science_authority":"NONE",
+  "v1_permission_authority":"PRESERVED",
+  "broker_authority":"NONE"
+}
