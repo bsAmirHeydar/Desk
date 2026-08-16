@@ -1,0 +1,8 @@
+{
+  "phase": "AD-V3-P01",
+  "implementation": "COMPLETE_WHEN_ACCEPTANCE_PASS",
+  "v2": "FROZEN",
+  "v3_deployment": "SHADOW_ONLY",
+  "p02_can_start_only_if": "P01_KNOWLEDGE_COVERAGE_RECEIPT.status == PASS",
+  "p02_mission": "Bind every registered public/applicable fact to mandatory acquisition and time/vintage contracts."
+}

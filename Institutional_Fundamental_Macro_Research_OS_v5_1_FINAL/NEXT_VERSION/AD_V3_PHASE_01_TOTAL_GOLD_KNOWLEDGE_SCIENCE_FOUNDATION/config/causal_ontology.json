@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P01",
+  "node_types": [
+    "SHOCK",
+    "CAUSAL_ROOT",
+    "TRANSMISSION_PATHWAY",
+    "PARTICIPANT_STATE",
+    "REALIZED_FLOW",
+    "MECHANICAL_FORCE",
+    "STRUCTURAL_STATE",
+    "TARGET_PRICE_RESPONSE",
+    "CONTEXT",
+    "PRIVATE_GAP"
+  ],
+  "edge_types": [
+    "CAUSES",
+    "TRANSMITS_THROUGH",
+    "CONDITIONS",
+    "MODULATES",
+    "RESPONDS_TO",
+    "HEDGES",
+    "FORCES",
+    "CONSTRAINS_CAPACITY",
+    "CORROBORATES_NON_ADDITIVELY",
+    "RIVALS",
+    "INVALIDATES"
+  ],
+  "ownership_rules": [
+    "Every additive directional contribution must have one causal_owner_id.",
+    "Dependent pathway observations inherit their shock/root owner and are not additive votes.",
+    "Participant response/flow may confirm transmission but cannot retroactively create the upstream shock.",
+    "Target Gold price/return is always TARGET_PRICE_RESPONSE or downstream context, never CAUSAL_ROOT.",
+    "A fact may have multiple graph edges but only one additive causal ownership assignment per hypothesis.",
+    "Conditional dependence is regime-specific and must be explicit rather than encoded as permanent independence."
+  ],
+  "canonical_root_families": [
+    {
+      "root_id": "US_POLICY_EXPECTATIONS",
+      "plane": "CAUSAL_FUNDAMENTAL"
+    },
+    {
+      "root_id": "REAL_RATE_OPPORTUNITY_COST",
+      "plane": "CAUSAL_FUNDAMENTAL"
+    },
+    {
+      "root_id": "USD_AUTONOMOUS",
+      "plane": "CAUSAL_FUNDAMENTAL"
+    },
+    {
+      "root_id": "FISCAL_SOVEREIGN_MONETARY_CREDIBILITY",
+      "plane": "CAUSAL_FUNDAMENTAL"
+    },
+    {
+      "root_id": "OFFICIAL_SECTOR_DEMAND",
+      "plane": "CAUSAL_FUNDAMENTAL"
+    },
+    {
+      "root_id": "PHYSICAL_REGIONAL_DEMAND_BALANCE",
+      "plane": "CAUSAL_FUNDAMENTAL"
+    },
+    {
+      "root_id": "PHYSICAL_SUPPLY_RECYCLING_HEDGING",
+      "plane": "CAUSAL_FUNDAMENTAL"
+    },
+    {
+      "root_id": "GEOPOLITICAL_INSURANCE_RISK",
+      "plane": "CAUSAL_FUNDAMENTAL"
+    },
+    {
+      "root_id": "FUNDING_COLLATERAL_STRESS",
+      "plane": "CAUSAL_FUNDAMENTAL"
+    },
+    {
+      "root_id": "GLOBAL_MONETARY_LIQUIDITY",
+      "plane": "CAUSAL_FUNDAMENTAL"
+    },
+    {
+      "root_id": "INVESTMENT_ALLOCATION_DEMAND",
+      "plane": "CAUSAL_FUNDAMENTAL"
+    },
+    {
+      "root_id": "INFLATION_CREDIBILITY_HEDGE_DEMAND",
+      "plane": "CAUSAL_FUNDAMENTAL"
+    }
+  ],
+  "price_rules": {
+    "target_price_can_modify": [
+      "PRICE_TRANSMISSION",
+      "MODEL_COMPLETENESS",
+      "MISSING_DRIVER_RISK",
+      "PERMISSION_CONSTRAINT"
+    ],
+    "target_price_cannot_modify": [
+      "CAUSAL_PRESSURE",
+      "ROOT_POLARITY",
+      "ROOT_STRENGTH",
+      "ROOT_CONSUMPTION"
+    ]
+  },
+  "anti_double_count_examples": [
+    {
+      "shock": "US_CPI_DOWNSIDE_SURPRISE",
+      "path": [
+        "US_POLICY_EXPECTATIONS",
+        "UST_2Y",
+        "UST_REAL_YIELD",
+        "USD_COMPLEX",
+        "ETF_OR_FUTURES_RESPONSE",
+        "XAU_PRICE"
+      ],
+      "rule": "one upstream shock, dependent pathway states not independent votes"
+    },
+    {
+      "shock": "FISCAL_TERM_PREMIUM_SHOCK",
+      "path": [
+        "FISCAL_SOVEREIGN_MONETARY_CREDIBILITY",
+        "TERM_PREMIUM",
+        "UST_NOMINAL_YIELD",
+        "USD_OR_RISK_RESPONSE",
+        "XAU_PRICE"
+      ],
+      "rule": "rising nominal yields are not mechanically Gold-negative when the shock owner is fiscal credibility"
+    },
+    {
+      "shock": "HORMUZ_OIL_SHOCK",
+      "path": [
+        "GEOPOLITICAL_INSURANCE_RISK",
+        "SAFE_HAVEN_DEMAND",
+        "XAU_PRICE"
+      ],
+      "rival_path": [
+        "OIL_INFLATION",
+        "US_POLICY_EXPECTATIONS",
+        "REAL_RATE_OPPORTUNITY_COST",
+        "XAU_PRICE"
+      ],
+      "rule": "preserve opposing channels from the same shock"
+    }
+  ],
+  "fact_role_registry_ref": "config/fact_role_registry.json",
+  "structural_to_causal_bridge": {
+    "purpose": "Slow structural observations can inform the state/prior of a canonical causal root without becoming direct intraday votes.",
+    "allowed_source_roles": [
+      "STRUCTURAL_ROOT_STATE"
+    ],
+    "target": "matching causal_root_family",
+    "direct_session_direction_authority": false,
+    "requires_horizon_specific_materiality": true,
+    "requires_persistence_and_freshness_separation": true
+  }
+}

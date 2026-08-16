@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaDesk_V3_P01_KnowledgeCoverageReceipt.schema.json",
+  "type": "object",
+  "required": [
+    "phase",
+    "status",
+    "registry",
+    "surface_coverage",
+    "v2_freeze"
+  ],
+  "properties": {
+    "phase": {
+      "const": "AD-V3-P01"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL_CLOSED"
+      ]
+    },
+    "registry": {
+      "type": "object"
+    },
+    "surface_coverage": {
+      "type": "object"
+    },
+    "v2_freeze": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

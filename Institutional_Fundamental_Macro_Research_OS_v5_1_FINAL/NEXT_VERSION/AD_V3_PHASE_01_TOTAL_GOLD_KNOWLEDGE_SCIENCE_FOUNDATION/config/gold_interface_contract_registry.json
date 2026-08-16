@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P01",
+  "policy": {
+    "classification": "INTERFACE_CONTRACT_ONLY",
+    "market_fact_authority": "NONE",
+    "new_market_fact_definition": "FORBIDDEN",
+    "hash_drift": "FAIL_CLOSED",
+    "field_drift": "FAIL_CLOSED",
+    "rationale": "These V2 JSON Schemas define transport, orchestration, receipt, or rendering envelopes. They may carry registered facts or derived states, but the schemas themselves do not define new Gold market facts. Any schema change must be re-audited rather than silently reclassified."
+  },
+  "contracts": [
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_11_UNIFIED_COMMAND_RESEARCH_ORCHESTRATION/schemas/AlphaDesk_V2_P11_GoldPrecommit.schema.json",
+      "sha256": "53a99c2e15e33f4b2efbe0609998a7a78a190aeb89d0f8d986efd74e63c8c745",
+      "classification": "INTERFACE_CONTRACT_ONLY",
+      "semantic_role": "PRECOMMIT_INTERFACE",
+      "market_fact_authority": "NONE",
+      "may_transport_registered_facts": true,
+      "required_top_level_fields": [
+        "pressure_input",
+        "expected_signature_template",
+        "missing_driver_candidates",
+        "integrity"
+      ],
+      "declared_property_names": [
+        "pressure_input",
+        "expected_signature_template",
+        "missing_driver_candidates",
+        "integrity"
+      ],
+      "additional_properties_expected": false,
+      "field_bindings": {
+        "pressure_input": "CONSUMES_REGISTERED_PRESSURE_AND_CAUSAL_STATE",
+        "expected_signature_template": "PRECOMMIT_EXPECTED_TRANSMISSION_SIGNATURE",
+        "missing_driver_candidates": "MISSING_DRIVER_SEARCH_CANDIDATE_ENVELOPE",
+        "integrity": "INTEGRITY_METADATA_ONLY"
+      },
+      "audit_conclusion": "NO_NEW_GOLD_MARKET_FACT_DEFINITION"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_11_UNIFIED_COMMAND_RESEARCH_ORCHESTRATION/schemas/AlphaDesk_V2_P11_GoldResponseObservation.schema.json",
+      "sha256": "7ae2e8e300a9c9dc09f55da10588994dcbd2e58aadd1757637303011cd3e28d9",
+      "classification": "INTERFACE_CONTRACT_ONLY",
+      "semantic_role": "RESPONSE_OBSERVATION_INTERFACE",
+      "market_fact_authority": "NONE",
+      "may_transport_registered_facts": true,
+      "required_top_level_fields": [
+        "actual_response",
+        "gold_observations",
+        "integrity"
+      ],
+      "declared_property_names": [
+        "actual_response",
+        "gold_observations",
+        "integrity"
+      ],
+      "additional_properties_expected": false,
+      "field_bindings": {
+        "actual_response": "TARGET_AND_CROSS_ASSET_RESPONSE_ENVELOPE",
+        "gold_observations": "REGISTERED_OBSERVATION_COLLECTION",
+        "integrity": "INTEGRITY_METADATA_ONLY"
+      },
+      "audit_conclusion": "NO_NEW_GOLD_MARKET_FACT_DEFINITION"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_10_INTEGRATED_SHADOW_COMMISSIONING_RC/schemas/AlphaDesk_V2_GoldShadowRunInput.schema.json",
+      "sha256": "2ba4a8c159185eda9150a1c8a70a826d7c4a0652aeae08a08cda3cc12f1d4b55",
+      "classification": "INTERFACE_CONTRACT_ONLY",
+      "semantic_role": "SHADOW_RUN_INPUT_INTERFACE",
+      "market_fact_authority": "NONE",
+      "may_transport_registered_facts": true,
+      "required_top_level_fields": [
+        "base_capsule",
+        "pressure_input",
+        "expected_signature",
+        "actual_response",
+        "gold_observations"
+      ],
+      "declared_property_names": [
+        "base_capsule",
+        "pressure_input",
+        "expected_signature",
+        "actual_response",
+        "gold_observations",
+        "pressure_history",
+        "transmission_history",
+        "lifecycle_history"
+      ],
+      "additional_properties_expected": false,
+      "field_bindings": {
+        "base_capsule": "PRIOR_RUN_CONTEXT_ENVELOPE",
+        "pressure_input": "CONSUMES_REGISTERED_PRESSURE_AND_CAUSAL_STATE",
+        "expected_signature": "PRECOMMIT_EXPECTED_TRANSMISSION_SIGNATURE",
+        "actual_response": "TARGET_AND_CROSS_ASSET_RESPONSE_ENVELOPE",
+        "gold_observations": "REGISTERED_OBSERVATION_COLLECTION",
+        "pressure_history": "PRESSURE_HISTORY_ENVELOPE",
+        "transmission_history": "TRANSMISSION_HISTORY_ENVELOPE",
+        "lifecycle_history": "LIFECYCLE_HISTORY_ENVELOPE"
+      },
+      "audit_conclusion": "NO_NEW_GOLD_MARKET_FACT_DEFINITION"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_10_INTEGRATED_SHADOW_COMMISSIONING_RC/schemas/AlphaDesk_V2_IntegratedGoldShadowRunReceipt.schema.json",
+      "sha256": "f1a8d9ed7c1e8e2f367e390d69760d35e2fb30d30d7652e0b981584ee5c92e83",
+      "classification": "INTERFACE_CONTRACT_ONLY",
+      "semantic_role": "COMMISSIONING_RECEIPT_INTERFACE",
+      "market_fact_authority": "NONE",
+      "may_transport_registered_facts": false,
+      "required_top_level_fields": [
+        "schema_version",
+        "phase",
+        "status",
+        "run_id",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06",
+        "authority"
+      ],
+      "declared_property_names": [
+        "schema_version",
+        "phase",
+        "status",
+        "run_id",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06",
+        "authority"
+      ],
+      "additional_properties_expected": true,
+      "field_bindings": {
+        "schema_version": "INTERFACE_VERSION_METADATA",
+        "phase": "PHASE_IDENTITY_METADATA",
+        "status": "COMMISSIONING_STATUS_METADATA",
+        "run_id": "RUN_IDENTITY_METADATA",
+        "p02": "V2_PHASE_RECEIPT_ENVELOPE",
+        "p03": "V2_PHASE_RECEIPT_ENVELOPE",
+        "p04": "V2_PHASE_RECEIPT_ENVELOPE",
+        "p05": "V2_PHASE_RECEIPT_ENVELOPE",
+        "p06": "V2_PHASE_RECEIPT_ENVELOPE",
+        "authority": "AUTHORITY_METADATA_ONLY"
+      },
+      "audit_conclusion": "NO_NEW_GOLD_MARKET_FACT_DEFINITION"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_13_CANONICAL_GOLD_CONTROL_ROOM_OUTPUT/schemas/AlphaDesk_V2_GoldControlRoom.schema.json",
+      "sha256": "5080f6955ce190192a57db8b923daf50dc994dd2283baaf4dc40ace05db7fe81",
+      "classification": "INTERFACE_CONTRACT_ONLY",
+      "semantic_role": "CONTROL_ROOM_OUTPUT_INTERFACE",
+      "market_fact_authority": "NONE",
+      "may_transport_registered_facts": true,
+      "required_top_level_fields": [
+        "schema_id",
+        "schema_version",
+        "contract",
+        "identity",
+        "run",
+        "authority",
+        "overview",
+        "pressure",
+        "transmission",
+        "release",
+        "layers",
+        "events",
+        "memory",
+        "audit",
+        "data_health",
+        "provenance",
+        "canonical_content_hash"
+      ],
+      "declared_property_names": [
+        "schema_id",
+        "contract",
+        "identity",
+        "run",
+        "authority",
+        "overview",
+        "pressure",
+        "transmission",
+        "release",
+        "layers",
+        "events",
+        "memory",
+        "audit",
+        "data_health",
+        "provenance"
+      ],
+      "additional_properties_expected": true,
+      "field_bindings": {
+        "schema_id": "INTERFACE_ID_METADATA",
+        "schema_version": "INTERFACE_VERSION_METADATA",
+        "contract": "OUTPUT_CONTRACT_METADATA",
+        "identity": "PRODUCT_IDENTITY_METADATA",
+        "run": "RUN_CONTEXT_ENVELOPE",
+        "authority": "AUTHORITY_METADATA_ONLY",
+        "overview": "RENDERED_SUMMARY_ENVELOPE",
+        "pressure": "RENDERED_PRESSURE_STATE_ENVELOPE",
+        "transmission": "RENDERED_TRANSMISSION_STATE_ENVELOPE",
+        "release": "RENDERED_RELEASE_LIFECYCLE_ENVELOPE",
+        "layers": "RENDERED_EIGHT_LAYER_ENVELOPE",
+        "events": "RENDERED_EVENT_STATE_ENVELOPE",
+        "memory": "RUN_MEMORY_ENVELOPE",
+        "audit": "AUDIT_METADATA_ONLY",
+        "data_health": "DATA_HEALTH_METADATA_ONLY",
+        "provenance": "PROVENANCE_METADATA_ONLY",
+        "canonical_content_hash": "CONTENT_INTEGRITY_METADATA"
+      },
+      "audit_conclusion": "NO_NEW_GOLD_MARKET_FACT_DEFINITION"
+    }
+  ]
+}

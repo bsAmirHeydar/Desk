@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P01",
+  "rule": "P01 MUST NOT MUTATE V2",
+  "surfaces": [
+    {
+      "rel": "AlphaDesk.ps1",
+      "sha256": "21996b6478da7ed5f3b3bdb614712dab99c7c2ad59fd901a2bc9f0bedbc829cf",
+      "size": 1378
+    },
+    {
+      "rel": "ALPHA_DESK_V2_RUN.md",
+      "sha256": "3f5cfca7bfcf790c6c73091d59468c6f489144b9f2f53c40f8fd6ec84c0c1da5",
+      "size": 516
+    },
+    {
+      "rel": "RUN.md",
+      "sha256": "3f67a8684722550a892b316c0b17400415fb76829c653b2ab971523eee247301",
+      "size": 3156
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/CURRENT_PRODUCTION_MANIFEST.json",
+      "sha256": "02ee9b7f77fdd7d85ca5dd47c840e22b472861f7b3b7285e37bf6eef9e49344f",
+      "size": 39135
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_00_PRESSURE_PRICE_CONSTITUTION/DEVELOPMENT_MANIFEST.json",
+      "sha256": "a38bc594860fd0d86370888fca6809ecea5ada38933db36f690fb0ff9ccd2ce3",
+      "size": 2508
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_01_RUNTIME_SEMANTIC_REPAIR/DEVELOPMENT_MANIFEST.json",
+      "sha256": "be6e4b711581d232c699af09f6925595af287086e5db99e4e2b3a955c38c6b64",
+      "size": 1627
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_02_DIRECTIONAL_PRESSURE_ENGINE/DEVELOPMENT_MANIFEST.json",
+      "sha256": "b51e1f8ce5376d56325fddaa8dc8595ea635eac18915ce42d4f34cfca4e883fa",
+      "size": 964
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_03_PRICE_TRANSMISSION_ENGINE/DEVELOPMENT_MANIFEST.json",
+      "sha256": "c00d7860b6ff00a6776cd262e8ca7ada54714a6bb4a3ba72b886273aef30fc12",
+      "size": 355
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_04_LATENT_RELEASE_ENGINE/DEVELOPMENT_MANIFEST.json",
+      "sha256": "2ba20647a9cb673ec1b5dfa215cb518a746b65c3725acaecfadd31b0f4d6b3f3",
+      "size": 954
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_05_GOLD_INTELLIGENCE_SPECIALIZATION/DEVELOPMENT_MANIFEST.json",
+      "sha256": "32adfa55e3b02d1c4a4df9c808199e8b86565aa269d33bb615af57918d7fa24a",
+      "size": 1120
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_06_RUN_MEMORY_UX_INTEGRATION/DEVELOPMENT_MANIFEST.json",
+      "sha256": "313f373b182efc8bd1476505b8f3faf85c2c77bd4c4a191f7c5d3f3ba72189ce",
+      "size": 1156
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_07_D4_TRUE_FORWARD_PROMOTION/DEVELOPMENT_MANIFEST.json",
+      "sha256": "5a3a870f6e5f866eca4478972154df0003df710b9f6e777527757b73e45371f1",
+      "size": 396
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_08_CONTINUOUS_TRUE_FORWARD_OPERATIONS/DEVELOPMENT_MANIFEST.json",
+      "sha256": "49d17b88ec436cafc293165a22711177ec0f47e2b86d241c8021f82b4e55038f",
+      "size": 491
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_09_SCIENTIFIC_LEARNING_EVOLUTION_GOVERNANCE/DEVELOPMENT_MANIFEST.json",
+      "sha256": "2e1f25ff626875e62c4eef272302fda8ee97fa85f558003b035b850e364d432b",
+      "size": 889
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_10_INTEGRATED_SHADOW_COMMISSIONING_RC/DEVELOPMENT_MANIFEST.json",
+      "sha256": "2b17c8125cbad5ffaf782c24124a2f5fb72a1a2cdf58922302efe4ae568c2b13",
+      "size": 303
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_11_UNIFIED_COMMAND_RESEARCH_ORCHESTRATION/DEVELOPMENT_MANIFEST.json",
+      "sha256": "3ca65572179c05d816f5c2380fa8be02770bc99906ccdb2ac15b4ece93b6a16a",
+      "size": 355
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_12_FINAL_IMPLEMENTATION_FREEZE_ACCEPTANCE/DEVELOPMENT_MANIFEST.json",
+      "sha256": "edd326ac4637a4b4566e6bc10ffd69d07c67d1ac55750da147477b95c407615b",
+      "size": 319
+    },
+    {
+      "rel": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V2_PHASE_13_CANONICAL_GOLD_CONTROL_ROOM_OUTPUT/DEVELOPMENT_MANIFEST.json",
+      "sha256": "68aeef1b9a364a103d2644caa2daae9bacc43b87c117b83df3b0e3ab28d3f594",
+      "size": 459
+    }
+  ]
+}

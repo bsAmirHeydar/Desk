@@ -1,0 +1,6035 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P01",
+  "version": "1.0.0",
+  "subject": "XAUUSD_GOLD",
+  "principle": "TOTAL_KNOWN_GOLD_FACT_UNIVERSE_WITHOUT_PRETENDING_PRIVATE_OBSERVABILITY",
+  "fact_count": 192,
+  "facts": [
+    {
+      "fact_id": "XAUUSD_SPOT_PRICE",
+      "family": "TARGET_MARKET",
+      "label": "XAUUSD spot price",
+      "default_role": "TARGET_PRICE_RESPONSE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_LICENSED",
+      "source_cadence_class": "REALTIME_OR_DELAYED",
+      "discovery_terms": [
+        "xauusd spot price",
+        "xauusd",
+        "spot gold",
+        "gold spot"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "CANNOT_SET_CAUSAL_PRESSURE"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_FUTURES_PRICE",
+      "family": "TARGET_MARKET",
+      "label": "COMEX GC futures price",
+      "default_role": "TARGET_PRICE_RESPONSE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_DELAYED_OR_LICENSED",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "gc futures price",
+        "comex gc futures price",
+        "gc futures",
+        "comex gold futures"
+      ],
+      "source_hints": [
+        "CME_METALS"
+      ],
+      "prohibited_interpretations": [
+        "NOT_GLOBAL_GOLD",
+        "CANNOT_SET_CAUSAL_PRESSURE"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_MULTI_VENUE_TOPOLOGY",
+      "family": "TARGET_MARKET",
+      "label": "Gold multi-venue market topology",
+      "default_role": "CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "KNOWLEDGE",
+      "source_cadence_class": "STRUCTURAL",
+      "discovery_terms": [
+        "gold multi venue topology",
+        "gold multi-venue market topology",
+        "london otc market",
+        "no single venue",
+        "comex != london",
+        "global gold market"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "SINGLE_VENUE_NOT_GLOBAL"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FOMC_POLICY_STANCE",
+      "family": "US_MACRO_POLICY",
+      "label": "FOMC policy stance",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "US_POLICY_EXPECTATIONS",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "EVENT",
+      "discovery_terms": [
+        "fomc policy stance",
+        "fomc",
+        "policy stance",
+        "fed policy"
+      ],
+      "source_hints": [
+        "FED_FOMC"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FED_POLICY_PATH_PRICING",
+      "family": "US_MACRO_POLICY",
+      "label": "Market-implied Fed policy path",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "US_POLICY_EXPECTATIONS",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_PROVIDER",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "fed policy path pricing",
+        "market-implied fed policy path",
+        "fedwatch",
+        "fed funds futures",
+        "policy path",
+        "rate hike probability",
+        "rate cut probability"
+      ],
+      "source_hints": [
+        "CME_FEDWATCH"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FED_REACTION_FUNCTION",
+      "family": "US_MACRO_POLICY",
+      "label": "Fed reaction-function interpretation",
+      "default_role": "MODEL_DERIVED",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "US_POLICY_EXPECTATIONS",
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED",
+      "source_cadence_class": "EVENT",
+      "discovery_terms": [
+        "fed reaction function",
+        "fed reaction-function interpretation",
+        "reaction function",
+        "policy reaction"
+      ],
+      "source_hints": [
+        "FED_FOMC"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FED_BALANCE_SHEET_QT_QE",
+      "family": "US_MACRO_POLICY",
+      "label": "Fed balance sheet / QT / QE",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "GLOBAL_MONETARY_LIQUIDITY",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "WEEKLY",
+      "discovery_terms": [
+        "fed balance sheet qt qe",
+        "fed balance sheet / qt / qe",
+        "quantitative tightening",
+        "quantitative easing",
+        "qt",
+        "qe",
+        "fed balance sheet"
+      ],
+      "source_hints": [
+        "FED_H41"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_CPI",
+      "family": "US_MACRO_POLICY",
+      "label": "US CPI release",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY_EVENT",
+      "discovery_terms": [
+        "us cpi",
+        "us cpi release",
+        "cpi",
+        "consumer price index"
+      ],
+      "source_hints": [
+        "BLS_CPI"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_CORE_CPI",
+      "family": "US_MACRO_POLICY",
+      "label": "US core CPI release",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY_EVENT",
+      "discovery_terms": [
+        "us core cpi",
+        "us core cpi release",
+        "core cpi"
+      ],
+      "source_hints": [
+        "BLS_CPI"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_PCE",
+      "family": "US_MACRO_POLICY",
+      "label": "US PCE inflation release",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY_EVENT",
+      "discovery_terms": [
+        "us pce",
+        "us pce inflation release",
+        "pce inflation",
+        "personal consumption expenditures price"
+      ],
+      "source_hints": [
+        "BEA_PCE"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_CORE_PCE",
+      "family": "US_MACRO_POLICY",
+      "label": "US core PCE release",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY_EVENT",
+      "discovery_terms": [
+        "us core pce",
+        "us core pce release",
+        "core pce"
+      ],
+      "source_hints": [
+        "BEA_PCE"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_PPI",
+      "family": "US_MACRO_POLICY",
+      "label": "US PPI release",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY_EVENT",
+      "discovery_terms": [
+        "us ppi",
+        "us ppi release",
+        "ppi",
+        "producer price index"
+      ],
+      "source_hints": [
+        "BLS_PPI"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_PAYROLLS",
+      "family": "US_MACRO_POLICY",
+      "label": "US nonfarm payrolls",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY_EVENT",
+      "discovery_terms": [
+        "us payrolls",
+        "us nonfarm payrolls",
+        "nonfarm payroll",
+        "payrolls",
+        "nfp"
+      ],
+      "source_hints": [
+        "BLS_EMP"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_UNEMPLOYMENT",
+      "family": "US_MACRO_POLICY",
+      "label": "US unemployment rate",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY_EVENT",
+      "discovery_terms": [
+        "us unemployment",
+        "us unemployment rate",
+        "unemployment rate"
+      ],
+      "source_hints": [
+        "BLS_EMP"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_WAGES",
+      "family": "US_MACRO_POLICY",
+      "label": "US wage growth",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY_EVENT",
+      "discovery_terms": [
+        "us wages",
+        "us wage growth",
+        "average hourly earnings",
+        "wage growth"
+      ],
+      "source_hints": [
+        "BLS_EMP"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_JOBLESS_CLAIMS",
+      "family": "US_MACRO_POLICY",
+      "label": "US initial/continuing jobless claims",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "WEEKLY_EVENT",
+      "discovery_terms": [
+        "us jobless claims",
+        "us initial/continuing jobless claims",
+        "jobless claims",
+        "initial claims",
+        "continuing claims"
+      ],
+      "source_hints": [
+        "DOL_CLAIMS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_JOLTS",
+      "family": "US_MACRO_POLICY",
+      "label": "US JOLTS labor demand",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY_EVENT",
+      "discovery_terms": [
+        "us jolts",
+        "us jolts labor demand",
+        "jolts",
+        "job openings"
+      ],
+      "source_hints": [
+        "BLS_JOLTS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_GDP",
+      "family": "US_MACRO_POLICY",
+      "label": "US GDP growth",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "QUARTERLY_EVENT",
+      "discovery_terms": [
+        "us gdp",
+        "us gdp growth",
+        "gross domestic product",
+        "gdp growth"
+      ],
+      "source_hints": [
+        "BEA_GDP"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_RETAIL_SALES",
+      "family": "US_MACRO_POLICY",
+      "label": "US retail sales",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY_EVENT",
+      "discovery_terms": [
+        "us retail sales",
+        "retail sales"
+      ],
+      "source_hints": [
+        "CENSUS_RETAIL"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_ACTIVITY_SURVEY",
+      "family": "US_MACRO_POLICY",
+      "label": "US activity survey / business cycle evidence",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "MONTHLY_EVENT",
+      "discovery_terms": [
+        "us activity survey",
+        "us activity survey / business cycle evidence",
+        "ism",
+        "pmi",
+        "activity survey",
+        "business cycle"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_MACRO_CONSENSUS_SURPRISE",
+      "family": "US_MACRO_POLICY",
+      "label": "Pre-release consensus and surprise state",
+      "default_role": "MODEL_DERIVED",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_OR_LICENSED",
+      "source_cadence_class": "EVENT",
+      "discovery_terms": [
+        "us macro consensus surprise",
+        "pre-release consensus and surprise state",
+        "consensus",
+        "surprise",
+        "actual versus expected",
+        "actual vs expected"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "POST_RELEASE_STORY_CANNOT_RECONSTRUCT_UNKNOWN_CONSENSUS"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_DATA_REVISION_VINTAGE",
+      "family": "US_MACRO_POLICY",
+      "label": "US macro revisions and vintages",
+      "default_role": "CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "RELEASE_SPECIFIC",
+      "discovery_terms": [
+        "us data revision vintage",
+        "us macro revisions and vintages",
+        "revision",
+        "vintage",
+        "first release"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "NO_LOOKAHEAD"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "UST_2Y_NOMINAL_YIELD",
+      "family": "RATES_FISCAL",
+      "label": "US Treasury 2Y nominal yield",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_PROVIDER",
+      "source_cadence_class": "DAILY_OR_INTRADAY",
+      "discovery_terms": [
+        "ust 2y nominal yield",
+        "us treasury 2y nominal yield",
+        "2y yield",
+        "2y treasury",
+        "nominal yield"
+      ],
+      "source_hints": [
+        "UST_YIELD_CURVE"
+      ],
+      "prohibited_interpretations": [
+        "NOMINAL_YIELD_NOT_REAL_YIELD",
+        "YIELD_MOVE_REQUIRES_SHOCK_DECOMPOSITION"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "UST_5Y_NOMINAL_YIELD",
+      "family": "RATES_FISCAL",
+      "label": "US Treasury 5Y nominal yield",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_PROVIDER",
+      "source_cadence_class": "DAILY_OR_INTRADAY",
+      "discovery_terms": [
+        "ust 5y nominal yield",
+        "us treasury 5y nominal yield",
+        "5y yield",
+        "5y treasury",
+        "nominal yield"
+      ],
+      "source_hints": [
+        "UST_YIELD_CURVE"
+      ],
+      "prohibited_interpretations": [
+        "NOMINAL_YIELD_NOT_REAL_YIELD",
+        "YIELD_MOVE_REQUIRES_SHOCK_DECOMPOSITION"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "UST_10Y_NOMINAL_YIELD",
+      "family": "RATES_FISCAL",
+      "label": "US Treasury 10Y nominal yield",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_PROVIDER",
+      "source_cadence_class": "DAILY_OR_INTRADAY",
+      "discovery_terms": [
+        "ust 10y nominal yield",
+        "us treasury 10y nominal yield",
+        "10y yield",
+        "10y treasury",
+        "nominal yield"
+      ],
+      "source_hints": [
+        "UST_YIELD_CURVE"
+      ],
+      "prohibited_interpretations": [
+        "NOMINAL_YIELD_NOT_REAL_YIELD",
+        "YIELD_MOVE_REQUIRES_SHOCK_DECOMPOSITION"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "UST_30Y_NOMINAL_YIELD",
+      "family": "RATES_FISCAL",
+      "label": "US Treasury 30Y nominal yield",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_PROVIDER",
+      "source_cadence_class": "DAILY_OR_INTRADAY",
+      "discovery_terms": [
+        "ust 30y nominal yield",
+        "us treasury 30y nominal yield",
+        "30y yield",
+        "30y treasury",
+        "nominal yield"
+      ],
+      "source_hints": [
+        "UST_YIELD_CURVE"
+      ],
+      "prohibited_interpretations": [
+        "NOMINAL_YIELD_NOT_REAL_YIELD",
+        "YIELD_MOVE_REQUIRES_SHOCK_DECOMPOSITION"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "UST_5Y_REAL_YIELD",
+      "family": "RATES_FISCAL",
+      "label": "US Treasury 5Y real yield",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "REAL_RATE_OPPORTUNITY_COST",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_PROVIDER",
+      "source_cadence_class": "DAILY_OR_INTRADAY",
+      "discovery_terms": [
+        "ust 5y real yield",
+        "us treasury 5y real yield",
+        "5y real yield",
+        "tips yield",
+        "real yield"
+      ],
+      "source_hints": [
+        "UST_REAL_YIELD_CURVE"
+      ],
+      "prohibited_interpretations": [
+        "REGIME_CONDITIONED_NOT_MECHANICAL_BETA"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "UST_10Y_REAL_YIELD",
+      "family": "RATES_FISCAL",
+      "label": "US Treasury 10Y real yield",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "REAL_RATE_OPPORTUNITY_COST",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_PROVIDER",
+      "source_cadence_class": "DAILY_OR_INTRADAY",
+      "discovery_terms": [
+        "ust 10y real yield",
+        "us treasury 10y real yield",
+        "10y real yield",
+        "tips yield",
+        "real yield"
+      ],
+      "source_hints": [
+        "UST_REAL_YIELD_CURVE"
+      ],
+      "prohibited_interpretations": [
+        "REGIME_CONDITIONED_NOT_MECHANICAL_BETA"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "UST_30Y_REAL_YIELD",
+      "family": "RATES_FISCAL",
+      "label": "US Treasury 30Y real yield",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "REAL_RATE_OPPORTUNITY_COST",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_PROVIDER",
+      "source_cadence_class": "DAILY_OR_INTRADAY",
+      "discovery_terms": [
+        "ust 30y real yield",
+        "us treasury 30y real yield",
+        "30y real yield",
+        "tips yield",
+        "real yield"
+      ],
+      "source_hints": [
+        "UST_REAL_YIELD_CURVE"
+      ],
+      "prohibited_interpretations": [
+        "REGIME_CONDITIONED_NOT_MECHANICAL_BETA"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_5Y_BREAKEVEN",
+      "family": "RATES_FISCAL",
+      "label": "US 5Y inflation breakeven",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "us 5y breakeven",
+        "us 5y inflation breakeven",
+        "5y breakeven",
+        "inflation compensation"
+      ],
+      "source_hints": [
+        "UST_BREAKEVEN"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_10Y_BREAKEVEN",
+      "family": "RATES_FISCAL",
+      "label": "US 10Y inflation breakeven",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "us 10y breakeven",
+        "us 10y inflation breakeven",
+        "10y breakeven",
+        "inflation compensation"
+      ],
+      "source_hints": [
+        "UST_BREAKEVEN"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_5Y5Y_FORWARD_INFLATION",
+      "family": "RATES_FISCAL",
+      "label": "US 5y5y forward inflation expectation",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_MODEL",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "us 5y5y forward inflation",
+        "us 5y5y forward inflation expectation",
+        "5y5y",
+        "forward inflation expectation"
+      ],
+      "source_hints": [
+        "FRED_OR_OFFICIAL"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "UST_TERM_PREMIUM",
+      "family": "RATES_FISCAL",
+      "label": "US Treasury term premium",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "FISCAL_SOVEREIGN_MONETARY_CREDIBILITY",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_MODEL",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "ust term premium",
+        "us treasury term premium",
+        "term premium",
+        "acm term premium"
+      ],
+      "source_hints": [
+        "NYFED_ACM"
+      ],
+      "prohibited_interpretations": [
+        "MODEL_ESTIMATE_NOT_DIRECT_FACT"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "UST_CURVE_SHAPE",
+      "family": "RATES_FISCAL",
+      "label": "US Treasury curve shape",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "ust curve shape",
+        "us treasury curve shape",
+        "yield curve",
+        "curve steepening",
+        "curve flattening"
+      ],
+      "source_hints": [
+        "UST_YIELD_CURVE"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "UST_AUCTION_REFUNDING",
+      "family": "RATES_FISCAL",
+      "label": "Treasury auction/refunding state",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "EVENT",
+      "discovery_terms": [
+        "ust auction refunding",
+        "treasury auction/refunding state",
+        "treasury auction",
+        "refunding",
+        "auction tail",
+        "bid to cover",
+        "investor allotment"
+      ],
+      "source_hints": [
+        "UST_AUCTIONS"
+      ],
+      "prohibited_interpretations": [
+        "GROSS_ISSUANCE_NOT_AUTOMATIC_LIQUIDITY_DRAIN"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "UST_SUPPLY_ISSUANCE",
+      "family": "RATES_FISCAL",
+      "label": "Treasury supply/issuance pressure",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "FISCAL_SOVEREIGN_MONETARY_CREDIBILITY",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "WEEKLY_MONTHLY",
+      "discovery_terms": [
+        "ust supply issuance",
+        "treasury supply/issuance pressure",
+        "treasury supply",
+        "issuance",
+        "coupon supply"
+      ],
+      "source_hints": [
+        "UST_AUCTIONS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_FISCAL_DEFICIT_DEBT",
+      "family": "RATES_FISCAL",
+      "label": "US fiscal deficit/debt trajectory",
+      "default_role": "STRUCTURAL_ROOT_STATE",
+      "pressure_plane": "STRUCTURAL_CARRY",
+      "causal_root_family": "FISCAL_SOVEREIGN_MONETARY_CREDIBILITY",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY_QUARTERLY",
+      "discovery_terms": [
+        "us fiscal deficit debt",
+        "us fiscal deficit/debt trajectory",
+        "fiscal deficit",
+        "debt sustainability",
+        "public debt"
+      ],
+      "source_hints": [
+        "UST_FISCAL"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_DEBT_CEILING_FISCAL_EVENT",
+      "family": "RATES_FISCAL",
+      "label": "Debt ceiling/fiscal legal event",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "EVENT",
+      "discovery_terms": [
+        "us debt ceiling fiscal event",
+        "debt ceiling/fiscal legal event",
+        "debt ceiling",
+        "government shutdown"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_SOVEREIGN_RATING_CREDIBILITY",
+      "family": "RATES_FISCAL",
+      "label": "US sovereign rating/credibility shock",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "EVENT",
+      "discovery_terms": [
+        "us sovereign rating credibility",
+        "us sovereign rating/credibility shock",
+        "sovereign rating",
+        "rating downgrade",
+        "fiscal credibility"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "MONETARY_FISCAL_CREDIBILITY",
+      "family": "RATES_FISCAL",
+      "label": "Monetary/fiscal credibility state",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "FISCAL_SOVEREIGN_MONETARY_CREDIBILITY",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_OR_PUBLIC",
+      "source_cadence_class": "MIXED",
+      "discovery_terms": [
+        "monetary fiscal credibility",
+        "monetary/fiscal credibility state",
+        "monetary credibility",
+        "fiscal credibility",
+        "trust in sovereign liabilities"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "INFLATION_CREDIBILITY_HEDGE_STATE",
+      "family": "RATES_FISCAL",
+      "label": "Inflation/monetary credibility hedge demand",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "INFLATION_CREDIBILITY_HEDGE_DEMAND",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_OR_PUBLIC",
+      "source_cadence_class": "MIXED",
+      "discovery_terms": [
+        "inflation credibility hedge state",
+        "inflation/monetary credibility hedge demand",
+        "inflation hedge",
+        "currency debasement",
+        "inflation credibility"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "DXY_INDEX",
+      "family": "USD_COMPLEX",
+      "label": "DXY US Dollar Index",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_PROVIDER",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "dxy index",
+        "dxy us dollar index",
+        "dxy",
+        "dollar index"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "EURO_HEAVY_NOT_WHOLE_USD"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FED_BROAD_DOLLAR",
+      "family": "USD_COMPLEX",
+      "label": "Fed Broad Dollar Index",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "fed broad dollar",
+        "fed broad dollar index",
+        "broad dollar",
+        "trade weighted dollar"
+      ],
+      "source_hints": [
+        "FED_H10"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FED_AFE_DOLLAR",
+      "family": "USD_COMPLEX",
+      "label": "Fed Advanced Foreign Economies Dollar Index",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "fed afe dollar",
+        "fed advanced foreign economies dollar index",
+        "advanced foreign economies dollar",
+        "afe dollar"
+      ],
+      "source_hints": [
+        "FED_H10"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FED_EME_DOLLAR",
+      "family": "USD_COMPLEX",
+      "label": "Fed Emerging Market Economies Dollar Index",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "fed eme dollar",
+        "fed emerging market economies dollar index",
+        "emerging market economies dollar",
+        "eme dollar"
+      ],
+      "source_hints": [
+        "FED_H10"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "USDCNH_CNH_STATE",
+      "family": "USD_COMPLEX",
+      "label": "USD/CNH and CNH state",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_PROVIDER",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "usdcnh cnh state",
+        "usd/cnh and cnh state",
+        "usdcnh",
+        "cnh",
+        "offshore yuan"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "USD_AUTONOMOUS_SHOCK",
+      "family": "USD_COMPLEX",
+      "label": "Autonomous USD shock state",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "USD_AUTONOMOUS",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "usd autonomous shock",
+        "autonomous usd shock state",
+        "autonomous usd",
+        "autonomous dollar"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "DO_NOT_DOUBLE_COUNT_POLICY_DRIVEN_USD"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "ECB_POLICY_GLOBAL_RATE_CONTEXT",
+      "family": "GLOBAL_MONETARY",
+      "label": "ECB/global ex-US policy context",
+      "default_role": "CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "EVENT",
+      "discovery_terms": [
+        "ecb policy global rate context",
+        "ecb/global ex-us policy context",
+        "ecb policy",
+        "european central bank"
+      ],
+      "source_hints": [
+        "ECB"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "PBOC_POLICY_LIQUIDITY",
+      "family": "GLOBAL_MONETARY",
+      "label": "PBoC policy/liquidity state",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "GLOBAL_MONETARY_LIQUIDITY",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "EVENT_DAILY",
+      "discovery_terms": [
+        "pboc policy liquidity",
+        "pboc policy/liquidity state",
+        "pboc policy",
+        "china liquidity",
+        "pbo c"
+      ],
+      "source_hints": [
+        "PBOC"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "BOJ_POLICY_GLOBAL_RATE_CONTEXT",
+      "family": "GLOBAL_MONETARY",
+      "label": "BoJ/global rate context",
+      "default_role": "CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "EVENT",
+      "discovery_terms": [
+        "boj policy global rate context",
+        "boj/global rate context",
+        "boj policy",
+        "bank of japan"
+      ],
+      "source_hints": [
+        "BOJ"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GLOBAL_CENTRAL_BANK_LIQUIDITY",
+      "family": "GLOBAL_MONETARY",
+      "label": "Global central-bank liquidity state",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "GLOBAL_MONETARY_LIQUIDITY",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "WEEKLY_MONTHLY",
+      "discovery_terms": [
+        "global central bank liquidity",
+        "global central-bank liquidity state",
+        "global liquidity",
+        "central bank balance sheets"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GLOBAL_REAL_RATE_CONTEXT",
+      "family": "GLOBAL_MONETARY",
+      "label": "Global real-rate context",
+      "default_role": "CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_MODEL",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "global real rate context",
+        "global real-rate context",
+        "global real rates",
+        "real rate differential"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GLOBAL_RESERVE_COMPOSITION",
+      "family": "GLOBAL_MONETARY",
+      "label": "Global reserve composition",
+      "default_role": "STRUCTURAL_ROOT_STATE",
+      "pressure_plane": "STRUCTURAL_CARRY",
+      "causal_root_family": "OFFICIAL_SECTOR_DEMAND",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "QUARTERLY",
+      "discovery_terms": [
+        "global reserve composition",
+        "reserve composition",
+        "currency composition of reserves",
+        "cofer"
+      ],
+      "source_hints": [
+        "IMF_COFER"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CENTRAL_BANK_NET_GOLD_PURCHASES",
+      "family": "OFFICIAL_SECTOR",
+      "label": "Global central-bank net Gold purchases",
+      "default_role": "STRUCTURAL_ROOT_STATE",
+      "pressure_plane": "STRUCTURAL_CARRY",
+      "causal_root_family": "OFFICIAL_SECTOR_DEMAND",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "MONTHLY_QUARTERLY",
+      "discovery_terms": [
+        "central bank net gold purchases",
+        "global central-bank net gold purchases",
+        "central bank purchases",
+        "official sector purchases",
+        "central-bank demand"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [
+        "NOT_INTRADAY_FLOW"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "PBOC_GOLD_RESERVES_PURCHASES",
+      "family": "OFFICIAL_SECTOR",
+      "label": "PBoC Gold reserves/purchases",
+      "default_role": "STRUCTURAL_ROOT_STATE",
+      "pressure_plane": "STRUCTURAL_CARRY",
+      "causal_root_family": "OFFICIAL_SECTOR_DEMAND",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY",
+      "discovery_terms": [
+        "pboc gold reserves purchases",
+        "pboc gold reserves/purchases",
+        "pboc gold",
+        "china official gold",
+        "chinese central bank gold"
+      ],
+      "source_hints": [
+        "PBOC",
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "RBI_GOLD_RESERVES_PURCHASES",
+      "family": "OFFICIAL_SECTOR",
+      "label": "RBI Gold reserves/purchases",
+      "default_role": "STRUCTURAL_ROOT_STATE",
+      "pressure_plane": "STRUCTURAL_CARRY",
+      "causal_root_family": "OFFICIAL_SECTOR_DEMAND",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "MONTHLY",
+      "discovery_terms": [
+        "rbi gold reserves purchases",
+        "rbi gold reserves/purchases",
+        "rbi gold",
+        "india central bank gold"
+      ],
+      "source_hints": [
+        "RBI"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "OTHER_CENTRAL_BANK_GOLD_RESERVES",
+      "family": "OFFICIAL_SECTOR",
+      "label": "Other material central-bank Gold holdings/purchases",
+      "default_role": "STRUCTURAL_ROOT_STATE",
+      "pressure_plane": "STRUCTURAL_CARRY",
+      "causal_root_family": "OFFICIAL_SECTOR_DEMAND",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "MONTHLY_QUARTERLY",
+      "discovery_terms": [
+        "other central bank gold reserves",
+        "other material central-bank gold holdings/purchases",
+        "official sector holdings",
+        "central bank gold holdings"
+      ],
+      "source_hints": [
+        "WGC_GDT",
+        "IMF"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "RESERVE_DIVERSIFICATION_GOLD",
+      "family": "OFFICIAL_SECTOR",
+      "label": "Reserve diversification toward Gold",
+      "default_role": "STRUCTURAL_ROOT_STATE",
+      "pressure_plane": "STRUCTURAL_CARRY",
+      "causal_root_family": "OFFICIAL_SECTOR_DEMAND",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "QUARTERLY",
+      "discovery_terms": [
+        "reserve diversification gold",
+        "reserve diversification toward gold",
+        "reserve diversification",
+        "reserve-system diversification"
+      ],
+      "source_hints": [
+        "IMF_COFER",
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "RESERVE_FREEZE_SEIZURE_RISK",
+      "family": "OFFICIAL_SECTOR",
+      "label": "Reserve freeze/seizure/sanctions credibility risk",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "UNSCHEDULED",
+      "discovery_terms": [
+        "reserve freeze seizure risk",
+        "reserve freeze/seizure/sanctions credibility risk",
+        "reserve freeze",
+        "reserve seizure",
+        "frozen reserves",
+        "sanctions on reserves"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GLOBAL_GOLD_ETF_HOLDINGS_FLOW",
+      "family": "ETF_INVESTMENT",
+      "label": "Global physically-backed Gold ETF holdings/flows",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY_WEEKLY",
+      "discovery_terms": [
+        "global gold etf holdings flow",
+        "global physically-backed gold etf holdings/flows",
+        "gold etf holdings",
+        "gold etf flows",
+        "physically backed etf"
+      ],
+      "source_hints": [
+        "WGC_ETF"
+      ],
+      "prohibited_interpretations": [
+        "ETF_SUBSET_NOT_TOTAL_DEMAND",
+        "AUM_NOT_FLOW"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GLD_HOLDINGS_SHARES",
+      "family": "ETF_INVESTMENT",
+      "label": "SPDR GLD holdings/shares",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "gld holdings shares",
+        "spdr gld holdings/shares",
+        "gld holdings",
+        "gld shares",
+        "spdr gold shares"
+      ],
+      "source_hints": [
+        "ETF_SPONSOR"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "IAU_HOLDINGS_SHARES",
+      "family": "ETF_INVESTMENT",
+      "label": "iShares IAU holdings/shares",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "iau holdings shares",
+        "ishares iau holdings/shares",
+        "iau holdings",
+        "ishares gold trust"
+      ],
+      "source_hints": [
+        "ETF_SPONSOR"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "ETF_CREATION_REDEMPTION_STATE",
+      "family": "ETF_INVESTMENT",
+      "label": "ETF creations/redemptions state",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_INFERRED",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "etf creation redemption state",
+        "etf creations/redemptions state",
+        "creation redemption",
+        "creations/redemptions",
+        "authorized participant"
+      ],
+      "source_hints": [
+        "ETF_SPONSOR"
+      ],
+      "prohibited_interpretations": [
+        "AP_IDENTITY_OFTEN_PRIVATE",
+        "AUM_NOT_FLOW"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_INVESTMENT_ALLOCATION_DEMAND",
+      "family": "ETF_INVESTMENT",
+      "label": "Gold investment allocation demand state",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "INVESTMENT_ALLOCATION_DEMAND",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "DAILY_WEEKLY",
+      "discovery_terms": [
+        "gold investment allocation demand",
+        "gold investment allocation demand state",
+        "investment demand",
+        "allocation demand",
+        "gold allocation"
+      ],
+      "source_hints": [
+        "WGC_ETF"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CHINA_GOLD_ETF_FLOW",
+      "family": "ETF_INVESTMENT",
+      "label": "China Gold ETF holdings/flows",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_WGC",
+      "source_cadence_class": "DAILY_MONTHLY",
+      "discovery_terms": [
+        "china gold etf flow",
+        "china gold etf holdings/flows",
+        "china gold etf",
+        "chinese gold etf"
+      ],
+      "source_hints": [
+        "WGC_ETF"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CFTC_PRODUCER_MERCHANT",
+      "family": "FUTURES_POSITIONING",
+      "label": "CFTC Producer/Merchant positioning",
+      "default_role": "POSITIONING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "WEEKLY_LAGGED",
+      "discovery_terms": [
+        "cftc producer merchant",
+        "cftc producer/merchant positioning",
+        "producer merchant",
+        "producer/merchant",
+        "commercial hedging"
+      ],
+      "source_hints": [
+        "CFTC_COT"
+      ],
+      "prohibited_interpretations": [
+        "NOT_LIVE_FLOW",
+        "NOT_GLOBAL_GOLD_POSITIONING"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CFTC_SWAP_DEALER",
+      "family": "FUTURES_POSITIONING",
+      "label": "CFTC Swap Dealer positioning",
+      "default_role": "POSITIONING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "WEEKLY_LAGGED",
+      "discovery_terms": [
+        "cftc swap dealer",
+        "cftc swap dealer positioning",
+        "swap dealer positioning",
+        "swap dealers"
+      ],
+      "source_hints": [
+        "CFTC_COT"
+      ],
+      "prohibited_interpretations": [
+        "NOT_LIVE_FLOW",
+        "NOT_GLOBAL_GOLD_POSITIONING"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CFTC_MANAGED_MONEY",
+      "family": "FUTURES_POSITIONING",
+      "label": "CFTC Managed Money positioning",
+      "default_role": "POSITIONING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "WEEKLY_LAGGED",
+      "discovery_terms": [
+        "cftc managed money",
+        "cftc managed money positioning",
+        "managed money",
+        "speculative positioning"
+      ],
+      "source_hints": [
+        "CFTC_COT"
+      ],
+      "prohibited_interpretations": [
+        "NOT_LIVE_FLOW",
+        "NOT_GLOBAL_GOLD_POSITIONING"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CFTC_OTHER_REPORTABLES",
+      "family": "FUTURES_POSITIONING",
+      "label": "CFTC Other Reportables positioning",
+      "default_role": "POSITIONING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "WEEKLY_LAGGED",
+      "discovery_terms": [
+        "cftc other reportables",
+        "cftc other reportables positioning",
+        "other reportables"
+      ],
+      "source_hints": [
+        "CFTC_COT"
+      ],
+      "prohibited_interpretations": [
+        "NOT_LIVE_FLOW",
+        "NOT_GLOBAL_GOLD_POSITIONING"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CFTC_NONREPORTABLE",
+      "family": "FUTURES_POSITIONING",
+      "label": "CFTC Nonreportable positioning",
+      "default_role": "POSITIONING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "WEEKLY_LAGGED",
+      "discovery_terms": [
+        "cftc nonreportable",
+        "cftc nonreportable positioning",
+        "nonreportable",
+        "non-reportable"
+      ],
+      "source_hints": [
+        "CFTC_COT"
+      ],
+      "prohibited_interpretations": [
+        "NOT_LIVE_FLOW",
+        "NOT_GLOBAL_GOLD_POSITIONING"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CFTC_GOLD_TOTAL_POSITIONING",
+      "family": "FUTURES_POSITIONING",
+      "label": "CFTC Gold positioning aggregate context",
+      "default_role": "POSITIONING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "WEEKLY_LAGGED",
+      "discovery_terms": [
+        "cftc gold total positioning",
+        "cftc gold positioning aggregate context",
+        "cftc gold positioning",
+        "commitments of traders",
+        "cot"
+      ],
+      "source_hints": [
+        "CFTC_COT"
+      ],
+      "prohibited_interpretations": [
+        "NOT_LIVE_FLOW"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_OPEN_INTEREST",
+      "family": "FUTURES_POSITIONING",
+      "label": "GC futures open interest",
+      "default_role": "POSITIONING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "gc open interest",
+        "gc futures open interest",
+        "open interest",
+        "gc oi"
+      ],
+      "source_hints": [
+        "CME_VOLUME_OI"
+      ],
+      "prohibited_interpretations": [
+        "OI_NOT_DIRECTION"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_VOLUME",
+      "family": "FUTURES_POSITIONING",
+      "label": "GC futures volume/activity",
+      "default_role": "CONTEXT_DIAGNOSTIC",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "DAILY_INTRADAY",
+      "discovery_terms": [
+        "gc volume",
+        "gc futures volume/activity",
+        "futures volume"
+      ],
+      "source_hints": [
+        "CME_VOLUME_OI"
+      ],
+      "prohibited_interpretations": [
+        "VOLUME_NOT_FLOW"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_CURVE_TERM_STRUCTURE",
+      "family": "FUTURES_POSITIONING",
+      "label": "GC futures curve/term structure",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_PROVIDER",
+      "source_cadence_class": "DAILY_INTRADAY",
+      "discovery_terms": [
+        "gc curve term structure",
+        "gc futures curve/term structure",
+        "gold futures curve",
+        "futures curve",
+        "contango",
+        "backwardation"
+      ],
+      "source_hints": [
+        "CME_METALS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_ROLL_CONCENTRATION",
+      "family": "FUTURES_POSITIONING",
+      "label": "GC roll concentration",
+      "default_role": "MECHANICAL_FORCE",
+      "pressure_plane": "MECHANICAL_FORCED",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_DERIVED",
+      "source_cadence_class": "CONTRACT_CYCLE",
+      "discovery_terms": [
+        "gc roll concentration",
+        "gold roll",
+        "gc roll",
+        "roll concentration"
+      ],
+      "source_hints": [
+        "CME_METALS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_CVOL",
+      "family": "OPTIONS_VOL",
+      "label": "Gold CVOL implied volatility",
+      "default_role": "MECHANICAL_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY_INTRADAY",
+      "discovery_terms": [
+        "gold cvol",
+        "gold cvol implied volatility",
+        "cvol"
+      ],
+      "source_hints": [
+        "CME_CVOL"
+      ],
+      "prohibited_interpretations": [
+        "VOL_STATE_NOT_DIRECTION"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_OPTIONS_IV_TERM_STRUCTURE",
+      "family": "OPTIONS_VOL",
+      "label": "GC options implied volatility term structure",
+      "default_role": "MECHANICAL_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_OR_DERIVED",
+      "source_cadence_class": "DAILY_INTRADAY",
+      "discovery_terms": [
+        "gc options iv term structure",
+        "gc options implied volatility term structure",
+        "implied volatility",
+        "iv term structure",
+        "gold options volatility"
+      ],
+      "source_hints": [
+        "CME_OPTIONS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_OPTIONS_SKEW_RISK_REVERSAL",
+      "family": "OPTIONS_VOL",
+      "label": "GC options skew/risk reversal",
+      "default_role": "MECHANICAL_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_OR_DERIVED",
+      "source_cadence_class": "DAILY_INTRADAY",
+      "discovery_terms": [
+        "gc options skew risk reversal",
+        "gc options skew/risk reversal",
+        "options skew",
+        "risk reversal",
+        "put skew",
+        "call skew"
+      ],
+      "source_hints": [
+        "CME_OPTIONS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_OPTIONS_OI_BY_STRIKE",
+      "family": "OPTIONS_VOL",
+      "label": "GC options open interest by strike",
+      "default_role": "VULNERABILITY_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_DERIVED",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "gc options oi by strike",
+        "gc options open interest by strike",
+        "oi by strike",
+        "options open interest by strike"
+      ],
+      "source_hints": [
+        "CME_OPTIONS"
+      ],
+      "prohibited_interpretations": [
+        "OI_NOT_DEALER_SIGN"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_OPTIONS_OI_BY_EXPIRY",
+      "family": "OPTIONS_VOL",
+      "label": "GC options open interest by expiry",
+      "default_role": "VULNERABILITY_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_DERIVED",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "gc options oi by expiry",
+        "gc options open interest by expiry",
+        "oi by expiry",
+        "options open interest by expiration"
+      ],
+      "source_hints": [
+        "CME_OPTIONS"
+      ],
+      "prohibited_interpretations": [
+        "OI_NOT_DEALER_SIGN"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_OPTIONS_VOLUME",
+      "family": "OPTIONS_VOL",
+      "label": "GC options volume/activity",
+      "default_role": "CONTEXT_DIAGNOSTIC",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_DERIVED",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "gc options volume",
+        "gc options volume/activity",
+        "gold options volume",
+        "options volume"
+      ],
+      "source_hints": [
+        "CME_OPTIONS"
+      ],
+      "prohibited_interpretations": [
+        "VOLUME_NOT_FLOW"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "DEALER_GAMMA_VANNA_CHARM",
+      "family": "OPTIONS_VOL",
+      "label": "Dealer gamma/vanna/charm exposure",
+      "default_role": "MECHANICAL_FORCE",
+      "pressure_plane": "MECHANICAL_FORCED",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "MODEL_OR_PAID",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "dealer gamma vanna charm",
+        "dealer gamma/vanna/charm exposure",
+        "dealer gamma",
+        "vanna",
+        "charm",
+        "dealer convexity"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "REQUIRES_PARTICIPANT_OR_MODEL_LINEAGE",
+        "AGGREGATE_OI_NOT_DEALER_INVENTORY"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_OPTIONS_EXPIRY",
+      "family": "OPTIONS_VOL",
+      "label": "GC options expiry mechanics",
+      "default_role": "MECHANICAL_FORCE",
+      "pressure_plane": "MECHANICAL_FORCED",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "EVENT",
+      "discovery_terms": [
+        "gc options expiry",
+        "gc options expiry mechanics",
+        "options expiry",
+        "option expiration"
+      ],
+      "source_hints": [
+        "CME_OPTIONS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "COMEX_REGISTERED_STOCKS",
+      "family": "COMEX_PHYSICAL",
+      "label": "COMEX registered Gold stocks",
+      "default_role": "PHYSICAL_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "comex registered stocks",
+        "comex registered gold stocks",
+        "registered stocks",
+        "registered gold stocks"
+      ],
+      "source_hints": [
+        "CME_GOLD_STOCKS_DELIVERIES"
+      ],
+      "prohibited_interpretations": [
+        "COMEX_SUBSET_NOT_GLOBAL_INVENTORY"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "COMEX_ELIGIBLE_STOCKS",
+      "family": "COMEX_PHYSICAL",
+      "label": "COMEX eligible Gold stocks",
+      "default_role": "PHYSICAL_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "comex eligible stocks",
+        "comex eligible gold stocks",
+        "eligible stocks",
+        "eligible gold stocks"
+      ],
+      "source_hints": [
+        "CME_GOLD_STOCKS_DELIVERIES"
+      ],
+      "prohibited_interpretations": [
+        "COMEX_SUBSET_NOT_GLOBAL_INVENTORY"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "COMEX_DELIVERY_NOTICES",
+      "family": "COMEX_PHYSICAL",
+      "label": "COMEX Gold delivery notices",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY_EVENT",
+      "discovery_terms": [
+        "comex delivery notices",
+        "comex gold delivery notices",
+        "delivery notices",
+        "gold deliveries",
+        "comex deliveries"
+      ],
+      "source_hints": [
+        "CME_GOLD_STOCKS_DELIVERIES"
+      ],
+      "prohibited_interpretations": [
+        "DELIVERY_SUBSET_NOT_GLOBAL_FLOW"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "COMEX_WAREHOUSE_MOVEMENTS",
+      "family": "COMEX_PHYSICAL",
+      "label": "COMEX warehouse stock movements",
+      "default_role": "PHYSICAL_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "comex warehouse movements",
+        "comex warehouse stock movements",
+        "warehouse movements",
+        "depository stocks"
+      ],
+      "source_hints": [
+        "CME_GOLD_STOCKS_DELIVERIES"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CME_MARGIN_REQUIREMENTS",
+      "family": "COMEX_PHYSICAL",
+      "label": "CME Gold margin requirements/changes",
+      "default_role": "MECHANICAL_FORCE",
+      "pressure_plane": "MECHANICAL_FORCED",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "EVENT",
+      "discovery_terms": [
+        "cme margin requirements",
+        "cme gold margin requirements/changes",
+        "margin requirement",
+        "margin change",
+        "performance bond"
+      ],
+      "source_hints": [
+        "CME_METALS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_FUTURES_EXPIRY_SETTLEMENT",
+      "family": "COMEX_PHYSICAL",
+      "label": "GC futures expiry/settlement mechanics",
+      "default_role": "MECHANICAL_FORCE",
+      "pressure_plane": "MECHANICAL_FORCED",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "CONTRACT_CYCLE",
+      "discovery_terms": [
+        "gc futures expiry settlement",
+        "gc futures expiry/settlement mechanics",
+        "futures expiry",
+        "gc expiry",
+        "settlement"
+      ],
+      "source_hints": [
+        "CME_METALS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CME_MARKET_DEPTH_MBO",
+      "family": "COMEX_PHYSICAL",
+      "label": "CME GC market depth/MBO",
+      "default_role": "CAPACITY_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PAID_ONLY",
+      "source_cadence_class": "REALTIME",
+      "discovery_terms": [
+        "cme market depth mbo",
+        "cme gc market depth/mbo",
+        "market depth",
+        "mbo",
+        "depth resiliency",
+        "listed liquidity"
+      ],
+      "source_hints": [
+        "CME_MARKET_DEPTH"
+      ],
+      "prohibited_interpretations": [
+        "LISTED_CAPACITY_NOT_GLOBAL_CAPACITY"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GC_AGGRESSOR_IMBALANCE",
+      "family": "COMEX_PHYSICAL",
+      "label": "GC aggressor trade imbalance",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PAID_OR_MODEL",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "gc aggressor imbalance",
+        "gc aggressor trade imbalance",
+        "signed trade imbalance",
+        "aggressor imbalance"
+      ],
+      "source_hints": [
+        "CME_MARKET_DEPTH"
+      ],
+      "prohibited_interpretations": [
+        "AGGRESSOR_IMBALANCE_NOT_NET_CAPITAL_FLOW"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "LBMA_VAULT_HOLDINGS",
+      "family": "LONDON_OTC",
+      "label": "LBMA London vault holdings",
+      "default_role": "PHYSICAL_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "MONTHLY",
+      "discovery_terms": [
+        "lbma vault holdings",
+        "lbma london vault holdings",
+        "lbma vault",
+        "london vault holdings"
+      ],
+      "source_hints": [
+        "LBMA_VAULT_DATA"
+      ],
+      "prohibited_interpretations": [
+        "VAULT_STOCK_NOT_DAILY_FLOW"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "LBMA_CLEARING_ACTIVITY",
+      "family": "LONDON_OTC",
+      "label": "LBMA London clearing activity",
+      "default_role": "CONTEXT_DIAGNOSTIC",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "MONTHLY",
+      "discovery_terms": [
+        "lbma clearing activity",
+        "lbma london clearing activity",
+        "lbma clearing",
+        "london clearing"
+      ],
+      "source_hints": [
+        "LBMA_CLEARING_DATA"
+      ],
+      "prohibited_interpretations": [
+        "CLEARING_NOT_DIRECTIONAL_FLOW"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "LBMA_TRADE_ACTIVITY",
+      "family": "LONDON_OTC",
+      "label": "LBMA aggregate OTC trade activity",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PAID_OR_DELAYED",
+      "source_cadence_class": "SOURCE_SPECIFIC",
+      "discovery_terms": [
+        "lbma trade activity",
+        "lbma aggregate otc trade activity",
+        "lbma trade data",
+        "london otc trade"
+      ],
+      "source_hints": [
+        "LBMA_TRADE_DATA"
+      ],
+      "prohibited_interpretations": [
+        "AGGREGATE_ACTIVITY_NOT_CLIENT_DIRECTION"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "LONDON_OTC_CLIENT_DEALER_FLOW",
+      "family": "LONDON_OTC",
+      "label": "London OTC client/dealer directional flow",
+      "default_role": "PRIVATE_GAP",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PRIVATE_UNOBSERVABLE",
+      "source_cadence_class": "REALTIME",
+      "discovery_terms": [
+        "london otc client dealer flow",
+        "london otc client/dealer directional flow",
+        "client dealer flow",
+        "otc client flow",
+        "london otc flow"
+      ],
+      "source_hints": [
+        "LICENSED_OTC_FX_GOLD_LIQUIDITY"
+      ],
+      "prohibited_interpretations": [
+        "DO_NOT_INFER_FROM_CLEARING_OR_COMEX"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "LBMA_BENCHMARK_FIXING",
+      "family": "LONDON_OTC",
+      "label": "LBMA Gold benchmark/fixing window",
+      "default_role": "MECHANICAL_FORCE",
+      "pressure_plane": "MECHANICAL_FORCED",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "TWICE_DAILY_EVENT",
+      "discovery_terms": [
+        "lbma benchmark fixing",
+        "lbma gold benchmark/fixing window",
+        "lbma gold price",
+        "benchmark auction",
+        "gold fixing",
+        "fixing window"
+      ],
+      "source_hints": [
+        "LBMA_BENCHMARK"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_LEASE_RATE",
+      "family": "LONDON_OTC",
+      "label": "Gold lease rate",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PAID_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "gold lease rate",
+        "gold lease",
+        "lease rate"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "DO_NOT_SYNTHESIZE_WITHOUT_SOURCE"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_FORWARD_RATE",
+      "family": "LONDON_OTC",
+      "label": "Gold forward/OTC financing rate",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PAID_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "gold forward rate",
+        "gold forward/otc financing rate",
+        "gold forward",
+        "forward rate",
+        "otc forward"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "DO_NOT_SYNTHESIZE_WITHOUT_SOURCE"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "COMEX_LONDON_EFP",
+      "family": "LONDON_OTC",
+      "label": "COMEX-London EFP/basis",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PAID_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "comex london efp",
+        "comex-london efp/basis",
+        "efp",
+        "exchange for physical",
+        "comex london basis"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "REQUIRES_COMPATIBLE_UNITS_DELIVERY_FINANCING"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "LONDON_COMEX_LOCATION_ARBITRAGE",
+      "family": "LONDON_OTC",
+      "label": "London-COMEX location arbitrage state",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_OR_PAID",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "london comex location arbitrage",
+        "london-comex location arbitrage state",
+        "london comex",
+        "location arbitrage"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "PREMIUM_DISCOUNT_NOT_AUTOMATIC_DIRECTION"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "SGE_GOLD_BENCHMARK",
+      "family": "CHINA_PHYSICAL",
+      "label": "Shanghai Gold Benchmark/SGE price",
+      "default_role": "PHYSICAL_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "sge gold benchmark",
+        "shanghai gold benchmark/sge price",
+        "shanghai gold benchmark",
+        "sge benchmark"
+      ],
+      "source_hints": [
+        "SGE"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "SGE_PREMIUM_DISCOUNT",
+      "family": "CHINA_PHYSICAL",
+      "label": "Shanghai/SGE premium or discount to global Gold",
+      "default_role": "PHYSICAL_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_DERIVED",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "sge premium discount",
+        "shanghai/sge premium or discount to global gold",
+        "sge premium",
+        "shanghai premium",
+        "china gold premium"
+      ],
+      "source_hints": [
+        "SGE"
+      ],
+      "prohibited_interpretations": [
+        "PREMIUM_STATE_NOT_AUTOMATIC_DIRECTION"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "SGE_WITHDRAWALS",
+      "family": "CHINA_PHYSICAL",
+      "label": "Shanghai Gold Exchange withdrawals",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "MONTHLY",
+      "discovery_terms": [
+        "sge withdrawals",
+        "shanghai gold exchange withdrawals"
+      ],
+      "source_hints": [
+        "SGE"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CHINA_GOLD_IMPORTS",
+      "family": "CHINA_PHYSICAL",
+      "label": "China Gold imports",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "MONTHLY",
+      "discovery_terms": [
+        "china gold imports",
+        "chinese gold imports"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CHINA_JEWELLERY_DEMAND",
+      "family": "CHINA_PHYSICAL",
+      "label": "China jewellery Gold demand",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "PHYSICAL_REGIONAL_DEMAND_BALANCE",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "QUARTERLY_MONTHLY",
+      "discovery_terms": [
+        "china jewellery demand",
+        "china jewellery gold demand",
+        "chinese jewelry demand",
+        "chinese jewellery"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CHINA_BAR_COIN_DEMAND",
+      "family": "CHINA_PHYSICAL",
+      "label": "China bar and coin Gold demand",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "PHYSICAL_REGIONAL_DEMAND_BALANCE",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "QUARTERLY_MONTHLY",
+      "discovery_terms": [
+        "china bar coin demand",
+        "china bar and coin gold demand",
+        "china bar and coin",
+        "chinese bar and coin"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CHINA_GOLD_TAX_REGULATION",
+      "family": "CHINA_PHYSICAL",
+      "label": "China Gold tax/regulatory changes",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "EVENT",
+      "discovery_terms": [
+        "china gold tax regulation",
+        "china gold tax/regulatory changes",
+        "china gold tax",
+        "china gold regulation",
+        "sge regulation"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CHINA_PHYSICAL_BALANCE",
+      "family": "CHINA_PHYSICAL",
+      "label": "China physical Gold balance",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "PHYSICAL_REGIONAL_DEMAND_BALANCE",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "DAILY_MONTHLY",
+      "discovery_terms": [
+        "china physical balance",
+        "china physical gold balance",
+        "china physical demand"
+      ],
+      "source_hints": [
+        "WGC_GDT",
+        "SGE"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "INDIA_GOLD_PREMIUM_DISCOUNT",
+      "family": "INDIA_PHYSICAL",
+      "label": "India local Gold premium/discount",
+      "default_role": "PHYSICAL_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "india gold premium discount",
+        "india local gold premium/discount",
+        "india gold premium",
+        "india premium",
+        "india discount"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "INDIA_GOLD_IMPORTS",
+      "family": "INDIA_PHYSICAL",
+      "label": "India Gold imports",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "MONTHLY",
+      "discovery_terms": [
+        "india gold imports",
+        "indian gold imports"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "INDIA_IMPORT_DUTY_TAX",
+      "family": "INDIA_PHYSICAL",
+      "label": "India Gold import duty/tax policy",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "EVENT",
+      "discovery_terms": [
+        "india import duty tax",
+        "india gold import duty/tax policy",
+        "india import duty",
+        "gold import duty",
+        "india gold tax"
+      ],
+      "source_hints": [
+        "DGFT_OR_INDIA_GOV"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "INR_GOLD_AFFORDABILITY",
+      "family": "INDIA_PHYSICAL",
+      "label": "INR/local Gold affordability state",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_DERIVED",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "inr gold affordability",
+        "inr/local gold affordability state",
+        "inr gold",
+        "rupee gold",
+        "gold affordability"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "INDIA_JEWELLERY_DEMAND",
+      "family": "INDIA_PHYSICAL",
+      "label": "India jewellery Gold demand",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "PHYSICAL_REGIONAL_DEMAND_BALANCE",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "QUARTERLY_MONTHLY",
+      "discovery_terms": [
+        "india jewellery demand",
+        "india jewellery gold demand",
+        "indian jewelry demand",
+        "indian jewellery"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "INDIA_BAR_COIN_DEMAND",
+      "family": "INDIA_PHYSICAL",
+      "label": "India bar and coin Gold demand",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "PHYSICAL_REGIONAL_DEMAND_BALANCE",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "QUARTERLY_MONTHLY",
+      "discovery_terms": [
+        "india bar coin demand",
+        "india bar and coin gold demand",
+        "india bar and coin",
+        "indian bar and coin"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "INDIA_RECYCLING_SUPPLY",
+      "family": "INDIA_PHYSICAL",
+      "label": "India Gold recycling/scrap supply",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "PHYSICAL_SUPPLY_RECYCLING_HEDGING",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "QUARTERLY_MONTHLY",
+      "discovery_terms": [
+        "india recycling supply",
+        "india gold recycling/scrap supply",
+        "india recycling",
+        "india scrap gold"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "INDIA_GOLD_ETF_FLOW",
+      "family": "INDIA_PHYSICAL",
+      "label": "India Gold ETF demand",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_WGC",
+      "source_cadence_class": "MONTHLY",
+      "discovery_terms": [
+        "india gold etf flow",
+        "india gold etf demand",
+        "india gold etf",
+        "indian gold etf"
+      ],
+      "source_hints": [
+        "WGC_ETF"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "INDIA_SEASONAL_DEMAND",
+      "family": "INDIA_PHYSICAL",
+      "label": "India festival/wedding seasonal demand context",
+      "default_role": "CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "KNOWLEDGE_OR_PUBLIC",
+      "source_cadence_class": "SEASONAL",
+      "discovery_terms": [
+        "india seasonal demand",
+        "india festival/wedding seasonal demand context",
+        "festival demand",
+        "wedding season",
+        "diwali",
+        "akshaya tritiya"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "INDIA_PHYSICAL_BALANCE",
+      "family": "INDIA_PHYSICAL",
+      "label": "India physical Gold balance",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "PHYSICAL_REGIONAL_DEMAND_BALANCE",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "DAILY_MONTHLY",
+      "discovery_terms": [
+        "india physical balance",
+        "india physical gold balance",
+        "india physical demand"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GLOBAL_JEWELLERY_DEMAND",
+      "family": "GLOBAL_PHYSICAL",
+      "label": "Global jewellery Gold demand",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "PHYSICAL_REGIONAL_DEMAND_BALANCE",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "QUARTERLY",
+      "discovery_terms": [
+        "global jewellery demand",
+        "global jewellery gold demand",
+        "jewellery demand",
+        "jewelry demand"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GLOBAL_BAR_COIN_DEMAND",
+      "family": "GLOBAL_PHYSICAL",
+      "label": "Global bar and coin investment demand",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "PHYSICAL_REGIONAL_DEMAND_BALANCE",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "QUARTERLY",
+      "discovery_terms": [
+        "global bar coin demand",
+        "global bar and coin investment demand",
+        "bar and coin demand",
+        "bar & coin"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_TECHNOLOGY_DEMAND",
+      "family": "GLOBAL_PHYSICAL",
+      "label": "Gold technology/industrial demand",
+      "default_role": "CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "QUARTERLY",
+      "discovery_terms": [
+        "gold technology demand",
+        "gold technology/industrial demand",
+        "technology demand",
+        "industrial demand"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_MINE_PRODUCTION",
+      "family": "GLOBAL_PHYSICAL",
+      "label": "Gold mine production",
+      "default_role": "STRUCTURAL_ROOT_STATE",
+      "pressure_plane": "STRUCTURAL_CARRY",
+      "causal_root_family": "PHYSICAL_SUPPLY_RECYCLING_HEDGING",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "QUARTERLY",
+      "discovery_terms": [
+        "gold mine production",
+        "mine production",
+        "mine supply",
+        "gold mining supply"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_RECYCLING_SUPPLY",
+      "family": "GLOBAL_PHYSICAL",
+      "label": "Gold recycling/scrap supply",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "PHYSICAL_SUPPLY_RECYCLING_HEDGING",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "QUARTERLY",
+      "discovery_terms": [
+        "gold recycling supply",
+        "gold recycling/scrap supply",
+        "recycling",
+        "scrap supply",
+        "recycled gold"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_PRODUCER_HEDGING",
+      "family": "GLOBAL_PHYSICAL",
+      "label": "Gold producer hedging/dehedging",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "PHYSICAL_SUPPLY_RECYCLING_HEDGING",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "QUARTERLY",
+      "discovery_terms": [
+        "gold producer hedging",
+        "gold producer hedging/dehedging",
+        "producer hedging",
+        "dehedging",
+        "hedge book"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_MINE_DISRUPTIONS",
+      "family": "GLOBAL_PHYSICAL",
+      "label": "Major Gold mine disruptions",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "UNSCHEDULED",
+      "discovery_terms": [
+        "gold mine disruptions",
+        "major gold mine disruptions",
+        "mine disruption",
+        "mine strike",
+        "mine shutdown"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_MINING_COST_CURVE",
+      "family": "GLOBAL_PHYSICAL",
+      "label": "Gold mining cost/AISC state",
+      "default_role": "STRUCTURAL_STATE",
+      "pressure_plane": "STRUCTURAL_CARRY",
+      "causal_root_family": "PHYSICAL_SUPPLY_RECYCLING_HEDGING",
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_COMPANY",
+      "source_cadence_class": "QUARTERLY",
+      "discovery_terms": [
+        "gold mining cost curve",
+        "gold mining cost/aisc state",
+        "aisc",
+        "all in sustaining cost",
+        "mining cost curve"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "REFINING_LOGISTICS_CONSTRAINTS",
+      "family": "GLOBAL_PHYSICAL",
+      "label": "Gold refining/logistics/transport constraints",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "UNSCHEDULED",
+      "discovery_terms": [
+        "refining logistics constraints",
+        "gold refining/logistics/transport constraints",
+        "refining constraint",
+        "logistics constraint",
+        "transport constraint",
+        "refinery"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GLOBAL_PHYSICAL_BALANCE",
+      "family": "GLOBAL_PHYSICAL",
+      "label": "Global physical Gold demand/supply balance",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "PHYSICAL_REGIONAL_DEMAND_BALANCE",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "QUARTERLY",
+      "discovery_terms": [
+        "global physical balance",
+        "global physical gold demand/supply balance",
+        "physical balance",
+        "physical demand",
+        "gold demand trends"
+      ],
+      "source_hints": [
+        "WGC_GDT"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "SOFR_RATE",
+      "family": "FUNDING_PLUMBING",
+      "label": "SOFR secured funding rate",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "sofr rate",
+        "sofr secured funding rate",
+        "sofr",
+        "secured overnight financing rate"
+      ],
+      "source_hints": [
+        "NYFED_SOFR"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "NYFED_REPO_STATE",
+      "family": "FUNDING_PLUMBING",
+      "label": "NY Fed repo operations/state",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "nyfed repo state",
+        "ny fed repo operations/state",
+        "repo operations",
+        "repo state",
+        "repo stress"
+      ],
+      "source_hints": [
+        "NYFED_REPO_RRP"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "NYFED_RRP_STATE",
+      "family": "FUNDING_PLUMBING",
+      "label": "NY Fed reverse repo state",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "nyfed rrp state",
+        "ny fed reverse repo state",
+        "reverse repo",
+        "rrp"
+      ],
+      "source_hints": [
+        "NYFED_REPO_RRP"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FED_RESERVE_BALANCES",
+      "family": "FUNDING_PLUMBING",
+      "label": "Reserve balances at Federal Reserve",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "WEEKLY",
+      "discovery_terms": [
+        "fed reserve balances",
+        "reserve balances at federal reserve",
+        "reserve balances",
+        "reserves at fed"
+      ],
+      "source_hints": [
+        "FED_H41"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FED_H41_LIQUIDITY",
+      "family": "FUNDING_PLUMBING",
+      "label": "Federal Reserve H.4.1 liquidity/balance-sheet state",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "WEEKLY",
+      "discovery_terms": [
+        "fed h41 liquidity",
+        "federal reserve h.4.1 liquidity/balance-sheet state",
+        "h.4.1",
+        "h41"
+      ],
+      "source_hints": [
+        "FED_H41"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FED_H8_BANK_LIQUIDITY",
+      "family": "FUNDING_PLUMBING",
+      "label": "Federal Reserve H.8 bank credit/liquidity state",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "WEEKLY",
+      "discovery_terms": [
+        "fed h8 bank liquidity",
+        "federal reserve h.8 bank credit/liquidity state",
+        "h.8",
+        "h8 bank"
+      ],
+      "source_hints": [
+        "FED_H8"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "PRIMARY_DEALER_POSITIONS",
+      "family": "FUNDING_PLUMBING",
+      "label": "Primary dealer positions",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "WEEKLY",
+      "discovery_terms": [
+        "primary dealer positions"
+      ],
+      "source_hints": [
+        "NYFED_PRIMARY_DEALERS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "PRIMARY_DEALER_FINANCING",
+      "family": "FUNDING_PLUMBING",
+      "label": "Primary dealer financing",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "WEEKLY",
+      "discovery_terms": [
+        "primary dealer financing",
+        "dealer financing"
+      ],
+      "source_hints": [
+        "NYFED_PRIMARY_DEALERS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "PRIMARY_DEALER_FAILS",
+      "family": "FUNDING_PLUMBING",
+      "label": "Primary dealer settlement fails",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "WEEKLY",
+      "discovery_terms": [
+        "primary dealer fails",
+        "primary dealer settlement fails",
+        "dealer fails",
+        "settlement fails"
+      ],
+      "source_hints": [
+        "NYFED_PRIMARY_DEALERS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CROSS_CURRENCY_BASIS",
+      "family": "FUNDING_PLUMBING",
+      "label": "Cross-currency basis/global USD funding",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "cross currency basis",
+        "cross-currency basis/global usd funding",
+        "cross-currency basis",
+        "global dollar funding"
+      ],
+      "source_hints": [
+        "BIS_GLI"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "USD_FUNDING_STRESS",
+      "family": "FUNDING_PLUMBING",
+      "label": "USD funding/collateral stress",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "FUNDING_COLLATERAL_STRESS",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "INTRADAY_DAILY",
+      "discovery_terms": [
+        "usd funding stress",
+        "usd funding/collateral stress",
+        "dollar funding stress",
+        "collateral stress"
+      ],
+      "source_hints": [
+        "NYFED_SOFR",
+        "NYFED_REPO_RRP"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "BULLION_BANK_BALANCE_SHEET",
+      "family": "FUNDING_PLUMBING",
+      "label": "Bullion-bank balance-sheet/inventory state",
+      "default_role": "PRIVATE_GAP",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PRIVATE_UNOBSERVABLE",
+      "source_cadence_class": "REALTIME",
+      "discovery_terms": [
+        "bullion bank balance sheet",
+        "bullion-bank balance-sheet/inventory state",
+        "bullion bank",
+        "bullion-bank inventory",
+        "bullion bank inventory"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "DO_NOT_INFER_AS_OBSERVED"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_FINANCING_CARRY",
+      "family": "FUNDING_PLUMBING",
+      "label": "Gold financing/carry state",
+      "default_role": "FUNDING_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PAID_OR_MODEL",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "gold financing carry",
+        "gold financing/carry state",
+        "gold financing",
+        "financing carry",
+        "lease basis"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "DIRECT_WHERE_POSSIBLE_PROXY_LABELED"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GEOPOLITICAL_CONFLICT_SHOCK",
+      "family": "GEOPOLITICS",
+      "label": "Geopolitical conflict/safe-haven shock",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_SOURCE_SPECIFIC",
+      "source_cadence_class": "UNSCHEDULED",
+      "discovery_terms": [
+        "geopolitical conflict shock",
+        "geopolitical conflict/safe-haven shock",
+        "geopolitical risk",
+        "war",
+        "conflict",
+        "safe haven"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GEOPOLITICAL_INSURANCE_DEMAND",
+      "family": "GEOPOLITICS",
+      "label": "Geopolitical insurance/safe-haven demand state",
+      "default_role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "GEOPOLITICAL_INSURANCE_RISK",
+      "causal_root_eligible": true,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "UNSCHEDULED",
+      "discovery_terms": [
+        "geopolitical insurance demand",
+        "geopolitical insurance/safe-haven demand state",
+        "insurance demand",
+        "safe-haven demand",
+        "safe haven demand"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "HORMUZ_SUPPLY_RISK",
+      "family": "GEOPOLITICS",
+      "label": "Hormuz/Gulf energy supply risk",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_SOURCE_SPECIFIC",
+      "source_cadence_class": "UNSCHEDULED",
+      "discovery_terms": [
+        "hormuz supply risk",
+        "hormuz/gulf energy supply risk",
+        "hormuz",
+        "strait of hormuz",
+        "gulf supply risk"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "BRENT_OIL_STATE",
+      "family": "GEOPOLITICS",
+      "label": "Brent crude oil state",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_PROVIDER",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "brent oil state",
+        "brent crude oil state",
+        "brent",
+        "brent crude"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "WTI_OIL_STATE",
+      "family": "GEOPOLITICS",
+      "label": "WTI crude oil state",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_PROVIDER",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "wti oil state",
+        "wti crude oil state",
+        "wti",
+        "crude oil"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "EIA_OIL_INVENTORY_SUPPLY",
+      "family": "GEOPOLITICS",
+      "label": "EIA petroleum inventory/supply state",
+      "default_role": "CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "WEEKLY",
+      "discovery_terms": [
+        "eia oil inventory supply",
+        "eia petroleum inventory/supply state",
+        "eia",
+        "oil inventories",
+        "petroleum status"
+      ],
+      "source_hints": [
+        "EIA"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "OIL_INFLATION_TRANSMISSION",
+      "family": "GEOPOLITICS",
+      "label": "Oil-to-inflation-to-rates transmission",
+      "default_role": "TRANSMISSION_PATHWAY",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "INTRADAY_DAILY",
+      "discovery_terms": [
+        "oil inflation transmission",
+        "oil-to-inflation-to-rates transmission",
+        "oil inflation",
+        "oil shock"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "SANCTIONS_GOLD_TRADE",
+      "family": "GEOPOLITICS",
+      "label": "Sanctions affecting Gold/reserves/trade",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "UNSCHEDULED",
+      "discovery_terms": [
+        "sanctions gold trade",
+        "sanctions affecting gold/reserves/trade",
+        "gold sanctions",
+        "sanctions",
+        "trade restriction"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "BANKING_SOVEREIGN_STRESS",
+      "family": "GEOPOLITICS",
+      "label": "Banking/sovereign stress safe-haven and liquidation state",
+      "default_role": "EVENT_SHOCK",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "UNSCHEDULED",
+      "discovery_terms": [
+        "banking sovereign stress",
+        "banking/sovereign stress safe-haven and liquidation state",
+        "banking crisis",
+        "sovereign stress",
+        "financial stress"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FORCED_CASH_LIQUIDATION",
+      "family": "GEOPOLITICS",
+      "label": "Forced cash-raising/liquidation pressure",
+      "default_role": "MECHANICAL_FORCE",
+      "pressure_plane": "MECHANICAL_FORCED",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "forced cash liquidation",
+        "forced cash-raising/liquidation pressure",
+        "cash raising",
+        "forced liquidation",
+        "liquidity liquidation"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "STRESS_CAN_SELL_GOLD_EVEN_WITH_BULLISH_SLOW_THESIS"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CTA_TREND_FOLLOWING_EXPOSURE",
+      "family": "SYSTEMATIC_MECHANICS",
+      "label": "CTA/trend-following exposure and trigger state",
+      "default_role": "VULNERABILITY_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "MODEL_DERIVED_OR_PAID",
+      "source_cadence_class": "INTRADAY_DAILY",
+      "discovery_terms": [
+        "cta trend following exposure",
+        "cta/trend-following exposure and trigger state",
+        "cta",
+        "trend following",
+        "systematic trend"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "MODEL_LINEAGE_REQUIRED"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "VOL_CONTROL_RISK_PARITY",
+      "family": "SYSTEMATIC_MECHANICS",
+      "label": "Vol-control/risk-parity deleveraging state",
+      "default_role": "MECHANICAL_FORCE",
+      "pressure_plane": "MECHANICAL_FORCED",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "MODEL_DERIVED_OR_PAID",
+      "source_cadence_class": "INTRADAY_DAILY",
+      "discovery_terms": [
+        "vol control risk parity",
+        "vol-control/risk-parity deleveraging state",
+        "vol control",
+        "risk parity",
+        "deleveraging"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "MODEL_LINEAGE_REQUIRED"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "PORTFOLIO_REBALANCING",
+      "family": "SYSTEMATIC_MECHANICS",
+      "label": "Month/quarter-end portfolio rebalancing",
+      "default_role": "MECHANICAL_FORCE",
+      "pressure_plane": "MECHANICAL_FORCED",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "CALENDAR",
+      "discovery_terms": [
+        "portfolio rebalancing",
+        "month/quarter-end portfolio rebalancing",
+        "month end rebalancing",
+        "quarter end rebalancing",
+        "portfolio rebalance"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "MARGIN_LIQUIDATION_RISK",
+      "family": "SYSTEMATIC_MECHANICS",
+      "label": "Margin/collateral liquidation vulnerability",
+      "default_role": "VULNERABILITY_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "margin liquidation risk",
+        "margin/collateral liquidation vulnerability",
+        "margin call",
+        "margin liquidation",
+        "collateral liquidation"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "ETF_MECHANICAL_REBALANCE",
+      "family": "SYSTEMATIC_MECHANICS",
+      "label": "Gold ETF mechanical creation/redemption/rebalance mechanics",
+      "default_role": "MECHANICAL_FORCE",
+      "pressure_plane": "MECHANICAL_FORCED",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_OR_MODEL",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "etf mechanical rebalance",
+        "gold etf mechanical creation/redemption/rebalance mechanics",
+        "etf mechanics",
+        "etf rebalance"
+      ],
+      "source_hints": [
+        "ETF_SPONSOR"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_DOMINANT_NARRATIVE",
+      "family": "NARRATIVE_ATTENTION",
+      "label": "Dominant Gold market narrative",
+      "default_role": "NARRATIVE_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "gold dominant narrative",
+        "dominant gold market narrative",
+        "gold narrative",
+        "dominant narrative"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_ATTENTION_STATE",
+      "family": "NARRATIVE_ATTENTION",
+      "label": "Market attention/ignored-fact state for Gold",
+      "default_role": "NARRATIVE_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "gold attention state",
+        "market attention/ignored-fact state for gold",
+        "market attention",
+        "ignored facts",
+        "attention"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "SAFE_HAVEN_NARRATIVE_VALIDITY",
+      "family": "NARRATIVE_ATTENTION",
+      "label": "Safe-haven narrative validity",
+      "default_role": "NARRATIVE_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "safe haven narrative validity",
+        "safe-haven narrative validity",
+        "safe haven narrative",
+        "safe-haven narrative"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "NARRATIVE_SATURATION",
+      "family": "NARRATIVE_ATTENTION",
+      "label": "Narrative saturation/consumption state",
+      "default_role": "CONSUMPTION_COMPONENT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED_PUBLIC_INPUTS",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "narrative saturation",
+        "narrative saturation/consumption state",
+        "saturation"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "SILVER_CROSS_ASSET",
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "label": "Silver cross-asset state",
+      "default_role": "CONTEXT_DIAGNOSTIC",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_PROVIDER",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "silver cross asset",
+        "silver cross-asset state",
+        "silver",
+        "xagusd"
+      ],
+      "source_hints": [
+        "CME_METALS"
+      ],
+      "prohibited_interpretations": [
+        "INDUSTRIAL_DRIVERS_MEAN_NOT_INDEPENDENT_GOLD_ROOT"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "VIX_RISK_STATE",
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "label": "Equity volatility/risk stress state",
+      "default_role": "CONTEXT_DIAGNOSTIC",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_PROVIDER",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "vix risk state",
+        "equity volatility/risk stress state",
+        "vix",
+        "equity volatility"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_EQUITY_RISK_STATE",
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "label": "US equity risk state",
+      "default_role": "CONTEXT_DIAGNOSTIC",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_PROVIDER",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "us equity risk state",
+        "equity stress",
+        "stock market stress",
+        "s&p"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "BITCOIN_STORE_OF_VALUE_CONTEXT",
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "label": "Bitcoin/alternative store-of-value context",
+      "default_role": "SHADOW_CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_PROVIDER",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "bitcoin store of value context",
+        "bitcoin/alternative store-of-value context",
+        "bitcoin",
+        "alternative store of value"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "SHADOW_ONLY_REGIME_DEPENDENT"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_MINERS_CONTEXT",
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "label": "Gold miners/equity producer context",
+      "default_role": "SHADOW_CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_PROVIDER",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "gold miners context",
+        "gold miners/equity producer context",
+        "gold miners",
+        "miners"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "EQUITY_DRIVERS_DISTINCT"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_SESSION_TOPOLOGY",
+      "family": "TIMING_CALENDAR",
+      "label": "Asia-London-New York session topology",
+      "default_role": "CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "KNOWLEDGE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "gold session topology",
+        "asia-london-new york session topology",
+        "asia london new york",
+        "session handoff",
+        "london new york"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "LBMA_FIXING_CLOCK",
+      "family": "TIMING_CALENDAR",
+      "label": "LBMA benchmark auction clock",
+      "default_role": "MECHANICAL_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "lbma fixing clock",
+        "lbma benchmark auction clock",
+        "benchmark auction",
+        "lbma benchmark auction"
+      ],
+      "source_hints": [
+        "LBMA_BENCHMARK"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "US_MACRO_EVENT_CALENDAR",
+      "family": "TIMING_CALENDAR",
+      "label": "US high-impact macro event calendar",
+      "default_role": "EVENT_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "CALENDAR",
+      "discovery_terms": [
+        "us macro event calendar",
+        "us high-impact macro event calendar",
+        "macro calendar",
+        "scheduled event"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FOMC_EVENT_WINDOW",
+      "family": "TIMING_CALENDAR",
+      "label": "FOMC event window/reset state",
+      "default_role": "EVENT_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "CALENDAR",
+      "discovery_terms": [
+        "fomc event window",
+        "fomc event window/reset state",
+        "fomc meeting",
+        "fomc minutes"
+      ],
+      "source_hints": [
+        "FED_FOMC"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CME_GOLD_EXPIRY_CALENDAR",
+      "family": "TIMING_CALENDAR",
+      "label": "CME Gold futures/options expiry calendar",
+      "default_role": "EVENT_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "CALENDAR",
+      "discovery_terms": [
+        "cme gold expiry calendar",
+        "cme gold futures/options expiry calendar",
+        "expiry calendar",
+        "expiration calendar"
+      ],
+      "source_hints": [
+        "CME_METALS"
+      ],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "MARKET_HOLIDAY_LIQUIDITY",
+      "family": "TIMING_CALENDAR",
+      "label": "Market holiday/session liquidity calendar",
+      "default_role": "EVENT_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "PUBLIC_FREE",
+      "source_cadence_class": "CALENDAR",
+      "discovery_terms": [
+        "market holiday liquidity",
+        "market holiday/session liquidity calendar",
+        "market holiday",
+        "holiday liquidity"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "MONTH_QUARTER_END_CLOCK",
+      "family": "TIMING_CALENDAR",
+      "label": "Month/quarter-end clock",
+      "default_role": "EVENT_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "observability_class": "CALENDAR",
+      "source_cadence_class": "CALENDAR",
+      "discovery_terms": [
+        "month quarter end clock",
+        "month/quarter-end clock",
+        "month end",
+        "quarter end"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "PUBLIC_SWAP_SDR_TRANSACTIONS",
+      "family": "DERIVATIVE_CONTEXT",
+      "label": "Public swap SDR transactions relevant to rates/commodity repricing",
+      "default_role": "REALIZED_FLOW",
+      "pressure_plane": "REALIZED_TRANSACTION",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "TRANSACTION_DELAYED",
+      "discovery_terms": [
+        "public swap sdr transactions",
+        "public swap sdr transactions relevant to rates/commodity repricing",
+        "sdr",
+        "swap data repository",
+        "part 43"
+      ],
+      "source_hints": [
+        "CFTC_PART43"
+      ],
+      "prohibited_interpretations": [
+        "NOT_IDENTIFIED_CLIENT_DIRECTION"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "CREDIT_RISK_TRANSACTION_STATE",
+      "family": "DERIVATIVE_CONTEXT",
+      "label": "Credit transaction/risk-off context",
+      "default_role": "CONTEXT_DIAGNOSTIC",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_FREE_DELAYED",
+      "source_cadence_class": "DAILY",
+      "discovery_terms": [
+        "credit risk transaction state",
+        "credit transaction/risk-off context",
+        "credit trace",
+        "credit transaction",
+        "finra trace"
+      ],
+      "source_hints": [
+        "FINRA_TRACE"
+      ],
+      "prohibited_interpretations": [
+        "NOT_AUTOMATIC_RISK_OFF_DIRECTION"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "REALTIME_CENTRAL_BANK_GOLD_TRANSACTION",
+      "family": "PRIVATE_GAPS",
+      "label": "Real-time central-bank Gold transactions",
+      "default_role": "PRIVATE_GAP",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PRIVATE_UNOBSERVABLE",
+      "source_cadence_class": "REALTIME",
+      "discovery_terms": [
+        "realtime central bank gold transaction",
+        "real-time central-bank gold transactions",
+        "real-time central bank",
+        "central bank real time"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "REPORTED_DATA_LAGGED"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "PRIVATE_INSTITUTIONAL_GOLD_ORDER_FLOW",
+      "family": "PRIVATE_GAPS",
+      "label": "Private institutional Gold order flow",
+      "default_role": "PRIVATE_GAP",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PRIVATE_UNOBSERVABLE",
+      "source_cadence_class": "REALTIME",
+      "discovery_terms": [
+        "private institutional gold order flow",
+        "institutional order flow",
+        "private order flow",
+        "client order flow"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "DO_NOT_INFER_FROM_PRICE"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "TRUE_DEALER_OPTIONS_INVENTORY",
+      "family": "PRIVATE_GAPS",
+      "label": "True dealer options inventory/sign",
+      "default_role": "PRIVATE_GAP",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PRIVATE_UNOBSERVABLE_OR_PAID",
+      "source_cadence_class": "REALTIME",
+      "discovery_terms": [
+        "true dealer options inventory",
+        "true dealer options inventory/sign",
+        "dealer inventory",
+        "dealer option positioning"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "DO_NOT_INFER_FROM_AGGREGATE_OI"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "FULL_GLOBAL_GOLD_INVENTORY",
+      "family": "PRIVATE_GAPS",
+      "label": "Complete global Gold inventory/ownership state",
+      "default_role": "PRIVATE_GAP",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PRIVATE_UNOBSERVABLE",
+      "source_cadence_class": "STRUCTURAL",
+      "discovery_terms": [
+        "full global gold inventory",
+        "complete global gold inventory/ownership state",
+        "global inventory",
+        "complete global gold"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "COMEX_OR_LBMA_SUBSET_NOT_GLOBAL"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "MODEL_COMPLETENESS_STATE",
+      "family": "MODEL_QUALITY",
+      "label": "Model completeness state",
+      "default_role": "MODEL_QUALITY_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "DERIVED",
+      "source_cadence_class": "EACH_RUN",
+      "discovery_terms": [
+        "model completeness state",
+        "model completeness",
+        "completeness confidence"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "MISSING_DRIVER_RISK",
+      "family": "MODEL_QUALITY",
+      "label": "Missing/unmodeled driver risk",
+      "default_role": "MODEL_QUALITY_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "DERIVED",
+      "source_cadence_class": "EACH_RUN",
+      "discovery_terms": [
+        "missing driver risk",
+        "missing/unmodeled driver risk",
+        "missing driver",
+        "unmodeled driver"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "PRICE_TRANSMISSION_STATE",
+      "family": "MODEL_QUALITY",
+      "label": "Gold price transmission state",
+      "default_role": "PRICE_TRANSMISSION",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "DERIVED_FROM_TARGET_RESPONSE",
+      "source_cadence_class": "EACH_RUN",
+      "discovery_terms": [
+        "price transmission state",
+        "gold price transmission state",
+        "price transmission",
+        "transmission state"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "CANNOT_FEED_BACK_INTO_CAUSAL_PRESSURE"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "UNEXPRESSED_CAUSAL_IMBALANCE",
+      "family": "MODEL_QUALITY",
+      "label": "Unexpressed causal imbalance hypothesis",
+      "default_role": "RIVAL_HYPOTHESIS",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED",
+      "source_cadence_class": "EACH_RUN",
+      "discovery_terms": [
+        "unexpressed causal imbalance",
+        "unexpressed causal imbalance hypothesis",
+        "latent pressure",
+        "stored energy"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "ONLY_AFTER_MISSING_DRIVER_SEARCH"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_REGIME_STATE",
+      "family": "MODEL_QUALITY",
+      "label": "Gold regime state",
+      "default_role": "MODEL_QUALITY_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED",
+      "source_cadence_class": "EACH_RUN",
+      "discovery_terms": [
+        "gold regime",
+        "dominant gold regime"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_CAUSAL_LEADER_STATE",
+      "family": "MODEL_QUALITY",
+      "label": "Gold causal leader state",
+      "default_role": "MODEL_QUALITY_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED",
+      "source_cadence_class": "EACH_RUN",
+      "discovery_terms": [
+        "gold causal leader",
+        "causal leader"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_CONSUMPTION_VECTOR",
+      "family": "MODEL_QUALITY",
+      "label": "Gold channel-specific consumption vector",
+      "default_role": "CONSUMPTION_COMPONENT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED",
+      "source_cadence_class": "EACH_RUN",
+      "discovery_terms": [
+        "gold consumption by channel",
+        "channel-specific consumption",
+        "consumption vector"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_PERSISTENCE_STACK",
+      "family": "MODEL_QUALITY",
+      "label": "Gold driver-specific persistence stack",
+      "default_role": "MODEL_QUALITY_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED",
+      "source_cadence_class": "EACH_RUN",
+      "discovery_terms": [
+        "gold persistence stack",
+        "persistence by driver",
+        "driver-specific persistence"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_REMAINING_PRESSURE_STATE",
+      "family": "MODEL_QUALITY",
+      "label": "Gold remaining causal pressure state",
+      "default_role": "MODEL_QUALITY_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED",
+      "source_cadence_class": "EACH_RUN",
+      "discovery_terms": [
+        "gold remaining pressure",
+        "remaining pressure range"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_LIQUIDATION_HAZARD",
+      "family": "MODEL_QUALITY",
+      "label": "Gold liquidation hazard state",
+      "default_role": "VULNERABILITY_STATE",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "MODEL_DERIVED",
+      "source_cadence_class": "EACH_RUN",
+      "discovery_terms": [
+        "gold liquidation hazard",
+        "liquidation hazard"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "ASIA_LONDON_NEWYORK_HANDOFF_STATE",
+      "family": "TIMING_CALENDAR",
+      "label": "Asia-London-New York Gold handoff state",
+      "default_role": "CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "observability_class": "PUBLIC_OR_MODEL",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "asia-london-new york handoff",
+        "asia london new york handoff",
+        "market handoff",
+        "session handoff"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "HANDOFF_NOT_CAUSAL_DIRECTION_BY_ITSELF"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "GOLD_SESSION_LIQUIDITY_STATE",
+      "family": "TIMING_CALENDAR",
+      "label": "Gold session liquidity topology/state",
+      "default_role": "CONTEXT",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "observability_class": "PUBLIC_OR_MODEL",
+      "source_cadence_class": "INTRADAY",
+      "discovery_terms": [
+        "session liquidity",
+        "gold liquidity window",
+        "precious-metals clock"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "LIQUIDITY_STATE_NOT_DIRECTION_BY_ITSELF"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "SILVER_INDUSTRIAL_DEMAND_CONTEXT",
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "label": "Silver industrial-demand context",
+      "default_role": "CONTEXT_DIAGNOSTIC",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "MONTHLY_OR_QUARTERLY",
+      "discovery_terms": [
+        "silver industrial demand",
+        "industrial demand"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "SILVER_CONTEXT_NOT_GOLD_ROOT"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    },
+    {
+      "fact_id": "SILVER_MINE_COPRODUCTION_CONTEXT",
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "label": "Silver mine co-production/supply context",
+      "default_role": "CONTEXT_DIAGNOSTIC",
+      "pressure_plane": "NONE",
+      "causal_root_family": null,
+      "causal_root_eligible": false,
+      "active_horizons": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "observability_class": "PUBLIC_OR_SOURCE_SPECIFIC",
+      "source_cadence_class": "QUARTERLY_OR_ANNUAL",
+      "discovery_terms": [
+        "silver co-production",
+        "silver mine supply",
+        "co-production"
+      ],
+      "source_hints": [],
+      "prohibited_interpretations": [
+        "SILVER_CONTEXT_NOT_GOLD_ROOT"
+      ],
+      "notes": "",
+      "default_materiality": "MATERIAL"
+    }
+  ],
+  "registry_rules": [
+    "Every fact has one canonical fact_id and default semantic role.",
+    "Fact registry completeness is knowledge completeness, not live acquisition completeness.",
+    "Source hints are not acquisition success; P02 must bind/attempt sources.",
+    "Target price and technical features remain downstream and non-causal.",
+    "Private/paid facts stay registered as gaps rather than silently omitted.",
+    "Horizon relevance does not imply observation freshness.",
+    "Causal root eligibility does not imply automatic additive voting; P03 must apply shock ownership/dependence.",
+    "default_role must be registered in config/fact_role_registry.json.",
+    "Every list field is unique and deterministic; duplicate horizons/terms are invalid.",
+    "Structural root evidence may inform a causal root prior only through the explicit structural-to-causal bridge; it never becomes intraday flow or direct session Direction by relabeling."
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P01",
+  "attack_cases": [
+    {
+      "id": "PRICE_CREATES_PRESSURE",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "PRICE_DROP_WEAKENS_BUY_PRESSURE",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "VOLUME_RELABELED_FLOW",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "OI_RELABELED_DIRECTION",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "COT_RELABELED_LIVE_FLOW",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "LBMA_CLEARING_RELABELED_CLIENT_FLOW",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "OPTIONS_OI_RELABELED_DEALER_GAMMA",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "UNKNOWN_ROOTS_RENORMALIZED_AWAY",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "UNCALIBRATED_68_OVER_100_SHOWN_AS_SCIENTIFIC_STRENGTH",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "STORED_ENERGY_ASSERTED_BEFORE_MISSING_DRIVER_SEARCH",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "CPI_FED_2Y_REAL_YIELD_DXY_COUNTED_AS_FIVE_INDEPENDENT_VOTES",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "STRUCTURAL_CENTRAL_BANK_DATA_USED_AS_INTRADAY_FLOW",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "COMEX_STOCKS_EQUATED_TO_GLOBAL_GOLD_INVENTORY",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "P01_PERFORMS_NETWORK_FETCH",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "P01_MUTATES_V2",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "GOLD_DISCOVERY_DIFFERS_BY_OS_CASE_SENSITIVITY",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "UNMATCHED_GOLD_SCHEMA_SILENTLY_RELABELLED_GOVERNANCE",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "INTERFACE_SCHEMA_HASH_DRIFT_ACCEPTED_WITHOUT_REAUDIT",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "INTERFACE_SCHEMA_ADDS_NEW_FIELD_WITHOUT_REAUDIT",
+      "expected": "FORBIDDEN"
+    },
+    {
+      "id": "PATCH_BACKUP_COPY_COUNTED_AS_CANONICAL_GOLD_KNOWLEDGE",
+      "expected": "FORBIDDEN"
+    }
+  ]
+}

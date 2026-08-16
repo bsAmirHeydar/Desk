@@ -1,0 +1,166 @@
+{
+  "phase": "AD-V3-P01",
+  "name": "Total Gold Knowledge & Science Foundation",
+  "version": "3.1.1-foundation",
+  "deployment": "SHADOW_ONLY",
+  "v2_mutation_allowed": false,
+  "network_fetch_allowed": false,
+  "direction_authority": false,
+  "permission_authority": false,
+  "file_count": 28,
+  "mutable_generated_artifacts": [
+    "artifacts/P01_KNOWLEDGE_COVERAGE_RECEIPT.json"
+  ],
+  "files": [
+    {
+      "path": "00 Phase 01 Total Gold Knowledge and Science Foundation MOC.md",
+      "sha256": "7cbbeefc0fa6d1d23db5dc4f4c0357760fa0c92ca96f9d358a98666f35235a94",
+      "bytes": 2271
+    },
+    {
+      "path": "01 Scientific Constitution and V2 Freeze.md",
+      "sha256": "478cbc46f913b05d5967e9ec0e8a1c86c610b8d5bc64d6ee1c4620e829f2ed01",
+      "bytes": 1170
+    },
+    {
+      "path": "02 Causal Ownership Dependency and Anti Double Counting.md",
+      "sha256": "d1b729d29825e40b71d10703da22cb3e46b1bdee41bf74a61175b2d81b2ec103",
+      "bytes": 917
+    },
+    {
+      "path": "03 Gold Master Fact Registry.md",
+      "sha256": "2153a54ca16951fe278f868a353794c783617df7a50e923cf350791b3eece27e",
+      "bytes": 1964
+    },
+    {
+      "path": "04 Unknown Freshness Persistence and Consumption.md",
+      "sha256": "a6613495bc6a1c921d05f36d025fba2d05c42f01f8af909a2a53b11e983528e0",
+      "bytes": 1055
+    },
+    {
+      "path": "05 Precision Scores and Model Completeness.md",
+      "sha256": "5ecf2f5fcab9ed602025143289c0d63ac3aa2b163eb8f31638ba4a854c78f98e",
+      "bytes": 864
+    },
+    {
+      "path": "06 Gold Knowledge Compiler and Zero Unaccounted Contract.md",
+      "sha256": "72561aca206a1e3885101fabbd0e6eedaf0d4f0ddc3b84b3a795ed5ae14ac405",
+      "bytes": 2135
+    },
+    {
+      "path": "07 P02 Handoff Total Live Data Requirements.md",
+      "sha256": "e28c58361e261d4306e2ccb326e0355f61c5c74fad6737011ba29e26ceda3587",
+      "bytes": 781
+    },
+    {
+      "path": "08 Scope Rollback and Non Promotion.md",
+      "sha256": "cb45c4a02af1922382ed9cadee351987b1c5610657389e521452b1ed6cfc5b37",
+      "bytes": 444
+    },
+    {
+      "path": "PHASE_01_HANDOFF.json",
+      "sha256": "014f9ac4ed6d3173fd4b73c7a8b92362fd506bc2e6865c1aa489c4b0918aec6f",
+      "bytes": 326
+    },
+    {
+      "path": "PHASE_01_RELEASE_NOTES.json",
+      "sha256": "4177173d3f514ffae602915d131ffbb24138a83752b2756f2cecdb72c1ca00e1",
+      "bytes": 1303
+    },
+    {
+      "path": "baseline/v2_frozen_surface_manifest.json",
+      "sha256": "d3143009282ee89b07bb7084d7a5006503afb756419c9794d913086dd7a91f0c",
+      "bytes": 4571
+    },
+    {
+      "path": "config/causal_ontology.json",
+      "sha256": "4f3172266a4d4b95616fbd62e0532246af0efb1cfc6731433bd0ef0bac5a21bf",
+      "bytes": 4290
+    },
+    {
+      "path": "config/epistemic_state_registry.json",
+      "sha256": "331e0f66deb0de7aede47b53fd1beab3c4ca1feda02d9fc50aaa213e10cd045c",
+      "bytes": 2033
+    },
+    {
+      "path": "config/fact_role_registry.json",
+      "sha256": "db18adfc21cf0730bfce68db80ec09c5b080bbfd84e91409e48af235cc5a3547",
+      "bytes": 7442
+    },
+    {
+      "path": "config/gold_interface_contract_registry.json",
+      "sha256": "a6eb34aad2003486523c65bf7e96c5c074b7fe0748acf0efa8e82eaf7d72ea07",
+      "bytes": 7946
+    },
+    {
+      "path": "config/gold_knowledge_surface_registry.json",
+      "sha256": "013bedf027dc8faeaf69e42cdf605b84806f88cee4bcd98ead79452d92990e2b",
+      "bytes": 8676
+    },
+    {
+      "path": "config/gold_master_fact_registry.json",
+      "sha256": "c0c83c5789329cfb6a8770d6c7908c0b9d101ad725160ebcb1652d8a98b1baba",
+      "bytes": 174283
+    },
+    {
+      "path": "config/horizon_registry.json",
+      "sha256": "4dab84bcb2d536f43c7fc75510104afee6d05a778af23edf26795421f1e9b828",
+      "bytes": 1056
+    },
+    {
+      "path": "config/scientific_constitution.json",
+      "sha256": "f1dd47a5fe96cd2d2fe84099c51978e0ca99d5745f03e21fca2b7d924c92c2f0",
+      "bytes": 7357
+    },
+    {
+      "path": "runtime/__init__.py",
+      "sha256": "feca5de67c095edc490090e279f7064f6d0f3c98b71d167e33dcd98f22d57f67",
+      "bytes": 96
+    },
+    {
+      "path": "runtime/knowledge_compiler.py",
+      "sha256": "7774f562f49cc30c9cabbc16e675d8905163f87750a068f142f3607c583054a5",
+      "bytes": 14518
+    },
+    {
+      "path": "schemas/AlphaDesk_V3_GoldMasterFactRegistry.schema.json",
+      "sha256": "30c3b797303a087f425690496fd0573ba5d358b076132f455dd188025bfb6fca",
+      "bytes": 2726
+    },
+    {
+      "path": "schemas/AlphaDesk_V3_P01_KnowledgeCoverageReceipt.schema.json",
+      "sha256": "f0af28f40067518316a37f030ce8ecfc9f689dfac309a742e4b98127b9feecc9",
+      "bytes": 595
+    },
+    {
+      "path": "tests/p01_scientific_attack_cases.json",
+      "sha256": "bcb4449637036a31fe3311e222b606c58d80c4e1ea0649437b87cad6a8601fcc",
+      "bytes": 2025
+    },
+    {
+      "path": "tools/compile_gold_knowledge.py",
+      "sha256": "634dbc6940c35aac6ecf0ee2e7a47a468fbdd9b4d89d4a0975f083f1c1e5e2a6",
+      "bytes": 740
+    },
+    {
+      "path": "tools/run_phase01_acceptance.py",
+      "sha256": "7e1f20a1a2cd58ed604e52a28f97c1ff1cce7c6d83797684bfd9ffdaf583e317",
+      "bytes": 1187
+    },
+    {
+      "path": "tools/validate_phase01.py",
+      "sha256": "4f939023da28f68cbb6f70ba350d66fb96e90f2773e2d8f088cb9ecf45bcddbc",
+      "bytes": 6532
+    }
+  ],
+  "acceptance": {
+    "gold_master_fact_count": 192,
+    "required_pressure_planes": 4,
+    "zero_unaccounted_gold_knowledge_required": true,
+    "v2_freeze_required": true,
+    "p02_handoff_ready_required": true,
+    "audited_interface_contract_count": 5,
+    "platform_invariant_discovery_required": true,
+    "backup_copy_exclusion_required": true
+  }
+}

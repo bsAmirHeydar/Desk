@@ -1,0 +1,1 @@
+from .knowledge_compiler import compile_knowledge_coverage, validate_registry, verify_v2_freeze

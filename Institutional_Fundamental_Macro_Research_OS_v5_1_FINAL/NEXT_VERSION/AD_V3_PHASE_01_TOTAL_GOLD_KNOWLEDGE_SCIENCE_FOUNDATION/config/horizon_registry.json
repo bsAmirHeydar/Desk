@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P01",
+  "horizons": [
+    {
+      "id": "MICRO_0_15M",
+      "role": "event/mechanical response only; structural facts are context"
+    },
+    {
+      "id": "SHORT_15_60M",
+      "role": "event transmission and fast flow/mechanics"
+    },
+    {
+      "id": "SESSION_1_6H",
+      "role": "intraday causal transmission/flow/funding"
+    },
+    {
+      "id": "DAILY_OPEN_TO_CLOSE",
+      "role": "session plus daily allocation/physical context"
+    },
+    {
+      "id": "MULTI_DAY_2_10D",
+      "role": "repricing, ETF/positioning/physical/official persistence"
+    },
+    {
+      "id": "SWING_2_8W",
+      "role": "macro regime, allocation, official/physical/supply"
+    },
+    {
+      "id": "CYCLICAL",
+      "role": "policy cycle, reserve demand, supply and credibility"
+    },
+    {
+      "id": "STRUCTURAL",
+      "role": "reserve system, long-run supply and monetary/fiscal credibility"
+    }
+  ],
+  "rule": "A fact can remain relevant across horizons without being a fresh intraday flow observation."
+}

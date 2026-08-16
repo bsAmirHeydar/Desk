@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P01",
+  "states": [
+    {
+      "id": "OBSERVED_CURRENT",
+      "meaning": "Direct/public observation current enough for its source cadence."
+    },
+    {
+      "id": "OBSERVED_DELAYED",
+      "meaning": "Direct observation with known publication/market delay."
+    },
+    {
+      "id": "LATEST_VALID",
+      "meaning": "Newest valid release; no newer release is yet expected."
+    },
+    {
+      "id": "RELEASE_NOT_DUE",
+      "meaning": "Source was checked; next release is not yet due."
+    },
+    {
+      "id": "STALE",
+      "meaning": "Observation exists but is too old for the claimed use/horizon."
+    },
+    {
+      "id": "MODEL_DERIVED",
+      "meaning": "Derived estimate with explicit model lineage."
+    },
+    {
+      "id": "PUBLIC_PROXY",
+      "meaning": "Public proxy; direct state remains unobserved."
+    },
+    {
+      "id": "PAID_ONLY",
+      "meaning": "Known source/fact requires paid/licensed access."
+    },
+    {
+      "id": "PRIVATE_UNOBSERVABLE",
+      "meaning": "Material fact is structurally private/unobservable."
+    },
+    {
+      "id": "FETCH_FAILED",
+      "meaning": "Expected public acquisition attempted but failed."
+    },
+    {
+      "id": "PARSE_FAILED",
+      "meaning": "Acquisition succeeded but semantic extraction failed."
+    },
+    {
+      "id": "NOT_MATERIAL",
+      "meaning": "Known fact family is not material for this run/horizon, with explicit reason."
+    },
+    {
+      "id": "NOT_APPLICABLE",
+      "meaning": "Fact family is outside the economic object for the stated context."
+    },
+    {
+      "id": "UNKNOWN_TRUE",
+      "meaning": "State cannot be defensibly determined from available evidence."
+    }
+  ],
+  "hard_rules": [
+    "LATEST_VALID is not OBSERVED_CURRENT",
+    "RELEASE_NOT_DUE is not missing",
+    "PRIVATE_UNOBSERVABLE does not block solely by itself but caps completeness when material",
+    "FETCH_FAILED/PARSE_FAILED cannot be relabeled neutral",
+    "PUBLIC_PROXY never closes a direct-data gap"
+  ]
+}

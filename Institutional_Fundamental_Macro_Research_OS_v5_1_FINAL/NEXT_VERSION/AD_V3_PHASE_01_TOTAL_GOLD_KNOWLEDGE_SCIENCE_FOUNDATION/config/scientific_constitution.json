@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P01",
+  "version": "3.1.0-foundation",
+  "deployment": "SHADOW_ONLY",
+  "title": "Alpha Desk V3 Gold Scientific Constitution",
+  "mission": "Define the complete Gold knowledge universe and scientific decision boundaries before live acquisition or V3 decision authority exists.",
+  "v2_status": "FROZEN_AND_UNMODIFIED",
+  "v3_p01_authority": "KNOWLEDGE_ONTOLOGY_AND_GOVERNANCE_ONLY",
+  "live_network_fetch": "FORBIDDEN_IN_P01",
+  "trade_permission_authority": "NONE",
+  "direction_authority": "NONE_NEW",
+  "production_promotion": "FORBIDDEN",
+  "invariants": [
+    {
+      "id": "PRESSURE_NE_PRICE",
+      "rule": "Target Gold price/return/technical pattern cannot create, strengthen, weaken, reverse, validate or consume causal Pressure."
+    },
+    {
+      "id": "PRICE_AS_MODEL_OBSERVATION",
+      "rule": "Price may change transmission/model-completeness/missing-driver risk, never causal Pressure directly."
+    },
+    {
+      "id": "EXHAUSTIVE_INTAKE_SPARSE_DECISION",
+      "rule": "Knowledge intake is exhaustive; only causally owned independent roots may influence causal Direction."
+    },
+    {
+      "id": "ONE_SHOCK_ONE_CAUSAL_OWNERSHIP",
+      "rule": "A common shock cannot be counted again through dependent rates, USD, flows or price responses."
+    },
+    {
+      "id": "FLOW_NE_VOLUME",
+      "rule": "Volume/activity is not signed transaction pressure."
+    },
+    {
+      "id": "OI_NE_DIRECTION",
+      "rule": "Open interest is outstanding exposure/activity state, not direction by itself."
+    },
+    {
+      "id": "ETF_AUM_NE_FLOW",
+      "rule": "ETF AUM price effects must be separated from creations/redemptions/holdings changes."
+    },
+    {
+      "id": "COT_NE_LIVE_FLOW",
+      "rule": "CFTC positioning is lagged regulated-futures positioning, never live global Gold flow."
+    },
+    {
+      "id": "CLEARING_NE_DIRECTIONAL_FLOW",
+      "rule": "LBMA clearing activity is not client/dealer directional flow."
+    },
+    {
+      "id": "OPTIONS_OI_NE_DEALER_GAMMA",
+      "rule": "Aggregate options OI does not identify dealer sign/inventory."
+    },
+    {
+      "id": "SINGLE_VENUE_NE_GLOBAL_GOLD",
+      "rule": "COMEX, London OTC, ETF and regional physical markets are distinct subsets."
+    },
+    {
+      "id": "PROXY_NE_REALITY",
+      "rule": "Proxy evidence must remain labeled and can never silently replace a private/direct observation gap."
+    },
+    {
+      "id": "MISSING_NE_NEUTRAL",
+      "rule": "Missing, unavailable, stale and private facts are not neutral observations."
+    },
+    {
+      "id": "NO_FAKE_PRECISION",
+      "rule": "User-facing numeric strength/probability/consumption/persistence scores are forbidden unless an empirical calibration reference exists."
+    },
+    {
+      "id": "POINT_IN_TIME",
+      "rule": "Every future V3 observation must preserve event/reference/publish/first-seen/retrieval/revision lineage."
+    },
+    {
+      "id": "RIVAL_EXPLANATION",
+      "rule": "Price/pressure divergence requires opposing-root and missing-driver search before any latent imbalance claim."
+    },
+    {
+      "id": "STRUCTURAL_NE_INTRADAY",
+      "rule": "Slow structural facts may condition priors/persistence but cannot be relabeled as intraday flow."
+    },
+    {
+      "id": "APL_SHADOW",
+      "rule": "Perspective/fragility layers may stress-test but never set Direction."
+    }
+  ],
+  "pressure_planes": [
+    {
+      "id": "CAUSAL_FUNDAMENTAL",
+      "meaning": "Independent causal forces and expectation states that create directional incentive before target price response.",
+      "direction_authority_candidate": true
+    },
+    {
+      "id": "REALIZED_TRANSACTION",
+      "meaning": "Observed transaction/ownership transfer pressure such as verified ETF/official/physical or defensibly classified participant changes.",
+      "direction_authority_candidate": false
+    },
+    {
+      "id": "MECHANICAL_FORCED",
+      "meaning": "Forced or rule-driven pressure including liquidation, margin, hedging, roll, expiry, rebalance and capacity effects.",
+      "direction_authority_candidate": false
+    },
+    {
+      "id": "STRUCTURAL_CARRY",
+      "meaning": "Slow persistent state including reserve diversification, official accumulation, supply structure and long-run credibility.",
+      "direction_authority_candidate": false
+    }
+  ],
+  "non_pressure_state_objects": [
+    "POSITIONING_OWNERSHIP",
+    "FUNDING_PLUMBING",
+    "VULNERABILITY_STORED_EXPOSURE",
+    "PRICE_TRANSMISSION",
+    "MODEL_COMPLETENESS",
+    "MISSING_DRIVER_RISK",
+    "EVENT_STATE",
+    "NARRATIVE_ATTENTION",
+    "CONTEXT_DIAGNOSTIC"
+  ],
+  "precision_policy": {
+    "uncalibrated_user_scores": "FORBIDDEN",
+    "allowed_before_calibration": [
+      "UNKNOWN",
+      "LOW",
+      "MEDIUM",
+      "HIGH",
+      "VERY_HIGH",
+      "BALANCED",
+      "CONTESTED",
+      "PARTIAL",
+      "MATERIAL"
+    ],
+    "numeric_probability_requires": [
+      "estimand",
+      "training_sample",
+      "out_of_sample_validation",
+      "calibration_report",
+      "versioned_model_ref"
+    ],
+    "numeric_magnitude_requires": "EMPIRICAL_OR_MODEL_VALIDATION_REF"
+  },
+  "unknown_policy": {
+    "do_not_renormalize_observed_world_to_100_percent": true,
+    "coverage_mass_fields": [
+      "observed_causal_mass",
+      "known_non_material_mass",
+      "unobserved_or_unresolved_mass"
+    ],
+    "state_taxonomy_ref": "config/epistemic_state_registry.json"
+  },
+  "consumption_policy": {
+    "single_subjective_percentage_forbidden": true,
+    "vector": [
+      "INFORMATION_ABSORPTION",
+      "EXPECTATIONS_REPRICING",
+      "FLOW_PROPAGATION",
+      "POSITION_ADJUSTMENT",
+      "NARRATIVE_SATURATION",
+      "TIME_DECAY",
+      "REINFORCEMENT",
+      "CONTRADICTION"
+    ],
+    "summary_states": [
+      "LOW",
+      "PARTIAL",
+      "HIGH",
+      "EXHAUSTED",
+      "CONTESTED",
+      "UNKNOWN"
+    ]
+  },
+  "persistence_policy": {
+    "driver_specific_required": true,
+    "horizons": [
+      "MICRO_0_15M",
+      "SHORT_15_60M",
+      "SESSION_1_6H",
+      "DAILY_OPEN_TO_CLOSE",
+      "MULTI_DAY_2_10D",
+      "SWING_2_8W",
+      "CYCLICAL",
+      "STRUCTURAL"
+    ],
+    "freshness_is_not_persistence": true
+  },
+  "latent_policy": {
+    "stored_energy_term_in_decision_layer": "DEPRECATED",
+    "replacement": "UNEXPRESSED_CAUSAL_IMBALANCE",
+    "allowed_only_if": [
+      "strong causal evidence",
+      "material opposing roots searched",
+      "mechanical/funding/physical/event search completed",
+      "data quality adequate",
+      "model completeness not low"
+    ],
+    "otherwise": "UNEXPLAINED_TRANSMISSION"
+  },
+  "fact_role_registry_ref": "config/fact_role_registry.json",
+  "structural_bridge_policy": {
+    "structural_root_evidence_may_condition_causal_root_prior": true,
+    "direct_intraday_direction_from_structural_carry": false,
+    "required_for_bridge": [
+      "matching causal_root_family",
+      "horizon materiality",
+      "latest-valid/staleness treatment",
+      "explicit persistence",
+      "no relabeling as transaction flow"
+    ]
+  },
+  "knowledge_completeness_policy": {
+    "vault_surfaces_must_be_ledgered": true,
+    "discovered_unmatched_gold_surface": "FAIL_CLOSED_UNLESS_EXPLICIT_GOVERNANCE",
+    "new_v3_science_extensions_allowed": true,
+    "new_v3_science_extensions_do_not_claim_prior_vault_provenance": true
+  }
+}

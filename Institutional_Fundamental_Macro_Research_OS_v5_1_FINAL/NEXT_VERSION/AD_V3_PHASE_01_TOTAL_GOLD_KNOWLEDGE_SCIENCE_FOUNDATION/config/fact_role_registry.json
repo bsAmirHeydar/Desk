@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P01",
+  "principle": "FACT_ROLE_DETERMINES_DECISION_RIGHTS_BEFORE_ANY_P03_MODEL_EXISTS",
+  "roles": [
+    {
+      "role_id": "TARGET_PRICE_RESPONSE",
+      "ontology_node_type": "TARGET_PRICE_RESPONSE",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Downstream price/return observation; never causal Pressure."
+    },
+    {
+      "role_id": "CONTEXT",
+      "ontology_node_type": "CONTEXT",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Market topology or contextual state."
+    },
+    {
+      "role_id": "CAUSAL_ROOT_STATE",
+      "ontology_node_type": "CAUSAL_ROOT",
+      "allowed_pressure_planes": [
+        "CAUSAL_FUNDAMENTAL"
+      ],
+      "direct_direction_authority": true,
+      "meaning": "Direct/derived state eligible to instantiate a causal root under P03 ownership rules."
+    },
+    {
+      "role_id": "MODEL_DERIVED",
+      "ontology_node_type": "CONTEXT",
+      "allowed_pressure_planes": [
+        "CAUSAL_FUNDAMENTAL",
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Model-derived interpretation with explicit lineage; never direct observation."
+    },
+    {
+      "role_id": "EVENT_SHOCK",
+      "ontology_node_type": "SHOCK",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Exogenous/scheduled/unscheduled information shock; owns pathways but is not itself a second downstream vote."
+    },
+    {
+      "role_id": "TRANSMISSION_PATHWAY",
+      "ontology_node_type": "TRANSMISSION_PATHWAY",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Pathway observation carrying an upstream shock/root; corroborative, not additive by default."
+    },
+    {
+      "role_id": "EVENT_STATE",
+      "ontology_node_type": "SHOCK",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "State of an event/risk window; direction requires explicit channel mapping."
+    },
+    {
+      "role_id": "STRUCTURAL_ROOT_STATE",
+      "ontology_node_type": "STRUCTURAL_STATE",
+      "allowed_pressure_planes": [
+        "STRUCTURAL_CARRY"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Slow root evidence; may condition causal prior via structural bridge, never direct intraday authority."
+    },
+    {
+      "role_id": "REALIZED_FLOW",
+      "ontology_node_type": "REALIZED_FLOW",
+      "allowed_pressure_planes": [
+        "REALIZED_TRANSACTION"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Observed/defensible ownership or transaction pressure; not upstream cause by itself."
+    },
+    {
+      "role_id": "POSITIONING_STATE",
+      "ontology_node_type": "PARTICIPANT_STATE",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Outstanding participant ownership/exposure; not live flow or automatic direction."
+    },
+    {
+      "role_id": "MECHANICAL_FORCE",
+      "ontology_node_type": "MECHANICAL_FORCE",
+      "allowed_pressure_planes": [
+        "MECHANICAL_FORCED"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Forced/rule-driven transaction pressure."
+    },
+    {
+      "role_id": "MECHANICAL_STATE",
+      "ontology_node_type": "MECHANICAL_FORCE",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Mechanical configuration that may create force when triggered."
+    },
+    {
+      "role_id": "VULNERABILITY_STATE",
+      "ontology_node_type": "PARTICIPANT_STATE",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Stored exposure/crowding/liquidation vulnerability; not current pressure until activated."
+    },
+    {
+      "role_id": "PHYSICAL_STATE",
+      "ontology_node_type": "CONTEXT",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Physical inventory/premium/location state; causal role requires explicit root mapping."
+    },
+    {
+      "role_id": "FUNDING_STATE",
+      "ontology_node_type": "CONTEXT",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Funding/plumbing condition; may constrain capacity or activate funding root via explicit mapping."
+    },
+    {
+      "role_id": "CAPACITY_STATE",
+      "ontology_node_type": "CONTEXT",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Dealer/market capacity state; not direction by itself."
+    },
+    {
+      "role_id": "STRUCTURAL_STATE",
+      "ontology_node_type": "STRUCTURAL_STATE",
+      "allowed_pressure_planes": [
+        "STRUCTURAL_CARRY"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Slow structural state without direct Direction authority."
+    },
+    {
+      "role_id": "CONTEXT_DIAGNOSTIC",
+      "ontology_node_type": "CONTEXT",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Cross-asset/diagnostic evidence; no independent causal vote unless separately promoted as root evidence."
+    },
+    {
+      "role_id": "SHADOW_CONTEXT",
+      "ontology_node_type": "CONTEXT",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Shadow-only perspective/context."
+    },
+    {
+      "role_id": "PRIVATE_GAP",
+      "ontology_node_type": "PRIVATE_GAP",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Known material observation gap; never imputed as neutral."
+    },
+    {
+      "role_id": "NARRATIVE_STATE",
+      "ontology_node_type": "CONTEXT",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Attention/narrative state; cannot replace causal facts."
+    },
+    {
+      "role_id": "MODEL_QUALITY_STATE",
+      "ontology_node_type": "CONTEXT",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Completeness/unknown quality state; constrains confidence/permission, not causal Pressure."
+    },
+    {
+      "role_id": "CONSUMPTION_COMPONENT",
+      "ontology_node_type": "CONTEXT",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Component of catalyst-consumption state machine."
+    },
+    {
+      "role_id": "PRICE_TRANSMISSION",
+      "ontology_node_type": "TARGET_PRICE_RESPONSE",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Alignment/divergence of target response; may change completeness/missing-driver risk only."
+    },
+    {
+      "role_id": "RIVAL_HYPOTHESIS",
+      "ontology_node_type": "CONTEXT",
+      "allowed_pressure_planes": [
+        "NONE"
+      ],
+      "direct_direction_authority": false,
+      "meaning": "Competing explanation/hypothesis, not evidence by itself."
+    }
+  ]
+}

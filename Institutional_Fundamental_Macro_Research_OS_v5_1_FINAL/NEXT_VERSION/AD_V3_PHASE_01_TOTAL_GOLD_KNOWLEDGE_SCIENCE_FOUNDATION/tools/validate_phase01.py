@@ -1,0 +1,58 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import argparse,json,sys,importlib.util
+ROOT=Path(__file__).resolve().parents[1]
+spec=importlib.util.spec_from_file_location('kc',ROOT/'runtime/knowledge_compiler.py'); kc=importlib.util.module_from_spec(spec); spec.loader.exec_module(kc)
+
+def main():
+ a=argparse.ArgumentParser(); a.add_argument('--json',action='store_true'); x=a.parse_args(); checks=[]
+ def ck(n,ok,d=None): checks.append({'name':n,'status':'PASS' if ok else 'FAIL','detail':d})
+ r=kc.compile_knowledge_coverage(); reg=json.loads((ROOT/'config/gold_master_fact_registry.json').read_text(encoding='utf-8')); by={f['fact_id']:f for f in reg['facts']}; c=json.loads((ROOT/'config/scientific_constitution.json').read_text(encoding='utf-8')); ont=json.loads((ROOT/'config/causal_ontology.json').read_text(encoding='utf-8')); roles=json.loads((ROOT/'config/fact_role_registry.json').read_text(encoding='utf-8'))
+ ck('compiler pass',r['status']=='PASS',r.get('integrity'))
+ ck('v2 frozen',r['v2_freeze']['status']=='PASS')
+ ck('180 plus facts',len(by)>=180,len(by))
+ ck('four pressure planes',len(c['pressure_planes'])==4,[p['id'] for p in c['pressure_planes']])
+ ck('no p01 network',c['live_network_fetch']=='FORBIDDEN_IN_P01')
+ ck('no p01 permission',c['trade_permission_authority']=='NONE')
+ ck('fake precision forbidden',c['precision_policy']['uncalibrated_user_scores']=='FORBIDDEN')
+ ck('price non-root',not by['XAUUSD_SPOT_PRICE']['causal_root_eligible'] and by['XAUUSD_SPOT_PRICE']['pressure_plane']=='NONE')
+ ck('gc non-root',not by['GC_FUTURES_PRICE']['causal_root_eligible'])
+ ck('volume not flow','VOLUME_NOT_FLOW' in by['GC_VOLUME']['prohibited_interpretations'])
+ ck('oi not direction','OI_NOT_DIRECTION' in by['GC_OPEN_INTEREST']['prohibited_interpretations'])
+ ck('cftc lag boundary','NOT_LIVE_FLOW' in by['CFTC_MANAGED_MONEY']['prohibited_interpretations'])
+ ck('lbma clearing boundary','CLEARING_NOT_DIRECTIONAL_FLOW' in by['LBMA_CLEARING_ACTIVITY']['prohibited_interpretations'])
+ ck('options dealer sign boundary','OI_NOT_DEALER_SIGN' in by['GC_OPTIONS_OI_BY_STRIKE']['prohibited_interpretations'])
+ ck('fiscal root exists','FISCAL_SOVEREIGN_MONETARY_CREDIBILITY' in {z['root_id'] for z in ont['canonical_root_families']})
+ ck('supply root exists','PHYSICAL_SUPPLY_RECYCLING_HEDGING' in {z['root_id'] for z in ont['canonical_root_families']})
+ ck('term premium registered','UST_TERM_PREMIUM' in by)
+ ck('broad dollar registered',all(k in by for k in ['FED_BROAD_DOLLAR','FED_AFE_DOLLAR','FED_EME_DOLLAR','USDCNH_CNH_STATE']))
+ ck('china subsystem',all(k in by for k in ['SGE_PREMIUM_DISCOUNT','SGE_WITHDRAWALS','CHINA_GOLD_IMPORTS','CHINA_PHYSICAL_BALANCE','CHINA_GOLD_ETF_FLOW','PBOC_GOLD_RESERVES_PURCHASES']))
+ ck('india subsystem',all(k in by for k in ['INDIA_GOLD_PREMIUM_DISCOUNT','INDIA_GOLD_IMPORTS','INDIA_IMPORT_DUTY_TAX','INDIA_PHYSICAL_BALANCE','INDIA_RECYCLING_SUPPLY']))
+ ck('supply stack',all(k in by for k in ['GOLD_MINE_PRODUCTION','GOLD_RECYCLING_SUPPLY','GOLD_PRODUCER_HEDGING','GOLD_MINE_DISRUPTIONS']))
+ ck('london gaps explicit',all(k in by for k in ['LONDON_OTC_CLIENT_DEALER_FLOW','GOLD_LEASE_RATE','GOLD_FORWARD_RATE','COMEX_LONDON_EFP']))
+ ck('participant classes complete',all(k in by for k in ['CFTC_PRODUCER_MERCHANT','CFTC_SWAP_DEALER','CFTC_MANAGED_MONEY','CFTC_OTHER_REPORTABLES','CFTC_NONREPORTABLE']))
+ ck('model incompleteness explicit',all(k in by for k in ['MODEL_COMPLETENESS_STATE','MISSING_DRIVER_RISK','PRICE_TRANSMISSION_STATE']))
+ ck('stored energy deprecated',c['latent_policy']['stored_energy_term_in_decision_layer']=='DEPRECATED')
+ ck('freshness not persistence',c['persistence_policy']['freshness_is_not_persistence'] is True)
+ ck('unknown no renormalization',c['unknown_policy']['do_not_renormalize_observed_world_to_100_percent'] is True)
+ ck('role registry complete',all(f['default_role'] in {x['role_id'] for x in roles['roles']} for f in reg['facts']))
+ ck('registry lists unique',all(all(len(f.get(k,[]))==len(set(f.get(k,[]))) for k in ['active_horizons','discovery_terms','source_hints','prohibited_interpretations']) for f in reg['facts']))
+ ck('structural bridge explicit',c.get('structural_bridge_policy',{}).get('direct_intraday_direction_from_structural_carry') is False)
+ ck('derived gold state objects',all(k in by for k in ['GOLD_REGIME_STATE','GOLD_CAUSAL_LEADER_STATE','GOLD_CONSUMPTION_VECTOR','GOLD_PERSISTENCE_STACK','GOLD_REMAINING_PRESSURE_STATE','GOLD_LIQUIDATION_HAZARD']))
+ ck('session handoff states',all(k in by for k in ['ASIA_LONDON_NEWYORK_HANDOFF_STATE','GOLD_SESSION_LIQUIDITY_STATE']))
+ ck('silver context boundary',all(k in by for k in ['SILVER_INDUSTRIAL_DEMAND_CONTEXT','SILVER_MINE_COPRODUCTION_CONTEXT']))
+ ck('no unaccounted gold surfaces',not r['surface_coverage'].get('unaccounted_surfaces'),r['surface_coverage'].get('unaccounted_surfaces'))
+ ck('all required surfaces present',not r['surface_coverage']['required_missing'],r['surface_coverage']['required_missing'])
+ ck('platform invariant gold discovery',r.get('integrity',{}).get('platform_invariant_discovery') is True,r.get('discovery'))
+ ck('backup copies excluded from canonical discovery',all('.alphalab_patch_backups/' not in row.get('rel','') and not row.get('rel','').startswith('.git/') for row in r['surface_coverage'].get('rows',[])))
+ ck('five interface contracts audited',(r.get('interface_contract_registry') or {}).get('status')=='PASS' and (r.get('interface_contract_registry') or {}).get('contract_count')==5,r.get('interface_contract_registry'))
+ ck('interface contract surfaces accounted',r['surface_coverage'].get('interface_contract_surfaces')==5,r['surface_coverage'].get('interface_contract_surfaces'))
+ ck('no interface contract drift',not r['surface_coverage'].get('interface_contract_drift_surfaces') and not r['surface_coverage'].get('interface_contract_errors'),{'drift':r['surface_coverage'].get('interface_contract_drift_surfaces'),'errors':r['surface_coverage'].get('interface_contract_errors')})
+ ck('zero unaccounted gold knowledge',r['integrity']['zero_unaccounted_gold_knowledge'] is True)
+ ok=all(z['status']=='PASS' for z in checks); out={'phase':'AD-V3-P01','status':'PASS' if ok else 'FAIL','checks':checks}
+ if x.json: print(json.dumps(out,ensure_ascii=False,indent=2))
+ else:
+  print('AD-V3-P01 VALIDATION:',out['status']);
+  for z in checks: print(f"[{z['status']}] {z['name']}" + (f" :: {z['detail']}" if z.get('detail') not in (None,True,False) else ''))
+ sys.exit(0 if ok else 2)
+if __name__=='__main__': main()

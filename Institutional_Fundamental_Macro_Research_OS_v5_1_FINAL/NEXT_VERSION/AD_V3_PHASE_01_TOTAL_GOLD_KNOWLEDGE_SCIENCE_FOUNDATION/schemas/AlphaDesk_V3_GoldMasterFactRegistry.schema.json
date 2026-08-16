@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AlphaDesk_V3_GoldMasterFactRegistry.schema.json",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "phase",
+    "subject",
+    "facts"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "phase": {
+      "const": "AD-V3-P01"
+    },
+    "subject": {
+      "const": "XAUUSD_GOLD"
+    },
+    "facts": {
+      "type": "array",
+      "minItems": 100,
+      "items": {
+        "type": "object",
+        "required": [
+          "fact_id",
+          "family",
+          "label",
+          "default_role",
+          "pressure_plane",
+          "causal_root_eligible",
+          "active_horizons",
+          "observability_class",
+          "source_cadence_class",
+          "discovery_terms",
+          "prohibited_interpretations",
+          "source_hints",
+          "notes",
+          "default_materiality"
+        ],
+        "properties": {
+          "fact_id": {
+            "type": "string",
+            "pattern": "^[A-Z0-9_]+$"
+          },
+          "family": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "default_role": {
+            "type": "string"
+          },
+          "pressure_plane": {
+            "enum": [
+              "NONE",
+              "CAUSAL_FUNDAMENTAL",
+              "REALIZED_TRANSACTION",
+              "MECHANICAL_FORCED",
+              "STRUCTURAL_CARRY"
+            ]
+          },
+          "causal_root_eligible": {
+            "type": "boolean"
+          },
+          "active_horizons": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "observability_class": {
+            "type": "string"
+          },
+          "source_cadence_class": {
+            "type": "string"
+          },
+          "discovery_terms": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "prohibited_interpretations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "source_hints": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "string"
+          },
+          "default_materiality": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

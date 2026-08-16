@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P01",
+  "explicit_authority_surfaces": [
+    {
+      "rel": "04 Asset Playbooks/03 Gold.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "10 Data Sources/05 Commodity Energy and Gold Sources.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "20 Commodities Physical Markets and Real Assets/08 Gold Monetary and Physical Demand System.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "23 Institutional Fundamental Decision OS/08 Dollar Real-Yield and Gold Playbook.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "49 Cross-Asset Relative Value and Trade Expression/06 Gold versus Real Yields Dollar and Miners.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "57 Intraday Fundamental Intelligence Playbooks/07 Gold Dollar Real-Yield Intraday Playbook.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "58 Multi-Day Fundamental Campaigns/07 Gold Macro Campaign.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "59 Asset-Specific Institutional Driver Books/05 Gold XAU and GC Institutional Driver Book.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "76 Institutional Fundamental Knowledge Canon Completion Program/31 Gold Silver and Monetary Metals.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "82 Canonical Institutional Fundamental Research Library/20 Gold Silver and Monetary Metals System/00 Gold Silver and Monetary Metals System.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "88 Hybrid Daily Session Event Fundamental State Engine/12 Gold Fast Medium and Slow Driver Stack.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "89 Fundamental Force Consumption Persistence and Asymmetry Calibration Engine/27 Gold Force Consumption and Persistence Book.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "90 Market Narrative Intelligence Engine/36 Gold Narrative Operating Book.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "93 Temporal Market Structure Timing and Calendar Intelligence Engine/16 LBMA Gold Benchmark Auction and Precious-Metals Clock.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "93 Temporal Market Structure Timing and Calendar Intelligence Engine/35 XAUUSD Timing Operating Book.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "97 Actual Flow and Transaction Pressure Science/17 Gold Physical OTC Location and Flow Intelligence.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "100 Six-Market D2 Fact Books and Production Shadow Engine/20 XAUUSD D2 Fact Book.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "101 Unified Causal Fuzzy Edge Integration and Permission Adjudication Engine/21 XAUUSD D3 Integration Book.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "102 Forward Validation Calibration Promotion and Scientific Governance Engine/24 XAUUSD D4 Validation Book.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "103 Cognitive Multi-Hypothesis Scenario and Adversarial Intelligence Engine/40 XAUUSD Cognitive Book.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_00_PRESSURE_PRICE_CONSTITUTION/00 Phase 00 Pressure Price Constitution MOC.md",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_02_DIRECTIONAL_PRESSURE_ENGINE/config/root_independence_policy.json",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_02_DIRECTIONAL_PRESSURE_ENGINE/config/pressure_classification_policy.json",
+      "required": true,
+      "kind": "GOVERNANCE_ONLY"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_05_GOLD_INTELLIGENCE_SPECIALIZATION/config/gold_pressure_root_registry.json",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_05_GOLD_INTELLIGENCE_SPECIALIZATION/config/gold_source_registry.json",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_05_GOLD_INTELLIGENCE_SPECIALIZATION/config/gold_observability_matrix.json",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_05_GOLD_INTELLIGENCE_SPECIALIZATION/config/gold_evidence_role_registry.json",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_05_GOLD_INTELLIGENCE_SPECIALIZATION/config/gold_transmission_pathway_registry.json",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/fact_observability_registry.json",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "100 Six-Market D2 Fact Books and Production Shadow Engine/config/six_market_observability_map.json",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "V21_3_FACT_OBSERVABILITY_AUTHORITY_MAP.yaml",
+      "required": true,
+      "kind": "FACT_OR_MIXED"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_06_RUN_MEMORY_UX_INTEGRATION/02 Canonical V2 Gold Run State Contract.md",
+      "required": true,
+      "kind": "GOVERNANCE_ONLY"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_09_SCIENTIFIC_LEARNING_EVOLUTION_GOVERNANCE/14 Gold Specific Learning Questions.md",
+      "required": true,
+      "kind": "GOVERNANCE_ONLY"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_13_CANONICAL_GOLD_CONTROL_ROOM_OUTPUT/00 Phase 13 Canonical Gold Control Room MOC.md",
+      "required": true,
+      "kind": "GOVERNANCE_ONLY"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_11_UNIFIED_COMMAND_RESEARCH_ORCHESTRATION/schemas/AlphaDesk_V2_P11_GoldPrecommit.schema.json",
+      "required": true,
+      "kind": "INTERFACE_CONTRACT_ONLY"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_11_UNIFIED_COMMAND_RESEARCH_ORCHESTRATION/schemas/AlphaDesk_V2_P11_GoldResponseObservation.schema.json",
+      "required": true,
+      "kind": "INTERFACE_CONTRACT_ONLY"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_10_INTEGRATED_SHADOW_COMMISSIONING_RC/schemas/AlphaDesk_V2_GoldShadowRunInput.schema.json",
+      "required": true,
+      "kind": "INTERFACE_CONTRACT_ONLY"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_10_INTEGRATED_SHADOW_COMMISSIONING_RC/schemas/AlphaDesk_V2_IntegratedGoldShadowRunReceipt.schema.json",
+      "required": true,
+      "kind": "INTERFACE_CONTRACT_ONLY"
+    },
+    {
+      "rel": "NEXT_VERSION/AD_V2_PHASE_13_CANONICAL_GOLD_CONTROL_ROOM_OUTPUT/schemas/AlphaDesk_V2_GoldControlRoom.schema.json",
+      "required": true,
+      "kind": "INTERFACE_CONTRACT_ONLY"
+    }
+  ],
+  "discovery_globs": [
+    "**/*Gold*.md",
+    "**/*XAU*.md",
+    "**/*gold*.json"
+  ],
+  "discovery_exclude_contains": [
+    "/tests/",
+    "/baseline/",
+    "/__pycache__/",
+    "/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/",
+    "/.alphalab_patch_backups/",
+    "/.git/"
+  ],
+  "classification_rule": "Every discovered pre-V3 Gold surface is ledgered with platform-invariant case-insensitive discovery. Explicit GOVERNANCE_ONLY surfaces may have zero fact matches. Explicit INTERFACE_CONTRACT_ONLY surfaces may have zero fact matches only when their exact schema hash and top-level field contract pass the audited Gold interface registry. Any other discovered/required Gold surface with zero registered fact matches is UNACCOUNTED and fails closed.",
+  "zero_unaccounted_definition": "All required authority surfaces exist; no non-governance/non-interface Gold surface is unmatched; every interface-only schema is exact-hash and field-contract audited; all registered facts are semantically classified. Registry entries intentionally extending V2/Vault science are permitted and do not pretend prior-Vault provenance. P02 live-source coverage remains out of scope.",
+  "discovery_case_policy": "CASE_INSENSITIVE_PLATFORM_INVARIANT",
+  "interface_contract_registry": "config/gold_interface_contract_registry.json",
+  "backup_surface_policy": "NONCANONICAL_BACKUP_AND_VCS_COPIES_EXCLUDED_FROM_KNOWLEDGE_DISCOVERY"
+}
