@@ -1,0 +1,214 @@
+{
+  "phase": "AD-V3-P03",
+  "controlled_count": 52,
+  "files": [
+    {
+      "path": "DEVELOPMENT_MANIFEST.json",
+      "sha256": "efd81c83e14606af1a3b3fd5446bdaa4857c1f4553f563d0570fa378c6edaa8a"
+    },
+    {
+      "path": "PHASE_03_HANDOFF.json",
+      "sha256": "a98a26150f3249f6533e2537416c3096d9f4e9cec096f26b7124d3780c9f4a06"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "sha256": "f4bffb0e135c537b04b9e27f69117c2bf5ee559631eaf802860212b632239b22"
+    },
+    {
+      "path": "config/causal_brain_policy.json",
+      "sha256": "b3e722c6bc39e262b428d7dddd3ca185c5203a7065f550bdd223edd3ff38a7c4"
+    },
+    {
+      "path": "config/consumption_persistence_policy.json",
+      "sha256": "078948b616224702f7cb95d94f152ec2ab2db9e7d62ae0b721d7baa5aa1f77af"
+    },
+    {
+      "path": "config/decision_policy.json",
+      "sha256": "1778852e3a97605ce57a52a2114f2fec9f9d15a5b9d15c988bd927026226fac8"
+    },
+    {
+      "path": "config/effect_rule_registry.json",
+      "sha256": "55c84afded44a984b0f5ec9b56f4ba137378b0a5322a89a5da6868eb4a4ea48a"
+    },
+    {
+      "path": "config/fact_reasoning_registry.json",
+      "sha256": "24b5f7183fc43477cc69914171ca1cb742e3ca87e96f8ae93b3c3a75f9df4dec"
+    },
+    {
+      "path": "config/model_completeness_policy.json",
+      "sha256": "6edd2ae173686285ac1a939244cd3d5e3530e8b45b6d33c8344ca708d28f7fc7"
+    },
+    {
+      "path": "config/pressure_plane_policy.json",
+      "sha256": "45b258f248a633e47185a29c586a997f21fd6c56f6a4ada7dbf083638e0ac038"
+    },
+    {
+      "path": "config/root_family_registry.json",
+      "sha256": "78f62b2c3088af495b8f1e0b610e2d9326508992886ca879cde2a889165bb9f9"
+    },
+    {
+      "path": "config/root_pathway_registry.json",
+      "sha256": "9bba062b008ce88463fbd66133c76f8b561efe56f6963f89664a1cb20126194e"
+    },
+    {
+      "path": "config/semantic_adjudication_policy.json",
+      "sha256": "097dfc66cc43cac3bd7c9f9ef2a8d8cfbe1d11d9dfe0fd7ed34f559c388fc962"
+    },
+    {
+      "path": "docs/00 Phase 03 Causal Brain MOC.md",
+      "sha256": "311896b1ae5ea5688e2bbf0af926eaef12df252e0e92179728bd0cf6f9ec1f95"
+    },
+    {
+      "path": "docs/01 Causal Ownership and Shock Routing.md",
+      "sha256": "1360c0f0a82660041ceece83eb035cd5b54b36083d09eea9469881cab6f85707"
+    },
+    {
+      "path": "docs/02 Four Pressure Planes.md",
+      "sha256": "007e0bc9d9d0615d51139dc0dc7c45ea5f7981a5531534be05c806c756149599"
+    },
+    {
+      "path": "docs/03 Fact Reasoning Ledger.md",
+      "sha256": "a33865cf133b4590a44d1f59e3d96b0aa56303b0d1199cb80c6e1ef63182605b"
+    },
+    {
+      "path": "docs/04 Semantic Adjudication Boundary.md",
+      "sha256": "e974706f8e2dcc3bb14774f64d9bd7776bbb58784d106665337d887880bf8890"
+    },
+    {
+      "path": "docs/05 Root Resolution and No Double Counting.md",
+      "sha256": "047e1780206d12051b3917cc4efe848ee33e18ba337b7c22b21c524103fb5562"
+    },
+    {
+      "path": "docs/06 Flow Positioning and Mechanics Separation.md",
+      "sha256": "0669fcb40f8a17fc491148c855fa57305f826ffb15980c6625835a1010495d5c"
+    },
+    {
+      "path": "docs/07 Price Transmission and Missing Driver Search.md",
+      "sha256": "0846e7c3dc46ccf8a8e6401f6975eaf81fe7a1322fd0fbf1680e59e5b3b91bb6"
+    },
+    {
+      "path": "docs/08 Consumption Persistence and Remaining Pressure.md",
+      "sha256": "f4c6503277d2892605f98ef022c085ca1ef4c9c3e50adab500c713010d695e08"
+    },
+    {
+      "path": "docs/09 Model Completeness and Known Gaps.md",
+      "sha256": "ed5a5f650feef11de986cf98f2605dbba3dd3c40eccd4871390f060999f2a7d4"
+    },
+    {
+      "path": "docs/10 Shadow Decision Contract.md",
+      "sha256": "06a82b6d84080f9949ef99330badfeebf7f341cf2d61f37231d9993d68012af3"
+    },
+    {
+      "path": "docs/11 P04 Handoff.md",
+      "sha256": "ac011d26906c793bbbf216ede4158b835f70bc6708d213e91378c45d5cd74274"
+    },
+    {
+      "path": "docs/12 REV 3.3.1 Exact Acquisition Run Handoff.md",
+      "sha256": "d8c824d3497bf079cbea81950bd208af0abb69ba8e36d2fd2b2cf45745111c0a"
+    },
+    {
+      "path": "docs/13 REV 3.3.2 Stock Impulse Horizon Semantics.md",
+      "sha256": "6649ef46939858d372a30fb4ae0636b6547040b1ab83f4999e7be6e4b4099cc5"
+    },
+    {
+      "path": "docs/14 REV 3.3.3 Horizon Eligibility and Flow Semantics.md",
+      "sha256": "72d2b91f90ee6f153e82b7891cca0ac97c02c274c6ecd505c6c9ad8f643965d3"
+    },
+    {
+      "path": "docs/15 REV 3.3.4 Semantic Evidence Packet.md",
+      "sha256": "be119687965bdd11fb3315d5a4a115c93eb71e2bb6695117b4a7bf8f5704e794"
+    },
+    {
+      "path": "docs/16 REV 3.3.5 Semantic Dependency Evidence Closure.md",
+      "sha256": "2ed706fdb85ebaa5552d150d8020c4d0379315b4bbdc624377870133c768209d"
+    },
+    {
+      "path": "docs/17 REV 3.3.6 Economic Comparison Anchor Integrity.md",
+      "sha256": "762b75c5b4f2be7120df744bb9fe5c807814dd7e8fa70749fb55882fa3e4b468"
+    },
+    {
+      "path": "runtime/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runtime/common.py",
+      "sha256": "09fba5639ba0cb284d95295c1b3bc4e058bff98a3444ac0abae69069d44ca996"
+    },
+    {
+      "path": "runtime/decision.py",
+      "sha256": "869e7f7578090c7d8fba51b603629ec022d58f5402c2cbafc37155760b583582"
+    },
+    {
+      "path": "runtime/engine.py",
+      "sha256": "bc9d9d34a4f193ffe8418a647e66000acc42ab98409b41ae14e8fc4c405bdb92"
+    },
+    {
+      "path": "runtime/hypotheses.py",
+      "sha256": "0adb6f262e1639e89fe64126278b3754c2a846a3f29b8e6069be599c0d1b2b29"
+    },
+    {
+      "path": "runtime/interpreter.py",
+      "sha256": "ceed2711e2c5c7c38ee2faf9111156431e1ebb4b99cd44d0345513e95f9242ba"
+    },
+    {
+      "path": "runtime/lifecycle.py",
+      "sha256": "6c99f93675391c93ae5478062c57eff30fa869c13e1a86563f65e28275577024"
+    },
+    {
+      "path": "runtime/loader.py",
+      "sha256": "0f76a38de7ab44d856b88d383a0d45cf4e5fc6cc005816d8b18f83d94d45d2b6"
+    },
+    {
+      "path": "runtime/planes.py",
+      "sha256": "3418ce3fed802b14bd254e5aed36c1c5c8cb52170dd0803dd99298c3680d4c67"
+    },
+    {
+      "path": "runtime/semantic_packet.py",
+      "sha256": "a0ff8030f0bd4f8ca8062d2a91e6f6b8103ee338713d8b88e280924e48f5fff5"
+    },
+    {
+      "path": "runtime/transmission.py",
+      "sha256": "7c44dec71a1264fd8b48773573cf2414d29977c2c466fbaca2f6269dfcaa764b"
+    },
+    {
+      "path": "schemas/AlphaDesk_V3_P03_CausalBrainReceipt.schema.json",
+      "sha256": "5531a4918074ac1395ade21882d5078c875bec74f94423478ebc02f1ba0ba822"
+    },
+    {
+      "path": "schemas/AlphaDesk_V3_P03_ReasoningLedger.schema.json",
+      "sha256": "8cbd05194af7dd4d0390b48b44fb9030e102d8722d0551a034d4600b563e7c97"
+    },
+    {
+      "path": "schemas/AlphaDesk_V3_P03_SemanticAdjudicationBundle.schema.json",
+      "sha256": "f3c9e2bcc628cd1983216345436ede4885694127728be2f440f1d5bff43b757e"
+    },
+    {
+      "path": "schemas/AlphaDesk_V3_P03_SemanticEvidencePacket.schema.json",
+      "sha256": "42dd8e2232ef5f7c4f83a2be709d4a676859be014775e5d1e12f054fecbeaebd"
+    },
+    {
+      "path": "schemas/AlphaDesk_V3_P03_ShadowDecision.schema.json",
+      "sha256": "c56e45448b6f39bb5aea6d153caccf3032e3cd024753d1852026873a92a74599"
+    },
+    {
+      "path": "tools/export_semantic_evidence_packet.py",
+      "sha256": "bf41c44d7cafb639a1b98fafc8c2f0908f4ae9b4211ce8dddf91f9ee7eb0e350"
+    },
+    {
+      "path": "tools/p03_status.py",
+      "sha256": "ba9fb5556d874b5cb591a7d9d236640a2091f324800fb184a4a342c0a92f300f"
+    },
+    {
+      "path": "tools/run_causal_brain.py",
+      "sha256": "8a53200be5c81ef8c694e8084456cb0b81b3aca36ededadad0e76b361ac20a44"
+    },
+    {
+      "path": "tools/run_phase03_acceptance.py",
+      "sha256": "8e254cd57654fda962eaff87cb0172e66d83fb36b1fa8d03b5ee43f97d6b8f3c"
+    },
+    {
+      "path": "tools/validate_phase03.py",
+      "sha256": "fc9fda52d1184bf2576b3631a5aff218e9e0945d1bdf339528a350dc0fb41bee"
+    }
+  ]
+}

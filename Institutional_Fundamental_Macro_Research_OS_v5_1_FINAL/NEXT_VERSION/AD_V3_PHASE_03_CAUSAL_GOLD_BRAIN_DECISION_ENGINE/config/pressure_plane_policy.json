@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P03",
+  "planes": {
+    "CAUSAL_FUNDAMENTAL": {
+      "authority": "PRIMARY_SHADOW_DIRECTION",
+      "aggregation_unit": "CANONICAL_ROOT_FAMILY",
+      "direction_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "UNKNOWN"
+      ],
+      "rule": "Independent root families only; pathways/events/positioning/flow/mechanics are non-additive."
+    },
+    "REALIZED_TRANSACTION": {
+      "authority": "CONFIRMATION_AND_FLOW_STATE",
+      "aggregation_unit": "TRANSACTION_CLUSTER",
+      "direction_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "UNKNOWN"
+      ],
+      "rule": "Identified ownership/transaction pressure only; not upstream causal ownership."
+    },
+    "MECHANICAL_FORCED": {
+      "authority": "PATH_AND_PERMISSION_CONSTRAINT",
+      "aggregation_unit": "MECHANICAL_CLUSTER",
+      "direction_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "UNKNOWN"
+      ],
+      "rule": "Can dominate short path but cannot rewrite causal fundamental plane."
+    },
+    "STRUCTURAL_CARRY": {
+      "authority": "SLOW_PRIOR_AND_HORIZON_CONTEXT",
+      "aggregation_unit": "CANONICAL_ROOT_FAMILY",
+      "direction_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "UNKNOWN"
+      ],
+      "rule": "No direct session direction authority."
+    }
+  },
+  "strength_enum": [
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "UNKNOWN"
+  ],
+  "no_numeric_pressure_score": true
+}

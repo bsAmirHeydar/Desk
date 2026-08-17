@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "direction_edge_permission_separate": true,
+  "price_cannot_create_direction": true,
+  "research_candidate_rules": {
+    "unknown_or_mixed_direction": "WAIT",
+    "low_or_invalid_completeness": "WAIT",
+    "high_missing_driver_risk": "WAIT",
+    "negative_transmission": "WAIT",
+    "strong_opposing_mechanics": "WAIT"
+  },
+  "official_permission_requires_production_promotion": true,
+  "trade_execution_authority": false
+}

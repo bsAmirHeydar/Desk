@@ -8,12 +8,12 @@
   "direction_authority": false,
   "trade_permission_authority": false,
   "p03_required_inputs": [
-    "fact observations",
-    "coverage receipt",
+    "fact observations with acquisition_run_id",
+    "coverage receipt with exact acquisition_run_id",
     "raw snapshot provenance",
     "P01 causal ontology and role registry"
   ],
   "hard_rule": "P03 analysis MUST NOT start when P02 coverage receipt is BLOCKED.",
-  "revision": "3.2.4",
-  "live_hardening_note": "REV 3.2.4 targets the final three VPN-era blockers using direct Census retail data, Fed H.10 INR, and current PIB gold-duty policy evidence without weakening proxy/legal-tariff boundaries."
+  "revision": "3.2.6",
+  "live_hardening_note": "REV 3.2.6 preserves exact-run handoff and adds fact-specific source integrity: GLD and IAU sponsor sources are isolated, and CFTC positioning data cannot masquerade as GC volume. UNKNOWN is preferred to cross-fact contamination."
 }

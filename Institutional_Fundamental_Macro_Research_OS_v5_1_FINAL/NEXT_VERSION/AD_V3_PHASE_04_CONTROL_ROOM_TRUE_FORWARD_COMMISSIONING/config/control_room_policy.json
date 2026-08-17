@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "default_language": "fa",
+  "direction_sparse": true,
+  "default_view": "DECISION_RELEVANT",
+  "technical_detail_collapsed_by_default": true,
+  "background": "WHITE",
+  "accent": "MUTED_GOLD",
+  "required_sections": [
+    "EXECUTIVE_STATE",
+    "WHAT_CHANGED",
+    "CAUSAL_ROOTS",
+    "PRESSURE_PLANES",
+    "PRICE_TRANSMISSION",
+    "LIFECYCLE",
+    "MODEL_QUALITY",
+    "TRUE_FORWARD",
+    "TECHNICAL_LINEAGE"
+  ],
+  "human_state_map": {
+    "BULLISH_GOLD": "به نفع طلا",
+    "BEARISH_GOLD": "به ضرر طلا",
+    "MIXED": "متناقض",
+    "UNKNOWN": "اثبات‌نشده",
+    "NEUTRAL": "بدون فشار تازه",
+    "NO_DIRECTION": "بدون جهت قابل اتکا",
+    "WAIT": "صبر / عدم اقدام",
+    "BUY_CANDIDATE": "کاندید خرید",
+    "SELL_CANDIDATE": "کاندید فروش",
+    "NO_TRADE_CANDIDATE": "عدم معامله"
+  }
+}

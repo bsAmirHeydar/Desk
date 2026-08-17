@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P03",
+  "consumption_components": [
+    "information_absorption",
+    "expectations_repricing",
+    "flow_propagation",
+    "position_adjustment",
+    "narrative_saturation",
+    "time_decay",
+    "reinforcement",
+    "contradiction"
+  ],
+  "component_states": [
+    "PRESENT",
+    "PARTIAL",
+    "ABSENT",
+    "CONTRADICTED",
+    "UNKNOWN"
+  ],
+  "persistence_states": [
+    "INTRADAY",
+    "SESSION",
+    "MULTI_DAY",
+    "SWING",
+    "CYCLICAL",
+    "STRUCTURAL",
+    "UNKNOWN"
+  ],
+  "rules": [
+    "No scalar consumption percentage before calibration.",
+    "Consumption is driver-specific, not inferred from Gold price distance moved.",
+    "Persistence is driver-specific and separate from data freshness."
+  ]
+}

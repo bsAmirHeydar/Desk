@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "precommit_required_before_outcome": true,
+  "outcome_rewrite_forbidden": true,
+  "point_in_time_capsule_required": true,
+  "sample_states": [
+    {
+      "min": 0,
+      "max": 4,
+      "state": "UNCALIBRATED"
+    },
+    {
+      "min": 5,
+      "max": 19,
+      "state": "INSUFFICIENT"
+    },
+    {
+      "min": 20,
+      "max": 49,
+      "state": "EARLY"
+    },
+    {
+      "min": 50,
+      "max": null,
+      "state": "PROVISIONAL"
+    }
+  ],
+  "numeric_confidence_from_sample_forbidden": true,
+  "direction_and_permission_calibration_separate": true,
+  "unevaluable_outcomes_remain_unevaluable": true
+}

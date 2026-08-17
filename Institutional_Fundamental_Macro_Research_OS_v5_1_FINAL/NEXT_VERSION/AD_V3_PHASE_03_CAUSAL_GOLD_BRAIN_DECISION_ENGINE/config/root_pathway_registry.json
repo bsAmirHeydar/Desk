@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P03",
+  "paths": {
+    "US_POLICY_EXPECTATIONS": {
+      "bullish_signature": [
+        "FED_POLICY_PATH_PRICING lower/less hawkish",
+        "UST_2Y_NOMINAL_YIELD lower",
+        "real-yield pressure easing",
+        "USD complex softer if transmission intact"
+      ],
+      "bearish_signature": [
+        "FED_POLICY_PATH_PRICING higher/more hawkish",
+        "UST_2Y_NOMINAL_YIELD higher",
+        "real-yield pressure firmer",
+        "USD complex firmer if transmission intact"
+      ],
+      "rivals": [
+        "fiscal term-premium shock",
+        "oil/inflation shock",
+        "autonomous USD shock"
+      ]
+    },
+    "REAL_RATE_OPPORTUNITY_COST": {
+      "bullish_signature": [
+        "real yields falling or negative opportunity cost"
+      ],
+      "bearish_signature": [
+        "real yields rising or positive opportunity cost"
+      ],
+      "rivals": [
+        "fiscal credibility can lift nominal yields without identical Gold meaning"
+      ]
+    },
+    "USD_AUTONOMOUS": {
+      "bullish_signature": [
+        "autonomous USD weakening"
+      ],
+      "bearish_signature": [
+        "autonomous USD strengthening"
+      ],
+      "rivals": [
+        "USD move fully explained by policy/rates is pathway, not autonomous root"
+      ]
+    },
+    "FISCAL_SOVEREIGN_MONETARY_CREDIBILITY": {
+      "bullish_signature": [
+        "credibility stress / term-premium risk that raises monetary/fiscal hedge demand"
+      ],
+      "bearish_signature": [
+        "credibility repair / lower fiscal risk premium"
+      ],
+      "rivals": [
+        "hawkish policy-driven yield rise must not be misowned as fiscal credibility"
+      ]
+    },
+    "OFFICIAL_SECTOR_DEMAND": {
+      "bullish_signature": [
+        "net official accumulation / reserve diversification"
+      ],
+      "bearish_signature": [
+        "net official liquidation"
+      ],
+      "rivals": [
+        "monthly/quarterly purchases are not intraday client flow"
+      ]
+    },
+    "PHYSICAL_REGIONAL_DEMAND_BALANCE": {
+      "bullish_signature": [
+        "regional premiums/demand balance tightening"
+      ],
+      "bearish_signature": [
+        "discounts/demand weakness / surplus"
+      ],
+      "rivals": [
+        "ETF/futures demand is not physical demand"
+      ]
+    },
+    "PHYSICAL_SUPPLY_RECYCLING_HEDGING": {
+      "bullish_signature": [
+        "supply disruption / lower recycling / producer dehedging that tightens supply"
+      ],
+      "bearish_signature": [
+        "higher recycling/mine supply/producer hedging supply"
+      ],
+      "rivals": [
+        "slow supply is horizon-conditioned"
+      ]
+    },
+    "GEOPOLITICAL_INSURANCE_RISK": {
+      "bullish_signature": [
+        "insurance/safe-haven demand"
+      ],
+      "bearish_signature": [
+        "insurance demand unwinds"
+      ],
+      "rivals": [
+        "oil inflation can create an opposing real-rate channel",
+        "funding stress can force cash liquidation"
+      ]
+    },
+    "FUNDING_COLLATERAL_STRESS": {
+      "bullish_signature": [
+        "monetary hedge/insurance demand dominates"
+      ],
+      "bearish_signature": [
+        "forced cash liquidation dominates"
+      ],
+      "rivals": [
+        "funding stress is intrinsically two-sided and may remain MIXED"
+      ]
+    },
+    "GLOBAL_MONETARY_LIQUIDITY": {
+      "bullish_signature": [
+        "global liquidity easing/expansion"
+      ],
+      "bearish_signature": [
+        "global liquidity tightening/contraction"
+      ],
+      "rivals": [
+        "country-specific policy may not transmit globally"
+      ]
+    },
+    "INVESTMENT_ALLOCATION_DEMAND": {
+      "bullish_signature": [
+        "fresh allocation demand into Gold"
+      ],
+      "bearish_signature": [
+        "allocation outflows from Gold"
+      ],
+      "rivals": [
+        "AUM change is not flow unless ownership change is identified"
+      ]
+    },
+    "INFLATION_CREDIBILITY_HEDGE_DEMAND": {
+      "bullish_signature": [
+        "credibility hedge demand rises beyond simple nominal inflation"
+      ],
+      "bearish_signature": [
+        "credibility hedge demand fades"
+      ],
+      "rivals": [
+        "higher inflation can also raise policy/real-rate pressure"
+      ]
+    }
+  }
+}

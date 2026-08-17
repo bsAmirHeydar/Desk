@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P03",
+  "version": "3.3.0-causal-brain",
+  "deployment": "SHADOW_ONLY",
+  "subject": "XAUUSD",
+  "mission": "Convert P02 observations into a causal, non-double-counted, horizon-aware Gold research decision state without allowing price, pathways, positioning, flow, or mechanics to rewrite upstream causal pressure.",
+  "hard_rules": [
+    "P02 coverage must be non-BLOCKED before analysis may start.",
+    "All 192 P01 facts must be present in the reasoning ledger; unresolved is valid and is never silently neutral.",
+    "Only causal-root-eligible facts may create additive CAUSAL_FUNDAMENTAL contributions.",
+    "Every additive contribution has exactly one canonical root-family owner.",
+    "Transmission pathways corroborate or contradict non-additively and never become duplicate root votes.",
+    "Event shocks do not directly vote Gold direction; they operate through identified root/pathway ownership.",
+    "Positioning is state/vulnerability, not live flow and not Direction authority.",
+    "Realized transaction flow has its own plane and cannot retroactively create an upstream cause.",
+    "Mechanical/forced pressure has its own plane and cannot rewrite causal fundamental pressure.",
+    "Structural carry conditions slower priors but has no direct session Direction authority.",
+    "Target price can change transmission, model completeness, missing-driver risk, and research permission constraints only.",
+    "No 0-100 pressure/confidence/consumption scores are user-facing or decision-authoritative before true-forward calibration.",
+    "Proxy evidence remains PROXY; UNKNOWN/PAID/PRIVATE states cap completeness and are never normalized away.",
+    "Unstructured source text is not keyword-sentiment scored. It remains unresolved unless a certified semantic adjudication references the exact observation.",
+    "P03 produces SHADOW direction/action candidates only; official V3 production permission remains false until P04 promotion.",
+    "Unknown, paid, private, proxy, and unresolved evidence is never renormalized away into the observed subset."
+  ],
+  "authority": {
+    "shadow_direction_candidate": true,
+    "production_direction_authority": false,
+    "production_trade_permission_authority": false,
+    "v2_mutation_allowed": false,
+    "p01_mutation_allowed": false,
+    "p02_mutation_allowed": false
+  }
+}

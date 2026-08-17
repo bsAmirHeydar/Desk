@@ -180,9 +180,10 @@ def _apply_lineage(observations, data_root, smap):
     return observations
 
 def execute(phase_root:str|pathlib.Path, horizon='ALL', as_of_utc=None, data_root=None, fixture_dir=None, no_network=False):
-    root=pathlib.Path(phase_root); as_of=as_of_utc or iso(); retrieved=iso()
+    root=pathlib.Path(phase_root); as_of=as_of_utc or iso(); run_started_at=iso(); retrieved=run_started_at
     facts=load_json(root/'config/fact_acquisition_registry.json'); sources=load_json(root/'config/source_contract_registry.json'); policy=load_json(root/'config/acquisition_policy.json')
     fmap=_fact_map(facts); smap=_source_map(sources); plan=build_plan(facts,sources,horizon,as_of)
+    acquisition_run_id=stable_id('P02RUN',{'plan_id':plan['plan_id'],'as_of':as_of,'horizon':horizon,'started_at':run_started_at})
     source_attempts={}; client=PublicHttpClient(policy)
     planned=list(plan['source_ids_to_attempt'])
     # Fixtures intentionally execute per source contract. Live network mode deduplicates identical endpoints.
@@ -253,6 +254,11 @@ def execute(phase_root:str|pathlib.Path, horizon='ALL', as_of_utc=None, data_roo
         if fact['acquisition_mode'] in ('DERIVED_FROM_FACTS','DERIVED_FROM_STORE','CALENDAR_DERIVED'):
             observations.append(_derive_fact(fact,observations,retrieved))
     observations=_apply_lineage(observations,data_root,smap)
+    # Bind every observation to this exact acquisition run. P03 must never infer
+    # current-run membership from a receipt timestamp alone.
+    for o in observations:
+        o['acquisition_run_id']=acquisition_run_id
+    observation_cutoff_utc=max([o.get('retrieved_at') or run_started_at for o in observations] or [run_started_at])
     # Coverage gate.
     obs_by={o['fact_id']:o for o in observations}
     mandatory=[x for x in plan['fact_items'] if x['applicable'] and x['must_attempt']]
@@ -269,8 +275,10 @@ def execute(phase_root:str|pathlib.Path, horizon='ALL', as_of_utc=None, data_roo
     degraded=(not blocked) and bool(private_gaps or paid_gaps or public_provider_gaps or any(o['epistemic_state'] in ('PUBLIC_PROXY','UNKNOWN_TRUE') for o in observations))
     run_state='BLOCKED' if blocked else ('DEGRADED' if degraded else 'PASS')
     attempted_ids=[s for s,a in source_attempts.items() if a.get('attempted')]
+    run_completed_at=iso()
     receipt={
-      'record_type':'AD_V3_P02_COVERAGE_RECEIPT','receipt_id':stable_id('P02COV',{'plan_id':plan['plan_id'],'retrieved_at':retrieved}),'phase':'AD-V3-P02','subject':'XAUUSD','as_of_utc':as_of,'generated_at_utc':retrieved,'horizon':horizon,
+      'record_type':'AD_V3_P02_COVERAGE_RECEIPT','receipt_id':stable_id('P02COV',{'plan_id':plan['plan_id'],'acquisition_run_id':acquisition_run_id,'completed_at':run_completed_at}),'phase':'AD-V3-P02','subject':'XAUUSD','as_of_utc':as_of,'generated_at_utc':run_completed_at,'horizon':horizon,
+      'acquisition_run_id':acquisition_run_id,'acquisition_started_at_utc':run_started_at,'acquisition_completed_at_utc':run_completed_at,'observation_cutoff_utc':observation_cutoff_utc,
       'analysis_admission':run_state,'analysis_may_start':not blocked,'direction_authority_granted':False,'trade_permission_authority_granted':False,
       'fact_counts':{'p01_total':facts['contract_count'],'applicable':sum(1 for x in plan['fact_items'] if x['applicable']),'mandatory_attempt':len(mandatory),'observations':len(observations),'private_gaps':len(private_gaps),'paid_gaps':len(paid_gaps),'provider_gaps':len(public_provider_gaps),'unattempted_blocking':len(unattempted),'failed_blocking':len(failures)},
       'source_counts':{'planned_unique':len(plan['source_ids_to_attempt']),'attempted_unique':len(attempted_ids),'unique_endpoints':len({(a.get('url') or a.get('source_id')) for a in source_attempts.values()}),'deduplicated':True},
@@ -280,6 +288,11 @@ def execute(phase_root:str|pathlib.Path, horizon='ALL', as_of_utc=None, data_roo
     }
     if data_root:
         dr=pathlib.Path(data_root); (dr/'receipts').mkdir(parents=True,exist_ok=True); (dr/'observations').mkdir(parents=True,exist_ok=True); (dr/'plans').mkdir(parents=True,exist_ok=True)
-        write_json(dr/'plans'/(plan['plan_id']+'.json'),plan); write_json(dr/'receipts'/(receipt['receipt_id']+'.json'),receipt)
+        plan_out=dict(plan); plan_out['acquisition_run_id']=acquisition_run_id; plan_out['acquisition_started_at_utc']=run_started_at
+        write_json(dr/'plans'/(plan['plan_id']+'.json'),plan_out)
+        # Atomic handoff discipline: persist the complete observation set first,
+        # then publish the coverage receipt last. A visible receipt therefore
+        # certifies that the run's observation log has already been appended.
         for o in observations: append_jsonl(dr/'observations'/'gold_fact_observations.jsonl',o)
+        write_json(dr/'receipts'/(receipt['receipt_id']+'.json'),receipt)
     return {'plan':plan,'observations':observations,'coverage_receipt':receipt}

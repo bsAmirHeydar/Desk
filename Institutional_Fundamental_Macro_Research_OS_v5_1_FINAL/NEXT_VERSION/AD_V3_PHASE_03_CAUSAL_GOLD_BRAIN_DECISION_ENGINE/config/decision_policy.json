@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P03",
+  "deployment": "SHADOW_ONLY",
+  "direction_candidate_source": "CAUSAL_FUNDAMENTAL_PLANE_ONLY",
+  "structural_carry_role": "CONDITION_SLOWER_PRIOR_NOT_SESSION_DIRECTION",
+  "transaction_role": "CONFIRM_OR_CONTRADICT",
+  "mechanical_role": "SHORT_PATH_AND_ACTION_CONSTRAINT",
+  "candidate_actions": [
+    "BUY_CANDIDATE",
+    "SELL_CANDIDATE",
+    "WAIT",
+    "NO_TRADE_CANDIDATE"
+  ],
+  "rules": [
+    "MIXED or UNKNOWN causal plane => WAIT.",
+    "LOW/INVALID model completeness => WAIT.",
+    "HIGH missing-driver risk => WAIT.",
+    "NEGATIVE price transmission => WAIT while causal pressure remains unchanged.",
+    "Strong opposing transaction/mechanical plane => WAIT.",
+    "Only when causal direction is clear and constraints are non-blocking may BUY_CANDIDATE/SELL_CANDIDATE be emitted.",
+    "Candidate action is shadow research output, never production trade permission."
+  ],
+  "production_permission_authority": false
+}

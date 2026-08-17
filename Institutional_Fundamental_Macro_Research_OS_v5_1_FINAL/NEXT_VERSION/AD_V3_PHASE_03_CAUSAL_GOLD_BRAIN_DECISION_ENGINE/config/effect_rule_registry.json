@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P03",
+  "rules": {
+    "NO_AUTOMATIC_DIRECTION": {
+      "description": "Account the fact but do not infer Gold direction automatically."
+    },
+    "SEMANTIC_ADJUDICATION_REQUIRED": {
+      "description": "Unstructured/causal semantic meaning requires a certified adjudication referencing the exact observation."
+    },
+    "REAL_YIELD_STOCK_AND_IMPULSE": {
+      "description": "Positive real yield is an opportunity-cost headwind; negative is support. Falling real yield is bullish impulse; rising is bearish impulse. Conflicting stock/impulse => MIXED. No magnitude score."
+    },
+    "FED_POLICY_CURVE_IMPULSE": {
+      "description": "Compare structured implied average rate curve with prior observation; lower path bullish Gold, higher path bearish. Do not fabricate meeting probabilities."
+    },
+    "USD_INDEX_IMPULSE_NONADDITIVE": {
+      "description": "Rising USD index is bearish transmission; falling is bullish transmission. Non-additive unless a separately identified autonomous USD shock owns the move."
+    },
+    "PRICE_RESPONSE_DELTA_ONLY": {
+      "description": "Price sign change is downstream transmission only and cannot change causal root polarity."
+    },
+    "POSITIVE_FLOW_DIRECTION": {
+      "description": "Direction requires explicit signed net/change semantics or a declared level delta. A positive gross level (withdrawals, holdings, imports, deliveries, activity) is never bullish merely because it is above zero."
+    },
+    "POSITIVE_OFFICIAL_DEMAND": {
+      "description": "Positive net official purchases are bullish structural carry; negative net sales bearish structural carry. Not intraday flow."
+    },
+    "SUPPLY_CHANGE_INVERSE": {
+      "description": "Higher physical supply/recycling/hedging supply is bearish supply impulse; lower is bullish. Slow series are horizon-conditioned."
+    },
+    "CFTC_POSITIONING_CONTEXT": {
+      "description": "Infer long/short and change in net positioning only. Never treat as live flow or causal direction."
+    },
+    "MECHANICAL_SEMANTIC": {
+      "description": "Mechanical force direction requires explicit structure/semantic evidence; it lives only in MECHANICAL_FORCED plane."
+    },
+    "EVENT_SHOCK_NONADDITIVE": {
+      "description": "Event shock may activate/reroute roots but never directly votes Gold direction."
+    },
+    "STRUCTURAL_PRIOR_ONLY": {
+      "description": "Structural fact informs STRUCTURAL_CARRY and matching root prior; direct session direction authority false."
+    }
+  }
+}

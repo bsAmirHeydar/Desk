@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P03 Semantic Adjudication Bundle",
+  "type": "object",
+  "required": [
+    "record_type",
+    "subject",
+    "items"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P03_SEMANTIC_ADJUDICATION_BUNDLE"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "fact_id",
+          "observation_id",
+          "effect_on_gold",
+          "effect_kind",
+          "strength",
+          "is_additive",
+          "rationale_summary"
+        ],
+        "properties": {
+          "fact_id": {
+            "type": "string"
+          },
+          "observation_id": {
+            "type": "string"
+          },
+          "effect_on_gold": {
+            "enum": [
+              "BULLISH_GOLD",
+              "BEARISH_GOLD",
+              "NEUTRAL",
+              "MIXED",
+              "NO_DIRECTION",
+              "UNKNOWN"
+            ]
+          },
+          "effect_kind": {
+            "enum": [
+              "STOCK",
+              "IMPULSE",
+              "SHOCK",
+              "CONFIRMATION",
+              "VULNERABILITY",
+              "CONTEXT"
+            ]
+          },
+          "strength": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "UNKNOWN"
+            ]
+          },
+          "is_additive": {
+            "type": "boolean"
+          },
+          "causal_owner_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "rationale_summary": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

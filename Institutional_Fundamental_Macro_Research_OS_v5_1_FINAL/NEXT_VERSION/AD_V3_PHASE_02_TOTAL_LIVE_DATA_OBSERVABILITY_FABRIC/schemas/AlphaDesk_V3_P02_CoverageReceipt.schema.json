@@ -8,7 +8,12 @@
     "analysis_may_start",
     "fact_counts",
     "source_counts",
-    "zero_silent_omission"
+    "zero_silent_omission",
+    "acquisition_run_id",
+    "acquisition_started_at_utc",
+    "acquisition_completed_at_utc",
+    "observation_cutoff_utc",
+    "generated_at_utc"
   ],
   "properties": {
     "analysis_admission": {
@@ -29,6 +34,21 @@
     },
     "trade_permission_authority_granted": {
       "const": false
+    },
+    "acquisition_run_id": {
+      "type": "string"
+    },
+    "acquisition_started_at_utc": {
+      "type": "string"
+    },
+    "acquisition_completed_at_utc": {
+      "type": "string"
+    },
+    "observation_cutoff_utc": {
+      "type": "string"
+    },
+    "generated_at_utc": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P03",
+  "completeness_states": [
+    "HIGH",
+    "MEDIUM",
+    "LOW",
+    "INVALID"
+  ],
+  "rules": [
+    "BLOCKED P02 coverage => INVALID and no analysis.",
+    "Known private/paid/provider gaps cap completeness at MEDIUM in the free/public configuration.",
+    "Unresolved material root families reduce completeness; they are not neutralized.",
+    "Negative price transmission never changes causal pressure; it raises missing-driver risk and can reduce completeness.",
+    "HIGH requires non-blocked coverage, no material known observability cap, and broad root semantic resolution.",
+    "Thresholds used to categorize coverage are governance thresholds, not probabilities or market scores."
+  ],
+  "root_resolution_thresholds": {
+    "LOW_if_resolved_root_families_less_than": 4,
+    "MEDIUM_if_at_least": 4,
+    "HIGH_if_at_least": 10
+  },
+  "missing_driver_states": [
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "UNKNOWN"
+  ]
+}

@@ -25,3 +25,16 @@ Adds mandatory live-data and observability fabric for the complete P01 Gold fact
 
 ## REV 3.2.4
 Closes the final three blockers observed in the first VPN live run with direct Census retail, Fed H.10 INR, and proxy-disciplined current India duty policy evidence. Fail-closed coverage rules are unchanged.
+
+## REV 3.2.5
+- Added exact `acquisition_run_id` binding to all observations and receipts.
+- Receipt publication now occurs after observation persistence.
+- Added acquisition start/completion and observation cutoff timestamps.
+- Added temporal handoff acceptance gates for P03.
+
+## REV 3.2.6 — Fact-Specific Source Integrity
+
+- isolates GLD and IAU sponsor evidence;
+- removes CFTC COT as a GC volume fallback;
+- deliberately avoids global source-quality voting where fact-specific precedence carries semantic policy;
+- prefers explicit UNKNOWN/degraded coverage over cross-fact or wrong-market evidence.

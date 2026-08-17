@@ -21,7 +21,14 @@
     "proxy-preserving China/India fallbacks",
     "direct Census retail-sales current release parsing",
     "Federal Reserve H.10 Indian Rupee parsing for India affordability proxy",
-    "current Government of India gold-duty policy proxy with legal-rate boundary"
+    "current Government of India gold-duty policy proxy with legal-rate boundary",
+    "exact acquisition-run observation binding",
+    "receipt-after-observation atomic handoff",
+    "temporal cutoff integrity for P03",
+    "strict GLD versus IAU sponsor binding",
+    "GC volume CFTC contamination guard",
+    "strict fact-specific ETF sponsor binding",
+    "semantic fallback prefers UNKNOWN over wrong-market evidence"
   ],
   "forbidden": [
     "Direction authority",
@@ -30,5 +37,5 @@
     "silent source omission",
     "proxy-closes-private-gap"
   ],
-  "revision": "3.2.4"
+  "revision": "3.2.6"
 }

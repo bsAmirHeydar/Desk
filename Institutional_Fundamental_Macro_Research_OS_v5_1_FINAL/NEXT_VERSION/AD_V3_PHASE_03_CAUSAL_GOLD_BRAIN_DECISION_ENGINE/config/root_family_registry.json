@@ -1,0 +1,309 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P03",
+  "root_count": 12,
+  "roots": [
+    {
+      "root_id": "US_POLICY_EXPECTATIONS",
+      "plane": "CAUSAL_FUNDAMENTAL",
+      "independent_vote_unit": true,
+      "session_direction_authority": true,
+      "facts": [
+        "FOMC_POLICY_STANCE",
+        "FED_POLICY_PATH_PRICING",
+        "FED_REACTION_FUNCTION"
+      ],
+      "root_state_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "NO_CLEAR_SIGNAL",
+        "UNRESOLVED"
+      ],
+      "strength_enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "ownership_rule": "Facts within this root corroborate/contradict one root state; they are not separate additive root votes."
+    },
+    {
+      "root_id": "REAL_RATE_OPPORTUNITY_COST",
+      "plane": "CAUSAL_FUNDAMENTAL",
+      "independent_vote_unit": true,
+      "session_direction_authority": true,
+      "facts": [
+        "UST_5Y_REAL_YIELD",
+        "UST_10Y_REAL_YIELD",
+        "UST_30Y_REAL_YIELD"
+      ],
+      "root_state_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "NO_CLEAR_SIGNAL",
+        "UNRESOLVED"
+      ],
+      "strength_enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "ownership_rule": "Facts within this root corroborate/contradict one root state; they are not separate additive root votes."
+    },
+    {
+      "root_id": "USD_AUTONOMOUS",
+      "plane": "CAUSAL_FUNDAMENTAL",
+      "independent_vote_unit": true,
+      "session_direction_authority": true,
+      "facts": [
+        "USD_AUTONOMOUS_SHOCK"
+      ],
+      "root_state_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "NO_CLEAR_SIGNAL",
+        "UNRESOLVED"
+      ],
+      "strength_enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "ownership_rule": "Facts within this root corroborate/contradict one root state; they are not separate additive root votes."
+    },
+    {
+      "root_id": "FISCAL_SOVEREIGN_MONETARY_CREDIBILITY",
+      "plane": "CAUSAL_FUNDAMENTAL",
+      "independent_vote_unit": true,
+      "session_direction_authority": true,
+      "facts": [
+        "UST_TERM_PREMIUM",
+        "UST_SUPPLY_ISSUANCE",
+        "US_FISCAL_DEFICIT_DEBT",
+        "MONETARY_FISCAL_CREDIBILITY"
+      ],
+      "root_state_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "NO_CLEAR_SIGNAL",
+        "UNRESOLVED"
+      ],
+      "strength_enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "ownership_rule": "Facts within this root corroborate/contradict one root state; they are not separate additive root votes."
+    },
+    {
+      "root_id": "OFFICIAL_SECTOR_DEMAND",
+      "plane": "CAUSAL_FUNDAMENTAL",
+      "independent_vote_unit": true,
+      "session_direction_authority": true,
+      "facts": [
+        "GLOBAL_RESERVE_COMPOSITION",
+        "CENTRAL_BANK_NET_GOLD_PURCHASES",
+        "PBOC_GOLD_RESERVES_PURCHASES",
+        "RBI_GOLD_RESERVES_PURCHASES",
+        "OTHER_CENTRAL_BANK_GOLD_RESERVES",
+        "RESERVE_DIVERSIFICATION_GOLD"
+      ],
+      "root_state_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "NO_CLEAR_SIGNAL",
+        "UNRESOLVED"
+      ],
+      "strength_enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "ownership_rule": "Facts within this root corroborate/contradict one root state; they are not separate additive root votes."
+    },
+    {
+      "root_id": "PHYSICAL_REGIONAL_DEMAND_BALANCE",
+      "plane": "CAUSAL_FUNDAMENTAL",
+      "independent_vote_unit": true,
+      "session_direction_authority": true,
+      "facts": [
+        "CHINA_JEWELLERY_DEMAND",
+        "CHINA_BAR_COIN_DEMAND",
+        "CHINA_PHYSICAL_BALANCE",
+        "INDIA_JEWELLERY_DEMAND",
+        "INDIA_BAR_COIN_DEMAND",
+        "INDIA_PHYSICAL_BALANCE",
+        "GLOBAL_JEWELLERY_DEMAND",
+        "GLOBAL_BAR_COIN_DEMAND",
+        "GLOBAL_PHYSICAL_BALANCE"
+      ],
+      "root_state_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "NO_CLEAR_SIGNAL",
+        "UNRESOLVED"
+      ],
+      "strength_enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "ownership_rule": "Facts within this root corroborate/contradict one root state; they are not separate additive root votes."
+    },
+    {
+      "root_id": "PHYSICAL_SUPPLY_RECYCLING_HEDGING",
+      "plane": "CAUSAL_FUNDAMENTAL",
+      "independent_vote_unit": true,
+      "session_direction_authority": true,
+      "facts": [
+        "INDIA_RECYCLING_SUPPLY",
+        "GOLD_MINE_PRODUCTION",
+        "GOLD_RECYCLING_SUPPLY",
+        "GOLD_PRODUCER_HEDGING",
+        "GOLD_MINING_COST_CURVE"
+      ],
+      "root_state_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "NO_CLEAR_SIGNAL",
+        "UNRESOLVED"
+      ],
+      "strength_enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "ownership_rule": "Facts within this root corroborate/contradict one root state; they are not separate additive root votes."
+    },
+    {
+      "root_id": "GEOPOLITICAL_INSURANCE_RISK",
+      "plane": "CAUSAL_FUNDAMENTAL",
+      "independent_vote_unit": true,
+      "session_direction_authority": true,
+      "facts": [
+        "GEOPOLITICAL_INSURANCE_DEMAND"
+      ],
+      "root_state_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "NO_CLEAR_SIGNAL",
+        "UNRESOLVED"
+      ],
+      "strength_enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "ownership_rule": "Facts within this root corroborate/contradict one root state; they are not separate additive root votes."
+    },
+    {
+      "root_id": "FUNDING_COLLATERAL_STRESS",
+      "plane": "CAUSAL_FUNDAMENTAL",
+      "independent_vote_unit": true,
+      "session_direction_authority": true,
+      "facts": [
+        "USD_FUNDING_STRESS"
+      ],
+      "root_state_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "NO_CLEAR_SIGNAL",
+        "UNRESOLVED"
+      ],
+      "strength_enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "ownership_rule": "Facts within this root corroborate/contradict one root state; they are not separate additive root votes."
+    },
+    {
+      "root_id": "GLOBAL_MONETARY_LIQUIDITY",
+      "plane": "CAUSAL_FUNDAMENTAL",
+      "independent_vote_unit": true,
+      "session_direction_authority": true,
+      "facts": [
+        "FED_BALANCE_SHEET_QT_QE",
+        "PBOC_POLICY_LIQUIDITY",
+        "GLOBAL_CENTRAL_BANK_LIQUIDITY"
+      ],
+      "root_state_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "NO_CLEAR_SIGNAL",
+        "UNRESOLVED"
+      ],
+      "strength_enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "ownership_rule": "Facts within this root corroborate/contradict one root state; they are not separate additive root votes."
+    },
+    {
+      "root_id": "INVESTMENT_ALLOCATION_DEMAND",
+      "plane": "CAUSAL_FUNDAMENTAL",
+      "independent_vote_unit": true,
+      "session_direction_authority": true,
+      "facts": [
+        "GOLD_INVESTMENT_ALLOCATION_DEMAND"
+      ],
+      "root_state_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "NO_CLEAR_SIGNAL",
+        "UNRESOLVED"
+      ],
+      "strength_enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "ownership_rule": "Facts within this root corroborate/contradict one root state; they are not separate additive root votes."
+    },
+    {
+      "root_id": "INFLATION_CREDIBILITY_HEDGE_DEMAND",
+      "plane": "CAUSAL_FUNDAMENTAL",
+      "independent_vote_unit": true,
+      "session_direction_authority": true,
+      "facts": [
+        "INFLATION_CREDIBILITY_HEDGE_STATE"
+      ],
+      "root_state_enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "NO_CLEAR_SIGNAL",
+        "UNRESOLVED"
+      ],
+      "strength_enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "ownership_rule": "Facts within this root corroborate/contradict one root state; they are not separate additive root votes."
+    }
+  ]
+}

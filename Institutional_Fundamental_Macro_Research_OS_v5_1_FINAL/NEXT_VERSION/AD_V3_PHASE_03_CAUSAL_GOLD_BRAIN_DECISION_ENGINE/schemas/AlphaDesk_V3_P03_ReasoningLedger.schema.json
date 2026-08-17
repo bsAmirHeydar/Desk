@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P03 Reasoning Ledger",
+  "type": "object",
+  "required": [
+    "record_type",
+    "fact_count",
+    "rows"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P03_REASONING_LEDGER"
+    },
+    "fact_count": {
+      "const": 192
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 192,
+      "maxItems": 192
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P03 Shadow Decision",
+  "type": "object",
+  "required": [
+    "direction_candidate",
+    "action_candidate",
+    "official_permission"
+  ],
+  "properties": {
+    "direction_candidate": {
+      "enum": [
+        "BULLISH_GOLD",
+        "BEARISH_GOLD",
+        "MIXED",
+        "UNKNOWN"
+      ]
+    },
+    "action_candidate": {
+      "enum": [
+        "BUY_CANDIDATE",
+        "SELL_CANDIDATE",
+        "WAIT",
+        "NO_TRADE_CANDIDATE"
+      ]
+    },
+    "official_permission": {
+      "const": "NO_AUTHORITY"
+    }
+  }
+}

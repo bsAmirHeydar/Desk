@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P04 Run Capsule",
+  "type": "object",
+  "required": [
+    "record_type",
+    "run_id",
+    "created_at_utc",
+    "artifact_hashes",
+    "precommit_id",
+    "production_authority"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P04_RUN_CAPSULE"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "created_at_utc": {
+      "type": "string"
+    },
+    "artifact_hashes": {
+      "type": "object"
+    },
+    "precommit_id": {
+      "type": "string"
+    },
+    "production_authority": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "DIRECTIONAL_PRESSURE": {
+    "title": "فشار جهت‌دار",
+    "short": "فشاری که از علت‌ها و تغییرات واقعی می‌آید، نه از خود حرکت قیمت.",
+    "body": "نزول یا صعود قیمت به‌تنهایی نباید فشار علّی Buy/Sell را تغییر دهد. فشار تازه باید از Root یا Flow معتبر و متناسب با افق زمانی بیاید."
+  },
+  "BACKGROUND_BIAS": {
+    "title": "پس‌زمینه بنیادی",
+    "short": "محیطی که به طلا کمک یا فشار وارد می‌کند، بدون اینکه الزاماً فشار تازه‌ی همین سشن باشد.",
+    "body": "مثلاً Real Yield مثبت می‌تواند headwind باشد؛ اما اگر در سشن تغییر نکرده، نباید هر ساعت دوباره Sell pressure تولید کند."
+  },
+  "TRANSACTION_PRESSURE": {
+    "title": "فشار تراکنشی",
+    "short": "فقط Flow جهت‌دار و قابل مشاهده؛ نه Volume یا OI خام.",
+    "body": "Volume، Open Interest، Holdings level و Clearing activity به‌تنهایی جهت Buy/Sell ندارند. signed flow یا delta معتبر لازم است."
+  },
+  "MECHANICAL_PRESSURE": {
+    "title": "فشار مکانیکی",
+    "short": "اجبارهای اجرایی مثل liquidation، roll، expiry یا rebalance.",
+    "body": "Mechanics می‌تواند انتقال فشار بنیادی به قیمت را مختل کند، اما حق بازنویسی Causal Fundamental Pressure را ندارد."
+  },
+  "STRUCTURAL_CARRY": {
+    "title": "ساختار بلندتر",
+    "short": "نیروهای کندی که محیط چندروزه تا ساختاری را می‌سازند.",
+    "body": "Structural Carry پس‌زمینه را می‌سازد و به‌تنهایی authority جهت سشن ندارد."
+  },
+  "PRICE_TRANSMISSION": {
+    "title": "انتقال به قیمت",
+    "short": "آیا قیمت فشار علّی را همان‌طور که انتظار داشتیم بیان کرده است؟",
+    "body": "Price فقط برای سنجش Transmission، Missing Driver Risk و Model Completeness استفاده می‌شود؛ نه برای ساخت Direction."
+  },
+  "MODEL_COMPLETENESS": {
+    "title": "کامل‌بودن مدل",
+    "short": "چه مقدار از Rootهای مهم واقعاً با evidence کافی پوشش داده شده‌اند؟",
+    "body": "UNKNOWNها حذف یا renormalize نمی‌شوند. Private/Paid gaps و source failures سقف completeness را پایین نگه می‌دارند."
+  },
+  "MISSING_DRIVER": {
+    "title": "ریسک عاملِ دیده‌نشده",
+    "short": "احتمال اینکه یک Driver مهم خارج از مشاهده فعلی در حال اثرگذاری باشد.",
+    "body": "وقتی Price با causal view نمی‌خواند، ابتدا Rootهای حل‌نشده، Flow gaps، Mechanics و Source failures بررسی می‌شوند؛ داستان جدید آخرین مرحله است."
+  },
+  "PERSISTENCE": {
+    "title": "پایداری",
+    "short": "مدت احتمالی دوام یک فشار واقعی؛ جدا از freshness.",
+    "body": "Persistence از خود سیگنال و horizon می‌آید، نه از حداکثر horizon قرارداد یک Fact."
+  },
+  "PERMISSION": {
+    "title": "اجازه اقدام",
+    "short": "Direction به‌تنهایی اجازه معامله نیست.",
+    "body": "Permission بعد از Direction، completeness، transmission، opposing mechanics و commissioning بررسی می‌شود. P04 در Shadow هیچ trade permission رسمی ندارد."
+  },
+  "TRUE_FORWARD": {
+    "title": "True-Forward",
+    "short": "ثبت تحلیل قبل از دیدن نتیجه آینده و مقایسه بعدی بدون بازنویسی تاریخ.",
+    "body": "هر Run یک precommit immutable می‌سازد. Outcome فقط بعداً اضافه می‌شود؛ اگر قابل سنجش نباشد، UNEVALUABLE می‌ماند."
+  }
+}

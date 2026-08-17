@@ -1,0 +1,15 @@
+{
+  "phase": "AD-V3-P04",
+  "status": "SHADOW_COMMISSIONING_READY",
+  "subject": "XAUUSD",
+  "inputs": {
+    "p01": "FROZEN",
+    "p02_revision": "3.2.6",
+    "p03_revision": "3.3.6"
+  },
+  "canonical_commissioning_command": ".\\AlphaDesk.ps1 commission Gold",
+  "canonical_production_command_after_promotion": ".\\AlphaDesk.ps1 run Gold",
+  "initial_promotion_state": "SHADOW_COMMISSIONING",
+  "v2_baseline_preserved": true,
+  "production_authority_still_false": true
+}

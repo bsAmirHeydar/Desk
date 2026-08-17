@@ -1,0 +1,26 @@
+from __future__ import annotations
+from .common import iso, human_effect
+
+def _h(x): return human_effect(x)
+def _action(x): return {'WAIT':'صبر / عدم اقدام','BUY_CANDIDATE':'کاندید خرید','SELL_CANDIDATE':'کاندید فروش','NO_TRADE_CANDIDATE':'عدم معامله','NO_AUTHORITY':'بدون اختیار رسمی'}.get(x,str(x or 'WAIT'))
+def _plane(p): return {'direction':p.get('direction','UNKNOWN'),'direction_human':_h(p.get('direction','UNKNOWN')),'strength':p.get('strength','UNKNOWN'),'background_bias':p.get('background_bias','UNKNOWN')}
+def build(run_id,p03,semantic_packet,semantic_bundle,permission,commissioning,promotion,previous=None):
+    planes=p03.get('pressure_planes') or {}; cf=planes.get('causal_fundamental') or {}; tx=planes.get('realized_transaction') or {}; me=planes.get('mechanical_forced') or {}; st=planes.get('structural_carry') or {}
+    direction=permission.get('direction','UNKNOWN'); bg=cf.get('background_bias','UNKNOWN'); trans=p03.get('price_transmission') or {}; q=p03.get('model_quality') or {}; life=p03.get('lifecycle') or {}
+    changed=[]
+    now={'direction':direction,'background_bias':bg,'transaction':tx.get('direction','UNKNOWN'),'mechanical':me.get('direction','UNKNOWN'),'transmission':trans.get('state','UNTESTED'),'completeness':q.get('model_completeness','UNKNOWN'),'action':permission.get('research_action_candidate','WAIT')}
+    if previous:
+        old=(previous.get('comparison_state') or {})
+        labels={'direction':'فشار علّی','background_bias':'پس‌زمینه','transaction':'فلو تراکنشی','mechanical':'مکانیک','transmission':'انتقال قیمت','completeness':'کامل‌بودن مدل','action':'اقدام'}
+        for k,v in now.items():
+            if old.get(k)!=v: changed.append({'field':k,'label':labels[k],'from':old.get(k),'to':v})
+    roots=[]
+    for r in cf.get('root_states') or []:
+        active=r.get('direction','UNKNOWN'); back=r.get('background_bias','UNKNOWN'); cls='DOMINANT' if active in ('BULLISH_GOLD','BEARISH_GOLD','MIXED') else 'BACKGROUND' if back in ('BULLISH_GOLD','BEARISH_GOLD') else 'UNRESOLVED'
+        roots.append({**r,'classification':cls,'direction_human':_h(active),'background_human':_h(back)})
+    unresolved=[x for x in (p03.get('reasoning_ledger') or {}).get('unresolved_fact_ids',[])][:40]
+    sem_unknown=sum(1 for x in semantic_bundle.get('items',[]) if x.get('effect_on_gold')=='UNKNOWN')
+    sentence='در این Run فشار علّی تازه و قابل اتکایی برای طلا اثبات نشده است.' if direction=='UNKNOWN' else ('فشار علّی فعلی به نفع طلاست.' if direction=='BULLISH_GOLD' else 'فشار علّی فعلی به ضرر طلاست.' if direction=='BEARISH_GOLD' else 'فشارهای علّی فعلی با یکدیگر متناقض‌اند.')
+    if bg=='BEARISH_GOLD': sentence+=' پس‌زمینه فعلی همچنان برای طلا محدودکننده است.'
+    elif bg=='BULLISH_GOLD': sentence+=' پس‌زمینه فعلی از طلا حمایت می‌کند.'
+    return {'record_type':'AD_V3_P04_CONTROL_ROOM_MODEL','run_id':run_id,'subject':'XAUUSD','generated_at_utc':iso(),'deployment_mode':promotion.get('state','SHADOW_COMMISSIONING'),'executive_state':{'direction':direction,'direction_human':_h(direction),'background_bias':bg,'background_human':_h(bg),'transaction_direction':tx.get('direction','UNKNOWN'),'transaction_human':_h(tx.get('direction','UNKNOWN')),'mechanical_direction':me.get('direction','UNKNOWN'),'mechanical_human':_h(me.get('direction','UNKNOWN')),'price_transmission':trans.get('state','UNTESTED'),'desk_action':permission.get('research_action_candidate','WAIT'),'desk_action_human':_action(permission.get('research_action_candidate','WAIT')),'summary':sentence},'what_changed':changed or [{'field':'NONE','label':'تغییر معنادار','from':None,'to':'No material causal change established'}],'causal_roots':roots,'pressure_planes':{'causal_fundamental':_plane(cf),'realized_transaction':_plane(tx),'mechanical_forced':_plane(me),'structural_carry':_plane(st)},'price_transmission':trans,'lifecycle':life,'model_quality':{**q,'unresolved_fact_ids':unresolved,'semantic_items':semantic_packet.get('item_count',0),'semantic_unknown_items':sem_unknown},'hypotheses':p03.get('hypotheses') or {},'permission':permission,'true_forward':commissioning,'comparison_state':now,'lineage':{'p02_coverage_receipt_id':p03.get('p02_coverage_receipt_id'),'p03_receipt_id':p03.get('receipt_id'),'acquisition_run_id':(p03.get('handoff_integrity') or {}).get('acquisition_run_id'),'semantic_packet_id':semantic_packet.get('packet_id'),'semantic_governance_status':semantic_bundle.get('governance_status'),'current_observations_loaded':(p03.get('handoff_integrity') or {}).get('current_observations_loaded'),'expected_observations':(p03.get('handoff_integrity') or {}).get('expected_current_observations')},'hard_rules':{'pressure_separate_from_price':True,'direction_separate_from_edge':True,'edge_separate_from_permission':True,'unknown_preserved':True,'production_authority':promotion.get('state')=='PRODUCTION_V3'}}

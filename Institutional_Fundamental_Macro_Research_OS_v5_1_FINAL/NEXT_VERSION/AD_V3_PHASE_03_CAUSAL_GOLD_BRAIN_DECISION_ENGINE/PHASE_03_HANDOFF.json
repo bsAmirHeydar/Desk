@@ -1,0 +1,37 @@
+{
+  "phase": "AD-V3-P03",
+  "status": "SHADOW_READY",
+  "p04_handoff": {
+    "required_inputs": [
+      "P03 causal brain receipt",
+      "P02 coverage receipt",
+      "P02 observation lineage",
+      "P01 fact/causal ontology"
+    ],
+    "next_phase": "AD-V3-P04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING",
+    "production_authority_still_false": true
+  },
+  "invariants": [
+    "192 fact reasoning parity",
+    "12 canonical root families",
+    "4 separate pressure planes",
+    "price non-causal",
+    "unknown no renormalization",
+    "no fake numeric precision",
+    "exact P02 acquisition_run_id binding",
+    "192 current-run observations required before reasoning",
+    "static stock/background state cannot re-fire session Direction",
+    "signal persistence cannot be inferred from maximum contract horizon",
+    "inactive-horizon facts cannot create current-horizon pressure",
+    "positive gross flow/activity level cannot imply bullish direction without signed/delta semantics",
+    "derived semantic facts require attached dependency observations before directional adjudication",
+    "semantic bundles cannot bypass inactive current-horizon authority",
+    "previous fetch lineage cannot be treated as previous economic state",
+    "neutral or impulse semantic claims require distinct economic/event evidence"
+  ],
+  "revision": "3.3.6",
+  "p04_inputs": [
+    "semantic evidence packet",
+    "semantic adjudication bundle"
+  ]
+}

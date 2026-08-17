@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P03 Causal Brain Receipt",
+  "type": "object",
+  "required": [
+    "record_type",
+    "analysis_admission",
+    "reasoning_ledger",
+    "pressure_planes",
+    "model_quality",
+    "shadow_decision"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P03_CAUSAL_BRAIN_RECEIPT"
+    },
+    "analysis_admission": {
+      "enum": [
+        "PASS",
+        "DEGRADED",
+        "BLOCKED"
+      ]
+    },
+    "production_direction_authority_granted": {
+      "const": false
+    },
+    "production_trade_permission_authority_granted": {
+      "const": false
+    },
+    "handoff_integrity": {
+      "type": "object"
+    }
+  }
+}

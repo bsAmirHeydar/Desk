@@ -1,0 +1,41 @@
+{
+  "phase": "AD-V3-P03",
+  "version": "3.3.6",
+  "deployment": "SHADOW_ONLY",
+  "fact_count": 192,
+  "root_family_count": 12,
+  "pressure_planes": 4,
+  "production_direction_authority": false,
+  "production_trade_permission_authority": false,
+  "depends_on": [
+    "AD-V3-P01",
+    "AD-V3-P02"
+  ],
+  "acceptance_command": "python tools/run_phase03_acceptance.py",
+  "revision": "3.3.6",
+  "capabilities": [
+    "exact P02 acquisition-run handoff binding",
+    "fail-closed observation handoff integrity",
+    "timestamp-cutoff bug immunity",
+    "stock-versus-impulse separation for directional pressure",
+    "horizon-aware real-yield reasoning",
+    "static-driver no-refire protection",
+    "signal-derived persistence instead of max-contract-horizon persistence",
+    "background bias separated from active causal Direction",
+    "current-horizon eligibility enforcement for causal/transaction/mechanical pressure",
+    "signed-flow versus gross-level semantic separation",
+    "slow-flow no-refire protection",
+    "gross activity positive-level anti-direction rule",
+    "semantic evidence packet export with exact current/previous observations",
+    "semantic authority scope labeling",
+    "semantic packet preserves provenance, epistemic state, directness, warnings, and horizon context",
+    "semantic dependency evidence closure for derived facts",
+    "dependency current/previous observation binding",
+    "semantic evidence diagnostics",
+    "semantic-bundle horizon authority guard",
+    "previous-fetch versus previous-economic observation separation",
+    "distinct economic reference-period/event-time comparison anchors",
+    "fetch-equality anti-neutrality guard",
+    "semantic economic-anchor diagnostics"
+  ]
+}

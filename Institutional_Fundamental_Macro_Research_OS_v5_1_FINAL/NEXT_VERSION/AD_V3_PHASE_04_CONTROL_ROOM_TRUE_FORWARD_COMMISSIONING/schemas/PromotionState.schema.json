@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P04 Promotion State",
+  "type": "object",
+  "required": [
+    "record_type",
+    "state",
+    "production_direction_authority",
+    "production_trade_permission_authority"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P04_PROMOTION_STATE"
+    },
+    "state": {
+      "enum": [
+        "SHADOW_COMMISSIONING",
+        "PRODUCTION_V3"
+      ]
+    },
+    "production_direction_authority": {
+      "type": "boolean"
+    },
+    "production_trade_permission_authority": {
+      "type": "boolean"
+    }
+  }
+}

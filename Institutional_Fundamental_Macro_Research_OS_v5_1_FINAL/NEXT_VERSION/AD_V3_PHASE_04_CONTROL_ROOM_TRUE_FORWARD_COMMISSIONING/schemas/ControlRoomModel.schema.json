@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P04 Control Room Model",
+  "type": "object",
+  "required": [
+    "record_type",
+    "run_id",
+    "subject",
+    "generated_at_utc",
+    "executive_state",
+    "pressure_planes",
+    "model_quality",
+    "permission",
+    "lineage"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P04_CONTROL_ROOM_MODEL"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "generated_at_utc": {
+      "type": "string"
+    },
+    "executive_state": {
+      "type": "object"
+    },
+    "pressure_planes": {
+      "type": "object"
+    },
+    "model_quality": {
+      "type": "object"
+    },
+    "permission": {
+      "type": "object"
+    },
+    "lineage": {
+      "type": "object"
+    }
+  }
+}

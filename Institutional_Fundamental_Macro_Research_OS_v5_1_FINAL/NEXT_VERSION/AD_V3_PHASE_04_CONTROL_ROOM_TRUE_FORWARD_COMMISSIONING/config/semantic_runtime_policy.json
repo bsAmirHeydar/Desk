@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "default_mode": "CONSERVATIVE_EVIDENCE_ONLY",
+  "external_network_forbidden": true,
+  "source_substitution_forbidden": true,
+  "require_exact_observation_id": true,
+  "require_exact_fact_id": true,
+  "require_full_request_accounting": true,
+  "proxy_high_strength_forbidden": true,
+  "inactive_horizon_direction_forbidden": true,
+  "structural_session_direction_forbidden": true,
+  "derived_direction_requires_dependency_closure": true,
+  "impulse_requires_distinct_economic_anchor_or_explicit_event": true,
+  "conservative_default": "UNKNOWN_NON_ADDITIVE"
+}

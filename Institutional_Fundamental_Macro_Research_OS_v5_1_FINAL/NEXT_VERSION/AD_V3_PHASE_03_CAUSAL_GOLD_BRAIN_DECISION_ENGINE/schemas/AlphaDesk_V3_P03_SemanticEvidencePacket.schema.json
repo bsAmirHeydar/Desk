@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P03 Semantic Evidence Packet",
+  "type": "object",
+  "required": [
+    "record_type",
+    "packet_id",
+    "phase",
+    "subject",
+    "causal_brain_receipt_id",
+    "p02_coverage_receipt_id",
+    "acquisition_run_id",
+    "horizon",
+    "item_count",
+    "items"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P03_SEMANTIC_EVIDENCE_PACKET"
+    },
+    "packet_id": {
+      "type": "string"
+    },
+    "phase": {
+      "const": "AD-V3-P03"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "causal_brain_receipt_id": {
+      "type": "string"
+    },
+    "p02_coverage_receipt_id": {
+      "type": "string"
+    },
+    "acquisition_run_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "horizon": {
+      "type": "string"
+    },
+    "item_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "fact_id",
+          "requested_observation_id",
+          "current_observation",
+          "dependency_evidence",
+          "evidence_diagnostics",
+          "authority_scope",
+          "hard_guards"
+        ],
+        "properties": {
+          "fact_id": {
+            "type": "string"
+          },
+          "requested_observation_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dependency_evidence": {
+            "type": "array"
+          },
+          "evidence_diagnostics": {
+            "type": "object"
+          },
+          "authority_scope": {
+            "type": "string"
+          },
+          "hard_guards": {
+            "type": "object"
+          },
+          "previous_fetch_observation": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "previous_economic_observation": {
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

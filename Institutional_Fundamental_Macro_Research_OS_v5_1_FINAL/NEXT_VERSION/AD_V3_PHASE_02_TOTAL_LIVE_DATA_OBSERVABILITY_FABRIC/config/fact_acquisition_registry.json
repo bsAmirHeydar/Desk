@@ -2630,8 +2630,7 @@
       "p01_observability_class": "PUBLIC_FREE",
       "acquisition_mode": "DIRECT_SNAPSHOT",
       "source_ids": [
-        "ETF_SPONSOR",
-        "ETF_SPONSOR_IAU"
+        "ETF_SPONSOR"
       ],
       "must_attempt_when_applicable": true,
       "expected_public_source": true,
@@ -2673,7 +2672,6 @@
       "p01_observability_class": "PUBLIC_FREE",
       "acquisition_mode": "DIRECT_SNAPSHOT",
       "source_ids": [
-        "ETF_SPONSOR",
         "ETF_SPONSOR_IAU"
       ],
       "must_attempt_when_applicable": true,
@@ -3154,8 +3152,7 @@
       "acquisition_mode": "DIRECT_SNAPSHOT",
       "source_ids": [
         "CME_GOLD_QUOTES_JSON",
-        "CME_VOLUME_OI",
-        "CFTC_COT"
+        "CME_VOLUME_OI"
       ],
       "must_attempt_when_applicable": true,
       "expected_public_source": true,

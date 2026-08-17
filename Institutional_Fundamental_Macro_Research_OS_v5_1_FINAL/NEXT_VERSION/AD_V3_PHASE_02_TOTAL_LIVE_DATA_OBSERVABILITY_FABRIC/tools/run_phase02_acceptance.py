@@ -53,6 +53,13 @@ def main():
   checks.append(C('p02 grants no direction authority',rec['direction_authority_granted'] is False))
   checks.append(C('p02 grants no permission authority',rec['trade_permission_authority_granted'] is False))
   checks.append(C('zero silent omission',rec['zero_silent_omission'] is True))
+  run_id=rec.get('acquisition_run_id')
+  checks.append(C('every observation bound to exact acquisition run',bool(run_id) and all(o.get('acquisition_run_id')==run_id for o in obs),{'run_id':run_id,'bound':sum(1 for o in obs if o.get('acquisition_run_id')==run_id),'total':len(obs)}))
+  checks.append(C('receipt completion covers observation cutoff',bool(rec.get('acquisition_completed_at_utc')) and rec.get('generated_at_utc')==rec.get('acquisition_completed_at_utc') and rec.get('acquisition_completed_at_utc')>=rec.get('observation_cutoff_utc',''),{'started':rec.get('acquisition_started_at_utc'),'cutoff':rec.get('observation_cutoff_utc'),'completed':rec.get('acquisition_completed_at_utc'),'generated':rec.get('generated_at_utc')}))
+  logp=pathlib.Path(td)/'store'/'observations'/'gold_fact_observations.jsonl'
+  logged=[json.loads(x) for x in logp.read_text(encoding='utf-8').splitlines() if x.strip()]
+  current_logged=[o for o in logged if o.get('acquisition_run_id')==run_id]
+  checks.append(C('published receipt has complete current-run observation set',len(current_logged)==192,{'run_id':run_id,'current_run_observations':len(current_logged)}))
   # raw provenance
   raw=list((pathlib.Path(td)/'store'/'raw').rglob('*'))
   rawfiles=[p for p in raw if p.is_file()]
@@ -80,6 +87,10 @@ def main():
   checks.append(C('cme gold price json exact',ob.get('GC_FUTURES_PRICE',{}).get('value')==4437.3,ob.get('GC_FUTURES_PRICE')))
   goi=ob.get('GC_OPEN_INTEREST',{})
   checks.append(C('cme gold open interest json exact',goi.get('value')==388924.0,goi))
+  checks.append(C('gld observation bound only to SPDR sponsor',ob.get('GLD_HOLDINGS_SHARES',{}).get('source_id')=='ETF_SPONSOR',ob.get('GLD_HOLDINGS_SHARES')))
+  checks.append(C('iau observation bound only to iShares sponsor',ob.get('IAU_HOLDINGS_SHARES',{}).get('source_id')=='ETF_SPONSOR_IAU',ob.get('IAU_HOLDINGS_SHARES')))
+  gvol=ob.get('GC_VOLUME',{})
+  checks.append(C('gc volume cannot fall back to cftc positioning text',gvol.get('source_id')!='CFTC_COT' and 'WHEAT-SRW' not in json.dumps(gvol.get('value')),gvol))
   gcurve=(ob.get('GC_CURVE_TERM_STRUCTURE',{}).get('value') or {}).get('contracts') or []
   checks.append(C('cme gold curve structured',len(gcurve)>=3,gcurve[:3]))
   fp=(ob.get('FED_POLICY_PATH_PRICING',{}).get('value') or {}).get('fed_funds_futures_curve') or []
@@ -111,6 +122,9 @@ def main():
  fr=load_json(PHASE/'config/fact_acquisition_registry.json'); sr=load_json(PHASE/'config/source_contract_registry.json')
  last3={c['fact_id']:c for c in fr['contracts'] if c['fact_id'] in ('US_RETAIL_SALES','INDIA_IMPORT_DUTY_TAX','INR_GOLD_AFFORDABILITY')}
  checks.append(C('last three live blockers have preferred official paths',last3['US_RETAIL_SALES']['source_ids'][0]=='CENSUS_RETAIL' and last3['INDIA_IMPORT_DUTY_TAX']['source_ids'][0]=='PIB_GOLD_DUTY_POLICY' and last3['INR_GOLD_AFFORDABILITY']['source_ids'][0]=='FED_H10_INR_HISTORY',last3))
+ fmap={c['fact_id']:c for c in fr['contracts']}
+ checks.append(C('gld and iau sponsor bindings isolated',fmap['GLD_HOLDINGS_SHARES']['source_ids']==['ETF_SPONSOR'] and fmap['IAU_HOLDINGS_SHARES']['source_ids']==['ETF_SPONSOR_IAU'],{'gld':fmap['GLD_HOLDINGS_SHARES']['source_ids'],'iau':fmap['IAU_HOLDINGS_SHARES']['source_ids']}))
+ checks.append(C('gc volume cftc fallback forbidden','CFTC_COT' not in fmap['GC_VOLUME']['source_ids'],fmap['GC_VOLUME']['source_ids']))
  plan=build_plan(fr,sr,'ALL','2026-08-16T17:00:00Z')
  checks.append(C('plan includes mandatory acquisition source set',len(plan['source_ids_to_attempt'])>=60,len(plan['source_ids_to_attempt'])))
  # P01 remains shadow boundary by sibling presence/config.

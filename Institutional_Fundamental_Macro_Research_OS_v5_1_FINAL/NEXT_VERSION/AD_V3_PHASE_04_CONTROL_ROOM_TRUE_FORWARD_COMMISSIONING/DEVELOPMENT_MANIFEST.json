@@ -1,0 +1,35 @@
+{
+  "phase": "AD-V3-P04",
+  "version": "4.0.0-commissioning",
+  "revision": "4.0.0",
+  "subject": "XAUUSD",
+  "deployment": "SHADOW_COMMISSIONING",
+  "depends_on": [
+    "AD-V3-P01",
+    "AD-V3-P02@3.2.6",
+    "AD-V3-P03@3.3.6"
+  ],
+  "production_direction_authority": false,
+  "production_trade_permission_authority": false,
+  "capabilities": [
+    "canonical P02-P03-semantic-control-room orchestration",
+    "governed semantic adjudication boundary",
+    "human control room model and white RTL HTML renderer",
+    "distributed contextual help",
+    "immutable run capsule",
+    "true-forward precommit and outcome ledger",
+    "direction-edge-permission separation",
+    "fail-closed promotion state",
+    "V2 baseline preservation and conditional canonical launcher routing",
+    "rollback to shadow commissioning"
+  ],
+  "forbidden": [
+    "new Gold causal science",
+    "P01/P02/P03 mutation",
+    "price-as-causal-pressure",
+    "semantic source substitution",
+    "fake confidence precision",
+    "automatic production promotion",
+    "trade execution"
+  ]
+}

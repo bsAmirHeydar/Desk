@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.2.0",
+  "phase": "AD-V3-P03",
+  "bundle_required_for_unstructured_directional_semantics": true,
+  "allowed_effects": [
+    "BULLISH_GOLD",
+    "BEARISH_GOLD",
+    "NEUTRAL",
+    "MIXED",
+    "NO_DIRECTION",
+    "UNKNOWN"
+  ],
+  "allowed_effect_kinds": [
+    "STOCK",
+    "IMPULSE",
+    "SHOCK",
+    "CONFIRMATION",
+    "VULNERABILITY",
+    "CONTEXT"
+  ],
+  "allowed_strength": [
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "UNKNOWN"
+  ],
+  "requirements": [
+    "exact fact_id",
+    "exact current observation_id",
+    "short rationale_summary",
+    "causal_owner_id when additive",
+    "is_additive must obey fact reasoning contract"
+  ],
+  "forbidden": [
+    "keyword sentiment as direction",
+    "unreferenced narrative interpretation",
+    "hidden numeric score",
+    "overriding P01 role boundaries",
+    "turning proxy into direct evidence",
+    "semantic adjudication from fact_id alone without evidence packet",
+    "promoting structural background into current-horizon causal Direction",
+    "adjudicating a derived fact from dependency names without attached dependency observations",
+    "semantic bundle bypass of current-horizon eligibility",
+    "treating previous acquisition fetch as previous economic state",
+    "inferring NEUTRAL or zero impulse solely because repeated fetches carry the same reference period/value"
+  ],
+  "evidence_packet_required_before_external_adjudication": true,
+  "evidence_packet_requirements": [
+    "exact acquisition_run_id",
+    "current observation",
+    "previous observation when available",
+    "epistemic_state",
+    "directness",
+    "provenance_ref",
+    "horizon eligibility",
+    "authority scope",
+    "derived dependency observation closure",
+    "dependency observations bound to exact acquisition_run_id",
+    "evidence diagnostics for current/previous equality and warnings",
+    "previous fetch observation clearly distinguished from previous economic observation",
+    "distinct economic comparison anchor when available",
+    "explicit NO_DISTINCT_ECONOMIC_ANCHOR when unavailable",
+    "fetch equality never used as an economic delta"
+  ]
+}

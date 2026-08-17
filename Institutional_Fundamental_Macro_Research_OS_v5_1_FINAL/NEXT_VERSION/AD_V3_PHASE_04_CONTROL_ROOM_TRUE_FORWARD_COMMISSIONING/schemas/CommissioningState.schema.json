@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P04 Commissioning State",
+  "type": "object",
+  "required": [
+    "record_type",
+    "sample_state",
+    "outcomes_evaluated",
+    "integrity_failures",
+    "promotion_ready"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P04_COMMISSIONING_STATE"
+    },
+    "sample_state": {
+      "enum": [
+        "UNCALIBRATED",
+        "INSUFFICIENT",
+        "EARLY",
+        "PROVISIONAL"
+      ]
+    },
+    "outcomes_evaluated": {
+      "type": "integer"
+    },
+    "integrity_failures": {
+      "type": "integer"
+    },
+    "promotion_ready": {
+      "type": "boolean"
+    }
+  }
+}
