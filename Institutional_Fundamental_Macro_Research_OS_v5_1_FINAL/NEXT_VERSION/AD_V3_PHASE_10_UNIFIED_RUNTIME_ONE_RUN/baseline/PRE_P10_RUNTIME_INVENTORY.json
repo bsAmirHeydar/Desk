@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "git_metadata": "UNAVAILABLE_IN_SUPPLIED_ZIP",
+  "surfaces": [
+    {
+      "path": "AlphaDesk.ps1",
+      "classification": "DEPLOYMENT_WRAPPER"
+    },
+    {
+      "path": "AD_V2_PHASE_11_UNIFIED_COMMAND_RESEARCH_ORCHESTRATION/runtime/unified_launcher.py",
+      "classification": "LEGACY_V2"
+    },
+    {
+      "path": "AD_V2_PHASE_13_CANONICAL_GOLD_CONTROL_ROOM_OUTPUT/tools/alpha_desk_v2.py",
+      "classification": "LEGACY_V2_PRODUCTION"
+    },
+    {
+      "path": "AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/pipeline.py",
+      "classification": "PRE_P10_V3_ORCHESTRATOR"
+    },
+    {
+      "path": "AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/legacy_pipeline_v1.py",
+      "classification": "LEGACY_NONCANONICAL"
+    },
+    {
+      "path": "AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/gold_orchestrator.py",
+      "classification": "CANONICAL_V3"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "schema_version",
+    "run",
+    "data_kernel",
+    "causal_state",
+    "decision_calibration",
+    "forward_validation"
+  ],
+  "properties": {
+    "schema_id": {
+      "const": "ControlRoomInputV3"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "run": {
+      "type": "object"
+    },
+    "data_kernel": {},
+    "causal_state": {},
+    "decision_calibration": {},
+    "forward_validation": {}
+  }
+}

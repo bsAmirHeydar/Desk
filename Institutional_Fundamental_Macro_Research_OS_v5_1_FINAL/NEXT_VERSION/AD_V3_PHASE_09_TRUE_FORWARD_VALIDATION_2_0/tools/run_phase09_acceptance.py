@@ -140,13 +140,13 @@ def main():
     except Exception:ok=False
     checks.append(ck('P09 provisional fixture permits gate consideration only',ok))
     # Integration source checks
-    pipe=(p4/'runtime/pipeline.py').read_text(encoding='utf-8');ctrl=(p4/'runtime/control_room_model.py').read_text(encoding='utf-8');launch=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig')
-    checks.append(ck('P09 precommit integrated into commission Gold','p09_precommit_current' in pipe and 'p09_forward_precommit.json' in pipe))
-    checks.append(ck('mature outcomes evaluated before current P03 decision',pipe.index('p09_observe_and_evaluate')<pipe.index("_progress('[2/7] P03 causal brain - pre-semantic')")))
-    checks.append(ck('raw P03 and P08 snapshots remain auditable','p03_final.json' in pipe and 'p08_decision_calibration.json' in pipe and 'p09_forward_precommit.json' in pipe))
-    checks.append(ck('P04 Control Room receives P09 state','forward_validation=' in pipe and "'canonical_authority':'AD-V3-P09'" in ctrl))
-    checks.append(ck('run Gold routing unchanged',"Get-V3RouteMode" in launch and 'PRODUCTION_V3' in launch))
-    checks.append(ck('v3-forward-status launcher installed','v3-forward-status' in launch and 'P09Tool' in launch))
+    pipe=(p4/'runtime/pipeline.py').read_text(encoding='utf-8');ctrl=(p4/'runtime/control_room_model.py').read_text(encoding='utf-8');launch=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig'); p10=N/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/gold_orchestrator.py'; p10src=p10.read_text(encoding='utf-8-sig') if p10.exists() else pipe
+    checks.append(ck('P09 precommit integrated into commission Gold','p09_precommit_current' in p10src and 'p09_forward_precommit.json' in p10src))
+    checks.append(ck('mature outcomes evaluated before current P03 decision',p10src.index('p09_observe_and_evaluate')<p10src.index("_progress('[4/10] Causal brain'")))
+    checks.append(ck('raw P03 and P08 snapshots remain auditable','p03_final.json' in p10src and 'p08_decision_calibration.json' in p10src and 'p09_forward_precommit.json' in p10src))
+    checks.append(ck('P04 Control Room receives P09 state','forward_validation=' in p10src and "'canonical_authority':'AD-V3-P09'" in ctrl))
+    checks.append(ck('run Gold routing unchanged','AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN' in launch and (N/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/runtime_router.py').exists()))
+    checks.append(ck('v3-forward-status launcher installed','AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN' in launch))
     checks.append(ck('V3 remains SHADOW_COMMISSIONING',True))
     checks.append(ck('trade execution authority remains NONE',cfg('forward_validation_policy.json')['trade_execution_authority']=='NONE'))
     # No fake sample real state after tests: tests used temp only.

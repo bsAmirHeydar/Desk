@@ -1,0 +1,17 @@
+{
+  "phase": "AD-V3-P10",
+  "version": "3.10.0-unified-runtime",
+  "title": "Unified Runtime / One Run",
+  "status": "PASS",
+  "baseline_commit": "dafa0c2",
+  "canonical_v3_orchestration_authority": true,
+  "active_subject": "Gold",
+  "v3_state": "SHADOW_COMMISSIONING",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE",
+  "next_phase": "AD-V3-P11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM",
+  "acceptance_status": "PASS",
+  "acceptance_checks": 40,
+  "static_validation_checks": 9,
+  "science_authority_drift": 0
+}

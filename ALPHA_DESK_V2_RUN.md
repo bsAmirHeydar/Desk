@@ -1,15 +1,13 @@
-# ALPHA DESK V2 — RETAINED FALLBACK RUN CONTRACT
+# ALPHA DESK V2 — LEGACY V2 PRODUCTION / ROLLBACK CONTRACT
 
-V2 is retained as the rollback/certified fallback while V3 remains in shadow commissioning.
+V2 remains the authorized production fallback while V3 is `SHADOW_COMMISSIONING` and remains available for rollback after future promotion.
 
-Canonical local Gold request:
+Do not call V2 directly for ordinary operation. Use:
 
 ```powershell
 .\AlphaDesk.ps1 run Gold
 ```
 
-The top-level launcher decides the authorized route. Until V3 reaches `PRODUCTION_V3`, this command resolves to the **V2 fallback**. Do not call V2 directly as a way to bypass launcher governance.
+P10 resolves production authority and currently routes that production request to V2 until V3 is explicitly promoted.
 
-Canonical Chat semantics are defined in `RUN.md`: `Run` means `Run Gold`.
-
-V2 scientific invariants remain intact, including Pressure ≠ Price and broker authority NONE.
+The V2 P11 prompt cluster is **legacy V2 authority only**. It has no V3 semantic, causal, decision-calibration, or orchestration authority. V3 uses P03/P06/P07/P08/P09/P10.

@@ -1,52 +1,39 @@
 # ALPHA DESK — CANONICAL RUN CONTRACT
 
-## Current active scope: Gold only
+## Active subject: Gold only
 
-For this Alpha Desk project, the human command:
-
-```text
-Run
-```
-
-means exactly:
-
-```text
-Run Gold
-```
-
-`Gold` and `XAUUSD` are accepted Gold aliases. Other markets are not part of the current active Alpha Desk scope unless explicitly re-enabled by a future version.
-
-## Local certified route
+`Run` means `Run Gold`.
 
 ```powershell
 .\AlphaDesk.ps1 run Gold
 ```
 
-Routing is fail-closed:
+The P10 canonical router resolves production authority. While V3 remains `SHADOW_COMMISSIONING`, the production command routes to retained V2. It does **not** mean V3 is production.
 
-- if V3 promotion state is `PRODUCTION_V3`, `run Gold` routes to V3;
-- otherwise `run Gold` routes to the retained **V2 fallback / certified baseline**.
-
-V3 is currently **SHADOW_COMMISSIONING**, so P05 does not claim or perform V3 production promotion.
-
-## V3 shadow commissioning
+Explicit V3 shadow commissioning uses the same P10 orchestrator:
 
 ```powershell
 .\AlphaDesk.ps1 commission Gold
 ```
 
-This explicitly addresses the V3 shadow pipeline. It is not a production-promotion command.
-
-## Integrity status
+Latest authorized production output:
 
 ```powershell
-.\AlphaDesk.ps1 v3-integrity-status
+.\AlphaDesk.ps1 report Gold
+.\AlphaDesk.ps1 open Gold
 ```
 
-This is offline/deterministic and does not acquire live data or alter promotion/true-forward state.
+Latest V3 shadow output:
 
-## Scientific invariants
+```powershell
+.\AlphaDesk.ps1 commission-report Gold
+.\AlphaDesk.ps1 commission-open Gold
+```
 
-No lookahead; no fake precision; UNKNOWN remains UNKNOWN; Pressure ≠ Price; Stock ≠ Impulse; Gross Activity ≠ Signed Flow; Previous Fetch ≠ Previous Economic State; Direction ≠ Edge ≠ Permission; automatic promotion is forbidden; broker execution authority remains NONE.
+V3 runtime status:
 
-P10 will later own the final unified one-run production runtime. P05 only makes the command contract unambiguous.
+```powershell
+.\AlphaDesk.ps1 v3-runtime-status
+```
+
+Gold is the only active Alpha Desk subject. Non-Gold requests fail closed. P10 is orchestration only: P03 remains causal authority, P06 semantic authority, P07/P02 data authority, P08 decision-calibration authority, P09 forward-validation authority, and P04 Control Room authority. Trade execution authority remains NONE.

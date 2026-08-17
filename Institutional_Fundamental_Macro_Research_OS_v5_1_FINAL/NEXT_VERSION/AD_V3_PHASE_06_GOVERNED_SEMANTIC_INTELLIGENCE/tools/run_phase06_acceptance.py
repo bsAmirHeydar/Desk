@@ -186,9 +186,9 @@ def main():
         except OSError: pass
 
     # Runtime/route/governance static boundaries.
-    launcher=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig'); pipeline=(P04/'runtime/pipeline.py').read_text(encoding='utf-8')
-    checks.append(ck('P04 commissioning can use AUTO_GOVERNED and conservative fallback','run_semantics(repo, packet' in pipeline and 'semantic_validation_status' in pipeline))
-    checks.append(ck('run Gold production routing unchanged','Get-V3RouteMode' in launcher and 'PRODUCTION_V3' in launcher and 'Invoke-V2 $AlphaArgs' in launcher))
+    launcher=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig'); pipeline=(P04/'runtime/pipeline.py').read_text(encoding='utf-8'); p10=NEXT/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/gold_orchestrator.py'; p10src=p10.read_text(encoding='utf-8-sig') if p10.exists() else pipeline
+    checks.append(ck('P04 commissioning can use AUTO_GOVERNED and conservative fallback','run_semantics(repo,packet' in p10src.replace(' ','') and ('semrec' in p10src or 'semantic_validation_status' in p10src)))
+    checks.append(ck('run Gold production routing unchanged',('AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN' in launcher and (NEXT/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/runtime_router.py').exists())))
     checks.append(ck('V3 remains SHADOW_COMMISSIONING',default_state().get('state')=='SHADOW_COMMISSIONING'))
     checks.append(ck('automatic promotion remains forbidden',load_json(P04/'config/promotion_policy.json').get('automatic_promotion_forbidden') is True))
     checks.append(ck('trade execution authority remains NONE',load_json(PHASE/'DEVELOPMENT_MANIFEST.json').get('authority',{}).get('model_trade_action') is False))

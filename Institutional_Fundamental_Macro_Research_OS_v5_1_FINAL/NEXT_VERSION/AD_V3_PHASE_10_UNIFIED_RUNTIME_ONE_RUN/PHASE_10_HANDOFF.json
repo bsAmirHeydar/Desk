@@ -1,0 +1,63 @@
+{
+  "record_type": "AD_V3_P10_HANDOFF",
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P10",
+  "version": "3.10.0-unified-runtime",
+  "baseline_commit": "dafa0c2",
+  "p01_status": "PASS",
+  "p02_status": "PASS",
+  "p03_status": "PASS",
+  "p04_status": "PASS",
+  "p05_status": "PASS",
+  "p06_status": "PASS",
+  "p07_status": "PASS",
+  "p08_status": "PASS",
+  "p09_status": "PASS",
+  "p10_status": "PASS",
+  "p10_acceptance_checks": 40,
+  "p10_static_validation_checks": 9,
+  "v2_rollback_acceptance": {
+    "P11": "PASS",
+    "P13": "PASS"
+  },
+  "canonical_runtime_version": "3.10.0-unified-runtime",
+  "canonical_runtime_authority": "AD-V3-P10",
+  "canonical_active_subject": "Gold",
+  "default_horizon": "SESSION_1_6H",
+  "production_route": "V2",
+  "v3_shadow_route": "V3 via AD-V3-P10",
+  "stage_count": 12,
+  "stage_dag_status": "PASS",
+  "latest_runtime_state": {
+    "last_attempt": null,
+    "last_success": null
+  },
+  "p09_real_forward_state": {
+    "active_cohort": null,
+    "prediction_count": 0,
+    "episode_count": 0,
+    "mature_episode_count": 0,
+    "forward_evidence_state": "NO_SAMPLES",
+    "promotion_gate_satisfied": false
+  },
+  "legacy_prompt_authority_state": {
+    "v2_p11": "LEGACY_V2_AUTHORITY",
+    "v3_dependency": false,
+    "v2_rollback_preserved": true
+  },
+  "science_integrity": {
+    "gold_ontology_drift": 0,
+    "causal_root_drift": 0,
+    "pressure_plane_drift": 0,
+    "semantic_authority_drift": 0,
+    "freshness_authority_drift": 0,
+    "p08_decision_science_drift": 0,
+    "p09_validation_science_drift": 0,
+    "authority_file_count_verified": 104
+  },
+  "architecture_drift_count": 0,
+  "v3_state": "SHADOW_COMMISSIONING",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE",
+  "next_phase": "AD-V3-P11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM"
+}

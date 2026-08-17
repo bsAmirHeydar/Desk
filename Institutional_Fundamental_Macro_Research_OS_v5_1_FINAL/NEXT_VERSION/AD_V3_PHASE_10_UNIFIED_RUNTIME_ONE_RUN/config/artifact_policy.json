@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_root": "artifacts",
+  "run_root": "artifacts/runs",
+  "latest_root": "artifacts/latest",
+  "state_root": "artifacts/state",
+  "atomic_latest": true,
+  "last_attempt": "last_attempt.json",
+  "last_success": "last_success.json",
+  "latest_json": "latest_run.json",
+  "latest_html": "latest_control_room.html",
+  "latest_capsule": "latest_capsule.json",
+  "latest_seal": "latest_seal.json",
+  "runtime_lock": "runtime.lock",
+  "git_commit_runtime": false
+}

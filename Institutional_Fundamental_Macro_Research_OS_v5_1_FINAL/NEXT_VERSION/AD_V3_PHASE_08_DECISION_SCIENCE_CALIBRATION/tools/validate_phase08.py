@@ -19,7 +19,7 @@ def main():
   checks.append(ck('config '+f+' present',(P/'config'/f).exists()))
  pipe=(N/'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/pipeline.py').read_text(encoding='utf-8-sig')
  checks.append(ck('P04 pipeline invokes P08 calibration','AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION' in pipe and 'p08_decision_calibration.json' in pipe))
- launcher=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig');checks.append(ck('v3-decision-status launcher present','v3-decision-status' in launcher))
+ launcher=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig');checks.append(ck('v3-decision-status launcher present','AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN' in launcher))
  pol=load(P/'config/decision_calibration_policy.json');checks.append(ck('no production or trade execution authority',pol['production_promotion_forbidden'] is True and pol['trade_execution_authority']=='NONE'))
  status='PASS' if all(x['status']=='PASS' for x in checks) else 'FAIL_CLOSED';out={'phase':'AD-V3-P08','validation_status':status,'check_count':len(checks),'checks':checks,'science_drift':drift};print(json.dumps(out,indent=2,ensure_ascii=False));return 0 if status=='PASS' else 2
 if __name__=='__main__':raise SystemExit(main())

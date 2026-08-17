@@ -1,0 +1,5 @@
+{
+  "record_type": "AD_V3_P10_LOCAL_INSTALL_BASELINE",
+  "baseline_commit": "dafa0c2",
+  "source": "operator_git_before_p10_install"
+}

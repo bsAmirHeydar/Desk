@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0.0",
+  "stages": [
+    {
+      "stage_id": "PRECHECK",
+      "depends_on": [],
+      "authority": "AD-V3-P10",
+      "mandatory": true
+    },
+    {
+      "stage_id": "FORWARD_EVALUATION",
+      "depends_on": [
+        "PRECHECK"
+      ],
+      "authority": "AD-V3-P09",
+      "mandatory": true
+    },
+    {
+      "stage_id": "ACQUISITION_PLAN",
+      "depends_on": [
+        "PRECHECK"
+      ],
+      "authority": "AD-V3-P07",
+      "mandatory": true
+    },
+    {
+      "stage_id": "ACQUISITION",
+      "depends_on": [
+        "ACQUISITION_PLAN"
+      ],
+      "authority": "AD-V3-P07/P02",
+      "mandatory": true
+    },
+    {
+      "stage_id": "PRE_SEMANTIC",
+      "depends_on": [
+        "ACQUISITION"
+      ],
+      "authority": "AD-V3-P03",
+      "mandatory": true
+    },
+    {
+      "stage_id": "SEMANTIC",
+      "depends_on": [
+        "PRE_SEMANTIC"
+      ],
+      "authority": "AD-V3-P06",
+      "mandatory": true
+    },
+    {
+      "stage_id": "FINAL_CAUSAL",
+      "depends_on": [
+        "SEMANTIC"
+      ],
+      "authority": "AD-V3-P03",
+      "mandatory": true
+    },
+    {
+      "stage_id": "DECISION_CALIBRATION",
+      "depends_on": [
+        "FINAL_CAUSAL"
+      ],
+      "authority": "AD-V3-P08",
+      "mandatory": true
+    },
+    {
+      "stage_id": "FORWARD_PRECOMMIT",
+      "depends_on": [
+        "DECISION_CALIBRATION"
+      ],
+      "authority": "AD-V3-P09",
+      "mandatory": true
+    },
+    {
+      "stage_id": "CONTROL_MODEL",
+      "depends_on": [
+        "FORWARD_PRECOMMIT"
+      ],
+      "authority": "AD-V3-P04",
+      "mandatory": true
+    },
+    {
+      "stage_id": "REPORT",
+      "depends_on": [
+        "CONTROL_MODEL"
+      ],
+      "authority": "AD-V3-P04",
+      "mandatory": true
+    },
+    {
+      "stage_id": "SEAL",
+      "depends_on": [
+        "REPORT"
+      ],
+      "authority": "AD-V3-P10",
+      "mandatory": true
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "subject",
+    "intent",
+    "promotion_state",
+    "selected_runtime",
+    "reason"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P10_ROUTING_RECEIPT"
+    },
+    "subject": {
+      "const": "Gold"
+    },
+    "intent": {
+      "type": "string"
+    },
+    "promotion_state": {
+      "type": "string"
+    },
+    "selected_runtime": {
+      "enum": [
+        "V2",
+        "V3"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    }
+  }
+}

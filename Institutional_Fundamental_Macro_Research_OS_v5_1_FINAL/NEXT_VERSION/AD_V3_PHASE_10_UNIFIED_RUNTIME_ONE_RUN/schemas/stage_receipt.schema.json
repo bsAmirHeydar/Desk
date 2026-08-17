@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "stage_id",
+    "run_id",
+    "decision_time",
+    "status",
+    "duration_ms"
+  ],
+  "properties": {
+    "stage_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "decision_time": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "duration_ms": {
+      "type": "number"
+    }
+  }
+}

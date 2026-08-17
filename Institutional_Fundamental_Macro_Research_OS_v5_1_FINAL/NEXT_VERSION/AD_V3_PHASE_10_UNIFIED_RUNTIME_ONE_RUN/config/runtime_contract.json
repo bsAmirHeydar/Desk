@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P10",
+  "version": "3.10.0-unified-runtime",
+  "active_subject": "Gold",
+  "subject_aliases": [
+    "gold",
+    "xauusd",
+    "xau"
+  ],
+  "default_horizon": "SESSION_1_6H",
+  "authority_modes": [
+    "PRODUCTION",
+    "SHADOW",
+    "REPLAY",
+    "FIXTURE"
+  ],
+  "acquisition_modes": [
+    "NORMAL",
+    "FULL_REFRESH",
+    "CACHE_ONLY"
+  ],
+  "semantic_authority": "AD-V3-P06",
+  "causal_authority": "AD-V3-P03",
+  "data_authority": "AD-V3-P07/P02",
+  "decision_authority": "AD-V3-P08",
+  "forward_authority": "AD-V3-P09",
+  "control_room_authority": "AD-V3-P04",
+  "trade_execution_authority": "NONE",
+  "automatic_promotion_forbidden": true
+}

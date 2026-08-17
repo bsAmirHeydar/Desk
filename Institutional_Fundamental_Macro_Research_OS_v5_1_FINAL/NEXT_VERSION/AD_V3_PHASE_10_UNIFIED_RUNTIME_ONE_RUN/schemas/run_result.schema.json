@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "run_id",
+    "subject",
+    "runtime_version",
+    "authority_mode",
+    "decision_time",
+    "horizon",
+    "overall_status",
+    "stage_receipts",
+    "promotion_state",
+    "trade_execution_authority"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P10_RUN_RESULT"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "subject": {
+      "const": "Gold"
+    },
+    "runtime_version": {
+      "type": "string"
+    },
+    "authority_mode": {
+      "type": "string"
+    },
+    "decision_time": {
+      "type": "string"
+    },
+    "horizon": {
+      "type": "string"
+    },
+    "overall_status": {
+      "type": "string"
+    },
+    "stage_receipts": {
+      "type": "array"
+    },
+    "promotion_state": {
+      "type": "string"
+    },
+    "trade_execution_authority": {
+      "const": "NONE"
+    }
+  }
+}

@@ -104,9 +104,9 @@ def main():
   checks.append(ck('private/provider gaps remain explicit',any(x['acquisition_mode']=='PROVIDER_GAP' for x in gap_actions) and any(x['acquisition_mode']=='PRIVATE_GAP' for x in gap_actions)))
   checks.append(ck('known gap retry abuse absent',all(x['source_id'] not in {s for g in gap_actions for s in g['source_ids']} for x in plan['sources'] if x['action'] in ('LIVE_FETCH','CONTEXT_REFRESH','ESCALATION_FETCH'))))
  # Static wiring/governance.
- pipeline=(P04/'runtime/pipeline.py').read_text(encoding='utf-8-sig'); launcher=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig')
- checks.append(ck('commission Gold uses P07 optimized path','run_kernel_acquisition.py' in pipeline and 'kernel_mode' in pipeline))
- checks.append(ck('run Gold production route unchanged','PRODUCTION_V3' in launcher and 'Invoke-V2' in launcher))
+ pipeline=(P04/'runtime/pipeline.py').read_text(encoding='utf-8-sig'); launcher=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig'); p10=NEXT/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/gold_orchestrator.py'; p10src=p10.read_text(encoding='utf-8-sig') if p10.exists() else pipeline
+ checks.append(ck('commission Gold uses P07 optimized path',('run_kernel(' in p10src and 'build_plan(' in p10src) if p10.exists() else ('run_kernel_acquisition.py' in pipeline and 'kernel_mode' in pipeline)))
+ checks.append(ck('run Gold production route unchanged',('AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN' in launcher and (NEXT/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/runtime_router.py').exists())))
  p04tool=(P04/'tools/alpha_desk_v3.py').read_text(encoding='utf-8-sig'); checks.append(ck('V3 remains SHADOW_COMMISSIONING','SHADOW_COMMISSIONING' in p04tool and config('gold_kernel_policy.json')['production_promotion_forbidden']))
  checks.append(ck('automatic promotion forbidden',config('gold_kernel_policy.json')['production_promotion_forbidden'] is True))
  checks.append(ck('trade execution authority remains NONE',config('gold_kernel_policy.json')['trade_execution_authority']=='NONE'))

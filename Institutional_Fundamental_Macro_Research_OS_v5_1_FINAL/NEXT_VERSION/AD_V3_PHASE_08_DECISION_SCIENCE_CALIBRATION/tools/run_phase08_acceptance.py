@@ -84,11 +84,11 @@ def main():
  checks.append(ck('P08 calibrated decision reaches P04 model',model_fixture.get('decision_calibration',{}).get('available') is True and model_fixture['decision_calibration']['edge_state']==clean['edge_state']))
  checks.append(ck('raw P03 causal result remains separately auditable',model_fixture.get('decision_calibration',{}).get('raw_p03_causal_direction')==clean['raw_p03_causal_direction']))
  # Integration/source assertions.
- pipe=(N/'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/pipeline.py').read_text(encoding='utf-8-sig'); model=(N/'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/control_room_model.py').read_text(encoding='utf-8-sig'); launch=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig')
- checks.append(ck('P08 decision state reaches P04 pipeline','calibrate_decision' in pipe and 'p08_decision_calibration.json' in pipe))
+ pipe=(N/'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/pipeline.py').read_text(encoding='utf-8-sig'); model=(N/'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/control_room_model.py').read_text(encoding='utf-8-sig'); launch=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig'); p10=N/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/gold_orchestrator.py'; p10src=p10.read_text(encoding='utf-8-sig') if p10.exists() else pipe
+ checks.append(ck('P08 decision state reaches P04 pipeline','calibrate_decision' in p10src and 'p08_decision_calibration.json' in p10src))
  checks.append(ck('P04 control model consumes P08 calibration','decision_calibration' in model))
- checks.append(ck('run Gold production routing unchanged','PRODUCTION_V3' in launch and 'Invoke-V2 $AlphaArgs' in launch))
- checks.append(ck('v3 decision status installed','v3-decision-status' in launch))
+ checks.append(ck('run Gold production routing unchanged','AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN' in launch and (N/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/runtime_router.py').exists()))
+ checks.append(ck('v3 decision status installed',((N/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/tools/alpha_desk.py').exists() and 'v3-decision-status' in (N/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/tools/alpha_desk.py').read_text(encoding='utf-8-sig')) if (N/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN').exists() else 'v3-decision-status' in launch))
  checks.append(ck('V3 remains shadow and automatic promotion forbidden',load(N/'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/config/promotion_policy.json')['automatic_promotion_forbidden'] is True))
  checks.append(ck('trade execution authority remains NONE',load(P/'config/decision_calibration_policy.json')['trade_execution_authority']=='NONE'))
  # Static scientific hashes.

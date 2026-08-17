@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "v2_p11_prompt_cluster": {
+    "classification": "LEGACY_V2_AUTHORITY",
+    "v3_decision_authority": false,
+    "preserve_for_v2_rollback": true
+  },
+  "p04_legacy_pipeline": {
+    "classification": "LEGACY_NONCANONICAL",
+    "v3_orchestration_authority": false,
+    "preserve_for_audit": true
+  },
+  "canonical_v3_orchestrator": "AD-V3-P10"
+}

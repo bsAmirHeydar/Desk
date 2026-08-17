@@ -106,6 +106,36 @@
       "kind": "empirical_calibration_registry_runtime",
       "class": "RUNTIME_STATE",
       "commit": false
+    },
+    {
+      "kind": "unified_run_manifests",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "unified_run_receipts",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "runtime_latest_pointers",
+      "class": "RUNTIME_STATE",
+      "commit": false
+    },
+    {
+      "kind": "runtime_locks",
+      "class": "RUNTIME_STATE",
+      "commit": false
+    },
+    {
+      "kind": "runtime_temp_files",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "v3_shadow_latest",
+      "class": "RUNTIME_STATE",
+      "commit": false
     }
   ],
   "required_gitignore_patterns": [
@@ -118,7 +148,8 @@
     "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/artifacts/",
     "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/artifacts/",
     "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/artifacts/",
-    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/artifacts/"
+    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/artifacts/",
+    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/artifacts/"
   ],
   "historical_rule": "Scientific evidence is classified or archived; it is not deleted merely to make the tree look clean."
 }

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "active_subject": "Gold",
+  "aliases": [
+    "gold",
+    "xauusd",
+    "xau"
+  ],
+  "routes": {
+    "SHADOW_COMMISSIONING": {
+      "PRODUCTION": "V2",
+      "SHADOW": "V3"
+    },
+    "PRODUCTION_V3": {
+      "PRODUCTION": "V3",
+      "SHADOW": "V3"
+    },
+    "ROLLED_BACK_V2": {
+      "PRODUCTION": "V2",
+      "SHADOW": "V3"
+    }
+  },
+  "non_gold": "REJECT",
+  "routing_authority": "AD-V3-P10",
+  "installed_is_not_production": true
+}

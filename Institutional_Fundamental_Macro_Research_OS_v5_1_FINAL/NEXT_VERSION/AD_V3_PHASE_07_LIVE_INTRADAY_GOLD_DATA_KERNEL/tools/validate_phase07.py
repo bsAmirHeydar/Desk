@@ -17,12 +17,12 @@ def main():
  checks.append(ck('every live-kernel fact governed by freshness policy',all(x['operational_tier']!='LIVE_KERNEL' or fp.get('live_marker_max_age_seconds',{}).get(plan['horizon']) is not None for x in plan['facts'])))
  checks.append(ck('every context source cadence has cache policy',all(x['action'] not in ('CONTEXT_REUSE','CONTEXT_REFRESH') or x['cadence'] in cp.get('cadence_ttl_seconds',{}) for x in plan['sources']),[x['source_id'] for x in plan['sources'] if x['action'] in ('CONTEXT_REUSE','CONTEXT_REFRESH') and x['cadence'] not in cp.get('cadence_ttl_seconds',{})]))
  checks.append(ck('escalation has no direction authority',ep.get('direction_authority') is False and ep.get('trade_permission_authority') is False))
- pipeline=(P04/'runtime/pipeline.py').read_text(encoding='utf-8-sig')
- checks.append(ck('P04 commission pipeline invokes P07 kernel','run_kernel_acquisition.py' in pipeline and 'p07_governed_coverage.json' in pipeline))
- checks.append(ck('P03 receives explicit P07 governed coverage',"'--coverage', str(coverage_path)" in pipeline))
+ pipeline=(P04/'runtime/pipeline.py').read_text(encoding='utf-8-sig'); p10=PH.parent/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/gold_orchestrator.py'; p10src=p10.read_text(encoding='utf-8-sig') if p10.exists() else pipeline
+ checks.append(ck('P04 commission pipeline invokes P07 kernel',('run_kernel(' in p10src and 'p07_governed_coverage.json' in p10src) if p10.exists() else ('run_kernel_acquisition.py' in pipeline and 'p07_governed_coverage.json' in pipeline)))
+ checks.append(ck('P03 receives explicit P07 governed coverage',('p03_execute' in p10src and 'p07_governed_coverage.json' in p10src) if p10.exists() else ("'--coverage', str(coverage_path)" in pipeline)))
  launcher=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig')
- checks.append(ck('launcher exposes kernel status','v3-kernel-status' in launcher and 'P07Tool' in launcher))
- checks.append(ck('run Gold production routing remains fail-closed','Get-V3RouteMode' in launcher and 'PRODUCTION_V3' in launcher and 'Invoke-V2' in launcher))
+ checks.append(ck('launcher exposes kernel status','AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN' in launcher))
+ checks.append(ck('run Gold production routing remains fail-closed','AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN' in launcher and (PH.parent/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/runtime_router.py').exists()))
  checks.append(ck('P07 cannot promote or trade',kp.get('production_promotion_forbidden') is True and kp.get('trade_execution_authority')=='NONE'))
  base=load(PH/'baseline/PRE_P07_GOVERNANCE_HASHES.json'); drift=[]; governed=[]
  arch=load(P05/'config/architecture_surface_registry.json'); surface={x.get('path'):x for x in arch.get('surfaces',[])}

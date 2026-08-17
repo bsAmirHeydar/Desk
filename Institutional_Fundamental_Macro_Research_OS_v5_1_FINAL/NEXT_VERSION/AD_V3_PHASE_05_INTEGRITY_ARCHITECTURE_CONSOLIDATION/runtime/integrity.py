@@ -96,9 +96,32 @@ def audit_command_contract():
     if c.get('active_subject')!='Gold': errors.append('ACTIVE_SUBJECT_NOT_GOLD')
     if c.get('chat_semantics',{}).get('Run')!='Run Gold': errors.append('RUN_ALIAS_DRIFT')
     if 'run NASDAQ100' in run or 'NEW_ASSET_RESEARCH' in run: errors.append('LEGACY_MULTI_ASSET_CONTRACT_STILL_CURRENT')
-    for token in ['Get-V3RouteMode','PRODUCTION_V3','Invoke-V2','commission','v3-integrity-status']:
-        if token not in launcher: errors.append('LAUNCHER_CONTRACT_MISSING:'+token)
-    if 'V2 fallback' not in v2 and 'V2 fallback' not in run: errors.append('V2_FALLBACK_NOT_DOCUMENTED')
+    p10=NEXT/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN'
+    if p10.exists():
+        for token in ['AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN','alpha_desk.py','PYTHONIOENCODING','PYTHONUTF8']:
+            if token not in launcher: errors.append('LAUNCHER_CONTRACT_MISSING:'+token)
+        router=(p10/'runtime/runtime_router.py').read_text(encoding='utf-8-sig')
+        for token in ['selected_runtime','V2','V3']:
+            if token not in router: errors.append('P10_ROUTER_MISSING:'+token)
+        route_policy=load(p10/'config/route_policy.json')
+        routes=route_policy.get('routes') or {}
+        expected_routes={
+            'SHADOW_COMMISSIONING': {'PRODUCTION':'V2','SHADOW':'V3'},
+            'PRODUCTION_V3': {'PRODUCTION':'V3','SHADOW':'V3'},
+            'ROLLED_BACK_V2': {'PRODUCTION':'V2','SHADOW':'V3'},
+        }
+        for state,want in expected_routes.items():
+            got=routes.get(state) or {}
+            for intent,runtime in want.items():
+                if got.get(intent)!=runtime:
+                    errors.append(f'P10_ROUTE_POLICY_DRIFT:{state}:{intent}:{got.get(intent)}!={runtime}')
+        if route_policy.get('routing_authority')!='AD-V3-P10': errors.append('P10_ROUTING_AUTHORITY_DRIFT')
+        cli=(p10/'tools/alpha_desk.py').read_text(encoding='utf-8-sig')
+        if "resolve(repo,a.subject,'PRODUCTION')" not in cli or "resolve(repo,a.subject,'SHADOW')" not in cli: errors.append('P10_ROUTE_INTENTS_MISSING')
+    else:
+        for token in ['Get-V3RouteMode','PRODUCTION_V3','Invoke-V2','commission','v3-integrity-status']:
+            if token not in launcher: errors.append('LAUNCHER_CONTRACT_MISSING:'+token)
+    if 'V2' not in v2 or ('fallback' not in v2.lower() and 'rollback' not in v2.lower()): errors.append('V2_FALLBACK_NOT_DOCUMENTED')
     return {'status':'PASS' if not errors else 'FAIL_CLOSED','errors':errors,'active_subject':c.get('active_subject'),'expected_v3_state':c.get('current_expected_v3_state')}
 
 def audit_promotion_contract():
