@@ -40,5 +40,14 @@ def main():
     checks.append(ck('V2 baseline retained by policy',load(P/'config/promotion_policy.json')['v2_baseline_retained_after_promotion'] is True))
     checks.append(ck('no trade execution capability',load(P/'DEVELOPMENT_MANIFEST.json')['forbidden'][-1]=='trade execution'))
     checks.append(ck('P04 does not claim initial production authority',load(P/'DEVELOPMENT_MANIFEST.json')['production_direction_authority'] is False and load(P/'DEVELOPMENT_MANIFEST.json')['production_trade_permission_authority'] is False))
+
+    pipeline_src=(P/'runtime'/'pipeline.py').read_text(encoding='utf-8')
+    cli_src=(P/'tools'/'alpha_desk_v3.py').read_text(encoding='utf-8')
+    checks.append(ck('commissioning pipeline emits operator-visible progress','def _progress' in pipeline_src and '[1/7] P02 live acquisition' in pipeline_src and 'heartbeat_seconds' in pipeline_src))
+    checks.append(ck('P02 BLOCKED receipt is parsed before stop','allow=(0, 2, 3)' in pipeline_src and 'P02_BLOCKED' in pipeline_src and 'BLOCKING FACTS' in pipeline_src))
+    checks.append(ck('commissioning CLI stops cleanly without raw traceback','except RuntimeError as e:' in cli_src and 'COMMISSIONING - STOPPED' in cli_src))
+    checks.append(ck('V3 CLI forces UTF-8 operator stdout and stderr',"def _configure_utf8_stdio" in cli_src and "reconfigure(encoding='utf-8', errors='replace')" in cli_src))
+    launcher_src=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig')
+    checks.append(ck('Windows launcher establishes UTF-8 for V3 child processes','PYTHONIOENCODING' in launcher_src and 'PYTHONUTF8' in launcher_src and '[Console]::OutputEncoding' in launcher_src))
     status='PASS' if all(x['status']=='PASS' for x in checks) else 'FAIL'; out={'phase':'AD-V3-P04','acceptance_status':status,'check_count':len(checks),'checks':checks,'deployment':'SHADOW_COMMISSIONING','p01_p02_p03_frozen':True,'production_authority_still_false':True}; print(json.dumps(out,indent=2,ensure_ascii=False)); return 0 if status=='PASS' else 2
 if __name__=='__main__': raise SystemExit(main())

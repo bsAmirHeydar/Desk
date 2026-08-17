@@ -8,21 +8,57 @@ $Repo = $PSScriptRoot
 
 $V2Tool = Join-Path $Repo "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL\NEXT_VERSION\AD_V2_PHASE_13_CANONICAL_GOLD_CONTROL_ROOM_OUTPUT\tools\alpha_desk_v2.py"
 $V3Tool = Join-Path $Repo "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL\NEXT_VERSION\AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING\tools\alpha_desk_v3.py"
+$script:AlphaDeskLastExitCode = 0
 
 function Invoke-V2([string[]]$ArgsList) {
     if (-not (Test-Path -LiteralPath $V2Tool)) {
         throw "Alpha Desk V2 P13 canonical Gold Control Room is not installed."
     }
+
+    # Stream native stdout/stderr to the operator. Exit status is kept
+    # out-of-band so assigning a function result never swallows reports.
     & python $V2Tool @ArgsList
-    return $LASTEXITCODE
+    $script:AlphaDeskLastExitCode = $LASTEXITCODE
 }
 
 function Invoke-V3([string[]]$ArgsList) {
     if (-not (Test-Path -LiteralPath $V3Tool)) {
         throw "Alpha Desk V3 P04 commissioning runtime is not installed."
     }
-    & python $V3Tool @ArgsList
-    return $LASTEXITCODE
+
+    # Windows PowerShell 5.1 commonly exposes a legacy cp1252 console to
+    # native child processes. V3 reports may contain Persian/Unicode text.
+    $OldPyIo = $env:PYTHONIOENCODING
+    $OldPyUtf8 = $env:PYTHONUTF8
+    $OldConsoleEncoding = [Console]::OutputEncoding
+
+    try {
+        $Utf8 = New-Object System.Text.UTF8Encoding($false)
+        [Console]::OutputEncoding = $Utf8
+        $env:PYTHONIOENCODING = "utf-8"
+        $env:PYTHONUTF8 = "1"
+
+        # Do not return native stdout as the function's return value.
+        # The child output must stream live to the PowerShell host.
+        & python $V3Tool @ArgsList
+        $script:AlphaDeskLastExitCode = $LASTEXITCODE
+    }
+    finally {
+        [Console]::OutputEncoding = $OldConsoleEncoding
+
+        if ($null -eq $OldPyIo) {
+            Remove-Item Env:PYTHONIOENCODING -ErrorAction SilentlyContinue
+        } else {
+            $env:PYTHONIOENCODING = $OldPyIo
+        }
+
+        if ($null -eq $OldPyUtf8) {
+            Remove-Item Env:PYTHONUTF8 -ErrorAction SilentlyContinue
+        } else {
+            $env:PYTHONUTF8 = $OldPyUtf8
+        }
+    }
+
 }
 
 function Get-V3RouteMode {
@@ -58,36 +94,36 @@ if ($AlphaArgs.Count -gt 1) { $Rest = @($AlphaArgs[1..($AlphaArgs.Count-1)]) }
 
 switch ($Command.ToLowerInvariant()) {
     "commission" {
-        $Code = Invoke-V3 (@("run") + $Rest)
-        exit $Code
+        Invoke-V3 (@("run") + $Rest)
+        exit $script:AlphaDeskLastExitCode
     }
     "commission-report" {
-        $Code = Invoke-V3 (@("report") + $Rest)
-        exit $Code
+        Invoke-V3 (@("report") + $Rest)
+        exit $script:AlphaDeskLastExitCode
     }
     "commission-open" {
-        $Code = Invoke-V3 (@("open") + $Rest)
-        exit $Code
+        Invoke-V3 (@("open") + $Rest)
+        exit $script:AlphaDeskLastExitCode
     }
     "v3-status" {
-        $Code = Invoke-V3 @("status")
-        exit $Code
+        Invoke-V3 @("status")
+        exit $script:AlphaDeskLastExitCode
     }
     "v3-tf-status" {
-        $Code = Invoke-V3 @("tf-status")
-        exit $Code
+        Invoke-V3 @("tf-status")
+        exit $script:AlphaDeskLastExitCode
     }
     "v3-promotion-status" {
-        $Code = Invoke-V3 @("promotion-status")
-        exit $Code
+        Invoke-V3 @("promotion-status")
+        exit $script:AlphaDeskLastExitCode
     }
     "v3-promote" {
-        $Code = Invoke-V3 (@("promote") + $Rest)
-        exit $Code
+        Invoke-V3 (@("promote") + $Rest)
+        exit $script:AlphaDeskLastExitCode
     }
     "v3-rollback" {
-        $Code = Invoke-V3 @("rollback")
-        exit $Code
+        Invoke-V3 @("rollback")
+        exit $script:AlphaDeskLastExitCode
     }
 }
 
@@ -96,10 +132,10 @@ switch ($Command.ToLowerInvariant()) {
 if ($Command -in @("run","report","open")) {
     $IsGold = ($Rest.Count -gt 0 -and ([string]$Rest[0]).ToLowerInvariant() -in @("gold","xauusd"))
     if ($IsGold -and (Get-V3RouteMode) -eq "PRODUCTION_V3") {
-        $Code = Invoke-V3 (@($Command) + $Rest)
-        exit $Code
+        Invoke-V3 (@($Command) + $Rest)
+        exit $script:AlphaDeskLastExitCode
     }
 }
 
-$Code = Invoke-V2 $AlphaArgs
-exit $Code
+Invoke-V2 $AlphaArgs
+exit $script:AlphaDeskLastExitCode

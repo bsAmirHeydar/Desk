@@ -1,0 +1,15 @@
+{
+  "record_type": "AD_V3_P04_FINAL_STABILIZATION_RC",
+  "rc": "RC2",
+  "base_version": "4.0.0-commissioning",
+  "scope": "WINDOWS_OPERATOR_OUTPUT_ENCODING_ONLY",
+  "scientific_contracts_changed": false,
+  "p01_p02_p03_mutation": false,
+  "changes": [
+    "force UTF-8 stdout/stderr in the V3 Python CLI so Persian human reports cannot fail under cp1252",
+    "establish UTF-8 child-process environment and console output encoding in AlphaDesk.ps1 for all V3 commands",
+    "preserve and restore caller environment after each V3 launcher invocation"
+  ],
+  "production_authority": false,
+  "trade_execution_authority": false
+}
