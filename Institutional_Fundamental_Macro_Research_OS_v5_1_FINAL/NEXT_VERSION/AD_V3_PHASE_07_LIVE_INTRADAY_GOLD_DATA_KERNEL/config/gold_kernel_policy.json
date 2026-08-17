@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P07",
+  "version": "3.7.0-live-intraday-gold-kernel",
+  "subject": "XAUUSD",
+  "default_horizon": "SESSION_1_6H",
+  "p02_snapshot_horizon": "ALL",
+  "acquisition_modes": ["NORMAL", "FULL_REFRESH", "CACHE_ONLY"],
+  "live_source_cadences": [
+    "REALTIME", "INTRADAY", "DAILY_INTRADAY", "INTRADAY_DAILY",
+    "EVENT", "MONTHLY_EVENT", "EVENT_DAILY", "DAILY_EVENT", "TWICE_DAILY_EVENT"
+  ],
+  "gap_acquisition_modes": ["PRIVATE_GAP", "PAID_GAP", "LICENSED_GAP", "PROVIDER_GAP"],
+  "non_network_acquisition_modes": ["DERIVED_FROM_FACTS", "DERIVED_FROM_STORE", "CALENDAR_DERIVED", "STATIC_KNOWLEDGE"],
+  "session_live_fact_overrides": [
+    "UST_2Y_NOMINAL_YIELD",
+    "UST_5Y_NOMINAL_YIELD",
+    "UST_10Y_NOMINAL_YIELD",
+    "UST_30Y_NOMINAL_YIELD",
+    "UST_5Y_REAL_YIELD",
+    "UST_10Y_REAL_YIELD",
+    "UST_30Y_REAL_YIELD",
+    "DXY_INDEX",
+    "FED_BROAD_DOLLAR",
+    "FED_AFE_DOLLAR",
+    "FED_EME_DOLLAR",
+    "USDCNH_CNH_STATE"
+  ],
+  "market_anchor_blocking_cluster": ["XAUUSD_SPOT_PRICE", "GC_FUTURES_PRICE"],
+  "important_nonblocking_live_facts": [
+    "FED_POLICY_PATH_PRICING",
+    "UST_2Y_NOMINAL_YIELD",
+    "UST_10Y_NOMINAL_YIELD",
+    "UST_10Y_REAL_YIELD",
+    "DXY_INDEX",
+    "FED_BROAD_DOLLAR",
+    "GC_VOLUME",
+    "GC_OPEN_INTEREST"
+  ],
+  "fresh_live_states": ["FRESH_LIVE", "FRESH_FOR_HORIZON"],
+  "valid_context_states": ["FRESH_LIVE", "FRESH_FOR_HORIZON", "CONTEXT_VALID"],
+  "minimum_live_fresh_ratio_for_pass": 0.70,
+  "full_universe_snapshot_required": true,
+  "p02_remains_acquisition_authority": true,
+  "price_causal_direction_authority": false,
+  "production_promotion_forbidden": true,
+  "trade_execution_authority": "NONE"
+}

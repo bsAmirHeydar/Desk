@@ -1,0 +1,28 @@
+{
+  "phase": "AD-V3-P07",
+  "version": "3.7.0-live-intraday-gold-kernel",
+  "title": "Live Intraday Gold Data Kernel",
+  "status": "PASS",
+  "base_commit_expected": "e6aab1d",
+  "scope": {
+    "subject": "Gold",
+    "default_horizon": "SESSION_1_6H",
+    "production_authority": false,
+    "trade_execution_authority": "NONE"
+  },
+  "architecture": {
+    "planner_authority": "WHAT_AND_WHEN",
+    "acquisition_authority": "AD-V3-P02",
+    "reasoning_authority": "AD-V3-P03",
+    "semantic_authority": "AD-V3-P06",
+    "presentation_authority": "AD-V3-P04"
+  },
+  "modes": [
+    "NORMAL",
+    "FULL_REFRESH",
+    "CACHE_ONLY"
+  ],
+  "acceptance_check_count": 35,
+  "live_smoke_status": "NOT_RUN_NETWORK_UNAVAILABLE",
+  "next_phase": "AD-V3-P08_DECISION_SCIENCE_AND_CALIBRATION"
+}

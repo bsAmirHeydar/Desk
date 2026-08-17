@@ -209,7 +209,8 @@
     "/__pycache__/",
     "/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/",
     "/.alphalab_patch_backups/",
-    "/.git/"
+    "/.git/",
+    "/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/"
   ],
   "classification_rule": "Every discovered pre-V3 Gold surface is ledgered with platform-invariant case-insensitive discovery. Explicit GOVERNANCE_ONLY surfaces may have zero fact matches. Explicit INTERFACE_CONTRACT_ONLY surfaces may have zero fact matches only when their exact schema hash and top-level field contract pass the audited Gold interface registry. Any other discovered/required Gold surface with zero registered fact matches is UNACCOUNTED and fails closed.",
   "zero_unaccounted_definition": "All required authority surfaces exist; no non-governance/non-interface Gold surface is unmatched; every interface-only schema is exact-hash and field-contract audited; all registered facts are semantically classified. Registry entries intentionally extending V2/Vault science are permitted and do not pretend prior-Vault provenance. P02 live-source coverage remains out of scope.",

@@ -190,21 +190,21 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/pipeline.py",
-      "owner": "AD-V3-P06/P04_INTEGRATION",
+      "owner": "AD-V3-P07/P04_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/control_room_model.py",
-      "owner": "AD-V3-P06/P04_INTEGRATION",
+      "owner": "AD-V3-P07/P04_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/renderer.py",
-      "owner": "AD-V3-P06/P04_INTEGRATION",
+      "owner": "AD-V3-P07/P04_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
@@ -213,6 +213,55 @@
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/baseline/P04_IMMUTABLE_HASHES.json",
       "owner": "AD-V3-P04",
       "class": "HISTORICAL_SNAPSHOT",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/tools/alpha_desk_v3.py",
+      "owner": "AD-V3-P07/P04_INTEGRATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/config/gold_kernel_policy.json",
+      "owner": "AD-V3-P07",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/config/freshness_authority_policy.json",
+      "owner": "AD-V3-P07",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/config/context_cache_policy.json",
+      "owner": "AD-V3-P07",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/config/escalation_policy.json",
+      "owner": "AD-V3-P07",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/runtime/kernel_runtime.py",
+      "owner": "AD-V3-P07",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/gold_knowledge_surface_registry.json",
+      "owner": "AD-V3-P07/P01_DISCOVERY_BOUNDARY_REPAIR",
+      "class": "SCIENTIFIC_VERSIONED",
       "commit": true,
       "rollback_authority": true
     }
@@ -266,6 +315,26 @@
     {
       "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/artifacts/**",
       "owner": "AD-V3-P06_RUNTIME",
+      "class": "RUNTIME_ARTIFACT"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/config/*.json",
+      "owner": "AD-V3-P07",
+      "class": "GOVERNANCE_VERSIONED"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/runtime/*.py",
+      "owner": "AD-V3-P07",
+      "class": "GOVERNANCE_VERSIONED"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/schemas/*.json",
+      "owner": "AD-V3-P07",
+      "class": "GOVERNANCE_VERSIONED"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/artifacts/**",
+      "owner": "AD-V3-P07_RUNTIME",
       "class": "RUNTIME_ARTIFACT"
     }
   ],

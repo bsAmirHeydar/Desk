@@ -126,12 +126,13 @@ def _blocking_fact_ids(coverage):
     return list(dict.fromkeys(ids))
 
 
-def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=None, p02_data_root_override=None, output_root_override=None):
+def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=None, p02_data_root_override=None, output_root_override=None, kernel_mode='NORMAL', kernel_fixture_dir=None, kernel_output_root_override=None):
     repo = Path(repo_root)
     nxt = repo / 'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL' / 'NEXT_VERSION'
     p02 = nxt / 'AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC'
     p03 = nxt / 'AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE'
     p04 = nxt / 'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING'
+    p07 = nxt / 'AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL'
     data = Path(p02_data_root_override) if p02_data_root_override else p02 / 'artifacts' / 'live_store'
     outroot = Path(output_root_override) if output_root_override else p04 / 'artifacts'
     runs = outroot / 'runs'
@@ -147,39 +148,46 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
     _progress('============================================================')
     _progress(f'Run ID: {run_id}')
 
+    kernel = None
+    coverage_path = rd / 'p07_governed_coverage.json'
     if not skip_p02:
-        _progress('[1/7] P02 live acquisition')
-        code, cov = _run_json(
-            [sys.executable, str(p02 / 'tools' / 'run_gold_live_acquisition.py'), '--horizon', 'ALL', '--json'],
-            allow=(0, 2, 3),
-            label='P02 live acquisition',
-            hard_timeout_seconds=900,
-            heartbeat_seconds=20,
+        _progress('[1/7] P02 live acquisition via P07 intraday Gold data kernel')
+        cmd=[sys.executable, str(p07 / 'tools' / 'run_kernel_acquisition.py'), '--horizon', horizon, '--mode', kernel_mode, '--data-root', str(data), '--json']
+        if kernel_fixture_dir:
+            cmd += ['--fixture-network-dir', str(kernel_fixture_dir)]
+        if kernel_output_root_override:
+            cmd += ['--output-root', str(kernel_output_root_override)]
+        code, kernel = _run_json(
+            cmd, allow=(0, 2, 3), label='P07 Gold data kernel', hard_timeout_seconds=900, heartbeat_seconds=20,
         )
-        write_json(rd / 'p02_coverage.json', cov)
+        source_cov=load_json(kernel['governed_coverage_path'])
+        write_json(coverage_path, source_cov)
+        write_json(rd / 'p07_kernel_receipt.json', kernel)
+        cov=source_cov
     else:
-        _progress('[1/7] P02 live acquisition: SKIPPED (using latest receipt)')
-        receipts = sorted((data / 'receipts').glob('*.json'), key=lambda p: p.stat().st_mtime, reverse=True)
-        if not receipts:
-            raise RuntimeError('NO_P02_COVERAGE_RECEIPT')
-        cov = load_json(receipts[0])
-        code = 0
-        write_json(rd / 'p02_coverage.json', cov)
+        _progress('[1/7] P07 data kernel: SKIPPED (using latest governed kernel coverage)')
+        latest_kernel=p07/'artifacts'/'latest'/'latest_kernel_receipt.json'
+        latest_cov=p07/'artifacts'/'latest'/'latest_governed_coverage.json'
+        if not latest_kernel.exists() or not latest_cov.exists():
+            raise RuntimeError('NO_P07_KERNEL_RECEIPT')
+        kernel=load_json(latest_kernel); cov=load_json(latest_cov); code=0
+        write_json(coverage_path,cov); write_json(rd/'p07_kernel_receipt.json',kernel)
 
     admission = cov.get('analysis_admission')
     may_start = bool(cov.get('analysis_may_start'))
-    _progress(f'      P02 admission: {admission}; analysis_may_start={str(may_start).lower()}')
+    kh=(kernel or {}).get('kernel_health') or {}
+    _progress(f"      kernel: live {kh.get('live_kernel_fresh')}/{kh.get('live_kernel_total')} | context {kh.get('context_valid')}/{kh.get('context_total')} | admission={admission}")
     if code == 2 and may_start:
         _progress('      DEGRADED / NON-BLOCKED -> CONTINUE')
     if code == 3 or admission == 'BLOCKED' or not may_start:
         blockers = _blocking_fact_ids(cov)
         if blockers:
             _progress('      BLOCKING FACTS: ' + ', '.join(blockers))
-        raise RuntimeError('P02_BLOCKED' + (': ' + ', '.join(blockers) if blockers else ''))
+        raise RuntimeError('P02_BLOCKED_BY_P07_KERNEL' + (': ' + ', '.join(blockers) if blockers else ''))
 
     _progress('[2/7] P03 causal brain - pre-semantic')
     _, pre = _run_json(
-        [sys.executable, str(p03 / 'tools' / 'run_causal_brain.py'), '--p02-data-root', str(data), '--horizon', horizon, '--json'],
+        [sys.executable, str(p03 / 'tools' / 'run_causal_brain.py'), '--p02-data-root', str(data), '--coverage', str(coverage_path), '--horizon', horizon, '--json'],
         label='P03 pre-semantic causal brain',
         hard_timeout_seconds=300,
         heartbeat_seconds=20,
@@ -191,7 +199,7 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
     _progress('[3/7] Semantic evidence packet')
     packet_path = rd / 'semantic_evidence_packet.json'
     sr = subprocess.run(
-        [sys.executable, str(p03 / 'tools' / 'export_semantic_evidence_packet.py'), '--p02-data-root', str(data), '--horizon', horizon, '--output', str(packet_path)],
+        [sys.executable, str(p03 / 'tools' / 'export_semantic_evidence_packet.py'), '--p02-data-root', str(data), '--coverage', str(coverage_path), '--horizon', horizon, '--output', str(packet_path)],
         capture_output=True,
         text=True,
         encoding='utf-8',
@@ -213,7 +221,7 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
 
     _progress('[5/7] P03 causal brain - final')
     _, final = _run_json(
-        [sys.executable, str(p03 / 'tools' / 'run_causal_brain.py'), '--p02-data-root', str(data), '--horizon', horizon, '--adjudication', str(rd / 'semantic_adjudication_bundle.json'), '--json'],
+        [sys.executable, str(p03 / 'tools' / 'run_causal_brain.py'), '--p02-data-root', str(data), '--coverage', str(coverage_path), '--horizon', horizon, '--adjudication', str(rd / 'semantic_adjudication_bundle.json'), '--json'],
         label='P03 final causal brain',
         hard_timeout_seconds=300,
         heartbeat_seconds=20,
@@ -239,7 +247,7 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
     prev = None
     if (latest_dir / 'latest_control_room.json').exists():
         prev = load_json(latest_dir / 'latest_control_room.json')
-    model = build_model(run_id, final, packet, bundle, permission, commissioning, promotion, prev, pre_semantic=pre)
+    model = build_model(run_id, final, packet, bundle, permission, commissioning, promotion, prev, pre_semantic=pre, data_kernel=kernel)
     write_json(rd / 'control_room.json', model)
     helps = load_json(p04 / 'config' / 'help_registry.json')
     (rd / 'control_room.html').write_text(render(model, helps), encoding='utf-8')
@@ -260,6 +268,8 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
         (rd / 'semantic_validation_receipt.json', 'latest_semantic_validation_receipt.json'),
         (rd / 'semantic_validated_bundle.json', 'latest_semantic_validated_bundle.json'),
         (rd / 'semantic_run_capsule.json', 'latest_semantic_run_capsule.json'),
+        (rd / 'p07_kernel_receipt.json', 'latest_p07_kernel_receipt.json'),
+        (rd / 'p07_governed_coverage.json', 'latest_p07_governed_coverage.json'),
     ]:
         shutil.copy2(src, latest_dir / name)
 
@@ -268,8 +278,18 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
         'run_id': run_id,
         'generated_at_utc': iso(),
         'status': 'PASS',
-        'p02_admission': cov.get('analysis_admission'),
+        'p02_admission': cov.get('p02_original_analysis_admission', cov.get('analysis_admission')),
+        'p07_admission': cov.get('analysis_admission'),
         'p02_degraded_nonblocking': code == 2 and bool(cov.get('analysis_may_start')),
+        'p07_kernel_run_id': (kernel or {}).get('run_id'),
+        'p07_live_kernel_health': ((kernel or {}).get('kernel_health') or {}).get('live_kernel_health'),
+        'p07_live_kernel_fresh': ((kernel or {}).get('kernel_health') or {}).get('live_kernel_fresh'),
+        'p07_live_kernel_total': ((kernel or {}).get('kernel_health') or {}).get('live_kernel_total'),
+        'p07_context_valid': ((kernel or {}).get('kernel_health') or {}).get('context_valid'),
+        'p07_context_total': ((kernel or {}).get('kernel_health') or {}).get('context_total'),
+        'p07_network_requests': ((kernel or {}).get('performance') or {}).get('network_requests'),
+        'p07_cache_hits': ((kernel or {}).get('performance') or {}).get('cache_hits'),
+        'p07_duration_ms': ((kernel or {}).get('performance') or {}).get('total_p07_ms'),
         'p03_handoff_complete': bool((final.get('handoff_integrity') or {}).get('complete')),
         'direction_candidate': permission.get('direction'),
         'research_action_candidate': permission.get('research_action_candidate'),

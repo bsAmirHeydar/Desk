@@ -1,0 +1,121 @@
+{
+  "phase": "AD-V3-P07",
+  "version": "3.7.0-live-intraday-gold-kernel",
+  "status": "PASS",
+  "p07_status": "PASS",
+  "base_commit_expected": "e6aab1d",
+  "regression": {
+    "P01": {
+      "status": "PASS",
+      "checks": 41
+    },
+    "P02": {
+      "status": "PASS",
+      "checks": 57
+    },
+    "P03": {
+      "status": "PASS",
+      "checks": 70
+    },
+    "P04": {
+      "status": "PASS",
+      "checks": 27
+    },
+    "P05": {
+      "status": "PASS",
+      "checks": 20
+    },
+    "P06": {
+      "status": "PASS",
+      "checks": 41
+    },
+    "P07": {
+      "status": "PASS",
+      "checks": 35
+    }
+  },
+  "gold_data_universe": {
+    "gold_facts": 192,
+    "source_contracts": 96,
+    "acquisition_contracts": 192
+  },
+  "default_horizon": "SESSION_1_6H",
+  "fact_tiers": {
+    "LIVE_KERNEL": 64,
+    "CONTEXT_CACHE": 111,
+    "ESCALATION": 17
+  },
+  "cold_source_actions": {
+    "LIVE_FETCH": 29,
+    "CONTEXT_REFRESH": 46,
+    "NON_NETWORK": 1
+  },
+  "policy_coverage": {
+    "tier_policy": "COMPLETE_192_OF_192",
+    "freshness_policy": "COMPLETE",
+    "context_cache_policy": "COMPLETE_FOR_CONTEXT_CADENCES",
+    "escalation_policy": "COMPLETE_FOR_ESCALATION_TIER"
+  },
+  "known_gaps": {
+    "direct_dxy": {
+      "fact_id": "DXY_INDEX",
+      "acquisition_mode": "PROVIDER_GAP",
+      "tier": "ESCALATION"
+    },
+    "official_real_yields": [
+      "UST_5Y_REAL_YIELD",
+      "UST_10Y_REAL_YIELD",
+      "UST_30Y_REAL_YIELD"
+    ],
+    "provider_gap_facts": [
+      "DXY_INDEX",
+      "USDCNH_CNH_STATE"
+    ],
+    "private_gap_facts": [
+      "LONDON_OTC_CLIENT_DEALER_FLOW",
+      "BULLION_BANK_BALANCE_SHEET",
+      "REALTIME_CENTRAL_BANK_GOLD_TRANSACTION",
+      "PRIVATE_INSTITUTIONAL_GOLD_ORDER_FLOW",
+      "TRUE_DEALER_OPTIONS_INVENTORY",
+      "FULL_GLOBAL_GOLD_INVENTORY"
+    ],
+    "paid_gap_facts": [
+      "DEALER_GAMMA_VANNA_CHARM",
+      "CME_MARKET_DEPTH_MBO",
+      "GC_AGGRESSOR_IMBALANCE",
+      "LBMA_TRADE_ACTIVITY",
+      "GOLD_LEASE_RATE",
+      "GOLD_FORWARD_RATE",
+      "COMEX_LONDON_EFP",
+      "GOLD_FINANCING_CARRY"
+    ]
+  },
+  "deterministic_performance": {
+    "cold_network_requests": 75,
+    "warm_network_requests": 28,
+    "warm_cache_hits": 45,
+    "full_refresh_network_requests": 75,
+    "cache_only_network_requests": 0,
+    "request_reduction_pct": 62.67
+  },
+  "live_smoke": {
+    "phase": "AD-V3-P07",
+    "live_kernel_smoke": "NOT_RUN_NETWORK_UNAVAILABLE",
+    "reason": "URLError:<urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  "live_wall_clock_comparison": "NOT_AVAILABLE_NETWORK_UNAVAILABLE",
+  "science_integrity": {
+    "gold_fact_ontology_drift": 0,
+    "causal_root_drift": 0,
+    "pressure_plane_drift": 0,
+    "semantic_authority_drift": 0,
+    "decision_authority_drift": 0
+  },
+  "architecture_drift_count": 0,
+  "v3_state": "SHADOW_COMMISSIONING",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE",
+  "normal_route": "commission Gold -> P07 NORMAL -> P02 -> P03 -> P06 -> P03 final -> P04",
+  "production_route": "run Gold -> V2 while V3 is not PRODUCTION_V3",
+  "next_phase": "AD-V3-P08_DECISION_SCIENCE_AND_CALIBRATION"
+}

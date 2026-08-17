@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P07 Acquisition Plan",
+  "type": "object",
+  "required": [
+    "plan_id",
+    "subject",
+    "horizon",
+    "mode",
+    "facts",
+    "sources",
+    "counts"
+  ],
+  "properties": {
+    "plan_id": {
+      "type": "string"
+    },
+    "subject": {
+      "const": "Gold"
+    },
+    "horizon": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "NORMAL",
+        "FULL_REFRESH",
+        "CACHE_ONLY"
+      ]
+    },
+    "facts": {
+      "type": "array"
+    },
+    "sources": {
+      "type": "array"
+    },
+    "counts": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P07 Kernel Health",
+  "type": "object",
+  "required": [
+    "live_kernel_health",
+    "context_health",
+    "escalation_health",
+    "overall_analysis_admission"
+  ],
+  "properties": {
+    "live_kernel_health": {
+      "type": "string"
+    },
+    "context_health": {
+      "type": "string"
+    },
+    "escalation_health": {
+      "type": "string"
+    },
+    "overall_analysis_admission": {
+      "enum": [
+        "ALLOW",
+        "DEGRADED_ALLOW",
+        "BLOCK"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

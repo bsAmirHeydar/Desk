@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P07",
+  "enabled": true,
+  "triggers": {
+    "missing_driver_risk": ["HIGH", "ELEVATED"],
+    "price_transmission": ["DIVERGENT", "OPPOSED", "NON_CONFIRMING"],
+    "model_completeness": ["LOW", "INCOMPLETE"]
+  },
+  "eligible_fact_ids": [
+    "DEALER_GAMMA_VANNA_CHARM",
+    "LONDON_OTC_FLOW_DIRECTION",
+    "GOLD_LEASE_FORWARD_RATES",
+    "COMEX_LONDON_EFP",
+    "PRIVATE_INSTITUTIONAL_ORDER_FLOW",
+    "DXY_INDEX",
+    "USDCNH_CNH_STATE"
+  ],
+  "direction_authority": false,
+  "trade_permission_authority": false,
+  "normal_run_blocked_by_unavailable_escalation": false
+}

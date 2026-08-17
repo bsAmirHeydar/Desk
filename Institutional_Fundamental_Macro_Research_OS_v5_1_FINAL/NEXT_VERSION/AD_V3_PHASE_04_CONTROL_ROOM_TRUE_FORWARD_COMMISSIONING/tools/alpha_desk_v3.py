@@ -31,14 +31,14 @@ def _print_runtime_error(exc):
 
 def main():
     p=argparse.ArgumentParser(); sub=p.add_subparsers(dest='cmd')
-    r=sub.add_parser('run'); r.add_argument('subject'); r.add_argument('--horizon',default='SESSION_1_6H'); r.add_argument('--skip-p02',action='store_true'); r.add_argument('--semantic-bundle')
+    r=sub.add_parser('run'); r.add_argument('subject'); r.add_argument('--horizon',default='SESSION_1_6H'); r.add_argument('--skip-p02',action='store_true'); r.add_argument('--semantic-bundle'); r.add_argument('--full-refresh',action='store_true'); r.add_argument('--cache-only',action='store_true')
     for c in ('report','open'): q=sub.add_parser(c); q.add_argument('subject')
     sub.add_parser('status'); sub.add_parser('tf-status'); sub.add_parser('promotion-status'); pr=sub.add_parser('promote'); pr.add_argument('--approve',action='store_true'); sub.add_parser('rollback'); sub.add_parser('route-mode')
     a=p.parse_args()
     if a.cmd=='run':
         if a.subject.lower() not in ('gold','xauusd'): raise SystemExit('P04 supports Gold only.')
         try:
-            out=run(REPO,a.horizon,a.skip_p02,a.semantic_bundle)
+            kernel_mode='FULL_REFRESH' if a.full_refresh else ('CACHE_ONLY' if a.cache_only else 'NORMAL'); out=run(REPO,a.horizon,a.skip_p02,a.semantic_bundle,kernel_mode=kernel_mode)
         except RuntimeError as e:
             _print_runtime_error(e)
             return 3

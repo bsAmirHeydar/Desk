@@ -1,0 +1,12 @@
+{
+  "record_type": "AD_V3_P07_PRE_IMPLEMENTATION_ACQUISITION_BASELINE",
+  "basis": "repository inspection + deterministic P02 fixture network; live internet comparison unavailable in execution environment",
+  "pre_p07_normal_path": "P04 invoked P02 broad acquisition with horizon ALL",
+  "gold_facts": 192,
+  "source_contracts": 96,
+  "deterministic_full_refresh_network_requests": 75,
+  "observed_live_wall_clock": "NOT_MEASURED_NETWORK_UNAVAILABLE",
+  "post_p07_warm_normal_network_requests": 28,
+  "post_p07_warm_cache_hits": 45,
+  "deterministic_request_reduction_pct": 62.67
+}

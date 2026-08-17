@@ -19,7 +19,7 @@ def pill(x):
     return f'<span class="pill {c}">{esc(human_effect(x))}</span>'
 def help_btn(key,label='؟'): return f'<button class="help" data-help="{esc(key)}" aria-label="راهنما">{esc(label)}</button>'
 def render(model,help_registry):
-    e=model['executive_state']; q=model['model_quality']; perm=model['permission']; life=model.get('lifecycle') or {}; tf=model.get('true_forward') or {}
+    e=model['executive_state']; q=model['model_quality']; perm=model['permission']; life=model.get('lifecycle') or {}; tf=model.get('true_forward') or {}; dk=model.get('data_kernel') or {}
     changes=''.join(f"<div class='change'><b>{esc(x['label'])}</b><span>{esc(x.get('from'))}</span><span>→</span><span>{esc(x.get('to'))}</span></div>" for x in model.get('what_changed',[]))
     material_roots=[r for r in model.get('causal_roots',[]) if r.get('classification') in ('DOMINANT','BACKGROUND')]
     unresolved_roots=[r for r in model.get('causal_roots',[]) if r.get('classification') not in ('DOMINANT','BACKGROUND')]
@@ -41,13 +41,14 @@ def render(model,help_registry):
 <section class="section"><div class="head"><h2>چه چیزی نسبت به Run قبل تغییر کرد؟</h2><span class="muted">Change-first view</span></div>{changes}</section>
 <section class="section"><div class="head"><h2>چهار Pressure Plane</h2><span class="muted">جدا و غیرقابل ادغام</span></div><div class="grid4">{''.join(planes)}</div></section>
 <section class="section"><div class="head"><h2>Rootهای علّی</h2><span class="muted">Intake exhaustive · Decision sparse</span></div>{roots}</section>
+<section class="section"><div class="head"><h2>Data Kernel</h2><span class="muted">Live ≠ Context ≠ Gap</span></div><div class="grid4"><div class="metric"><span>Live Kernel</span><b>{esc(str(dk.get('live_kernel_fresh'))+' / '+str(dk.get('live_kernel_total')))}</b><small>{esc(dk.get('live_kernel_health'))}</small></div><div class="metric"><span>Context Valid</span><b>{esc(str(dk.get('context_valid'))+' / '+str(dk.get('context_total')))}</b><small>{esc(dk.get('context_health'))}</small></div><div class="metric"><span>Cache Reuse / Network</span><b>{esc(str(dk.get('cache_reuse_count'))+' / '+str(dk.get('network_request_count')))}</b></div><div class="metric"><span>Acquisition</span><b>{esc(dk.get('acquisition_duration_ms'))} ms</b><small>{esc(dk.get('admission'))}</small></div></div></section>
 <section class="section"><div class="head"><h2>Transmission و کیفیت مدل</h2>{help_btn('MODEL_COMPLETENESS')}</div><div class="grid4"><div class="metric"><span>Model Completeness</span><b>{esc(human_status(q.get('model_completeness')))}</b></div><div class="metric"><span>Missing Driver Risk {help_btn('MISSING_DRIVER')}</span><b>{esc(human_status(q.get('missing_driver_risk')))}</b></div><div class="metric"><span>Resolved Roots</span><b>{esc(q.get('resolved_root_families'))}</b></div><div class="metric"><span>Semantic Unknowns</span><b>{esc(q.get('semantic_unknown_items'))}</b></div></div><div class="grid4"><div class="metric"><span>Semantic Mode</span><b>{esc(q.get('semantic_mode'))}</b></div><div class="metric"><span>Semantic Validated</span><b>{esc(q.get('semantic_validated_items'))}</b></div><div class="metric"><span>Semantic Rejected / Fallback</span><b>{esc(str(q.get('semantic_rejected_items'))+' / '+str(q.get('semantic_fallback_items')))}</b></div><div class="metric"><span>Semantic Host</span><b>{esc(q.get('semantic_model_host_state'))}</b></div></div><h3>Unresolved / blind spots</h3><div class="tags">{unresolved}</div></section>
 <section class="section"><div class="head"><h2>Lifecycle</h2>{help_btn('PERSISTENCE')}</div>{lifecycle or '<p class="muted">Lifecycle هنوز قابل اثبات نیست.</p>'}</section>
 <section class="section"><div class="head"><h2>True-Forward Commissioning</h2>{help_btn('TRUE_FORWARD')}</div><div class="grid4"><div class="metric"><span>Sample State</span><b>{esc(human_status(tf.get('sample_state')))}</b></div><div class="metric"><span>Total Capsules</span><b>{esc(tf.get('total_capsules'))}</b></div><div class="metric"><span>Evaluated Outcomes</span><b>{esc(tf.get('outcomes_evaluated'))}</b></div><div class="metric"><span>Promotion Ready</span><b>{esc(human_status(tf.get('promotion_ready')))}</b></div></div><p class="note">قبل از آینده precommit ثبت می‌شود. هیچ درصد اعتماد مصنوعی از sample کوچک ساخته نمی‌شود.</p></section>
 <section class="section"><details class="tech"><summary>جزئیات فنی و Lineage</summary><pre>{esc(raw)}</pre></details></section></div><aside class="drawer" id="drawer"><button class="close" id="close">×</button><div id="helpbody"></div></aside><script>const H={helps};document.querySelectorAll('[data-help]').forEach(b=>b.onclick=()=>{{const x=H[b.dataset.help]||{{title:b.dataset.help,short:'',body:''}};document.getElementById('helpbody').innerHTML=`<div class="eyebrow">INLINE GUIDE</div><h2>${{x.title}}</h2><p class="note">${{x.short}}</p><p>${{x.body}}</p>`;document.getElementById('drawer').classList.add('open')}});document.getElementById('close').onclick=()=>document.getElementById('drawer').classList.remove('open');</script></body></html>'''
 
 def brief(model):
-    e=model['executive_state']; q=model['model_quality']; p=model['permission']; tf=model['true_forward']; comp=model.get('comparison') or {}
+    e=model['executive_state']; q=model['model_quality']; p=model['permission']; tf=model['true_forward']; comp=model.get('comparison') or {}; dk=model.get('data_kernel') or {}
     reason=e['summary']
     uncertainty=[]
     if q.get('model_completeness') in ('LOW','UNKNOWN'): uncertainty.append('کامل‌بودن مدل محدود است')
@@ -66,6 +67,7 @@ def brief(model):
         f"Model Completeness: {human_status(q.get('model_completeness'))}",
         f"Missing Driver Risk: {human_status(q.get('missing_driver_risk'))}",
         f"Semantic: {q.get('semantic_mode')} · validated {q.get('semantic_validated_items',0)} · rejected {q.get('semantic_rejected_items',0)} · fallback {q.get('semantic_fallback_items',0)}",
+        f"Data Kernel: live {dk.get('live_kernel_fresh')}/{dk.get('live_kernel_total')} · context {dk.get('context_valid')}/{dk.get('context_total')} · cache {dk.get('cache_reuse_count')} · network {dk.get('network_request_count')}",
         compared,
         '',
         f"True-Forward: {human_status(tf.get('sample_state'))} · {tf.get('outcomes_evaluated')} outcome evaluated",

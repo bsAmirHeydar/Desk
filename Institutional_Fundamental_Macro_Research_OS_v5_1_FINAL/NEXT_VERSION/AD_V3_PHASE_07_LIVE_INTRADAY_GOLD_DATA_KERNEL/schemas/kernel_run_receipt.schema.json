@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P07 Kernel Run Receipt",
+  "type": "object",
+  "required": [
+    "phase",
+    "version",
+    "run_id",
+    "plan_id",
+    "horizon",
+    "mode",
+    "performance",
+    "kernel_health"
+  ],
+  "properties": {
+    "phase": {
+      "const": "AD-V3-P07"
+    },
+    "version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "plan_id": {
+      "type": "string"
+    },
+    "horizon": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "NORMAL",
+        "FULL_REFRESH",
+        "CACHE_ONLY"
+      ]
+    },
+    "performance": {
+      "type": "object"
+    },
+    "kernel_health": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

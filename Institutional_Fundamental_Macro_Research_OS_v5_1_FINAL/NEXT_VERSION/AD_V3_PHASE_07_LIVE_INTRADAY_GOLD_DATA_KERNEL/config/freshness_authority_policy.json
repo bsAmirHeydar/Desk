@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P07",
+  "states": [
+    "FRESH_LIVE",
+    "FRESH_FOR_HORIZON",
+    "CONTEXT_VALID",
+    "STALE_FOR_HORIZON",
+    "EXPIRED",
+    "UNAVAILABLE",
+    "PROVIDER_GAP",
+    "PRIVATE_GAP",
+    "PAID_GAP"
+  ],
+  "live_marker_max_age_seconds": {
+    "MICRO_0_15M": 900,
+    "SHORT_15_60M": 3600,
+    "SESSION_1_6H": 21600,
+    "DAILY_OPEN_TO_CLOSE": 86400,
+    "MULTI_DAY_2_10D": 864000,
+    "SWING_2_8W": 4838400,
+    "CYCLICAL": 7776000,
+    "STRUCTURAL": 31536000
+  },
+  "fetch_only_live_cadences": [
+    "REALTIME", "INTRADAY", "DAILY_INTRADAY", "INTRADAY_DAILY",
+    "EVENT", "MONTHLY_EVENT", "EVENT_DAILY", "DAILY_EVENT", "TWICE_DAILY_EVENT"
+  ],
+  "explicit_economic_marker_order": ["reference_period", "event_time", "published_at"],
+  "fetch_time_is_not_economic_time": true,
+  "official_daily_data_is_context_for_session_without_intraday_marker": true,
+  "future_economic_markers_forbidden": true
+}

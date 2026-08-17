@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P07 Freshness Decision",
+  "type": "object",
+  "required": [
+    "state"
+  ],
+  "properties": {
+    "state": {
+      "enum": [
+        "FRESH_LIVE",
+        "FRESH_FOR_HORIZON",
+        "CONTEXT_VALID",
+        "STALE_FOR_HORIZON",
+        "EXPIRED",
+        "UNAVAILABLE",
+        "PROVIDER_GAP",
+        "PRIVATE_GAP",
+        "PAID_GAP"
+      ]
+    },
+    "economic_clock_quality": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

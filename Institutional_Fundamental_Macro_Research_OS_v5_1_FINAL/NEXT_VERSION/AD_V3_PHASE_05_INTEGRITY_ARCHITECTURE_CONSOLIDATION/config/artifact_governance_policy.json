@@ -61,6 +61,36 @@
       "kind": "canonical_configs",
       "class": "AUTHORITATIVE_SOURCE",
       "commit": true
+    },
+    {
+      "kind": "acquisition_plans",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "kernel_run_receipts",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "cache_health_receipts",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "escalation_receipts",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "live_kernel_smoke",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "context_cache",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
     }
   ],
   "required_gitignore_patterns": [
@@ -70,7 +100,8 @@
     "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/artifacts/",
     "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/artifacts/",
     "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/artifacts/",
-    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/artifacts/"
+    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/artifacts/",
+    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/artifacts/"
   ],
   "historical_rule": "Scientific evidence is classified or archived; it is not deleted merely to make the tree look clean."
 }
