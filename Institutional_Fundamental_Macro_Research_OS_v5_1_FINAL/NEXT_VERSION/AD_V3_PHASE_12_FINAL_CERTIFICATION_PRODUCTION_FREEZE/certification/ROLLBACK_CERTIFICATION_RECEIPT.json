@@ -1,0 +1,10 @@
+{
+  "record_type": "AD_V3_P12_ROLLBACK_CERTIFICATION_RECEIPT",
+  "status": "PASS",
+  "rollback_target": "V2",
+  "v2_p11": "PASS",
+  "v2_p13": "PASS",
+  "preserves_v3_science": true,
+  "preserves_p09_history": true,
+  "broken_target_blocks_rollback": true
+}

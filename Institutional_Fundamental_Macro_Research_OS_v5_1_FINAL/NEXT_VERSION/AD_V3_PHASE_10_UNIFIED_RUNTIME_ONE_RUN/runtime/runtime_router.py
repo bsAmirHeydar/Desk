@@ -10,6 +10,8 @@ def normalize_subject(subject):
     raise ValueError('SUBJECT_NOT_ACTIVE_IN_ALPHA_DESK_V3: '+str(subject))
 def promotion_state(repo,override=None):
     if override: return override
+    tx=Path(repo)/'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL'/'NEXT_VERSION'/'AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE'/'artifacts'/'state'/'deployment_transaction.json'
+    if tx.exists(): raise RuntimeError('DEPLOYMENT_TRANSACTION_IN_PROGRESS')
     from AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING.runtime.promotion import load_state
     return (load_state(p04(repo)) or {}).get('state','SHADOW_COMMISSIONING')
 def resolve(repo,subject='Gold',intent='PRODUCTION',promotion_override=None):

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P12",
+  "version": "3.12.0-final-certification-freeze",
+  "release_candidate": "ALPHA_DESK_V3_GOLD_RC1",
+  "active_subject": "Gold",
+  "production_gate_min_forward_state": "PROVISIONAL",
+  "certification_states": [
+    "NOT_CERTIFIED",
+    "ENGINEERING_CERTIFIED",
+    "CERTIFIED_PENDING_FORWARD_EVIDENCE",
+    "PRODUCTION_ELIGIBLE",
+    "PRODUCTION_V3",
+    "CERTIFICATION_INVALIDATED"
+  ],
+  "automatic_promotion_forbidden": true,
+  "production_trade_execution_authority": "NONE",
+  "live_shadow_golden_optional": true,
+  "actual_promotion_requires_explicit_approval": true,
+  "final_v3_phase": 12
+}

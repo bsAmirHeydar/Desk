@@ -1,0 +1,94 @@
+{
+  "release_candidate": "ALPHA_DESK_V3_GOLD_RC1",
+  "release_fingerprint": "V3REL_AE2F05DF8B0DA90965E2076019377E60872946E3C67FD38B1CD14D18BF513938",
+  "build_baseline_commit": "91ae468",
+  "certification_commit": "RESOLVED_FROM_LOCAL_GIT_AT_RUNTIME",
+  "phase_versions": {
+    "P01": "3.1.1-foundation",
+    "P02": "3.2.6",
+    "P03": "3.3.6",
+    "P04": "4.0.0-commissioning",
+    "P05": "3.5.0-integrity-consolidation",
+    "P06": "3.6.0-governed-semantic-intelligence",
+    "P07": "3.7.0-live-intraday-gold-kernel",
+    "P08": "3.8.0-decision-science-calibration",
+    "P09": "3.9.0-true-forward-validation-2.0",
+    "P10": "3.10.0-unified-runtime",
+    "P11": "3.11.0-final-control-room",
+    "P12": "3.12.0-final-certification-freeze"
+  },
+  "authority_map": {
+    "schema_version": "1.0.0",
+    "release_line": "ALPHA_DESK_V3_GOLD",
+    "authorities": [
+      {
+        "domain": "GOLD_ONTOLOGY",
+        "owner": "AD-V3-P01",
+        "canonical_count": 1
+      },
+      {
+        "domain": "OBSERVATION_ACQUISITION_PIT",
+        "owner": "AD-V3-P02",
+        "canonical_count": 1
+      },
+      {
+        "domain": "HORIZON_FRESHNESS_CACHE",
+        "owner": "AD-V3-P07",
+        "canonical_count": 1
+      },
+      {
+        "domain": "CAUSAL_DIRECTION_ROOTS_PRESSURE_PLANES",
+        "owner": "AD-V3-P03",
+        "canonical_count": 1
+      },
+      {
+        "domain": "GOVERNED_SEMANTIC_INTERPRETATION",
+        "owner": "AD-V3-P06",
+        "canonical_count": 1
+      },
+      {
+        "domain": "DECISION_CALIBRATION_DOMINANCE_EDGE_PERMISSION",
+        "owner": "AD-V3-P08",
+        "canonical_count": 1
+      },
+      {
+        "domain": "PROSPECTIVE_TRUE_FORWARD_VALIDATION",
+        "owner": "AD-V3-P09",
+        "canonical_count": 1
+      },
+      {
+        "domain": "V3_ORCHESTRATION_ROUTING_ONE_RUN",
+        "owner": "AD-V3-P10",
+        "canonical_count": 1
+      },
+      {
+        "domain": "V3_CANONICAL_HTML_REPORT",
+        "owner": "AD-V3-P11",
+        "canonical_count": 1
+      },
+      {
+        "domain": "FINAL_CERTIFICATION_FREEZE_PROMOTION",
+        "owner": "AD-V3-P12",
+        "canonical_count": 1
+      }
+    ],
+    "compatibility": {
+      "AD-V3-P04": "commissioning/promotion compatibility shell; legacy renderer/forward noncanonical",
+      "AD-V3-P05": "integrity governance",
+      "AD-V2-P11": "legacy V2 prompt/runtime only",
+      "AD-V2-P13": "legacy V2 production report/rollback target"
+    },
+    "trade_execution_authority": "NONE"
+  },
+  "freeze_manifest": "release/FINAL_FREEZE_MANIFEST.json",
+  "certification_state_at_supplied_snapshot": "CERTIFIED_PENDING_FORWARD_EVIDENCE",
+  "p09_forward_state_at_supplied_snapshot": "NO_SAMPLES",
+  "production_promotion_performed": false,
+  "production_authority": "V2",
+  "canonical_v3_runtime": "AD-V3-P10",
+  "canonical_v3_html": "AD-V3-P11",
+  "rollback_target": "V2",
+  "trade_execution_authority": "NONE",
+  "certification_state": "CERTIFIED_PENDING_FORWARD_EVIDENCE",
+  "p09_mature_episodes_at_supplied_snapshot": 0
+}

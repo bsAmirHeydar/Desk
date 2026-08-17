@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P12",
+  "automatic_promotion_forbidden": true,
+  "gates": [
+    {
+      "gate_id": "P01_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "P02_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "P03_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "P04_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "P05_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "P06_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "P07_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "P08_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "P09_IMPLEMENTATION_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "P10_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "P11_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "P12_CERTIFICATION_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "SCIENCE_FREEZE_VALID",
+      "required": true
+    },
+    {
+      "gate_id": "RUNTIME_FREEZE_VALID",
+      "required": true
+    },
+    {
+      "gate_id": "REPORT_FREEZE_VALID",
+      "required": true
+    },
+    {
+      "gate_id": "ZERO_SCIENCE_DRIFT",
+      "required": true
+    },
+    {
+      "gate_id": "ZERO_CRITICAL_INTEGRITY_FAILURES",
+      "required": true
+    },
+    {
+      "gate_id": "P09_FORWARD_EVIDENCE_PROVISIONAL",
+      "required": true
+    },
+    {
+      "gate_id": "GOLDEN_CERTIFICATION_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "ROLLBACK_CERTIFIED",
+      "required": true
+    },
+    {
+      "gate_id": "PRODUCTION_ROUTING_CERTIFIED",
+      "required": true
+    },
+    {
+      "gate_id": "V2_ROLLBACK_AVAILABLE",
+      "required": true
+    },
+    {
+      "gate_id": "P11_VISUAL_ACCEPTANCE_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "P11_SECURITY_ACCEPTANCE_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "EXPLICIT_OPERATOR_APPROVAL",
+      "required": true
+    }
+  ],
+  "p09_gate_source": "AD-V3-P09 canonical real forward state",
+  "explicit_operator_approval_required": true,
+  "fixture_overrides_allowed_only_in_isolated_tests": true
+}

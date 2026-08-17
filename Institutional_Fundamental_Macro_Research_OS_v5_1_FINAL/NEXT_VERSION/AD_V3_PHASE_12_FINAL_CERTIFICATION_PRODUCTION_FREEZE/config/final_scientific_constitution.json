@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P12",
+  "invariants": [
+    "Pressure != Price",
+    "Stock != Impulse",
+    "Gross Activity != Signed Flow",
+    "Fetch Time != Economic Time",
+    "Previous Fetch != Previous Economic State",
+    "Structural Prior != Current Impulse",
+    "Available != Fresh",
+    "Cached != Live",
+    "Proxy != Direct Source",
+    "Direction != Edge != Permission",
+    "Strength != Breadth != Fragility",
+    "Magnitude != Direction",
+    "Magnitude != Causal Importance",
+    "Evidence Count != Independence",
+    "Historical Calibration != Prospective Validation",
+    "Prediction Snapshot != Independent Episode",
+    "Replay != True-Forward Evidence",
+    "Fixture != Real Forward Evidence",
+    "Semantic Model != Causal Brain",
+    "Orchestrator != Scientific Authority",
+    "Report Renderer != Scientific Authority",
+    "WAIT != Failure",
+    "UNKNOWN != Software Error",
+    "DEGRADED != Complete"
+  ],
+  "mechanical_evidence": {
+    "Pressure != Price": [
+      "AD-V3-P03",
+      "AD-V3-P08",
+      "AD-V3-P11"
+    ],
+    "Cached != Live": [
+      "AD-V3-P07",
+      "AD-V3-P11"
+    ],
+    "Direction != Edge != Permission": [
+      "AD-V3-P08",
+      "AD-V3-P11"
+    ],
+    "Prediction Snapshot != Independent Episode": [
+      "AD-V3-P09"
+    ],
+    "Fixture != Real Forward Evidence": [
+      "AD-V3-P09",
+      "AD-V3-P10",
+      "AD-V3-P11"
+    ]
+  }
+}

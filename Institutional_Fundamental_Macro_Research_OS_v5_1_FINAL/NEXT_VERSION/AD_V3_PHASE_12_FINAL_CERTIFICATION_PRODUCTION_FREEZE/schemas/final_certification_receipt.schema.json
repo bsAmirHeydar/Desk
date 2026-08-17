@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "implementation_status",
+    "certification_state",
+    "release_fingerprint",
+    "gate_results"
+  ],
+  "properties": {},
+  "additionalProperties": true
+}

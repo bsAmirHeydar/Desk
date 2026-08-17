@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "promotion_id",
+    "previous_production_authority",
+    "new_production_authority",
+    "release_fingerprint"
+  ],
+  "properties": {},
+  "additionalProperties": true
+}

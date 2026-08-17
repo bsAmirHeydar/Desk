@@ -1,0 +1,13 @@
+{
+  "phase": "AD-V3-P12",
+  "version": "3.12.0-final-certification-freeze",
+  "status": "PASS",
+  "baseline_commit": "91ae468",
+  "release_candidate": "ALPHA_DESK_V3_GOLD_RC1",
+  "final_v3_phase": true,
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE",
+  "next_phase": null,
+  "certification_state": "CERTIFIED_PENDING_FORWARD_EVIDENCE",
+  "release_fingerprint": "V3REL_AE2F05DF8B0DA90965E2076019377E60872946E3C67FD38B1CD14D18BF513938"
+}

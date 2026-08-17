@@ -1,41 +1,116 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "phase": "AD-V3-P05",
   "promotion_policy_source": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/config/promotion_policy.json",
   "gates": [
     {
-      "gate_id": "P01_FROZEN",
-      "machine_evaluator": "P01 acceptance + v2_freeze PASS"
+      "gate_id": "P01_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
     },
     {
-      "gate_id": "P02_3_2_6_FROZEN",
-      "machine_evaluator": "P02 acceptance PASS + revision 3.2.6"
+      "gate_id": "P02_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
     },
     {
-      "gate_id": "P03_3_3_6_FROZEN",
-      "machine_evaluator": "P03 acceptance PASS + revision 3.3.6"
+      "gate_id": "P03_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
     },
     {
-      "gate_id": "P04_ACCEPTANCE_PASS",
-      "machine_evaluator": "P04 acceptance PASS"
+      "gate_id": "P04_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "P05_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "P06_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "P07_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "P08_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "P09_IMPLEMENTATION_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "P10_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "P11_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "P12_CERTIFICATION_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "SCIENCE_FREEZE_VALID",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "RUNTIME_FREEZE_VALID",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "REPORT_FREEZE_VALID",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "ZERO_SCIENCE_DRIFT",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "ZERO_CRITICAL_INTEGRITY_FAILURES",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
     },
     {
       "gate_id": "P09_FORWARD_EVIDENCE_PROVISIONAL",
-      "machine_evaluator": "P09 active cohort forward_evidence_state in {PROVISIONAL,MATURE}; legacy P04 sample count has no authority"
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
     },
     {
-      "gate_id": "ZERO_INTEGRITY_FAILURES",
-      "machine_evaluator": "commissioning_state.integrity_failures == 0"
+      "gate_id": "GOLDEN_CERTIFICATION_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "ROLLBACK_CERTIFIED",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "PRODUCTION_ROUTING_CERTIFIED",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "V2_ROLLBACK_AVAILABLE",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "P11_VISUAL_ACCEPTANCE_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "P11_SECURITY_ACCEPTANCE_PASS",
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
     },
     {
       "gate_id": "EXPLICIT_OPERATOR_APPROVAL",
-      "machine_evaluator": "promote(..., approve=True) only"
+      "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
     }
   ],
   "hard_rules": [
     "declared promotion gate set must equal machine-enforced gate set",
     "unknown/unavailable gate fails closed",
-    "automatic promotion forbidden"
+    "automatic promotion forbidden",
+    "real P09 prospective state is mandatory",
+    "explicit approval is mandatory"
   ],
-  "prospective_validation_authority": "AD-V3-P09"
+  "prospective_validation_authority": "AD-V3-P09",
+  "final_certification_authority": "AD-V3-P12"
 }

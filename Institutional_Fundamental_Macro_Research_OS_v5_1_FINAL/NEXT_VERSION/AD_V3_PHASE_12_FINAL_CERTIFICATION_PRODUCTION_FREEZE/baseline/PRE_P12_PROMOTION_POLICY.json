@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "initial_state": "SHADOW_COMMISSIONING",
+  "automatic_promotion_forbidden": true,
+  "promotion_requires": [
+    "P01_FROZEN",
+    "P02_3_2_6_FROZEN",
+    "P03_3_3_6_FROZEN",
+    "P04_ACCEPTANCE_PASS",
+    "P09_FORWARD_EVIDENCE_PROVISIONAL",
+    "ZERO_INTEGRITY_FAILURES",
+    "EXPLICIT_OPERATOR_APPROVAL"
+  ],
+  "rollback_always_available": true,
+  "v2_baseline_retained_after_promotion": true,
+  "true_forward_authority": "AD-V3-P09",
+  "legacy_p04_forward_gate_authority": false
+}

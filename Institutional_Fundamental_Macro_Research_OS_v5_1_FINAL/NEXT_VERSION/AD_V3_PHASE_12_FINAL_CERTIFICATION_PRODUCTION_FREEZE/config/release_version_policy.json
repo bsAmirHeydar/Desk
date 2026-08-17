@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "final_v3_phase": 12,
+  "closed_release_line_after_p12": true,
+  "change_classes": {
+    "V3_0_X_OR_V3_1_BUGFIX": [
+      "renderer bug",
+      "path portability fix",
+      "non-scientific runtime defect",
+      "provider repair without semantics change"
+    ],
+    "V3_1_SCIENTIFIC_MINOR": [
+      "threshold/calibration change",
+      "new provider authority",
+      "semantic contract change",
+      "new Gold facts without architecture redesign"
+    ],
+    "V4": [
+      "new causal philosophy",
+      "new decision-science architecture",
+      "cross-market scientific-foundation expansion",
+      "autonomous execution architecture"
+    ]
+  }
+}

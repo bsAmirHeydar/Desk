@@ -29,9 +29,9 @@ def main():
     c=sp.add_parser('commission');c.add_argument('subject');c.add_argument('--horizon',default='SESSION_1_6H');c.add_argument('--full-refresh',action='store_true');c.add_argument('--cache-only',action='store_true');c.add_argument('--semantic-bundle')
     for n in ('report','open','commission-report','commission-open'):
         q=sp.add_parser(n);q.add_argument('subject',nargs='?',default='Gold')
-    for n in ('v3-status','v3-runtime-status','v3-integrity-status','v3-semantic-status','v3-kernel-status','v3-decision-status','v3-forward-status','v3-tf-status','v3-promotion-status','v3-control-room-status'):
+    for n in ('v3-status','v3-runtime-status','v3-integrity-status','v3-semantic-status','v3-kernel-status','v3-decision-status','v3-forward-status','v3-tf-status','v3-promotion-status','v3-control-room-status','v3-certification-status','v3-freeze-status'):
         sp.add_parser(n)
-    pr=sp.add_parser('v3-promote');pr.add_argument('--approve',action='store_true');sp.add_parser('v3-rollback');sp.add_parser('route-mode');sp.add_parser('help')
+    pr=sp.add_parser('v3-promote');pr.add_argument('subject',nargs='?',default='Gold');pr.add_argument('--approve',action='store_true');rb=sp.add_parser('v3-rollback');rb.add_argument('subject',nargs='?',default='Gold');sp.add_parser('route-mode');sp.add_parser('help')
     a=ap.parse_args();repo=pathlib.Path(a.repo_root).resolve();cmd=a.cmd or 'help'
     if cmd=='help':
         print('ALPHA DESK - GOLD')
@@ -76,6 +76,15 @@ def main():
     elif cmd=='v3-control-room-status':tool=NEXT/'AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/tools/p11_status.py'
     else:tool=None
     if tool:return subprocess.run([sys.executable,str(tool)]).returncode
+    p12=NEXT/'AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE'
+    if p12.exists():
+        if cmd=='v3-certification-status': return subprocess.run([sys.executable,str(p12/'tools/p12_status.py')]).returncode
+        if cmd=='v3-freeze-status': return subprocess.run([sys.executable,str(p12/'tools/verify_final_freeze.py')]).returncode
+        if cmd=='v3-promotion-status': return subprocess.run([sys.executable,str(p12/'tools/prepare_production_promotion.py')]).returncode
+        if cmd=='v3-promote':
+            if str(getattr(a,'subject','Gold')).lower() not in ('gold','xau','xauusd'): print('SUBJECT_NOT_ACTIVE_IN_ALPHA_DESK_V3',file=sys.stderr); return 4
+            return subprocess.run([sys.executable,str(p12/'tools/promote_gold.py')]+(['--approve'] if getattr(a,'approve',False) else [])).returncode
+        if cmd=='v3-rollback': return subprocess.run([sys.executable,str(p12/'tools/rollback_gold.py')]).returncode
     p04=NEXT/'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING'
     if cmd in ('v3-status','v3-tf-status','v3-promotion-status','route-mode','v3-promote','v3-rollback'):
         old=p04/'tools/alpha_desk_v3.py';mapping={'v3-status':['status'],'v3-tf-status':['tf-status'],'v3-promotion-status':['promotion-status'],'route-mode':['route-mode'],'v3-promote':['promote']+(['--approve'] if getattr(a,'approve',False) else []),'v3-rollback':['rollback']};return subprocess.run([sys.executable,str(old),*mapping[cmd]],env={**__import__('os').environ,'AD_P10_COMPAT_CALL':'1'}).returncode

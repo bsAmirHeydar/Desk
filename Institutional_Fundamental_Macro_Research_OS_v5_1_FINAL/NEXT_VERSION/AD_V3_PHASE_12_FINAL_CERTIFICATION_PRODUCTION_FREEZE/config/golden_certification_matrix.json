@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0.0",
+  "scenario_count": 25,
+  "scenarios": [
+    {
+      "scenario_id": "STRONG_BULLISH_DOMINANCE",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "STRONG_BEARISH_DOMINANCE",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "TRUE_MIXED",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "BULLISH_FRAGILE",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "BEARISH_FRAGILE",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "HIGH_CONSUMPTION_WAIT",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "CRITICAL_DATA_GAP",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "MECHANICAL_OPPOSES_FUNDAMENTAL",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "PRICE_OPPOSES_FUNDAMENTAL",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "SEMANTIC_AUTO_GOVERNED",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "SEMANTIC_CONSERVATIVE_FALLBACK",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "DATA_DEGRADED_ALLOW",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "DATA_BLOCK",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "DXY_GAP_USD_PROXY",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "DAILY_REAL_YIELD_CONTEXT",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "MISSING_DRIVER_ELEVATED",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "EVENT_CRITICAL_PRE",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "POST_EVENT_RESET",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "P09_NO_SAMPLES",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "P09_PROVISIONAL_ISOLATED",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "FAILED_RENDERER",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "FAILED_ACQUISITION_STAGE",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "CORRUPT_RUNTIME_ARTIFACT",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "COHORT_FINGERPRINT_MISMATCH",
+      "mandatory": true,
+      "fixture_only": true
+    },
+    {
+      "scenario_id": "V2_ROLLBACK",
+      "mandatory": true,
+      "fixture_only": true
+    }
+  ],
+  "fixture_results_are_not_forward_evidence": true
+}

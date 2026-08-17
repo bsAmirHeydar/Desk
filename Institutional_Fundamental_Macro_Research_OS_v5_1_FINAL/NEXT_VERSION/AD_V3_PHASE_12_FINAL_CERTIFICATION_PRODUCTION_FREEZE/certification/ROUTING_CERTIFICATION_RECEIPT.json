@@ -1,0 +1,13 @@
+{
+  "record_type": "AD_V3_P12_ROUTING_CERTIFICATION_RECEIPT",
+  "status": "PASS",
+  "routing_authority": "AD-V3-P10",
+  "shadow_production": "V2",
+  "shadow_commission": "V3_P10_P11",
+  "future_production_fixture": "V3_P10_P11",
+  "rollback_fixture": "V2",
+  "report_authority": {
+    "V2": "AD-V2-P13",
+    "V3": "AD-V3-P11"
+  }
+}
