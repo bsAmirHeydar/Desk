@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "raw_prediction_count",
+    "episode_count",
+    "mature_episode_count",
+    "forward_evidence_state"
+  ],
+  "additionalProperties": true
+}

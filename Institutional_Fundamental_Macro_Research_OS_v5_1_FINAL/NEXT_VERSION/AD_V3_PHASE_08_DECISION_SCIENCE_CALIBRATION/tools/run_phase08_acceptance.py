@@ -93,10 +93,14 @@ def main():
  checks.append(ck('trade execution authority remains NONE',load(P/'config/decision_calibration_policy.json')['trade_execution_authority']=='NONE'))
  # Static scientific hashes.
  import hashlib
- base=load(P/'baseline/PRE_P08_AUTHORITY_HASHES.json'); drift=[]
+ base=load(P/'baseline/PRE_P08_AUTHORITY_HASHES.json'); drift=[]; governed=[]
+ arch=load(N/'AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/config/architecture_surface_registry.json');surface={x.get('path'):x for x in arch.get('surfaces',[])}
  for name,v in base['hashes'].items():
   f=REPO/v['path']; actual=hashlib.sha256(f.read_bytes()).hexdigest() if f.exists() else None
-  if actual!=v['sha256']:drift.append(name)
- checks.append(ck('substantive Gold and upstream authority drift zero',not drift,drift))
+  if actual!=v['sha256']:
+   own=surface.get(v['path']) or {}
+   if own.get('class')=='GOVERNANCE_VERSIONED' and str(own.get('owner','')).startswith('AD-V3-P09'):governed.append(name)
+   else:drift.append(name)
+ checks.append(ck('substantive Gold and upstream authority drift zero',not drift,{'science_drift':drift,'accepted_downstream_governance':governed}))
  ok=all(x['status']=='PASS' for x in checks);out={'phase':'AD-V3-P08','version':'3.8.0-decision-science-calibration','acceptance_status':'PASS' if ok else 'FAIL_CLOSED','check_count':len(checks),'checks':checks,'historical_calibration_sample_state':'UNAVAILABLE','historical_episode_count_in_supplied_repository':0,'production_promotion_performed':False,'v3_state':'SHADOW_COMMISSIONING','trade_execution_authority':'NONE'};print(json.dumps(out,indent=2,ensure_ascii=False));return 0 if ok else 2
 if __name__=='__main__':raise SystemExit(main())

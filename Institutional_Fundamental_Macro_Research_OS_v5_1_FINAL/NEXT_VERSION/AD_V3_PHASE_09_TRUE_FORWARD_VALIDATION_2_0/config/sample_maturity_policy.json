@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "primary_unit": "MATURE_VALIDATION_ELIGIBLE_EPISODE",
+  "raw_prediction_count_not_maturity_unit": true,
+  "overall_episode_thresholds": [
+    {
+      "min": 0,
+      "max": 0,
+      "state": "NO_SAMPLES"
+    },
+    {
+      "min": 1,
+      "max": 9,
+      "state": "INSUFFICIENT"
+    },
+    {
+      "min": 10,
+      "max": 24,
+      "state": "EARLY"
+    },
+    {
+      "min": 25,
+      "max": 49,
+      "state": "DEVELOPING"
+    },
+    {
+      "min": 50,
+      "max": 99,
+      "state": "PROVISIONAL"
+    },
+    {
+      "min": 100,
+      "max": null,
+      "state": "MATURE"
+    }
+  ],
+  "dimension_min_episode_counts": {
+    "direction": 25,
+    "strength": 40,
+    "dominance": 40,
+    "edge": 50,
+    "permission": 50,
+    "wait": 50,
+    "consumption": 40,
+    "fragility": 40,
+    "missing_driver": 40
+  },
+  "production_gate_min_state": "PROVISIONAL",
+  "rates_require_sample_state_at_least": "EARLY"
+}

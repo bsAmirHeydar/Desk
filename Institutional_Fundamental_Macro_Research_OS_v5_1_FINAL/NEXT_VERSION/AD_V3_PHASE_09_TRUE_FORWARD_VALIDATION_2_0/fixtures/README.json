@@ -1,0 +1,6 @@
+{
+  "record_type": "AD_V3_P09_FIXTURE_DECLARATION",
+  "fixtures_are_prospective_evidence": false,
+  "runtime_real_ledger_path": "artifacts/state/forward_state.json",
+  "acceptance_uses_temp_directories": true
+}

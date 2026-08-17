@@ -33,7 +33,7 @@ def main():
     p=argparse.ArgumentParser(); sub=p.add_subparsers(dest='cmd')
     r=sub.add_parser('run'); r.add_argument('subject'); r.add_argument('--horizon',default='SESSION_1_6H'); r.add_argument('--skip-p02',action='store_true'); r.add_argument('--semantic-bundle'); r.add_argument('--full-refresh',action='store_true'); r.add_argument('--cache-only',action='store_true')
     for c in ('report','open'): q=sub.add_parser(c); q.add_argument('subject')
-    sub.add_parser('status'); sub.add_parser('tf-status'); sub.add_parser('promotion-status'); pr=sub.add_parser('promote'); pr.add_argument('--approve',action='store_true'); sub.add_parser('rollback'); sub.add_parser('route-mode')
+    sub.add_parser('status'); sub.add_parser('tf-status'); sub.add_parser('forward-status'); sub.add_parser('promotion-status'); pr=sub.add_parser('promote'); pr.add_argument('--approve',action='store_true'); sub.add_parser('rollback'); sub.add_parser('route-mode')
     a=p.parse_args()
     if a.cmd=='run':
         if a.subject.lower() not in ('gold','xauusd'): raise SystemExit('P04 supports Gold only.')
@@ -50,6 +50,9 @@ def main():
         if not f.exists(): print('NO V3 CONTROL ROOM OUTPUT YET'); return 2
         webbrowser.open(f.resolve().as_uri()); print(str(f)); return 0
     if a.cmd=='tf-status': print(json.dumps(load_commissioning(PH),indent=2,ensure_ascii=False)); return 0
+    if a.cmd=='forward-status':
+        from AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0.runtime.forward_runtime import status as p09_status
+        print(json.dumps(p09_status(PH.parent/'AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0'),indent=2,ensure_ascii=False)); return 0
     if a.cmd=='promotion-status': print(json.dumps(load_state(PH),indent=2,ensure_ascii=False)); return 0
     if a.cmd=='route-mode': print(load_state(PH).get('state','SHADOW_COMMISSIONING')); return 0
     if a.cmd=='promote': print(json.dumps(promote(PH,load_commissioning(PH),a.approve),indent=2,ensure_ascii=False)); return 0

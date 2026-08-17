@@ -12,6 +12,7 @@ $P05Tool = Join-Path $Repo "Institutional_Fundamental_Macro_Research_OS_v5_1_FIN
 $P06Tool = Join-Path $Repo "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL\NEXT_VERSION\AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE\tools\p06_status.py"
 $P07Tool = Join-Path $Repo "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL\NEXT_VERSION\AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL\tools\p07_status.py"
 $P08Tool = Join-Path $Repo "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL\NEXT_VERSION\AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION\tools\p08_status.py"
+$P09Tool = Join-Path $Repo "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL\NEXT_VERSION\AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0\tools\p09_status.py"
 $script:AlphaDeskLastExitCode = 0
 
 function Invoke-V2([string[]]$ArgsList) {
@@ -91,6 +92,7 @@ if (-not $AlphaArgs -or $AlphaArgs.Count -eq 0) {
     Write-Host "  V3 semantic status:    .\AlphaDesk.ps1 v3-semantic-status"
     Write-Host "  V3 kernel status:      .\AlphaDesk.ps1 v3-kernel-status"
     Write-Host "  V3 decision status:    .\AlphaDesk.ps1 v3-decision-status"
+    Write-Host "  V3 forward status:     .\AlphaDesk.ps1 v3-forward-status"
     Write-Host "  V3 full refresh:       .\AlphaDesk.ps1 commission Gold --full-refresh"
     Write-Host ""
     Write-Host "Promotion is fail-closed. Until PRODUCTION_V3, 'run Gold' remains on V2."
@@ -144,6 +146,11 @@ switch ($Command.ToLowerInvariant()) {
     "v3-decision-status" {
         if (-not (Test-Path -LiteralPath $P08Tool)) { throw "Alpha Desk V3 P08 decision status tool is not installed." }
         & python $P08Tool
+        exit $LASTEXITCODE
+    }
+    "v3-forward-status" {
+        if (-not (Test-Path -LiteralPath $P09Tool)) { throw "Alpha Desk V3 P09 forward status tool is not installed." }
+        & python $P09Tool
         exit $LASTEXITCODE
     }
     "v3-promote" {

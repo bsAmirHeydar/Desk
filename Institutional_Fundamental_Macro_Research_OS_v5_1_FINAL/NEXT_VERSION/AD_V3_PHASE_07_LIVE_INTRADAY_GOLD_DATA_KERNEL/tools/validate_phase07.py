@@ -24,11 +24,16 @@ def main():
  checks.append(ck('launcher exposes kernel status','v3-kernel-status' in launcher and 'P07Tool' in launcher))
  checks.append(ck('run Gold production routing remains fail-closed','Get-V3RouteMode' in launcher and 'PRODUCTION_V3' in launcher and 'Invoke-V2' in launcher))
  checks.append(ck('P07 cannot promote or trade',kp.get('production_promotion_forbidden') is True and kp.get('trade_execution_authority')=='NONE'))
- base=load(PH/'baseline/PRE_P07_GOVERNANCE_HASHES.json'); drift=[]
+ base=load(PH/'baseline/PRE_P07_GOVERNANCE_HASHES.json'); drift=[]; governed=[]
+ arch=load(P05/'config/architecture_surface_registry.json'); surface={x.get('path'):x for x in arch.get('surfaces',[])}
  for rp,meta in base['files'].items():
   p=REPO/rp; got=digest(p) if p.exists() else None
-  if got!=meta['sha256']: drift.append({'file':rp,'expected':meta['sha256'],'actual':got})
- checks.append(ck('substantive science and authority drift is zero',not drift,drift))
+  if got!=meta['sha256']:
+   own=surface.get(rp) or {}
+   if own.get('class')=='GOVERNANCE_VERSIONED' and str(own.get('owner','')).startswith('AD-V3-P09'):
+    governed.append({'file':rp,'historical_expected':meta['sha256'],'current':got,'classification':'DOWNSTREAM_GOVERNANCE_VERSIONED'})
+   else: drift.append({'file':rp,'expected':meta['sha256'],'actual':got})
+ checks.append(ck('substantive science and authority drift is zero',not drift,{'science_drift':drift,'accepted_downstream_governance':governed}))
  out={'phase':'AD-V3-P07','version':'3.7.0-live-intraday-gold-kernel','status':'PASS' if all(x['status']=='PASS' for x in checks) else 'FAIL_CLOSED','check_count':len(checks),'checks':checks,'counts':{'gold_facts':fr['contract_count'],'source_contracts':sr['source_count'],'fact_acquisition_contracts':fr['contract_count'],'fact_tiers':plan['counts']['fact_tiers'],'source_actions':plan['counts']['source_actions']},'science_drift':drift}
  print(json.dumps(out,indent=2,ensure_ascii=False)); return 0 if out['status']=='PASS' else 2
 if __name__=='__main__': raise SystemExit(main())

@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "AD_V3_P09_PREINSTALL_AUTHORITY_HASHES",
+  "hashes": {
+    "p03_reasoning_registry": "24b5f7183fc43477cc69914171ca1cb742e3ca87e96f8ae93b3c3a75f9df4dec",
+    "p06_semantic_contract": "cf463d11db68eb056a0dd9f6111d130fce21ce3922e0d0e649c703cfca2dc4d2",
+    "p07_kernel_policy": "0627e2f81ee16c07c06c293fcf14c54915218f7ac268b17918286dce8219ad5e",
+    "p08_decision_policy": "858e52a2d75f5bc260d098d7be8934b2b65b94db7c1b9ded21f0fded61dc669b",
+    "p04_legacy_commissioning": "e671db3a5b8abaafdbfb1fdae017de91032916a087915e37632cf5dbcb450f77",
+    "p04_promotion_policy_pre_p09": "52a394b6c9074ded98b12ad3ed6b50d02ce9ba1575bfcc24a135c97da1b4473c"
+  },
+  "historical_p04_true_forward_preserved": true
+}

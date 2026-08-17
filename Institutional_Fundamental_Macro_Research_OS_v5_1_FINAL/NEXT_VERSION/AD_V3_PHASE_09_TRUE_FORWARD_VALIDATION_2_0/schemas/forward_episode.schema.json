@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "episode_id",
+    "cohort_id",
+    "horizon",
+    "primary_prediction_id",
+    "prediction_ids"
+  ],
+  "additionalProperties": true
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "version": "1.0.0",
+  "primary_source_binding": "PRECOMMIT_SOURCE_IDENTITY",
+  "source_cherry_picking_forbidden": true,
+  "terminal_nearest_observation_within_tolerance": true,
+  "path_metrics_require_minimum_coverage": true,
+  "missing_path_does_not_block_terminal_direction": true,
+  "normalization": "PRECOMMIT_VOLATILITY_IF_AVAILABLE_ELSE_HORIZON_MIN_RETURN",
+  "future_realized_volatility_not_decision_normalizer": true,
+  "direction_outcomes": [
+    "ALIGNED",
+    "OPPOSED",
+    "NEUTRAL_BAND",
+    "UNRESOLVED"
+  ],
+  "path_quality_states": [
+    "CLEAN",
+    "ACCEPTABLE",
+    "CHOPPY",
+    "ADVERSE",
+    "NO_MEANINGFUL_EDGE",
+    "UNAVAILABLE"
+  ],
+  "outcome_source_role": "OUTCOME_EVALUATION_ONLY_OR_PRECOMMIT_TARGET_SOURCE"
+}

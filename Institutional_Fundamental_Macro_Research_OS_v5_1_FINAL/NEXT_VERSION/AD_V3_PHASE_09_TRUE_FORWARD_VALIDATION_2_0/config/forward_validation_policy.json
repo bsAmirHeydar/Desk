@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P09",
+  "version": "3.9.0-true-forward-validation-2.0",
+  "primary_horizon": "SESSION_1_6H",
+  "prediction_immutable": true,
+  "eligibility_fixed_at_t0": true,
+  "outcome_based_exclusion_forbidden": true,
+  "fixture_samples_count_as_prospective": false,
+  "replay_counts_as_prospective": false,
+  "trade_execution_authority": "NONE",
+  "automatic_promotion_forbidden": true,
+  "validation_eligible_permissions": [
+    "BUY_CANDIDATE",
+    "SELL_CANDIDATE",
+    "WAIT"
+  ],
+  "data_blocked_is_diagnostic_only": true,
+  "no_price_is_blocked": true,
+  "evaluate_mature_before_new_precommit": true,
+  "legacy_p04_authority": "HISTORICAL_ONLY_NON_CANONICAL"
+}

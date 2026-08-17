@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "version": "1.0.0",
+  "episode_membership_t0_only": true,
+  "future_price_forbidden": true,
+  "new_episode_on": [
+    "CAUSAL_DIRECTION_CHANGE",
+    "DOMINANT_ROOT_CHANGE",
+    "PERMISSION_CHANGE",
+    "COHORT_CHANGE",
+    "MAX_DURATION_EXCEEDED"
+  ],
+  "material_update_on": [
+    "DOMINANCE_STATE_CHANGE",
+    "PRESSURE_STRENGTH_CHANGE",
+    "CONTRADICTION_MATERIAL_CHANGE",
+    "MAJOR_EVENT_BOUNDARY"
+  ],
+  "same_episode_if_unchanged": true,
+  "max_episode_wall_hours_by_horizon": {
+    "SESSION_1_6H": 24,
+    "SHORT_15_60M": 6,
+    "MICRO_0_15M": 2,
+    "DAY_6_24H": 72,
+    "SWING_1_5D": 240,
+    "STRUCTURAL_GT_5D": 480
+  },
+  "primary_independent_sample": "FIRST_VALIDATION_ELIGIBLE_PREDICTION_IN_EPISODE",
+  "child_snapshots_are_independent": false
+}

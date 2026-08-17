@@ -1,0 +1,18 @@
+{
+  "phase": "AD-V3-P09",
+  "version": "3.9.0-true-forward-validation-2.0",
+  "title": "True-Forward Validation 2.0",
+  "implementation_status": "PASS",
+  "baseline_commit": "GIT_METADATA_UNAVAILABLE_IN_SUPPLIED_ZIP",
+  "canonical_forward_authority": "P09",
+  "legacy_p04_forward_authority": "HISTORICAL_ONLY",
+  "prospective_evidence_state": "NO_SAMPLES",
+  "production_direction_authority": false,
+  "production_trade_permission_authority": false,
+  "trade_execution_authority": "NONE",
+  "next_phase": "AD-V3-P10_UNIFIED_RUNTIME_ONE_RUN",
+  "acceptance_checks": 60,
+  "initial_cohort_initialization": "tools/initialize_forward_cohort.py creates COHORT_001 in ignored runtime state",
+  "regression": "P01-P09 PASS",
+  "git_metadata": "UNAVAILABLE_IN_SUPPLIED_ZIP"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "cohort_id",
+    "state",
+    "fingerprint",
+    "bound_hashes"
+  ],
+  "additionalProperties": true
+}

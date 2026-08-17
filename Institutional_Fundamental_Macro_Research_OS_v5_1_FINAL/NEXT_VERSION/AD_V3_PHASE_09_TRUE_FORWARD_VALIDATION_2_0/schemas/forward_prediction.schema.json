@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "prediction_id",
+    "episode_id",
+    "cohort_id",
+    "horizon",
+    "precommit_time",
+    "maturity_time",
+    "immutable_precommit"
+  ],
+  "additionalProperties": true
+}

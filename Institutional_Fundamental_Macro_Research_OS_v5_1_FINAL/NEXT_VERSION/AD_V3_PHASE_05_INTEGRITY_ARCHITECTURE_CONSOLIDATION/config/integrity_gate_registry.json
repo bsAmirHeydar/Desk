@@ -20,8 +20,8 @@
       "machine_evaluator": "P04 acceptance PASS"
     },
     {
-      "gate_id": "TRUE_FORWARD_SAMPLE_PROVISIONAL",
-      "machine_evaluator": "commissioning_state.sample_state == PROVISIONAL"
+      "gate_id": "P09_FORWARD_EVIDENCE_PROVISIONAL",
+      "machine_evaluator": "P09 active cohort forward_evidence_state in {PROVISIONAL,MATURE}; legacy P04 sample count has no authority"
     },
     {
       "gate_id": "ZERO_INTEGRITY_FAILURES",
@@ -36,5 +36,6 @@
     "declared promotion gate set must equal machine-enforced gate set",
     "unknown/unavailable gate fails closed",
     "automatic promotion forbidden"
-  ]
+  ],
+  "prospective_validation_authority": "AD-V3-P09"
 }

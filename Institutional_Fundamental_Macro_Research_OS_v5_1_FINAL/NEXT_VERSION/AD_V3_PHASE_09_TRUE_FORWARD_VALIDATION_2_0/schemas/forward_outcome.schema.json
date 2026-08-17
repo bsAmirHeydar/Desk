@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "outcome_id",
+    "prediction_id",
+    "episode_id",
+    "terminal_return",
+    "direction_outcome",
+    "permission_outcome"
+  ],
+  "additionalProperties": true
+}

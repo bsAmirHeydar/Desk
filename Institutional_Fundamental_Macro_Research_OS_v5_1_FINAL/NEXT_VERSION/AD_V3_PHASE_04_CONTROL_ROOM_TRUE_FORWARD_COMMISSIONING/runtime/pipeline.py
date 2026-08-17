@@ -6,7 +6,8 @@ from AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE.runtime.semantic_runtime impo
 from .promotion import load_state as load_promotion
 from .permission import evaluate as permission_eval
 from AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION.runtime.decision_runtime import calibrate as calibrate_decision
-from .commissioning import build_precommit, update as update_commissioning
+from .commissioning import load_state as load_legacy_commissioning
+from AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0.runtime.forward_runtime import observe_and_evaluate as p09_observe_and_evaluate, precommit_current as p09_precommit_current
 from .control_room_model import build as build_model
 from .renderer import render, brief
 from .capsule import build as build_capsule, build_final_seal
@@ -33,8 +34,7 @@ def _current_fact_observation(data_root, fact_id, acquisition_run_id):
     return hit
 
 
-def _price_anchor_from_store(data_root, p03):
-    run_id = (p03.get('handoff_integrity') or {}).get('acquisition_run_id')
+def _price_anchor_from_run(data_root, run_id):
     candidates = [
         ('XAUUSD_SPOT_PRICE', 'SPOT_DIRECT', False),
         ('GC_FUTURES_PRICE', 'GC_FUTURES_PROXY', True),
@@ -70,6 +70,10 @@ def _price_anchor_from_store(data_root, p03):
             'instrument_key': instrument_key,
         }
     return None
+
+
+def _price_anchor_from_store(data_root, p03):
+    return _price_anchor_from_run(data_root, (p03.get('handoff_integrity') or {}).get('acquisition_run_id'))
 
 
 def _run_json(cmd, allow=(0,), label='subprocess', hard_timeout_seconds=900, heartbeat_seconds=20):
@@ -127,7 +131,7 @@ def _blocking_fact_ids(coverage):
     return list(dict.fromkeys(ids))
 
 
-def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=None, p02_data_root_override=None, output_root_override=None, kernel_mode='NORMAL', kernel_fixture_dir=None, kernel_output_root_override=None):
+def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=None, p02_data_root_override=None, output_root_override=None, kernel_mode='NORMAL', kernel_fixture_dir=None, kernel_output_root_override=None, p09_state_root_override=None, as_of_utc=None):
     repo = Path(repo_root)
     nxt = repo / 'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL' / 'NEXT_VERSION'
     p02 = nxt / 'AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC'
@@ -135,11 +139,13 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
     p04 = nxt / 'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING'
     p07 = nxt / 'AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL'
     p08 = nxt / 'AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION'
+    p09 = nxt / 'AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0'
     data = Path(p02_data_root_override) if p02_data_root_override else p02 / 'artifacts' / 'live_store'
     outroot = Path(output_root_override) if output_root_override else p04 / 'artifacts'
     runs = outroot / 'runs'
     runs.mkdir(parents=True, exist_ok=True)
-    stamp = iso().replace('-', '').replace(':', '')
+    run_now = as_of_utc or iso()
+    stamp = run_now.replace('-', '').replace(':', '')
     run_id = stable_id('P04RUN', {'stamp': stamp, 'horizon': horizon, 'data': str(data)})
     rd = runs / run_id
     rd.mkdir(parents=True, exist_ok=False)
@@ -155,6 +161,8 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
     if not skip_p02:
         _progress('[1/7] P02 live acquisition via P07 intraday Gold data kernel')
         cmd=[sys.executable, str(p07 / 'tools' / 'run_kernel_acquisition.py'), '--horizon', horizon, '--mode', kernel_mode, '--data-root', str(data), '--json']
+        if as_of_utc:
+            cmd += ['--as-of', str(as_of_utc)]
         if kernel_fixture_dir:
             cmd += ['--fixture-network-dir', str(kernel_fixture_dir)]
         if kernel_output_root_override:
@@ -186,6 +194,13 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
         if blockers:
             _progress('      BLOCKING FACTS: ' + ', '.join(blockers))
         raise RuntimeError('P02_BLOCKED_BY_P07_KERNEL' + (': ' + ', '.join(blockers) if blockers else ''))
+
+    # P09 evaluates already-mature predictions before the current causal decision is computed.
+    _progress('[1b/8] P09 fixed-horizon maturity scan')
+    current_acq_run=(kernel or {}).get('p02_acquisition_run_id')
+    current_price_anchor=_price_anchor_from_run(data,current_acq_run) if current_acq_run else None
+    p09_eval=p09_observe_and_evaluate(p09,current_price_anchor,now=run_now,state_root=p09_state_root_override)
+    _progress(f"      P09: {len(p09_eval.get('new_outcomes') or [])} new outcome(s) | {p09_eval['statistics'].get('mature_unevaluated_count',0)} mature unevaluated | evidence={p09_eval['statistics'].get('forward_evidence_state')}")
 
     _progress('[2/7] P03 causal brain - pre-semantic')
     _, pre = _run_json(
@@ -241,21 +256,25 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
     write_json(rd / 'permission.json', permission)
     _progress(f"      P08: {calibrated.get('causal_direction')} | {calibrated.get('pressure_strength')} | {calibrated.get('dominance_state')} | edge={calibrated.get('edge_state')} | action={permission.get('research_action_candidate')}")
 
-    _progress('[7/8] True-forward precommit + Control Room')
-    price_anchor = _price_anchor_from_store(data, final)
+    _progress('[7/8] P09 immutable precommit + Control Room')
+    price_anchor = current_price_anchor or _price_anchor_from_store(data, final)
     if price_anchor:
         _progress(f"      price anchor: {price_anchor.get('source_fact_id')} {price_anchor.get('value')} ({price_anchor.get('anchor_kind')})")
     else:
-        _progress('      price anchor: UNAVAILABLE (C3 directional outcomes would be unevaluable)')
-    precommit = build_precommit(run_id, final, permission, price_anchor)
+        _progress('      price anchor: UNAVAILABLE (P09 precommit will be BLOCKED)')
+    p09_commit=p09_precommit_current(p09,run_id,calibrated,final,kernel,bundle,price_anchor,now=run_now,state_root=p09_state_root_override)
+    precommit=p09_commit['prediction']
+    forward_stats=p09_commit['statistics']
+    write_json(rd / 'p09_forward_precommit.json', precommit)
     write_json(rd / 'precommit.json', precommit)
-    commissioning = update_commissioning(p04, precommit, price_anchor)
-    write_json(rd / 'commissioning_snapshot.json', commissioning)
+    write_json(rd / 'p09_forward_statistics.json', forward_stats)
+    commissioning = load_legacy_commissioning(p04)  # legacy history retained; P09 is canonical for new forward science.
+    write_json(rd / 'commissioning_snapshot_legacy.json', commissioning)
     latest_dir = outroot / 'latest'
     prev = None
     if (latest_dir / 'latest_control_room.json').exists():
         prev = load_json(latest_dir / 'latest_control_room.json')
-    model = build_model(run_id, final, packet, bundle, permission, commissioning, promotion, prev, pre_semantic=pre, data_kernel=kernel, decision_calibration=calibrated)
+    model = build_model(run_id, final, packet, bundle, permission, commissioning, promotion, prev, pre_semantic=pre, data_kernel=kernel, decision_calibration=calibrated, forward_validation={'prediction':precommit,'statistics':forward_stats,'evaluation_before_current_run':p09_eval['statistics'],'active_cohort':p09_commit['cohort']})
     write_json(rd / 'control_room.json', model)
     helps = load_json(p04 / 'config' / 'help_registry.json')
     (rd / 'control_room.html').write_text(render(model, helps), encoding='utf-8')
@@ -279,6 +298,8 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
         (rd / 'p07_kernel_receipt.json', 'latest_p07_kernel_receipt.json'),
         (rd / 'p07_governed_coverage.json', 'latest_p07_governed_coverage.json'),
         (rd / 'p08_decision_calibration.json', 'latest_p08_decision_calibration.json'),
+        (rd / 'p09_forward_precommit.json', 'latest_p09_forward_precommit.json'),
+        (rd / 'p09_forward_statistics.json', 'latest_p09_forward_statistics.json'),
     ]:
         shutil.copy2(src, latest_dir / name)
 
@@ -327,6 +348,16 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
         'p08_edge_state': calibrated.get('edge_state'),
         'p08_permission_candidate': calibrated.get('permission_candidate'),
         'p08_duration_ms': (calibrated.get('timing_ms') or {}).get('total_p08_ms'),
+        'p09_prediction_id': precommit.get('prediction_id'),
+        'p09_episode_id': precommit.get('episode_id'),
+        'p09_cohort_id': precommit.get('cohort_id'),
+        'p09_maturity_time': precommit.get('maturity_time'),
+        'p09_eligibility': precommit.get('eligibility'),
+        'p09_sample_role': precommit.get('sample_role'),
+        'p09_forward_evidence_state': forward_stats.get('forward_evidence_state'),
+        'p09_episode_count': forward_stats.get('episode_count'),
+        'p09_mature_episode_count': forward_stats.get('mature_episode_count'),
+        'p09_new_outcomes_before_current_run': len(p09_eval.get('new_outcomes') or []),
         'control_room': str(rd / 'control_room.html'),
         'capsule_id': cap.get('capsule_id'),
         'production_authority': promotion.get('state') == 'PRODUCTION_V3',

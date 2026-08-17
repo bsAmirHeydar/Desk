@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P09",
+  "version": "3.9.0-true-forward-validation-2.0",
+  "baseline_commit": "GIT_METADATA_UNAVAILABLE_IN_SUPPLIED_ZIP",
+  "phase_statuses": {
+    "P01": "PASS",
+    "P02": "PASS",
+    "P03": "PASS",
+    "P04": "PASS",
+    "P05": "PASS",
+    "P06": "PASS",
+    "P07": "PASS",
+    "P08": "PASS",
+    "P09": "PASS"
+  },
+  "implementation_status": "PASS",
+  "acceptance_check_count": 60,
+  "canonical_forward_authority": "P09_TRUE_FORWARD_V2",
+  "legacy_p04_forward": {
+    "preserved": true,
+    "sample_count_in_supplied_snapshot": 0,
+    "p09_compatible": 0,
+    "p09_incompatible": 0,
+    "unknown_compatibility": 0,
+    "promotion_authority": false
+  },
+  "active_cohort_at_clean_package": "NOT_STARTED_RUNTIME_STATE",
+  "cohort_initialization_command": "tools/initialize_forward_cohort.py",
+  "cohort_fingerprint": null,
+  "real_forward_state": {
+    "prediction_snapshots": 0,
+    "episodes": 0,
+    "mature_episodes": 0,
+    "pending": 0,
+    "mature_unevaluated": 0,
+    "forward_evidence_state": "NO_SAMPLES",
+    "fixtures_included": false,
+    "replay_included": false
+  },
+  "calibration_states": {
+    "direction": "INSUFFICIENT",
+    "strength": "INSUFFICIENT",
+    "dominance": "INSUFFICIENT",
+    "edge": "INSUFFICIENT",
+    "permission": "INSUFFICIENT",
+    "wait": "INSUFFICIENT",
+    "consumption": "INSUFFICIENT",
+    "fragility": "INSUFFICIENT",
+    "missing_driver": "INSUFFICIENT"
+  },
+  "promotion_gate": {
+    "gate_id": "P09_FORWARD_EVIDENCE_PROVISIONAL",
+    "currently_satisfied": false,
+    "legacy_raw_count_can_satisfy": false,
+    "automatic_promotion_forbidden": true
+  },
+  "science_integrity": {
+    "gold_ontology_drift": 0,
+    "causal_root_drift": 0,
+    "pressure_plane_drift": 0,
+    "semantic_authority_drift": 0,
+    "freshness_authority_drift": 0,
+    "p08_decision_science_drift": 0
+  },
+  "V3_state": "SHADOW_COMMISSIONING",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE",
+  "next_phase": "AD-V3-P10_UNIFIED_RUNTIME_ONE_RUN"
+}

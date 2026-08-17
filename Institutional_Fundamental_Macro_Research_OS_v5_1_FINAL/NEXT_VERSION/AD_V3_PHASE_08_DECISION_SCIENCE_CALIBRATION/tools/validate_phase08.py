@@ -6,11 +6,15 @@ def sha(p):return hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()
 def ck(n,o,d=None):return {'name':n,'status':'PASS' if o else 'FAIL','detail':d}
 def main():
  checks=[]; base=load(P/'baseline/PRE_P08_AUTHORITY_HASHES.json')
- drift=[]
+ arch=load(N/'AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/config/architecture_surface_registry.json');surface={x.get('path'):x for x in arch.get('surfaces',[])}
+ drift=[];governed=[]
  for k,v in base['hashes'].items():
   f=REPO/v['path']; actual=sha(f) if f.exists() else None
-  if actual!=v['sha256']:drift.append({'surface':k,'expected':v['sha256'],'actual':actual})
- checks.append(ck('pre-P08 scientific and authority surfaces unchanged',not drift,drift))
+  if actual!=v['sha256']:
+   own=surface.get(v['path']) or {}
+   if own.get('class')=='GOVERNANCE_VERSIONED' and str(own.get('owner','')).startswith('AD-V3-P09'):governed.append({'surface':k,'path':v['path'],'classification':'DOWNSTREAM_GOVERNANCE_VERSIONED'})
+   else:drift.append({'surface':k,'expected':v['sha256'],'actual':actual})
+ checks.append(ck('pre-P08 scientific and authority surfaces unchanged',not drift,{'science_drift':drift,'accepted_downstream_governance':governed}))
  for f in ['decision_calibration_policy.json','causal_importance_policy.json','magnitude_policy.json','dominance_policy.json','empirical_calibration_policy.json']:
   checks.append(ck('config '+f+' present',(P/'config'/f).exists()))
  pipe=(N/'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/pipeline.py').read_text(encoding='utf-8-sig')

@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "clock": "TRADABLE_MINUTES_CME_GOLD_WEEKLY_V1",
+  "market_timezone": "America/Chicago",
+  "weekly_schedule": {
+    "sunday_open_local": "17:00",
+    "daily_close_local": "16:00",
+    "daily_reopen_local": "17:00",
+    "friday_close_local": "16:00",
+    "holiday_calendar": "NO_STATIC_HOLIDAY_INFERENCE_USE_DATA_AVAILABILITY"
+  },
+  "horizons": {
+    "MICRO_0_15M": {
+      "terminal_minutes": 15,
+      "checkpoints_minutes": [
+        5,
+        10,
+        15
+      ],
+      "terminal_tolerance_minutes": 2,
+      "neutral_band_min_return": 0.00035,
+      "path_min_points": 4
+    },
+    "SHORT_15_60M": {
+      "terminal_minutes": 60,
+      "checkpoints_minutes": [
+        15,
+        30,
+        60
+      ],
+      "terminal_tolerance_minutes": 5,
+      "neutral_band_min_return": 0.0006,
+      "path_min_points": 6
+    },
+    "SESSION_1_6H": {
+      "terminal_minutes": 360,
+      "checkpoints_minutes": [
+        60,
+        180,
+        360
+      ],
+      "terminal_tolerance_minutes": 20,
+      "neutral_band_min_return": 0.0012,
+      "path_min_points": 8
+    },
+    "DAY_6_24H": {
+      "terminal_minutes": 1440,
+      "checkpoints_minutes": [
+        360,
+        720,
+        1440
+      ],
+      "terminal_tolerance_minutes": 45,
+      "neutral_band_min_return": 0.002,
+      "path_min_points": 12
+    },
+    "SWING_1_5D": {
+      "terminal_minutes": 7200,
+      "checkpoints_minutes": [
+        1440,
+        4320,
+        7200
+      ],
+      "terminal_tolerance_minutes": 90,
+      "neutral_band_min_return": 0.0035,
+      "path_min_points": 20
+    },
+    "STRUCTURAL_GT_5D": {
+      "terminal_minutes": 14400,
+      "checkpoints_minutes": [
+        7200,
+        14400
+      ],
+      "terminal_tolerance_minutes": 180,
+      "neutral_band_min_return": 0.005,
+      "path_min_points": 20
+    }
+  }
+}

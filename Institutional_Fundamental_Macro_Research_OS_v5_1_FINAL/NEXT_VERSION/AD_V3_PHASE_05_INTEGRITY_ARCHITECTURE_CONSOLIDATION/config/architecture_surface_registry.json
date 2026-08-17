@@ -117,14 +117,14 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/config/promotion_policy.json",
-      "owner": "AD-V3-P04",
+      "owner": "AD-V3-P09/P04_PROMOTION_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/promotion.py",
-      "owner": "AD-V3-P05/P04_GOVERNANCE_REPAIR",
+      "owner": "AD-V3-P09/P04_PROMOTION_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
@@ -190,21 +190,21 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/pipeline.py",
-      "owner": "AD-V3-P08/P04_INTEGRATION",
+      "owner": "AD-V3-P09/P04_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/control_room_model.py",
-      "owner": "AD-V3-P08/P04_INTEGRATION",
+      "owner": "AD-V3-P09/P04_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/renderer.py",
-      "owner": "AD-V3-P08/P04_INTEGRATION",
+      "owner": "AD-V3-P09/P04_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
@@ -328,6 +328,42 @@
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/forward_validation_policy.json",
+      "owner": "AD-V3-P09",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/episode_policy.json",
+      "owner": "AD-V3-P09",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/horizon_evaluation_policy.json",
+      "owner": "AD-V3-P09",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_runtime.py",
+      "owner": "AD-V3-P09",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/artifacts/state/forward_state.json",
+      "owner": "AD-V3-P09_RUNTIME",
+      "class": "RUNTIME_STATE",
+      "commit": false,
+      "rollback_authority": false,
+      "required": false
     }
   ],
   "pattern_rules": [
@@ -400,6 +436,13 @@
       "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/artifacts/**",
       "owner": "AD-V3-P07_RUNTIME",
       "class": "RUNTIME_ARTIFACT"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/artifacts/**",
+      "owner": "AD-V3-P09_RUNTIME",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false,
+      "rollback_authority": false
     }
   ],
   "hard_rule": "No important surface may be simultaneously treated as immutable science and mutable deployment."

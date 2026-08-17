@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "version": "1.0.0",
+  "permission_outcomes": [
+    "SUPPORTED",
+    "OPPOSED",
+    "MIXED",
+    "NEUTRAL",
+    "UNRESOLVED"
+  ],
+  "wait_outcomes": [
+    "WAIT_PROTECTED",
+    "WAIT_MISSED_OPPORTUNITY",
+    "WAIT_APPROPRIATE_UNCERTAINTY",
+    "WAIT_UNRESOLVED"
+  ],
+  "wait_strong_uncertainty_blockers": [
+    "CRITICAL_LIVE_GAPS",
+    "PRIMARY_CONFLICT",
+    "NO_CLEAR_DOMINANCE",
+    "NO_CLEAR_DIRECTION"
+  ],
+  "wait_consumption_blockers": [
+    "HIGH_CONSUMPTION"
+  ],
+  "meaningful_favorable_band_multiple": 2.0,
+  "clean_favorable_band_multiple": 3.0,
+  "acceptable_adverse_band_multiple": 2.0,
+  "severe_adverse_band_multiple": 2.5,
+  "wait_missed_opportunity_band_multiple": 3.0
+}
