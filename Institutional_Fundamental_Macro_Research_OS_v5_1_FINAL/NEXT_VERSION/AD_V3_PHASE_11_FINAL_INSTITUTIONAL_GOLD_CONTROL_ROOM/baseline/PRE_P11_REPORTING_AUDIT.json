@@ -1,0 +1,20 @@
+{
+  "record_type": "AD_V3_P11_PRE_REPORTING_AUDIT",
+  "canonical_input_before_p11": "ControlRoomInputV3",
+  "v3_renderer_before_p11": "AD-V3-P04 compatibility renderer invoked by P10",
+  "v2_renderer": "AD-V2-P13 canonical V2 production renderer",
+  "gaps": [
+    "P04 renderer is machine-forward and not final human-first report",
+    "P10 input lacked full observation evidence index",
+    "event clock may be empty when event data is not structured",
+    "P04 renderer remained canonical V3 HTML authority",
+    "comparison used P04 model rather than canonical P10 inputs"
+  ],
+  "preserve": [
+    "P04/P03 pressure-plane separation",
+    "P04 contextual help concepts",
+    "V2 P13 human sections and operator flow",
+    "P10 latest/last-success isolation",
+    "P09 real forward state separation"
+  ]
+}

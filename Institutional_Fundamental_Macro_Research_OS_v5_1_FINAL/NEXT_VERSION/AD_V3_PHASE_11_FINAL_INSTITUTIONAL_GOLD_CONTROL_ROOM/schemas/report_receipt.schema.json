@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "version",
+    "run_id",
+    "input_hash",
+    "view_model_hash",
+    "html_hash",
+    "render_status",
+    "validation_state",
+    "visual_state",
+    "canonical_v3_renderer"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P11_REPORT_RECEIPT"
+    },
+    "version": {
+      "type": "string"
+    },
+    "run_id": {},
+    "input_hash": {
+      "type": "string"
+    },
+    "view_model_hash": {
+      "type": "string"
+    },
+    "html_hash": {
+      "type": "string"
+    },
+    "render_status": {
+      "type": "string"
+    },
+    "validation_state": {
+      "type": "string"
+    },
+    "visual_state": {
+      "type": "string"
+    },
+    "canonical_v3_renderer": {
+      "const": true
+    }
+  }
+}

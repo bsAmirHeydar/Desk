@@ -23,6 +23,12 @@
     "data_kernel": {},
     "causal_state": {},
     "decision_calibration": {},
-    "forward_validation": {}
+    "forward_validation": {},
+    "evidence_index": {
+      "type": "object"
+    },
+    "stage_timings": {
+      "type": "array"
+    }
   }
 }

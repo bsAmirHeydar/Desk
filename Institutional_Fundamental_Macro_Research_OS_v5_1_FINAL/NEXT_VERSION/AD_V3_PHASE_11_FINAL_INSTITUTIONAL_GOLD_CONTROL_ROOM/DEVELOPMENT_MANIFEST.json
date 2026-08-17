@@ -1,0 +1,15 @@
+{
+  "phase": "AD-V3-P11",
+  "version": "3.11.0-final-control-room",
+  "name": "Final Institutional Gold Control Room",
+  "status": "PASS",
+  "canonical_input": "ControlRoomInputV3",
+  "canonical_renderer": "AD-V3-P11",
+  "scientific_authority": false,
+  "trade_execution_authority": "NONE",
+  "production_promotion_performed": false,
+  "next_phase": "AD-V3-P12_FINAL_CERTIFICATION_PRODUCTION_PROMOTION_V3_FREEZE",
+  "baseline_commit": "522bf9b",
+  "acceptance_check_count": 53,
+  "visual_acceptance": "PASS_BROWSER_CHROMIUM"
+}

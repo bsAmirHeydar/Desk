@@ -1,0 +1,26 @@
+{
+  "phase": "AD-V3-P11",
+  "version": "3.11.0-final-control-room",
+  "canonical_input": "ControlRoomInputV3",
+  "canonical_v3_html_authority": "AD-V3-P11",
+  "legacy_v3_renderer": "AD-V3-P04",
+  "language": "fa",
+  "direction": "rtl",
+  "offline_core": true,
+  "llm_report_writer": false,
+  "trade_execution_authority": "NONE",
+  "required_sections": [
+    "now",
+    "changed",
+    "drivers",
+    "pressure",
+    "transmission",
+    "watch",
+    "invalidation",
+    "events",
+    "data",
+    "forward",
+    "evidence",
+    "audit"
+  ]
+}

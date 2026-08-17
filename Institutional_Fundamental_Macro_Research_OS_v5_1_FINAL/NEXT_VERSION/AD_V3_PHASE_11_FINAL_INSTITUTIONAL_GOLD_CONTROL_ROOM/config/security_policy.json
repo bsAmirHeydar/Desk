@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "escape_all_evidence_text": true,
+  "safe_url_schemes": [
+    "http",
+    "https"
+  ],
+  "remote_scripts_forbidden": true,
+  "inline_script_policy": "STATIC_P11_CODE_ONLY",
+  "untrusted_source_text_is_data": true
+}

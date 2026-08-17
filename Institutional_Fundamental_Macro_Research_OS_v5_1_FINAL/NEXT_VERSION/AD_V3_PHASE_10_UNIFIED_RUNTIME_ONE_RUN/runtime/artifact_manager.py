@@ -25,7 +25,7 @@ class ArtifactManager:
     def publish_attempt(self,receipt): self.pointer('last_attempt.json',receipt)
     def publish_success(self,receipt,rd):
         self.pointer('last_success.json',receipt)
-        mapping={'run_result.json':'latest_run.json','control_room.html':'latest_control_room.html','control_room.json':'latest_control_room.json','run_capsule.json':'latest_capsule.json','run_seal.json':'latest_seal.json','control_room_input.json':'latest_control_room_input.json'}
+        mapping={'run_result.json':'latest_run.json','control_room.html':'latest_control_room.html','control_room.json':'latest_control_room.json','control_room_view_model.json':'latest_control_room_view_model.json','p11_report_receipt.json':'latest_p11_report_receipt.json','run_capsule.json':'latest_capsule.json','run_seal.json':'latest_seal.json','control_room_input.json':'latest_control_room_input.json'}
         for src,name in mapping.items():
             p=rd/src
             if p.exists():
@@ -33,7 +33,7 @@ class ArtifactManager:
     def lock_state(self): return {'locked':self.lock.exists(),'lock_path':str(self.lock)}
 
 def build_seal(rd):
-    rd=pathlib.Path(rd);names=['run_result.json','control_room.html','run_capsule.json','control_room_input.json'];hashes={n:sha_file(rd/n) for n in names if (rd/n).exists()};seal={'record_type':'AD_V3_P10_RUN_SEAL','sealed_at_utc':iso(),'sealed_hashes':hashes,'seal_id':'P10SEAL_'+sha_obj(hashes)[:24].upper()};atomic_json(rd/'run_seal.json',seal);return seal
+    rd=pathlib.Path(rd);names=['run_result.json','control_room.html','control_room_view_model.json','p11_report_receipt.json','run_capsule.json','control_room_input.json'];hashes={n:sha_file(rd/n) for n in names if (rd/n).exists()};seal={'record_type':'AD_V3_P10_RUN_SEAL','sealed_at_utc':iso(),'sealed_hashes':hashes,'seal_id':'P10SEAL_'+sha_obj(hashes)[:24].upper()};atomic_json(rd/'run_seal.json',seal);return seal
 
 def verify_seal(rd):
     rd=pathlib.Path(rd);s=load(rd/'run_seal.json');

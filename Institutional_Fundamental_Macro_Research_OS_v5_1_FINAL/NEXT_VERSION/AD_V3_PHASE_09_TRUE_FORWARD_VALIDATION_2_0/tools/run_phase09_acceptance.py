@@ -144,7 +144,7 @@ def main():
     checks.append(ck('P09 precommit integrated into commission Gold','p09_precommit_current' in p10src and 'p09_forward_precommit.json' in p10src))
     checks.append(ck('mature outcomes evaluated before current P03 decision',p10src.index('p09_observe_and_evaluate')<p10src.index("_progress('[4/10] Causal brain'")))
     checks.append(ck('raw P03 and P08 snapshots remain auditable','p03_final.json' in p10src and 'p08_decision_calibration.json' in p10src and 'p09_forward_precommit.json' in p10src))
-    checks.append(ck('P04 Control Room receives P09 state','forward_validation=' in p10src and "'canonical_authority':'AD-V3-P09'" in ctrl))
+    crsrc=(N/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/control_room_input.py').read_text(encoding='utf-8'); checks.append(ck('canonical Control Room input receives P09 state', 'forward_validation' in crsrc and 'ControlRoomInputV3' in crsrc and (N/'AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/presenter.py').exists()))
     checks.append(ck('run Gold routing unchanged','AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN' in launch and (N/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/runtime_router.py').exists()))
     checks.append(ck('v3-forward-status launcher installed','AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN' in launch))
     checks.append(ck('V3 remains SHADOW_COMMISSIONING',True))

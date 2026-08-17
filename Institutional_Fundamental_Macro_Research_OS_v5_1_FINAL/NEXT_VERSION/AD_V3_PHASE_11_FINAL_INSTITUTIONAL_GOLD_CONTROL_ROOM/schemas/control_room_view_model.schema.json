@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "report_version",
+    "run",
+    "authority",
+    "executive",
+    "what_changed",
+    "drivers",
+    "pressure_planes",
+    "watch_next",
+    "events",
+    "roots",
+    "data_health",
+    "semantic_health",
+    "forward",
+    "evidence",
+    "audit"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P11_CONTROL_ROOM_VIEW_MODEL"
+    },
+    "report_version": {
+      "type": "string"
+    },
+    "run": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    },
+    "executive": {
+      "type": "object",
+      "required": [
+        "direction",
+        "pressure_strength",
+        "dominance",
+        "permission",
+        "edge",
+        "consumption",
+        "fragility",
+        "headline"
+      ]
+    },
+    "what_changed": {
+      "type": "object"
+    },
+    "drivers": {
+      "type": "array"
+    },
+    "pressure_planes": {
+      "type": "object"
+    },
+    "watch_next": {
+      "type": "array"
+    },
+    "events": {
+      "type": "array"
+    },
+    "roots": {
+      "type": "array"
+    },
+    "data_health": {
+      "type": "object"
+    },
+    "semantic_health": {
+      "type": "object"
+    },
+    "forward": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "array"
+    },
+    "audit": {
+      "type": "object"
+    }
+  }
+}

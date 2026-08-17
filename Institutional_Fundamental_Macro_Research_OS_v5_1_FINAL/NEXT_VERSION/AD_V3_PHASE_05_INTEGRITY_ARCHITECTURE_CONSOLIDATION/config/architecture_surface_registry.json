@@ -204,7 +204,7 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/renderer.py",
-      "owner": "AD-V3-P09/P04_INTEGRATION",
+      "owner": "AD-V3-P11/P04_LEGACY_RENDERER",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
@@ -393,6 +393,28 @@
       "class": "LEGACY_BASELINE",
       "commit": true,
       "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/report_contract.json",
+      "owner": "AD-V3-P11",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/report_runtime.py",
+      "owner": "AD-V3-P11",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/artifacts/",
+      "owner": "AD-V3-P11_RUNTIME",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false,
+      "rollback_authority": false,
+      "required": false
     }
   ],
   "pattern_rules": [
@@ -491,6 +513,28 @@
     {
       "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/artifacts/**",
       "owner": "AD-V3-P10_RUNTIME",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/*.json",
+      "owner": "AD-V3-P11",
+      "class": "GOVERNANCE_VERSIONED"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/*.py",
+      "owner": "AD-V3-P11",
+      "class": "GOVERNANCE_VERSIONED"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/schemas/*.json",
+      "owner": "AD-V3-P11",
+      "class": "GOVERNANCE_VERSIONED"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/artifacts/**",
+      "owner": "AD-V3-P11_RUNTIME",
       "class": "RUNTIME_ARTIFACT",
       "commit": false,
       "rollback_authority": false

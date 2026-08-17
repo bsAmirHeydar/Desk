@@ -29,7 +29,7 @@ def main():
     c=sp.add_parser('commission');c.add_argument('subject');c.add_argument('--horizon',default='SESSION_1_6H');c.add_argument('--full-refresh',action='store_true');c.add_argument('--cache-only',action='store_true');c.add_argument('--semantic-bundle')
     for n in ('report','open','commission-report','commission-open'):
         q=sp.add_parser(n);q.add_argument('subject',nargs='?',default='Gold')
-    for n in ('v3-status','v3-runtime-status','v3-integrity-status','v3-semantic-status','v3-kernel-status','v3-decision-status','v3-forward-status','v3-tf-status','v3-promotion-status'):
+    for n in ('v3-status','v3-runtime-status','v3-integrity-status','v3-semantic-status','v3-kernel-status','v3-decision-status','v3-forward-status','v3-tf-status','v3-promotion-status','v3-control-room-status'):
         sp.add_parser(n)
     pr=sp.add_parser('v3-promote');pr.add_argument('--approve',action='store_true');sp.add_parser('v3-rollback');sp.add_parser('route-mode');sp.add_parser('help')
     a=ap.parse_args();repo=pathlib.Path(a.repo_root).resolve();cmd=a.cmd or 'help'
@@ -73,6 +73,7 @@ def main():
     elif cmd=='v3-kernel-status':tool=NEXT/'AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/tools/p07_status.py'
     elif cmd=='v3-decision-status':tool=NEXT/'AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/tools/p08_status.py'
     elif cmd=='v3-forward-status':tool=NEXT/'AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/tools/p09_status.py'
+    elif cmd=='v3-control-room-status':tool=NEXT/'AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/tools/p11_status.py'
     else:tool=None
     if tool:return subprocess.run([sys.executable,str(tool)]).returncode
     p04=NEXT/'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING'

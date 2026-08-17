@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "max_prominent_drivers": 5,
+  "max_prominent_gaps": 6,
+  "material_change_fields": [
+    "causal_direction",
+    "pressure_strength",
+    "dominance_state",
+    "dominant_root",
+    "permission_candidate",
+    "edge_state",
+    "consumption",
+    "fragility",
+    "contradiction",
+    "analysis_admission",
+    "semantic_mode"
+  ],
+  "technical_only_change_fields": [
+    "run_id",
+    "decision_time",
+    "retrieved_at"
+  ],
+  "primary_background": "#fbfaf7",
+  "canonical_background": "WHITE_WARM",
+  "shadow_badge_required": true,
+  "fake_confidence_forbidden": true
+}

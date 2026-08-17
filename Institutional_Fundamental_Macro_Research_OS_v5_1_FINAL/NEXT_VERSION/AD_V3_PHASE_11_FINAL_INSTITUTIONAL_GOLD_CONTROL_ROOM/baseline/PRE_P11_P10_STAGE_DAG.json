@@ -76,7 +76,7 @@
       "depends_on": [
         "FORWARD_PRECOMMIT"
       ],
-      "authority": "AD-V3-P11",
+      "authority": "AD-V3-P04",
       "mandatory": true
     },
     {
@@ -84,7 +84,7 @@
       "depends_on": [
         "CONTROL_MODEL"
       ],
-      "authority": "AD-V3-P11",
+      "authority": "AD-V3-P04",
       "mandatory": true
     },
     {

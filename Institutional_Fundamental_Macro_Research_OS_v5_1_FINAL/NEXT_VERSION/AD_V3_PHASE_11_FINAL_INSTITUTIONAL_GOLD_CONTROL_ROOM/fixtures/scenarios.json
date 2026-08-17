@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "scenarios": [
+    "bullish_dominant_buy",
+    "bearish_dominant_sell",
+    "fragile_bullish",
+    "fragile_bearish",
+    "true_mixed",
+    "unknown",
+    "high_consumption_wait",
+    "data_degraded",
+    "data_blocked",
+    "semantic_conservative",
+    "forward_no_samples",
+    "forward_provisional",
+    "dense_representative"
+  ],
+  "fixture_banner_required": true,
+  "live_state_mutation_forbidden": true
+}
