@@ -38,3 +38,7 @@ Closes the final three blockers observed in the first VPN live run with direct C
 - removes CFTC COT as a GC volume fallback;
 - deliberately avoids global source-quality voting where fact-specific precedence carries semantic policy;
 - prefers explicit UNKNOWN/degraded coverage over cross-fact or wrong-market evidence.
+
+
+## C2 Price Anchor Operational Closure
+Added fail-closed numeric parsing for WGC spot and an explicit public XAU/USD proxy fallback for transmission-only true-forward anchoring. P02 scientific revision remains 3.2.6; operational build is `3.2.6+c2-price-anchor-closure.1`.

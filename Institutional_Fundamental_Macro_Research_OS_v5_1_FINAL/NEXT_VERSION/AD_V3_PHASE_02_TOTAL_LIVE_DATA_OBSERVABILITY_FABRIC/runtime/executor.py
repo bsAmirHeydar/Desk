@@ -72,6 +72,8 @@ def _extract(fact, source, body, retrieved, raw_hash, ctype):
     if t=='FED_H10_INR_HTML': return extractors.fed_h10_inr_observation(fact,source,body,retrieved,raw_hash)
     if t=='PIB_GOLD_DUTY_HTML': return extractors.pib_gold_duty_observation(fact,source,body,retrieved,raw_hash)
     if t=='WGC_SGE_WITHDRAWALS_HTML': return extractors.wgc_sge_withdrawals_observation(fact,source,body,retrieved,raw_hash)
+    if t=='WGC_GOLD_PRICE_HTML': return extractors.wgc_gold_price_observation(fact,source,body,retrieved,raw_hash)
+    if t=='GOLDPRICEDEV_XAU_JSON': return extractors.goldpricedev_xau_observation(fact,source,body,retrieved,raw_hash)
     if t=='CME_GOLD_QUOTES_JSON': return extractors.cme_gold_quotes_observation(fact,source,body,retrieved,raw_hash)
     if t=='CME_FEDFUNDS_QUOTES_JSON': return extractors.cme_fedfunds_quotes_observation(fact,source,body,retrieved,raw_hash)
     if t=='RAW_PUBLIC_PDF_PROXY': return extractors.raw_public_pdf_proxy_observation(fact,source,body,retrieved,raw_hash)

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P04 Final Run Seal",
+  "type": "object",
+  "required": [
+    "record_type",
+    "run_id",
+    "capsule_id",
+    "pipeline_status",
+    "sealed_hashes",
+    "final_run_seal",
+    "seal_id"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P04_FINAL_RUN_SEAL"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "capsule_id": {
+      "type": "string"
+    },
+    "pipeline_status": {
+      "type": "string"
+    },
+    "sealed_hashes": {
+      "type": "object"
+    },
+    "final_run_seal": {
+      "const": true
+    },
+    "seal_id": {
+      "type": "string"
+    }
+  }
+}

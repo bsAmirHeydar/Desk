@@ -1,0 +1,11 @@
+{
+  "symbol": "XAU",
+  "quote_currency": "USD",
+  "unit": "troy_ounce",
+  "contract_type": "spot",
+  "price": "4402.10",
+  "bid": "4401.60",
+  "ask": "4402.60",
+  "is_stale": false,
+  "computed_at": "2026-08-16T17:00:00Z"
+}

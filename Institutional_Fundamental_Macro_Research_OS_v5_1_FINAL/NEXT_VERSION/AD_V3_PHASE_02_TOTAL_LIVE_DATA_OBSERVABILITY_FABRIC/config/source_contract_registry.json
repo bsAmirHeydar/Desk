@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.1",
   "phase": "AD-V3-P02",
-  "source_count": 95,
+  "source_count": 96,
   "sources": [
     {
       "source_id": "FED_FOMC",
@@ -652,14 +652,14 @@
       "publisher": "World Gold Council",
       "canonical_url": "https://www.gold.org/goldhub/data/gold-prices",
       "machine_endpoint": "https://www.gold.org/goldhub/data/gold-prices",
-      "collector_type": "GENERIC_HTML",
+      "collector_type": "WGC_GOLD_PRICE_HTML",
       "format": "html",
       "access_class": "PUBLIC_OR_LICENSED",
       "cadence": "INTRADAY_DAILY",
       "publication_lag": "SOURCE_SPECIFIC",
       "backup_source_ids": [],
       "required_env": [],
-      "notes": "",
+      "notes": "Preferred WGC Goldhub surface. Must produce a certified numeric XAU/USD price to satisfy XAUUSD_SPOT_PRICE; page presence/text alone is not a price observation.",
       "must_preserve_raw_snapshot": true,
       "source_priority": "PRIMARY"
     },
@@ -1568,6 +1568,25 @@
       "baseline_customs_duty_percent": 6.0,
       "baseline_source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2035601&lang=2&reg=3",
       "baseline_source_date": "2024-07-23"
+    },
+    {
+      "source_id": "GOLDPRICEDEV_XAU_SPOT_PROXY",
+      "publisher": "goldprice.dev",
+      "canonical_url": "https://goldprice.dev/prices/xau-usd",
+      "machine_endpoint": "https://api.goldprice.dev/v1/prices?symbol=XAU-USD-SPOT",
+      "collector_type": "GOLDPRICEDEV_XAU_JSON",
+      "format": "json",
+      "access_class": "PUBLIC_PROXY",
+      "cadence": "REALTIME",
+      "publication_lag": "SOURCE_SPECIFIC",
+      "backup_source_ids": [],
+      "required_env": [],
+      "notes": "Fallback numeric XAU/USD spot proxy used only for true-forward price transmission/outcome anchoring when preferred official/industry surfaces do not expose a usable numeric observation. Never causal Direction authority.",
+      "must_preserve_raw_snapshot": true,
+      "source_priority": "SECONDARY_TRANSMISSION_PROXY",
+      "request_headers": {
+        "Accept": "application/json,text/plain,*/*"
+      }
     }
   ],
   "hard_rules": [
@@ -1578,5 +1597,5 @@
     "No credentials or API keys are stored in source tree."
   ],
   "revision": "3.2.4",
-  "hardening_note": "REV 3.2.4 closes the last three VPN-era blocking facts with direct Census retail sales, Federal Reserve H.10 INR, and current official India gold-duty policy communication while preserving proxy boundaries."
+  "hardening_note": "3.2.6 science frozen; C2 operational price-anchor closure adds explicit public proxy fallback for transmission-only XAU/USD numeric anchoring."
 }

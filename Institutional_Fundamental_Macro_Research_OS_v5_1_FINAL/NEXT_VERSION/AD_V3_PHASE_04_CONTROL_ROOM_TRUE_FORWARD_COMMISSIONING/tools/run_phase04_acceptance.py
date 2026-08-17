@@ -7,6 +7,7 @@ from AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING.runtime.control_room
 from AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING.runtime.renderer import render, brief
 from AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING.runtime.commissioning import build_precommit, update as update_commissioning, load_state as load_commissioning
 from AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING.runtime.promotion import default_state
+from AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING.runtime.capsule import build as build_capsule, build_final_seal
 
 def load(p): return json.loads(pathlib.Path(p).read_text(encoding='utf-8-sig'))
 def ck(name,ok,detail=None): return {'name':name,'status':'PASS' if ok else 'FAIL','detail':detail}
@@ -29,6 +30,8 @@ def main():
     checks.append(ck('HTML is RTL white human control room with inline help','dir="rtl"' in h and '--paper:#fff' in h and 'data-help=' in h and 'ALPHA DESK V3' in h))
     checks.append(ck('brief humanizes WAIT without granting authority','صبر' in t and 'Production trade execution authority: FALSE' in t))
     pc=build_precommit('RUN1',p03r,perm); checks.append(ck('true-forward precommit immutable and pre-outcome',pc['immutable_precommit'] is True and pc['outcome_status']=='NOT_DIRECTIONAL' and pc['precommit_id'].startswith('P04PRE_'),pc))
+    gc_anchor={'value':4300.0,'economic_marker':'2026-08-17T00:00:00Z','source_fact_id':'GC_FUTURES_PRICE','anchor_kind':'GC_FUTURES_PROXY','proxy_for_xauusd':True,'transmission_only':True,'causal_direction_authority':False,'instrument_key':'DEC26'}
+    pc_gc=build_precommit('RUNGC',p03r,perm,gc_anchor); checks.append(ck('true-forward precommit records explicit proxy price anchor without causal authority',pc_gc['price_anchor_status']=='AVAILABLE' and pc_gc['true_forward_evaluable_at_precommit'] is True and pc_gc['price_anchor']['source_fact_id']=='GC_FUTURES_PRICE' and pc_gc['price_anchor']['causal_direction_authority'] is False,pc_gc))
     with tempfile.TemporaryDirectory() as td:
         a1={'value':4300.0,'economic_marker':'2026-08-17T00:00:00Z'}; a2={'value':4325.0,'economic_marker':'2026-08-17T01:00:00Z'}
         pp=dict(perm); pp['direction']='BULLISH_GOLD'; pp['research_action_candidate']='BUY_CANDIDATE'
@@ -36,6 +39,9 @@ def main():
         pcb=build_precommit('B',p03r,pp,a2); st2=update_commissioning(td,pcb,a2)
         checks.append(ck('true-forward outcome ledger evaluates later distinct price anchor',st2['outcomes_evaluated']==1 and st2['aligned_outcomes']==1 and st2['sample_state']=='UNCALIBRATED',st2))
         checks.append(ck('true-forward pending queue preserves current precommit only',len(st2['pending'])==1 and st2['pending'][0]['precommit_id']==pcb['precommit_id'],st2.get('pending')))
+    with tempfile.TemporaryDirectory() as td:
+        rd=pathlib.Path(td); (rd/'brief.txt').write_text('x',encoding='utf-8'); pcx=build_precommit('SEALRUN',p03r,perm,gc_anchor); cap=build_capsule('SEALRUN',rd,pcx,False); receipt={'status':'PASS'}; (rd/'pipeline_receipt.json').write_text(json.dumps(receipt),encoding='utf-8'); seal=build_final_seal('SEALRUN',rd,cap,receipt); checks.append(ck('final run seal hashes capsule and pipeline receipt',seal.get('final_run_seal') is True and set(seal.get('sealed_hashes',{}))=={'capsule.json','pipeline_receipt.json'},seal))
+    checks.append(ck('Final Run Seal schema present',(P/'schemas'/'FinalRunSeal.schema.json').exists()))
     checks.append(ck('automatic promotion forbidden',load(P/'config/promotion_policy.json')['automatic_promotion_forbidden'] is True))
     checks.append(ck('V2 baseline retained by policy',load(P/'config/promotion_policy.json')['v2_baseline_retained_after_promotion'] is True))
     checks.append(ck('no trade execution capability',load(P/'DEVELOPMENT_MANIFEST.json')['forbidden'][-1]=='trade execution'))
@@ -44,6 +50,9 @@ def main():
     pipeline_src=(P/'runtime'/'pipeline.py').read_text(encoding='utf-8')
     cli_src=(P/'tools'/'alpha_desk_v3.py').read_text(encoding='utf-8')
     checks.append(ck('commissioning pipeline emits operator-visible progress','def _progress' in pipeline_src and '[1/7] P02 live acquisition' in pipeline_src and 'heartbeat_seconds' in pipeline_src))
+    checks.append(ck('price anchor falls back from exact-run XAUUSD spot to exact-run GC futures proxy',"('XAUUSD_SPOT_PRICE', 'SPOT_DIRECT', False)" in pipeline_src and "('GC_FUTURES_PRICE', 'GC_FUTURES_PROXY', True)" in pipeline_src and "causal_direction_authority': False" in pipeline_src))
+    checks.append(ck('xauusd public proxy anchor cannot be mislabeled direct',"anchor_kind = 'SPOT_PUBLIC_PROXY'" in pipeline_src and "o.get('epistemic_state') == 'PUBLIC_PROXY'" in pipeline_src))
+    checks.append(ck('pipeline writes final run seal after pipeline receipt','build_final_seal' in pipeline_src and 'latest_run_seal.json' in pipeline_src))
     checks.append(ck('P02 BLOCKED receipt is parsed before stop','allow=(0, 2, 3)' in pipeline_src and 'P02_BLOCKED' in pipeline_src and 'BLOCKING FACTS' in pipeline_src))
     checks.append(ck('commissioning CLI stops cleanly without raw traceback','except RuntimeError as e:' in cli_src and 'COMMISSIONING - STOPPED' in cli_src))
     checks.append(ck('V3 CLI forces UTF-8 operator stdout and stderr',"def _configure_utf8_stdio" in cli_src and "reconfigure(encoding='utf-8', errors='replace')" in cli_src))

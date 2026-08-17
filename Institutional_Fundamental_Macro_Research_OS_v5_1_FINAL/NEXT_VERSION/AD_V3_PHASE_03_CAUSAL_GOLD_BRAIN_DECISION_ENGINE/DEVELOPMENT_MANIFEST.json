@@ -37,5 +37,6 @@
     "distinct economic reference-period/event-time comparison anchors",
     "fetch-equality anti-neutrality guard",
     "semantic economic-anchor diagnostics"
-  ]
+  ],
+  "stabilization_tag": "C2_IDENTITY_STABILIZED"
 }

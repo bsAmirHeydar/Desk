@@ -238,6 +238,69 @@ def wgc_sge_withdrawals_observation(fact,source,body,retrieved_at,raw_hash):
         return generic_observation(fact,source,body,retrieved_at,raw_hash,'text/html')
     return _obs(fact,source,'PUBLIC_PROXY','NUMBER',val,retrieved_at,raw_hash,reference_period=month,unit='tonnes',metadata={'underlying_source':'Shanghai Gold Exchange','reporting_source':'World Gold Council'},warnings=['INDUSTRY_PROXY_CITING_PRIMARY_SGE'])
 
+
+def wgc_gold_price_observation(fact,source,body,retrieved_at,raw_hash):
+    text=html_to_text(body)
+    # The WGC page may successfully load while the live spot widget is unavailable or
+    # dynamically rendered. Page presence is not a numeric XAU/USD observation.
+    patterns=[
+      r'(?i)(?:gold\s+spot\s+price|xau\s*/?\s*usd)[^$]{0,140}\$\s*([0-9]{3,6}(?:,[0-9]{3})*(?:\.[0-9]+)?)',
+      r'(?i)([0-9]{3,6}(?:,[0-9]{3})*(?:\.[0-9]+)?)\s*(?:USD|US\$)\s*(?:/|per)\s*(?:troy\s+)?(?:oz|ounce)'
+    ]
+    val=None
+    for pat in patterns:
+        m=re.search(pat,text)
+        if m:
+            try:
+                candidate=float(m.group(1).replace(',',''))
+                if 100.0 < candidate < 100000.0:
+                    val=candidate; break
+            except Exception:
+                pass
+    if val is None:
+        return _obs(fact,source,'PARSE_FAILED','NONE',None,retrieved_at,raw_hash,warnings=['WGC_GOLD_NUMERIC_SPOT_NOT_EXPOSED','PAGE_PRESENCE_IS_NOT_PRICE_OBSERVATION'])
+    ref=None
+    dm=re.search(r'(?i)data\s+as\s+of\s+(\d{1,2}\s+[A-Za-z]+,?\s+20\d{2})',text)
+    if dm: ref=dm.group(1)
+    return _obs(fact,source,'OBSERVED_DELAYED','NUMBER',val,retrieved_at,raw_hash,reference_period=ref,unit='usd_per_troy_ounce',metadata={'preferred_wgc_surface':True,'transmission_only':True,'causal_direction_authority':False},warnings=['TARGET_PRICE_RESPONSE_ONLY','CANNOT_SET_CAUSAL_PRESSURE'])
+
+def goldpricedev_xau_observation(fact,source,body,retrieved_at,raw_hash):
+    try:
+        d=json.loads(body.decode('utf-8'))
+    except Exception:
+        return _obs(fact,source,'PARSE_FAILED','NONE',None,retrieved_at,raw_hash,warnings=['GOLDPRICEDEV_INVALID_JSON'])
+    row=None
+    if isinstance(d,dict) and isinstance(d.get('symbols'),list) and d.get('symbols'):
+        row=d['symbols'][0]
+    elif isinstance(d,dict):
+        row=d
+    if not isinstance(row,dict):
+        return _obs(fact,source,'PARSE_FAILED','NONE',None,retrieved_at,raw_hash,warnings=['GOLDPRICEDEV_RESPONSE_SHAPE_UNKNOWN'])
+    symbol=str(row.get('symbol') or '').upper()
+    quote=str(row.get('quote_currency') or row.get('currency') or 'USD').upper()
+    contract=str(row.get('contract_type') or 'spot').lower()
+    if symbol and symbol not in ('XAU','XAUUSD','XAU-USD-SPOT'):
+        return _obs(fact,source,'PARSE_FAILED','NONE',None,retrieved_at,raw_hash,warnings=['GOLDPRICEDEV_SYMBOL_MISMATCH:'+symbol])
+    if quote!='USD' or contract not in ('spot',''):
+        return _obs(fact,source,'PARSE_FAILED','NONE',None,retrieved_at,raw_hash,warnings=['GOLDPRICEDEV_NOT_XAU_USD_SPOT'])
+    if row.get('is_stale') is True:
+        return _obs(fact,source,'PARSE_FAILED','NONE',None,retrieved_at,raw_hash,warnings=['GOLDPRICEDEV_PROVIDER_REPORTS_STALE'])
+    try:
+        val=float(row.get('price'))
+    except Exception:
+        val=None
+    if not isinstance(val,(int,float)) or not (100.0 < val < 100000.0):
+        return _obs(fact,source,'PARSE_FAILED','NONE',None,retrieved_at,raw_hash,warnings=['GOLDPRICEDEV_NUMERIC_PRICE_NOT_FOUND'])
+    computed=row.get('computed_at') or row.get('timestamp')
+    meta={
+      'provider':'goldprice.dev','contract_type':'spot','quote_currency':'USD',
+      'bid':row.get('bid'),'ask':row.get('ask'),'provider_is_stale':row.get('is_stale'),
+      'transmission_only':True,'causal_direction_authority':False,
+      'proxy_reason':'NUMERIC_PRICE_ANCHOR_FALLBACK_WHEN_PREFERRED_WGC_CME_SURFACES_DO_NOT_EXPOSE_USABLE_NUMBER'
+    }
+    if isinstance(row.get('sources'),list): meta['provider_declared_sources']=row.get('sources')
+    return _obs(fact,source,'PUBLIC_PROXY','NUMBER',val,retrieved_at,raw_hash,reference_period=computed,event_time=computed,unit='usd_per_troy_ounce',metadata=meta,warnings=['PUBLIC_PRICE_PROXY_TRANSMISSION_ONLY','NOT_CAUSAL_DIRECTION_SOURCE','NOT_OFFICIAL_BENCHMARK'])
+
 def _clean_num(v):
     if v is None: return None
     s=str(v).strip().replace(',','').replace("'",'')

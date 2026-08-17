@@ -26,6 +26,7 @@
       "acquisition_mode": "DIRECT_SNAPSHOT",
       "source_ids": [
         "WGC_GOLD_PRICE",
+        "GOLDPRICEDEV_XAU_SPOT_PROXY",
         "CME_METALS"
       ],
       "must_attempt_when_applicable": true,
@@ -40,7 +41,8 @@
         "gold spot"
       ],
       "prohibited_interpretations": [
-        "CANNOT_SET_CAUSAL_PRESSURE"
+        "CANNOT_SET_CAUSAL_PRESSURE",
+        "PUBLIC_PROXY_FALLBACK_IS_TRANSMISSION_ONLY"
       ],
       "time_contract": {
         "cadence": "REALTIME_OR_DELAYED",

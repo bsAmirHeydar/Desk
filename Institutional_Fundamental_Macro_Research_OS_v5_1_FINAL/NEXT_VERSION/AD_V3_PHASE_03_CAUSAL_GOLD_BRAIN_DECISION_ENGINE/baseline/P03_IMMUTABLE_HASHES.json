@@ -4,7 +4,7 @@
   "files": [
     {
       "path": "DEVELOPMENT_MANIFEST.json",
-      "sha256": "efd81c83e14606af1a3b3fd5446bdaa4857c1f4553f563d0570fa378c6edaa8a"
+      "sha256": "6ea3efe2b2b2910d5f6b8709aede37a0080b5182efa1671e47240f386ac7300a"
     },
     {
       "path": "PHASE_03_HANDOFF.json",
@@ -140,7 +140,7 @@
     },
     {
       "path": "runtime/engine.py",
-      "sha256": "bc9d9d34a4f193ffe8418a647e66000acc42ab98409b41ae14e8fc4c405bdb92"
+      "sha256": "50953aed7718a1676df56dfd60e9128c950220dfb3c16775d8e4dd17b486944d"
     },
     {
       "path": "runtime/hypotheses.py",
@@ -204,7 +204,7 @@
     },
     {
       "path": "tools/run_phase03_acceptance.py",
-      "sha256": "8e254cd57654fda962eaff87cb0172e66d83fb36b1fa8d03b5ee43f97d6b8f3c"
+      "sha256": "62786d59ceb877958fc66685e31a38ba1f51eba515e5cf534bc96880be46df9d"
     },
     {
       "path": "tools/validate_phase03.py",

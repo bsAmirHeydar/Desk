@@ -31,5 +31,6 @@
     "fake confidence precision",
     "automatic production promotion",
     "trade execution"
-  ]
+  ],
+  "stabilization_tag": "C2_STABILIZATION_RC"
 }

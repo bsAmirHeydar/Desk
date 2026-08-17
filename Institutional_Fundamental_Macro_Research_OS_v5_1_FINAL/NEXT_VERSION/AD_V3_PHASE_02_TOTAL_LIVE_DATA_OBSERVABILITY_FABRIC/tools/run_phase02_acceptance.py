@@ -84,6 +84,9 @@ def main():
   checks.append(C('census retail direct parser exact',rs.get('value')=={'level_billion_usd':763.6,'mom_percent':-0.6,'yoy_percent':5.0} and rs.get('epistemic_state')=='OBSERVED_DELAYED' and rs.get('source_id')=='CENSUS_RETAIL',rs))
   f55=ob.get('US_5Y5Y_FORWARD_INFLATION',{})
   checks.append(C('5y5y is derived not fetched',f55.get('epistemic_state')=='MODEL_DERIVED' and isinstance(f55.get('value'),(int,float)),f55))
+  xau=ob.get('XAUUSD_SPOT_PRICE',{})
+  checks.append(C('xauusd numeric price anchor fallback available',xau.get('value')==4402.10 and xau.get('source_id')=='GOLDPRICEDEV_XAU_SPOT_PROXY' and xau.get('epistemic_state')=='PUBLIC_PROXY',xau))
+  checks.append(C('xauusd proxy is transmission only with zero causal authority',(xau.get('metadata') or {}).get('transmission_only') is True and (xau.get('metadata') or {}).get('causal_direction_authority') is False and xau.get('directness')=='PROXY',xau))
   checks.append(C('cme gold price json exact',ob.get('GC_FUTURES_PRICE',{}).get('value')==4437.3,ob.get('GC_FUTURES_PRICE')))
   goi=ob.get('GC_OPEN_INTEREST',{})
   checks.append(C('cme gold open interest json exact',goi.get('value')==388924.0,goi))
@@ -125,6 +128,7 @@ def main():
  fmap={c['fact_id']:c for c in fr['contracts']}
  checks.append(C('gld and iau sponsor bindings isolated',fmap['GLD_HOLDINGS_SHARES']['source_ids']==['ETF_SPONSOR'] and fmap['IAU_HOLDINGS_SHARES']['source_ids']==['ETF_SPONSOR_IAU'],{'gld':fmap['GLD_HOLDINGS_SHARES']['source_ids'],'iau':fmap['IAU_HOLDINGS_SHARES']['source_ids']}))
  checks.append(C('gc volume cftc fallback forbidden','CFTC_COT' not in fmap['GC_VOLUME']['source_ids'],fmap['GC_VOLUME']['source_ids']))
+ checks.append(C('xauusd price source chain prefers WGC then explicit transmission proxy',fmap['XAUUSD_SPOT_PRICE']['source_ids'][:2]==['WGC_GOLD_PRICE','GOLDPRICEDEV_XAU_SPOT_PROXY'],fmap['XAUUSD_SPOT_PRICE']['source_ids']))
  plan=build_plan(fr,sr,'ALL','2026-08-16T17:00:00Z')
  checks.append(C('plan includes mandatory acquisition source set',len(plan['source_ids_to_attempt'])>=60,len(plan['source_ids_to_attempt'])))
  # P01 remains shadow boundary by sibling presence/config.

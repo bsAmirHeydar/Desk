@@ -15,7 +15,12 @@ def load_state(phase_root):
     p=state_path(phase_root); return load_json(p,default_state()) if p.exists() else default_state()
 def build_precommit(run_id,p03,permission,price_anchor=None):
     direction=permission.get('direction','UNKNOWN')
-    obj={'record_type':'AD_V3_P04_TRUE_FORWARD_PRECOMMIT','run_id':run_id,'created_at_utc':iso(),'subject':'XAUUSD','horizon':p03.get('horizon'),'direction_candidate':direction,'research_action_candidate':permission.get('research_action_candidate'),'expected_signatures':(p03.get('hypotheses') or {}).get('primary',{}).get('expected_signatures',{}),'model_completeness':(p03.get('model_quality') or {}).get('model_completeness'),'missing_driver_risk':(p03.get('model_quality') or {}).get('missing_driver_risk'),'price_anchor':price_anchor,'outcome_status':'PENDING' if direction in ('BULLISH_GOLD','BEARISH_GOLD') else 'NOT_DIRECTIONAL','immutable_precommit':True}
+    anchor_ok=bool(price_anchor and isinstance(price_anchor.get('value'),(int,float)))
+    if direction in ('BULLISH_GOLD','BEARISH_GOLD'):
+        outcome_status='PENDING' if anchor_ok else 'PENDING_ANCHOR_UNAVAILABLE'
+    else:
+        outcome_status='NOT_DIRECTIONAL'
+    obj={'record_type':'AD_V3_P04_TRUE_FORWARD_PRECOMMIT','run_id':run_id,'created_at_utc':iso(),'subject':'XAUUSD','horizon':p03.get('horizon'),'direction_candidate':direction,'research_action_candidate':permission.get('research_action_candidate'),'expected_signatures':(p03.get('hypotheses') or {}).get('primary',{}).get('expected_signatures',{}),'model_completeness':(p03.get('model_quality') or {}).get('model_completeness'),'missing_driver_risk':(p03.get('model_quality') or {}).get('missing_driver_risk'),'price_anchor':price_anchor,'price_anchor_status':('AVAILABLE' if anchor_ok else 'UNAVAILABLE'),'true_forward_evaluable_at_precommit':anchor_ok,'outcome_status':outcome_status,'immutable_precommit':True}
     obj['precommit_id']=stable_id('P04PRE',obj); return obj
 
 def _marker(a):
@@ -33,6 +38,10 @@ def update(phase_root,precommit,current_price_anchor=None):
         if d not in ('BULLISH_GOLD','BEARISH_GOLD'):
             continue
         if not pa or not current_price_anchor or not isinstance(pa.get('value'),(int,float)) or not isinstance(current_price_anchor.get('value'),(int,float)):
+            pending.append(old); continue
+        if pa.get('source_fact_id') and current_price_anchor.get('source_fact_id') and pa.get('source_fact_id')!=current_price_anchor.get('source_fact_id'):
+            pending.append(old); continue
+        if pa.get('instrument_key') and current_price_anchor.get('instrument_key') and pa.get('instrument_key')!=current_price_anchor.get('instrument_key'):
             pending.append(old); continue
         om=_marker(pa); cm=_marker(current_price_anchor)
         if not om or not cm or str(om)==str(cm):

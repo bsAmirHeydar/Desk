@@ -28,7 +28,8 @@
     "strict GLD versus IAU sponsor binding",
     "GC volume CFTC contamination guard",
     "strict fact-specific ETF sponsor binding",
-    "semantic fallback prefers UNKNOWN over wrong-market evidence"
+    "semantic fallback prefers UNKNOWN over wrong-market evidence",
+    "transmission-only XAU/USD numeric price-anchor proxy fallback with zero causal authority"
   ],
   "forbidden": [
     "Direction authority",
@@ -37,5 +38,6 @@
     "silent source omission",
     "proxy-closes-private-gap"
   ],
-  "revision": "3.2.6"
+  "revision": "3.2.6",
+  "operational_build": "3.2.6+c2-price-anchor-closure.1"
 }

@@ -8,7 +8,7 @@ from .permission import evaluate as permission_eval
 from .commissioning import build_precommit, update as update_commissioning
 from .control_room_model import build as build_model
 from .renderer import render, brief
-from .capsule import build as build_capsule
+from .capsule import build as build_capsule, build_final_seal
 
 
 def _progress(message: str) -> None:
@@ -34,20 +34,41 @@ def _current_fact_observation(data_root, fact_id, acquisition_run_id):
 
 def _price_anchor_from_store(data_root, p03):
     run_id = (p03.get('handoff_integrity') or {}).get('acquisition_run_id')
-    o = _current_fact_observation(data_root, 'XAUUSD_SPOT_PRICE', run_id)
-    if not o or not isinstance(o.get('value'), (int, float)):
-        return None
-    marker = o.get('reference_period') or o.get('event_time') or o.get('published_at') or o.get('retrieved_at')
-    return {
-        'value': float(o['value']),
-        'economic_marker': marker,
-        'reference_period': o.get('reference_period'),
-        'event_time': o.get('event_time'),
-        'published_at': o.get('published_at'),
-        'retrieved_at': o.get('retrieved_at'),
-        'observation_id': o.get('observation_id'),
-        'acquisition_run_id': run_id,
-    }
+    candidates = [
+        ('XAUUSD_SPOT_PRICE', 'SPOT_DIRECT', False),
+        ('GC_FUTURES_PRICE', 'GC_FUTURES_PROXY', True),
+    ]
+    for fact_id, anchor_kind, proxy in candidates:
+        o = _current_fact_observation(data_root, fact_id, run_id)
+        if not o or not isinstance(o.get('value'), (int, float)):
+            continue
+        # XAUUSD_SPOT_PRICE may be supplied by a clearly-labelled public proxy fallback.
+        # Preserve that epistemic status in the true-forward anchor; never relabel it direct.
+        if fact_id == 'XAUUSD_SPOT_PRICE' and (o.get('directness') == 'PROXY' or o.get('epistemic_state') == 'PUBLIC_PROXY'):
+            anchor_kind = 'SPOT_PUBLIC_PROXY'
+            proxy = True
+        marker = o.get('reference_period') or o.get('event_time') or o.get('published_at') or o.get('retrieved_at')
+        meta = o.get('metadata') or {}
+        selected = meta.get('selected_contract') or {}
+        instrument_key = selected.get('contract') if isinstance(selected, dict) else None
+        return {
+            'value': float(o['value']),
+            'economic_marker': marker,
+            'reference_period': o.get('reference_period'),
+            'event_time': o.get('event_time'),
+            'published_at': o.get('published_at'),
+            'retrieved_at': o.get('retrieved_at'),
+            'observation_id': o.get('observation_id'),
+            'acquisition_run_id': run_id,
+            'source_fact_id': fact_id,
+            'source_id': o.get('source_id'),
+            'anchor_kind': anchor_kind,
+            'proxy_for_xauusd': proxy,
+            'transmission_only': True,
+            'causal_direction_authority': False,
+            'instrument_key': instrument_key,
+        }
+    return None
 
 
 def _run_json(cmd, allow=(0,), label='subprocess', hard_timeout_seconds=900, heartbeat_seconds=20):
@@ -203,6 +224,10 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
 
     _progress('[6/7] True-forward precommit + Control Room')
     price_anchor = _price_anchor_from_store(data, final)
+    if price_anchor:
+        _progress(f"      price anchor: {price_anchor.get('source_fact_id')} {price_anchor.get('value')} ({price_anchor.get('anchor_kind')})")
+    else:
+        _progress('      price anchor: UNAVAILABLE (C3 directional outcomes would be unevaluable)')
     precommit = build_precommit(run_id, final, permission, price_anchor)
     write_json(rd / 'precommit.json', precommit)
     commissioning = update_commissioning(p04, precommit, price_anchor)
@@ -211,7 +236,7 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
     prev = None
     if (latest_dir / 'latest_control_room.json').exists():
         prev = load_json(latest_dir / 'latest_control_room.json')
-    model = build_model(run_id, final, packet, bundle, permission, commissioning, promotion, prev)
+    model = build_model(run_id, final, packet, bundle, permission, commissioning, promotion, prev, pre_semantic=pre)
     write_json(rd / 'control_room.json', model)
     helps = load_json(p04 / 'config' / 'help_registry.json')
     (rd / 'control_room.html').write_text(render(model, helps), encoding='utf-8')
@@ -249,7 +274,10 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
     }
     write_json(rd / 'pipeline_receipt.json', receipt)
     write_json(latest_dir / 'latest_pipeline_receipt.json', receipt)
+    seal = build_final_seal(run_id, rd, cap, receipt)
+    shutil.copy2(rd / 'run_seal.json', latest_dir / 'latest_run_seal.json')
 
+    _progress(f"Run seal  : {seal.get('seal_id')}")
     _progress('============================================================')
     _progress(' GOLD COMMISSIONING - PASS')
     _progress('============================================================')

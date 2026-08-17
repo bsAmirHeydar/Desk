@@ -52,6 +52,8 @@ def main():
         checks.append(check('persistence stack emitted',r['lifecycle']['persistence_stack']['freshness_is_not_persistence'] is True))
         checks.append(check('remaining pressure emitted without scalar score',r['lifecycle']['remaining_pressure']['state'] in ('PRESENT','PARTIAL','CONTESTED','UNKNOWN')))
         checks.append(check('semantic adjudication request emitted',isinstance(r['semantic_adjudication_request'],list)))
+        post=execute(P,td,adjudication_path=bundle(td,[]))
+        checks.append(check('pre and post semantic receipts have distinct identities',r.get('analysis_stage')=='PRE_SEMANTIC' and post.get('analysis_stage')=='POST_SEMANTIC' and r.get('receipt_id')!=post.get('receipt_id'),{'pre':r.get('receipt_id'),'post':post.get('receipt_id'),'pre_stage':r.get('analysis_stage'),'post_stage':post.get('analysis_stage')}))
     with tempfile.TemporaryDirectory() as td:
         build_store(td,'price_divergence'); r=execute(P,td)
         checks.append(check('negative price transmission detected',r['price_transmission']['state']=='NEGATIVE'))

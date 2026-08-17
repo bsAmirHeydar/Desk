@@ -1,9 +1,9 @@
 {
   "phase": "AD-V3-P04",
   "version": "4.0.0-commissioning",
-  "controlled_file_count": 37,
+  "controlled_file_count": 39,
   "sha256": {
-    "DEVELOPMENT_MANIFEST.json": "1287196b39518ea52f8d3c4932dd4893d205e57575ab06a5a0a8152008964b6c",
+    "DEVELOPMENT_MANIFEST.json": "fb71c841f393bc22276619a9752dc258adf8aee567cd615f81516eb7589db9e3",
     "PHASE_04_HANDOFF.json": "0c66f00270b9117d9339488f7840cf2faad8f4112cd59c209b47325881bd596b",
     "RELEASE_NOTES.md": "b7f2c8e82e239d6ccf226a9faad952a05812abfc2e98041e34ffa9f5d15e4221",
     "config/commissioning_policy.json": "0dab9ba582cfa0ac151a0700b38f11c74eb6947b53bb3ecd13e9650d3112b459",
@@ -23,22 +23,25 @@
     "docs/08 Contextual Help.md": "b52eb1ea35cc28e5ba385bd556effc508603d74eeed8a6ae12f543a166b6d4cf",
     "docs/09 Acceptance Contract.md": "33ff4a21986fea31693f3556540f4f4b9094f8e732b8c4eadbdac94de56db98b",
     "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "runtime/capsule.py": "2d8df90b2adf099ab3f65fb871abb91bdb24100dffbc63e5c5d08143cff47278",
-    "runtime/commissioning.py": "562d6dcc753137399a7cb93190fbacd6cf9082bee8dacdeaa8ef091cb6c882f4",
+    "runtime/capsule.py": "c935e01f9fbbf4d3f6a2459c481bc59f3b13a7252270e6b105556a345a9424cc",
+    "runtime/commissioning.py": "e671db3a5b8abaafdbfb1fdae017de91032916a087915e37632cf5dbcb450f77",
     "runtime/common.py": "e567ff296b79925763fabda7d4f8bf23e9ae45e2b875fcd80adde6facd7b274a",
-    "runtime/control_room_model.py": "3ade231ba22eca9d7e6419ed306f21128a66b8d59e58e3c3c1bdd4858019d178",
+    "runtime/control_room_model.py": "ff2aa592d762137ac8f9724674a1381b9a84eb8a73ff07179a1ae7f57b6c66cb",
     "runtime/permission.py": "b6cd3952ec256478608f1d212036504833931b1b7069c26d4454bb6d20bd752c",
-    "runtime/pipeline.py": "aa14c7d7bd52f0b2d220b7ee76ac7401da1cdd1736c72e291ee0818a99517ca0",
+    "runtime/pipeline.py": "bf5d614b8d381dd550a4908bada7de2649bcdf6ab39a1ecee085de7e259b417f",
     "runtime/promotion.py": "e55cbcb9e1f6921e6b5d96465a50b498f40ef16367212c12691eb6816869b99d",
-    "runtime/renderer.py": "987aa984eadd1fd0f4a46fef387e06375efb492b6fc7382cb390804402f4e33e",
+    "runtime/renderer.py": "56f3868966265ff350cb833b0830ee3e83021e98fe854ae8a63510ca9e96857c",
     "runtime/semantic_runtime.py": "ce57c9a54af0f3a75aff1dd0ae8b95be3ee345063dd1f1f53f799e2e827928e8",
     "schemas/CommissioningState.schema.json": "7d04c3a763d23ca15bbd404918bd6413eea5c248f273d0504d0cfa5c8a7839fd",
     "schemas/ControlRoomModel.schema.json": "8f3496107b5f49bae8cff137115cb27f311cdf928deed764aedd2e2472f63733",
     "schemas/PromotionState.schema.json": "9b8fa0e2fdaa567f81f981f77ee995e1d785370faeab619ad9d235221cb354cd",
     "schemas/RunCapsule.schema.json": "fc5fc514ac4874abe0c6a9ffc4dbe9366cf6fd5d8236b5135e1f05f1a56484e6",
-    "tools/alpha_desk_v3.py": "d8fd5ad6e84f244ca3a051ea12e71f6be596b7d91a9791a2e48f684d65fbf59c",
+    "tools/alpha_desk_v3.py": "58d5ec8d2184b430f1e5f51cbf3d1bf275b865018043ecb80e88a2b3d9123f2c",
     "tools/p04_status.py": "b3e9eec51ad0cb211dc204df4fb3874fdfde64c1bb35fda9d3d036c8cfbc6321",
     "tools/run_commissioning.py": "09f485be7042004aa6caba72c3274fd82530fe54f30ff8150e46f34ddc4fe202",
-    "tools/run_phase04_acceptance.py": "6aa97670c4ed6e68984e476420af7157be95b19a76e586208e72df0ecedd69ba"
-  }
+    "tools/run_phase04_acceptance.py": "a4a5061b05368c03e4af74d72112c01a79eda413f7d2a574795e86c448b38744",
+    "docs/C2 Final Stabilization.md": "84b5e2e5210b2d8ae3f76e6c84a0400830378f80f445833f5d8725ca3a04d5e7",
+    "schemas/FinalRunSeal.schema.json": "f507ec35de6de1f5eabaea50b478e95534f2e67acd7afd194bf09e7b3c7dbb7c"
+  },
+  "operational_note": "C2 price-anchor closure preserves proxy/direct epistemic label for true-forward anchors."
 }

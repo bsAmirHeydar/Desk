@@ -1,15 +1,16 @@
 {
   "phase": "AD-V3-P02",
   "revision": "3.2.6",
+  "operational_build": "3.2.6+c2-price-anchor-closure.1",
   "files": {
-    "DEVELOPMENT_MANIFEST.json": "3c1bd3a33c79b02a4e97c0117cd02d50319d6f57a5665c71eb9dd6dd243fce02",
+    "DEVELOPMENT_MANIFEST.json": "4c1e63483040036a92c8ca57aa4f9c64dd0cc8bd95a17c7753b76e63dce93ea4",
     "P02_SOURCE_COVERAGE_SUMMARY.json": "c00da60b8722afabb774a7f03c3b1487415527ab5da2fb781883d3e52c3adc20",
     "PHASE_02_HANDOFF.json": "e2695bb93ed14e7b775b87db8f46e0909977edd6a7f8b68c38be9b01ba8f8b7d",
-    "RELEASE_NOTES.md": "8c020b05698f77a7934cccc4b550e721af9aa2a81edf08ac6d36cb2a4db404ff",
+    "RELEASE_NOTES.md": "c0d6c475edd907fec0c0954a2cf89aa015674c861f9fca5e66a5324d7a7cfd6b",
     "config/acquisition_policy.json": "1cb432faf08afc2210dda5e64c2496c3bb236d6dfad6deb31955240e3eb9588c",
-    "config/fact_acquisition_registry.json": "5568b29709ba8172fcf2d369c87e5b2fa38d553fef9b3a23d9e932c5178f29af",
+    "config/fact_acquisition_registry.json": "f7660e4f9e892394e3cb2e388b9f6f0085630c33eccb6240ebd8e0fca6cec7f4",
     "config/freshness_vintage_policy.json": "0da6141fd453570c3d99f3f10eddb045b7a2afd6ff7906a656704db6f39517cd",
-    "config/source_contract_registry.json": "87e927ff35aae1fa3b7b23de85e3f0c130728644bec7b215d132f1ee37aeeff0",
+    "config/source_contract_registry.json": "f7200063a8ed4158c4473f131f05cd913d256414b8e468c502c2c563d65d97d9",
     "docs/00 Phase 02 Total Live Data and Observability Fabric.md": "84f4ca9a112186b49c285ea59cd31908353cf07cd2b281420aeaad8081694f25",
     "docs/01 Mandatory Live Acquisition Constitution.md": "1291e56f262a4731da9aed822f97ac798dbc0c03de0000a027973f6932b6a280",
     "docs/02 Source Contracts and Public First Hierarchy.md": "38499f7e1105b95fba5436e32bbe39987fefc473e321a3f2055b2604a45009d1",
@@ -25,10 +26,12 @@
     "docs/12 REV 3.2.3 First Real Live Coverage Hardening.md": "569b1818902ef79f3060cfa0a97421abcb328648543b6f4120b07dab3301010f",
     "docs/13 REV 3.2.4 VPN Final Three Blocking Facts.md": "94ac9e5614533ad07f1d91a5a95f3f6eb0036e7f96fad085c2808c4356fb5ca9",
     "docs/14 REV 3.2.5 Temporal Handoff Integrity.md": "f79ccbd44a625c86fe70f2246c18d78a117c00380f226694d72063c7c76be612",
+    "docs/15 REV 3.2.6 Fact Source Selection Integrity.md": "7f35eb2ee6f0ddf066799bcfc4ef7b460129c3d2a2721f90e2bf68af707dc5ea",
+    "docs/16 C2 Price Anchor Operational Closure.md": "5c9d603cbf16be32e9210df827f6b5270b7459a2bf7255856db18070e5bc6264",
     "runtime/__init__.py": "045bfbeb67de5048f0e848f55217f6ac24a3aa24a1cb7195d7a46676e75b4ffc",
     "runtime/common.py": "ab11c340d2346b7e26179c91ea544b2ad830b9f147b0716ae2091d0a6993edc9",
-    "runtime/executor.py": "9e630129e6322c52b563d88fa864f35741c8d78ab902d0b93913f12032bd54cd",
-    "runtime/extractors.py": "34e8dd29565258a7181e48df369dac6b4c34527c387ddc64b2f5260bd0c6c07e",
+    "runtime/executor.py": "1a7a78e9e2181f049298acb69b3f2f770c9aa9ddc5d093cff7a3008823328710",
+    "runtime/extractors.py": "d5f230d4703a394e06291abb86fe5e06f47b5fe8ad09b608999ae4d5fe49c63f",
     "runtime/http_client.py": "46e957d7928e55faddbf38f250147b050bffeb164eff0d5433d080566afca788",
     "runtime/planner.py": "38e78cb7a6be07fb2457dceaf07b3cc10e32b53570bb6b558261548684928da0",
     "schemas/AlphaDesk_V3_P02_AcquisitionPlan.schema.json": "48ce2bdf0290d2a4e5d5e1ec14ab37e44b71e5063973495810c2a586d0508644",
@@ -38,8 +41,7 @@
     "schemas/AlphaDesk_V3_P02_SourceContract.schema.json": "de044024865143d53f93680d4c143b722f70a12c3feb6ac034d8ccfad99e121b",
     "tools/p02_status.py": "b739b4973c6daaf2bd324b46ed7ed48414dfdf935450f48503e6cb7590fcc2cf",
     "tools/run_gold_live_acquisition.py": "b80ed4cff54c9738802f2bc43760a9d5d8e10033f1bb51d58eba1bb728f15e3f",
-    "tools/run_phase02_acceptance.py": "7b05dbd5a32666f10c22823fd44f3a4abf63477d47f5f9e02c84ea0e3c8e74d4",
-    "tools/validate_phase02.py": "f47b096e25d21a036ae1ba1323dd51d711567b1f4c81e86a2bdabc8bbf1f6cc6",
-    "docs/15 REV 3.2.6 Fact Source Selection Integrity.md": "7f35eb2ee6f0ddf066799bcfc4ef7b460129c3d2a2721f90e2bf68af707dc5ea"
+    "tools/run_phase02_acceptance.py": "88818647daaea4e3ad4148142c57b88d1cd887273f17214e6bff02b53f08c7b8",
+    "tools/validate_phase02.py": "f47b096e25d21a036ae1ba1323dd51d711567b1f4c81e86a2bdabc8bbf1f6cc6"
   }
 }
