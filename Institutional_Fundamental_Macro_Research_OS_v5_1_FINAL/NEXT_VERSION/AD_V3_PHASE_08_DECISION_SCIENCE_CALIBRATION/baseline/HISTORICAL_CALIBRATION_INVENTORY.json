@@ -1,0 +1,10 @@
+{
+  "phase": "AD-V3-P08",
+  "source_snapshot": "Desk-main_P07_Complete.zip",
+  "eligible_p08_decision_artifacts_found": 0,
+  "historical_episode_count": 0,
+  "sample_state": "UNAVAILABLE",
+  "empirical_authority": "NEUTRAL",
+  "reason": "No committed/runtime P08 decision history exists in supplied P07 snapshot. Test fixtures are excluded from empirical maturity claims.",
+  "historical_calibration_is_not_forward_validation": true
+}

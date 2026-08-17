@@ -1,0 +1,16 @@
+{
+  "phase": "AD-V3-P08",
+  "version": "3.8.0-decision-science-calibration",
+  "status": "PASS",
+  "baseline_git_commit": "UNAVAILABLE_IN_SUPPLIED_ZIP",
+  "baseline_source": "Desk-main_P07_Complete.zip",
+  "mission": "Calibrate P03 causal states into decomposable dominance/strength/fragility/edge/permission without creating a second causal brain or fake probabilities.",
+  "production_direction_authority": false,
+  "production_trade_permission_authority": false,
+  "trade_execution_authority": "NONE",
+  "next_phase": "AD-V3-P09_TRUE_FORWARD_VALIDATION_2_0",
+  "acceptance_check_count": 46,
+  "regression": "P01-P08 PASS",
+  "historical_calibration_sample_state": "UNAVAILABLE",
+  "historical_episode_count": 0
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "episode_id",
+    "start_utc",
+    "end_utc",
+    "causal_direction",
+    "run_count"
+  ],
+  "additionalProperties": true
+}

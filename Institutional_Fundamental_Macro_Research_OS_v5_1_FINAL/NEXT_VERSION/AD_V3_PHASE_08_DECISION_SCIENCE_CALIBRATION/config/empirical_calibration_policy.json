@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P08",
+  "method_version": "P08_EPISODE_CAL_V1",
+  "historical_calibration_is_not_forward_validation": true,
+  "sample_states": {
+    "UNAVAILABLE": 0,
+    "INSUFFICIENT": 20,
+    "EARLY": 50,
+    "USABLE": 100,
+    "MATURE": 200
+  },
+  "minimum_active_empirical_samples": 50,
+  "shrinkage_prior_samples": 20,
+  "neutral_alignment_prior": 0.5,
+  "supportive_threshold": 0.58,
+  "caution_threshold": 0.42,
+  "authority_states": [
+    "UNAVAILABLE",
+    "NEUTRAL",
+    "SUPPORTIVE",
+    "CAUTION"
+  ],
+  "episode_signature_fields": [
+    "causal_direction",
+    "dominant_root",
+    "pressure_strength",
+    "dominance_state"
+  ],
+  "max_unchanged_episode_gap_hours": 12,
+  "future_defined_boundaries_forbidden": true,
+  "threshold_mining_forbidden": true
+}

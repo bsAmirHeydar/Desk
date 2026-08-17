@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P08",
+  "captured_from": "Desk-main_P07_Complete.zip",
+  "git_metadata": "UNAVAILABLE_IN_SUPPLIED_ZIP",
+  "hashes": {
+    "p01_gold_fact_registry": {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/gold_master_fact_registry.json",
+      "sha256": "c0c83c5789329cfb6a8770d6c7908c0b9d101ad725160ebcb1652d8a98b1baba"
+    },
+    "p03_fact_reasoning_registry": {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/fact_reasoning_registry.json",
+      "sha256": "24b5f7183fc43477cc69914171ca1cb742e3ca87e96f8ae93b3c3a75f9df4dec"
+    },
+    "p03_root_family_registry": {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/root_family_registry.json",
+      "sha256": "78f62b2c3088af495b8f1e0b610e2d9326508992886ca879cde2a889165bb9f9"
+    },
+    "p03_pressure_plane_policy": {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/pressure_plane_policy.json",
+      "sha256": "45b258f248a633e47185a29c586a997f21fd6c56f6a4ada7dbf083638e0ac038"
+    },
+    "p03_semantic_policy": {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/semantic_adjudication_policy.json",
+      "sha256": "097dfc66cc43cac3bd7c9f9ef2a8d8cfbe1d11d9dfe0fd7ed34f559c388fc962"
+    },
+    "p06_semantic_authority": {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/config/semantic_authority_policy.json",
+      "sha256": "c6464e3103aa012b3f39c03977b9d650b9b655abe32a1c3b94154a10be981f56"
+    },
+    "p06_semantic_runtime_contract": {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/config/semantic_runtime_contract.json",
+      "sha256": "cf463d11db68eb056a0dd9f6111d130fce21ce3922e0d0e649c703cfca2dc4d2"
+    },
+    "p07_gold_kernel_policy": {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/config/gold_kernel_policy.json",
+      "sha256": "0627e2f81ee16c07c06c293fcf14c54915218f7ac268b17918286dce8219ad5e"
+    },
+    "p07_freshness_authority": {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/config/freshness_authority_policy.json",
+      "sha256": "f340544be2dc1364f645a057141f4ec2ec300234bfa510b48e0cbc08013fa7ef"
+    },
+    "p04_promotion_policy": {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/config/promotion_policy.json",
+      "sha256": "52a394b6c9074ded98b12ad3ed6b50d02ce9ba1575bfcc24a135c97da1b4473c"
+    }
+  }
+}

@@ -190,21 +190,21 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/pipeline.py",
-      "owner": "AD-V3-P07/P04_INTEGRATION",
+      "owner": "AD-V3-P08/P04_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/control_room_model.py",
-      "owner": "AD-V3-P07/P04_INTEGRATION",
+      "owner": "AD-V3-P08/P04_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/renderer.py",
-      "owner": "AD-V3-P07/P04_INTEGRATION",
+      "owner": "AD-V3-P08/P04_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
@@ -262,6 +262,70 @@
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/gold_knowledge_surface_registry.json",
       "owner": "AD-V3-P07/P01_DISCOVERY_BOUNDARY_REPAIR",
       "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/decision_calibration_policy.json",
+      "owner": "AD-V3-P08",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/causal_importance_policy.json",
+      "owner": "AD-V3-P08",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/magnitude_policy.json",
+      "owner": "AD-V3-P08",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/dominance_policy.json",
+      "owner": "AD-V3-P08",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/empirical_calibration_policy.json",
+      "owner": "AD-V3-P08",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/decision_runtime.py",
+      "owner": "AD-V3-P08",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/schemas/decision_calibration_state.schema.json",
+      "owner": "AD-V3-P08",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/artifacts/",
+      "owner": "AD-V3-P08_RUNTIME",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false,
+      "rollback_authority": false,
+      "required": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/runtime/escalation_planner.py",
+      "owner": "AD-V3-P08/P07_FEEDBACK_INTEGRATION",
+      "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": true
     }

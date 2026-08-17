@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P08",
+  "ordinal_ranks": {
+    "importance": {
+      "UNKNOWN": 0,
+      "BACKGROUND": 1,
+      "CONDITIONAL": 1,
+      "SECONDARY": 2,
+      "PRIMARY": 3
+    },
+    "freshness": {
+      "UNKNOWN": 0,
+      "UNAVAILABLE": 0,
+      "PROVIDER_GAP": 0,
+      "PRIVATE_GAP": 0,
+      "PAID_GAP": 0,
+      "EXPIRED": 0,
+      "STALE_FOR_HORIZON": 1,
+      "CONTEXT_VALID": 2,
+      "FRESH_FOR_HORIZON": 3,
+      "FRESH_LIVE": 3
+    },
+    "magnitude": {
+      "UNKNOWN": 0,
+      "MINOR": 1,
+      "MATERIAL": 2,
+      "LARGE": 3,
+      "EXTREME": 4
+    },
+    "quality": {
+      "UNKNOWN": 0,
+      "LOW": 1,
+      "MEDIUM": 2,
+      "HIGH": 3
+    },
+    "persistence": {
+      "UNKNOWN": 0,
+      "REVERSING": 0,
+      "FADING": 1,
+      "NEW": 2,
+      "PERSISTENT": 2,
+      "BUILDING": 3,
+      "MATURE": 3
+    }
+  },
+  "authority_vector_order": [
+    "importance",
+    "freshness",
+    "magnitude",
+    "quality",
+    "persistence"
+  ],
+  "raw_fact_count_in_authority_vector": false,
+  "primary_material_conflict_rule": "If both directions contain PRIMARY, >=MATERIAL, >=CONTEXT_VALID roots, preserve PRIMARY_ROOT_CONFLICT / BALANCED rather than vote-counting.",
+  "breadth_thresholds": {
+    "NARROW": 1,
+    "MODERATE": 2,
+    "BROAD": 3
+  }
+}

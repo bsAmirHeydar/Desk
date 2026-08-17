@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "root_id",
+    "direction",
+    "causal_importance",
+    "magnitude",
+    "freshness",
+    "evidence_quality",
+    "persistence"
+  ],
+  "additionalProperties": true
+}

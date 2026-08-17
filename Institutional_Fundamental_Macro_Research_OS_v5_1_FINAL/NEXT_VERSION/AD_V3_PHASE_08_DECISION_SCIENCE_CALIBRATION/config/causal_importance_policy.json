@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P08",
+  "method": "EVIDENCE_TIER_AND_HORIZON_AUTHORITY_NOT_MANUAL_ROOT_PRESTIGE",
+  "states": [
+    "UNKNOWN",
+    "BACKGROUND",
+    "CONDITIONAL",
+    "SECONDARY",
+    "PRIMARY"
+  ],
+  "rank": {
+    "UNKNOWN": 0,
+    "BACKGROUND": 1,
+    "CONDITIONAL": 1,
+    "SECONDARY": 2,
+    "PRIMARY": 3
+  },
+  "rules": [
+    {
+      "if": "resolved current root has at least one LIVE_KERNEL evidence fact with current horizon authority",
+      "importance": "PRIMARY"
+    },
+    {
+      "if": "resolved current root is supported only by CONTEXT_CACHE evidence",
+      "importance": "SECONDARY"
+    },
+    {
+      "if": "resolved current root is supported only by ESCALATION evidence",
+      "importance": "CONDITIONAL"
+    },
+    {
+      "if": "root has background bias but no current additive direction",
+      "importance": "BACKGROUND"
+    },
+    {
+      "if": "root has no resolved current or background state",
+      "importance": "UNKNOWN"
+    }
+  ],
+  "root_ids_are_not_manually_ranked": true,
+  "llm_cannot_change_importance": true
+}

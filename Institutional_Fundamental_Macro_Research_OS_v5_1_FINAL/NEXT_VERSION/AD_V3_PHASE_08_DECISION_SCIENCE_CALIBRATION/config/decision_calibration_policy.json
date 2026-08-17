@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P08",
+  "version": "3.8.0-decision-science-calibration",
+  "subject": "XAUUSD",
+  "default_horizon": "SESSION_1_6H",
+  "pressure_strength_states": [
+    "UNKNOWN",
+    "WEAK",
+    "MODERATE",
+    "STRONG",
+    "DOMINANT"
+  ],
+  "dominance_states": [
+    "UNKNOWN",
+    "BALANCED",
+    "BULLISH_FRAGILE",
+    "BULLISH_DOMINANT",
+    "BEARISH_FRAGILE",
+    "BEARISH_DOMINANT"
+  ],
+  "breadth_states": [
+    "NONE",
+    "NARROW",
+    "MODERATE",
+    "BROAD"
+  ],
+  "fragility_states": [
+    "LOW",
+    "ELEVATED",
+    "HIGH"
+  ],
+  "contradiction_states": [
+    "NONE",
+    "MINOR_OFFSET",
+    "MEANINGFUL_CONTRADICTION",
+    "BALANCED_CONFLICT",
+    "PRIMARY_ROOT_CONFLICT"
+  ],
+  "consumption_states": [
+    "UNKNOWN",
+    "LOW",
+    "MODERATE",
+    "HIGH",
+    "EXHAUSTED"
+  ],
+  "edge_states": [
+    "NO_EDGE",
+    "LOW_EDGE",
+    "CONDITIONAL_EDGE",
+    "ACTIONABLE_EDGE"
+  ],
+  "permission_candidates": [
+    "WAIT",
+    "BUY_CANDIDATE",
+    "SELL_CANDIDATE"
+  ],
+  "hard_caps": {
+    "balanced_or_primary_root_conflict": "NO_EDGE",
+    "critical_live_gap": "CONDITIONAL_EDGE_MAX",
+    "high_fragility": "CONDITIONAL_EDGE_MAX",
+    "high_missing_driver_risk": "CONDITIONAL_EDGE_MAX",
+    "high_consumption": "LOW_EDGE_MAX",
+    "expired_or_gap_evidence": "ROOT_AUTHORITY_CAP"
+  },
+  "rules": [
+    "P03 remains the sole causal-direction authority; P08 may reconcile opposing P03 root states but cannot invent a new causal direction.",
+    "Root dominance is not based on raw fact count.",
+    "Internal rank tuples are ordinal audit aids, not probabilities or user-facing confidence scores.",
+    "Pressure and price remain separate; transmission can cap edge/permission but cannot rewrite causal pressure.",
+    "WAIT is a first-class governed decision.",
+    "Trade execution authority remains NONE."
+  ],
+  "production_promotion_forbidden": true,
+  "trade_execution_authority": "NONE"
+}

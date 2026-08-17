@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P08",
+  "states": [
+    "UNKNOWN",
+    "MINOR",
+    "MATERIAL",
+    "LARGE",
+    "EXTREME"
+  ],
+  "rank": {
+    "UNKNOWN": 0,
+    "MINOR": 1,
+    "MATERIAL": 2,
+    "LARGE": 3,
+    "EXTREME": 4
+  },
+  "p03_strength_mapping": {
+    "UNKNOWN": "UNKNOWN",
+    "LOW": "MINOR",
+    "MEDIUM": "MATERIAL",
+    "HIGH": "LARGE"
+  },
+  "recognized_standardized_fields": [
+    "z_score",
+    "surprise_z",
+    "normalized_change_z"
+  ],
+  "z_abs_thresholds": {
+    "EXTREME": 3.0,
+    "LARGE": 2.0,
+    "MATERIAL": 1.0
+  },
+  "recognized_percentile_fields": [
+    "historical_percentile",
+    "percentile"
+  ],
+  "percentile_thresholds": {
+    "EXTREME_LOW": 0.01,
+    "LARGE_LOW": 0.05,
+    "MATERIAL_LOW": 0.2,
+    "MATERIAL_HIGH": 0.8,
+    "LARGE_HIGH": 0.95,
+    "EXTREME_HIGH": 0.99
+  },
+  "direction_is_not_inferred_from_magnitude": true,
+  "universal_z_score_forbidden": true
+}

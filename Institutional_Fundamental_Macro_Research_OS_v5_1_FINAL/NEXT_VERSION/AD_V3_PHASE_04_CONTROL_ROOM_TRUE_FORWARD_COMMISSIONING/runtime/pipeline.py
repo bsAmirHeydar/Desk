@@ -5,6 +5,7 @@ from .common import load_json, write_json, stable_id, iso
 from AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE.runtime.semantic_runtime import run_semantics
 from .promotion import load_state as load_promotion
 from .permission import evaluate as permission_eval
+from AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION.runtime.decision_runtime import calibrate as calibrate_decision
 from .commissioning import build_precommit, update as update_commissioning
 from .control_room_model import build as build_model
 from .renderer import render, brief
@@ -133,6 +134,7 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
     p03 = nxt / 'AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE'
     p04 = nxt / 'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING'
     p07 = nxt / 'AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL'
+    p08 = nxt / 'AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION'
     data = Path(p02_data_root_override) if p02_data_root_override else p02 / 'artifacts' / 'live_store'
     outroot = Path(output_root_override) if output_root_override else p04 / 'artifacts'
     runs = outroot / 'runs'
@@ -229,11 +231,17 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
     write_json(rd / 'p03_final.json', final)
 
     promotion = load_promotion(p04)
-    permission = permission_eval(final, promotion)
+    _progress('[6/8] P08 decision science calibration')
+    latest_p08 = outroot / 'latest' / 'latest_p08_decision_calibration.json'
+    previous_p08 = load_json(latest_p08) if latest_p08.exists() else None
+    empirical_registry = p08 / 'artifacts' / 'state' / 'empirical_calibration_registry.json'
+    calibrated = calibrate_decision(final, kernel=kernel, previous=previous_p08, promotion_state=promotion, empirical_registry_path=empirical_registry if empirical_registry.exists() else None)
+    write_json(rd / 'p08_decision_calibration.json', calibrated)
+    permission = calibrated['permission']
     write_json(rd / 'permission.json', permission)
-    _progress(f"      direction: {permission.get('direction')} | action: {permission.get('research_action_candidate')} | official permission: {permission.get('official_permission')}")
+    _progress(f"      P08: {calibrated.get('causal_direction')} | {calibrated.get('pressure_strength')} | {calibrated.get('dominance_state')} | edge={calibrated.get('edge_state')} | action={permission.get('research_action_candidate')}")
 
-    _progress('[6/7] True-forward precommit + Control Room')
+    _progress('[7/8] True-forward precommit + Control Room')
     price_anchor = _price_anchor_from_store(data, final)
     if price_anchor:
         _progress(f"      price anchor: {price_anchor.get('source_fact_id')} {price_anchor.get('value')} ({price_anchor.get('anchor_kind')})")
@@ -247,13 +255,13 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
     prev = None
     if (latest_dir / 'latest_control_room.json').exists():
         prev = load_json(latest_dir / 'latest_control_room.json')
-    model = build_model(run_id, final, packet, bundle, permission, commissioning, promotion, prev, pre_semantic=pre, data_kernel=kernel)
+    model = build_model(run_id, final, packet, bundle, permission, commissioning, promotion, prev, pre_semantic=pre, data_kernel=kernel, decision_calibration=calibrated)
     write_json(rd / 'control_room.json', model)
     helps = load_json(p04 / 'config' / 'help_registry.json')
     (rd / 'control_room.html').write_text(render(model, helps), encoding='utf-8')
     (rd / 'brief.txt').write_text(brief(model), encoding='utf-8')
 
-    _progress('[7/7] Immutable capsule + publish latest outputs')
+    _progress('[8/8] Immutable capsule + publish latest outputs')
     cap = build_capsule(run_id, rd, precommit, promotion.get('state') == 'PRODUCTION_V3')
     latest_dir.mkdir(parents=True, exist_ok=True)
     for src, name in [
@@ -270,6 +278,7 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
         (rd / 'semantic_run_capsule.json', 'latest_semantic_run_capsule.json'),
         (rd / 'p07_kernel_receipt.json', 'latest_p07_kernel_receipt.json'),
         (rd / 'p07_governed_coverage.json', 'latest_p07_governed_coverage.json'),
+        (rd / 'p08_decision_calibration.json', 'latest_p08_decision_calibration.json'),
     ]:
         shutil.copy2(src, latest_dir / name)
 
@@ -305,6 +314,19 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
         'semantic_prompt_version': (bundle.get('p06_semantic') or {}).get('prompt_version'),
         'semantic_prompt_sha256': (bundle.get('p06_semantic') or {}).get('prompt_sha256'),
         'semantic_capsule_id': (bundle.get('p06_semantic') or {}).get('capsule_id'),
+        'p08_decision_id': calibrated.get('decision_id'),
+        'p08_raw_p03_direction': calibrated.get('raw_p03_causal_direction'),
+        'p08_calibrated_direction': calibrated.get('causal_direction'),
+        'p08_pressure_strength': calibrated.get('pressure_strength'),
+        'p08_dominance_state': calibrated.get('dominance_state'),
+        'p08_dominant_root': calibrated.get('dominant_root'),
+        'p08_breadth': calibrated.get('breadth'),
+        'p08_fragility': calibrated.get('fragility'),
+        'p08_contradiction': calibrated.get('contradiction'),
+        'p08_consumption': calibrated.get('consumption'),
+        'p08_edge_state': calibrated.get('edge_state'),
+        'p08_permission_candidate': calibrated.get('permission_candidate'),
+        'p08_duration_ms': (calibrated.get('timing_ms') or {}).get('total_p08_ms'),
         'control_room': str(rd / 'control_room.html'),
         'capsule_id': cap.get('capsule_id'),
         'production_authority': promotion.get('state') == 'PRODUCTION_V3',

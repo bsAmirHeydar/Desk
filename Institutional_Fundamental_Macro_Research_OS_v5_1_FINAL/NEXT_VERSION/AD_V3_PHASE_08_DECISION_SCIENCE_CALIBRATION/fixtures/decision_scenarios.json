@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "scenarios": [
+    "strong_fresh_bullish",
+    "bullish_high_consumption",
+    "bullish_vs_mechanical",
+    "primary_root_conflict",
+    "strong_with_live_gap",
+    "single_root_concentration"
+  ]
+}
