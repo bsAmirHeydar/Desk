@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P05",
+  "rules": [
+    {
+      "kind": "acceptance_receipts",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "live_acquisition_runs",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "semantic_evidence_packets",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "causal_brain_runs",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "commissioning_runs",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "html_reports",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "true_forward_state",
+      "class": "RUNTIME_STATE",
+      "commit": false
+    },
+    {
+      "kind": "promotion_state",
+      "class": "RUNTIME_STATE",
+      "commit": false
+    },
+    {
+      "kind": "run_capsules",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "python_caches",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
+      "kind": "canonical_configs",
+      "class": "AUTHORITATIVE_SOURCE",
+      "commit": true
+    }
+  ],
+  "required_gitignore_patterns": [
+    "**/__pycache__/",
+    "*.pyc",
+    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/artifacts/",
+    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/artifacts/",
+    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/artifacts/",
+    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/artifacts/"
+  ],
+  "historical_rule": "Scientific evidence is classified or archived; it is not deleted merely to make the tree look clean."
+}

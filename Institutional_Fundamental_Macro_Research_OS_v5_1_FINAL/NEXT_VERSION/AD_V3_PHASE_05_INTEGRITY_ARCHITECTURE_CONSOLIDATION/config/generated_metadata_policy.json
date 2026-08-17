@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P05",
+  "classes": [
+    "AUTHORITATIVE_SOURCE",
+    "DERIVED_GENERATED_METADATA",
+    "HISTORICAL_SNAPSHOT",
+    "RUNTIME_STATE",
+    "RUNTIME_OUTPUT"
+  ],
+  "authoritative_sources": [
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/gold_master_fact_registry.json",
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/config/source_contract_registry.json",
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/config/fact_acquisition_registry.json",
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/fact_reasoning_registry.json"
+  ],
+  "derived_targets": [
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/P02_SOURCE_COVERAGE_SUMMARY.json",
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/PHASE_02_HANDOFF.json"
+  ],
+  "generator": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/tools/generate_current_metadata.py",
+  "determinism": "No wall-clock timestamp is emitted into committed generated metadata. Registry SHA-256 provenance is required."
+}

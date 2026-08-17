@@ -2,8 +2,22 @@
   "phase": "AD-V3-P02",
   "status": "READY_FOR_ACCEPTANCE",
   "deployment": "SHADOW_ONLY",
+  "generated_metadata": {
+    "classification": "DERIVED_GENERATED_METADATA",
+    "generated_from": [
+      "config/source_contract_registry.json",
+      "config/fact_acquisition_registry.json"
+    ],
+    "generator": "AD-V3-P05/tools/generate_current_metadata.py",
+    "canonical_registry_sha256": {
+      "source_contract_registry": "f7200063a8ed4158c4473f131f05cd913d256414b8e468c502c2c563d65d97d9",
+      "fact_acquisition_registry": "f7660e4f9e892394e3cb2e388b9f6f0085630c33eccb6240ebd8e0fca6cec7f4"
+    },
+    "deterministic": true
+  },
   "p01_fact_count": 192,
-  "source_contract_count": 95,
+  "source_contract_count": 96,
+  "fact_acquisition_contract_count": 192,
   "mandatory_public_fact_attempt_contracts": 126,
   "direction_authority": false,
   "trade_permission_authority": false,
@@ -15,5 +29,6 @@
   ],
   "hard_rule": "P03 analysis MUST NOT start when P02 coverage receipt is BLOCKED.",
   "revision": "3.2.6",
-  "live_hardening_note": "REV 3.2.6 preserves exact-run handoff and adds fact-specific source integrity: GLD and IAU sponsor sources are isolated, and CFTC positioning data cannot masquerade as GC volume. UNKNOWN is preferred to cross-fact contamination."
+  "operational_build": "3.2.6+c2-price-anchor-closure.1",
+  "live_hardening_note": "3.2.6 science frozen; C2 operational price-anchor closure adds explicit public proxy fallback for transmission-only XAU/USD numeric anchoring."
 }

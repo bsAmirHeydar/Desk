@@ -1,0 +1,40 @@
+{
+  "phase": "AD-V3-P05",
+  "version": "3.5.0-integrity-consolidation",
+  "status": "PASS",
+  "deployment": "SHADOW_COMMISSIONING",
+  "acceptance": {
+    "P01": "PASS",
+    "P02": "PASS",
+    "P03": "PASS",
+    "P04": "PASS",
+    "P05": "PASS"
+  },
+  "counts": {
+    "gold_facts": 192,
+    "source_contracts": 96,
+    "fact_acquisition_contracts": 192,
+    "semantic_adjudication_population": 21,
+    "semantic_adjudication_session_population": 11,
+    "mandatory_attempt_contracts": 126
+  },
+  "architecture_drift_count": 0,
+  "freeze_conflict_count": 0,
+  "metadata_drift_count": 0,
+  "command_contract_drift_count": 0,
+  "promotion_governance_drift_count": 0,
+  "artifact_governance_error_count": 0,
+  "science_drift_count": 0,
+  "p01_historical_baseline_preserved": true,
+  "p02_historical_baseline_preserved": true,
+  "v3_deployment": "SHADOW_COMMISSIONING",
+  "production_promotion_performed": false,
+  "production_direction_authority": false,
+  "production_trade_permission_authority": false,
+  "trade_execution_authority": "NONE",
+  "v2_rollback_retained": true,
+  "canonical_run_route_while_shadow": "run Gold -> V2",
+  "v3_shadow_route": "commission Gold -> V3",
+  "next_phase": "AD-V3-P06_GOVERNED_SEMANTIC_INTELLIGENCE",
+  "p06_may_start": true
+}

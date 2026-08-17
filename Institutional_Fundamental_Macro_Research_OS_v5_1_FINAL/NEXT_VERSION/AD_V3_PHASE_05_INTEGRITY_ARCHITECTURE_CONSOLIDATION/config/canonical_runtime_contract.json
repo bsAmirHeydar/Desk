@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P05",
+  "active_subject": "Gold",
+  "aliases": [
+    "Run",
+    "Run Gold",
+    "run Gold",
+    "run XAUUSD"
+  ],
+  "chat_semantics": {
+    "Run": "Run Gold",
+    "Run Gold": "execute current certified/authorized Gold route"
+  },
+  "local": {
+    "run_gold": ".\\AlphaDesk.ps1 run Gold",
+    "commission_gold": ".\\AlphaDesk.ps1 commission Gold",
+    "integrity_status": ".\\AlphaDesk.ps1 v3-integrity-status"
+  },
+  "routing": {
+    "when_v3_state_is_PRODUCTION_V3": "run Gold -> V3",
+    "otherwise": "run Gold -> V2",
+    "commission Gold": "V3 shadow commissioning"
+  },
+  "current_expected_v3_state": "SHADOW_COMMISSIONING",
+  "automatic_promotion_forbidden": true,
+  "non_gold_active_scope": false,
+  "p10_note": "P05 consolidates command meaning only; P10 will own the final one-run production pipeline."
+}

@@ -61,13 +61,31 @@ def validate_registry():
     if len(const.get('pressure_planes') or [])!=4: errors.append('PRESSURE_PLANE_COUNT_NOT_FOUR')
     return {'status':'PASS' if not errors else 'FAIL_CLOSED','fact_count':len(facts),'errors':errors}
 
-def verify_v2_freeze():
-    m=json.loads((_phase_root()/'baseline/v2_frozen_surface_manifest.json').read_text(encoding='utf-8'))
-    rows=[]; ok=True
-    for s in m.get('surfaces',[]):
-        p=_repo_root()/s['rel']; exists=p.exists(); actual=_sha(p) if exists and p.is_file() else None; same=exists and actual==s['sha256']; ok=ok and same
-        rows.append({'rel':s['rel'],'exists':exists,'expected_sha256':s['sha256'],'actual_sha256':actual,'unchanged':same})
-    return {'status':'PASS' if ok else 'FAIL_CLOSED','surface_count':len(rows),'surfaces':rows}
+def verify_v2_freeze(repo_root=None):
+    # P05 repaired the original boundary defect without rewriting history.
+    # The P01 manifest is a historical V2 snapshot. Deployment-owned files may
+    # legitimately evolve downstream; truly immutable legacy/science files may not.
+    mpath=_phase_root()/'baseline/v2_frozen_surface_manifest.json'
+    m=json.loads(mpath.read_text(encoding='utf-8'))
+    policy_path=_phase_root()/'config/v2_freeze_boundary_policy.json'
+    policy=json.loads(policy_path.read_text(encoding='utf-8')) if policy_path.exists() else {'deployment_mutable_surfaces':[]}
+    mutable=set(policy.get('deployment_mutable_surfaces') or [])
+    base=Path(repo_root) if repo_root is not None else _repo_root()
+    rows=[]; scientific_ok=True; historical_exact=True
+    for surf in m.get('surfaces',[]):
+        p=base/surf['rel']; exists=p.exists(); actual=_sha(p) if exists and p.is_file() else None; same=exists and actual==surf['sha256']
+        cls='DEPLOYMENT_MUTABLE' if surf['rel'] in mutable else 'LEGACY_BASELINE_IMMUTABLE'
+        if cls!='DEPLOYMENT_MUTABLE' and not same: scientific_ok=False
+        historical_exact=historical_exact and same
+        rows.append({'rel':surf['rel'],'classification':cls,'exists':exists,'expected_sha256':surf['sha256'],'actual_sha256':actual,'historical_snapshot_unchanged':same,'current_freeze_ok':same or cls=='DEPLOYMENT_MUTABLE'})
+    return {
+      'status':'PASS' if scientific_ok else 'FAIL_CLOSED',
+      'scientific_surface_status':'PASS' if scientific_ok else 'FAIL_CLOSED',
+      'historical_snapshot_live_match':'PASS' if historical_exact else 'DRIFT_RECORDED',
+      'historical_manifest_sha256':_sha(mpath),
+      'surface_count':len(rows),'deployment_mutable_count':sum(1 for r in rows if r['classification']=='DEPLOYMENT_MUTABLE'),
+      'surfaces':rows
+    }
 
 def _matches_discovery_filename(filename:str, pattern:str)->bool:
     # Current discovery contracts are filename patterns under **/.  Matching the
@@ -196,7 +214,7 @@ def compile_knowledge_coverage():
       'interface_contract_registry':ir,
       'surface_coverage':{'discovered_surface_count':len(rows),'required_missing':missing,'unaccounted_surfaces':unclassified,'unclassified_surfaces':unclassified,'interface_contract_drift_surfaces':drifted,'interface_contract_errors':interface_errors,'fact_surfaces':sum(1 for r in rows if r['classification']=='FACT_SURFACE'),'governance_or_validation_surfaces':sum(1 for r in rows if r['classification']=='GOVERNANCE_OR_VALIDATION_SURFACE'),'interface_contract_surfaces':sum(1 for r in rows if r['classification']=='INTERFACE_CONTRACT_SURFACE'),'matched_registry_fact_count':len(matched_fact_ids),'registry_entries_without_surface_term_match':len(reg_ids-matched_fact_ids),'term_match_is_diagnostic_only':True,'rows':rows},
       'v2_freeze':freeze,
-      'integrity':{'live_network_fetch_performed':False,'v2_mutated':False,'direction_authority_granted':False,'permission_authority_granted':False,'target_price_causal_root':False,'platform_invariant_discovery':True,'interface_contracts_semantically_audited':ir['status']=='PASS' and not interface_errors and not drifted,'zero_unaccounted_gold_knowledge':status=='PASS'},
+      'integrity':{'live_network_fetch_performed':False,'v2_mutated':False,'direction_authority_granted':False,'permission_authority_granted':False,'target_price_causal_root':False,'platform_invariant_discovery':True,'interface_contracts_semantically_audited':ir['status']=='PASS' and not interface_errors and not drifted,'zero_unaccounted_gold_knowledge':vr['status']=='PASS' and not missing and not unclassified and not drifted and not interface_errors},
       'p02_handoff':{'ready':status=='PASS','next_phase':'AD-V3-P02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC','required_inputs':['gold_master_fact_registry.json','epistemic_state_registry.json','causal_ontology.json'],'network_acquisition_still_forbidden_in_p01':True}
     }
 

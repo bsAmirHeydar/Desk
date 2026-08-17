@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlphaDesk V3 P05 Integrity Receipt",
+  "type": "object",
+  "required": [
+    "phase",
+    "version",
+    "status",
+    "architecture_drift",
+    "freeze_conflicts",
+    "registry_metadata_drift",
+    "command_contract_drift",
+    "promotion_gate_drift",
+    "artifact_governance_errors",
+    "scientific_surface_status",
+    "deployment_surface_status"
+  ],
+  "properties": {
+    "phase": {
+      "const": "AD-V3-P05"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL_CLOSED"
+      ]
+    },
+    "architecture_drift": {
+      "type": "array"
+    },
+    "freeze_conflicts": {
+      "type": "array"
+    },
+    "registry_metadata_drift": {
+      "type": "array"
+    },
+    "command_contract_drift": {
+      "type": "array"
+    },
+    "promotion_gate_drift": {
+      "type": "array"
+    },
+    "artifact_governance_errors": {
+      "type": "array"
+    },
+    "scientific_surface_status": {
+      "enum": [
+        "PASS",
+        "FAIL_CLOSED"
+      ]
+    },
+    "deployment_surface_status": {
+      "enum": [
+        "PASS",
+        "FAIL_CLOSED"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

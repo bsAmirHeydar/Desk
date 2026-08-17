@@ -1,8 +1,23 @@
 {
   "phase": "AD-V3-P02",
-  "revision": "3.2.4",
+  "revision": "3.2.6",
+  "operational_build": "3.2.6+c2-price-anchor-closure.1",
+  "generated_metadata": {
+    "classification": "DERIVED_GENERATED_METADATA",
+    "generated_from": [
+      "config/source_contract_registry.json",
+      "config/fact_acquisition_registry.json"
+    ],
+    "generator": "AD-V3-P05/tools/generate_current_metadata.py",
+    "canonical_registry_sha256": {
+      "source_contract_registry": "f7200063a8ed4158c4473f131f05cd913d256414b8e468c502c2c563d65d97d9",
+      "fact_acquisition_registry": "f7660e4f9e892394e3cb2e388b9f6f0085630c33eccb6240ebd8e0fca6cec7f4"
+    },
+    "deterministic": true
+  },
   "facts": 192,
-  "sources": 95,
+  "sources": 96,
+  "fact_acquisition_contracts": 192,
   "fact_acquisition_modes": {
     "CALENDAR_DERIVED": 2,
     "DERIVED_FROM_FACTS": 43,
@@ -38,6 +53,7 @@
     "PUBLIC_OR_LICENSED": 2,
     "PUBLIC_OR_PROVIDER": 3,
     "PUBLIC_OR_SOURCE_SPECIFIC": 4,
+    "PUBLIC_PROXY": 1,
     "PUBLIC_SOURCE_SPECIFIC": 1
   },
   "collector_types": {
@@ -54,8 +70,9 @@
     "GAP_ONLY": 8,
     "GENERIC_BINARY": 1,
     "GENERIC_CSV": 1,
-    "GENERIC_HTML": 56,
+    "GENERIC_HTML": 55,
     "GENERIC_JSON": 1,
+    "GOLDPRICEDEV_XAU_JSON": 1,
     "MULTI_URL_HTML": 1,
     "NYFED_REPO_HTML": 1,
     "NYFED_SOFR_JSON": 1,
@@ -65,10 +82,10 @@
     "STATIC": 2,
     "TREASURY_XML_NOMINAL": 1,
     "TREASURY_XML_REAL": 1,
+    "WGC_GOLD_PRICE_HTML": 1,
     "WGC_SGE_WITHDRAWALS_HTML": 1
   },
   "mandatory_attempt_contracts": 126,
-  "blocking_unattempted_contracts": 126,
   "source_ids": [
     "FED_FOMC",
     "FED_H41",
@@ -164,22 +181,8 @@
     "CME_RATES_DAILY_BULLETIN",
     "CME_GOLD_DELIVERY_NOTICES_PDF",
     "FED_H10_INR_HISTORY",
-    "PIB_GOLD_DUTY_POLICY"
+    "PIB_GOLD_DUTY_POLICY",
+    "GOLDPRICEDEV_XAU_SPOT_PROXY"
   ],
-  "rev_3_2_3_hardening": [
-    "BLS CPI/PPI/employment/JOLTS facts use one official Public Data API POST batch instead of 403-prone web pages.",
-    "Federal Reserve Broad/AFE/EME dollar facts use dedicated H.10 daily index pages.",
-    "US retail sales uses the Federal Reserve Bank of St. Louis public CSV republisher and remains PUBLIC_PROXY.",
-    "US 5Y5Y forward inflation is derived from Treasury breakeven observations instead of a fragile web page.",
-    "CME gold price/open interest/curve and Fed-funds futures use best-effort CME-hosted delayed web JSON with official Daily Bulletin PDFs as fallback.",
-    "PBoC and SGE TLS failures have official-government / WGC proxy fallbacks that remain explicitly proxy-labelled.",
-    "INR affordability uses official RBI USDINR only as a PUBLIC_PROXY input, never as a complete affordability measure."
-  ],
-  "rev_3_2_4_hardening": [
-    "US_RETAIL_SALES now prefers the direct current U.S. Census Bureau sales release; FRED remains fallback only.",
-    "INR_GOLD_AFFORDABILITY now prefers Federal Reserve H.10 Indian Rupee rates and remains an explicit affordability proxy.",
-    "INDIA_IMPORT_DUTY_TAX now prefers current Government of India PIB policy communication and remains PUBLIC_PROXY because it is not a CBIC legal tariff table.",
-    "The historical 6% India duty baseline is carried only as provenance-tagged context and is never asserted as a newly verified legal rate.",
-    "Coverage Gate severity is unchanged; the goal is to remove access/parser blockers, not weaken admission."
-  ]
+  "hardening_note": "3.2.6 science frozen; C2 operational price-anchor closure adds explicit public proxy fallback for transmission-only XAU/USD numeric anchoring."
 }

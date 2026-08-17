@@ -8,6 +8,7 @@ $Repo = $PSScriptRoot
 
 $V2Tool = Join-Path $Repo "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL\NEXT_VERSION\AD_V2_PHASE_13_CANONICAL_GOLD_CONTROL_ROOM_OUTPUT\tools\alpha_desk_v2.py"
 $V3Tool = Join-Path $Repo "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL\NEXT_VERSION\AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING\tools\alpha_desk_v3.py"
+$P05Tool = Join-Path $Repo "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL\NEXT_VERSION\AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION\tools\p05_status.py"
 $script:AlphaDeskLastExitCode = 0
 
 function Invoke-V2([string[]]$ArgsList) {
@@ -83,6 +84,7 @@ if (-not $AlphaArgs -or $AlphaArgs.Count -eq 0) {
     Write-Host "  V3 status:             .\AlphaDesk.ps1 v3-status"
     Write-Host "  V3 true-forward:       .\AlphaDesk.ps1 v3-tf-status"
     Write-Host "  V3 promotion status:   .\AlphaDesk.ps1 v3-promotion-status"
+    Write-Host "  V3 integrity status:   .\AlphaDesk.ps1 v3-integrity-status"
     Write-Host ""
     Write-Host "Promotion is fail-closed. Until PRODUCTION_V3, 'run Gold' remains on V2."
     exit 0
@@ -116,6 +118,11 @@ switch ($Command.ToLowerInvariant()) {
     "v3-promotion-status" {
         Invoke-V3 @("promotion-status")
         exit $script:AlphaDeskLastExitCode
+    }
+    "v3-integrity-status" {
+        if (-not (Test-Path -LiteralPath $P05Tool)) { throw "Alpha Desk V3 P05 integrity status tool is not installed." }
+        & python $P05Tool
+        exit $LASTEXITCODE
     }
     "v3-promote" {
         Invoke-V3 (@("promote") + $Rest)

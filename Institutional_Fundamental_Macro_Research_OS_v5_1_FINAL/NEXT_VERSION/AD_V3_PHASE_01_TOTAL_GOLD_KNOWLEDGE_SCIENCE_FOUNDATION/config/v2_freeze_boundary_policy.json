@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P01",
+  "introduced_by": "AD-V3-P05",
+  "historical_manifest": "baseline/v2_frozen_surface_manifest.json",
+  "historical_manifest_semantics": "AUDIT_SNAPSHOT_DO_NOT_REWRITE",
+  "current_freeze_semantics": "All historical manifest surfaces remain protected except explicitly deployment-owned mutable surfaces. A deployment mismatch is recorded as historical drift but is not scientific corruption.",
+  "deployment_mutable_surfaces": [
+    "AlphaDesk.ps1",
+    "RUN.md",
+    "ALPHA_DESK_V2_RUN.md",
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/CURRENT_PRODUCTION_MANIFEST.json"
+  ],
+  "immutable_default_class": "LEGACY_BASELINE_IMMUTABLE",
+  "mutable_class": "DEPLOYMENT_MUTABLE",
+  "hard_rules": [
+    "missing or hash-drifted immutable legacy surface fails closed",
+    "historical manifest is never regenerated to current deployment hashes",
+    "deployment evolution cannot silently grant scientific authority"
+  ]
+}

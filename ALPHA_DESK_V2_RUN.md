@@ -1,15 +1,15 @@
-# ALPHA DESK V2 — UNIFIED RUN CONTRACT
+# ALPHA DESK V2 — RETAINED FALLBACK RUN CONTRACT
 
-Canonical local command:
+V2 is retained as the rollback/certified fallback while V3 remains in shadow commissioning.
+
+Canonical local Gold request:
 
 ```powershell
 .\AlphaDesk.ps1 run Gold
 ```
 
-Canonical Chat command remains:
+The top-level launcher decides the authorized route. Until V3 reaches `PRODUCTION_V3`, this command resolves to the **V2 fallback**. Do not call V2 directly as a way to bypass launcher governance.
 
-```text
-Run Gold
-```
+Canonical Chat semantics are defined in `RUN.md`: `Run` means `Run Gold`.
 
-The V2 front door compiles the canonical Gold research cluster, preserves Pressure ≠ Price, predeclares expected transmission before subsequent observation, executes the P10 integrated shadow stack, persists through P06 and leaves TRUE_FORWARD admission to P08. V1 remains authoritative for Direction/Permission and broker authority remains NONE.
+V2 scientific invariants remain intact, including Pressure ≠ Price and broker authority NONE.

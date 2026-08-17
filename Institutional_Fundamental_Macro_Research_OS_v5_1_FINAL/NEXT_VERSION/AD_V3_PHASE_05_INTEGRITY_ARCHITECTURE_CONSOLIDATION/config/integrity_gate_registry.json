@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P05",
+  "promotion_policy_source": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/config/promotion_policy.json",
+  "gates": [
+    {
+      "gate_id": "P01_FROZEN",
+      "machine_evaluator": "P01 acceptance + v2_freeze PASS"
+    },
+    {
+      "gate_id": "P02_3_2_6_FROZEN",
+      "machine_evaluator": "P02 acceptance PASS + revision 3.2.6"
+    },
+    {
+      "gate_id": "P03_3_3_6_FROZEN",
+      "machine_evaluator": "P03 acceptance PASS + revision 3.3.6"
+    },
+    {
+      "gate_id": "P04_ACCEPTANCE_PASS",
+      "machine_evaluator": "P04 acceptance PASS"
+    },
+    {
+      "gate_id": "TRUE_FORWARD_SAMPLE_PROVISIONAL",
+      "machine_evaluator": "commissioning_state.sample_state == PROVISIONAL"
+    },
+    {
+      "gate_id": "ZERO_INTEGRITY_FAILURES",
+      "machine_evaluator": "commissioning_state.integrity_failures == 0"
+    },
+    {
+      "gate_id": "EXPLICIT_OPERATOR_APPROVAL",
+      "machine_evaluator": "promote(..., approve=True) only"
+    }
+  ],
+  "hard_rules": [
+    "declared promotion gate set must equal machine-enforced gate set",
+    "unknown/unavailable gate fails closed",
+    "automatic promotion forbidden"
+  ]
+}

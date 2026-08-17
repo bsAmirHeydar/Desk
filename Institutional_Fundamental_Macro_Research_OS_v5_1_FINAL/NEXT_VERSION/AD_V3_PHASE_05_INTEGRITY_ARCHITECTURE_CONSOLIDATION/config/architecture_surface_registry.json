@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P05",
+  "mutability_classes": [
+    "SCIENTIFIC_IMMUTABLE",
+    "SCIENTIFIC_VERSIONED",
+    "ACQUISITION_IMMUTABLE",
+    "REASONING_IMMUTABLE",
+    "DEPLOYMENT_MUTABLE",
+    "GOVERNANCE_VERSIONED",
+    "GENERATED_METADATA",
+    "RUNTIME_STATE",
+    "RUNTIME_ARTIFACT",
+    "DOCUMENTATION_GENERATED",
+    "DOCUMENTATION_AUTHORED",
+    "LEGACY_BASELINE",
+    "HISTORICAL_SNAPSHOT"
+  ],
+  "surfaces": [
+    {
+      "path": "AlphaDesk.ps1",
+      "owner": "ALPHA_DESK_DEPLOYMENT",
+      "class": "DEPLOYMENT_MUTABLE",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "RUN.md",
+      "owner": "ALPHA_DESK_DEPLOYMENT",
+      "class": "DOCUMENTATION_AUTHORED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "ALPHA_DESK_V2_RUN.md",
+      "owner": "AD-V2-LEGACY_COMPATIBILITY",
+      "class": "DOCUMENTATION_AUTHORED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/CURRENT_PRODUCTION_MANIFEST.json",
+      "owner": "PRODUCTION_ROUTING",
+      "class": "DEPLOYMENT_MUTABLE",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/baseline/v2_frozen_surface_manifest.json",
+      "owner": "AD-V3-P01",
+      "class": "HISTORICAL_SNAPSHOT",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/gold_master_fact_registry.json",
+      "owner": "AD-V3-P01",
+      "class": "SCIENTIFIC_IMMUTABLE",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/v2_freeze_boundary_policy.json",
+      "owner": "AD-V3-P05/P01_GOVERNANCE_REPAIR",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/config/source_contract_registry.json",
+      "owner": "AD-V3-P02",
+      "class": "ACQUISITION_IMMUTABLE",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/config/fact_acquisition_registry.json",
+      "owner": "AD-V3-P02",
+      "class": "ACQUISITION_IMMUTABLE",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/P02_SOURCE_COVERAGE_SUMMARY.json",
+      "owner": "AD-V3-P05_METADATA_COMPILER",
+      "class": "GENERATED_METADATA",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/PHASE_02_HANDOFF.json",
+      "owner": "AD-V3-P05_METADATA_COMPILER",
+      "class": "GENERATED_METADATA",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/baseline/P02_IMMUTABLE_HASHES.json",
+      "owner": "AD-V3-P05/P02_GOVERNANCE_REPAIR",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/fact_reasoning_registry.json",
+      "owner": "AD-V3-P03",
+      "class": "REASONING_IMMUTABLE",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/semantic_adjudication_policy.json",
+      "owner": "AD-V3-P03",
+      "class": "REASONING_IMMUTABLE",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/config/promotion_policy.json",
+      "owner": "AD-V3-P04",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/promotion.py",
+      "owner": "AD-V3-P05/P04_GOVERNANCE_REPAIR",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/artifacts/state/promotion_state.json",
+      "owner": "AD-V3-P04_RUNTIME",
+      "class": "RUNTIME_STATE",
+      "commit": false,
+      "rollback_authority": false,
+      "required": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/artifacts/state/commissioning_state.json",
+      "owner": "AD-V3-P04_RUNTIME",
+      "class": "RUNTIME_STATE",
+      "commit": false,
+      "rollback_authority": false,
+      "required": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/artifacts/latest/latest_control_room.html",
+      "owner": "AD-V3-P04_RUNTIME",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false,
+      "rollback_authority": false,
+      "required": false
+    }
+  ],
+  "pattern_rules": [
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/*.json",
+      "owner": "AD-V3-P01",
+      "class": "SCIENTIFIC_VERSIONED"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/runtime/*.py",
+      "owner": "AD-V3-P02",
+      "class": "ACQUISITION_IMMUTABLE"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/schemas/*.json",
+      "owner": "AD-V3-P02",
+      "class": "ACQUISITION_IMMUTABLE"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/runtime/*.py",
+      "owner": "AD-V3-P03",
+      "class": "REASONING_IMMUTABLE"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/*.json",
+      "owner": "AD-V3-P03",
+      "class": "REASONING_IMMUTABLE"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/artifacts/**",
+      "owner": "AD-V3-P04_RUNTIME",
+      "class": "RUNTIME_ARTIFACT"
+    }
+  ],
+  "hard_rule": "No important surface may be simultaneously treated as immutable science and mutable deployment."
+}
