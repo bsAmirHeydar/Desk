@@ -152,6 +152,69 @@
       "commit": false,
       "rollback_authority": false,
       "required": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/config/semantic_runtime_contract.json",
+      "owner": "AD-V3-P06",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/config/semantic_authority_policy.json",
+      "owner": "AD-V3-P06",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/prompts/governed_semantic_system.md",
+      "owner": "AD-V3-P06",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/runtime/semantic_runtime.py",
+      "owner": "AD-V3-P06",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/schemas/semantic_model_response.schema.json",
+      "owner": "AD-V3-P06",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/pipeline.py",
+      "owner": "AD-V3-P06/P04_INTEGRATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/control_room_model.py",
+      "owner": "AD-V3-P06/P04_INTEGRATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/runtime/renderer.py",
+      "owner": "AD-V3-P06/P04_INTEGRATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/baseline/P04_IMMUTABLE_HASHES.json",
+      "owner": "AD-V3-P04",
+      "class": "HISTORICAL_SNAPSHOT",
+      "commit": true,
+      "rollback_authority": true
     }
   ],
   "pattern_rules": [
@@ -183,6 +246,26 @@
     {
       "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/artifacts/**",
       "owner": "AD-V3-P04_RUNTIME",
+      "class": "RUNTIME_ARTIFACT"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/config/*.json",
+      "owner": "AD-V3-P06",
+      "class": "GOVERNANCE_VERSIONED"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/runtime/*.py",
+      "owner": "AD-V3-P06",
+      "class": "GOVERNANCE_VERSIONED"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/schemas/*.json",
+      "owner": "AD-V3-P06",
+      "class": "GOVERNANCE_VERSIONED"
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/artifacts/**",
+      "owner": "AD-V3-P06_RUNTIME",
       "class": "RUNTIME_ARTIFACT"
     }
   ],

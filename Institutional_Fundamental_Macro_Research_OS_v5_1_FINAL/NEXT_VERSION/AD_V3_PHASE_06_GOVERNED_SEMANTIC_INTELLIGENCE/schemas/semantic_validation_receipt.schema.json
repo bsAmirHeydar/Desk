@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P06 Semantic Validation Receipt",
+  "type": "object",
+  "required": [
+    "record_type",
+    "status",
+    "request_count",
+    "validated_count",
+    "unknown_count",
+    "rejected_count",
+    "fallback_count",
+    "items"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P06_SEMANTIC_VALIDATION_RECEIPT"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "DEGRADED",
+        "FAIL_CLOSED"
+      ]
+    },
+    "request_count": {
+      "type": "integer"
+    },
+    "validated_count": {
+      "type": "integer"
+    },
+    "unknown_count": {
+      "type": "integer"
+    },
+    "rejected_count": {
+      "type": "integer"
+    },
+    "fallback_count": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "array"
+    }
+  }
+}

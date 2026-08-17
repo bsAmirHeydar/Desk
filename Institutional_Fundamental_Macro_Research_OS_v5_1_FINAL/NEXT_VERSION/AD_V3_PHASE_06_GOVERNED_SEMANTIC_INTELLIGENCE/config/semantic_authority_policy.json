@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P06",
+  "canonical_semantic_population_rule": {
+    "registry": "AD-V3-P03/config/fact_reasoning_registry.json",
+    "reasoning_mode": "SEMANTIC_ADJUDICATION_REQUIRED"
+  },
+  "governable_p03_request_modes": [
+    "SEMANTIC_ADJUDICATION_REQUIRED",
+    "STRUCTURAL_PRIOR_ONLY",
+    "MECHANICAL_SEMANTIC"
+  ],
+  "allowed_effects": [
+    "BULLISH_GOLD",
+    "BEARISH_GOLD",
+    "NEUTRAL",
+    "MIXED",
+    "NO_DIRECTION",
+    "UNKNOWN"
+  ],
+  "allowed_effect_kinds": [
+    "STOCK",
+    "IMPULSE",
+    "SHOCK",
+    "CONFIRMATION",
+    "VULNERABILITY",
+    "CONTEXT"
+  ],
+  "allowed_strength": [
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "UNKNOWN"
+  ],
+  "allowed_status": [
+    "SUPPORTED",
+    "INSUFFICIENT_EVIDENCE",
+    "CONTRADICTORY"
+  ],
+  "uncertainty_reasons": [
+    "INSUFFICIENT_EVIDENCE",
+    "AMBIGUOUS_LANGUAGE",
+    "CONFLICTING_EVIDENCE",
+    "STALE_EVIDENCE",
+    "NON_DIRECTIONAL_EVIDENCE",
+    "MISSING_CONTEXT",
+    "AUTHORITY_LIMIT"
+  ],
+  "forbidden_output_fields": [
+    "action",
+    "trade_action",
+    "buy",
+    "sell",
+    "wait",
+    "entry",
+    "stop",
+    "target",
+    "position_size",
+    "risk",
+    "trade_permission",
+    "final_gold_direction",
+    "final_pressure",
+    "final_edge",
+    "final_permission"
+  ],
+  "directional_effects": [
+    "BULLISH_GOLD",
+    "BEARISH_GOLD",
+    "MIXED"
+  ],
+  "hard_rules": [
+    "UNKNOWN_REMAINS_UNKNOWN_WHEN_UNSUPPORTED",
+    "PRESSURE_NE_PRICE",
+    "STOCK_NE_IMPULSE",
+    "GROSS_ACTIVITY_NE_SIGNED_FLOW",
+    "STRUCTURAL_PRIOR_NE_CURRENT_IMPULSE",
+    "PREVIOUS_FETCH_NE_PREVIOUS_ECONOMIC_STATE",
+    "NO_OUTSIDE_EVIDENCE",
+    "NO_FAKE_PRECISION",
+    "NO_TRADE_AUTHORITY"
+  ]
+}

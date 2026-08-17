@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P06",
+  "version": "3.6.0-governed-semantic-intelligence",
+  "default_mode": "AUTO_GOVERNED_IF_HOST_AVAILABLE",
+  "explicit_modes": [
+    "AUTO_GOVERNED",
+    "CONSERVATIVE_EVIDENCE_ONLY",
+    "REPLAY_VALIDATED_BUNDLE",
+    "EXTERNAL_VALIDATED_BUNDLE"
+  ],
+  "fallback_mode": "CONSERVATIVE_EVIDENCE_ONLY",
+  "p03_final_authority": "EXCLUSIVE",
+  "model_final_direction_authority": false,
+  "model_trade_action_authority": false,
+  "outside_evidence_authority": false,
+  "web_search_authority": false,
+  "conversation_memory_authority": false,
+  "automatic_promotion_forbidden": true,
+  "host_binding": "PRODUCTION_COMMAND",
+  "model_profile": "GOVERNANCE",
+  "process_id": "AD_V3_P06_GOVERNED_SEMANTIC_ADJUDICATION",
+  "prompt_path": "prompts/governed_semantic_system.md",
+  "prompt_version": "P06_SEMANTIC_PROMPT_1.0.0",
+  "request_schema": "schemas/semantic_request.schema.json",
+  "response_schema": "schemas/semantic_model_response.schema.json",
+  "bundle_schema": "schemas/semantic_bundle.schema.json",
+  "retry_limit": 1,
+  "cache_enabled": true,
+  "cache_policy": "CONTENT_ADDRESSED_EXACT_FINGERPRINT_ONLY"
+}

@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P06 Semantic Request Packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_type",
+    "schema_version",
+    "packet_id",
+    "subject",
+    "horizon",
+    "source_semantic_packet_id",
+    "items"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P06_SEMANTIC_REQUEST_PACKET"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "packet_id": {
+      "type": "string"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "horizon": {
+      "type": "string"
+    },
+    "source_semantic_packet_id": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request_id",
+          "fact_id",
+          "observation_id",
+          "causal_root",
+          "pressure_plane",
+          "horizon",
+          "allowed_evidence_ids",
+          "evidence",
+          "authority",
+          "constraints"
+        ],
+        "properties": {
+          "request_id": {
+            "type": "string"
+          },
+          "fact_id": {
+            "type": "string"
+          },
+          "observation_id": {
+            "type": "string"
+          },
+          "causal_root": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pressure_plane": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "horizon": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          },
+          "allowed_evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "evidence_id",
+                "fact_id",
+                "relation",
+                "observation"
+              ],
+              "properties": {
+                "evidence_id": {
+                  "type": "string"
+                },
+                "fact_id": {
+                  "type": "string"
+                },
+                "relation": {
+                  "type": "string"
+                },
+                "observation": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "authority": {
+            "type": "object"
+          },
+          "constraints": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

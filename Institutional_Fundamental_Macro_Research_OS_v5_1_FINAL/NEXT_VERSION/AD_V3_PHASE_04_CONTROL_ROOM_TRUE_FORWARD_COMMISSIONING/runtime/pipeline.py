@@ -2,7 +2,7 @@ from __future__ import annotations
 import subprocess, sys, json, shutil, time
 from pathlib import Path
 from .common import load_json, write_json, stable_id, iso
-from .semantic_runtime import load_or_build
+from AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE.runtime.semantic_runtime import run_semantics
 from .promotion import load_state as load_promotion
 from .permission import evaluate as permission_eval
 from .commissioning import build_precommit, update as update_commissioning
@@ -204,9 +204,12 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
     _progress(f"      semantic requests: {packet.get('item_count', len(packet.get('items') or []))}")
 
     _progress('[4/7] Governed semantic adjudication')
-    bundle = load_or_build(packet, semantic_bundle_path)
+    semantic_run = run_semantics(repo, packet, external_bundle_path=semantic_bundle_path, artifact_dir=rd)
+    bundle = semantic_run['bundle']
+    sem_receipt = semantic_run['validation_receipt']
     write_json(rd / 'semantic_adjudication_bundle.json', bundle)
     _progress(f"      semantic mode: {bundle.get('adjudication_mode', 'GOVERNED_BUNDLE')}")
+    _progress(f"      semantic validation: {sem_receipt.get('validated_count',0)} validated | {sem_receipt.get('unknown_count',0)} unknown | {sem_receipt.get('rejected_count',0)} rejected | {sem_receipt.get('fallback_count',0)} fallback")
 
     _progress('[5/7] P03 causal brain - final')
     _, final = _run_json(
@@ -253,6 +256,10 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
         (rd / 'precommit.json', 'latest_precommit.json'),
         (rd / 'p03_final.json', 'latest_p03_final.json'),
         (rd / 'semantic_evidence_packet.json', 'latest_semantic_evidence_packet.json'),
+        (rd / 'semantic_request_packet.json', 'latest_semantic_request_packet.json'),
+        (rd / 'semantic_validation_receipt.json', 'latest_semantic_validation_receipt.json'),
+        (rd / 'semantic_validated_bundle.json', 'latest_semantic_validated_bundle.json'),
+        (rd / 'semantic_run_capsule.json', 'latest_semantic_run_capsule.json'),
     ]:
         shutil.copy2(src, latest_dir / name)
 
@@ -268,6 +275,16 @@ def run(repo_root, horizon='SESSION_1_6H', skip_p02=False, semantic_bundle_path=
         'research_action_candidate': permission.get('research_action_candidate'),
         'official_permission': permission.get('official_permission'),
         'semantic_mode': bundle.get('adjudication_mode', 'GOVERNED_BUNDLE'),
+        'semantic_validation_status': sem_receipt.get('status'),
+        'semantic_request_count': sem_receipt.get('request_count',0),
+        'semantic_validated_count': sem_receipt.get('validated_count',0),
+        'semantic_unknown_count': sem_receipt.get('unknown_count',0),
+        'semantic_rejected_count': sem_receipt.get('rejected_count',0),
+        'semantic_fallback_count': sem_receipt.get('fallback_count',0),
+        'semantic_model_host_state': (bundle.get('p06_semantic') or {}).get('model_host_state'),
+        'semantic_prompt_version': (bundle.get('p06_semantic') or {}).get('prompt_version'),
+        'semantic_prompt_sha256': (bundle.get('p06_semantic') or {}).get('prompt_sha256'),
+        'semantic_capsule_id': (bundle.get('p06_semantic') or {}).get('capsule_id'),
         'control_room': str(rd / 'control_room.html'),
         'capsule_id': cap.get('capsule_id'),
         'production_authority': promotion.get('state') == 'PRODUCTION_V3',

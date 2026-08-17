@@ -1,0 +1,70 @@
+{
+  "phase": "AD-V3-P06",
+  "purpose": "Mandatory governed-semantic adversarial acceptance matrix consumed by run_phase06_acceptance.py.",
+  "attacks": [
+    {
+      "id": "INVENTED_EVIDENCE",
+      "expected": "REJECT_TO_UNKNOWN"
+    },
+    {
+      "id": "CROSS_REQUEST_EVIDENCE_LEAKAGE",
+      "expected": "REJECT_REQUEST"
+    },
+    {
+      "id": "INVENTED_FACT",
+      "expected": "REJECT"
+    },
+    {
+      "id": "INVENTED_CAUSAL_ROOT",
+      "expected": "REJECT"
+    },
+    {
+      "id": "PROMPT_INJECTION_FORBIDDEN_ACTION",
+      "expected": "NO_AUTHORITY_ESCALATION"
+    },
+    {
+      "id": "OUTSIDE_KNOWLEDGE_AUTHORITY",
+      "expected": "REJECT_TO_UNKNOWN"
+    },
+    {
+      "id": "PRESSURE_PRICE_REWRITE",
+      "expected": "REJECT_TO_UNKNOWN"
+    },
+    {
+      "id": "GROSS_ACTIVITY_SIGNED_FLOW",
+      "expected": "REJECT_TO_UNKNOWN"
+    },
+    {
+      "id": "STOCK_IMPULSE_CONFUSION",
+      "expected": "REJECT_TO_UNKNOWN"
+    },
+    {
+      "id": "STRUCTURAL_PRIOR_CURRENT_IMPULSE",
+      "expected": "REJECT_TO_UNKNOWN"
+    },
+    {
+      "id": "MISSING_EVIDENCE",
+      "expected": "UNKNOWN_NONADDITIVE"
+    },
+    {
+      "id": "CONTRADICTORY_EVIDENCE",
+      "expected": "PRESERVE_CONTRADICTION"
+    },
+    {
+      "id": "STALE_AUTHORITY_UPGRADE",
+      "expected": "REJECT_TO_UNKNOWN"
+    },
+    {
+      "id": "FAKE_PRECISION_FIELD",
+      "expected": "SCHEMA_REJECT"
+    },
+    {
+      "id": "FORBIDDEN_TRADE_ACTION",
+      "expected": "SCHEMA_REJECT"
+    },
+    {
+      "id": "SEMANTIC_DOUBLE_COUNT",
+      "expected": "P03_ROOT_DEDUP_PRESERVED"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "phase": "AD-V3-P06",
+  "purpose": "Prove P06 does not mutate the substantive Gold science surface approved at P05. File population is inherited from P05 PRE_P05_SCIENCE_HASHES.json.",
+  "compared_to": "AD-V3-P05/baseline/PRE_P05_SCIENCE_HASHES.json",
+  "files": {
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/gold_master_fact_registry.json": {
+      "sha256": "c0c83c5789329cfb6a8770d6c7908c0b9d101ad725160ebcb1652d8a98b1baba",
+      "size": 174283
+    },
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/causal_ontology.json": {
+      "sha256": "4f3172266a4d4b95616fbd62e0532246af0efb1cfc6731433bd0ef0bac5a21bf",
+      "size": 4290
+    },
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/scientific_constitution.json": {
+      "sha256": "f1dd47a5fe96cd2d2fe84099c51978e0ca99d5745f03e21fca2b7d924c92c2f0",
+      "size": 7357
+    },
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/config/source_contract_registry.json": {
+      "sha256": "f7200063a8ed4158c4473f131f05cd913d256414b8e468c502c2c563d65d97d9",
+      "size": 60615
+    },
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/config/fact_acquisition_registry.json": {
+      "sha256": "f7660e4f9e892394e3cb2e388b9f6f0085630c33eccb6240ebd8e0fca6cec7f4",
+      "size": 255183
+    },
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/config/acquisition_policy.json": {
+      "sha256": "1cb432faf08afc2210dda5e64c2496c3bb236d6dfad6deb31955240e3eb9588c",
+      "size": 1245
+    },
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/fact_reasoning_registry.json": {
+      "sha256": "24b5f7183fc43477cc69914171ca1cb742e3ca87e96f8ae93b3c3a75f9df4dec",
+      "size": 152701
+    },
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/effect_rule_registry.json": {
+      "sha256": "55c84afded44a984b0f5ec9b56f4ba137378b0a5322a89a5da6868eb4a4ea48a",
+      "size": 2543
+    },
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/causal_brain_policy.json": {
+      "sha256": "b3e722c6bc39e262b428d7dddd3ca185c5203a7065f550bdd223edd3ff38a7c4",
+      "size": 2392
+    },
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/decision_policy.json": {
+      "sha256": "1778852e3a97605ce57a52a2114f2fec9f9d15a5b9d15c988bd927026226fac8",
+      "size": 988
+    },
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/pressure_plane_policy.json": {
+      "sha256": "45b258f248a633e47185a29c586a997f21fd6c56f6a4ada7dbf083638e0ac038",
+      "size": 1545
+    },
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/semantic_adjudication_policy.json": {
+      "sha256": "097dfc66cc43cac3bd7c9f9ef2a8d8cfbe1d11d9dfe0fd7ed34f559c388fc962",
+      "size": 2130
+    }
+  }
+}

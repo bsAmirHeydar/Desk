@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P06 Validated P03-Compatible Semantic Bundle",
+  "type": "object",
+  "required": [
+    "record_type",
+    "subject",
+    "items",
+    "adjudication_mode",
+    "governance_status",
+    "p06_semantic"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P03_SEMANTIC_ADJUDICATION_BUNDLE"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "items": {
+      "type": "array"
+    },
+    "adjudication_mode": {
+      "type": "string"
+    },
+    "governance_status": {
+      "type": "string"
+    },
+    "p06_semantic": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "record_type": "AD_V3_P03_SEMANTIC_EVIDENCE_PACKET",
+  "packet_id": "P06_SMOKE_PACKET",
+  "phase": "AD-V3-P03",
+  "subject": "XAUUSD",
+  "horizon": "SESSION_1_6H",
+  "item_count": 1,
+  "items": [
+    {
+      "fact_id": "FOMC_POLICY_STANCE",
+      "requested_observation_id": "P06_SMOKE_FOMC_OBS",
+      "role": "CAUSAL_ROOT_STATE",
+      "pressure_plane": "CAUSAL_FUNDAMENTAL",
+      "causal_root_family": "US_POLICY_EXPECTATIONS",
+      "current_reasoning_horizon": "SESSION_1_6H",
+      "horizon_active": true,
+      "active_horizons": [
+        "SESSION_1_6H"
+      ],
+      "authority_scope": "CAUSAL_CURRENT_HORIZON",
+      "may_add_to_current_causal_direction": true,
+      "current_observation": {
+        "observation_id": "P06_SMOKE_FOMC_OBS",
+        "fact_id": "FOMC_POLICY_STANCE",
+        "epistemic_state": "OBSERVED_CURRENT",
+        "directness": "DIRECT",
+        "value_type": "TEXT",
+        "value": "The supplied fixture says the policy statement explicitly shifted toward easier policy relative to the prior economic statement.",
+        "event_time": "2026-08-17T12:00:00Z",
+        "published_at": "2026-08-17T12:00:00Z",
+        "warnings": []
+      },
+      "previous_fetch_observation": null,
+      "previous_economic_observation": null,
+      "dependency_evidence": [],
+      "evidence_diagnostics": {
+        "economic_anchor_status": "EXPLICIT_EVENT_EVIDENCE",
+        "economic_comparison_available": false,
+        "dependency_current_observations_complete": true,
+        "dependency_exact_acquisition_run_complete": true
+      },
+      "required_semantic_output": [
+        "effect_on_gold",
+        "effect_kind",
+        "strength",
+        "is_additive",
+        "causal_owner_id",
+        "rationale_summary"
+      ],
+      "hard_guards": {
+        "price_is_not_causal_pressure": false,
+        "positioning_is_not_direction": false,
+        "structural_carry_has_no_session_direction_authority": false,
+        "previous_fetch_is_not_previous_economic_state": true,
+        "neutral_or_impulse_claim_requires_economic_or_explicit_event_evidence": true
+      }
+    }
+  ]
+}

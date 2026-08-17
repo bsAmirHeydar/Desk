@@ -53,6 +53,11 @@
       "commit": false
     },
     {
+      "kind": "semantic_model_runs",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false
+    },
+    {
       "kind": "canonical_configs",
       "class": "AUTHORITATIVE_SOURCE",
       "commit": true
@@ -64,7 +69,8 @@
     "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_02_TOTAL_LIVE_DATA_OBSERVABILITY_FABRIC/artifacts/",
     "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/artifacts/",
     "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/artifacts/",
-    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/artifacts/"
+    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/artifacts/",
+    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/artifacts/"
   ],
   "historical_rule": "Scientific evidence is classified or archived; it is not deleted merely to make the tree look clean."
 }

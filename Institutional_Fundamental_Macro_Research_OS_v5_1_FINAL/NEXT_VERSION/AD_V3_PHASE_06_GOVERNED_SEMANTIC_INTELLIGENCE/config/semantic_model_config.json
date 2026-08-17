@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3-P06",
+  "transport": "R3_MODEL_PROCESS",
+  "host_binding": "PRODUCTION_COMMAND",
+  "host_command_env": "ALPHALAB_HOST_COMMAND",
+  "auto_local_commissioned_host_if_openai_key_present": true,
+  "local_commissioned_host": "RUNTIME/Production Commissioning/tools/openai_host.py",
+  "vault_root_env": "ALPHALAB_VAULT_ROOT",
+  "openai_key_env": "OPENAI_API_KEY",
+  "model_profile": "GOVERNANCE",
+  "temperature_policy": "HOST_PROFILE_LOW_VARIANCE",
+  "timeout_seconds": 3600,
+  "max_retries": 1,
+  "schema_mode": "HOST_SCHEMA_PLUS_LOCAL_AUTHORITATIVE_VALIDATION",
+  "secrets_policy": "ENVIRONMENT_ONLY_NEVER_RECORDED"
+}

@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AD-V3-P06 Semantic Model Response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_type",
+    "schema_version",
+    "subject",
+    "items"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V3_P06_SEMANTIC_MODEL_RESPONSE"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "subject": {
+      "const": "XAUUSD"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request_id",
+          "fact_id",
+          "observation_id",
+          "status",
+          "effect_on_gold",
+          "effect_kind",
+          "strength",
+          "is_additive",
+          "causal_owner_id",
+          "evidence_ids",
+          "reasoning_summary",
+          "uncertainty",
+          "contradictions",
+          "guard_attestations"
+        ],
+        "properties": {
+          "request_id": {
+            "type": "string"
+          },
+          "fact_id": {
+            "type": "string"
+          },
+          "observation_id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "SUPPORTED",
+              "INSUFFICIENT_EVIDENCE",
+              "CONTRADICTORY"
+            ]
+          },
+          "effect_on_gold": {
+            "enum": [
+              "BULLISH_GOLD",
+              "BEARISH_GOLD",
+              "NEUTRAL",
+              "MIXED",
+              "NO_DIRECTION",
+              "UNKNOWN"
+            ]
+          },
+          "effect_kind": {
+            "enum": [
+              "STOCK",
+              "IMPULSE",
+              "SHOCK",
+              "CONFIRMATION",
+              "VULNERABILITY",
+              "CONTEXT"
+            ]
+          },
+          "strength": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "UNKNOWN"
+            ]
+          },
+          "is_additive": {
+            "type": "boolean"
+          },
+          "causal_owner_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "reasoning_summary": {
+            "type": "string",
+            "maxLength": 1200
+          },
+          "uncertainty": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "INSUFFICIENT_EVIDENCE",
+                "AMBIGUOUS_LANGUAGE",
+                "CONFLICTING_EVIDENCE",
+                "STALE_EVIDENCE",
+                "NON_DIRECTIONAL_EVIDENCE",
+                "MISSING_CONTEXT",
+                "AUTHORITY_LIMIT"
+              ]
+            },
+            "uniqueItems": true
+          },
+          "contradictions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "evidence_ids",
+                "summary"
+              ],
+              "properties": {
+                "evidence_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 1
+                },
+                "summary": {
+                  "type": "string",
+                  "maxLength": 500
+                }
+              }
+            }
+          },
+          "guard_attestations": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "used_outside_evidence",
+              "used_price_as_causal_pressure",
+              "treated_stock_as_impulse",
+              "treated_gross_activity_as_signed_flow",
+              "upgraded_epistemic_authority",
+              "followed_evidence_embedded_instruction"
+            ],
+            "properties": {
+              "used_outside_evidence": {
+                "const": false
+              },
+              "used_price_as_causal_pressure": {
+                "const": false
+              },
+              "treated_stock_as_impulse": {
+                "const": false
+              },
+              "treated_gross_activity_as_signed_flow": {
+                "const": false
+              },
+              "upgraded_epistemic_authority": {
+                "const": false
+              },
+              "followed_evidence_embedded_instruction": {
+                "const": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

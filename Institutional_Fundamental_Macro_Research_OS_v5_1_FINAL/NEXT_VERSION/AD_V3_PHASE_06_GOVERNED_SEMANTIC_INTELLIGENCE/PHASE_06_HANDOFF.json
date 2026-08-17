@@ -1,0 +1,81 @@
+{
+  "phase": "AD-V3-P06",
+  "version": "3.6.0-governed-semantic-intelligence",
+  "p06_status": "PASS",
+  "implementation_status": "P06_IMPLEMENTATION_PASS",
+  "live_model_commissioned": false,
+  "prerequisite_regression": {
+    "P01": {
+      "status": "PASS",
+      "check_count": 41
+    },
+    "P02": {
+      "status": "PASS",
+      "check_count": 57
+    },
+    "P03": {
+      "status": "PASS",
+      "check_count": 70
+    },
+    "P04": {
+      "status": "PASS",
+      "check_count": 27
+    },
+    "P05": {
+      "status": "PASS",
+      "check_count": 20
+    },
+    "P06": {
+      "status": "PASS",
+      "check_count": 41
+    }
+  },
+  "semantic_population": {
+    "canonical_semantic_facts": 21,
+    "session_1_6h_semantic_facts": 11,
+    "governable_p03_request_contracts": 41,
+    "integration_fixture_requests": 31,
+    "governance_coverage": "100_PERCENT"
+  },
+  "semantic_prompt": {
+    "version": "1.0.0",
+    "sha256": "63f297e88bed452106e019095ce322be3a451793c05aee77c0bbd09e07ad853e"
+  },
+  "model_host": {
+    "configured": false,
+    "binding": "PRODUCTION_COMMAND",
+    "adapter": "COMMAND",
+    "command_env": "ALPHALAB_HOST_COMMAND",
+    "command_env_set": false,
+    "auto_local_commissioned_host": false,
+    "openai_key_present": false,
+    "model_profile": "GOVERNANCE",
+    "model": "gpt-5.6-sol",
+    "outside_evidence_authority": false,
+    "web_search_authority": false
+  },
+  "live_semantic_smoke": "NOT_RUN_MODEL_HOST_UNAVAILABLE",
+  "integrity": {
+    "architecture_drift_count": 0,
+    "freeze_conflict_count": 0,
+    "metadata_drift_count": 0,
+    "command_contract_drift_count": 0,
+    "promotion_governance_drift_count": 0,
+    "substantive_gold_science_drift_count": 0,
+    "causal_root_drift_count": 0,
+    "pressure_plane_drift_count": 0,
+    "decision_authority_drift_count": 0
+  },
+  "semantic_modes": [
+    "AUTO_GOVERNED",
+    "CONSERVATIVE_EVIDENCE_ONLY",
+    "REPLAY_VALIDATED_BUNDLE",
+    "EXTERNAL_VALIDATED_BUNDLE"
+  ],
+  "deployment": "SHADOW_COMMISSIONING",
+  "production_promotion_performed": false,
+  "run_gold_route": "V2 while V3 is not PRODUCTION_V3",
+  "commission_gold_route": "V3 shadow commissioning with P06 governed semantics when host is healthy; explicit conservative fallback otherwise",
+  "trade_execution_authority": "NONE",
+  "next_phase": "AD-V3-P07_LIVE_INTRADAY_GOLD_DATA_KERNEL"
+}
