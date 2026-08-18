@@ -10,7 +10,8 @@ from AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING.runtime.control_room
 
 def load(p):return json.loads(pathlib.Path(p).read_text(encoding='utf-8-sig'))
 def ck(n,o,d=None):return {'name':n,'status':'PASS' if o else 'FAIL','detail':d}
-def root(rid,d,mag='MATERIAL',imp='PRIMARY',fresh='FRESH_FOR_HORIZON',q='HIGH',pers='NEW',sem=0):return {'root_id':rid,'direction':d,'causal_importance':imp,'magnitude':mag,'freshness':fresh,'evidence_quality':q,'persistence':pers,'semantic_unknown_count':sem,'empirical_information_state':'UNAVAILABLE'}
+def root(rid,d,mag='MATERIAL',imp='PRIMARY',fresh='FRESH_FOR_HORIZON',q='HIGH',pers='NEW',sem=0,health='HEALTHY'):
+ return {'root_id':rid,'direction':d,'causal_importance':imp,'magnitude':mag,'freshness':fresh,'evidence_quality':q,'persistence':pers,'semantic_unknown_count':sem,'empirical_information_state':'UNAVAILABLE','root_health':{'state':health,'critical_evidence_present':health!='CRITICAL_GAP','valid_share':1.0 if health=='HEALTHY' else 0.5}}
 def fake_p03(direction='BULLISH_GOLD',roots=None,trans='ALIGNED',missing='LOW',cons=None):
  roots=roots or [{'root_id':'US_POLICY_EXPECTATIONS','direction':direction,'strength':'HIGH','evidence_fact_ids':['FED_POLICY_PATH_PRICING'],'background_bias':'UNKNOWN'}]
  rows=[]
@@ -26,9 +27,9 @@ def main():
  # Root-level dominance attacks (fact count absent from vectors).
  a=[root('R1','BULLISH_GOLD','MINOR','SECONDARY','CONTEXT_VALID'),root('R2','BULLISH_GOLD','MINOR','SECONDARY','CONTEXT_VALID'),root('R3','BULLISH_GOLD','MINOR','SECONDARY','CONTEXT_VALID'),root('R4','BEARISH_GOLD','LARGE','PRIMARY','FRESH_FOR_HORIZON')]
  d=reconcile(a);checks.append(ck('weak many cannot beat one fresh high-importance large opposing root',d['causal_direction']=='BEARISH_GOLD',d))
- b=[root('FED','BULLISH_GOLD','LARGE'),root('USD','BEARISH_GOLD','LARGE')];d2=reconcile(b);checks.append(ck('opposing primary material roots produce true mixed conflict',d2['causal_direction']=='MIXED' and d2['contradiction']=='PRIMARY_ROOT_CONFLICT',d2))
+ b=[root('FED','BULLISH_GOLD','LARGE'),root('USD','BEARISH_GOLD','LARGE')];d2=reconcile(b);checks.append(ck('opposing primary material healthy roots produce true mixed conflict',d2['causal_direction']=='MIXED' and d2['contradiction'] in ('PRIMARY_ROOT_CONFLICT','BALANCED_CONFLICT'),d2))
  five=[root('ONE_ROOT','BULLISH_GOLD','LARGE')];d3=reconcile(five);checks.append(ck('single root can dominate without fact-count breadth inflation',d3['causal_direction']=='BULLISH_GOLD' and d3['breadth']=='NARROW',d3))
- checks.append(ck('authority vector contains no raw fact count',all(len(x.get('authority_rank_tuple',[]))==5 for x in a+five)))
+ checks.append(ck('authority vector contains no raw fact count',all(len(x.get('authority_rank_tuple',[]))==6 for x in a+five)))
  # Full runtime scenarios using actual P03-compatible facts.
  r=calibrate(fake_p03(),kernel(),promotion_state={'state':'SHADOW_COMMISSIONING'});checks.append(ck('P08 cannot invent causal direction',r['causal_direction']=='BULLISH_GOLD' and r['raw_p03_causal_direction']=='BULLISH_GOLD',r))
  checks.append(ck('decision dimensions machine readable',all(k in r for k in ['pressure_strength','dominance_state','breadth','fragility','contradiction','consumption','edge_state','permission_candidate'])))
@@ -42,15 +43,15 @@ def main():
  # locate real-rate root explicitly because P03-compatible fake state contains only supplied root states.
  rs=next(x for x in fs if x['root_id']=='REAL_RATE_OPPORTUNITY_COST'); rt=next(x for x in ft if x['root_id']=='REAL_RATE_OPPORTUNITY_COST')
  checks[-1]=ck('causal importance is horizon-aware',rs['causal_importance']=='PRIMARY' and rt['causal_importance'] in ('SECONDARY','BACKGROUND','CONDITIONAL'),{'session':rs['causal_importance'],'structural':rt['causal_importance']})
- checks.append(ck('freshness authority inherited from P07',rs['freshness'] in ('FRESH_FOR_HORIZON','FRESH_LIVE','CONTEXT_VALID'),rs))
- checks.append(ck('single-root strong state can coexist with fragility',r['pressure_strength'] in ('STRONG','DOMINANT') and r['breadth']=='NARROW' and r['fragility'] in ('ELEVATED','HIGH'),r))
+ checks.append(ck('freshness authority inherited from P07 without inventing observation freshness',rs['freshness'] in ('UNKNOWN','FRESH_FOR_HORIZON','FRESH_LIVE','CONTEXT_VALID'),rs))
+ checks.append(ck('unsupported magnitude remains unknown and single-root concentration remains fragile',r['dominant_root_magnitude']=='UNKNOWN' and r['breadth']=='NARROW' and r['fragility'] in ('ELEVATED','HIGH') and r['permission_candidate']=='WAIT',r))
  structural=[{'root_id':'OFFICIAL_SECTOR_DEMAND','direction':'BULLISH_GOLD','strength':'HIGH','evidence_fact_ids':['CENTRAL_BANK_NET_GOLD_PURCHASES'],'background_bias':'BULLISH_GOLD'}]; st=calibrate(fake_p03(roots=structural),kernel(),promotion_state={'state':'SHADOW_COMMISSIONING'})
  checks.append(ck('structural context cannot masquerade as dominant current session impulse',st['pressure_strength'] not in ('DOMINANT','STRONG') and st['permission_candidate']=='WAIT',st))
  highcons={'information_absorption':'PRESENT','expectations_repricing':'PRESENT','flow_propagation':'PRESENT','position_adjustment':'PRESENT','narrative_saturation':'ABSENT'};hc=calibrate(fake_p03(cons=highcons),kernel(),promotion_state={'state':'SHADOW_COMMISSIONING'});checks.append(ck('high consumption preserves pressure but caps permission',hc['causal_direction']=='BULLISH_GOLD' and hc['consumption'] in ('HIGH','EXHAUSTED') and hc['permission_candidate']=='WAIT',hc))
  neg=calibrate(fake_p03(trans='NEGATIVE'),kernel(),promotion_state={'state':'SHADOW_COMMISSIONING'});checks.append(ck('price against pressure cannot rewrite causal direction',neg['causal_direction']=='BULLISH_GOLD' and neg['edge_state']!='ACTIONABLE_EDGE',neg))
  gap=calibrate(fake_p03(),kernel(['DXY_INDEX']),promotion_state={'state':'SHADOW_COMMISSIONING'});checks.append(ck('critical live gap caps edge and permission',gap['edge_state']!='ACTIONABLE_EDGE' and gap['permission_candidate']=='WAIT',gap))
- stale_kernel=kernel(); stale_kernel['kernel_health']['live_kernel_unfresh_fact_ids']=['FED_POLICY_PATH_PRICING']; stale=calibrate(fake_p03(),stale_kernel,promotion_state={'state':'SHADOW_COMMISSIONING'})
- checks.append(ck('stale large move keeps magnitude but caps current authority',next(x for x in stale['calibrated_roots'] if x['root_id']=='US_POLICY_EXPECTATIONS')['magnitude']=='LARGE' and stale['edge_state']!='ACTIONABLE_EDGE',stale))
+ stale_kernel=kernel(); stale_kernel['kernel_health']['live_kernel_unfresh_fact_ids']=['FED_POLICY_PATH_PRICING']; stale_p03=fake_p03(); stale_p03['reasoning_ledger']['rows'][0]['details']={'near_curve_change':0.15}; stale=calibrate(stale_p03,stale_kernel,promotion_state={'state':'SHADOW_COMMISSIONING'})
+ checks.append(ck('stale genuinely large move keeps magnitude but caps current authority',next(x for x in stale['calibrated_roots'] if x['root_id']=='US_POLICY_EXPECTATIONS')['magnitude'] in ('LARGE','EXTREME') and stale['edge_state']!='ACTIONABLE_EDGE',stale))
  semroots=[{'root_id':'US_POLICY_EXPECTATIONS','direction':'BULLISH_GOLD','strength':'HIGH','evidence_fact_ids':['FED_POLICY_PATH_PRICING'],'background_bias':'UNKNOWN'}];sp=fake_p03(roots=semroots);sp['reasoning_ledger']['rows'].append({'fact_id':'FOMC_POLICY_STANCE','observation_id':'S','causal_root_family':'US_POLICY_EXPECTATIONS','resolution':'SEMANTICALLY_ADJUDICATED','reason_code':'SEMANTIC_ADJUDICATION_REQUIRED','effect_on_gold':'UNKNOWN','strength':'UNKNOWN','details':{},'horizon_active':True});sr=calibrate(sp,kernel(),promotion_state={'state':'SHADOW_COMMISSIONING'});checks.append(ck('semantic UNKNOWN/rejected caps authority',sr['fragility'] in ('ELEVATED','HIGH') and sr['edge_state']!='ACTIONABLE_EDGE' and sr['permission_candidate']=='WAIT',sr))
  # Persistence does not inflate on repeated same economic fingerprint.
  first=calibrate(fake_p03(),kernel(),promotion_state={'state':'SHADOW_COMMISSIONING'});second=calibrate(fake_p03(),kernel(),previous=first,promotion_state={'state':'SHADOW_COMMISSIONING'});pr=next(x for x in second['calibrated_roots'] if x['root_id']=='US_POLICY_EXPECTATIONS');checks.append(ck('repeated identical economic observation is persistence not reinforcement',pr['persistence']=='PERSISTENT',pr))
@@ -102,5 +103,5 @@ def main():
    if own.get('class')=='GOVERNANCE_VERSIONED' and str(own.get('owner','')).startswith('AD-V3-P09'):governed.append(name)
    else:drift.append(name)
  checks.append(ck('substantive Gold and upstream authority drift zero',not drift,{'science_drift':drift,'accepted_downstream_governance':governed}))
- ok=all(x['status']=='PASS' for x in checks);out={'phase':'AD-V3-P08','version':'3.8.0-decision-science-calibration','acceptance_status':'PASS' if ok else 'FAIL_CLOSED','check_count':len(checks),'checks':checks,'historical_calibration_sample_state':'UNAVAILABLE','historical_episode_count_in_supplied_repository':0,'production_promotion_performed':False,'v3_state':'SHADOW_COMMISSIONING','trade_execution_authority':'NONE'};print(json.dumps(out,indent=2,ensure_ascii=False));return 0 if ok else 2
+ ok=all(x['status']=='PASS' for x in checks);out={'phase':'AD-V3-P08','version':'3.8.1-r02-decision-science-2','acceptance_status':'PASS' if ok else 'FAIL_CLOSED','check_count':len(checks),'checks':checks,'historical_calibration_sample_state':'UNAVAILABLE','historical_episode_count_in_supplied_repository':0,'production_promotion_performed':False,'v3_state':'SHADOW_COMMISSIONING','trade_execution_authority':'NONE'};print(json.dumps(out,indent=2,ensure_ascii=False));return 0 if ok else 2
 if __name__=='__main__':raise SystemExit(main())

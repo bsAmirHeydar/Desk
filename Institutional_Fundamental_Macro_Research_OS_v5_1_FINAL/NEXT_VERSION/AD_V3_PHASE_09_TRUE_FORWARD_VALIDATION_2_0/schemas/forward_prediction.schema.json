@@ -11,5 +11,25 @@
     "maturity_time",
     "immutable_precommit"
   ],
-  "additionalProperties": true
+  "additionalProperties": true,
+  "properties": {
+    "decision_science_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dominance_robustness": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_sensitivity": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
 }

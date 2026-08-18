@@ -1,0 +1,106 @@
+{
+  "record_type": "AD_V31_R02_DECISION_SCIENCE_FREEZE",
+  "schema_version": "1.0.0",
+  "version": "3.1.2-decision-science-2",
+  "surfaces": [
+    {
+      "path": "config/magnitude_method_registry.json",
+      "sha256": "846db7fd22ec24d1809b3810d05aab16883c9bdb88e6f7d04bc18260c8174685"
+    },
+    {
+      "path": "config/magnitude_threshold_policy.json",
+      "sha256": "12d07e4e8a9779e8d38a1c32abe75693afbf4f133e9b314a2f0f998824a36957"
+    },
+    {
+      "path": "config/historical_normalization_policy.json",
+      "sha256": "d905ef6d677e118a69679bb971bdef0842b7dc37c40daac359f6f0cc8f67fd3b"
+    },
+    {
+      "path": "config/root_health_policy.json",
+      "sha256": "7faf55a28c5c73fbec9cafc71194007aaf69edfc27b4cd7acf3e154f96e1e191"
+    },
+    {
+      "path": "config/root_critical_evidence_registry.json",
+      "sha256": "daa479b8af1135a6b3e65727a6834ff6be6d8d931b9e7b3de2385ddf5f695fef"
+    },
+    {
+      "path": "config/causal_importance_matrix.json",
+      "sha256": "5d344ef6fbc8148391f0e3875a512ce613da8afeb03431c47677e9b292f5769d"
+    },
+    {
+      "path": "config/regime_importance_policy.json",
+      "sha256": "d59e6cb843fe74ec79b449d8859ff626675900998d985d42233c34503928658c"
+    },
+    {
+      "path": "config/dominance_robustness_policy.json",
+      "sha256": "d4172ddd94389b20a1fa5af696a5e9bddd0e97a1bfc7e3a417dd56f2159b75f8"
+    },
+    {
+      "path": "config/decision_science_2_policy.json",
+      "sha256": "e46ac0c10edf9493f57a51556c4aea7498d47b3548e601f1ea3b28ae0f8a0e9f"
+    },
+    {
+      "path": "runtime/historical_normalizer.py",
+      "sha256": "53f2b08214aeb6a11759949f0ca079ab3dee10f1a378e5b255ad805f37ed7ef1"
+    },
+    {
+      "path": "runtime/magnitude_engine.py",
+      "sha256": "6bf0ad3f2d0d559df9b51d65e8116a3a0ca666f55724e4b796899f1f885a8c9c"
+    },
+    {
+      "path": "runtime/root_health_engine.py",
+      "sha256": "7bab2dfa6bd8bc01a739251aed853943b9f3516361cfb7b5e8d49ca53898f56f"
+    },
+    {
+      "path": "runtime/causal_importance_engine.py",
+      "sha256": "3cd90faf1db6679ccc9b466575abb2d83d21cd3b6d225ccab37a710fde18b361"
+    },
+    {
+      "path": "runtime/robust_dominance_engine.py",
+      "sha256": "724ab463dd3193984905f29f6f61a9af5eae5770dfc1cb5049df5ef49d7efce3"
+    },
+    {
+      "path": "runtime/sensitivity_engine.py",
+      "sha256": "5fc33d8eee6406b8d69b92ee8dcbcfaf410df0d0bea13c6308f665ad6ae53f4a"
+    },
+    {
+      "path": "runtime/decision_science_runtime.py",
+      "sha256": "31f14ca84b88c5083efffca47a0487960d8b827c6f7dd3bc0448b3eb4aa7b506"
+    },
+    {
+      "path": "../AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/decision_calibration_policy.json",
+      "sha256": "25b178a4c48a0f353bef29fc438a8a7d7172144aadb3617325a5010f3beb1eeb"
+    },
+    {
+      "path": "../AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/causal_importance_policy.json",
+      "sha256": "581e1a7afef817f5c827fb2839a3bf1539e28641991f0dff426231cf2f93d6d1"
+    },
+    {
+      "path": "../AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/dominance_policy.json",
+      "sha256": "f90a6d563421d692a9fcb4842f70870ce880ef608b31169c4236b21c44c7a9c7"
+    },
+    {
+      "path": "../AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/magnitude_policy.json",
+      "sha256": "eaf9733240e401222da8a897d874b127472e2f96e17e0c97836e1447b8a2ccbd"
+    },
+    {
+      "path": "../AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/decision_runtime.py",
+      "sha256": "de78ec26f09ef52d637eabc4db25b1f016e27287504ba6a35412a1587d885b42"
+    },
+    {
+      "path": "../AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/feature_builder.py",
+      "sha256": "0f9fbaa789ffcec74b5578fcfb5319ae13024c76df789cabb47bfaa68912ace7"
+    },
+    {
+      "path": "../AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/dominance_engine.py",
+      "sha256": "99064e46e31c3493580558a32a5e8133f294bac72856c00538fe0d72e4409bf8"
+    },
+    {
+      "path": "../AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/magnitude_calibrator.py",
+      "sha256": "25e9e3bd63991332b3ed78aa54b6e78dc699544e25dfbdb34c78a2ac4b3a743b"
+    }
+  ],
+  "decision_science_fingerprint": "R02SCI_4C0B51C18E27AED586352886E67B360A6248930F676111411F5EB9DD17413C9C",
+  "random_optimization_forbidden": true,
+  "production_qualification_requires_new_cohort": true
+}

@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R02",
+  "states": [
+    "UNKNOWN",
+    "BACKGROUND",
+    "SECONDARY",
+    "PRIMARY",
+    "SYSTEMIC"
+  ],
+  "rank": {
+    "UNKNOWN": 0,
+    "BACKGROUND": 1,
+    "SECONDARY": 2,
+    "PRIMARY": 3,
+    "SYSTEMIC": 4
+  },
+  "horizons": [
+    "MICRO_0_15M",
+    "SHORT_15_60M",
+    "SESSION_1_6H",
+    "DAILY_OPEN_TO_CLOSE",
+    "MULTI_DAY_2_10D",
+    "SWING_2_8W",
+    "CYCLICAL",
+    "STRUCTURAL"
+  ],
+  "matrix": {
+    "US_POLICY_EXPECTATIONS": {
+      "MICRO_0_15M": "PRIMARY",
+      "SHORT_15_60M": "PRIMARY",
+      "SESSION_1_6H": "PRIMARY",
+      "DAILY_OPEN_TO_CLOSE": "PRIMARY",
+      "MULTI_DAY_2_10D": "PRIMARY",
+      "SWING_2_8W": "SECONDARY",
+      "CYCLICAL": "SECONDARY",
+      "STRUCTURAL": "BACKGROUND"
+    },
+    "REAL_RATE_OPPORTUNITY_COST": {
+      "MICRO_0_15M": "PRIMARY",
+      "SHORT_15_60M": "PRIMARY",
+      "SESSION_1_6H": "PRIMARY",
+      "DAILY_OPEN_TO_CLOSE": "PRIMARY",
+      "MULTI_DAY_2_10D": "PRIMARY",
+      "SWING_2_8W": "PRIMARY",
+      "CYCLICAL": "SECONDARY",
+      "STRUCTURAL": "SECONDARY"
+    },
+    "USD_AUTONOMOUS": {
+      "MICRO_0_15M": "PRIMARY",
+      "SHORT_15_60M": "PRIMARY",
+      "SESSION_1_6H": "PRIMARY",
+      "DAILY_OPEN_TO_CLOSE": "PRIMARY",
+      "MULTI_DAY_2_10D": "SECONDARY",
+      "SWING_2_8W": "SECONDARY",
+      "CYCLICAL": "BACKGROUND",
+      "STRUCTURAL": "BACKGROUND"
+    },
+    "FISCAL_SOVEREIGN_MONETARY_CREDIBILITY": {
+      "MICRO_0_15M": "SECONDARY",
+      "SHORT_15_60M": "SECONDARY",
+      "SESSION_1_6H": "SECONDARY",
+      "DAILY_OPEN_TO_CLOSE": "PRIMARY",
+      "MULTI_DAY_2_10D": "PRIMARY",
+      "SWING_2_8W": "PRIMARY",
+      "CYCLICAL": "PRIMARY",
+      "STRUCTURAL": "PRIMARY"
+    },
+    "OFFICIAL_SECTOR_DEMAND": {
+      "MICRO_0_15M": "BACKGROUND",
+      "SHORT_15_60M": "BACKGROUND",
+      "SESSION_1_6H": "BACKGROUND",
+      "DAILY_OPEN_TO_CLOSE": "SECONDARY",
+      "MULTI_DAY_2_10D": "SECONDARY",
+      "SWING_2_8W": "PRIMARY",
+      "CYCLICAL": "PRIMARY",
+      "STRUCTURAL": "PRIMARY"
+    },
+    "PHYSICAL_REGIONAL_DEMAND_BALANCE": {
+      "MICRO_0_15M": "BACKGROUND",
+      "SHORT_15_60M": "BACKGROUND",
+      "SESSION_1_6H": "BACKGROUND",
+      "DAILY_OPEN_TO_CLOSE": "SECONDARY",
+      "MULTI_DAY_2_10D": "PRIMARY",
+      "SWING_2_8W": "PRIMARY",
+      "CYCLICAL": "PRIMARY",
+      "STRUCTURAL": "PRIMARY"
+    },
+    "PHYSICAL_SUPPLY_RECYCLING_HEDGING": {
+      "MICRO_0_15M": "BACKGROUND",
+      "SHORT_15_60M": "BACKGROUND",
+      "SESSION_1_6H": "BACKGROUND",
+      "DAILY_OPEN_TO_CLOSE": "BACKGROUND",
+      "MULTI_DAY_2_10D": "SECONDARY",
+      "SWING_2_8W": "PRIMARY",
+      "CYCLICAL": "PRIMARY",
+      "STRUCTURAL": "PRIMARY"
+    },
+    "GEOPOLITICAL_INSURANCE_RISK": {
+      "MICRO_0_15M": "SECONDARY",
+      "SHORT_15_60M": "SECONDARY",
+      "SESSION_1_6H": "SECONDARY",
+      "DAILY_OPEN_TO_CLOSE": "PRIMARY",
+      "MULTI_DAY_2_10D": "PRIMARY",
+      "SWING_2_8W": "PRIMARY",
+      "CYCLICAL": "SECONDARY",
+      "STRUCTURAL": "SECONDARY"
+    },
+    "FUNDING_COLLATERAL_STRESS": {
+      "MICRO_0_15M": "SECONDARY",
+      "SHORT_15_60M": "PRIMARY",
+      "SESSION_1_6H": "PRIMARY",
+      "DAILY_OPEN_TO_CLOSE": "PRIMARY",
+      "MULTI_DAY_2_10D": "PRIMARY",
+      "SWING_2_8W": "SECONDARY",
+      "CYCLICAL": "SECONDARY",
+      "STRUCTURAL": "BACKGROUND"
+    },
+    "GLOBAL_MONETARY_LIQUIDITY": {
+      "MICRO_0_15M": "SECONDARY",
+      "SHORT_15_60M": "SECONDARY",
+      "SESSION_1_6H": "SECONDARY",
+      "DAILY_OPEN_TO_CLOSE": "PRIMARY",
+      "MULTI_DAY_2_10D": "PRIMARY",
+      "SWING_2_8W": "PRIMARY",
+      "CYCLICAL": "PRIMARY",
+      "STRUCTURAL": "PRIMARY"
+    },
+    "INVESTMENT_ALLOCATION_DEMAND": {
+      "MICRO_0_15M": "BACKGROUND",
+      "SHORT_15_60M": "SECONDARY",
+      "SESSION_1_6H": "SECONDARY",
+      "DAILY_OPEN_TO_CLOSE": "PRIMARY",
+      "MULTI_DAY_2_10D": "PRIMARY",
+      "SWING_2_8W": "PRIMARY",
+      "CYCLICAL": "PRIMARY",
+      "STRUCTURAL": "PRIMARY"
+    },
+    "INFLATION_CREDIBILITY_HEDGE_DEMAND": {
+      "MICRO_0_15M": "BACKGROUND",
+      "SHORT_15_60M": "BACKGROUND",
+      "SESSION_1_6H": "BACKGROUND",
+      "DAILY_OPEN_TO_CLOSE": "BACKGROUND",
+      "MULTI_DAY_2_10D": "SECONDARY",
+      "SWING_2_8W": "PRIMARY",
+      "CYCLICAL": "PRIMARY",
+      "STRUCTURAL": "PRIMARY"
+    }
+  },
+  "rationale": "Root capability by horizon derived from existing P03 Gold root semantics; freshness and current magnitude are deliberately excluded from this matrix."
+}

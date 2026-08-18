@@ -1,0 +1,468 @@
+{
+  "record_type": "AD_V31_R02_PRE_AUTHORITY_HASHES",
+  "baseline_commit": "bade4df",
+  "baseline_source": "operator-confirmed local Git; build ZIP has no .git",
+  "captured_before_r02_finalization": false,
+  "files": [
+    {
+      "phase": "P01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/gold_master_fact_registry.json",
+      "sha256": "c0c83c5789329cfb6a8770d6c7908c0b9d101ad725160ebcb1652d8a98b1baba"
+    },
+    {
+      "phase": "P01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/causal_ontology.json",
+      "sha256": "4f3172266a4d4b95616fbd62e0532246af0efb1cfc6731433bd0ef0bac5a21bf"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/causal_brain_policy.json",
+      "sha256": "b3e722c6bc39e262b428d7dddd3ca185c5203a7065f550bdd223edd3ff38a7c4"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/consumption_persistence_policy.json",
+      "sha256": "078948b616224702f7cb95d94f152ec2ab2db9e7d62ae0b721d7baa5aa1f77af"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/decision_policy.json",
+      "sha256": "1778852e3a97605ce57a52a2114f2fec9f9d15a5b9d15c988bd927026226fac8"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/effect_rule_registry.json",
+      "sha256": "55c84afded44a984b0f5ec9b56f4ba137378b0a5322a89a5da6868eb4a4ea48a"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/fact_reasoning_registry.json",
+      "sha256": "24b5f7183fc43477cc69914171ca1cb742e3ca87e96f8ae93b3c3a75f9df4dec"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/model_completeness_policy.json",
+      "sha256": "6edd2ae173686285ac1a939244cd3d5e3530e8b45b6d33c8344ca708d28f7fc7"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/pressure_plane_policy.json",
+      "sha256": "45b258f248a633e47185a29c586a997f21fd6c56f6a4ada7dbf083638e0ac038"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/root_family_registry.json",
+      "sha256": "78f62b2c3088af495b8f1e0b610e2d9326508992886ca879cde2a889165bb9f9"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/root_pathway_registry.json",
+      "sha256": "9bba062b008ce88463fbd66133c76f8b561efe56f6963f89664a1cb20126194e"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/semantic_adjudication_policy.json",
+      "sha256": "097dfc66cc43cac3bd7c9f9ef2a8d8cfbe1d11d9dfe0fd7ed34f559c388fc962"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/runtime/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/runtime/common.py",
+      "sha256": "09fba5639ba0cb284d95295c1b3bc4e058bff98a3444ac0abae69069d44ca996"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/runtime/decision.py",
+      "sha256": "869e7f7578090c7d8fba51b603629ec022d58f5402c2cbafc37155760b583582"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/runtime/engine.py",
+      "sha256": "50953aed7718a1676df56dfd60e9128c950220dfb3c16775d8e4dd17b486944d"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/runtime/hypotheses.py",
+      "sha256": "0adb6f262e1639e89fe64126278b3754c2a846a3f29b8e6069be599c0d1b2b29"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/runtime/interpreter.py",
+      "sha256": "ceed2711e2c5c7c38ee2faf9111156431e1ebb4b99cd44d0345513e95f9242ba"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/runtime/lifecycle.py",
+      "sha256": "6c99f93675391c93ae5478062c57eff30fa869c13e1a86563f65e28275577024"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/runtime/loader.py",
+      "sha256": "0f76a38de7ab44d856b88d383a0d45cf4e5fc6cc005816d8b18f83d94d45d2b6"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/runtime/planes.py",
+      "sha256": "3418ce3fed802b14bd254e5aed36c1c5c8cb52170dd0803dd99298c3680d4c67"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/runtime/semantic_packet.py",
+      "sha256": "a0ff8030f0bd4f8ca8062d2a91e6f6b8103ee338713d8b88e280924e48f5fff5"
+    },
+    {
+      "phase": "P03",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/runtime/transmission.py",
+      "sha256": "7c44dec71a1264fd8b48773573cf2414d29977c2c466fbaca2f6269dfcaa764b"
+    },
+    {
+      "phase": "P06",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/config/semantic_authority_policy.json",
+      "sha256": "c6464e3103aa012b3f39c03977b9d650b9b655abe32a1c3b94154a10be981f56"
+    },
+    {
+      "phase": "P06",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/config/semantic_model_config.json",
+      "sha256": "ef9ad31eeb62983156514736754c7983e5f8c4a23c47dce508ee842d8d02932f"
+    },
+    {
+      "phase": "P06",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/config/semantic_runtime_contract.json",
+      "sha256": "cf463d11db68eb056a0dd9f6111d130fce21ce3922e0d0e649c703cfca2dc4d2"
+    },
+    {
+      "phase": "P06",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/runtime/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "phase": "P06",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/runtime/common.py",
+      "sha256": "50f20ca8848b83807ccfae60236487a4fe164173d3d02ad126bfd1272d0c5969"
+    },
+    {
+      "phase": "P06",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/runtime/semantic_bundle.py",
+      "sha256": "ca2906c7bdfe326ae09ed12cccd8c3f6da191669ecb9746e79a0bd20cf6637d7"
+    },
+    {
+      "phase": "P06",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/runtime/semantic_governor.py",
+      "sha256": "4a960431b1f21fe19857e0d640ab6fed7cc490bb139df8301fab2c5b3e9c89b9"
+    },
+    {
+      "phase": "P06",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/runtime/semantic_model_host.py",
+      "sha256": "5ea194a42d2c921d2e16975a774a5fe696f34d57c1d8d0277dda7a0eb9998f42"
+    },
+    {
+      "phase": "P06",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/runtime/semantic_request_compiler.py",
+      "sha256": "3d8d3f60bfc277c0befe3b6455c6d01d51980ab75b079086cb00190b46282e90"
+    },
+    {
+      "phase": "P06",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/runtime/semantic_runtime.py",
+      "sha256": "f44e5d93b5b4a78a20f127b1e5b05db29e7a049b2d472e9fb232cf0eb64ac580"
+    },
+    {
+      "phase": "P06",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/runtime/semantic_validator.py",
+      "sha256": "c61d2553b7645be8293c38cbe5e54f6a060588886c73663b2999ea7d9d24e568"
+    },
+    {
+      "phase": "P07",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/config/context_cache_policy.json",
+      "sha256": "57479f4fdc3e7feb283db94aeedc882872b6cc99f4373d99e5d63e001fc41daf"
+    },
+    {
+      "phase": "P07",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/config/escalation_policy.json",
+      "sha256": "c70461634a2c6785801f15f5606e2f653ecf425dfc510e3f0ea87fb78337d882"
+    },
+    {
+      "phase": "P07",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/config/freshness_authority_policy.json",
+      "sha256": "f340544be2dc1364f645a057141f4ec2ec300234bfa510b48e0cbc08013fa7ef"
+    },
+    {
+      "phase": "P07",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/config/gold_kernel_policy.json",
+      "sha256": "0627e2f81ee16c07c06c293fcf14c54915218f7ac268b17918286dce8219ad5e"
+    },
+    {
+      "phase": "P07",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/runtime/__init__.py",
+      "sha256": "7ce1fe72e3257c4ed7f846a29e30bb23e9b5c972b970b335cd8eb516a33c2589"
+    },
+    {
+      "phase": "P07",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/runtime/acquisition_planner.py",
+      "sha256": "ab72c86488ee0daa54a1c25efa90b28eb3ec4491d942b0719cd7ed0e90abf73c"
+    },
+    {
+      "phase": "P07",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/runtime/common.py",
+      "sha256": "bcb5b04f53a841b0456ebeb0fc61d7f695e639bb12231157aaca3d230c5462b4"
+    },
+    {
+      "phase": "P07",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/runtime/context_cache.py",
+      "sha256": "b01931b0b21d0470319586516891b41988bdf712376a8a29e1228a2a62456149"
+    },
+    {
+      "phase": "P07",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/runtime/escalation_planner.py",
+      "sha256": "5d5f1eaf80f5e7a50ad03f7f8ba7ee66ce7d309f0e29fb93aa71df3255ee4276"
+    },
+    {
+      "phase": "P07",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/runtime/freshness_authority.py",
+      "sha256": "ee904860a2961f91f79f7a02961a80805bddc5a9069d2f4aa468278d65829f9a"
+    },
+    {
+      "phase": "P07",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/runtime/kernel_health.py",
+      "sha256": "1e3f2a25f811663e3a671428a18afc35aac75b47169367989946de7951e075b0"
+    },
+    {
+      "phase": "P07",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/runtime/kernel_runtime.py",
+      "sha256": "e38bf308d99b6db6dff9347849c9a0c8debb477c826603c8cf31663794282e5d"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/causal_importance_policy.json",
+      "sha256": "581e1a7afef817f5c827fb2839a3bf1539e28641991f0dff426231cf2f93d6d1"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/decision_calibration_policy.json",
+      "sha256": "25b178a4c48a0f353bef29fc438a8a7d7172144aadb3617325a5010f3beb1eeb"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/dominance_policy.json",
+      "sha256": "f90a6d563421d692a9fcb4842f70870ce880ef608b31169c4236b21c44c7a9c7"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/empirical_calibration_policy.json",
+      "sha256": "d07c53ef4613106c257b56662e5a32b147402e0e8dadeb6c1c33c644c62adf56"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/magnitude_policy.json",
+      "sha256": "eaf9733240e401222da8a897d874b127472e2f96e17e0c97836e1447b8a2ccbd"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/common.py",
+      "sha256": "95230f5ee26a48c106ba22a2ec44accff5fae72ea6363693c0402b479d401e6d"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/decision_runtime.py",
+      "sha256": "de78ec26f09ef52d637eabc4db25b1f016e27287504ba6a35412a1587d885b42"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/dominance_engine.py",
+      "sha256": "99064e46e31c3493580558a32a5e8133f294bac72856c00538fe0d72e4409bf8"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/empirical_calibration.py",
+      "sha256": "51a793748455433a4e7a8a133e310445071d76ba7bc6c688f45ba149d4458709"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/episode_builder.py",
+      "sha256": "84d34baabf924e015ad95ac08493f7ed0be191ea832fa185372e53d3c5172bd1"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/feature_builder.py",
+      "sha256": "0f9fbaa789ffcec74b5578fcfb5319ae13024c76df789cabb47bfaa68912ace7"
+    },
+    {
+      "phase": "P08_PRE_R02",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/magnitude_calibrator.py",
+      "sha256": "25e9e3bd63991332b3ed78aa54b6e78dc699544e25dfbdb34c78a2ac4b3a743b"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/cohort_policy.json",
+      "sha256": "8e0ec95153b74bdb8518bd75cf1662ee4eb05e0d48795e2c9969e1290bb8828e"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/episode_policy.json",
+      "sha256": "cb8469ad4b4a9ed4939bac5fbf2972b5b73ac17bc6797ce2fdf5c5269e328b25"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/forward_validation_policy.json",
+      "sha256": "39e110c1402867976a8535d89fa78acf4a3b0e7694ff9cbe593ddaef178d314b"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/horizon_evaluation_policy.json",
+      "sha256": "5b361b4127a029812259ebc9813cba91351551740ef3420f43f5303d78c78510"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/outcome_price_policy.json",
+      "sha256": "6442fcd3a155083019fd756f78f742ba4143cb2e1683f2362be0aea6285b442d"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/permission_evaluation_policy.json",
+      "sha256": "37f9db0b6961d32156f77690bf2ea20c85492b6065fe3f6d74a9472f057758d5"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/sample_maturity_policy.json",
+      "sha256": "be9fad1fdcadce0270f38de6545327445230316f92b43e52fd72718770b98a77"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/cohort_manager.py",
+      "sha256": "e64966af46edc1a78c4331bed01be244359eed01e33d1a3568c4aae556ba979a"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/common.py",
+      "sha256": "95b1a7260ae9d20f505afd68f78117d6061a28bd4114822ce17c8e0e168e3cb6"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/episode_manager.py",
+      "sha256": "58f4b0372b51be7fcb1ef866af7ad89494d2ca5859293c905ff2e18dc904f19f"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_ledger.py",
+      "sha256": "68c38d1bc6422af6ea374f260e41490b8150667d5ceef8a31b8db10a4d53c651"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_runtime.py",
+      "sha256": "5d668a401a083c3f3d1714a8510430a51bceb018b019edb945a9f29bf512b9b8"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_statistics.py",
+      "sha256": "d4a456a7ec903785d538adfd15a7234ac40e4ccda821d763faeaf46220b3fef0"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/legacy_migration.py",
+      "sha256": "e7fcb19b6be50d7ac05ecb58a80dd9cb9fd533a1cb0729159deacecef46e4fbe"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/maturity.py",
+      "sha256": "c843f32612ede33b5527aca63746b54797e651150b7f159b97759b4304474e82"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/outcome_data.py",
+      "sha256": "8359497375e7fa48d912392e80185af354db2c0074bac0671667025d1bbd23cb"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/outcome_evaluator.py",
+      "sha256": "5c7a9d027e1425ee5b7a095a5533918c919ebe34be2d541473a496daf8033d98"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/permission_evaluator.py",
+      "sha256": "52e819488d92c74487ca2ede25a7c1b2798de00c2a856778e82637564245aebd"
+    },
+    {
+      "phase": "P09",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/precommit.py",
+      "sha256": "45b8b01021167fd51f3cc86931d861fb6fa42b9220b93ec07d5aaa663dc6372a"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/config/benchmark_policy.json",
+      "sha256": "a5197f3f92a6675fb10199a21f6911cc09429b1224df093aad9ba4b3d2c343ca"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/config/coverage_policy.json",
+      "sha256": "a121a54b4e49a251b2d7c1624d6bf6d9a85016ec7b625e24e1ba67aca7388d33"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/config/critical_subgroup_policy.json",
+      "sha256": "ffb4aa6d55794d115426d39baeffe92bd5849da796f3ed7b9cfc7bc2be702590"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/config/forward_quality_policy.json",
+      "sha256": "2930cc4559a483eea7f623a5bc4111df1cbeeba666892ea1c38763c05467db73"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/config/qualification_freeze_policy.json",
+      "sha256": "34785693a98555218c5dde7ddb6aec6048c7a9a3ab5e0933354089483e7daf7c"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/benchmark_engine.py",
+      "sha256": "9bea8c7e895335cc2fdb8d7662d5ad7a44e24fb559ebf3159abfee5adec166f4"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/cohort.py",
+      "sha256": "3c6a98a96710c6ca7585c4924c8ea48763781a605b540f453eb9f1d45292ec80"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/common.py",
+      "sha256": "80e807ceefa691504d86ba46c2402462f082147dfd004f50c2f95cef14cb5b37"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/coverage_engine.py",
+      "sha256": "c67f9c61e0ca947532def47b2fa4634054de590ff2f48c82435f9d3b2e0e88a7"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/qualification_engine.py",
+      "sha256": "430ed4a1835c75f4df050e5c80dff9769f6ce58fb2ffd8fa299f72b0bb495f85"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/qualification_freeze.py",
+      "sha256": "78e8ef4b15e03ad0403b53be6091d9441bd7c01c6368bcf61ad6c9ca57805f56"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/quality_metrics.py",
+      "sha256": "4430de5bf9ee48daad32bd37b234e6678ac8fe0555da84637c4acda8f5ca23f3"
+    },
+    {
+      "phase": "R01",
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/subgroup_safety.py",
+      "sha256": "96f55f4fd2f2625279c00aff510cc091a1d0c74e82f91008f7730f3f29bfc7a8"
+    }
+  ]
+}

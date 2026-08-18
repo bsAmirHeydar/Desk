@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "phase": "AD-V3-P12",
   "immutable_classes": {
     "SCIENTIFIC_IMMUTABLE": [
@@ -19,7 +19,10 @@
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/*.json",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/*.py",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/*.json",
-      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/*.py"
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/*.py",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/config/*.json",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/runtime/*.py",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/schemas/*.json"
     ],
     "RUNTIME_IMMUTABLE": [
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/config/*.json",
@@ -59,7 +62,11 @@
   "hard_rule": "mutable runtime/promotion/P09 ledger/latest state is excluded from immutable science freeze",
   "amendment_lineage": {
     "parent_release": "ALPHA_DESK_V3_GOLD_RC1",
-    "amendment": "AD-V3.1-R01",
-    "qualification_runtime_frozen": true
+    "amendments": [
+      "AD-V3.1-R01",
+      "AD-V3.1-R02"
+    ],
+    "r01_qualification_runtime_frozen": true,
+    "r02_decision_science_frozen": true
   }
 }

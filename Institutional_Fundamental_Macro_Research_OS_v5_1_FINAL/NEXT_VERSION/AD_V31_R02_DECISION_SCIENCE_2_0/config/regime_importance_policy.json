@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R02",
+  "states": [
+    "NORMAL",
+    "POLICY_EVENT",
+    "LIQUIDITY_STRESS",
+    "GEOPOLITICAL_SHOCK",
+    "INFLATION_SHOCK"
+  ],
+  "default_state": "NORMAL",
+  "explicit_governed_state_only": true,
+  "narrative_inference_forbidden": true,
+  "overrides": {
+    "POLICY_EVENT": {
+      "US_POLICY_EXPECTATIONS": "SYSTEMIC",
+      "REAL_RATE_OPPORTUNITY_COST": "SYSTEMIC",
+      "USD_AUTONOMOUS": "PRIMARY"
+    },
+    "LIQUIDITY_STRESS": {
+      "FUNDING_COLLATERAL_STRESS": "SYSTEMIC",
+      "GLOBAL_MONETARY_LIQUIDITY": "SYSTEMIC",
+      "USD_AUTONOMOUS": "PRIMARY"
+    },
+    "GEOPOLITICAL_SHOCK": {
+      "GEOPOLITICAL_INSURANCE_RISK": "SYSTEMIC",
+      "USD_AUTONOMOUS": "PRIMARY",
+      "FUNDING_COLLATERAL_STRESS": "PRIMARY"
+    },
+    "INFLATION_SHOCK": {
+      "US_POLICY_EXPECTATIONS": "SYSTEMIC",
+      "REAL_RATE_OPPORTUNITY_COST": "SYSTEMIC",
+      "INFLATION_CREDIBILITY_HEDGE_DEMAND": "PRIMARY"
+    }
+  }
+}

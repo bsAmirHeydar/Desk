@@ -267,31 +267,31 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/decision_calibration_policy.json",
-      "owner": "AD-V3-P08",
-      "class": "GOVERNANCE_VERSIONED",
+      "owner": "AD-V3.1-R02/P08_DECISION_SCIENCE_AMENDMENT",
+      "class": "SCIENTIFIC_VERSIONED",
       "commit": true,
-      "rollback_authority": true
+      "rollback_authority": false
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/causal_importance_policy.json",
-      "owner": "AD-V3-P08",
-      "class": "GOVERNANCE_VERSIONED",
+      "owner": "AD-V3.1-R02/P08_DECISION_SCIENCE_AMENDMENT",
+      "class": "SCIENTIFIC_VERSIONED",
       "commit": true,
-      "rollback_authority": true
+      "rollback_authority": false
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/magnitude_policy.json",
-      "owner": "AD-V3-P08",
-      "class": "GOVERNANCE_VERSIONED",
+      "owner": "AD-V3.1-R02/P08_DECISION_SCIENCE_AMENDMENT",
+      "class": "SCIENTIFIC_VERSIONED",
       "commit": true,
-      "rollback_authority": true
+      "rollback_authority": false
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/dominance_policy.json",
-      "owner": "AD-V3-P08",
-      "class": "GOVERNANCE_VERSIONED",
+      "owner": "AD-V3.1-R02/P08_DECISION_SCIENCE_AMENDMENT",
+      "class": "SCIENTIFIC_VERSIONED",
       "commit": true,
-      "rollback_authority": true
+      "rollback_authority": false
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/config/empirical_calibration_policy.json",
@@ -302,10 +302,10 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/decision_runtime.py",
-      "owner": "AD-V3-P08",
-      "class": "GOVERNANCE_VERSIONED",
+      "owner": "AD-V3.1-R02/P08_DECISION_SCIENCE_AMENDMENT",
+      "class": "SCIENTIFIC_VERSIONED",
       "commit": true,
-      "rollback_authority": true
+      "rollback_authority": false
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/schemas/decision_calibration_state.schema.json",
@@ -544,14 +544,91 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/presenter.py",
-      "owner": "AD-V3.1-R01/P11_PRESENTATION_INTEGRATION",
+      "owner": "AD-V3.1-R02/P11_PRESENTATION_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": false
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/renderer.py",
-      "owner": "AD-V3.1-R01/P11_PRESENTATION_INTEGRATION",
+      "owner": "AD-V3.1-R02/P11_PRESENTATION_INTEGRATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/feature_builder.py",
+      "owner": "AD-V3.1-R02/P08_DECISION_SCIENCE_AMENDMENT",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/dominance_engine.py",
+      "owner": "AD-V3.1-R02/P08_DECISION_SCIENCE_AMENDMENT",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/magnitude_calibrator.py",
+      "owner": "AD-V3.1-R02/P08_DECISION_SCIENCE_AMENDMENT",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/tools/run_phase08_acceptance.py",
+      "owner": "AD-V3.1-R02/P08_DECISION_SCIENCE_AMENDMENT",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/precommit.py",
+      "owner": "AD-V3.1-R02/P09_DECISION_OBSERVABILITY",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/cohort_policy.json",
+      "owner": "AD-V3.1-R02/P09_DECISION_OBSERVABILITY",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/schemas/forward_prediction.schema.json",
+      "owner": "AD-V3.1-R02/P09_DECISION_OBSERVABILITY",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/quality_metrics.py",
+      "owner": "AD-V3.1-R02/R01_SUPPORTING_DIAGNOSTICS",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/tools/alpha_desk.py",
+      "owner": "AD-V3.1-R02/P10_STATUS_INTEGRATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/label_registry.json",
+      "owner": "AD-V3.1-R02/P11_PRESENTATION_INTEGRATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/help_registry.json",
+      "owner": "AD-V3.1-R02/P11_PRESENTATION_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": false
@@ -709,6 +786,41 @@
     {
       "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/artifacts/**",
       "owner": "AD-V3.1-R01_RUNTIME",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/config/*.json",
+      "owner": "AD-V3.1-R02",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/runtime/*.py",
+      "owner": "AD-V3.1-R02",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/schemas/*.json",
+      "owner": "AD-V3.1-R02",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/tools/*.py",
+      "owner": "AD-V3.1-R02",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/artifacts/**",
+      "owner": "AD-V3.1-R02_RUNTIME",
       "class": "RUNTIME_ARTIFACT",
       "commit": false,
       "rollback_authority": false

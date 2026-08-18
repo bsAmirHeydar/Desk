@@ -87,5 +87,8 @@
   "production_promotion_performed": false,
   "trade_execution_authority": "NONE",
   "active_v31_amendment": "AD-V3.1-R01",
-  "next_phase": null
+  "next_phase": null,
+  "v31_r02_amendment": "3.1.2-decision-science-2",
+  "current_release_fingerprint": "V3REL_6F239263F4869DF22E2DE60BBC1DF15C4B0799A97EC7E1E91620FAE7C216EB74",
+  "r02_decision_science_fingerprint": "R02SCI_4C0B51C18E27AED586352886E67B360A6248930F676111411F5EB9DD17413C9C"
 }

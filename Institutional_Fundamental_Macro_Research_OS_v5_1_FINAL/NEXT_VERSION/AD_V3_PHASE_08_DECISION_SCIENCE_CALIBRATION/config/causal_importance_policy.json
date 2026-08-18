@@ -1,20 +1,20 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "phase": "AD-V3-P08",
-  "method": "EVIDENCE_TIER_AND_HORIZON_AUTHORITY_NOT_MANUAL_ROOT_PRESTIGE",
+  "method": "R02_ROOT_X_HORIZON_X_GOVERNED_REGIME_MATRIX",
   "states": [
     "UNKNOWN",
     "BACKGROUND",
-    "CONDITIONAL",
     "SECONDARY",
-    "PRIMARY"
+    "PRIMARY",
+    "SYSTEMIC"
   ],
   "rank": {
     "UNKNOWN": 0,
     "BACKGROUND": 1,
-    "CONDITIONAL": 1,
     "SECONDARY": 2,
-    "PRIMARY": 3
+    "PRIMARY": 3,
+    "SYSTEMIC": 4
   },
   "rules": [
     {
@@ -39,5 +39,7 @@
     }
   ],
   "root_ids_are_not_manually_ranked": true,
-  "llm_cannot_change_importance": true
+  "llm_cannot_change_importance": true,
+  "legacy_evidence_tier_rules_retired_by": "AD-V3.1-R02",
+  "root_ids_are_now_horizon_ranked": true
 }

@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R02",
+  "roots": {
+    "US_POLICY_EXPECTATIONS": {
+      "required_any_of": [
+        [
+          "FED_POLICY_PATH_PRICING",
+          "FOMC_POLICY_STANCE"
+        ]
+      ],
+      "independence_groups": {
+        "FED_POLICY_PATH_PRICING": "FED_MARKET_PRICING",
+        "FOMC_POLICY_STANCE": "FED_COMMUNICATION",
+        "FED_REACTION_FUNCTION": "FED_COMMUNICATION"
+      }
+    },
+    "REAL_RATE_OPPORTUNITY_COST": {
+      "required_any_of": [
+        [
+          "UST_5Y_REAL_YIELD",
+          "UST_10Y_REAL_YIELD",
+          "UST_30Y_REAL_YIELD"
+        ]
+      ],
+      "independence_groups": {
+        "UST_5Y_REAL_YIELD": "REAL_RATE_CURVE",
+        "UST_10Y_REAL_YIELD": "REAL_RATE_CURVE",
+        "UST_30Y_REAL_YIELD": "REAL_RATE_CURVE"
+      }
+    },
+    "USD_AUTONOMOUS": {
+      "required_any_of": [
+        [
+          "USD_AUTONOMOUS_SHOCK"
+        ]
+      ],
+      "independence_groups": {
+        "USD_AUTONOMOUS_SHOCK": "USD_AUTONOMOUS"
+      }
+    },
+    "FISCAL_SOVEREIGN_MONETARY_CREDIBILITY": {
+      "required_any_of": [
+        [
+          "UST_TERM_PREMIUM",
+          "UST_SUPPLY_ISSUANCE",
+          "MONETARY_FISCAL_CREDIBILITY"
+        ]
+      ],
+      "independence_groups": {
+        "UST_TERM_PREMIUM": "TERM_PREMIUM",
+        "UST_SUPPLY_ISSUANCE": "TREASURY_SUPPLY",
+        "US_FISCAL_DEFICIT_DEBT": "FISCAL_STOCK",
+        "MONETARY_FISCAL_CREDIBILITY": "CREDIBILITY"
+      }
+    },
+    "OFFICIAL_SECTOR_DEMAND": {
+      "required_any_of": [],
+      "independence_groups": {
+        "GLOBAL_RESERVE_COMPOSITION": "GLOBAL_RESERVES",
+        "CENTRAL_BANK_NET_GOLD_PURCHASES": "GLOBAL_CB_FLOW",
+        "PBOC_GOLD_RESERVES_PURCHASES": "PBOC",
+        "RBI_GOLD_RESERVES_PURCHASES": "RBI",
+        "OTHER_CENTRAL_BANK_GOLD_RESERVES": "OTHER_CB",
+        "RESERVE_DIVERSIFICATION_GOLD": "RESERVE_DIVERSIFICATION"
+      }
+    },
+    "PHYSICAL_REGIONAL_DEMAND_BALANCE": {
+      "required_any_of": [],
+      "independence_groups": {
+        "CHINA_JEWELLERY_DEMAND": "CHINA",
+        "CHINA_BAR_COIN_DEMAND": "CHINA",
+        "CHINA_PHYSICAL_BALANCE": "CHINA",
+        "INDIA_JEWELLERY_DEMAND": "INDIA",
+        "INDIA_BAR_COIN_DEMAND": "INDIA",
+        "INDIA_PHYSICAL_BALANCE": "INDIA",
+        "GLOBAL_JEWELLERY_DEMAND": "GLOBAL_PHYSICAL",
+        "GLOBAL_BAR_COIN_DEMAND": "GLOBAL_PHYSICAL",
+        "GLOBAL_PHYSICAL_BALANCE": "GLOBAL_PHYSICAL"
+      }
+    },
+    "PHYSICAL_SUPPLY_RECYCLING_HEDGING": {
+      "required_any_of": [],
+      "independence_groups": {
+        "INDIA_RECYCLING_SUPPLY": "RECYCLING",
+        "GOLD_MINE_PRODUCTION": "MINE_SUPPLY",
+        "GOLD_RECYCLING_SUPPLY": "RECYCLING",
+        "GOLD_PRODUCER_HEDGING": "PRODUCER_HEDGING",
+        "GOLD_MINING_COST_CURVE": "COST_CURVE"
+      }
+    },
+    "GEOPOLITICAL_INSURANCE_RISK": {
+      "required_any_of": [
+        [
+          "GEOPOLITICAL_INSURANCE_DEMAND"
+        ]
+      ],
+      "independence_groups": {
+        "GEOPOLITICAL_INSURANCE_DEMAND": "GEOPOLITICAL_INSURANCE"
+      }
+    },
+    "FUNDING_COLLATERAL_STRESS": {
+      "required_any_of": [
+        [
+          "USD_FUNDING_STRESS"
+        ]
+      ],
+      "independence_groups": {
+        "USD_FUNDING_STRESS": "USD_FUNDING_STRESS"
+      }
+    },
+    "GLOBAL_MONETARY_LIQUIDITY": {
+      "required_any_of": [
+        [
+          "FED_BALANCE_SHEET_QT_QE",
+          "PBOC_POLICY_LIQUIDITY",
+          "GLOBAL_CENTRAL_BANK_LIQUIDITY"
+        ]
+      ],
+      "independence_groups": {
+        "FED_BALANCE_SHEET_QT_QE": "FED_LIQUIDITY",
+        "PBOC_POLICY_LIQUIDITY": "PBOC_LIQUIDITY",
+        "GLOBAL_CENTRAL_BANK_LIQUIDITY": "GLOBAL_LIQUIDITY"
+      }
+    },
+    "INVESTMENT_ALLOCATION_DEMAND": {
+      "required_any_of": [
+        [
+          "GOLD_INVESTMENT_ALLOCATION_DEMAND"
+        ]
+      ],
+      "independence_groups": {
+        "GOLD_INVESTMENT_ALLOCATION_DEMAND": "INVESTMENT_ALLOCATION"
+      }
+    },
+    "INFLATION_CREDIBILITY_HEDGE_DEMAND": {
+      "required_any_of": [
+        [
+          "INFLATION_CREDIBILITY_HEDGE_STATE"
+        ]
+      ],
+      "independence_groups": {
+        "INFLATION_CREDIBILITY_HEDGE_STATE": "INFLATION_CREDIBILITY"
+      }
+    }
+  },
+  "hard_rule": "Critical evidence gaps may cap root authority but cannot flip P03 direction."
+}

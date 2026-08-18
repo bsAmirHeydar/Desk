@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R02",
+  "canonical_variant": "CANONICAL",
+  "robustness_states": [
+    "NOT_APPLICABLE",
+    "ROBUST",
+    "MOSTLY_ROBUST",
+    "MODEL_SENSITIVE",
+    "UNSTABLE"
+  ],
+  "model_sensitivity_states": [
+    "NOT_APPLICABLE",
+    "LOW",
+    "ELEVATED",
+    "HIGH"
+  ],
+  "variants": [
+    {
+      "variant_id": "CANONICAL",
+      "importance_decisive_gap": 2,
+      "magnitude_decisive_gap": 2,
+      "net_dimension_margin": 2,
+      "critical_gap_veto": true,
+      "context_importance_cap": false,
+      "unknown_magnitude_penalty": false,
+      "contradiction_strict": false
+    },
+    {
+      "variant_id": "IMPORTANCE_CONSERVATIVE",
+      "importance_decisive_gap": 3,
+      "magnitude_decisive_gap": 2,
+      "net_dimension_margin": 2,
+      "critical_gap_veto": true,
+      "context_importance_cap": false,
+      "unknown_magnitude_penalty": false,
+      "contradiction_strict": false
+    },
+    {
+      "variant_id": "FRESHNESS_STRICT",
+      "importance_decisive_gap": 2,
+      "magnitude_decisive_gap": 2,
+      "net_dimension_margin": 2,
+      "critical_gap_veto": true,
+      "context_importance_cap": true,
+      "unknown_magnitude_penalty": false,
+      "contradiction_strict": false
+    },
+    {
+      "variant_id": "QUALITY_STRICT",
+      "importance_decisive_gap": 2,
+      "magnitude_decisive_gap": 2,
+      "net_dimension_margin": 3,
+      "critical_gap_veto": true,
+      "context_importance_cap": false,
+      "unknown_magnitude_penalty": false,
+      "contradiction_strict": false
+    },
+    {
+      "variant_id": "MAGNITUDE_STRICT",
+      "importance_decisive_gap": 2,
+      "magnitude_decisive_gap": 1,
+      "net_dimension_margin": 2,
+      "critical_gap_veto": true,
+      "context_importance_cap": false,
+      "unknown_magnitude_penalty": true,
+      "contradiction_strict": false
+    },
+    {
+      "variant_id": "CONTRADICTION_STRICT",
+      "importance_decisive_gap": 2,
+      "magnitude_decisive_gap": 2,
+      "net_dimension_margin": 3,
+      "critical_gap_veto": true,
+      "context_importance_cap": false,
+      "unknown_magnitude_penalty": false,
+      "contradiction_strict": true
+    },
+    {
+      "variant_id": "CONTEXT_CAP_STRICT",
+      "importance_decisive_gap": 3,
+      "magnitude_decisive_gap": 2,
+      "net_dimension_margin": 2,
+      "critical_gap_veto": true,
+      "context_importance_cap": true,
+      "unknown_magnitude_penalty": true,
+      "contradiction_strict": false
+    }
+  ],
+  "classification": {
+    "ROBUST": "all variants preserve canonical causal direction and no variant is BALANCED",
+    "MOSTLY_ROBUST": "no variant produces opposite causal direction and at most two variants are BALANCED",
+    "MODEL_SENSITIVE": "no opposite direction but more than two variants lose canonical directional dominance",
+    "UNSTABLE": "at least one bullish and one bearish directional result across bounded variants"
+  },
+  "variant_frequency_is_not_probability": true,
+  "random_monte_carlo_forbidden": true
+}

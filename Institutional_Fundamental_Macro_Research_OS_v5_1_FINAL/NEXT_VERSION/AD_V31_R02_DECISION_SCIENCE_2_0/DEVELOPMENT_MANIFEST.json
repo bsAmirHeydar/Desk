@@ -1,0 +1,21 @@
+{
+  "phase": "AD-V3.1-R02",
+  "version": "3.1.2-decision-science-2",
+  "baseline_commit": "bade4df",
+  "baseline_provenance": "operator-confirmed local Git; build ZIP has no .git",
+  "status": "PASS",
+  "science_change": "P08 decision science versioned amendment",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE",
+  "acceptance_check_count": 48,
+  "golden_scenario_count": 15,
+  "decision_science_fingerprint": "R02SCI_4C0B51C18E27AED586352886E67B360A6248930F676111411F5EB9DD17413C9C",
+  "amendment_fingerprint": "V31R02_9490EAB470EF7D69F9937592C2B352E09BD38DB07C9D168D49DF3BD5611797BC",
+  "full_release_fingerprint": "V3REL_F734E47615B65895AB79960AC10F41529C777B0D1D88F6A8B0926299B00D1D38",
+  "magnitude_method_coverage": {
+    "NOT_APPLICABLE": 149,
+    "SUPPORTED": 30,
+    "CONTEXT_ONLY": 13
+  },
+  "sensitivity_variant_count": 7
+}

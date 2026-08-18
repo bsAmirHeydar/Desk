@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R02 Magnitude Decision",
+  "type": "object",
+  "required": [
+    "fact_id",
+    "state",
+    "status",
+    "method",
+    "data_family",
+    "direction_inferred"
+  ],
+  "properties": {
+    "fact_id": {
+      "type": "string"
+    },
+    "state": {
+      "enum": [
+        "UNKNOWN",
+        "MINOR",
+        "MATERIAL",
+        "LARGE",
+        "EXTREME"
+      ]
+    },
+    "status": {
+      "enum": [
+        "SUPPORTED",
+        "CONTEXT_ONLY",
+        "NOT_APPLICABLE",
+        "UNKNOWN_MAGNITUDE"
+      ]
+    },
+    "method": {
+      "type": "string"
+    },
+    "data_family": {
+      "type": "string"
+    },
+    "temporal_role": {
+      "type": "string"
+    },
+    "direction_inferred": {
+      "type": "boolean"
+    },
+    "source": {
+      "type": "string"
+    },
+    "diagnostic": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

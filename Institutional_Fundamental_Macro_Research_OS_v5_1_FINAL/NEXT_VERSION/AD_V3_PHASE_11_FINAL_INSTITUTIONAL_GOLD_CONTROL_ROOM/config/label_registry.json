@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0-r02",
   "language": "fa",
   "technical_fallback": true,
   "states": {
@@ -78,7 +78,21 @@
     "CERTIFIED_PENDING_FORWARD_SAMPLE": "در انتظار نمونه Forward",
     "CERTIFIED_PENDING_FORWARD_QUALITY": "در انتظار اثبات کیفیت Forward",
     "CERTIFIED_PENDING_COVERAGE": "در انتظار پوشش کافی",
-    "FORWARD_QUALITY_FAILED": "کیفیت Forward مردود"
+    "FORWARD_QUALITY_FAILED": "کیفیت Forward مردود",
+    "PARTIAL": "نسبتاً سالم",
+    "CRITICAL_GAP": "شکاف حیاتی",
+    "SYSTEMIC": "سیستمی",
+    "BACKGROUND": "زمینه‌ای",
+    "SECONDARY": "ثانویه",
+    "PRIMARY": "اصلی",
+    "MOSTLY_ROBUST": "عمدتاً پایدار",
+    "MODEL_SENSITIVE": "حساس به فرض‌های مدل",
+    "UNSTABLE": "ناپایدار",
+    "ELEVATED": "بالا",
+    "NOT_APPLICABLE": "نامرتبط",
+    "PROXY_HEAVY": "وابستگی زیاد به پروکسی",
+    "PROXY_ONLY": "فقط پروکسی",
+    "DIRECT": "مستقیم"
   },
   "roots": {
     "US_POLICY_EXPECTATIONS": "انتظارات سیاست پولی آمریکا",
@@ -118,6 +132,10 @@
     "persistence": "ماندگاری",
     "magnitude": "شدت تغییر",
     "data_health": "سلامت داده",
-    "forward": "اعتبارسنجی Forward"
+    "forward": "اعتبارسنجی Forward",
+    "root_health": "سلامت ریشه",
+    "model_sensitivity": "حساسیت مدل",
+    "robustness": "پایداری مدل",
+    "causal_importance": "اهمیت علّی"
   }
 }

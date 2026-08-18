@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R02 Causal Importance",
+  "type": "object",
+  "required": [
+    "state",
+    "root_id",
+    "horizon",
+    "regime",
+    "source",
+    "llm_authority"
+  ],
+  "properties": {
+    "state": {
+      "enum": [
+        "UNKNOWN",
+        "BACKGROUND",
+        "SECONDARY",
+        "PRIMARY",
+        "SYSTEMIC"
+      ]
+    },
+    "root_id": {
+      "type": "string"
+    },
+    "horizon": {
+      "type": "string"
+    },
+    "regime": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "llm_authority": {
+      "const": false
+    }
+  },
+  "additionalProperties": true
+}

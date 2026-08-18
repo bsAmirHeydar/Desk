@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "version": "1.0.0",
   "initial_cohort_sequence": 1,
   "auto_start_new_cohort_on_fingerprint_change": true,
@@ -14,7 +14,15 @@
     "episode_policy.json",
     "outcome_price_policy.json",
     "permission_evaluation_policy.json",
-    "sample_maturity_policy.json"
+    "sample_maturity_policy.json",
+    "../AD_V31_R02_DECISION_SCIENCE_2_0/config/decision_science_2_policy.json",
+    "../AD_V31_R02_DECISION_SCIENCE_2_0/config/magnitude_method_registry.json",
+    "../AD_V31_R02_DECISION_SCIENCE_2_0/config/magnitude_threshold_policy.json",
+    "../AD_V31_R02_DECISION_SCIENCE_2_0/config/root_health_policy.json",
+    "../AD_V31_R02_DECISION_SCIENCE_2_0/config/root_critical_evidence_registry.json",
+    "../AD_V31_R02_DECISION_SCIENCE_2_0/config/causal_importance_matrix.json",
+    "../AD_V31_R02_DECISION_SCIENCE_2_0/config/regime_importance_policy.json",
+    "../AD_V31_R02_DECISION_SCIENCE_2_0/config/dominance_robustness_policy.json"
   ],
   "states": [
     "OPEN",
@@ -23,5 +31,6 @@
     "SUPERSEDED",
     "INVALIDATED"
   ],
-  "pool_across_cohorts_for_promotion": false
+  "pool_across_cohorts_for_promotion": false,
+  "r02_decision_science_bound": true
 }

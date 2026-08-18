@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R02",
+  "states": [
+    "UNKNOWN",
+    "MINOR",
+    "MATERIAL",
+    "LARGE",
+    "EXTREME"
+  ],
+  "rank": {
+    "UNKNOWN": 0,
+    "MINOR": 1,
+    "MATERIAL": 2,
+    "LARGE": 3,
+    "EXTREME": 4
+  },
+  "profiles": {
+    "RATES_BPS": {
+      "unit": "basis_points",
+      "MINOR_max_abs": 3.0,
+      "MATERIAL_min_abs": 3.0,
+      "LARGE_min_abs": 8.0,
+      "EXTREME_min_abs": 20.0,
+      "rationale": "Session real-rate repricing bands are conservative fixed engineering priors, not outcome-optimized thresholds."
+    },
+    "POLICY_BPS": {
+      "unit": "basis_points",
+      "MINOR_max_abs": 3.0,
+      "MATERIAL_min_abs": 3.0,
+      "LARGE_min_abs": 10.0,
+      "EXTREME_min_abs": 25.0,
+      "rationale": "Near-curve policy repricing bands distinguish small noise from material meeting-path shifts without fitting to Gold outcomes."
+    },
+    "USD_INDEX_POINTS": {
+      "unit": "index_points",
+      "MINOR_max_abs": 0.15,
+      "MATERIAL_min_abs": 0.15,
+      "LARGE_min_abs": 0.5,
+      "EXTREME_min_abs": 1.25,
+      "rationale": "Diagnostic DXY/index-point movement bands; never used as direct causal-root magnitude unless the root contract explicitly owns it."
+    },
+    "GENERIC_Z": {
+      "unit": "standard_deviation",
+      "MINOR_max_abs": 1.0,
+      "MATERIAL_min_abs": 1.0,
+      "LARGE_min_abs": 2.0,
+      "EXTREME_min_abs": 3.0,
+      "rationale": "Used only for family-specific history-normalized values with point-in-time-safe history."
+    }
+  },
+  "semantic_states_allowed": [
+    "UNKNOWN",
+    "MINOR",
+    "MATERIAL",
+    "LARGE",
+    "EXTREME"
+  ],
+  "semantic_numeric_precision_forbidden": true,
+  "quality_as_magnitude_fallback_forbidden": true
+}

@@ -1,0 +1,486 @@
+{
+  "phase": "AD-V3.1-R02",
+  "golden_status": "PASS",
+  "scenario_count": 15,
+  "scenarios": [
+    {
+      "scenario": "A Robust strong bullish",
+      "status": "PASS",
+      "detail": {
+        "canonical": {
+          "causal_direction": "BULLISH_GOLD",
+          "dominance_state": "BULLISH_DOMINANT",
+          "dominant_root": "A",
+          "supporting_roots": [],
+          "opposing_roots": [],
+          "contradiction": "NONE",
+          "breadth": "NARROW",
+          "variant_id": "CANONICAL"
+        },
+        "variants": [
+          {
+            "variant_id": "CANONICAL",
+            "causal_direction": "BULLISH_GOLD",
+            "dominance_state": "BULLISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          },
+          {
+            "variant_id": "IMPORTANCE_CONSERVATIVE",
+            "causal_direction": "BULLISH_GOLD",
+            "dominance_state": "BULLISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          },
+          {
+            "variant_id": "FRESHNESS_STRICT",
+            "causal_direction": "BULLISH_GOLD",
+            "dominance_state": "BULLISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          },
+          {
+            "variant_id": "QUALITY_STRICT",
+            "causal_direction": "BULLISH_GOLD",
+            "dominance_state": "BULLISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          },
+          {
+            "variant_id": "MAGNITUDE_STRICT",
+            "causal_direction": "BULLISH_GOLD",
+            "dominance_state": "BULLISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          },
+          {
+            "variant_id": "CONTRADICTION_STRICT",
+            "causal_direction": "BULLISH_GOLD",
+            "dominance_state": "BULLISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          },
+          {
+            "variant_id": "CONTEXT_CAP_STRICT",
+            "causal_direction": "BULLISH_GOLD",
+            "dominance_state": "BULLISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          }
+        ],
+        "robustness": "ROBUST",
+        "model_sensitivity": "LOW",
+        "variant_count": 7,
+        "variant_frequency_is_not_probability": true
+      }
+    },
+    {
+      "scenario": "B Robust strong bearish",
+      "status": "PASS",
+      "detail": {
+        "canonical": {
+          "causal_direction": "BEARISH_GOLD",
+          "dominance_state": "BEARISH_DOMINANT",
+          "dominant_root": "A",
+          "supporting_roots": [],
+          "opposing_roots": [],
+          "contradiction": "NONE",
+          "breadth": "NARROW",
+          "variant_id": "CANONICAL"
+        },
+        "variants": [
+          {
+            "variant_id": "CANONICAL",
+            "causal_direction": "BEARISH_GOLD",
+            "dominance_state": "BEARISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          },
+          {
+            "variant_id": "IMPORTANCE_CONSERVATIVE",
+            "causal_direction": "BEARISH_GOLD",
+            "dominance_state": "BEARISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          },
+          {
+            "variant_id": "FRESHNESS_STRICT",
+            "causal_direction": "BEARISH_GOLD",
+            "dominance_state": "BEARISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          },
+          {
+            "variant_id": "QUALITY_STRICT",
+            "causal_direction": "BEARISH_GOLD",
+            "dominance_state": "BEARISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          },
+          {
+            "variant_id": "MAGNITUDE_STRICT",
+            "causal_direction": "BEARISH_GOLD",
+            "dominance_state": "BEARISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          },
+          {
+            "variant_id": "CONTRADICTION_STRICT",
+            "causal_direction": "BEARISH_GOLD",
+            "dominance_state": "BEARISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          },
+          {
+            "variant_id": "CONTEXT_CAP_STRICT",
+            "causal_direction": "BEARISH_GOLD",
+            "dominance_state": "BEARISH_DOMINANT",
+            "dominant_root": "A",
+            "contradiction": "NONE"
+          }
+        ],
+        "robustness": "ROBUST",
+        "model_sensitivity": "LOW",
+        "variant_count": 7,
+        "variant_frequency_is_not_probability": true
+      }
+    },
+    {
+      "scenario": "C True mixed",
+      "status": "PASS",
+      "detail": {
+        "causal_direction": "MIXED",
+        "dominance_state": "BALANCED",
+        "dominant_root": null,
+        "supporting_roots": [],
+        "opposing_roots": [
+          "A",
+          "B"
+        ],
+        "contradiction": "PRIMARY_ROOT_CONFLICT",
+        "breadth": "NONE",
+        "variant_id": "CANONICAL"
+      }
+    },
+    {
+      "scenario": "D Actual model-sensitive dominance",
+      "status": "PASS",
+      "detail": {
+        "canonical": {
+          "causal_direction": "BEARISH_GOLD",
+          "dominance_state": "BEARISH_FRAGILE",
+          "dominant_root": "B",
+          "supporting_roots": [],
+          "opposing_roots": [
+            "A"
+          ],
+          "contradiction": "MEANINGFUL_CONTRADICTION",
+          "breadth": "NARROW",
+          "variant_id": "CANONICAL"
+        },
+        "variants": [
+          {
+            "variant_id": "CANONICAL",
+            "causal_direction": "BEARISH_GOLD",
+            "dominance_state": "BEARISH_FRAGILE",
+            "dominant_root": "B",
+            "contradiction": "MEANINGFUL_CONTRADICTION"
+          },
+          {
+            "variant_id": "IMPORTANCE_CONSERVATIVE",
+            "causal_direction": "BEARISH_GOLD",
+            "dominance_state": "BEARISH_FRAGILE",
+            "dominant_root": "B",
+            "contradiction": "MEANINGFUL_CONTRADICTION"
+          },
+          {
+            "variant_id": "FRESHNESS_STRICT",
+            "causal_direction": "MIXED",
+            "dominance_state": "BALANCED",
+            "dominant_root": null,
+            "contradiction": "BALANCED_CONFLICT"
+          },
+          {
+            "variant_id": "QUALITY_STRICT",
+            "causal_direction": "MIXED",
+            "dominance_state": "BALANCED",
+            "dominant_root": null,
+            "contradiction": "BALANCED_CONFLICT"
+          },
+          {
+            "variant_id": "MAGNITUDE_STRICT",
+            "causal_direction": "BEARISH_GOLD",
+            "dominance_state": "BEARISH_FRAGILE",
+            "dominant_root": "B",
+            "contradiction": "MEANINGFUL_CONTRADICTION"
+          },
+          {
+            "variant_id": "CONTRADICTION_STRICT",
+            "causal_direction": "MIXED",
+            "dominance_state": "BALANCED",
+            "dominant_root": null,
+            "contradiction": "BALANCED_CONFLICT"
+          },
+          {
+            "variant_id": "CONTEXT_CAP_STRICT",
+            "causal_direction": "MIXED",
+            "dominance_state": "BALANCED",
+            "dominant_root": null,
+            "contradiction": "BALANCED_CONFLICT"
+          }
+        ],
+        "robustness": "MODEL_SENSITIVE",
+        "model_sensitivity": "HIGH",
+        "variant_count": 7,
+        "variant_frequency_is_not_probability": true
+      }
+    },
+    {
+      "scenario": "E Symmetric model-sensitive dominance",
+      "status": "PASS",
+      "detail": {
+        "canonical": {
+          "causal_direction": "BULLISH_GOLD",
+          "dominance_state": "BULLISH_FRAGILE",
+          "dominant_root": "B",
+          "supporting_roots": [],
+          "opposing_roots": [
+            "A"
+          ],
+          "contradiction": "MEANINGFUL_CONTRADICTION",
+          "breadth": "NARROW",
+          "variant_id": "CANONICAL"
+        },
+        "variants": [
+          {
+            "variant_id": "CANONICAL",
+            "causal_direction": "BULLISH_GOLD",
+            "dominance_state": "BULLISH_FRAGILE",
+            "dominant_root": "B",
+            "contradiction": "MEANINGFUL_CONTRADICTION"
+          },
+          {
+            "variant_id": "IMPORTANCE_CONSERVATIVE",
+            "causal_direction": "BULLISH_GOLD",
+            "dominance_state": "BULLISH_FRAGILE",
+            "dominant_root": "B",
+            "contradiction": "MEANINGFUL_CONTRADICTION"
+          },
+          {
+            "variant_id": "FRESHNESS_STRICT",
+            "causal_direction": "MIXED",
+            "dominance_state": "BALANCED",
+            "dominant_root": null,
+            "contradiction": "BALANCED_CONFLICT"
+          },
+          {
+            "variant_id": "QUALITY_STRICT",
+            "causal_direction": "MIXED",
+            "dominance_state": "BALANCED",
+            "dominant_root": null,
+            "contradiction": "BALANCED_CONFLICT"
+          },
+          {
+            "variant_id": "MAGNITUDE_STRICT",
+            "causal_direction": "BULLISH_GOLD",
+            "dominance_state": "BULLISH_FRAGILE",
+            "dominant_root": "B",
+            "contradiction": "MEANINGFUL_CONTRADICTION"
+          },
+          {
+            "variant_id": "CONTRADICTION_STRICT",
+            "causal_direction": "MIXED",
+            "dominance_state": "BALANCED",
+            "dominant_root": null,
+            "contradiction": "BALANCED_CONFLICT"
+          },
+          {
+            "variant_id": "CONTEXT_CAP_STRICT",
+            "causal_direction": "MIXED",
+            "dominance_state": "BALANCED",
+            "dominant_root": null,
+            "contradiction": "BALANCED_CONFLICT"
+          }
+        ],
+        "robustness": "MODEL_SENSITIVE",
+        "model_sensitivity": "HIGH",
+        "variant_count": 7,
+        "variant_frequency_is_not_probability": true
+      }
+    },
+    {
+      "scenario": "F Narrow systemic shock",
+      "status": "PASS",
+      "detail": {
+        "causal_direction": "BULLISH_GOLD",
+        "dominance_state": "BULLISH_DOMINANT",
+        "dominant_root": "SYS",
+        "supporting_roots": [],
+        "opposing_roots": [],
+        "contradiction": "NONE",
+        "breadth": "NARROW",
+        "variant_id": "CANONICAL"
+      }
+    },
+    {
+      "scenario": "G Broad weak pressure",
+      "status": "PASS",
+      "detail": {
+        "causal_direction": "BULLISH_GOLD",
+        "dominance_state": "BULLISH_DOMINANT",
+        "dominant_root": "W3",
+        "supporting_roots": [
+          "W1",
+          "W2"
+        ],
+        "opposing_roots": [],
+        "contradiction": "NONE",
+        "breadth": "BROAD",
+        "variant_id": "CANONICAL"
+      }
+    },
+    {
+      "scenario": "H Strong pressure / critical root gap retained direction",
+      "status": "PASS",
+      "detail": {
+        "causal_direction": "BULLISH_GOLD",
+        "dominance_state": "BULLISH_DOMINANT",
+        "dominant_root": "GAP",
+        "supporting_roots": [],
+        "opposing_roots": [],
+        "contradiction": "NONE",
+        "breadth": "NARROW",
+        "variant_id": "CANONICAL"
+      }
+    },
+    {
+      "scenario": "I Large magnitude / low importance no automatic dominance",
+      "status": "PASS",
+      "detail": {
+        "causal_direction": "BEARISH_GOLD",
+        "dominance_state": "BEARISH_FRAGILE",
+        "dominant_root": "HIIMP",
+        "supporting_roots": [],
+        "opposing_roots": [
+          "LOWIMP"
+        ],
+        "contradiction": "MEANINGFUL_CONTRADICTION",
+        "breadth": "NARROW",
+        "variant_id": "CANONICAL"
+      }
+    },
+    {
+      "scenario": "J Primary importance / unknown magnitude representable",
+      "status": "PASS",
+      "detail": {
+        "causal_direction": "BULLISH_GOLD",
+        "dominance_state": "BULLISH_DOMINANT",
+        "dominant_root": "PRIM",
+        "supporting_roots": [],
+        "opposing_roots": [],
+        "contradiction": "NONE",
+        "breadth": "NARROW",
+        "variant_id": "CANONICAL"
+      }
+    },
+    {
+      "scenario": "K Structural strong / no session impulse",
+      "status": "PASS",
+      "detail": {
+        "fact_id": "CENTRAL_BANK_NET_GOLD_PURCHASES",
+        "state": "UNKNOWN",
+        "source": "HISTORY_NORMALIZED_DETAIL:INSUFFICIENT_HISTORY",
+        "status": "CONTEXT_ONLY",
+        "method": "HISTORY_NORMALIZED_DETAIL",
+        "data_family": "OFFICIAL_SECTOR_CHANGE",
+        "temporal_role": "STRUCTURAL_CONTEXT",
+        "diagnostic": {
+          "state": "INSUFFICIENT_HISTORY",
+          "history_size": 0,
+          "z_score": null
+        },
+        "direction_inferred": false
+      }
+    },
+    {
+      "scenario": "L Price against pressure invariant",
+      "status": "PASS",
+      "detail": {
+        "direction": "BULLISH_GOLD",
+        "price_authority": false
+      }
+    },
+    {
+      "scenario": "M High consumption remains downstream",
+      "status": "PASS",
+      "detail": {
+        "root_direction": "BULLISH_GOLD",
+        "consumption_authority": "downstream only"
+      }
+    },
+    {
+      "scenario": "N Proxy-heavy root",
+      "status": "PASS",
+      "detail": {
+        "state": "PARTIAL",
+        "expected_evidence_count": 1,
+        "observed_evidence_count": 1,
+        "resolved_evidence_count": 1,
+        "current_evidence_count": 1,
+        "context_evidence_count": 0,
+        "stale_evidence_count": 0,
+        "expired_evidence_count": 0,
+        "gap_evidence_count": 0,
+        "unknown_evidence_count": 0,
+        "valid_share": 1.0,
+        "unknown_or_gap_share": 0.0,
+        "direct_evidence_count": 0,
+        "proxy_evidence_count": 1,
+        "directness_state": "PROXY_ONLY",
+        "semantic_evidence_count": 0,
+        "magnitude_covered_count": 1,
+        "magnitude_coverage_share": 1.0,
+        "critical_evidence_missing": [],
+        "critical_evidence_present": true,
+        "independent_evidence_count": 1,
+        "same_shock_manifestation_count": 0,
+        "freshness_summary": "FRESH_FOR_HORIZON",
+        "evidence_quality_summary": "MEDIUM",
+        "direction_authority": false
+      }
+    },
+    {
+      "scenario": "O Same-shock manifestation inflation blocked",
+      "status": "PASS",
+      "detail": {
+        "state": "HEALTHY",
+        "expected_evidence_count": 3,
+        "observed_evidence_count": 3,
+        "resolved_evidence_count": 3,
+        "current_evidence_count": 3,
+        "context_evidence_count": 0,
+        "stale_evidence_count": 0,
+        "expired_evidence_count": 0,
+        "gap_evidence_count": 0,
+        "unknown_evidence_count": 0,
+        "valid_share": 1.0,
+        "unknown_or_gap_share": 0.0,
+        "direct_evidence_count": 3,
+        "proxy_evidence_count": 0,
+        "directness_state": "DIRECT",
+        "semantic_evidence_count": 0,
+        "magnitude_covered_count": 3,
+        "magnitude_coverage_share": 1.0,
+        "critical_evidence_missing": [],
+        "critical_evidence_present": true,
+        "independent_evidence_count": 1,
+        "same_shock_manifestation_count": 2,
+        "freshness_summary": "FRESH_FOR_HORIZON",
+        "evidence_quality_summary": "HIGH",
+        "direction_authority": false
+      }
+    }
+  ],
+  "fixture_only": true,
+  "prospective_evidence_authority": false
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R02 Decision Science Receipt",
+  "type": "object",
+  "required": [
+    "phase",
+    "version",
+    "decision_science_version",
+    "magnitude_method_coverage",
+    "importance_matrix_version",
+    "sensitivity_variant_count",
+    "trade_execution_authority"
+  ],
+  "properties": {
+    "phase": {
+      "const": "AD-V3.1-R02"
+    },
+    "version": {
+      "type": "string"
+    },
+    "decision_science_version": {
+      "type": "string"
+    },
+    "magnitude_method_coverage": {
+      "type": "object"
+    },
+    "importance_matrix_version": {
+      "type": "string"
+    },
+    "sensitivity_variant_count": {
+      "type": "integer"
+    },
+    "trade_execution_authority": {
+      "const": "NONE"
+    }
+  },
+  "additionalProperties": true
+}

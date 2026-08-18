@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R02 Root Health",
+  "type": "object",
+  "required": [
+    "state",
+    "expected_evidence_count",
+    "observed_evidence_count",
+    "valid_share",
+    "critical_evidence_present",
+    "directness_state",
+    "independent_evidence_count"
+  ],
+  "properties": {
+    "state": {
+      "enum": [
+        "HEALTHY",
+        "PARTIAL",
+        "DEGRADED",
+        "CRITICAL_GAP",
+        "UNKNOWN"
+      ]
+    },
+    "expected_evidence_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "observed_evidence_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "valid_share": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "critical_evidence_present": {
+      "type": "boolean"
+    },
+    "critical_evidence_missing": {
+      "type": "array"
+    },
+    "directness_state": {
+      "enum": [
+        "DIRECT",
+        "MIXED",
+        "PROXY_HEAVY",
+        "PROXY_ONLY",
+        "UNKNOWN"
+      ]
+    },
+    "independent_evidence_count": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": true
+}

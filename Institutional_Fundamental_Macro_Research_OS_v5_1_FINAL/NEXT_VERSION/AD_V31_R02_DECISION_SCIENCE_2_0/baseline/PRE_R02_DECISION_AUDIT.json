@@ -1,0 +1,38 @@
+{
+  "record_type": "AD_V31_R02_PRE_DECISION_AUDIT",
+  "baseline_commit": "bade4df",
+  "findings": [
+    {
+      "id": "MAGNITUDE_QUALITY_FALLBACK",
+      "severity": "HIGH",
+      "finding": "Pre-R02 P08 mapped P03 root strength/evidence quality into magnitude when standardized economic magnitude was absent.",
+      "repair": "Remove quality-as-magnitude fallback; unsupported current magnitude remains UNKNOWN."
+    },
+    {
+      "id": "IMPORTANCE_OPERATIONAL_TIER_PROXY",
+      "severity": "HIGH",
+      "finding": "Pre-R02 causal importance was substantially derived from P07 LIVE/CONTEXT operational tier.",
+      "repair": "Use deterministic Root x Horizon x Regime importance matrix."
+    },
+    {
+      "id": "ROOT_HEALTH_BEST_MEMBER_BIAS",
+      "severity": "HIGH",
+      "finding": "Pre-R02 root freshness/quality summaries could be dominated by max(best member).",
+      "repair": "Use population-aware coverage, critical gaps, direct/proxy mix, independence, magnitude coverage."
+    },
+    {
+      "id": "DOMINANCE_SINGLE_LEXICOGRAPHIC_POLICY",
+      "severity": "MEDIUM",
+      "finding": "Pre-R02 dominance exposed one deterministic ordering without bounded model-sensitivity diagnostics.",
+      "repair": "Retain one canonical model but add small predeclared deterministic sensitivity variants and robustness state."
+    }
+  ],
+  "scientific_invariants_preserved": [
+    "Pressure != Price",
+    "Magnitude != Direction",
+    "Magnitude != Importance",
+    "Quality != Magnitude",
+    "Freshness != Importance",
+    "Fact Count != Independence"
+  ]
+}

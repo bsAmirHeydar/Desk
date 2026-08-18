@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R02",
+  "method": "ROLLING_PRECOMMIT_HISTORY_ONLY",
+  "minimum_history": 30,
+  "preferred_history": 60,
+  "future_observation_rejected": true,
+  "outcome_selected_history_forbidden": true,
+  "insufficient_history_state": "UNKNOWN",
+  "extreme_requires_minimum_history": 60,
+  "zero_variance_state": "UNKNOWN"
+}

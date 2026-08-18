@@ -91,5 +91,23 @@ def fragility_validity(rows):
     low_mae=mean(x[0] for x in low);high_mae=mean(x[0] for x in high);low_opp=mean(x[1] for x in low);high_opp=mean(x[1] for x in high);ok=high_mae>=low_mae*0.90 or high_opp>=low_opp
     return {'state':'PASS' if ok else 'FAIL','low_n':len(low),'high_n':len(high),'low_mae_multiple':low_mae,'high_mae_multiple':high_mae,'low_opposed_rate':low_opp,'high_opposed_rate':high_opp}
 
+def r02_decision_diagnostics(rows):
+    min_n=cfg('forward_quality_policy.json')['supporting_min_group_n']
+    mag_order=['MINOR','MATERIAL','LARGE','EXTREME']; mg=defaultdict(list);hg=defaultdict(list);rg=defaultdict(list)
+    for p,o,_ in rows:
+        sc=direction_score(o.get('direction_outcome'))
+        if sc is None:continue
+        mg[str(p.get('dominant_root_magnitude') or 'UNKNOWN')].append(sc)
+        h=p.get('dominant_root_health') or {};hg[str(h.get('state') if isinstance(h,dict) else h or 'UNKNOWN')].append(sc)
+        rg[str(p.get('dominance_robustness') or 'NOT_APPLICABLE')].append(sc)
+    def avgmap(g):return {k:{'n':len(v),'mean_direction_score':mean(v) if v else None} for k,v in g.items()}
+    mseq=[(k,mean(mg[k])) for k in mag_order if len(mg[k])>=min_n]
+    mag_state='INCONCLUSIVE' if len(mseq)<2 else ('PASS' if all(mseq[i+1][1]>=mseq[i][1]-.05 for i in range(len(mseq)-1)) else 'FAIL')
+    good=hg.get('HEALTHY',[])+hg.get('PARTIAL',[]);bad=hg.get('DEGRADED',[])+hg.get('CRITICAL_GAP',[])
+    health_state='INCONCLUSIVE' if len(good)<min_n or len(bad)<min_n else ('PASS' if mean(good)>=mean(bad)-.05 else 'FAIL')
+    robust=rg.get('ROBUST',[])+rg.get('MOSTLY_ROBUST',[]);sens=rg.get('MODEL_SENSITIVE',[])+rg.get('UNSTABLE',[])
+    robust_state='INCONCLUSIVE' if len(robust)<min_n or len(sens)<min_n else ('PASS' if mean(robust)>=mean(sens)-.05 else 'FAIL')
+    return {'magnitude_ordering':{'state':mag_state,'groups':avgmap(mg),'ordered_groups':mseq},'root_health_validity':{'state':health_state,'groups':avgmap(hg)},'robustness_validity':{'state':robust_state,'groups':avgmap(rg)},'supporting_forward_diagnostic_only':True}
+
 def all_metrics(rows):
-    return {'direction':direction_quality(rows),'strength':strength_calibration(rows),'dominance':dominance_calibration(rows),'edge':edge_separation(rows),'permission':permission_quality(rows),'wait':wait_quality(rows),'path_completeness':path_completeness(rows),'consumption':consumption_validity(rows),'fragility':fragility_validity(rows)}
+    return {'direction':direction_quality(rows),'strength':strength_calibration(rows),'dominance':dominance_calibration(rows),'edge':edge_separation(rows),'permission':permission_quality(rows),'wait':wait_quality(rows),'path_completeness':path_completeness(rows),'consumption':consumption_validity(rows),'fragility':fragility_validity(rows),'r02_diagnostics':r02_decision_diagnostics(rows)}

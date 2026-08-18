@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R02",
+  "states": [
+    "UNKNOWN",
+    "CRITICAL_GAP",
+    "DEGRADED",
+    "PARTIAL",
+    "HEALTHY"
+  ],
+  "rank": {
+    "UNKNOWN": 0,
+    "CRITICAL_GAP": 0,
+    "DEGRADED": 1,
+    "PARTIAL": 2,
+    "HEALTHY": 3
+  },
+  "freshness_summary_states": [
+    "UNKNOWN",
+    "STALE_FOR_HORIZON",
+    "CONTEXT_VALID",
+    "FRESH_FOR_HORIZON"
+  ],
+  "thresholds": {
+    "healthy_min_valid_share": 0.75,
+    "partial_min_valid_share": 0.5,
+    "degraded_max_unknown_or_gap_share": 0.5,
+    "proxy_heavy_share": 0.5
+  },
+  "directness_states": [
+    "UNKNOWN",
+    "DIRECT",
+    "MIXED",
+    "PROXY_HEAVY",
+    "PROXY_ONLY"
+  ],
+  "quality_summary_rules": {
+    "HIGH_min_direct_resolved_share": 0.75,
+    "MEDIUM_min_resolved_share": 0.5
+  },
+  "hard_rules": [
+    "One best fact cannot hide stale or missing critical evidence.",
+    "Root Health cannot change causal direction.",
+    "Same-shock manifestations do not inflate independent confirmation."
+  ]
+}

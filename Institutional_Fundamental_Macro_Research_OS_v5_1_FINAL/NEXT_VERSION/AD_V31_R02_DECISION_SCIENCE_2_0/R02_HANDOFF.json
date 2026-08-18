@@ -1,0 +1,62 @@
+{
+  "record_type": "AD_V31_R02_HANDOFF",
+  "baseline_commit": "bade4df",
+  "version": "3.1.2-decision-science-2",
+  "status": "PASS",
+  "P01_P12": "PASS",
+  "R01": "PASS",
+  "R02": "PASS",
+  "V2_rollback": "PASS",
+  "magnitude_method_coverage": {
+    "NOT_APPLICABLE": 149,
+    "SUPPORTED": 30,
+    "CONTEXT_ONLY": 13
+  },
+  "fact_universe_count": 192,
+  "normalized_facts_in_packaged_state": 0,
+  "context_only_facts": 13,
+  "not_applicable_or_unknown_method_facts": 149,
+  "root_health_engine": "POPULATION_AWARE",
+  "critical_root_gap_state_in_packaged_state": "NO_LIVE_RUN",
+  "importance_matrix_version": "1.0.0",
+  "primary_horizon": "SESSION_1_6H",
+  "session_primary_or_systemic_roots": [
+    "US_POLICY_EXPECTATIONS",
+    "REAL_RATE_OPPORTUNITY_COST",
+    "USD_AUTONOMOUS",
+    "FUNDING_COLLATERAL_STRESS"
+  ],
+  "session_structural_context_roots": [
+    "FISCAL_SOVEREIGN_MONETARY_CREDIBILITY",
+    "OFFICIAL_SECTOR_DEMAND",
+    "PHYSICAL_REGIONAL_DEMAND_BALANCE",
+    "PHYSICAL_SUPPLY_RECYCLING_HEDGING",
+    "GEOPOLITICAL_INSURANCE_RISK",
+    "GLOBAL_MONETARY_LIQUIDITY",
+    "INVESTMENT_ALLOCATION_DEMAND",
+    "INFLATION_CREDIBILITY_HEDGE_DEMAND"
+  ],
+  "sensitivity_variant_count": 7,
+  "current_robustness_state": "NO_LIVE_RUN",
+  "r01_qualification_policy_changed": false,
+  "old_r01_qualification_cohort": "PRESERVED_RUNTIME_LOCAL",
+  "new_r02_qualification_boundary": "INITIALIZE_ON_OPERATOR_INSTALL",
+  "pre_r02_history_preserved": true,
+  "decision_science_fingerprint": "R02SCI_4C0B51C18E27AED586352886E67B360A6248930F676111411F5EB9DD17413C9C",
+  "amendment_fingerprint": "V31R02_9490EAB470EF7D69F9937592C2B352E09BD38DB07C9D168D49DF3BD5611797BC",
+  "full_release_fingerprint": "V3REL_F734E47615B65895AB79960AC10F41529C777B0D1D88F6A8B0926299B00D1D38",
+  "science_drift": {
+    "Gold_ontology": 0,
+    "P03_causal_roots": 0,
+    "Pressure_planes": 0,
+    "P06_semantic_authority": 0,
+    "P07_freshness_authority": 0,
+    "P09_outcome_science": 0,
+    "R01_qualification_thresholds": 0,
+    "P08_decision_science": "INTENTIONAL_VERSIONED_R02_AMENDMENT"
+  },
+  "v3_state": "SHADOW_COMMISSIONING",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE",
+  "next": "AD-V3.1-R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE_ENGINE"
+}

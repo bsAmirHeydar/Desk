@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "phase": "AD-V3-P08",
-  "version": "3.8.0-decision-science-calibration",
+  "version": "3.8.1-r02-decision-science-2",
   "subject": "XAUUSD",
   "default_horizon": "SESSION_1_6H",
   "pressure_strength_states": [
@@ -65,12 +65,16 @@
   },
   "rules": [
     "P03 remains the sole causal-direction authority; P08 may reconcile opposing P03 root states but cannot invent a new causal direction.",
-    "Root dominance is not based on raw fact count.",
     "Internal rank tuples are ordinal audit aids, not probabilities or user-facing confidence scores.",
     "Pressure and price remain separate; transmission can cap edge/permission but cannot rewrite causal pressure.",
     "WAIT is a first-class governed decision.",
-    "Trade execution authority remains NONE."
+    "Trade execution authority remains NONE.",
+    "R02 magnitude is not inferred from evidence quality or P03 strength.",
+    "R02 root health is population-aware; one best fact cannot hide critical gaps.",
+    "R02 importance is root/horizon/regime scientific policy, not freshness tier.",
+    "R02 bounded sensitivity measures model dependence, not probability."
   ],
   "production_promotion_forbidden": true,
-  "trade_execution_authority": "NONE"
+  "trade_execution_authority": "NONE",
+  "r02_decision_science_version": "3.1.2-decision-science-2"
 }

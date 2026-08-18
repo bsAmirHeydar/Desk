@@ -11,5 +11,8 @@
   "certification_state": "CERTIFIED_PENDING_FORWARD_SAMPLE",
   "release_fingerprint": "V3REL_AE2F05DF8B0DA90965E2076019377E60872946E3C67FD38B1CD14D18BF513938",
   "parent_release_candidate": "ALPHA_DESK_V3_GOLD_RC1",
-  "active_v31_amendment": "AD-V3.1-R01"
+  "active_v31_amendment": "AD-V3.1-R01",
+  "v31_r02_amendment": "3.1.2-decision-science-2",
+  "current_release_fingerprint": "V3REL_6F239263F4869DF22E2DE60BBC1DF15C4B0799A97EC7E1E91620FAE7C216EB74",
+  "r02_decision_science_fingerprint": "R02SCI_4C0B51C18E27AED586352886E67B360A6248930F676111411F5EB9DD17413C9C"
 }

@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R02",
+  "version": "3.1.2-decision-science-2",
+  "primary_horizon": "SESSION_1_6H",
+  "magnitude_unknown_edge_cap": "CONDITIONAL_EDGE",
+  "critical_root_health_edge_cap": "CONDITIONAL_EDGE",
+  "high_model_sensitivity_edge_cap": "CONDITIONAL_EDGE",
+  "unstable_model_sensitivity_edge_cap": "LOW_EDGE",
+  "strength_states": [
+    "UNKNOWN",
+    "WEAK",
+    "MODERATE",
+    "STRONG",
+    "DOMINANT"
+  ],
+  "trade_execution_authority": "NONE",
+  "production_promotion_forbidden": true,
+  "no_probability": true
+}
