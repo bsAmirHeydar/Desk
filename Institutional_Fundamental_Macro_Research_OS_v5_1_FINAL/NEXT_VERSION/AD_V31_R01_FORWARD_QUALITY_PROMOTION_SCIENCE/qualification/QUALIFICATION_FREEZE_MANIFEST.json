@@ -1,0 +1,28 @@
+{
+  "record_type": "AD_V31_R01_QUALIFICATION_FREEZE",
+  "schema_version": "1.0.0",
+  "surfaces": [
+    {
+      "path": "config/forward_quality_policy.json",
+      "sha256": "2930cc4559a483eea7f623a5bc4111df1cbeeba666892ea1c38763c05467db73"
+    },
+    {
+      "path": "config/benchmark_policy.json",
+      "sha256": "a5197f3f92a6675fb10199a21f6911cc09429b1224df093aad9ba4b3d2c343ca"
+    },
+    {
+      "path": "config/coverage_policy.json",
+      "sha256": "a121a54b4e49a251b2d7c1624d6bf6d9a85016ec7b625e24e1ba67aca7388d33"
+    },
+    {
+      "path": "config/critical_subgroup_policy.json",
+      "sha256": "ffb4aa6d55794d115426d39baeffe92bd5849da796f3ed7b9cfc7bc2be702590"
+    },
+    {
+      "path": "config/qualification_freeze_policy.json",
+      "sha256": "34785693a98555218c5dde7ddb6aec6048c7a9a3ab5e0933354089483e7daf7c"
+    }
+  ],
+  "parent_release": "ALPHA_DESK_V3_GOLD_RC1",
+  "policy_fingerprint": "R01QPOL_F1B804E0A86E9FADE7BA38D90AC79954F602C9D8DD9BA12171EB907577D8980F"
+}

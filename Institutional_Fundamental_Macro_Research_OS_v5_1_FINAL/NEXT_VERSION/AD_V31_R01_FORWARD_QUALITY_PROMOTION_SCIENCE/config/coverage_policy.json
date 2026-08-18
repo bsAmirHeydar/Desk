@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R01",
+  "coverage_version": "1.0.0",
+  "hard_requirements": {
+    "min_evaluated_primary_episodes": 40,
+    "min_bullish_episodes": 12,
+    "min_bearish_episodes": 12,
+    "min_actionable_permission_episodes": 15,
+    "min_wait_episodes": 15,
+    "min_event_exposed_episodes": 5,
+    "min_event_free_episodes": 20,
+    "min_volatility_regimes": 2,
+    "min_episodes_per_volatility_regime": 5,
+    "max_dominant_root_share": 0.8
+  },
+  "volatility_regime_policy": {
+    "source": "T0_VOLATILITY_REFERENCE_ONLY",
+    "bands": [
+      {
+        "state": "LOW",
+        "max": 0.004
+      },
+      {
+        "state": "NORMAL",
+        "max": 0.008
+      },
+      {
+        "state": "HIGH",
+        "max": 0.015
+      },
+      {
+        "state": "STRESS",
+        "max": null
+      }
+    ],
+    "missing_reference_state": "UNOBSERVED",
+    "future_realized_volatility_forbidden": true
+  },
+  "event_coverage_hard_gate": true,
+  "volatility_coverage_hard_gate": true,
+  "root_concentration_hard_gate": true,
+  "rationale": "Production qualification must not rest on one direction, one quiet regime, or one causal root. Event and volatility coverage are intentionally hard gates; if current instrumentation cannot observe them, the correct result is coverage insufficient until later amendments improve capture."
+}

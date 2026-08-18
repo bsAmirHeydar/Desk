@@ -1,0 +1,49 @@
+{
+  "phase": "AD-V3.1-R01",
+  "version": "3.1.1-forward-quality",
+  "baseline_commit": "8785e86",
+  "baseline_release": "ALPHA_DESK_V3_GOLD_RC1",
+  "release_candidate": "ALPHA_DESK_V3_1_R01",
+  "release_fingerprint": "V3REL_3C542397C632213B9CE634D955000CB1E9D8F80F6E7EB076726EE79980FD7573",
+  "amendment_fingerprint": "V31R01_23D55964E32C48C48CDAE94CCE8760309D633757534F5CA5278E67D7C3DC7C76",
+  "status": "PASS",
+  "phase_status": {
+    "P01": "PASS",
+    "P02": "PASS",
+    "P03": "PASS",
+    "P04": "PASS",
+    "P05": "PASS",
+    "P06": "PASS",
+    "P07": "PASS",
+    "P08": "PASS",
+    "P09": "PASS",
+    "P10": "PASS",
+    "P11": "PASS",
+    "P12": "PASS",
+    "R01": "PASS"
+  },
+  "v2_rollback": {
+    "P11": "PASS",
+    "P13": "PASS"
+  },
+  "real_p09_state": {
+    "active_cohort": null,
+    "predictions": 0,
+    "episodes": 0,
+    "mature_episodes": 0,
+    "mature_unevaluated": 0,
+    "forward_evidence_state": "NO_SAMPLES"
+  },
+  "qualification_cohort": null,
+  "sample_maturity": "NO_SAMPLES",
+  "forward_quality": "UNAVAILABLE",
+  "coverage": "UNAVAILABLE",
+  "critical_subgroup_state": "UNAVAILABLE",
+  "production_qualification": "INSUFFICIENT_EVIDENCE",
+  "quality_policy_fingerprint": "R01QPOL_F1B804E0A86E9FADE7BA38D90AC79954F602C9D8DD9BA12171EB907577D8980F",
+  "qualification_freeze": "PASS",
+  "production_state": "SHADOW_COMMISSIONING",
+  "promotion_performed": false,
+  "trade_execution_authority": "NONE",
+  "next": "AD-V3.1-R02_DECISION_SCIENCE_2_0"
+}

@@ -14,6 +14,7 @@ from AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION.runtime.decision_runtime import
 from AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0.runtime.forward_runtime import observe_and_evaluate as p09_observe_and_evaluate,precommit_current as p09_precommit_current,status as p09_status
 from AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0.runtime.forward_ledger import load_state as p09_load_state,save_state as p09_save_state
 from AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0.runtime.outcome_data import observation_from_anchor,add_observation
+from AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE.runtime.qualification_engine import qualify as r01_qualify
 from AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING.runtime.promotion import load_state as load_promotion
 from AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM.runtime.report_runtime import render_report as render_p11_report
 from AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING.runtime.capsule import build as build_p04_capsule
@@ -71,7 +72,7 @@ def _classify(admission,decision):
     if action in {None,'WAIT','WAIT_CANDIDATE'} or direction in {None,'UNKNOWN','MIXED'}:return 'SUCCESS_NONACTIONABLE'
     return 'SUCCESS'
 
-def run_gold(repo_root,horizon='SESSION_1_6H',authority_mode='SHADOW',acquisition_mode='NORMAL',semantic_bundle_path=None,p02_data_root_override=None,artifact_root_override=None,kernel_fixture_dir=None,kernel_output_root_override=None,p09_state_root_override=None,as_of_utc=None,fixture_mode=False,update_latest=True,fail_stage=None,quiet=False):
+def run_gold(repo_root,horizon='SESSION_1_6H',authority_mode='SHADOW',acquisition_mode='NORMAL',semantic_bundle_path=None,p02_data_root_override=None,artifact_root_override=None,kernel_fixture_dir=None,kernel_output_root_override=None,p09_state_root_override=None,r01_state_root_override=None,as_of_utc=None,fixture_mode=False,update_latest=True,fail_stage=None,quiet=False):
     repo=pathlib.Path(repo_root);paths=_paths(repo);decision_time=as_of_utc or iso();run_id=stable_id('P10RUN',{'t':decision_time,'h':horizon,'a':authority_mode,'m':acquisition_mode,'fixture':bool(fixture_mode)})
     root=pathlib.Path(artifact_root_override) if artifact_root_override else paths['p10']/'artifacts';am=ArtifactManager(root);stages=[];warnings=[];started=time.perf_counter();rd=None
     def stage(sid,status='PASS',t0=None,detail=None,artifacts=None,error=None):
@@ -123,7 +124,7 @@ def run_gold(repo_root,horizon='SESSION_1_6H',authority_mode='SHADOW',acquisitio
         _progress('[9/10] Control Room',quiet);t=time.perf_counter();run_meta={'run_id':run_id,'subject':'Gold','decision_time':decision_time,'horizon':horizon,'authority_mode':authority_mode,'runtime_version':VERSION};lineage={'p07_plan_sha256':sha_file(rd/'p07_acquisition_plan.json'),'p07_kernel_sha256':sha_file(rd/'p07_kernel_receipt.json'),'p03_final_sha256':sha_file(rd/'p03_final.json'),'p08_sha256':sha_file(rd/'p08_decision_calibration.json'),'p09_precommit_sha256':sha_file(rd/'p09_forward_precommit.json')};eidx=_evidence_index(data,kernel.get('p02_acquisition_run_id'));prev_input=None
         last=am.read_pointer('last_success.json') if update_latest and not fixture_mode else None
         if last and last.get('run_dir') and (pathlib.Path(last['run_dir'])/'control_room_input.json').exists():prev_input=load(pathlib.Path(last['run_dir'])/'control_room_input.json')
-        cri=build_cr_input(run_meta,kernel,pre,packet,sem,final,cal,p09_eval,p09c,promotion,warnings,lineage,eidx,stages);atomic_json(rd/'control_room_input.json',cri);report=render_p11_report(cri,rd,previous_input=prev_input,fixture=fixture_mode);atomic_json(rd/'control_room.json',report['view_model']);stage('CONTROL_MODEL',t0=t,detail={'phase':'AD-V3-P11','executive':report['view_model'].get('executive')},artifacts=['control_room_input.json','control_room_view_model.json','control_room.json'])
+        qualification=r01_qualify(p09_state_root_override,r01_state_root_override);cri=build_cr_input(run_meta,kernel,pre,packet,sem,final,cal,p09_eval,p09c,promotion,warnings,lineage,eidx,stages,qualification);atomic_json(rd/'control_room_input.json',cri);report=render_p11_report(cri,rd,previous_input=prev_input,fixture=fixture_mode);atomic_json(rd/'control_room.json',report['view_model']);stage('CONTROL_MODEL',t0=t,detail={'phase':'AD-V3-P11','executive':report['view_model'].get('executive')},artifacts=['control_room_input.json','control_room_view_model.json','control_room.json'])
         stage('REPORT',t0=time.perf_counter(),detail={'phase':'AD-V3-P11','html':str(rd/'control_room.html'),'report_version':report['receipt'].get('version')},artifacts=['control_room.html','p11_report_receipt.json','brief.txt'])
         # P04 capsule retained as underlying artifact; P10 capsule is canonical index.
         build_p04_capsule(run_id,rd,pred,promotion.get('state')=='PRODUCTION_V3')

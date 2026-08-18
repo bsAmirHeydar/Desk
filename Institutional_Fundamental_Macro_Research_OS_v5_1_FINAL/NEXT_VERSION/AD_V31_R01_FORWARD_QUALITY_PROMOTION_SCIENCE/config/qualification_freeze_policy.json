@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R01",
+  "policy_version": "1.0.0",
+  "frozen_surfaces": [
+    "config/forward_quality_policy.json",
+    "config/benchmark_policy.json",
+    "config/coverage_policy.json",
+    "config/critical_subgroup_policy.json",
+    "config/qualification_freeze_policy.json"
+  ],
+  "policy_change_requires_new_qualification_cohort": true,
+  "existing_outcomes_immutable": true,
+  "existing_p09_history_preserved": true,
+  "pre_r01_episodes_primary_qualification_authority": false,
+  "qualification_start_rule": "EPISODE_START_AT_OR_AFTER_R01_QUALIFICATION_COHORT_START",
+  "reporting_only_changes_do_not_reset_qualification": true,
+  "runtime_bugfix_review_required_but_not_automatic_reset": true,
+  "scientific_change_requires_new_qualification": [
+    "P03",
+    "P06_SEMANTIC_AUTHORITY",
+    "P07_EVIDENCE_SEMANTICS",
+    "P08_DECISION_SCIENCE",
+    "P09_OUTCOME_METHODOLOGY",
+    "R01_QUALITY_POLICY"
+  ]
+}

@@ -352,10 +352,10 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_runtime.py",
-      "owner": "AD-V3-P09",
+      "owner": "AD-V3.1-R01/P09_QUALIFICATION_INSTRUMENTATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": true
+      "rollback_authority": false
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/artifacts/state/forward_state.json",
@@ -374,10 +374,10 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/gold_orchestrator.py",
-      "owner": "AD-V3-P10",
+      "owner": "AD-V3.1-R01/P10_PRESENTATION_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": true
+      "rollback_authority": false
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/artifacts/",
@@ -482,10 +482,10 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/runtime/gates.py",
-      "owner": "AD-V3-P12",
+      "owner": "AD-V3.1-R01/P12_PROMOTION_QUALITY_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": true,
+      "rollback_authority": false,
       "required": true
     },
     {
@@ -498,10 +498,10 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/runtime/status.py",
-      "owner": "AD-V3-P12",
+      "owner": "AD-V3.1-R01/P12_PROMOTION_QUALITY_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": true,
+      "rollback_authority": false,
       "required": true
     },
     {
@@ -527,6 +527,34 @@
       "commit": true,
       "rollback_authority": false,
       "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_statistics.py",
+      "owner": "AD-V3.1-R01/P09_QUALIFICATION_INSTRUMENTATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/control_room_input.py",
+      "owner": "AD-V3.1-R01/P10_PRESENTATION_INTEGRATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/presenter.py",
+      "owner": "AD-V3.1-R01/P11_PRESENTATION_INTEGRATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/renderer.py",
+      "owner": "AD-V3.1-R01/P11_PRESENTATION_INTEGRATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
     }
   ],
   "pattern_rules": [
@@ -656,6 +684,34 @@
       "owner": "AD-V3-P12",
       "class": "RUNTIME_ARTIFACT",
       "commit": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/config/*.json",
+      "owner": "AD-V3.1-R01",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/*.py",
+      "owner": "AD-V3.1-R01",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/schemas/*.json",
+      "owner": "AD-V3.1-R01",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/artifacts/**",
+      "owner": "AD-V3.1-R01_RUNTIME",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false,
+      "rollback_authority": false
     }
   ],
   "hard_rule": "No important surface may be simultaneously treated as immutable science and mutable deployment."

@@ -1,0 +1,8 @@
+{
+  "record_type": "AD_V31_R01_PARENT_RELEASE_LINEAGE",
+  "parent_release_candidate": "ALPHA_DESK_V3_GOLD_RC1",
+  "parent_release_fingerprint": "V3REL_AE2F05DF8B0DA90965E2076019377E60872946E3C67FD38B1CD14D18BF513938",
+  "operator_last_known_p12_commit": "8785e86",
+  "build_archive_git_available": false,
+  "existing_p09_history_policy": "PRESERVE_OBSERVATIONAL_NOT_PRIMARY_QUALIFICATION"
+}

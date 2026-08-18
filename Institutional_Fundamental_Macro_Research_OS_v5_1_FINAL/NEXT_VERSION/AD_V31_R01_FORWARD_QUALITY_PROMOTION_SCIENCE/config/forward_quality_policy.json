@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R01",
+  "policy_version": "3.1.1-forward-quality",
+  "primary_horizon": "SESSION_1_6H",
+  "prospective_only": true,
+  "episode_level_primary_unit": true,
+  "quality_states": [
+    "UNAVAILABLE",
+    "INSUFFICIENT",
+    "INCONCLUSIVE",
+    "PASS",
+    "FAIL"
+  ],
+  "production_states": [
+    "NOT_QUALIFIED",
+    "INSUFFICIENT_EVIDENCE",
+    "QUALITY_FAILED",
+    "COVERAGE_INSUFFICIENT",
+    "CRITICAL_SUBGROUP_FAILED",
+    "QUALIFIED"
+  ],
+  "core_hard_gates": [
+    "DIRECTION_QUALITY",
+    "EDGE_SEPARATION",
+    "PERMISSION_QUALITY",
+    "WAIT_QUALITY",
+    "PATH_COMPLETENESS"
+  ],
+  "supporting_diagnostics": [
+    "STRENGTH_CALIBRATION",
+    "DOMINANCE_CALIBRATION",
+    "CONSUMPTION_VALIDITY",
+    "FRAGILITY_VALIDITY"
+  ],
+  "direction_quality": {
+    "min_evaluable_episodes": 40,
+    "min_non_neutral_episodes": 30,
+    "min_bull_episodes": 12,
+    "min_bear_episodes": 12,
+    "min_class_balanced_alignment_rate": 0.55,
+    "min_overall_wilson_lower_bound": 0.5,
+    "max_neutral_share": 0.35,
+    "rationale": "Requires class-balanced evidence on both bullish and bearish calls and an alignment rate meaningfully above a balanced-sign null without relying on a single raw hit rate."
+  },
+  "edge_separation": {
+    "actionable_states": [
+      "ACTIONABLE_EDGE"
+    ],
+    "baseline_states": [
+      "NO_EDGE",
+      "LOW_EDGE"
+    ],
+    "min_actionable_path_samples": 12,
+    "min_baseline_path_samples": 12,
+    "min_actionable_supported_path_rate": 0.55,
+    "min_supported_path_rate_separation": 0.1,
+    "max_actionable_adverse_path_rate": 0.3,
+    "rationale": "ACTIONABLE_EDGE must prospectively separate from low/no-edge states on path quality, not merely terminal sign."
+  },
+  "permission_quality": {
+    "min_directional_permission_samples": 20,
+    "min_supported_rate": 0.55,
+    "max_opposed_rate": 0.3,
+    "min_supported_wilson_lower_bound": 0.45,
+    "rationale": "BUY/SELL research permission must produce meaningful supported paths often enough and avoid a high opposed-path rate."
+  },
+  "wait_quality": {
+    "min_wait_samples": 20,
+    "min_protective_or_appropriate_rate": 0.55,
+    "max_missed_opportunity_rate": 0.35,
+    "max_unresolved_rate": 0.2,
+    "rationale": "WAIT is a first-class decision and must demonstrate that restraint is usually protective/appropriate rather than systematically missing clean opportunity."
+  },
+  "path_completeness": {
+    "min_path_authority_share_for_edge_permission": 0.8,
+    "rationale": "Path-dependent edge/permission claims cannot qualify when most outcomes lack valid MFE/MAE coverage."
+  },
+  "supporting_min_group_n": 10,
+  "supporting_tolerance": 0.05,
+  "no_single_magic_score": true,
+  "threshold_optimizer_forbidden": true,
+  "post_hoc_metric_deletion_forbidden": true
+}

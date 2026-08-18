@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "language": "fa",
   "technical_fallback": true,
   "states": {
@@ -65,7 +65,20 @@
     "BUILDING": "در حال ساخت",
     "PERSISTENT": "پایدار",
     "FADING": "رو به تضعیف",
-    "REVERSING": "در حال معکوس‌شدن"
+    "REVERSING": "در حال معکوس‌شدن",
+    "PASS": "پاس",
+    "FAIL": "رد",
+    "INCONCLUSIVE": "نامشخص از نظر کیفیت",
+    "QUALIFIED": "واجد شرایط تولید",
+    "NOT_QUALIFIED": "فاقد شرایط تولید",
+    "INSUFFICIENT_EVIDENCE": "شواهد ناکافی",
+    "QUALITY_FAILED": "کیفیت مردود",
+    "COVERAGE_INSUFFICIENT": "پوشش ناکافی",
+    "CRITICAL_SUBGROUP_FAILED": "شکست زیرگروه بحرانی",
+    "CERTIFIED_PENDING_FORWARD_SAMPLE": "در انتظار نمونه Forward",
+    "CERTIFIED_PENDING_FORWARD_QUALITY": "در انتظار اثبات کیفیت Forward",
+    "CERTIFIED_PENDING_COVERAGE": "در انتظار پوشش کافی",
+    "FORWARD_QUALITY_FAILED": "کیفیت Forward مردود"
   },
   "roots": {
     "US_POLICY_EXPECTATIONS": "انتظارات سیاست پولی آمریکا",

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "sample_gate",
+    "quality_gate",
+    "coverage_gate",
+    "critical_subgroup_gate",
+    "production_qualification_state"
+  ],
+  "additionalProperties": true
+}

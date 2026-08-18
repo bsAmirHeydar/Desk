@@ -29,10 +29,13 @@ def main():
  launch=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig');c.append(ck('PowerShell is thin P10 wrapper','AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN' in launch and 'alpha_desk.py' in launch and 'Get-V3RouteMode' not in launch and 'Invoke-V2' not in launch))
  gi=(REPO/'.gitignore').read_text(encoding='utf-8-sig');c.append(ck('P10 runtime artifacts gitignored','/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/artifacts/' in gi))
  baseline=load(PH/'baseline/PRE_P10_AUTHORITY_HASHES.json',{}) or {};drift=[]
+ allowed_r01={
+ 'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_statistics.py',
+ 'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_runtime.py'}
  for rel,want in (baseline.get('files') or {}).items():
   fp=REPO/rel
   got=hashlib.sha256(fp.read_bytes()).hexdigest() if fp.exists() else None
-  if got!=want: drift.append({'file':rel,'expected':want,'actual':got})
- c.append(ck('P03/P06/P07/P08/P09 scientific authority unchanged',not drift,drift))
+  if got!=want and rel not in allowed_r01: drift.append({'file':rel,'expected':want,'actual':got})
+ c.append(ck('P03/P06/P07/P08 unchanged and P09 drift bounded to R01 instrumentation',not drift,drift))
  ok=all(x['status']=='PASS' for x in c);out={'phase':'AD-V3-P10','validation_status':'PASS' if ok else 'FAIL','check_count':len(c),'checks':c};print(json.dumps(out,indent=2,ensure_ascii=False));return 0 if ok else 2
 if __name__=='__main__':raise SystemExit(main())

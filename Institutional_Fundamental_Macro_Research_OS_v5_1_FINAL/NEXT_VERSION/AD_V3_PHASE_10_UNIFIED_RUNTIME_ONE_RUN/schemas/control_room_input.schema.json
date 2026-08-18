@@ -29,6 +29,9 @@
     },
     "stage_timings": {
       "type": "array"
+    },
+    "forward_qualification": {
+      "type": "object"
     }
   }
 }

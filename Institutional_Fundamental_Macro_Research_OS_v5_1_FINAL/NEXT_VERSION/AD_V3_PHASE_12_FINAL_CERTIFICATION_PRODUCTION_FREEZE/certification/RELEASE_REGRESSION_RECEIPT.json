@@ -1,7 +1,8 @@
 {
   "record_type": "AD_V3_P12_RELEASE_REGRESSION_RECEIPT",
+  "schema_version": "1.1.0",
   "status": "PASS",
-  "method": "P01-P11 acceptance executed individually after P12 integration; V2 P11/P13 rollback acceptance executed",
+  "release_candidate": "ALPHA_DESK_V3_1_R01",
   "phase_status": {
     "P01": "PASS",
     "P02": "PASS",
@@ -14,8 +15,10 @@
     "P09": "PASS",
     "P10": "PASS",
     "P11": "PASS",
+    "P12": "PASS",
     "V2_P11": "PASS",
     "V2_P13": "PASS"
   },
-  "note": "P12 acceptance verifies this receipt plus P12-specific freeze/gate/golden/adversarial controls; it does not recursively rerun nested prerequisite suites."
+  "r01_status": "PASS",
+  "parent_receipt": "certification/V3_RC1_RELEASE_REGRESSION_RECEIPT.json"
 }

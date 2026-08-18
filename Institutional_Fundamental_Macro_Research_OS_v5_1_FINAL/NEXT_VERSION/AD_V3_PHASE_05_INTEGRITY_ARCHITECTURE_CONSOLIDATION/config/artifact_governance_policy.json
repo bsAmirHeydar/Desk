@@ -141,6 +141,11 @@
       "kind": "p11_control_room_reports",
       "class": "RUNTIME_ARTIFACT",
       "commit": false
+    },
+    {
+      "kind": "r01_qualification_runtime_state",
+      "class": "RUNTIME_STATE",
+      "commit": false
     }
   ],
   "required_gitignore_patterns": [
@@ -156,7 +161,8 @@
     "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/artifacts/",
     "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/artifacts/",
     "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/artifacts/",
-    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/artifacts/"
+    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/artifacts/",
+    "/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/artifacts/"
   ],
   "historical_rule": "Scientific evidence is classified or archived; it is not deleted merely to make the tree look clean."
 }

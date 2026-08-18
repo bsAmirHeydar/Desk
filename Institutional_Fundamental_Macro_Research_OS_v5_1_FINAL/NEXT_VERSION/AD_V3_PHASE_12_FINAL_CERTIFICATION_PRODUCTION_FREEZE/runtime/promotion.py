@@ -21,7 +21,7 @@ def _switch(target,receipt_kind,reason=None,test_root=None):
   sp=_state_path();mp=_manifest_path();tx=_tx_path();old_s=_current_state();old_m=load(mp,{}) or {}
  rel=_release();finger=rel.get('release_fingerprint');tid='P12TX_'+uuid.uuid4().hex[:20].upper();atomic_json(tx,{'transaction_id':tid,'target':target,'started_at_utc':iso()})
  try:
-  newm=dict(old_m);newm['alpha_desk_v3']={'release':'ALPHA_DESK_V3_GOLD_RC1','release_fingerprint':finger,'production_authority':target,'canonical_runtime':'AD-V3-P10','canonical_html':'AD-V3-P11','rollback_target':'V2','trade_execution_authority':'NONE','updated_at_utc':iso()};atomic_json(mp,newm)
+  newm=dict(old_m);newm['alpha_desk_v3']={'release':rel.get('release_candidate') or 'ALPHA_DESK_V3_GOLD_RC1','release_fingerprint':finger,'production_authority':target,'canonical_runtime':'AD-V3-P10','canonical_html':'AD-V3-P11','rollback_target':'V2','trade_execution_authority':'NONE','updated_at_utc':iso()};atomic_json(mp,newm)
   ns=dict(old_s);ns.update({'state':target,'updated_at_utc':iso(),'release_fingerprint':finger,'trade_execution_authority':'NONE','v2_baseline_retained':True,'automatic_promotion_forbidden':True})
   if target=='PRODUCTION_V3':ns.update({'promoted_at_utc':iso(),'production_direction_authority':True,'production_trade_permission_authority':True,'manual_operator_approval':True})
   else:ns.update({'production_direction_authority':False,'production_trade_permission_authority':False,'rollback_reason':reason or 'OPERATOR_ROLLBACK_TO_V2'})

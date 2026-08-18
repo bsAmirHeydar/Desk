@@ -72,8 +72,20 @@
       "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
     },
     {
-      "gate_id": "P09_FORWARD_EVIDENCE_PROVISIONAL",
+      "gate_id": "P09_SAMPLE_MATURITY_GATE",
       "machine_evaluator": "AD-V3-P12 final certification/promotion gate engine"
+    },
+    {
+      "gate_id": "R01_FORWARD_QUALITY_GATE",
+      "machine_evaluator": "AD-V3.1-R01 qualification engine via AD-V3-P12"
+    },
+    {
+      "gate_id": "R01_COVERAGE_GATE",
+      "machine_evaluator": "AD-V3.1-R01 qualification engine via AD-V3-P12"
+    },
+    {
+      "gate_id": "R01_CRITICAL_SUBGROUP_GATE",
+      "machine_evaluator": "AD-V3.1-R01 qualification engine via AD-V3-P12"
     },
     {
       "gate_id": "GOLDEN_CERTIFICATION_PASS",
@@ -112,5 +124,6 @@
     "explicit approval is mandatory"
   ],
   "prospective_validation_authority": "AD-V3-P09",
-  "final_certification_authority": "AD-V3-P12"
+  "final_certification_authority": "AD-V3-P12",
+  "production_qualification_authority": "AD-V3.1-R01"
 }

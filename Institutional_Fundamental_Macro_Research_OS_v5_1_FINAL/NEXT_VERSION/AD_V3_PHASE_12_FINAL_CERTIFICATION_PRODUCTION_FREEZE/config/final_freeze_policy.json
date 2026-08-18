@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "phase": "AD-V3-P12",
   "immutable_classes": {
     "SCIENTIFIC_IMMUTABLE": [
@@ -40,7 +40,10 @@
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/config/*.json",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/runtime/*.py",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/schemas/*.json",
-      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/tools/*.py"
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/tools/*.py",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/config/*.json",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/*.py",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/schemas/*.json"
     ]
   },
   "mutable_classes": {
@@ -53,5 +56,10 @@
       "**/artifacts/**"
     ]
   },
-  "hard_rule": "mutable runtime/promotion/P09 ledger/latest state is excluded from immutable science freeze"
+  "hard_rule": "mutable runtime/promotion/P09 ledger/latest state is excluded from immutable science freeze",
+  "amendment_lineage": {
+    "parent_release": "ALPHA_DESK_V3_GOLD_RC1",
+    "amendment": "AD-V3.1-R01",
+    "qualification_runtime_frozen": true
+  }
 }

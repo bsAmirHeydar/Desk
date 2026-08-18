@@ -24,7 +24,7 @@ def main():
   td=pathlib.Path(td);data=td/'data';art=td/'art';kout=td/'kernel';p09=td/'p09'
   out=run_gold(REPO,'SESSION_1_6H','FIXTURE','NORMAL',p02_data_root_override=data,artifact_root_override=art,kernel_fixture_dir=fix,kernel_output_root_override=kout,p09_state_root_override=p09,as_of_utc='2026-08-17T10:00:00Z',fixture_mode=True,update_latest=False,quiet=True)
   rd=next((art/'runs').iterdir());cri=load(rd/'control_room_input.json');vm=load(rd/'control_room_view_model.json');html=(rd/'control_room.html').read_text(encoding='utf-8');receipt=load(rd/'p11_report_receipt.json');soup=BeautifulSoup(html,'lxml')
-  checks.append(ck('P10 ControlRoomInput is canonical P11 input',cri.get('schema_id')=='ControlRoomInputV3' and cri.get('schema_version')=='1.1.0'))
+  checks.append(ck('P10 ControlRoomInput is canonical P11 input',cri.get('schema_id')=='ControlRoomInputV3' and cri.get('schema_version')=='1.2.0'))
   checks.append(ck('P10 report stage uses P11 canonical renderer',out.get('report_state')=='P11_GENERATED' and receipt.get('canonical_v3_renderer') is True))
   checks.append(ck('P11 view model schema valid',_schema(vm,PH/'schemas/control_room_view_model.schema.json')))
   checks.append(ck('P11 report receipt schema valid',_schema(receipt,PH/'schemas/report_receipt.schema.json')))
@@ -76,8 +76,14 @@ def main():
  cli=(NEXT/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/tools/alpha_desk.py').read_text(encoding='utf-8');checks.append(ck('commission-report/open remain shadow report commands','commission-report' in cli and 'commission-open' in cli and 'v3-control-room-status' in cli))
  # Science integrity.
  b=load(PH/'baseline/PRE_P11_AUTHORITY_HASHES.json');drift=[]
+ allowed_r01={
+ 'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_statistics.py',
+ 'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_runtime.py',
+ 'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/control_room_input.py',
+ 'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/gold_orchestrator.py',
+ 'Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/schemas/control_room_input.schema.json'}
  for rel,expected in b.get('hashes',{}).items():
-  if rel.endswith('/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/config/stage_dag.json'): continue
+  if rel.endswith('/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/config/stage_dag.json') or rel in allowed_r01: continue
   p=REPO/rel
   if p.exists() and sha(p)!=expected:drift.append(rel)
  checks.append(ck('substantive upstream science/runtime authority drift zero',not drift,drift))

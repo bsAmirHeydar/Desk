@@ -1,0 +1,25 @@
+{
+  "record_type": "AD_V31_R01_RELEASE_REGRESSION_RECEIPT",
+  "schema_version": "1.0.0",
+  "status": "PASS",
+  "phase_status": {
+    "P01": "PASS",
+    "P02": "PASS",
+    "P03": "PASS",
+    "P04": "PASS",
+    "P05": "PASS",
+    "P06": "PASS",
+    "P07": "PASS",
+    "P08": "PASS",
+    "P09": "PASS",
+    "P10": "PASS",
+    "P11": "PASS",
+    "P12": "PASS",
+    "R01": "PASS",
+    "V2_P11": "PASS",
+    "V2_P13": "PASS"
+  },
+  "baseline_commit": "8785e86",
+  "build_archive_git_available": false,
+  "note": "P01-P11 executed in bounded groups due build-tool wall-clock cap; P12/R01/V2 executed separately; all actual subprocess results PASS."
+}

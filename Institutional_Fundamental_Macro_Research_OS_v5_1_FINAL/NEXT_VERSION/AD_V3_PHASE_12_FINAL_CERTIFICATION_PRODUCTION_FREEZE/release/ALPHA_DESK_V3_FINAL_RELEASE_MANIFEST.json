@@ -1,7 +1,11 @@
 {
-  "release_candidate": "ALPHA_DESK_V3_GOLD_RC1",
-  "release_fingerprint": "V3REL_AE2F05DF8B0DA90965E2076019377E60872946E3C67FD38B1CD14D18BF513938",
-  "build_baseline_commit": "91ae468",
+  "release_candidate": "ALPHA_DESK_V3_1_R01",
+  "release_fingerprint": "V3REL_3C542397C632213B9CE634D955000CB1E9D8F80F6E7EB076726EE79980FD7573",
+  "amendment_fingerprint": "V31R01_23D55964E32C48C48CDAE94CCE8760309D633757534F5CA5278E67D7C3DC7C76",
+  "parent_release_candidate": "ALPHA_DESK_V3_GOLD_RC1",
+  "parent_release_fingerprint": "V3REL_AE2F05DF8B0DA90965E2076019377E60872946E3C67FD38B1CD14D18BF513938",
+  "build_baseline_commit": "RESOLVED_FROM_LOCAL_GIT_AT_INSTALL",
+  "expected_operator_baseline_commit": "8785e86",
   "certification_commit": "RESOLVED_FROM_LOCAL_GIT_AT_RUNTIME",
   "phase_versions": {
     "P01": "3.1.1-foundation",
@@ -15,11 +19,12 @@
     "P09": "3.9.0-true-forward-validation-2.0",
     "P10": "3.10.0-unified-runtime",
     "P11": "3.11.0-final-control-room",
-    "P12": "3.12.0-final-certification-freeze"
+    "P12": "3.12.1-v31-r01-qualified",
+    "R01": "3.1.1-forward-quality"
   },
   "authority_map": {
-    "schema_version": "1.0.0",
-    "release_line": "ALPHA_DESK_V3_GOLD",
+    "schema_version": "1.1.0",
+    "release_line": "ALPHA_DESK_V3_1_GOLD",
     "authorities": [
       {
         "domain": "GOLD_ONTOLOGY",
@@ -67,6 +72,11 @@
         "canonical_count": 1
       },
       {
+        "domain": "PROSPECTIVE_FORWARD_PRODUCTION_QUALIFICATION",
+        "owner": "AD-V3.1-R01",
+        "canonical_count": 1
+      },
+      {
         "domain": "FINAL_CERTIFICATION_FREEZE_PROMOTION",
         "owner": "AD-V3-P12",
         "canonical_count": 1
@@ -76,19 +86,30 @@
       "AD-V3-P04": "commissioning/promotion compatibility shell; legacy renderer/forward noncanonical",
       "AD-V3-P05": "integrity governance",
       "AD-V2-P11": "legacy V2 prompt/runtime only",
-      "AD-V2-P13": "legacy V2 production report/rollback target"
+      "AD-V2-P13": "legacy V2 production report/rollback target",
+      "AD-V3-P12": "final certification/freeze and atomic promotion transaction; quality eligibility delegated to AD-V3.1-R01"
     },
     "trade_execution_authority": "NONE"
   },
   "freeze_manifest": "release/FINAL_FREEZE_MANIFEST.json",
-  "certification_state_at_supplied_snapshot": "CERTIFIED_PENDING_FORWARD_EVIDENCE",
+  "parent_freeze_manifest": "release/V3_RC1_FINAL_FREEZE_MANIFEST.json",
+  "r01_qualification_freeze_manifest": "../AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/qualification/QUALIFICATION_FREEZE_MANIFEST.json",
+  "r01_policy_fingerprint": "R01QPOL_F1B804E0A86E9FADE7BA38D90AC79954F602C9D8DD9BA12171EB907577D8980F",
+  "certification_state_at_supplied_snapshot": "CERTIFIED_PENDING_FORWARD_SAMPLE",
   "p09_forward_state_at_supplied_snapshot": "NO_SAMPLES",
+  "r01_qualification_cohort_at_supplied_snapshot": null,
   "production_promotion_performed": false,
   "production_authority": "V2",
   "canonical_v3_runtime": "AD-V3-P10",
   "canonical_v3_html": "AD-V3-P11",
+  "forward_production_qualification_authority": "AD-V3.1-R01",
   "rollback_target": "V2",
   "trade_execution_authority": "NONE",
-  "certification_state": "CERTIFIED_PENDING_FORWARD_EVIDENCE",
-  "p09_mature_episodes_at_supplied_snapshot": 0
+  "lineage": {
+    "parent_release_fingerprint": "V3REL_AE2F05DF8B0DA90965E2076019377E60872946E3C67FD38B1CD14D18BF513938",
+    "v31_release_fingerprint": "V3REL_3C542397C632213B9CE634D955000CB1E9D8F80F6E7EB076726EE79980FD7573",
+    "r01_policy_fingerprint": "R01QPOL_F1B804E0A86E9FADE7BA38D90AC79954F602C9D8DD9BA12171EB907577D8980F",
+    "amendment": "AD-V3.1-R01",
+    "version": "3.1.1-forward-quality"
+  }
 }

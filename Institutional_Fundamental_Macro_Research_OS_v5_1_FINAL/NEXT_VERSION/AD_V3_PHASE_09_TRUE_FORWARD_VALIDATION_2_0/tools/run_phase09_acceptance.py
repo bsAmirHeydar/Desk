@@ -129,9 +129,9 @@ def main():
     with tempfile.TemporaryDirectory() as td:
         p4=Path(td);q=p4/'artifacts'/'commissioning';q.mkdir(parents=True);rows=[{'outcome_id':'A','precommit_id':'P1','direction_candidate':'BULLISH_GOLD','anchor':{},'outcome_anchor':{},'horizon':'SESSION_1_6H','maturity_time':'2026-08-17T16:00:00Z'},{'outcome_id':'B','precommit_id':'P2','direction_candidate':'BULLISH_GOLD','anchor':{},'outcome_anchor':{}},{'outcome_id':'C'}];(q/'outcomes.jsonl').write_text('\n'.join(json.dumps(x) for x in rows)+'\n');la=audit_legacy(p4);checks.append(ck('legacy migration classifies compatible and incompatible deterministically',la['counts']['P09_COMPATIBLE']==1 and la['counts']['P09_INCOMPATIBLE']==2,la))
     # promotion gate config
-    p4=N/'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING';pol=json.loads((p4/'config/promotion_policy.json').read_text());checks.append(ck('P09 gate replaces legacy P04 true-forward gate','P09_FORWARD_EVIDENCE_PROVISIONAL' in pol['promotion_requires'] and 'TRUE_FORWARD_SAMPLE_PROVISIONAL' not in pol['promotion_requires'],pol['promotion_requires']))
+    p4=N/'AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING';pol=json.loads((p4/'config/promotion_policy.json').read_text());checks.append(ck('P09 sample gate remains while R01 quality gates extend promotion','P09_SAMPLE_MATURITY_GATE' in pol['promotion_requires'] and all(x in pol['promotion_requires'] for x in ['R01_FORWARD_QUALITY_GATE','R01_COVERAGE_GATE','R01_CRITICAL_SUBGROUP_GATE']) and 'TRUE_FORWARD_SAMPLE_PROVISIONAL' not in pol['promotion_requires'],pol['promotion_requires']))
     from AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING.runtime.promotion import enforce_declared_gates
-    good={g:True for g in pol['promotion_requires']};bad=dict(good);bad['P09_FORWARD_EVIDENCE_PROVISIONAL']=False
+    good={g:True for g in pol['promotion_requires']};bad=dict(good);bad['P09_SAMPLE_MATURITY_GATE']=False
     try:enforce_declared_gates(pol,bad);blocked=False
     except ValueError:blocked=True
     checks.append(ck('P09 insufficient state blocks promotion',blocked))

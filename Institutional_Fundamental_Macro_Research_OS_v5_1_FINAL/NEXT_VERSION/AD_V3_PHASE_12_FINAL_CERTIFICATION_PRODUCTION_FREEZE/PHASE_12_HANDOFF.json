@@ -1,10 +1,12 @@
 {
   "phase": "AD-V3-P12",
-  "version": "3.12.0-final-certification-freeze",
-  "baseline_commit": "91ae468",
+  "version": "3.12.1-v31-r01-qualified",
+  "baseline_commit": "8785e86",
   "p12_implementation_status": "PASS",
-  "release_candidate": "ALPHA_DESK_V3_GOLD_RC1",
-  "release_fingerprint": "V3REL_AE2F05DF8B0DA90965E2076019377E60872946E3C67FD38B1CD14D18BF513938",
+  "release_candidate": "ALPHA_DESK_V3_1_R01",
+  "parent_release_candidate": "ALPHA_DESK_V3_GOLD_RC1",
+  "release_fingerprint": "V3REL_3C542397C632213B9CE634D955000CB1E9D8F80F6E7EB076726EE79980FD7573",
+  "amendment_fingerprint": "V31R01_23D55964E32C48C48CDAE94CCE8760309D633757534F5CA5278E67D7C3DC7C76",
   "phase_status": {
     "P01": "PASS",
     "P02": "PASS",
@@ -17,7 +19,8 @@
     "P09": "PASS",
     "P10": "PASS",
     "P11": "PASS",
-    "P12": "PASS"
+    "P12": "PASS",
+    "R01": "PASS"
   },
   "v2_rollback_status": {
     "P11": "PASS",
@@ -26,6 +29,7 @@
   "science_freeze": "PASS",
   "runtime_freeze": "PASS",
   "report_freeze": "PASS",
+  "qualification_certification_freeze": "PASS",
   "golden_certification": "PASS",
   "security_certification": "PASS",
   "rollback_certification": "PASS",
@@ -35,9 +39,16 @@
     "predictions": 0,
     "episodes": 0,
     "mature_episodes": 0,
-    "pending": 0,
-    "forward_evidence_state": "NO_SAMPLES",
-    "promotion_gate": false
+    "mature_unevaluated": 0,
+    "forward_evidence_state": "NO_SAMPLES"
+  },
+  "r01_qualification_state": {
+    "qualification_cohort": null,
+    "sample_maturity": "NO_SAMPLES",
+    "forward_quality_state": "UNAVAILABLE",
+    "coverage_state": "UNAVAILABLE",
+    "critical_subgroup_state": "UNAVAILABLE",
+    "production_qualification_state": "INSUFFICIENT_EVIDENCE"
   },
   "final_production_gate_results": {
     "P01_PASS": true,
@@ -57,7 +68,10 @@
     "REPORT_FREEZE_VALID": true,
     "ZERO_SCIENCE_DRIFT": true,
     "ZERO_CRITICAL_INTEGRITY_FAILURES": true,
-    "P09_FORWARD_EVIDENCE_PROVISIONAL": false,
+    "P09_SAMPLE_MATURITY_GATE": false,
+    "R01_FORWARD_QUALITY_GATE": false,
+    "R01_COVERAGE_GATE": false,
+    "R01_CRITICAL_SUBGROUP_GATE": false,
     "GOLDEN_CERTIFICATION_PASS": true,
     "ROLLBACK_CERTIFIED": true,
     "PRODUCTION_ROUTING_CERTIFIED": true,
@@ -66,13 +80,12 @@
     "P11_SECURITY_ACCEPTANCE_PASS": true,
     "EXPLICIT_OPERATOR_APPROVAL": false
   },
-  "certification_state": "CERTIFIED_PENDING_FORWARD_EVIDENCE",
+  "certification_state": "CERTIFIED_PENDING_FORWARD_SAMPLE",
   "promotion_eligibility": false,
   "production_authority": "V2",
   "v3_state": "SHADOW_COMMISSIONING",
   "production_promotion_performed": false,
   "trade_execution_authority": "NONE",
-  "next_phase": null,
-  "live_shadow_golden_run": "NOT_RUN_ENVIRONMENT_UNAVAILABLE",
-  "p12_acceptance_checks": 25
+  "active_v31_amendment": "AD-V3.1-R01",
+  "next_phase": null
 }

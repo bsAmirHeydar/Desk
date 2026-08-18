@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R01",
+  "benchmark_version": "1.0.0",
+  "direction_benchmark": {
+    "method": "CLASS_BALANCED_50_50_NULL",
+    "null_alignment_rate": 0.5,
+    "use_future_market_base_rate_as_t0_input": false,
+    "class_balancing_required": true,
+    "rationale": "With no independent unconditional Gold-window control dataset in the current repository, production direction quality uses a predeclared balanced-sign null plus minimum bullish/bearish coverage. This avoids letting a one-sided Gold drift masquerade as symmetric skill. A richer unconditional benchmark may only be introduced in a new qualification-policy version/cohort."
+  },
+  "edge_benchmark": {
+    "method": "NO_OR_LOW_EDGE_COMPARATOR",
+    "rationale": "ACTIONABLE_EDGE must outperform the system’s own low/no-edge episodes."
+  },
+  "permission_benchmark": {
+    "method": "PATH_SUPPORTED_VS_OPPOSED",
+    "rationale": "Permission is judged on path support/opposition rather than PnL."
+  },
+  "wait_benchmark": {
+    "method": "PROTECTED_OR_APPROPRIATE_VS_MISSED",
+    "rationale": "WAIT quality is judged as restraint value rather than price-direction prediction."
+  },
+  "benchmark_change_requires_new_qualification_cohort": true
+}

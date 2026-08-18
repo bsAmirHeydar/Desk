@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "3.0.0",
   "initial_state": "SHADOW_COMMISSIONING",
   "automatic_promotion_forbidden": true,
   "promotion_requires": [
@@ -20,7 +20,10 @@
     "REPORT_FREEZE_VALID",
     "ZERO_SCIENCE_DRIFT",
     "ZERO_CRITICAL_INTEGRITY_FAILURES",
-    "P09_FORWARD_EVIDENCE_PROVISIONAL",
+    "P09_SAMPLE_MATURITY_GATE",
+    "R01_FORWARD_QUALITY_GATE",
+    "R01_COVERAGE_GATE",
+    "R01_CRITICAL_SUBGROUP_GATE",
     "GOLDEN_CERTIFICATION_PASS",
     "ROLLBACK_CERTIFIED",
     "PRODUCTION_ROUTING_CERTIFIED",
@@ -33,5 +36,7 @@
   "v2_baseline_retained_after_promotion": true,
   "true_forward_authority": "AD-V3-P09",
   "legacy_p04_forward_gate_authority": false,
-  "final_certification_authority": "AD-V3-P12"
+  "final_certification_authority": "AD-V3-P12",
+  "forward_quality_authority": "AD-V3.1-R01",
+  "sample_maturity_authority": "AD-V3-P09"
 }

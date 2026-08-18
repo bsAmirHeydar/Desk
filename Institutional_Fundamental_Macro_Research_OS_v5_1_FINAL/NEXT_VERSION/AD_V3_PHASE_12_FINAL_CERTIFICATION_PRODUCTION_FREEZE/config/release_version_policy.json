@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "final_v3_phase": 12,
-  "closed_release_line_after_p12": true,
+  "closed_release_line_after_p12": false,
   "change_classes": {
     "V3_0_X_OR_V3_1_BUGFIX": [
       "renderer bug",
@@ -21,5 +21,13 @@
       "cross-market scientific-foundation expansion",
       "autonomous execution architecture"
     ]
-  }
+  },
+  "active_amendment": {
+    "id": "AD-V3.1-R01",
+    "version": "3.1.1-forward-quality",
+    "parent_release": "ALPHA_DESK_V3_GOLD_RC1",
+    "class": "V3_1_SCIENTIFIC_MINOR"
+  },
+  "closed_v3_major_architecture_line_after_p12": true,
+  "allowed_post_p12_work": "versioned V3.x amendments only; no P13 architecture phase"
 }

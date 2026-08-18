@@ -1,0 +1,14 @@
+{
+  "phase": "AD-V3.1-R01",
+  "version": "3.1.1-forward-quality",
+  "baseline_release": "ALPHA_DESK_V3_GOLD_RC1",
+  "baseline_commit": "8785e86",
+  "operator_baseline_expected_from_local_git": true,
+  "scope": "validation/promotion science only",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE",
+  "baseline_commit_provenance": "operator-confirmed final P12 commit; build archive has no .git",
+  "status": "PASS",
+  "release_candidate": "ALPHA_DESK_V3_1_R01",
+  "amendment_fingerprint": "V31R01_23D55964E32C48C48CDAE94CCE8760309D633757534F5CA5278E67D7C3DC7C76"
+}

@@ -3,7 +3,7 @@ from pathlib import Path
 from datetime import datetime,timezone
 import hashlib,json,os,tempfile,subprocess
 PHASE=Path(__file__).resolve().parents[1];NEXT=PHASE.parent;VAULT=NEXT.parent;REPO=VAULT.parent
-VERSION='3.12.0-final-certification-freeze'
+VERSION='3.12.1-v31-r01-qualified'
 def iso():return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z')
 def load(p,default=None):
  p=Path(p)

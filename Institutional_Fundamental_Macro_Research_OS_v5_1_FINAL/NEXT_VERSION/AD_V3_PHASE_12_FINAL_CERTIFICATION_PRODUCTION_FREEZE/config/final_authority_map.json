@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0.0",
-  "release_line": "ALPHA_DESK_V3_GOLD",
+  "schema_version": "1.1.0",
+  "release_line": "ALPHA_DESK_V3_1_GOLD",
   "authorities": [
     {
       "domain": "GOLD_ONTOLOGY",
@@ -48,6 +48,11 @@
       "canonical_count": 1
     },
     {
+      "domain": "PROSPECTIVE_FORWARD_PRODUCTION_QUALIFICATION",
+      "owner": "AD-V3.1-R01",
+      "canonical_count": 1
+    },
+    {
       "domain": "FINAL_CERTIFICATION_FREEZE_PROMOTION",
       "owner": "AD-V3-P12",
       "canonical_count": 1
@@ -57,7 +62,8 @@
     "AD-V3-P04": "commissioning/promotion compatibility shell; legacy renderer/forward noncanonical",
     "AD-V3-P05": "integrity governance",
     "AD-V2-P11": "legacy V2 prompt/runtime only",
-    "AD-V2-P13": "legacy V2 production report/rollback target"
+    "AD-V2-P13": "legacy V2 production report/rollback target",
+    "AD-V3-P12": "final certification/freeze and atomic promotion transaction; quality eligibility delegated to AD-V3.1-R01"
   },
   "trade_execution_authority": "NONE"
 }

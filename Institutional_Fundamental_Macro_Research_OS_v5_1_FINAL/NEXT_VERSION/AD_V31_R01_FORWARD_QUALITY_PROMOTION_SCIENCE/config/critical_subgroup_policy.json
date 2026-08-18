@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R01",
+  "policy_version": "1.0.0",
+  "critical_groups": [
+    {
+      "id": "BULLISH_PERMISSION",
+      "min_n": 10,
+      "selector": {
+        "permission": [
+          "BUY_CANDIDATE"
+        ]
+      },
+      "max_opposed_rate": 0.5,
+      "max_severe_adverse_rate": 0.4
+    },
+    {
+      "id": "BEARISH_PERMISSION",
+      "min_n": 10,
+      "selector": {
+        "permission": [
+          "SELL_CANDIDATE"
+        ]
+      },
+      "max_opposed_rate": 0.5,
+      "max_severe_adverse_rate": 0.4
+    },
+    {
+      "id": "EVENT_EXPOSED_ACTIONABLE",
+      "min_n": 8,
+      "selector": {
+        "event_exposure": [
+          "EVENT_EXPOSED"
+        ],
+        "permission": [
+          "BUY_CANDIDATE",
+          "SELL_CANDIDATE"
+        ]
+      },
+      "max_opposed_rate": 0.6,
+      "max_severe_adverse_rate": 0.5
+    },
+    {
+      "id": "CONSERVATIVE_SEMANTIC_ACTIONABLE",
+      "min_n": 8,
+      "selector": {
+        "semantic_mode": [
+          "CONSERVATIVE_EVIDENCE_ONLY"
+        ],
+        "permission": [
+          "BUY_CANDIDATE",
+          "SELL_CANDIDATE"
+        ]
+      },
+      "max_opposed_rate": 0.6,
+      "max_severe_adverse_rate": 0.5
+    },
+    {
+      "id": "HIGH_FRAGILITY_ACTIONABLE",
+      "min_n": 8,
+      "selector": {
+        "fragility": [
+          "HIGH",
+          "ELEVATED"
+        ],
+        "permission": [
+          "BUY_CANDIDATE",
+          "SELL_CANDIDATE"
+        ]
+      },
+      "max_opposed_rate": 0.6,
+      "max_severe_adverse_rate": 0.5
+    },
+    {
+      "id": "DEGRADED_DATA_ACTIONABLE",
+      "min_n": 8,
+      "selector": {
+        "data_health": [
+          "DEGRADED",
+          "DEGRADED_ALLOW"
+        ],
+        "permission": [
+          "BUY_CANDIDATE",
+          "SELL_CANDIDATE"
+        ]
+      },
+      "max_opposed_rate": 0.6,
+      "max_severe_adverse_rate": 0.5
+    }
+  ],
+  "severe_adverse_multiple_of_neutral_band": 3.0,
+  "overall_average_cannot_override_critical_failure": true,
+  "insufficient_subgroup_n_does_not_pass_or_fail": true,
+  "rationale": "Material subgroups with repeated opposed or ruin-like adverse paths can block qualification even when aggregate averages look acceptable."
+}
