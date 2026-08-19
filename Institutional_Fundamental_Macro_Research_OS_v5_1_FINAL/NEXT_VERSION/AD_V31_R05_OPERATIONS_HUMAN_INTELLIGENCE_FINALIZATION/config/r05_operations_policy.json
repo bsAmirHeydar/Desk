@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "version": "3.1.5-operations-human-intelligence",
+  "scientific_authority": false,
+  "states": [
+    "READY",
+    "DEGRADED_NONBLOCKING",
+    "BLOCKED",
+    "RECOVERY_REQUIRED",
+    "UNKNOWN"
+  ],
+  "runtime_states": [
+    "STARTING",
+    "RUNNING",
+    "DEGRADED",
+    "SUCCESS",
+    "FAILED",
+    "ABORTED",
+    "RECOVERED"
+  ],
+  "critical_blockers": [
+    "FINAL_FREEZE_INVALID",
+    "P09_INTEGRITY_FAILURE",
+    "PIT_INTEGRITY_FAILURE",
+    "DEPLOYMENT_TRANSACTION_IN_PROGRESS",
+    "ARTIFACT_ROOT_NOT_WRITABLE"
+  ],
+  "nonblocking_conditions": [
+    "DIRECT_DXY_UNAVAILABLE",
+    "INTRADAY_REAL_RATE_PROXY_UNAVAILABLE",
+    "SEMANTIC_CONSERVATIVE_FALLBACK",
+    "NONCRITICAL_PROVIDER_GAP"
+  ],
+  "last_attempt_separate_from_last_success": true,
+  "failed_attempt_must_not_replace_last_success": true,
+  "wait_is_runtime_failure": false,
+  "unknown_is_runtime_failure": false,
+  "operator_states": [
+    "INFO",
+    "WATCH",
+    "ACTION_REQUIRED",
+    "BLOCKED"
+  ]
+}

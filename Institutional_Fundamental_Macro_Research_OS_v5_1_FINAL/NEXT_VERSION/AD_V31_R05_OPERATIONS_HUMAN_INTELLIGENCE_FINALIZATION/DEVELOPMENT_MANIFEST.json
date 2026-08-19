@@ -1,0 +1,14 @@
+{
+  "phase": "AD-V3.1-R05",
+  "version": "3.1.5-operations-human-intelligence",
+  "status": "PASS",
+  "baseline_commit": "8a44602",
+  "scientific_change": false,
+  "qualification_cohort_reset": false,
+  "active_cohort": "R04_CONTINUES",
+  "canonical_v3_command": "commission Gold",
+  "next_state": "FROZEN_LIVE_QUALIFICATION",
+  "r06_planned": false,
+  "final_build_phase": true,
+  "science_drift": 0
+}

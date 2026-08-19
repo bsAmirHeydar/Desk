@@ -1,0 +1,42 @@
+{
+  "record_type": "AD_V31_R05_SECURITY_CERTIFICATION",
+  "status": "PASS",
+  "check_count": 7,
+  "checks": [
+    {
+      "name": "XSS/HTML injection escaping PASS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "unsafe source URL blocking PASS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "committed-source obvious secret scan clean",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "operations logs/status do not emit credential values",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "launcher does not use shell=True",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "subject remains Gold-scoped",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "no broker/trade execution controls introduced",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}

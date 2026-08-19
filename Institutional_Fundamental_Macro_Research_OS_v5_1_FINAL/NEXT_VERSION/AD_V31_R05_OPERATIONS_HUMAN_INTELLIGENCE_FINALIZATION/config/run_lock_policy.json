@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "stale_after_seconds": 7200,
+  "auto_recover_only_confirmed_stale": true,
+  "ambiguous_lock_auto_delete": false,
+  "lock_fields": [
+    "run_id",
+    "pid",
+    "host",
+    "mode",
+    "started_at_utc"
+  ],
+  "states": [
+    "ACTIVE",
+    "STALE_RECOVERABLE",
+    "AMBIGUOUS",
+    "CORRUPT",
+    "UNLOCKED"
+  ]
+}

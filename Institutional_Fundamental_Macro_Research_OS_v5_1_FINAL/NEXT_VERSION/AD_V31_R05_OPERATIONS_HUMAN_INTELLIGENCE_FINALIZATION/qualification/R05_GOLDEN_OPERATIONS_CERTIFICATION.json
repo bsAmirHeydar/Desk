@@ -1,0 +1,154 @@
+{
+  "phase": "AD-V3.1-R05",
+  "matrix": "GOLDEN_OPERATIONS_MATRIX",
+  "status": "PASS",
+  "case_count": 25,
+  "cases": [
+    {
+      "name": "A Healthy complete run state can remain HEALTHY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "B Healthy WAIT is humanized without runtime failure",
+      "status": "PASS",
+      "detail": "فشار بنیادی طلا فعلاً صعودی است؛ مجوز فعلی انتظار است چون بخش مهمی از حرکت ممکن است مصرف شده باشد."
+    },
+    {
+      "name": "C UNKNOWN decision is valid human state",
+      "status": "PASS",
+      "detail": "شواهد فعلی هنوز جهت علّی روشنی برای طلا نمی‌دهند؛ مجوز فعلی انتظار است."
+    },
+    {
+      "name": "D Direct DXY unavailable/proxy separation is clear",
+      "status": "PASS",
+      "detail": "بخشی از داده‌های مهم ناقص است، اما تحلیل با محدودیت ادامه دارد. شاخص مستقیم دلار زنده تأیید نشده؛ بخش دلار با هویت پروکسی جداگانه نگه داشته شده است. بازده واقعی رسمی درون‌روزی نیست و پروکسی درون‌روزی معتبر فعلاً در دسترس نیست."
+    },
+    {
+      "name": "E Semantic conservative fallback is explicit",
+      "status": "PASS",
+      "detail": "CONSERVATIVE_FALLBACK"
+    },
+    {
+      "name": "F Partial source degradation does not become BLOCKED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "G Critical integrity failure dominates health",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "H R03 perspective failure has fail-closed path",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "I Historical outcome recovery is integrated before current precommit",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "J Last failed attempt preserves last success",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "K Confirmed stale lock is recoverable",
+      "status": "PASS",
+      "detail": {
+        "state": "STALE_RECOVERABLE",
+        "locked": true,
+        "lock_path": "/tmp/tmp1jwy8m0y/state/runtime.lock",
+        "metadata": {
+          "run_id": "OLD",
+          "pid": 999999,
+          "host": "398998b3ad26",
+          "mode": "SHADOW",
+          "started_at_utc": "2026-08-19T07:54:51.387302Z"
+        },
+        "age_seconds": 10800.000178
+      }
+    },
+    {
+      "name": "L Active lock blocks concurrent mutation",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "M Missed schedule never backdates predictions",
+      "status": "PASS",
+      "detail": "DO_NOT_BACKDATE__NEXT_RUN_RECOVERS_MATURE_OUTCOMES"
+    },
+    {
+      "name": "N Frequent cadence cannot redefine P09 independence",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "O Human headline contains no raw code",
+      "status": "PASS",
+      "detail": "فشار بنیادی طلا فعلاً صعودی است؛ مجوز فعلی انتظار است چون بخش مهمی از حرکت ممکن است مصرف شده باشد."
+    },
+    {
+      "name": "P Pressure and price remain visibly separate",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Q Unknown envelope human warning exists",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R Qualification insufficient is human-readable",
+      "status": "PASS",
+      "detail": "نمونه‌های آینده‌نگر هنوز برای قضاوت نهایی کیفیت کافی نیستند."
+    },
+    {
+      "name": "S Production quality failure is explicit",
+      "status": "PASS",
+      "detail": "تعداد نمونه کافی است، اما کیفیت تصمیم هنوز معیار تولید را پاس نکرده است."
+    },
+    {
+      "name": "T Human/Audit are presentation profiles, not science forks",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "U Mobile responsive contract present",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "V XSS escaping remains in renderer",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "W Operations code does not log credentials",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "X PIT/forward/qualification certification backup paths included",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Y Future production route resolves canonical V3 P10 runtime",
+      "status": "PASS",
+      "detail": {
+        "record_type": "AD_V3_P10_ROUTING_RECEIPT",
+        "subject": "Gold",
+        "intent": "PRODUCTION",
+        "promotion_state": "PRODUCTION_V3",
+        "selected_runtime": "V3",
+        "reason": "PRODUCTION_V3:PRODUCTION->V3",
+        "production_authority": true
+      }
+    }
+  ],
+  "real_ledger_mutated": false
+}

@@ -29,9 +29,9 @@ def main():
     c=sp.add_parser('commission');c.add_argument('subject');c.add_argument('--horizon',default='SESSION_1_6H');c.add_argument('--full-refresh',action='store_true');c.add_argument('--cache-only',action='store_true');c.add_argument('--semantic-bundle')
     for n in ('report','open','commission-report','commission-open'):
         q=sp.add_parser(n);q.add_argument('subject',nargs='?',default='Gold')
-    for n in ('v3-status','v3-runtime-status','v3-integrity-status','v3-semantic-status','v3-kernel-status','v3-decision-status','v3-forward-status','v3-tf-status','v3-promotion-status','v3-control-room-status','v3-certification-status','v3-freeze-status','v31-forward-quality-status','v31-decision-science-status','v31-antifragile-status','v31-data-edge-status','v31-outcome-infrastructure-status'):
+    for n in ('v3-status','v3-runtime-status','v3-integrity-status','v3-semantic-status','v3-kernel-status','v3-decision-status','v3-forward-status','v3-tf-status','v3-promotion-status','v3-control-room-status','v3-certification-status','v3-freeze-status','v31-forward-quality-status','v31-decision-science-status','v31-antifragile-status','v31-data-edge-status','v31-outcome-infrastructure-status','v31-ops-status','v31-recovery-status','v31-final-status'):
         sp.add_parser(n)
-    pr=sp.add_parser('v3-promote');pr.add_argument('subject',nargs='?',default='Gold');pr.add_argument('--approve',action='store_true');rb=sp.add_parser('v3-rollback');rb.add_argument('subject',nargs='?',default='Gold');sp.add_parser('route-mode');sp.add_parser('help')
+    pr=sp.add_parser('v3-promote');pr.add_argument('subject',nargs='?',default='Gold');pr.add_argument('--approve',action='store_true');rb=sp.add_parser('v3-rollback');rb.add_argument('subject',nargs='?',default='Gold');sp.add_parser('route-mode');rec=sp.add_parser('v31-recover');rec.add_argument('subject',nargs='?',default='Gold');sp.add_parser('help')
     a=ap.parse_args();repo=pathlib.Path(a.repo_root).resolve();cmd=a.cmd or 'help'
     if cmd=='help':
         print('ALPHA DESK - GOLD')
@@ -78,9 +78,14 @@ def main():
     elif cmd=='v31-antifragile-status':tool=NEXT/'AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/tools/r03_status.py'
     elif cmd=='v31-data-edge-status':tool=NEXT/'AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/tools/r04_status.py'
     elif cmd=='v31-outcome-infrastructure-status':tool=NEXT/'AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/tools/outcome_infrastructure_status.py'
+    elif cmd in ('v31-ops-status','v31-final-status'):tool=NEXT/'AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/tools/r05_status.py'
+    elif cmd=='v31-recovery-status':tool=NEXT/'AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/tools/recovery_status.py'
     elif cmd=='v3-control-room-status':tool=NEXT/'AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/tools/p11_status.py'
     else:tool=None
     if tool:return subprocess.run([sys.executable,str(tool)]).returncode
+    if cmd=='v31-recover':
+        if str(getattr(a,'subject','Gold')).lower() not in ('gold','xau','xauusd'):return 4
+        tool=NEXT/'AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/tools/recover.py';return subprocess.run([sys.executable,str(tool)]).returncode
     p12=NEXT/'AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE'
     if p12.exists():
         if cmd=='v3-certification-status': return subprocess.run([sys.executable,str(p12/'tools/p12_status.py')]).returncode

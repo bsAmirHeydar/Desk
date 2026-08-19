@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0-r05",
   "max_prominent_drivers": 5,
   "max_prominent_gaps": 6,
   "material_change_fields": [
@@ -23,5 +23,14 @@
   "primary_background": "#fbfaf7",
   "canonical_background": "WHITE_WARM",
   "shadow_badge_required": true,
-  "fake_confidence_forbidden": true
+  "fake_confidence_forbidden": true,
+  "cognitive_levels": [
+    "10_SECOND",
+    "1_MINUTE",
+    "5_MINUTE",
+    "FORENSIC"
+  ],
+  "primary_profile": "HUMAN_INSTITUTIONAL_FA",
+  "audit_profile": "AUDIT",
+  "max_prominent_fragilities": 3
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "phase": "AD-V3-P12",
   "automatic_promotion_forbidden": true,
   "gates": [
@@ -61,6 +61,10 @@
     },
     {
       "gate_id": "R04_IMPLEMENTATION_PASS",
+      "required": true
+    },
+    {
+      "gate_id": "R05_IMPLEMENTATION_PASS",
       "required": true
     },
     {
@@ -137,5 +141,6 @@
   "fixture_overrides_allowed_only_in_isolated_tests": true,
   "forward_qualification_authority": "AD-V3.1-R01",
   "p09_sample_maturity_remains_separate": true,
-  "current_scientific_amendment": "AD-V3.1-R04"
+  "current_scientific_amendment": "AD-V3.1-R04",
+  "current_operational_amendment": "AD-V3.1-R05"
 }

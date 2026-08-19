@@ -1,0 +1,142 @@
+{
+  "record_type": "AD_V31_R05_IMPLEMENTATION_FREEZE",
+  "schema_version": "1.0.0",
+  "version": "3.1.5-operations-human-intelligence",
+  "surfaces": [
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/backup_policy.json",
+      "sha256": "b24beea49fa9dffbef5b1367c874fa0e7af36b7f2dfa2ea149b1337db22dbaa0"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/health_policy.json",
+      "sha256": "855a0128cf6cbf018045bfcab6dcb9deac9e91c22eae7ce4065fd1794aee0673"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/human_presentation_policy.json",
+      "sha256": "102a15c71b95538ebfb3a87bc598cbf16447564c88836cd57e0c2fc17b764750"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/human_terminology.json",
+      "sha256": "125c3660de7cc6a5992e146cf1f1df1a3e6cdbf127a5a45ab02e3f010a29311b"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/operations_cadence_policy.json",
+      "sha256": "22035c071d29df45493b08480faa946de00e50a655d56c24551c3b4f26b3cd5d"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/operations_retention_policy.json",
+      "sha256": "26dd86803fedfe025b0b0e4f944402ba7ac6fb643dd78ff9a2e307b343c2125a"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/r05_freeze_policy.json",
+      "sha256": "ef49f90fbe0018db5fbf7e3f5c9324f4c34e5c53783dcf3ec97b7423b57eaf60"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/r05_operations_policy.json",
+      "sha256": "c479dc4577589ddcb0a6cd377c668b57094f27e911d6d4d21c9cd2b6f2733af5"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/r05_release_policy.json",
+      "sha256": "1b865cd3faa2ae5a576443121a7f9cc0e29cc7f3a92da305476060929f8a87c4"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/recovery_policy.json",
+      "sha256": "b81cb7e277b24b47f9f11d1f8fcf83b822659096acfaa4d39cbd7761621f7fc4"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/run_lock_policy.json",
+      "sha256": "3f7b6713f4ca2715e63ea50eaa93d649397d2963cb6ad0a1b08e1c560d24ff26"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/runtime/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/runtime/common.py",
+      "sha256": "4c9bee430d0a44df6ad097cd21e011b6993ee3eda787e9433af27b2d57b6586b"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/runtime/health_aggregator.py",
+      "sha256": "e51aa389dfe4543e83591f91c9fcbfa44f3eda8506157a199c46d3b8877a3375"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/runtime/humanization.py",
+      "sha256": "c98c68ced5987b0b7dcbfeb639d5262c1fa4a5c17e45f75db3f743626e14e16b"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/runtime/operations_runtime.py",
+      "sha256": "9bd7cb3ec79bcca681d3f12cbce44956f94fa324d5346d8726faebecf9b0cc28"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/runtime/r05_freeze.py",
+      "sha256": "7f541318ff3c57f07ba2eb767d455763b2f7e899d679b61257f2d300093cf053"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/runtime/recovery.py",
+      "sha256": "e6d8412a81749ebd8143f5fde7f6e45300e5c4e77b61fb2f7a63184aa994e4aa"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/runtime/status.py",
+      "sha256": "8bcf1f1c58fbb98f17bea95c7f2ac522263d099da00d643cf84fd8f346288d57"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/schemas/final_desk_health.schema.json",
+      "sha256": "d2756aa0871cd5ede264acd666ef75617673f56101f82e8af4ce7536a075dbde"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/schemas/operations_receipt.schema.json",
+      "sha256": "1990dbe04dbeaec07e7b336b2116da2b32a6dc5f5c0a23837bdd60d1b667f93d"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/schemas/r05_receipt.schema.json",
+      "sha256": "69512cf8b7caf7216a5e9005a0fc8858f59bf3c5a91b5277422d23a4d2e51845"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/artifact_manager.py",
+      "sha256": "cf50ac2f459eea6fca7f537dd9bfa03a73411bb732f028ee6246bec91e586f4f"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/gold_orchestrator.py",
+      "sha256": "c01c281d5a674c0ba9fdf649de6216dce48f3aeaf4f9161420604c05b1388af4"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/runtime_status.py",
+      "sha256": "07147f322bce59aefc85a4b0e90064cabc6abc76a352964672785940e63af054"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/tools/alpha_desk.py",
+      "sha256": "a4ee88eab023f8ee96c7749cb0f515e8e9b68106730490519bab976af86a3d8c"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/help_registry.json",
+      "sha256": "356b1b7bf62ce1f481c32f842c5fab21e4b3cb127afeded7a9e6cb960bc18b39"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/label_registry.json",
+      "sha256": "a1278c50e84b6610f1a324f5dd37b21248379f4525096baf19a2646a8e2bb176"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/presentation_policy.json",
+      "sha256": "f2d9cce3c52b74c407c3e0f9b055ce8a1ce3351731490d669c8802e1b23a5e38"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/report_contract.json",
+      "sha256": "8ff5a79b347d608489b5e128b1358e49e0e4a8c133bf9fe12ce1ae4b6dbb52d7"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/presenter.py",
+      "sha256": "92c0d85cdfe276daef38a966d1534306a535ff1a7b60faa1aa2afeb9c739d7e6"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/renderer.py",
+      "sha256": "43eb19a82628ba137a8e547481bb1d8910fc405329deef998614f27007a192a6"
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/report_runtime.py",
+      "sha256": "e7b2018351de8de4b4482c8e63c8af4a216b193d6fa095dd1575d50fb2b26585"
+    }
+  ],
+  "scientific_authority": false,
+  "r04_cohort_reset": false,
+  "fingerprint": "V31R05_54556EA61CF85D892E7DC9B71CA363DB87206878FC83262FE737FF268367DDFB"
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "profile": "HUMAN_INSTITUTIONAL_FA",
+  "audit_profile": "AUDIT",
+  "max_level1_metrics": 7,
+  "max_level2_drivers": 5,
+  "max_watch_next": 5,
+  "max_primary_fragilities": 3,
+  "deterministic_headline_required": true,
+  "raw_machine_codes_above_fold_forbidden": true,
+  "scenario_cards_show_only_relevant": true,
+  "fake_chart_forbidden": true,
+  "small_n_seduction_forbidden": true,
+  "levels": {
+    "L1": "10_SECOND",
+    "L2": "1_MINUTE",
+    "L3": "5_MINUTE",
+    "L4": "FORENSIC"
+  }
+}

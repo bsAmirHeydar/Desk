@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "run_receipts_keep": 500,
+  "reports_keep": 250,
+  "logs_keep_days": 90,
+  "temporary_files_cleanup_hours": 24,
+  "never_auto_delete": [
+    "P09_PROSPECTIVE_LEDGER",
+    "R04_PIT_STORE",
+    "R01_QUALIFICATION_STATE",
+    "CERTIFICATION_RECEIPTS"
+  ]
+}

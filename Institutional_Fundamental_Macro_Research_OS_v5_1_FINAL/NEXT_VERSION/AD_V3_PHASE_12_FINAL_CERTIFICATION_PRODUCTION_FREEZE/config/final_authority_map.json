@@ -1,6 +1,6 @@
 {
   "schema_version": "1.4.0",
-  "release_line": "ALPHA_DESK_V3_1_R04_GOLD",
+  "release_line": "ALPHA_DESK_V3_1_R05_GOLD",
   "authorities": [
     {
       "domain": "GOLD_ONTOLOGY",
@@ -74,6 +74,14 @@
       "owner": "AD-V3.1-R04",
       "canonical_count": 1,
       "relationship": "provider capability, point-in-time history, historical market recovery, outcome acquisition provenance, provider health; no causal/decision/perspective/outcome-classification authority"
+    },
+    {
+      "domain": "OPERATIONS_HUMAN_PRESENTATION_RECOVERY_STATUS_SCHEDULING",
+      "owner": "AD-V3.1-R05",
+      "authority": "CANONICAL_OPERATIONAL_ONLY",
+      "scientific_authority": false,
+      "trade_execution_authority": "NONE",
+      "canonical_count": 1
     }
   ],
   "compatibility": {
@@ -83,7 +91,11 @@
     "AD-V2-P13": "legacy V2 production report/rollback target",
     "AD-V3-P12": "final certification/freeze and atomic promotion transaction; quality eligibility delegated to AD-V3.1-R01",
     "AD-V3.1-R03": "perspective/fragility/scenario overlay only; no causal, magnitude, semantic, forward-outcome, promotion, or execution authority",
-    "AD-V3.1-R04": "data capability/PIT/historical outcome acquisition only; no causal, decision, perspective, outcome-classification, promotion, or execution authority"
+    "AD-V3.1-R04": "data capability/PIT/historical outcome acquisition only; no causal, decision, perspective, outcome-classification, promotion, or execution authority",
+    "AD-V3.1-R05": "operations/human presentation/recovery/status/optional scheduling only; no scientific authority and no cohort reset"
   },
-  "trade_execution_authority": "NONE"
+  "trade_execution_authority": "NONE",
+  "boundaries": {
+    "AD-V3.1-R05": "operations/human presentation/recovery/status/optional scheduling only; no causal, decision, perspective, data-identity, outcome-science, qualification, promotion, or execution authority"
+  }
 }

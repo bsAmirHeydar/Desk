@@ -1,12 +1,12 @@
 {
   "phase": "AD-V3-P12",
-  "version": "3.12.4-v31-r04-data-edge",
-  "baseline_commit": "f0bba8e",
+  "version": "3.12.5-v31-r05-operations",
+  "baseline_commit": "8a44602",
   "p12_implementation_status": "PASS",
-  "release_candidate": "ALPHA_DESK_V3_1_R04",
-  "parent_release_candidate": "ALPHA_DESK_V3_1_R03",
-  "release_fingerprint": "V3REL_9E337B26C061239C9C353191930B034D4976B3D69B96EFC3C7313EDF5EDBDA07",
-  "amendment_fingerprint": "V31R04_34C9F3B06C0BF356D973C17831DB27032F4976FC0FDFC108713C7501E47A2CEA",
+  "release_candidate": "ALPHA_DESK_V3_1_R05",
+  "parent_release_candidate": "ALPHA_DESK_V3_1_R04",
+  "release_fingerprint": "V3REL_D6E6E9EC8BBCC5BE0FD12EE1796133648A6E3A9C2AA2253CA56CE8B1129D8E96",
+  "amendment_fingerprint": "V31R05_54556EA61CF85D892E7DC9B71CA363DB87206878FC83262FE737FF268367DDFB",
   "phase_status": {
     "P01": "PASS",
     "P02": "PASS",
@@ -23,7 +23,8 @@
     "R01": "PASS",
     "R02": "PASS",
     "R03": "PASS",
-    "R04": "PASS"
+    "R04": "PASS",
+    "R05": "PASS"
   },
   "v2_rollback_status": {
     "P11": "PASS",
@@ -87,7 +88,8 @@
     "P11_VISUAL_ACCEPTANCE_PASS": true,
     "P11_SECURITY_ACCEPTANCE_PASS": true,
     "EXPLICIT_OPERATOR_APPROVAL": false,
-    "R04_IMPLEMENTATION_PASS": true
+    "R04_IMPLEMENTATION_PASS": true,
+    "R05_IMPLEMENTATION_PASS": true
   },
   "certification_state": "CERTIFIED_PENDING_FORWARD_SAMPLE",
   "promotion_eligibility": false,
@@ -95,11 +97,17 @@
   "v3_state": "SHADOW_COMMISSIONING",
   "production_promotion_performed": false,
   "trade_execution_authority": "NONE",
-  "active_v31_amendment": "AD-V3.1-R04",
-  "next_phase": "AD-V3.1-R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION",
+  "active_v31_amendment": "AD-V3.1-R05",
+  "next_phase": null,
   "r03_perspective_science_fingerprint": "R03SCI_DBAE5E33F378FA1D9CFF422A524118B6670CDD7FAE8F96BEC5E94103149C3EAC",
-  "current_amendment": "AD-V3.1-R04",
+  "current_amendment": "AD-V3.1-R05",
   "r04_data_contract_fingerprint": "R04DATA_BF55F713A48697B59970B843E01D41C1C353B31DADF8A64EAF0AD189B805C263",
   "r04_golden_data_matrix": "PASS 27/27",
-  "r04_outcome_recovery_certification": "PASS"
+  "r04_outcome_recovery_certification": "PASS",
+  "r05_status": "PASS",
+  "r05_implementation_fingerprint": "V31R05_54556EA61CF85D892E7DC9B71CA363DB87206878FC83262FE737FF268367DDFB",
+  "r05_science_drift": 0,
+  "r05_cohort_reset": false,
+  "next_state": "FROZEN_LIVE_QUALIFICATION",
+  "no_r06_planned": true
 }

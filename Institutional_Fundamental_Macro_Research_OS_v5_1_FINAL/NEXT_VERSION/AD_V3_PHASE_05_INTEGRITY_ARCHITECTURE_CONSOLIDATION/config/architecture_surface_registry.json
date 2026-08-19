@@ -1233,8 +1233,44 @@
       "class": "RUNTIME_ARTIFACT",
       "commit": false,
       "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/*.json",
+      "owner": "AD-V3.1-R05/OPERATIONS_HUMAN_PRESENTATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/runtime/*.py",
+      "owner": "AD-V3.1-R05/OPERATIONS_HUMAN_PRESENTATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/schemas/*.json",
+      "owner": "AD-V3.1-R05/OPERATIONS_HUMAN_PRESENTATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/tools/*",
+      "owner": "AD-V3.1-R05/OPERATIONS_HUMAN_PRESENTATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false
+    },
+    {
+      "glob": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/artifacts/**",
+      "owner": "AD-V3.1-R05_RUNTIME",
+      "class": "RUNTIME_ARTIFACT",
+      "commit": false,
+      "rollback_authority": false
     }
   ],
   "hard_rule": "No important surface may be simultaneously treated as immutable science and mutable deployment.",
-  "r04_authority_registered": true
+  "r04_authority_registered": true,
+  "r05_authority_registered": true
 }

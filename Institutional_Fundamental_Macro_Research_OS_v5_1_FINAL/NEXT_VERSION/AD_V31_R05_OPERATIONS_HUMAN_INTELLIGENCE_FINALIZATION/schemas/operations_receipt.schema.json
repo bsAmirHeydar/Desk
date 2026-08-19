@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "record_type",
+    "run_id",
+    "decision_time",
+    "runtime_state",
+    "scientific_authority"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "AD_V31_R05_OPERATIONS_RECEIPT"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "decision_time": {
+      "type": "string"
+    },
+    "runtime_state": {
+      "type": "string"
+    },
+    "scientific_authority": {
+      "const": false
+    }
+  }
+}

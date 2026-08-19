@@ -1,8 +1,8 @@
 {
   "record_type": "AD_V3_P12_RELEASE_REGRESSION_RECEIPT",
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "status": "PASS",
-  "release_candidate": "ALPHA_DESK_V3_1_R04",
+  "release_candidate": "ALPHA_DESK_V3_1_R05",
   "phase_status": {
     "P01": "PASS",
     "P02": "PASS",
@@ -19,6 +19,7 @@
     "R02": "PASS",
     "R03": "PASS",
     "R04": "PASS",
+    "R05": "PASS",
     "V2_P11": "PASS",
     "V2_P13": "PASS"
   },
@@ -26,9 +27,11 @@
   "r02_status": "PASS",
   "r03_status": "PASS",
   "r04_status": "PASS",
-  "baseline_commit": "f0bba8e",
-  "parent_receipt": "certification/RELEASE_REGRESSION_RECEIPT_PRE_R03.json",
-  "execution_note": "P01-P11 and R01-R04 plus V2 rollback re-run on current R04 tree in segmented deterministic runs; no timeout interpreted as PASS.",
+  "r05_status": "PASS",
+  "baseline_commit": "8a44602",
+  "execution_note": "P01-P11, R01-R04, R05 component certifications, and V2 rollback re-run in segmented deterministic executions; no timeout interpreted as PASS.",
+  "r05_science_drift": "0",
+  "r05_cohort_reset": false,
   "production_promotion_performed": false,
   "trade_execution_authority": "NONE"
 }

@@ -1,0 +1,102 @@
+{
+  "phase": "AD-V3.1-R05",
+  "version": "3.1.5-operations-human-intelligence",
+  "acceptance_status": "PASS",
+  "check_count": 14,
+  "checks": [
+    {
+      "name": "R05 static validation PASS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R05 implementation + science freeze PASS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Golden Operations receipt PASS",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "file": "R05_GOLDEN_OPERATIONS_CERTIFICATION.json"
+      }
+    },
+    {
+      "name": "Operations receipt PASS",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "file": "R05_OPERATIONS_CERTIFICATION.json"
+      }
+    },
+    {
+      "name": "Visual receipt PASS",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "file": "R05_VISUAL_CERTIFICATION.json"
+      }
+    },
+    {
+      "name": "Security receipt PASS",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "file": "R05_SECURITY_CERTIFICATION.json"
+      }
+    },
+    {
+      "name": "Portability receipt PASS",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "file": "R05_PORTABILITY_CERTIFICATION.json"
+      }
+    },
+    {
+      "name": "Integrated receipt PASS",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "file": "R05_INTEGRATED_FIXTURE.json"
+      }
+    },
+    {
+      "name": "P12 final acceptance PASS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R05 status read-only",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "operations/presentation only",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R04 cohort continues",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Frozen Live Qualification next",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "no R06 planned",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "science_drift": 0,
+  "r04_cohort_reset": false,
+  "next_state": "FROZEN_LIVE_QUALIFICATION",
+  "r06_planned": false,
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE"
+}

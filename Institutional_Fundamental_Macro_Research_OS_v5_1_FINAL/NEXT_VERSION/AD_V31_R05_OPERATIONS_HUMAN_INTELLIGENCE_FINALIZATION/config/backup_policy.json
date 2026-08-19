@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "default_directory": "%USERPROFILE%/Documents/AlphaDesk_Backups",
+  "include": [
+    "P09_STATE",
+    "R04_PIT_STATE",
+    "R01_QUALIFICATION_STATE",
+    "P12_CERTIFICATION_RECEIPTS"
+  ],
+  "exclude": [
+    "CACHE",
+    "PYTHON_BYTECODE",
+    "REPORT_TEMP",
+    "SECRETS"
+  ],
+  "git_is_not_runtime_evidence_backup": true
+}

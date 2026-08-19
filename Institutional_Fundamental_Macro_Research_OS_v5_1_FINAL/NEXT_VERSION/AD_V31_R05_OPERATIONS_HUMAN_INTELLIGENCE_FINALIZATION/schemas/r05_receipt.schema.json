@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "phase",
+    "version",
+    "status",
+    "science_drift",
+    "cohort_reset"
+  ],
+  "properties": {
+    "phase": {
+      "const": "AD-V3.1-R05"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "science_drift": {
+      "type": "integer"
+    },
+    "cohort_reset": {
+      "const": false
+    }
+  }
+}

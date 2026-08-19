@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "phase": "AD-V3-P12",
   "immutable_classes": {
     "SCIENTIFIC_IMMUTABLE": [
@@ -44,7 +44,9 @@
     "DEPLOYMENT_VERSIONED": [
       "AlphaDesk.ps1",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_04_CONTROL_ROOM_TRUE_FORWARD_COMMISSIONING/config/promotion_policy.json",
-      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/config/route_policy.json"
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/config/route_policy.json",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/tools/*.ps1",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/tools/*.py"
     ],
     "CERTIFICATION_IMMUTABLE": [
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/config/*.json",
@@ -55,7 +57,10 @@
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/*.py",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/schemas/*.json",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/config/*.json",
-      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/runtime/*.py"
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/runtime/*.py",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/config/*.json",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/runtime/*.py",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION/schemas/*.json"
     ]
   },
   "mutable_classes": {
@@ -75,12 +80,14 @@
       "AD-V3.1-R01",
       "AD-V3.1-R02",
       "AD-V3.1-R03",
-      "AD-V3.1-R04"
+      "AD-V3.1-R04",
+      "AD-V3.1-R05"
     ],
     "r01_qualification_runtime_frozen": true,
     "r02_decision_science_frozen": true,
     "r03_perspective_science_frozen": true,
-    "r04_data_contract_frozen": true
+    "r04_data_contract_frozen": true,
+    "r05_operations_human_finalization_frozen": true
   },
   "p05_governance_frozen": true
 }

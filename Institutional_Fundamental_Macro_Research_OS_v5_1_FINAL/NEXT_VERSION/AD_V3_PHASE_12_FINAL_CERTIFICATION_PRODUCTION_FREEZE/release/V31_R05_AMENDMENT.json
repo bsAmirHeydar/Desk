@@ -1,0 +1,17 @@
+{
+  "record_type": "AD_V31_R05_RELEASE_AMENDMENT",
+  "schema_version": "1.0.0",
+  "version": "3.1.5-operations-human-intelligence",
+  "parent_amendment": "AD-V3.1-R04",
+  "parent_release_candidate": "ALPHA_DESK_V3_1_R04",
+  "release_candidate": "ALPHA_DESK_V3_1_R05",
+  "classification": "OPERATIONS_PRESENTATION_ONLY",
+  "scientific_change": false,
+  "qualification_cohort_reset": false,
+  "r05_implementation_fingerprint": "V31R05_54556EA61CF85D892E7DC9B71CA363DB87206878FC83262FE737FF268367DDFB",
+  "release_fingerprint": "V3REL_D6E6E9EC8BBCC5BE0FD12EE1796133648A6E3A9C2AA2253CA56CE8B1129D8E96",
+  "next_state": "FROZEN_LIVE_QUALIFICATION",
+  "r06_planned": false,
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE"
+}

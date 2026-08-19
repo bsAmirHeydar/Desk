@@ -1,6 +1,6 @@
 {
   "phase": "AD-V3-P10",
-  "version": "3.10.2-r04-data-edge",
+  "version": "3.10.3-r05-operations",
   "title": "Unified Runtime / One Run",
   "status": "PASS",
   "baseline_commit": "GIT_METADATA_UNAVAILABLE_IN_SUPPLIED_ZIP",
@@ -14,5 +14,6 @@
   "acceptance_checks": 40,
   "static_validation_checks": 9,
   "science_authority_drift": 0,
-  "r04_data_edge_integrated": true
+  "r04_data_edge_integrated": true,
+  "r05_operations_envelope": true
 }

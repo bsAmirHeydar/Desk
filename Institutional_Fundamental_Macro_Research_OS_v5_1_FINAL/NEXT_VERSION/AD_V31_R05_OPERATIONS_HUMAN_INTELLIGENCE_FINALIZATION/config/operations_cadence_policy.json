@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "enabled_by_default": false,
+  "frequency_minutes": 60,
+  "timezone_mode": "LOCAL_OPERATOR_TIME",
+  "active_windows": [
+    {
+      "start": "00:00",
+      "end": "23:59",
+      "label": "OPERATOR_CONFIGURABLE_FULL_DAY_DEFAULT"
+    }
+  ],
+  "missed_run_policy": "DO_NOT_BACKDATE__NEXT_RUN_RECOVERS_MATURE_OUTCOMES",
+  "quiet_hours": [],
+  "maximum_overlap": 1,
+  "scientific_episode_independence_owned_by": "AD-V3-P09"
+}

@@ -1,0 +1,45 @@
+{
+  "record_type": "AD_V31_R05_PORTABILITY_CERTIFICATION",
+  "status": "PASS",
+  "check_count": 6,
+  "checks": [
+    {
+      "name": "runtime paths with spaces work",
+      "status": "PASS",
+      "detail": "SUCCESS_DEGRADED"
+    },
+    {
+      "name": "PowerShell operator scripts use PS5.1-compatible subset",
+      "status": "PASS",
+      "detail": [
+        "remove_gold_commission_schedule.ps1",
+        "run_scheduled_commission.ps1",
+        "install_gold_commission_schedule.ps1",
+        "backup_alpha_desk_state.ps1"
+      ]
+    },
+    {
+      "name": "PowerShell repo resolution is relative, not developer-absolute",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "atomic pointer implementation is OneDrive/Windows compatible",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "UTF-8 Persian presentation source intact",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "no developer absolute paths in R05 operational source",
+      "status": "PASS",
+      "detail": []
+    }
+  ],
+  "windows_powershell_5_1": "STATIC_COMPATIBILITY_PASS__FINAL_RUNTIME_CONFIRMED_BY_OPERATOR_INSTALL",
+  "onedrive": "PASS",
+  "utf8_persian": "PASS"
+}

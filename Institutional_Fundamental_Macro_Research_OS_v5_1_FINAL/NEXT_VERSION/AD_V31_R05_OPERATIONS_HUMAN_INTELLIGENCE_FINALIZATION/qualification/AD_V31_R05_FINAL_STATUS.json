@@ -1,0 +1,79 @@
+{
+  "record_type": "AD_V31_R05_FINAL_STATUS",
+  "version": "3.1.5-operations-human-intelligence",
+  "status": "PASS",
+  "baseline_commit": "8a44602",
+  "commit": "TO_BE_CREATED_BY_OPERATOR_INSTALL",
+  "git": "PACKAGE_NO_GIT",
+  "canonical_v3_command": "commission Gold",
+  "science_drift": 0,
+  "r04_cohort_reset": false,
+  "active_qualification_cohort_policy": "R04_CONTINUES",
+  "package_forward_state": {
+    "active_cohort": null,
+    "predictions": 0,
+    "episodes": 0,
+    "mature_episodes": 0,
+    "mature_unevaluated": 0,
+    "forward_evidence_state": "NO_SAMPLES"
+  },
+  "package_qualification_state": {
+    "qualification_cohort": null,
+    "sample_maturity": "NO_SAMPLES",
+    "forward_quality_state": "UNAVAILABLE",
+    "coverage_state": "UNAVAILABLE",
+    "critical_subgroup_state": "UNAVAILABLE",
+    "production_qualification_state": "INSUFFICIENT_EVIDENCE"
+  },
+  "operations": {
+    "one_run": "PASS",
+    "last_attempt_last_success": "PASS",
+    "run_lock": "PASS",
+    "recovery": "PASS",
+    "scheduler": "OPTIONAL_NOT_INSTALLED_BY_DEFAULT",
+    "backup": "PASS"
+  },
+  "control_room": {
+    "human_mode": "PASS",
+    "audit_mode": "PASS",
+    "ten_second_view": "PASS",
+    "one_minute_view": "PASS",
+    "five_minute_analysis": "PASS",
+    "forensic_audit": "PASS",
+    "rtl": "PASS",
+    "mobile": "PASS",
+    "accessibility": "PASS"
+  },
+  "human_intelligence": {
+    "human_headline": "ACTIVE",
+    "what_changed": "ACTIVE",
+    "what_matters_now": "ACTIVE",
+    "watch_next": "ACTIVE",
+    "invalidation": "ACTIVE",
+    "scenario_atlas": "ACTIVE",
+    "via_negativa": "ACTIVE",
+    "data_health": "ACTIVE",
+    "forward_qualification": "ACTIVE",
+    "contextual_help": "ACTIVE"
+  },
+  "acceptance": {
+    "P01-P12": "PASS",
+    "R01": "PASS",
+    "R02": "PASS",
+    "R03": "PASS",
+    "R04": "PASS",
+    "R05": "PASS",
+    "golden_operations": "PASS 25/25",
+    "visual": "PASS",
+    "security": "PASS",
+    "portability": "PASS",
+    "V2_rollback": "PASS"
+  },
+  "release_fingerprint": "V3REL_D6E6E9EC8BBCC5BE0FD12EE1796133648A6E3A9C2AA2253CA56CE8B1129D8E96",
+  "r05_implementation_fingerprint": "V31R05_54556EA61CF85D892E7DC9B71CA363DB87206878FC83262FE737FF268367DDFB",
+  "v3_state": "SHADOW_COMMISSIONING",
+  "promotion": "NOT_PERFORMED",
+  "trade_execution_authority": "NONE",
+  "next_state": "FROZEN_LIVE_QUALIFICATION",
+  "r06_planned": false
+}

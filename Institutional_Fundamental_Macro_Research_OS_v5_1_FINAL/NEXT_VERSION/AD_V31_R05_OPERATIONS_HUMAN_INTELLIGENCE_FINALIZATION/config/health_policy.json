@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "states": [
+    "HEALTHY",
+    "DEGRADED",
+    "ACTION_REQUIRED",
+    "BLOCKED",
+    "UNKNOWN"
+  ],
+  "opaque_score_forbidden": true,
+  "critical_subsystems": [
+    "SCIENCE_FREEZE",
+    "FORWARD_LEDGER",
+    "PIT_INTEGRITY",
+    "RUNTIME_LOCK"
+  ],
+  "blocked_dominates": true,
+  "subsystems": [
+    "RUNTIME",
+    "DATA",
+    "PROVIDERS",
+    "SEMANTIC",
+    "PIT_STORE",
+    "OUTCOME_RECOVERY",
+    "FORWARD_LEDGER",
+    "QUALIFICATION",
+    "REPORT",
+    "FREEZE",
+    "SCHEDULER",
+    "BACKUP"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "record_type": "AD_V31_R05_INTEGRATED_OFFLINE_FIXTURE",
+  "status": "PASS",
+  "run_id": "P10RUN_B1104E85D04C0DAD554D3C77",
+  "overall_status": "SUCCESS_DEGRADED",
+  "checks": {
+    "full_stage_order": true,
+    "r05_operations_receipt": true,
+    "one_run_id": true,
+    "one_decision_time": true,
+    "r03_before_p09": true,
+    "p09_has_r03_state": true,
+    "p11_human_profile": true,
+    "report_exists": true,
+    "seal_exists": true,
+    "fixture_latest_not_mutated": true,
+    "real_forward_state_unchanged": true
+  },
+  "real_state_before": {
+    "<BUILD_REPO>/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/artifacts/state": null,
+    "<BUILD_REPO>/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/artifacts/state": null,
+    "<BUILD_REPO>/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/artifacts/state": null
+  },
+  "real_state_after": {
+    "<BUILD_REPO>/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/artifacts/state": null,
+    "<BUILD_REPO>/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/artifacts/state": null,
+    "<BUILD_REPO>/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/artifacts/state": null
+  },
+  "fixture_only": true
+}

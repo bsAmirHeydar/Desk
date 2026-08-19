@@ -1,6 +1,6 @@
 {
   "phase": "AD-V3-P11",
-  "version": "3.11.1-r03-perspective",
+  "version": "3.11.3-r05-human-intelligence",
   "canonical_input": "ControlRoomInputV3",
   "canonical_v3_html_authority": "AD-V3-P11",
   "legacy_v3_renderer": "AD-V3-P04",
@@ -23,5 +23,9 @@
     "forward",
     "evidence",
     "audit"
+  ],
+  "presentation_profiles": [
+    "HUMAN_INSTITUTIONAL_FA",
+    "AUDIT"
   ]
 }

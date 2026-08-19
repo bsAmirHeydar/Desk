@@ -1,0 +1,18 @@
+{
+  "record_type": "AD_V31_R05_FROZEN_LIVE_QUALIFICATION_READINESS",
+  "status": "READY",
+  "science_frozen": true,
+  "r04_cohort_continues": true,
+  "r05_cohort_reset": false,
+  "operations_ready": true,
+  "scheduler_optional": true,
+  "scheduler_installed_by_default": false,
+  "pit_ready": true,
+  "outcome_recovery_ready": true,
+  "forward_quality_engine_ready": true,
+  "report_ready": true,
+  "promotion_currently_blocked_by_actual_forward_state": true,
+  "package_forward_state": "NO_SAMPLES",
+  "next_state": "FROZEN_LIVE_QUALIFICATION",
+  "r06_planned": false
+}

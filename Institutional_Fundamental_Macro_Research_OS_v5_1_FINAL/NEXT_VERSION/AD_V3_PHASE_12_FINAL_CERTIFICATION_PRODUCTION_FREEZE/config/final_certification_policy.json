@@ -1,8 +1,8 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "phase": "AD-V3-P12",
-  "version": "3.12.4-v31-r04-data-edge",
-  "release_candidate": "ALPHA_DESK_V3_1_R04",
+  "version": "3.12.5-v31-r05-operations",
+  "release_candidate": "ALPHA_DESK_V3_1_R05",
   "active_subject": "Gold",
   "production_gate_min_forward_state": "DEPRECATED_AS_SOLE_GATE",
   "certification_states": [
@@ -21,7 +21,7 @@
   "live_shadow_golden_optional": true,
   "actual_promotion_requires_explicit_approval": true,
   "final_v3_phase": 12,
-  "parent_release_candidate": "ALPHA_DESK_V3_1_R03",
+  "parent_release_candidate": "ALPHA_DESK_V3_1_R04",
   "forward_production_qualification_authority": "AD-V3.1-R01",
   "primary_qualification_horizon": "SESSION_1_6H",
   "production_requires": [
@@ -29,10 +29,14 @@
     "R02_IMPLEMENTATION_PASS",
     "R03_IMPLEMENTATION_PASS",
     "R04_IMPLEMENTATION_PASS",
+    "R05_IMPLEMENTATION_PASS",
     "P09_SAMPLE_MATURITY_GATE",
     "R01_FORWARD_QUALITY_GATE",
     "R01_COVERAGE_GATE",
     "R01_CRITICAL_SUBGROUP_GATE",
     "EXPLICIT_OPERATOR_APPROVAL"
-  ]
+  ],
+  "active_scientific_amendment": "AD-V3.1-R04",
+  "active_operational_amendment": "AD-V3.1-R05",
+  "qualification_cohort_reset_by_r05": false
 }

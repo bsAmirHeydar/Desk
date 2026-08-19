@@ -1,6 +1,6 @@
 {
   "phase": "AD-V3-P11",
-  "version": "3.11.1-r03-perspective",
+  "version": "3.11.3-r05-human-intelligence",
   "baseline_commit": "522bf9b",
   "p01_status": "PASS",
   "p02_status": "PASS",
@@ -47,5 +47,6 @@
   "trade_execution_authority": "NONE",
   "next_phase": "AD-V3-P12_FINAL_CERTIFICATION_PRODUCTION_PROMOTION_V3_FREEZE",
   "scenario_atlas": "PASS",
-  "r03_perspective_presentation": "PASS"
+  "r03_perspective_presentation": "PASS",
+  "human_intelligence_finalization": "R05"
 }

@@ -1,0 +1,16 @@
+{
+  "record_type": "AD_V31_R05_FINAL_DESK_HEALTH_RECEIPT",
+  "release": "ALPHA_DESK_V3_1_R05_GOLD",
+  "science_integrity": "PASS",
+  "runtime": "PASS",
+  "data": "DEGRADED_TRUTHFUL_PROVIDER_GAPS",
+  "providers": "DEGRADED_TRUTHFUL_PROVIDER_GAPS",
+  "semantic": "CONSERVATIVE_FALLBACK_ALLOWED_IN_CLEAN_BUILD",
+  "forward": "NO_SAMPLES",
+  "qualification": "INSUFFICIENT_EVIDENCE",
+  "report": "PASS",
+  "scheduler": "OPTIONAL_DISABLED_BY_DEFAULT",
+  "backup_readiness": "PASS",
+  "overall_operator_status": "DEGRADED_NONBLOCKING_IN_CLEAN_BUILD",
+  "opaque_score": null
+}

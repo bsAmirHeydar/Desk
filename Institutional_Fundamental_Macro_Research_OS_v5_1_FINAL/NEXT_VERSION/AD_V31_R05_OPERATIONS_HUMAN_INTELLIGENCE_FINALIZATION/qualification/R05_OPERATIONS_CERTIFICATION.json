@@ -1,0 +1,106 @@
+{
+  "record_type": "AD_V31_R05_OPERATIONS_CERTIFICATION",
+  "status": "PASS",
+  "check_count": 14,
+  "checks": [
+    {
+      "name": "Golden Operations Matrix PASS",
+      "status": "PASS",
+      "detail": 25
+    },
+    {
+      "name": "P10 one-run operations PASS",
+      "status": "PASS",
+      "detail": 41
+    },
+    {
+      "name": "v31 ops status is read-only",
+      "status": "PASS",
+      "detail": {
+        "before": {
+          "<BUILD_REPO>/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/artifacts/state/forward_state.json": null,
+          "<BUILD_REPO>/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/artifacts/state/pit.sqlite3": null
+        },
+        "after": {
+          "<BUILD_REPO>/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/artifacts/state/forward_state.json": null,
+          "<BUILD_REPO>/Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/artifacts/state/pit.sqlite3": null
+        }
+      }
+    },
+    {
+      "name": "status separates last attempt and last success",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "status reports R04 cohort continuation",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "recovery status is diagnostic only",
+      "status": "PASS",
+      "detail": "READY"
+    },
+    {
+      "name": "recovery code cannot touch P09/R01/PIT scientific stores",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "optional scheduler disabled by default",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "scheduler preserves P09 episode authority",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "backup policy covers scientific runtime state",
+      "status": "PASS",
+      "detail": {
+        "schema_version": "1.0.0",
+        "default_directory": "%USERPROFILE%/Documents/AlphaDesk_Backups",
+        "include": [
+          "P09_STATE",
+          "R04_PIT_STATE",
+          "R01_QUALIFICATION_STATE",
+          "P12_CERTIFICATION_RECEIPTS"
+        ],
+        "exclude": [
+          "CACHE",
+          "PYTHON_BYTECODE",
+          "REPORT_TEMP",
+          "SECRETS"
+        ],
+        "git_is_not_runtime_evidence_backup": true
+      }
+    },
+    {
+      "name": "backup excludes transient caches/secrets",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "latest pointer publishing uses temp+replace",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "operator PowerShell tools are relative-path based",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "scheduler is not auto-installed by Python/runtime",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "scheduler_default": "DISABLED",
+  "r04_cohort_continues": true,
+  "r05_cohort_reset": false,
+  "trade_execution_authority": "NONE"
+}

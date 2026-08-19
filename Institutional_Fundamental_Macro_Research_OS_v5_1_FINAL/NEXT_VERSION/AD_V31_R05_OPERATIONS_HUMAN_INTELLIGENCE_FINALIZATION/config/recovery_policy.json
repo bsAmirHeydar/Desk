@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "automatic_safe_targets": [
+    "CONFIRMED_STALE_LOCK",
+    "ABANDONED_LATEST_TMP",
+    "ABANDONED_REPORT_TMP"
+  ],
+  "forbidden_targets": [
+    "P09_LEDGER",
+    "R01_QUALIFICATION",
+    "R04_PIT_ECONOMIC_RECORDS",
+    "SCIENTIFIC_CONFIG"
+  ],
+  "backup_before_restore_required": true
+}

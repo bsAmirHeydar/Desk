@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "version": "3.1.5-operations-human-intelligence",
+  "classification": "OPERATIONS_PRESENTATION_ONLY",
+  "new_science": false,
+  "cohort_reset": false,
+  "active_qualification_cohort": "R04_CONTINUES",
+  "next_state": "FROZEN_LIVE_QUALIFICATION",
+  "r06_planned": false,
+  "change_classes_after_r05": {
+    "TYPE_A": "OPERATIONS_OR_PRESENTATION_BUG_NO_RESET_IF_SCIENCE_UNCHANGED",
+    "TYPE_B": "PROVIDER_EQUIVALENT_DEPLOYMENT_NO_RESET_IF_R04_EQUIVALENCE_PRESERVED",
+    "TYPE_C": "SCIENTIFIC_CHANGE_NEW_VERSION_AND_COHORT",
+    "TYPE_D": "NEW_ARCHITECTURE_CONSIDER_V4"
+  }
+}

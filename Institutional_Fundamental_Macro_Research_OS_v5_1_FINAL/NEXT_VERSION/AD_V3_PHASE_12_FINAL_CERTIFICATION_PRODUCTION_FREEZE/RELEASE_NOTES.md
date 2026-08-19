@@ -11,3 +11,6 @@
 - P10 perspective stage runs before P09 forward precommit; P11 renders Scenario Atlas.
 - New R03 prospective cohort required; production remains SHADOW_COMMISSIONING.
 
+
+## V3.1-R05 operational amendment
+R05 finalizes operations and human presentation with zero scientific-policy drift, continues the R04 qualification cohort, adds an R05 implementation gate, and moves the engineering program to FROZEN_LIVE_QUALIFICATION. No R06 is planned.
