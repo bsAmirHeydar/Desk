@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "dimensions": [
+    "EVENT_TAIL",
+    "LIQUIDITY_TAIL",
+    "MODEL_TAIL",
+    "DATA_TAIL",
+    "REGIME_TAIL",
+    "UNKNOWN_TAIL"
+  ],
+  "states": [
+    "LOW",
+    "PRESENT",
+    "ELEVATED",
+    "SEVERE",
+    "UNKNOWN"
+  ],
+  "unknown_envelope_states": [
+    "CONTAINED",
+    "OPEN",
+    "WIDE",
+    "CRITICAL",
+    "UNKNOWN"
+  ],
+  "specific_unknown_event_naming_forbidden": true,
+  "tail_probability_forbidden": true,
+  "epistemic_shock_requires": [
+    "MATERIAL_CONTRADICTION",
+    "INSUFFICIENT_KNOWN_CAUSAL_EXPLANATION"
+  ]
+}

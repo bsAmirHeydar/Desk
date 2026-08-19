@@ -2,8 +2,8 @@
   "record_type": "AD_V3_P10_HANDOFF",
   "schema_version": "1.0.0",
   "phase": "AD-V3-P10",
-  "version": "3.10.0-unified-runtime",
-  "baseline_commit": "dafa0c2",
+  "version": "3.10.1-r03-perspective-stage",
+  "baseline_commit": "GIT_METADATA_UNAVAILABLE_IN_SUPPLIED_ZIP",
   "p01_status": "PASS",
   "p02_status": "PASS",
   "p03_status": "PASS",
@@ -59,5 +59,7 @@
   "v3_state": "SHADOW_COMMISSIONING",
   "production_promotion_performed": false,
   "trade_execution_authority": "NONE",
-  "next_phase": "AD-V3-P11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM"
+  "next_phase": "AD-V3-P11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM",
+  "r03_perspective_stage": "PASS",
+  "canonical_stage_order_extension": "DECISION_CALIBRATION -> PERSPECTIVE_OVERLAY -> FORWARD_PRECOMMIT"
 }

@@ -1,0 +1,140 @@
+{
+  "release_candidate": "ALPHA_DESK_V3_1_R02",
+  "release_fingerprint": "V3REL_F734E47615B65895AB79960AC10F41529C777B0D1D88F6A8B0926299B00D1D38",
+  "amendment_fingerprint": "V31R01_23D55964E32C48C48CDAE94CCE8760309D633757534F5CA5278E67D7C3DC7C76",
+  "parent_release_candidate": "ALPHA_DESK_V3_GOLD_RC1",
+  "parent_release_fingerprint": "V3REL_AE2F05DF8B0DA90965E2076019377E60872946E3C67FD38B1CD14D18BF513938",
+  "build_baseline_commit": "RESOLVED_FROM_LOCAL_GIT_AT_INSTALL",
+  "expected_operator_baseline_commit": "bade4df",
+  "certification_commit": "RESOLVED_FROM_LOCAL_GIT_AT_RUNTIME",
+  "phase_versions": {
+    "P01": "3.1.1-foundation",
+    "P02": "3.2.6",
+    "P03": "3.3.6",
+    "P04": "4.0.0-commissioning",
+    "P05": "3.5.0-integrity-consolidation",
+    "P06": "3.6.0-governed-semantic-intelligence",
+    "P07": "3.7.0-live-intraday-gold-kernel",
+    "P08": "3.8.1-r02-decision-science-2",
+    "P09": "3.9.0-true-forward-validation-2.0",
+    "P10": "3.10.0-unified-runtime",
+    "P11": "3.11.0-final-control-room",
+    "P12": "3.12.2-v31-r02-decision-science",
+    "R01": "3.1.1-forward-quality",
+    "R02": "3.1.2-decision-science-2"
+  },
+  "authority_map": {
+    "schema_version": "1.2.0",
+    "release_line": "ALPHA_DESK_V3_1_R02_GOLD",
+    "authorities": [
+      {
+        "domain": "GOLD_ONTOLOGY",
+        "owner": "AD-V3-P01",
+        "canonical_count": 1
+      },
+      {
+        "domain": "OBSERVATION_ACQUISITION_PIT",
+        "owner": "AD-V3-P02",
+        "canonical_count": 1
+      },
+      {
+        "domain": "HORIZON_FRESHNESS_CACHE",
+        "owner": "AD-V3-P07",
+        "canonical_count": 1
+      },
+      {
+        "domain": "CAUSAL_DIRECTION_ROOTS_PRESSURE_PLANES",
+        "owner": "AD-V3-P03",
+        "canonical_count": 1
+      },
+      {
+        "domain": "GOVERNED_SEMANTIC_INTERPRETATION",
+        "owner": "AD-V3-P06",
+        "canonical_count": 1
+      },
+      {
+        "domain": "DECISION_CALIBRATION_DOMINANCE_EDGE_PERMISSION",
+        "owner": "AD-V3-P08",
+        "canonical_count": 1
+      },
+      {
+        "domain": "PROSPECTIVE_TRUE_FORWARD_VALIDATION",
+        "owner": "AD-V3-P09",
+        "canonical_count": 1
+      },
+      {
+        "domain": "V3_ORCHESTRATION_ROUTING_ONE_RUN",
+        "owner": "AD-V3-P10",
+        "canonical_count": 1
+      },
+      {
+        "domain": "V3_CANONICAL_HTML_REPORT",
+        "owner": "AD-V3-P11",
+        "canonical_count": 1
+      },
+      {
+        "domain": "PROSPECTIVE_FORWARD_PRODUCTION_QUALIFICATION",
+        "owner": "AD-V3.1-R01",
+        "canonical_count": 1
+      },
+      {
+        "domain": "FINAL_CERTIFICATION_FREEZE_PROMOTION",
+        "owner": "AD-V3-P12",
+        "canonical_count": 1
+      },
+      {
+        "domain": "DECISION_SCIENCE_2_AMENDMENT",
+        "owner": "AD-V3.1-R02",
+        "canonical_count": 1,
+        "relationship": "versioned amendment to AD-V3-P08 canonical decision authority"
+      }
+    ],
+    "compatibility": {
+      "AD-V3-P04": "commissioning/promotion compatibility shell; legacy renderer/forward noncanonical",
+      "AD-V3-P05": "integrity governance",
+      "AD-V2-P11": "legacy V2 prompt/runtime only",
+      "AD-V2-P13": "legacy V2 production report/rollback target",
+      "AD-V3-P12": "final certification/freeze and atomic promotion transaction; quality eligibility delegated to AD-V3.1-R01"
+    },
+    "trade_execution_authority": "NONE"
+  },
+  "freeze_manifest": "release/FINAL_FREEZE_MANIFEST.json",
+  "parent_freeze_manifest": "release/V3_RC1_FINAL_FREEZE_MANIFEST.json",
+  "r01_qualification_freeze_manifest": "../AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/qualification/QUALIFICATION_FREEZE_MANIFEST.json",
+  "r01_policy_fingerprint": "R01QPOL_F1B804E0A86E9FADE7BA38D90AC79954F602C9D8DD9BA12171EB907577D8980F",
+  "certification_state_at_supplied_snapshot": "CERTIFIED_PENDING_FORWARD_SAMPLE",
+  "p09_forward_state_at_supplied_snapshot": "NO_SAMPLES",
+  "r01_qualification_cohort_at_supplied_snapshot": null,
+  "production_promotion_performed": false,
+  "production_authority": "V2",
+  "canonical_v3_runtime": "AD-V3-P10",
+  "canonical_v3_html": "AD-V3-P11",
+  "forward_production_qualification_authority": "AD-V3.1-R01",
+  "rollback_target": "V2",
+  "trade_execution_authority": "NONE",
+  "lineage": {
+    "v3_rc1_release_fingerprint": "V3REL_AE2F05DF8B0DA90965E2076019377E60872946E3C67FD38B1CD14D18BF513938",
+    "r01_release_fingerprint": "V3REL_3C542397C632213B9CE634D955000CB1E9D8F80F6E7EB076726EE79980FD7573",
+    "r01_policy_fingerprint": "R01QPOL_F1B804E0A86E9FADE7BA38D90AC79954F602C9D8DD9BA12171EB907577D8980F",
+    "r02_decision_science_fingerprint": "R02SCI_4C0B51C18E27AED586352886E67B360A6248930F676111411F5EB9DD17413C9C",
+    "amendments": [
+      "AD-V3.1-R01",
+      "AD-V3.1-R02"
+    ],
+    "current_version": "3.1.2-decision-science-2",
+    "current_release_fingerprint": "V3REL_F734E47615B65895AB79960AC10F41529C777B0D1D88F6A8B0926299B00D1D38",
+    "r02_amendment_fingerprint": "V31R02_9490EAB470EF7D69F9937592C2B352E09BD38DB07C9D168D49DF3BD5611797BC"
+  },
+  "r02_amendment_fingerprint": "V31R02_9490EAB470EF7D69F9937592C2B352E09BD38DB07C9D168D49DF3BD5611797BC",
+  "r01_release_snapshot": {
+    "release_candidate": "ALPHA_DESK_V3_1_R01",
+    "release_fingerprint": "V3REL_3C542397C632213B9CE634D955000CB1E9D8F80F6E7EB076726EE79980FD7573",
+    "amendment_fingerprint": "V31R01_23D55964E32C48C48CDAE94CCE8760309D633757534F5CA5278E67D7C3DC7C76",
+    "parent_release_candidate": "ALPHA_DESK_V3_GOLD_RC1",
+    "parent_release_fingerprint": "V3REL_AE2F05DF8B0DA90965E2076019377E60872946E3C67FD38B1CD14D18BF513938",
+    "r01_policy_fingerprint": "R01QPOL_F1B804E0A86E9FADE7BA38D90AC79954F602C9D8DD9BA12171EB907577D8980F"
+  },
+  "r02_decision_science_freeze_manifest": "../AD_V31_R02_DECISION_SCIENCE_2_0/calibration/R02_DECISION_SCIENCE_FREEZE_MANIFEST.json",
+  "decision_science_amendment_authority": "AD-V3.1-R02",
+  "r02_decision_science_fingerprint": "R02SCI_4C0B51C18E27AED586352886E67B360A6248930F676111411F5EB9DD17413C9C"
+}

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2.0",
+  "schema_version": "1.3.0",
   "phase": "AD-V3-P12",
   "immutable_classes": {
     "SCIENTIFIC_IMMUTABLE": [
@@ -22,7 +22,10 @@
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/*.py",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/config/*.json",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/runtime/*.py",
-      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/schemas/*.json"
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/schemas/*.json",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/*.json",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/*.py",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/schemas/*.json"
     ],
     "RUNTIME_IMMUTABLE": [
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/config/*.json",
@@ -46,7 +49,9 @@
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/tools/*.py",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/config/*.json",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/runtime/*.py",
-      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/schemas/*.json"
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/schemas/*.json",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/config/*.json",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/runtime/*.py"
     ]
   },
   "mutable_classes": {
@@ -64,9 +69,12 @@
     "parent_release": "ALPHA_DESK_V3_GOLD_RC1",
     "amendments": [
       "AD-V3.1-R01",
-      "AD-V3.1-R02"
+      "AD-V3.1-R02",
+      "AD-V3.1-R03"
     ],
     "r01_qualification_runtime_frozen": true,
-    "r02_decision_science_frozen": true
-  }
+    "r02_decision_science_frozen": true,
+    "r03_perspective_science_frozen": true
+  },
+  "p05_governance_frozen": true
 }

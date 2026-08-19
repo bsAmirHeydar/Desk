@@ -1,0 +1,11 @@
+{
+  "record_type": "AD_V31_R03_RELEASE_AMENDMENT",
+  "version": "3.1.3-antifragile-perspective",
+  "baseline_commit": "69be946",
+  "parent_release_fingerprint": "V3REL_F734E47615B65895AB79960AC10F41529C777B0D1D88F6A8B0926299B00D1D38",
+  "perspective_science_fingerprint": "R03SCI_DBAE5E33F378FA1D9CFF422A524118B6670CDD7FAE8F96BEC5E94103149C3EAC",
+  "amendment_fingerprint": "V31R03_479AEAF5644CDE58B8CC794BA78994F07D40E6B78E664B6424929478F016E921",
+  "release_fingerprint": "V3REL_B24BD80C629E29A7D1D3379DD066D6166F919C9E9AEEE3C5953EA278B26F66F3",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE"
+}

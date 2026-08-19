@@ -29,7 +29,7 @@ def main():
     c=sp.add_parser('commission');c.add_argument('subject');c.add_argument('--horizon',default='SESSION_1_6H');c.add_argument('--full-refresh',action='store_true');c.add_argument('--cache-only',action='store_true');c.add_argument('--semantic-bundle')
     for n in ('report','open','commission-report','commission-open'):
         q=sp.add_parser(n);q.add_argument('subject',nargs='?',default='Gold')
-    for n in ('v3-status','v3-runtime-status','v3-integrity-status','v3-semantic-status','v3-kernel-status','v3-decision-status','v3-forward-status','v3-tf-status','v3-promotion-status','v3-control-room-status','v3-certification-status','v3-freeze-status','v31-forward-quality-status','v31-decision-science-status'):
+    for n in ('v3-status','v3-runtime-status','v3-integrity-status','v3-semantic-status','v3-kernel-status','v3-decision-status','v3-forward-status','v3-tf-status','v3-promotion-status','v3-control-room-status','v3-certification-status','v3-freeze-status','v31-forward-quality-status','v31-decision-science-status','v31-antifragile-status'):
         sp.add_parser(n)
     pr=sp.add_parser('v3-promote');pr.add_argument('subject',nargs='?',default='Gold');pr.add_argument('--approve',action='store_true');rb=sp.add_parser('v3-rollback');rb.add_argument('subject',nargs='?',default='Gold');sp.add_parser('route-mode');sp.add_parser('help')
     a=ap.parse_args();repo=pathlib.Path(a.repo_root).resolve();cmd=a.cmd or 'help'
@@ -75,6 +75,7 @@ def main():
     elif cmd=='v3-forward-status':tool=NEXT/'AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/tools/p09_status.py'
     elif cmd=='v31-forward-quality-status':tool=NEXT/'AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/tools/r01_status.py'
     elif cmd=='v31-decision-science-status':tool=NEXT/'AD_V31_R02_DECISION_SCIENCE_2_0/tools/r02_status.py'
+    elif cmd=='v31-antifragile-status':tool=NEXT/'AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/tools/r03_status.py'
     elif cmd=='v3-control-room-status':tool=NEXT/'AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/tools/p11_status.py'
     else:tool=None
     if tool:return subprocess.run([sys.executable,str(tool)]).returncode

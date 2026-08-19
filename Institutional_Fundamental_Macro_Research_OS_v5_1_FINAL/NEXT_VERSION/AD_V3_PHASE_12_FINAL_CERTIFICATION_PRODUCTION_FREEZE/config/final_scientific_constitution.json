@@ -25,7 +25,14 @@
     "Report Renderer != Scientific Authority",
     "WAIT != Failure",
     "UNKNOWN != Software Error",
-    "DEGRADED != Complete"
+    "DEGRADED != Complete",
+    "Canonical thesis ≠ only possible world",
+    "Alternative scenario ≠ probability",
+    "Tail awareness ≠ tail prediction",
+    "R03 perspective overlay cannot upgrade decision authority",
+    "R03 perspective overlay cannot flip causal direction",
+    "Critical fragility cannot be averaged away",
+    "Unknown outside-model vulnerability must not be named as a specific invented event"
   ],
   "mechanical_evidence": {
     "Pressure != Price": [

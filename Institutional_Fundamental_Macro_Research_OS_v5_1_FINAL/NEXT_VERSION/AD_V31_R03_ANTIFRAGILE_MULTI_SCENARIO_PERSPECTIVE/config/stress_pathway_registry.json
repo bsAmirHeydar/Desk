@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "pathways": [
+    {
+      "pathway_id": "FUNDING_TO_FORCED_LIQUIDATION",
+      "source_root": "FUNDING_COLLATERAL_STRESS",
+      "intermediate_mechanism": "FORCED_LIQUIDATION",
+      "affected_state": "PRICE_TRANSMISSION",
+      "armed_when": {
+        "root_magnitude": [
+          "MATERIAL",
+          "LARGE",
+          "EXTREME"
+        ]
+      },
+      "trigger_when": {
+        "regime": [
+          "LIQUIDITY_STRESS"
+        ],
+        "transmission": [
+          "NEGATIVE",
+          "CONFLICTED"
+        ]
+      },
+      "observable_confirmation": [
+        "FUNDING_COLLATERAL_STRESS",
+        "PRICE_TRANSMISSION_CONFLICT"
+      ],
+      "invalidator": "FUNDING_STRESS_RESOLVES"
+    },
+    {
+      "pathway_id": "POLICY_EVENT_TO_REAL_RATE_REPRICING",
+      "source_root": "US_POLICY_EXPECTATIONS",
+      "intermediate_mechanism": "POLICY_REPRICING",
+      "affected_root": "REAL_RATE_OPPORTUNITY_COST",
+      "armed_when": {
+        "event_family": [
+          "FOMC",
+          "CPI",
+          "PCE",
+          "NFP"
+        ]
+      },
+      "trigger_when": {
+        "event_status": [
+          "TRIGGERED",
+          "ACTIVE",
+          "RELEASED"
+        ]
+      },
+      "observable_confirmation": [
+        "REGISTERED_EVENT",
+        "POLICY_OR_REAL_RATE_CHANGE"
+      ],
+      "invalidator": "EVENT_PASSES_WITHOUT_MATERIAL_REPRICING"
+    },
+    {
+      "pathway_id": "GEOPOLITICAL_THRESHOLD_TO_INSURANCE_DEMAND",
+      "source_root": "GEOPOLITICAL_INSURANCE_RISK",
+      "intermediate_mechanism": "INSURANCE_DEMAND_NONLINEARITY",
+      "affected_state": "GOLD_DEMAND_RESPONSE",
+      "armed_when": {
+        "regime": [
+          "GEOPOLITICAL_SHOCK"
+        ]
+      },
+      "trigger_when": {
+        "root_magnitude": [
+          "LARGE",
+          "EXTREME"
+        ]
+      },
+      "observable_confirmation": [
+        "GEOPOLITICAL_SHOCK_REGIME",
+        "MATERIAL_ROOT_MAGNITUDE"
+      ],
+      "invalidator": "REGIME_NORMALIZES"
+    }
+  ],
+  "new_causal_pathway_invention_forbidden": true
+}

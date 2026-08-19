@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "allowed": [
+    "NO_CHANGE",
+    "CAP_TO_CONDITIONAL",
+    "FORCE_WAIT"
+  ],
+  "monotonic_only": true,
+  "force_wait_if": [
+    "UNKNOWN_ENVELOPE_CRITICAL",
+    "SYSTEM_FRAGILITY_CRITICAL",
+    "EPISTEMIC_SHOCK",
+    "TRIGGERED_SYSTEMIC_DISCONTINUITY"
+  ],
+  "cap_if": [
+    "HIGH_MODEL_FRAGILITY_WITH_OPPOSING_WORLD",
+    "DOMINANT_ROOT_DATA_FRAGILITY_HIGH",
+    "UNKNOWN_ENVELOPE_WIDE",
+    "NARRATIVE_FRAGILITY_HIGH",
+    "EVENT_FRAGILITY_HIGH"
+  ],
+  "wait_remains_wait": true,
+  "conditional_never_upgrades": true,
+  "actionable_can_be_capped": true,
+  "post_cap_permission": "WAIT",
+  "post_cap_edge": "CONDITIONAL_EDGE",
+  "post_force_wait_permission": "WAIT",
+  "post_force_wait_edge_max": "LOW_EDGE"
+}

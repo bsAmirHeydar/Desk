@@ -21,7 +21,11 @@ def collect(approve=False,deep=False,repo=REPO):
  if deep: phase={f'P{i:02d}_PASS':_acc(f'{i:02d}') for i in range(1,12)}
  else: phase={f'P{i:02d}_PASS':cert.get('phase_status',{}).get(f'P{i:02d}')=='PASS' for i in range(1,12)}
  g={**phase,
- 'P09_IMPLEMENTATION_PASS':phase.get('P09_PASS',False),'P12_CERTIFICATION_PASS':cert.get('implementation_status')=='PASS' and fr.get('classes',{}).get('CERTIFICATION_IMMUTABLE',{}).get('status')=='PASS',
+ 'P09_IMPLEMENTATION_PASS':phase.get('P09_PASS',False),
+ 'R01_IMPLEMENTATION_PASS':cert.get('phase_status',{}).get('R01')=='PASS',
+ 'R02_IMPLEMENTATION_PASS':cert.get('phase_status',{}).get('R02')=='PASS',
+ 'R03_IMPLEMENTATION_PASS':cert.get('phase_status',{}).get('R03')=='PASS',
+ 'P12_CERTIFICATION_PASS':cert.get('implementation_status')=='PASS' and fr.get('classes',{}).get('CERTIFICATION_IMMUTABLE',{}).get('status')=='PASS',
  'SCIENCE_FREEZE_VALID':fr.get('classes',{}).get('SCIENTIFIC_IMMUTABLE',{}).get('status')=='PASS','RUNTIME_FREEZE_VALID':fr.get('classes',{}).get('RUNTIME_IMMUTABLE',{}).get('status')=='PASS','REPORT_FREEZE_VALID':fr.get('classes',{}).get('REPORT_CONTRACT_IMMUTABLE',{}).get('status')=='PASS',
  'ZERO_SCIENCE_DRIFT':fr.get('classes',{}).get('SCIENTIFIC_IMMUTABLE',{}).get('status')=='PASS','ZERO_CRITICAL_INTEGRITY_FAILURES':int(p09.get('integrity_failures',0))==0 and phase.get('P05_PASS',False),
  'P09_SAMPLE_MATURITY_GATE':q.get('sample_gate') is True,'R01_FORWARD_QUALITY_GATE':q.get('quality_gate') is True,'R01_COVERAGE_GATE':q.get('coverage_gate') is True,'R01_CRITICAL_SUBGROUP_GATE':q.get('critical_subgroup_gate') is True,

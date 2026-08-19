@@ -261,7 +261,7 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/cohort_policy.json",
-        "sha256": "8e0ec95153b74bdb8518bd75cf1662ee4eb05e0d48795e2c9969e1290bb8828e"
+        "sha256": "4764fe4cea67551c1d535ace50d5c5030677720d54c0879076bf19ff15e63538"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/episode_policy.json",
@@ -309,7 +309,7 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_runtime.py",
-        "sha256": "5d668a401a083c3f3d1714a8510430a51bceb018b019edb945a9f29bf512b9b8"
+        "sha256": "b8b3a4424c08251f56834a15bc22839b446c5bbf908e14b5f70ab51a51d37a76"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_statistics.py",
@@ -337,7 +337,7 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/precommit.py",
-        "sha256": "45b8b01021167fd51f3cc86931d861fb6fa42b9220b93ec07d5aaa663dc6372a"
+        "sha256": "7a5524766958a9ec4950e10ddf361fc68948efada2ea2337b3bcd9cb72b84032"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/config/causal_importance_matrix.json",
@@ -442,6 +442,114 @@
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/schemas/root_health_state.schema.json",
         "sha256": "255888f84c4df02d93f9dcc93540d322188b1e1ff74eb16da308290317553306"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/fragility_dimension_policy.json",
+        "sha256": "3ba0d892f64b88d7842a08edc50a1d21940d6489f6c5e6c1fea68df58e0ea45e"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/nonlinearity_policy.json",
+        "sha256": "a6f756d1ce950a666929ea6169415a0c3abd91a4c7ba85b27dd04a78a8d15448"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/perspective_overlay_policy.json",
+        "sha256": "f5ec90ed939dc8e7a420aedcc1265ab455e0b6ae6f38a6bcfe60cdc12486a8dc"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/r03_scientific_policy.json",
+        "sha256": "8f9c3f94e4b691fe0673aa5dce1a2d8932e1ab0f35946e16aedd63f141c68373"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/scenario_archetype_registry.json",
+        "sha256": "7a472188214f9c0d9d84427eb3c56165f5adec86517eb66605d5ee92c4d66ef1"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/scenario_construction_policy.json",
+        "sha256": "c6078d601b125a346e56530a9d3bae8cf57ea6b0726bc89abe301fd2ca32c55c"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/scenario_trigger_policy.json",
+        "sha256": "185106727f8866a7ad6a107e1fd7b4c4bf18da3646b4b4f59d9193c003dfa052"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/stress_pathway_registry.json",
+        "sha256": "931aea73cd3982c940a1a17963dff144dd86202880017ed592cca4bb1aed12bf"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/tail_unknown_policy.json",
+        "sha256": "e895d3526cf6a8814f262cc281cbce2e5b3fe74d072e14b6dd8c57e45cdde058"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/via_negativa_policy.json",
+        "sha256": "b7b5586299c68ee10548dd0e105a1b6cacc5f1ea63989316832960b28bac9f52"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/cohort_boundary.py",
+        "sha256": "1a8483b2e382d9fca0e61769b675392f81b85d814dfc984cd1bad8716220c36f"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/common.py",
+        "sha256": "033e5f393304e4512b621c71353a7372c33511585150b0e40c9bda60ebcf7bad"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/fragility_engine.py",
+        "sha256": "018675083496ff9b4c0dde8ec23a7ba5364a3033de8544a07e497c7346cbc4a5"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/nonlinearity_engine.py",
+        "sha256": "d3542fac888290c6fcbe994c0b4d80b645063bb33cc95823e5428de11900c793"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/perspective_freeze.py",
+        "sha256": "504f486eaa90ddc8609573a61c45984f3dccc1271e7c45652d751b0183524077"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/perspective_overlay.py",
+        "sha256": "9c1852ee6838d25656887ba4320024d81746877edfdd602e9773145f6c5e1c49"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/perspective_runtime.py",
+        "sha256": "135704e6b8e5f92ce6a6295012cc1bfecc0aa0fb9c9000f32adde7f438052892"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/scenario_engine.py",
+        "sha256": "ddc91a875d8459bf574593b976f42db87aa6de351e9b6faf3295ac54f43c04fb"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/tail_unknown_engine.py",
+        "sha256": "4600ce8f96b78545195e78d1588506bf5ad2e7f189f0306934e1abf68327baf3"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/via_negativa_engine.py",
+        "sha256": "4e569a3f8b33d8e7448e5cb04d98e4405bef4d01f6e471871b39d866866198d8"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/schemas/fragility_map.schema.json",
+        "sha256": "eaeba569850cde4590968e29372e0d8b95dc13cee425081109d3f9376514cd5b"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/schemas/nonlinearity_state.schema.json",
+        "sha256": "32dd5a98378ea907b7279f1d4e854ec1acfe81336c5303c43df745c875525d57"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/schemas/perspective_overlay.schema.json",
+        "sha256": "e4ffbdb04f1d1957ccd451c966052eefbf9fe0fab47d4b363ed57594119f030a"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/schemas/r03_receipt.schema.json",
+        "sha256": "f77f25cc208b3f9ffb30d38790b62495c598f2f89c1365b274eef83531b01c4a"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/schemas/scenario_state.schema.json",
+        "sha256": "264363a4df0490fd1610e6237ed8326e904ff7b885ec8cc9e9e9d2ae61c209e0"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/schemas/tail_unknown_state.schema.json",
+        "sha256": "67d7a68dd8036120f4465e3a5be9dd2bd477f690bce1d4b18033599a428ddf79"
       }
     ],
     "RUNTIME_IMMUTABLE": [
@@ -459,11 +567,11 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/config/runtime_contract.json",
-        "sha256": "3f6ed8c2996fd35f7295d544520f1c837255e44aa0a0e4c38be2d96df5272085"
+        "sha256": "1c45b2af0145defdf467a40551ec0865dec445c75adc1278a8ad4e50d48b89b4"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/config/stage_dag.json",
-        "sha256": "d5f10a3acb9c6414d03cdfab2d8f4a8cec3d7ccc2385df661587d6e5b220abed"
+        "sha256": "7daa0078a567079a9ddb2847b3c780679cc7a1f09b0381dcef3ac096823c2182"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/__init__.py",
@@ -479,11 +587,11 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/control_room_input.py",
-        "sha256": "e6da94a05ac32e7346d3986ed25198d9bc901bec279b0da12543c592256c091b"
+        "sha256": "c4ef7c5fed0c1d1d143c085b3a799f0ebca331b602be8fedf10754fac5de0d57"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/gold_orchestrator.py",
-        "sha256": "c5e796611ac82ff442a1c0b8fa84c23109cb5ee0711736946881b7bd457717f8"
+        "sha256": "58b8fd4d611fbb82b10c2fa9e31f6bd9d6c89a546b50a1d75f93dd2de8135402"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/runtime_router.py",
@@ -495,7 +603,7 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/schemas/control_room_input.schema.json",
-        "sha256": "20b8fe34f704d0e64bc51f9ba495ceddb9247eae655664458532dfb07f4f9438"
+        "sha256": "5a8f6ae00994b97a7e7d487b123f5653d12f28580247e6d5682b5d564186f9c3"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/schemas/routing_receipt.schema.json",
@@ -513,7 +621,7 @@
     "REPORT_CONTRACT_IMMUTABLE": [
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/help_registry.json",
-        "sha256": "4775f673fed66ab739117fc691ec426164fbc6f5322886e5e81e41d2295cb229"
+        "sha256": "5aadd97eb594488bcce57733fd7f6f472a880578a6fdf1c856774229e9e9a1a3"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/label_registry.json",
@@ -525,7 +633,7 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/report_contract.json",
-        "sha256": "3f3a35a2bb38ae17226d6e284dec474bb212719d95d57dbd082d9ae7dafb54fd"
+        "sha256": "e7f3ae1f65ab449d4d1262a482640c2aac3541e99623f169bcad48bc93901874"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/security_policy.json",
@@ -541,11 +649,11 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/presenter.py",
-        "sha256": "3a7b6f504788f961b6e8f2e5fb8023e2fe94454d78a2dec1af180c32bfea6558"
+        "sha256": "003be16d5dc5f49ad3728c7f222ec67db0398f33bd0393f03281a8d3c4f182e1"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/renderer.py",
-        "sha256": "4ee1c7cc3cc4becf919a4be634ac87a7baee792d6e2e1c00cff893f4cfd78e53"
+        "sha256": "7b201372075bceb7d6514d9ffde15d4b5800627c383b5e7e005d97b0e8bc1207"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/report_runtime.py",
@@ -553,7 +661,7 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/schemas/control_room_view_model.schema.json",
-        "sha256": "f737619c25ac2434bccf46251be3f944698e0670dfc5456342b8d8371d55ccf0"
+        "sha256": "88414896c42a3c0117cf7e52a140b824aee1b3e7e102822a8ec024f7edadb75c"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/schemas/report_receipt.schema.json",
@@ -577,23 +685,23 @@
     "CERTIFICATION_IMMUTABLE": [
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/config/final_authority_map.json",
-        "sha256": "8451cf3d1c5588172e9006327efdff3419e399b0f4c49efc5f5de478e47e548e"
+        "sha256": "caa997f6f0e61a430812f30cc95e48ccb8fdbd1498df1770389e55c6cc993e4d"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/config/final_certification_policy.json",
-        "sha256": "7920b6bb70efd09b6ba3d0528da213b2cb11370536945d35bbc897f0460caac9"
+        "sha256": "83a7e9c96eb17b139c11475e95f0d8579d69c95f91f978b01f26d68045117010"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/config/final_freeze_policy.json",
-        "sha256": "e22f47192953b81464ae3ca2294d82d29ff4e699a67cb17c2e60df56eab581a3"
+        "sha256": "66c789546d2ef35e29df505311ebaafdcf0cff39a28056c14d0cc07c76058706"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/config/final_promotion_gate_registry.json",
-        "sha256": "c2764ae6cc6556da0ce89ded1e481cb6564ffc00f1f75ca5a18b40a857f7f013"
+        "sha256": "09bd96899359aaba108bd42713fee919385fc6808aab5932aa24b7929a1800b1"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/config/final_scientific_constitution.json",
-        "sha256": "208fc24def162417d21a36a2c3b020a4b423a8b1eb72abc2e5701f334ed59bdb"
+        "sha256": "f486cdfbf849a8143cd6a282019daf7981f35208dc15bb677599cac470547cd7"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/config/golden_certification_matrix.json",
@@ -601,7 +709,7 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/config/release_version_policy.json",
-        "sha256": "d990c679c5ffd03bada5f9bb9cc12163116787ed7f1b3b3c1296baba20a2df00"
+        "sha256": "7b40d2b5162f3890159803e8f6db49da5cfa40a84cd3fa5398ea60d8affac7fb"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/runtime/__init__.py",
@@ -617,7 +725,7 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/runtime/gates.py",
-        "sha256": "4a67f86cd9aa463059d50da9a34a670ee4db1e2af9bdc6e24ceb5268c034af02"
+        "sha256": "2a358c165cd59144e8be7ee364f637f84534942cd27a7441cfc609c575a2c850"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/runtime/promotion.py",
@@ -625,7 +733,7 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/runtime/status.py",
-        "sha256": "14465329e448c41578466b2fc3244d41e5ff4100182974283ca342a4fc7a74ee"
+        "sha256": "3201d2daedd3de7d157063bbb5dbb863c52922d48315f285a500dd42ab935146"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/schemas/final_certification_receipt.schema.json",
@@ -685,11 +793,11 @@
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/tools/run_phase12_acceptance.py",
-        "sha256": "01428adc6212001b235c55e4168c3aeccfbac71eefacce99af10ce66cdff9397"
+        "sha256": "0d5ff02a6aada2cc7220e665eb6c78d6fac502777f06086ecb0845dad1907e2a"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/tools/validate_phase12.py",
-        "sha256": "65903f6b8ff009e1169521465bff47ca811ed55f240a7515f1f6c1ab8afea74c"
+        "sha256": "a63967eccf2e7fcbb211e4161bacd0790398fc8615d9cd008382078d5be72a18"
       },
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/tools/verify_final_freeze.py",
@@ -762,6 +870,34 @@
       {
         "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/schemas/qualification_freeze.schema.json",
         "sha256": "41938006b65b2f5984d38cb051bdbf2f7e13bdb703845144c9221e31bee08bb9"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/config/architecture_surface_registry.json",
+        "sha256": "bf4a39e4a9f78b4d8ef845cf6cde30917c0572b158b1592dfe7c8ed2e2fbdade"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/config/artifact_governance_policy.json",
+        "sha256": "de21792d1a7395a0a1af71ebb383a3118489dcd271728923d34673931b48b8d7"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/config/canonical_runtime_contract.json",
+        "sha256": "15012f69f9def6ee0d064c97f858d2af8c7f0cf8fece59c33dcd3bca2afa509c"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/config/generated_metadata_policy.json",
+        "sha256": "b36ef5e84977aff3ea29c0f8157a2139295b7c32b38fbc94d5798d72ed4d619b"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/config/integrity_gate_registry.json",
+        "sha256": "067df73d8ecc999dc78cd53a0b3e8521455bb92dbec9fb5f4da6a2fd966a576f"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/runtime/__init__.py",
+        "sha256": "693ebfaa2a27ec87c12c04083e97c2c7315778e76077bcdf8796d739f2818705"
+      },
+      {
+        "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_05_INTEGRITY_ARCHITECTURE_CONSOLIDATION/runtime/integrity.py",
+        "sha256": "a4dedcb2ccd87b1a0256b795ee09a86cc838a76c11246e37f55ab19200ad0e46"
       }
     ]
   },
@@ -775,5 +911,5 @@
       "**/artifacts/**"
     ]
   },
-  "release_fingerprint": "V3REL_F734E47615B65895AB79960AC10F41529C777B0D1D88F6A8B0926299B00D1D38"
+  "release_fingerprint": "V3REL_B24BD80C629E29A7D1D3379DD066D6166F919C9E9AEEE3C5953EA278B26F66F3"
 }

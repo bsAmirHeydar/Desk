@@ -9,7 +9,7 @@ def main():
  req=['config/runtime_contract.json','config/route_policy.json','config/stage_dag.json','runtime/gold_orchestrator.py','runtime/runtime_router.py','runtime/artifact_manager.py','tools/alpha_desk.py','schemas/run_result.schema.json','schemas/stage_receipt.schema.json','schemas/control_room_input.schema.json','schemas/routing_receipt.schema.json']
  c.append(ck('required P10 surfaces present',all((PH/x).exists() for x in req),[x for x in req if not (PH/x).exists()]))
  dag=load(PH/'config/stage_dag.json');ids={x['stage_id'] for x in dag['stages']};deps={x['stage_id']:x['depends_on'] for x in dag['stages']}
- c.append(ck('mandatory stage DAG contains canonical stages',{'PRECHECK','FORWARD_EVALUATION','ACQUISITION_PLAN','ACQUISITION','PRE_SEMANTIC','SEMANTIC','FINAL_CAUSAL','DECISION_CALIBRATION','FORWARD_PRECOMMIT','CONTROL_MODEL','REPORT','SEAL'}<=ids,sorted(ids)))
+ c.append(ck('mandatory stage DAG contains canonical stages',{'PRECHECK','FORWARD_EVALUATION','ACQUISITION_PLAN','ACQUISITION','PRE_SEMANTIC','SEMANTIC','FINAL_CAUSAL','DECISION_CALIBRATION','PERSPECTIVE_OVERLAY','FORWARD_PRECOMMIT','CONTROL_MODEL','REPORT','SEAL'}<=ids,sorted(ids)))
  # cycle check
  visiting=set();done=set();cyc=False
  def walk(n):
@@ -23,7 +23,7 @@ def main():
   visiting.remove(n);done.add(n)
  for n in ids:walk(n)
  c.append(ck('V3 stage DAG acyclic and dependencies reachable',not cyc and done==ids,{'visited':len(done),'stages':len(ids)}))
- rt=load(PH/'config/runtime_contract.json');c.append(ck('P10 has no scientific authority',rt['semantic_authority']=='AD-V3-P06' and rt['causal_authority']=='AD-V3-P03' and rt['decision_authority']=='AD-V3-P08' and rt['forward_authority']=='AD-V3-P09' and rt['trade_execution_authority']=='NONE',rt))
+ rt=load(PH/'config/runtime_contract.json');c.append(ck('P10 has no scientific authority',rt['semantic_authority']=='AD-V3-P06' and rt['causal_authority']=='AD-V3-P03' and rt['decision_authority']=='AD-V3-P08' and rt.get('perspective_authority')=='AD-V3.1-R03' and rt['forward_authority']=='AD-V3-P09' and rt['trade_execution_authority']=='NONE',rt))
  legacy=load(PH/'config/legacy_authority_policy.json');c.append(ck('V2 P11 prompt authority retired from V3',legacy['v2_p11_prompt_cluster']['v3_decision_authority'] is False and legacy['canonical_v3_orchestrator']=='AD-V3-P10',legacy))
  src=(PH/'runtime/gold_orchestrator.py').read_text(encoding='utf-8-sig');c.append(ck('V3 orchestrator has no V2 P11 prompt dependency','AD_V2_PHASE_11' not in src and 'prompt_cluster' not in src))
  launch=(REPO/'AlphaDesk.ps1').read_text(encoding='utf-8-sig');c.append(ck('PowerShell is thin P10 wrapper','AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN' in launch and 'alpha_desk.py' in launch and 'Get-V3RouteMode' not in launch and 'Invoke-V2' not in launch))
@@ -38,8 +38,8 @@ def main():
   got=hashlib.sha256(fp.read_bytes()).hexdigest() if fp.exists() else None
   if got!=want:
    own=surface.get(rel) or {}
-   if rel in allowed_r01 or (own.get('class') in ('SCIENTIFIC_VERSIONED','GOVERNANCE_VERSIONED') and str(own.get('owner','')).startswith('AD-V3.1-R02')): accepted.append({'file':rel,'owner':own.get('owner')})
+   if rel in allowed_r01 or (own.get('class') in ('SCIENTIFIC_VERSIONED','GOVERNANCE_VERSIONED') and str(own.get('owner','')).startswith(('AD-V3.1-R02','AD-V3.1-R03'))): accepted.append({'file':rel,'owner':own.get('owner')})
    else: drift.append({'file':rel,'expected':want,'actual':got,'owner':own.get('owner')})
- c.append(ck('upstream drift is either zero or explicitly versioned by R01/R02 governance',not drift,{'unexpected':drift,'accepted_versioned':accepted}))
+ c.append(ck('upstream drift is either zero or explicitly versioned by R01/R02/R03 governance',not drift,{'unexpected':drift,'accepted_versioned':accepted}))
  ok=all(x['status']=='PASS' for x in c);out={'phase':'AD-V3-P10','validation_status':'PASS' if ok else 'FAIL','check_count':len(c),'checks':c};print(json.dumps(out,indent=2,ensure_ascii=False));return 0 if ok else 2
 if __name__=='__main__':raise SystemExit(main())

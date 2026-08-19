@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "max_operator_scenarios": 6,
+  "archetypes": [
+    {
+      "id": "CANONICAL_CONTINUATION",
+      "class": "CANONICAL_CONTINUATION",
+      "group": "CANONICAL",
+      "max_instances": 1,
+      "relation": "SUPPORTS",
+      "requires_direction": true,
+      "permission_effect": "NO_CHANGE"
+    },
+    {
+      "id": "ACCELERATION",
+      "class": "ACCELERATION",
+      "group": "ALTERNATIVE",
+      "max_instances": 1,
+      "relation": "SUPPORTS",
+      "requires_direction": true,
+      "permission_effect": "NO_CHANGE"
+    },
+    {
+      "id": "REVERSAL_OR_BREAK",
+      "class": "REVERSAL_OR_BREAK",
+      "group": "ALTERNATIVE",
+      "max_instances": 1,
+      "relation": "OPPOSES",
+      "requires_direction": true,
+      "permission_effect": "CAP_TO_CONDITIONAL"
+    },
+    {
+      "id": "MECHANICAL_LIQUIDITY_DISLOCATION",
+      "class": "MECHANICAL_LIQUIDITY_DISLOCATION",
+      "group": "STRESS",
+      "max_instances": 1,
+      "relation": "TRANSIENT_CONFLICT",
+      "requires_direction": true,
+      "permission_effect": "CAP_TO_CONDITIONAL"
+    },
+    {
+      "id": "SCHEDULED_EVENT_DISCONTINUITY",
+      "class": "SCHEDULED_EVENT_DISCONTINUITY",
+      "group": "STRESS",
+      "max_instances": 1,
+      "relation": "ORTHOGONAL",
+      "requires_direction": false,
+      "permission_effect": "CAP_TO_CONDITIONAL"
+    },
+    {
+      "id": "TAIL_UNKNOWN",
+      "class": "TAIL_UNKNOWN",
+      "group": "TAIL",
+      "max_instances": 1,
+      "relation": "UNKNOWN",
+      "requires_direction": false,
+      "permission_effect": "FORCE_WAIT"
+    }
+  ]
+}

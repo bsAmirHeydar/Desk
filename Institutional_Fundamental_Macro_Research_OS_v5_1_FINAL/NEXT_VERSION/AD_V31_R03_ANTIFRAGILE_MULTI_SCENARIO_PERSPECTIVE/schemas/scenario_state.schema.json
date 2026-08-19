@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "scenario_id",
+    "scenario_class",
+    "status",
+    "horizon",
+    "relation_to_canonical_direction",
+    "trigger_conditions",
+    "invalidating_conditions",
+    "permission_implication"
+  ],
+  "additionalProperties": true
+}

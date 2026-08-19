@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "states": [
+    "LINEAR_OR_UNRESOLVED",
+    "THRESHOLD_NONLINEAR",
+    "CONVEX_RESPONSE",
+    "CASCADE_RISK",
+    "DISCONTINUOUS_EVENT",
+    "UNKNOWN_NONLINEARITY"
+  ],
+  "numeric_convexity_coefficient_forbidden": true,
+  "rules": [
+    {
+      "when": "TRIGGERED_REGISTERED_EVENT",
+      "state": "DISCONTINUOUS_EVENT"
+    },
+    {
+      "when": "TRIGGERED_CASCADE",
+      "state": "CASCADE_RISK"
+    },
+    {
+      "when": "GEOPOLITICAL_SHOCK_LARGE",
+      "state": "THRESHOLD_NONLINEAR"
+    }
+  ]
+}

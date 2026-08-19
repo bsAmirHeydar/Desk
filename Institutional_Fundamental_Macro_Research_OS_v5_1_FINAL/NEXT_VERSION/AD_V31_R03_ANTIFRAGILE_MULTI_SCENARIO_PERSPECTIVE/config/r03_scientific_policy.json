@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R03",
+  "version": "3.1.3-antifragile-perspective",
+  "primary_horizon": "SESSION_1_6H",
+  "authority": "PERSPECTIVE_ONLY",
+  "max_operator_scenarios": 6,
+  "allowed_overlay": [
+    "NO_CHANGE",
+    "CAP_TO_CONDITIONAL",
+    "FORCE_WAIT"
+  ],
+  "direction_flip_forbidden": true,
+  "edge_upgrade_forbidden": true,
+  "permission_upgrade_forbidden": true,
+  "scenario_probability_forbidden": true,
+  "tail_probability_forbidden": true,
+  "new_causal_root_forbidden": true,
+  "llm_scenario_authority": false,
+  "internet_access": false,
+  "production_promotion_forbidden": true,
+  "trade_execution_authority": "NONE",
+  "failure_semantics": "FAIL_CLOSED_TO_WAIT"
+}

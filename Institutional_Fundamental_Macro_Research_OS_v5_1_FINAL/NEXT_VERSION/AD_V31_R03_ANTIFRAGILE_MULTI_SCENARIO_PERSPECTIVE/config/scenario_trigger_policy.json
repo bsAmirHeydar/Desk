@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "registered_event_families": [
+    "FOMC",
+    "CPI",
+    "PCE",
+    "NFP"
+  ],
+  "mechanical_confirmation": {
+    "allowed_roots": [
+      "FUNDING_COLLATERAL_STRESS"
+    ],
+    "required_regimes": [
+      "LIQUIDITY_STRESS"
+    ],
+    "allowed_explicit_flags": [
+      "funding_stress",
+      "liquidity_stress",
+      "mechanical_dislocation",
+      "forced_liquidation"
+    ]
+  },
+  "acceleration": {
+    "magnitude_at_least": [
+      "LARGE",
+      "EXTREME"
+    ],
+    "health_allowed": [
+      "HEALTHY",
+      "PARTIAL"
+    ],
+    "importance_allowed": [
+      "PRIMARY",
+      "SYSTEMIC"
+    ]
+  },
+  "break": {
+    "opposing_importance": [
+      "PRIMARY",
+      "SYSTEMIC"
+    ],
+    "opposing_magnitude": [
+      "MATERIAL",
+      "LARGE",
+      "EXTREME"
+    ],
+    "dominant_health_break": [
+      "CRITICAL_GAP"
+    ],
+    "model_sensitivity_break": [
+      "HIGH"
+    ]
+  },
+  "event_status_map": {
+    "UPCOMING": "ARMED",
+    "ARMED": "ARMED",
+    "ACTIVE": "TRIGGERED",
+    "RELEASED": "TRIGGERED",
+    "TRIGGERED": "TRIGGERED",
+    "PASSED": "INVALIDATED"
+  },
+  "free_text_trigger_forbidden": true
+}

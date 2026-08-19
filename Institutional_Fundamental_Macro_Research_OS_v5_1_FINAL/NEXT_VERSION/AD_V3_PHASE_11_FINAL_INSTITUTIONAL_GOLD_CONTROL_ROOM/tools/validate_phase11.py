@@ -22,13 +22,22 @@ def main():
   q=REPO/rel
   if q.exists() and sha(q)!=expected:drift.append(rel)
  if drift:errs.append('authority drift: '+','.join(drift))
- # P10 stage DAG topology must remain identical; only CONTROL_MODEL/REPORT authority transition to P11 is allowed.
+ # P10 stage DAG may receive the versioned R03 perspective stage, but all legacy topology must otherwise remain intact.
  pre=load(P/'baseline/PRE_P11_P10_STAGE_DAG.json'); cur=load(N/'AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/config/stage_dag.json')
- pre_top=[(x['stage_id'],tuple(x.get('depends_on') or []),x.get('mandatory')) for x in pre.get('stages',[])]
- cur_top=[(x['stage_id'],tuple(x.get('depends_on') or []),x.get('mandatory')) for x in cur.get('stages',[])]
- if pre_top!=cur_top: errs.append('P10 stage DAG topology drift')
+ pre_map={x['stage_id']:(tuple(x.get('depends_on') or []),x.get('mandatory')) for x in pre.get('stages',[])}
+ cur_map={x['stage_id']:(tuple(x.get('depends_on') or []),x.get('mandatory')) for x in cur.get('stages',[])}
+ allowed=True
+ for sid,(deps,mandatory) in pre_map.items():
+  got=cur_map.get(sid)
+  if sid=='FORWARD_PRECOMMIT':
+   if got!=(('PERSPECTIVE_OVERLAY',),mandatory): allowed=False
+  elif got!=(deps,mandatory): allowed=False
+ if cur_map.get('PERSPECTIVE_OVERLAY')!=(('DECISION_CALIBRATION',),True): allowed=False
+ if set(cur_map)!=set(pre_map)|{'PERSPECTIVE_OVERLAY'}: allowed=False
+ if not allowed: errs.append('P10 stage DAG ungoverned topology drift')
  auth={x['stage_id']:x.get('authority') for x in cur.get('stages',[])}
  if auth.get('CONTROL_MODEL')!='AD-V3-P11' or auth.get('REPORT')!='AD-V3-P11': errs.append('P11 stage authority transition missing')
+ if auth.get('PERSPECTIVE_OVERLAY')!='AD-V3.1-R03': errs.append('R03 perspective stage authority missing')
 
- out={'phase':'AD-V3-P11','version':'3.11.0-final-control-room','status':'PASS' if not errs else 'FAIL','errors':errs,'authority_drift':drift};print(json.dumps(out,ensure_ascii=False,indent=2));return 0 if not errs else 2
+ out={'phase':'AD-V3-P11','version':'3.11.1-r03-perspective','status':'PASS' if not errs else 'FAIL','errors':errs,'authority_drift':drift};print(json.dumps(out,ensure_ascii=False,indent=2));return 0 if not errs else 2
 if __name__=='__main__':raise SystemExit(main())

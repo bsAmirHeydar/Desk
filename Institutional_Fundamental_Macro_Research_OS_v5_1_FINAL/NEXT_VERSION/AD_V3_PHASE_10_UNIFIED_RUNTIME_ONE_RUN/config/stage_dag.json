@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "stages": [
     {
       "stage_id": "PRECHECK",
@@ -64,9 +64,17 @@
       "mandatory": true
     },
     {
-      "stage_id": "FORWARD_PRECOMMIT",
+      "stage_id": "PERSPECTIVE_OVERLAY",
       "depends_on": [
         "DECISION_CALIBRATION"
+      ],
+      "authority": "AD-V3.1-R03",
+      "mandatory": true
+    },
+    {
+      "stage_id": "FORWARD_PRECOMMIT",
+      "depends_on": [
+        "PERSPECTIVE_OVERLAY"
       ],
       "authority": "AD-V3-P09",
       "mandatory": true

@@ -32,6 +32,9 @@
     },
     "forward_qualification": {
       "type": "object"
+    },
+    "perspective_state": {
+      "type": "object"
     }
   }
 }

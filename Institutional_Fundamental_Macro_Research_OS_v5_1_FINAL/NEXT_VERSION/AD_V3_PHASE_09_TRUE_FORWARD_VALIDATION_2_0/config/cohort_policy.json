@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "version": "1.0.0",
   "initial_cohort_sequence": 1,
   "auto_start_new_cohort_on_fingerprint_change": true,
@@ -22,7 +22,17 @@
     "../AD_V31_R02_DECISION_SCIENCE_2_0/config/root_critical_evidence_registry.json",
     "../AD_V31_R02_DECISION_SCIENCE_2_0/config/causal_importance_matrix.json",
     "../AD_V31_R02_DECISION_SCIENCE_2_0/config/regime_importance_policy.json",
-    "../AD_V31_R02_DECISION_SCIENCE_2_0/config/dominance_robustness_policy.json"
+    "../AD_V31_R02_DECISION_SCIENCE_2_0/config/dominance_robustness_policy.json",
+    "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/r03_scientific_policy.json",
+    "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/scenario_archetype_registry.json",
+    "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/scenario_construction_policy.json",
+    "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/scenario_trigger_policy.json",
+    "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/via_negativa_policy.json",
+    "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/fragility_dimension_policy.json",
+    "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/stress_pathway_registry.json",
+    "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/nonlinearity_policy.json",
+    "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/tail_unknown_policy.json",
+    "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/perspective_overlay_policy.json"
   ],
   "states": [
     "OPEN",
@@ -32,5 +42,6 @@
     "INVALIDATED"
   ],
   "pool_across_cohorts_for_promotion": false,
-  "r02_decision_science_bound": true
+  "r02_decision_science_bound": true,
+  "r03_perspective_science_bound": true
 }

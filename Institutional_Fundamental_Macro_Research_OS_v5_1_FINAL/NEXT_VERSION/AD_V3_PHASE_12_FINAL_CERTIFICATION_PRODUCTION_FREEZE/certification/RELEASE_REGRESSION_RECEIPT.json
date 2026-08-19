@@ -1,8 +1,8 @@
 {
   "record_type": "AD_V3_P12_RELEASE_REGRESSION_RECEIPT",
-  "schema_version": "1.1.0",
+  "schema_version": "1.3.0",
   "status": "PASS",
-  "release_candidate": "ALPHA_DESK_V3_1_R01",
+  "release_candidate": "ALPHA_DESK_V3_1_R03",
   "phase_status": {
     "P01": "PASS",
     "P02": "PASS",
@@ -15,10 +15,17 @@
     "P09": "PASS",
     "P10": "PASS",
     "P11": "PASS",
-    "P12": "PASS",
+    "R01": "PASS",
+    "R02": "PASS",
+    "R03": "PASS",
     "V2_P11": "PASS",
     "V2_P13": "PASS"
   },
   "r01_status": "PASS",
-  "parent_receipt": "certification/V3_RC1_RELEASE_REGRESSION_RECEIPT.json"
+  "r02_status": "PASS",
+  "r03_status": "PASS",
+  "baseline_commit": "69be946",
+  "parent_receipt": "certification/RELEASE_REGRESSION_RECEIPT_PRE_R03.json",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE"
 }

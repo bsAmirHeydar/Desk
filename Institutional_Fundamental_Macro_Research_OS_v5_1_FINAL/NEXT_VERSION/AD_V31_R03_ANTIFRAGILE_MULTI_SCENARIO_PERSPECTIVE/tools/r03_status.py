@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import sys,json
+P=Path(__file__).resolve().parents[1];sys.path.insert(0,str(P.parent))
+from AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE.runtime.common import load
+from AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE.runtime.perspective_freeze import verify_manifest
+b=load(P/'artifacts/state/r03_qualification_boundary.json',{}) or {};last=load(P/'artifacts/latest/r03_perspective_state.json',{}) or {};fr=verify_manifest();out={'record_type':'AD_V31_R03_STATUS','phase':'AD-V3.1-R03','version':'3.1.3-antifragile-perspective','acceptance_status':'PASS' if fr['status']=='PASS' else 'FAIL_CLOSED','policy_freeze':fr['status'],'qualification_cohort':b.get('qualification_boundary_id'),'scenario_count':((last.get('scenario_packet') or {}).get('scenario_count')),'canonical_scenario':((last.get('scenario_packet') or {}).get('canonical_scenario_id')),'thesis_resilience':last.get('thesis_resilience'),'largest_fragility':((last.get('fragility_map') or {}).get('largest_dimensions')),'unknown_envelope':((last.get('unknown_state') or {}).get('unknown_envelope')),'nonlinearity_state':((last.get('nonlinearity') or {}).get('state')),'perspective_overlay':((last.get('perspective_overlay') or {}).get('overlay')),'final_permission':last.get('final_permission'),'V3_state':'SHADOW_COMMISSIONING','trade_execution_authority':'NONE','read_only':True};print(json.dumps(out,indent=2,ensure_ascii=False))

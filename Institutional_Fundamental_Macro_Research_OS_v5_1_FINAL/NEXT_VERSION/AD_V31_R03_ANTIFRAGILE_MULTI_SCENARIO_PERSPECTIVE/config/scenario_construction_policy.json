@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "operator_group_limits": {
+    "CANONICAL": 1,
+    "ALTERNATIVE": 2,
+    "STRESS": 2,
+    "TAIL": 1
+  },
+  "status_states": [
+    "DORMANT",
+    "ARMED",
+    "ACTIVE",
+    "TRIGGERED",
+    "INVALIDATED",
+    "UNRESOLVED"
+  ],
+  "relations": [
+    "SUPPORTS",
+    "OPPOSES",
+    "ORTHOGONAL",
+    "TRANSIENT_CONFLICT",
+    "UNKNOWN"
+  ],
+  "independence_states": [
+    "INDEPENDENT",
+    "RELATED",
+    "SAME_ROOT_VARIANT"
+  ],
+  "decision_relevance_order": [
+    "IMMEDIATE",
+    "WATCH",
+    "STRESS",
+    "TAIL"
+  ],
+  "deduplicate_same_root_variants": true,
+  "probability_ranking_forbidden": true,
+  "canonical_is_conditional_not_probabilistic": true
+}

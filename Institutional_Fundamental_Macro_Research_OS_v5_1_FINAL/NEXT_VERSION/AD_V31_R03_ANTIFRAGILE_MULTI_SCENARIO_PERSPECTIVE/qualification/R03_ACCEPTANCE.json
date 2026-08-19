@@ -1,0 +1,441 @@
+{
+  "phase": "AD-V3.1-R03",
+  "version": "3.1.3-antifragile-perspective",
+  "acceptance_status": "PASS",
+  "check_count": 60,
+  "checks": [
+    {
+      "name": "healthy robust state can remain NO_CHANGE",
+      "status": "PASS",
+      "detail": {
+        "overlay": "NO_CHANGE",
+        "pre_overlay_permission": "BUY_CANDIDATE",
+        "post_overlay_permission": "BUY_CANDIDATE",
+        "pre_overlay_edge": "ACTIONABLE_EDGE",
+        "post_overlay_edge": "ACTIONABLE_EDGE",
+        "reasons": [],
+        "authority_upgraded": false,
+        "direction_authority": false,
+        "edge_upgrade_forbidden": true,
+        "permission_upgrade_forbidden": true
+      }
+    },
+    {
+      "name": "R03 preserves canonical direction",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "canonical scenario is conditional not probability",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "scenario set is bounded",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Via Negativa exposes thesis breakers",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "every material scenario has invalidation",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "fragility map is multidimensional",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "no total antifragility score",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "unknown envelope contained in healthy state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "tail awareness is not probability",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "narrative monoculture raises narrative fragility without changing direction",
+      "status": "PASS",
+      "detail": {
+        "dimensions": {
+          "MODEL_FRAGILITY": "LOW",
+          "DATA_FRAGILITY": "LOW",
+          "CAUSAL_CONCENTRATION_FRAGILITY": "HIGH",
+          "REGIME_FRAGILITY": "LOW",
+          "EVENT_FRAGILITY": "LOW",
+          "TRANSMISSION_FRAGILITY": "LOW",
+          "LIQUIDITY_FRAGILITY": "LOW",
+          "NARRATIVE_FRAGILITY": "HIGH",
+          "UNKNOWN_DRIVER_FRAGILITY": "LOW",
+          "SEMANTIC_FRAGILITY": "LOW"
+        },
+        "overall": "FRAGILE",
+        "critical_not_averageable": true,
+        "largest_dimensions": [
+          "CAUSAL_CONCENTRATION_FRAGILITY",
+          "NARRATIVE_FRAGILITY"
+        ]
+      }
+    },
+    {
+      "name": "alternative break world retained under concentrated narrative",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "price against pressure without liquidity evidence stays unexplained",
+      "status": "PASS",
+      "detail": {
+        "scenario_id": "R03SCN_B876C1AE9642317DF41CD00B",
+        "scenario_class": "MECHANICAL_LIQUIDITY_DISLOCATION",
+        "status": "UNRESOLVED",
+        "horizon": "SESSION_1_6H",
+        "relation_to_canonical_direction": "TRANSIENT_CONFLICT",
+        "causal_roots": [],
+        "evidence_ids": [],
+        "trigger_conditions": [
+          "PRICE_PRESSURE_CONFLICT"
+        ],
+        "invalidating_conditions": [
+          "KNOWN_CAUSAL_DRIVER_EXPLAINS_CONFLICT"
+        ],
+        "fragility_pathways": [
+          "TRANSMISSION_FRAGILITY",
+          "UNKNOWN_DRIVER_FRAGILITY"
+        ],
+        "nonlinearity_state": "LINEAR_OR_UNRESOLVED",
+        "unknown_dependency": "OPEN",
+        "permission_implication": "CAP_TO_CONDITIONAL",
+        "human_summary": "تعارض قیمت و فشار دیده می‌شود، اما شواهد کافی برای نسبت‌دادن آن به نقدینگی یا مکانیک بازار وجود ندارد.",
+        "decision_relevance": "WATCH",
+        "independence": "INDEPENDENT",
+        "probability": null,
+        "explanation_state": "UNEXPLAINED_TRANSMISSION_CONFLICT"
+      }
+    },
+    {
+      "name": "price conflict does not flip fundamental direction",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "confirmed mechanical dislocation requires governed liquidity evidence",
+      "status": "PASS",
+      "detail": {
+        "scenario_id": "R03SCN_E7FE0A6D819B3ED7DC88FEC7",
+        "scenario_class": "MECHANICAL_LIQUIDITY_DISLOCATION",
+        "status": "ACTIVE",
+        "horizon": "SESSION_1_6H",
+        "relation_to_canonical_direction": "TRANSIENT_CONFLICT",
+        "causal_roots": [
+          "FUNDING_COLLATERAL_STRESS"
+        ],
+        "evidence_ids": [
+          "FUNDING_COLLATERAL_STRESS_FACT"
+        ],
+        "trigger_conditions": [
+          "CONFIRMED_LIQUIDITY_OR_FUNDING_STRESS",
+          "OPPOSING_PRICE_TRANSMISSION"
+        ],
+        "invalidating_conditions": [
+          "LIQUIDITY_STRESS_RESOLVES"
+        ],
+        "fragility_pathways": [
+          "LIQUIDITY_FRAGILITY",
+          "TRANSMISSION_FRAGILITY"
+        ],
+        "nonlinearity_state": "CASCADE_RISK",
+        "unknown_dependency": "WIDE",
+        "permission_implication": "CAP_TO_CONDITIONAL",
+        "human_summary": "رفتار قیمت می‌تواند موقتاً با فشار بنیادی در تضاد باشد و شواهد مستقل مکانیکی/نقدینگی این تعارض را تأیید می‌کنند.",
+        "decision_relevance": "IMMEDIATE",
+        "independence": "INDEPENDENT",
+        "probability": null,
+        "explanation_state": "CONFIRMED_MECHANICAL_LIQUIDITY_DISLOCATION"
+      }
+    },
+    {
+      "name": "model-sensitive state raises model fragility",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "model-sensitive state can cap but never flip",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "critical unknown envelope detected",
+      "status": "PASS",
+      "detail": {
+        "unknown_envelope": "CRITICAL",
+        "primary_reasons": [
+          "MISSING_DRIVER_RISK_HIGH",
+          "UNEXPLAINED_PRICE_PRESSURE_DIVERGENCE",
+          "DOMINANT_ROOT_CRITICAL_GAP"
+        ],
+        "epistemic_shock": true,
+        "tail_exposure": {
+          "EVENT_TAIL": "LOW",
+          "LIQUIDITY_TAIL": "LOW",
+          "MODEL_TAIL": "LOW",
+          "DATA_TAIL": "SEVERE",
+          "REGIME_TAIL": "LOW",
+          "UNKNOWN_TAIL": "SEVERE"
+        },
+        "tail_is_not_probability": true,
+        "unknown_unknown_specific_event_named": false
+      }
+    },
+    {
+      "name": "critical unknown can FORCE_WAIT while direction remains",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "scheduled event is ARMED not triggered before release",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "registered realized event can trigger discontinuity",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "event existence alone does not imply direction flip",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "TAIL_UNKNOWN never names a specific invented event",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R03 cannot upgrade upstream WAIT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R03 cannot upgrade Conditional Edge",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R03 overlay authority upgraded flag always false",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "critical fragility cannot be averaged away",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "nonlinearity not invented without evidence",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "authorized cascade pathway can be ARMED without being triggered",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "authorized cascade triggers only with confirmations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "operator-facing scenario count maximum six",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "scenario output contains no calibrated probability claim",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R03 runtime failure fails closed to WAIT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P09 stores R03 scenario and overlay fields",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P09 retains pre-R03 permission and effective post-R03 permission",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P11 exposes scenario atlas human-first",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P11 uses post-overlay permission when perspective is valid",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R03 initializes a new ex-ante qualification boundary",
+      "status": "PASS",
+      "detail": {
+        "record_type": "AD_V31_R03_QUALIFICATION_BOUNDARY",
+        "schema_version": "1.0.0",
+        "qualification_boundary_id": "R03Q_46931B40C9174FE4221E9250",
+        "state": "OPEN",
+        "started_at_utc": "2026-08-18T12:00:00Z",
+        "baseline_commit": "69be946",
+        "r03_perspective_fingerprint": "R03SCI_DBAE5E33F378FA1D9CFF422A524118B6670CDD7FAE8F96BEC5E94103149C3EAC",
+        "freeze_status": "PASS",
+        "old_p09_cohort_id": null,
+        "new_p09_cohort_id": "COHORT_001",
+        "p09_cohort_created": true,
+        "old_r01_qualification_cohort_id": null,
+        "new_r01_qualification_cohort_id": "R01Q_42693D007C5DEEFA190D",
+        "old_r02_boundary_id": null,
+        "old_r02_state": null,
+        "pre_r03_evidence_primary_production_qualification_authority": false,
+        "pre_r03_history_preserved": true,
+        "new_r03_decisions_primary_qualification_authority": true
+      }
+    },
+    {
+      "name": "pre-R03 history explicitly preserved observationally",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R03 perspective science freeze valid",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "perspective_science_fingerprint": "R03SCI_DBAE5E33F378FA1D9CFF422A524118B6670CDD7FAE8F96BEC5E94103149C3EAC",
+        "expected_fingerprint": "R03SCI_DBAE5E33F378FA1D9CFF422A524118B6670CDD7FAE8F96BEC5E94103149C3EAC",
+        "file_count": 27
+      }
+    },
+    {
+      "name": "R03 authority is perspective-only",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R03 cannot create new causal root",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R03 LLM has no scenario authority",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R03 has no internet acquisition authority",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R03 has no trade execution authority",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P10 stage order places R03 before P09 precommit",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P10 uses canonical R03 runtime",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R03 status command is read-only dispatch",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R02 acceptance preserved",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "name": "R01 acceptance preserved",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "name": "no Taleb/black-swan probability theatre",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "tail unknown policy forbids specific unknown naming",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "scenario archetypes limited to six classes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "fragility policy has exactly ten required dimensions",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "perspective overlay supports only monotonic three states",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Golden Perspective Matrix 20/20 PASS",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "name": "full offline integrated R03 fixture PASS",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "name": "production remains shadow",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "promotion not performed",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "trade execution NONE",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "baseline_commit": "69be946",
+  "v3_state": "SHADOW_COMMISSIONING",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE"
+}

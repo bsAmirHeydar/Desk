@@ -1,0 +1,118 @@
+{
+  "files": [
+    {
+      "path": "config/fragility_dimension_policy.json",
+      "sha256": "3ba0d892f64b88d7842a08edc50a1d21940d6489f6c5e6c1fea68df58e0ea45e"
+    },
+    {
+      "path": "config/nonlinearity_policy.json",
+      "sha256": "a6f756d1ce950a666929ea6169415a0c3abd91a4c7ba85b27dd04a78a8d15448"
+    },
+    {
+      "path": "config/perspective_overlay_policy.json",
+      "sha256": "f5ec90ed939dc8e7a420aedcc1265ab455e0b6ae6f38a6bcfe60cdc12486a8dc"
+    },
+    {
+      "path": "config/r03_scientific_policy.json",
+      "sha256": "8f9c3f94e4b691fe0673aa5dce1a2d8932e1ab0f35946e16aedd63f141c68373"
+    },
+    {
+      "path": "config/scenario_archetype_registry.json",
+      "sha256": "7a472188214f9c0d9d84427eb3c56165f5adec86517eb66605d5ee92c4d66ef1"
+    },
+    {
+      "path": "config/scenario_construction_policy.json",
+      "sha256": "c6078d601b125a346e56530a9d3bae8cf57ea6b0726bc89abe301fd2ca32c55c"
+    },
+    {
+      "path": "config/scenario_trigger_policy.json",
+      "sha256": "185106727f8866a7ad6a107e1fd7b4c4bf18da3646b4b4f59d9193c003dfa052"
+    },
+    {
+      "path": "config/stress_pathway_registry.json",
+      "sha256": "931aea73cd3982c940a1a17963dff144dd86202880017ed592cca4bb1aed12bf"
+    },
+    {
+      "path": "config/tail_unknown_policy.json",
+      "sha256": "e895d3526cf6a8814f262cc281cbce2e5b3fe74d072e14b6dd8c57e45cdde058"
+    },
+    {
+      "path": "config/via_negativa_policy.json",
+      "sha256": "b7b5586299c68ee10548dd0e105a1b6cacc5f1ea63989316832960b28bac9f52"
+    },
+    {
+      "path": "runtime/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runtime/cohort_boundary.py",
+      "sha256": "1a8483b2e382d9fca0e61769b675392f81b85d814dfc984cd1bad8716220c36f"
+    },
+    {
+      "path": "runtime/common.py",
+      "sha256": "033e5f393304e4512b621c71353a7372c33511585150b0e40c9bda60ebcf7bad"
+    },
+    {
+      "path": "runtime/fragility_engine.py",
+      "sha256": "018675083496ff9b4c0dde8ec23a7ba5364a3033de8544a07e497c7346cbc4a5"
+    },
+    {
+      "path": "runtime/nonlinearity_engine.py",
+      "sha256": "d3542fac888290c6fcbe994c0b4d80b645063bb33cc95823e5428de11900c793"
+    },
+    {
+      "path": "runtime/perspective_freeze.py",
+      "sha256": "504f486eaa90ddc8609573a61c45984f3dccc1271e7c45652d751b0183524077"
+    },
+    {
+      "path": "runtime/perspective_overlay.py",
+      "sha256": "9c1852ee6838d25656887ba4320024d81746877edfdd602e9773145f6c5e1c49"
+    },
+    {
+      "path": "runtime/perspective_runtime.py",
+      "sha256": "135704e6b8e5f92ce6a6295012cc1bfecc0aa0fb9c9000f32adde7f438052892"
+    },
+    {
+      "path": "runtime/scenario_engine.py",
+      "sha256": "ddc91a875d8459bf574593b976f42db87aa6de351e9b6faf3295ac54f43c04fb"
+    },
+    {
+      "path": "runtime/tail_unknown_engine.py",
+      "sha256": "4600ce8f96b78545195e78d1588506bf5ad2e7f189f0306934e1abf68327baf3"
+    },
+    {
+      "path": "runtime/via_negativa_engine.py",
+      "sha256": "4e569a3f8b33d8e7448e5cb04d98e4405bef4d01f6e471871b39d866866198d8"
+    },
+    {
+      "path": "schemas/fragility_map.schema.json",
+      "sha256": "eaeba569850cde4590968e29372e0d8b95dc13cee425081109d3f9376514cd5b"
+    },
+    {
+      "path": "schemas/nonlinearity_state.schema.json",
+      "sha256": "32dd5a98378ea907b7279f1d4e854ec1acfe81336c5303c43df745c875525d57"
+    },
+    {
+      "path": "schemas/perspective_overlay.schema.json",
+      "sha256": "e4ffbdb04f1d1957ccd451c966052eefbf9fe0fab47d4b363ed57594119f030a"
+    },
+    {
+      "path": "schemas/r03_receipt.schema.json",
+      "sha256": "f77f25cc208b3f9ffb30d38790b62495c598f2f89c1365b274eef83531b01c4a"
+    },
+    {
+      "path": "schemas/scenario_state.schema.json",
+      "sha256": "264363a4df0490fd1610e6237ed8326e904ff7b885ec8cc9e9e9d2ae61c209e0"
+    },
+    {
+      "path": "schemas/tail_unknown_state.schema.json",
+      "sha256": "67d7a68dd8036120f4465e3a5be9dd2bd477f690bce1d4b18033599a428ddf79"
+    }
+  ],
+  "perspective_science_fingerprint": "R03SCI_DBAE5E33F378FA1D9CFF422A524118B6670CDD7FAE8F96BEC5E94103149C3EAC",
+  "record_type": "AD_V31_R03_PERSPECTIVE_FREEZE",
+  "schema_version": "1.0.0",
+  "version": "3.1.3-antifragile-perspective",
+  "policy_change_requires_new_cohort": true,
+  "production_promotion_performed": false
+}

@@ -1,0 +1,14 @@
+{
+  "record_type": "AD_V31_R03_PRE_AUTHORITY_HASHES",
+  "baseline_commit": "69be946",
+  "files": {
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_01_TOTAL_GOLD_KNOWLEDGE_SCIENCE_FOUNDATION/config/gold_master_fact_registry.json": "c0c83c5789329cfb6a8770d6c7908c0b9d101ad725160ebcb1652d8a98b1baba",
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_03_CAUSAL_GOLD_BRAIN_DECISION_ENGINE/config/fact_reasoning_registry.json": "24b5f7183fc43477cc69914171ca1cb742e3ca87e96f8ae93b3c3a75f9df4dec",
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_06_GOVERNED_SEMANTIC_INTELLIGENCE/config/semantic_runtime_contract.json": "cf463d11db68eb056a0dd9f6111d130fce21ce3922e0d0e649c703cfca2dc4d2",
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_07_LIVE_INTRADAY_GOLD_DATA_KERNEL/config/gold_kernel_policy.json": "0627e2f81ee16c07c06c293fcf14c54915218f7ac268b17918286dce8219ad5e",
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/calibration/R02_DECISION_SCIENCE_FREEZE_MANIFEST.json": "cdd6c88f9a0b3e94e2caaf5edd421c84b371492890acdfd09b7ec48fd31df763",
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/forward_validation_policy.json": "39e110c1402867976a8535d89fa78acf4a3b0e7694ff9cbe593ddaef178d314b",
+    "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/qualification/QUALIFICATION_FREEZE_MANIFEST.json": "2eb4b9c3f39cdd3ac0b4d2026bdfa226bdf01cb78523d23134d78aa895d241e0"
+  },
+  "source": "Desk-main_V31_R02_Complete.zip"
+}

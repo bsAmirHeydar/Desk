@@ -1,0 +1,169 @@
+{
+  "phase": "AD-V3.1-R03",
+  "matrix": "GOLDEN_PERSPECTIVE_MATRIX",
+  "status": "PASS",
+  "case_count": 20,
+  "cases": [
+    {
+      "case": "A Robust bullish continuation",
+      "status": "PASS",
+      "overlay": "NO_CHANGE",
+      "resilience": "RESILIENT",
+      "unknown": "CONTAINED",
+      "scenario_count": 3
+    },
+    {
+      "case": "B Robust bearish continuation",
+      "status": "PASS",
+      "overlay": "NO_CHANGE",
+      "resilience": "RESILIENT",
+      "unknown": "CONTAINED",
+      "scenario_count": 3
+    },
+    {
+      "case": "C Bullish but fragile",
+      "status": "PASS",
+      "overlay": "CAP_TO_CONDITIONAL",
+      "resilience": "CONDITIONALLY_RESILIENT",
+      "unknown": "CONTAINED",
+      "scenario_count": 3
+    },
+    {
+      "case": "D Bearish but fragile",
+      "status": "PASS",
+      "overlay": "CAP_TO_CONDITIONAL",
+      "resilience": "CONDITIONALLY_RESILIENT",
+      "unknown": "CONTAINED",
+      "scenario_count": 3
+    },
+    {
+      "case": "E True mixed",
+      "status": "PASS",
+      "overlay": "NO_CHANGE",
+      "resilience": "UNKNOWN",
+      "unknown": "CONTAINED",
+      "scenario_count": 0
+    },
+    {
+      "case": "F Mechanical liquidation against bullish pressure",
+      "status": "PASS",
+      "overlay": "CAP_TO_CONDITIONAL",
+      "resilience": "CONDITIONALLY_RESILIENT",
+      "unknown": "WIDE",
+      "scenario_count": 5
+    },
+    {
+      "case": "G Mechanical squeeze against bearish pressure",
+      "status": "PASS",
+      "overlay": "CAP_TO_CONDITIONAL",
+      "resilience": "CONDITIONALLY_RESILIENT",
+      "unknown": "WIDE",
+      "scenario_count": 5
+    },
+    {
+      "case": "H Scheduled event armed",
+      "status": "PASS",
+      "overlay": "NO_CHANGE",
+      "resilience": "RESILIENT",
+      "unknown": "CONTAINED",
+      "scenario_count": 4
+    },
+    {
+      "case": "I Event discontinuity triggered",
+      "status": "PASS",
+      "overlay": "FORCE_WAIT",
+      "resilience": "CONDITIONALLY_RESILIENT",
+      "unknown": "CONTAINED",
+      "scenario_count": 4
+    },
+    {
+      "case": "J Critical unknown-driver state",
+      "status": "PASS",
+      "overlay": "FORCE_WAIT",
+      "resilience": "BROKEN",
+      "unknown": "CRITICAL",
+      "scenario_count": 4
+    },
+    {
+      "case": "K Narrow systemic shock",
+      "status": "PASS",
+      "overlay": "CAP_TO_CONDITIONAL",
+      "resilience": "CONDITIONALLY_RESILIENT",
+      "unknown": "CONTAINED",
+      "scenario_count": 3
+    },
+    {
+      "case": "L Broad weak state",
+      "status": "PASS",
+      "overlay": "NO_CHANGE",
+      "resilience": "RESILIENT",
+      "unknown": "CONTAINED",
+      "scenario_count": 2
+    },
+    {
+      "case": "M Proxy-heavy dominant root",
+      "status": "PASS",
+      "overlay": "NO_CHANGE",
+      "resilience": "RESILIENT",
+      "unknown": "OPEN",
+      "scenario_count": 4
+    },
+    {
+      "case": "N Narrative concentration",
+      "status": "PASS",
+      "overlay": "CAP_TO_CONDITIONAL",
+      "resilience": "CONDITIONALLY_RESILIENT",
+      "unknown": "CONTAINED",
+      "scenario_count": 3
+    },
+    {
+      "case": "O Model-sensitive dominance",
+      "status": "PASS",
+      "overlay": "CAP_TO_CONDITIONAL",
+      "resilience": "CONDITIONALLY_RESILIENT",
+      "unknown": "OPEN",
+      "scenario_count": 4
+    },
+    {
+      "case": "P Strong pressure/high consumption",
+      "status": "PASS",
+      "overlay": "NO_CHANGE",
+      "resilience": "RESILIENT",
+      "unknown": "CONTAINED",
+      "scenario_count": 3
+    },
+    {
+      "case": "Q Tail unknown without invented story",
+      "status": "PASS",
+      "overlay": "FORCE_WAIT",
+      "resilience": "BROKEN",
+      "unknown": "CRITICAL",
+      "scenario_count": 4
+    },
+    {
+      "case": "R Cascade pathway armed",
+      "status": "PASS",
+      "overlay": "NO_CHANGE",
+      "resilience": "RESILIENT",
+      "unknown": "CONTAINED",
+      "scenario_count": 3
+    },
+    {
+      "case": "S Cascade pathway triggered",
+      "status": "PASS",
+      "overlay": "CAP_TO_CONDITIONAL",
+      "resilience": "CONDITIONALLY_RESILIENT",
+      "unknown": "WIDE",
+      "scenario_count": 5
+    },
+    {
+      "case": "T Healthy state where R03 does nothing",
+      "status": "PASS",
+      "overlay": "NO_CHANGE",
+      "resilience": "RESILIENT",
+      "unknown": "CONTAINED",
+      "scenario_count": 3
+    }
+  ],
+  "probabilities_used": false
+}

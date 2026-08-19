@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "phase",
+    "version",
+    "canonical_direction",
+    "scenario_packet",
+    "fragility_map",
+    "perspective_overlay"
+  ],
+  "additionalProperties": true
+}

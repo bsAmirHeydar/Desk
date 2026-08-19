@@ -32,14 +32,15 @@ def main():
   out=run_gold(REPO,'SESSION_1_6H','FIXTURE','NORMAL',p02_data_root_override=data,artifact_root_override=art,kernel_fixture_dir=fix,kernel_output_root_override=kout,p09_state_root_override=p09state,as_of_utc='2026-08-17T10:00:00Z',fixture_mode=True,update_latest=False,quiet=True)
   rd=next((art/'runs').iterdir())
   checks.append(ck('one canonical V3 orchestration authority executes full offline pipeline',out['overall_status'] in {'SUCCESS','SUCCESS_DEGRADED','SUCCESS_NONACTIONABLE'} and [x['stage_id'] for x in out['stage_receipts']]==STAGE_ORDER,[x['stage_id'] for x in out['stage_receipts']]))
-  checks.append(ck('ordinary V3 run requires no manual inter-phase handoff',all((rd/x).exists() for x in ['p07_kernel_receipt.json','p03_pre_semantic.json','semantic_adjudication_bundle.json','p03_final.json','p08_decision_calibration.json','p09_forward_precommit.json','control_room.html','run_result.json'])))
+  checks.append(ck('ordinary V3 run requires no manual inter-phase handoff',all((rd/x).exists() for x in ['p07_kernel_receipt.json','p03_pre_semantic.json','semantic_adjudication_bundle.json','p03_final.json','p08_decision_calibration.json','r03_perspective_state.json','p09_forward_precommit.json','control_room.html','run_result.json'])))
   checks.append(ck('one canonical run_id links all stage receipts',all(x['run_id']==out['run_id'] for x in out['stage_receipts'])))
   checks.append(ck('one canonical decision_time anchors logical run',all(x['decision_time']==out['decision_time'] for x in out['stage_receipts'])))
   order=[x['stage_id'] for x in out['stage_receipts']]
   checks.append(ck('P09 matured outcomes evaluated before current precommit',order.index('FORWARD_EVALUATION')<order.index('FORWARD_PRECOMMIT')))
   checks.append(ck('P07 plan occurs before P02 acquisition',order.index('ACQUISITION_PLAN')<order.index('ACQUISITION')))
   checks.append(ck('P06 semantic stage receives P03 packet before P08',order.index('PRE_SEMANTIC')<order.index('SEMANTIC')<order.index('FINAL_CAUSAL')<order.index('DECISION_CALIBRATION')))
-  checks.append(ck('P09 receives P08 calibrated state',order.index('DECISION_CALIBRATION')<order.index('FORWARD_PRECOMMIT')))
+  checks.append(ck('R03 perspective executes after P08 and before P09 precommit',order.index('DECISION_CALIBRATION')<order.index('PERSPECTIVE_OVERLAY')<order.index('FORWARD_PRECOMMIT')))
+  checks.append(ck('P09 receives post-R03 perspective state',load(rd/'p09_forward_precommit.json').get('r03_perspective_version') is not None and load(rd/'p09_forward_precommit.json').get('r03_final_permission') is not None))
   checks.append(ck('P04 receives canonical ControlRoomInputV3',load(rd/'control_room_input.json')['schema_id']=='ControlRoomInputV3'))
   checks.append(ck('semantic host unavailable degrades through P06 policy',out['semantic_state']['mode'] in {'CONSERVATIVE_EVIDENCE_ONLY','AUTO_GOVERNED','REPLAY_VALIDATED_BUNDLE','EXTERNAL_VALIDATED_BUNDLE'} and out['semantic_state']['validation_status'] is not None,out['semantic_state']))
   checks.append(ck('WAIT or UNKNOWN is not runtime failure',out['overall_status']!='FAILED_RUNTIME' and out['overall_status']!='FAILED_INTEGRITY'))
@@ -93,5 +94,5 @@ def main():
  checks.append(ck('V3 remains SHADOW_COMMISSIONING',st['promotion_state']=='SHADOW_COMMISSIONING',st['promotion_state']))
  checks.append(ck('production promotion performed = false',st['production_route']=='V2',st['production_route']))
  checks.append(ck('no broker execution authority introduced',st['trade_execution_authority']=='NONE'))
- ok=all(x['status']=='PASS' for x in checks);out={'phase':'AD-V3-P10','version':'3.10.0-unified-runtime','acceptance_status':'PASS' if ok else 'FAIL_CLOSED','check_count':len(checks),'checks':checks,'canonical_runtime_authority':'AD-V3-P10','v3_state':'SHADOW_COMMISSIONING','production_promotion_performed':False,'trade_execution_authority':'NONE'};print(json.dumps(out,indent=2,ensure_ascii=False,default=str));return 0 if ok else 2
+ ok=all(x['status']=='PASS' for x in checks);out={'phase':'AD-V3-P10','version':'3.10.1-r03-perspective-stage','acceptance_status':'PASS' if ok else 'FAIL_CLOSED','check_count':len(checks),'checks':checks,'canonical_runtime_authority':'AD-V3-P10','v3_state':'SHADOW_COMMISSIONING','production_promotion_performed':False,'trade_execution_authority':'NONE'};print(json.dumps(out,indent=2,ensure_ascii=False,default=str));return 0 if ok else 2
 if __name__=='__main__':raise SystemExit(main())

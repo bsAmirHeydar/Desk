@@ -86,7 +86,7 @@ def main():
  # R01 thresholds unchanged by checking its own qualification freeze.
  r01pol=load(N/'AD_V31_R01_FORWARD_QUALITY_PROMOTION_SCIENCE/qualification/QUALIFICATION_FREEZE_MANIFEST.json',{});c.append(ck('R01 qualification freeze remains present and authoritative',bool(r01pol.get('qualification_policy_fingerprint') or r01pol.get('freeze_fingerprint') or r01pol)))
  # release lineage
- rel=load(N/'AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/release/ALPHA_DESK_V3_FINAL_RELEASE_MANIFEST.json',{});c.append(ck('V3 RC1 and R01 lineage preserved while R02 fingerprint added',bool(rel.get('r01_release_snapshot')) and bool(rel.get('r02_amendment_fingerprint')) and rel.get('release_candidate')=='ALPHA_DESK_V3_1_R02',rel.get('lineage')))
+ rel=load(N/'AD_V3_PHASE_12_FINAL_CERTIFICATION_PRODUCTION_FREEZE/release/ALPHA_DESK_V3_FINAL_RELEASE_MANIFEST.json',{});lin=rel.get('lineage') or {};lineage_ok=bool(lin.get('v3_rc1_release_fingerprint')) and bool(lin.get('r01_release_fingerprint')) and bool(lin.get('r02_decision_science_fingerprint')) and ('AD-V3.1-R02' in (lin.get('amendments') or [])) and rel.get('release_candidate') in {'ALPHA_DESK_V3_1_R02','ALPHA_DESK_V3_1_R03'};c.append(ck('V3 RC1, R01 and R02 lineage preserved under downstream amendments',lineage_ok,lin))
  # no fake probability scan focused authority surfaces
  texts='\n'.join((P/f).read_text(errors='ignore') for f in ['config/dominance_robustness_policy.json','runtime/sensitivity_engine.py'])
  c.append(ck('R02 does not present sensitivity frequency as probability','80% bullish' not in texts.lower() and 'variant_frequency_is_not_probability' in texts))

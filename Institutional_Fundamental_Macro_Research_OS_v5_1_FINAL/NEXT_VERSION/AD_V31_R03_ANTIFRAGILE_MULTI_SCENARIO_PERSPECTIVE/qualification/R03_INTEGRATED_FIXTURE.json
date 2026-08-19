@@ -1,0 +1,78 @@
+{
+  "phase": "AD-V3.1-R03",
+  "fixture": "FULL_OFFLINE_INTEGRATED_R03",
+  "status": "PASS",
+  "check_count": 9,
+  "checks": [
+    {
+      "name": "R03 stage is canonical between P08 and P09",
+      "status": "PASS",
+      "detail": [
+        "PRECHECK",
+        "FORWARD_EVALUATION",
+        "ACQUISITION_PLAN",
+        "ACQUISITION",
+        "PRE_SEMANTIC",
+        "SEMANTIC",
+        "FINAL_CAUSAL",
+        "DECISION_CALIBRATION",
+        "PERSPECTIVE_OVERLAY",
+        "FORWARD_PRECOMMIT",
+        "CONTROL_MODEL",
+        "REPORT",
+        "SEAL"
+      ]
+    },
+    {
+      "name": "canonical direction is unchanged by R03",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R03 edge overlay is monotonic non-upgrading",
+      "status": "PASS",
+      "detail": {
+        "pre": null,
+        "post": "NO_EDGE"
+      }
+    },
+    {
+      "name": "R03 permission overlay never upgrades WAIT",
+      "status": "PASS",
+      "detail": {
+        "pre": null,
+        "post": "WAIT"
+      }
+    },
+    {
+      "name": "P09 snapshot persists R03 perspective fields",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P11 exposes bounded human scenario atlas",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "name": "scenario counts are not probabilities",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "fixture does not update live latest",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "integrated fixture preserves real P09 ledger",
+      "status": "PASS",
+      "detail": {
+        "before": null,
+        "after": null
+      }
+    }
+  ],
+  "real_p09_unchanged": true,
+  "trade_execution_authority": "NONE"
+}

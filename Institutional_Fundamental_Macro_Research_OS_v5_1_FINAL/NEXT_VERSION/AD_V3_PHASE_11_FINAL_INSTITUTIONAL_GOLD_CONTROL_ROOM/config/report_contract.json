@@ -1,6 +1,6 @@
 {
   "phase": "AD-V3-P11",
-  "version": "3.11.0-final-control-room",
+  "version": "3.11.1-r03-perspective",
   "canonical_input": "ControlRoomInputV3",
   "canonical_v3_html_authority": "AD-V3-P11",
   "legacy_v3_renderer": "AD-V3-P04",
@@ -17,6 +17,7 @@
     "transmission",
     "watch",
     "invalidation",
+    "scenarios",
     "events",
     "data",
     "forward",

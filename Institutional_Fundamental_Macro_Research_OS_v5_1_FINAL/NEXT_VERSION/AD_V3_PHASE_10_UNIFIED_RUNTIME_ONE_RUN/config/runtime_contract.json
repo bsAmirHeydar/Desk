@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "phase": "AD-V3-P10",
-  "version": "3.10.0-unified-runtime",
+  "version": "3.10.1-r03-perspective-stage",
   "active_subject": "Gold",
   "subject_aliases": [
     "gold",
@@ -25,7 +25,8 @@
   "data_authority": "AD-V3-P07/P02",
   "decision_authority": "AD-V3-P08",
   "forward_authority": "AD-V3-P09",
-  "control_room_authority": "AD-V3-P04",
+  "control_room_authority": "AD-V3-P11",
   "trade_execution_authority": "NONE",
-  "automatic_promotion_forbidden": true
+  "automatic_promotion_forbidden": true,
+  "perspective_authority": "AD-V3.1-R03"
 }

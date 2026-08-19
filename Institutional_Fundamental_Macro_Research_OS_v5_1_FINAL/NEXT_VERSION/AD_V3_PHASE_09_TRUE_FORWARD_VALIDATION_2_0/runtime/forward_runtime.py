@@ -22,8 +22,8 @@ def observe_and_evaluate(phase_root,current_price_anchor=None,now=None,state_roo
         else:mature_uneval.append(p['prediction_id'])
     save_state(state,state_root);stats=compute(state,cohort['cohort_id'],as_of=now or iso());stats['legacy']=audit_legacy();return {'state':state,'cohort':cohort,'new_outcomes':created,'statistics':stats}
 
-def precommit_current(phase_root,run_id,p08,p03,p07,semantic_bundle,price_anchor,now=None,state_root=None,event_context=None):
-    state=load_state(state_root);state,cohort,cohort_changed=ensure_cohort(state,now);pred=build_prediction(run_id,p08,p03,p07,semantic_bundle,price_anchor,cohort,event_context=event_context,now=now);state,pred,ep=assign_episode(state,pred,now)
+def precommit_current(phase_root,run_id,p08,p03,p07,semantic_bundle,price_anchor,now=None,state_root=None,event_context=None,perspective=None):
+    state=load_state(state_root);state,cohort,cohort_changed=ensure_cohort(state,now);pred=build_prediction(run_id,p08,p03,p07,semantic_bundle,price_anchor,cohort,event_context=event_context,now=now,perspective=perspective);state,pred,ep=assign_episode(state,pred,now)
     # Immutable record hash is recomputed after T0 episode/sample-role assignment; all of this occurs before outcome.
     pred['immutable_hash']=canonical_hash({k:v for k,v in pred.items() if k!='immutable_hash'})
     append_unique(state,'predictions',pred,'prediction_id');save_state(state,state_root);stats=compute(state,cohort['cohort_id'],as_of=now or iso());return {'prediction':pred,'episode':ep,'cohort':cohort,'cohort_changed':cohort_changed,'statistics':stats,'state':state}

@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.1.0",
-  "release_line": "ALPHA_DESK_V3_1_GOLD",
+  "schema_version": "1.3.0",
+  "release_line": "ALPHA_DESK_V3_1_R03_GOLD",
   "authorities": [
     {
       "domain": "GOLD_ONTOLOGY",
@@ -56,6 +56,18 @@
       "domain": "FINAL_CERTIFICATION_FREEZE_PROMOTION",
       "owner": "AD-V3-P12",
       "canonical_count": 1
+    },
+    {
+      "domain": "DECISION_SCIENCE_2_AMENDMENT",
+      "owner": "AD-V3.1-R02",
+      "canonical_count": 1,
+      "relationship": "versioned amendment to AD-V3-P08 canonical decision authority"
+    },
+    {
+      "domain": "ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE_OVERLAY",
+      "owner": "AD-V3.1-R03",
+      "canonical_count": 1,
+      "relationship": "perspective-only authority; may preserve/cap/force-WAIT but cannot flip direction or upgrade edge/permission"
     }
   ],
   "compatibility": {
@@ -63,7 +75,8 @@
     "AD-V3-P05": "integrity governance",
     "AD-V2-P11": "legacy V2 prompt/runtime only",
     "AD-V2-P13": "legacy V2 production report/rollback target",
-    "AD-V3-P12": "final certification/freeze and atomic promotion transaction; quality eligibility delegated to AD-V3.1-R01"
+    "AD-V3-P12": "final certification/freeze and atomic promotion transaction; quality eligibility delegated to AD-V3.1-R01",
+    "AD-V3.1-R03": "perspective/fragility/scenario overlay only; no causal, magnitude, semantic, forward-outcome, promotion, or execution authority"
   },
   "trade_execution_authority": "NONE"
 }

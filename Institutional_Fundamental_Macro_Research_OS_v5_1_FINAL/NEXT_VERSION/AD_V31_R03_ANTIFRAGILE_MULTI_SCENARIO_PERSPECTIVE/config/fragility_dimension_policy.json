@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "dimensions": [
+    "MODEL_FRAGILITY",
+    "DATA_FRAGILITY",
+    "CAUSAL_CONCENTRATION_FRAGILITY",
+    "REGIME_FRAGILITY",
+    "EVENT_FRAGILITY",
+    "TRANSMISSION_FRAGILITY",
+    "LIQUIDITY_FRAGILITY",
+    "NARRATIVE_FRAGILITY",
+    "UNKNOWN_DRIVER_FRAGILITY",
+    "SEMANTIC_FRAGILITY"
+  ],
+  "states": [
+    "LOW",
+    "MODERATE",
+    "HIGH",
+    "CRITICAL",
+    "UNKNOWN"
+  ],
+  "summary_states": [
+    "ROBUST",
+    "WATCH",
+    "FRAGILE",
+    "CRITICALLY_FRAGILE",
+    "UNKNOWN"
+  ],
+  "critical_not_averageable": true,
+  "model_map": {
+    "LOW": "LOW",
+    "ELEVATED": "MODERATE",
+    "HIGH": "HIGH",
+    "NOT_APPLICABLE": "UNKNOWN"
+  },
+  "root_health_map": {
+    "HEALTHY": "LOW",
+    "PARTIAL": "MODERATE",
+    "DEGRADED": "HIGH",
+    "CRITICAL_GAP": "CRITICAL",
+    "UNKNOWN": "UNKNOWN"
+  },
+  "breadth_map": {
+    "BROAD": "LOW",
+    "BALANCED": "MODERATE",
+    "NARROW": "HIGH",
+    "UNKNOWN": "UNKNOWN"
+  },
+  "transmission_high_states": [
+    "NEGATIVE",
+    "CONFLICTED"
+  ],
+  "missing_driver_map": {
+    "LOW": "LOW",
+    "MEDIUM": "MODERATE",
+    "ELEVATED": "HIGH",
+    "HIGH": "CRITICAL",
+    "UNKNOWN": "UNKNOWN"
+  }
+}

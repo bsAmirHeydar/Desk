@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "breaker_sources": [
+    "P08_INVALIDATION",
+    "DOMINANT_ROOT_HEALTH",
+    "OPPOSING_PRIMARY_ROOT",
+    "MODEL_SENSITIVITY",
+    "MISSING_DRIVER",
+    "REGISTERED_EVENT"
+  ],
+  "generic_price_move_is_not_thesis_breaker": true,
+  "assumption_states": [
+    "STABLE",
+    "WATCH",
+    "FRAGILE",
+    "BROKEN",
+    "UNKNOWN"
+  ],
+  "required_sections": [
+    "THESIS_BREAKERS",
+    "ASSUMPTIONS_AT_RISK",
+    "MISSING_CONFIRMATIONS",
+    "CRITICAL_GAPS",
+    "CONTRADICTORY_EVIDENCE",
+    "UPCOMING_DISCONTINUITIES"
+  ]
+}
