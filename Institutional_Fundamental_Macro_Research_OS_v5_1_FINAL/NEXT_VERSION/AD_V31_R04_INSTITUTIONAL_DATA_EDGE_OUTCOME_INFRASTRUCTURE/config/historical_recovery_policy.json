@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "primary_horizon": "SESSION_1_6H",
+  "preserve_p09_tolerance": true,
+  "selection_authority": "P09_OUTCOME_EVALUATOR",
+  "source_order": [
+    "LOCAL_PIT_STORE",
+    "GOLDPRICEDEV_XAU_BARS",
+    "TWELVEDATA_XAUUSD"
+  ],
+  "network_only_if_configured": true,
+  "current_price_substitution_forbidden": true,
+  "favorable_bar_selection_forbidden": true
+}

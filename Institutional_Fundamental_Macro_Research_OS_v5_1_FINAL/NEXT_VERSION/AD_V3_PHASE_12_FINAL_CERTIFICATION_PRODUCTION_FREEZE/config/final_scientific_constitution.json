@@ -32,7 +32,14 @@
     "R03 perspective overlay cannot upgrade decision authority",
     "R03 perspective overlay cannot flip causal direction",
     "Critical fragility cannot be averaged away",
-    "Unknown outside-model vulnerability must not be named as a specific invented event"
+    "Unknown outside-model vulnerability must not be named as a specific invented event",
+    "Provider Redundancy ≠ Evidence Independence",
+    "Backfill ≠ Prospective Evidence",
+    "Historical Observation ≠ Current Observation",
+    "Market Time ≠ Retrieval Time",
+    "Direct DXY ≠ USD Proxy Complex",
+    "Official Real Yield ≠ Intraday Real-Rate Proxy",
+    "Outcome Recovery ≠ Lookahead"
   ],
   "mechanical_evidence": {
     "Pressure != Price": [

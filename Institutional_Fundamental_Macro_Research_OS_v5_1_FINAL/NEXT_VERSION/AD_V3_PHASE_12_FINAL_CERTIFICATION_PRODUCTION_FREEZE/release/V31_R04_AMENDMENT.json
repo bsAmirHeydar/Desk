@@ -1,0 +1,17 @@
+{
+  "record_type": "AD_V31_R04_RELEASE_AMENDMENT",
+  "version": "3.1.4-institutional-data-edge",
+  "baseline_commit": "f0bba8e",
+  "parent_release_fingerprint": "V3REL_B24BD80C629E29A7D1D3379DD066D6166F919C9E9AEEE3C5953EA278B26F66F3",
+  "r04_data_contract_fingerprint": "R04DATA_BF55F713A48697B59970B843E01D41C1C353B31DADF8A64EAF0AD189B805C263",
+  "scientific_scope": [
+    "provider/data infrastructure",
+    "point-in-time history",
+    "historical outcome acquisition provenance",
+    "provider health"
+  ],
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE",
+  "amendment_fingerprint": "V31R04_34C9F3B06C0BF356D973C17831DB27032F4976FC0FDFC108713C7501E47A2CEA",
+  "release_fingerprint": "V3REL_9E337B26C061239C9C353191930B034D4976B3D69B96EFC3C7313EDF5EDBDA07"
+}

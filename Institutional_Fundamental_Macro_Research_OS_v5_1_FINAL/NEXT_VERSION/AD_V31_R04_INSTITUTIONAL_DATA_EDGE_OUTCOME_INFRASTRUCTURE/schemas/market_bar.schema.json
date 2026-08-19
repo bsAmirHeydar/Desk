@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "series_id",
+    "instrument",
+    "provider_id",
+    "economic_time",
+    "value"
+  ],
+  "properties": {
+    "value": {
+      "type": "number"
+    }
+  }
+}

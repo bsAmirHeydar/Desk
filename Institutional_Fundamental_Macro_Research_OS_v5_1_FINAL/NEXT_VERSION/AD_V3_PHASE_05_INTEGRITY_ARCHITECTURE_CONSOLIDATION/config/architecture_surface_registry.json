@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.4.0",
   "phase": "AD-V3-P05",
   "mutability_classes": [
     "SCIENTIFIC_IMMUTABLE",
@@ -352,10 +352,11 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_runtime.py",
-      "owner": "AD-V3.1-R03/P09_PERSPECTIVE_OBSERVABILITY",
+      "owner": "AD-V3.1-R04/P09_HISTORICAL_RECOVERY_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": false
+      "rollback_authority": false,
+      "required": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/artifacts/state/forward_state.json",
@@ -374,10 +375,11 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/gold_orchestrator.py",
-      "owner": "AD-V3.1-R03/P10_PERSPECTIVE_INTEGRATION",
+      "owner": "AD-V3.1-R04/P10_DATA_EDGE_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": false
+      "rollback_authority": false,
+      "required": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/artifacts/",
@@ -530,31 +532,35 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/forward_statistics.py",
-      "owner": "AD-V3.1-R01/P09_QUALIFICATION_INSTRUMENTATION",
+      "owner": "AD-V3.1-R04/P09_RECOVERY_OBSERVABILITY",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": false
+      "rollback_authority": false,
+      "required": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/runtime/control_room_input.py",
-      "owner": "AD-V3.1-R01/P10_PRESENTATION_INTEGRATION",
+      "owner": "AD-V3.1-R04/P10_DATA_EDGE_PRESENTATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": false
+      "rollback_authority": false,
+      "required": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/presenter.py",
-      "owner": "AD-V3.1-R03/P11_SCENARIO_PRESENTATION",
+      "owner": "AD-V3.1-R04/P11_DATA_EDGE_PRESENTATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": false
+      "rollback_authority": false,
+      "required": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/runtime/renderer.py",
-      "owner": "AD-V3.1-R03/P11_SCENARIO_PRESENTATION",
+      "owner": "AD-V3.1-R04/P11_DATA_EDGE_PRESENTATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": false
+      "rollback_authority": false,
+      "required": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_08_DECISION_SCIENCE_CALIBRATION/runtime/feature_builder.py",
@@ -593,10 +599,11 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/config/cohort_policy.json",
-      "owner": "AD-V3.1-R03/P09_PERSPECTIVE_OBSERVABILITY",
+      "owner": "AD-V3.1-R04/P09_DATA_CONTRACT_COHORT_BINDING",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": false
+      "rollback_authority": false,
+      "required": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/schemas/forward_prediction.schema.json",
@@ -614,10 +621,11 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/tools/alpha_desk.py",
-      "owner": "AD-V3.1-R03/P10_STATUS_INTEGRATION",
+      "owner": "AD-V3.1-R04/P10_STATUS_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": false
+      "rollback_authority": false,
+      "required": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/config/label_registry.json",
@@ -635,10 +643,11 @@
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/config/stage_dag.json",
-      "owner": "AD-V3.1-R03/P10_PERSPECTIVE_INTEGRATION",
+      "owner": "AD-V3.1-R04/P10_DATA_EDGE_INTEGRATION",
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
-      "rollback_authority": false
+      "rollback_authority": false,
+      "required": true
     },
     {
       "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/schemas/control_room_view_model.schema.json",
@@ -653,6 +662,350 @@
       "class": "GOVERNANCE_VERSIONED",
       "commit": true,
       "rollback_authority": false
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/outcome_data.py",
+      "owner": "AD-V3.1-R04/P09_OUTCOME_ACQUISITION_PROVENANCE",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_09_TRUE_FORWARD_VALIDATION_2_0/runtime/outcome_evaluator.py",
+      "owner": "AD-V3.1-R04/P09_OUTCOME_ACQUISITION_PROVENANCE",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/schemas/control_room_input.schema.json",
+      "owner": "AD-V3.1-R04/P10_DATA_EDGE_PRESENTATION",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/data_gap_registry.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/historical_recovery_policy.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/outcome_provider_policy.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/pit_store_policy.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/provider_capability_registry.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/provider_failover_policy.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/r04_data_policy.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/real_rate_proxy_policy.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/scientific_equivalence_groups.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/source_health_policy.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/__init__.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/cohort_boundary.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/common.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/data_edge_runtime.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/data_freeze.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/historical_market_recovery.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/outcome_recovery.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/pit_store.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/provider_failover.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/provider_health.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/provider_registry.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/real_rate_proxy.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/providers/__init__.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/providers/base.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/providers/goldprice_bars.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/providers/http_util.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/providers/ice_dxy_data_api.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/providers/ice_dxy_delayed.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/providers/registry.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/providers/twelvedata_xau.py",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/schemas/historical_recovery_receipt.schema.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/schemas/market_bar.schema.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/schemas/outcome_recovery_receipt.schema.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/schemas/pit_observation.schema.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/schemas/provider_capability.schema.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/schemas/r04_receipt.schema.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/schemas/real_rate_proxy.schema.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/schemas/source_health.schema.json",
+      "owner": "AD-V3.1-R04/DATA_EDGE_OUTCOME_INFRASTRUCTURE",
+      "class": "SCIENTIFIC_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/tools/run_phase11_acceptance.py",
+      "owner": "AD-V3.1-R04/P11_DOWNSTREAM_DATA_EDGE_COMPATIBILITY",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
+    },
+    {
+      "path": "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_11_FINAL_INSTITUTIONAL_GOLD_CONTROL_ROOM/tools/validate_phase11.py",
+      "owner": "AD-V3.1-R04/P11_DOWNSTREAM_DATA_EDGE_COMPATIBILITY",
+      "class": "GOVERNANCE_VERSIONED",
+      "commit": true,
+      "rollback_authority": false,
+      "required": true
     }
   ],
   "pattern_rules": [
@@ -882,5 +1235,6 @@
       "rollback_authority": false
     }
   ],
-  "hard_rule": "No important surface may be simultaneously treated as immutable science and mutable deployment."
+  "hard_rule": "No important surface may be simultaneously treated as immutable science and mutable deployment.",
+  "r04_authority_registered": true
 }

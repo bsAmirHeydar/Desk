@@ -1,0 +1,117 @@
+{
+  "phase": "AD-V3.1-R04",
+  "version": "3.1.4-institutional-data-edge",
+  "status": "PASS",
+  "baseline_commit": "f0bba8e",
+  "phase_status": {
+    "P01": "PASS",
+    "P02": "PASS",
+    "P03": "PASS",
+    "P04": "PASS",
+    "P05": "PASS",
+    "P06": "PASS",
+    "P07": "PASS",
+    "P08": "PASS",
+    "P09": "PASS",
+    "P10": "PASS",
+    "P11": "PASS",
+    "P12": "PASS",
+    "R01": "PASS",
+    "R02": "PASS",
+    "R03": "PASS",
+    "R04": "PASS"
+  },
+  "v2_rollback_status": {
+    "P11": "PASS",
+    "P13": "PASS"
+  },
+  "provider_counts_by_access_class": {
+    "PUBLIC_FREE": 1,
+    "PAID": 2,
+    "PUBLIC_AUTHENTICATED": 2,
+    "PROPRIETARY_INTERNAL": 1,
+    "PRIVATE": 1
+  },
+  "provider_count": 7,
+  "configured_provider_count": 1,
+  "authorized_provider_count": 1,
+  "direct_dxy": {
+    "state": "DIRECT_DELAYED_IMPLEMENTED_NOT_LIVE_VERIFIED",
+    "provider": "ICE_DXY_DELAYED_PUBLIC"
+  },
+  "usd_proxy": {
+    "state": "AVAILABLE_SEPARATE_IDENTITY"
+  },
+  "intraday_real_rate_proxy": {
+    "state": "UNAVAILABLE_COMPONENT_GAP",
+    "identity": "INTRADAY_REAL_RATE_PROXY",
+    "official_real_yield": false
+  },
+  "official_real_yield": {
+    "state": "OFFICIAL_DAILY_CONTEXT"
+  },
+  "pit_store": {
+    "status": "PASS",
+    "records": 0,
+    "schema_version": "1.0.0"
+  },
+  "source_architecture": {
+    "structured_source_contracts": 33,
+    "generic_html_source_contracts": 55,
+    "gap_only_source_contracts": 8,
+    "r04_typed_adapters": 4
+  },
+  "capabilities": {
+    "gc_price_volume_oi": "PUBLIC_DELAYED_EXISTING",
+    "market_depth": "PAID_GAP",
+    "aggressor_flow": "PAID_GAP",
+    "options_iv_skew": "PARTIAL_PUBLIC_CONTEXT",
+    "dealer_gamma": "PAID_GAP",
+    "efp_lease_forward": "PAID_GAP",
+    "london_otc": "PRIVATE_GAP",
+    "private_flow": "PRIVATE_GAP"
+  },
+  "critical_provider_gaps": [
+    "DIRECT_DXY_LIVE",
+    "INTRADAY_REAL_RATE_COMPONENTS"
+  ],
+  "failover_active": false,
+  "p09_real_state": {
+    "active_cohort": null,
+    "predictions": 0,
+    "episodes": 0,
+    "mature": 0,
+    "evaluated": 0,
+    "historically_recovered": 0,
+    "mature_unevaluated": 0
+  },
+  "old_r03_cohort": "PRESERVED_OBSERVATIONAL_IF_PRESENT",
+  "new_r04_cohort": "NOT_INITIALIZED_IN_CLEAN_PACKAGE__INITIALIZE_EX_ANTE_AT_OPERATOR_INSTALL",
+  "backfill_counted_prospectively": false,
+  "r04_data_contract_fingerprint": "R04DATA_BF55F713A48697B59970B843E01D41C1C353B31DADF8A64EAF0AD189B805C263",
+  "r04_amendment_fingerprint": "V31R04_34C9F3B06C0BF356D973C17831DB27032F4976FC0FDFC108713C7501E47A2CEA",
+  "release_fingerprint": "V3REL_9E337B26C061239C9C353191930B034D4976B3D69B96EFC3C7313EDF5EDBDA07",
+  "golden_data_matrix": "PASS 27/27",
+  "outcome_recovery_certification": "PASS",
+  "acceptance": "PASS 80/80",
+  "live_smoke": {
+    "record_type": "AD_V31_R04_LIVE_SMOKE",
+    "status": "NOT_RUN_PROVIDER_ENVIRONMENT_UNAVAILABLE",
+    "direct_dxy": "NOT_RUN_DEPLOYMENT_VERIFICATION_OR_ENTITLEMENT",
+    "xauusd_historical": "NOT_RUN_ENTITLEMENT_MISSING",
+    "note": "Offline certification is authoritative for engineering; no live PASS fabricated."
+  },
+  "science_integrity": {
+    "Gold_ontology_drift": 0,
+    "P03_drift": 0,
+    "P06_drift": 0,
+    "R02_policy_drift": 0,
+    "R03_policy_drift": 0,
+    "R01_threshold_drift": 0,
+    "P09_outcome_classification_drift": 0
+  },
+  "V3_state": "SHADOW_COMMISSIONING",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE",
+  "next": "AD-V3.1-R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION"
+}

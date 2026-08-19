@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2.0",
+  "schema_version": "1.3.0",
   "final_v3_phase": 12,
   "closed_release_line_after_p12": false,
   "change_classes": {
@@ -24,9 +24,9 @@
     ]
   },
   "active_amendment": {
-    "id": "AD-V3.1-R03",
-    "version": "3.1.3-antifragile-perspective",
-    "parent_amendment": "AD-V3.1-R02",
+    "id": "AD-V3.1-R04",
+    "version": "3.1.4-institutional-data-edge",
+    "parent_amendment": "AD-V3.1-R03",
     "parent_release": "ALPHA_DESK_V3_GOLD_RC1",
     "class": "V3_1_SCIENTIFIC_MINOR"
   },

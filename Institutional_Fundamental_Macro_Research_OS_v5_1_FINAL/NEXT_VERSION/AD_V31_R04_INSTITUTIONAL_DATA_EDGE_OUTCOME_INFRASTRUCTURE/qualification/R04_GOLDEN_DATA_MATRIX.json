@@ -1,0 +1,245 @@
+{
+  "phase": "AD-V3.1-R04",
+  "matrix": "GOLDEN_DATA_MATRIX",
+  "status": "PASS",
+  "case_count": 27,
+  "cases": [
+    {
+      "name": "A Healthy direct DXY typed identity",
+      "status": "PASS",
+      "detail": {
+        "series_id": "ICE_DXY_DIRECT",
+        "instrument": "DXY",
+        "provider_id": "ICE_DXY_DELAYED_PUBLIC",
+        "economic_time": "2026-08-18T12:00:00Z",
+        "market_time": "2026-08-18T12:00:00Z",
+        "value": 102.5,
+        "unit": "INDEX_POINTS",
+        "quality": "DIRECT_DELAYED",
+        "directness": "DIRECT",
+        "record_class": "LIVE_CAPTURED",
+        "metadata": {
+          "delayed": true
+        }
+      }
+    },
+    {
+      "name": "B DXY missing never relabels USD proxy",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "C DXY/proxy identities remain non-equivalent",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "D Intraday real-rate proxy healthy",
+      "status": "PASS",
+      "detail": {
+        "state": "HEALTHY_PROXY",
+        "identity": "INTRADAY_REAL_RATE_PROXY",
+        "value": 2.3,
+        "unit": "PERCENT",
+        "formula_version": "R04-RRP-1",
+        "component_mismatch_minutes": 5.0,
+        "economic_time": "2026-08-18T12:00:00Z",
+        "components": [
+          "NOM",
+          "INF"
+        ],
+        "directness": "DERIVED_PROXY",
+        "official_real_yield": false,
+        "causal_fact_authority": false
+      }
+    },
+    {
+      "name": "E Stale proxy component degrades proxy",
+      "status": "PASS",
+      "detail": {
+        "state": "STALE_COMPONENT_MISMATCH",
+        "identity": "INTRADAY_REAL_RATE_PROXY",
+        "component_mismatch_minutes": 120.0,
+        "causal_fact_authority": false
+      }
+    },
+    {
+      "name": "F Official daily real yield distinct",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "G Historical T+6H recovery",
+      "status": "PASS",
+      "detail": {
+        "recovery": "RECOVERED_FROM_PIT",
+        "terminal": {
+          "record_type": "AD_V3_P09_MARKET_OBSERVATION",
+          "observed_at_utc": "2026-08-18T16:00:00Z",
+          "value": 2514.0,
+          "provider_id": "GOLDPRICEDEV_XAU_BARS",
+          "source_id": "GOLDPRICEDEV_XAU_BARS",
+          "scientific_series_id": "XAUUSD_SPOT_REFERENCE",
+          "instrument_key": "XAUUSD",
+          "outcome_acquisition_mode": "HISTORICALLY_RECOVERED",
+          "metadata": {
+            "resolution": "1m"
+          }
+        }
+      }
+    },
+    {
+      "name": "H No valid maturity observation remains unevaluated",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "I Full path recovery",
+      "status": "PASS",
+      "detail": {
+        "expected_min_points": 8,
+        "actual_points": 8,
+        "path_metric_authority": "AVAILABLE",
+        "path_coverage_state": "FULL",
+        "granularity": "1m"
+      }
+    },
+    {
+      "name": "J Partial path does not fabricate MFE/MAE",
+      "status": "PASS",
+      "detail": {
+        "expected_min_points": 8,
+        "actual_points": 3,
+        "path_metric_authority": "UNAVAILABLE",
+        "path_coverage_state": "PARTIAL",
+        "granularity": "1m"
+      }
+    },
+    {
+      "name": "K PIT duplicate write idempotent",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "T Store tamper detection",
+      "status": "PASS",
+      "detail": {
+        "status": "FAIL",
+        "records": 10,
+        "integrity_failures": [
+          {
+            "series_id": "TEST",
+            "economic_time": "2026-08-18T00:00:00Z",
+            "provider_id": "P"
+          }
+        ],
+        "schema_version": "1.0.0"
+      }
+    },
+    {
+      "name": "K2 Equivalent direct-provider failover",
+      "status": "PASS",
+      "detail": {
+        "provider_id": "ICE_DXY_DATA_API",
+        "primary_failed": true,
+        "fallback_used": true,
+        "fallback_provider": "ICE_DXY_DATA_API",
+        "reason": "UNAVAILABLE"
+      }
+    },
+    {
+      "name": "L Invalid scientific failover rejected",
+      "status": "PASS",
+      "detail": {
+        "provider_id": null,
+        "primary_failed": true,
+        "fallback_used": false,
+        "reason": "NO_SCIENTIFICALLY_EQUIVALENT_HEALTHY_PROVIDER"
+      }
+    },
+    {
+      "name": "M HTML/typed parser schema drift fails closed",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "N Value sanity rejects impossible DXY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "O Paid entitlement is explicit",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P Paid depth remains gap",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Q Private flow remains private gap",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R Backfill never prospective",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "S Macro revision preserves first seen",
+      "status": "PASS",
+      "detail": [
+        [
+          0,
+          1.0
+        ],
+        [
+          1,
+          1.1
+        ]
+      ]
+    },
+    {
+      "name": "U GC volume does not create signed aggressor flow",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "V Options activity does not create dealer gamma",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "W Outcome provider conflict surfaced",
+      "status": "PASS",
+      "detail": "OUTCOME_DATA_CONFLICT"
+    },
+    {
+      "name": "X Current-price-as-outcome rejected",
+      "status": "PASS",
+      "detail": {
+        "state": "NO_VALID_HISTORY",
+        "series_id": "XAUUSD_SPOT_REFERENCE",
+        "selected_provider": null,
+        "observations": [],
+        "retrieval_time": "2026-08-19T09:12:39.646023Z",
+        "network_attempted": false,
+        "network_attempts": [],
+        "outcome_science_authority": false,
+        "current_price_substitution_used": false
+      }
+    },
+    {
+      "name": "R02 normalization rejects future history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Secret scan clean",
+      "status": "PASS",
+      "detail": []
+    }
+  ]
+}

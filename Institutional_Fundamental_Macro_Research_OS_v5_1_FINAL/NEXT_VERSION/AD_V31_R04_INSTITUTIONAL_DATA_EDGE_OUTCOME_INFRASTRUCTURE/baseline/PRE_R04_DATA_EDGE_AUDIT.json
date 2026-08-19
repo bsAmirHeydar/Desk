@@ -1,0 +1,5496 @@
+{
+  "schema_version": "1.0.0",
+  "source_count": 96,
+  "fact_count": 192,
+  "collector_counts": {
+    "GENERIC_HTML": 55,
+    "FED_H10_HTML": 1,
+    "GENERIC_BINARY": 1,
+    "CENSUS_RETAIL_SALES_HTML": 1,
+    "TREASURY_XML_NOMINAL": 1,
+    "TREASURY_XML_REAL": 1,
+    "DERIVED_SOURCE": 3,
+    "GENERIC_JSON": 1,
+    "NYFED_SOFR_JSON": 1,
+    "NYFED_REPO_HTML": 1,
+    "GENERIC_CSV": 1,
+    "CFTC_DISAGG_TXT": 1,
+    "GAP_ONLY": 8,
+    "WGC_GOLD_PRICE_HTML": 1,
+    "MULTI_URL_HTML": 1,
+    "STATIC": 2,
+    "BLS_API_JSON": 1,
+    "FED_H10_DAILY_INDEX_HTML": 3,
+    "FRED_CSV_LATEST": 1,
+    "WGC_SGE_WITHDRAWALS_HTML": 1,
+    "RBI_INR_HTML": 1,
+    "CME_GOLD_QUOTES_JSON": 1,
+    "RAW_PUBLIC_PDF_PROXY": 4,
+    "CME_FEDFUNDS_QUOTES_JSON": 1,
+    "FED_H10_INR_HTML": 1,
+    "PIB_GOLD_DUTY_HTML": 1,
+    "GOLDPRICEDEV_XAU_JSON": 1
+  },
+  "generic_html_count": 55,
+  "gap_only_count": 8,
+  "facts": [
+    {
+      "fact_id": "XAUUSD_SPOT_PRICE",
+      "source_contract_ids": [
+        "WGC_GOLD_PRICE",
+        "GOLDPRICEDEV_XAU_SPOT_PROXY",
+        "CME_METALS"
+      ],
+      "family": "TARGET_MARKET",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "WGC_GOLD_PRICE_HTML",
+        "GOLDPRICEDEV_XAU_JSON",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_LICENSED",
+        "PUBLIC_PROXY",
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GC_FUTURES_PRICE",
+      "source_contract_ids": [
+        "CME_GOLD_QUOTES_JSON",
+        "CME_METALS_DAILY_BULLETIN"
+      ],
+      "family": "TARGET_MARKET",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "CME_GOLD_QUOTES_JSON",
+        "RAW_PUBLIC_PDF_PROXY"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED_WEB_ENDPOINT",
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_MULTI_VENUE_TOPOLOGY",
+      "source_contract_ids": [
+        "STATIC_KNOWLEDGE"
+      ],
+      "family": "TARGET_MARKET",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "STATIC"
+      ],
+      "access_class": [
+        "KNOWLEDGE"
+      ],
+      "directness": "STATIC",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "FOMC_POLICY_STANCE",
+      "source_contract_ids": [
+        "FED_FOMC"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "FED_POLICY_PATH_PRICING",
+      "source_contract_ids": [
+        "CME_FEDFUNDS_QUOTES_JSON",
+        "CME_RATES_DAILY_BULLETIN"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "CME_FEDFUNDS_QUOTES_JSON",
+        "RAW_PUBLIC_PDF_PROXY"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED_WEB_ENDPOINT",
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CRITICAL_SESSION"
+    },
+    {
+      "fact_id": "FED_REACTION_FUNCTION",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "FED_BALANCE_SHEET_QT_QE",
+      "source_contract_ids": [
+        "FED_H41"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_CPI",
+      "source_contract_ids": [
+        "BLS_PUBLIC_API_BATCH"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "BLS_API_JSON"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_CORE_CPI",
+      "source_contract_ids": [
+        "BLS_PUBLIC_API_BATCH"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "BLS_API_JSON"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_PCE",
+      "source_contract_ids": [
+        "BEA_PCE"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_CORE_PCE",
+      "source_contract_ids": [
+        "BEA_PCE"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_PPI",
+      "source_contract_ids": [
+        "BLS_PUBLIC_API_BATCH"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "BLS_API_JSON"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_PAYROLLS",
+      "source_contract_ids": [
+        "BLS_PUBLIC_API_BATCH"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "BLS_API_JSON"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_UNEMPLOYMENT",
+      "source_contract_ids": [
+        "BLS_PUBLIC_API_BATCH"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "BLS_API_JSON"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_WAGES",
+      "source_contract_ids": [
+        "BLS_PUBLIC_API_BATCH"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "BLS_API_JSON"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_JOBLESS_CLAIMS",
+      "source_contract_ids": [
+        "DOL_CLAIMS"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_BINARY"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_JOLTS",
+      "source_contract_ids": [
+        "BLS_PUBLIC_API_BATCH"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "BLS_API_JSON"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_GDP",
+      "source_contract_ids": [
+        "BEA_GDP"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_RETAIL_SALES",
+      "source_contract_ids": [
+        "CENSUS_RETAIL",
+        "FRED_RETAIL_RSAFS_CSV"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "CENSUS_RETAIL_SALES_HTML",
+        "FRED_CSV_LATEST"
+      ],
+      "access_class": [
+        "PUBLIC_FREE",
+        "PUBLIC_FREE_OFFICIAL_REPUBLISHER"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_ACTIVITY_SURVEY",
+      "source_contract_ids": [
+        "FED_REGIONAL_ACTIVITY_BASKET"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_MACRO_CONSENSUS_SURPRISE",
+      "source_contract_ids": [
+        "MACRO_CONSENSUS_PROVIDER"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PAID_OR_LICENSED"
+      ],
+      "directness": "PAID_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_DATA_REVISION_VINTAGE",
+      "source_contract_ids": [
+        "REVISION_LEDGER"
+      ],
+      "family": "US_MACRO_POLICY",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "UST_2Y_NOMINAL_YIELD",
+      "source_contract_ids": [
+        "UST_YIELD_CURVE"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "TREASURY_XML_NOMINAL"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "UST_5Y_NOMINAL_YIELD",
+      "source_contract_ids": [
+        "UST_YIELD_CURVE"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "TREASURY_XML_NOMINAL"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "UST_10Y_NOMINAL_YIELD",
+      "source_contract_ids": [
+        "UST_YIELD_CURVE"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "TREASURY_XML_NOMINAL"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CRITICAL_SESSION"
+    },
+    {
+      "fact_id": "UST_30Y_NOMINAL_YIELD",
+      "source_contract_ids": [
+        "UST_YIELD_CURVE"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "TREASURY_XML_NOMINAL"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "UST_5Y_REAL_YIELD",
+      "source_contract_ids": [
+        "UST_REAL_YIELD_CURVE"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "TREASURY_XML_REAL"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "UST_10Y_REAL_YIELD",
+      "source_contract_ids": [
+        "UST_REAL_YIELD_CURVE"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "TREASURY_XML_REAL"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CRITICAL_SESSION"
+    },
+    {
+      "fact_id": "UST_30Y_REAL_YIELD",
+      "source_contract_ids": [
+        "UST_REAL_YIELD_CURVE"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "TREASURY_XML_REAL"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_5Y_BREAKEVEN",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_10Y_BREAKEVEN",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_5Y5Y_FORWARD_INFLATION",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "UST_TERM_PREMIUM",
+      "source_contract_ids": [
+        "NYFED_ACM"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "UST_CURVE_SHAPE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "UST_AUCTION_REFUNDING",
+      "source_contract_ids": [
+        "UST_AUCTIONS"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "UST_SUPPLY_ISSUANCE",
+      "source_contract_ids": [
+        "UST_AUCTIONS"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_FISCAL_DEFICIT_DEBT",
+      "source_contract_ids": [
+        "UST_FISCAL"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_JSON"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_DEBT_CEILING_FISCAL_EVENT",
+      "source_contract_ids": [
+        "TREASURY_PRESS_RELEASES"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_SOVEREIGN_RATING_CREDIBILITY",
+      "source_contract_ids": [
+        "RATING_AGENCY_PUBLIC_BASKET"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_SOURCE_SPECIFIC"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "MONETARY_FISCAL_CREDIBILITY",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "INFLATION_CREDIBILITY_HEDGE_STATE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "RATES_FISCAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "DXY_INDEX",
+      "source_contract_ids": [
+        "ICE_DXY_PROVIDER"
+      ],
+      "family": "USD_COMPLEX",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PUBLIC_OR_LICENSED"
+      ],
+      "directness": "PAID_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": true,
+      "decision_relevance": "CRITICAL_SESSION"
+    },
+    {
+      "fact_id": "FED_BROAD_DOLLAR",
+      "source_contract_ids": [
+        "FED_H10_BROAD_DAILY"
+      ],
+      "family": "USD_COMPLEX",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "FED_H10_DAILY_INDEX_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "FED_AFE_DOLLAR",
+      "source_contract_ids": [
+        "FED_H10_AFE_DAILY"
+      ],
+      "family": "USD_COMPLEX",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "FED_H10_DAILY_INDEX_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "FED_EME_DOLLAR",
+      "source_contract_ids": [
+        "FED_H10_EME_DAILY"
+      ],
+      "family": "USD_COMPLEX",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "FED_H10_DAILY_INDEX_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "USDCNH_CNH_STATE",
+      "source_contract_ids": [
+        "CNH_PROVIDER"
+      ],
+      "family": "USD_COMPLEX",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PUBLIC_OR_PROVIDER"
+      ],
+      "directness": "PAID_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": true,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "USD_AUTONOMOUS_SHOCK",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "USD_COMPLEX",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "ECB_POLICY_GLOBAL_RATE_CONTEXT",
+      "source_contract_ids": [
+        "ECB"
+      ],
+      "family": "GLOBAL_MONETARY",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "PBOC_POLICY_LIQUIDITY",
+      "source_contract_ids": [
+        "PBOC",
+        "CHINA_GOV_PBOC_POLICY"
+      ],
+      "family": "GLOBAL_MONETARY",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE",
+        "PUBLIC_FREE_OFFICIAL_PROXY"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "BOJ_POLICY_GLOBAL_RATE_CONTEXT",
+      "source_contract_ids": [
+        "BOJ"
+      ],
+      "family": "GLOBAL_MONETARY",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GLOBAL_CENTRAL_BANK_LIQUIDITY",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "GLOBAL_MONETARY",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GLOBAL_REAL_RATE_CONTEXT",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "GLOBAL_MONETARY",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GLOBAL_RESERVE_COMPOSITION",
+      "source_contract_ids": [
+        "IMF_COFER"
+      ],
+      "family": "GLOBAL_MONETARY",
+      "horizon": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CENTRAL_BANK_NET_GOLD_PURCHASES",
+      "source_contract_ids": [
+        "WGC_GDT"
+      ],
+      "family": "OFFICIAL_SECTOR",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "PBOC_GOLD_RESERVES_PURCHASES",
+      "source_contract_ids": [
+        "PBOC",
+        "WGC_GDT"
+      ],
+      "family": "OFFICIAL_SECTOR",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE",
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "RBI_GOLD_RESERVES_PURCHASES",
+      "source_contract_ids": [
+        "RBI"
+      ],
+      "family": "OFFICIAL_SECTOR",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "OTHER_CENTRAL_BANK_GOLD_RESERVES",
+      "source_contract_ids": [
+        "WGC_GDT",
+        "IMF"
+      ],
+      "family": "OFFICIAL_SECTOR",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED",
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "RESERVE_DIVERSIFICATION_GOLD",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "OFFICIAL_SECTOR",
+      "horizon": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "RESERVE_FREEZE_SEIZURE_RISK",
+      "source_contract_ids": [
+        "TREASURY_OFAC",
+        "OFFICIAL_GEO_BASKET"
+      ],
+      "family": "OFFICIAL_SECTOR",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE",
+        "PUBLIC_SOURCE_SPECIFIC"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GLOBAL_GOLD_ETF_HOLDINGS_FLOW",
+      "source_contract_ids": [
+        "WGC_ETF"
+      ],
+      "family": "ETF_INVESTMENT",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GLD_HOLDINGS_SHARES",
+      "source_contract_ids": [
+        "ETF_SPONSOR"
+      ],
+      "family": "ETF_INVESTMENT",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "MULTI_URL_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "IAU_HOLDINGS_SHARES",
+      "source_contract_ids": [
+        "ETF_SPONSOR_IAU"
+      ],
+      "family": "ETF_INVESTMENT",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "ETF_CREATION_REDEMPTION_STATE",
+      "source_contract_ids": [
+        "ETF_SPONSOR",
+        "ETF_SPONSOR_IAU"
+      ],
+      "family": "ETF_INVESTMENT",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "MULTI_URL_HTML",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE",
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_INVESTMENT_ALLOCATION_DEMAND",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "ETF_INVESTMENT",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CHINA_GOLD_ETF_FLOW",
+      "source_contract_ids": [
+        "WGC_ETF"
+      ],
+      "family": "ETF_INVESTMENT",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CFTC_PRODUCER_MERCHANT",
+      "source_contract_ids": [
+        "CFTC_COT"
+      ],
+      "family": "FUTURES_POSITIONING",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "CFTC_DISAGG_TXT"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CFTC_SWAP_DEALER",
+      "source_contract_ids": [
+        "CFTC_COT"
+      ],
+      "family": "FUTURES_POSITIONING",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "CFTC_DISAGG_TXT"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CFTC_MANAGED_MONEY",
+      "source_contract_ids": [
+        "CFTC_COT"
+      ],
+      "family": "FUTURES_POSITIONING",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "CFTC_DISAGG_TXT"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CFTC_OTHER_REPORTABLES",
+      "source_contract_ids": [
+        "CFTC_COT"
+      ],
+      "family": "FUTURES_POSITIONING",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "CFTC_DISAGG_TXT"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CFTC_NONREPORTABLE",
+      "source_contract_ids": [
+        "CFTC_COT"
+      ],
+      "family": "FUTURES_POSITIONING",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "CFTC_DISAGG_TXT"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CFTC_GOLD_TOTAL_POSITIONING",
+      "source_contract_ids": [
+        "CFTC_COT"
+      ],
+      "family": "FUTURES_POSITIONING",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "CFTC_DISAGG_TXT"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GC_OPEN_INTEREST",
+      "source_contract_ids": [
+        "CME_GOLD_QUOTES_JSON",
+        "CFTC_COT",
+        "CME_METALS_SUMMARY_OI"
+      ],
+      "family": "FUTURES_POSITIONING",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "CME_GOLD_QUOTES_JSON",
+        "CFTC_DISAGG_TXT",
+        "RAW_PUBLIC_PDF_PROXY"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED_WEB_ENDPOINT",
+        "PUBLIC_FREE",
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CRITICAL_SESSION"
+    },
+    {
+      "fact_id": "GC_VOLUME",
+      "source_contract_ids": [
+        "CME_GOLD_QUOTES_JSON",
+        "CME_VOLUME_OI"
+      ],
+      "family": "FUTURES_POSITIONING",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "CME_GOLD_QUOTES_JSON",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED_WEB_ENDPOINT",
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CRITICAL_SESSION"
+    },
+    {
+      "fact_id": "GC_CURVE_TERM_STRUCTURE",
+      "source_contract_ids": [
+        "CME_GOLD_QUOTES_JSON",
+        "CME_METALS_DAILY_BULLETIN"
+      ],
+      "family": "FUTURES_POSITIONING",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "CME_GOLD_QUOTES_JSON",
+        "RAW_PUBLIC_PDF_PROXY"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED_WEB_ENDPOINT",
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GC_ROLL_CONCENTRATION",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "FUTURES_POSITIONING",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_CVOL",
+      "source_contract_ids": [
+        "CME_CVOL"
+      ],
+      "family": "OPTIONS_VOL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GC_OPTIONS_IV_TERM_STRUCTURE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "OPTIONS_VOL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GC_OPTIONS_SKEW_RISK_REVERSAL",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "OPTIONS_VOL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GC_OPTIONS_OI_BY_STRIKE",
+      "source_contract_ids": [
+        "CME_OPTIONS"
+      ],
+      "family": "OPTIONS_VOL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_OR_DERIVED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GC_OPTIONS_OI_BY_EXPIRY",
+      "source_contract_ids": [
+        "CME_OPTIONS"
+      ],
+      "family": "OPTIONS_VOL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_OR_DERIVED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GC_OPTIONS_VOLUME",
+      "source_contract_ids": [
+        "CME_OPTIONS"
+      ],
+      "family": "OPTIONS_VOL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_OR_DERIVED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "DEALER_GAMMA_VANNA_CHARM",
+      "source_contract_ids": [
+        "PAID_GAP"
+      ],
+      "family": "OPTIONS_VOL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PAID_ONLY"
+      ],
+      "directness": "PAID_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GC_OPTIONS_EXPIRY",
+      "source_contract_ids": [
+        "CME_OPTIONS"
+      ],
+      "family": "OPTIONS_VOL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_OR_DERIVED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "COMEX_REGISTERED_STOCKS",
+      "source_contract_ids": [
+        "CME_GOLD_DELIVERY_NOTICES_PDF"
+      ],
+      "family": "COMEX_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "RAW_PUBLIC_PDF_PROXY"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "COMEX_ELIGIBLE_STOCKS",
+      "source_contract_ids": [
+        "CME_GOLD_DELIVERY_NOTICES_PDF"
+      ],
+      "family": "COMEX_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "RAW_PUBLIC_PDF_PROXY"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "COMEX_DELIVERY_NOTICES",
+      "source_contract_ids": [
+        "CME_GOLD_DELIVERY_NOTICES_PDF"
+      ],
+      "family": "COMEX_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "RAW_PUBLIC_PDF_PROXY"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "COMEX_WAREHOUSE_MOVEMENTS",
+      "source_contract_ids": [
+        "CME_GOLD_DELIVERY_NOTICES_PDF"
+      ],
+      "family": "COMEX_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "RAW_PUBLIC_PDF_PROXY"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CME_MARGIN_REQUIREMENTS",
+      "source_contract_ids": [
+        "CME_METALS"
+      ],
+      "family": "COMEX_PHYSICAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GC_FUTURES_EXPIRY_SETTLEMENT",
+      "source_contract_ids": [
+        "CME_METALS"
+      ],
+      "family": "COMEX_PHYSICAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CME_MARKET_DEPTH_MBO",
+      "source_contract_ids": [
+        "PAID_GAP"
+      ],
+      "family": "COMEX_PHYSICAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PAID_ONLY"
+      ],
+      "directness": "PAID_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GC_AGGRESSOR_IMBALANCE",
+      "source_contract_ids": [
+        "PAID_GAP"
+      ],
+      "family": "COMEX_PHYSICAL",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PAID_ONLY"
+      ],
+      "directness": "PAID_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "LBMA_VAULT_HOLDINGS",
+      "source_contract_ids": [
+        "LBMA_VAULT_DATA"
+      ],
+      "family": "LONDON_OTC",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "LBMA_CLEARING_ACTIVITY",
+      "source_contract_ids": [
+        "LBMA_CLEARING_DATA"
+      ],
+      "family": "LONDON_OTC",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "LBMA_TRADE_ACTIVITY",
+      "source_contract_ids": [
+        "PAID_GAP"
+      ],
+      "family": "LONDON_OTC",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PAID_ONLY"
+      ],
+      "directness": "PAID_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "LONDON_OTC_CLIENT_DEALER_FLOW",
+      "source_contract_ids": [
+        "PRIVATE_GAP"
+      ],
+      "family": "LONDON_OTC",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PRIVATE_UNOBSERVABLE"
+      ],
+      "directness": "PRIVATE_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "LBMA_BENCHMARK_FIXING",
+      "source_contract_ids": [
+        "LBMA_BENCHMARK"
+      ],
+      "family": "LONDON_OTC",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_LEASE_RATE",
+      "source_contract_ids": [
+        "PAID_GAP"
+      ],
+      "family": "LONDON_OTC",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PAID_ONLY"
+      ],
+      "directness": "PAID_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_FORWARD_RATE",
+      "source_contract_ids": [
+        "PAID_GAP"
+      ],
+      "family": "LONDON_OTC",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PAID_ONLY"
+      ],
+      "directness": "PAID_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "COMEX_LONDON_EFP",
+      "source_contract_ids": [
+        "PAID_GAP"
+      ],
+      "family": "LONDON_OTC",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PAID_ONLY"
+      ],
+      "directness": "PAID_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "LONDON_COMEX_LOCATION_ARBITRAGE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "LONDON_OTC",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "SGE_GOLD_BENCHMARK",
+      "source_contract_ids": [
+        "SGE"
+      ],
+      "family": "CHINA_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_SOURCE_SPECIFIC"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "SGE_PREMIUM_DISCOUNT",
+      "source_contract_ids": [
+        "SGE"
+      ],
+      "family": "CHINA_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_SOURCE_SPECIFIC"
+      ],
+      "directness": "DERIVED",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "SGE_WITHDRAWALS",
+      "source_contract_ids": [
+        "SGE",
+        "WGC_CHINA_GOLD_UPDATE"
+      ],
+      "family": "CHINA_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML",
+        "WGC_SGE_WITHDRAWALS_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_SOURCE_SPECIFIC",
+        "PUBLIC_FREE_INDUSTRY_PROXY"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CHINA_GOLD_IMPORTS",
+      "source_contract_ids": [
+        "CHINA_CUSTOMS"
+      ],
+      "family": "CHINA_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_SOURCE_SPECIFIC"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CHINA_JEWELLERY_DEMAND",
+      "source_contract_ids": [
+        "WGC_GDT"
+      ],
+      "family": "CHINA_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CHINA_BAR_COIN_DEMAND",
+      "source_contract_ids": [
+        "WGC_GDT"
+      ],
+      "family": "CHINA_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CHINA_GOLD_TAX_REGULATION",
+      "source_contract_ids": [
+        "CHINA_TAX_POLICY"
+      ],
+      "family": "CHINA_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CHINA_PHYSICAL_BALANCE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "CHINA_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "INDIA_GOLD_PREMIUM_DISCOUNT",
+      "source_contract_ids": [
+        "INDIA_COMMERCE"
+      ],
+      "family": "INDIA_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_OR_SOURCE_SPECIFIC"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "INDIA_GOLD_IMPORTS",
+      "source_contract_ids": [
+        "INDIA_COMMERCE"
+      ],
+      "family": "INDIA_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_OR_SOURCE_SPECIFIC"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "INDIA_IMPORT_DUTY_TAX",
+      "source_contract_ids": [
+        "PIB_GOLD_DUTY_POLICY",
+        "DGFT_OR_INDIA_GOV"
+      ],
+      "family": "INDIA_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "PIB_GOLD_DUTY_HTML",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_OFFICIAL_PROXY",
+        "PUBLIC_FREE"
+      ],
+      "directness": "PROXY",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "INR_GOLD_AFFORDABILITY",
+      "source_contract_ids": [
+        "FED_H10_INR_HISTORY",
+        "RBI_MOBILE_RATES"
+      ],
+      "family": "INDIA_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "FED_H10_INR_HTML",
+        "RBI_INR_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE",
+        "PUBLIC_FREE"
+      ],
+      "directness": "PROXY",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "INDIA_JEWELLERY_DEMAND",
+      "source_contract_ids": [
+        "WGC_GDT"
+      ],
+      "family": "INDIA_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "INDIA_BAR_COIN_DEMAND",
+      "source_contract_ids": [
+        "WGC_GDT"
+      ],
+      "family": "INDIA_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "INDIA_RECYCLING_SUPPLY",
+      "source_contract_ids": [
+        "WGC_GDT"
+      ],
+      "family": "INDIA_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "INDIA_GOLD_ETF_FLOW",
+      "source_contract_ids": [
+        "WGC_ETF"
+      ],
+      "family": "INDIA_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "INDIA_SEASONAL_DEMAND",
+      "source_contract_ids": [
+        "STATIC_KNOWLEDGE"
+      ],
+      "family": "INDIA_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "STATIC"
+      ],
+      "access_class": [
+        "KNOWLEDGE"
+      ],
+      "directness": "STATIC",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "INDIA_PHYSICAL_BALANCE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "INDIA_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GLOBAL_JEWELLERY_DEMAND",
+      "source_contract_ids": [
+        "WGC_GDT"
+      ],
+      "family": "GLOBAL_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GLOBAL_BAR_COIN_DEMAND",
+      "source_contract_ids": [
+        "WGC_GDT"
+      ],
+      "family": "GLOBAL_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_TECHNOLOGY_DEMAND",
+      "source_contract_ids": [
+        "WGC_GDT"
+      ],
+      "family": "GLOBAL_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_MINE_PRODUCTION",
+      "source_contract_ids": [
+        "WGC_GDT"
+      ],
+      "family": "GLOBAL_PHYSICAL",
+      "horizon": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_RECYCLING_SUPPLY",
+      "source_contract_ids": [
+        "WGC_GDT"
+      ],
+      "family": "GLOBAL_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_PRODUCER_HEDGING",
+      "source_contract_ids": [
+        "WGC_GDT"
+      ],
+      "family": "GLOBAL_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_MINE_DISRUPTIONS",
+      "source_contract_ids": [
+        "MINING_PUBLIC_DISCLOSURES",
+        "WGC_GDT"
+      ],
+      "family": "GLOBAL_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_COMPANY",
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_MINING_COST_CURVE",
+      "source_contract_ids": [
+        "MINING_PUBLIC_DISCLOSURES",
+        "WGC_GDT"
+      ],
+      "family": "GLOBAL_PHYSICAL",
+      "horizon": [
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_COMPANY",
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "REFINING_LOGISTICS_CONSTRAINTS",
+      "source_contract_ids": [
+        "WGC_GDT",
+        "OFFICIAL_GEO_BASKET"
+      ],
+      "family": "GLOBAL_PHYSICAL",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED",
+        "PUBLIC_SOURCE_SPECIFIC"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GLOBAL_PHYSICAL_BALANCE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "GLOBAL_PHYSICAL",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "SOFR_RATE",
+      "source_contract_ids": [
+        "NYFED_SOFR"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "NYFED_SOFR_JSON"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "NYFED_REPO_STATE",
+      "source_contract_ids": [
+        "NYFED_REPO_RRP"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "NYFED_REPO_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "NYFED_RRP_STATE",
+      "source_contract_ids": [
+        "NYFED_REPO_RRP"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "NYFED_REPO_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "FED_RESERVE_BALANCES",
+      "source_contract_ids": [
+        "FED_H41"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "FED_H41_LIQUIDITY",
+      "source_contract_ids": [
+        "FED_H41"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "FED_H8_BANK_LIQUIDITY",
+      "source_contract_ids": [
+        "FED_H8"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "PRIMARY_DEALER_POSITIONS",
+      "source_contract_ids": [
+        "NYFED_PRIMARY_DEALERS"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_CSV"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "PRIMARY_DEALER_FINANCING",
+      "source_contract_ids": [
+        "NYFED_PRIMARY_DEALERS"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_CSV"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "PRIMARY_DEALER_FAILS",
+      "source_contract_ids": [
+        "NYFED_PRIMARY_DEALERS"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_CSV"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CROSS_CURRENCY_BASIS",
+      "source_contract_ids": [
+        "BIS_GLI"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "USD_FUNDING_STRESS",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "BULLION_BANK_BALANCE_SHEET",
+      "source_contract_ids": [
+        "PRIVATE_GAP"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PRIVATE_UNOBSERVABLE"
+      ],
+      "directness": "PRIVATE_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_FINANCING_CARRY",
+      "source_contract_ids": [
+        "PAID_GAP"
+      ],
+      "family": "FUNDING_PLUMBING",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PAID_ONLY"
+      ],
+      "directness": "PAID_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GEOPOLITICAL_CONFLICT_SHOCK",
+      "source_contract_ids": [
+        "OFFICIAL_GEO_BASKET"
+      ],
+      "family": "GEOPOLITICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_SOURCE_SPECIFIC"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GEOPOLITICAL_INSURANCE_DEMAND",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "GEOPOLITICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "HORMUZ_SUPPLY_RISK",
+      "source_contract_ids": [
+        "EIA_CHOKEPOINTS",
+        "OFFICIAL_GEO_BASKET"
+      ],
+      "family": "GEOPOLITICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE",
+        "PUBLIC_SOURCE_SPECIFIC"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "BRENT_OIL_STATE",
+      "source_contract_ids": [
+        "EIA_OIL_PRICES"
+      ],
+      "family": "GEOPOLITICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "WTI_OIL_STATE",
+      "source_contract_ids": [
+        "EIA_OIL_PRICES"
+      ],
+      "family": "GEOPOLITICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "EIA_OIL_INVENTORY_SUPPLY",
+      "source_contract_ids": [
+        "EIA"
+      ],
+      "family": "GEOPOLITICS",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "OIL_INFLATION_TRANSMISSION",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "GEOPOLITICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "SANCTIONS_GOLD_TRADE",
+      "source_contract_ids": [
+        "TREASURY_OFAC"
+      ],
+      "family": "GEOPOLITICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "BANKING_SOVEREIGN_STRESS",
+      "source_contract_ids": [
+        "BANKING_STRESS_OFFICIAL_BASKET"
+      ],
+      "family": "GEOPOLITICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "FORCED_CASH_LIQUIDATION",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "GEOPOLITICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CTA_TREND_FOLLOWING_EXPOSURE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "SYSTEMATIC_MECHANICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "VOL_CONTROL_RISK_PARITY",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "SYSTEMATIC_MECHANICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "PORTFOLIO_REBALANCING",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "SYSTEMATIC_MECHANICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "MARGIN_LIQUIDATION_RISK",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "SYSTEMATIC_MECHANICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "ETF_MECHANICAL_REBALANCE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "SYSTEMATIC_MECHANICS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_DOMINANT_NARRATIVE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "NARRATIVE_ATTENTION",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_ATTENTION_STATE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "NARRATIVE_ATTENTION",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "SAFE_HAVEN_NARRATIVE_VALIDITY",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "NARRATIVE_ATTENTION",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "NARRATIVE_SATURATION",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "NARRATIVE_ATTENTION",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "SILVER_CROSS_ASSET",
+      "source_contract_ids": [
+        "CME_METALS"
+      ],
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "VIX_RISK_STATE",
+      "source_contract_ids": [
+        "CBOE_VIX"
+      ],
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_PROVIDER"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_EQUITY_RISK_STATE",
+      "source_contract_ids": [
+        "PUBLIC_MARKET_PROVIDER"
+      ],
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_PROVIDER"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "BITCOIN_STORE_OF_VALUE_CONTEXT",
+      "source_contract_ids": [
+        "PUBLIC_MARKET_PROVIDER"
+      ],
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_PROVIDER"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_MINERS_CONTEXT",
+      "source_contract_ids": [
+        "PUBLIC_MARKET_PROVIDER"
+      ],
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_PROVIDER"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_SESSION_TOPOLOGY",
+      "source_contract_ids": [
+        "STATIC_KNOWLEDGE"
+      ],
+      "family": "TIMING_CALENDAR",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "STATIC"
+      ],
+      "access_class": [
+        "KNOWLEDGE"
+      ],
+      "directness": "STATIC",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "LBMA_FIXING_CLOCK",
+      "source_contract_ids": [
+        "LBMA_BENCHMARK"
+      ],
+      "family": "TIMING_CALENDAR",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "US_MACRO_EVENT_CALENDAR",
+      "source_contract_ids": [
+        "US_MACRO_CALENDAR",
+        "BEA_RELEASE_SCHEDULE",
+        "FED_FOMC"
+      ],
+      "family": "TIMING_CALENDAR",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML",
+        "GENERIC_HTML",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE",
+        "PUBLIC_FREE",
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "FOMC_EVENT_WINDOW",
+      "source_contract_ids": [
+        "FED_FOMC"
+      ],
+      "family": "TIMING_CALENDAR",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CME_GOLD_EXPIRY_CALENDAR",
+      "source_contract_ids": [
+        "CME_METALS"
+      ],
+      "family": "TIMING_CALENDAR",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "MARKET_HOLIDAY_LIQUIDITY",
+      "source_contract_ids": [
+        "CME_HOLIDAY_CALENDAR"
+      ],
+      "family": "TIMING_CALENDAR",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "MONTH_QUARTER_END_CLOCK",
+      "source_contract_ids": [
+        "SYSTEM_CALENDAR"
+      ],
+      "family": "TIMING_CALENDAR",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W"
+      ],
+      "current_collector": [
+        "STATIC"
+      ],
+      "access_class": [
+        "CALENDAR"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "PUBLIC_SWAP_SDR_TRANSACTIONS",
+      "source_contract_ids": [
+        "CFTC_PART43"
+      ],
+      "family": "DERIVATIVE_CONTEXT",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "CREDIT_RISK_TRANSACTION_STATE",
+      "source_contract_ids": [
+        "FINRA_TRACE"
+      ],
+      "family": "DERIVATIVE_CONTEXT",
+      "horizon": [
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "REALTIME_CENTRAL_BANK_GOLD_TRANSACTION",
+      "source_contract_ids": [
+        "PRIVATE_GAP"
+      ],
+      "family": "PRIVATE_GAPS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PRIVATE_UNOBSERVABLE"
+      ],
+      "directness": "PRIVATE_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "PRIVATE_INSTITUTIONAL_GOLD_ORDER_FLOW",
+      "source_contract_ids": [
+        "PRIVATE_GAP"
+      ],
+      "family": "PRIVATE_GAPS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PRIVATE_UNOBSERVABLE"
+      ],
+      "directness": "PRIVATE_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "TRUE_DEALER_OPTIONS_INVENTORY",
+      "source_contract_ids": [
+        "PRIVATE_GAP"
+      ],
+      "family": "PRIVATE_GAPS",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PRIVATE_UNOBSERVABLE"
+      ],
+      "directness": "PRIVATE_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "FULL_GLOBAL_GOLD_INVENTORY",
+      "source_contract_ids": [
+        "PRIVATE_GAP"
+      ],
+      "family": "PRIVATE_GAPS",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GAP_ONLY"
+      ],
+      "access_class": [
+        "PRIVATE_UNOBSERVABLE"
+      ],
+      "directness": "PRIVATE_GAP",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "GAP",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "MODEL_COMPLETENESS_STATE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "MODEL_QUALITY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "MISSING_DRIVER_RISK",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "MODEL_QUALITY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "PRICE_TRANSMISSION_STATE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "MODEL_QUALITY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "UNEXPRESSED_CAUSAL_IMBALANCE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "MODEL_QUALITY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_REGIME_STATE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "MODEL_QUALITY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_CAUSAL_LEADER_STATE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "MODEL_QUALITY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_CONSUMPTION_VECTOR",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "MODEL_QUALITY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_PERSISTENCE_STACK",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "MODEL_QUALITY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_REMAINING_PRESSURE_STATE",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "MODEL_QUALITY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_LIQUIDATION_HAZARD",
+      "source_contract_ids": [
+        "DERIVED_DEPENDENCIES"
+      ],
+      "family": "MODEL_QUALITY",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE",
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "DERIVED_SOURCE"
+      ],
+      "access_class": [
+        "MODEL_DERIVED"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "ASIA_LONDON_NEWYORK_HANDOFF_STATE",
+      "source_contract_ids": [
+        "SYSTEM_CALENDAR"
+      ],
+      "family": "TIMING_CALENDAR",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "current_collector": [
+        "STATIC"
+      ],
+      "access_class": [
+        "CALENDAR"
+      ],
+      "directness": "DERIVED",
+      "structured": true,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "LOWER",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "GOLD_SESSION_LIQUIDITY_STATE",
+      "source_contract_ids": [
+        "SYSTEM_CALENDAR",
+        "CME_METALS"
+      ],
+      "family": "TIMING_CALENDAR",
+      "horizon": [
+        "MICRO_0_15M",
+        "SHORT_15_60M",
+        "SESSION_1_6H",
+        "DAILY_OPEN_TO_CLOSE"
+      ],
+      "current_collector": [
+        "STATIC",
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "CALENDAR",
+        "PUBLIC_FREE_DELAYED"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": true,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "SILVER_INDUSTRIAL_DEMAND_CONTEXT",
+      "source_contract_ids": [
+        "SILVER_INSTITUTE"
+      ],
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_SOURCE_SPECIFIC"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    },
+    {
+      "fact_id": "SILVER_MINE_COPRODUCTION_CONTEXT",
+      "source_contract_ids": [
+        "SILVER_INSTITUTE"
+      ],
+      "family": "CROSS_ASSET_DIAGNOSTIC",
+      "horizon": [
+        "MULTI_DAY_2_10D",
+        "SWING_2_8W",
+        "CYCLICAL",
+        "STRUCTURAL"
+      ],
+      "current_collector": [
+        "GENERIC_HTML"
+      ],
+      "access_class": [
+        "PUBLIC_OR_SOURCE_SPECIFIC"
+      ],
+      "directness": "DIRECT",
+      "structured": false,
+      "economic_timestamp_quality": true,
+      "historical_recoverability": false,
+      "source_fragility": "HIGH",
+      "provider_gap": false,
+      "decision_relevance": "CONTEXT"
+    }
+  ],
+  "tier1_findings": {
+    "direct_dxy": "PROVIDER_GAP",
+    "official_real_yield": "OFFICIAL_DAILY_CONTEXT",
+    "canonical_outcome_instrument": "XAUUSD",
+    "outcome_recovery": "CURRENTLY_RUN_TIMING_DEPENDENT"
+  }
+}

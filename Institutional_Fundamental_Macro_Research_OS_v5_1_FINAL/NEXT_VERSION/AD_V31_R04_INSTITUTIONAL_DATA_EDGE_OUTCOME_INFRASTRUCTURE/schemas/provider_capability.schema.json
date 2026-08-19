@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "provider_id",
+    "access_class",
+    "directness"
+  ],
+  "properties": {
+    "provider_id": {
+      "type": "string"
+    },
+    "access_class": {
+      "type": "string"
+    },
+    "directness": {
+      "type": "string"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 {
   "phase": "AD-V3-P10",
-  "version": "3.10.0-unified-runtime",
+  "version": "3.10.2-r04-data-edge",
   "title": "Unified Runtime / One Run",
   "status": "PASS",
-  "baseline_commit": "dafa0c2",
+  "baseline_commit": "GIT_METADATA_UNAVAILABLE_IN_SUPPLIED_ZIP",
   "canonical_v3_orchestration_authority": true,
   "active_subject": "Gold",
   "v3_state": "SHADOW_COMMISSIONING",
@@ -13,5 +13,6 @@
   "acceptance_status": "PASS",
   "acceptance_checks": 40,
   "static_validation_checks": 9,
-  "science_authority_drift": 0
+  "science_authority_drift": 0,
+  "r04_data_edge_integrated": true
 }

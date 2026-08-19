@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "stages": [
     {
       "stage_id": "PRECHECK",
@@ -12,7 +12,7 @@
       "depends_on": [
         "PRECHECK"
       ],
-      "authority": "AD-V3-P09",
+      "authority": "AD-V3-P09 + AD-V3.1-R04 observation supply",
       "mandatory": true
     },
     {
@@ -28,7 +28,7 @@
       "depends_on": [
         "ACQUISITION_PLAN"
       ],
-      "authority": "AD-V3-P07/P02",
+      "authority": "AD-V3-P07/P02 + AD-V3.1-R04 capability infrastructure",
       "mandatory": true
     },
     {

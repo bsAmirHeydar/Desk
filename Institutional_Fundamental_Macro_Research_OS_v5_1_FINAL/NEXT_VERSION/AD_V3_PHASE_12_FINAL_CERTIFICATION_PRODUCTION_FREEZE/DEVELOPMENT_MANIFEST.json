@@ -1,16 +1,18 @@
 {
   "phase": "AD-V3-P12",
-  "version": "3.12.3-v31-r03-perspective",
+  "version": "3.12.4-v31-r04-data-edge",
   "status": "PASS",
-  "baseline_commit": "69be946",
-  "release_candidate": "ALPHA_DESK_V3_1_R03",
+  "baseline_commit": "f0bba8e",
+  "release_candidate": "ALPHA_DESK_V3_1_R04",
   "final_v3_phase": true,
   "production_promotion_performed": false,
   "trade_execution_authority": "NONE",
-  "next_phase": "AD-V3.1-R04",
+  "next_phase": "AD-V3.1-R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION",
   "certification_state": "CERTIFIED_PENDING_FORWARD_SAMPLE",
-  "release_fingerprint": "V3REL_B24BD80C629E29A7D1D3379DD066D6166F919C9E9AEEE3C5953EA278B26F66F3",
-  "parent_release_candidate": "ALPHA_DESK_V3_1_R02",
-  "active_v31_amendment": "AD-V3.1-R03",
-  "r03_perspective_science_fingerprint": "R03SCI_DBAE5E33F378FA1D9CFF422A524118B6670CDD7FAE8F96BEC5E94103149C3EAC"
+  "release_fingerprint": "V3REL_9E337B26C061239C9C353191930B034D4976B3D69B96EFC3C7313EDF5EDBDA07",
+  "parent_release_candidate": "ALPHA_DESK_V3_1_R03",
+  "active_v31_amendment": "AD-V3.1-R04",
+  "current_amendment": "AD-V3.1-R04",
+  "amendment_fingerprint": "V31R04_34C9F3B06C0BF356D973C17831DB27032F4976FC0FDFC108713C7501E47A2CEA",
+  "r04_data_contract_fingerprint": "R04DATA_BF55F713A48697B59970B843E01D41C1C353B31DADF8A64EAF0AD189B805C263"
 }

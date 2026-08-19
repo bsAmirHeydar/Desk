@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "AD-V3.1-R04",
+  "providers": [
+    {
+      "provider_id": "ICE_DXY_DELAYED_PUBLIC",
+      "data_family": "USD_INDEX",
+      "instrument": "ICE_US_DOLLAR_INDEX",
+      "access_class": "PUBLIC_FREE",
+      "directness": "DIRECT",
+      "realtime_capability": "DELAYED_MINIMUM_PROVIDER_POLICY",
+      "historical_capability": false,
+      "timestamp_authority": "MARKET_TIMESTAMP_REQUIRED",
+      "revision_semantics": "NON_REVISABLE_MARKET",
+      "granularity": "SOURCE_SPECIFIC",
+      "expected_latency": "DELAYED",
+      "rate_limit_policy": "BOUNDED",
+      "failover_group": "DXY_DIRECT",
+      "scientific_equivalence_group": "ICE_DXY_DIRECT",
+      "entitlement_required": false,
+      "required_env": [],
+      "configured_without_env": false,
+      "activation_state": "IMPLEMENTED_NOT_LIVE_VERIFIED",
+      "notes": "Official ICE delayed pricing surface; runtime adapter refuses to guess undocumented selectors until deployment verification."
+    },
+    {
+      "provider_id": "ICE_DXY_DATA_API",
+      "data_family": "USD_INDEX",
+      "instrument": "ICE_US_DOLLAR_INDEX",
+      "access_class": "PAID",
+      "directness": "DIRECT",
+      "realtime_capability": true,
+      "historical_capability": true,
+      "timestamp_authority": "PROVIDER_MARKET_TIME",
+      "revision_semantics": "NON_REVISABLE_MARKET",
+      "granularity": "ENTITLEMENT_SPECIFIC",
+      "expected_latency": "PROVIDER_SPECIFIC",
+      "rate_limit_policy": "PROVIDER_CONTRACT",
+      "failover_group": "DXY_DIRECT",
+      "scientific_equivalence_group": "ICE_DXY_DIRECT",
+      "entitlement_required": true,
+      "required_env": [
+        "ICE_DXY_DATA_API_URL",
+        "ICE_DXY_DATA_API_TOKEN"
+      ],
+      "activation_state": "ENTITLEMENT_REQUIRED"
+    },
+    {
+      "provider_id": "GOLDPRICEDEV_XAU_BARS",
+      "data_family": "GOLD_SPOT_HISTORY",
+      "instrument": "XAUUSD",
+      "access_class": "PUBLIC_AUTHENTICATED",
+      "directness": "PROXY_REFERENCE",
+      "realtime_capability": true,
+      "historical_capability": true,
+      "timestamp_authority": "PROVIDER_MARKET_TIME",
+      "revision_semantics": "MARKET_BAR",
+      "granularity": "PROVIDER_SPECIFIC",
+      "expected_latency": "PROVIDER_SPECIFIC",
+      "rate_limit_policy": "BOUNDED_RETRY",
+      "failover_group": "XAUUSD_OUTCOME",
+      "scientific_equivalence_group": "XAUUSD_SPOT_REFERENCE",
+      "entitlement_required": true,
+      "required_env": [
+        "GOLDPRICEDEV_API_KEY"
+      ],
+      "activation_state": "NOT_CONFIGURED_BY_DEFAULT"
+    },
+    {
+      "provider_id": "TWELVEDATA_XAUUSD",
+      "data_family": "GOLD_SPOT_HISTORY",
+      "instrument": "XAUUSD",
+      "access_class": "PUBLIC_AUTHENTICATED",
+      "directness": "DIRECT_MARKET_REFERENCE",
+      "realtime_capability": true,
+      "historical_capability": true,
+      "timestamp_authority": "PROVIDER_MARKET_TIME",
+      "revision_semantics": "MARKET_BAR",
+      "granularity": "1min+",
+      "expected_latency": "PROVIDER_SPECIFIC",
+      "rate_limit_policy": "BOUNDED_RETRY",
+      "failover_group": "XAUUSD_OUTCOME",
+      "scientific_equivalence_group": "XAUUSD_SPOT_REFERENCE",
+      "entitlement_required": true,
+      "required_env": [
+        "TWELVEDATA_API_KEY"
+      ],
+      "activation_state": "NOT_CONFIGURED_BY_DEFAULT"
+    },
+    {
+      "provider_id": "LOCAL_PIT_STORE",
+      "data_family": "POINT_IN_TIME_HISTORY",
+      "instrument": "MULTI",
+      "access_class": "PROPRIETARY_INTERNAL",
+      "directness": "PRESERVED_ORIGINAL",
+      "realtime_capability": false,
+      "historical_capability": true,
+      "timestamp_authority": "PRESERVED_SOURCE_TIME",
+      "revision_semantics": "APPEND_ONLY",
+      "granularity": "PRESERVED",
+      "expected_latency": "LOCAL",
+      "rate_limit_policy": "NONE",
+      "failover_group": null,
+      "scientific_equivalence_group": null,
+      "entitlement_required": false,
+      "required_env": [],
+      "configured_without_env": true,
+      "activation_state": "ACTIVE_LOCAL"
+    },
+    {
+      "provider_id": "CME_LICENSED_DEPTH",
+      "data_family": "GC_MARKET_DEPTH",
+      "instrument": "GC",
+      "access_class": "PAID",
+      "directness": "DIRECT",
+      "realtime_capability": true,
+      "historical_capability": "ENTITLEMENT_SPECIFIC",
+      "timestamp_authority": "EXCHANGE",
+      "revision_semantics": "MARKET",
+      "granularity": "DEPTH",
+      "expected_latency": "LICENSE_SPECIFIC",
+      "rate_limit_policy": "LICENSE_SPECIFIC",
+      "failover_group": null,
+      "scientific_equivalence_group": "GC_DEPTH",
+      "entitlement_required": true,
+      "required_env": [
+        "CME_DEPTH_ENTITLEMENT"
+      ],
+      "activation_state": "PAID_GAP"
+    },
+    {
+      "provider_id": "LONDON_OTC_PRIVATE_FLOW",
+      "data_family": "LONDON_OTC_FLOW",
+      "instrument": "XAU",
+      "access_class": "PRIVATE",
+      "directness": "DIRECT_PRIVATE",
+      "realtime_capability": true,
+      "historical_capability": "PRIVATE",
+      "timestamp_authority": "PRIVATE",
+      "revision_semantics": "PRIVATE",
+      "granularity": "PRIVATE",
+      "expected_latency": "PRIVATE",
+      "rate_limit_policy": "PRIVATE",
+      "failover_group": null,
+      "scientific_equivalence_group": null,
+      "entitlement_required": true,
+      "required_env": [
+        "LONDON_OTC_PRIVATE_ENTITLEMENT"
+      ],
+      "activation_state": "PRIVATE_GAP"
+    }
+  ],
+  "hard_rules": [
+    "IMPLEMENTED_NE_ACTIVE",
+    "DIRECT_NE_PROXY",
+    "REDUNDANCY_NE_INDEPENDENCE"
+  ]
+}

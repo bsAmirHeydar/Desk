@@ -35,6 +35,9 @@
     },
     "perspective_state": {
       "type": "object"
+    },
+    "data_edge": {
+      "type": "object"
     }
   }
 }

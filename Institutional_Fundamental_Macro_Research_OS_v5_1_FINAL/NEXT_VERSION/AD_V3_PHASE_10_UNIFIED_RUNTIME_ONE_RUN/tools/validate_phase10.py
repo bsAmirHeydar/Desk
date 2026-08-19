@@ -38,8 +38,8 @@ def main():
   got=hashlib.sha256(fp.read_bytes()).hexdigest() if fp.exists() else None
   if got!=want:
    own=surface.get(rel) or {}
-   if rel in allowed_r01 or (own.get('class') in ('SCIENTIFIC_VERSIONED','GOVERNANCE_VERSIONED') and str(own.get('owner','')).startswith(('AD-V3.1-R02','AD-V3.1-R03'))): accepted.append({'file':rel,'owner':own.get('owner')})
+   if rel in allowed_r01 or (own.get('class') in ('SCIENTIFIC_VERSIONED','GOVERNANCE_VERSIONED') and str(own.get('owner','')).startswith(('AD-V3.1-R02','AD-V3.1-R03','AD-V3.1-R04'))): accepted.append({'file':rel,'owner':own.get('owner')})
    else: drift.append({'file':rel,'expected':want,'actual':got,'owner':own.get('owner')})
- c.append(ck('upstream drift is either zero or explicitly versioned by R01/R02/R03 governance',not drift,{'unexpected':drift,'accepted_versioned':accepted}))
+ c.append(ck('upstream drift is either zero or explicitly versioned by R01/R02/R03/R04 governance',not drift,{'unexpected':drift,'accepted_versioned':accepted}))
  ok=all(x['status']=='PASS' for x in c);out={'phase':'AD-V3-P10','validation_status':'PASS' if ok else 'FAIL','check_count':len(c),'checks':c};print(json.dumps(out,indent=2,ensure_ascii=False));return 0 if ok else 2
 if __name__=='__main__':raise SystemExit(main())

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "states": [
+    "HEALTHY",
+    "DEGRADED",
+    "STALE",
+    "SCHEMA_DRIFT",
+    "RATE_LIMITED",
+    "ENTITLEMENT_MISSING",
+    "UNAVAILABLE",
+    "UNKNOWN"
+  ],
+  "dimensions": [
+    "REACHABILITY",
+    "LATENCY",
+    "FRESHNESS",
+    "TIMESTAMP_QUALITY",
+    "SCHEMA_HEALTH",
+    "VALUE_SANITY",
+    "HISTORICAL_CAPABILITY",
+    "RATE_LIMIT_STATE",
+    "ENTITLEMENT_STATE"
+  ],
+  "fail_closed_on": [
+    "SCHEMA_DRIFT",
+    "VALUE_SANITY_FAIL"
+  ]
+}

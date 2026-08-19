@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "version": "3.1.4-institutional-data-edge",
+  "authority": [
+    "DATA_CAPABILITY_INFRASTRUCTURE",
+    "POINT_IN_TIME_HISTORY",
+    "HISTORICAL_MARKET_RECOVERY",
+    "OUTCOME_ACQUISITION_PROVENANCE",
+    "PROVIDER_HEALTH"
+  ],
+  "explicit_non_authority": [
+    "CAUSAL_DIRECTION",
+    "DECISION_SCIENCE",
+    "PERSPECTIVE_SCIENCE",
+    "OUTCOME_CLASSIFICATION",
+    "PROMOTION"
+  ],
+  "last_planned_major_input_reset": true,
+  "r05_should_avoid_science_input_changes": true,
+  "hard_rules": [
+    "PROXY_NE_DIRECT",
+    "BACKFILL_NE_PROSPECTIVE",
+    "REDUNDANCY_NE_INDEPENDENCE",
+    "FETCH_TIME_NE_ECONOMIC_TIME"
+  ]
+}

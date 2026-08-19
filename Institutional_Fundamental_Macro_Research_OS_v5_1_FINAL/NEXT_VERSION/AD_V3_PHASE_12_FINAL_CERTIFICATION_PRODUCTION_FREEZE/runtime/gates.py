@@ -25,6 +25,7 @@ def collect(approve=False,deep=False,repo=REPO):
  'R01_IMPLEMENTATION_PASS':cert.get('phase_status',{}).get('R01')=='PASS',
  'R02_IMPLEMENTATION_PASS':cert.get('phase_status',{}).get('R02')=='PASS',
  'R03_IMPLEMENTATION_PASS':cert.get('phase_status',{}).get('R03')=='PASS',
+ 'R04_IMPLEMENTATION_PASS':cert.get('phase_status',{}).get('R04')=='PASS',
  'P12_CERTIFICATION_PASS':cert.get('implementation_status')=='PASS' and fr.get('classes',{}).get('CERTIFICATION_IMMUTABLE',{}).get('status')=='PASS',
  'SCIENCE_FREEZE_VALID':fr.get('classes',{}).get('SCIENTIFIC_IMMUTABLE',{}).get('status')=='PASS','RUNTIME_FREEZE_VALID':fr.get('classes',{}).get('RUNTIME_IMMUTABLE',{}).get('status')=='PASS','REPORT_FREEZE_VALID':fr.get('classes',{}).get('REPORT_CONTRACT_IMMUTABLE',{}).get('status')=='PASS',
  'ZERO_SCIENCE_DRIFT':fr.get('classes',{}).get('SCIENTIFIC_IMMUTABLE',{}).get('status')=='PASS','ZERO_CRITICAL_INTEGRITY_FAILURES':int(p09.get('integrity_failures',0))==0 and phase.get('P05_PASS',False),

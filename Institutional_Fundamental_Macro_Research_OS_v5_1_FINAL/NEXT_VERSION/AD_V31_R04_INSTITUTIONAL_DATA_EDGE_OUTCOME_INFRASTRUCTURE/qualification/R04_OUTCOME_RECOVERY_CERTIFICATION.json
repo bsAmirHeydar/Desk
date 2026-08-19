@@ -1,0 +1,63 @@
+{
+  "record_type": "AD_V31_R04_OUTCOME_RECOVERY_CERTIFICATION",
+  "status": "PASS",
+  "prediction_created_prospectively_fixture": true,
+  "backfill_created_prediction": false,
+  "checks": {
+    "late_fixed_horizon_recovery": true,
+    "idempotent_recovery": true,
+    "terminal_not_retrieval_time": true,
+    "acquisition_mode": true,
+    "path_full": true,
+    "current_price_substitution": true
+  },
+  "outcome": {
+    "record_type": "AD_V3_P09_FORWARD_OUTCOME",
+    "schema_version": "1.0.0",
+    "prediction_id": "CERT_PRED",
+    "episode_id": "CERT_EP",
+    "cohort_id": "CERT_COHORT",
+    "evaluation_time": "2026-08-18T22:00:00Z",
+    "maturity_time": "2026-08-18T16:00:00Z",
+    "terminal_observation": {
+      "observed_at_utc": "2026-08-18T16:00:00Z",
+      "value": 2518.0,
+      "provider_id": "GOLDPRICEDEV_XAU_BARS",
+      "source_id": "GOLDPRICEDEV_XAU_BARS",
+      "scientific_series_id": "XAUUSD_SPOT_REFERENCE",
+      "instrument_key": "XAUUSD",
+      "outcome_acquisition_mode": "HISTORICALLY_RECOVERED",
+      "metadata": {
+        "resolution": "1m"
+      }
+    },
+    "terminal_return": 0.0072,
+    "neutral_band_return": 0.0012,
+    "direction_outcome": "ALIGNED",
+    "mfe_return": 0.0072,
+    "mae_return": 0.0,
+    "time_to_mfe_minutes": 360.0,
+    "time_to_mae_minutes": 0.0,
+    "path_quality": "CLEAN",
+    "path_coverage": {
+      "expected_min_points": 8,
+      "actual_points": 8,
+      "path_metric_authority": "AVAILABLE",
+      "path_coverage_state": "FULL",
+      "granularity": "1m"
+    },
+    "permission_outcome": "SUPPORTED",
+    "wait_outcome": null,
+    "event_exposure": "EVENT_FREE",
+    "exposed_events": [],
+    "policy_versions": {},
+    "outcome_source_predetermined": true,
+    "prediction_rewritten": false,
+    "outcome_acquisition_mode": "HISTORICALLY_RECOVERED",
+    "outcome_provider_id": "GOLDPRICEDEV_XAU_BARS",
+    "terminal_distance_seconds": 0.0,
+    "evaluation_hash": "ed32e15dbc9be2c116628085120ecc9c9968cd6fa9e66b72c06f3cc0b1debfe9",
+    "outcome_id": "P09OUT_99602ECA48DCFD567561B2BA"
+  },
+  "real_forward_ledger_mutated": false
+}

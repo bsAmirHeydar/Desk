@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "identity": "INTRADAY_REAL_RATE_PROXY",
+  "official_real_yield_identity": "OFFICIAL_DAILY_CONTEXT",
+  "formula_version": "R04-RRP-1",
+  "formula": "NOMINAL_INTRADAY_YIELD_MINUS_COMPATIBLE_INTRADAY_INFLATION_EXPECTATION",
+  "max_component_timestamp_mismatch_minutes": 15,
+  "requires_temporally_compatible_components": true,
+  "causal_fact_authority": false,
+  "default_activation_state": "UNAVAILABLE_COMPONENT_GAP",
+  "never_label_as": "OFFICIAL_REAL_YIELD_LIVE"
+}

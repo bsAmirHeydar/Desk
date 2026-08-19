@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "engine": "SQLITE_STDLIB",
+  "schema_version_store": "1.0.0",
+  "append_safe": true,
+  "deduplicated": true,
+  "checksum": "SHA256_CANONICAL_RECORD",
+  "retention": "NO_AUTODELETE_PROSPECTIVE_AUDIT",
+  "timestamp_primary": "economic_time",
+  "record_classes": [
+    "LIVE_CAPTURED",
+    "HISTORICAL_REFERENCE",
+    "BACKFILLED_REFERENCE"
+  ],
+  "backfill_is_prospective": false
+}

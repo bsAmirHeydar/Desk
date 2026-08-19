@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "equivalence_required": true,
+  "silent_failover": false,
+  "record_lineage": true,
+  "forbid_cross_identity_examples": [
+    {
+      "from": "ICE_DXY_DIRECT",
+      "to": "USD_PROXY_COMPLEX"
+    }
+  ]
+}

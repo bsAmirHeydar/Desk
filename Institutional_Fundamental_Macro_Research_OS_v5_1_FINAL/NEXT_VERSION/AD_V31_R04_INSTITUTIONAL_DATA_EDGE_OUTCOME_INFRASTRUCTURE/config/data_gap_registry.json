@@ -1,0 +1,88 @@
+{
+  "schema_version": "2.0.0",
+  "gaps": [
+    {
+      "gap_id": "DIRECT_DXY_LIVE",
+      "fact_id": "DXY_INDEX",
+      "root": "USD_AUTONOMOUS",
+      "gap_type": "ENTITLEMENT_OR_DEPLOYMENT_VERIFICATION",
+      "access_class": "PAID_OR_DELAYED_PUBLIC",
+      "priority": "CRITICAL",
+      "state": "OPEN",
+      "proxy": "USD_PROXY_COMPLEX",
+      "proxy_limitations": "not scientifically identical to ICE DXY",
+      "activation_requirements": [
+        "verified delayed adapter or ICE Data entitlement"
+      ]
+    },
+    {
+      "gap_id": "INTRADAY_REAL_RATE_COMPONENTS",
+      "fact_id": "UST_10Y_REAL_YIELD",
+      "root": "REAL_RATE_OPPORTUNITY_COST",
+      "gap_type": "COMPONENT_GAP",
+      "access_class": "PUBLIC_OR_PAID",
+      "priority": "CRITICAL",
+      "state": "OPEN",
+      "proxy": null,
+      "proxy_limitations": "official real yield is daily EOD context",
+      "activation_requirements": [
+        "temporally compatible intraday nominal and inflation expectation components"
+      ]
+    },
+    {
+      "gap_id": "GC_MARKET_DEPTH",
+      "fact_id": null,
+      "root": null,
+      "gap_type": "PAID_GAP",
+      "access_class": "PAID",
+      "priority": "HIGH",
+      "state": "OPEN"
+    },
+    {
+      "gap_id": "GC_AGGRESSOR_FLOW",
+      "fact_id": null,
+      "root": null,
+      "gap_type": "PAID_GAP",
+      "access_class": "PAID",
+      "priority": "HIGH",
+      "state": "OPEN"
+    },
+    {
+      "gap_id": "DEALER_GAMMA",
+      "fact_id": null,
+      "root": null,
+      "gap_type": "PAID_GAP",
+      "access_class": "PAID",
+      "priority": "HIGH",
+      "state": "OPEN"
+    },
+    {
+      "gap_id": "LONDON_OTC_PRIVATE_FLOW",
+      "fact_id": null,
+      "root": null,
+      "gap_type": "PRIVATE_GAP",
+      "access_class": "PRIVATE",
+      "priority": "HIGH",
+      "state": "OPEN"
+    },
+    {
+      "gap_id": "BULLION_BANK_BALANCE_SHEET",
+      "fact_id": null,
+      "root": null,
+      "gap_type": "PRIVATE_GAP",
+      "access_class": "PRIVATE",
+      "priority": "HIGH",
+      "state": "OPEN"
+    },
+    {
+      "gap_id": "EFP_LEASE_FORWARD_INTRADAY",
+      "fact_id": null,
+      "root": null,
+      "gap_type": "PAID_GAP",
+      "access_class": "PAID",
+      "priority": "MEDIUM",
+      "state": "OPEN"
+    }
+  ],
+  "hard_rule": "known provider plan does not resolve a gap"
+}

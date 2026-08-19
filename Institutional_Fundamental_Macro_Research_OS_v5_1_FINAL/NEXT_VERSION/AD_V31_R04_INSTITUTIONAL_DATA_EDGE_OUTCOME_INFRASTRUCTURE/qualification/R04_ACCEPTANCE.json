@@ -1,0 +1,640 @@
+{
+  "phase": "AD-V3.1-R04",
+  "version": "3.1.4-institutional-data-edge",
+  "acceptance_status": "PASS",
+  "check_count": 80,
+  "checks": [
+    {
+      "name": "R04 static validation PASS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "required R04 surfaces present",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "full P02 data-edge audit covers 192 facts",
+      "status": "PASS",
+      "detail": 192
+    },
+    {
+      "name": "source audit covers canonical 96 source contracts",
+      "status": "PASS",
+      "detail": 96
+    },
+    {
+      "name": "generic HTML baseline quantified",
+      "status": "PASS",
+      "detail": 55
+    },
+    {
+      "name": "provider implementation is distinct from configuration",
+      "status": "PASS",
+      "detail": {
+        "provider_id": "ICE_DXY_DELAYED_PUBLIC",
+        "data_family": "USD_INDEX",
+        "instrument": "ICE_US_DOLLAR_INDEX",
+        "access_class": "PUBLIC_FREE",
+        "directness": "DIRECT",
+        "realtime_capability": "DELAYED_MINIMUM_PROVIDER_POLICY",
+        "historical_capability": false,
+        "timestamp_authority": "MARKET_TIMESTAMP_REQUIRED",
+        "revision_semantics": "NON_REVISABLE_MARKET",
+        "granularity": "SOURCE_SPECIFIC",
+        "expected_latency": "DELAYED",
+        "rate_limit_policy": "BOUNDED",
+        "failover_group": "DXY_DIRECT",
+        "scientific_equivalence_group": "ICE_DXY_DIRECT",
+        "entitlement_required": false,
+        "required_env": [],
+        "configured_without_env": false,
+        "activation_state": "IMPLEMENTED_NOT_LIVE_VERIFIED",
+        "notes": "Official ICE delayed pricing surface; runtime adapter refuses to guess undocumented selectors until deployment verification.",
+        "configured": false,
+        "entitled": true,
+        "authorized_for_use": false
+      }
+    },
+    {
+      "name": "paid entitlement remains explicit",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "private access class remains explicit",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "direct DXY and USD proxy stay distinct",
+      "status": "PASS",
+      "detail": {
+        "direct": {
+          "state": "DIRECT_DELAYED_IMPLEMENTED_NOT_LIVE_VERIFIED",
+          "provider": "ICE_DXY_DELAYED_PUBLIC"
+        },
+        "proxy": {
+          "state": "AVAILABLE_SEPARATE_IDENTITY"
+        }
+      }
+    },
+    {
+      "name": "intraday real-rate proxy never mislabeled official",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "official real yield remains daily context",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "canonical P09 outcome instrument preserved",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "SESSION_1_6H maturity remains 360m and 20m tolerance",
+      "status": "PASS",
+      "detail": {
+        "terminal_minutes": 360,
+        "checkpoints_minutes": [
+          60,
+          180,
+          360
+        ],
+        "terminal_tolerance_minutes": 20,
+        "neutral_band_min_return": 0.0012,
+        "path_min_points": 8
+      }
+    },
+    {
+      "name": "current price substitution explicitly forbidden",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "backfill explicitly non-prospective",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "provider redundancy not evidence independence",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "market depth remains paid gap",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "aggressor flow remains paid gap",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "dealer gamma remains paid gap",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "London OTC remains private gap",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P01/P03/P06/R01/R02/R03/P09-classification science zero drift",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "P10 uses R04 historical recovery through P09 and PIT ingest",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P10 remains sole normal orchestrator",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P09 remains outcome classifier while R04 only supplies observations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R04 data contract bound to prospective cohort",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P05 governance registers R04 authority",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R04 source package contains no embedded credentials",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "R04 data-science freeze valid",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "drift": [],
+        "file_count": 38,
+        "data_contract_fingerprint": "R04DATA_BF55F713A48697B59970B843E01D41C1C353B31DADF8A64EAF0AD189B805C263"
+      }
+    },
+    {
+      "name": "Golden Data Matrix PASS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "A Healthy direct DXY typed identity",
+      "status": "PASS",
+      "detail": {
+        "series_id": "ICE_DXY_DIRECT",
+        "instrument": "DXY",
+        "provider_id": "ICE_DXY_DELAYED_PUBLIC",
+        "economic_time": "2026-08-18T12:00:00Z",
+        "market_time": "2026-08-18T12:00:00Z",
+        "value": 102.5,
+        "unit": "INDEX_POINTS",
+        "quality": "DIRECT_DELAYED",
+        "directness": "DIRECT",
+        "record_class": "LIVE_CAPTURED",
+        "metadata": {
+          "delayed": true
+        }
+      }
+    },
+    {
+      "name": "B DXY missing never relabels USD proxy",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "C DXY/proxy identities remain non-equivalent",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "D Intraday real-rate proxy healthy",
+      "status": "PASS",
+      "detail": {
+        "state": "HEALTHY_PROXY",
+        "identity": "INTRADAY_REAL_RATE_PROXY",
+        "value": 2.3,
+        "unit": "PERCENT",
+        "formula_version": "R04-RRP-1",
+        "component_mismatch_minutes": 5.0,
+        "economic_time": "2026-08-18T12:00:00Z",
+        "components": [
+          "NOM",
+          "INF"
+        ],
+        "directness": "DERIVED_PROXY",
+        "official_real_yield": false,
+        "causal_fact_authority": false
+      }
+    },
+    {
+      "name": "E Stale proxy component degrades proxy",
+      "status": "PASS",
+      "detail": {
+        "state": "STALE_COMPONENT_MISMATCH",
+        "identity": "INTRADAY_REAL_RATE_PROXY",
+        "component_mismatch_minutes": 120.0,
+        "causal_fact_authority": false
+      }
+    },
+    {
+      "name": "F Official daily real yield distinct",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "G Historical T+6H recovery",
+      "status": "PASS",
+      "detail": {
+        "recovery": "RECOVERED_FROM_PIT",
+        "terminal": {
+          "record_type": "AD_V3_P09_MARKET_OBSERVATION",
+          "observed_at_utc": "2026-08-18T16:00:00Z",
+          "value": 2514.0,
+          "provider_id": "GOLDPRICEDEV_XAU_BARS",
+          "source_id": "GOLDPRICEDEV_XAU_BARS",
+          "scientific_series_id": "XAUUSD_SPOT_REFERENCE",
+          "instrument_key": "XAUUSD",
+          "outcome_acquisition_mode": "HISTORICALLY_RECOVERED",
+          "metadata": {
+            "resolution": "1m"
+          }
+        }
+      }
+    },
+    {
+      "name": "H No valid maturity observation remains unevaluated",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "I Full path recovery",
+      "status": "PASS",
+      "detail": {
+        "expected_min_points": 8,
+        "actual_points": 8,
+        "path_metric_authority": "AVAILABLE",
+        "path_coverage_state": "FULL",
+        "granularity": "1m"
+      }
+    },
+    {
+      "name": "J Partial path does not fabricate MFE/MAE",
+      "status": "PASS",
+      "detail": {
+        "expected_min_points": 8,
+        "actual_points": 3,
+        "path_metric_authority": "UNAVAILABLE",
+        "path_coverage_state": "PARTIAL",
+        "granularity": "1m"
+      }
+    },
+    {
+      "name": "K PIT duplicate write idempotent",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "T Store tamper detection",
+      "status": "PASS",
+      "detail": {
+        "status": "FAIL",
+        "records": 10,
+        "integrity_failures": [
+          {
+            "series_id": "TEST",
+            "economic_time": "2026-08-18T00:00:00Z",
+            "provider_id": "P"
+          }
+        ],
+        "schema_version": "1.0.0"
+      }
+    },
+    {
+      "name": "K2 Equivalent direct-provider failover",
+      "status": "PASS",
+      "detail": {
+        "provider_id": "ICE_DXY_DATA_API",
+        "primary_failed": true,
+        "fallback_used": true,
+        "fallback_provider": "ICE_DXY_DATA_API",
+        "reason": "UNAVAILABLE"
+      }
+    },
+    {
+      "name": "L Invalid scientific failover rejected",
+      "status": "PASS",
+      "detail": {
+        "provider_id": null,
+        "primary_failed": true,
+        "fallback_used": false,
+        "reason": "NO_SCIENTIFICALLY_EQUIVALENT_HEALTHY_PROVIDER"
+      }
+    },
+    {
+      "name": "M HTML/typed parser schema drift fails closed",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "N Value sanity rejects impossible DXY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "O Paid entitlement is explicit",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P Paid depth remains gap",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Q Private flow remains private gap",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R Backfill never prospective",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "S Macro revision preserves first seen",
+      "status": "PASS",
+      "detail": [
+        [
+          0,
+          1.0
+        ],
+        [
+          1,
+          1.1
+        ]
+      ]
+    },
+    {
+      "name": "U GC volume does not create signed aggressor flow",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "V Options activity does not create dealer gamma",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "W Outcome provider conflict surfaced",
+      "status": "PASS",
+      "detail": "OUTCOME_DATA_CONFLICT"
+    },
+    {
+      "name": "X Current-price-as-outcome rejected",
+      "status": "PASS",
+      "detail": {
+        "state": "NO_VALID_HISTORY",
+        "series_id": "XAUUSD_SPOT_REFERENCE",
+        "selected_provider": null,
+        "observations": [],
+        "retrieval_time": "2026-08-19T09:16:28.827700Z",
+        "network_attempted": false,
+        "network_attempts": [],
+        "outcome_science_authority": false,
+        "current_price_substitution_used": false
+      }
+    },
+    {
+      "name": "R02 normalization rejects future history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Secret scan clean",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "Outcome recovery certification PASS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Outcome recovery: late_fixed_horizon_recovery",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Outcome recovery: idempotent_recovery",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Outcome recovery: terminal_not_retrieval_time",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Outcome recovery: acquisition_mode",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Outcome recovery: path_full",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Outcome recovery: current_price_substitution",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P05 downstream compatibility PASS",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "name": "P09 downstream compatibility PASS",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "name": "P10 downstream compatibility PASS",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "name": "P11 downstream compatibility PASS",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "name": "R01 downstream compatibility PASS",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "name": "R02 downstream compatibility PASS",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "name": "R03 downstream compatibility PASS",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "name": "R04 data freeze PASS",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "drift": [],
+        "file_count": 38,
+        "data_contract_fingerprint": "R04DATA_BF55F713A48697B59970B843E01D41C1C353B31DADF8A64EAF0AD189B805C263"
+      }
+    },
+    {
+      "name": "V3 remains SHADOW_COMMISSIONING",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R04 cannot promote",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "trade execution authority NONE",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "commission Gold remains canonical front door",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "R04 status commands are read-only dispatches",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "P12 declares R04 implementation gate",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "automatic promotion remains forbidden",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "live smoke is truthfully not fabricated",
+      "status": "PASS",
+      "detail": {
+        "record_type": "AD_V31_R04_LIVE_SMOKE",
+        "status": "NOT_RUN_PROVIDER_ENVIRONMENT_UNAVAILABLE",
+        "direct_dxy": "NOT_RUN_DEPLOYMENT_VERIFICATION_OR_ENTITLEMENT",
+        "xauusd_historical": "NOT_RUN_ENTITLEMENT_MISSING",
+        "note": "Offline certification is authoritative for engineering; no live PASS fabricated."
+      }
+    },
+    {
+      "name": "R04 runtime artifacts gitignored",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "golden_data_status": "PASS",
+  "golden_case_count": 27,
+  "outcome_recovery_status": "PASS",
+  "live_smoke_status": "NOT_RUN_PROVIDER_ENVIRONMENT_UNAVAILABLE",
+  "data_edge_status": {
+    "record_type": "AD_V31_R04_DATA_EDGE_STATUS",
+    "version": "3.1.4-institutional-data-edge",
+    "implementation_status": "PASS",
+    "provider_counts_by_access_class": {
+      "PUBLIC_FREE": 1,
+      "PAID": 2,
+      "PUBLIC_AUTHENTICATED": 2,
+      "PROPRIETARY_INTERNAL": 1,
+      "PRIVATE": 1
+    },
+    "provider_count": 7,
+    "configured_provider_count": 1,
+    "authorized_provider_count": 1,
+    "direct_dxy": {
+      "state": "DIRECT_DELAYED_IMPLEMENTED_NOT_LIVE_VERIFIED",
+      "provider": "ICE_DXY_DELAYED_PUBLIC"
+    },
+    "usd_proxy": {
+      "state": "AVAILABLE_SEPARATE_IDENTITY"
+    },
+    "intraday_real_rate_proxy": {
+      "state": "UNAVAILABLE_COMPONENT_GAP",
+      "identity": "INTRADAY_REAL_RATE_PROXY",
+      "official_real_yield": false
+    },
+    "official_real_yield": {
+      "state": "OFFICIAL_DAILY_CONTEXT"
+    },
+    "outcome_providers": {
+      "goldprice_dev": "NOT_CONFIGURED",
+      "twelve_data": "NOT_CONFIGURED",
+      "pit_local": "HEALTHY"
+    },
+    "pit_store": {
+      "status": "PASS",
+      "records": 0,
+      "schema_version": "1.0.0"
+    },
+    "source_architecture": {
+      "structured_source_contracts": 33,
+      "generic_html_source_contracts": 55,
+      "gap_only_source_contracts": 8,
+      "r04_typed_adapters": 4
+    },
+    "capabilities": {
+      "gc_price_volume_oi": "PUBLIC_DELAYED_EXISTING",
+      "market_depth": "PAID_GAP",
+      "aggressor_flow": "PAID_GAP",
+      "options_iv_skew": "PARTIAL_PUBLIC_CONTEXT",
+      "dealer_gamma": "PAID_GAP",
+      "efp_lease_forward": "PAID_GAP",
+      "london_otc": "PRIVATE_GAP",
+      "private_flow": "PRIVATE_GAP"
+    },
+    "critical_provider_gaps": [
+      "DIRECT_DXY_LIVE",
+      "INTRADAY_REAL_RATE_COMPONENTS"
+    ],
+    "failover_active": false,
+    "V3_state": "SHADOW_COMMISSIONING",
+    "promotion_performed": false,
+    "trade_execution_authority": "NONE",
+    "as_of": "2026-08-19T09:16:57.067409Z"
+  },
+  "baseline_commit": "f0bba8e",
+  "V3_state": "SHADOW_COMMISSIONING",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE"
+}

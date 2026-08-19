@@ -1,12 +1,12 @@
 {
   "phase": "AD-V3-P12",
-  "version": "3.12.3-v31-r03-perspective",
-  "baseline_commit": "69be946",
+  "version": "3.12.4-v31-r04-data-edge",
+  "baseline_commit": "f0bba8e",
   "p12_implementation_status": "PASS",
-  "release_candidate": "ALPHA_DESK_V3_1_R03",
-  "parent_release_candidate": "ALPHA_DESK_V3_1_R02",
-  "release_fingerprint": "V3REL_B24BD80C629E29A7D1D3379DD066D6166F919C9E9AEEE3C5953EA278B26F66F3",
-  "amendment_fingerprint": "V31R03_479AEAF5644CDE58B8CC794BA78994F07D40E6B78E664B6424929478F016E921",
+  "release_candidate": "ALPHA_DESK_V3_1_R04",
+  "parent_release_candidate": "ALPHA_DESK_V3_1_R03",
+  "release_fingerprint": "V3REL_9E337B26C061239C9C353191930B034D4976B3D69B96EFC3C7313EDF5EDBDA07",
+  "amendment_fingerprint": "V31R04_34C9F3B06C0BF356D973C17831DB27032F4976FC0FDFC108713C7501E47A2CEA",
   "phase_status": {
     "P01": "PASS",
     "P02": "PASS",
@@ -22,7 +22,8 @@
     "P12": "PASS",
     "R01": "PASS",
     "R02": "PASS",
-    "R03": "PASS"
+    "R03": "PASS",
+    "R04": "PASS"
   },
   "v2_rollback_status": {
     "P11": "PASS",
@@ -85,7 +86,8 @@
     "V2_ROLLBACK_AVAILABLE": true,
     "P11_VISUAL_ACCEPTANCE_PASS": true,
     "P11_SECURITY_ACCEPTANCE_PASS": true,
-    "EXPLICIT_OPERATOR_APPROVAL": false
+    "EXPLICIT_OPERATOR_APPROVAL": false,
+    "R04_IMPLEMENTATION_PASS": true
   },
   "certification_state": "CERTIFIED_PENDING_FORWARD_SAMPLE",
   "promotion_eligibility": false,
@@ -93,7 +95,11 @@
   "v3_state": "SHADOW_COMMISSIONING",
   "production_promotion_performed": false,
   "trade_execution_authority": "NONE",
-  "active_v31_amendment": "AD-V3.1-R03",
-  "next_phase": "AD-V3.1-R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE",
-  "r03_perspective_science_fingerprint": "R03SCI_DBAE5E33F378FA1D9CFF422A524118B6670CDD7FAE8F96BEC5E94103149C3EAC"
+  "active_v31_amendment": "AD-V3.1-R04",
+  "next_phase": "AD-V3.1-R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION",
+  "r03_perspective_science_fingerprint": "R03SCI_DBAE5E33F378FA1D9CFF422A524118B6670CDD7FAE8F96BEC5E94103149C3EAC",
+  "current_amendment": "AD-V3.1-R04",
+  "r04_data_contract_fingerprint": "R04DATA_BF55F713A48697B59970B843E01D41C1C353B31DADF8A64EAF0AD189B805C263",
+  "r04_golden_data_matrix": "PASS 27/27",
+  "r04_outcome_recovery_certification": "PASS"
 }

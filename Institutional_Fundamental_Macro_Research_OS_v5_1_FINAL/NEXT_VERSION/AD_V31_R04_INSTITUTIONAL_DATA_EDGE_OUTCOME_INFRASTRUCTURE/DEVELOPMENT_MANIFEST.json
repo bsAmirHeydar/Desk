@@ -1,0 +1,27 @@
+{
+  "phase": "AD-V3.1-R04",
+  "version": "3.1.4-institutional-data-edge",
+  "baseline_commit": "f0bba8e",
+  "mission": "Institutional Data Edge & Outcome Infrastructure",
+  "authority": [
+    "DATA_CAPABILITY_INFRASTRUCTURE",
+    "POINT_IN_TIME_HISTORY",
+    "HISTORICAL_MARKET_RECOVERY",
+    "OUTCOME_ACQUISITION_PROVENANCE",
+    "PROVIDER_HEALTH"
+  ],
+  "non_authority": [
+    "CAUSAL_DIRECTION",
+    "DECISION_SCIENCE",
+    "PERSPECTIVE_SCIENCE",
+    "OUTCOME_CLASSIFICATION",
+    "PROMOTION"
+  ],
+  "canonical_outcome_instrument": "XAUUSD",
+  "primary_horizon": "SESSION_1_6H",
+  "production_promotion_performed": false,
+  "trade_execution_authority": "NONE",
+  "status": "PASS",
+  "next_phase": "AD-V3.1-R05_OPERATIONS_HUMAN_INTELLIGENCE_FINALIZATION",
+  "new_r04_cohort": "INITIALIZE_EX_ANTE_AT_OPERATOR_INSTALL"
+}

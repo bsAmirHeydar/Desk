@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "series_id",
+    "provider_id",
+    "economic_time",
+    "record_class"
+  ],
+  "properties": {
+    "series_id": {
+      "type": "string"
+    },
+    "provider_id": {
+      "type": "string"
+    },
+    "economic_time": {
+      "type": "string"
+    },
+    "record_class": {
+      "type": "string"
+    }
+  }
+}

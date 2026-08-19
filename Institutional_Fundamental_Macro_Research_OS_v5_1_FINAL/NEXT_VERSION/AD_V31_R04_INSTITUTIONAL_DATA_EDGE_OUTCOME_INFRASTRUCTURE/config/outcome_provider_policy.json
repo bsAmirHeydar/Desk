@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "canonical_instrument": "XAUUSD",
+  "canonical_series_id": "XAUUSD_SPOT_REFERENCE",
+  "p09_subject_preserved": true,
+  "provider_ids": [
+    "LOCAL_PIT_STORE",
+    "GOLDPRICEDEV_XAU_BARS",
+    "TWELVEDATA_XAUUSD"
+  ],
+  "acquisition_modes": [
+    "LIVE_CAPTURED",
+    "HISTORICALLY_RECOVERED",
+    "MIXED_PATH_RECOVERY"
+  ],
+  "existing_valid_outcome_immutable": true,
+  "provider_conflict_state": "OUTCOME_DATA_CONFLICT",
+  "provider_conflict_relative_tolerance": 0.0005,
+  "provider_selection_order": [
+    "GOLDPRICEDEV_XAU_BARS",
+    "TWELVEDATA_XAUUSD"
+  ]
+}

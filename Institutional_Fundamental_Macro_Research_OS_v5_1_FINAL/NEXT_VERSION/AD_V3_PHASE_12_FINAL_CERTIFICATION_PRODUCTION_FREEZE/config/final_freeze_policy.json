@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "phase": "AD-V3-P12",
   "immutable_classes": {
     "SCIENTIFIC_IMMUTABLE": [
@@ -25,7 +25,11 @@
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R02_DECISION_SCIENCE_2_0/schemas/*.json",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/*.json",
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/runtime/*.py",
-      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/schemas/*.json"
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/schemas/*.json",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/*.json",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/runtime/*.py",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/providers/*.py",
+      "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/schemas/*.json"
     ],
     "RUNTIME_IMMUTABLE": [
       "Institutional_Fundamental_Macro_Research_OS_v5_1_FINAL/NEXT_VERSION/AD_V3_PHASE_10_UNIFIED_RUNTIME_ONE_RUN/config/*.json",
@@ -70,11 +74,13 @@
     "amendments": [
       "AD-V3.1-R01",
       "AD-V3.1-R02",
-      "AD-V3.1-R03"
+      "AD-V3.1-R03",
+      "AD-V3.1-R04"
     ],
     "r01_qualification_runtime_frozen": true,
     "r02_decision_science_frozen": true,
-    "r03_perspective_science_frozen": true
+    "r03_perspective_science_frozen": true,
+    "r04_data_contract_frozen": true
   },
   "p05_governance_frozen": true
 }

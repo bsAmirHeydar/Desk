@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2.0",
+  "schema_version": "1.3.0",
   "version": "1.0.0",
   "initial_cohort_sequence": 1,
   "auto_start_new_cohort_on_fingerprint_change": true,
@@ -32,7 +32,13 @@
     "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/stress_pathway_registry.json",
     "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/nonlinearity_policy.json",
     "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/tail_unknown_policy.json",
-    "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/perspective_overlay_policy.json"
+    "../AD_V31_R03_ANTIFRAGILE_MULTI_SCENARIO_PERSPECTIVE/config/perspective_overlay_policy.json",
+    "../AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/r04_data_policy.json",
+    "../AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/scientific_equivalence_groups.json",
+    "../AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/outcome_provider_policy.json",
+    "../AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/real_rate_proxy_policy.json",
+    "../AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/pit_store_policy.json",
+    "../AD_V31_R04_INSTITUTIONAL_DATA_EDGE_OUTCOME_INFRASTRUCTURE/config/historical_recovery_policy.json"
   ],
   "states": [
     "OPEN",
@@ -43,5 +49,6 @@
   ],
   "pool_across_cohorts_for_promotion": false,
   "r02_decision_science_bound": true,
-  "r03_perspective_science_bound": true
+  "r03_perspective_science_bound": true,
+  "r04_data_contract_bound": true
 }

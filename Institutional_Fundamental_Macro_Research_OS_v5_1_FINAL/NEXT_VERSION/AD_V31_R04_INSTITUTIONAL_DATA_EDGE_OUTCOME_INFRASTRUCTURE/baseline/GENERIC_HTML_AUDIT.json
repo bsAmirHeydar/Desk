@@ -1,0 +1,335 @@
+{
+  "count": 55,
+  "sources": [
+    {
+      "source_id": "FED_FOMC",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "FED_H41",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "FED_H8",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "BLS_CPI",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "BLS_PPI",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "BLS_EMP",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "BLS_JOLTS",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "BEA_PCE",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "BEA_GDP",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "US_MACRO_CALENDAR",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "BEA_RELEASE_SCHEDULE",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "FED_REGIONAL_ACTIVITY_BASKET",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "NYFED_ACM",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "UST_AUCTIONS",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "TREASURY_PRESS_RELEASES",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "FRED_OR_OFFICIAL",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "RATING_AGENCY_PUBLIC_BASKET",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "BIS_GLI",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "CFTC_PART43",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "CME_METALS",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "EXISTS_IN_BASELINE",
+      "migration_action": "USE_EXISTING_TYPED_SOURCE_WHERE_FACT_CONTRACT_ALREADY_PREFERS_IT"
+    },
+    {
+      "source_id": "CME_VOLUME_OI",
+      "classification": "CRITICAL_SESSION",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "CME_CVOL",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "CME_OPTIONS",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "CME_GOLD_STOCKS_DELIVERIES",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "CME_FEDWATCH",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "CME_HOLIDAY_CALENDAR",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "WGC_GDT",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "WGC_ETF",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "ETF_SPONSOR_IAU",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "LBMA_VAULT_DATA",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "LBMA_CLEARING_DATA",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "LBMA_BENCHMARK",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "PBOC",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "SGE",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "CHINA_CUSTOMS",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "CHINA_TAX_POLICY",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "RBI",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "DGFT_OR_INDIA_GOV",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "INDIA_COMMERCE",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "IMF_COFER",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "IMF",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "EIA",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "EIA_OIL_PRICES",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "EIA_CHOKEPOINTS",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "TREASURY_OFAC",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "OFFICIAL_GEO_BASKET",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "BANKING_STRESS_OFFICIAL_BASKET",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "FINRA_TRACE",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "PUBLIC_MARKET_PROVIDER",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "CBOE_VIX",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "SILVER_INSTITUTE",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "MINING_PUBLIC_DISCLOSURES",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "BOJ",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "ECB",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    },
+    {
+      "source_id": "CHINA_GOV_PBOC_POLICY",
+      "classification": "IMPORTANT_CONTEXT",
+      "structured_alternative": "NOT_ESTABLISHED",
+      "migration_action": "RETAIN_AND_HARDEN"
+    }
+  ]
+}

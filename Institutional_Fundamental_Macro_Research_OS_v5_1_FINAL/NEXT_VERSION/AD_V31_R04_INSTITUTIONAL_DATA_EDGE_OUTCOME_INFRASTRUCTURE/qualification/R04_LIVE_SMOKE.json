@@ -1,0 +1,7 @@
+{
+  "record_type": "AD_V31_R04_LIVE_SMOKE",
+  "status": "NOT_RUN_PROVIDER_ENVIRONMENT_UNAVAILABLE",
+  "direct_dxy": "NOT_RUN_DEPLOYMENT_VERIFICATION_OR_ENTITLEMENT",
+  "xauusd_historical": "NOT_RUN_ENTITLEMENT_MISSING",
+  "note": "Offline certification is authoritative for engineering; no live PASS fabricated."
+}

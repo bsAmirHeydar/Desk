@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "groups": [
+    {
+      "group_id": "ICE_DXY_DIRECT",
+      "scientific_series_id": "ICE_DXY_DIRECT",
+      "provider_ids": [
+        "ICE_DXY_DELAYED_PUBLIC",
+        "ICE_DXY_DATA_API"
+      ],
+      "independence_units": 1
+    },
+    {
+      "group_id": "XAUUSD_SPOT_REFERENCE",
+      "scientific_series_id": "XAUUSD_SPOT_REFERENCE",
+      "provider_ids": [
+        "GOLDPRICEDEV_XAU_BARS",
+        "TWELVEDATA_XAUUSD"
+      ],
+      "independence_units": 1
+    }
+  ],
+  "hard_rule": "operational redundancy never inflates scientific evidence independence"
+}
